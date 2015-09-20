@@ -1,0 +1,71 @@
+      SUBROUTINE RKSOLVE(F,Y0,T0,TEND,DIMV,N,FNAME,IERR)
+      IMPLICIT NONE
+      EXTERNAL F
+      INTEGER DIMV, IERR, N
+      REAL*8 Y0(DIMV),T0,TEND
+      CHARACTER FNAME*12
+      INTEGER I,NEXTERR
+      REAL*8 H,HH,T,Y(DIMV),YY(DIMV)
+      CHARACTER FMTSTR*23
+      
+      H=(TEND-T0)/REAL(N)
+      HH=H/2.0
+      OPEN(UNIT=11,FILE=FNAME,STATUS="REPLACE",IOSTAT=IERR,ERR=100)
+      WRITE(UNIT=FMTSTR,FMT=200,IOSTAT=IERR,ERR=100)
+     *          "(F12.4,",DIMV,"(3X,E16.8))"
+      T=T0
+      DO I=1,DIMV
+        Y(I)=Y0(I)
+      END DO
+      DO WHILE(T .LE. TEND)
+        CALL NEXT(F,Y,T,DIMV,H,HH,YY,NEXTERR)
+        WRITE(UNIT=11,FMT=FMTSTR,IOSTAT=IERR,ERR=100)T,YY
+        T=T+H
+        DO I=1,DIMV
+          Y(I)=YY(I)
+        END DO
+      END DO
+      CLOSE(UNIT=11,IOSTAT=IERR,ERR=100)
+      RETURN
+  100 IF(IERR .NE. 0)RETURN
+  200 FORMAT(A7,I5,A11)
+      END
+
+      SUBROUTINE NEXT(F,YN,TN,DIMV,H,HH,YNP1,IERR)
+C   F MUST BE A SUBROUTINE IN FORMAT:
+C      F(DOUBLE YIN(*), DOUBLE TIN, DOUBLE YOUT(*))
+      IMPLICIT NONE
+      EXTERNAL F
+      INTEGER DIMV,IERR
+      REAL*8 YN(DIMV),YNP1(DIMV),TN,H,HH
+      INTEGER I
+      REAL*8 YY(DIMV),THH,Y
+      REAL*8 K1,K2,K3,K4
+      DIMENSION K1(DIMV),K2(DIMV),K3(DIMV),K4(DIMV)
+      
+      Y=H/6.0
+      THH=TN+HH
+      CALL F(YN,TN,K1)
+      DO I=1,DIMV
+      YY(I)=YN(I)+K1(I)/2.0
+      END DO
+      
+      CALL F(YY,THH,K2)
+      DO I=1,DIMV
+      YY(I)=YN(I)+K2(I)/2.0
+      ENDDO
+      
+      CALL F(YY,THH,K3)
+      DO I=1,DIMV
+      YY(I)=YN(I)+K3(I)
+      ENDDO
+      
+      CALL F(YY,TN+H,K4)
+      
+      DO I=1,DIMV
+      YNP1(I)=YN(I)+Y*(K1(I)+2.0*K2(I)+2.0*K3(I)+K4(I))
+      ENDDO
+      
+      RETURN
+      END
+

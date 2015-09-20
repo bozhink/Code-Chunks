@@ -1,0 +1,60 @@
+      SUBROUTINE EULER(F, X0, T0, T1, X, T, M, N, DT)
+C F IS EXTERNAL SUBROUTINE OF TYPE F(X,T,DXDT,M)
+C X0 IS VECTOR 1xM IN INITIAL MOMENT T0
+C T0,T1 IS CURRENT INTERVAL
+C X - OUTPUT: MxN MATRIX: VALUES OF X IN MOMENTS T
+C T - OUTPUT: 1xN VECTOR
+C M - DIMENSION OF THE VECTORS X
+C N - NUMBER OF MOMENTS T
+C DT - STRIDE OF TIME. MUST BE DT=(T1-T0)/(N-1)
+      IMPLICIT NONE
+      EXTERNAL F
+      REAL*8   X0, T0, T1, X, T, DT
+      INTEGER  M, N
+      DIMENSION X0(M), X(M,N), T(N)
+      REAL*8   XX(M), DXDT(M)
+      INTEGER I, J, JP1
+C INITIALIZE
+      DO I=1, M
+        X(I,1) = X0(I)
+      END DO
+        T(1) = T0
+C BEGIN      
+      DO J=1, N-1
+        JP1 = J+1
+        T(JP1) = T0 + DT*J
+        DO I=1, M
+          XX(I) = X(I,J)
+        END DO
+        CALL F(XX, T(J), DXDT, M)
+        DO I=1, M
+          X(I,JP1) = X(I,J) + DT*DXDT(I)
+        END DO
+      END DO
+      RETURN
+      END
+
+      SUBROUTINE PLOT(F, X0, T0, T1, M, N, DT, FNAME)
+      IMPLICIT NONE
+      EXTERNAL F
+      REAL*8   X0,T0,T1,DT
+      INTEGER  M, N
+      DIMENSION X0(M)
+      CHARACTER(LEN=12) FNAME
+      CHARACTER(LEN=26) INFMT
+      REAL*8   X(M,N), T(N)
+      INTEGER  I, J
+      
+      WRITE(UNIT=INFMT,FMT=100) M
+      
+      CALL EULER(F,X0,T0,T1,X,T,M,N,DT)
+      
+      OPEN(UNIT=10,FILE=FNAME,STATUS='REPLACE')
+      DO J=1,N
+        WRITE(UNIT=10,FMT=INFMT) T(J),(X(I,J),I=1,M)
+      END DO
+      CLOSE(UNIT=10)
+      
+      RETURN
+  100 FORMAT('(F12.8,',I8,'(3X,E16.8))')
+      END
