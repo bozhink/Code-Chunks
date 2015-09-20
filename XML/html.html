@@ -1,0 +1,45 @@
+﻿<HTML><HEAD><TITLE>Test</TITLE></HEAD>
+<BODY>
+<XML ID="xmlMeetings">
+<?xml version="1.0" ?>
+<meetings>
+  <meeting>
+    <date>1/1/99</date>
+    <time>9:00</time>
+    <location>104</location>
+  </meeting>
+  <meeting>
+    <date>2/1/99</date>
+    <time>13:00</time>
+    <location>34</location>
+  </meeting>
+  <meeting>
+    <date>3/1/99</date>
+    <time>14:30</time>
+    <location>20</location>
+  </meeting>
+</meetings>
+</XML>
+<table datasrc="#xmlMeetings">
+  <tr>
+    <td><div datafld="date"></div></td>
+    <td><div datafld="time"></div></td>
+    <td><div datafld="location"></div></td>
+  </tr>
+</table>
+<XML SRC="books.xml" ID="books"></XML>
+<form><table datapagesize="1" id ="tbl" datasrc="#books">
+  <tr>
+    <td><div datafld="author"></div></td>
+    <td><div datafld="title"></div></td>
+    <td><div datafld="price"></div></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="next" onclick="tbl.nextPage()"></input></td>
+    <td><input type="button" value="prev" onclick="tbl.previousPage()"/></td>
+    <td><input type="button" value="first" onclick="tbl.firstPage()"/></td>
+    <td><input type="button" value="last" onclick="tbl.lastPage()"/></td>
+  </tr>
+</table></form>
+</BODY>
+</HTML>

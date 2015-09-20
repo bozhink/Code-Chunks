@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://www.popfly.com/schemas/blockschema.xsd"
+  class="VirtualEarthClass" hasInitialize="true" type="display">
+	<providerName>Virtual Earth</providerName>
+	<providerUrl>http://maps.live.com/</providerUrl>
+	<providerLogoUrl>/content/components/icons/virtualEarthLogo.png</providerLogoUrl>
+	<blockIconUrl>/content/components/icons/virtualEarth.png</blockIconUrl>
+	<suggest input="geooutput"/>
+	<operations>
+		<operation name="addPushpin">
+			<description>
+				Adds a pushpin to the map based on latitude and longitude.
+			</description>
+			<inputs>
+				<input name="latitude" required="true" type="latitude">
+					<description>The pushpin's latitude</description>
+					<defaultValue>0</defaultValue>
+					<constraints />
+				</input>
+				<input name="longitude" required="true" type="longitude">
+					<description>The pushpin's longitude</description>
+					<defaultValue>0</defaultValue>
+					<constraints />
+				</input>
+				<input name="url" required="false" type="thumbnailImageUrl">
+					<description>The URL used for the pushpin's image</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="title" required="false" type="title">
+					<description>The pushpin's title</description>
+					<defaultValue>My Pushpin</defaultValue>
+					<constraints />
+				</input>
+				<input name="description" required="false" type="description">
+					<description>The pushpin's description</description>
+					<defaultValue>This is a pushpin on the earth.</defaultValue>
+					<constraints />
+				</input>
+				<input name="centerMapOnPushpin" required="false" type="boolean">
+					<description>Setting this value to true will center the map when a pushpin is added. If it is false then the map will centered at 0,0.</description>
+					<defaultValue>true</defaultValue>
+					<constraints />
+				</input>
+			</inputs>
+			<outputs />
+		</operation>
+		<operation name="addPushpinByLocation" callMode="async">
+			<description>
+				Adds a pushpin to the map based on a location (described in a single string).
+			</description>
+			<inputs>
+				<input name="location" required="false" type="string">
+					<description>The place you are looking for.</description>
+					<defaultValue>Eiffel Tower</defaultValue>
+					<constraints />
+				</input>
+				<input name="url" required="false" type="thumbnailImageUrl">
+					<description>The URL used for the pushpin's image</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="title" required="false" type="title">
+					<description>The pushpin's title</description>
+					<defaultValue>My Pushpin</defaultValue>
+					<constraints />
+				</input>
+				<input name="description" required="false" type="description">
+					<description>The pushpin's description</description>
+					<defaultValue>This is a pushpin on the earth.</defaultValue>
+					<constraints />
+				</input>
+				<input name="centerMapOnPushpin" required="false" type="boolean">
+					<description>Setting this value to true will center the map when a pushpin is added. If it is false then the map will centered at 0,0.</description>
+					<defaultValue>true</defaultValue>
+					<constraints />
+				</input>
+				<input name="maxLocations" required="false" type="integer">
+					<description>Maximum number of locations to return</description>
+					<defaultValue>1</defaultValue>
+					<constraints />
+				</input>
+			</inputs>
+			<outputs />
+		</operation>
+		<operation name="addPushpinByAddress" callMode="async">
+			<description>
+				Adds a pushpin to the map based on an address (address/city/state/zip/country).
+			</description>
+			<inputs>
+				<input name="street" required="false" type="street">
+					<description>Street address</description>
+					<defaultValue>1600 Pennsylvania Avenue NW</defaultValue>
+					<constraints />
+				</input>
+				<input name="address2" required="false" type="address2">
+					<description>Street address</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="city" required="false" type="city">
+					<description>City</description>
+					<defaultValue>Washington, DC</defaultValue>
+					<constraints />
+				</input>
+				<input name="state" required="false" type="state">
+					<description>State</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="country" required="false" type="countryOrRegion">
+					<description>Country or region</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="zipCode" required="false" type="zipCode">
+					<description>Postal code</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="url" required="false" type="thumbnailImageUrl">
+					<description>The URL used for the pushpin's image</description>
+					<defaultValue />
+					<constraints />
+				</input>
+				<input name="title" required="false" type="title">
+					<description>The pushpin's title</description>
+					<defaultValue>My Pushpin</defaultValue>
+					<constraints />
+				</input>
+				<input name="description" required="false" type="description">
+					<description>The pushpin's description</description>
+					<defaultValue>This is a pushpin on the earth.</defaultValue>
+					<constraints />
+				</input>
+				<input name="centerMapOnPushpin" required="false" type="boolean">
+					<description>Setting this value to true will center the map when a pushpin is added. If it is false then the map will centered at 0,0.</description>
+					<defaultValue>true</defaultValue>
+					<constraints />
+				</input>
+				<input name="maxLocations" required="false" type="integer">
+					<description>Maximum number of locations to return</description>
+					<defaultValue>1</defaultValue>
+					<constraints />
+				</input>
+			</inputs>
+			<outputs />
+		</operation>
+		<operation name="setMapView">
+			<description>
+				Sets the current map view.
+			</description>
+			<inputs>
+				<input name="latitude" required="true" type="latitude">
+					<description>The latitude for the center of the map view</description>
+					<defaultValue>0</defaultValue>
+					<constraints />
+				</input>
+				<input name="longitude" required="true" type="longitude">
+					<description>The longitude for the center of the map view</description>
+					<defaultValue>0</defaultValue>
+					<constraints />
+				</input>
+				<input name="zoom" required="false" type="nonNegativeInteger">
+					<description>The zoom level of the map (2D mode only), zoom levels are 1-19 with 1 being street level and 19 the entire world.</description>
+					<defaultValue>6</defaultValue>
+					<constraints />
+				</input>
+				<input name="altitude" required="false" type="nonNegativeInteger">
+					<description>Altitude, in meters, above the ground (3D mode only)</description>
+					<defaultValue>10</defaultValue>
+					<constraints />
+				</input>
+				<input name="pitch" required="false" type="integer">
+					<description>The pitch of the view, in degrees. A value of –90 is straight down and a value of 0 is level. (3D mode only)</description>
+					<defaultValue>-45</defaultValue>
+					<constraints />
+				</input>
+				<input name="heading" required="false" type="nonNegativeInteger">
+					<description>The heading of the view, in compass degrees. A value of 0 or 360 is true north. (3D mode only)</description>
+					<defaultValue>0</defaultValue>
+					<constraints />
+				</input>
+			</inputs>
+			<outputs />
+		</operation>
+		<operation name="deleteAllPushpins">
+			<description>
+				Deletes all pushpins from the map.
+			</description>
+			<inputs />
+		</operation>
+	</operations>
+	<properties>
+		<property name="defaultZoomLevel">
+			<description>
+				Set the zoom level of the map (2D mode only). The range allowed of values is 1 (World View) to 19 (Street Level).
+			</description>
+			<setter>
+				<operation name="setDefaultZoomLevel">
+					<inputs>
+						<input name="zoom" required="false" type="nonNegativeInteger">
+							<defaultValue>2</defaultValue>
+							<constraints />
+						</input>
+					</inputs>
+				</operation>
+			</setter>
+		</property>
+		<property name="usePhotoUrlAsIcon">
+			<description>
+				Use the Url input as the pins icon on the map
+			</description>
+			<setter>
+				<operation name="setUsePhotoUrlAsIcon">
+					<inputs>
+						<input name="usePhotoIcon" required="false" type="boolean">
+							<defaultValue>true</defaultValue>
+							<constraints />
+						</input>
+					</inputs>
+				</operation>
+			</setter>
+		</property>
+	</properties>
+	<objects />
+</block>

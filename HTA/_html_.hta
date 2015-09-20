@@ -1,0 +1,68 @@
+<html>
+<head>
+<!-- -->
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+  <title> My HTA </title>
+  <HTA:application 
+  applicationName="MY_HTA" 
+  border="yes" 
+  version="o.1"
+  maximizebutton="yes"
+  showintaskbar="yes"
+  singleinstance="yes"
+  scroll="yes" 
+  />
+  <style type="text/css">
+  /* <![CDATA[ */
+  BODY {
+    background-color: rgb(0,20,50);
+    color: white;
+    border: thin white solid;
+    margin: 10px 10px 10px 10px;
+    font: 12px Verdana;  
+  }
+  /* ]]> */
+  </style>
+  <script language="vbscript">
+    sub Init()
+      MsgBox("Hello")
+    end sub
+	
+    sub RunClick()
+      Dim A
+      MsgBox("Hello, WORLD!")
+      A=InputBox("Enter value")
+    end sub
+	
+    sub TXTCLICK()
+      txtar.value="This is my Hello Text"
+      kj.value="dfg"
+    end sub
+	
+    sub summ()
+      result.value="23"
+    end sub
+  </script>
+</head>
+
+<body onload="Init">
+<h1>Hello, World!</h1>
+
+<button onclick="RunClick" name="kj">KJ</button>
+<br>
+<br>
+<textarea name="txtar" rows=10 onclick="TXTCLICK"></textarea>
+<form>
+<table>
+  <tr>
+    <td><input type="text" name="inp1"></td>
+    <td><input type="text" name="inp2"></td>
+  </tr>
+  <tr>
+    <td><input type="text" name="result">
+    <td><button onclick="summ">Sum</button></td>
+  </tr>
+</table>
+</form>
+</body>
+</HTmL>

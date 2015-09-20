@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+
+<!--#exec cgi="" -->
+
+<!-- START OF SCRIPT -->
+<!-- For more scripts visit http://www.netpedia.com -->
+<script language="javascript">
+
+ 
+        var key = "";
+        
+
+
+        function makeEntry (){
+                this.Date = "";
+                this.Name="";
+                this.URL = "";
+                this.Desc = "";
+                this.Category = "";
+                return this;
+        }
+
+ function makeArray(n) {
+                this.length = n;
+                for (var k = 1; k <= n; k++) {
+                                this[k] = "";
+                }
+                return this;
+        }               
+
+        function makeLinks(size) {
+                                this.length = size;
+                                for (var r=1; r<= size; r++) {
+                                                        this[r] = new makeEntry();
+                                                        this[r].Date = datesArray[r];
+                                                        this[r].Name = namesArray[r];
+                                                        this[r].URL = urlsArray[r];
+                                                        this[r].Desc = descArray[r];
+                                                        }
+                                        return this;
+                        }
+
+
+
+var linksize=0 
+
+datesArray = new makeArray(linksize);
+namesArray = new makeArray(linksize);
+urlsArray = new makeArray(linksize);
+descArray = new makeArray(linksize);
+
+
+var arraycount=0
+
+
+arraycount += 1 
+datesArray[arraycount] = "1/1/97 "
+urlsArray[arraycount] = "http://www.yahoo.com"
+namesArray[arraycount] = "Yahoo"
+descArray[arraycount] = "An excellent search engine available free on the web"
+//alert(arraycount)
+
+arraycount += 1 
+datesArray[arraycount] = "1/1/97 "
+urlsArray[arraycount] = "http://www.lycos.com"
+namesArray[arraycount] = "Lycos"
+descArray[arraycount] = "An extensive search engine, great alternative to Yahoo"
+//alert(arraycount)
+
+arraycount += 1 
+datesArray[arraycount] = "1/1/97 "
+urlsArray[arraycount] = "http://www.webcrawler.com"
+namesArray[arraycount] = "Webcrawler"
+descArray[arraycount] = "A great search engine from the makers of AOL"
+//alert(arraycount)
+
+arraycount += 1 
+datesArray[arraycount] = "1/1/97 "
+urlsArray[arraycount] = "http://www.search.com"
+namesArray[arraycount] = "Search.com"
+descArray[arraycount] = "A collection of hundreds of search engines; from Yahoo to a seach engine which looks up phone numbers."
+//alert(arraycount)
+
+arraycount += 1 
+datesArray[arraycount] = "1/1/97 "
+urlsArray[arraycount] = "http://altavista.digital.com"
+namesArray[arraycount] = "AltaVista"
+descArray[arraycount] = "This search engine has the largest database of websites of all search engines on the web"
+//alert(arraycount)
+
+linksize = arraycount;
+
+// ----end data -------
+
+function showAll(linkobj) {
+                for (var s=1; s<= linkobj.length; s++) {
+                                                showLink(linkobj,s);
+                                }
+                        }
+
+function showLink (links, index) {
+        //document.write("<table border>");
+        document.write("<tr><td>" + links[index].Date +"</td>");
+        document.write("<td><a href=" + links[index].URL +">" + links[index].Name + "</a></td>");
+        document.write("<td>" + links[index].Desc + "</td></tr>");
+        //document.write("</table>");
+        }
+
+function searchLinks(links, keyword){
+        document.write("Search results for keyword:" +keyword +"<br>");
+        
+        document.write("<table border>");
+        for (var q=1; q<=links.length; q++) {
+                        //document.write(q+".")
+                        if (links[q].URL.indexOf(keyword) != -1){
+                        //      document.write("Search Results for keyword: "+keyword+ "<br>" +links[q].Name +"<p>")
+                        //document.write("Search Results for keyword: "+keyword+ "<br>" );
+                                showLink(links,q);
+                                continue;
+                        }
+                        if (links[q].Desc.indexOf(keyword) != -1) {
+                                        showLink(links,q);
+                                continue;
+                        }
+                        if (links[q].Date.indexOf(keyword) != -1) {
+                                        showLink(links,q);
+                                continue;
+                        }
+                        if (links[q].Name.indexOf(keyword) != -1) {
+                                        showLink(links,q);
+                                        continue;
+                        }
+                }
+        document.write("</table>");
+        }                                       
+
+
+// final stuff
+// the main program ---
+
+jsi = new makeLinks(linksize);
+document.write("<title>Search</title><body bgcolor=white>");
+
+searchLinks(jsi, prompt("Please enter keywords:) \rSearch everywhere for :","try typing search engine"));
+document.write("<hr>");
+document.write("This searches all areas (Date, Name, URL, and Description) for matches ");
+document.write("and returns a list of hits.  The keyword is case sensitive. This script can be easily modified to fit your needs. ");
+document.write("Click <b>search again</b> for another search. <hr>");
+document.write("<form><input type=button onClick='history.go(0)' value='Search Again'></form>");
+
+// show all the links
+//document.write("<table border>");
+//showAll(jsi);
+//document.write("</table>");
+
+</script>
+<!-- END OF SCRIPT -->
+
+</body>
+</html>

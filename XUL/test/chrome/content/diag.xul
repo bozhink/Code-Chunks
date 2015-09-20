@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<window id="e" title="Dialog" width="500" height="400"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script language="JavaScript">
+  function doCancel(){
+    close();
+  }
+  
+  function doOk(){
+    alert("OK");
+  }
+</script>
+
+<dialog id="donothing" title="Dialog example"
+   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   buttons="accept,cancel"
+   buttonlabelcancel="Cancel"
+   buttonlabelaccept="Save"
+   ondialogaccept="alert('Ok!');"
+   ondialogcancel="close();">
+    
+    <dialogheader title="Options" description="My preferences"/>
+    <groupbox>
+      <caption label="Colour"/>
+      <radiogroup>
+        <radio label="Red"/>
+        <radio label="Green" selected="true"/>
+        <radio label="Blue"/>
+      </radiogroup>
+      <label value="Nickname"/>
+      <textbox />
+   </groupbox>
+</dialog>
+</window>

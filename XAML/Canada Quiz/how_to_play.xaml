@@ -1,0 +1,5 @@
+<Canvas xmlns="http://schemas.microsoft.com/client/2007" Width="650" Height="500">
+	<Rectangle Width="2000" Height="2000" Fill="#AAFFFFFF"/>
+	<TextBlock Canvas.Left="25" Canvas.Top="5" Width="339.43359375" Height="92.197265625" Text="How to Play" FontSize="60"/>
+	<TextBlock Canvas.Left="25" Canvas.Top="90" Width="600" Height="44.56201171875" TextWrapping="Wrap" Text="Press the letter (A, B, C or D) on your keyboard that corresponds with the correct answer" FontSize="29"/>
+</Canvas>

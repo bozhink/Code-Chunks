@@ -1,0 +1,3 @@
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="150" Height="61">
+	<Glyphs Name="text" Canvas.Top="-12" FontUri="/GameCreator/Fonts/POWDERFINGER_T.ttf" UnicodeString="1234" FontRenderingEmSize="60" Fill="Black"/>
+</Canvas>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<window id="e" title="Example" width="500" height="700"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script language="JavaScript" src="main.js"/>
+
+<editor id="myEditor" editortype="html" src="about:blank" flex="1" type="content-primary"/>
+
+<hbox>  
+  <button type="menu" label="File">
+    <menupopup>
+      <menuitem label="New Document" />
+      <menuitem label="New Image" />
+    </menupopup>
+  </button>
+  <button type="menu" label="Edit">
+    <menupopup>
+      <menuitem label="Undo" />
+      <menuitem label="Redo" />
+      <separator class="groove-thin"/>
+      <menuitem label="Cut"/>
+      <menuitem label="Copy"/>
+      <menuitem label="Paste"/>
+    </menupopup>
+  </button>
+  <button type="menu" label="View">
+    <menupopup>
+      <menuitem label="New Document" />
+      <menuitem label="New Image" />
+    </menupopup>
+  </button>    
+</hbox>
+
+<hbox>  
+  <groupbox flex="1">
+    <caption label="Time..."/>
+    <vbox height="50" width="10">
+      <timepicker /> 
+      <datepicker type="popup"/>     
+    </vbox>
+  </groupbox>
+  
+  <vbox>
+    <button id="yes" oncommand="ok()" label="Yes"/>
+    <button id="no" label="No"/>
+    <button id="maybe" oncommand="MayBe()" label="Maybe"/>
+    <button oncommand="alert('HELLO');" label="Hello"/>
+    <button oncommand="close();" label="EXIT"/>
+  </vbox>
+</hbox>
+
+<groupbox flex="0">
+  <caption>
+    <checkbox label="Enable" />
+  </caption>
+  <hbox>
+    <label control="dir" value="Directory:"/>
+    <textbox id="dir" flex="1"/>
+  </hbox>
+  <checkbox label="Compress" />  
+</groupbox>
+
+<textbox id="mytext" multiline="true" value="ABC"/>
+
+<tree flex="1" editable="true">
+
+  <treecols>
+    <treecol label="Active" type="checkbox" editable="true"/>
+    <treecol label="*"/>
+    <treecol label="Name" flex="1" />
+  </treecols>
+
+  <treechildren>
+    <treeitem>
+      <treerow>
+        <treecell value="true"/>
+        <treecell/>
+        <treecell label="Alien"/>
+      </treerow>
+    </treeitem>
+    <treeitem>
+      <treerow>
+        <treecell value="false"/>
+        <treecell/>
+        <treecell label="Bob"/>
+      </treerow>
+    </treeitem>
+  </treechildren>
+
+</tree>
+<hbox>
+<checkbox label="Enable button" onclick="document.getElementById('buttRemove').disabled = this.checked"/>
+<button id="buttRemove" label="Remove All" disabled="true"/>
+</hbox>
+</window>

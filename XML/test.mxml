@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+    <mx:Array id="sampleArray">
+        <mx:String>Sample Label 1</mx:String>
+        <mx:String>Sample Label 2</mx:String>
+    </mx:Array>
+    <mx:Panel title="Example Panel">
+        <mx:ComboBox dataProvider="{sampleArray}"></mx:ComboBox>
+    </mx:Panel>
+</mx:Application>

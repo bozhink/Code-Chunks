@@ -1,0 +1,7 @@
+<Canvas xmlns="http://schemas.microsoft.com/client/2007" Width="650" Height="500">
+	<Rectangle Width="2000" Height="2000" Fill="#AAFFFFFF" Canvas.Left="0" Canvas.Top="0"/>
+	<TextBlock Canvas.Left="60" Canvas.Top="47" Width="531" Height="107" Text="The Canada Quiz" FontSize="63" FontFamily="Diehl Deco" Tag="/GameCreator/Fonts/Diehld.ttf"/>
+	<TextBlock Canvas.Left="73" Canvas.Top="343" Text="Click to play!" FontSize="38" Foreground="#0000FF" Width="222" Height="65" FontFamily="Verdana" Tag=""/>
+	<TextBlock Canvas.Left="73" Canvas.Top="189" Width="190" Height="34" Text="How to play:" FontSize="20" FontFamily="Verdana" Tag=""/>
+	<TextBlock Canvas.Left="72" Canvas.Top="229" Width="536" Height="101" TextWrapping="Wrap" Text="Press the letter (A, B, C or D) on your keyboard that corresponds with the correct answer" FontSize="20" FontFamily="Verdana" Tag=""/>
+</Canvas>

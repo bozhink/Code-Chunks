@@ -1,0 +1,49 @@
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="40" Height="40">
+	<Path Name="Shadow" Width="38.0001" Height="35.1002" Canvas.Left="-1.2" Canvas.Top="10.5" Stretch="Fill" Data="F1 M 1047.3,540C 1057.79,540 1066.3,547.857 1066.3,557.55C 1066.3,567.243 1057.79,575.1 1047.3,575.1C 1036.81,575.1 1028.3,567.243 1028.3,557.55C 1028.3,547.857 1036.81,540 1047.3,540 Z ">
+		<Path.Fill>
+			<RadialGradientBrush RadiusX="0.499998" RadiusY="0.500002" Center="0.499998,0.500002" GradientOrigin="0.499998,0.500002">
+				<RadialGradientBrush.GradientStops>
+					<GradientStop Color="#AD000000" Offset="0.216102"/>
+					<GradientStop Color="#00000000" Offset="0.902542"/>
+				</RadialGradientBrush.GradientStops>
+				<RadialGradientBrush.RelativeTransform>
+					<TransformGroup/>
+				</RadialGradientBrush.RelativeTransform>
+			</RadialGradientBrush>
+		</Path.Fill>
+	</Path>
+	<Path Name="Path_80" Width="36" Height="36" Canvas.Left="1" Canvas.Top="1" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF0D4201" Data="F1 M 18,0.5C 27.6649,0.5 35.5,8.33508 35.5,18C 35.5,27.665 27.6649,35.5 18,35.5C 8.33496,35.5 0.5,27.665 0.5,18C 0.5,8.33508 8.33508,0.5 18,0.5 Z ">
+		<Path.Fill>
+			<RadialGradientBrush RadiusX="0.805556" RadiusY="0.805556" Center="0.487684,0.180557" GradientOrigin="0.487684,0.180557">
+				<RadialGradientBrush.GradientStops>
+					<GradientStop Color="#FF92FE44" Offset="0.118644"/>
+					<GradientStop Color="#FF74E325" Offset="0.572034"/>
+					<GradientStop Color="#FF428910" Offset="0.860169"/>
+					<GradientStop Color="#FF53AC15" Offset="1"/>
+				</RadialGradientBrush.GradientStops>
+				<RadialGradientBrush.RelativeTransform>
+					<TransformGroup>
+						<RotateTransform CenterX="0.487684" CenterY="0.180557" Angle="90"/>
+					</TransformGroup>
+				</RadialGradientBrush.RelativeTransform>
+			</RadialGradientBrush>
+		</Path.Fill>
+	</Path>
+	<Ellipse Name="Ellipse_81" Width="27.0938" Height="20.5001" Canvas.Left="4.40637" Canvas.Top="1" Stretch="Fill">
+		<Ellipse.Fill>
+			<RadialGradientBrush RadiusX="0.535715" RadiusY="0.535714" Center="0.499995,0.0714258" GradientOrigin="0.499995,0.0714258">
+				<RadialGradientBrush.GradientStops>
+					<GradientStop Color="#C6FFFFFF" Offset="0"/>
+					<GradientStop Color="#00FFFFFF" Offset="1"/>
+				</RadialGradientBrush.GradientStops>
+				<RadialGradientBrush.RelativeTransform>
+					<TransformGroup/>
+				</RadialGradientBrush.RelativeTransform>
+			</RadialGradientBrush>
+		</Ellipse.Fill>
+	</Ellipse>
+	<Path Name="Path_82" Width="8" Height="8" Canvas.Left="22.9999" Canvas.Top="13.9999" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF589E26" Fill="#FF000000" Data="F1 M 26.9999,14.4999C 28.933,14.4999 30.4999,16.0669 30.4999,17.9999C 30.4999,19.9329 28.933,21.4999 26.9999,21.4999C 25.067,21.4999 23.4999,19.9329 23.4999,17.9999C 23.4999,16.0669 25.0669,14.4999 26.9999,14.4999 Z "/>
+	<Path Name="Path_83" Width="8" Height="8" Canvas.Left="4" Canvas.Top="14" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF589E26" Fill="#FF000000" Data="F1 M 8,14.5C 9.93298,14.5 11.5,16.067 11.5,18C 11.5,19.933 9.93298,21.5 8,21.5C 6.06702,21.5 4.5,19.933 4.5,18C 4.5,16.067 6.06702,14.5 8,14.5 Z "/>
+	<Path Name="Path_84" Width="3" Height="3" Canvas.Left="24.5" Canvas.Top="15.4998" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 26,15.4998C 26.8285,15.4998 27.5,16.1713 27.5,16.9998C 27.5,17.8282 26.8284,18.4998 26,18.4998C 25.1716,18.4998 24.5,17.8282 24.5,16.9998C 24.5,16.1713 25.1715,15.4998 26,15.4998 Z "/>
+	<Path Name="Path_85" Width="3" Height="3" Canvas.Left="5.5" Canvas.Top="15.4998" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 7,15.4998C 7.82849,15.4998 8.5,16.1713 8.5,16.9998C 8.5,17.8282 7.82837,18.4998 7,18.4998C 6.17163,18.4998 5.5,17.8282 5.5,16.9998C 5.5,16.1713 6.17151,15.4998 7,15.4998 Z "/>
+</Canvas>

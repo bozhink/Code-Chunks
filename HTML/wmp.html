@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Windows Media Player embed</title>
+		<script>
+			// Samo za test : http://wm.multimedia.bg/bgweb_tv_live1
+			function doFile(){
+				fileName = document.forms.playerPanel.program.value;
+				if (fileName != ""){
+					setProgram(fileName);
+				}
+			}
+			function setProgram(program){
+				document.getElementById("playerObj").FileName = program;
+				document.getElementById("controlPult").innerHTML = program;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="playerPanel">
+			<input type="text" name="program" value="" style="width:400px; border:1px SOLID black;">
+			<input type="button" name="playProgram" value=">" onclick="doFile();" style="background-color:black; color:white; border:1px SOLID black; width:25px;">
+		</form>
+		<OBJECT id="playerObj" width="430" height="320" style="LEFT: 0px; WIDTH1: 400px; TOP: 0px; HEIGHT1: 50px; border:1px SOLID black;" STANDBY="Loading Windows Media Player components..." classid="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95">
+		<param name="AutoStart" value="true">
+		<param name="AutoSize" value="true">
+		<param name="TransparentAtStart" value="false">
+		<param name="showPositionControls" value="true">
+		<param name="showTracker" value="false">
+		<param name="showStatusBar" value="true">
+		<param name="ShowDisplay" value="false">
+		<param name="ShowControls" value="true">
+		<param name="DisplaySize" value="400">
+		<param name="DisplaySize" value="0">
+		<param name="src" value="">
+		<param name="FileName" value="">
+		</OBJECT>
+		<br/>
+		<small>Current file :</small>
+		<div id="controlPult" style="background-color:black; color:white; font-size:9pt; width:430px;">
+			
+		</div>
+	</body>
+</html>

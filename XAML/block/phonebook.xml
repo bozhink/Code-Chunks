@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This block uses developer keys.  For security reasons it cannot be ripped and used in a mashup. -->
+<block xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="http://www.popfly.com/schemas/blockschema.xsd"
+  class="LivePhonebookClass">
+    <providerName>Windows Live Web Search</providerName>
+    <providerUrl>http://search.live.com</providerUrl>
+  <providerLogoUrl>/Content/Components/Icons/windowsLiveFullLogo.png</providerLogoUrl>
+  <blockLogoUrl>/Content/Components/Icons/searchLogo.png</blockLogoUrl>
+  <blockIconUrl>/Content/Components/Icons/searchIcon.png</blockIconUrl>
+  <suggest output="geodisplay"/>
+  <keys>
+    <description />
+    <signUpUrl>http://search.msn.com/developer/createapp.aspx?FORM=PCPM</signUpUrl>
+    <key id="AppID" whenRequired="save">
+      <name>Live Search AppID</name>
+      <notes>You will need to give a name to your application, e.g. Popfly, and accept the terms of use.</notes>
+    </key>
+  </keys>
+  <operations>
+	<operation name="search" callMode="auto">
+	    <description>
+		Get phonebook results from the Windows Live Search engine.
+	    </description>
+	    <inputs>
+		<input name="query" required="true" type="string">
+		    <description>The term to search for</description>
+		    <defaultValue>Microsoft</defaultValue>
+		    <constraints/>
+		</input>
+		<input name="count" required="false" type="nonNegativeInteger">
+		    <description>The number of returned results (&lt;50)</description>
+		    <defaultValue>10</defaultValue>
+		    <constraints/>
+		</input>
+		<input name="longitude" required="true" type="longitude">
+		    <description>Longitude for the location</description>
+		    <defaultValue>-122.0</defaultValue>
+		    <constraints/>
+		</input>
+		<input name="latitude" required="true" type="latitude">
+		    <description>Latitude for the location</description>
+		    <defaultValue>47.0</defaultValue>
+		    <constraints/>
+		</input>
+		<input name="radius" required="false" type="nonNegativeInteger">
+		    <description>Radius for the search area in miles</description>
+		    <defaultValue>50</defaultValue>
+		    <constraints/>
+		</input>
+	    </inputs>
+	    <outputs>
+	    <output isArray="true" type="custom" object="LivePhonebookResults" />
+	    </outputs>
+	</operation>
+	  <operation name="totalNumberOfResults" callMode="auto">
+	      <description>
+		  Get total number of phonebook results from the Windows Live Search engine for a given query.
+	      </description>
+	      <inputs>
+		  <input name="query" required="true" type="string">
+		      <description>The term to search for</description>
+		      <defaultValue>Microsoft</defaultValue>
+		      <constraints/>
+		  </input>
+		  <input name="longitude" required="true" type="longitude">
+		      <description>Longitude for the location</description>
+		      <defaultValue>-122.0</defaultValue>
+		      <constraints/>
+		  </input>
+		  <input name="latitude" required="true" type="latitude">
+		      <description>Latitude for the location</description>
+		      <defaultValue>47.0</defaultValue>
+		      <constraints/>
+		  </input>
+		  <input name="radius" required="false" type="nonNegativeInteger">
+		      <description>Radius for the search area in miles</description>
+		      <defaultValue>50</defaultValue>
+		      <constraints/>
+		  </input>
+	      </inputs>
+	      <outputs>
+		  <output type="nonNegativeInteger" isArray="false" />
+	      </outputs>
+	  </operation>
+    </operations>
+    
+    <objects>
+	    <object name="LivePhonebookResults">
+	        <field name="title" type="title" isArray="false" />
+	        <field name="description" type="description" isArray="false" />
+	        <field name="url" type="url" isArray="false" />
+	        <field name="displayUrl" type="url" isArray="false" />
+	        <field name="addressLine" type="location" isArray="false" />
+	        <field name="city" type="city" isArray="false" />
+	        <field name="state" type="state" isArray="false" />
+	        <field name="postalCode" type="zipCode" isArray="false" />
+	        <field name="country" type="countryOrRegion" isArray="false" />
+	        <field name="phone" type="phoneNumber" isArray="false" />
+	        <field name="latitude" type="latitude" isArray="false" />
+	        <field name="longitude" type="longitude" isArray="false" />
+	    </object>
+    </objects>
+</block>

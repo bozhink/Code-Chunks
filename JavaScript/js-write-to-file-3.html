@@ -1,0 +1,29 @@
+<html>
+<head>
+<script language="javascript">
+//function writeFile(writer) {
+//  function done(evt) {
+//    alert("Write completed.");
+//  }
+//  function error(evt) {
+//    alert("Write failed:" + evt);
+//  }
+//
+//  var bb = new BlobBuilder();
+//  bb.append("Lorem ipsum");
+//  writer.onwrite = done;
+//  writer.onerror = error;
+//  writer.write(bb.getBlob());
+//}
+function fw() {
+var bb = new BlobBuilder();
+bb.append("Lorem ipsum");
+var fileSaver = window.saveAs(bb.getBlob(), "c:\\test_file");
+fileSaver.onwriteend = myOnWriteEnd;
+}
+</script>
+</head>
+<body onLoad="fw();">
+Hello
+</body>
+</html>

@@ -1,0 +1,16 @@
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="100" Height="106">
+	<Path Width="100" Height="106" Stretch="Fill" StrokeThickness="2" StrokeLineJoin="Round" Stroke="#68000000" Data="F1 M 18.1334,66.4996L 87.1334,66.4996C 93.7607,66.4996 99.1334,71.8722 99.1334,78.4996L 99.1334,148.5C 99.1334,155.127 93.7607,160.5 87.1334,160.5L 19.9417,160.5C 15.7417,165.5 9.33333,170.5 0.5,170.5C 6.92782,167.332 9.45052,162.311 10.1927,157.497C 7.70329,155.298 6.13338,152.082 6.13338,148.5L 6.13338,78.4996C 6.13338,71.8722 11.5059,66.4996 18.1334,66.4996 Z ">
+		<Path.Fill>
+			<LinearGradientBrush StartPoint="0.549655,0.0164806" EndPoint="0.549655,0.890694">
+				<LinearGradientBrush.GradientStops>
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#C2DFDFDF" Offset="0.925003"/>
+					<GradientStop Color="#FFFFFFFF" Offset="1"/>
+				</LinearGradientBrush.GradientStops>
+			</LinearGradientBrush>
+		</Path.Fill>
+	</Path>
+	<TextBlock Name="text" Width="79" Height="79" Canvas.Left="14" Canvas.Top="8" FontSize="13" TextWrapping="Wrap">Hello!<LineBreak/>
+<LineBreak/>How are you?<LineBreak/>
+<LineBreak/>What's up?</TextBlock>
+</Canvas>

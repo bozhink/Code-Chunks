@@ -1,0 +1,79 @@
+<html>
+<head>
+<!--
+*******************************************************************************
+*  INFO                                                                       *
+*                                                                             *
+*******************************************************************************
+-->
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+  <title> Put Your Title Here </title>
+  <HTA:application 
+  applicationName="appName" 
+  border="yes" 
+  version="o.1"
+  maximizebutton="yes"
+  showintaskbar="yes"
+  singleinstance="yes"
+  scroll="no" 
+  />
+  <style type="text/css">
+  /* <![CDATA[ */
+  BODY {
+    background-color: rgb(0,0,0);
+    color: white;
+    border: thin white solid;
+    margin: 10px 10px 10px 10px;
+    font: 12px Verdana;  
+  }
+  /* ]]> */
+  </style>
+  <script language="vbscript">
+  function FileExists(FileName)
+    dim objFs
+    set objFs = CreateObject("Scripting.FileSystemObject")
+    FileExists = objFs.FileExists(FileName)
+  end function
+  function FileToString(FileName)
+    const ForReading = 1
+    Dim fso, f
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    Set f = fso.OpenTextFile(FileName, ForReading)
+    FileToString = f.ReadAll
+  end function
+  sub StringToFile(String_, FileName)
+    dim fso, f
+    set fso = CreateObject("Scripting.FileSystemObject")
+    set f = fso.CreateTextFile(FileName, true)
+    f.Write(String_)
+    f.Close
+  end sub
+  
+  sub OpenDoc()
+    dim FileName
+    FileName = fname.Value
+    if FileExists(FileName) then
+      TextAr.Value = FileToString(FileName)
+    end if
+  end sub
+  
+  sub SaveDoc()
+    dim FileName, MyText
+    FileName = fname.Value
+    MyText = TextAr.Value
+    if FileExists(FileName) then
+      MsgBox "WARNING: This file already exists", vbWarning
+    else
+      StringToFile(MyText, FileName)
+    end if
+  end sub
+  </script>
+</head>
+<body >
+File name: <input type="text" name="fname">
+<textarea name="TextAr" cols=88 rows=20></textarea>
+<br>
+<button name="BOpen" onClick="OpenDoc">OPEN</button>
+<button name="BSave" onClick="SaveDoc">SAVE</button>
+</body>
+</HTmL>

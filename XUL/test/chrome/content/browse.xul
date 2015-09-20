@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<window id="e" title="Browser" width="500" height="700"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script language="JavaScript">
+  function goB(){
+    var addr = document.getElementByID("my_address");
+    var browse = document.getElementByID("my_browser");
+    browse.src = addr.value;
+  }
+</script>
+
+<hbox>
+  <toolbarbutton type='menu' label='File'>
+    <menupopup>
+      <menuitem label="New Window" />
+      <menuitem label="New Tab" />
+      <menuitem label="Open Location" />
+      <menuitem label="Open" />
+      <separator class="groove-thin"/>
+      <menuitem label="Save Page As" />
+      <menuitem label="Send Link" />
+      <separator class="groove-thin"/>
+      <menuitem label="Print Preview" />
+      <menuitem label="Print" />
+      <separator class="groove-thin"/>
+      <menuitem label="Import" />
+      <separator class="groove-thin"/>
+      <menuitem label="Work Offline" />
+      <menuitem oncommand='close();' label="Exit" />
+    </menupopup>
+  </toolbarbutton>
+  <toolbarbutton type='menu' label='Edit'>
+    <menupopup>
+      <menuitem label="Undo" />
+      <menuitem label="Redo" />
+      <separator class="groove-thin"/>
+      <menuitem label="Cut" />
+      <menuitem label="Copy" />
+      <menuitem label="Paste" />
+      <menuitem label="Delete" />
+      <separator class="groove-thin"/>
+      <menuitem label="Select All" />
+      <separator class="groove-thin"/>
+      <menuitem label="Find in this page" />
+      <menuitem  label="Find Again" />
+    </menupopup>
+  </toolbarbutton>
+  <toolbarbutton type='menu' label='View'>
+    <menupopup>
+      <menuitem label="Redo" />
+      <separator class="groove-thin"/>
+      <menuitem label="Cut" />
+      <menuitem label="Copy" />
+      <menuitem label="Paste" />
+      <menuitem label="Delete" />
+      <separator class="groove-thin"/>
+      <menuitem label="Select All" />
+      <separator class="groove-thin"/>
+      <menuitem label="Find in this page" />
+      <menuitem  label="Find Again" />
+    </menupopup>
+  </toolbarbutton>
+</hbox>
+
+
+
+
+
+
+
+
+<groupbox flex="1">
+<hbox>
+  <textbox id="my_address" value="http://google.com" oninput="goB();" />
+  <button label="GO" oncommand="goB();" />
+</hbox>
+  <browser id="my_browser" src=" " type="content" flex="1" />
+</groupbox>
+</window>

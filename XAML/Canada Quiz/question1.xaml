@@ -1,0 +1,8 @@
+<Canvas xmlns="http://schemas.microsoft.com/client/2007" Width="650" Height="500">
+	<TextBlock Canvas.Left="80" Canvas.Top="70" Width="100" Height="23" Text="Question 1" FontSize="18"/>
+	<TextBlock Canvas.Left="80" Canvas.Top="120" Width="300" Height="23" Text="What is Canada's national sport?" FontSize="16"/>
+	<TextBlock Canvas.Left="110" Canvas.Top="160" Width="77" Height="23" Text="A) Hockey" FontSize="16"/>
+	<TextBlock Canvas.Left="110" Canvas.Top="200" Width="77" Height="23" Text="B) Curling" FontSize="16"/>
+	<TextBlock Canvas.Left="110" Canvas.Top="240" Width="77" Height="23" Text="C) Lacrosse" FontSize="16"/>
+	<TextBlock Canvas.Left="110" Canvas.Top="280" Width="100" Height="23" Text="D) Moose racing" FontSize="16"/>
+</Canvas>

@@ -1,0 +1,3 @@
+<Canvas xmlns="http://schemas.microsoft.com/client/2007" Width="650" Height="500">
+	<TextBlock FontSize="29" Text="Click to chat!" TextWrapping="Wrap" Canvas.Left="236" Canvas.Top="402" Foreground="#0000FF" Width="215" Height="94"/>
+</Canvas>

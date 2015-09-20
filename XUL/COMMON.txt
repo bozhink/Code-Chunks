@@ -1,0 +1,38 @@
+Stucture of XULRunner application
+
+    + /appname
+    |
+    +-+ /chrome
+    | |
+    | +-+ /content
+    | | |
+    | | + filename.xul
+    | +- chrome.manifest
+    +-+ /defaults
+    | |
+    | +-+ /prefences
+    |   |
+    |   +- prefs.js
+    +-application.ini
+    
+'./appname/application.ini'
+
+    [App]
+    Vendor=
+    Name=Application Name
+    Version=1.0
+    BuildID=20060101
+    Copyright=
+    ID=emai@address
+    
+    [Gecko]
+    MinVersion=1.8
+    MaxVersion=1.9.0.*
+    
+'./appname/chrome/chrome.manifest'
+    
+    content appname file:content/
+    
+'./appname/defaults/preferences/prefs.js'
+
+   pref("toolkit.defaultChromeURI", "chrome://appname/content/filename.xul");

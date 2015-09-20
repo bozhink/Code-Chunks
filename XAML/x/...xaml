@@ -1,0 +1,322 @@
+﻿<Canvas
+	xmlns="http://schemas.microsoft.com/client/2007"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Width="690" Height="325"
+	x:Name="FullPanelWipeIn">
+	
+	<Canvas.Resources>
+		<Storyboard x:Name="Timer" Completed="Next">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="BackgroundImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:07" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="PausePanel" Completed="MovePanel">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" x:Name="PauseAnnimation" Storyboard.TargetName="BackgroundImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.25" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.50" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="MoveMiddle" Completed="PanelMoveEnd">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="105" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightPanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="586" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftPanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="-376" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="480" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.65"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.65"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="MoveRight" Completed="PanelMoveEnd">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="105" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightPanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="210" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftPanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="-376" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.65"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="480" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.65"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="480"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="104" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="MoveLeft" Completed="PanelMoveEnd">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="481" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightPanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="586" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftPanel" Storyboard.TargetProperty="(Canvas.Left)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="0" KeySpline="0,0,1,0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="480"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3500000" Value="104"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightPanel" Storyboard.TargetProperty="(FrameworkElement.Width)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2500000" Value="104"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.3500000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.65"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.65"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="FadeIn">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+					<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddlePanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+					<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.005"/>
+					<SplineDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+				</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+					<SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.005"/>
+					<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="background" Storyboard.TargetProperty="(UIElement.Opacity)">
+					<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.005"/>
+					<SplineDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="LeftSmFadeIn">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="LeftSmFadeOut">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LeftSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value=".5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="MiddleSmFadeIn">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="MiddleSmFadeOut">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MiddleSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value=".5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="RightSmFadeIn">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="RightSmFadeOut">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="RightSMPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value=".5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+  </Canvas.Resources>
+	
+	<Canvas.Triggers>
+		<EventTrigger RoutedEvent="Canvas.Loaded">
+			<BeginStoryboard>
+				<Storyboard x:Name="Pause" Completed="OnLoaded">
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="BackgroundImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+						<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</Canvas.Triggers>
+	
+<Canvas Width="690" Height="325" x:Name="home_container" Canvas.Left="0" Canvas.Top="0" Clip="M0,-5.0821977E-21 L7.0000043,-5.0821977E-21 L500,-5.0821977E-21 L683,-5.0821977E-21 C686.86597,2.3841858E-06 690,3.1340091 690,7.0000042 L690,318 C690,321.866 686.86597,325 683,325 L500,325 L7.0000043,325 L0,325 L0,318 L0,7.0000042 z">
+	<Image Width="690" Height="325" Stretch="Fill" x:Name="BackgroundImage" Canvas.Left="0" Canvas.Top="0" Loaded="LoadBg"/>
+
+	<Rectangle Width="700" Height="325" Fill="#FFCDD9E0" x:Name="background" Visibility="Visible" Opacity="0" RadiusX="5" RadiusY="5" Canvas.Left="-10"/>
+  
+	<Canvas Width="104" Height="325" Canvas.Left="481" x:Name="MiddlePanel" RenderTransformOrigin="0.5,0.5" Canvas.ZIndex="0" Opacity="0" Background="#FFEAF4F9">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+
+		<Canvas x:Name="MiddleSMPanel" MouseEnter="PanelOver" MouseLeftButtonDown="PanelDown" Width="105" Height="325" Canvas.Left="1" Opacity="0.65" Background="#00FFFFFF" Cursor="Hand">
+
+			<Image Width="63" Height="63" Stretch="Fill" x:Name="MiddleImage_SM" Cursor="Hand" Opacity="1" Canvas.Left="21" Canvas.Top="25" />
+
+			<TextBlock Width="221" Height="24" TextWrapping="NoWrap" FontSize="20" RenderTransformOrigin="0.5,0.5" x:Name="Middle_Title" Canvas.Left="-45" Canvas.Top="194">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="90"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+
+			<TextBlock Width="221" Height="24" TextWrapping="NoWrap" FontSize="14" RenderTransformOrigin="0.5,0.5" x:Name="Middle_SubTitle" Canvas.Top="195" Canvas.Left="-70">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="90"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+
+		</Canvas>
+
+		<Image Width="480" Height="325" Stretch="Fill" x:Name="MiddleImage" Canvas.Left="0" Canvas.Top="0" Cursor="Hand" Opacity="0" Visibility="Collapsed" />
+
+	</Canvas>
+  
+	<Canvas x:Name="LeftPanel" Width="480" Height="325" Canvas.Left="0" Canvas.Top="0" RenderTransformOrigin="0.5,0.5" Opacity="0" Background="#FFEAF4F9">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+
+		<Canvas Opacity="0" x:Name="LeftSMPanel" MouseEnter="PanelOver" MouseLeftButtonDown="PanelDown" Cursor="Hand" Width="104" Height="325" Canvas.Left="375" Canvas.Top="0" Background="#00FFFFFF" Visibility="Collapsed">
+
+			<Image Width="63" Height="63" Stretch="Fill" x:Name="LeftImage_SM" Opacity="1" Canvas.Left="21" Canvas.Top="25"/>
+
+			<TextBlock Width="221" Height="24" TextWrapping="NoWrap" FontSize="20" RenderTransformOrigin="0.5,0.5" x:Name="Left_Title" Canvas.Left="-45" Canvas.Top="194">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="90"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+
+			<TextBlock Width="221" Height="24" TextWrapping="NoWrap" FontSize="14" RenderTransformOrigin="0.5,0.5" x:Name="Left_SubTitle" Canvas.Left="-70" Canvas.Top="195">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="90"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+
+		</Canvas>
+
+		<Image Width="480" Height="325" Stretch="Fill" x:Name="LeftImage" Cursor="Hand" Opacity="1" Canvas.Left="0" Visibility="Visible"/>
+
+	</Canvas>
+	
+	<Canvas Width="104" Height="325" x:Name="RightPanel" Canvas.Left="586" RenderTransformOrigin="0.5,0.5" Opacity="0" Background="#FFEAF4F9">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+
+		<Canvas Opacity="0.65" x:Name="RightSMPanel" MouseEnter="PanelOver" MouseLeftButtonDown="PanelDown" Width="104" Height="325" Canvas.Left="1" Canvas.Top="0" Cursor="Hand" Background="#00FFFFFF">
+
+			<Image Width="63" Height="63" Stretch="Fill" x:Name="RightImage_SM" Cursor="Hand" Opacity="1" Canvas.Left="21" Canvas.Top="25"/>
+
+			<TextBlock Width="221" Height="24" TextWrapping="NoWrap" FontSize="20" RenderTransformOrigin="0.5,0.5" x:Name="Right_Title" Canvas.Left="-45" Canvas.Top="194">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="90"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+
+			<TextBlock Width="221" Height="24" TextWrapping="NoWrap" FontSize="14" RenderTransformOrigin="0.5,0.5" x:Name="Right_SubTitle" Canvas.Left="-70" Canvas.Top="195">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="90"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+
+		</Canvas>
+
+		<Image Width="480" Height="325" Stretch="Fill" Canvas.Left="0" Canvas.Top="0" x:Name="RightImage" Cursor="Hand" Opacity="0" Visibility="Collapsed"/>
+
+	</Canvas>
+	</Canvas>
+
+</Canvas>

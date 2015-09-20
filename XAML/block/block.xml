@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<block xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://www.popfly.com/schemas/blockschema.xsd"
+       class="ImageSlideShowClass"
+       hasInitialize="true"
+       type="display">
+	<suggest input="Live Image Search"/>
+	<operations>
+		<operation name="addImage">
+			<description>Add an image to the slideshow</description>
+			<inputs>
+				<input name="title" required="true" type="title">
+					<description>Title of the image</description>
+					<defaultValue>Popfly Friends</defaultValue>
+				</input>
+				<input name="name" required="false" type="userName">
+					<description>Owner of the image</description>
+					<defaultValue>Popfly</defaultValue>
+				</input>
+				<input name="url" required="true" type="imageUrl">
+					<description>A URL pointing to an image</description>
+					<defaultValue>http://www.popfly.com/Images/community_globe.jpg</defaultValue>
+				</input>
+			</inputs>
+		</operation>
+	</operations>
+
+</block>

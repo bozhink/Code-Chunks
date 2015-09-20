@@ -1,0 +1,5 @@
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="650" Height="500">
+	<Rectangle Width="2000" Height="2000" Fill="#AAFFF321" Canvas.Left="0" Canvas.Top="0"/>
+	<TextBlock FontSize="60" Text="How to Play" TextWrapping="Wrap" Canvas.Left="25" Canvas.Top="5"/>
+	<TextBlock FontSize="29" Text="Talk to other people on the beach by walking up to them.  Try to find your friend!" TextWrapping="Wrap" Canvas.Left="25" Canvas.Top="120" Width="341" Height="214"/>
+</Canvas>

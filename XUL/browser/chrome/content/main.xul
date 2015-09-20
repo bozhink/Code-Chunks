@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="rootWnd" title="Browser" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<vbox>
+  <hbox>
+    <textbox id="urlStart" />
+<!--    <button id="goButton" label="GO"
+     oncommand="loadURL(document.getElementById('browserTab1'),document.getElementById('urlStart'))" />-->
+  </hbox>
+  <tabbox id="tabBrowser">
+    <tabs>
+      <tab label="Tab1"/>
+      <tab label="Tab2"/>
+      <tab label="Tab3"/>
+    </tabs>
+    <tabpanels width="500" height="500">
+      <browser id="browserTab1" />
+      <browser id="browserTab2"/>
+      <browser id="browserTab3"/>
+    </tabpanels>
+  </tabbox>
+  <hbox>
+    <button id="btnLoadBrowserContent" label="Load URL" tooltiptext="Load Mozilla web-site"
+     oncommand="loadURL(document.getElementById('browserTab2'),'http://developer.mozilla.org')"/>
+  </hbox>
+</vbox>
+
+
+</window>

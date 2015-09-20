@@ -1,0 +1,6 @@
+<Canvas xmlns="http://schemas.microsoft.com/client/2007" Width="650" Height="500">
+	<Rectangle Width="2000" Height="2000" Fill="#AAFFFFFF"/>
+	<TextBlock Canvas.Left="103" Canvas.Top="76" Width="454" Height="99" Text="Sorry, you lost. " FontSize="61" FontFamily="Diehl Deco" Tag="/GameCreator/Fonts/Diehld.ttf"/>
+	<TextBlock Canvas.Left="191" Canvas.Top="364" Text="Click to play again!" FontSize="29" Foreground="#0000FF"/>
+	<TextBlock FontSize="40" Text="Your score:" TextWrapping="Wrap" Canvas.Left="163" Canvas.Top="179" Width="247" Height="61"/>
+</Canvas>

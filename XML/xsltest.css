@@ -1,0 +1,12 @@
+body {font-family: Courier New,sans-serif;}
+table {
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:20pt;
+  background-color: #123456;
+  width:500px;
+  }
+tr {font-size: 14pt;height:50pt;}
+th {font-family:Verdana;font-size: 26pt; text-decoration: underline;}
+
+.colored{color:#DDCCAA;}

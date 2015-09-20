@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xsltest.xsl"?>
+<document>
+  <content>
+    <title>First</title>
+    <value>HWN\1\08</value>
+    <text>Hello World News</text>
+  </content>
+  <content>
+    <title>Second</title>
+    <value>HWN\2\08</value>
+    <text>Hello World News</text>
+  </content>
+  <content>
+    <title>Third</title>
+    <value>HWN\3\08</value>
+    <text>Hello World News</text>
+  </content>
+  <content>
+    <title>Fourth</title>
+    <value>HWN\4\08</value>
+    <text>Hello World News</text>
+  </content>
+  <content>
+    <title>Fifth</title>
+    <value>HWN\5\08</value>
+    <text>Hello World News</text>
+  </content>
+  <content>
+    <title>Sixth</title>
+    <value>HWN\6\08</value>
+    <text>Hello World News</text>
+  </content>
+  <content>
+    <title>Seventh</title>
+    <value>HWN\7\08</value>
+    <text>Hello World News</text>
+  </content>
+</document>
