@@ -1,0 +1,9 @@
+sieve.for: *ERR* SV-02 in FMAIN, adjustable/assumed size array DUNCTIONFWINMAIN must be a dummy argument
+sieve.for: *WRN* VA-07 in FMAIN, LPSZCMDLINE has been used but not defined
+sieve.for: *ERR* SV-01 in FMAIN, variable LPSZCMDLINE in array declarator must be in COMMON or a dummy argument
+sieve.for: *WRN* VA-07 in FMAIN, NCMDSHOW has been used but not defined
+sieve.for: *ERR* SV-01 in FMAIN, variable NCMDSHOW in array declarator must be in COMMON or a dummy argument
+sieve.for: *WRN* VA-07 in FMAIN, HPREVINSTANCE has been used but not defined
+sieve.for: *ERR* SV-01 in FMAIN, variable HPREVINSTANCE in array declarator must be in COMMON or a dummy argument
+sieve.for: *WRN* VA-07 in FMAIN, HINSTANCE has been used but not defined
+sieve.for: *ERR* SV-01 in FMAIN, variable HINSTANCE in array declarator must be in COMMON or a dummy argument

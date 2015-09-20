@@ -1,0 +1,43 @@
+% file mustermax.exi, 2001-05-31
+
+load_package excalc$
+
+pform psi=0$
+fdomain psi=psi(r)$
+%coframe defined
+coframe o(0)=psi * d t, o(1)=(1/psi)*d r,
+        o(2)=r*d theta, o(3)=r*sin(theta)*d phi
+        with signature (1,-1,-1,-1)$
+frame e$
+
+psi:=1;
+
+%start Maxwell proper
+
+pform {aa0,aa1,aa2,aa3}=0, pot1=1, {farad2,excit2}=2, {maxhom3,maxinh3}=3$
+
+fdomain aa0=aa0(t,r,theta,phi),
+        aa1=aa1(t,r,theta,phi),
+        aa2=aa2(t,r,theta,phi),
+        aa3=aa3(t,r,theta,phi)$
+
+pot1 := aa0*o(0)+aa1*o(1)+aa2*o(2)+aa3*o(3);
+
+farad2 := d pot1;
+
+maxhom3 := d farad2;
+
+excit2 := lam * # farad2; %spacetime relations
+
+maxinh3 := d excit2;
+
+% Maxwell Lagrangian and energy-momentum current
+
+pform lmax4=4, maxenergy3(a)=3$
+
+lmax4 := -(1/2)*farad2^excit2;
+
+maxenergy3(-a) := e(-a) _| lmax4 + (e(-a) _| farad2);
+
+end;
+
