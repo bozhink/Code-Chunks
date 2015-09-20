@@ -1,0 +1,327 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{a,b,c,d,m,n,p,q,i,j,k,l}::Indices(vector):
+{a,b,c,d,m,n,p,q}::Integer(0..3):
+{i,j,k,l}::Integer{1..3}.
+\dbeta{#}::LaTeXForm("\dot{\beta}").
+\dalpha{#}::LaTeXForm("\dot{\alpha}").
+\dgamma{#}::LaTeXForm("\dot{\gamma}").
+{\alpha,\beta,\gamma,\lambda,\dalpha,\dbeta,\dgamma}::Indices(spinor):
+{\alpha,\beta,\gamma}::AntiCommuting.
+{\dalpha,\dbeta,\dgamma}::AntiCommuting.
+\dot::Accent:
+\delta::KroneckerDelta:
+\eta_{n m}::Metric(signature=-1).
+\eta^{n m}::InverseMetric.
+\epsilon_{m n a b}::EpsilonTensor(delta=\delta, metric=\eta).
+\eps{#}::LaTeXForm("\varepsilon").
+\eps_{i j k}::EpsilonTensor(delta=\delta, metric=\delta).
+{\chi, \psi}::Spinor(dimension=4, type=Dirac).
+{\chi, \psi}::AntiCommuting.
+\bar{#}::DiracBar.
+\hsigma{#}::LaTeXForm("\hat{\sigma}").
+{P_{m}, \chi}::NonCommuting.
+{P_{m},\psi}::NonCommuting.
+C^{\lambda \beta}::AntiSymmetric.
+{\sigma, \hsigma}::NonCommuting.
+{i,P_{m},C^{\lambda \beta}}::SortOrder.
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{a,\; b,\; c,\; d,\; m,\; n,\; p,\; q,\; i,\; j,\; k,\; l\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Integer to $a$, $b$, $c$, $d$, $m$, $n$, $p$, $q$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Integer to $i$, $j$, $k$, $l$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\dot{\beta}(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\dot{\alpha}(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\dot{\gamma}(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property Indices to $\{\alpha,\; \beta,\; \gamma,\; \lambda,\; \dot{\alpha},\; \dot{\beta},\; \dot{\gamma}\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property AntiCommuting to $\{\alpha,\; \beta,\; \gamma\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property AntiCommuting to $\{\dot{\alpha},\; \dot{\beta},\; \dot{\gamma}\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Accent to $\dot$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property KroneckerDelta to $\delta$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Metric to ${\eta}_{n m}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property InverseMetric to ${\eta}^{n m}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property EpsilonTensor to ${\epsilon}_{m n a b}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\varepsilon(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property EpsilonTensor to ${\varepsilon}_{i j k}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Spinor to $\chi$, $\psi$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property AntiCommuting to $\{\chi,\; \psi\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property DiracBar to $\bar{\#}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\hat{\sigma}(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property NonCommuting to $\{{P}_{m},\; \chi\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property NonCommuting to $\{{P}_{m},\; \psi\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property AntiSymmetric to ${C}^{\lambda \beta}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property NonCommuting to $\{\sigma,\; \hat{\sigma}\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property SortOrder to $\{i,\; {P}_{m},\; {C}^{\lambda \beta}\}$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+\eta_{a n} A^{n p};
+@eliminate_metric!(%);
+\end{verbatim}}
+% orig
+% \eta_{a n} A^{n p}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+6\specialcolon{}= {\eta}_{a n} {A}^{n p};
+\end{dmath*}
+% orig
+% A_{a}^{p}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+6\specialcolon{}= {A}_{a}\,^{p};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+\eps_{i j k}\eps^{l j k};
+@epsprod2gendelta!(%);
+\end{verbatim}}
+% orig
+% \eps_{i j k} \eps^{l j k}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+7\specialcolon{}= {\varepsilon}_{i j k} {\varepsilon}^{l j k};
+\end{dmath*}
+% orig
+% 6 \delta_{i}^{l}_{j}^{j}_{k}^{k}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+7\specialcolon{}= 6\, {\delta}_{i}\,^{l}\,_{j}\,^{j}\,_{k}\,^{k};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+dirac1:=P_{m} \sigma^{m}_{\alpha \dalpha}\chi^{\dalpha}_{\lambda}-M \psi_{\alpha \lambda};
+dirac2:=P_{m} \hsigma^{m}^{\dalpha \alpha}\psi_{\alpha}_{\lambda}-M \chi^{\dalpha}_{ \lambda};
+\end{verbatim}}
+% orig
+% P_{m} \sigma^{m}_{\alpha \dalpha} \chi^{\dalpha}_{\lambda} - M \psi_{\alpha \lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+dirac1\specialcolon{}= {P}_{m} {\sigma}^{m}\,_{\alpha \dot{\alpha}} {\chi}^{\dot{\alpha}}\,_{\lambda} - M {\psi}_{\alpha \lambda};
+\end{dmath*}
+% orig
+% P_{m} \hsigma^{m \dalpha \alpha} \psi_{\alpha \lambda} - M \chi^{\dalpha}_{\lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+dirac2\specialcolon{}= {P}_{m} {\hat{\sigma}}^{m \dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - M {\chi}^{\dot{\alpha}}\,_{\lambda};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+x1:=C^{\lambda \beta} \sigma^{n}_{\beta \dalpha} @(dirac2);
+@distribute!(%);
+@substitute!(%)(C^{\lambda \beta}\sigma^{n}_{\beta \dalpha} M \chi^{\dalpha}_{\lambda} -> M A^{n});
+@substitute!(%)(C^{\lambda \beta}\sigma^{n}_{\dbeta \alpha}P_{m} -> 
+              P_{m} C^{\lambda \beta} \sigma^{n}_{\dbeta \alpha});
+@substitute!(%)(\sigma^{n}_{\beta \dalpha} \hsigma^{m}^{\dalpha \alpha} -> 
+   \eta^{n m} \delta_{\beta}^{\alpha} 
+   - (i/2) \epsilon^{n m a b}\sigma_{a}_{\beta \dalpha} \hsigma_{b}^{\dalpha \alpha});
+@distribute!(%);
+x2:=@eliminate_metric!(%);
+\end{verbatim}}
+% orig
+% C^{\lambda \beta} \sigma^{n}_{\beta \dalpha} (P_{m} \hsigma^{m \dalpha \alpha} \psi_{\alpha \lambda} - M \chi^{\dalpha}_{\lambda})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {C}^{\lambda \beta} {\sigma}^{n}\,_{\beta \dot{\alpha}} ({P}_{m} {\hat{\sigma}}^{m \dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - M {\chi}^{\dot{\alpha}}\,_{\lambda});
+\end{dmath*}
+% orig
+% C^{\lambda \beta} \sigma^{n}_{\beta \dalpha} P_{m} \hsigma^{m \dalpha \alpha} \psi_{\alpha \lambda} - C^{\lambda \beta} \sigma^{n}_{\beta \dalpha} M \chi^{\dalpha}_{\lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {C}^{\lambda \beta} {\sigma}^{n}\,_{\beta \dot{\alpha}} {P}_{m} {\hat{\sigma}}^{m \dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - {C}^{\lambda \beta} {\sigma}^{n}\,_{\beta \dot{\alpha}} M {\chi}^{\dot{\alpha}}\,_{\lambda};
+\end{dmath*}
+% orig
+% C^{\lambda \beta} \sigma^{n}_{\beta \dalpha} P_{m} \hsigma^{m \dalpha \alpha} \psi_{\alpha \lambda} - M A^{n}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {C}^{\lambda \beta} {\sigma}^{n}\,_{\beta \dot{\alpha}} {P}_{m} {\hat{\sigma}}^{m \dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - M {A}^{n};
+\end{dmath*}
+% orig
+% P_{m} C^{\lambda \beta} \sigma^{n}_{\beta \dalpha} \hsigma^{m \dalpha \alpha} \psi_{\alpha \lambda} - M A^{n}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {P}_{m} {C}^{\lambda \beta} {\sigma}^{n}\,_{\beta \dot{\alpha}} {\hat{\sigma}}^{m \dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - M {A}^{n};
+\end{dmath*}
+% orig
+% P_{m} C^{\lambda \beta} (\eta^{n m} \delta_{\beta}^{\alpha} - 1/2 i \epsilon^{n m a b} \sigma_{a \beta \dalpha} \hsigma_{b}^{\dalpha \alpha}) \psi_{\alpha \lambda} - M A^{n}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {P}_{m} {C}^{\lambda \beta} ({\eta}^{n m} {\delta}_{\beta}\,^{\alpha} - \frac{1}{2}\, i {\epsilon}^{n m a b} {\sigma}_{a \beta \dot{\alpha}} {\hat{\sigma}}_{b}\,^{\dot{\alpha} \alpha}) {\psi}_{\alpha \lambda} - M {A}^{n};
+\end{dmath*}
+% orig
+% P_{m} C^{\lambda \beta} \eta^{n m} \delta_{\beta}^{\alpha} \psi_{\alpha \lambda} - 1/2 P_{m} C^{\lambda \beta} i \epsilon^{n m a b} \sigma_{a \beta \dalpha} \hsigma_{b}^{\dalpha \alpha} \psi_{\alpha \lambda} - M A^{n}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {P}_{m} {C}^{\lambda \beta} {\eta}^{n m} {\delta}_{\beta}\,^{\alpha} {\psi}_{\alpha \lambda} - \frac{1}{2}\, {P}_{m} {C}^{\lambda \beta} i {\epsilon}^{n m a b} {\sigma}_{a \beta \dot{\alpha}} {\hat{\sigma}}_{b}\,^{\dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - M {A}^{n};
+\end{dmath*}
+% orig
+% P^{n} C^{\lambda \beta} \delta_{\beta}^{\alpha} \psi_{\alpha \lambda} - 1/2 P_{m} C^{\lambda \beta} i \epsilon^{n m a b} \sigma_{a \beta \dalpha} \hsigma_{b}^{\dalpha \alpha} \psi_{\alpha \lambda} - M A^{n}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+x1\specialcolon{}= {P}^{n} {C}^{\lambda \beta} {\delta}_{\beta}\,^{\alpha} {\psi}_{\alpha \lambda} - \frac{1}{2}\, {P}_{m} {C}^{\lambda \beta} i {\epsilon}^{n m a b} {\sigma}_{a \beta \dot{\alpha}} {\hat{\sigma}}_{b}\,^{\dot{\alpha} \alpha} {\psi}_{\alpha \lambda} - M {A}^{n};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+fnm:=(-1/2) C^{\lambda \beta}\epsilon^{n m a b}\sigma_{a}_{\beta \dalpha} \hsigma_{b}^{\dalpha \alpha};
+\end{verbatim}}
+% orig
+% (-1/2) C^{\lambda \beta} \epsilon^{n m a b} \sigma_{a \beta \dalpha} \hsigma_{b}^{\dalpha \alpha}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+fnm\specialcolon{}= (\frac{-1}{2})\, {C}^{\lambda \beta} {\epsilon}^{n m a b} {\sigma}_{a \beta \dot{\alpha}} {\hat{\sigma}}_{b}\,^{\dot{\alpha} \alpha};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@(fnm)*@(dirac1): @distribute!(%);
+@substitute!(%)(\epsilon^{n m a b} -> \epsilon_{n m a b},
+  \sigma_{a}_{\beta \dalpha} -> \sigma^{a}_{\beta \dalpha},
+  \hsigma_{b}^{\dalpha \alpha} -> \hsigma^{b}^{\dalpha \alpha});
+\end{verbatim}}
+% orig
+%  - 1/2 C^{\lambda \beta} \epsilon^{n m a b} \sigma_{a \beta \dalpha} \hsigma_{b}^{\dalpha \alpha} P_{c} \sigma^{c}_{\alpha \gamma} \chi^{\gamma}_{\lambda} + 1/2 C^{\lambda \beta} \epsilon^{n m a b} \sigma_{a \beta \dalpha} \hsigma_{b}^{\dalpha \alpha} M \psi_{\alpha \lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+12\specialcolon{}=  - \frac{1}{2}\, {C}^{\lambda \beta} {\epsilon}^{n m a b} {\sigma}_{a \beta \dot{\alpha}} {\hat{\sigma}}_{b}\,^{\dot{\alpha} \alpha} {P}_{c} {\sigma}^{c}\,_{\alpha \gamma} {\chi}^{\gamma}\,_{\lambda} + \frac{1}{2}\, {C}^{\lambda \beta} {\epsilon}^{n m a b} {\sigma}_{a \beta \dot{\alpha}} {\hat{\sigma}}_{b}\,^{\dot{\alpha} \alpha} M {\psi}_{\alpha \lambda};
+\end{dmath*}
+% orig
+%  - 1/2 C^{\lambda \beta} \epsilon_{n m a b} \sigma^{a}_{\beta \dalpha} \hsigma^{b \dalpha \alpha} P_{c} \sigma^{c}_{\alpha \gamma} \chi^{\gamma}_{\lambda} + 1/2 C^{\lambda \beta} \epsilon_{n m a b} \sigma^{a}_{\beta \dalpha} \hsigma^{b \dalpha \alpha} M \psi_{\alpha \lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+12\specialcolon{}=  - \frac{1}{2}\, {C}^{\lambda \beta} {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\alpha}} {\hat{\sigma}}^{b \dot{\alpha} \alpha} {P}_{c} {\sigma}^{c}\,_{\alpha \gamma} {\chi}^{\gamma}\,_{\lambda} + \frac{1}{2}\, {C}^{\lambda \beta} {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\alpha}} {\hat{\sigma}}^{b \dot{\alpha} \alpha} M {\psi}_{\alpha \lambda};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+-(1/2) P_{c} C^{\lambda \beta} \epsilon_{n m a b} \sigma^{a}_{\beta \dalpha}
+\hsigma^{b}^{\dalpha \alpha}\sigma^{c}_{\alpha \dbeta}\chi^{\dbeta}_{\lambda};
+\end{verbatim}}
+% orig
+% (-1/2) P_{c} C^{\lambda \beta} \epsilon_{n m a b} \sigma^{a}_{\beta \dalpha} \hsigma^{b \dalpha \alpha} \sigma^{c}_{\alpha \dbeta} \chi^{\dbeta}_{\lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+15\specialcolon{}= (\frac{-1}{2})\, {P}_{c} {C}^{\lambda \beta} {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\alpha}} {\hat{\sigma}}^{b \dot{\alpha} \alpha} {\sigma}^{c}\,_{\alpha \dot{\beta}} {\chi}^{\dot{\beta}}\,_{\lambda};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+\epsilon_{n m a b} \sigma^{a}_{\beta \dbeta}\hsigma^{b}^{\dbeta \alpha} \sigma^{c}_{\alpha \dalpha};
+@substitute!(%)(\hsigma^{b}^{\dbeta \alpha} \sigma^{c}_{\alpha \dalpha} -> 
+\eta^{b c}\delta^{\dbeta}_{\dalpha} 
++ (i/2)\epsilon^{b c m n} \hsigma_{m}^{\dbeta \alpha} \sigma_{n}_{\alpha \dalpha});
+@distribute!(%);
+@eliminate_metric!(%);
+@epsprod2gendelta!(%);
+@reduce_gendelta!(%);
+\end{verbatim}}
+% orig
+% \epsilon_{n m a b} \sigma^{a}_{\beta \dbeta} \hsigma^{b \dbeta \alpha} \sigma^{c}_{\alpha \dalpha}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+30\specialcolon{}= {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\beta}} {\hat{\sigma}}^{b \dot{\beta} \alpha} {\sigma}^{c}\,_{\alpha \dot{\alpha}};
+\end{dmath*}
+% orig
+% \epsilon_{n m a b} \sigma^{a}_{\beta \dbeta} (\eta^{b c} \delta^{\dbeta}_{\dalpha} + 1/2 i \epsilon^{b c d p} \hsigma_{d}^{\dbeta \alpha} \sigma_{p \alpha \dalpha})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+30\specialcolon{}= {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\beta}} ({\eta}^{b c} {\delta}^{\dot{\beta}}\,_{\dot{\alpha}} + \frac{1}{2}\, i {\epsilon}^{b c d p} {\hat{\sigma}}_{d}\,^{\dot{\beta} \alpha} {\sigma}_{p \alpha \dot{\alpha}});
+\end{dmath*}
+% orig
+% \epsilon_{n m a b} \sigma^{a}_{\beta \dbeta} \eta^{b c} \delta^{\dbeta}_{\dalpha} + 1/2 \epsilon_{n m a b} \sigma^{a}_{\beta \dbeta} i \epsilon^{b c d p} \hsigma_{d}^{\dbeta \alpha} \sigma_{p \alpha \dalpha}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+30\specialcolon{}= {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\beta}} {\eta}^{b c} {\delta}^{\dot{\beta}}\,_{\dot{\alpha}} + \frac{1}{2}\, {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\beta}} i {\epsilon}^{b c d p} {\hat{\sigma}}_{d}\,^{\dot{\beta} \alpha} {\sigma}_{p \alpha \dot{\alpha}};
+\end{dmath*}
+% orig
+% \epsilon_{n m a}^{c} \sigma^{a}_{\beta \dbeta} \delta^{\dbeta}_{\dalpha} + 1/2 \epsilon_{n m a b} \sigma^{a}_{\beta \dbeta} i \epsilon^{b c d p} \hsigma_{d}^{\dbeta \alpha} \sigma_{p \alpha \dalpha}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+30\specialcolon{}= {\epsilon}_{n m a}\,^{c} {\sigma}^{a}\,_{\beta \dot{\beta}} {\delta}^{\dot{\beta}}\,_{\dot{\alpha}} + \frac{1}{2}\, {\epsilon}_{n m a b} {\sigma}^{a}\,_{\beta \dot{\beta}} i {\epsilon}^{b c d p} {\hat{\sigma}}_{d}\,^{\dot{\beta} \alpha} {\sigma}_{p \alpha \dot{\alpha}};
+\end{dmath*}
+% orig
+% \epsilon_{n m a}^{c} \sigma^{a}_{\beta \dbeta} \delta^{\dbeta}_{\dalpha} + 12 \sigma^{a}_{\beta \dbeta} i \delta_{n}^{b}_{m}^{c}_{a}^{d}_{b}^{p} \hsigma_{d}^{\dbeta \alpha} \sigma_{p \alpha \dalpha}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+30\specialcolon{}= {\epsilon}_{n m a}\,^{c} {\sigma}^{a}\,_{\beta \dot{\beta}} {\delta}^{\dot{\beta}}\,_{\dot{\alpha}} + 12\, {\sigma}^{a}\,_{\beta \dot{\beta}} i {\delta}_{n}\,^{b}\,_{m}\,^{c}\,_{a}\,^{d}\,_{b}\,^{p} {\hat{\sigma}}_{d}\,^{\dot{\beta} \alpha} {\sigma}_{p \alpha \dot{\alpha}};
+\end{dmath*}
+% Begin TeX comment
+@reduce\_gendelta: not applicable.
+% End TeX comment
+% orig
+% \epsilon_{n m a}^{c} \sigma^{a}_{\beta \dbeta} \delta^{\dbeta}_{\dalpha} + 12 \sigma^{a}_{\beta \dbeta} i \delta_{n}^{b}_{m}^{c}_{a}^{d}_{b}^{p} \hsigma_{d}^{\dbeta \alpha} \sigma_{p \alpha \dalpha}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+30\specialcolon{}= {\epsilon}_{n m a}\,^{c} {\sigma}^{a}\,_{\beta \dot{\beta}} {\delta}^{\dot{\beta}}\,_{\dot{\alpha}} + 12\, {\sigma}^{a}\,_{\beta \dot{\beta}} i {\delta}_{n}\,^{b}\,_{m}\,^{c}\,_{a}\,^{d}\,_{b}\,^{p} {\hat{\sigma}}_{d}\,^{\dot{\beta} \alpha} {\sigma}_{p \alpha \dot{\alpha}};
+\end{dmath*}
+\end{document}

@@ -1,0 +1,141 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{i,j,m,n,k,p,q,l,r,r#}::Indices(vector);
+C_{m n p q}::WeylTensor;
+\nabla{#}::Derivative;
+\nabla_{r}{C_{m n p q}}::SatisfiesBianchi;
+Eij:=-C_{i m k l} C_{j p k q} C_{l p m q}
++1/4 C_{i m k l} C_{j m p q} C_{k l p q}
+-1/2 C_{i k j l} C_{k m p q} C_{l m p q};
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{i,\; j,\; m,\; n,\; k,\; p,\; q,\; l,\; r,\; r\#\}$.
+\\
+% End TeX comment
+% orig
+% \{i, j, m, n, k, p, q, l, r, r#\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+9\specialcolon{}= \{i,\; j,\; m,\; n,\; k,\; p,\; q,\; l,\; r,\; r\#\};
+\end{dmath*}
+% Begin TeX comment
+Assigning property WeylTensor to ${C}_{m n p q}$.
+\\
+% End TeX comment
+% orig
+% C_{m n p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+10\specialcolon{}= {C}_{m n p q};
+\end{dmath*}
+% Begin TeX comment
+Assigning property Derivative to $\nabla{\#}\, $.
+\\
+% End TeX comment
+% orig
+% \nabla{#}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+11\specialcolon{}= \nabla{\#}\, ;
+\end{dmath*}
+% Begin TeX comment
+Assigning property SatisfiesBianchi to ${\nabla}_{r}{{C}_{m n p q}}\, $.
+\\
+% End TeX comment
+% orig
+% \nabla_{r}{C_{m n p q}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+12\specialcolon{}= {\nabla}_{r}{{C}_{m n p q}}\, ;
+\end{dmath*}
+% orig
+%  - C_{i m k l} C_{j p k q} C_{l p m q} + 1/4 C_{i m k l} C_{j m p q} C_{k l p q} - 1/2 C_{i k j l} C_{k m p q} C_{l m p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Eij\specialcolon{}=  - {C}_{i m k l} {C}_{j p k q} {C}_{l p m q} + \frac{1}{4}\, {C}_{i m k l} {C}_{j m p q} {C}_{k l p q} - \frac{1}{2}\, {C}_{i k j l} {C}_{k m p q} {C}_{l m p q};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+E:=C_{j m n k} C_{m p q n} C_{p j k q}
++1/2 C_{j  k m n } C_{p q m n} C_{j k p q};
+exp:=\nabla_{i}{\nabla_{j}{@(Eij)}} - 1/6 \nabla_{i} {\nabla_{i} {@(E)}};
+\end{verbatim}}
+% orig
+% C_{j m n k} C_{m p q n} C_{p j k q} + 1/2 C_{j k m n} C_{p q m n} C_{j k p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+E\specialcolon{}= {C}_{j m n k} {C}_{m p q n} {C}_{p j k q} + \frac{1}{2}\, {C}_{j k m n} {C}_{p q m n} {C}_{j k p q};
+\end{dmath*}
+% orig
+% \nabla_{i}{\nabla_{j}{( - C_{i m k l} C_{j p k q} C_{l p m q} + 1/4 C_{i m k l} C_{j m p q} C_{k l p q} - 1/2 C_{i k j l} C_{k m p q} C_{l m p q})}} - 1/6 \nabla_{i} \nabla_{i} (C_{j m n k} C_{m p q n} C_{p j k q} + 1/2 C_{j k m n} C_{p q m n} C_{j k p q})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}= {\nabla}_{i}{{\nabla}_{j}{( - {C}_{i m k l} {C}_{j p k q} {C}_{l p m q} + \frac{1}{4}\, {C}_{i m k l} {C}_{j m p q} {C}_{k l p q} - \frac{1}{2}\, {C}_{i k j l} {C}_{k m p q} {C}_{l m p q})}\, }\,  - \frac{1}{6}\, {\nabla}_{i}\,  {\nabla}_{i}\,  ({C}_{j m n k} {C}_{m p q n} {C}_{p j k q} + \frac{1}{2}\, {C}_{j k m n} {C}_{p q m n} {C}_{j k p q});
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@distribute!(%); @prodrule!(%);@distribute!(%);@prodrule!(%);
+\end{verbatim}}
+% orig
+%  - \nabla_{i}{\nabla_{j}{(C_{i m k l} C_{j p k q} C_{l p m q})}} + 1/4 \nabla_{i}{\nabla_{j}{(C_{i m k l} C_{j m p q} C_{k l p q})}} - 1/2 \nabla_{i}{\nabla_{j}{(C_{i k j l} C_{k m p q} C_{l m p q})}} - 1/6 \nabla_{i} \nabla_{i} C_{j m n k} C_{m p q n} C_{p j k q} - 1/12 \nabla_{i} \nabla_{i} C_{j k m n} C_{p q m n} C_{j k p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}=  - {\nabla}_{i}{{\nabla}_{j}{({C}_{i m k l} {C}_{j p k q} {C}_{l p m q})}\, }\,  + \frac{1}{4}\, {\nabla}_{i}{{\nabla}_{j}{({C}_{i m k l} {C}_{j m p q} {C}_{k l p q})}\, }\,  - \frac{1}{2}\, {\nabla}_{i}{{\nabla}_{j}{({C}_{i k j l} {C}_{k m p q} {C}_{l m p q})}\, }\,  - \frac{1}{6}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j m n k} {C}_{m p q n} {C}_{p j k q} - \frac{1}{12}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j k m n} {C}_{p q m n} {C}_{j k p q};
+\end{dmath*}
+% orig
+%  - \nabla_{i}{((\nabla_{j}{C_{i m k l}} C_{j p k q} C_{l p m q} + C_{i m k l} \nabla_{j}{C_{j p k q}} C_{l p m q} + C_{i m k l} C_{j p k q} \nabla_{j}{C_{l p m q}}))} + 1/4 \nabla_{i}{((\nabla_{j}{C_{i m k l}} C_{j m p q} C_{k l p q} + C_{i m k l} \nabla_{j}{C_{j m p q}} C_{k l p q} + C_{i m k l} C_{j m p q} \nabla_{j}{C_{k l p q}}))} - 1/2 \nabla_{i}{((\nabla_{j}{C_{i k j l}} C_{k m p q} C_{l m p q} + C_{i k j l} \nabla_{j}{C_{k m p q}} C_{l m p q} + C_{i k j l} C_{k m p q} \nabla_{j}{C_{l m p q}}))} - 1/6 \nabla_{i} \nabla_{i} C_{j m n k} C_{m p q n} C_{p j k q} - 1/12 \nabla_{i} \nabla_{i} C_{j k m n} C_{p q m n} C_{j k p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}=  - {\nabla}_{i}{(({\nabla}_{j}{{C}_{i m k l}}\,  {C}_{j p k q} {C}_{l p m q} + {C}_{i m k l} {\nabla}_{j}{{C}_{j p k q}}\,  {C}_{l p m q} + {C}_{i m k l} {C}_{j p k q} {\nabla}_{j}{{C}_{l p m q}}\, ))}\,  + \frac{1}{4}\, {\nabla}_{i}{(({\nabla}_{j}{{C}_{i m k l}}\,  {C}_{j m p q} {C}_{k l p q} + {C}_{i m k l} {\nabla}_{j}{{C}_{j m p q}}\,  {C}_{k l p q} + {C}_{i m k l} {C}_{j m p q} {\nabla}_{j}{{C}_{k l p q}}\, ))}\,  - \frac{1}{2}\, {\nabla}_{i}{(({\nabla}_{j}{{C}_{i k j l}}\,  {C}_{k m p q} {C}_{l m p q} + {C}_{i k j l} {\nabla}_{j}{{C}_{k m p q}}\,  {C}_{l m p q} + {C}_{i k j l} {C}_{k m p q} {\nabla}_{j}{{C}_{l m p q}}\, ))}\,  - \frac{1}{6}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j m n k} {C}_{m p q n} {C}_{p j k q} - \frac{1}{12}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j k m n} {C}_{p q m n} {C}_{j k p q};
+\end{dmath*}
+% orig
+%  - \nabla_{i}{(\nabla_{j}{C_{i m k l}} C_{j p k q} C_{l p m q})} - \nabla_{i}{(C_{i m k l} \nabla_{j}{C_{j p k q}} C_{l p m q})} - \nabla_{i}{(C_{i m k l} C_{j p k q} \nabla_{j}{C_{l p m q}})} + 1/4 \nabla_{i}{(\nabla_{j}{C_{i m k l}} C_{j m p q} C_{k l p q})} + 1/4 \nabla_{i}{(C_{i m k l} \nabla_{j}{C_{j m p q}} C_{k l p q})} + 1/4 \nabla_{i}{(C_{i m k l} C_{j m p q} \nabla_{j}{C_{k l p q}})} - 1/2 \nabla_{i}{(\nabla_{j}{C_{i k j l}} C_{k m p q} C_{l m p q})} - 1/2 \nabla_{i}{(C_{i k j l} \nabla_{j}{C_{k m p q}} C_{l m p q})} - 1/2 \nabla_{i}{(C_{i k j l} C_{k m p q} \nabla_{j}{C_{l m p q}})} - 1/6 \nabla_{i} \nabla_{i} C_{j m n k} C_{m p q n} C_{p j k q} - 1/12 \nabla_{i} \nabla_{i} C_{j k m n} C_{p q m n} C_{j k p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}=  - {\nabla}_{i}{({\nabla}_{j}{{C}_{i m k l}}\,  {C}_{j p k q} {C}_{l p m q})}\,  - {\nabla}_{i}{({C}_{i m k l} {\nabla}_{j}{{C}_{j p k q}}\,  {C}_{l p m q})}\,  - {\nabla}_{i}{({C}_{i m k l} {C}_{j p k q} {\nabla}_{j}{{C}_{l p m q}}\, )}\,  + \frac{1}{4}\, {\nabla}_{i}{({\nabla}_{j}{{C}_{i m k l}}\,  {C}_{j m p q} {C}_{k l p q})}\,  + \frac{1}{4}\, {\nabla}_{i}{({C}_{i m k l} {\nabla}_{j}{{C}_{j m p q}}\,  {C}_{k l p q})}\,  + \frac{1}{4}\, {\nabla}_{i}{({C}_{i m k l} {C}_{j m p q} {\nabla}_{j}{{C}_{k l p q}}\, )}\,  - \frac{1}{2}\, {\nabla}_{i}{({\nabla}_{j}{{C}_{i k j l}}\,  {C}_{k m p q} {C}_{l m p q})}\,  - \frac{1}{2}\, {\nabla}_{i}{({C}_{i k j l} {\nabla}_{j}{{C}_{k m p q}}\,  {C}_{l m p q})}\,  - \frac{1}{2}\, {\nabla}_{i}{({C}_{i k j l} {C}_{k m p q} {\nabla}_{j}{{C}_{l m p q}}\, )}\,  - \frac{1}{6}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j m n k} {C}_{m p q n} {C}_{p j k q} - \frac{1}{12}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j k m n} {C}_{p q m n} {C}_{j k p q};
+\end{dmath*}
+% orig
+% ( - \nabla_{i}{\nabla_{j}{C_{i m k l}}} C_{j p k q} C_{l p m q} - \nabla_{j}{C_{i m k l}} \nabla_{i}{C_{j p k q}} C_{l p m q} - \nabla_{j}{C_{i m k l}} C_{j p k q} \nabla_{i}{C_{l p m q}}) + ( - \nabla_{i}{C_{i m k l}} \nabla_{j}{C_{j p k q}} C_{l p m q} - C_{i m k l} \nabla_{i}{\nabla_{j}{C_{j p k q}}} C_{l p m q} - C_{i m k l} \nabla_{j}{C_{j p k q}} \nabla_{i}{C_{l p m q}}) + ( - \nabla_{i}{C_{i m k l}} C_{j p k q} \nabla_{j}{C_{l p m q}} - C_{i m k l} \nabla_{i}{C_{j p k q}} \nabla_{j}{C_{l p m q}} - C_{i m k l} C_{j p k q} \nabla_{i}{\nabla_{j}{C_{l p m q}}}) + (1/4 \nabla_{i}{\nabla_{j}{C_{i m k l}}} C_{j m p q} C_{k l p q} + 1/4 \nabla_{j}{C_{i m k l}} \nabla_{i}{C_{j m p q}} C_{k l p q} + 1/4 \nabla_{j}{C_{i m k l}} C_{j m p q} \nabla_{i}{C_{k l p q}}) + (1/4 \nabla_{i}{C_{i m k l}} \nabla_{j}{C_{j m p q}} C_{k l p q} + 1/4 C_{i m k l} \nabla_{i}{\nabla_{j}{C_{j m p q}}} C_{k l p q} + 1/4 C_{i m k l} \nabla_{j}{C_{j m p q}} \nabla_{i}{C_{k l p q}}) + (1/4 \nabla_{i}{C_{i m k l}} C_{j m p q} \nabla_{j}{C_{k l p q}} + 1/4 C_{i m k l} \nabla_{i}{C_{j m p q}} \nabla_{j}{C_{k l p q}} + 1/4 C_{i m k l} C_{j m p q} \nabla_{i}{\nabla_{j}{C_{k l p q}}}) + ( - 1/2 \nabla_{i}{\nabla_{j}{C_{i k j l}}} C_{k m p q} C_{l m p q} - 1/2 \nabla_{j}{C_{i k j l}} \nabla_{i}{C_{k m p q}} C_{l m p q} - 1/2 \nabla_{j}{C_{i k j l}} C_{k m p q} \nabla_{i}{C_{l m p q}}) + ( - 1/2 \nabla_{i}{C_{i k j l}} \nabla_{j}{C_{k m p q}} C_{l m p q} - 1/2 C_{i k j l} \nabla_{i}{\nabla_{j}{C_{k m p q}}} C_{l m p q} - 1/2 C_{i k j l} \nabla_{j}{C_{k m p q}} \nabla_{i}{C_{l m p q}}) + ( - 1/2 \nabla_{i}{C_{i k j l}} C_{k m p q} \nabla_{j}{C_{l m p q}} - 1/2 C_{i k j l} \nabla_{i}{C_{k m p q}} \nabla_{j}{C_{l m p q}} - 1/2 C_{i k j l} C_{k m p q} \nabla_{i}{\nabla_{j}{C_{l m p q}}}) - 1/6 \nabla_{i} \nabla_{i} C_{j m n k} C_{m p q n} C_{p j k q} - 1/12 \nabla_{i} \nabla_{i} C_{j k m n} C_{p q m n} C_{j k p q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}= ( - {\nabla}_{i}{{\nabla}_{j}{{C}_{i m k l}}\, }\,  {C}_{j p k q} {C}_{l p m q} - {\nabla}_{j}{{C}_{i m k l}}\,  {\nabla}_{i}{{C}_{j p k q}}\,  {C}_{l p m q} - {\nabla}_{j}{{C}_{i m k l}}\,  {C}_{j p k q} {\nabla}_{i}{{C}_{l p m q}}\, ) + ( - {\nabla}_{i}{{C}_{i m k l}}\,  {\nabla}_{j}{{C}_{j p k q}}\,  {C}_{l p m q} - {C}_{i m k l} {\nabla}_{i}{{\nabla}_{j}{{C}_{j p k q}}\, }\,  {C}_{l p m q} - {C}_{i m k l} {\nabla}_{j}{{C}_{j p k q}}\,  {\nabla}_{i}{{C}_{l p m q}}\, ) + ( - {\nabla}_{i}{{C}_{i m k l}}\,  {C}_{j p k q} {\nabla}_{j}{{C}_{l p m q}}\,  - {C}_{i m k l} {\nabla}_{i}{{C}_{j p k q}}\,  {\nabla}_{j}{{C}_{l p m q}}\,  - {C}_{i m k l} {C}_{j p k q} {\nabla}_{i}{{\nabla}_{j}{{C}_{l p m q}}\, }\, ) + (\frac{1}{4}\, {\nabla}_{i}{{\nabla}_{j}{{C}_{i m k l}}\, }\,  {C}_{j m p q} {C}_{k l p q} + \frac{1}{4}\, {\nabla}_{j}{{C}_{i m k l}}\,  {\nabla}_{i}{{C}_{j m p q}}\,  {C}_{k l p q} + \frac{1}{4}\, {\nabla}_{j}{{C}_{i m k l}}\,  {C}_{j m p q} {\nabla}_{i}{{C}_{k l p q}}\, ) + (\frac{1}{4}\, {\nabla}_{i}{{C}_{i m k l}}\,  {\nabla}_{j}{{C}_{j m p q}}\,  {C}_{k l p q} + \frac{1}{4}\, {C}_{i m k l} {\nabla}_{i}{{\nabla}_{j}{{C}_{j m p q}}\, }\,  {C}_{k l p q} + \frac{1}{4}\, {C}_{i m k l} {\nabla}_{j}{{C}_{j m p q}}\,  {\nabla}_{i}{{C}_{k l p q}}\, ) + (\frac{1}{4}\, {\nabla}_{i}{{C}_{i m k l}}\,  {C}_{j m p q} {\nabla}_{j}{{C}_{k l p q}}\,  + \frac{1}{4}\, {C}_{i m k l} {\nabla}_{i}{{C}_{j m p q}}\,  {\nabla}_{j}{{C}_{k l p q}}\,  + \frac{1}{4}\, {C}_{i m k l} {C}_{j m p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{k l p q}}\, }\, ) + ( - \frac{1}{2}\, {\nabla}_{i}{{\nabla}_{j}{{C}_{i k j l}}\, }\,  {C}_{k m p q} {C}_{l m p q} - \frac{1}{2}\, {\nabla}_{j}{{C}_{i k j l}}\,  {\nabla}_{i}{{C}_{k m p q}}\,  {C}_{l m p q} - \frac{1}{2}\, {\nabla}_{j}{{C}_{i k j l}}\,  {C}_{k m p q} {\nabla}_{i}{{C}_{l m p q}}\, ) + ( - \frac{1}{2}\, {\nabla}_{i}{{C}_{i k j l}}\,  {\nabla}_{j}{{C}_{k m p q}}\,  {C}_{l m p q} - \frac{1}{2}\, {C}_{i k j l} {\nabla}_{i}{{\nabla}_{j}{{C}_{k m p q}}\, }\,  {C}_{l m p q} - \frac{1}{2}\, {C}_{i k j l} {\nabla}_{j}{{C}_{k m p q}}\,  {\nabla}_{i}{{C}_{l m p q}}\, ) + ( - \frac{1}{2}\, {\nabla}_{i}{{C}_{i k j l}}\,  {C}_{k m p q} {\nabla}_{j}{{C}_{l m p q}}\,  - \frac{1}{2}\, {C}_{i k j l} {\nabla}_{i}{{C}_{k m p q}}\,  {\nabla}_{j}{{C}_{l m p q}}\,  - \frac{1}{2}\, {C}_{i k j l} {C}_{k m p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{l m p q}}\, }\, ) - \frac{1}{6}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j m n k} {C}_{m p q n} {C}_{p j k q} - \frac{1}{12}\, {\nabla}_{i}\,  {\nabla}_{i}\,  {C}_{j k m n} {C}_{p q m n} {C}_{j k p q};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@prodsort!(%);
+\end{verbatim}}
+% orig
+% ( - C_{j p k q} C_{l p m q} \nabla_{i}{\nabla_{j}{C_{i m k l}}} - C_{l p m q} \nabla_{i}{C_{j p k q}} \nabla_{j}{C_{i m k l}} - C_{j p k q} \nabla_{i}{C_{l p m q}} \nabla_{j}{C_{i m k l}}) + ( - C_{l p m q} \nabla_{i}{C_{i m k l}} \nabla_{j}{C_{j p k q}} - C_{i m k l} C_{l p m q} \nabla_{i}{\nabla_{j}{C_{j p k q}}} - C_{i m k l} \nabla_{i}{C_{l p m q}} \nabla_{j}{C_{j p k q}}) + ( - C_{j p k q} \nabla_{i}{C_{i m k l}} \nabla_{j}{C_{l p m q}} - C_{i m k l} \nabla_{i}{C_{j p k q}} \nabla_{j}{C_{l p m q}} - C_{i m k l} C_{j p k q} \nabla_{i}{\nabla_{j}{C_{l p m q}}}) + (1/4 C_{j m p q} C_{k l p q} \nabla_{i}{\nabla_{j}{C_{i m k l}}} + 1/4 C_{k l p q} \nabla_{i}{C_{j m p q}} \nabla_{j}{C_{i m k l}} + 1/4 C_{j m p q} \nabla_{i}{C_{k l p q}} \nabla_{j}{C_{i m k l}}) + (1/4 C_{k l p q} \nabla_{i}{C_{i m k l}} \nabla_{j}{C_{j m p q}} + 1/4 C_{i m k l} C_{k l p q} \nabla_{i}{\nabla_{j}{C_{j m p q}}} + 1/4 C_{i m k l} \nabla_{i}{C_{k l p q}} \nabla_{j}{C_{j m p q}}) + (1/4 C_{j m p q} \nabla_{i}{C_{i m k l}} \nabla_{j}{C_{k l p q}} + 1/4 C_{i m k l} \nabla_{i}{C_{j m p q}} \nabla_{j}{C_{k l p q}} + 1/4 C_{i m k l} C_{j m p q} \nabla_{i}{\nabla_{j}{C_{k l p q}}}) + ( - 1/2 C_{k m p q} C_{l m p q} \nabla_{i}{\nabla_{j}{C_{i k j l}}} - 1/2 C_{l m p q} \nabla_{i}{C_{k m p q}} \nabla_{j}{C_{i k j l}} - 1/2 C_{k m p q} \nabla_{i}{C_{l m p q}} \nabla_{j}{C_{i k j l}}) + ( - 1/2 C_{l m p q} \nabla_{i}{C_{i k j l}} \nabla_{j}{C_{k m p q}} - 1/2 C_{i k j l} C_{l m p q} \nabla_{i}{\nabla_{j}{C_{k m p q}}} - 1/2 C_{i k j l} \nabla_{i}{C_{l m p q}} \nabla_{j}{C_{k m p q}}) + ( - 1/2 C_{k m p q} \nabla_{i}{C_{i k j l}} \nabla_{j}{C_{l m p q}} - 1/2 C_{i k j l} \nabla_{i}{C_{k m p q}} \nabla_{j}{C_{l m p q}} - 1/2 C_{i k j l} C_{k m p q} \nabla_{i}{\nabla_{j}{C_{l m p q}}}) - 1/6 C_{j m n k} C_{m p q n} C_{p j k q} \nabla_{i} \nabla_{i} - 1/12 C_{j k m n} C_{j k p q} C_{p q m n} \nabla_{i} \nabla_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}= ( - {C}_{j p k q} {C}_{l p m q} {\nabla}_{i}{{\nabla}_{j}{{C}_{i m k l}}\, }\,  - {C}_{l p m q} {\nabla}_{i}{{C}_{j p k q}}\,  {\nabla}_{j}{{C}_{i m k l}}\,  - {C}_{j p k q} {\nabla}_{i}{{C}_{l p m q}}\,  {\nabla}_{j}{{C}_{i m k l}}\, ) + ( - {C}_{l p m q} {\nabla}_{i}{{C}_{i m k l}}\,  {\nabla}_{j}{{C}_{j p k q}}\,  - {C}_{i m k l} {C}_{l p m q} {\nabla}_{i}{{\nabla}_{j}{{C}_{j p k q}}\, }\,  - {C}_{i m k l} {\nabla}_{i}{{C}_{l p m q}}\,  {\nabla}_{j}{{C}_{j p k q}}\, ) + ( - {C}_{j p k q} {\nabla}_{i}{{C}_{i m k l}}\,  {\nabla}_{j}{{C}_{l p m q}}\,  - {C}_{i m k l} {\nabla}_{i}{{C}_{j p k q}}\,  {\nabla}_{j}{{C}_{l p m q}}\,  - {C}_{i m k l} {C}_{j p k q} {\nabla}_{i}{{\nabla}_{j}{{C}_{l p m q}}\, }\, ) + (\frac{1}{4}\, {C}_{j m p q} {C}_{k l p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{i m k l}}\, }\,  + \frac{1}{4}\, {C}_{k l p q} {\nabla}_{i}{{C}_{j m p q}}\,  {\nabla}_{j}{{C}_{i m k l}}\,  + \frac{1}{4}\, {C}_{j m p q} {\nabla}_{i}{{C}_{k l p q}}\,  {\nabla}_{j}{{C}_{i m k l}}\, ) + (\frac{1}{4}\, {C}_{k l p q} {\nabla}_{i}{{C}_{i m k l}}\,  {\nabla}_{j}{{C}_{j m p q}}\,  + \frac{1}{4}\, {C}_{i m k l} {C}_{k l p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{j m p q}}\, }\,  + \frac{1}{4}\, {C}_{i m k l} {\nabla}_{i}{{C}_{k l p q}}\,  {\nabla}_{j}{{C}_{j m p q}}\, ) + (\frac{1}{4}\, {C}_{j m p q} {\nabla}_{i}{{C}_{i m k l}}\,  {\nabla}_{j}{{C}_{k l p q}}\,  + \frac{1}{4}\, {C}_{i m k l} {\nabla}_{i}{{C}_{j m p q}}\,  {\nabla}_{j}{{C}_{k l p q}}\,  + \frac{1}{4}\, {C}_{i m k l} {C}_{j m p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{k l p q}}\, }\, ) + ( - \frac{1}{2}\, {C}_{k m p q} {C}_{l m p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{i k j l}}\, }\,  - \frac{1}{2}\, {C}_{l m p q} {\nabla}_{i}{{C}_{k m p q}}\,  {\nabla}_{j}{{C}_{i k j l}}\,  - \frac{1}{2}\, {C}_{k m p q} {\nabla}_{i}{{C}_{l m p q}}\,  {\nabla}_{j}{{C}_{i k j l}}\, ) + ( - \frac{1}{2}\, {C}_{l m p q} {\nabla}_{i}{{C}_{i k j l}}\,  {\nabla}_{j}{{C}_{k m p q}}\,  - \frac{1}{2}\, {C}_{i k j l} {C}_{l m p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{k m p q}}\, }\,  - \frac{1}{2}\, {C}_{i k j l} {\nabla}_{i}{{C}_{l m p q}}\,  {\nabla}_{j}{{C}_{k m p q}}\, ) + ( - \frac{1}{2}\, {C}_{k m p q} {\nabla}_{i}{{C}_{i k j l}}\,  {\nabla}_{j}{{C}_{l m p q}}\,  - \frac{1}{2}\, {C}_{i k j l} {\nabla}_{i}{{C}_{k m p q}}\,  {\nabla}_{j}{{C}_{l m p q}}\,  - \frac{1}{2}\, {C}_{i k j l} {C}_{k m p q} {\nabla}_{i}{{\nabla}_{j}{{C}_{l m p q}}\, }\, ) - \frac{1}{6}\, {C}_{j m n k} {C}_{m p q n} {C}_{p j k q} {\nabla}_{i}\,  {\nabla}_{i}\,  - \frac{1}{12}\, {C}_{j k m n} {C}_{j k p q} {C}_{p q m n} {\nabla}_{i}\,  {\nabla}_{i}\, ;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@rename_dummies!(%);
+\end{verbatim}}
+% orig
+% ( - C_{i j m n} C_{k j p n} \nabla_{q}{\nabla_{i}{C_{q p m k}}} - C_{i j m n} \nabla_{k}{C_{p j q n}} \nabla_{p}{C_{k m q i}} - C_{i j m n} \nabla_{k}{C_{p j q n}} \nabla_{i}{C_{k q m p}}) + ( - C_{i j m n} \nabla_{k}{C_{k m p i}} \nabla_{q}{C_{q j p n}} - C_{i j m n} C_{n k j p} \nabla_{i}{\nabla_{q}{C_{q k m p}}} - C_{i j m n} \nabla_{i}{C_{n k j p}} \nabla_{q}{C_{q k m p}}) + ( - C_{i j m n} \nabla_{k}{C_{k p m q}} \nabla_{i}{C_{q j p n}} - C_{i j m n} \nabla_{i}{C_{k p m q}} \nabla_{k}{C_{n p j q}} - C_{i j m n} C_{k p m q} \nabla_{i}{\nabla_{k}{C_{n p j q}}}) + (1/4 C_{i j m n} C_{k p m n} \nabla_{q}{\nabla_{i}{C_{q j k p}}} + 1/4 C_{i j m n} \nabla_{k}{C_{p q m n}} \nabla_{p}{C_{k q i j}} + 1/4 C_{i j m n} \nabla_{k}{C_{p q m n}} \nabla_{i}{C_{k j p q}}) + (1/4 C_{i j m n} \nabla_{k}{C_{k p i j}} \nabla_{q}{C_{q p m n}} + 1/4 C_{i j m n} C_{m n k p} \nabla_{i}{\nabla_{q}{C_{q j k p}}} + 1/4 C_{i j m n} \nabla_{i}{C_{m n k p}} \nabla_{q}{C_{q j k p}}) + (1/4 C_{i j m n} \nabla_{k}{C_{k j p q}} \nabla_{i}{C_{p q m n}} + 1/4 C_{i j m n} \nabla_{i}{C_{k j p q}} \nabla_{k}{C_{m n p q}} + 1/4 C_{i j m n} C_{k j p q} \nabla_{i}{\nabla_{k}{C_{m n p q}}}) + ( - 1/2 C_{i j m n} C_{k j m n} \nabla_{p}{\nabla_{q}{C_{p i q k}}} - 1/2 C_{i j m n} \nabla_{k}{C_{p j m n}} \nabla_{q}{C_{k p q i}} - 1/2 C_{i j m n} \nabla_{k}{C_{p j m n}} \nabla_{q}{C_{k i q p}}) + ( - 1/2 C_{i j m n} \nabla_{k}{C_{k p q i}} \nabla_{q}{C_{p j m n}} - 1/2 C_{i j m n} C_{n k p q} \nabla_{i}{\nabla_{m}{C_{j k p q}}} - 1/2 C_{i j m n} \nabla_{i}{C_{n k p q}} \nabla_{m}{C_{j k p q}}) + ( - 1/2 C_{i j m n} \nabla_{k}{C_{k i p q}} \nabla_{p}{C_{q j m n}} - 1/2 C_{i j m n} \nabla_{i}{C_{j k p q}} \nabla_{m}{C_{n k p q}} - 1/2 C_{i j m n} C_{j k p q} \nabla_{i}{\nabla_{m}{C_{n k p q}}}) - 1/6 C_{i j m n} C_{j k p m} C_{k i n p} \nabla_{q} \nabla_{q} - 1/12 C_{i j m n} C_{i j k p} C_{k p m n} \nabla_{q} \nabla_{q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}= ( - {C}_{i j m n} {C}_{k j p n} {\nabla}_{q}{{\nabla}_{i}{{C}_{q p m k}}\, }\,  - {C}_{i j m n} {\nabla}_{k}{{C}_{p j q n}}\,  {\nabla}_{p}{{C}_{k m q i}}\,  - {C}_{i j m n} {\nabla}_{k}{{C}_{p j q n}}\,  {\nabla}_{i}{{C}_{k q m p}}\, ) + ( - {C}_{i j m n} {\nabla}_{k}{{C}_{k m p i}}\,  {\nabla}_{q}{{C}_{q j p n}}\,  - {C}_{i j m n} {C}_{n k j p} {\nabla}_{i}{{\nabla}_{q}{{C}_{q k m p}}\, }\,  - {C}_{i j m n} {\nabla}_{i}{{C}_{n k j p}}\,  {\nabla}_{q}{{C}_{q k m p}}\, ) + ( - {C}_{i j m n} {\nabla}_{k}{{C}_{k p m q}}\,  {\nabla}_{i}{{C}_{q j p n}}\,  - {C}_{i j m n} {\nabla}_{i}{{C}_{k p m q}}\,  {\nabla}_{k}{{C}_{n p j q}}\,  - {C}_{i j m n} {C}_{k p m q} {\nabla}_{i}{{\nabla}_{k}{{C}_{n p j q}}\, }\, ) + (\frac{1}{4}\, {C}_{i j m n} {C}_{k p m n} {\nabla}_{q}{{\nabla}_{i}{{C}_{q j k p}}\, }\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p q m n}}\,  {\nabla}_{p}{{C}_{k q i j}}\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p q m n}}\,  {\nabla}_{i}{{C}_{k j p q}}\, ) + (\frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k p i j}}\,  {\nabla}_{q}{{C}_{q p m n}}\,  + \frac{1}{4}\, {C}_{i j m n} {C}_{m n k p} {\nabla}_{i}{{\nabla}_{q}{{C}_{q j k p}}\, }\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{i}{{C}_{m n k p}}\,  {\nabla}_{q}{{C}_{q j k p}}\, ) + (\frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k j p q}}\,  {\nabla}_{i}{{C}_{p q m n}}\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{i}{{C}_{k j p q}}\,  {\nabla}_{k}{{C}_{m n p q}}\,  + \frac{1}{4}\, {C}_{i j m n} {C}_{k j p q} {\nabla}_{i}{{\nabla}_{k}{{C}_{m n p q}}\, }\, ) + ( - \frac{1}{2}\, {C}_{i j m n} {C}_{k j m n} {\nabla}_{p}{{\nabla}_{q}{{C}_{p i q k}}\, }\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p j m n}}\,  {\nabla}_{q}{{C}_{k p q i}}\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p j m n}}\,  {\nabla}_{q}{{C}_{k i q p}}\, ) + ( - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k p q i}}\,  {\nabla}_{q}{{C}_{p j m n}}\,  - \frac{1}{2}\, {C}_{i j m n} {C}_{n k p q} {\nabla}_{i}{{\nabla}_{m}{{C}_{j k p q}}\, }\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{i}{{C}_{n k p q}}\,  {\nabla}_{m}{{C}_{j k p q}}\, ) + ( - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k i p q}}\,  {\nabla}_{p}{{C}_{q j m n}}\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{i}{{C}_{j k p q}}\,  {\nabla}_{m}{{C}_{n k p q}}\,  - \frac{1}{2}\, {C}_{i j m n} {C}_{j k p q} {\nabla}_{i}{{\nabla}_{m}{{C}_{n k p q}}\, }\, ) - \frac{1}{6}\, {C}_{i j m n} {C}_{j k p m} {C}_{k i n p} {\nabla}_{q}\,  {\nabla}_{q}\,  - \frac{1}{12}\, {C}_{i j m n} {C}_{i j k p} {C}_{k p m n} {\nabla}_{q}\,  {\nabla}_{q}\, ;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@collect_terms!(%);
+\end{verbatim}}
+% Begin TeX comment
+@collect\_terms: not applicable.
+% End TeX comment
+% orig
+% ( - C_{i j m n} C_{k j p n} \nabla_{q}{\nabla_{i}{C_{q p m k}}} - C_{i j m n} \nabla_{k}{C_{p j q n}} \nabla_{p}{C_{k m q i}} - C_{i j m n} \nabla_{k}{C_{p j q n}} \nabla_{i}{C_{k q m p}}) + ( - C_{i j m n} \nabla_{k}{C_{k m p i}} \nabla_{q}{C_{q j p n}} - C_{i j m n} C_{n k j p} \nabla_{i}{\nabla_{q}{C_{q k m p}}} - C_{i j m n} \nabla_{i}{C_{n k j p}} \nabla_{q}{C_{q k m p}}) + ( - C_{i j m n} \nabla_{k}{C_{k p m q}} \nabla_{i}{C_{q j p n}} - C_{i j m n} \nabla_{i}{C_{k p m q}} \nabla_{k}{C_{n p j q}} - C_{i j m n} C_{k p m q} \nabla_{i}{\nabla_{k}{C_{n p j q}}}) + (1/4 C_{i j m n} C_{k p m n} \nabla_{q}{\nabla_{i}{C_{q j k p}}} + 1/4 C_{i j m n} \nabla_{k}{C_{p q m n}} \nabla_{p}{C_{k q i j}} + 1/4 C_{i j m n} \nabla_{k}{C_{p q m n}} \nabla_{i}{C_{k j p q}}) + (1/4 C_{i j m n} \nabla_{k}{C_{k p i j}} \nabla_{q}{C_{q p m n}} + 1/4 C_{i j m n} C_{m n k p} \nabla_{i}{\nabla_{q}{C_{q j k p}}} + 1/4 C_{i j m n} \nabla_{i}{C_{m n k p}} \nabla_{q}{C_{q j k p}}) + (1/4 C_{i j m n} \nabla_{k}{C_{k j p q}} \nabla_{i}{C_{p q m n}} + 1/4 C_{i j m n} \nabla_{i}{C_{k j p q}} \nabla_{k}{C_{m n p q}} + 1/4 C_{i j m n} C_{k j p q} \nabla_{i}{\nabla_{k}{C_{m n p q}}}) + ( - 1/2 C_{i j m n} C_{k j m n} \nabla_{p}{\nabla_{q}{C_{p i q k}}} - 1/2 C_{i j m n} \nabla_{k}{C_{p j m n}} \nabla_{q}{C_{k p q i}} - 1/2 C_{i j m n} \nabla_{k}{C_{p j m n}} \nabla_{q}{C_{k i q p}}) + ( - 1/2 C_{i j m n} \nabla_{k}{C_{k p q i}} \nabla_{q}{C_{p j m n}} - 1/2 C_{i j m n} C_{n k p q} \nabla_{i}{\nabla_{m}{C_{j k p q}}} - 1/2 C_{i j m n} \nabla_{i}{C_{n k p q}} \nabla_{m}{C_{j k p q}}) + ( - 1/2 C_{i j m n} \nabla_{k}{C_{k i p q}} \nabla_{p}{C_{q j m n}} - 1/2 C_{i j m n} \nabla_{i}{C_{j k p q}} \nabla_{m}{C_{n k p q}} - 1/2 C_{i j m n} C_{j k p q} \nabla_{i}{\nabla_{m}{C_{n k p q}}}) - 1/6 C_{i j m n} C_{j k p m} C_{k i n p} \nabla_{q} \nabla_{q} - 1/12 C_{i j m n} C_{i j k p} C_{k p m n} \nabla_{q} \nabla_{q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+exp\specialcolon{}= ( - {C}_{i j m n} {C}_{k j p n} {\nabla}_{q}{{\nabla}_{i}{{C}_{q p m k}}\, }\,  - {C}_{i j m n} {\nabla}_{k}{{C}_{p j q n}}\,  {\nabla}_{p}{{C}_{k m q i}}\,  - {C}_{i j m n} {\nabla}_{k}{{C}_{p j q n}}\,  {\nabla}_{i}{{C}_{k q m p}}\, ) + ( - {C}_{i j m n} {\nabla}_{k}{{C}_{k m p i}}\,  {\nabla}_{q}{{C}_{q j p n}}\,  - {C}_{i j m n} {C}_{n k j p} {\nabla}_{i}{{\nabla}_{q}{{C}_{q k m p}}\, }\,  - {C}_{i j m n} {\nabla}_{i}{{C}_{n k j p}}\,  {\nabla}_{q}{{C}_{q k m p}}\, ) + ( - {C}_{i j m n} {\nabla}_{k}{{C}_{k p m q}}\,  {\nabla}_{i}{{C}_{q j p n}}\,  - {C}_{i j m n} {\nabla}_{i}{{C}_{k p m q}}\,  {\nabla}_{k}{{C}_{n p j q}}\,  - {C}_{i j m n} {C}_{k p m q} {\nabla}_{i}{{\nabla}_{k}{{C}_{n p j q}}\, }\, ) + (\frac{1}{4}\, {C}_{i j m n} {C}_{k p m n} {\nabla}_{q}{{\nabla}_{i}{{C}_{q j k p}}\, }\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p q m n}}\,  {\nabla}_{p}{{C}_{k q i j}}\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p q m n}}\,  {\nabla}_{i}{{C}_{k j p q}}\, ) + (\frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k p i j}}\,  {\nabla}_{q}{{C}_{q p m n}}\,  + \frac{1}{4}\, {C}_{i j m n} {C}_{m n k p} {\nabla}_{i}{{\nabla}_{q}{{C}_{q j k p}}\, }\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{i}{{C}_{m n k p}}\,  {\nabla}_{q}{{C}_{q j k p}}\, ) + (\frac{1}{4}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k j p q}}\,  {\nabla}_{i}{{C}_{p q m n}}\,  + \frac{1}{4}\, {C}_{i j m n} {\nabla}_{i}{{C}_{k j p q}}\,  {\nabla}_{k}{{C}_{m n p q}}\,  + \frac{1}{4}\, {C}_{i j m n} {C}_{k j p q} {\nabla}_{i}{{\nabla}_{k}{{C}_{m n p q}}\, }\, ) + ( - \frac{1}{2}\, {C}_{i j m n} {C}_{k j m n} {\nabla}_{p}{{\nabla}_{q}{{C}_{p i q k}}\, }\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p j m n}}\,  {\nabla}_{q}{{C}_{k p q i}}\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{p j m n}}\,  {\nabla}_{q}{{C}_{k i q p}}\, ) + ( - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k p q i}}\,  {\nabla}_{q}{{C}_{p j m n}}\,  - \frac{1}{2}\, {C}_{i j m n} {C}_{n k p q} {\nabla}_{i}{{\nabla}_{m}{{C}_{j k p q}}\, }\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{i}{{C}_{n k p q}}\,  {\nabla}_{m}{{C}_{j k p q}}\, ) + ( - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{k}{{C}_{k i p q}}\,  {\nabla}_{p}{{C}_{q j m n}}\,  - \frac{1}{2}\, {C}_{i j m n} {\nabla}_{i}{{C}_{j k p q}}\,  {\nabla}_{m}{{C}_{n k p q}}\,  - \frac{1}{2}\, {C}_{i j m n} {C}_{j k p q} {\nabla}_{i}{{\nabla}_{m}{{C}_{n k p q}}\, }\, ) - \frac{1}{6}\, {C}_{i j m n} {C}_{j k p m} {C}_{k i n p} {\nabla}_{q}\,  {\nabla}_{q}\,  - \frac{1}{12}\, {C}_{i j m n} {C}_{i j k p} {C}_{k p m n} {\nabla}_{q}\,  {\nabla}_{q}\, ;
+\end{dmath*}
+\end{document}

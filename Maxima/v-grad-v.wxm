@@ -1,0 +1,82 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 12.01.0 ] */
+
+/* [wxMaxima: input   start ] */
+A:matrix(
+[D[x](v[x]),D[y](v[x]),D[z](v[x])],
+[D[x](v[y]),D[y](v[y]),D[z](v[y])],
+[D[x](v[z]),D[y](v[z]),D[z](v[z])]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+v:matrix([v[x]],[v[y]],[v[z]]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+av:A.v;
+va:transpose(transpose(v).A);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+av-va;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+transpose(v);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Xi:genmatrix(xi,3,3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Xi^^2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+zeta.B;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+xi.E;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+max1:div(D)=0;
+max2:div(B)=0;
+max3:curl(E)-d[t](B)=0;
+max4:curl(H)+d[t](D)=0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+D=epsilon.E+xi.H;
+B=mu.H+zeta.E;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+epsilon=1;
+mu=1;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+subst(E+xi.H,D,max1);
+subst(E+xi.H,D,max4);
+subst(H+zeta.E,B,max2);
+subst(H+zeta.E,B,max3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+x1:div(E)=-div(xi . H);
+x2:div(H)=-div(zeta . E);
+x3:d[t](E)=-curl(H)-xi . d[t](H);
+x4:d[t](H)=curl(E)-zeta . d[t](E);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+x5:expand(subst(rhs(x3),lhs(x3),x4));
+x6:expand(subst(rhs(x4),lhs(x4),x3));
+collectterms(lhs(x5)-rhs(x5),lhs(x5));
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

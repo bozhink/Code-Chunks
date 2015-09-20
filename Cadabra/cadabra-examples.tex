@@ -1,0 +1,186 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{m,n,p,q,r,s,t,u,v,w,a,b}::Indices(vector).
+{m,n,p,q,r,s,t,u,v,w,a,b}::Integer(0..9).
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{m,\; n,\; p,\; q,\; r,\; s,\; t,\; u,\; v,\; w,\; a,\; b\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Integer to $m$, $n$, $p$, $q$, $r$, $s$, $t$, $u$, $v$, $w$, $a$, $b$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+R_{m n p q}::RiemannTensor.
+\end{verbatim}}
+% Begin TeX comment
+Assigning property RiemannTensor to ${R}_{m n p q}$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+basisR3:=R_{m n p q} R_{r s t u} R_{v w a b};
+@all_contractions(%);
+@canonicalise!(%):
+@substitute!(%)( R_{m n m n} -> R );
+@substitute!(%)(R_{m n m p} -> R_{n p});
+@substitute!(%)(R_{n m p m} -> R_{np});
+@substitute!(%)(R_{n m m p} -> R_{n p});
+\end{verbatim}}
+% orig
+% R_{m n p q} R_{r s t u} R_{v w a b}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+basisR3\specialcolon{}= {R}_{m n p q} {R}_{r s t u} {R}_{v w a b};
+\end{dmath*}
+% orig
+% \{R_{m n m p} R_{n q r s} R_{p r q s}, R_{m n p q} R_{m n r s} R_{p r q s}, R_{m n m p} R_{n q q r} R_{p s r s}, R_{m n m p} R_{n q p r} R_{q s r s}, R_{m n p q} R_{m r p s} R_{n s q r}, R_{m n m n} R_{p q r s} R_{p q r s}, R_{m n m n} R_{p q p r} R_{q s r s}, R_{m n m n} R_{p q p q} R_{r s r s}\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+basisR3\specialcolon{}= \{{R}_{m n m p} {R}_{n q r s} {R}_{p r q s},\; {R}_{m n p q} {R}_{m n r s} {R}_{p r q s},\; {R}_{m n m p} {R}_{n q q r} {R}_{p s r s},\; {R}_{m n m p} {R}_{n q p r} {R}_{q s r s},\; {R}_{m n p q} {R}_{m r p s} {R}_{n s q r},\; {R}_{m n m n} {R}_{p q r s} {R}_{p q r s},\; {R}_{m n m n} {R}_{p q p r} {R}_{q s r s},\; {R}_{m n m n} {R}_{p q p q} {R}_{r s r s}\};
+\end{dmath*}
+% orig
+% \{R_{m n m p} R_{n q r s} R_{p r q s}, R_{m n p q} R_{m n r s} R_{p r q s}, R_{m n m p} R_{n q q r} R_{p s r s}, R_{m n m p} R_{n q p r} R_{q s r s}, R_{m n p q} R_{m r p s} R_{n s q r}, R R_{p q r s} R_{p q r s}, R R_{p q p r} R_{q s r s}, R R R\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+basisR3\specialcolon{}= \{{R}_{m n m p} {R}_{n q r s} {R}_{p r q s},\; {R}_{m n p q} {R}_{m n r s} {R}_{p r q s},\; {R}_{m n m p} {R}_{n q q r} {R}_{p s r s},\; {R}_{m n m p} {R}_{n q p r} {R}_{q s r s},\; {R}_{m n p q} {R}_{m r p s} {R}_{n s q r},\; R {R}_{p q r s} {R}_{p q r s},\; R {R}_{p q p r} {R}_{q s r s},\; R R R\};
+\end{dmath*}
+% orig
+% \{R_{n p} R_{n q r s} R_{p r q s}, R_{m n p q} R_{m n r s} R_{p r q s}, R_{n p} R_{n q q r} R_{p s r s}, R_{n p} R_{n q p r} R_{q s r s}, R_{m n p q} R_{m r p s} R_{n s q r}, R R_{p q r s} R_{p q r s}, R R_{q r} R_{q s r s}, R R R\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+basisR3\specialcolon{}= \{{R}_{n p} {R}_{n q r s} {R}_{p r q s},\; {R}_{m n p q} {R}_{m n r s} {R}_{p r q s},\; {R}_{n p} {R}_{n q q r} {R}_{p s r s},\; {R}_{n p} {R}_{n q p r} {R}_{q s r s},\; {R}_{m n p q} {R}_{m r p s} {R}_{n s q r},\; R {R}_{p q r s} {R}_{p q r s},\; R {R}_{q r} {R}_{q s r s},\; R R R\};
+\end{dmath*}
+% orig
+% \{R_{n p} R_{n q r s} R_{p r q s}, R_{m n p q} R_{m n r s} R_{p r q s}, R_{n p} R_{n q q r} R_{np}, R_{n p} R_{n q p r} R_{np}, R_{m n p q} R_{m r p s} R_{n s q r}, R R_{p q r s} R_{p q r s}, R R_{q r} R_{np}, R R R\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+basisR3\specialcolon{}= \{{R}_{n p} {R}_{n q r s} {R}_{p r q s},\; {R}_{m n p q} {R}_{m n r s} {R}_{p r q s},\; {R}_{n p} {R}_{n q q r} {R}_{np},\; {R}_{n p} {R}_{n q p r} {R}_{np},\; {R}_{m n p q} {R}_{m r p s} {R}_{n s q r},\; R {R}_{p q r s} {R}_{p q r s},\; R {R}_{q r} {R}_{np},\; R R R\};
+\end{dmath*}
+% orig
+% \{R_{n p} R_{n q r s} R_{p r q s}, R_{m n p q} R_{m n r s} R_{p r q s}, R_{n p} R_{n r} R_{np}, R_{n p} R_{n q p r} R_{np}, R_{m n p q} R_{m r p s} R_{n s q r}, R R_{p q r s} R_{p q r s}, R R_{q r} R_{np}, R R R\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+basisR3\specialcolon{}= \{{R}_{n p} {R}_{n q r s} {R}_{p r q s},\; {R}_{m n p q} {R}_{m n r s} {R}_{p r q s},\; {R}_{n p} {R}_{n r} {R}_{np},\; {R}_{n p} {R}_{n q p r} {R}_{np},\; {R}_{m n p q} {R}_{m r p s} {R}_{n s q r},\; R {R}_{p q r s} {R}_{p q r s},\; R {R}_{q r} {R}_{np},\; R R R\};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+\del{#}::LaTeXForm("\partial").
+\delbar{#}::LaTeXForm("\bar{\partial}").
+\eps::LaTeXForm("\epsilon").
+\epsbar::LaTeXForm("\bar{\epsilon}").
+\Psibar{#}::LaTeXForm("\bar{\Psi}").
+\end{verbatim}}
+% Begin TeX comment
+Assigning property LaTeXForm to $\partial(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\bar{\partial}(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\epsilon$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\bar{\epsilon}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\bar{\Psi}(\#)$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+{ \del{#}, \delbar{#}}::Derivative.
+{\Psi_\mu, \Psibar_\mu, \eps, \epsbar}::AntiCommuting.
+{\Psi_\mu, \Psibar_\mu, \eps, \epsbar}::SelfAntiCommuting.
+{\Psi_\mu, \Psibar_\mu, X_\mu}::Depends(\del,\delbar).
+{\Psi_\mu, \Psibar_\mu, \eps, \epsbar, X_\mu, i}::SortOrder.
+\end{verbatim}}
+% Begin TeX comment
+Assigning property Derivative to $\partial{\#}\, $, $\bar{\partial}{\#}\, $.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property AntiCommuting to $\{{\Psi}_{\mu},\; {\bar{\Psi}}_{\mu},\; \epsilon,\; \bar{\epsilon}\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property SelfAntiCommuting to ${\Psi}_{\mu}$, ${\bar{\Psi}}_{\mu}$, $\epsilon$, $\bar{\epsilon}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to ${\Psi}_{\mu}$, ${\bar{\Psi}}_{\mu}$, ${X}_{\mu}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property SortOrder to $\{{\Psi}_{\mu},\; {\bar{\Psi}}_{\mu},\; \epsilon,\; \bar{\epsilon},\; {X}_{\mu},\; i\}$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+action:=\del{X_\mu} \delbar{X_{\mu}} + i \Psi_\mu \delbar{\Psi_\mu}
+         + i \Psibar_{\mu} \del{\Psibar_\mu};
+\end{verbatim}}
+% orig
+% \del{X_{\mu}} \delbar{X_{\mu}} + i \Psi_{\mu} \delbar{\Psi_{\mu}} + i \Psibar_{\mu} \del{\Psibar_{\mu}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}= \partial{{X}_{\mu}}\,  \bar{\partial}{{X}_{\mu}}\,  + i {\Psi}_{\mu} \bar{\partial}{{\Psi}_{\mu}}\,  + i {\bar{\Psi}}_{\mu} \partial{{\bar{\Psi}}_{\mu}}\, ;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@vary(%)(X_\mu         -> i \epsbar \Psi_\mu + i \eps \Psibar_\mu,
+                \Psi_\mu      -> - \epsbar \del{X_\mu},
+                \Psibar_\mu -> - \eps \delbar{X_\mu});
+@distribute!(%);
+@prodrule!(%);
+@distribute!(%);
+@unwrap!(%);
+@prodsort!(%);
+\end{verbatim}}
+% orig
+% \del{(i \epsbar \Psi_{\mu} + i \eps \Psibar_{\mu})} \delbar{X_{\mu}} + \del{X_{\mu}} \delbar{(i \epsbar \Psi_{\mu} + i \eps \Psibar_{\mu})} - i \epsbar \del{X_{\mu}} \delbar{\Psi_{\mu}} + i \Psi_{\mu} \delbar{(-\epsbar \del{X_{\mu}})} - i \eps \delbar{X_{\mu}} \del{\Psibar_{\mu}} + i \Psibar_{\mu} \del{(-\eps \delbar{X_{\mu}})}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}= \partial{(i \bar{\epsilon} {\Psi}_{\mu} + i \epsilon {\bar{\Psi}}_{\mu})}\,  \bar{\partial}{{X}_{\mu}}\,  + \partial{{X}_{\mu}}\,  \bar{\partial}{(i \bar{\epsilon} {\Psi}_{\mu} + i \epsilon {\bar{\Psi}}_{\mu})}\,  - i \bar{\epsilon} \partial{{X}_{\mu}}\,  \bar{\partial}{{\Psi}_{\mu}}\,  + i {\Psi}_{\mu} \bar{\partial}{(-\bar{\epsilon} \partial{{X}_{\mu}}\, )}\,  - i \epsilon \bar{\partial}{{X}_{\mu}}\,  \partial{{\bar{\Psi}}_{\mu}}\,  + i {\bar{\Psi}}_{\mu} \partial{(-\epsilon \bar{\partial}{{X}_{\mu}}\, )}\, ;
+\end{dmath*}
+% orig
+% \del{(i \epsbar \Psi_{\mu})} \delbar{X_{\mu}} + \del{(i \eps \Psibar_{\mu})} \delbar{X_{\mu}} + \del{X_{\mu}} \delbar{(i \epsbar \Psi_{\mu})} + \del{X_{\mu}} \delbar{(i \eps \Psibar_{\mu})} - i \epsbar \del{X_{\mu}} \delbar{\Psi_{\mu}} + i \Psi_{\mu} \delbar{(-\epsbar \del{X_{\mu}})} - i \eps \delbar{X_{\mu}} \del{\Psibar_{\mu}} + i \Psibar_{\mu} \del{(-\eps \delbar{X_{\mu}})}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}= \partial{(i \bar{\epsilon} {\Psi}_{\mu})}\,  \bar{\partial}{{X}_{\mu}}\,  + \partial{(i \epsilon {\bar{\Psi}}_{\mu})}\,  \bar{\partial}{{X}_{\mu}}\,  + \partial{{X}_{\mu}}\,  \bar{\partial}{(i \bar{\epsilon} {\Psi}_{\mu})}\,  + \partial{{X}_{\mu}}\,  \bar{\partial}{(i \epsilon {\bar{\Psi}}_{\mu})}\,  - i \bar{\epsilon} \partial{{X}_{\mu}}\,  \bar{\partial}{{\Psi}_{\mu}}\,  + i {\Psi}_{\mu} \bar{\partial}{(-\bar{\epsilon} \partial{{X}_{\mu}}\, )}\,  - i \epsilon \bar{\partial}{{X}_{\mu}}\,  \partial{{\bar{\Psi}}_{\mu}}\,  + i {\bar{\Psi}}_{\mu} \partial{(-\epsilon \bar{\partial}{{X}_{\mu}}\, )}\, ;
+\end{dmath*}
+% orig
+% (\del{i} \epsbar \Psi_{\mu} + i \del{\epsbar} \Psi_{\mu} + i \epsbar \del{\Psi_{\mu}}) \delbar{X_{\mu}} + (\del{i} \eps \Psibar_{\mu} + i \del{\eps} \Psibar_{\mu} + i \eps \del{\Psibar_{\mu}}) \delbar{X_{\mu}} + \del{X_{\mu}} (\delbar{i} \epsbar \Psi_{\mu} + i \delbar{\epsbar} \Psi_{\mu} + i \epsbar \delbar{\Psi_{\mu}}) + \del{X_{\mu}} (\delbar{i} \eps \Psibar_{\mu} + i \delbar{\eps} \Psibar_{\mu} + i \eps \delbar{\Psibar_{\mu}}) - i \epsbar \del{X_{\mu}} \delbar{\Psi_{\mu}} + i \Psi_{\mu} ( - \delbar{\epsbar} \del{X_{\mu}} - \epsbar \delbar{\del{X_{\mu}}}) - i \eps \delbar{X_{\mu}} \del{\Psibar_{\mu}} + i \Psibar_{\mu} ( - \del{\eps} \delbar{X_{\mu}} - \eps \del{\delbar{X_{\mu}}})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}= (\partial{i}\,  \bar{\epsilon} {\Psi}_{\mu} + i \partial{\bar{\epsilon}}\,  {\Psi}_{\mu} + i \bar{\epsilon} \partial{{\Psi}_{\mu}}\, ) \bar{\partial}{{X}_{\mu}}\,  + (\partial{i}\,  \epsilon {\bar{\Psi}}_{\mu} + i \partial{\epsilon}\,  {\bar{\Psi}}_{\mu} + i \epsilon \partial{{\bar{\Psi}}_{\mu}}\, ) \bar{\partial}{{X}_{\mu}}\,  + \partial{{X}_{\mu}}\,  (\bar{\partial}{i}\,  \bar{\epsilon} {\Psi}_{\mu} + i \bar{\partial}{\bar{\epsilon}}\,  {\Psi}_{\mu} + i \bar{\epsilon} \bar{\partial}{{\Psi}_{\mu}}\, ) + \partial{{X}_{\mu}}\,  (\bar{\partial}{i}\,  \epsilon {\bar{\Psi}}_{\mu} + i \bar{\partial}{\epsilon}\,  {\bar{\Psi}}_{\mu} + i \epsilon \bar{\partial}{{\bar{\Psi}}_{\mu}}\, ) - i \bar{\epsilon} \partial{{X}_{\mu}}\,  \bar{\partial}{{\Psi}_{\mu}}\,  + i {\Psi}_{\mu} ( - \bar{\partial}{\bar{\epsilon}}\,  \partial{{X}_{\mu}}\,  - \bar{\epsilon} \bar{\partial}{\partial{{X}_{\mu}}\, }\, ) - i \epsilon \bar{\partial}{{X}_{\mu}}\,  \partial{{\bar{\Psi}}_{\mu}}\,  + i {\bar{\Psi}}_{\mu} ( - \partial{\epsilon}\,  \bar{\partial}{{X}_{\mu}}\,  - \epsilon \partial{\bar{\partial}{{X}_{\mu}}\, }\, );
+\end{dmath*}
+% orig
+% \del{i} \epsbar \Psi_{\mu} \delbar{X_{\mu}} + i \del{\epsbar} \Psi_{\mu} \delbar{X_{\mu}} + i \epsbar \del{\Psi_{\mu}} \delbar{X_{\mu}} + \del{i} \eps \Psibar_{\mu} \delbar{X_{\mu}} + i \del{\eps} \Psibar_{\mu} \delbar{X_{\mu}} + i \eps \del{\Psibar_{\mu}} \delbar{X_{\mu}} + \del{X_{\mu}} \delbar{i} \epsbar \Psi_{\mu} + \del{X_{\mu}} i \delbar{\epsbar} \Psi_{\mu} + \del{X_{\mu}} i \epsbar \delbar{\Psi_{\mu}} + \del{X_{\mu}} \delbar{i} \eps \Psibar_{\mu} + \del{X_{\mu}} i \delbar{\eps} \Psibar_{\mu} + \del{X_{\mu}} i \eps \delbar{\Psibar_{\mu}} - i \epsbar \del{X_{\mu}} \delbar{\Psi_{\mu}} - i \Psi_{\mu} \delbar{\epsbar} \del{X_{\mu}} - i \Psi_{\mu} \epsbar \delbar{\del{X_{\mu}}} - i \eps \delbar{X_{\mu}} \del{\Psibar_{\mu}} - i \Psibar_{\mu} \del{\eps} \delbar{X_{\mu}} - i \Psibar_{\mu} \eps \del{\delbar{X_{\mu}}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}= \partial{i}\,  \bar{\epsilon} {\Psi}_{\mu} \bar{\partial}{{X}_{\mu}}\,  + i \partial{\bar{\epsilon}}\,  {\Psi}_{\mu} \bar{\partial}{{X}_{\mu}}\,  + i \bar{\epsilon} \partial{{\Psi}_{\mu}}\,  \bar{\partial}{{X}_{\mu}}\,  + \partial{i}\,  \epsilon {\bar{\Psi}}_{\mu} \bar{\partial}{{X}_{\mu}}\,  + i \partial{\epsilon}\,  {\bar{\Psi}}_{\mu} \bar{\partial}{{X}_{\mu}}\,  + i \epsilon \partial{{\bar{\Psi}}_{\mu}}\,  \bar{\partial}{{X}_{\mu}}\,  + \partial{{X}_{\mu}}\,  \bar{\partial}{i}\,  \bar{\epsilon} {\Psi}_{\mu} + \partial{{X}_{\mu}}\,  i \bar{\partial}{\bar{\epsilon}}\,  {\Psi}_{\mu} + \partial{{X}_{\mu}}\,  i \bar{\epsilon} \bar{\partial}{{\Psi}_{\mu}}\,  + \partial{{X}_{\mu}}\,  \bar{\partial}{i}\,  \epsilon {\bar{\Psi}}_{\mu} + \partial{{X}_{\mu}}\,  i \bar{\partial}{\epsilon}\,  {\bar{\Psi}}_{\mu} + \partial{{X}_{\mu}}\,  i \epsilon \bar{\partial}{{\bar{\Psi}}_{\mu}}\,  - i \bar{\epsilon} \partial{{X}_{\mu}}\,  \bar{\partial}{{\Psi}_{\mu}}\,  - i {\Psi}_{\mu} \bar{\partial}{\bar{\epsilon}}\,  \partial{{X}_{\mu}}\,  - i {\Psi}_{\mu} \bar{\epsilon} \bar{\partial}{\partial{{X}_{\mu}}\, }\,  - i \epsilon \bar{\partial}{{X}_{\mu}}\,  \partial{{\bar{\Psi}}_{\mu}}\,  - i {\bar{\Psi}}_{\mu} \partial{\epsilon}\,  \bar{\partial}{{X}_{\mu}}\,  - i {\bar{\Psi}}_{\mu} \epsilon \partial{\bar{\partial}{{X}_{\mu}}\, }\, ;
+\end{dmath*}
+% orig
+% i \epsbar \del{\Psi_{\mu}} \delbar{X_{\mu}} + i \eps \del{\Psibar_{\mu}} \delbar{X_{\mu}} + \del{X_{\mu}} i \epsbar \delbar{\Psi_{\mu}} + \del{X_{\mu}} i \eps \delbar{\Psibar_{\mu}} - i \epsbar \del{X_{\mu}} \delbar{\Psi_{\mu}} - i \Psi_{\mu} \epsbar \delbar{\del{X_{\mu}}} - i \eps \delbar{X_{\mu}} \del{\Psibar_{\mu}} - i \Psibar_{\mu} \eps \del{\delbar{X_{\mu}}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}= i \bar{\epsilon} \partial{{\Psi}_{\mu}}\,  \bar{\partial}{{X}_{\mu}}\,  + i \epsilon \partial{{\bar{\Psi}}_{\mu}}\,  \bar{\partial}{{X}_{\mu}}\,  + \partial{{X}_{\mu}}\,  i \bar{\epsilon} \bar{\partial}{{\Psi}_{\mu}}\,  + \partial{{X}_{\mu}}\,  i \epsilon \bar{\partial}{{\bar{\Psi}}_{\mu}}\,  - i \bar{\epsilon} \partial{{X}_{\mu}}\,  \bar{\partial}{{\Psi}_{\mu}}\,  - i {\Psi}_{\mu} \bar{\epsilon} \bar{\partial}{\partial{{X}_{\mu}}\, }\,  - i \epsilon \bar{\partial}{{X}_{\mu}}\,  \partial{{\bar{\Psi}}_{\mu}}\,  - i {\bar{\Psi}}_{\mu} \epsilon \partial{\bar{\partial}{{X}_{\mu}}\, }\, ;
+\end{dmath*}
+% orig
+%  - \del{\Psi_{\mu}} \epsbar \delbar{X_{\mu}} i - \del{\Psibar_{\mu}} \eps \delbar{X_{\mu}} i - \delbar{\Psi_{\mu}} \epsbar \del{X_{\mu}} i - \delbar{\Psibar_{\mu}} \eps \del{X_{\mu}} i + \delbar{\Psi_{\mu}} \epsbar \del{X_{\mu}} i - \Psi_{\mu} \epsbar \delbar{\del{X_{\mu}}} i + \del{\Psibar_{\mu}} \eps \delbar{X_{\mu}} i - \Psibar_{\mu} \eps \del{\delbar{X_{\mu}}} i
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+action\specialcolon{}=  - \partial{{\Psi}_{\mu}}\,  \bar{\epsilon} \bar{\partial}{{X}_{\mu}}\,  i - \partial{{\bar{\Psi}}_{\mu}}\,  \epsilon \bar{\partial}{{X}_{\mu}}\,  i - \bar{\partial}{{\Psi}_{\mu}}\,  \bar{\epsilon} \partial{{X}_{\mu}}\,  i - \bar{\partial}{{\bar{\Psi}}_{\mu}}\,  \epsilon \partial{{X}_{\mu}}\,  i + \bar{\partial}{{\Psi}_{\mu}}\,  \bar{\epsilon} \partial{{X}_{\mu}}\,  i - {\Psi}_{\mu} \bar{\epsilon} \bar{\partial}{\partial{{X}_{\mu}}\, }\,  i + \partial{{\bar{\Psi}}_{\mu}}\,  \epsilon \bar{\partial}{{X}_{\mu}}\,  i - {\bar{\Psi}}_{\mu} \epsilon \partial{\bar{\partial}{{X}_{\mu}}\, }\,  i;
+\end{dmath*}
+\end{document}

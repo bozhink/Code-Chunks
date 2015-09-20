@@ -1,0 +1,107 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 12.01.0 ] */
+
+/* [wxMaxima: input   start ] */
+H:matrix(
+[ed,0,tpd*2*sin(px/2),-tpd*2*sin(py/2)],
+[0,es,tsp*2*sin(px/2), tsp*2*sin(py/2)],
+[tpd*2*sin(px/2),tsp*2*sin(px/2),ep,-tpp*4*sin(px/2)*sin(py/2)],
+[-tpd*2*sin(py/2),tsp*2*sin(py/2),-tpp*4*sin(px/2)*sin(py/2),ep]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Ed:0;
+Ep:-1;
+Tsp:2;
+Tpd:3/2;
+Tpp:0.2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+subst(Tpd,tpd,subst(Tsp,tsp,subst(Ed,ed,subst(Ep,ep,H))))$
+subst(%pi,px,subst(0,py,%));
+%-sigma*matrix([1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1])$
+factor(determinant(%));
+%/(sigma+1);
+s:solve(%=0,[sigma]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+subst(%pi,px,subst(0,py,subst(Tpd,tpd,subst(Tsp,tsp,subst(Ed,ed,subst(Ep,ep,H))))));
+sol:eigenvalues(%);
+subst(X,sqrt(-37*es^4-106*es^3-2635*es^2-2214*es-63125)/(2*3^(3/2))+(2*es^3+3*es^2-21*es-227)/54,%[1]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+im(sol[1]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+z:1+%i;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+z+conj(z);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+p3:(e-ep)*(e-ed)*(e-es)-4*tpd^2*(e-es)-4*tsp^2*(e-ed);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ep3:expand(p3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+pp:subst(2/10,tpd,subst(2,tsp,subst(-1,ep,subst(0,ed,ep3))));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+a:diff(pp,e,3)/6;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+b:ratsimp(diff(pp-a*e^3,e,2)/2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+c:ratsimp(diff(pp-a*e^3-b*e^2,e,1));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+d:ratsimp(pp-a*e^3-b*e^2-c*e);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+discrim:ratsimp(18*a*b*c*d-4*b^3*d+b^2*c^2-4*a*c^3-27*a^2*d^2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+disc1:ratsimp(-27*a*discrim);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+disc2:ratsimp(4*(b^2-a*c)^3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X1:ratsimp((disc2-disc1)/4);
+X2:ratsimp(disc1/4);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A1:sqrt(X1)+sqrt(X2);
+A2:sqrt(X1)-sqrt(X2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+sin(%pi/3);cos(%pi/3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+exp(-%i*%pi);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

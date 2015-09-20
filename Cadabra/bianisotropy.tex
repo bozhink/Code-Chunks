@@ -1,0 +1,253 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{a,b,c,i,j,k,l,m,n,p,q,r,s,t,u,v,w}::Indices(threeD).
+{a,b,c,i,j,k,l,m,n,p,q,r,s,t,u,v,w}::Integer(1..3).
+\delta{#}::KroneckerDelta.
+\varepsilon_{i j k}::EpsilonTensor(delta=\delta,metric=g_{a b}).
+g_{a b}::Metric(signature=1).
+\partial{#}::PartialDerivative.
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{a,\; b,\; c,\; i,\; j,\; k,\; l,\; m,\; n,\; p,\; q,\; r,\; s,\; t,\; u,\; v,\; w\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Integer to $a$, $b$, $c$, $i$, $j$, $k$, $l$, $m$, $n$, $p$, $q$, $r$, $s$, $t$, $u$, $v$, $w$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property KroneckerDelta to $\delta(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property EpsilonTensor to ${\varepsilon}_{i j k}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Metric to ${g}_{a b}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property PartialDerivative to $\partial{\#}\, $.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+\varepsilon_{a b c}\varepsilon_{a b q};
+@epsprod2gendelta!(%);
+\end{verbatim}}
+% orig
+% \varepsilon_{a b c} \varepsilon_{a b q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= {\varepsilon}_{a b c} {\varepsilon}_{a b q};
+\end{dmath*}
+% orig
+% 2 \delta_{c q}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= 2\, {\delta}_{c q};
+\end{dmath*}
+% Begin TeX cell closed
+Maxwell equations
+% End TeX cell
+% Begin TeX cell open
+\vec{j}\\
+\mathrm{div}\mathbf{D}=\rho\\
+\mathrm{div}\mathbf{B}=0\\
+\mathrm{rot}\mathbf{E}+\frac{\partial}{\partial t}\mathbf{B}=0\\
+\mathrm{rot}\mathbf{H}-\frac{\partial}{\partial t}\mathbf{D}=\mathbf{j}
+% End TeX cell
+{\color[named]{Blue}\begin{verbatim}
+Maxwell1:=\partial_{i}{D_{i}}=\rho;
+Maxwell2:=\partial_{i}{B_{i}}=0;
+Maxwell3:=\varepsilon_{i j k}\partial_{j}{E_{k}}+\tau B_{i}=0;
+Maxwell4:=\varepsilon_{i j k}\partial_{j}{H_{k}}-\tau D_{i}=j_{i};
+\end{verbatim}}
+% orig
+% \partial_{i}{D_{i}} = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell1\specialcolon{}= {\partial}_{i}{{D}_{i}}\,  = \rho;
+\end{dmath*}
+% orig
+% \partial_{i}{B_{i}} = 0
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell2\specialcolon{}= {\partial}_{i}{{B}_{i}}\,  = 0;
+\end{dmath*}
+% orig
+% (\varepsilon_{i j k} \partial_{j}{E_{k}} + \tau B_{i}) = 0
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell3\specialcolon{}= ({\varepsilon}_{i j k} {\partial}_{j}{{E}_{k}}\,  + \tau {B}_{i}) = 0;
+\end{dmath*}
+% orig
+% (\varepsilon_{i j k} \partial_{j}{H_{k}} - \tau D_{i}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ({\varepsilon}_{i j k} {\partial}_{j}{{H}_{k}}\,  - \tau {D}_{i}) = {j}_{i};
+\end{dmath*}
+% Begin TeX cell open
+Constitutive relations
+% End TeX cell
+{\color[named]{Blue}\begin{verbatim}
+dd:=D_{i}->\epsilon_{i p}E_{p}+\zeta_{i p}H_{p};
+bb:=B_{i}->\mu_{i p}H_{p}+\xi_{i p}E_{p};
+\end{verbatim}}
+% orig
+% D_{i} -> (\epsilon_{i p} E_{p} + \zeta_{i p} H_{p})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+dd\specialcolon{}= {D}_{i} \rightarrow ({\epsilon}_{i p} {E}_{p} + {\zeta}_{i p} {H}_{p});
+\end{dmath*}
+% orig
+% B_{i} -> (\mu_{i p} H_{p} + \xi_{i p} E_{p})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+bb\specialcolon{}= {B}_{i} \rightarrow ({\mu}_{i p} {H}_{p} + {\xi}_{i p} {E}_{p});
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+Maxwell1:=\partial_{i}{D_{i}}=\rho:
+@substitute!(%)( D_{i}->\epsilon_{i p}E_{p}+\zeta_{i p}H_{p} ):
+@distribute!(%);
+
+Maxwell2:=\partial_{i}{B_{i}}=0:
+@substitute!(%)(B_{i}->\mu_{i p}H_{p}+\xi_{i p}E_{p}):
+@distribute!(%);
+
+Maxwell3:=\varepsilon_{i j k}\partial_{j}{E_{k}}+\tau B_{i}=0:
+@substitute!(%)(B_{i}->\mu_{i p}H_{p}+\xi_{i p}E_{p},\tau->-i\omega):
+@distribute!(%);
+
+Maxwell4:=\varepsilon_{i j k}\partial_{j}{H_{k}}-\tau D_{i}=j_{i}:
+@substitute!(%)( D_{i}->\epsilon_{i p}E_{p}+\zeta_{i p}H_{p},\tau->-i\omega ):
+@distribute!(%);
+\end{verbatim}}
+% orig
+% (\partial_{i}{(\epsilon_{i p} E_{p})} + \partial_{i}{(\zeta_{i p} H_{p})}) = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell1\specialcolon{}= ({\partial}_{i}{({\epsilon}_{i p} {E}_{p})}\,  + {\partial}_{i}{({\zeta}_{i p} {H}_{p})}\, ) = \rho;
+\end{dmath*}
+% orig
+% (\partial_{i}{(\mu_{i p} H_{p})} + \partial_{i}{(\xi_{i p} E_{p})}) = 0
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell2\specialcolon{}= ({\partial}_{i}{({\mu}_{i p} {H}_{p})}\,  + {\partial}_{i}{({\xi}_{i p} {E}_{p})}\, ) = 0;
+\end{dmath*}
+% orig
+% (\varepsilon_{i j k} \partial_{j}{E_{k}} - i \omega \mu_{i p} H_{p} - i \omega \xi_{i p} E_{p}) = 0
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell3\specialcolon{}= ({\varepsilon}_{i j k} {\partial}_{j}{{E}_{k}}\,  - i \omega {\mu}_{i p} {H}_{p} - i \omega {\xi}_{i p} {E}_{p}) = 0;
+\end{dmath*}
+% orig
+% (\varepsilon_{i j k} \partial_{j}{H_{k}} + i \omega \epsilon_{i p} E_{p} + i \omega \zeta_{i p} H_{p}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ({\varepsilon}_{i j k} {\partial}_{j}{{H}_{k}}\,  + i \omega {\epsilon}_{i p} {E}_{p} + i \omega {\zeta}_{i p} {H}_{p}) = {j}_{i};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+\invmu{#}::LaTeXForm("\mu^{-1}");
+\inveps{#}::LaTeXForm("\epsilon^{-1}");
+\end{verbatim}}
+% Begin TeX comment
+Assigning property LaTeXForm to $\mu^{-1}(\#)$.
+\\
+% End TeX comment
+% orig
+% \invmu{#}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+8\specialcolon{}= \mu^{-1}(\#);
+\end{dmath*}
+% Begin TeX comment
+Assigning property LaTeXForm to $\epsilon^{-1}(\#)$.
+\\
+% End TeX comment
+% orig
+% \inveps{#}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+9\specialcolon{}= \epsilon^{-1}(\#);
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+h:=H_{p}=-i/\omega\invmu_{p i}\varepsilon_{i j k}\partial_{j}{E_{k}}-\invmu_{p i}\xi_{i k} E_{k};
+e:=E_{p}=i/\omega\inveps_{p i} j_{i} + i/\omega \inveps_{p i}\varepsilon_{i j k}\partial_{j}{H_{k}}-\inveps_{p i}\zeta_{i k} H_{k};
+\end{verbatim}}
+% orig
+% H_{p} = ( - i/\omega \invmu_{p i} \varepsilon_{i j k} \partial_{j}{E_{k}} - \invmu_{p i} \xi_{i k} E_{k})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+h\specialcolon{}= {H}_{p} = ( - \frac{i}{\omega} {\mu^{-1}}_{p i} {\varepsilon}_{i j k} {\partial}_{j}{{E}_{k}}\,  - {\mu^{-1}}_{p i} {\xi}_{i k} {E}_{k});
+\end{dmath*}
+% orig
+% E_{p} = (i/\omega \inveps_{p i} j_{i} + i/\omega \inveps_{p i} \varepsilon_{i j k} \partial_{j}{H_{k}} - \inveps_{p i} \zeta_{i k} H_{k})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+e\specialcolon{}= {E}_{p} = (\frac{i}{\omega} {\epsilon^{-1}}_{p i} {j}_{i} + \frac{i}{\omega} {\epsilon^{-1}}_{p i} {\varepsilon}_{i j k} {\partial}_{j}{{H}_{k}}\,  - {\epsilon^{-1}}_{p i} {\zeta}_{i k} {H}_{k});
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+Maxwell4:=\varepsilon_{i j k}\partial_{j}{H_{k}}-\tau D_{i}=j_{i}:
+@substitute!(%)( D_{i}->\epsilon_{i p}E_{p}+\zeta_{i p}H_{p},\tau->-i\omega ):
+@distribute!(%):
+@substitute!(%)(H_{p} -> -i/\omega\invmu_{p i}\varepsilon_{i j k}\partial_{j}{E_{k}}-\invmu_{p i}\xi_{i k} E_{k}):
+@distribute!(%);
+@prodrule!(%):
+@substitute!(%)(\partial_{j}{i/\omega}->0,\partial_{j}{\varepsilon_{c b a}}->0):
+@distribute!(%);
+
+@substitute!(%)(\epsilon_{i p}->\mu_{i p}, \partial_{j}{\xi_{c a}} -> -\partial_{j}{\zeta_{c a}}):
+@substitute!(%)(\xi_{i j}->-\zeta_{i j});
+
+@substitute!(%)(\zeta_{i j} -> \varepsilon_{i j s} v_{s}):
+@prodrule!(%):
+@substitute!(%)(\partial_{j}{\varepsilon_{c a s}}->0):
+@rename_dummies!(%);
+
+@substitute!(%)(1->2);
+\end{verbatim}}
+% orig
+% ( - \varepsilon_{i j k} \partial_{j}{(i/\omega \invmu_{k c} \varepsilon_{c b a} \partial_{b}{E_{a}})} - \varepsilon_{i j k} \partial_{j}{(\invmu_{k c} \xi_{c a} E_{a})} + i \omega \epsilon_{i p} E_{p} - i \omega \zeta_{i p} i/\omega \invmu_{p a} \varepsilon_{a j k} \partial_{j}{E_{k}} - i \omega \zeta_{i p} \invmu_{p a} \xi_{a k} E_{k}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ( - {\varepsilon}_{i j k} {\partial}_{j}{(\frac{i}{\omega} {\mu^{-1}}_{k c} {\varepsilon}_{c b a} {\partial}_{b}{{E}_{a}}\, )}\,  - {\varepsilon}_{i j k} {\partial}_{j}{({\mu^{-1}}_{k c} {\xi}_{c a} {E}_{a})}\,  + i \omega {\epsilon}_{i p} {E}_{p} - i \omega {\zeta}_{i p} \frac{i}{\omega} {\mu^{-1}}_{p a} {\varepsilon}_{a j k} {\partial}_{j}{{E}_{k}}\,  - i \omega {\zeta}_{i p} {\mu^{-1}}_{p a} {\xi}_{a k} {E}_{k}) = {j}_{i};
+\end{dmath*}
+% orig
+% ( - \varepsilon_{i j k} i/\omega \partial_{j}{\invmu_{k c}} \varepsilon_{c b a} \partial_{b}{E_{a}} - \varepsilon_{i j k} i/\omega \invmu_{k c} \varepsilon_{c b a} \partial_{j b}{E_{a}} - \varepsilon_{i j k} \partial_{j}{\invmu_{k c}} \xi_{c a} E_{a} - \varepsilon_{i j k} \invmu_{k c} \partial_{j}{\xi_{c a}} E_{a} - \varepsilon_{i j k} \invmu_{k c} \xi_{c a} \partial_{j}{E_{a}} + i \omega \epsilon_{i p} E_{p} - i \omega \zeta_{i p} i/\omega \invmu_{p a} \varepsilon_{a j k} \partial_{j}{E_{k}} - i \omega \zeta_{i p} \invmu_{p a} \xi_{a k} E_{k}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ( - {\varepsilon}_{i j k} \frac{i}{\omega} {\partial}_{j}{{\mu^{-1}}_{k c}}\,  {\varepsilon}_{c b a} {\partial}_{b}{{E}_{a}}\,  - {\varepsilon}_{i j k} \frac{i}{\omega} {\mu^{-1}}_{k c} {\varepsilon}_{c b a} {\partial}_{j b}{{E}_{a}}\,  - {\varepsilon}_{i j k} {\partial}_{j}{{\mu^{-1}}_{k c}}\,  {\xi}_{c a} {E}_{a} - {\varepsilon}_{i j k} {\mu^{-1}}_{k c} {\partial}_{j}{{\xi}_{c a}}\,  {E}_{a} - {\varepsilon}_{i j k} {\mu^{-1}}_{k c} {\xi}_{c a} {\partial}_{j}{{E}_{a}}\,  + i \omega {\epsilon}_{i p} {E}_{p} - i \omega {\zeta}_{i p} \frac{i}{\omega} {\mu^{-1}}_{p a} {\varepsilon}_{a j k} {\partial}_{j}{{E}_{k}}\,  - i \omega {\zeta}_{i p} {\mu^{-1}}_{p a} {\xi}_{a k} {E}_{k}) = {j}_{i};
+\end{dmath*}
+% orig
+% ( - \varepsilon_{i j k} i/\omega \partial_{j}{\invmu_{k c}} \varepsilon_{c b a} \partial_{b}{E_{a}} - \varepsilon_{i j k} i/\omega \invmu_{k c} \varepsilon_{c b a} \partial_{j b}{E_{a}} + \varepsilon_{i j k} \partial_{j}{\invmu_{k c}} \zeta_{c a} E_{a} + \varepsilon_{i j k} \invmu_{k c} \partial_{j}{\zeta_{c a}} E_{a} + \varepsilon_{i j k} \invmu_{k c} \zeta_{c a} \partial_{j}{E_{a}} + i \omega \mu_{i p} E_{p} - i \omega \zeta_{i p} i/\omega \invmu_{p a} \varepsilon_{a j k} \partial_{j}{E_{k}} + i \omega \zeta_{i p} \invmu_{p a} \zeta_{a k} E_{k}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ( - {\varepsilon}_{i j k} \frac{i}{\omega} {\partial}_{j}{{\mu^{-1}}_{k c}}\,  {\varepsilon}_{c b a} {\partial}_{b}{{E}_{a}}\,  - {\varepsilon}_{i j k} \frac{i}{\omega} {\mu^{-1}}_{k c} {\varepsilon}_{c b a} {\partial}_{j b}{{E}_{a}}\,  + {\varepsilon}_{i j k} {\partial}_{j}{{\mu^{-1}}_{k c}}\,  {\zeta}_{c a} {E}_{a} + {\varepsilon}_{i j k} {\mu^{-1}}_{k c} {\partial}_{j}{{\zeta}_{c a}}\,  {E}_{a} + {\varepsilon}_{i j k} {\mu^{-1}}_{k c} {\zeta}_{c a} {\partial}_{j}{{E}_{a}}\,  + i \omega {\mu}_{i p} {E}_{p} - i \omega {\zeta}_{i p} \frac{i}{\omega} {\mu^{-1}}_{p a} {\varepsilon}_{a j k} {\partial}_{j}{{E}_{k}}\,  + i \omega {\zeta}_{i p} {\mu^{-1}}_{p a} {\zeta}_{a k} {E}_{k}) = {j}_{i};
+\end{dmath*}
+% orig
+% ( - \varepsilon_{i a b} i/\omega \partial_{a}{\invmu_{b c}} \varepsilon_{c j k} \partial_{j}{E_{k}} - \varepsilon_{i a b} i/\omega \invmu_{b c} \varepsilon_{c j k} \partial_{a j}{E_{k}} + \varepsilon_{i a b} \partial_{a}{\invmu_{b c}} \varepsilon_{c j k} v_{k} E_{j} + \varepsilon_{i a b} \invmu_{b c} \varepsilon_{c j k} \partial_{a}{v_{k}} E_{j} + \varepsilon_{i a b} \invmu_{b c} \varepsilon_{c j k} v_{k} \partial_{a}{E_{j}} + i \omega \mu_{i a} E_{a} - i \omega \varepsilon_{i a b} v_{b} i/\omega \invmu_{a c} \varepsilon_{c j k} \partial_{j}{E_{k}} + i \omega \varepsilon_{i a b} v_{b} \invmu_{a c} \varepsilon_{c j k} v_{k} E_{j}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ( - {\varepsilon}_{i a b} \frac{i}{\omega} {\partial}_{a}{{\mu^{-1}}_{b c}}\,  {\varepsilon}_{c j k} {\partial}_{j}{{E}_{k}}\,  - {\varepsilon}_{i a b} \frac{i}{\omega} {\mu^{-1}}_{b c} {\varepsilon}_{c j k} {\partial}_{a j}{{E}_{k}}\,  + {\varepsilon}_{i a b} {\partial}_{a}{{\mu^{-1}}_{b c}}\,  {\varepsilon}_{c j k} {v}_{k} {E}_{j} + {\varepsilon}_{i a b} {\mu^{-1}}_{b c} {\varepsilon}_{c j k} {\partial}_{a}{{v}_{k}}\,  {E}_{j} + {\varepsilon}_{i a b} {\mu^{-1}}_{b c} {\varepsilon}_{c j k} {v}_{k} {\partial}_{a}{{E}_{j}}\,  + i \omega {\mu}_{i a} {E}_{a} - i \omega {\varepsilon}_{i a b} {v}_{b} \frac{i}{\omega} {\mu^{-1}}_{a c} {\varepsilon}_{c j k} {\partial}_{j}{{E}_{k}}\,  + i \omega {\varepsilon}_{i a b} {v}_{b} {\mu^{-1}}_{a c} {\varepsilon}_{c j k} {v}_{k} {E}_{j}) = {j}_{i};
+\end{dmath*}
+% Begin TeX comment
+@substitute: not applicable.
+% End TeX comment
+% orig
+% ( - \varepsilon_{i a b} i/\omega \partial_{a}{\invmu_{b c}} \varepsilon_{c j k} \partial_{j}{E_{k}} - \varepsilon_{i a b} i/\omega \invmu_{b c} \varepsilon_{c j k} \partial_{a j}{E_{k}} + \varepsilon_{i a b} \partial_{a}{\invmu_{b c}} \varepsilon_{c j k} v_{k} E_{j} + \varepsilon_{i a b} \invmu_{b c} \varepsilon_{c j k} \partial_{a}{v_{k}} E_{j} + \varepsilon_{i a b} \invmu_{b c} \varepsilon_{c j k} v_{k} \partial_{a}{E_{j}} + i \omega \mu_{i a} E_{a} - i \omega \varepsilon_{i a b} v_{b} i/\omega \invmu_{a c} \varepsilon_{c j k} \partial_{j}{E_{k}} + i \omega \varepsilon_{i a b} v_{b} \invmu_{a c} \varepsilon_{c j k} v_{k} E_{j}) = j_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Maxwell4\specialcolon{}= ( - {\varepsilon}_{i a b} \frac{i}{\omega} {\partial}_{a}{{\mu^{-1}}_{b c}}\,  {\varepsilon}_{c j k} {\partial}_{j}{{E}_{k}}\,  - {\varepsilon}_{i a b} \frac{i}{\omega} {\mu^{-1}}_{b c} {\varepsilon}_{c j k} {\partial}_{a j}{{E}_{k}}\,  + {\varepsilon}_{i a b} {\partial}_{a}{{\mu^{-1}}_{b c}}\,  {\varepsilon}_{c j k} {v}_{k} {E}_{j} + {\varepsilon}_{i a b} {\mu^{-1}}_{b c} {\varepsilon}_{c j k} {\partial}_{a}{{v}_{k}}\,  {E}_{j} + {\varepsilon}_{i a b} {\mu^{-1}}_{b c} {\varepsilon}_{c j k} {v}_{k} {\partial}_{a}{{E}_{j}}\,  + i \omega {\mu}_{i a} {E}_{a} - i \omega {\varepsilon}_{i a b} {v}_{b} \frac{i}{\omega} {\mu^{-1}}_{a c} {\varepsilon}_{c j k} {\partial}_{j}{{E}_{k}}\,  + i \omega {\varepsilon}_{i a b} {v}_{b} {\mu^{-1}}_{a c} {\varepsilon}_{c j k} {v}_{k} {E}_{j}) = {j}_{i};
+\end{dmath*}
+\end{document}

@@ -1,0 +1,193 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{a,b,c,u#,v#}::Indices(fourD,curved).
+{\alpha,\beta,\gamma,\mu,\nu,\sigma,\kappa,\rho,\lambda}::Indices(fourD,curved).
+{i,j,k,l,m,n,p,q}::Indices(threeD,parent=fourD).
+
+\delta{#}::KroneckerDelta.
+\epsilon_{i j k}::EpsilonTensor(delta=\delta).
+\nabla{#}::Derivative.
+\partial{#}::PartialDerivative.
+
+g_{\alpha \beta}::Metric(signature=-1).
+g^{\alpha \beta}::InverseMetric.
+g^{\alpha}_{\beta}::KroneckerDelta.
+g_{\alpha \beta}::Depends(\partial).
+g^{\alpha \beta}::Depends(\partial).
+
+F_{\mu \nu}::AntiSymmetric.
+F_{\mu \nu}::Depends(\partial).
+
+A_{\alpha? \beta?}^{\gamma?}::Depends(\partial).
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{a,\; b,\; c,\; u\#,\; v\#\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property Indices to $\{\alpha,\; \beta,\; \gamma,\; \mu,\; \nu,\; \sigma,\; \kappa,\; \rho,\; \lambda\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property Indices to $\{i,\; j,\; k,\; l,\; m,\; n,\; p,\; q\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property KroneckerDelta to $\delta(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property EpsilonTensor to ${\epsilon}_{i j k}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Derivative to $\nabla{\#}\, $.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property PartialDerivative to $\partial{\#}\, $.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Metric to ${g}_{\alpha \beta}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property InverseMetric to ${g}^{\alpha \beta}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property KroneckerDelta to ${g}^{\alpha}\,_{\beta}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to ${g}_{\alpha \beta}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to ${g}^{\alpha \beta}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property AntiSymmetric to ${F}_{\mu \nu}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to ${F}_{\mu \nu}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to ${A}_{\alpha? \beta?}\,^{\gamma?}$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+\nabla_{\sigma}{\nabla^{\sigma}{F_{\mu \nu}}}=
+\partial_{\sigma}{g^{\sigma \kappa}*(\partial_{\kappa}{F_{\mu \nu}}-A_{\kappa \mu}^{\rho} F_{\rho \nu}-A_{\kappa \nu}^{\rho} F_{\mu \rho})}
++A_{\sigma \lambda}^{\sigma}
+g^{\lambda \kappa}*(\partial_{\kappa}{F_{\mu \nu}}-A_{\kappa \mu}^{\rho} F_{\rho \nu}-A_{\kappa \nu}^{\rho} F_{\mu \rho})
+-A_{\sigma \mu}^{\lambda}
+g^{\sigma \kappa}*(\partial_{\kappa}{F_{\lambda \nu}}-A_{\kappa \lambda}^{\rho} F_{\rho \nu}-A_{\kappa \nu}^{\rho} F_{\lambda \rho})
+-A_{\sigma \nu}^{\lambda}
+g^{\sigma \kappa}*(\partial_{\kappa}{F_{\mu \lambda}}-A_{\kappa \mu}^{\rho} F_{\rho \lambda}-A_{\kappa \lambda}^{\rho} F_{\mu \rho})
+:
+@distribute!(%):
+@prodrule!(%);
+@eliminate_metric!(%);
+\end{verbatim}}
+% orig
+% \nabla_{\sigma}{\nabla^{\sigma}{F_{\mu \nu}}} = ((\partial_{\sigma}{g^{\sigma \kappa}} \partial_{\kappa}{F_{\mu \nu}} + g^{\sigma \kappa} \partial_{\sigma \kappa}{F_{\mu \nu}}) + ( - \partial_{\sigma}{g^{\sigma \kappa}} A_{\kappa \mu}^{\rho} F_{\rho \nu} - g^{\sigma \kappa} \partial_{\sigma}{A_{\kappa \mu}^{\rho}} F_{\rho \nu} - g^{\sigma \kappa} A_{\kappa \mu}^{\rho} \partial_{\sigma}{F_{\rho \nu}}) + ( - \partial_{\sigma}{g^{\sigma \kappa}} A_{\kappa \nu}^{\rho} F_{\mu \rho} - g^{\sigma \kappa} \partial_{\sigma}{A_{\kappa \nu}^{\rho}} F_{\mu \rho} - g^{\sigma \kappa} A_{\kappa \nu}^{\rho} \partial_{\sigma}{F_{\mu \rho}}) + A_{\sigma \lambda}^{\sigma} g^{\lambda \kappa} \partial_{\kappa}{F_{\mu \nu}} - A_{\sigma \lambda}^{\sigma} g^{\lambda \kappa} A_{\kappa \mu}^{\rho} F_{\rho \nu} - A_{\sigma \lambda}^{\sigma} g^{\lambda \kappa} A_{\kappa \nu}^{\rho} F_{\mu \rho} - A_{\sigma \mu}^{\lambda} g^{\sigma \kappa} \partial_{\kappa}{F_{\lambda \nu}} + A_{\sigma \mu}^{\lambda} g^{\sigma \kappa} A_{\kappa \lambda}^{\rho} F_{\rho \nu} + A_{\sigma \mu}^{\lambda} g^{\sigma \kappa} A_{\kappa \nu}^{\rho} F_{\lambda \rho} - A_{\sigma \nu}^{\lambda} g^{\sigma \kappa} \partial_{\kappa}{F_{\mu \lambda}} + A_{\sigma \nu}^{\lambda} g^{\sigma \kappa} A_{\kappa \mu}^{\rho} F_{\rho \lambda} + A_{\sigma \nu}^{\lambda} g^{\sigma \kappa} A_{\kappa \lambda}^{\rho} F_{\mu \rho})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+5\specialcolon{}= {\nabla}_{\sigma}{{\nabla}^{\sigma}{{F}_{\mu \nu}}\, }\,  = (({\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {\partial}_{\kappa}{{F}_{\mu \nu}}\,  + {g}^{\sigma \kappa} {\partial}_{\sigma \kappa}{{F}_{\mu \nu}}\, ) + ( - {\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {A}_{\kappa \mu}\,^{\rho} {F}_{\rho \nu} - {g}^{\sigma \kappa} {\partial}_{\sigma}{{A}_{\kappa \mu}\,^{\rho}}\,  {F}_{\rho \nu} - {g}^{\sigma \kappa} {A}_{\kappa \mu}\,^{\rho} {\partial}_{\sigma}{{F}_{\rho \nu}}\, ) + ( - {\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {A}_{\kappa \nu}\,^{\rho} {F}_{\mu \rho} - {g}^{\sigma \kappa} {\partial}_{\sigma}{{A}_{\kappa \nu}\,^{\rho}}\,  {F}_{\mu \rho} - {g}^{\sigma \kappa} {A}_{\kappa \nu}\,^{\rho} {\partial}_{\sigma}{{F}_{\mu \rho}}\, ) + {A}_{\sigma \lambda}\,^{\sigma} {g}^{\lambda \kappa} {\partial}_{\kappa}{{F}_{\mu \nu}}\,  - {A}_{\sigma \lambda}\,^{\sigma} {g}^{\lambda \kappa} {A}_{\kappa \mu}\,^{\rho} {F}_{\rho \nu} - {A}_{\sigma \lambda}\,^{\sigma} {g}^{\lambda \kappa} {A}_{\kappa \nu}\,^{\rho} {F}_{\mu \rho} - {A}_{\sigma \mu}\,^{\lambda} {g}^{\sigma \kappa} {\partial}_{\kappa}{{F}_{\lambda \nu}}\,  + {A}_{\sigma \mu}\,^{\lambda} {g}^{\sigma \kappa} {A}_{\kappa \lambda}\,^{\rho} {F}_{\rho \nu} + {A}_{\sigma \mu}\,^{\lambda} {g}^{\sigma \kappa} {A}_{\kappa \nu}\,^{\rho} {F}_{\lambda \rho} - {A}_{\sigma \nu}\,^{\lambda} {g}^{\sigma \kappa} {\partial}_{\kappa}{{F}_{\mu \lambda}}\,  + {A}_{\sigma \nu}\,^{\lambda} {g}^{\sigma \kappa} {A}_{\kappa \mu}\,^{\rho} {F}_{\rho \lambda} + {A}_{\sigma \nu}\,^{\lambda} {g}^{\sigma \kappa} {A}_{\kappa \lambda}\,^{\rho} {F}_{\mu \rho});
+\end{dmath*}
+% orig
+% \nabla_{\sigma}{\nabla^{\sigma}{F_{\mu \nu}}} = ((\partial_{\sigma}{g^{\sigma \kappa}} \partial_{\kappa}{F_{\mu \nu}} + g^{\sigma \kappa} \partial_{\sigma \kappa}{F_{\mu \nu}}) + ( - \partial_{\sigma}{g^{\sigma \kappa}} A_{\kappa \mu}^{\rho} F_{\rho \nu} - g^{\sigma \kappa} \partial_{\sigma}{A_{\kappa \mu}^{\rho}} F_{\rho \nu} - A^{\sigma}_{\mu}^{\rho} \partial_{\sigma}{F_{\rho \nu}}) + ( - \partial_{\sigma}{g^{\sigma \kappa}} A_{\kappa \nu}^{\rho} F_{\mu \rho} - g^{\sigma \kappa} \partial_{\sigma}{A_{\kappa \nu}^{\rho}} F_{\mu \rho} - A^{\sigma}_{\nu}^{\rho} \partial_{\sigma}{F_{\mu \rho}}) + A_{\sigma}^{\kappa \sigma} \partial_{\kappa}{F_{\mu \nu}} - A_{\sigma}^{\kappa \sigma} A_{\kappa \mu}^{\rho} F_{\rho \nu} - A_{\sigma}^{\kappa \sigma} A_{\kappa \nu}^{\rho} F_{\mu \rho} - A^{\kappa}_{\mu}^{\lambda} \partial_{\kappa}{F_{\lambda \nu}} + A^{\kappa}_{\mu}^{\lambda} A_{\kappa \lambda}^{\rho} F_{\rho \nu} + A^{\kappa}_{\mu}^{\lambda} A_{\kappa \nu}^{\rho} F_{\lambda \rho} - A^{\kappa}_{\nu}^{\lambda} \partial_{\kappa}{F_{\mu \lambda}} + A^{\kappa}_{\nu}^{\lambda} A_{\kappa \mu}^{\rho} F_{\rho \lambda} + A^{\kappa}_{\nu}^{\lambda} A_{\kappa \lambda}^{\rho} F_{\mu \rho})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+5\specialcolon{}= {\nabla}_{\sigma}{{\nabla}^{\sigma}{{F}_{\mu \nu}}\, }\,  = (({\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {\partial}_{\kappa}{{F}_{\mu \nu}}\,  + {g}^{\sigma \kappa} {\partial}_{\sigma \kappa}{{F}_{\mu \nu}}\, ) + ( - {\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {A}_{\kappa \mu}\,^{\rho} {F}_{\rho \nu} - {g}^{\sigma \kappa} {\partial}_{\sigma}{{A}_{\kappa \mu}\,^{\rho}}\,  {F}_{\rho \nu} - {A}^{\sigma}\,_{\mu}\,^{\rho} {\partial}_{\sigma}{{F}_{\rho \nu}}\, ) + ( - {\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {A}_{\kappa \nu}\,^{\rho} {F}_{\mu \rho} - {g}^{\sigma \kappa} {\partial}_{\sigma}{{A}_{\kappa \nu}\,^{\rho}}\,  {F}_{\mu \rho} - {A}^{\sigma}\,_{\nu}\,^{\rho} {\partial}_{\sigma}{{F}_{\mu \rho}}\, ) + {A}_{\sigma}\,^{\kappa \sigma} {\partial}_{\kappa}{{F}_{\mu \nu}}\,  - {A}_{\sigma}\,^{\kappa \sigma} {A}_{\kappa \mu}\,^{\rho} {F}_{\rho \nu} - {A}_{\sigma}\,^{\kappa \sigma} {A}_{\kappa \nu}\,^{\rho} {F}_{\mu \rho} - {A}^{\kappa}\,_{\mu}\,^{\lambda} {\partial}_{\kappa}{{F}_{\lambda \nu}}\,  + {A}^{\kappa}\,_{\mu}\,^{\lambda} {A}_{\kappa \lambda}\,^{\rho} {F}_{\rho \nu} + {A}^{\kappa}\,_{\mu}\,^{\lambda} {A}_{\kappa \nu}\,^{\rho} {F}_{\lambda \rho} - {A}^{\kappa}\,_{\nu}\,^{\lambda} {\partial}_{\kappa}{{F}_{\mu \lambda}}\,  + {A}^{\kappa}\,_{\nu}\,^{\lambda} {A}_{\kappa \mu}\,^{\rho} {F}_{\rho \lambda} + {A}^{\kappa}\,_{\nu}\,^{\lambda} {A}_{\kappa \lambda}\,^{\rho} {F}_{\mu \rho});
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@rename_dummies!(%);
+\end{verbatim}}
+% orig
+% \nabla_{\sigma}{\nabla^{\sigma}{F_{\mu \nu}}} = ((\partial_{a}{g^{a b}} \partial_{b}{F_{\mu \nu}} + g^{a b} \partial_{a b}{F_{\mu \nu}}) + ( - \partial_{a}{g^{a b}} A_{b \mu}^{c} F_{c \nu} - g^{a b} \partial_{a}{A_{b \mu}^{c}} F_{c \nu} - A^{a}_{\mu}^{b} \partial_{a}{F_{b \nu}}) + ( - \partial_{a}{g^{a b}} A_{b \nu}^{c} F_{\mu c} - g^{a b} \partial_{a}{A_{b \nu}^{c}} F_{\mu c} - A^{a}_{\nu}^{b} \partial_{a}{F_{\mu b}}) + A_{a}^{b a} \partial_{b}{F_{\mu \nu}} - A_{a}^{b a} A_{b \mu}^{c} F_{c \nu} - A_{a}^{b a} A_{b \nu}^{c} F_{\mu c} - A^{a}_{\mu}^{b} \partial_{a}{F_{b \nu}} + A^{a}_{\mu}^{b} A_{a b}^{c} F_{c \nu} + A^{a}_{\mu}^{b} A_{a \nu}^{c} F_{b c} - A^{a}_{\nu}^{b} \partial_{a}{F_{\mu b}} + A^{a}_{\nu}^{b} A_{a \mu}^{c} F_{c b} + A^{a}_{\nu}^{b} A_{a b}^{c} F_{\mu c})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+5\specialcolon{}= {\nabla}_{\sigma}{{\nabla}^{\sigma}{{F}_{\mu \nu}}\, }\,  = (({\partial}_{a}{{g}^{a b}}\,  {\partial}_{b}{{F}_{\mu \nu}}\,  + {g}^{a b} {\partial}_{a b}{{F}_{\mu \nu}}\, ) + ( - {\partial}_{a}{{g}^{a b}}\,  {A}_{b \mu}\,^{c} {F}_{c \nu} - {g}^{a b} {\partial}_{a}{{A}_{b \mu}\,^{c}}\,  {F}_{c \nu} - {A}^{a}\,_{\mu}\,^{b} {\partial}_{a}{{F}_{b \nu}}\, ) + ( - {\partial}_{a}{{g}^{a b}}\,  {A}_{b \nu}\,^{c} {F}_{\mu c} - {g}^{a b} {\partial}_{a}{{A}_{b \nu}\,^{c}}\,  {F}_{\mu c} - {A}^{a}\,_{\nu}\,^{b} {\partial}_{a}{{F}_{\mu b}}\, ) + {A}_{a}\,^{b a} {\partial}_{b}{{F}_{\mu \nu}}\,  - {A}_{a}\,^{b a} {A}_{b \mu}\,^{c} {F}_{c \nu} - {A}_{a}\,^{b a} {A}_{b \nu}\,^{c} {F}_{\mu c} - {A}^{a}\,_{\mu}\,^{b} {\partial}_{a}{{F}_{b \nu}}\,  + {A}^{a}\,_{\mu}\,^{b} {A}_{a b}\,^{c} {F}_{c \nu} + {A}^{a}\,_{\mu}\,^{b} {A}_{a \nu}\,^{c} {F}_{b c} - {A}^{a}\,_{\nu}\,^{b} {\partial}_{a}{{F}_{\mu b}}\,  + {A}^{a}\,_{\nu}\,^{b} {A}_{a \mu}\,^{c} {F}_{c b} + {A}^{a}\,_{\nu}\,^{b} {A}_{a b}\,^{c} {F}_{\mu c});
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+\nabla_{\sigma}{\nabla^{\sigma}{B_{\mu}}}=
+\partial_{\sigma}{g^{\sigma \kappa}*(\partial_{\kappa}{B_{\mu}}-A_{\kappa \mu}^{\rho} B_{\rho})}
++A_{\sigma \lambda}^{\sigma}
+g^{\lambda \kappa}*(\partial_{\kappa}{B_{\mu}}-A_{\kappa \mu}^{\rho} B_{\rho})
+-A_{\sigma \mu}^{\lambda}
+g^{\sigma \kappa}*(\partial_{\kappa}{B_{\lambda}}-A_{\kappa \lambda}^{\rho} B_{\rho})
+)
+;
+@distribute!(%):
+@prodrule!(%);
+@eliminate_metric!(%);
+\end{verbatim}}
+% orig
+% \nabla_{\sigma}{\nabla^{\sigma}{B_{\mu}}} = (\partial_{\sigma}{(g^{\sigma \kappa} (\partial_{\kappa}{B_{\mu}} - A_{\kappa \mu}^{\rho} B_{\rho}))} + A_{\sigma \lambda}^{\sigma} g^{\lambda \kappa} (\partial_{\kappa}{B_{\mu}} - A_{\kappa \mu}^{\rho} B_{\rho}) - A_{\sigma \mu}^{\lambda} g^{\sigma \kappa} (\partial_{\kappa}{B_{\lambda}} - A_{\kappa \lambda}^{\rho} B_{\rho}))
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+6\specialcolon{}= {\nabla}_{\sigma}{{\nabla}^{\sigma}{{B}_{\mu}}\, }\,  = ({\partial}_{\sigma}{({g}^{\sigma \kappa} ({\partial}_{\kappa}{{B}_{\mu}}\,  - {A}_{\kappa \mu}\,^{\rho} {B}_{\rho}))}\,  + {A}_{\sigma \lambda}\,^{\sigma} {g}^{\lambda \kappa} ({\partial}_{\kappa}{{B}_{\mu}}\,  - {A}_{\kappa \mu}\,^{\rho} {B}_{\rho}) - {A}_{\sigma \mu}\,^{\lambda} {g}^{\sigma \kappa} ({\partial}_{\kappa}{{B}_{\lambda}}\,  - {A}_{\kappa \lambda}\,^{\rho} {B}_{\rho}));
+\end{dmath*}
+% orig
+% \nabla_{\sigma}{\nabla^{\sigma}{B_{\mu}}} = ((\partial_{\sigma}{g^{\sigma \kappa}} \partial_{\kappa}{B_{\mu}} + g^{\sigma \kappa} \partial_{\sigma \kappa}{B_{\mu}}) + ( - \partial_{\sigma}{g^{\sigma \kappa}} A_{\kappa \mu}^{\rho} B_{\rho} - g^{\sigma \kappa} \partial_{\sigma}{A_{\kappa \mu}^{\rho}} B_{\rho} - g^{\sigma \kappa} A_{\kappa \mu}^{\rho} \partial_{\sigma}{B_{\rho}}) + A_{\sigma \lambda}^{\sigma} g^{\lambda \kappa} \partial_{\kappa}{B_{\mu}} - A_{\sigma \lambda}^{\sigma} g^{\lambda \kappa} A_{\kappa \mu}^{\rho} B_{\rho} - A_{\sigma \mu}^{\lambda} g^{\sigma \kappa} \partial_{\kappa}{B_{\lambda}} + A_{\sigma \mu}^{\lambda} g^{\sigma \kappa} A_{\kappa \lambda}^{\rho} B_{\rho})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+6\specialcolon{}= {\nabla}_{\sigma}{{\nabla}^{\sigma}{{B}_{\mu}}\, }\,  = (({\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {\partial}_{\kappa}{{B}_{\mu}}\,  + {g}^{\sigma \kappa} {\partial}_{\sigma \kappa}{{B}_{\mu}}\, ) + ( - {\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {A}_{\kappa \mu}\,^{\rho} {B}_{\rho} - {g}^{\sigma \kappa} {\partial}_{\sigma}{{A}_{\kappa \mu}\,^{\rho}}\,  {B}_{\rho} - {g}^{\sigma \kappa} {A}_{\kappa \mu}\,^{\rho} {\partial}_{\sigma}{{B}_{\rho}}\, ) + {A}_{\sigma \lambda}\,^{\sigma} {g}^{\lambda \kappa} {\partial}_{\kappa}{{B}_{\mu}}\,  - {A}_{\sigma \lambda}\,^{\sigma} {g}^{\lambda \kappa} {A}_{\kappa \mu}\,^{\rho} {B}_{\rho} - {A}_{\sigma \mu}\,^{\lambda} {g}^{\sigma \kappa} {\partial}_{\kappa}{{B}_{\lambda}}\,  + {A}_{\sigma \mu}\,^{\lambda} {g}^{\sigma \kappa} {A}_{\kappa \lambda}\,^{\rho} {B}_{\rho});
+\end{dmath*}
+% orig
+% \nabla_{\sigma}{\nabla^{\sigma}{B_{\mu}}} = ((\partial_{\sigma}{g^{\sigma \kappa}} \partial_{\kappa}{B_{\mu}} + g^{\sigma \kappa} \partial_{\sigma \kappa}{B_{\mu}}) + ( - \partial_{\sigma}{g^{\sigma \kappa}} A_{\kappa \mu}^{\rho} B_{\rho} - g^{\sigma \kappa} \partial_{\sigma}{A_{\kappa \mu}^{\rho}} B_{\rho} - A^{\sigma}_{\mu}^{\rho} \partial_{\sigma}{B_{\rho}}) + A_{\sigma}^{\kappa \sigma} \partial_{\kappa}{B_{\mu}} - A_{\sigma}^{\kappa \sigma} A_{\kappa \mu}^{\rho} B_{\rho} - A^{\kappa}_{\mu}^{\lambda} \partial_{\kappa}{B_{\lambda}} + A^{\kappa}_{\mu}^{\lambda} A_{\kappa \lambda}^{\rho} B_{\rho})
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+6\specialcolon{}= {\nabla}_{\sigma}{{\nabla}^{\sigma}{{B}_{\mu}}\, }\,  = (({\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {\partial}_{\kappa}{{B}_{\mu}}\,  + {g}^{\sigma \kappa} {\partial}_{\sigma \kappa}{{B}_{\mu}}\, ) + ( - {\partial}_{\sigma}{{g}^{\sigma \kappa}}\,  {A}_{\kappa \mu}\,^{\rho} {B}_{\rho} - {g}^{\sigma \kappa} {\partial}_{\sigma}{{A}_{\kappa \mu}\,^{\rho}}\,  {B}_{\rho} - {A}^{\sigma}\,_{\mu}\,^{\rho} {\partial}_{\sigma}{{B}_{\rho}}\, ) + {A}_{\sigma}\,^{\kappa \sigma} {\partial}_{\kappa}{{B}_{\mu}}\,  - {A}_{\sigma}\,^{\kappa \sigma} {A}_{\kappa \mu}\,^{\rho} {B}_{\rho} - {A}^{\kappa}\,_{\mu}\,^{\lambda} {\partial}_{\kappa}{{B}_{\lambda}}\,  + {A}^{\kappa}\,_{\mu}\,^{\lambda} {A}_{\kappa \lambda}\,^{\rho} {B}_{\rho});
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+w{#}::Derivative:
+\end{verbatim}}
+% Begin TeX comment
+Assigning property Derivative to $w{\#}\, $.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+Riemann:=
+ w_{\mu}{A_{\nu \sigma}^{\rho}}
+-w_{\nu}{A_{\mu \sigma}^{\rho}}
++A_{\mu \kappa}^{\rho}A_{\nu \sigma}^{\kappa}
+-A_{\mu \sigma}^{\kappa}A_{\nu \kappa}^{\rho}
+-C_{\mu \nu}^{\kappa}A_{\kappa \sigma}^{\rho};
+\end{verbatim}}
+% orig
+% w_{\mu}{A_{\nu \sigma}^{\rho}} - w_{\nu}{A_{\mu \sigma}^{\rho}} + A_{\mu \kappa}^{\rho} A_{\nu \sigma}^{\kappa} - A_{\mu \sigma}^{\kappa} A_{\nu \kappa}^{\rho} - C_{\mu \nu}^{\kappa} A_{\kappa \sigma}^{\rho}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Riemann\specialcolon{}= {w}_{\mu}{{A}_{\nu \sigma}\,^{\rho}}\,  - {w}_{\nu}{{A}_{\mu \sigma}\,^{\rho}}\,  + {A}_{\mu \kappa}\,^{\rho} {A}_{\nu \sigma}\,^{\kappa} - {A}_{\mu \sigma}\,^{\kappa} {A}_{\nu \kappa}\,^{\rho} - {C}_{\mu \nu}\,^{\kappa} {A}_{\kappa \sigma}\,^{\rho};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+Ricci:=w_{\mu}{A_{\nu \sigma}^{\nu}}
+-w_{\nu}{A_{\mu \sigma}^{\nu}}
++A_{\mu \kappa}^{\nu}A_{\nu \sigma}^{\kappa}
+-A_{\mu \sigma}^{\kappa}A_{\nu \kappa}^{\nu}
+-C_{\mu \nu}^{\kappa}A_{\kappa \sigma}^{\nu};
+\end{verbatim}}
+% orig
+% w_{\mu}{A_{\nu \sigma}^{\nu}} - w_{\nu}{A_{\mu \sigma}^{\nu}} + A_{\mu \kappa}^{\nu} A_{\nu \sigma}^{\kappa} - A_{\mu \sigma}^{\kappa} A_{\nu \kappa}^{\nu} - C_{\mu \nu}^{\kappa} A_{\kappa \sigma}^{\nu}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+Ricci\specialcolon{}= {w}_{\mu}{{A}_{\nu \sigma}\,^{\nu}}\,  - {w}_{\nu}{{A}_{\mu \sigma}\,^{\nu}}\,  + {A}_{\mu \kappa}\,^{\nu} {A}_{\nu \sigma}\,^{\kappa} - {A}_{\mu \sigma}\,^{\kappa} {A}_{\nu \kappa}\,^{\nu} - {C}_{\mu \nu}\,^{\kappa} {A}_{\kappa \sigma}\,^{\nu};
+\end{dmath*}
+\end{document}

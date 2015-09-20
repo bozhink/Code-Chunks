@@ -1,0 +1,4 @@
+dllimport.cpp(14): Warning! W726: col(1) no reference to formal parameter 'argc'
+dllimport.cpp(9): Note! N392: col(14) definition: 'int argc' in 'int main( int, char * * )'
+dllimport.cpp(14): Warning! W726: col(1) no reference to formal parameter 'argv'
+dllimport.cpp(9): Note! N392: col(26) definition: 'char * * argv' in 'int main( int, char * * )'

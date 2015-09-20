@@ -1,0 +1,31 @@
+!define BLANK ""
+E:\Projects\DLL\watcom\addnumbers.obj : E:\Projects\DLL\addnumbers.c .AUTODE&
+PEND
+ @E:
+ cd E:\Projects\DLL\watcom
+ *wcc386 ..\addnumbers.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -od -d&
+2 -bd -6r -bt=nt -fo=.obj -mf
+
+E:\Projects\DLL\watcom\complex.obj : E:\Projects\DLL\complex.c .AUTODEPEND
+ @E:
+ cd E:\Projects\DLL\watcom
+ *wcc386 ..\complex.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -od -d2 -&
+bd -6r -bt=nt -fo=.obj -mf
+
+E:\Projects\DLL\watcom\dllExmple.dll : E:\Projects\DLL\watcom\addnumbers.obj&
+ E:\Projects\DLL\watcom\complex.obj .AUTODEPEND
+ @E:
+ cd E:\Projects\DLL\watcom
+ @%write dllExmple.lk1 FIL addnumbers.obj,complex.obj
+ @%append dllExmple.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b dllExmple.imp 
+ @%append dllExmple.lk1 LIBR dllExmple.imp
+!endif
+!ifneq BLANK ""
+ @%append dllExmple.lk1 
+!endif
+ *wlink name dllExmple d all sys nt_dll op m op maxe=25 op q op symf @dllExm&
+ple.lk1
+ wlib -q -n -b dllExmple.lib +dllExmple.dll
+

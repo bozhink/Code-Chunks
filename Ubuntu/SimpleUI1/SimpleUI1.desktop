@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=SimpleUI1
+Exec=/usr/bin/qmlscene $@ /usr/share/SimpleUI1/SimpleUI1.qml
+Icon=qmlscene
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

@@ -1,0 +1,16 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.7 ] */
+
+/* [wxMaxima: input   start ] */
+A(r,t,p):=matrix(
+[sin(t)*cos(p), r*cos(t)*cos(p), -r*sin(t)*sin(p)],
+[sin(t)*sin(p), r*cos(t)*sin(p),  r*sin(t)*cos(p)],
+[cos(t),       -r*sin(t),         0]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A(2);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

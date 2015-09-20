@@ -1,0 +1,24 @@
+!define BLANK ""
+E:\Projects\examples\DLL\dllimport.obj : E:\Projects\examples\DLL\dllimport.&
+cpp .AUTODEPEND
+ @E:
+ cd E:\Projects\examples\DLL
+ *wpp386 dllimport.cpp -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -od -d2 &
+-6r -bt=nt -fo=.obj -mf -xs -xr
+
+E:\Projects\examples\DLL\CppDllImport.exe : E:\Projects\examples\DLL\dllimpo&
+rt.obj E:\Projects\examples\DLL\CppAddNumbers.lib .AUTODEPEND
+ @E:
+ cd E:\Projects\examples\DLL
+ @%write CppDllImport.lk1 FIL dllimport.obj
+ @%append CppDllImport.lk1 LIBR CppAddNumbers.lib
+!ifneq BLANK ""
+ *wlib -q -n -b CppDllImport.imp 
+ @%append CppDllImport.lk1 LIBR CppDllImport.imp
+!endif
+!ifneq BLANK ""
+ @%append CppDllImport.lk1 
+!endif
+ *wlink name CppDllImport d all sys nt op m op maxe=25 op q op symf @CppDllI&
+mport.lk1
+

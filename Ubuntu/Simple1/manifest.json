@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.simple1",
+    "description": "description of Simple1",
+    "framework": "ubuntu-sdk-14.04-qml-dev1",
+    "architecture": "all",
+    "title": "Simple1",
+    "hooks": {
+        "Simple1": {
+            "apparmor": "Simple1.json",
+            "desktop": "Simple1.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}

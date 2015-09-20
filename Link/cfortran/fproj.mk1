@@ -1,0 +1,20 @@
+!define BLANK ""
+D:\projects\cfortran\fproj.obj : D:\projects\cfortran\fproj.for .AUTODEPEND
+ @D:
+ cd D:\projects\cfortran
+ wfc386 fproj.for -d2 -q -dep
+
+D:\projects\cfortran\fproj.exe : D:\projects\cfortran\fproj.obj .AUTODEPEND
+ @D:
+ cd D:\projects\cfortran
+ @%write fproj.lk1 FIL fproj.obj
+ @%append fproj.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b fproj.imp 
+ @%append fproj.lk1 LIBR fproj.imp
+!endif
+!ifneq BLANK ""
+ @%append fproj.lk1 
+!endif
+ *wlink name fproj d all sys nt op m op maxe=25 op q op symf @fproj.lk1
+

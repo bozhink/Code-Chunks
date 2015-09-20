@@ -1,0 +1,114 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 12.01.0 ] */
+
+/* [wxMaxima: input   start ] */
+load("/home/bozhin/Dropbox/geometry-pack.mac")$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+g:matrix([beta^2-1,-beta,0,0],[-beta,1,0,0],[0,0,1,0],[0,0,0,1]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+mu:ratsimp(EpsilonMu(g));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+invmu:invert(mu);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+v:Velocity(g)[1];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+R:Rtensor(invmu,3)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+D_invmu:Grad(subst(b(x,y,z),beta,invmu),[x,y,z],3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Q:Qtensor(D_invmu,3)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Z:Ztensor(mu,R,v,3);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+R[1][2][2][1];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+E:[Ex(x,y,z),Ey(x,y,z),Ez(x,y,z)];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X:[x,y,z];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+diff(E,X[1]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A1:ratsimp(
+create_list(
+  sum(
+    sum(sum(R[k][a][b][c]*diff(diff(E[c],X[b]),X[a]),c,1,3),b,1,3),a,1,3
+  )
+,k,1,3
+)
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A2:ratsimp(
+create_list(
+  sum(
+    sum(sum(
+      %i*Omega*(R[k][a][b][c]+R[k][b][a][c])*v[a]*diff(E[c],X[b])
+    ,c,1,3),b,1,3),a,1,3
+  )
+,k,1,3
+)
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+vb:subst(b(x,y,z),beta,v);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A3:ratsimp(
+create_list(
+  sum(
+    sum(sum(
+      %i*Omega*R[k][a][b][c]*E[c]*diff(vb[b],X[a])
+    ,c,1,3),b,1,3),a,1,3
+  )
+,k,1,3
+)
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A4:ratsimp(
+create_list(
+  sum(sum(Q[k][a][b]*diff(E[b],X[a])+%i*Omega*v[a]*E[b],b,1,3),a,1,3)
+,k,1,3)
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Equations:ratsimp(subst(beta,b(x,y,z),A1+A2+A3+A4+Omega^2*E))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+(Equations[1]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

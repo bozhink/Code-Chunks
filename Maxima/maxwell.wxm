@@ -1,0 +1,61 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 11.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+A:matrix(
+[e*xi1_1,  e*xi1_2,  e*xi1_3,   -f*xi1_1,  -f*xi1_2,  -f*xi1_3,  -e*xi1_1,     -e*xi1_2,     -e*xi1_3,        f*xi1_1,       f*xi1_2,       f*xi1_3,      0,        0,         0,         0       ], 
+
+[e*N1_1,   e*N1_2,   e*N1_3,    -f*N1_1,   -f*N1_2,   -f*N1_3,   -e*M1_1,      -e*M1_2,      -e*M1_3,         f*bM1_1,       f*bM1_2,       f*bM1_3,      0,        0,         0,         0       ],
+
+[e*K1_1_1, e*K1_1_2, e*K1_1_3,  -f*K1_1_1, -f*K1_1_2, -f*K1_1_3,  e*eta*K1_1_1, e*eta*K1_1_2, e*eta*K1_1_3,  -f*eta*K1_1_1, -f*eta*K1_1_2, -f*eta*K1_1_3, 0,        0,         0,         0       ],
+[e*K1_2_1, e*K1_2_2, e*K1_2_3,  -f*K1_2_1, -f*K1_2_2, -f*K1_2_3,  e*eta*K1_2_1, e*eta*K1_2_2, e*eta*K1_2_3,  -f*eta*K1_2_1, -f*eta*K1_2_2, -f*eta*K1_2_3, 0,        0,         0,         0       ],
+[e*K1_3_1, e*K1_3_2, e*K1_1_3,  -f*K1_1_1, -f*K1_1_2, -f*K1_3_3,  e*eta*K1_3_1, e*eta*K1_3_2, e*eta*K1_3_3,  -f*eta*K1_3_1, -f*eta*K1_3_2, -f*eta*K1_3_3, 0,        0,         0,         0       ],
+
+[e*P1_1_1, e*P1_1_2, e*P1_1_3,  -f*P1_1_1, -f*P1_1_2, -f*P1_1_3, -e*Q1_1_1,    -e*Q1_1_2,    -e*Q1_1_3,       f*bQ1_1_1,     f*bQ1_1_2,     f*bQ1_1_3,    0,        0,         0,         0       ],
+[e*P1_2_1, e*P1_2_2, e*P1_2_3,  -f*P1_2_1, -f*P1_2_2, -f*P1_2_3, -e*Q1_2_1,    -e*Q1_2_2,    -e*Q1_2_3,       f*bQ1_2_1,     f*bQ1_2_2,     f*bQ1_2_3,    0,        0,         0,         0       ],
+[e*P1_3_1, e*P1_3_2, e*P1_3_3,  -f*P1_3_1, -f*P1_3_2, -f*P1_3_3, -e*Q1_3_1,    -e*Q1_3_2,    -e*Q1_3_3,       f*bQ1_3_1,     f*bQ1_3_2,     f*bQ1_3_3,    0,        0,         0,         0       ],
+
+[0,        0,        0,          0,         0,         0,        -g*xi2_1,     -g*xi2_2,     -g*xi2_3,        h*xi2_1,       h*xi2_2,       h*xi2_3,      g*xi2_1,  g*xi2_2,  -h*xi2_1,  -h*xi2_2 ],
+
+[0,        0,        0,          0,         0,         0,        -g*M2_1,      -g*M2_2,      -g*M2_3,         h*bM2_1,       h*bM2_2,       h*bM2_3,      g*N2_1,   g*N2_2,   -h*N2_1,   -h*N2_2  ],
+
+[0,        0,        0,          0,         0,         0,        -g*K2_1_1,    -g*K2_1_2,    -g*K2_1_3,       h*K2_1_1,      h*K2_1_2,      h*K2_1_3,     g*K2_1_1, g*K2_1_2, -h*K2_1_1, -h*K2_1_2],
+[0,        0,        0,          0,         0,         0,        -g*K2_2_1,    -g*K2_2_2,    -g*K2_2_3,       h*K2_2_1,      h*K2_2_2,      h*K2_2_3,     g*K2_2_1, g*K2_2_2, -h*K2_2_1, -h*K2_2_2],
+[0,        0,        0,          0,         0,         0,        -g*K2_3_1,    -g*K2_3_2,    -g*K2_3_3,       h*K2_3_1,      h*K2_3_2,      h*K2_3_3,     g*K2_3_1, g*K2_3_2, -h*K2_3_1, -h*K2_3_2],
+
+[0,        0,        0,          0,         0,         0,        -g*Q2_3_1,    -g*Q2_3_2,    -g*Q2_3_3,       h*bQ2_3_1,     h*bQ2_3_2,     h*bQ2_3_3,    g*P2_1_1, g*P2_1_2, -h*P2_1_1, -h*P2_1_2],
+[0,        0,        0,          0,         0,         0,        -g*Q2_3_1,    -g*Q2_3_2,    -g*Q2_3_3,       h*bQ2_3_1,     h*bQ2_3_2,     h*bQ2_3_3,    g*P2_2_1, g*P2_2_2, -h*P2_2_1, -h*P2_2_2],
+[0,        0,        0,          0,         0,         0,        -g*Q2_3_1,    -g*Q2_3_2,    -g*Q2_3_3,       h*bQ2_3_1,     h*bQ2_3_2,     h*bQ2_3_3,    g*P2_3_1, g*P2_3_2, -h*P2_3_1, -h*P2_3_2]
+
+);
+
+Source:matrix(
+[S1  ],
+[S2  ],
+[S3_1],
+[S3_2],
+[S3_3],
+[S4_1],
+[S4_2],
+[S4_3],
+[S5  ],
+[S6  ],
+[S7_1],
+[S7_2],
+[S7_3],
+[S8_1],
+[S8_2],
+[S8_3]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A.Source;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+invert(A);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

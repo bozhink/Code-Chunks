@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=t1
+Exec=/usr/bin/qmlscene $@ /usr/share/t1/t1.qml
+Icon=qmlscene
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

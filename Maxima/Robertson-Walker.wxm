@@ -1,0 +1,77 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 12.01.0 ] */
+
+/* [wxMaxima: input   start ] */
+[t,x,y,z]=[t,r*sin(theta)*cos(phi),r*sin(theta)*sin(phi),r*cos(theta)];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+X1:[t,r*sin(theta)*cos(phi),r*sin(theta)*sin(phi),r*cos(theta)];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+J:matrix(diff(X1,t),diff(X1,r),diff(X1,theta),diff(X1,phi));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+iJ:trigsimp(invert(J));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+T:matrix([rho,0,0,0],[0,-p,0,0],[0,0,-p,0],[0,0,0,-p]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+trigsimp(transpose(iJ).T.transpose(J));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+load(functs);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+tracematrix(T);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+g:matrix([1,0,0,0],[0,-R(t)/(1-k*r^2),0,0],[0,0,-R(t)*r^2,0],[0,0,0,-R(t)*r^2*sin(theta)^2]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+S:ratsimp(g.T-1/2*g*tracematrix(T));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Eq0:-(3/4)*(diff(R(t), t))^2/R(t)^2 +(3/2)*(diff(R(t), t, 2))/R(t) = 8*%pi*G*S[1,1];
+
+Eq1:2*k/(-1+k*r^2)+(1/4)*(diff(R(t), t))^2/((-1+k*r^2)*R(t))+
+     (1/2)*(diff(R(t), t, 2))/(-1+k*r^2) = 8*%pi*G*factor(S[2,2]);
+
+Eq2:-1/(4*sin(theta)^2)+3/4-2*k*r^2-(1/4)*(diff(R(t), t))^2*r^2/R(t)-
+   (1/2)*(diff(R(t), t, 2))*r^2 = 8*%pi*G*factor(S[3,3]);
+
+Eq3:-1/(4*sin(theta))+(3/4)*sin(theta)-2*sin(theta)*k*r^2-
+    (1/4)*sin(theta)*(diff(R(t), t))^2*r^2/R(t)-
+    (1/2)*sin(theta)*(diff(R(t), t, 2))*r^2 = 8*%pi*G*factor(S[4,4]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+expand(Eq3/sin(theta));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq1:expand(factor(2*Eq1*(k*r^2-1)/R(t)));
+
+eq0:expand(-factor(Eq0*2/3));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq1-eq0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq1+eq0;
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,30 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.7 ] */
+
+/* [wxMaxima: input   start ] */
+sumexpand=true;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A:matrix(
+[e, -f, -e, f],
+[a*e, -b*f, -c*e, d*f],
+[a*e, -b*f, -epsilon*c*e, epsilon*d*f],
+[e, f, -eta*e, eta*f]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+expand(determinant(A));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+expand(invert(A));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+kill(all);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

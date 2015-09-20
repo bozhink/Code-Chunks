@@ -1,0 +1,6 @@
+dlladdnumbers.cpp(6): Warning! W726: col(1) no reference to formal parameter 'hModule'
+dlladdnumbers.cpp(3): Note! N392: col(30) definition: 'void * hModule' in 'int stdcall DllMain( void *, unsigned long, void * )'
+dlladdnumbers.cpp(6): Warning! W726: col(1) no reference to formal parameter 'dwReason'
+dlladdnumbers.cpp(3): Note! N392: col(45) definition: 'unsigned long dwReason' in 'int stdcall DllMain( void *, unsigned long, void * )'
+dlladdnumbers.cpp(6): Warning! W726: col(1) no reference to formal parameter 'lpReserved'
+dlladdnumbers.cpp(3): Note! N392: col(62) definition: 'void * lpReserved' in 'int stdcall DllMain( void *, unsigned long, void * )'

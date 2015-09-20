@@ -1,0 +1,21 @@
+!define BLANK ""
+D:\projects\cfortran\cproj.obj : D:\projects\cfortran\cproj.c .AUTODEPEND
+ @D:
+ cd D:\projects\cfortran
+ *wcc386 cproj.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -od -d2 -6r -b&
+t=nt -fo=.obj -mf
+
+D:\projects\cfortran\cproj.exe : D:\projects\cfortran\cproj.obj .AUTODEPEND
+ @D:
+ cd D:\projects\cfortran
+ @%write cproj.lk1 FIL cproj.obj
+ @%append cproj.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b cproj.imp 
+ @%append cproj.lk1 LIBR cproj.imp
+!endif
+!ifneq BLANK ""
+ @%append cproj.lk1 
+!endif
+ *wlink name cproj d all sys nt op m op maxe=25 op q op symf @cproj.lk1
+

@@ -1,0 +1,44 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 11.08.0 ] */
+
+/* [wxMaxima: input   start ] */
+hc(x):=conjugate(transpose(x))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Zero2D:matrix([0,0],[0,0])$
+Sigma0:matrix([1,0],[0,1])$
+Sigma1:matrix([0,1],[1,0])$
+Sigma2:matrix([0,-%i],[%i,0])$
+Sigma3:matrix([1,0],[0,-1])$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Gamma0:matrix([1,0,0,0],[0,1,0,0],[0,0,-1,0],[0,0,0,-1])$
+Gamma1:matrix([0,0,0,1],[0,0,1,0],[0,-1,0,0],[-1,0,0,0])$
+Gamma2:matrix([0,0,0,-%i],[0,0,%i,0],[0,%i,0,0],[-%i,0,0,0])$
+Gamma3:matrix([0,0,1,0],[0,0,0,-1],[-1,0,0,0],[0,1,0,0])$
+Gamma5:%i*Gamma0.Gamma1.Gamma2.Gamma3$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Pi[L]:1/2*(1-Gamma5)$
+Pi[R]:1/2*(1+Gamma5)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+P:Gamma0$
+C:Gamma0.Gamma2$
+T:Gamma5.Gamma2$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+Gamma0.hc(Gamma2).Gamma0-Gamma2;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+P.C.T.Gamma5;
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

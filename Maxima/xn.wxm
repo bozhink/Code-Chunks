@@ -1,0 +1,34 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 11.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+x(s):=X(s);
+y(s):=Y(s);
+z(s):=Z(s);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+g(s):=1/sqrt(1-x(s)^2-y(s)^2-z(s)^2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+v(s):=matrix([x(s)],[y(s)],[z(s)]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+diff(v(s)*g(s), s);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+t(s):=matrix(
+[1+g(s)*g(s)*x(s)*x(s), g(s)*g(s)*x(s)*y(s), g(s)*g(s)*x(s)*z(s)],
+[g(s)*g(s)*x(s)*y(s), 1+g(s)*g(s)*y(s)*y(s), g(s)*g(s)*y(s)*z(s)],
+[g(s)*g(s)*x(s)*z(s), g(s)*g(s)*y(s)*z(s), 1+g(s)*g(s)*z(s)*z(s)]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+invert(t(s));
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

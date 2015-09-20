@@ -1,0 +1,28 @@
+!define BLANK ""
+D:\projects\cfortran\fadd1.obj : D:\projects\cfortran\fadd1.c .AUTODEPEND
+ @D:
+ cd D:\projects\cfortran
+ *wcc386 fadd1.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -od -d2 -6r -b&
+t=nt -fo=.obj -mf
+
+D:\projects\cfortran\ffadd1.obj : D:\projects\cfortran\ffadd1.for .AUTODEPEN&
+D
+ @D:
+ cd D:\projects\cfortran
+ wfc386 ffadd1.for -d2 -q -dep
+
+D:\projects\cfortran\fadd1.exe : D:\projects\cfortran\fadd1.obj D:\projects\&
+cfortran\ffadd1.obj .AUTODEPEND
+ @D:
+ cd D:\projects\cfortran
+ @%write fadd1.lk1 FIL fadd1.obj,ffadd1.obj
+ @%append fadd1.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b fadd1.imp 
+ @%append fadd1.lk1 LIBR fadd1.imp
+!endif
+!ifneq BLANK ""
+ @%append fadd1.lk1 
+!endif
+ *wlink name fadd1 d all sys nt op m op maxe=25 op q op symf @fadd1.lk1
+

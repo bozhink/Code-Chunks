@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.t1",
+    "description": "description of t1",
+    "framework": "ubuntu-sdk-14.04-qml-dev1",
+    "architecture": "all",
+    "title": "t1",
+    "hooks": {
+        "t1": {
+            "apparmor": "t1.json",
+            "desktop": "t1.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}

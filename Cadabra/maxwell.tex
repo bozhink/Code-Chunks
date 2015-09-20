@@ -1,0 +1,391 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{a,b,c,i,j,k,l,m,n,p,q,r,s,t,u,v,w}::Indices(vector).
+{a,b,c,i,j,k,l,m,n,p,q,r,s,t,u,v,w}::Integer(1..3).
+\delta{#}::KroneckerDelta.
+\epsilon_{i j k}::EpsilonTensor(delta=\delta).
+g_{a b}::Metric(signature=1).
+\nabla{#}::PartialDerivative.
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{a,\; b,\; c,\; i,\; j,\; k,\; l,\; m,\; n,\; p,\; q,\; r,\; s,\; t,\; u,\; v,\; w\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Integer to $a$, $b$, $c$, $i$, $j$, $k$, $l$, $m$, $n$, $p$, $q$, $r$, $s$, $t$, $u$, $v$, $w$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property KroneckerDelta to $\delta(\#)$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property EpsilonTensor to ${\epsilon}_{i j k}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Metric to ${g}_{a b}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property PartialDerivative to $\nabla{\#}\, $.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+\nabla^{k}{D_{k}}=\rho;
+@substitute!(%)(D_{k} -> \varepsilon_{k s} E^{s});
+@prodrule!(%);
+@substitute!(%)(E^{s} -> -\nabla^{s}{\Phi}-\nabla_{0}{A^{s}});
+@rename_dummies!(%);
+#
+#
+\epsilon_{i j k} \nabla^{j}{H^{k}}  - \nabla_{0}{D_{i}} = J_{i};
+@substitute!(%)(H^{k} -> \eta^{k s} B_{s}, D_{i} -> \varepsilon_{i s} E^{s});
+@prodrule!(%): @distribute!(%);
+@substitute!(%)(B_{s} -> \epsilon_{s u v} \nabla^{u}{A^{v}}, E^{s} -> -\nabla^{s}{\Phi}- \nabla_{0}{A^{s}}):
+@prodrule!(%): @distribute!(%):@rename_dummies!(%);
+@epsprod2gendelta!(%):
+@reduce_gendelta!(%);
+@canonicalise!(%);
+\end{verbatim}}
+% orig
+% \nabla^{k}{D_{k}} = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= {\nabla}^{k}{{D}_{k}}\,  = \rho;
+\end{dmath*}
+% orig
+% \nabla^{k}{(\varepsilon_{k s} E^{s})} = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= {\nabla}^{k}{({\varepsilon}_{k s} {E}^{s})}\,  = \rho;
+\end{dmath*}
+% orig
+% (\nabla^{k}{\varepsilon_{k s}} E^{s} + \varepsilon_{k s} \nabla^{k}{E^{s}}) = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= ({\nabla}^{k}{{\varepsilon}_{k s}}\,  {E}^{s} + {\varepsilon}_{k s} {\nabla}^{k}{{E}^{s}}\, ) = \rho;
+\end{dmath*}
+% orig
+% (\nabla^{k}{\varepsilon_{k s}} ( - \nabla^{s}{\Phi} - \nabla_{0}{A^{s}}) + \varepsilon_{k s} \nabla^{k}{( - \nabla^{s}{\Phi} - \nabla_{0}{A^{s}})}) = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= ({\nabla}^{k}{{\varepsilon}_{k s}}\,  ( - {\nabla}^{s}{\Phi}\,  - {\nabla}_{0}{{A}^{s}}\, ) + {\varepsilon}_{k s} {\nabla}^{k}{( - {\nabla}^{s}{\Phi}\,  - {\nabla}_{0}{{A}^{s}}\, )}\, ) = \rho;
+\end{dmath*}
+% orig
+% (\nabla^{a}{\varepsilon_{a b}} ( - \nabla^{b}{\Phi} - \nabla_{0}{A^{b}}) + \varepsilon_{a b} \nabla^{a}{( - \nabla^{b}{\Phi} - \nabla_{0}{A^{b}})}) = \rho
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+1\specialcolon{}= ({\nabla}^{a}{{\varepsilon}_{a b}}\,  ( - {\nabla}^{b}{\Phi}\,  - {\nabla}_{0}{{A}^{b}}\, ) + {\varepsilon}_{a b} {\nabla}^{a}{( - {\nabla}^{b}{\Phi}\,  - {\nabla}_{0}{{A}^{b}}\, )}\, ) = \rho;
+\end{dmath*}
+% orig
+% (\epsilon_{i j k} \nabla^{j}{H^{k}} - \nabla_{0}{D_{i}}) = J_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+2\specialcolon{}= ({\epsilon}_{i j k} {\nabla}^{j}{{H}^{k}}\,  - {\nabla}_{0}{{D}_{i}}\, ) = {J}_{i};
+\end{dmath*}
+% orig
+% (\epsilon_{i j k} \nabla^{j}{(\eta^{k s} B_{s})} - \nabla_{0}{(\varepsilon_{i s} E^{s})}) = J_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+2\specialcolon{}= ({\epsilon}_{i j k} {\nabla}^{j}{({\eta}^{k s} {B}_{s})}\,  - {\nabla}_{0}{({\varepsilon}_{i s} {E}^{s})}\, ) = {J}_{i};
+\end{dmath*}
+% orig
+% (\epsilon_{i j k} \nabla^{j}{\eta^{k s}} B_{s} + \epsilon_{i j k} \eta^{k s} \nabla^{j}{B_{s}} + ( - \nabla_{0}{\varepsilon_{i s}} E^{s} - \varepsilon_{i s} \nabla_{0}{E^{s}})) = J_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+2\specialcolon{}= ({\epsilon}_{i j k} {\nabla}^{j}{{\eta}^{k s}}\,  {B}_{s} + {\epsilon}_{i j k} {\eta}^{k s} {\nabla}^{j}{{B}_{s}}\,  + ( - {\nabla}_{0}{{\varepsilon}_{i s}}\,  {E}^{s} - {\varepsilon}_{i s} {\nabla}_{0}{{E}^{s}}\, )) = {J}_{i};
+\end{dmath*}
+% orig
+% (\epsilon_{i j k} \nabla^{j}{\eta^{k s}} \epsilon_{s u v} \nabla^{u}{A^{v}} + \epsilon_{i j k} \eta^{k s} \nabla^{j}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + \epsilon_{i j k} \eta^{k s} \epsilon_{s u v} \nabla^{j u}{A^{v}} + (\nabla_{0}{\varepsilon_{i s}} \nabla^{s}{\Phi} + \nabla_{0}{\varepsilon_{i s}} \nabla_{0}{A^{s}} + \varepsilon_{i s} \nabla_{0}^{s}{\Phi} + \varepsilon_{i s} \nabla_{0 0}{A^{s}})) = J_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+2\specialcolon{}= ({\epsilon}_{i j k} {\nabla}^{j}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}^{u}{{A}^{v}}\,  + {\epsilon}_{i j k} {\eta}^{k s} {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + {\epsilon}_{i j k} {\eta}^{k s} {\epsilon}_{s u v} {\nabla}^{j u}{{A}^{v}}\,  + ({\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}^{s}{\Phi}\,  + {\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}_{0}{{A}^{s}}\,  + {\varepsilon}_{i s} {\nabla}_{0}\,^{s}{\Phi}\,  + {\varepsilon}_{i s} {\nabla}_{0 0}{{A}^{s}}\, )) = {J}_{i};
+\end{dmath*}
+% orig
+% (6 \nabla^{j}{\eta^{k s}} \delta_{i s j u k v} \nabla^{u}{A^{v}} + \epsilon_{i j k} \eta^{k s} \nabla^{j}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 6 \eta^{k s} \delta_{i s j u k v} \nabla^{j u}{A^{v}} + (\nabla_{0}{\varepsilon_{i s}} \nabla^{s}{\Phi} + \nabla_{0}{\varepsilon_{i s}} \nabla_{0}{A^{s}} + \varepsilon_{i s} \nabla_{0}^{s}{\Phi} + \varepsilon_{i s} \nabla_{0 0}{A^{s}})) = J_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+2\specialcolon{}= (6\, {\nabla}^{j}{{\eta}^{k s}}\,  {\delta}_{i s j u k v} {\nabla}^{u}{{A}^{v}}\,  + {\epsilon}_{i j k} {\eta}^{k s} {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 6\, {\eta}^{k s} {\delta}_{i s j u k v} {\nabla}^{j u}{{A}^{v}}\,  + ({\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}^{s}{\Phi}\,  + {\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}_{0}{{A}^{s}}\,  + {\varepsilon}_{i s} {\nabla}_{0}\,^{s}{\Phi}\,  + {\varepsilon}_{i s} {\nabla}_{0 0}{{A}^{s}}\, )) = {J}_{i};
+\end{dmath*}
+% orig
+% (6 \nabla^{j}{\eta^{k s}} \delta_{i s j}^{u}_{k}^{v} \nabla_{u}{A_{v}} - \epsilon_{i}^{j k} \eta_{j}^{s} \nabla_{k}{\epsilon_{s}^{u v}} \nabla_{u}{A_{v}} - 6 \eta^{j k} \delta_{i k j}^{s u v} \nabla_{s u}{A_{v}} + (\nabla_{0}{\varepsilon_{i}^{s}} \nabla_{s}{\Phi} + \nabla_{0}{\varepsilon_{i}^{s}} \nabla_{0}{A_{s}} + \varepsilon_{i}^{s} \nabla_{0 s}{\Phi} + \varepsilon_{i}^{s} \nabla_{0 0}{A_{s}})) = J_{i}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+2\specialcolon{}= (6\, {\nabla}^{j}{{\eta}^{k s}}\,  {\delta}_{i s j}\,^{u}\,_{k}\,^{v} {\nabla}_{u}{{A}_{v}}\,  - {\epsilon}_{i}\,^{j k} {\eta}_{j}\,^{s} {\nabla}_{k}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{u}{{A}_{v}}\,  - 6\, {\eta}^{j k} {\delta}_{i k j}\,^{s u v} {\nabla}_{s u}{{A}_{v}}\,  + ({\nabla}_{0}{{\varepsilon}_{i}\,^{s}}\,  {\nabla}_{s}{\Phi}\,  + {\nabla}_{0}{{\varepsilon}_{i}\,^{s}}\,  {\nabla}_{0}{{A}_{s}}\,  + {\varepsilon}_{i}\,^{s} {\nabla}_{0 s}{\Phi}\,  + {\varepsilon}_{i}\,^{s} {\nabla}_{0 0}{{A}_{s}}\, )) = {J}_{i};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+\epsilon^{p q i} \nabla_{q}{\epsilon_{i j k} \nabla^{j}{\eta^{k s} B_{s}} - \nabla_{0}{\varepsilon_{i s} E^{s}}}=\epsilon^{p q i} \nabla_{q}{J_{i}};
+@prodrule!(%): @distribute!(%); @prodrule!(%): @distribute!(%): @prodrule!(%):@distribute!(%);
+@epsprod2gendelta!(%): @reduce_gendelta!(%);
+@substitute!(%)(B_{s} -> \epsilon_{s u v} \nabla^{u}{A^{v}}, E^{s} -> -\nabla_{0}{A^{s}}):
+@prodrule!(%): @distribute!(%): @prodrule!(%): @distribute!(%);
+@epsprod2gendelta!(%): @reduce_gendelta!(%);
+@canonicalise!(%);
+\end{verbatim}}
+% orig
+% \epsilon^{p q i} \nabla_{q}{(\epsilon_{i j k} \nabla^{j}{(\eta^{k s} B_{s})} - \nabla_{0}{(\varepsilon_{i s} E^{s})})} = \epsilon^{p q i} \nabla_{q}{J_{i}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= {\epsilon}^{p q i} {\nabla}_{q}{({\epsilon}_{i j k} {\nabla}^{j}{({\eta}^{k s} {B}_{s})}\,  - {\nabla}_{0}{({\varepsilon}_{i s} {E}^{s})}\, )}\,  = {\epsilon}^{p q i} {\nabla}_{q}{{J}_{i}}\, ;
+\end{dmath*}
+% orig
+% (\epsilon^{p q i} \nabla_{q}{(\epsilon_{i j k} \nabla^{j}{\eta^{k s}} B_{s})} + \epsilon^{p q i} \nabla_{q}{(\epsilon_{i j k} \eta^{k s} \nabla^{j}{B_{s}})} + \epsilon^{p q i} \nabla_{q}{(( - \nabla_{0}{\varepsilon_{i s}} E^{s} - \varepsilon_{i s} \nabla_{0}{E^{s}}))}) = \epsilon^{p q i} \nabla_{q}{J_{i}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= ({\epsilon}^{p q i} {\nabla}_{q}{({\epsilon}_{i j k} {\nabla}^{j}{{\eta}^{k s}}\,  {B}_{s})}\,  + {\epsilon}^{p q i} {\nabla}_{q}{({\epsilon}_{i j k} {\eta}^{k s} {\nabla}^{j}{{B}_{s}}\, )}\,  + {\epsilon}^{p q i} {\nabla}_{q}{(( - {\nabla}_{0}{{\varepsilon}_{i s}}\,  {E}^{s} - {\varepsilon}_{i s} {\nabla}_{0}{{E}^{s}}\, ))}\, ) = {\epsilon}^{p q i} {\nabla}_{q}{{J}_{i}}\, ;
+\end{dmath*}
+% orig
+% (\epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \nabla^{j}{\eta^{k s}} B_{s} + \epsilon^{p q i} \epsilon_{i j k} \nabla_{q}^{j}{\eta^{k s}} B_{s} + \epsilon^{p q i} \epsilon_{i j k} \nabla^{j}{\eta^{k s}} \nabla_{q}{B_{s}} + \epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \eta^{k s} \nabla^{j}{B_{s}} + \epsilon^{p q i} \epsilon_{i j k} \nabla_{q}{\eta^{k s}} \nabla^{j}{B_{s}} + \epsilon^{p q i} \epsilon_{i j k} \eta^{k s} \nabla_{q}^{j}{B_{s}} - \epsilon^{p q i} (\nabla_{q 0}{\varepsilon_{i s}} E^{s} + \nabla_{0}{\varepsilon_{i s}} \nabla_{q}{E^{s}}) - \epsilon^{p q i} (\nabla_{q}{\varepsilon_{i s}} \nabla_{0}{E^{s}} + \varepsilon_{i s} \nabla_{q 0}{E^{s}})) = \epsilon^{p q i} \nabla_{q}{J_{i}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= ({\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\nabla}^{j}{{\eta}^{k s}}\,  {B}_{s} + {\epsilon}^{p q i} {\epsilon}_{i j k} {\nabla}_{q}\,^{j}{{\eta}^{k s}}\,  {B}_{s} + {\epsilon}^{p q i} {\epsilon}_{i j k} {\nabla}^{j}{{\eta}^{k s}}\,  {\nabla}_{q}{{B}_{s}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\eta}^{k s} {\nabla}^{j}{{B}_{s}}\,  + {\epsilon}^{p q i} {\epsilon}_{i j k} {\nabla}_{q}{{\eta}^{k s}}\,  {\nabla}^{j}{{B}_{s}}\,  + {\epsilon}^{p q i} {\epsilon}_{i j k} {\eta}^{k s} {\nabla}_{q}\,^{j}{{B}_{s}}\,  - {\epsilon}^{p q i} ({\nabla}_{q 0}{{\varepsilon}_{i s}}\,  {E}^{s} + {\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}_{q}{{E}^{s}}\, ) - {\epsilon}^{p q i} ({\nabla}_{q}{{\varepsilon}_{i s}}\,  {\nabla}_{0}{{E}^{s}}\,  + {\varepsilon}_{i s} {\nabla}_{q 0}{{E}^{s}}\, )) = {\epsilon}^{p q i} {\nabla}_{q}{{J}_{i}}\, ;
+\end{dmath*}
+% orig
+% (\epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \nabla^{j}{\eta^{k s}} B_{s} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}^{j}{\eta^{k s}} B_{s} + 2 \delta^{p}_{j}^{q}_{k} \nabla^{j}{\eta^{k s}} \nabla_{q}{B_{s}} + \epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \eta^{k s} \nabla^{j}{B_{s}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}{\eta^{k s}} \nabla^{j}{B_{s}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla_{q}^{j}{B_{s}} - \epsilon^{p q i} (\nabla_{q 0}{\varepsilon_{i s}} E^{s} + \nabla_{0}{\varepsilon_{i s}} \nabla_{q}{E^{s}}) - \epsilon^{p q i} (\nabla_{q}{\varepsilon_{i s}} \nabla_{0}{E^{s}} + \varepsilon_{i s} \nabla_{q 0}{E^{s}})) = \epsilon^{p q i} \nabla_{q}{J_{i}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= ({\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\nabla}^{j}{{\eta}^{k s}}\,  {B}_{s} + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}\,^{j}{{\eta}^{k s}}\,  {B}_{s} + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}^{j}{{\eta}^{k s}}\,  {\nabla}_{q}{{B}_{s}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\eta}^{k s} {\nabla}^{j}{{B}_{s}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}{{\eta}^{k s}}\,  {\nabla}^{j}{{B}_{s}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}_{q}\,^{j}{{B}_{s}}\,  - {\epsilon}^{p q i} ({\nabla}_{q 0}{{\varepsilon}_{i s}}\,  {E}^{s} + {\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}_{q}{{E}^{s}}\, ) - {\epsilon}^{p q i} ({\nabla}_{q}{{\varepsilon}_{i s}}\,  {\nabla}_{0}{{E}^{s}}\,  + {\varepsilon}_{i s} {\nabla}_{q 0}{{E}^{s}}\, )) = {\epsilon}^{p q i} {\nabla}_{q}{{J}_{i}}\, ;
+\end{dmath*}
+% orig
+% (\epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \nabla^{j}{\eta^{k s}} \epsilon_{s u v} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}^{j}{\eta^{k s}} \epsilon_{s u v} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla^{j}{\eta^{k s}} \nabla_{q}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla^{j}{\eta^{k s}} \epsilon_{s u v} \nabla_{q}^{u}{A^{v}} + \epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \eta^{k s} \nabla^{j}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + \epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \eta^{k s} \epsilon_{s u v} \nabla^{j u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}{\eta^{k s}} \nabla^{j}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}{\eta^{k s}} \epsilon_{s u v} \nabla^{j u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla^{j}_{q}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla_{q}{\epsilon_{s u v}} \nabla^{j u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla^{j}{\epsilon_{s u v}} \nabla_{q}^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \epsilon_{s u v} \nabla^{j}_{q}^{u}{A^{v}} + \epsilon^{p q i} \nabla_{q 0}{\varepsilon_{i s}} \nabla_{0}{A^{s}} + \epsilon^{p q i} \nabla_{0}{\varepsilon_{i s}} \nabla_{q 0}{A^{s}} + \epsilon^{p q i} \nabla_{q}{\varepsilon_{i s}} \nabla_{0 0}{A^{s}} + \epsilon^{p q i} \varepsilon_{i s} \nabla_{q 0 0}{A^{s}}) = \epsilon^{p q i} \nabla_{q}{J_{i}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= ({\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\nabla}^{j}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}\,^{j}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}^{j}{{\eta}^{k s}}\,  {\nabla}_{q}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}^{j}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}_{q}\,^{u}{{A}^{v}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\eta}^{k s} {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\eta}^{k s} {\epsilon}_{s u v} {\nabla}^{j u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}{{\eta}^{k s}}\,  {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}^{j u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}^{j}\,_{q}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}_{q}{{\epsilon}_{s u v}}\,  {\nabla}^{j u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}_{q}\,^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\epsilon}_{s u v} {\nabla}^{j}\,_{q}\,^{u}{{A}^{v}}\,  + {\epsilon}^{p q i} {\nabla}_{q 0}{{\varepsilon}_{i s}}\,  {\nabla}_{0}{{A}^{s}}\,  + {\epsilon}^{p q i} {\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}_{q 0}{{A}^{s}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\varepsilon}_{i s}}\,  {\nabla}_{0 0}{{A}^{s}}\,  + {\epsilon}^{p q i} {\varepsilon}_{i s} {\nabla}_{q 0 0}{{A}^{s}}\, ) = {\epsilon}^{p q i} {\nabla}_{q}{{J}_{i}}\, ;
+\end{dmath*}
+% orig
+% (6 \nabla_{q}{\epsilon_{i j k}} \nabla^{j}{\eta^{k s}} \delta^{p}_{s}^{q}_{u}^{i}_{v} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}^{j}{\eta^{k s}} \epsilon_{s u v} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla^{j}{\eta^{k s}} \nabla_{q}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla^{j}{\eta^{k s}} \epsilon_{s u v} \nabla_{q}^{u}{A^{v}} + \epsilon^{p q i} \nabla_{q}{\epsilon_{i j k}} \eta^{k s} \nabla^{j}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 6 \nabla_{q}{\epsilon_{i j k}} \eta^{k s} \delta^{p}_{s}^{q}_{u}^{i}_{v} \nabla^{j u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}{\eta^{k s}} \nabla^{j}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \nabla_{q}{\eta^{k s}} \epsilon_{s u v} \nabla^{j u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla^{j}_{q}{\epsilon_{s u v}} \nabla^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla_{q}{\epsilon_{s u v}} \nabla^{j u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \nabla^{j}{\epsilon_{s u v}} \nabla_{q}^{u}{A^{v}} + 2 \delta^{p}_{j}^{q}_{k} \eta^{k s} \epsilon_{s u v} \nabla^{j}_{q}^{u}{A^{v}} + \epsilon^{p q i} \nabla_{q 0}{\varepsilon_{i s}} \nabla_{0}{A^{s}} + \epsilon^{p q i} \nabla_{0}{\varepsilon_{i s}} \nabla_{q 0}{A^{s}} + \epsilon^{p q i} \nabla_{q}{\varepsilon_{i s}} \nabla_{0 0}{A^{s}} + \epsilon^{p q i} \varepsilon_{i s} \nabla_{q 0 0}{A^{s}}) = \epsilon^{p q i} \nabla_{q}{J_{i}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= (6\, {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\nabla}^{j}{{\eta}^{k s}}\,  {\delta}^{p}\,_{s}\,^{q}\,_{u}\,^{i}\,_{v} {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}\,^{j}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}^{j}{{\eta}^{k s}}\,  {\nabla}_{q}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}^{j}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}_{q}\,^{u}{{A}^{v}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\eta}^{k s} {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 6\, {\nabla}_{q}{{\epsilon}_{i j k}}\,  {\eta}^{k s} {\delta}^{p}\,_{s}\,^{q}\,_{u}\,^{i}\,_{v} {\nabla}^{j u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}{{\eta}^{k s}}\,  {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\nabla}_{q}{{\eta}^{k s}}\,  {\epsilon}_{s u v} {\nabla}^{j u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}^{j}\,_{q}{{\epsilon}_{s u v}}\,  {\nabla}^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}_{q}{{\epsilon}_{s u v}}\,  {\nabla}^{j u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\nabla}^{j}{{\epsilon}_{s u v}}\,  {\nabla}_{q}\,^{u}{{A}^{v}}\,  + 2\, {\delta}^{p}\,_{j}\,^{q}\,_{k} {\eta}^{k s} {\epsilon}_{s u v} {\nabla}^{j}\,_{q}\,^{u}{{A}^{v}}\,  + {\epsilon}^{p q i} {\nabla}_{q 0}{{\varepsilon}_{i s}}\,  {\nabla}_{0}{{A}^{s}}\,  + {\epsilon}^{p q i} {\nabla}_{0}{{\varepsilon}_{i s}}\,  {\nabla}_{q 0}{{A}^{s}}\,  + {\epsilon}^{p q i} {\nabla}_{q}{{\varepsilon}_{i s}}\,  {\nabla}_{0 0}{{A}^{s}}\,  + {\epsilon}^{p q i} {\varepsilon}_{i s} {\nabla}_{q 0 0}{{A}^{s}}\, ) = {\epsilon}^{p q i} {\nabla}_{q}{{J}_{i}}\, ;
+\end{dmath*}
+% orig
+% (6 \nabla^{i}{\epsilon^{j k q}} \nabla_{j}{\eta_{k}^{s}} \delta^{p}_{s i}^{u}_{q}^{v} \nabla_{u}{A_{v}} + 2 \delta^{p j k q} \nabla_{j k}{\eta_{q}^{s}} \epsilon_{s}^{u v} \nabla_{u}{A_{v}} + 2 \delta^{p j k q} \nabla_{j}{\eta_{q}^{s}} \nabla_{k}{\epsilon_{s}^{u v}} \nabla_{u}{A_{v}} + 2 \delta^{p j k q} \nabla_{j}{\eta_{q}^{s}} \epsilon_{s}^{u v} \nabla_{k u}{A_{v}} - \epsilon^{p i j} \nabla_{i}{\epsilon_{j}^{k q}} \eta_{k}^{s} \nabla_{q}{\epsilon_{s}^{u v}} \nabla_{u}{A_{v}} + 6 \nabla^{i}{\epsilon^{j k q}} \eta_{j}^{s} \delta^{p}_{s i}^{u}_{k}^{v} \nabla_{q u}{A_{v}} - 2 \delta^{p j k q} \nabla_{k}{\eta_{j}^{s}} \nabla_{q}{\epsilon_{s}^{u v}} \nabla_{u}{A_{v}} - 2 \delta^{p j k q} \nabla_{k}{\eta_{j}^{s}} \epsilon_{s}^{u v} \nabla_{q u}{A_{v}} - 2 \delta^{p j k q} \eta_{j}^{s} \nabla_{k q}{\epsilon_{s}^{u v}} \nabla_{u}{A_{v}} - 2 \delta^{p j k q} \eta_{j}^{s} \nabla_{k}{\epsilon_{s}^{u v}} \nabla_{q u}{A_{v}} - 2 \delta^{p j k q} \eta_{j}^{s} \nabla_{q}{\epsilon_{s}^{u v}} \nabla_{k u}{A_{v}} - 2 \delta^{p j k q} \eta_{j}^{s} \epsilon_{s}^{u v} \nabla_{k q u}{A_{v}} + \epsilon^{p i q} \nabla_{0 i}{\varepsilon_{q}^{s}} \nabla_{0}{A_{s}} - \epsilon^{p i q} \nabla_{0}{\varepsilon_{i}^{s}} \nabla_{0 q}{A_{s}} + \epsilon^{p i q} \nabla_{i}{\varepsilon_{q}^{s}} \nabla_{0 0}{A_{s}} - \epsilon^{p i q} \varepsilon_{i}^{s} \nabla_{0 0 q}{A_{s}}) = \epsilon^{p i q} \nabla_{i}{J_{q}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+4\specialcolon{}= (6\, {\nabla}^{i}{{\epsilon}^{j k q}}\,  {\nabla}_{j}{{\eta}_{k}\,^{s}}\,  {\delta}^{p}\,_{s i}\,^{u}\,_{q}\,^{v} {\nabla}_{u}{{A}_{v}}\,  + 2\, {\delta}^{p j k q} {\nabla}_{j k}{{\eta}_{q}\,^{s}}\,  {\epsilon}_{s}\,^{u v} {\nabla}_{u}{{A}_{v}}\,  + 2\, {\delta}^{p j k q} {\nabla}_{j}{{\eta}_{q}\,^{s}}\,  {\nabla}_{k}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{u}{{A}_{v}}\,  + 2\, {\delta}^{p j k q} {\nabla}_{j}{{\eta}_{q}\,^{s}}\,  {\epsilon}_{s}\,^{u v} {\nabla}_{k u}{{A}_{v}}\,  - {\epsilon}^{p i j} {\nabla}_{i}{{\epsilon}_{j}\,^{k q}}\,  {\eta}_{k}\,^{s} {\nabla}_{q}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{u}{{A}_{v}}\,  + 6\, {\nabla}^{i}{{\epsilon}^{j k q}}\,  {\eta}_{j}\,^{s} {\delta}^{p}\,_{s i}\,^{u}\,_{k}\,^{v} {\nabla}_{q u}{{A}_{v}}\,  - 2\, {\delta}^{p j k q} {\nabla}_{k}{{\eta}_{j}\,^{s}}\,  {\nabla}_{q}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{u}{{A}_{v}}\,  - 2\, {\delta}^{p j k q} {\nabla}_{k}{{\eta}_{j}\,^{s}}\,  {\epsilon}_{s}\,^{u v} {\nabla}_{q u}{{A}_{v}}\,  - 2\, {\delta}^{p j k q} {\eta}_{j}\,^{s} {\nabla}_{k q}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{u}{{A}_{v}}\,  - 2\, {\delta}^{p j k q} {\eta}_{j}\,^{s} {\nabla}_{k}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{q u}{{A}_{v}}\,  - 2\, {\delta}^{p j k q} {\eta}_{j}\,^{s} {\nabla}_{q}{{\epsilon}_{s}\,^{u v}}\,  {\nabla}_{k u}{{A}_{v}}\,  - 2\, {\delta}^{p j k q} {\eta}_{j}\,^{s} {\epsilon}_{s}\,^{u v} {\nabla}_{k q u}{{A}_{v}}\,  + {\epsilon}^{p i q} {\nabla}_{0 i}{{\varepsilon}_{q}\,^{s}}\,  {\nabla}_{0}{{A}_{s}}\,  - {\epsilon}^{p i q} {\nabla}_{0}{{\varepsilon}_{i}\,^{s}}\,  {\nabla}_{0 q}{{A}_{s}}\,  + {\epsilon}^{p i q} {\nabla}_{i}{{\varepsilon}_{q}\,^{s}}\,  {\nabla}_{0 0}{{A}_{s}}\,  - {\epsilon}^{p i q} {\varepsilon}_{i}\,^{s} {\nabla}_{0 0 q}{{A}_{s}}\, ) = {\epsilon}^{p i q} {\nabla}_{i}{{J}_{q}}\, ;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+#
+# Equation (1)
+\epsilon^{s p q} n_{p} k_{q} (A_{s}-C_{s})  e - \epsilon^{s p q} n_{p} k_{q} (B_{s} - D_{s})  f = 0:
+@distribute!(%):
+@substitute!(%)(A_{s} -> V_{s}+A_{s}, B_{s} -> W_{s} + B_{s}):
+@distribute!(%);
+#
+# Equation (2)
+n^{s} (\omega  A_{s} - \varepsilon \Omega  C_{s} )  e - n^{s} (\omega   B_{s}-\varepsilon \bar\Omega  D_{s})  f =0:
+@distribute!(%):
+@substitute!(%)(A_{s} -> V_{s}+A_{s}, B_{s} -> W_{s} + B_{s}):
+@distribute!(%);
+#
+# Equation (3)
+( k_{j} n^{s} (A_{s} - \eta C_{s}) - n^{s} k_{s} (A_{j} - \eta C_{j}) ) e - (k_{j} n^{s} (B_{s} - \eta D_{s}) - n^{s} k_{s} (B_{j} - \eta D_{j}) f = 0 :
+@distribute!(%):
+@substitute!(%)(A_{s} -> V_{s}+A_{s}, B_{s} -> W_{s} + B_{s}):
+@distribute!(%);
+#
+# Equation (4)
+\epsilon^{j p q} n_{p} (\omega A_{q} - \Omega C_{q}) e - \epsilon^{j p q} n_{p} (\omega B_{q} - \bar\Omega D_{q}) f = 0:
+@distribute!(%):
+@substitute!(%)(A_{s} -> V_{s}+A_{s}, B_{s} -> W_{s} + B_{s}):
+@distribute!(%);
+#
+# Equation (5)
+\epsilon^{s p q} n_{p} k_{q} (E_{s}-C_{s}) g - \epsilon^{s p q} n_{p} k_{q} (E_{s} - D_{s})  h = 0:
+@distribute!(%);
+#
+# Equation (6)
+n^{s} (\omega  E_{s} - \varepsilon \Omega  C_{s} )  g - n^{s} (\omega   F_{s}-\varepsilon \bar\Omega  D_{s})  h =0:
+@distribute!(%);
+#
+# Equation (7)
+( k_{j} n^{s} (E_{s} - \eta C_{s}) - n^{s} k_{s} (E_{j} - \eta C_{j}) ) h - (k_{j} n^{s} (F_{s} - \eta D_{s}) - n^{s} k_{s} (F_{j} - \eta D_{j}) h = 0 :
+@distribute!(%);
+#
+# Equation (8)
+\epsilon^{j p q} n_{p} (\omega E_{q} - \Omega C_{q}) g - \epsilon^{j p q} n_{p} (\omega F_{q} - \bar\Omega D_{q}) h = 0:
+@distribute!(%);
+\end{verbatim}}
+% orig
+% (\epsilon^{s p q} n_{p} k_{q} V_{s} e + \epsilon^{s p q} n_{p} k_{q} A_{s} e - \epsilon^{s p q} n_{p} k_{q} C_{s} e - \epsilon^{s p q} n_{p} k_{q} W_{s} f - \epsilon^{s p q} n_{p} k_{q} B_{s} f + \epsilon^{s p q} n_{p} k_{q} D_{s} f) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+6\specialcolon{}= ({\epsilon}^{s p q} {n}_{p} {k}_{q} {V}_{s} e + {\epsilon}^{s p q} {n}_{p} {k}_{q} {A}_{s} e - {\epsilon}^{s p q} {n}_{p} {k}_{q} {C}_{s} e - {\epsilon}^{s p q} {n}_{p} {k}_{q} {W}_{s} f - {\epsilon}^{s p q} {n}_{p} {k}_{q} {B}_{s} f + {\epsilon}^{s p q} {n}_{p} {k}_{q} {D}_{s} f) = 0;
+\end{dmath*}
+% orig
+% (n^{s} \omega V_{s} e + n^{s} \omega A_{s} e - n^{s} \varepsilon \Omega C_{s} e - n^{s} \omega W_{s} f - n^{s} \omega B_{s} f + n^{s} \varepsilon \bar \Omega D_{s} f) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+7\specialcolon{}= ({n}^{s} \omega {V}_{s} e + {n}^{s} \omega {A}_{s} e - {n}^{s} \varepsilon \Omega {C}_{s} e - {n}^{s} \omega {W}_{s} f - {n}^{s} \omega {B}_{s} f + {n}^{s} \varepsilon \bar \Omega {D}_{s} f) = 0;
+\end{dmath*}
+% orig
+% k_{j} n^{s} V_{s} e + k_{j} n^{s} A_{s} e - k_{j} n^{s} \eta C_{s} e - n^{s} k_{s} V_{j} e - n^{s} k_{s} A_{j} e + n^{s} k_{s} \eta C_{j} e - (k_{j} n^{s} W_{s} + k_{j} n^{s} B_{s} - k_{j} n^{s} \eta D_{s} - n^{s} k_{s} W_{j} f - n^{s} k_{s} B_{j} f + n^{s} k_{s} \eta D_{j} f) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+8\specialcolon{}= {k}_{j} {n}^{s} {V}_{s} e + {k}_{j} {n}^{s} {A}_{s} e - {k}_{j} {n}^{s} \eta {C}_{s} e - {n}^{s} {k}_{s} {V}_{j} e - {n}^{s} {k}_{s} {A}_{j} e + {n}^{s} {k}_{s} \eta {C}_{j} e - ({k}_{j} {n}^{s} {W}_{s} + {k}_{j} {n}^{s} {B}_{s} - {k}_{j} {n}^{s} \eta {D}_{s} - {n}^{s} {k}_{s} {W}_{j} f - {n}^{s} {k}_{s} {B}_{j} f + {n}^{s} {k}_{s} \eta {D}_{j} f) = 0;
+\end{dmath*}
+% orig
+% (\epsilon^{j p q} n_{p} \omega V_{q} e + \epsilon^{j p q} n_{p} \omega A_{q} e - \epsilon^{j p q} n_{p} \Omega C_{q} e - \epsilon^{j p q} n_{p} \omega W_{q} f - \epsilon^{j p q} n_{p} \omega B_{q} f + \epsilon^{j p q} n_{p} \bar \Omega D_{q} f) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+9\specialcolon{}= ({\epsilon}^{j p q} {n}_{p} \omega {V}_{q} e + {\epsilon}^{j p q} {n}_{p} \omega {A}_{q} e - {\epsilon}^{j p q} {n}_{p} \Omega {C}_{q} e - {\epsilon}^{j p q} {n}_{p} \omega {W}_{q} f - {\epsilon}^{j p q} {n}_{p} \omega {B}_{q} f + {\epsilon}^{j p q} {n}_{p} \bar \Omega {D}_{q} f) = 0;
+\end{dmath*}
+% orig
+% (\epsilon^{s p q} n_{p} k_{q} E_{s} g - \epsilon^{s p q} n_{p} k_{q} C_{s} g - \epsilon^{s p q} n_{p} k_{q} E_{s} h + \epsilon^{s p q} n_{p} k_{q} D_{s} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+10\specialcolon{}= ({\epsilon}^{s p q} {n}_{p} {k}_{q} {E}_{s} g - {\epsilon}^{s p q} {n}_{p} {k}_{q} {C}_{s} g - {\epsilon}^{s p q} {n}_{p} {k}_{q} {E}_{s} h + {\epsilon}^{s p q} {n}_{p} {k}_{q} {D}_{s} h) = 0;
+\end{dmath*}
+% orig
+% (n^{s} \omega E_{s} g - n^{s} \varepsilon \Omega C_{s} g - n^{s} \omega F_{s} h + n^{s} \varepsilon \bar \Omega D_{s} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+11\specialcolon{}= ({n}^{s} \omega {E}_{s} g - {n}^{s} \varepsilon \Omega {C}_{s} g - {n}^{s} \omega {F}_{s} h + {n}^{s} \varepsilon \bar \Omega {D}_{s} h) = 0;
+\end{dmath*}
+% orig
+% k_{j} n^{s} E_{s} h - k_{j} n^{s} \eta C_{s} h - n^{s} k_{s} E_{j} h + n^{s} k_{s} \eta C_{j} h - (k_{j} n^{s} F_{s} - k_{j} n^{s} \eta D_{s} - n^{s} k_{s} F_{j} h + n^{s} k_{s} \eta D_{j} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+12\specialcolon{}= {k}_{j} {n}^{s} {E}_{s} h - {k}_{j} {n}^{s} \eta {C}_{s} h - {n}^{s} {k}_{s} {E}_{j} h + {n}^{s} {k}_{s} \eta {C}_{j} h - ({k}_{j} {n}^{s} {F}_{s} - {k}_{j} {n}^{s} \eta {D}_{s} - {n}^{s} {k}_{s} {F}_{j} h + {n}^{s} {k}_{s} \eta {D}_{j} h) = 0;
+\end{dmath*}
+% orig
+% (\epsilon^{j p q} n_{p} \omega E_{q} g - \epsilon^{j p q} n_{p} \Omega C_{q} g - \epsilon^{j p q} n_{p} \omega F_{q} h + \epsilon^{j p q} n_{p} \bar \Omega D_{q} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+13\specialcolon{}= ({\epsilon}^{j p q} {n}_{p} \omega {E}_{q} g - {\epsilon}^{j p q} {n}_{p} \Omega {C}_{q} g - {\epsilon}^{j p q} {n}_{p} \omega {F}_{q} h + {\epsilon}^{j p q} {n}_{p} \bar \Omega {D}_{q} h) = 0;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+#
+# Equation (1)
+\epsilon^{s p q} n_{p} k_{q} A_{s} e - \epsilon^{s p q} n_{p} k_{q} B_{s} f - \epsilon^{s p q} n_{p} k_{q} C_{s} e +
+\epsilon^{s p q} n_{p} k_{q} D_{s} f = - \epsilon^{s p q} n_{p} k_{q} V_{s} e + \epsilon^{s p q} n_{p} k_{q} W_{s} f:
+@rename_dummies!(%);
+@substitute!(%)(\epsilon^{a b c} n_{b} k_{c} -> \xi^{a});
+#
+# Equation (2)
+\omega n^{s} A_{s} e -\omega  n^{s} B_{s} f - \varepsilon \Omega n^{s} C_{s} e  + \varepsilon \bar \Omega n^{s} D_{s} f
+= - \omega n^{s} V_{s} e + \omega n^{s} W_{s} f:
+@rename_dummies!(%);
+@substitute!(%)(\omega n^{a} -> N^{a}, \varepsilon \Omega n^{a} -> M^{a}, \varepsilon \bar\Omega n^{a} -> \bar M^{a});
+#
+# Equation (3)
+k_{j} n^{s} A_{s} e - n^{s} k_{s} A_{j} e - \eta k_{j} n^{s} C_{s} e + \eta n^{s} k_{s} C_{j} e
+- k_{j} n^{s} B_{s}f + n^{s} k_{s} B_{j} f + \eta k_{j} n^{s} D_{s} f - \eta n^{s} k_{s} D_{j} f =
+- k_{j} n^{s} V_{s} e + n^{s} k_{s} V_{j} e + k_{j} n^{s} W_{s} - n^{s} k_{s} W_{j} f:
+@rename_dummies!(%);
+#
+# Equation (4)
+ \omega \epsilon^{j p q} n_{p}A_{q} e - \omega \epsilon^{j p q} n_{p} B_{q} f -
+\Omega \epsilon^{j p q} n_{p} C_{q} e + \bar \Omega \epsilon^{j p q} n_{p} D_{q} f) =
+- \omega \epsilon^{j p q} n_{p} V_{q} e + \omega \epsilon^{j p q} n_{p} W_{q} f :
+@rename_dummies!(%);
+#
+# Equation (5)
+\epsilon^{s p q} n_{p} k_{q} E_{s} g - \epsilon^{s p q} n_{p} k_{q} C_{s} g - \epsilon^{s p q} n_{p} k_{q} F_{s} h +
+\epsilon^{s p q} n_{p} k_{q} D_{s} h = 0:
+@rename_dummies!(%);
+#
+# Equation (6)
+\omega n^{s} E_{s} g - \omega n^{s} F_{s} h - \varepsilon \Omega n^{s} C_{s} g + \varepsilon \bar \Omega n^{s} D_{s} h = 0:
+@rename_dummies!(%);
+#
+# Equation (7)
+k_{j} n^{s} E_{s} g - n^{s} k_{s} E_{j} g - k_{j} n^{s} F_{s} h + n^{s} k_{s} F_{j} h
+- \eta k_{j} n^{s} C_{s} g + \eta n^{s} k_{s} C_{j} g + \eta k_{j} n^{s} D_{s} h - \eta n^{s} k_{s} D_{j} h = 0:
+@rename_dummies!(%);
+#
+# Equation (8)
+\omega \epsilon^{j p q} n_{p} E_{q} g - \omega \epsilon^{j p q} n_{p} F_{q} h - \Omega \epsilon^{j p q} n_{p} C_{q} g  +
+ \bar \Omega \epsilon^{j p q} n_{p} D_{q} h = 0:
+@rename_dummies!(%);
+\end{verbatim}}
+% orig
+% (\epsilon^{a b c} n_{b} k_{c} A_{a} e - \epsilon^{a b c} n_{b} k_{c} B_{a} f - \epsilon^{a b c} n_{b} k_{c} C_{a} e + \epsilon^{a b c} n_{b} k_{c} D_{a} f) = ( - \epsilon^{a b c} n_{b} k_{c} V_{a} e + \epsilon^{a b c} n_{b} k_{c} W_{a} f)
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+14\specialcolon{}= ({\epsilon}^{a b c} {n}_{b} {k}_{c} {A}_{a} e - {\epsilon}^{a b c} {n}_{b} {k}_{c} {B}_{a} f - {\epsilon}^{a b c} {n}_{b} {k}_{c} {C}_{a} e + {\epsilon}^{a b c} {n}_{b} {k}_{c} {D}_{a} f) = ( - {\epsilon}^{a b c} {n}_{b} {k}_{c} {V}_{a} e + {\epsilon}^{a b c} {n}_{b} {k}_{c} {W}_{a} f);
+\end{dmath*}
+% orig
+% (\xi^{a} A_{a} e - \xi^{a} B_{a} f - \xi^{a} C_{a} e + \xi^{a} D_{a} f) = ( - \xi^{a} V_{a} e + \xi^{a} W_{a} f)
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+14\specialcolon{}= ({\xi}^{a} {A}_{a} e - {\xi}^{a} {B}_{a} f - {\xi}^{a} {C}_{a} e + {\xi}^{a} {D}_{a} f) = ( - {\xi}^{a} {V}_{a} e + {\xi}^{a} {W}_{a} f);
+\end{dmath*}
+% orig
+% (\omega n^{a} A_{a} e - \omega n^{a} B_{a} f - \varepsilon \Omega n^{a} C_{a} e + \varepsilon \bar \Omega n^{a} D_{a} f) = ( - \omega n^{a} V_{a} e + \omega n^{a} W_{a} f)
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+15\specialcolon{}= (\omega {n}^{a} {A}_{a} e - \omega {n}^{a} {B}_{a} f - \varepsilon \Omega {n}^{a} {C}_{a} e + \varepsilon \bar \Omega {n}^{a} {D}_{a} f) = ( - \omega {n}^{a} {V}_{a} e + \omega {n}^{a} {W}_{a} f);
+\end{dmath*}
+% orig
+% (N^{a} A_{a} e - N^{a} B_{a} f - M^{a} C_{a} e + M^{a} \bar D_{a} f) = ( - N^{a} V_{a} e + N^{a} W_{a} f)
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+15\specialcolon{}= ({N}^{a} {A}_{a} e - {N}^{a} {B}_{a} f - {M}^{a} {C}_{a} e + {M}^{a} \bar {D}_{a} f) = ( - {N}^{a} {V}_{a} e + {N}^{a} {W}_{a} f);
+\end{dmath*}
+% orig
+% (k_{j} n^{a} A_{a} e - n^{a} k_{a} A_{j} e - \eta k_{j} n^{a} C_{a} e + \eta n^{a} k_{a} C_{j} e - k_{j} n^{a} B_{a} f + n^{a} k_{a} B_{j} f + \eta k_{j} n^{a} D_{a} f - \eta n^{a} k_{a} D_{j} f) = ( - k_{j} n^{a} V_{a} e + n^{a} k_{a} V_{j} e + k_{j} n^{a} W_{a} - n^{a} k_{a} W_{j} f)
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+16\specialcolon{}= ({k}_{j} {n}^{a} {A}_{a} e - {n}^{a} {k}_{a} {A}_{j} e - \eta {k}_{j} {n}^{a} {C}_{a} e + \eta {n}^{a} {k}_{a} {C}_{j} e - {k}_{j} {n}^{a} {B}_{a} f + {n}^{a} {k}_{a} {B}_{j} f + \eta {k}_{j} {n}^{a} {D}_{a} f - \eta {n}^{a} {k}_{a} {D}_{j} f) = ( - {k}_{j} {n}^{a} {V}_{a} e + {n}^{a} {k}_{a} {V}_{j} e + {k}_{j} {n}^{a} {W}_{a} - {n}^{a} {k}_{a} {W}_{j} f);
+\end{dmath*}
+% orig
+% (\omega \epsilon^{j a b} n_{a} A_{b} e - \omega \epsilon^{j a b} n_{a} B_{b} f - \Omega \epsilon^{j a b} n_{a} C_{b} e + \bar \Omega \epsilon^{j a b} n_{a} D_{b} f) = ( - \omega \epsilon^{j a b} n_{a} V_{b} e + \omega \epsilon^{j a b} n_{a} W_{b} f)
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+17\specialcolon{}= (\omega {\epsilon}^{j a b} {n}_{a} {A}_{b} e - \omega {\epsilon}^{j a b} {n}_{a} {B}_{b} f - \Omega {\epsilon}^{j a b} {n}_{a} {C}_{b} e + \bar \Omega {\epsilon}^{j a b} {n}_{a} {D}_{b} f) = ( - \omega {\epsilon}^{j a b} {n}_{a} {V}_{b} e + \omega {\epsilon}^{j a b} {n}_{a} {W}_{b} f);
+\end{dmath*}
+% orig
+% (\epsilon^{a b c} n_{b} k_{c} E_{a} g - \epsilon^{a b c} n_{b} k_{c} C_{a} g - \epsilon^{a b c} n_{b} k_{c} F_{a} h + \epsilon^{a b c} n_{b} k_{c} D_{a} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+18\specialcolon{}= ({\epsilon}^{a b c} {n}_{b} {k}_{c} {E}_{a} g - {\epsilon}^{a b c} {n}_{b} {k}_{c} {C}_{a} g - {\epsilon}^{a b c} {n}_{b} {k}_{c} {F}_{a} h + {\epsilon}^{a b c} {n}_{b} {k}_{c} {D}_{a} h) = 0;
+\end{dmath*}
+% orig
+% (\omega n^{a} E_{a} g - \omega n^{a} F_{a} h - \varepsilon \Omega n^{a} C_{a} g + \varepsilon \bar \Omega n^{a} D_{a} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+19\specialcolon{}= (\omega {n}^{a} {E}_{a} g - \omega {n}^{a} {F}_{a} h - \varepsilon \Omega {n}^{a} {C}_{a} g + \varepsilon \bar \Omega {n}^{a} {D}_{a} h) = 0;
+\end{dmath*}
+% orig
+% (k_{j} n^{a} E_{a} g - n^{a} k_{a} E_{j} g - k_{j} n^{a} F_{a} h + n^{a} k_{a} F_{j} h - \eta k_{j} n^{a} C_{a} g + \eta n^{a} k_{a} C_{j} g + \eta k_{j} n^{a} D_{a} h - \eta n^{a} k_{a} D_{j} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+20\specialcolon{}= ({k}_{j} {n}^{a} {E}_{a} g - {n}^{a} {k}_{a} {E}_{j} g - {k}_{j} {n}^{a} {F}_{a} h + {n}^{a} {k}_{a} {F}_{j} h - \eta {k}_{j} {n}^{a} {C}_{a} g + \eta {n}^{a} {k}_{a} {C}_{j} g + \eta {k}_{j} {n}^{a} {D}_{a} h - \eta {n}^{a} {k}_{a} {D}_{j} h) = 0;
+\end{dmath*}
+% orig
+% (\omega \epsilon^{j a b} n_{a} E_{b} g - \omega \epsilon^{j a b} n_{a} F_{b} h - \Omega \epsilon^{j a b} n_{a} C_{b} g + \bar \Omega \epsilon^{j a b} n_{a} D_{b} h) = 0
+
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+21\specialcolon{}= (\omega {\epsilon}^{j a b} {n}_{a} {E}_{b} g - \omega {\epsilon}^{j a b} {n}_{a} {F}_{b} h - \Omega {\epsilon}^{j a b} {n}_{a} {C}_{b} g + \bar \Omega {\epsilon}^{j a b} {n}_{a} {D}_{b} h) = 0;
+\end{dmath*}
+\end{document}

@@ -1,0 +1,17 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 0.8.7 ] */
+
+/* [wxMaxima: input   start ] */
+A(x):=integrate(exp(-%i*k*x)*a(k) + exp(%i*k*x)*b(k),k);
+v(x):=diff(A(x),x);v(x);
+w(x):=diff(v(x),x);w(x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+A(x1,x2,x3):=integrate(integrate(integrate(exp(-%i*(k1*x1+k2*x2+k3*x3))*a(k1,k2,k3) + exp(%i*(k1*x1+k2*x2+k3*x3))*b(k1,k2,k3),k1),k2),k3);
+V(x1,x2,x3):=diff(g(x1,x2,x3)*A(x1,x2,x3),x1)/g(x1,x2,x3) + diff(g(x1,x2,x3)*A(x1,x2,x3),x2)/g(x1,x2,x3) + diff(g(x1,x2,x3)*A(x1,x2,x3),x3)/g(x1,x2,x3);
+V(x1,x2,x3);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.t2",
+    "description": "description of t2",
+    "framework": "ubuntu-sdk-14.04-html-dev1",
+    "architecture": "all",
+    "title": "t2",
+    "hooks": {
+        "t2": {
+            "apparmor": "t2.json",
+            "desktop": "t2.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}

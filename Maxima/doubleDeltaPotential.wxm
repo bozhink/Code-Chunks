@@ -1,0 +1,67 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 12.04.0 ] */
+
+/* [wxMaxima: input   start ] */
+firstRegion(x):=A[1]*exp(%i*k*x)+A[2]*exp(-%i*k*x);
+secondRegion(x):=B[1]*exp(%i*k*x)+B[2]*exp(-%i*k*x);
+thirdRegion(x):=C*exp(%i*k*x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+secondRegion(-a)-firstRegion(-a)=0$
+eq1:ratsimp(%);
+thirdRegion(a)-secondRegion(a)=0$
+eq2:ratsimp(%);
+subst(-a,x,diff(secondRegion(x),x)-diff(firstRegion(x),x))+beta*firstRegion(a)=0$
+eq3:ratsimp(%);
+subst(a,x,diff(thirdRegion(x),x)-diff(secondRegion(x),x))+beta*thirdRegion(a)=0$
+eq4:ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+s1:solve([eq1,eq2,eq3,eq4], [A[2],B[1],B[2],C])$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+a2:gfactor(s1[1][1]);
+b1:gfactor(s1[1][2]);
+b2:gfactor(s1[1][3]);
+c:gfactor(s1[1][4]);
+a22:(rhs(a2)*conjugate(rhs(a2)))$
+b12:(rhs(b1)*conjugate(rhs(b1)))$
+b22:(rhs(b2)*conjugate(rhs(b2)))$
+c2:(rhs(c)*conjugate(rhs(c)))$
+a22:factor(trigsimp(rectform(num(a22))))/factor(trigsimp(rectform(denom(a22))))$
+b12:factor(trigsimp(rectform(num(b12))))/factor(trigsimp(rectform(denom(b12))))$
+b22:factor(trigsimp(rectform(num(b22))))/factor(trigsimp(rectform(denom(b22))))$
+c2:factor(trigsimp(rectform(num(c2))))/factor(trigsimp(rectform(denom(c2))))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+debugmode(false);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+k:-%i*kappa;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+I1:integrate(expand(firstRegion(x)*conjugate(firstRegion(x))),x,-inf,-a);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+I1:integrate(expand(firstRegion(x)*conjugate(firstRegion(x))),x,-inf,-a);
+I2:integrate(expand(secondRegion(x)*conjugate(secondRegion(x))),x,-a,a);
+I3:integrate(expand(thirdRegion(x)*conjugate(thirdRegion(x))),x,a,inf);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+expand(thirdRegion(x)*conjugate(thirdRegion(x)));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+integrate(sin(-x),x,0,inf);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

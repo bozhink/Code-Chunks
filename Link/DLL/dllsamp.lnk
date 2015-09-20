@@ -1,0 +1,4 @@
+system nt_dll initinstance terminstance
+export DLL_ENTRY_1
+export DLL_ENTRY_2
+file dllsamp

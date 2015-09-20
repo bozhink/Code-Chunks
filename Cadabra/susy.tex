@@ -1,0 +1,140 @@
+% Cadabra notebook version 1.1
+\documentclass[11pt]{article}
+\usepackage[textwidth=460pt, textheight=660pt]{geometry}
+\usepackage[usenames]{color}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{breqn}
+\usepackage{tableaux}
+\def\specialcolon{\mathrel{\mathop{:}}\hspace{-.5em}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\begin{document}
+{\color[named]{Blue}\begin{verbatim}
+{a,b,c,d,e}::Indices(vector).
+\bar{#}::DiracBar.
+\ppartial{#}::LaTeXForm("\bar{\partial}").
+{\partial{#},\ppartial{#}}::PartialDerivative.
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property Indices to $\{a,\; b,\; c,\; d,\; e\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property DiracBar to $\bar{\#}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property LaTeXForm to $\bar{\partial}{\#}\, $.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property PartialDerivative to $\partial{\#}\, $, $\bar{\partial}{\#}\, $.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+{A_{a},f_{a b}}::Depends(\partial,\ppartial).
+{\epsilon,\gamma_{#}}::Depends(\bar).
+\lambda::Depends(\bar,\partial).
+\end{verbatim}}
+% Begin TeX comment
+Assigning property Depends to ${A}_{a}$, ${f}_{a b}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to $\epsilon$, ${\gamma}_{\#}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Depends to $\lambda$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+{\lambda,\gamma_{#}}::NonCommuting.
+{\lambda,\epsilon}::Spinor(dimension=4,type=Majorana).
+{\epsilon,\lambda}::SortOrder.
+{\epsilon,\lambda}::AntiCommuting.
+\gamma_{#}::GammaMatrix(metric=\delta).
+\delta{#}::Accent.
+f_{a b}::AntiSymmetric.
+\delta_{a b}::KroneckerDelta.
+\end{verbatim}}
+% Begin TeX comment
+Assigning list property NonCommuting to $\{\lambda,\; {\gamma}_{\#}\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Spinor to $\lambda$, $\epsilon$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property SortOrder to $\{\epsilon,\; \lambda\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning list property AntiCommuting to $\{\epsilon,\; \lambda\}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property GammaMatrix to ${\gamma}_{\#}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property Accent to $\delta{\#}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property AntiSymmetric to ${f}_{a b}$.
+\\
+% End TeX comment
+% Begin TeX comment
+Assigning property KroneckerDelta to $\delta_{a b}$.
+\\
+% End TeX comment
+{\color[named]{Blue}\begin{verbatim}
+susy:={\delta{A_{a}}=\bar{\epsilon}\gamma_{a}\lambda,
+\delta{\lambda}=-(1/2)\gamma_{a b}\epsilon f_{a b}};
+\end{verbatim}}
+% orig
+% \{\delta{A_{a}} = \bar{\epsilon} \gamma_{a} \lambda, \delta{\lambda} = (-1/2) \gamma_{a b} \epsilon f_{a b}\}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+susy\specialcolon{}= \{\delta{{A}_{a}} = \bar{\epsilon} {\gamma}_{a} \lambda,\; \delta{\lambda} = (\frac{-1}{2})\, {\gamma}_{a b} \epsilon {f}_{a b}\};
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+S:=-(1/4) f_{a b}f_{a b}-(1/2)\bar{\lambda}\gamma_{a}\partial_{a}{\lambda};
+\end{verbatim}}
+% orig
+%  - 1/4 f_{a b} f_{a b} - 1/2 \bar{\lambda} \gamma_{a} \partial_{a}{\lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+S\specialcolon{}=  - \frac{1}{4}\, {f}_{a b} {f}_{a b} - \frac{1}{2}\, \bar{\lambda} {\gamma}_{a} {\partial}_{a}{\lambda}\, ;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@vary(%)(f_{a b }->\partial_{a}{\delta{A_{b}}}-\partial_{b}{\delta{A_{a}}},
+\lambda -> \delta{\lambda});
+\end{verbatim}}
+% orig
+%  - 1/4 (\partial_{a}{\delta{A_{b}}} - \partial_{b}{\delta{A_{a}}}) f_{a b} - 1/4 f_{a b} (\partial_{a}{\delta{A_{b}}} - \partial_{b}{\delta{A_{a}}}) - 1/2 \bar{\delta{\lambda}} \gamma_{a} \partial_{a}{\lambda} - 1/2 \bar{\lambda} \gamma_{a} \partial_{a}{\delta{\lambda}}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+S\specialcolon{}=  - \frac{1}{4}\, ({\partial}_{a}{\delta{{A}_{b}}}\,  - {\partial}_{b}{\delta{{A}_{a}}}\, ) {f}_{a b} - \frac{1}{4}\, {f}_{a b} ({\partial}_{a}{\delta{{A}_{b}}}\,  - {\partial}_{b}{\delta{{A}_{a}}}\, ) - \frac{1}{2}\, \bar{\delta{\lambda}} {\gamma}_{a} {\partial}_{a}{\lambda}\,  - \frac{1}{2}\, \bar{\lambda} {\gamma}_{a} {\partial}_{a}{\delta{\lambda}}\, ;
+\end{dmath*}
+{\color[named]{Blue}\begin{verbatim}
+@distribute!(%):
+@substitute!(%)(@(susy)): @prodrule!(%): @distribute!(%): @unwrap!(%);
+\end{verbatim}}
+% Begin TeX comment
+substitute: no numerical pre-factors allowed on lhs of replacement rule.
+@substitute: illegal arguments.
+@prodrule: not applicable.
+% End TeX comment
+% Begin TeX comment
+@distribute: not applicable.
+% End TeX comment
+% orig
+%  - 1/4 \partial_{a}{A_{b}} f_{a b} + 1/4 \partial_{b}{A_{a}} f_{a b} - 1/4 f_{a b} \partial_{a}{A_{b}} + 1/4 f_{a b} \partial_{b}{A_{a}} - 1/2 \bar{\lambda} \gamma_{a} \partial_{a}{\lambda} - 1/2 \bar{\lambda} \gamma_{a} \partial_{a}{\lambda}
+% end_orig
+\begin{dmath*}[compact, spread=2pt]
+S\specialcolon{}=  - \frac{1}{4}\, {\partial}_{a}{{A}_{b}}\,  {f}_{a b} + \frac{1}{4}\, {\partial}_{b}{{A}_{a}}\,  {f}_{a b} - \frac{1}{4}\, {f}_{a b} {\partial}_{a}{{A}_{b}}\,  + \frac{1}{4}\, {f}_{a b} {\partial}_{b}{{A}_{a}}\,  - \frac{1}{2}\, \bar{\lambda} {\gamma}_{a} {\partial}_{a}{\lambda}\,  - \frac{1}{2}\, \bar{\lambda} {\gamma}_{a} {\partial}_{a}{\lambda}\, ;
+\end{dmath*}
+\end{document}

@@ -1,0 +1,15 @@
+{
+    "name": "com.ubuntu.developer.username.tabbedui1",
+    "description": "description of tabbedUI1",
+    "framework": "ubuntu-sdk-14.04-qml",
+    "architecture": "all",
+    "title": "tabbedUI1",
+    "hooks": {
+        "tabbedUI1": {
+            "apparmor": "tabbedUI1.json",
+            "desktop": "tabbedUI1.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": ""
+}
