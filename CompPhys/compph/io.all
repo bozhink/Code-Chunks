@@ -1,0 +1,33 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c io.all
+c
+c     environment dependent parameters
+      integer iunit                                                      ! unit number for input from screen
+      integer ounit                                                      ! unit number for output to screen
+      integer tunit                                                      ! unit number for text output to file
+      integer gunit                                                      ! unit number for graphics output to file
+      integer dunit                                                      ! unit number for data input from file
+      integer trmlin                                                     ! number of lines on terminal screen
+      integer trmwid                                                     ! width of terminal screen
+c
+c     the following are default answers to i/o choices
+c     1==yes   0==no
+      integer txttrm                                                     ! send text output to terminal?
+      integer txtfil                                                     ! send text output to a file?
+      integer grftrm                                                     ! send graphics to terminal?
+      integer grfhrd                                                     ! send graphics to a hard copy device?
+      integer grffil                                                     ! send graphics data to a file?
+c
+c     i/o input parameters for this run
+      logical tterm                                                      ! write text output to terminal?
+      logical tfile                                                      ! write text output to a file?
+      character*12 tname                                                 ! name of text file
+      logical gterm                                                      ! send graphics output to terminal?
+      logical ghrdcp                                                     ! send graphis output to hardcpoy device?
+      logical gfile                                                      ! send graphics data to a file?
+      character*12 gname                                                 ! name of graphics data file
+c
+      common /io/tunit,gunit,iunit,ounit,dunit,trmlin,trmwid,txttrm,
+     +           txtfil,grftrm,grfhrd,grffil,
+     +           tterm,tfile,gterm,gfile,ghrdcp
+      common /cio/tname,gname

@@ -1,0 +1,23 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c param.e1
+c
+      real pi                             ! pi=3.141592...
+      real potmin                         ! x value at equilibrium
+      real gamma                          ! =sqrt(2*mass*length**2*potential/hbar**2)
+      real etol                           ! tolerance for energy search
+      real xtol                           ! tolerance for turning point search
+      integer npts                        ! number of integration points
+      integer nlevel                      ! total number of bounds states (depends on gamma)
+C
+      integer ngrf                        ! number of points for graphics ouput
+      integer maxgrf                      ! maximum number of graphing points
+      integer maxlvl                      ! maximum number of quantum levels
+C
+      parameter (maxgrf=1000)
+      parameter (maxlvl=100)
+C
+      common /const/ pi,potmin
+      common /pparam/ gamma
+      common /nparam/ etol,xtol,npts,ngrf
+      common /pcalc/ nlevel
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc

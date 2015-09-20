@@ -1,0 +1,22 @@
+!define BLANK ""
+E:\Projects\compphys\compph\misc\strip.obj : E:\Projects\compphys\compph\str&
+ip.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\compph\misc
+ wfc386 ..\strip.for -d2 -q -dep
+
+E:\Projects\compphys\compph\misc\srip.exe : E:\Projects\compphys\compph\misc&
+\strip.obj .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\compph\misc
+ @%write srip.lk1 FIL strip.obj
+ @%append srip.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b srip.imp 
+ @%append srip.lk1 LIBR srip.imp
+!endif
+!ifneq BLANK ""
+ @%append srip.lk1 
+!endif
+ *wlink name srip d all sys nt op m op maxe=25 op q op symf @srip.lk1
+

@@ -1,0 +1,22 @@
+!define BLANK ""
+E:\Projects\compphys\compph\chapter1\chap1c.obj : E:\Projects\compphys\compp&
+h\chapter1\chap1c.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\compph\chapter1
+ wfc386 chap1c.for -d2 -q -dep
+
+E:\Projects\compphys\compph\chapter1\chap1c.exe : E:\Projects\compphys\compp&
+h\chapter1\chap1c.obj .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\compph\chapter1
+ @%write chap1c.lk1 FIL chap1c.obj
+ @%append chap1c.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b chap1c.imp 
+ @%append chap1c.lk1 LIBR chap1c.imp
+!endif
+!ifneq BLANK ""
+ @%append chap1c.lk1 
+!endif
+ *wlink name chap1c d all sys nt op m op maxe=25 op q op symf @chap1c.lk1
+

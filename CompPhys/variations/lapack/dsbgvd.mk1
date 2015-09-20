@@ -1,0 +1,298 @@
+!define BLANK ""
+E:\Projects\compphys\variations\lapack\disnan.obj : E:\Projects\compphys\var&
+iations\lapack\double\disnan.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\disnan.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlacpy.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlacpy.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlacpy.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlae2.obj : E:\Projects\compphys\vari&
+ations\lapack\double\dlae2.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlae2.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed0.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed0.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed0.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed1.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed1.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed1.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed2.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed2.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed2.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed3.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed3.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed3.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed4.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed4.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed4.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed5.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed5.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed5.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed6.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed6.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed6.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed7.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed7.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed7.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed8.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed8.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed8.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaed9.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaed9.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaed9.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaeda.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaeda.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaeda.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaev2.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaev2.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaev2.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaisnan.obj : E:\Projects\compphys\v&
+ariations\lapack\double\dlaisnan.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaisnan.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlamrg.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlamrg.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlamrg.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlanst.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlanst.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlanst.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlapy2.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlapy2.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlapy2.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlar2v.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlar2v.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlar2v.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlargv.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlargv.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlargv.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlartg.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlartg.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlartg.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlartv.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlartv.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlartv.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlascl.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlascl.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlascl.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlaset.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlaset.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlaset.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlasr.obj : E:\Projects\compphys\vari&
+ations\lapack\double\dlasr.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlasr.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlasrt.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlasrt.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlasrt.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlassq.obj : E:\Projects\compphys\var&
+iations\lapack\double\dlassq.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dlassq.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dpbstf.obj : E:\Projects\compphys\var&
+iations\lapack\double\dpbstf.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dpbstf.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dsbgst.obj : E:\Projects\compphys\var&
+iations\lapack\double\dsbgst.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dsbgst.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dsbgvd.obj : E:\Projects\compphys\var&
+iations\lapack\double\dsbgvd.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dsbgvd.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dsbtrd.obj : E:\Projects\compphys\var&
+iations\lapack\double\dsbtrd.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dsbtrd.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dstedc.obj : E:\Projects\compphys\var&
+iations\lapack\double\dstedc.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dstedc.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dsteqr.obj : E:\Projects\compphys\var&
+iations\lapack\double\dsteqr.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dsteqr.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dsterf.obj : E:\Projects\compphys\var&
+iations\lapack\double\dsterf.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 double\dsterf.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dlamch.obj : E:\Projects\compphys\var&
+iations\lapack\util\dlamch.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 util\dlamch.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\ieeeck.obj : E:\Projects\compphys\var&
+iations\lapack\util\ieeeck.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 util\ieeeck.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\ilaenv.obj : E:\Projects\compphys\var&
+iations\lapack\util\ilaenv.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 util\ilaenv.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\iparmq.obj : E:\Projects\compphys\var&
+iations\lapack\util\iparmq.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 util\iparmq.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\lsame.obj : E:\Projects\compphys\vari&
+ations\lapack\util\lsame.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 util\lsame.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\xerbla.obj : E:\Projects\compphys\var&
+iations\lapack\util\xerbla.for .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ wfc386 util\xerbla.for -d2 -q -dep
+
+E:\Projects\compphys\variations\lapack\dsbgvd.lib : E:\Projects\compphys\var&
+iations\lapack\disnan.obj E:\Projects\compphys\variations\lapack\dlacpy.obj &
+E:\Projects\compphys\variations\lapack\dlae2.obj E:\Projects\compphys\variat&
+ions\lapack\dlaed0.obj E:\Projects\compphys\variations\lapack\dlaed1.obj E:\&
+Projects\compphys\variations\lapack\dlaed2.obj E:\Projects\compphys\variatio&
+ns\lapack\dlaed3.obj E:\Projects\compphys\variations\lapack\dlaed4.obj E:\Pr&
+ojects\compphys\variations\lapack\dlaed5.obj E:\Projects\compphys\variations&
+\lapack\dlaed6.obj E:\Projects\compphys\variations\lapack\dlaed7.obj E:\Proj&
+ects\compphys\variations\lapack\dlaed8.obj E:\Projects\compphys\variations\l&
+apack\dlaed9.obj E:\Projects\compphys\variations\lapack\dlaeda.obj E:\Projec&
+ts\compphys\variations\lapack\dlaev2.obj E:\Projects\compphys\variations\lap&
+ack\dlaisnan.obj E:\Projects\compphys\variations\lapack\dlamrg.obj E:\Projec&
+ts\compphys\variations\lapack\dlanst.obj E:\Projects\compphys\variations\lap&
+ack\dlapy2.obj E:\Projects\compphys\variations\lapack\dlar2v.obj E:\Projects&
+\compphys\variations\lapack\dlargv.obj E:\Projects\compphys\variations\lapac&
+k\dlartg.obj E:\Projects\compphys\variations\lapack\dlartv.obj E:\Projects\c&
+ompphys\variations\lapack\dlascl.obj E:\Projects\compphys\variations\lapack\&
+dlaset.obj E:\Projects\compphys\variations\lapack\dlasr.obj E:\Projects\comp&
+phys\variations\lapack\dlasrt.obj E:\Projects\compphys\variations\lapack\dla&
+ssq.obj E:\Projects\compphys\variations\lapack\dpbstf.obj E:\Projects\compph&
+ys\variations\lapack\dsbgst.obj E:\Projects\compphys\variations\lapack\dsbgv&
+d.obj E:\Projects\compphys\variations\lapack\dsbtrd.obj E:\Projects\compphys&
+\variations\lapack\dstedc.obj E:\Projects\compphys\variations\lapack\dsteqr.&
+obj E:\Projects\compphys\variations\lapack\dsterf.obj E:\Projects\compphys\v&
+ariations\lapack\dlamch.obj E:\Projects\compphys\variations\lapack\ieeeck.ob&
+j E:\Projects\compphys\variations\lapack\ilaenv.obj E:\Projects\compphys\var&
+iations\lapack\iparmq.obj E:\Projects\compphys\variations\lapack\lsame.obj E&
+:\Projects\compphys\variations\lapack\xerbla.obj .AUTODEPEND
+ @E:
+ cd E:\Projects\compphys\variations\lapack
+ %create dsbgvd.lb1
+!ifneq BLANK "disnan.obj dlacpy.obj dlae2.obj dlaed0.obj dlaed1.obj dlaed2.o&
+bj dlaed3.obj dlaed4.obj dlaed5.obj dlaed6.obj dlaed7.obj dlaed8.obj dlaed9.&
+obj dlaeda.obj dlaev2.obj dlaisnan.obj dlamrg.obj dlanst.obj dlapy2.obj dlar&
+2v.obj dlargv.obj dlartg.obj dlartv.obj dlascl.obj dlaset.obj dlasr.obj dlas&
+rt.obj dlassq.obj dpbstf.obj dsbgst.obj dsbgvd.obj dsbtrd.obj dstedc.obj dst&
+eqr.obj dsterf.obj dlamch.obj ieeeck.obj ilaenv.obj iparmq.obj lsame.obj xer&
+bla.obj"
+ @for %i in (disnan.obj dlacpy.obj dlae2.obj dlaed0.obj dlaed1.obj dlaed2.ob&
+j dlaed3.obj dlaed4.obj dlaed5.obj dlaed6.obj dlaed7.obj dlaed8.obj dlaed9.o&
+bj dlaeda.obj dlaev2.obj dlaisnan.obj dlamrg.obj dlanst.obj dlapy2.obj dlar2&
+v.obj dlargv.obj dlartg.obj dlartv.obj dlascl.obj dlaset.obj dlasr.obj dlasr&
+t.obj dlassq.obj dpbstf.obj dsbgst.obj dsbgvd.obj dsbtrd.obj dstedc.obj dste&
+qr.obj dsterf.obj dlamch.obj ieeeck.obj ilaenv.obj iparmq.obj lsame.obj xerb&
+la.obj) do @%append dsbgvd.lb1 +'%i'
+!endif
+!ifneq BLANK ""
+ @for %i in () do @%append dsbgvd.lb1 +'%i'
+!endif
+ *wlib -b -c -n -q -p=512 dsbgvd.lib @dsbgvd.lb1
+

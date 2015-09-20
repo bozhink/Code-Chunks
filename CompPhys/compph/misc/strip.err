@@ -1,0 +1,2 @@
+..\strip.for(85): *WRN* ST-08 this statement will never be executed due to the preceding branch
+..\strip.for: *WRN* VA-07 in FMAIN, EXCLM has been used but not defined

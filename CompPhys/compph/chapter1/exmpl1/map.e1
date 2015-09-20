@@ -1,0 +1,8 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      integer igamma,ietol,ixtol,inpts,ingrf
+      parameter (igamma=13)
+      parameter (ietol=38)
+      parameter (ixtol=39)
+      parameter (inpts=40)
+      parameter (ingrf=87)
+      
