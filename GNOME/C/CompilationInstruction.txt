@@ -1,0 +1,2 @@
+gcc filename.c `pkg-config --cflags --libs gtk+-3.0` -o filename
+valac --pkg gtk+-3.0 filename.c
