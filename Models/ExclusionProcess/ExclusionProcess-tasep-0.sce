@@ -1,4 +1,5 @@
 funcprot(0);
+// p = 0.2;
 p = 0.5;
 N = 200;
 global chain;// = zeros(1,N);

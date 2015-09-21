@@ -1,0 +1,203 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 12.09.0 ] */
+
+/* [wxMaxima: input   start ] */
+C:matrix([a,b],[c,0]);
+D:matrix([d,0],[delta,0]);
+M:matrix([eta[1],1],[0,eta[2]]);
+S:matrix([s11,s12],[s21,s22]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq:ratsimp(C.S-S.M);
+seq:linsolve([eq[1][1]=0, eq[1][2]=0, eq[2][2]=0],[s12, s21,s22]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+U:matrix([s11, rhs(seq[1])], [rhs(seq[2]), rhs(seq[3])]);
+iU:ratsimp(invert(U));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(U)$
+ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ratsimp(iU.C.U);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+C:matrix([eta[1]+eta[2],b],[-eta[1]*eta[2]/b,0]);
+M:matrix([eta[1],1],[0,eta[2]]);
+S:matrix([s11,s12],[s21,s22]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+eq1:ratsimp(C.S-S.M);
+seq1:linsolve([eq1[1][1]=0, eq1[1][2]=0, eq1[2][2]=0, eq1[2][1]],[s11,s12, s21,s22]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+U:matrix([rhs(seq1[1]), rhs(seq1[2])], [rhs(seq1[3]), rhs(seq1[4])]);
+ratsimp(determinant(U));
+iU:ratsimp(invert(U));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+UU:matrix([r[1]*b+eta[1]*r[2], r[2]], [-eta[2]*r[1]+c*r[2], r[1]]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ratsimp(subst(-eta[1]*eta[2]/b, c, C.UU-UU.M));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+b \neq 0
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+Ub:subst(0, %r2, subst(1, %r1, U));
+determinant(Ub);
+iUb:ratsimp(invert(Ub));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ratsimp(iUb.C.Ub);
+Db:ratsimp(iUb.D.Ub);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+b \eq 0, c \neq 0
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+Uc:subst(1, %r2, subst(0, %r1, U));
+determinant(Uc);
+iUc:ratsimp(invert(Uc));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ratsimp(iUc.C.Uc);
+Dc:ratsimp(subst(-b*c/eta[1], eta[2], iUc.D.Uc));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+D.Uc;
+iUc.D;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+M.M.M.M.M$
+expand(%);
+%[1][2]*(eta[1]-eta[2]);
+ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ML:matrix([eta[1]^L, (eta[1]^L-eta[2]^L)/(eta[1]-eta[2])],[0,eta[2]^L]);
+DbML:Db.ML$
+DbML[1][1]+DbML[2][2];
+ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ML:matrix([eta[1]^L, (eta[1]^L-eta[2]^L)/(eta[1]-eta[2])],[0,eta[2]^L]);
+DcML:Dc.ML$
+DcML[1][1]+DcML[2][2];
+ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Current
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+jj : c[1]*((eta[1]^(L-1)-eta[2]^(L-1))*d+(eta[1]^(L-2)-eta[2]^(L-2))*b*delta)/
+  ((eta[1]-eta[2])*((eta[1]+c[1])*eta[1]^(L-1)+(eta[2]+c[1])*eta[2]^(L-1)))$
+J = jj;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+lambda_1:(a+sqrt(a^2+4*b*c))$
+lambda_2:(a-sqrt(a^2+4*b*c))$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+jjc:factor(subst(-eta[1]*eta[2]/c, b, subst(c,delta,jj)));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+a = d+e;
+b = (p-q)/p;
+c = p/(1-p)*d*e;
+d = d;
+delta = p/(1-p)*d*e;
+delta = c;
+b*c = (p-q)/(1-p)*e*d;
+eta[1]*eta[2] = -b*c;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+bc : (p-q)/(1-p)*e*d$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+subst(-b*c/eta[2], eta[1], jjc);
+xjj:factor(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+denom(xjj);
+expand(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+f(L):=(a+sqrt('D))^(L)-(a-sqrt('D))^(L);
+fef(L):=factor(expand(subst(a^2+4*b*c,'D,f(L))));
+f1:sqrt(a^2+4*b*c);
+fef1(L):= fef(L)/(f1*2^L);
+fefxy(L):=subst(x,a,subst(y/b,c,fef1(L)));
+numerator(L):=(fefxy(L)*d+fefxy(L-1)*y);
+numeratore(L):=(fefxy(L)*(x-e)+fefxy(L-1)*y);
+numeratord(L):=subst(d+e,x,numeratore(L));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+fefxy(1);ratsimp(%)$
+fefxy(2);ratsimp(%)$
+fefxy(3);ratsimp(%)$
+fefxy(4);ratsimp(%)$
+fefxy(5);ratsimp(%)$
+fefxy(6);ratsimp(%)$
+fefxy(7);ratsimp(%)$
+fefxy(8);ratsimp(%)$
+fefxy(9);ratsimp(%)$
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+numerator(1)$ratsimp(%);
+numerator(2)$ratsimp(%);
+numerator(3)$ratsimp(%);
+numerator(4)$ratsimp(%);
+numerator(5)$ratsimp(%);
+numerator(6)$ratsimp(%);
+numerator(7)$ratsimp(%);
+numerator(8)$ratsimp(%);
+numerator(9)$ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+numeratore(1)$ratsimp(%);
+numeratore(2)$ratsimp(%);
+numeratore(3)$ratsimp(%);
+numeratore(4)$ratsimp(%);
+numeratore(5)$ratsimp(%);
+numeratore(6)$ratsimp(%);
+numeratore(7)$ratsimp(%);
+numeratore(8)$ratsimp(%);
+numeratore(9)$ratsimp(%);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

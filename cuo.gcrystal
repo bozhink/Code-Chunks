@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<gcry:crystal xmlns:gcry="http://www.nongnu.org/gcrystal" creation="07/08/2012" revision="07/08/2012">
+  <generator>Gnome Crystal 0.12.10</generator>
+  <lattice>simple cubic</lattice>
+  <group Hall="P 2 2 3">
+    <transform>x,y,z</transform>
+    <transform>-x,-y,z</transform>
+    <transform>-x,y,-z</transform>
+    <transform>x,-y,-z</transform>
+    <transform>z,x,y</transform>
+    <transform>z,-x,-y</transform>
+    <transform>-z,-x,y</transform>
+    <transform>-z,x,-y</transform>
+    <transform>y,z,x</transform>
+    <transform>-y,z,-x</transform>
+    <transform>y,-z,-x</transform>
+    <transform>-y,-z,x</transform>
+  </group>
+  <cell a="100" b="100" c="100" alpha="90" beta="90" gamma="90"/>
+  <size>
+    <position id="start" x="0" y="0"/>
+    <position id="end" x="1" y="1" z="1"/>
+  </size>
+  <atom id="o1" element="Cu" radius-ratio="1">
+    <position x="0.5" y="0.5" z="0.5"/>
+    <radius value="1.00000000000000000000000000000000000000000"/>
+  </atom>
+  <atom id="o2" element="O" radius-ratio="1">
+    <position x="0" y="0.5" z="0.5"/>
+    <radius value="1.00000000000000000000000000000000000000000"/>
+  </atom>
+  <atom id="o3" element="O" radius-ratio="1">
+    <position x="0.5" y="0.5"/>
+    <radius value="1.00000000000000000000000000000000000000000"/>
+  </atom>
+  <atom id="o4" element="O" radius-ratio="1">
+    <position x="0.5" y="0" z="0.5"/>
+    <radius value="1.00000000000000000000000000000000000000000"/>
+  </atom>
+  <view>
+    <orientation psi="119.171" theta="102.861" phi="18.901"/>
+    <fov>10</fov>
+    <color id="background" red="1" green="1" blue="1"/>
+  </view>
+</gcry:crystal>

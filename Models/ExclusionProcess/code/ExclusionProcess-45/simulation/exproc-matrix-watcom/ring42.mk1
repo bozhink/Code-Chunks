@@ -1,0 +1,23 @@
+!define BLANK ""
+D:\ExclusionProcess\simulation\watcom\exproc42-matrix.obj : D:\ExclusionProc&
+ess\simulation\watcom\exproc42-matrix.c .AUTODEPEND
+ @D:
+ cd D:\ExclusionProcess\simulation\watcom
+ *wcc386 exproc42-matrix.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -od &
+-d2 -6r -bt=nt -fo=.obj -mf
+
+D:\ExclusionProcess\simulation\watcom\ring42.exe : D:\ExclusionProcess\simul&
+ation\watcom\exproc42-matrix.obj .AUTODEPEND
+ @D:
+ cd D:\ExclusionProcess\simulation\watcom
+ @%write ring42.lk1 FIL exproc42-matrix.obj
+ @%append ring42.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b ring42.imp 
+ @%append ring42.lk1 LIBR ring42.imp
+!endif
+!ifneq BLANK ""
+ @%append ring42.lk1 
+!endif
+ *wlink name ring42 d all sys nt op m op maxe=25 op q op symf @ring42.lk1
+
