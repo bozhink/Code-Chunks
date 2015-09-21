@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bower_components/mocha/mocha.css">
+</head>
+<body>
+
+	<div id="mocha"></div>
+
+	<script src="bower_components/mocha/mocha.js"></script>
+	<script src="bower_components/chai/chai.js"></script>
+
+	<script>
+		mocha.setup('bdd');
+		var expect = chai.expect;
+	</script>
+
+	<script>
+		function sum(numbers) {
+			if (!(Array.isArray(numbers))) {
+				numbers = [].slice.call(arguments, 0);
+			}
+
+			return numbers.reduce(function(s, n) {
+				return s + n;
+			}, 0);
+		}
+	</script>
+
+	<script>
+		describe('#sum 1', function() {
+			it('expects sum([]) to return 0', function() {
+				var actual = sum([]);
+				expect(actual).to.equal(0);
+			});
+
+			it('expects sum() to return 0', function() {
+				var actual = sum();
+				expect(actual).to.equal(0);
+			});
+
+			it('expects sum(1, 2, 3, 4) to return 10', function() {
+				var actual = sum(1, 2, 3, 4);
+				expect(actual).to.equal(10);
+			});
+
+			it('expects sum([1, 2, 3, 4]) to return 10', function() {
+				var actual = sum([1, 2, 3, 4]);
+				expect(actual).to.equal(10);
+			});
+
+			it('expects sum(null) to return 0', function() {
+				var actual = sum(null);
+				expect(actual).to.equal(0);
+			});
+		});
+
+		describe('#sum 2', function() {
+			it('expects sum([]) to return 0', function() {
+				var actual = sum([]);
+				expect(actual).to.equal(0);
+			});
+
+			it('expects sum() to return 0', function() {
+				var actual = sum();
+				expect(actual).to.equal(0);
+			});
+
+			it('expects sum(1, 2, 3, 4) to return 10', function() {
+				var actual = sum(1, 2, 3, 4);
+				expect(actual).to.equal(10);
+			});
+
+			it('expects sum([1, 2, 3, 4]) to return 10', function() {
+				var actual = sum([1, 2, 3, 4]);
+				expect(actual).to.equal(10);
+			});
+
+			it('expects sum(null) to return 0', function() {
+				var actual = sum(null);
+				expect(actual).to.equal(0);
+			});
+
+			before(function() {
+				console.log('BEFORE');
+			});
+
+			after(function() {
+				console.log('AFTER');
+			});
+
+			beforeEach(function() {
+				console.log('BEFORE EACH');
+			});
+
+			afterEach(function() {
+				console.log('AFTER EACH');
+			});
+		});
+
+		describe('ASync test', function() {
+			it('ASync test', function(done) {
+				this.timeout(4000);
+
+				setTimeout(function(){
+					expect(1).to.equal(1);
+					done();
+				}, 3000);
+			});
+		});
+	</script>
+
+	<script>
+		mocha.run();
+	</script>
+
+</body>
+</html>

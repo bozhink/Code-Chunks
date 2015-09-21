@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SystemJs tests</title>
+</head>
+<body>
+	<script src="bower_components/system.js/dist/system.js"></script>
+	<script>
+	System.config({
+		transpiler: 'babel',
+
+		map: {
+			babel: './node_modules/babel-core/browser.js'
+		}
+	});
+
+	System.import('app/app1.js');
+	System.import('app/app.js')
+		.then(function(app){
+			var $list = app.render([1,2,3,4]);
+			$list.appendTo(document.body);
+		});
+
+
+	</script>
+</body>
+</html>
