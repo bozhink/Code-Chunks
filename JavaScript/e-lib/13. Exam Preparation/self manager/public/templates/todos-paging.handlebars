@@ -1,0 +1,23 @@
+<h2>TODOs pages</h2>
+<fieldset>
+    <legend>Page {{page}}</legend>
+    <div id="page-controls">
+        <button id="btn-prev-page" class="btn btn-default">Previous page</button>
+        <button id="btn-next-page" class="btn btn-default">Next page</button>
+    </div>
+    {{#each items}}
+      <h3><a href="#/todos?category={{category}}">{{category}}</a></h3>
+      {{#each items}}
+        <div class="todo-box" data-id="{{id}}">
+          <label class="checkbox">
+            {{#if state}}
+              <input type="checkbox" checked />
+            {{else}}
+              <input type="checkbox" />
+            {{/if}}
+            <strong>{{text}}</strong>
+          </label>
+        </div>
+      {{/each}}
+    {{/each}}
+</fieldset>

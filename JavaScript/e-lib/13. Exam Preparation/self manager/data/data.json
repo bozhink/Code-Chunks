@@ -1,0 +1,328 @@
+{
+  "users": [
+    {
+      "username": "Doncho",
+      "passHash": "4cb5ba2355368d4dfd14c9eee9a134791f7001cb",
+      "usernameLower": "doncho",
+      "authKey": "undefined+tusvd@Kh_@ixbA*Q$fvLmq(CJJmu*DN%E^i@OUr&eoAJn!*uak",
+      "id": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+      "events": [
+        {
+          "id": 449037,
+          "title": "Test",
+          "category": "Work",
+          "description": "",
+          "date": "2015-09-08T23:00:00.000Z",
+          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+          "users": [
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
+          ]
+        },
+        {
+          "id": 449037,
+          "title": "Test",
+          "category": "Work",
+          "description": "",
+          "date": "2015-09-08T23:00:00.000Z",
+          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+          "users": [
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
+          ]
+        },
+        {
+          "id": 792579,
+          "title": "Test",
+          "category": "Free time",
+          "description": "",
+          "date": "2015-09-17T23:00:00.000Z",
+          "creatorId": "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
+          "users": [
+            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7"
+          ]
+        }
+      ],
+      "todos": [
+        {
+          "id": 27882,
+          "text": "qwe",
+          "state": true,
+          "category": "Home"
+        },
+        {
+          "id": 365117,
+          "text": "NEW TODO",
+          "state": false,
+          "category": "Home"
+        }
+      ]
+    },
+    {
+      "username": "Cuki",
+      "passHash": "6edbb5c948d25789eccdfb37b70ff7f728f49786",
+      "usernameLower": "cuki",
+      "authKey": "undefinedLcy$^v^zXyoxyXQ_BbAJIRYwi%KiGGlD^ry+-N@AIwpP%EhOAUK",
+      "id": "f2c8726a-773e-403c-ad76-37dad93c9a8c"
+    },
+    {
+      "username": "Cuki2",
+      "passHash": "dfacf7f490d8e38e7895caad02e3693236216f51",
+      "usernameLower": "cuki2",
+      "authKey": "undefinedTZvCUbyZH(!=m-+)$fcAjzD)NPiWfGt(r!MHSzrCPAb(nGfp%*!",
+      "id": "1987f231-b978-49de-a5eb-d3f57f1f6fa6"
+    },
+    {
+      "username": "Cuki3",
+      "passHash": "05e18f169bb85da8722deb800fa8e3898c809146",
+      "usernameLower": "cuki3",
+      "authKey": "undefined&a*=xajP_XX&NIPuGIJIgcTfFWlZ&#BdA*zD*@TUUvNc^TmOfw(",
+      "id": "22402c86-f18e-4689-9fc3-237205fad856"
+    },
+    {
+      "username": "1",
+      "passHash": "7b52009b64fd0a2a49e6d8a939753077792b0554",
+      "usernameLower": "1",
+      "authKey": "undefinedRVdB#(If#FnGXUQVlXEyDDl+)z_XCmeo+STXj^l_GnJK(Z=E!r@",
+      "id": "19c97637-de0e-488c-bcd7-bb1fbfc31e0b",
+      "events": [
+        {
+          "id": 592815,
+          "title": "dfg",
+          "category": "sdfg",
+          "description": "sdfg",
+          "date": "2015-09-16T22:30:00.000Z",
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "19c97637-de0e-488c-bcd7-bb1fbfc31e0b",
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        }
+      ],
+      "todos": [
+        {
+          "id": 348821,
+          "text": "",
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 421983,
+          "text": "",
+          "state": false,
+          "category": "uncategorized"
+        },
+        {
+          "id": 16879,
+          "text": "1",
+          "state": false,
+          "category": "1"
+        },
+        {
+          "id": 20596,
+          "text": "2",
+          "state": false,
+          "category": "2"
+        },
+        {
+          "id": 24034,
+          "text": "3",
+          "state": false,
+          "category": "3"
+        },
+        {
+          "id": 27822,
+          "text": "4",
+          "state": false,
+          "category": "4"
+        },
+        {
+          "id": 30903,
+          "text": "5",
+          "state": false,
+          "category": "5"
+        },
+        {
+          "id": 34427,
+          "text": "6",
+          "state": false,
+          "category": "6"
+        },
+        {
+          "id": 37287,
+          "text": "7",
+          "state": false,
+          "category": "7"
+        },
+        {
+          "id": 40424,
+          "text": "8",
+          "state": false,
+          "category": "8"
+        },
+        {
+          "id": 43275,
+          "text": "9",
+          "state": false,
+          "category": "9"
+        },
+        {
+          "id": 47711,
+          "text": "10",
+          "state": false,
+          "category": "10"
+        },
+        {
+          "id": 54782,
+          "text": "11",
+          "state": false,
+          "category": "11"
+        },
+        {
+          "id": 58384,
+          "text": "12",
+          "state": false,
+          "category": "12"
+        },
+        {
+          "id": 61637,
+          "text": "13",
+          "state": false,
+          "category": "13"
+        },
+        {
+          "id": 66102,
+          "text": "14",
+          "state": false,
+          "category": "14"
+        },
+        {
+          "id": 69757,
+          "text": "15",
+          "state": false,
+          "category": "15"
+        },
+        {
+          "id": 74409,
+          "text": "16",
+          "state": false,
+          "category": "16"
+        },
+        {
+          "id": 80507,
+          "text": "17",
+          "state": false,
+          "category": "17"
+        },
+        {
+          "id": 85399,
+          "text": "18",
+          "state": false,
+          "category": "18"
+        },
+        {
+          "id": 91134,
+          "text": "20",
+          "state": false,
+          "category": "20"
+        }
+      ]
+    },
+    {
+      "username": "23",
+      "passHash": "f37be93b674e3dcd988cba4a7cf66879468c3b35",
+      "usernameLower": "23",
+      "authKey": "undefinedioBfqu*yE$Bf^aXtwsf+nIfOAXp$BQWzfO@PF=z-=*UtF$E@kzN",
+      "id": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+      "events": [
+        {
+          "id": 568960,
+          "title": "23",
+          "category": "23",
+          "description": "23",
+          "date": "2015-09-16T22:30:00.000Z",
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        },
+        {
+          "id": 568960,
+          "title": "23",
+          "category": "23",
+          "description": "23",
+          "date": "2015-09-16T22:30:00.000Z",
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        },
+        {
+          "id": 592815,
+          "title": "dfg",
+          "category": "sdfg",
+          "description": "sdfg",
+          "date": "2015-09-16T22:30:00.000Z",
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "19c97637-de0e-488c-bcd7-bb1fbfc31e0b",
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        },
+        {
+          "id": 114079,
+          "title": "",
+          "category": "uncategorized",
+          "description": "",
+          "date": null,
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        },
+        {
+          "id": 142391,
+          "title": "",
+          "category": "uncategorized",
+          "description": "",
+          "date": null,
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        },
+        {
+          "id": 159670,
+          "title": "rt",
+          "category": "uncategorized",
+          "description": "",
+          "date": null,
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        },
+        {
+          "id": 559780,
+          "title": "x",
+          "category": "uncategorized",
+          "description": "",
+          "date": null,
+          "creatorId": "6fe44334-35ad-483d-a284-8eda9dc7ae5f",
+          "users": [
+            "6fe44334-35ad-483d-a284-8eda9dc7ae5f"
+          ]
+        }
+      ]
+    },
+    {
+      "username": "78",
+      "passHash": "6c7dbb98b9dd36d5523dfff87ab185e6e1139e49",
+      "usernameLower": "78",
+      "authKey": "undefinedA)QGYUsrA$KdYXx$letK@+dPdLKcbVrO%AkRYdTB=+eQ%PDgoO=",
+      "id": "08b6d9c9-ea70-4f8f-83b0-118c7e350fab"
+    }
+  ]
+}

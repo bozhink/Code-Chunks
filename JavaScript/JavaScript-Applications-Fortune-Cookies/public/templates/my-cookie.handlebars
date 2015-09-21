@@ -1,0 +1,25 @@
+<h1>My cookie</h1>
+<div class="cookie-item form-group" id="{{id}}">
+    <frameset>
+        <legend><a href="#/home?category={{category}}">{{category}}</a></legend>
+        <h3>{{text}}</h3>
+        <div class="cookie-item-content-item">
+            <img alt="{{text}}" src="{{img}}" class="cookie-img"/>
+        </div>
+        <br/>
+        <div class="cookie-item-content-item" class="form-control">
+            <label class="form-label">
+                <input type="radio" name="{{id}}" value="1" class="form-control">
+                Like
+            </label>
+            <label class="form-label">
+                <input type="radio" name="{{id}}" value="0" class="form-control">
+                Dislike
+            </label>
+        </div>
+        <br/>
+        <div class="cookie-item-content-item">
+            <button class="form-control btn btn-primary" name="{{id}}" id="btn-cookie-reshare">Re-Share</button>
+        </div>
+    </frameset>
+</div>

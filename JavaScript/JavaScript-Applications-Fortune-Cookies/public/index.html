@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forture-Cookies-Sep-2015</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="bower_components/jt.timepicker/jquery.timepicker.css">
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="root">
+        <header class="container">
+            <div class="row">
+                <h1 class="page-header col-md-6">Fortune Cookies</h1>
+                <form class="form-inline col-md-6" id="container-sign-in">
+                    <div class="form-group">
+                        <label class="sr-only control-label" for="tb-username" class="control-label">Username</label>
+                        <input type="text" class="form-control" id="tb-username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only control-label" for="tb-password" class="control-label">Password</label>
+                        <input type="password" class="form-control" id="tb-password" placeholder="Password">
+                    </div>
+                    <button id="btn-sign-in" class="btn btn-default">Sign in</button>
+                    <div class="checkbox">
+                        <label class="control-label">
+                            <input type="checkbox" /> Remember me</label>
+                    </div>
+                    <a href="#/users/register"> or Register</a>
+                </form>
+                <form class="form-inline col-md-6" id="container-sign-out">
+                    <label class="control-label" id="geerint-user"></label>
+                    <button id="btn-sign-out" class="btn btn-default">Sign out</button>
+                </form>
+            </div>
+            <nav class="navbar navbar-default row">
+                <ul class="nav navbar-nav col-md-8">
+                    <li id='li-home'><a href="#/home">Home</a></li>
+                    <li id='li-my-cookie'><a href="#/my-cookie">My cookie</a></li>
+                    <li id='li-new-cookie'><a href="#/new-cookie">Share new cookie</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content" class="container">
+
+        </div>
+        <aside id="left">
+
+        </aside>
+        <footer class="footer">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Libs -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/jt.timepicker/jquery.timepicker.js"></script>
+    <script src="bower_components/sammy/lib/sammy.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/sha1/index.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/toastr/toastr.js"></script>
+    <script src="app/error-provider.js"></script>
+
+    <!-- App -->
+
+    <!-- App: Controllers -->
+    <script src="controllers/helpers/controller-helpers.js"></script>
+    <script src="controllers/home-controller.js"></script>
+    <script src="controllers/cookies-controller.js"></script>
+
+    <script src="controllers/users-controller.js"></script>
+    <script src="controllers/pager-controller.js"></script>
+
+    <script src="controllers/notifications-controller.js"></script>
+
+    <!-- App: Loaders -->
+    <script src="app/data.users.js"></script>
+    <script src="app/data.cookies.js"></script>
+
+    <script src="app/data.categories.js"></script>
+
+    <script src="app/templates.js"></script>
+    <script src="app/json-requester.js"></script>
+
+    <!-- App: Start -->
+    <script src="app.js"></script>
+
+    <!-- <script src="http://localhost:35729/livereload.js"> -->
+    </script>
+
+</body>
+
+</html>

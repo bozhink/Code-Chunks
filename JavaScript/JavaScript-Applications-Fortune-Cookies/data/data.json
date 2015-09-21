@@ -1,0 +1,492 @@
+{
+  "users": [
+    {
+      "username": "Minkov",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "usernameToLower": "minkov",
+      "id": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "authKey": "16655985-e510-43d4-ad1c-2388c76d1ef6FwHCPd*bP:.;Fu&:evl)RPGg"
+    },
+    {
+      "username": "Minkov3",
+      "passHash": "1234567890123456789012345678901234567890",
+      "usernameToLower": "minkov3",
+      "id": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
+      "authKey": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73erxSIAJyVOzIEIrpMFbanscO"
+    },
+    {
+      "username": "12345",
+      "passHash": "6eeafaef013319822a1f30407a5353f778b59790",
+      "usernameToLower": "12345",
+      "id": "7404274c-06a1-480b-8aca-e8caf26cab97"
+    },
+    {
+      "username": "222222",
+      "passHash": "bf5fc3deae42dc9821b1dfc6907c12f985c8008b",
+      "usernameToLower": "222222",
+      "id": "068ece1f-ea35-4374-b698-53fc3d4ce26e"
+    },
+    {
+      "username": "asdsasdas",
+      "passHash": "a28a7376e13e750cecd9ec7596b4fbc425fc9722",
+      "usernameToLower": "asdsasdas",
+      "id": "9840239c-f301-4f7a-a409-f34a80c9e5ff"
+    },
+    {
+      "username": "aaaaaa",
+      "passHash": "8e41cd90ba9412629c5c247753923ccf6897270f",
+      "usernameToLower": "aaaaaa",
+      "id": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "authKey": "81e2868e-a86f-4467-8d2e-1d6d087fabe2xgPRptgvSVUduvKjbWWiJxiU"
+    },
+    {
+      "username": "bbbbbb",
+      "passHash": "6264a20a84083136c6de3e1c894e3e70e3bf3d3e",
+      "usernameToLower": "bbbbbb",
+      "id": "5814c213-3e75-49db-aaf8-79969a93c57d"
+    }
+  ],
+  "cookies": [
+    {
+      "text": "Test",
+      "category": "Home",
+      "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "likes": 17,
+      "dislikes": 21,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-09T14:53:30.290Z",
+      "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "likes": 39,
+      "dislikes": 26,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-09T14:53:21.482Z",
+      "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
+      "hours": 9
+    },
+    {
+      "text": "Hello!",
+      "category": "Home",
+      "userId": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
+      "likes": 11,
+      "dislikes": 9,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T06:24:18.743Z",
+      "id": "ea91a233-bcf3-48b6-933f-05857f4aea87"
+    },
+    {
+      "text": "",
+      "category": "",
+      "likes": 7,
+      "dislikes": 7,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T16:50:48.130Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "ab48b938-e924-466b-9326-fda4d112f700"
+    },
+    {
+      "text": "",
+      "category": "",
+      "likes": 1,
+      "dislikes": 1,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T16:51:06.872Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "7a901300-0e2d-46f3-91f2-794e55076989"
+    },
+    {
+      "text": "w",
+      "category": "",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "http://localhost:3000/#/new-cookie",
+      "shareDate": "2015-09-10T17:06:12.956Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "1be38f65-c4b1-4380-a75b-a954b8c2e146"
+    },
+    {
+      "text": "eeeeeeeeeeeeeee",
+      "category": "eeeddddd",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "http://localhost:3000/#/new-cookie",
+      "shareDate": "2015-09-10T17:11:28.147Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "fa6bf1a9-92b8-4612-b960-63e9159570bd"
+    },
+    {
+      "text": "WOrk",
+      "category": "May the Force with you",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:31:32.420Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "936c8cb1-e3d5-498a-930c-28111bf43aea"
+    },
+    {
+      "text": "WOrk",
+      "category": "May the Force with you",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:31:40.798Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "c685d83b-5fd3-4de3-9631-7d51a9a84187"
+    },
+    {
+      "text": "WOrk",
+      "category": "May the Force with you",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:32:23.182Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "4fb56d14-63d0-4151-9db1-9a6c8cac9aaf"
+    },
+    {
+      "text": "WOrk",
+      "category": "May the Force with you",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:32:58.502Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "9697ce15-03d6-4092-82b2-8c0470027db4"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:33:41.431Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "842ce072-17e9-4397-a065-6633befcf916"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:34:18.309Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "58a0ef97-050a-4d77-a68e-06b2f46d6cbb"
+    },
+    {
+      "text": "NewMay the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:35:19.204Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "9a824245-3c81-4ee9-aff5-cea4a6a8895e"
+    },
+    {
+      "text": "ddddddddddddd",
+      "category": "ddddddddddddd",
+      "likes": 1,
+      "dislikes": 2,
+      "img": "http://localhost:3000/#/new-cookie",
+      "shareDate": "2015-09-10T18:35:32.736Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "a7db378e-75d3-47f7-8abf-fdcd5410a0f9"
+    },
+    {
+      "text": "eeeeeeeeeeeeeeeeee",
+      "category": "eeeddddd",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "http://localhost:3000/#/new-cookie",
+      "shareDate": "2015-09-10T18:39:00.763Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "500e6629-1f5d-46cf-99ea-362cc5edaab6"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:43.631Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "e061f8d4-2164-4240-b829-18bb7605e603"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 6,
+      "dislikes": 5,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:45.638Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "4e3baf3e-b6cc-42d7-9a0e-4431f629cd4e"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:46.195Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "db1aaa8f-ffd0-4d78-a37a-1907cdb8c8e8"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:46.780Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "9d0dca9c-3b76-4924-a596-5610ebc056c1"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:47.333Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "710c43df-a828-463f-a46d-a5ea89dd90bb"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:47.917Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "2b9ad37f-4fe0-4e36-b5aa-45be7acc5bbc"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:48.504Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "d1c0d739-ee6b-4db9-8392-4da2c89fb5a3"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:49.057Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "407425f8-01a8-42eb-854c-ff184da5d0a7"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:41:49.560Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "cfb8a7cd-3af0-4fe8-8013-593837771a52"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:43:20.017Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "5fe20271-1f65-4977-ab4c-187944fee042"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:44:37.905Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "51aa6ddf-7075-4c31-95ab-5af35c00a06e"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:54:59.279Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "10429451-4af4-443c-8cb6-4f638e848a3d"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:54:59.739Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "2edf7fde-0a85-43e8-a97c-e717457a0277"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:00.633Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "6adbadf2-8ee3-4a6e-8502-ab2c10982624"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:00.876Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "de7d429c-de63-4133-ad2a-7e7377ef1a1e"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:01.081Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "a9b3cb54-f1e2-4394-89e2-443ca7e304f7"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:01.264Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "7a2cf9af-945a-4798-b7d3-cf4feb7bf82f"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:01.411Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "17a544fe-79b4-4838-ba5f-69484ed932ed"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:01.570Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "6a42f617-4e2d-4f48-9b60-b2a11eaa782f"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:01.763Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "cb7b6e7b-980a-44e9-a932-21a3ad7a8353"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:05.185Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "3ca2fc40-3183-4333-9303-e963c584b696"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:05.410Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "a98ba225-e54d-49bf-ba62-fec42681d543"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:05.600Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "a16f31e6-16e8-4d26-aec9-0006703661fa"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:05.777Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "e3834770-29e9-473c-be58-d3c7c67acc4c"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:05.961Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "39a8c61f-6b93-4eee-9578-75b4c495fb16"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:06.153Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "0073665b-b938-4e06-a075-3f953eeff0d6"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:06.355Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "625b588a-a5cd-413f-9b4d-88fe65c6837f"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "likes": 0,
+      "dislikes": 0,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T18:55:06.607Z",
+      "userId": "81e2868e-a86f-4467-8d2e-1d6d087fabe2",
+      "id": "b8a194ed-0be9-4576-98f2-4ca60bcd3f65"
+    }
+  ]
+}
