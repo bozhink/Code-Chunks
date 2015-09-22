@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		canvas {
+			background-color: yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="the-canvas" width="500" height="350"></canvas>
+	<br />
+	<input type="range" id="xCoordinate" onchange="sliderChange()" />
+	<br />
+	<input type="range" id="yCoordinate" onchange="sliderChange()" />
+	<script type="text/javascript">
+		//
+		var canvas = document.getElementById('the-canvas'),
+			ctx = canvas.getContext('2d'),
+			centerX = 100,
+			centerY = 150;
+
+			yCoordinate.min = -canvas.height;
+			yCoordinate.max = canvas.height;
+			yCoordinate.value = yCoordinate.min;
+
+			xCoordinate.min = -canvas.width;
+			xCoordinate.max = canvas.width;
+			xCoordinate.value = xCoordinate.min;
+
+			function sliderChange() {
+
+				//ctx.clearRect(0, 0, canvas.width, canvas.height);
+				ctx.beginPath();
+
+				ctx.moveTo(100, 150);
+
+				// ctx.lineTo(250, 150);
+
+				ctx.quadraticCurveTo(xCoordinate.value, yCoordinate.value, 150, 250);
+
+				ctx.stroke();
+				// ctx.fill();
+			}
+
+	</script>
+</body>
+</html>

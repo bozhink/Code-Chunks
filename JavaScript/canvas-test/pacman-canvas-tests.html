@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		canvas {
+			background-color: yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="the-canvas" width="500" height="350"></canvas>
+	<script type="text/javascript">
+		//
+		var canvas = document.getElementById('the-canvas'),
+			ctx = canvas.getContext('2d'),
+			centerX = 100,
+			centerY = 100,
+			radius = 75,
+			MAXIMAL_ANGLE_COEFFICIENT = 0.4,
+			angleCoefficient = MAXIMAL_ANGLE_COEFFICIENT,
+			angleDifference = 0.02;
+
+		setInterval(function() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.beginPath();
+
+			ctx.moveTo(centerX, centerY);
+
+			var angle = angleCoefficient*Math.PI;
+			
+			angleCoefficient -= angleDifference;
+			if (angleCoefficient < 0) {
+				angleCoefficient = MAXIMAL_ANGLE_COEFFICIENT;
+			}
+			
+			ctx.arc(centerX, centerY, radius, angle, 2 * Math.PI - angle);
+
+			// ctx.lineTo(centerX, centerY);
+			ctx.closePath();
+
+			ctx.stroke();
+			// ctx.fill();
+		}, 500);
+	</script>
+</body>
+</html>
