@@ -22,7 +22,7 @@ int main (int argc, char**argv) {
     FILE*fp;
     
     if (argc < 2) {
-        fprintf(stderr, "Ussage: %s <output file name>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <output file name>\n", argv[0]);
         exit(1);
     }
     
