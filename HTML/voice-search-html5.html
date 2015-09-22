@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html>  
+  <head>
+    <title>Search</title>
+  </head>
+  <body>
+<script type="application/javascript">
+    function startSearch(event) {
+        event.target.form.submit();
+    }
+</script>
+<form action="http://www.google.com/search">
+  <input type="search" name="q" speech="required" onspeechchange="startSearch">
+</form>
+  </body>
+</html>
