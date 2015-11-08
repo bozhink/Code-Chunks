@@ -40,6 +40,8 @@ dlldata.c
 *.obj
 *.pch
 *.pdb
+*.exe
+*.dll
 *.pgc
 *.pgd
 *.rsp
