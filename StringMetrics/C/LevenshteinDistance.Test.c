@@ -17,4 +17,6 @@ int main(int argc, char **argv) {
 
     printf("%d, %d\n", ExpextedLevenshteinDistance,
         fullMatrixLevenshteinDistance(String1, String2));
+
+    return 0;
 }
