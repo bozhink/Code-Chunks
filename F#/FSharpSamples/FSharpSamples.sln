@@ -7,6 +7,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpSamples", "FSharpSamp
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpSampleConsoleApp", "FSharpSampleConsoleApp\FSharpSampleConsoleApp.fsproj", "{6A8F2D9D-1A5C-4B4E-86E3-96E63894C330}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{61F80DF2-3254-4F5E-A2BD-0A9963F4C899}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpCheatsheet", "FSharpCheatsheet\FSharpCheatsheet.fsproj", "{C6378F38-961C-4B35-A910-EDDC92590F82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6A8F2D9D-1A5C-4B4E-86E3-96E63894C330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8F2D9D-1A5C-4B4E-86E3-96E63894C330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8F2D9D-1A5C-4B4E-86E3-96E63894C330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F80DF2-3254-4F5E-A2BD-0A9963F4C899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F80DF2-3254-4F5E-A2BD-0A9963F4C899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F80DF2-3254-4F5E-A2BD-0A9963F4C899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F80DF2-3254-4F5E-A2BD-0A9963F4C899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6378F38-961C-4B35-A910-EDDC92590F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6378F38-961C-4B35-A910-EDDC92590F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6378F38-961C-4B35-A910-EDDC92590F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6378F38-961C-4B35-A910-EDDC92590F82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
