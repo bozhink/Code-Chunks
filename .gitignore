@@ -193,3 +193,10 @@ ModelManifest.xml
 # Eclipse workspace
 .metadata/
 
+# NodeJS modules
+node_modules/
+
+# Bower components
+bower_components
+
+
