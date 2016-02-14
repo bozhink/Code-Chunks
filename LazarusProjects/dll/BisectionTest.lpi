@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="BisectionTest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BisectionTest"/>
+        <CursorPos X="3" Y="28"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\..\syn\Pascal_Dll_Import_Test.pas"/>
+        <UnitName Value="Pascal_Dll_Import_Test"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\syn\Delphi_Explicit_run_time_linking.pas"/>
+        <UnitName Value="Delphi_Explicit_run_time_linking"/>
+        <CursorPos X="16" Y="22"/>
+        <TopLine Value="8"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="lib.lpi"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="XML"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="lib.lpr"/>
+        <UnitName Value="lib"/>
+        <CursorPos X="41" Y="30"/>
+        <TopLine Value="5"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="Func.lpi"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+        <SyntaxHighlighter Value="XML"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="Func.lpr"/>
+        <UnitName Value="Func"/>
+        <CursorPos X="18" Y="15"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

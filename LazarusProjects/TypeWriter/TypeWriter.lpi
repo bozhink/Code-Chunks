@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="TypeWriter.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TypeWriter"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="typeunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TypeUnit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="23"/>
+        <CursorPos X="72" Y="40"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="25" Column="5" TopLine="5"/>
+      </Position2>
+      <Position3>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="39" Column="27" TopLine="15"/>
+      </Position3>
+      <Position4>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="41" Column="4" TopLine="15"/>
+      </Position4>
+      <Position5>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="40" Column="37" TopLine="17"/>
+      </Position5>
+      <Position6>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="45" Column="54" TopLine="20"/>
+      </Position6>
+      <Position7>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="25" Column="13" TopLine="24"/>
+      </Position7>
+      <Position8>
+        <Filename Value="typeunit.pas"/>
+        <Caret Line="40" Column="8" TopLine="24"/>
+      </Position8>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <Target>
+      <Filename Value="TypeWriter"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

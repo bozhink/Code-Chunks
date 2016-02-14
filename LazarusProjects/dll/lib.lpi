@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="lib.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="lib"/>
+        <CursorPos X="36" Y="6"/>
+        <TopLine Value="38"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="C:\lazarus\fpc\2.2.0\source\rtl\objpas\math.pp"/>
+        <UnitName Value="math"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="27"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\Netlib\amrandom.pas"/>
+        <UnitName Value="AMRandomRS"/>
+        <CursorPos X="13" Y="188"/>
+        <TopLine Value="177"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

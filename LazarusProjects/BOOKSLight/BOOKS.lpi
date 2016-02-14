@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="BOOKS.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BOOKS"/>
+        <CursorPos X="12" Y="380"/>
+        <TopLine Value="377"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="ErrorDescription.txt"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="66" Y="21"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="None"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\fpc\2.2.0\source\rtl\inc\systemh.inc"/>
+        <CursorPos X="11" Y="604"/>
+        <TopLine Value="871"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="338" Column="16" TopLine="315"/>
+      </Position1>
+      <Position2>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="333" Column="8" TopLine="332"/>
+      </Position2>
+      <Position3>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="334" Column="9" TopLine="321"/>
+      </Position3>
+      <Position4>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="369" Column="33" TopLine="351"/>
+      </Position4>
+      <Position5>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="333" Column="7" TopLine="321"/>
+      </Position5>
+      <Position6>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="337" Column="40" TopLine="325"/>
+      </Position6>
+      <Position7>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="345" Column="32" TopLine="333"/>
+      </Position7>
+      <Position8>
+        <Filename Value="BOOKS.pas"/>
+        <Caret Line="337" Column="40" TopLine="325"/>
+      </Position8>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

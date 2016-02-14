@@ -1,0 +1,18 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TAddForm','FORMDATA',[
+  'TPF0'#8'TAddForm'#7'AddForm'#4'Left'#3#181#2#6'Height'#3#134#0#3'Top'#2'R'#5
+  +'Width'#3#242#1#7'Caption'#6#16'Adding a book...'#12'ClientHeight'#3#134#0#11
+  +'ClientWidth'#3#242#1#10'ParentFont'#8#10'LCLVersion'#6#6'0.9.26'#0#9'TGroup'
+  +'Box'#9'GroupBox1'#4'Left'#2#8#6'Height'#2'x'#3'Top'#2#8#5'Width'#3''''#1#7
+  +'Caption'#6#17'Enter Information'#12'ClientHeight'#2'f'#11'ClientWidth'#3'#'
+  +#1#8'TabOrder'#2#0#0#6'TLabel'#6'Label1'#4'Left'#2#15#6'Height'#2#17#3'Top'#2
+  +#9#5'Width'#2'T'#7'Caption'#6#12'Book''s Title'#11'ParentColor'#8#0#0#6'TLab'
+  +'el'#6'Label2'#4'Left'#2#15#6'Height'#2#17#3'Top'#2'('#5'Width'#2'b'#7'Capti'
+  +'on'#6#11'Author Name'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#15
+  +#6'Height'#2#17#3'Top'#2'H'#5'Width'#2'%'#7'Caption'#6#5'Price'#11'ParentCol'
+  +'or'#8#0#0#5'TEdit'#9'TitleTEdt'#4'Left'#2'}'#6'Height'#2#23#5'Width'#3#160#0
+  +#8'TabOrder'#2#0#0#0#5'TEdit'#9'AuthorEdt'#4'Left'#2'}'#6'Height'#2#23#3'Top'
+  +#2#31#5'Width'#3#160#0#8'TabOrder'#2#1#0#0#5'TEdit'#8'PriceEdt'#4'Left'#2'}'
+  +#6'Height'#2#23#3'Top'#2'@'#5'Width'#2'P'#8'TabOrder'#2#2#0#0#0#0
+]);

@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 437
+  Height = 343
+  Top = 187
+  Width = 517
+  HorzScrollBar.Page = 516
+  VertScrollBar.Page = 322
+  ActiveControl = CBCity
+  Caption = 'Books'
+  ClientHeight = 323
+  ClientWidth = 517
+  Menu = MainMenu
+  object Panel1: TPanel
+    Height = 28
+    Width = 517
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Height = 43
+    Top = 280
+    Width = 517
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 1
+  end
+  object CBCity: TComboBox
+    Left = 8
+    Height = 21
+    Top = 56
+    Width = 100
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    ItemHeight = 13
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object MainMenu: TMainMenu
+    left = 16
+    top = 288
+    object MIFile: TMenuItem
+      Caption = 'File'
+      object MIExit: TMenuItem
+        Caption = 'Exit'
+        OnClick = MIExitClick
+      end
+    end
+  end
+  object IBConnection1: TIBConnection
+    LoginPrompt = True
+    DatabaseName = 'E:\projects\Pascal\FDBBook\BOOKS.GDB'
+    KeepConnection = True
+    Password = 'masterkey'
+    UserName = 'sysdba'
+    CharSet = 'ASCII'
+    HostName = 'localhost'
+    Dialect = 3
+    left = 56
+    top = 288
+  end
+  object MySQL50Connection1: TMySQL50Connection
+    Connected = True
+    LoginPrompt = True
+    DatabaseName = 'books'
+    KeepConnection = True
+    Password = '880414'
+    UserName = 'root'
+    CharSet = 'cp1251'
+    HostName = 'localhost'
+    left = 96
+    top = 288
+  end
+end

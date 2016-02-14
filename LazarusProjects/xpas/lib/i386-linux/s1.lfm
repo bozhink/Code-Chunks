@@ -1,0 +1,61 @@
+object Form1: TForm1
+  Left = 408
+  Height = 260
+  Top = 172
+  Width = 340
+  Caption = 's1'
+  ClientHeight = 237
+  ClientWidth = 340
+  Menu = MainMenu1
+  LCLVersion = '0.9.30'
+  object Memo1: TMemo
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 237
+    Top = 0
+    Width = 340
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Lines.Strings = (
+      ''
+    )
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object SaveDialog1: TSaveDialog
+    Width = 780
+    Height = 596
+    left = 40
+    top = 168
+  end
+  object MainMenu1: TMainMenu
+    left = 128
+    top = 168
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      object MenuItem2: TMenuItem
+        Caption = '&Cose'
+        ShortCut = 16465
+        OnClick = MenuItem2Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = '&Save'
+        ShortCut = 16467
+        OnClick = MenuItem4Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = '&Open'
+        ShortCut = 16463
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 216
+    top = 168
+  end
+end

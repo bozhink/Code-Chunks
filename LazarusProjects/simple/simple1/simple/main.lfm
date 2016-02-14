@@ -1,0 +1,294 @@
+object SimpleForm: TSimpleForm
+  Left = 399
+  Height = 301
+  Top = 109
+  Width = 401
+  HorzScrollBar.Page = 400
+  VertScrollBar.Page = 300
+  ActiveControl = EFileName
+  Caption = 'Simple'
+  ClientHeight = 301
+  ClientWidth = 401
+  object Notebook1: TNotebook
+    Left = 8
+    Height = 258
+    Top = 8
+    Width = 385
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    PageIndex = 0
+    TabOrder = 0
+    object PFile: TPage
+      Caption = 'File'
+      ClientWidth = 377
+      ClientHeight = 232
+      object LFileName: TLabel
+        Left = 12
+        Height = 27
+        Top = 18
+        Width = 184
+        Caption = 'Enter required file name '#13#10'and choose one of the options bellow.'
+        ParentColor = False
+      end
+      object EFileName: TEdit
+        Left = 12
+        Height = 24
+        Top = 66
+        Width = 353
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSelect = True
+        TabOrder = 0
+      end
+      object BNew: TButton
+        Left = 12
+        Height = 25
+        Top = 114
+        Width = 75
+        Caption = '&New File'
+        OnClick = BNewClick
+        TabOrder = 1
+      end
+      object BOpen: TButton
+        Left = 108
+        Height = 25
+        Top = 114
+        Width = 75
+        Caption = '&Open File'
+        OnClick = BOpenClick
+        TabOrder = 2
+      end
+    end
+    object PAdd: TPage
+      Caption = 'Add'
+      object LAdd: TLabel
+        Left = 18
+        Height = 14
+        Top = 32
+        Width = 167
+        Caption = 'Enter object name and press ADD.'
+        ParentColor = False
+      end
+      object EAdd: TEdit
+        Left = 12
+        Height = 23
+        Top = 74
+        Width = 352
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSelect = True
+        TabOrder = 0
+      end
+      object BAdd: TButton
+        Left = 12
+        Height = 25
+        Top = 114
+        Width = 75
+        Caption = '&ADD'
+        OnClick = BAddClick
+        TabOrder = 1
+      end
+    end
+    object PDelete: TPage
+      Caption = 'Delete'
+      object LDelete: TLabel
+        Left = 4
+        Height = 14
+        Top = 42
+        Width = 197
+        Caption = 'Type object to delete and press DELETE.'
+        ParentColor = False
+      end
+      object EDelete: TEdit
+        Left = 4
+        Height = 23
+        Top = 74
+        Width = 368
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSelect = True
+        TabOrder = 0
+      end
+      object BDelete: TButton
+        Left = 4
+        Height = 25
+        Top = 114
+        Width = 75
+        Caption = '&DELETE'
+        OnClick = BDeleteClick
+        TabOrder = 1
+      end
+    end
+    object PModify: TPage
+      Caption = 'Modify'
+      object LModifyOld: TLabel
+        Left = 12
+        Height = 14
+        Top = 15
+        Width = 220
+        Caption = 'Enter the old object wich you want to modify.'
+        ParentColor = False
+      end
+      object LModifyNew: TLabel
+        Left = 12
+        Height = 14
+        Top = 90
+        Width = 194
+        Caption = 'Enter the new value and press MODIFY.'
+        ParentColor = False
+      end
+      object EModifyOld: TEdit
+        Left = 12
+        Height = 23
+        Top = 47
+        Width = 352
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoSelect = True
+        TabOrder = 0
+      end
+      object EModifyNew: TEdit
+        Left = 12
+        Height = 23
+        Top = 122
+        Width = 352
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        TabOrder = 1
+      end
+      object BModify: TButton
+        Left = 12
+        Height = 25
+        Top = 162
+        Width = 75
+        Caption = '&MODIFY'
+        OnClick = BModifyClick
+        TabOrder = 2
+      end
+    end
+    object PView: TPage
+      Caption = 'View'
+      ClientWidth = 377
+      ClientHeight = 232
+      object LViewText: TLabel
+        Left = 12
+        Height = 14
+        Top = 10
+        Width = 131
+        Caption = 'Position in the opened file: '
+        ParentColor = False
+      end
+      object LView: TLabel
+        Left = 164
+        Height = 16
+        Top = 10
+        Width = 34
+        ParentColor = False
+      end
+      object EView: TEdit
+        Left = 12
+        Height = 23
+        Top = 42
+        Width = 352
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        TabOrder = 0
+      end
+      object BFirst: TButton
+        Left = 12
+        Height = 25
+        Top = 82
+        Width = 75
+        Caption = '|< First'
+        OnClick = BFirstClick
+        TabOrder = 1
+      end
+      object BPrev: TButton
+        Left = 92
+        Height = 25
+        Top = 82
+        Width = 75
+        Caption = '< Previous'
+        OnClick = BPrevClick
+        TabOrder = 2
+      end
+      object BNext: TButton
+        Left = 172
+        Height = 25
+        Top = 82
+        Width = 75
+        Caption = 'Next >'
+        OnClick = BNextClick
+        TabOrder = 3
+      end
+      object BLast: TButton
+        Left = 252
+        Height = 25
+        Top = 82
+        Width = 75
+        Caption = 'Last >|'
+        OnClick = BLastClick
+        TabOrder = 4
+      end
+    end
+    object PSearch: TPage
+      Caption = 'Search'
+      ClientWidth = 377
+      ClientHeight = 232
+      object LFind: TLabel
+        Left = 12
+        Height = 14
+        Top = 18
+        Width = 31
+        Caption = 'Find : '
+        ParentColor = False
+      end
+      object LFoundMain: TLabel
+        Left = 60
+        Height = 14
+        Top = 129
+        Width = 114
+        Caption = 'Found object position : '
+        ParentColor = False
+      end
+      object LFound: TLabel
+        Left = 183
+        Height = 15
+        Top = 129
+        Width = 33
+        ParentColor = False
+      end
+      object EFind: TEdit
+        Left = 60
+        Height = 23
+        Top = 9
+        Width = 304
+        TabOrder = 0
+      end
+      object EFound: TEdit
+        Left = 60
+        Height = 23
+        Top = 90
+        Width = 304
+        TabOrder = 1
+      end
+      object BFind: TButton
+        Left = 60
+        Height = 25
+        Top = 50
+        Width = 75
+        Caption = 'Find'
+        OnClick = BFindClick
+        TabOrder = 2
+      end
+      object BFindNext: TButton
+        Left = 140
+        Height = 25
+        Top = 50
+        Width = 75
+        Caption = 'Find Next'
+        OnClick = BFindNextClick
+        TabOrder = 3
+      end
+    end
+  end
+  object StatusBar: TStatusBar
+    Height = 23
+    Top = 278
+    Width = 401
+    Panels = <>
+  end
+end

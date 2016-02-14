@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="simple.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="simple"/>
+        <CursorPos X="21" Y="12"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <ComponentName Value="SimpleForm"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="main.lrs"/>
+        <UnitName Value="Main"/>
+        <CursorPos X="10" Y="10"/>
+        <TopLine Value="2"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="corefunctions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CoreFunctions"/>
+        <CursorPos X="1" Y="10"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="searchengine.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SearchEngine"/>
+        <CursorPos X="22" Y="8"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="myoperators.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MyOperators"/>
+        <CursorPos X="14" Y="14"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="mytypes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MyTypes"/>
+        <CursorPos X="23" Y="14"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\fpc\2.2.0\source\rtl\objpas\math.pp"/>
+        <UnitName Value="math"/>
+        <CursorPos X="1" Y="909"/>
+        <TopLine Value="898"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="21" HistoryIndex="20">
+      <Position1>
+        <Filename Value="main.pas"/>
+        <Caret Line="124" Column="18" TopLine="106"/>
+      </Position1>
+      <Position2>
+        <Filename Value="main.pas"/>
+        <Caret Line="39" Column="12" TopLine="38"/>
+      </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="31" Column="20" TopLine="30"/>
+      </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+        <Caret Line="30" Column="22" TopLine="30"/>
+      </Position4>
+      <Position5>
+        <Filename Value="main.pas"/>
+        <Caret Line="27" Column="11" TopLine="26"/>
+      </Position5>
+      <Position6>
+        <Filename Value="main.pas"/>
+        <Caret Line="25" Column="22" TopLine="24"/>
+      </Position6>
+      <Position7>
+        <Filename Value="main.pas"/>
+        <Caret Line="26" Column="14" TopLine="24"/>
+      </Position7>
+      <Position8>
+        <Filename Value="main.pas"/>
+        <Caret Line="35" Column="15" TopLine="24"/>
+      </Position8>
+      <Position9>
+        <Filename Value="main.pas"/>
+        <Caret Line="56" Column="43" TopLine="55"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="57" Column="47" TopLine="56"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="143" Column="22" TopLine="131"/>
+      </Position11>
+      <Position12>
+        <Filename Value="searchengine.pas"/>
+        <Caret Line="8" Column="57" TopLine="1"/>
+      </Position12>
+      <Position13>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="13" Column="1" TopLine="1"/>
+      </Position13>
+      <Position14>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="10" Column="57" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="14" Column="13" TopLine="1"/>
+      </Position15>
+      <Position16>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="8" Column="15" TopLine="1"/>
+      </Position16>
+      <Position17>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="14" Column="48" TopLine="1"/>
+      </Position17>
+      <Position18>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="10" Column="58" TopLine="1"/>
+      </Position18>
+      <Position19>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="14" Column="14" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="10" Column="15" TopLine="1"/>
+      </Position20>
+      <Position21>
+        <Filename Value="myoperators.pas"/>
+        <Caret Line="14" Column="14" TopLine="1"/>
+      </Position21>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

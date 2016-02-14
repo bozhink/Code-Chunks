@@ -1,0 +1,65 @@
+object AddForm: TAddForm
+  Left = 693
+  Height = 134
+  Top = 82
+  Width = 498
+  Caption = 'Adding a book...'
+  ClientHeight = 134
+  ClientWidth = 498
+  ParentFont = False
+  LCLVersion = '0.9.26'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 120
+    Top = 8
+    Width = 295
+    Caption = 'Enter Information'
+    ClientHeight = 102
+    ClientWidth = 291
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 15
+      Height = 17
+      Top = 9
+      Width = 84
+      Caption = 'Book''s Title'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 15
+      Height = 17
+      Top = 40
+      Width = 98
+      Caption = 'Author Name'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 15
+      Height = 17
+      Top = 72
+      Width = 37
+      Caption = 'Price'
+      ParentColor = False
+    end
+    object TitleTEdt: TEdit
+      Left = 125
+      Height = 23
+      Width = 160
+      TabOrder = 0
+    end
+    object AuthorEdt: TEdit
+      Left = 125
+      Height = 23
+      Top = 31
+      Width = 160
+      TabOrder = 1
+    end
+    object PriceEdt: TEdit
+      Left = 125
+      Height = 23
+      Top = 64
+      Width = 80
+      TabOrder = 2
+    end
+  end
+end

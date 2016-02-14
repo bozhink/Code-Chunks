@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1302288711"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gl -WG -vewnhi -l -Fi/home/bozhin/Projects/LazarusProjects/TypeWriter/lib/i386-linux -Fu/usr/lib/lazarus/lcl/units/i386-linux -Fu/usr/lib/lazarus/lcl/units/i386-linux/gtk2 -Fu/usr/lib/lazarus/packager/units/i386-linux -Fu/home/bozhin/Projects/LazarusProjects/TypeWriter/ -Fu. -FU/home/bozhin/Projects/LazarusProjects/TypeWriter/lib/i386-linux/ -oTypeWriter -dLCL -dLCLgtk2 TypeWriter.lpr"/>
+</CONFIG>

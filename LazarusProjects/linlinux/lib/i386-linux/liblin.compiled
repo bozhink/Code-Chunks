@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1324643816"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -l -Fi/home/bozhin/Documents/LazarusProjects/linlinux/lib/i386-linux -Fu/home/bozhin/Documents/LazarusProjects/linlinux/ -FU/home/bozhin/Documents/LazarusProjects/linlinux/lib/i386-linux/ liblin.lpr"/>
+</CONFIG>

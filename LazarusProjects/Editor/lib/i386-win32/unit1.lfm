@@ -1,0 +1,62 @@
+object Form1: TForm1
+  Left = 274
+  Height = 260
+  Top = 135
+  Width = 340
+  Caption = 'Editor'
+  ClientHeight = 240
+  ClientWidth = 340
+  Icon.Data = {
+    4601000000000100010020200200000000003001000016000000280000002000
+    0000400000000100010000000000000100000000000000000000000000000000
+    000000000000FFFFFF0000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000000000000000000000CC000000CC3FFFFFCC3FFFFFCC300000CC3000
+    00CC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FF
+    FFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FFFFCC33FF
+    FFCC33FFFFCC33FFFFCCFFFFFFCCFFFFFFCC0000000C0000000CFFFFFFFCFFFF
+    FFFC0000000000000000
+  }
+  Menu = MainMenu1
+  LCLVersion = '0.9.30.4'
+  object Memo1: TMemo
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 340
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    left = 16
+    top = 208
+    object MenuItem1: TMenuItem
+      Caption = '&File'
+      object MenuItem2: TMenuItem
+        Caption = '&Open'
+        ShortCut = 16463
+        OnClick = MenuItem2Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = '&Save As'
+        ShortCut = 16467
+        OnClick = MenuItem4Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = '&Close'
+        ShortCut = 16471
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 56
+    top = 208
+  end
+  object SaveDialog1: TSaveDialog
+    left = 96
+    top = 208
+  end
+end

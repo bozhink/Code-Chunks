@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="guilib.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="guilib"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="5"/>
+        <CursorPos X="14" Y="19"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="guiunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="guiunit"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="17"/>
+        <CursorPos X="34" Y="35"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="148"/>
+        <CursorPos X="21" Y="158"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="62"/>
+        <CursorPos X="3" Y="72"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="10" HistoryIndex="9">
+      <Position1>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="37" Column="22" TopLine="22"/>
+      </Position2>
+      <Position3>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="39" Column="14" TopLine="24"/>
+      </Position3>
+      <Position4>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="35" Column="14" TopLine="24"/>
+      </Position4>
+      <Position5>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="40" Column="8" TopLine="25"/>
+      </Position5>
+      <Position6>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="36" Column="11" TopLine="25"/>
+      </Position6>
+      <Position7>
+        <Filename Value="guiunit.pas"/>
+        <Caret Line="40" Column="8" TopLine="25"/>
+      </Position7>
+      <Position8>
+        <Filename Value="guilib.lpr"/>
+        <Caret Line="23" Column="14" TopLine="9"/>
+      </Position8>
+      <Position9>
+        <Filename Value="guilib.lpr"/>
+        <Caret Line="17" Column="1" TopLine="9"/>
+      </Position9>
+      <Position10>
+        <Filename Value="guilib.lpr"/>
+        <Caret Line="27" Column="1" TopLine="9"/>
+      </Position10>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

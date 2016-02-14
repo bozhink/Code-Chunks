@@ -1,0 +1,21 @@
+FindNextBook.IERR ==>
+             0        Match found
+            -1        End Of File but match not found
+            -2        Problem with required position of the file pointer
+
+AddBook.IERR      ==>
+             0        Added successfully
+            -2        See FindNextBook.IERR = -2
+            -3        Book Already Exists
+             1        Book has been deleted but the procedure recreate it
+
+DeleteBook.IERR   ==>
+             0        Deleted Successfully
+            -2        See FindNextBook.IERR = -2
+            -4        Book does not exists
+
+ModifyBook.IERR   ==>
+             0        Modifyed successfully
+            -2        See FindNextBook.IERR = -2
+            -5        Book does not exists
+             2        Book has been deleted and will be recreated

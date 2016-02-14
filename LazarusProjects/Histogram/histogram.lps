@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="histogram.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="histogram"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="27"/>
+        <CursorPos X="29" Y="36"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="547"/>
+        <CursorPos X="26" Y="574"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="16" HistoryIndex="15">
+      <Position1>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="18" Column="5" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="17" Column="1" TopLine="4"/>
+      </Position2>
+      <Position3>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="27" Column="5" TopLine="12"/>
+      </Position3>
+      <Position4>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="13" Column="27" TopLine="4"/>
+      </Position4>
+      <Position5>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="27" Column="13" TopLine="12"/>
+      </Position5>
+      <Position6>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="19" Column="8" TopLine="9"/>
+      </Position6>
+      <Position7>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="29" Column="29" TopLine="20"/>
+      </Position7>
+      <Position8>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="49" Column="7" TopLine="31"/>
+      </Position8>
+      <Position9>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="45" Column="11" TopLine="33"/>
+      </Position9>
+      <Position10>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="27" Column="24" TopLine="24"/>
+      </Position10>
+      <Position11>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="45" Column="13" TopLine="33"/>
+      </Position11>
+      <Position12>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="49" Column="11" TopLine="34"/>
+      </Position12>
+      <Position13>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="58" Column="11" TopLine="40"/>
+      </Position13>
+      <Position14>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="39" Column="27" TopLine="24"/>
+      </Position14>
+      <Position15>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="33" Column="33" TopLine="24"/>
+      </Position15>
+      <Position16>
+        <Filename Value="histogram.lpr"/>
+        <Caret Line="36" Column="29" TopLine="27"/>
+      </Position16>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="DLLFunctions.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DLLFunctions"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="7"/>
+        <CursorPos X="20" Y="12"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="16" HistoryIndex="15">
+      <Position1>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="15" Column="5" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="16" Column="12" TopLine="5"/>
+      </Position2>
+      <Position3>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="13" Column="59" TopLine="7"/>
+      </Position3>
+      <Position4>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="21" Column="25" TopLine="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="27" Column="5" TopLine="16"/>
+      </Position5>
+      <Position6>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="26" Column="5" TopLine="17"/>
+      </Position6>
+      <Position7>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="29" Column="12" TopLine="12"/>
+      </Position7>
+      <Position8>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="21" Column="37" TopLine="11"/>
+      </Position8>
+      <Position9>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="14" Column="38" TopLine="4"/>
+      </Position9>
+      <Position10>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="21" Column="37" TopLine="11"/>
+      </Position10>
+      <Position11>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="14" Column="38" TopLine="4"/>
+      </Position11>
+      <Position12>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="21" Column="31" TopLine="11"/>
+      </Position12>
+      <Position13>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="34" Column="30" TopLine="19"/>
+      </Position13>
+      <Position14>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="22" Column="10" TopLine="12"/>
+      </Position14>
+      <Position15>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="28" Column="30" TopLine="13"/>
+      </Position15>
+      <Position16>
+        <Filename Value="DLLFunctions.lpr"/>
+        <Caret Line="2" Column="1" TopLine="1"/>
+      </Position16>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

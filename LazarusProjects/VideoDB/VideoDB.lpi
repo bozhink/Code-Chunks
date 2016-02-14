@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="1"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="DBFLaz"/>
+        <MinVersion Minor="1" Release="1" Valid="True"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="VideoDB.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VideoDB"/>
+        <UsageCount Value="27"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="vdb.pas"/>
+        <ComponentName Value="Form1"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="vdb.lrs"/>
+        <UnitName Value="VDB"/>
+        <CursorPos X="3" Y="203"/>
+        <TopLine Value="185"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\fpc\2.2.0\source\packages\fcl-db\src\dbase\dbf_dbffile.pas"/>
+        <UnitName Value="dbf_dbffile"/>
+        <CursorPos X="1" Y="896"/>
+        <TopLine Value="884"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="vdb.lfm"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="LFM"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\demos\db\SQLClientDataset\DBLRegI.pas"/>
+        <UnitName Value="DBLRegI"/>
+        <CursorPos X="14" Y="27"/>
+        <TopLine Value="117"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\demos\db\SQLClientDataset\DBLocalI.pas"/>
+        <UnitName Value="DBLocalI"/>
+        <CursorPos X="18" Y="381"/>
+        <TopLine Value="378"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

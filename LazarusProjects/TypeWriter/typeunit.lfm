@@ -1,0 +1,53 @@
+object Form1: TForm1
+  Left = 370
+  Height = 584
+  Top = 200
+  Width = 713
+  Caption = 'Form1'
+  ClientHeight = 584
+  ClientWidth = 713
+  LCLVersion = '0.9.30'
+  object Memo1: TMemo
+    Left = 24
+    Height = 498
+    Hint = 'Въведи текст за конвертиране от латиница на кирилица.'
+    Top = 16
+    Width = 328
+    Anchors = [akTop, akLeft, akBottom]
+    ParentShowHint = False
+    ScrollBars = ssAutoBoth
+    ShowHint = True
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 368
+    Height = 498
+    Hint = 'Въведи текст за конвертиране от кирилица на латиница.'
+    Top = 16
+    Width = 326
+    Anchors = [akTop, akLeft, akBottom]
+    ParentShowHint = False
+    ScrollBars = ssAutoBoth
+    ShowHint = True
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 530
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = '==>>'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 368
+    Height = 25
+    Top = 530
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = '<<=='
+    TabOrder = 3
+  end
+end

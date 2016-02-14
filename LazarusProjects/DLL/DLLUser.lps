@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="DLLUser.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DLLUser"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2"/>
+        <CursorPos X="18" Y="15"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="19" Column="16" TopLine="2"/>
+      </Position1>
+      <Position2>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="26" Column="37" TopLine="14"/>
+      </Position2>
+      <Position3>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="32" Column="7" TopLine="17"/>
+      </Position3>
+      <Position4>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="12" Column="10" TopLine="5"/>
+      </Position4>
+      <Position5>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="50" Column="48" TopLine="34"/>
+      </Position5>
+      <Position6>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="51" Column="1" TopLine="35"/>
+      </Position6>
+      <Position7>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="1" Column="17" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="3" Column="13" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="8" Column="67" TopLine="1"/>
+      </Position9>
+      <Position10>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="43" Column="13" TopLine="27"/>
+      </Position10>
+      <Position11>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="38" Column="16" TopLine="28"/>
+      </Position11>
+      <Position12>
+        <Filename Value="DLLUser.lpr"/>
+        <Caret Line="14" Column="8" TopLine="4"/>
+      </Position12>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

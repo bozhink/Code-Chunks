@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="/"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="GUI.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="GUI"/>
+        <CursorPos X="54" Y="11"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="guibooks.pas"/>
+        <ComponentName Value="MainForm"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <ResourceFilename Value="guibooks.lrs"/>
+        <UnitName Value="GUIBooks"/>
+        <CursorPos X="35" Y="8"/>
+        <TopLine Value="4"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="addbook.pas"/>
+        <ComponentName Value="AddForm"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <ResourceFilename Value="addbook.lrs"/>
+        <UnitName Value="AddBook"/>
+        <CursorPos X="63" Y="22"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="18" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="19" Column="20" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="18" Column="20" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="16" Column="18" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="20" Column="20" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="19" Column="20" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="18" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="14" Column="26" TopLine="1"/>
+      </Position8>
+      <Position9>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="18" Column="20" TopLine="1"/>
+      </Position9>
+      <Position10>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="17" Column="20" TopLine="1"/>
+      </Position10>
+      <Position11>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="18" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="16" Column="18" TopLine="1"/>
+      </Position12>
+      <Position13>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="17" Column="13" TopLine="1"/>
+      </Position13>
+      <Position14>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="16" Column="22" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="22" TopLine="1"/>
+      </Position15>
+      <Position16>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="14" Column="26" TopLine="1"/>
+      </Position16>
+      <Position17>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="16" Column="20" TopLine="1"/>
+      </Position17>
+      <Position18>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="20" TopLine="1"/>
+      </Position18>
+      <Position19>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="14" Column="26" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="26" TopLine="1"/>
+      </Position20>
+      <Position21>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="16" Column="20" TopLine="1"/>
+      </Position21>
+      <Position22>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="17" Column="20" TopLine="1"/>
+      </Position22>
+      <Position23>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="18" Column="20" TopLine="1"/>
+      </Position23>
+      <Position24>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="19" Column="22" TopLine="1"/>
+      </Position24>
+      <Position25>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="15" Column="22" TopLine="1"/>
+      </Position25>
+      <Position26>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="20" Column="21" TopLine="1"/>
+      </Position26>
+      <Position27>
+        <Filename Value="addbook.pas"/>
+        <Caret Line="16" Column="22" TopLine="1"/>
+      </Position27>
+      <Position28>
+        <Filename Value="guibooks.pas"/>
+        <Caret Line="26" Column="5" TopLine="1"/>
+      </Position28>
+      <Position29>
+        <Filename Value="guibooks.pas"/>
+        <Caret Line="49" Column="11" TopLine="7"/>
+      </Position29>
+      <Position30>
+        <Filename Value="guibooks.pas"/>
+        <Caret Line="9" Column="10" TopLine="1"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

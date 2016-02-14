@@ -1,0 +1,235 @@
+object SimpleForm: TSimpleForm
+  Left = 384
+  Height = 301
+  Top = 111
+  Width = 401
+  HorzScrollBar.Page = 400
+  VertScrollBar.Page = 280
+  ActiveControl = Edit1
+  Caption = 'Simple'
+  ClientHeight = 281
+  ClientWidth = 401
+  Menu = MainMenu
+  OnCreate = FormCreate
+  object StatusBar: TStatusBar
+    Height = 23
+    Top = 258
+    Width = 401
+    Panels = <>
+  end
+  object GroupBox: TGroupBox
+    AnchorSideBottom.Control = StatusBar
+    Left = 8
+    Height = 250
+    Top = 8
+    Width = 386
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Add'
+    ClientHeight = 232
+    ClientWidth = 382
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 14
+      Height = 14
+      Top = 41
+      Width = 21
+      Caption = 'Title'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 14
+      Height = 14
+      Top = 81
+      Width = 34
+      Caption = 'Author'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 14
+      Height = 14
+      Top = 145
+      Width = 21
+      Caption = 'Title'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 14
+      Height = 14
+      Top = 186
+      Width = 34
+      Caption = 'Author'
+      ParentColor = False
+    end
+    object LMain1: TLabel
+      Left = 14
+      Height = 17
+      Top = 8
+      Width = 35
+      ParentColor = False
+    end
+    object LMain2: TLabel
+      Left = 14
+      Height = 16
+      Top = 109
+      Width = 34
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      Left = 100
+      Height = 23
+      Top = 32
+      Width = 264
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 100
+      Height = 23
+      Top = 72
+      Width = 264
+      TabOrder = 1
+    end
+    object Edit3: TEdit
+      Left = 100
+      Height = 23
+      Top = 136
+      Width = 264
+      TabOrder = 2
+    end
+    object Edit4: TEdit
+      Left = 100
+      Height = 23
+      Top = 177
+      Width = 264
+      TabOrder = 3
+    end
+    object BtnOK: TButton
+      Left = 100
+      Height = 25
+      Top = 208
+      Width = 75
+      Caption = 'OK'
+      OnClick = BtnOKClick
+      TabOrder = 4
+    end
+    object BFirst: TButton
+      Left = 62
+      Height = 25
+      Top = 104
+      Width = 75
+      Caption = '|< First'
+      OnClick = BFirstClick
+      TabOrder = 5
+    end
+    object BPrev: TButton
+      Left = 142
+      Height = 25
+      Top = 104
+      Width = 75
+      Caption = '< Previos'
+      OnClick = BPrevClick
+      TabOrder = 6
+    end
+    object BNext: TButton
+      Left = 222
+      Height = 25
+      Top = 104
+      Width = 75
+      Caption = 'Next >'
+      OnClick = BNextClick
+      TabOrder = 7
+    end
+    object BLast: TButton
+      Left = 302
+      Height = 25
+      Top = 104
+      Width = 75
+      Caption = 'Last >|'
+      OnClick = BLastClick
+      TabOrder = 8
+    end
+    object BFind: TButton
+      Left = 182
+      Height = 25
+      Top = 208
+      Width = 75
+      Caption = 'Find'
+      OnClick = BFindClick
+      TabOrder = 9
+    end
+    object BFindNext: TButton
+      Left = 262
+      Height = 25
+      Top = 208
+      Width = 75
+      Caption = 'Find Next'
+      OnClick = BFindNextClick
+      TabOrder = 10
+    end
+  end
+  object MainMenu: TMainMenu
+    top = 232
+    object MMFile: TMenuItem
+      Caption = '&File'
+      object MINew: TMenuItem
+        Caption = '&New'
+        ShortCut = 16462
+        OnClick = MINewClick
+      end
+      object MIOpen: TMenuItem
+        Caption = 'Open'
+        ShortCut = 16463
+        OnClick = MIOpenClick
+      end
+      object MISeparator1: TMenuItem
+        Caption = '-'
+      end
+      object MIExit: TMenuItem
+        Caption = '&Exit'
+        ShortCut = 16471
+        OnClick = MIExitClick
+      end
+    end
+    object MMEdit: TMenuItem
+      Caption = 'Edit'
+      object MIAdd: TMenuItem
+        Caption = '&Add'
+        ShortCut = 45
+        OnClick = MIAddClick
+      end
+      object MIModify: TMenuItem
+        Caption = '&Modify'
+        ShortCut = 113
+        OnClick = MIModifyClick
+      end
+      object MIDelete: TMenuItem
+        Caption = '&Delete'
+        ShortCut = 46
+        OnClick = MIDeleteClick
+      end
+      object MISeparator2: TMenuItem
+        Caption = '-'
+      end
+      object MIFind: TMenuItem
+        Caption = '&Find'
+        ShortCut = 114
+        OnClick = MIFindClick
+      end
+      object MISearch: TMenuItem
+        Caption = '&Search'
+        OnClick = MISearchClick
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    Title = 'Open existing file'
+    Filter = 'All files *.*|*.*'
+    left = 32
+    top = 232
+  end
+  object SaveDialog: TSaveDialog
+    Title = 'Save file as'
+    Filter = 'All files *.*|*.*'
+    left = 64
+    top = 232
+  end
+end

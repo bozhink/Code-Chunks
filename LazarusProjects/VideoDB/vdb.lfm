@@ -1,0 +1,353 @@
+object Form1: TForm1
+  Left = 380
+  Height = 368
+  Top = 105
+  Width = 520
+  HorzScrollBar.Page = 519
+  VertScrollBar.Page = 347
+  Caption = 'VideoDB'
+  ClientHeight = 348
+  ClientWidth = 520
+  Menu = MainMenu1
+  object StatusBar: TStatusBar
+    Height = 23
+    Top = 325
+    Width = 520
+    Panels = <>
+  end
+  object PageControl: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = StatusBar
+    Height = 325
+    Width = 520
+    ActivePage = FormViewTab
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 1
+    TabOrder = 0
+    object TableViewTab: TTabSheet
+      HelpType = htKeyword
+      Caption = 'Table View'
+      object DBG: TDBGrid
+        AnchorSideLeft.Control = TableViewTab
+        AnchorSideTop.Control = DBNavigator1
+        AnchorSideRight.Control = TableViewTab
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TableViewTab
+        AnchorSideBottom.Side = asrBottom
+        Height = 254
+        Top = 45
+        Width = 512
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 35
+        Columns = <        
+          item
+            FieldName = 'Title'
+          end        
+          item
+            Title.Caption = 'Director'
+            FieldName = 'Director'
+          end        
+          item
+            Title.Caption = 'Producer'
+            FieldName = 'Producer'
+          end        
+          item
+            Title.Caption = 'Cast'
+            FieldName = 'Cast'
+          end        
+          item
+            Title.Caption = 'Country'
+            FieldName = 'Country'
+          end        
+          item
+            Title.Caption = 'Gender'
+            FieldName = 'Gender'
+          end        
+          item
+            Title.Caption = 'Year'
+            FieldName = 'Year'
+          end        
+          item
+            Title.Caption = 'Description'
+            FieldName = 'Description'
+          end        
+          item
+            Title.Caption = 'Comments'
+            FieldName = 'Comments'
+          end        
+          item
+            Title.Caption = 'Languages'
+            FieldName = 'Languages'
+          end        
+          item
+            Title.Caption = 'Subtitles'
+            FieldName = 'Subtitles'
+          end        
+          item
+            Title.Caption = 'Duration'
+            FieldName = 'Duration'
+          end>
+        DataSource = DS
+        FixedColor = clBtnFace
+        FixedHotColor = cl3DLight
+        Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+        OptionsExtra = [dgeAutoColumns, dgeCheckboxColumn]
+        ParentColor = False
+        TabOrder = 0
+        TabStop = True
+      end
+      object DBNavigator1: TDBNavigator
+        AnchorSideTop.Control = TableViewTab
+        AnchorSideRight.Control = DBG
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = DBG
+        Left = 271
+        Height = 25
+        Top = 10
+        Width = 241
+        Anchors = [akTop, akRight]
+        BevelOuter = bvNone
+        BorderSpacing.Top = 10
+        ClientHeight = 25
+        ClientWidth = 241
+      end
+    end
+    object FormViewTab: TTabSheet
+      Caption = 'Form View'
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 24
+    top = 264
+    object MFile: TMenuItem
+      Caption = '&File'
+      object MINew: TMenuItem
+        Action = ANew
+        OnClick = ANewExecute
+      end
+      object MIOpen: TMenuItem
+        Action = AOpen
+        OnClick = AOpenExecute
+      end
+      object MIClose: TMenuItem
+        Action = AClose
+        OnClick = ACloseExecute
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MIExit: TMenuItem
+        Action = AQuit
+        OnClick = MIExitClick
+      end
+    end
+    object MIRecord: TMenuItem
+      Caption = '&Record'
+      object MIFirst: TMenuItem
+        Action = AFirst
+        OnClick = DoDataAction
+      end
+      object MILast: TMenuItem
+        Action = ALast
+        OnClick = DoDataAction
+      end
+      object MIPrior: TMenuItem
+        Action = APrior
+        OnClick = DoDataAction
+      end
+      object MINext: TMenuItem
+        Action = ANext
+        OnClick = DoDataAction
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object MIInsert: TMenuItem
+        Action = AInsert
+        OnClick = DoDataAction
+      end
+      object MIEdit: TMenuItem
+        Action = AEdit
+        OnClick = DoDataAction
+      end
+      object MIDelete: TMenuItem
+        Action = ADelete
+        OnClick = DoDataAction
+      end
+      object MIPost: TMenuItem
+        Action = APost
+        OnClick = DoDataAction
+      end
+      object MICancel: TMenuItem
+        Action = ACancel
+        OnClick = DoDataAction
+      end
+      object MIRefresh: TMenuItem
+        Action = ARefresh
+        OnClick = DoDataAction
+      end
+    end
+  end
+  object DBA: TDbf
+    IndexDefs = <>
+    StoreDefs = True
+    TableLevel = 4
+    left = 120
+    top = 264
+  end
+  object DS: TDatasource
+    DataSet = DBA
+    left = 72
+    top = 264
+  end
+  object SDDBA: TSaveDialog
+    Title = 'Save file as'
+    DefaultExt = '.dbf'
+    Filter = 'DBF files|*.dbf|All files|*.*'
+    FilterIndex = 0
+    Options = [ofPathMustExist, ofEnableSizing]
+    left = 72
+    top = 216
+  end
+  object ODDBA: TOpenDialog
+    Title = 'Open existing file'
+    DefaultExt = '.dbf'
+    Filter = 'DBF files|*.dbf|All files|*.*'
+    FilterIndex = 0
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    left = 120
+    top = 216
+  end
+  object ActionList: TActionList
+    left = 24
+    top = 216
+    object ANew: TAction
+      Caption = '&New'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = ANewExecute
+      ShortCut = 16462
+    end
+    object AOpen: TAction
+      Caption = '&Open'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = AOpenExecute
+      ShortCut = 16463
+    end
+    object AClose: TAction
+      Caption = '&Close'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = ACloseUpdate
+      ShortCut = 16471
+    end
+    object AQuit: TAction
+      Caption = '&Quit'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = MIExitClick
+      ShortCut = 121
+    end
+    object AFirst: TAction
+      Category = 'Dataset'
+      Caption = '&First'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 112
+    end
+    object APrior: TAction
+      Tag = 1
+      Category = 'Dataset'
+      Caption = '&Prior'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 113
+    end
+    object ANext: TAction
+      Tag = 2
+      Category = 'Dataset'
+      Caption = '&Next'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 114
+    end
+    object ALast: TAction
+      Tag = 3
+      Category = 'Dataset'
+      Caption = '&Last'
+      DisableIfNoHandler = True
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 115
+    end
+    object AInsert: TAction
+      Tag = 4
+      Category = 'Dataset'
+      Caption = '&Insert'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 45
+    end
+    object ADelete: TAction
+      Tag = 5
+      Category = 'Dataset'
+      Caption = '&Delete'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 46
+    end
+    object AEdit: TAction
+      Tag = 6
+      Category = 'Dataset'
+      Caption = '&Edit'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = HaveDataNotEmpty
+      ShortCut = 117
+    end
+    object APost: TAction
+      Tag = 7
+      Category = 'Dataset'
+      Caption = 'P&ost'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = InEditMode
+      ShortCut = 118
+    end
+    object ACancel: TAction
+      Tag = 8
+      Category = 'Dataset'
+      Caption = '&Cancel'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = InEditMode
+      ShortCut = 119
+    end
+    object ARefresh: TAction
+      Category = 'Dataset'
+      Caption = '&Refresh'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 116
+    end
+  end
+end

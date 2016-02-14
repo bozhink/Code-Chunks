@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="asmtest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="asmtest"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="39"/>
+        <CursorPos X="7" Y="56"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="asmtest.lpr"/>
+        <Caret Line="43" Column="48" TopLine="25"/>
+      </Position1>
+      <Position2>
+        <Filename Value="asmtest.lpr"/>
+        <Caret Line="48" Column="12" TopLine="30"/>
+      </Position2>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

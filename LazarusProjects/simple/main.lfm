@@ -1,0 +1,546 @@
+object SimpleForm: TSimpleForm
+  Left = 254
+  Height = 576
+  Top = 93
+  Width = 735
+  HorzScrollBar.Page = 734
+  VertScrollBar.Page = 555
+  ActiveControl = Edit1
+  Caption = 'Simple'
+  ClientHeight = 556
+  ClientWidth = 735
+  Menu = MainMenu
+  OnCreate = FormCreate
+  object StatusBar: TStatusBar
+    Height = 23
+    Top = 533
+    Width = 735
+    Panels = <>
+  end
+  object GroupBox1: TGroupBox
+    AnchorSideBottom.Control = StatusBar
+    Left = 8
+    Height = 304
+    Width = 720
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Add'
+    ClientHeight = 286
+    ClientWidth = 716
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 14
+      Height = 14
+      Top = 41
+      Width = 21
+      Caption = 'Title'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 14
+      Height = 14
+      Top = 73
+      Width = 39
+      Caption = 'Director'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 14
+      Height = 14
+      Top = 104
+      Width = 44
+      Caption = 'Producer'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 14
+      Height = 14
+      Top = 137
+      Width = 23
+      Caption = 'Cast'
+      ParentColor = False
+    end
+    object LMain1: TLabel
+      Left = 30
+      Height = 27
+      Width = 45
+      ParentColor = False
+    end
+    object LMain2: TLabel
+      Left = 30
+      Height = 27
+      Top = 224
+      Width = 45
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 374
+      Height = 14
+      Top = 41
+      Width = 40
+      Caption = 'Country'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 374
+      Height = 14
+      Top = 73
+      Width = 36
+      Caption = 'Gender'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 606
+      Height = 14
+      Top = 41
+      Width = 23
+      Caption = 'Year'
+      ParentColor = False
+    end
+    object Label8: TLabel
+      Left = 14
+      Height = 14
+      Top = 169
+      Width = 54
+      Caption = 'Description'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 14
+      Height = 14
+      Top = 201
+      Width = 51
+      Caption = 'Comments'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 374
+      Height = 14
+      Top = 104
+      Width = 53
+      Caption = 'Languages'
+      ParentColor = False
+    end
+    object Label11: TLabel
+      Left = 374
+      Height = 14
+      Top = 137
+      Width = 42
+      Caption = 'Subtitles'
+      ParentColor = False
+    end
+    object Label12: TLabel
+      Left = 374
+      Height = 14
+      Top = 169
+      Width = 42
+      Caption = 'Duration'
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      Left = 81
+      Height = 23
+      Top = 32
+      Width = 264
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 81
+      Height = 23
+      Top = 64
+      Width = 264
+      TabOrder = 1
+    end
+    object Edit3: TEdit
+      Left = 81
+      Height = 23
+      Top = 95
+      Width = 264
+      TabOrder = 2
+    end
+    object Edit4: TEdit
+      Left = 81
+      Height = 23
+      Top = 128
+      Width = 264
+      TabOrder = 3
+    end
+    object BtnOK: TButton
+      Left = 374
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = 'OK'
+      OnClick = BtnOKClick
+      TabOrder = 4
+    end
+    object BFirst: TButton
+      Left = 30
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = '|< First'
+      OnClick = BFirstClick
+      TabOrder = 5
+    end
+    object BPrev: TButton
+      Left = 110
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = '< Previos'
+      OnClick = BPrevClick
+      TabOrder = 6
+    end
+    object BNext: TButton
+      Left = 190
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = 'Next >'
+      OnClick = BNextClick
+      TabOrder = 7
+    end
+    object BLast: TButton
+      Left = 270
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = 'Last >|'
+      OnClick = BLastClick
+      TabOrder = 8
+    end
+    object BFind: TButton
+      Left = 454
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = 'Find'
+      OnClick = BFindClick
+      TabOrder = 9
+    end
+    object BFindNext: TButton
+      Left = 534
+      Height = 25
+      Top = 256
+      Width = 75
+      Caption = 'Find Next'
+      OnClick = BFindNextClick
+      TabOrder = 10
+    end
+    object Edit5: TEdit
+      Left = 438
+      Height = 23
+      Top = 32
+      Width = 125
+      TabOrder = 11
+    end
+    object Edit6: TEdit
+      Left = 438
+      Height = 23
+      Top = 64
+      Width = 125
+      TabOrder = 12
+    end
+    object Edit7: TEdit
+      Left = 654
+      Height = 23
+      Top = 32
+      Width = 45
+      TabOrder = 13
+    end
+    object Edit8: TEdit
+      Left = 81
+      Height = 23
+      Top = 160
+      Width = 264
+      TabOrder = 14
+    end
+    object Edit9: TEdit
+      Left = 81
+      Height = 23
+      Top = 192
+      Width = 264
+      TabOrder = 15
+    end
+    object Edit10: TEdit
+      Left = 438
+      Height = 23
+      Top = 95
+      Width = 264
+      TabOrder = 16
+    end
+    object Edit11: TEdit
+      Left = 438
+      Height = 23
+      Top = 128
+      Width = 264
+      TabOrder = 17
+    end
+    object Edit12: TEdit
+      Left = 438
+      Height = 23
+      Top = 160
+      Width = 125
+      TabOrder = 18
+    end
+  end
+  object GroupBox2: TGroupBox
+    AnchorSideBottom.Control = StatusBar
+    Left = 8
+    Height = 216
+    Top = 312
+    Width = 720
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Add'
+    ClientHeight = 198
+    ClientWidth = 716
+    TabOrder = 1
+    object Label13: TLabel
+      Left = 14
+      Height = 14
+      Top = 17
+      Width = 21
+      Caption = 'Title'
+      ParentColor = False
+    end
+    object Label14: TLabel
+      Left = 14
+      Height = 14
+      Top = 49
+      Width = 39
+      Caption = 'Director'
+      ParentColor = False
+    end
+    object Label15: TLabel
+      Left = 14
+      Height = 14
+      Top = 80
+      Width = 44
+      Caption = 'Producer'
+      ParentColor = False
+    end
+    object Label16: TLabel
+      Left = 14
+      Height = 14
+      Top = 113
+      Width = 23
+      Caption = 'Cast'
+      ParentColor = False
+    end
+    object Label17: TLabel
+      Left = 374
+      Height = 14
+      Top = 17
+      Width = 40
+      Caption = 'Country'
+      ParentColor = False
+    end
+    object Label18: TLabel
+      Left = 374
+      Height = 14
+      Top = 49
+      Width = 36
+      Caption = 'Gender'
+      ParentColor = False
+    end
+    object Label19: TLabel
+      Left = 606
+      Height = 14
+      Top = 17
+      Width = 23
+      Caption = 'Year'
+      ParentColor = False
+    end
+    object Label20: TLabel
+      Left = 14
+      Height = 14
+      Top = 145
+      Width = 54
+      Caption = 'Description'
+      ParentColor = False
+    end
+    object Label21: TLabel
+      Left = 14
+      Height = 14
+      Top = 177
+      Width = 51
+      Caption = 'Comments'
+      ParentColor = False
+    end
+    object Label22: TLabel
+      Left = 374
+      Height = 14
+      Top = 80
+      Width = 53
+      Caption = 'Languages'
+      ParentColor = False
+    end
+    object Label23: TLabel
+      Left = 374
+      Height = 14
+      Top = 113
+      Width = 42
+      Caption = 'Subtitles'
+      ParentColor = False
+    end
+    object Label24: TLabel
+      Left = 374
+      Height = 14
+      Top = 145
+      Width = 42
+      Caption = 'Duration'
+      ParentColor = False
+    end
+    object Edit13: TEdit
+      Left = 81
+      Height = 23
+      Top = 8
+      Width = 264
+      TabOrder = 0
+    end
+    object Edit14: TEdit
+      Left = 81
+      Height = 23
+      Top = 40
+      Width = 264
+      TabOrder = 1
+    end
+    object Edit15: TEdit
+      Left = 81
+      Height = 23
+      Top = 71
+      Width = 264
+      TabOrder = 2
+    end
+    object Edit16: TEdit
+      Left = 81
+      Height = 23
+      Top = 104
+      Width = 264
+      TabOrder = 3
+    end
+    object Edit17: TEdit
+      Left = 438
+      Height = 23
+      Top = 8
+      Width = 125
+      TabOrder = 4
+    end
+    object Edit18: TEdit
+      Left = 438
+      Height = 23
+      Top = 40
+      Width = 125
+      TabOrder = 5
+    end
+    object Edit19: TEdit
+      Left = 654
+      Height = 23
+      Top = 8
+      Width = 45
+      TabOrder = 6
+    end
+    object Edit20: TEdit
+      Left = 81
+      Height = 23
+      Top = 136
+      Width = 264
+      TabOrder = 7
+    end
+    object Edit21: TEdit
+      Left = 81
+      Height = 23
+      Top = 168
+      Width = 264
+      TabOrder = 8
+    end
+    object Edit22: TEdit
+      Left = 438
+      Height = 23
+      Top = 71
+      Width = 264
+      TabOrder = 9
+    end
+    object Edit23: TEdit
+      Left = 438
+      Height = 23
+      Top = 104
+      Width = 264
+      TabOrder = 10
+    end
+    object Edit24: TEdit
+      Left = 438
+      Height = 23
+      Top = 136
+      Width = 125
+      TabOrder = 11
+    end
+  end
+  object MainMenu: TMainMenu
+    left = 584
+    top = 16
+    object MMFile: TMenuItem
+      Caption = '&File'
+      object MINew: TMenuItem
+        Caption = '&New'
+        ShortCut = 16462
+        OnClick = MINewClick
+      end
+      object MIOpen: TMenuItem
+        Caption = 'Open'
+        ShortCut = 16463
+        OnClick = MIOpenClick
+      end
+      object MISeparator1: TMenuItem
+        Caption = '-'
+      end
+      object MIExit: TMenuItem
+        Caption = '&Exit'
+        ShortCut = 16471
+        OnClick = MIExitClick
+      end
+    end
+    object MMEdit: TMenuItem
+      Caption = 'Edit'
+      object MIAdd: TMenuItem
+        Caption = '&Add'
+        ShortCut = 45
+        OnClick = MIAddClick
+      end
+      object MIModify: TMenuItem
+        Caption = '&Modify'
+        ShortCut = 113
+        OnClick = MIModifyClick
+      end
+      object MIDelete: TMenuItem
+        Caption = '&Delete'
+        ShortCut = 16430
+        OnClick = MIDeleteClick
+      end
+      object MISeparator2: TMenuItem
+        Caption = '-'
+      end
+      object MIFind: TMenuItem
+        Caption = '&Find'
+        ShortCut = 114
+        OnClick = MIFindClick
+      end
+      object MISearch: TMenuItem
+        Caption = '&Search'
+        OnClick = MISearchClick
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    Title = 'Open existing file'
+    Filter = 'All files *.*|*.*'
+    left = 616
+    top = 16
+  end
+  object SaveDialog: TSaveDialog
+    Title = 'Save file as'
+    Filter = 'All files *.*|*.*'
+    left = 648
+    top = 16
+  end
+end

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1324643816"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -l -Fi/home/bozhin/tmp/lazarus/asmtests/lib/i386-linux -Fu/home/bozhin/tmp/lazarus/asmtests/ -FU/home/bozhin/tmp/lazarus/asmtests/lib/i386-linux/ asmtests.lpr"/>
+</CONFIG>

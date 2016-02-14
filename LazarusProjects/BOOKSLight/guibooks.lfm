@@ -1,0 +1,95 @@
+object MainForm: TMainForm
+  Left = 360
+  Height = 211
+  Top = 216
+  Width = 270
+  Caption = 'Books'
+  ClientHeight = 211
+  ClientWidth = 270
+  ParentFont = False
+  LCLVersion = '0.9.26'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 192
+    Top = 8
+    Width = 252
+    Caption = 'Choose Event:'
+    ClientHeight = 174
+    ClientWidth = 248
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 11
+      Height = 14
+      Top = 15
+      Width = 69
+      Caption = 'Add new book'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 11
+      Height = 14
+      Top = 48
+      Width = 75
+      Caption = 'Delete old Book'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 11
+      Height = 14
+      Top = 79
+      Width = 76
+      Caption = 'Modify old book'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 11
+      Height = 14
+      Top = 112
+      Width = 86
+      Caption = 'Search for a book'
+      ParentColor = False
+    end
+    object AddBtn: TButton
+      Left = 150
+      Height = 24
+      Top = 8
+      Width = 66
+      Caption = 'Add'
+      OnClick = AddBtnClick
+      TabOrder = 0
+    end
+    object DeleteBtn: TButton
+      Left = 150
+      Height = 24
+      Top = 38
+      Width = 66
+      Caption = 'Delete'
+      TabOrder = 1
+    end
+    object ModifyBtn: TButton
+      Left = 150
+      Height = 24
+      Top = 69
+      Width = 66
+      Caption = 'Modify'
+      TabOrder = 2
+    end
+    object SearchBtn: TButton
+      Left = 150
+      Height = 24
+      Top = 102
+      Width = 66
+      Caption = 'Search'
+      TabOrder = 3
+    end
+    object ExitBtn: TButton
+      Left = 150
+      Height = 24
+      Top = 136
+      Width = 66
+      Caption = 'Exit'
+      OnClick = ExitBtnClick
+      TabOrder = 4
+    end
+  end
+end

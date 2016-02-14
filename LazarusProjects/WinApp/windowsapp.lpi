@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="windowsapp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="windowsapp"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="winapp.pas"/>
+        <ComponentName Value="Form1"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="winapp.lrs"/>
+        <UnitName Value="WinApp"/>
+        <CursorPos X="48" Y="31"/>
+        <TopLine Value="17"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="secondform.pas"/>
+        <ComponentName Value="Form2"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="secondform.lrs"/>
+        <UnitName Value="secondForm"/>
+        <CursorPos X="79" Y="8"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <CursorPos X="1" Y="327"/>
+        <TopLine Value="316"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="winapp.pas"/>
+        <Caret Line="24" Column="17" TopLine="2"/>
+      </Position1>
+      <Position2>
+        <Filename Value="winapp.pas"/>
+        <Caret Line="16" Column="45" TopLine="5"/>
+      </Position2>
+      <Position3>
+        <Filename Value="winapp.pas"/>
+        <Caret Line="32" Column="8" TopLine="17"/>
+      </Position3>
+      <Position4>
+        <Filename Value="winapp.pas"/>
+        <Caret Line="36" Column="16" TopLine="21"/>
+      </Position4>
+      <Position5>
+        <Filename Value="secondform.pas"/>
+        <Caret Line="16" Column="45" TopLine="8"/>
+      </Position5>
+      <Position6>
+        <Filename Value="winapp.pas"/>
+        <Caret Line="37" Column="3" TopLine="21"/>
+      </Position6>
+      <Position7>
+        <Filename Value="secondform.pas"/>
+        <Caret Line="9" Column="9" TopLine="1"/>
+      </Position7>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

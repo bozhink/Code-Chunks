@@ -1,0 +1,593 @@
+object MainForm: TMainForm
+  Left = 344
+  Height = 522
+  Top = 99
+  Width = 734
+  HorzScrollBar.Page = 733
+  VertScrollBar.Page = 501
+  ActiveControl = GDBA
+  Caption = 'Addressbook'
+  ClientHeight = 502
+  ClientWidth = 734
+  Font.Height = -13
+  Font.Name = 'MS Sans Serif'
+  Menu = MMain
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  object PTop: TPanel
+    Height = 33
+    Width = 734
+    Align = alTop
+    BevelOuter = bvLowered
+    ClientHeight = 33
+    ClientWidth = 734
+    FullRepaint = False
+    TabOrder = 0
+    object DBNavigator1: TDBNavigator
+      Left = 456
+      Height = 25
+      Top = 4
+      Width = 260
+      Anchors = [akTop, akRight]
+      BevelOuter = bvNone
+      ClientHeight = 25
+      ClientWidth = 260
+      DataSource = DSAddress
+      TabOrder = 0
+    end
+  end
+  object GDBA: TDBGrid
+    Height = 209
+    Top = 33
+    Width = 734
+    Align = alClient
+    Color = clWhite
+    Columns = <    
+      item
+        FieldName = 'Title'
+      end    
+      item
+        Title.Caption = 'Last name'
+        Width = 127
+        FieldName = 'Director'
+      end    
+      item
+        Title.Caption = 'Street '
+        Width = 131
+        FieldName = 'Producer'
+      end    
+      item
+        Title.Caption = 'Zip '
+        FieldName = 'Cast'
+      end    
+      item
+        Title.Caption = 'Town '
+        Width = 100
+        FieldName = 'Gender'
+      end    
+      item
+        Title.Caption = 'Country '
+        FieldName = 'Country'
+      end    
+      item
+        Title.Caption = 'Telephone '
+        FieldName = 'Year'
+      end    
+      item
+        Title.Caption = 'Fax '
+        FieldName = 'Description'
+      end    
+      item
+        Title.Caption = 'Mobile '
+        FieldName = 'Comments'
+      end    
+      item
+        Title.Caption = 'Email '
+        FieldName = 'Languages'
+      end    
+      item
+        Title.Caption = 'WWW '
+        FieldName = 'Subtitles'
+      end    
+      item
+        FieldName = 'Duration'
+      end>
+    DataSource = DSAddress
+    FixedColor = clBtnFace
+    FixedHotColor = cl3DLight
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    OptionsExtra = [dgeAutoColumns, dgeCheckboxColumn]
+    ParentColor = False
+    TabOrder = 1
+    TabStop = True
+  end
+  object PBottom: TPanel
+    Height = 260
+    Top = 242
+    Width = 734
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 260
+    ClientWidth = 734
+    FullRepaint = False
+    TabOrder = 2
+    object LTitle: TLabel
+      Left = 8
+      Height = 14
+      Top = 8
+      Width = 21
+      Alignment = taRightJustify
+      Caption = '&Title'
+      FocusControl = ETitle
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LDirector: TLabel
+      Left = 8
+      Height = 14
+      Top = 32
+      Width = 39
+      Alignment = taRightJustify
+      Caption = '&Director'
+      FocusControl = EDirector
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LProducer: TLabel
+      Left = 8
+      Height = 14
+      Top = 64
+      Width = 44
+      Alignment = taRightJustify
+      Caption = '&Producer'
+      FocusControl = EProducer
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LCast: TLabel
+      Left = 8
+      Height = 14
+      Top = 88
+      Width = 23
+      Alignment = taRightJustify
+      Caption = '&Cast'
+      FocusControl = ECast
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LGender: TLabel
+      Left = 264
+      Height = 14
+      Top = 88
+      Width = 36
+      Alignment = taRightJustify
+      Caption = '&Gender'
+      FocusControl = EGender
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LYear: TLabel
+      Left = 8
+      Height = 14
+      Top = 144
+      Width = 23
+      Alignment = taRightJustify
+      Caption = '&Year'
+      FocusControl = EYear
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LCountry: TLabel
+      Left = 8
+      Height = 14
+      Top = 112
+      Width = 40
+      Alignment = taRightJustify
+      Caption = 'Countr&y'
+      FocusControl = ECountry
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LDescription: TLabel
+      Left = 288
+      Height = 14
+      Top = 144
+      Width = 54
+      Alignment = taRightJustify
+      Caption = 'Desc&ription'
+      FocusControl = EDescription
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LComments: TLabel
+      Left = 472
+      Height = 14
+      Top = 144
+      Width = 51
+      Alignment = taRightJustify
+      Caption = 'Co&mments'
+      FocusControl = EComments
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LLanguages: TLabel
+      Left = 8
+      Height = 14
+      Top = 176
+      Width = 53
+      Alignment = taRightJustify
+      Caption = '&Languages'
+      FocusControl = ELanguages
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LSubtitles: TLabel
+      Left = 8
+      Height = 14
+      Top = 200
+      Width = 42
+      Alignment = taRightJustify
+      Caption = '&Subtitles'
+      FocusControl = ESubtitles
+      Layout = tlCenter
+      ParentColor = False
+    end
+    object LDuration: TLabel
+      Left = 8
+      Height = 14
+      Top = 230
+      Width = 42
+      Caption = 'D&uration'
+      ParentColor = False
+    end
+    object ETitle: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 8
+      Width = 361
+      DataField = 'Title'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 0
+    end
+    object EDirector: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 32
+      Width = 361
+      DataField = 'Director'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 1
+    end
+    object EProducer: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 64
+      Width = 361
+      DataField = 'Producer'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 2
+    end
+    object ECast: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 88
+      Width = 89
+      DataField = 'Cast'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 3
+    end
+    object ECountry: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 112
+      Width = 361
+      DataField = 'Country'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 5
+    end
+    object ESubtitles: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 200
+      Width = 361
+      DataField = 'Subtitles'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 10
+    end
+    object EYear: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 144
+      Width = 121
+      DataField = 'Year'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 6
+    end
+    object EDescription: TDBEdit
+      Left = 336
+      Height = 24
+      Top = 144
+      Width = 121
+      DataField = 'Description'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 7
+    end
+    object EComments: TDBEdit
+      Left = 520
+      Height = 24
+      Top = 144
+      Width = 121
+      DataField = 'Comments'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 8
+    end
+    object ELanguages: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 176
+      Width = 361
+      DataField = 'Languages'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 9
+    end
+    object EGender: TDBEdit
+      Left = 320
+      Height = 24
+      Top = 88
+      Width = 201
+      DataField = 'Gender'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 4
+    end
+    object EDuration: TDBEdit
+      Left = 160
+      Height = 24
+      Top = 230
+      Width = 360
+      DataField = 'Duration'
+      DataSource = DSAddress
+      ParentColor = False
+      TabOrder = 11
+    end
+  end
+  object MMain: TMainMenu
+    left = 64
+    top = 72
+    object MFile: TMenuItem
+      Caption = '&File'
+      object MINew: TMenuItem
+        Action = ANew
+        OnClick = ANewExecute
+      end
+      object MIOpen: TMenuItem
+        Action = AOpen
+        OnClick = AOpenExecute
+      end
+      object MIClose: TMenuItem
+        Action = AClose
+        OnClick = ACloseExecute
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MIQuit: TMenuItem
+        Action = AQuit
+        OnClick = AQuitExecute
+      end
+    end
+    object Record1: TMenuItem
+      Caption = '&Record'
+      object MIFirst: TMenuItem
+        Action = AFirst
+        OnClick = DoDataAction
+      end
+      object MILAst: TMenuItem
+        Action = ALast
+        OnClick = DoDataAction
+      end
+      object MIPrior: TMenuItem
+        Action = APrior
+        OnClick = DoDataAction
+      end
+      object MINext: TMenuItem
+        Action = ANext
+        OnClick = DoDataAction
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object MIInsert: TMenuItem
+        Action = AInsert
+        OnClick = DoDataAction
+      end
+      object MIEdit: TMenuItem
+        Action = AEdit
+        OnClick = DoDataAction
+      end
+      object MIDelete: TMenuItem
+        Action = ADelete
+        OnClick = DoDataAction
+      end
+      object MIPost: TMenuItem
+        Action = APost
+        OnClick = DoDataAction
+      end
+      object MICancel: TMenuItem
+        Action = ACancel
+        OnClick = DoDataAction
+      end
+      object MIRefresh: TMenuItem
+        Action = ARefresh
+        OnClick = DoDataAction
+      end
+    end
+  end
+  object ALMain: TActionList
+    left = 64
+    top = 112
+    object ANew: TAction
+      Caption = '&New'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = ANewExecute
+    end
+    object AOpen: TAction
+      Caption = '&Open'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = AOpenExecute
+      ShortCut = 16463
+    end
+    object AClose: TAction
+      Caption = '&Close'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = ACloseExecute
+      OnUpdate = ACloseUpdate
+    end
+    object AQuit: TAction
+      Caption = '&Quit'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = AQuitExecute
+      ShortCut = 16465
+    end
+    object AFirst: TAction
+      Category = 'Dataset'
+      Caption = '&First'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 16454
+    end
+    object APrior: TAction
+      Tag = 1
+      Category = 'Dataset'
+      Caption = '&Prior'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+    end
+    object ANext: TAction
+      Tag = 2
+      Category = 'Dataset'
+      Caption = '&Next'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+    end
+    object ALast: TAction
+      Tag = 3
+      Category = 'Dataset'
+      Caption = '&Last'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 16460
+    end
+    object AInsert: TAction
+      Tag = 4
+      Category = 'Dataset'
+      Caption = '&Insert'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 16462
+    end
+    object ADelete: TAction
+      Tag = 5
+      Category = 'Dataset'
+      Caption = '&Delete'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = HaveDataNotEmpty
+      ShortCut = 16452
+    end
+    object AEdit: TAction
+      Tag = 6
+      Category = 'Dataset'
+      Caption = '&Edit'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = HaveDataNotEmpty
+      ShortCut = 113
+    end
+    object APost: TAction
+      Tag = 7
+      Category = 'Dataset'
+      Caption = 'P&ost'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = InEditMode
+      ShortCut = 16467
+    end
+    object ACancel: TAction
+      Tag = 8
+      Category = 'Dataset'
+      Caption = '&Cancel'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = InEditMode
+    end
+    object ARefresh: TAction
+      Category = 'Dataset'
+      Caption = '&Refresh'
+      DisableIfNoHandler = True
+      HelpType = htKeyword
+      OnExecute = DoDataAction
+      OnUpdate = DataOpen
+      ShortCut = 116
+    end
+  end
+  object DBA: TDbf
+    IndexDefs = <>
+    StoreDefs = True
+    TableLevel = 4
+    AfterInsert = DBAAfterInsert
+    left = 96
+    top = 112
+  end
+  object SDDBA: TSaveDialog
+    Title = 'Save file as'
+    DefaultExt = '.dbf'
+    Filter = 'DBF files|*.dbf|All files|*.*'
+    FilterIndex = 0
+    Options = [ofHideReadOnly, ofPathMustExist, ofEnableSizing]
+    left = 96
+    top = 144
+  end
+  object ODDBA: TOpenDialog
+    Title = 'Open existing file'
+    DefaultExt = '.dbf'
+    Filter = 'DBF files|*.dbf|All files|*.*'
+    FilterIndex = 0
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    left = 64
+    top = 144
+  end
+  object DSAddress: TDatasource
+    DataSet = DBA
+    left = 128
+    top = 112
+  end
+end

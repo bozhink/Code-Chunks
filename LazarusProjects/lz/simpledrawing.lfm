@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 529
+  Height = 275
+  Top = 190
+  Width = 751
+  Caption = 'Form1'
+  ClientHeight = 275
+  ClientWidth = 751
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.2.2.0'
+  object Label1: TLabel
+    Left = 520
+    Height = 21
+    Top = 9
+    Width = 44
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object btnOpen: TBitBtn
+    Left = 10
+    Height = 30
+    Top = 0
+    Width = 75
+    Caption = 'Open'
+    OnClick = btnOpenClick
+    TabOrder = 0
+  end
+  object ToolPencil: TSpeedButton
+    Left = 8
+    Height = 22
+    Hint = 'Pencil'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object ToolLine: TSpeedButton
+    Left = 32
+    Height = 22
+    Hint = 'Line'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object ToolRect: TSpeedButton
+    Left = 56
+    Height = 22
+    Hint = 'Rectangle'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object ToolOval: TSpeedButton
+    Left = 80
+    Height = 22
+    Hint = 'Oval'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object ToolTriangle: TSpeedButton
+    Left = 104
+    Height = 22
+    Hint = 'Triangle'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object btnSave: TBitBtn
+    Left = 88
+    Height = 30
+    Top = 0
+    Width = 75
+    Caption = 'Save'
+    OnClick = btnSaveClick
+    TabOrder = 1
+  end
+  object btnPaste: TBitBtn
+    Left = 168
+    Height = 30
+    Top = 0
+    Width = 75
+    Caption = 'Paste'
+    OnClick = btnPasteClick
+    TabOrder = 2
+  end
+  object LineColor: TColorButton
+    Left = 128
+    Height = 25
+    Top = 29
+    Width = 75
+    BorderWidth = 2
+    ButtonColorSize = 16
+    ButtonColor = clBlack
+    OnClick = LineColorClick
+  end
+  object ToolColorDropper: TSpeedButton
+    Left = 208
+    Height = 22
+    Hint = 'Color Dropper'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object ToolFill: TSpeedButton
+    Left = 232
+    Height = 22
+    Hint = 'Fill'
+    Top = 32
+    Width = 23
+    ShowHint = True
+    ParentShowHint = False
+  end
+  object btnNew: TBitBtn
+    Left = 248
+    Height = 30
+    Top = 0
+    Width = 75
+    Caption = 'New'
+    OnClick = btnNewClick
+    TabOrder = 3
+  end
+  object btnCopy: TBitBtn
+    Left = 328
+    Height = 30
+    Top = 0
+    Width = 75
+    Caption = 'Copy'
+    OnClick = btnCopyClick
+    TabOrder = 4
+  end
+  object MyCanvas: TPaintBox
+    Left = 24
+    Height = 185
+    Top = 66
+    Width = 437
+    OnMouseDown = MyCanvasMouseDown
+    OnMouseMove = MyCanvasMouseMove
+    OnMouseUp = MyCanvasMouseUp
+    OnPaint = MyCanvasPaint
+  end
+  object btnResize: TBitBtn
+    Left = 400
+    Height = 30
+    Top = 0
+    Width = 75
+    Caption = 'Resize'
+    OnClick = btnResizeClick
+    TabOrder = 5
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 256
+    Height = 33
+    Top = 29
+    Width = 120
+    OnChange = SpinEdit1Change
+    TabOrder = 6
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Bitmap Files (*.bmp)|*.bmp'
+    left = 47
+    top = 89
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Bitmap Files (*.bmp)|*.bmp'
+    left = 128
+    top = 88
+  end
+end
