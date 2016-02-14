@@ -1,0 +1,89 @@
+package sandpile.abeliansandpile.onedimensional;
+
+public class QuadraticAlgebra {
+	private int length;
+	private int chain[];
+	private int threshold;
+	private double mu;
+	private int t;
+	
+	/**
+	 * Initializes new Quadratic Algebra model
+	 * @param length The length of the chain
+	 * @param mu The probability
+	 */
+	public QuadraticAlgebra(int length, double mu){
+		this.mu = mu;
+		this.length = length;
+		this.threshold = 2;
+		chain = new int[length];
+		Seed();
+	}
+	
+	private void Seed() {
+		for (int i=0; i<length; i++) {
+			chain[i] = (int)(threshold*Math.random());
+		}
+	}
+	
+	/**
+	 * This method recalculates the grain distribution after the drop of next grain
+	 */
+	public void Update() {
+		t = 0;
+		boolean isOverCritical = true;
+		while (isOverCritical) {
+			isOverCritical = false;
+			// Check all but the last positions in the chain 
+			for (int i=0; i<length-1; i++) {
+				if (chain[i] >= threshold) {
+					t = Math.max(t, i+1);
+					isOverCritical = true;
+					chain[i] -= threshold;
+					if (Math.random() < mu) {
+						chain[i+1] += threshold;
+					} else {
+						chain[i+1] += (threshold-1);
+						chain[i]++;
+					}
+				}
+			}
+			// Check the last position in the chain
+			if (chain[length-1] >= threshold) {
+				isOverCritical = true;
+				chain[length-1] -= threshold;
+				if (mu < Math.random()) {
+					chain[length-1]++;
+				}
+			}
+		}
+	}
+	
+	/**
+	 * This method gives the value of the size parameter 't' of the avalanche
+	 * @return The value of the size parameter
+	 */
+	public int GetT() {
+		return t;
+	}
+	
+	/**
+	 * This method sets the value of the fist chain position to be critical
+	 */
+	public void DropSand() {
+		chain[0]++;
+	}
+	
+	/**
+	 * This method sets the fist position of the chain to be
+	 * critical, then evaluates the avalanche and returns its size
+	 * @return the value of the size parameter of the avalanche
+	 */
+	public int NextStep() {
+		Seed();
+		DropSand();
+		Update();
+		return t;
+	}
+	
+}

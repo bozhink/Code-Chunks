@@ -1,0 +1,489 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[bulgarian,english]{babel}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[pdftex]{graphicx}
+
+\author{Божин Ангелов Караиванов}
+\title{TASEP}
+\date{25.4.2013}
+
+\begin{document}
+ \maketitle
+Разглеждаме случая $L=4$, $N=2$. Използваме следните означения на състоянията $C_{i}$
+\begin{equation}
+\begin{split}
+C_{1} &= (1, 1, 0, 0),\\
+C_{2} &= (0, 1, 1, 0),\\
+C_{3} &= (0, 0, 1, 1),\\
+C_{4} &= (1, 0, 0, 1),\\
+C_{5} &= (1, 0, 1, 0),\\
+C_{6} &= (0, 1, 0, 1).\\
+\end{split}
+\end{equation}
+
+Връзката между началните $C_i$ и крайните $C_j$ състояния записваме във вида
+\begin{equation}
+C_i \rightarrow T^{j}_{\phantom{j}i} C_j,
+\end{equation}
+където $$T^{j}_{\phantom{j}i} = \frac{1}{4}\left({T_1}^{j}_{\phantom{j}i} + {T_2}^{j}_{\phantom{j}i} + {T_3}^{j}_{\phantom{j}i} + {T_4}^{j}_{\phantom{j}i}\right)$$
+са компонентите на матрицата на прехода, на която сумата от елементите по редове трябва да е единица,
+а отделните матрици $T_{k},\ k=1,2,3,4$ са матриците на преходите при фиксирана начална връзка за
+стартиране на алгоритъма на обновяване, като $k=1$ съответства на начална връзка $(1,2)$,
+$k=2$ -- на начална връзка $(2,3)$ и т. н.
+
+Вероятностите $P_i$ за поява на дадено състояние $C_i$ намираме по формулата
+\begin{equation}
+ P_{i'} = {T^{\mathtt{t}}}^{i}_{\phantom{i}i'} P_{i},
+\end{equation}
+откъдето, като наложим условието за стационарност $P_{i'}=P_{i}$, ще получим
+стойностите на вероятностите $P_{i}$ в еднопараметрична форма.
+По подобен начин можем да определим тези вероятности за всеки един
+от четирите различин случая на начална връзка.
+
+
+\paragraph{Начална връзка $(4,1)$}
+\begin{equation}
+\begin{split}
+C_1 \xrightarrow{(4,1)}& C_1\\
+    \xrightarrow{(3,4)}& C_1\\
+    \xrightarrow{(2,3)}& (1-p)\,C_1+p\,C_5\\
+    \xrightarrow{(1,2)}& (1-p)\,C_1+p(1-\tilde{p})\,C_5+p\tilde{p}\,C_2.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_2 \xrightarrow{(4,1)}& C_2\\
+    \xrightarrow{(3,4)}& (1-p)\,C_2 + p\,C_6\\
+    \xrightarrow{(2,3)}& (1-p)\,C_2 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_3\\
+    \xrightarrow{(1,2)}& (1-p)\,C_2 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_3.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_3 \xrightarrow{(4,1)}& (1-p)\,C_3 + p\,C_5\\
+    \xrightarrow{(3,4)}& (1-p)\,C_3 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_4\\
+    \xrightarrow{(2,3)}& (1-p)\,C_3 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_4\\
+    \xrightarrow{(1,2)}& (1-p)\,C_3 + p(1-p)(1-\tilde{p})\,C_5 + \\
+    & + p(1-p)\tilde{p}\,C_4 + p^2(1-\tilde{p})\,C_2 + p^2\tilde{p}\,C_6.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_4 \xrightarrow{(4,1)}& C_4\\
+    \xrightarrow{(3,4)}& C_4\\
+    \xrightarrow{(2,3)}& C_4\\
+    \xrightarrow{(1,2)}& (1-p)\,C_4 + p\,C_6.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_5 \xrightarrow{(4,1)}& C_5\\
+    \xrightarrow{(3,4)}& (1-p)\,C_5 + p\,C_4\\
+    \xrightarrow{(2,3)}& (1-p)\,C_5 + p\,C_4\\
+    \xrightarrow{(1,2)}& (1-p)^2\,C_5 + p(1-p)\,(C_2 + C_4) + p^2\, C_6.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_6 \xrightarrow{(4,1)}& (1-p)\,C_6 + p\,C_1\\
+    \xrightarrow{(3,4)}& (1-p)\,C_6 + p\,C_1\\
+    \xrightarrow{(2,3)}& (1-p)^2\,C_6 + p(1-p)\,(C_3 + C_1) + p^2\,C_5\\
+    \xrightarrow{(1,2)}& (1-p)^2\,C_6 + p(1-p)\,(C_3 + C_1) + p^2(1-\tilde{p}) C_5 + p^2\tilde{p}\,C_2.
+\end{split}
+\end{equation}
+
+Матрицата на преход има вида
+{\small
+\begin{equation}
+\begin{split}
+&T_{4} = \\
+&\begin{pmatrix}
+ 1-p & p\,\tilde{p} & 0 & 0 & p\,\left( 1-\tilde{p}\right)  & 0\cr
+ 0 & 1-p & p\,\tilde{p} & 0 & 0 & p\,\left( 1-\tilde{p}\right) \cr
+ 0 & {p}^{2}\,\left( 1-\tilde{p}\right)  & 1-p & \left( 1-p\right) \,p\,\tilde{p} & \left( 1-p\right) \,p\,\left( 1-\tilde{p}\right)  & {p}^{2}\,\tilde{p}\cr
+ 0 & 0 & 0 & 1-p & 0 & p\cr
+ 0 & \left( 1-p\right) \,p & 0 & \left( 1-p\right) \,p & {\left( 1-p\right) }^{2} & {p}^{2}\cr
+ \left( 1-p\right) \,p & {p}^{2}\,\tilde{p} & \left( 1-p\right) \,p & 0 & {p}^{2}\,\left( 1-\tilde{p}\right)  & {\left( 1-p\right) }^{2}
+\end{pmatrix}.
+\end{split}
+\end{equation}
+}
+
+Вероятностите $P_i$ за поява на състоянието $C_i$ можем за изразим в удобен вид чрез $P_6$
+както следва
+\begin{equation}
+ P_1 = (1-p)\,P_6,
+\end{equation}
+\begin{equation}
+ P_2 = \frac{2(1-p) + p\tilde{p}}{2-p-\tilde{p}(1-\tilde{p})} P_6,
+\end{equation}
+\begin{equation}
+ P_3 = \frac{(1-p)(2-p)+\tilde{p}(1-p+\tilde{p})}{2-p-\tilde{p}(1-\tilde{p})} P_6,
+\end{equation}
+\begin{equation}
+ P_4 = \frac{(1-p)[2-2p+p^2+2\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_6,
+\end{equation}
+\begin{equation}
+ P_5 = \frac{(1-\tilde{p})[2-2p+p^2+\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_6.
+\end{equation}
+%
+%
+%
+%
+\paragraph{Начална връзка $(3,4)$}
+\begin{equation}
+\begin{split}
+C_1 \xrightarrow{(3,4)}& C_1\\
+    \xrightarrow{(2,3)}& (1-p)\,C_1 + p\,C_5\\
+    \xrightarrow{(1,2)}& (1-p)\,C_1 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_2\\
+    \xrightarrow{(4,1)}& (1-p)\,C_1 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_2.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_2 \xrightarrow{(3,4)}& (1-p)\,C_2 + p\,C_6\\
+    \xrightarrow{(2,3)}& (1-p)\,C_2 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_3\\
+    \xrightarrow{(1,2)}& (1-p)\,C_2 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_3\\
+    \xrightarrow{(4,1)}& (1-p)\,C_2 + p(1-p)(1-\tilde{p})\,C_6 + \\
+    & + p(1-p)\tilde{p}\,C_3 + p^2(1-\tilde{p})\,C_1 + p^2\tilde{p}\,C_5.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_3 \xrightarrow{(3,4)}& C_3\\
+    \xrightarrow{(2,3)}& C_3\\
+    \xrightarrow{(1,2)}& C_3\\
+    \xrightarrow{(4,1)}& (1-p)\,C_3 + p\,C_5.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_4 \xrightarrow{(3,4)}& C_4\\
+    \xrightarrow{(2,3)}& C_4\\
+    \xrightarrow{(1,2)}& (1-p)\,C_4 + p\,C_6\\
+    \xrightarrow{(4,1)}& (1-p)\,C_4 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_1.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_5 \xrightarrow{(3,4)}& (1-p)\,C_5 + p\,C_4\\
+    \xrightarrow{(2,3)}& (1-p)\,C_5 + p\,C_4\\
+    \xrightarrow{(1,2)}& (1-p)^2\,C_5 + p(1-p)\,(C_2 + C_4) + p^2\, C_6\\
+    \xrightarrow{(4,1)}& (1-p)^2\,C_5 + p(1-p)\,(C_2 + C_4) + p^2(1-\tilde{p})\,C_6 + p^2\tilde{p}\,C_1.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_6 \xrightarrow{(3,4)}& C_6\\
+    \xrightarrow{(2,3)}& (1-p)\,C_6 + p\,C_3\\
+    \xrightarrow{(1,2)}& (1-p)\,C_6 + p\,C_3\\
+    \xrightarrow{(4,1)}& (1-p)^2\,C_6 + p(1-p)\,(C_1+C_3) + p^2\,C_5.
+\end{split}
+\end{equation}
+
+Матрицата на преход има вида
+{\small
+\begin{equation}
+\begin{split}
+&T_{3} = \\
+&\begin{pmatrix}
+ 1-p & p\,\tilde{p} & 0 & 0 & p\,\left( 1-\tilde{p}\right)  & 0\cr
+ {p}^{2}\,\left( 1-\tilde{p}\right)  & 1-p & \left( 1-p\right) \,p\,\tilde{p} & 0 & {p}^{2}\,\tilde{p} & \left( 1-p\right) \,p\,\left( 1-\tilde{p}\right) \cr
+ 0 & 0 & 1-p & 0 & p & 0\cr
+ p\,\tilde{p} & 0 & 0 & 1-p & 0 & p\,\left( 1-\tilde{p}\right) \cr
+ {p}^{2}\,\tilde{p} & \left( 1-p\right) \,p & 0 & \left( 1-p\right) \,p & {\left( 1-p\right) }^{2} & {p}^{2}\,\left( 1-\tilde{p}\right) \cr
+ \left( 1-p\right) \,p & 0 & \left( 1-p\right) \,p & 0 & {p}^{2} & {\left( 1-p\right) }^{2}
+\end{pmatrix}.
+\end{split}
+\end{equation}
+}
+
+Вероятностите $P_i$ за поява на състоянието $C_i$ можем за изразим в удобен вид чрез $P_5$
+както следва
+\begin{equation}
+ P_4 = (1-p)\,P_5
+\end{equation}
+\begin{equation}
+ P_1 = \frac{2(1-p) + p\tilde{p}}{2-p-\tilde{p}(1-\tilde{p})} P_5,
+\end{equation}
+\begin{equation}
+ P_2 = \frac{(1-p)(2-p)+\tilde{p}(1-p+\tilde{p})}{2-p-\tilde{p}(1-\tilde{p})} P_5,
+\end{equation}
+\begin{equation}
+ P_3 = \frac{(1-p)[2-2p+p^2+2\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_5,
+\end{equation}
+\begin{equation}
+ P_6 = \frac{(1-\tilde{p})[2-2p+p^2+\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_5.
+\end{equation}
+%
+%
+%
+%
+\paragraph{Начална връзка $(2,3)$}
+\begin{equation}
+\begin{split}
+C_1 \xrightarrow{(2,3)}& (1-p)\,C_1 + p\,C_5\\
+    \xrightarrow{(1,2)}& (1-p)\,C_1 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_2\\
+    \xrightarrow{(4,1)}& (1-p)\,C_1 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_2\\
+    \xrightarrow{(3,4)}& (1-p)\,C_1 + p(1-p)(1-\tilde{p})\,C_5\\
+    &+ p^2(1-\tilde{p})\,C_4 + p(1-p)\tilde{p}\,C_2 + p^2\tilde{p}\,C_6.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_2 \xrightarrow{(2,3)}& C_2\\
+    \xrightarrow{(1,2)}& C_2\\
+    \xrightarrow{(4,1)}& C_2\\
+    \xrightarrow{(3,4)}& (1-p)\,C_2 + p\,C_6.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_3 \xrightarrow{(2,3)}& C_3\\
+    \xrightarrow{(1,2)}& C_3\\
+    \xrightarrow{(4,1)}& (1-p)\,C_3 + p\,C_5\\
+    \xrightarrow{(3,4)}& (1-p)\,C_3 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_4.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_4 \xrightarrow{(2,3)}& C_4\\
+    \xrightarrow{(1,2)}& (1-p)\,C_4 + p\,C_6\\
+    \xrightarrow{(4,1)}& (1-p)\,C_4 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_1\\
+    \xrightarrow{(3,4)}& (1-p)\,C_4 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_1.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_5 \xrightarrow{(2,3)}& C_5\\
+    \xrightarrow{(1,2)}& (1-p)\,C_5 + p\,C_2\\
+    \xrightarrow{(4,1)}& (1-p)\,C_5 + p\,C_2\\
+    \xrightarrow{(3,4)}& (1-p)^2\,C_5 + p(1-p)\,(C_2 + C_4) + p^2\,C_6.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_6 \xrightarrow{(2,3)}& (1-p)\,C_6 + p\,C_3\\
+    \xrightarrow{(1,2)}& (1-p)\,C_6 + p\,C_3\\
+    \xrightarrow{(4,1)}& (1-p)^2\,C_6 + p(1-p)\,C_3 + p^2\,C_5\\
+    \xrightarrow{(3,4)}& (1-p)^2\,C_6 + p(1-p)\,(C_1 + C_3) + p^2(1-\tilde{p}) n \,C_5 + p^2\tilde{p}\,C_4.
+\end{split}
+\end{equation}
+
+Матрицата на преход има вида
+{\small
+\begin{equation}
+\begin{split}
+&T_{2} = \\
+&\begin{pmatrix}
+ 1-p & \left( 1-p\right) \,p\,\tilde{p} & 0 & {p}^{2}\,\left( 1-\tilde{p}\right)  & \left( 1-p\right) \,p\,\left( 1-\tilde{p}\right)  & {p}^{2}\,\tilde{p}\cr
+ 0 & 1-p & 0 & 0 & 0 & p\cr
+ 0 & 0 & 1-p & p\,\tilde{p} & p\,\left( 1-\tilde{p}\right)  & 0\cr
+ p\,\tilde{p} & 0 & 0 & 1-p & 0 & p\,\left( 1-\tilde{p}\right) \cr
+ 0 & \left( 1-p\right) \,p & 0 & \left( 1-p\right) \,p & {\left( 1-p\right) }^{2} & {p}^{2}\cr
+ \left( 1-p\right) \,p & 0 & \left( 1-p\right) \,p & {p}^{2}\,\tilde{p} & {p}^{2}\,\left( 1-\tilde{p}\right)  & {\left( 1-p\right) }^{2}
+\end{pmatrix}.
+\end{split}
+\end{equation}
+}
+
+
+Вероятностите $P_i$ за поява на състоянието $C_i$ можем за изразим в удобен вид чрез $P_6$
+както следва
+\begin{equation}
+ P_3 = (1-p)\,P_6,
+\end{equation}
+\begin{equation}
+ P_4 = \frac{2(1-p) + p\tilde{p}}{2-p-\tilde{p}(1-\tilde{p})} P_6,
+\end{equation}
+\begin{equation}
+ P_1 = \frac{(1-p)(2-p)+\tilde{p}(1-p+\tilde{p})}{2-p-\tilde{p}(1-\tilde{p})} P_6,
+\end{equation}
+\begin{equation}
+ P_2 = \frac{(1-p)[2-2p+p^2+2\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_6,
+\end{equation}
+\begin{equation}
+ P_5 = \frac{(1-\tilde{p})[2-2p+p^2+\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_6.
+\end{equation}
+%
+%
+%
+%
+\paragraph{Начална връзка $(1,2)$}
+\begin{equation}
+\begin{split}
+C_1 \xrightarrow{(1,2)}& C_1\\
+    \xrightarrow{(4,1)}& C_1\\
+    \xrightarrow{(3,4)}& C_1\\
+    \xrightarrow{(2,3)}& (1-p)\,C_1 + p\,C_5.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_2 \xrightarrow{(1,2)}& C_2\\
+    \xrightarrow{(4,1)}& C_2\\
+    \xrightarrow{(3,4)}& (1-p)\,C_2 + p\,C_6\\
+    \xrightarrow{(2,3)}& (1-p)\,C_2 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_3.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_3 \xrightarrow{(1,2)}& C_3\\
+    \xrightarrow{(4,1)}& (1-p)\,C_3 + p\,C_5\\
+    \xrightarrow{(3,4)}& (1-p)\,C_3 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_4\\
+    \xrightarrow{(2,3)}& (1-p)\,C_3 + p(1-\tilde{p})\,C_5 + p\tilde{p}\,C_4.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_4 \xrightarrow{(1,2)}& (1-p)\,C_4 + p\,C_6\\
+    \xrightarrow{(4,1)}& (1-p)\,C_4 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_1\\
+    \xrightarrow{(3,4)}& (1-p)\,C_4 + p(1-\tilde{p})\,C_6 + p\tilde{p}\,C_1\\
+    \xrightarrow{(2,3)}& (1-p)\,C_4 + p(1-p)(1-\tilde{p})\,C_6\\
+    & + p^2(1-\tilde{p})\,C_3 + p(1-p)\tilde{p}\,C_1 + p^2\tilde{p}\,C_5.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_5 \xrightarrow{(1,2)}& (1-p)\,C_5 + p\,C_2\\
+    \xrightarrow{(4,1)}& (1-p)\,C_5 + p\,C_2\\
+    \xrightarrow{(3,4)}& (1-p)^2\,C_5 + p(1-p)\,C_4 + p(1-p)\,C_2 + p^2\,C_6\\
+    \xrightarrow{(2,3)}& (1-p)^2\,C_5 + p(1-p)\,(C_2 + C_4) + p^2(1-\tilde{p})\,C_6 + p^2\tilde{p}\,C_3.
+\end{split}
+\end{equation}
+%
+\begin{equation}
+\begin{split}
+C_6 \xrightarrow{(1,2)}& C_6\\
+    \xrightarrow{(4,1)}& (1-p)\,C_6 + p\,C_1\\
+    \xrightarrow{(3,4)}& (1-p)\,C_6 + p\,C_1\\
+    \xrightarrow{(2,3)}& (1-p)^2\,C_6 + p(1-p)\,(C_1 + C_3) + p^2\,C_5.
+\end{split}
+\end{equation}
+
+Матрицата на преход има вида
+{\small
+\begin{equation}
+\begin{split}
+&T_{1} = \\
+&\begin{pmatrix}
+ 1-p & 0 & 0 & 0 & p & 0\cr
+ 0 & 1-p & p\,\tilde{p} & 0 & 0 & p\,\left( 1-\tilde{p}\right) \cr
+ 0 & 0 & 1-p & p\,\tilde{p} & p\,\left( 1-\tilde{p}\right)  & 0\cr
+ \left( 1-p\right) \,p\,\tilde{p} & 0 & {p}^{2}\,\left( 1-\tilde{p}\right)  & 1-p & {p}^{2}\,\tilde{p} & \left( 1-p\right) \,p\,\left( 1-\tilde{p}\right) \cr
+ 0 & \left( 1-p\right) \,p & {p}^{2}\,\tilde{p} & \left( 1-p\right) \,p & {\left( 1-p\right) }^{2} & {p}^{2}\,\left( 1-\tilde{p}\right) \cr
+ \left( 1-p\right) \,p & 0 & \left( 1-p\right) \,p & 0 & {p}^{2} & {\left( 1-p\right) }^{2}
+\end{pmatrix}.
+\end{split}
+\end{equation}
+}
+
+Вероятностите $P_i$ за поява на състоянието $C_i$ можем за изразим в удобен вид чрез $P_5$
+както следва
+\begin{equation}
+ P_2 = (1-p)\,P_5
+\end{equation}
+\begin{equation}
+ P_3 = \frac{2(1-p) + p\tilde{p}}{2-p-\tilde{p}(1-\tilde{p})} P_5,
+\end{equation}
+\begin{equation}
+ P_4 = \frac{(1-p)(2-p)+\tilde{p}(1-p+\tilde{p})}{2-p-\tilde{p}(1-\tilde{p})} P_5,
+\end{equation}
+\begin{equation}
+ P_1 = \frac{(1-p)[2-2p+p^2+2\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_5,
+\end{equation}
+\begin{equation}
+ P_6 = \frac{(1-\tilde{p})[2-2p+p^2+\tilde{p}(\tilde{p}-p)]}{2-p-\tilde{p}(1-\tilde{p})} P_5.
+\end{equation}
+
+
+\paragraph{Общата матрица на преход} $T$ приема вида
+{\small
+\begin{equation}
+\begin{split}
+&T = \\
+&\begin{pmatrix}
+ 1-p  &\frac{3-p}{4} p\tilde{p} &0 &\frac{1-\tilde{p}}{4}{p}^{2} &p\frac{4+p\tilde{p}-3\tilde{p}-p}{4} &\frac{{p}^{2}\tilde{p}}{4}\cr
+ \frac{1-\tilde{p}}{4}{p}^{2} &1-p  &\frac{3-p}{4} p\tilde{p} &0 &\frac{{p}^{2}\tilde{p}}{4} &p\frac{4+p\tilde{p}-3\tilde{p}-p}{4}\cr
+ 0 &\frac{1-\tilde{p}}{4}{p}^{2} &1-p  &\frac{3-p}{4} p\tilde{p} &p\frac{4+p\tilde{p}-3\tilde{p}-p}{4} &\frac{{p}^{2}\tilde{p}}{4}\cr
+ \frac{3-p}{4} p\tilde{p} &0 &\frac{1-\tilde{p}}{4}{p}^{2} &1-p  &\frac{{p}^{2}\tilde{p}}{4} &p\frac{4+p\tilde{p}-3\tilde{p}-p}{4}\cr
+ \frac{{p}^{2}\tilde{p}}{4} &(1-p) p &\frac{{p}^{2}\tilde{p}}{4} &(1-p) p &{\left( 1-p\right) }^{2} &\frac{2-\tilde{p}}{2}{p}^{2}\cr
+ (1-p) p &\frac{{p}^{2}\tilde{p}}{4} &(1-p) p &\frac{{p}^{2}\tilde{p}}{4} &\frac{2-\tilde{p}}{2}{p}^{2} &{\left( 1-p\right) }^{2}
+\end{pmatrix}.
+\end{split}
+\end{equation}
+}
+
+Вероятностите $P_i$ за поява на състоянието $C_i$ при произволна начална връзка можем за изразим в удобен вид
+чрез параметър $r$ както следва:
+\begin{equation}
+ P_1=P_2=P_3=P_4 = r,
+\end{equation}
+\begin{equation}
+ P_5 = P_6 = \frac{4 - p - 3\tilde{p} + 2p\tilde{p}}{4(1-p) + p\tilde{p}} r.
+\end{equation}
+
+От условието за нормиравка на вароятностите до единица $\sum_{i=1}^{6}P_i=4P_1+2P_5=1$,
+определяме стойността на параметъра $r$ и получаваме следните крайни формули за вероятностите:
+\begin{equation}
+ P_1 = P_2 = P_3 = P_4 = \frac{1}{2}\;\frac{4(1-p) + p\tilde{p}}{12-9p-3\tilde{p}+4p\tilde{p}},
+\end{equation}
+\begin{equation}
+ P_5 = P_6 = \frac{1}{2}\;\frac{4 - p - 3\tilde{p} + 2p\tilde{p}}{12-9p-3\tilde{p}+4p\tilde{p}}.
+\end{equation}
+
+За случая $p=\tilde{p}$ получаваме
+\begin{equation}
+ P_1 = \frac{1}{8}\;\frac{4(1-p) + p^2}{3(1-p) + p^2},
+\end{equation}
+\begin{equation}
+ P_5 = \frac{1}{8}\;\frac{4(1-p) + 2p^2}{3(1-p) + p^2}.
+\end{equation}
+
+За случая $\tilde{p}=0$ получаваме
+\begin{equation}
+P_1 = \frac{1}{6}\;\frac{4-4p}{4-3p},
+\end{equation}
+\begin{equation}
+P_5 = \frac{1}{6}\;\frac{4-p}{4-3p}.
+\end{equation}
+Тук за $p=1$ (т. е. твърдо движение на частиците) имаме $P_1=0$, $P_5=1/2$,
+т. е. двучастичните състояния винаги ще се разпадат.
+
+За случая $\tilde{p}=1$ получаваме
+\begin{equation}
+ P_1 = \frac{1}{2}\;\frac{4-3p}{9-5p},
+\end{equation}
+\begin{equation}
+P_5 = \frac{1}{2}\;\frac{1+p}{9-5p}.
+\end{equation}
+Тук за $p=1/2$ получаваме $P_1=5/26$, $P_5=3/26$, т. е. при този
+случай на ``залепване'' на частиците вероятностите за двучастичните
+състояния (в интересната област $p\le1/2$) е по-голяма от вероятността
+двете частици да не са съседни.
+\end{document}

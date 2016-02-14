@@ -1,0 +1,293 @@
+\documentclass[english,bulgarian,a4paper,10pt]{article}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[bulgarian,english]{babel}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[pdftex]{graphicx}
+
+\author{Божин Ангелов Караиванов}
+\title{TASEP}
+% \date{6.4.2013}
+
+\begin{document}
+ \maketitle
+Нека с $C_i$ означаваме началните състояния, а с $C_{j}'$ --- крайните,
+т.е. състоянията, получени след обноваване на всички позиции.
+Така можем да запишем, че
+\begin{equation}
+ C_i = P^{j}_{\phantom{j}i} C_{j}',
+\end{equation}
+където $P^{j}_{\phantom{j}i}$ е вероятността от начално състояние $C_{i}$
+да достигнем до крайно състояние $C_{j}'$. Тук очевидно трябва да е изпълнено
+условието
+\begin{equation}
+ \sum_{j} P^{j}_{\phantom{j}i} = 1,\quad\forall i.
+\end{equation}
+
+Матрицата на вероятностите $P^{j}_{\phantom{j}i}$ може да се представи като
+сума от четири (за $L=4$) вероятностни матрици, отговарящи на стартиране на
+алгоритъма на обновяване от различна начална връзка:
+\begin{equation}
+ P^{j}_{\phantom{j}i} = \frac{1}{4} \sum_{a=1}^{4} P^{a,j}_{\phantom{a,j}i},
+\end{equation}
+където $a=1$ отговаря на последователността $(1,2)(4,1)(3,4)(2,3)$; $a=2$ ---
+на последователността $(2,3)(1,2)(4,1)(3,4)$; $a=3$ --- $(3,4)(2,3)(1,2)(4,1)$;
+$a=4$ --- $(4,1)(3,4)(2,3)(1,2)$.
+
+
+\section{$L=4$, $N=2$}
+Тук ще използваме следната номерация на състоянията
+\begin{equation}
+\begin{split}
+C_1 &= (1,1,0,0),\\
+C_2 &= (0,1,1,0),\\
+C_3 &= (0,0,1,1),\\
+C_4 &= (1,0,0,1),\\
+C_5 &= (1,0,1,0),\\
+C_6 &= (0,1,0,1).\\
+\end{split}
+\end{equation}
+Така можем да запишем всяко начално състояние $C_{i}$ като линейна супер- позиция
+на възможните крайни състояния $C_{j}'$ във вида:
+
+\subsection{$a=1$}
+$$C_1 = (1-p) C_1' + p C_5',$$
+$$C_2 = (1-p) C_2' + p\tilde{p} C_3' + p(1-\tilde{p}) C_6',$$
+$$C_3 = (1-p) C_3' + p\tilde{p} C_4' + p(1-\tilde{p}) C_5',$$
+$$C_4 = p\tilde{p} C_1' + (1-p) C_4' + p(1-\tilde{p}) C_6',$$
+$$C_5 = p(1-p) C_2' + p(1-p) C_4' + (1-p)^2 C_5' + p^2 C_6',$$
+$$C_6 = p(1-p) C_1' + p(1-p) C_3' + p^2 C_5' + (1-p)^2 C_6'.$$
+
+За матрицата $P^{1}$ с компоненти $P^{1,j}_{\phantom{1,j}i}$, получаваме
+\begin{equation}
+ P^{1} = \begin{pmatrix}
+          1-p &0 &0 &0 &p &0\\
+          0 &1-p &p\tilde{p} &0 &0 &p(1-\tilde{p})\\
+          0 &0 &1-p &p\tilde{p} &p(1-\tilde{p}) &0\\
+          p\tilde{p} &0 &0 &1-p &0 &p(1-\tilde{p})\\
+          0 &p(1-p) &0 &p(1-p) &(1-p)^2 &p^2\\
+          p(1-p) &0 &p(1-p) &0 &p^2 &(1-p)^2\\
+         \end{pmatrix}.
+\end{equation}
+
+\subsection{$a=2$}
+$$C_1 = (1-p) C_1' + p\tilde{p} C_2' + p(1-\tilde{p}) C_5',$$
+$$C_2 = (1-p) C_2' + p C_6',$$
+$$C_3 = (1-p) C_3' + p\tilde{p} C_4' + p(1-\tilde{p}) C_5',$$
+$$C_4 = p\tilde{p} C_1' + (1-p) C_4' + p(1-\tilde{p}) C_6',$$
+$$C_5 = p(1-p) C_2' + p(1-p) C_4' + (1-p)^2 C_5' + p^2 C_6',$$
+$$C_6 = p(1-p) C_1' + p(1-p) C_3' + p^2 C_5' + (1-p)^2 C_6'.$$
+
+За матрицата $P^{2}$ с компоненти $P^{2,j}_{\phantom{2,j}i}$, получаваме
+\begin{equation}
+ P^{2} = \begin{pmatrix}
+          1-p &p\tilde{p} &0 &0 &p(1-\tilde{p}) &0\\
+          0 &1-p &0 &0 &0 &p\\
+          0 &0 &1-p &p\tilde{p} &p(1-\tilde{p}) &0\\
+          p\tilde{p} &0 &0 &1-p &0 &p(1-\tilde{p})\\
+          0 &p(1-p) &0 &p(1-p) &(1-p)^2 &p^2\\
+          p(1-p) &0 &p(1-p) &0 &p^2 &(1-p)^2\\
+         \end{pmatrix}.
+\end{equation}
+
+\subsection{$a=3$}
+$$C_1 = (1-p) C_1' + p\tilde{p} C_2' + p(1-\tilde{p}) C_5',$$
+$$C_2 = (1-p) C_2' + p\tilde{p} C_3' + p(1-\tilde{p}) C_6',$$
+$$C_3 = (1-p) C_3' + p C_5',$$
+$$C_4 = p\tilde{p} C_1' + (1-p) C_4' + p(1-\tilde{p}) C_6',$$
+$$C_5 = p(1-p) C_2' + p(1-p) C_4' + (1-p)^2 C_5' + p^2 C_6',$$
+$$C_6 = p(1-p) C_1' + p(1-p) C_3' + p^2 C_5' + (1-p)^2 C_6'.$$
+
+За матрицата $P^{3}$ с компоненти $P^{3,j}_{\phantom{3,j}i}$, получаваме
+\begin{equation}
+ P^{3} = \begin{pmatrix}
+          1-p &p\tilde{p} &0 &0 &p(1-\tilde{p}) &0\\
+          0 &1-p &p\tilde{p} &0 &0 &p(1-\tilde{p})\\
+          0 &0 &1-p &0 &p &0\\
+          p\tilde{p} &0 &0 &1-p &0 &p(1-\tilde{p})\\
+          0 &p(1-p) &0 &p(1-p) &(1-p)^2 &p^2\\
+          p(1-p) &0 &p(1-p) &0 &p^2 &(1-p)^2\\
+         \end{pmatrix}.
+\end{equation}
+
+
+\subsection{$a=4$}
+$$C_1 = (1-p) C_1' + p\tilde{p} C_2' + p(1-\tilde{p}) C_5',$$
+$$C_2 = (1-p) C_2' + p\tilde{p} C_3' + p(1-\tilde{p}) C_6',$$
+$$C_3 = (1-p) C_3' + p\tilde{p} C_4' + p(1-\tilde{p}) C_5',$$
+$$C_4 = (1-p) C_4' + p C_6',$$
+$$C_5 = p(1-p) C_2' + p(1-p) C_4' + (1-p)^2 C_5' + p^2 C_6',$$
+$$C_6 = p(1-p) C_1' + p(1-p) C_3' + p^2 C_5' + (1-p)^2 C_6'.$$
+
+За матрицата $P^{4}$ с компоненти $P^{4,j}_{\phantom{4,j}i}$, получаваме
+\begin{equation}
+ P^{4} = \begin{pmatrix}
+          1-p &p\tilde{p} &0 &0 &p(1-\tilde{p}) &0\\
+          0 &1-p &p\tilde{p} &0 &0 &p(1-\tilde{p})\\
+          0 &0 &1-p &p\tilde{p} &p(1-\tilde{p}) &0\\
+          0 &0 &0 &1-p &0 &p\\
+          0 &p(1-p) &0 &p(1-p) &(1-p)^2 &p^2\\
+          p(1-p) &0 &p(1-p) &0 &p^2 &(1-p)^2\\
+         \end{pmatrix}.
+\end{equation}
+
+\subsection{Вероятности за състоянията}
+Общата вероятностна матрица има вида
+\begin{equation}
+ P = \begin{pmatrix}
+      1-p  &\frac{3}{4}p\tilde{p} &0 &0 & p\left(1-\frac{3}{4}\tilde{p}\right) &0\\
+      0 &1-p  &\frac{3}{4}p\tilde{p} &0 &0 & p\left(1-\frac{3}{4}\tilde{p}\right)\\
+      0 &0 &1-p &\frac{3}{4}p\tilde{p} & p\left(1-\frac{3}{4}\tilde{p}\right) &0\\
+      \frac{3}{4}p\tilde{p} &0 &0 &1-p &0 &p\left(1-\frac{3}{4}\tilde{p}\right)\\
+      0 &p(1-p) &0 &p(1-p) &(1-p)^2 &p^2\\
+      p(1-p) &0 &p(1-p) &0 &p^2 &(1-p)^2\\
+     \end{pmatrix}
+\end{equation}
+Виждаме, че сумите по редовете на тази матрица дават единици, т. е. условието
+за нормиравка е изпълнено.
+
+Вероятностите $P_j$ за поява на крайното състояние $C_{j}'$ от кое да е начал- но
+състояние $C_i$ се получава като съберем редовете на матрицата $P$:
+\begin{equation}
+ P_{j} \equiv \frac{1}{6}\sum_{i=1}^{6} P^{j}_{\phantom{j}i}.
+\end{equation}
+Така получаваме:
+\begin{equation}
+ P_1=P_2=P_3=P_4=\frac{1}{6} + \frac{p\tilde{p}}{8} - \frac{p^2}{6}=\frac{4-4p^2+3p\tilde{p}}{24},
+\end{equation}
+\begin{equation}
+ P_5=P_6=\frac{1}{6}-\frac{p\tilde{p}}{4}+\frac{p^2}{3}=\frac{2-3p\tilde{p}+4p^2}{12}.
+\end{equation}
+
+За случая $p=\tilde{p}$ горните формули приемат вида
+\begin{equation}
+ P_1 = \frac{4-p^2}{24} = \frac{1}{6} - \frac{p^2}{24},
+\end{equation}
+\begin{equation}
+ P_6 = \frac{2+p^2}{12} = \frac{1}{6} + \frac{p^2}{12},
+\end{equation}
+откъдето получаваме за $0\le p\le 1$: $\frac{1}{6}\ge P_1\ge \frac{1}{8}$
+и $\frac{1}{6}\le P_6\le \frac{1}{4}$, т. е. при $p=0$: $P_1=P_6$,
+а при $p=1$: $P_6 = 2P_1$.
+
+Друга теоретична проверка на общите формули на вероятностите $P_j$
+е случаят на ``твърдо'' движение ($p=1$) при абсолютно отблъскване
+($\tilde{p}=0$). Тогава получаваме $P_1=0$ и $P_6=1/2$, което
+указва интуитивно ясния извод, че всички ``двучастични състояния''
+(състояния, при които двете частици са една до друга, т. е. състоянията
+$C_{i}$, $i=1,2,3,4$) се разпадат.
+
+
+
+
+
+
+
+
+\section{$L=4$, $N=3$}
+Тук ще използваме следната номерация на състоянията
+\begin{equation}
+\begin{split}
+C_1 &= (1,1,1,0),\\
+C_2 &= (1,1,0,1),\\
+C_3 &= (1,0,1,1),\\
+C_4 &= (0,1,1,1).
+\end{split}
+\end{equation}
+Така можем да запишем всяко начално състояние $C_{i}$ като линейна супер- позиция
+на възможните крайни състояния $C_{j}'$ във вида:
+
+\subsection{$a=1$}
+$$C_1 = (1-p) C_1' + p(1-\tilde{p}) C_2' + p\tilde{p} C_3',$$
+$$C_2 = (1-p) C_2' + p C_3',$$
+$$C_3 = p\tilde{p}(1-\tilde{p}) C_1' + p\tilde{p}^2 C_2' + (1-p) C_3' + p(1-\tilde{p}) C_4',$$
+$$C_4 = p(1-\tilde{p}) C_1' + p\tilde{p}(1-\tilde{p}) C_2' + p\tilde{p}^2 C_3' + (1-p) C_4'.$$
+
+За матрицата $P^{1}$ с компоненти $P^{1,j}_{\phantom{1,j}i}$, получаваме
+\begin{equation}
+ P^{1} = \begin{pmatrix}
+          1-p &p(1-\tilde{p}) &p\tilde{p} &0\\
+          0 &1-p &p &0\\
+          p\tilde{p}(1-\tilde{p}) &p\tilde{p}^2 &1-p &p(1-\tilde{p})\\
+          p(1-\tilde{p}) &p\tilde{p}(1-\tilde{p}) &p\tilde{p}^2 &1-p\\
+         \end{pmatrix}.
+\end{equation}
+% % % % % % % % % % % % % % % % % % 
+\subsection{$a=2$}
+$$C_1 = (1-p) C_1' + p C_2',$$
+$$C_2 = (1-p) C_2' + p(1-\tilde{p}) C_3' + p\tilde{p}(1-\tilde{p}) C_4' + p\tilde{p}^2 C_1',$$
+$$C_3 = p\tilde{p}(1-\tilde{p}) C_1' + p\tilde{p}^{2} C_2' + (1-p) C_3' + p(1-\tilde{p}) C_4',$$
+$$C_4 = p(1-\tilde{p}) C_1' + p\tilde{p} C_2' + (1-p) C_4',$$
+
+За матрицата $P^{2}$ с компоненти $P^{2,j}_{\phantom{2,j}i}$, получаваме
+\begin{equation}
+ P^{2} = \begin{pmatrix}
+          1-p &p &0 &0\\
+          p\tilde{p}^2 &1-p &p(1-\tilde{p}) &p\tilde{p}(1-\tilde{p})\\
+          p\tilde{p}(1-\tilde{p}) &p\tilde{p}^2 &1-p &p(1-\tilde{p})\\
+          p(1-\tilde{p}) &p\tilde{p} &0 &1-p\\
+         \end{pmatrix}
+\end{equation}
+
+\subsection{$a=3$}
+$$C_1 = (1-p) C_1' + p(1-\tilde{p}) C_2' + p\tilde{p}(1-\tilde{p}) C_3' + p\tilde{p}^2 C_4',$$
+$$C_2 = p\tilde{p}^2 C_1' + (1-p) C_2' + p(1-\tilde{p}) C_3' + p\tilde{p}(1-\tilde{p}) C_4',$$
+$$C_3 = p\tilde{p} C_1' + (1-p) C_3' + p(1-\tilde{p}) C_4',$$
+$$C_4 = p C_1' + (1-p) C_4',$$
+
+
+За матрицата $P^{3}$ с компоненти $P^{3,j}_{\phantom{3,j}i}$, получаваме
+\begin{equation}
+ P^{3} = \begin{pmatrix}
+          1-p &p(1-\tilde{p}) &p\tilde{p}(1-\tilde{p}) &p\tilde{p}^2\\
+          p\tilde{p}^2 &1-p &p(1-\tilde{p}) &p\tilde{p}(1-\tilde{p})\\
+          p\tilde{p} &0 &1-p &p(1-\tilde{p})\\
+          p &0 &0 &1-p\\
+         \end{pmatrix}
+\end{equation}
+
+
+\subsection{$a=4$}
+$$C_1 = (1-p) C_1' + p(1-\tilde{p}) C_2' + p\tilde{p}(1-\tilde{p}) C_3' + p\tilde{p}^2 C_4',$$
+$$C_2 = (1-p) C_2' + p(1-\tilde{p}) C_3' + p\tilde{p} C_4',$$
+$$C_3 = (1-p) C_3' + p C_4',$$
+$$C_4 = p(1-\tilde{p}) C_1' + p\tilde{p}(1-\tilde{p}) C_2' + p\tilde{p}^2 C_3' + (1-p) C_4',$$
+
+За матрицата $P^{4}$ с компоненти $P^{4,j}_{\phantom{4,j}i}$, получаваме
+\begin{equation}
+ P^{4} = \begin{pmatrix}
+          1-p &p(1-\tilde{p}) &p\tilde{p}(1-\tilde{p}) &p\tilde{p}^2\\
+          0 &1-p &p(1-\tilde{p}) &p\tilde{p}\\
+          0 &0 &1-p &p\\
+          p(1-\tilde{p}) &p\tilde{p}(1-\tilde{p}) &p\tilde{p}^2 &1-p\\
+         \end{pmatrix}
+\end{equation}
+
+\subsection{Вероятности за състоянията}
+Общата вероятностна матрица има вида
+\begin{equation}
+ P = \begin{pmatrix}
+       1-p &p-\frac{3}{4}p\tilde{p} &p\tilde{p}\left(\frac{3}{4}-\frac{1}{2}\tilde{p}\right) &\frac{1}{2}p\tilde{p}^{2}\\
+       \frac{1}{2}p\tilde{p}^{2} &1-p &p-\frac{3}{4}p\tilde{p} &p\tilde{p}\left(\frac{3}{4}-\frac{1}{2}\tilde{p}\right)\\
+       p\tilde{p}\left(\frac{3}{4}-\frac{1}{2}\tilde{p}\right) &\frac{1}{2}p\tilde{p}^{2} &1-p &p-\frac{3}{4}p\tilde{p}\\
+       p-\frac{3}{4}p\tilde{p} &p\tilde{p}\left(\frac{3}{4}-\frac{1}{2}\tilde{p}\right) &\frac{1}{2}p\tilde{p}^{2} &1-p
+\end{pmatrix}
+\end{equation}
+Виждаме, че сумите по редовете на тази матрица дават единици, т. е. условието
+за нормиравка е изпълнено.
+
+Вероятностите $P_j$ за поява на крайното състояние $C_{j}'$ от кое да е начал- но
+състояние $C_i$ се получава като съберем редовете на матрицата $P$:
+\begin{equation}
+ P_{j} \equiv \frac{1}{4}\sum_{i=1}^{4} P^{j}_{\phantom{j}i}.
+\end{equation}
+Така получаваме:
+\begin{equation}
+ P_1=P_2=P_3=P_4=\frac{1}{4}.
+\end{equation}
+
+\end{document}
