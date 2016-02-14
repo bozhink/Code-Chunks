@@ -1,0 +1,16 @@
+{
+  "name": "modules",
+  "version": "0.0.0",
+  "description": "Using modules in NodeJS",
+  "main": "main.js",
+  "dependencies": {
+    "mongodb": "^2.1.6",
+    "mongod": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bozhin Karaivanov",
+  "license": "MIT"
+}
