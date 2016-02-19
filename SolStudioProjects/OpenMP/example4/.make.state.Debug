@@ -1,0 +1,35 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Release.mk dist/Release/OracleSolarisStudio-Linux-x86/example4
+.clean-conf:
+	rm -f -r build/Release
+	rm -f dist/Release/OracleSolarisStudio-Linux-x86/example4
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/main.o:	/home/bozhin/bin/solstudio12.2/prod/lib/compilers/rtlibs/usr/include/omp.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stdio.h /usr/include/stdio.h /home/bozhin/bin/solstudio12.2/prod/include/cc/features.h /usr/include/features.h /home/bozhin/bin/solstudio12.2/prod/include/cc/sys/cdefs.h /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stddef.h
+build/Debug/OracleSolarisStudio-Linux-x86/main.o:	/home/bozhin/bin/solstudio12.2/prod/include/cc/sys/isa_defs.h /usr/include/bits/types.h /usr/include/bits/typesizes.h /usr/include/libio.h /usr/include/_G_config.h /home/bozhin/bin/solstudio12.2/prod/include/cc/wchar.h /usr/include/wchar.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stdarg.h /home/bozhin/bin/solstudio12.2/prod/include/cc/va_impl.h /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stdlib.h
+build/Debug/OracleSolarisStudio-Linux-x86/main.o:	/usr/include/stdlib.h /usr/include/sys/types.h /home/bozhin/bin/solstudio12.2/prod/include/cc/time.h /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h /usr/include/bits/byteswap.h /usr/include/sys/select.h /usr/include/bits/select.h /usr/include/bits/sigset.h /usr/include/bits/time.h /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h /home/bozhin/bin/solstudio12.2/prod/include/cc/alloca.h /usr/include/xlocale.h 
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	cc -xopenmp -O3 -xopenmp  -c -g -o build/Debug/OracleSolarisStudio-Linux-x86/main.o main.c
+build/Release/OracleSolarisStudio-Linux-x86/main.o:	/home/bozhin/bin/solstudio12.2/prod/lib/compilers/rtlibs/usr/include/omp.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stdio.h /usr/include/stdio.h /home/bozhin/bin/solstudio12.2/prod/include/cc/features.h /usr/include/features.h /home/bozhin/bin/solstudio12.2/prod/include/cc/sys/cdefs.h /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stddef.h
+build/Release/OracleSolarisStudio-Linux-x86/main.o:	/home/bozhin/bin/solstudio12.2/prod/include/cc/sys/isa_defs.h /usr/include/bits/types.h /usr/include/bits/typesizes.h /usr/include/libio.h /usr/include/_G_config.h /home/bozhin/bin/solstudio12.2/prod/include/cc/wchar.h /usr/include/wchar.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stdarg.h /home/bozhin/bin/solstudio12.2/prod/include/cc/va_impl.h /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h /home/bozhin/bin/solstudio12.2/prod/include/cc/stdlib.h
+build/Release/OracleSolarisStudio-Linux-x86/main.o:	/usr/include/stdlib.h /usr/include/sys/types.h /home/bozhin/bin/solstudio12.2/prod/include/cc/time.h /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h /usr/include/bits/byteswap.h /usr/include/sys/select.h /usr/include/bits/select.h /usr/include/bits/sigset.h /usr/include/bits/time.h /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h /home/bozhin/bin/solstudio12.2/prod/include/cc/alloca.h /usr/include/xlocale.h 
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86
+	cc -xopenmp -O3 -xopenmp  -c -fast -g -o build/Release/OracleSolarisStudio-Linux-x86/main.o main.c
+dist/Debug/OracleSolarisStudio-Linux-x86/example4:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	cc -xopenmp -O3 -xopenmp   -o dist/Debug/OracleSolarisStudio-Linux-x86/example4 build/Debug/OracleSolarisStudio-Linux-x86/main.o  
+dist/Release/OracleSolarisStudio-Linux-x86/example4:
+	mkdir -p dist/Release/OracleSolarisStudio-Linux-x86
+	cc -xopenmp -O3 -xopenmp   -o dist/Release/OracleSolarisStudio-Linux-x86/example4 build/Release/OracleSolarisStudio-Linux-x86/main.o  

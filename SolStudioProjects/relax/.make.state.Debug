@@ -1,0 +1,59 @@
+.MAKE_VERSION:	VERSION-1.0
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/relax
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/src/cflux.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/cflux.o src/cflux.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/cross_menu.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/cross_menu.o src/cross_menu.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/dev.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/dev.o src/dev.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/expand.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/expand.o src/expand.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/field3.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/field3.o src/field3.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/getpar.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/getpar.o src/getpar.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/ison.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/ison.o src/ison.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/prnt.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/prnt.o src/prnt.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/reduce.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/reduce.o src/reduce.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/relax3d.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/relax3d.o src/relax3d.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/tourb1.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/tourb1.o src/tourb1.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/tourt.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/tourt.o src/tourt.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/unix/bnd_generic.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/unix
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/unix/bnd_generic.o src/unix/bnd_generic.F
+build/Debug/OracleSolarisStudio-Linux-x86/src/unix/exe_cut.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/unix
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/src/unix/exe_cut.o src/unix/exe_cut.F

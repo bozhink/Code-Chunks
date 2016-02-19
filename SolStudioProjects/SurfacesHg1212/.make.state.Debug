@@ -1,0 +1,32 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Debug.mk dist/Debug/OracleSolarisStudio-Linux-x86/surfaceshg1212
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/surfaceshg1212
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o ../Superconductivity/src/blockdat.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/spec.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/spec.o ../Superconductivity/src/spec.f
+build/Debug/OracleSolarisStudio-Linux-x86/surf1212.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/surf1212.o surf1212.f
+dist/Debug/OracleSolarisStudio-Linux-x86/surfaceshg1212:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -o dist/Debug/OracleSolarisStudio-Linux-x86/surfaceshg1212 build/Debug/OracleSolarisStudio-Linux-x86/surf1212.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/spec.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o  

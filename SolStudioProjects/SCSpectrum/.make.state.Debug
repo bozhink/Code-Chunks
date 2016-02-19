@@ -1,0 +1,30 @@
+.MAKE_VERSION:	VERSION-1.0
+.build-subprojects:
+	cd ../Superconductivity && /home/bozhin/bin/solstudio12.2/bin/dmake  -f Makefile CONF=Release
+.clean-conf:
+	rm -f -r build/Release
+	rm -f dist/Release/OracleSolarisStudio_12.2-Linux-x86/scspectrum
+	rm -f *.mod
+.clean-subprojects:
+	cd ../Superconductivity && /home/bozhin/bin/solstudio12.2/bin/dmake  -f Makefile CONF=Release clean
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/spectrum.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/spectrum.o spectrum.f
+build/Release/OracleSolarisStudio_12.2-Linux-x86/main.o:
+	mkdir -p build/Release/OracleSolarisStudio_12.2-Linux-x86
+	gfortran -lblas -llapack  -c -fast -g -w1 -o build/Release/OracleSolarisStudio_12.2-Linux-x86/main.o main.f
+dist/Debug/OracleSolarisStudio-Linux-x86/scspectrum:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95   -o dist/Debug/OracleSolarisStudio-Linux-x86/scspectrum build/Debug/OracleSolarisStudio-Linux-x86/spectrum.o  

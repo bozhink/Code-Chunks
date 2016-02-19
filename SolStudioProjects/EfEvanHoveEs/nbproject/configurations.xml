@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="integ2d"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <logicalFolder name="triangulation"
+                         displayName="triangulation"
+                         projectFiles="true"
+                         kind="SOURCE_LOGICAL_FOLDER">
+            <itemPath>../integ2d/src/triangulation/triangulation.f</itemPath>
+          </logicalFolder>
+          <logicalFolder name="twodq"
+                         displayName="twodq"
+                         projectFiles="true"
+                         kind="SOURCE_LOGICAL_FOLDER">
+            <itemPath>../integ2d/src/twodq/basout.f</itemPath>
+            <itemPath>../integ2d/src/twodq/greatr.f</itemPath>
+            <itemPath>../integ2d/src/twodq/hpdel.f</itemPath>
+            <itemPath>../integ2d/src/twodq/hpins.f</itemPath>
+            <itemPath>../integ2d/src/twodq/stack.h</itemPath>
+            <itemPath>../integ2d/src/twodq/twodq.f</itemPath>
+            <itemPath>../integ2d/src/twodq/xerrwv.f</itemPath>
+          </logicalFolder>
+          <itemPath>../integ2d/src/integ2d.f</itemPath>
+          <itemPath>../integ2d/src/setriang.f</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="Superconductivity"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <logicalFolder name="src" displayName="src" projectFiles="true">
+          <itemPath>../Superconductivity/src/blockdat.f</itemPath>
+          <itemPath>../Superconductivity/src/fermi.f</itemPath>
+          <itemPath>../Superconductivity/src/hamilt.f</itemPath>
+          <itemPath>../Superconductivity/src/secant.f</itemPath>
+          <itemPath>../Superconductivity/src/spec.f</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>src/efevhes-main.f</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <fortranCompilerTool>
+          <commandLine>-lblas -llapack</commandLine>
+        </fortranCompilerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-lblas -llapack</commandLine>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

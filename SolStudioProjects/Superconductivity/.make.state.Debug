@@ -1,0 +1,104 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Release.mk dist/Release/OracleSolarisStudio-Linux-x86/libSuperconductivity.so
+.clean-conf:
+	rm -f -r build/Release
+	rm -f dist/Release/OracleSolarisStudio-Linux-x86/libSuperconductivity.so
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/src/blockdat.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/blockdat.o src/blockdat.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/eigen.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/eigen.o src/eigen.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/epchip.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/epchip.o src/epchip.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/fermi.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/fermi.o src/fermi.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/hamilt.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/hamilt.o src/hamilt.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/integrand.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/integrand.o src/integrand.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/th.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95 -m32 -lblas -llapack  -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/th.o src/th.f
+build/Release/GNU-Linux-x86/src/blockdat.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/blockdat.o src/blockdat.f
+build/Release/GNU-Linux-x86/src/eigen.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/eigen.o src/eigen.f
+build/Release/GNU-Linux-x86/src/epchip.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/epchip.o src/epchip.f
+build/Release/GNU-Linux-x86/src/fermi.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/fermi.o src/fermi.f
+build/Release/GNU-Linux-x86/src/hamilt.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/hamilt.o src/hamilt.f
+build/Release/GNU-Linux-x86/src/integrand.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/integrand.o src/integrand.f
+build/Release/GNU-Linux-x86/src/spec.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/spec.o src/spec.f
+build/Release/GNU-Linux-x86/src/tcintegrand.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/tcintegrand.o src/tcintegrand.f
+build/Release/GNU-Linux-x86/src/th.o:
+	mkdir -p build/Release/GNU-Linux-x86/src
+	gfortran -lblas -llapack  -c -O2 -fPIC  -o build/Release/GNU-Linux-x86/src/th.o src/th.f
+build/Release/OracleSolarisStudio-Linux-x86/src/blockdat.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/blockdat.o src/blockdat.f
+build/Release/OracleSolarisStudio-Linux-x86/src/eigen.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/eigen.o src/eigen.f
+build/Release/OracleSolarisStudio-Linux-x86/src/epchip.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/epchip.o src/epchip.f
+build/Release/OracleSolarisStudio-Linux-x86/src/fermi.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/fermi.o src/fermi.f
+build/Release/OracleSolarisStudio-Linux-x86/src/hamilt.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/hamilt.o src/hamilt.f
+build/Release/OracleSolarisStudio-Linux-x86/src/integrand.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/integrand.o src/integrand.f
+build/Release/OracleSolarisStudio-Linux-x86/src/spec.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/spec.o src/spec.f
+build/Release/OracleSolarisStudio-Linux-x86/src/tcintegrand.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/tcintegrand.o src/tcintegrand.f
+build/Release/OracleSolarisStudio-Linux-x86/src/th.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/src
+	f95 -lblas -llapack  -c -fast -g -w1 -KPIC  -o build/Release/OracleSolarisStudio-Linux-x86/src/th.o src/th.f
+dist/Debug/OracleSolarisStudio-Linux-x86/libSuperconductivity.so:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95 -m32 -lblas -llapack  -G -o dist/Debug/OracleSolarisStudio-Linux-x86/libSuperconductivity.so -KPIC -norunpath -h libSuperconductivity.so build/Debug/OracleSolarisStudio-Linux-x86/src/fermi.o  build/Debug/OracleSolarisStudio-Linux-x86/src/blockdat.o  build/Debug/OracleSolarisStudio-Linux-x86/src/eigen.o  build/Debug/OracleSolarisStudio-Linux-x86/src/epchip.o  build/Debug/OracleSolarisStudio-Linux-x86/src/th.o  build/Debug/OracleSolarisStudio-Linux-x86/src/hamilt.o  build/Debug/OracleSolarisStudio-Linux-x86/src/integrand.o  
+dist/Release/GNU-Linux-x86/libSuperconductivity.so:
+	mkdir -p dist/Release/GNU-Linux-x86
+	gfortran -lblas -llapack  -shared -o dist/Release/GNU-Linux-x86/libSuperconductivity.so -fPIC build/Release/GNU-Linux-x86/src/fermi.o  build/Release/GNU-Linux-x86/src/blockdat.o  build/Release/GNU-Linux-x86/src/eigen.o  build/Release/GNU-Linux-x86/src/epchip.o  build/Release/GNU-Linux-x86/src/th.o  build/Release/GNU-Linux-x86/src/hamilt.o  build/Release/GNU-Linux-x86/src/integrand.o  build/Release/GNU-Linux-x86/src/spec.o  build/Release/GNU-Linux-x86/src/tcintegrand.o  
+dist/Release/OracleSolarisStudio-Linux-x86/libSuperconductivity.so:
+	mkdir -p dist/Release/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -G -o dist/Release/OracleSolarisStudio-Linux-x86/libSuperconductivity.so -KPIC -norunpath -h libSuperconductivity.so build/Release/OracleSolarisStudio-Linux-x86/src/fermi.o  build/Release/OracleSolarisStudio-Linux-x86/src/blockdat.o  build/Release/OracleSolarisStudio-Linux-x86/src/eigen.o  build/Release/OracleSolarisStudio-Linux-x86/src/epchip.o  build/Release/OracleSolarisStudio-Linux-x86/src/th.o  build/Release/OracleSolarisStudio-Linux-x86/src/hamilt.o  build/Release/OracleSolarisStudio-Linux-x86/src/integrand.o  build/Release/OracleSolarisStudio-Linux-x86/src/spec.o  build/Release/OracleSolarisStudio-Linux-x86/src/tcintegrand.o  

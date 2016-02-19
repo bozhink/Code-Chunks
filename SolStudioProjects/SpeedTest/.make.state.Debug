@@ -1,0 +1,32 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Debug.mk dist/Debug/OracleSolarisStudio-Linux-x86/speedtest
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/speedtest
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445274692/speedtest.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445274692
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445274692/speedtest.o ../../src/speedtest.for
+build/Release/OracleSolarisStudio-Linux-x86/_ext/1445274692/speedtest.o:
+	mkdir -p build/Release/OracleSolarisStudio-Linux-x86/_ext/1445274692
+	f95   -c -fast -g -w1 -o build/Release/OracleSolarisStudio-Linux-x86/_ext/1445274692/speedtest.o ../../src/speedtest.for
+dist/Debug/OracleSolarisStudio-Linux-x86/speedtest:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95   -o dist/Debug/OracleSolarisStudio-Linux-x86/speedtest build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445274692/speedtest.o  
+dist/Release/OracleSolarisStudio-Linux-x86/speedtest:
+	mkdir -p dist/Release/OracleSolarisStudio-Linux-x86
+	f95   -o dist/Release/OracleSolarisStudio-Linux-x86/speedtest build/Release/OracleSolarisStudio-Linux-x86/_ext/1445274692/speedtest.o  

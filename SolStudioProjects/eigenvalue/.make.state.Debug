@@ -1,0 +1,27 @@
+.MAKE_VERSION:	VERSION-1.0
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/eigenvalue
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/calc_eigen.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/calc_eigen.o calc_eigen.f90
+build/Debug/OracleSolarisStudio-Linux-x86/eigenvalue.o:	calc_eigen.mod 
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/eigenvalue.o eigenvalue.f90
+calc_eigen.mod:	calc_eigen.f90 
+dist/Debug/OracleSolarisStudio-Linux-x86/eigenvalue:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95   -o dist/Debug/OracleSolarisStudio-Linux-x86/eigenvalue build/Debug/OracleSolarisStudio-Linux-x86/calc_eigen.o  build/Debug/OracleSolarisStudio-Linux-x86/eigenvalue.o  
