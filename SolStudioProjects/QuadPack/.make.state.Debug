@@ -1,0 +1,29 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Debug.mk dist/Debug/OracleSolarisStudio-Linux-x86/quadpack
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/quadpack
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321/quadpack.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321/quadpack.o ../../../lib/quadpack/quadpack.f90
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321/quadpack_prb.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321
+	f95   -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321/quadpack_prb.o ../../../lib/quadpack/quadpack_prb.f90
+dist/Debug/OracleSolarisStudio-Linux-x86/quadpack:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95   -o dist/Debug/OracleSolarisStudio-Linux-x86/quadpack build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321/quadpack_prb.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/620275321/quadpack.o  

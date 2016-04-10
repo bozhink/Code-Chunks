@@ -1,0 +1,98 @@
+      SUBROUTINE TOURB1( XRR , YRR , HR , XSS , YSS , HS )
+C======================================================================C
+C
+C  ***RELAX3D MODIFIED VERSION***
+C     AUXILIARY-LIBRARY-ROUTINE FOR CNTOUR
+C
+C                                                05/AUG/1980
+C                                                C.J. KOST SIN
+C  
+C======================================================================C
+      COMMON /SYMB0L/ SYMS
+      COMMON /TOUR2C/ IPEN, VAL, XVAL, SEP, PLACE, POS, XSEP, XSEP2
+      LOGICAL PLACE , POS,NUMIN
+      COMMON / TOUR1C / TOUR , IRP , JRP , ISP , JSP , NX , NY
+      DATA YSEP/ 12.  /,NUMIN/ .FALSE. /
+      COMMON/RORIG/AX0,AY0
+      COMMON/RNCAXIS/NCBT,NDEC,NDIG
+
+      COMMON/RELAX3D_POLAR1/POLAR,HYDEG,THMAX
+      LOGICAL POLAR
+      COMMON/SLICES/ISLICE(101),NSLICE,ISLCURRENT,PLANE
+      CHARACTER*1 PLANE
+
+      IF( POS .OR. HS .GE. 0.0 ) GO TO 100
+      IPEN=+3
+      RETURN
+100   CONTINUE
+      XR = XRR
+      YR = YRR
+      XS = XSS
+      YS = YSS
+C**** CALL FOR THE USERS TRANSFORMATION IF ANY *****
+      IF(POLAR.AND.PLANE.EQ.'K')CALL TOURT( XR , YR , XS , YS )
+C***** LINEAR INTERPOLATION FOR THE CONTOUR *****
+      DDX = XR - XS
+      DDY = YR - YS
+      FRAC = ( HR - TOUR ) / ( HR - HS )
+      XPLOT = XR - FRAC*DDX
+      YPLOT = YR - FRAC*DDY
+C Scale from grid to plot coordinates FWJ 03-FEB-95
+      XPLOT=NCBT*XPLOT
+      YPLOT=NCBT*YPLOT
+C***** PATCH TO PLOT NUMBERS ON THE CONTOURS - WJC *****
+      IF( .NOT. PLACE  ) GO TO 1000
+C**** START OF A NEW CONTOUR ... *****
+      IF( IPEN .EQ. 3 ) GO TO 900
+      DISTX = XPLOT - XST
+      ADISTX = ABS( DISTX )
+      DISTY = YPLOT - YST
+      ADISTY = ABS( DISTY )
+C***** ARE WE ALREADY SPACING FOR A NUMBER ... *****
+      IF( NUMIN ) GO TO 950
+C***** SHOULD WE START A NEW NUMBER ... *****
+C****** ARE WE 'SEP' CELLS FROM THE LAST NUMBER PLOTTED *****
+      IF( ADISTX .LT. SEP .AND . ADISTY .LT. SEP ) GO TO 1000
+C***** OR 'SEP' CELLS FROM THE FIRST NUMBER PLOTTED FOR THIS CONTOUR **
+      IF( ABS( XPLOT - XFST ) .LT. SEP .AND. ABS( YPLOT - YFST )
+     1  .LT. SEP ) GO TO 1000
+      GO TO 940
+C***** THE FIRST NUMBER ON EACH CONTOUR IS SAVED FOR CHECKING *****
+900   CONTINUE
+      XFST = XPLOT
+      YFST = YPLOT
+C****** START A NEW NUMBER *****
+940   CONTINUE
+      NUMIN = .TRUE.
+      XST = XPLOT
+      YST = YPLOT
+      GO TO 1000
+C***** IS THE SPACE BIG ENOUGH ****
+950   CONTINUE
+      IF( ADISTY .GE. YSEP ) GO TO 970
+      IF( ADISTX .LT. XSEP ) RETURN
+C***** NOW PLOT THE NUMBER ***
+      TEMP = SIGN(XSEP , DISTX )
+      XPLT = XST + TEMP
+      YPLT = YST + XSEP * DISTY / ADISTX
+      GO TO 975
+970   TEMP = SIGN(YSEP , DISTY )
+      YPLT = YST + TEMP
+      XPLT = XST + YSEP * DISTX / ADISTY
+975   CONTINUE
+D     WRITE(6,*)'PLOTTING NUMBER AT',
+D    #  (XST+XPLT)*0.5 - XSEP2,(YST+YPLT )*0.5 - 3.5
+      XLAB=(XST+XPLT)*0.5-XSEP2
+      YLAB=(YST+YPLT)*0.5-3.5
+      CALL RNUM(AX0+XLAB,AY0+YLAB,SYMS,XVAL,0.0,-1)
+D     WRITE(6,*)'PEN UP TO',XPLT,YPLT
+      CALL PLOT_R(AX0+XPLT,AY0+YPLT,3)
+      IPEN = +2
+995   NUMIN = .FALSE.
+1000  CONTINUE
+D     WRITE(6,*)XPLOT,YPLOT,IPEN
+      CALL PLOT_R(AX0+XPLOT,AY0+YPLOT,IPEN)
+      IPEN = +2
+
+      RETURN
+      END

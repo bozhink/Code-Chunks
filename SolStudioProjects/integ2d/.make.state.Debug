@@ -1,0 +1,53 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Debug.mk dist/Debug/OracleSolarisStudio-Linux-x86/libinteg2d.so
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/libinteg2d.so
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/src/integ2d.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/integ2d.o src/integ2d.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/setriang.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/setriang.o src/setriang.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/triangulation/triangulation.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/triangulation
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/triangulation/triangulation.o src/triangulation/triangulation.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/basout.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/basout.o src/twodq/basout.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/greatr.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/greatr.o src/twodq/greatr.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/hpdel.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/hpdel.o src/twodq/hpdel.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/hpins.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/hpins.o src/twodq/hpins.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/twodq.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/twodq.o src/twodq/twodq.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/twodqtst.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/twodqtst.o src/twodq/twodqtst.f
+build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/xerrwv.o:	/home/bozhin/Projects/SolStudioProjects/integ2d/src/twodq/stack.h 
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/src/twodq
+	f95   -c -g -w1 -KPIC  -o build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/xerrwv.o src/twodq/xerrwv.f
+dist/Debug/OracleSolarisStudio-Linux-x86/libinteg2d.so:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95   -G -o dist/Debug/OracleSolarisStudio-Linux-x86/libinteg2d.so -KPIC -norunpath -h libinteg2d.so build/Debug/OracleSolarisStudio-Linux-x86/src/integ2d.o  build/Debug/OracleSolarisStudio-Linux-x86/src/setriang.o  build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/greatr.o  build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/xerrwv.o  build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/hpins.o  build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/basout.o  build/Debug/OracleSolarisStudio-Linux-x86/src/triangulation/triangulation.o  build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/twodq.o  build/Debug/OracleSolarisStudio-Linux-x86/src/twodq/hpdel.o  

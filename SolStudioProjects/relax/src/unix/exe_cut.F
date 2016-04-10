@@ -1,0 +1,4 @@
+      SUBROUTINE EXE_CUT(I,J,K,V,F,LL,IDUM)
+      CALL BND(I,J,K,V,F,LL)
+      RETURN
+      END

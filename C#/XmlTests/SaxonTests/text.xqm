@@ -1,1 +1,0 @@
-﻿for $x in //product return data($x)

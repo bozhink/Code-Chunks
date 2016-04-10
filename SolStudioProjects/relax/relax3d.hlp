@@ -1,0 +1,927 @@
+1 News
+
+  The RELAX3D User's Guide is at Version 3.0.
+  Changes since then are:
+
+  v3.1
+  ----
+
+  A new command CROSS can be used, when a contour plot is on the screen,
+  to get readouts of the array values.  On X Window displays, it also
+  allows the use of a zoom window.  See topic CROSS for details.
+
+1 Version_3.0
+
+  Changes and new features for Version 3.0 are:
+
+  --Now available for UNIX systems as well as VMS.
+  --New problem types 7 and 8: Laplace and Poisson equations in polar and 
+    cylindrical  coordinates.
+  --Enhanced graphics device support, including X Window displays and
+    PostScript printers.
+  --New command DWG for making EDGR drawing files.
+  --New command HARD for making hardcopies.
+  --New command ALTERNATE for controlling sweep direction.
+  --New command STATUS shows current state of program.
+  --New command TERM allows set-up from file followed by subsequent
+    commands from terminal.
+
+1 Command_summary
+                       Command Summary
+
+      ACLEAR  -- clear the alpha screen
+      ALTERNATE- enable/disable alternating sweep
+      BND     -- special processing of main array by BND subroutine
+      CLEAR   -- clear the screen
+      COMPARE -- compare relaxation results to exact solution
+      CROSS   -- enter crosshair mode for readouts from plot
+      DCL     -- put user in DCL mode (subprocess) [VMS only]
+      DWG     -- make EDGR drawing file
+      EXPAND  -- expand to fine grid
+      HARD    -- make hardcopy
+      HELP    -- enter the RELAX3D help facility
+      INIT    -- initialize the main array
+      ITERATE -- iterate using specified relaxation factor
+      LIMIT   -- set iteration volume to a sub-volume
+      LOAD    -- load BND routine for subsequent initialization [VMS only]
+      OPTION  -- select problem type and grid size
+      OUTPUT  -- save main array in restorable file
+      PLOT    -- produce contour plots
+      PRINT   -- printer plot potential contours
+      REDUCE  -- reduce to coarse grid
+      RETURN  -- start a new problem
+      SOLU    -- fill main array with exact solution
+      STATUS  -- show problem set-up and parameters
+      STOP    -- exit RELAX3D
+      TERM    -- connect terminal to input
+      TIME    -- set cpu time limit
+      TOLER   -- set tolerance for convergence
+      TYPE    -- output selected array elements to screen
+      WRITE   -- output selected array elements to a file
+
+1 ACLEAR
+  This command clears the terminal's alphanumeric (VT100)screen or window.
+  After the screen is cleared, a new command prompt is not given until the 
+  RETURN key is pressed.
+
+1 ALTERNATE
+  Normally each relaxation sweep through the array is performed in the
+  following order: k=1 to k_max, j=1 to j_max, i=1 to i_max}, with the i index
+  changing most rapidly.  Typing the ALTERNATE command enables an alternating
+  sweep direction for each index.  Whenever j changes, the direction of the i
+  sweep is reversed, and whenever k changes, the direction of the j sweep is
+  reversed.  The direction of the k sweep reverses every time a new iteration
+  is begun. The alternating sweep can be disabled again by typing ALTERNATE a
+  second time.
+
+  For some problems the alternating sweep can speed up convergence.  This
+  depends on the boundary conditions and starting values of the array.  This
+  option should be used with care since in other cases it can slow down
+  convergence.
+
+1 BND
+  Usage:     BND  flag
+
+  This command calls the BND subroutine
+                  CALL BND(I,J,K,V,F,LL)
+  for each grid point, with the parameter LL set to the value of flag.  The
+  array values V and F are passed to BND and the returned values are
+  replaced in the array.  This allows the BND subroutine to perform any
+  desired type of processing on the array values at any time.
+
+  The BND routine should be coded to recognize the specified value of flag
+  and perform the desired operations on the array values.  The flag
+  parameter should not be set to 0 or 1, since these are used by the INIT
+  and COMPARE commands, respectively.
+
+  NOTE: For Dirichlet boundary points, the negative sign of the V array
+  values is retained when passing them to BND. For Poisson problems, any
+  array offset is removed from the V array values before passing them to
+  BND.
+
+1 CLEAR
+  This command clears the terminal's graphics screen or window.  On some
+  terminals, e.g. VT640, this also causes the alphanumeric screen to be
+  cleared.
+
+1 COMPARE
+  This command can be used to compare the present array values to an exact
+  solution provided by the BND subroutine. Of course this feature is useful
+  only when an analytic or other accurate solution is known and one wishes
+  to verify the accuracy and correctness of the code. In the COMPARE
+  procedure, the flag LL is set to 1 and BND is called to get the solution
+  value at each grid point. The exact solution does not overwrite the
+  current V array. Rather, the results of the relaxation are compared with
+  the exact solution.  The location and size of the largest error is
+  indicated as well as the RMS error. BND must have been written to test the
+  value of LL and arrange to supply the exact solution when LL = 1.  (See
+  also the SOLU command.) 
+
+1 Control-C
+  Some program functions can be interrupted during their execution by
+  pressing Control-C:
+
+  ITERATE: pressing Control-C will stop the iteration at the end of
+      the next sweep.
+
+  TYPE or WRITE: pressing Control-C will stop the output immediately.
+
+  PLOT: pressing Control-C will stop the plotting when the current
+      contour is completed.
+
+1 CROSS
+  This command puts the terminal or workstation into "crosshair mode".
+  It can be used only if a contour plot has been displayed using the PLOT
+  command.  When the CROSS command is given, the terminal's graphics
+  crosshairs will appear, or on workstations the mouse pointer will change
+  into a small cross when it is moved into the graphics window where the
+  current plot is displayed.  When the crosshairs are moved into the
+  plot area and the space bar or left mouse button is pressed, the (I,J,K)
+  address on the plot and the corresponding array values for V and F
+  will be displayed.  This feature is useful for checking array values after
+  initialization or after iteration.  As in the BND routine, negative values 
+  of V indicate Dirichlet boundary points.
+
+  Some other functions are available via mouse buttons or keyboard keys:
+
+  Press and drag MB1: ZOOM feature on X Window displays only.  This defines
+    a rectangular area.  When the button is released, the region bounded
+    by this rectangle will be blown up and displayed in a separate zoom
+    window.
+
+  Click MB2: Odometer on/off.  This enables and disables a readout of the
+    I-J, J-K or I-K address on the plot.  It is updated as the crosshairs
+    are moved.
+
+  Click MB3: Long crosshairs on/off.  This enables and disables long 
+    crosshairs which span the entire graphics window and zoom window if
+    present.
+
+  Press "/" key: Clears the alphanumeric display.
+
+  Press "M" key: Displays a menu of the mouse button and key actions.
+
+  Press "Q" key: Quits from crosshair mode and returns to the RELAX3D
+    command prompt.
+
+1 DCL
+  [VMS only]
+
+  This command places the user in DCL mode (as a subprocess) allowing him to
+  execute any DCL command. This is particularly useful to edit some changes
+  into the BND routine, compile it etc. The user must type the DCL command
+  RETURN to return to RELAX3D program. Note that some systems have
+  restrictions on how long a process may be dormant so don't spend too much
+  time in DCL before returning to the main process (RELAX3D program). The
+  first time DCL is used there may be a noticeable delay in spawning the
+  subprocess, but subsequent transfers to DCL will be immediate.
+
+1 DWG
+  This command causes the next contour plot to be output as an EDGR drawing
+  file, as it is being displayed on the screen.  EDGR is a TRIUMF-developed
+  graphics editor.  The user will be prompted to enter a name for the
+  drawing file.  Do not include an extension on the file name as a pair of
+  files will be generated, with file types \verb+.dwg+ and \verb+.dwt+.
+
+  The resulting drawing file can be edited with EDGR and output produced in
+  many different formats on a variety of devices.  For RELAX3D, it is useful
+  for annotating contour plots, scaling them or including them in other
+  drawings, and producing TeX-includable output for HP Laserjet or
+  PostScript printers. For further information on EDGR, and its companion
+  program PLOTDATA, a powerful plotting and data analysis program, contact
+  the Computing Services  Group at TRIUMF.
+
+1 EXPAND
+  This command reverses the effect of the REDUCE command by halving the grid
+  spacing and restoring the previous grid.  The number of grid steps will
+  double in each dimension, and the number of active grid points will go up
+  by a factor 4 or 8, for 2-d and 3-d problems, respectively.
+
+  If several REDUCE commands have been given, the reductions can be undone
+  one-by-one using the same number of EXPAND commands, until the original
+  finest grid is restored.
+       
+  The EXPAND procedure first undoes the boundary changes made by REDUCE.
+  That is, any boundary points that were relocated to the coarser grid will
+  be restored to their original positions. Then, one-dimensional linear
+  interpolation (average of two neighbours) is done in each dimension to
+  fill in the intermediate grid points that are restored to the active grid
+  when its spacing is refined.
+
+1 HARD
+  This command makes a hardcopy of the current contour plot.  A plot file is
+  produced for the device indicated by the TRIUMF_HARDCOPY_TYPE logical name
+  or environment variable. The destination and disposition of this plot file
+  is determined by typing a  "hardcopy command".  For the selected hardcopy
+  device, a menu of possible commands is displayed.  Example:
+
+       Device: HP Laserjet    
+       Default queue: HP$LASER            
+       HARDCOPY COMMANDS
+        P  [que-name]     Print
+        PC [que-name]     Print compressed
+        S  [file-name]    Save
+        SC [file-name]    Save compressed
+        T  [file-name]    TeX output
+        TJ [file-name]    TeX justified output
+        TC  [file-name]   TeX output compressed
+        TJC [file-name]   TeX justified output compressed
+        Q                 Quit
+      
+       Enter hardcopy command > 
+
+
+  The Print commands produce a plot file and queue it for printing on the
+  specified queue.  For the above device the default queue is HP$LASER. The
+  plot file will be deleted after printing.
+
+  The Save commands write out the plot file to disk, under the specified
+  file name.  If the file name is omitted, the file will be named according
+  to the device type, e.g. HPLASER.PLT. For the HP Laserjet models IIP and
+  later, the compressed mode of output can be used to reduce plot file size
+  and printing time.
+
+  The TeX output commands perform the same function as Save but the plot
+  file is produced in a suitable format for inclusion as a figure in a TeX
+  document, rather than for direct printing. The justified option for TeX
+  output removes all white space above and to the left of the image, so that
+  the significant part of the image will  start at the current writing
+  location on the document page.  This makes it easier to set figure
+  positioning parameters.
+
+  The Quit command exits from the hardcopy procedure without producing any
+  plot file, and returns to EDGR command level.
+
+  The list of available commands varies from device to device, but all
+  devices have basic Print and Save functions.
+
+1 INIT
+  Usage:  INIT logical_unit
+
+  This command initializes the main array by assigning a value to each grid
+  point.
+
+  Case 1.  logical_unit = 0
+
+  The program calls the user coded subroutine BND for all i,j,k (1 to IMAX,
+  JMAX, KMAX respectively).  If the point V(i,j,k) is returned as negative
+  it will be treated as a fixed (DIRICHLET) boundary point.  If V(i,j,k) is
+  zero or positive it will be treated as a point whose value can change on
+  each iteration.  Non-negative points on the edges WILL BE TREATED AS
+  SYMMETRY POINTS.  Use of the LIMIT command limits the volume initialized
+  to some rectangular subvolume.
+
+  Case 2.  logical_unit > 0
+
+  The program reads results of a previous run from the specified logical
+  unit number.  NOTE: Subroutine BND  will still be called on any subsequent 
+  REDUCE or EXPAND commands!  If the dimensions IMAX, JMAX and KMAX do  not 
+  agree with the dimensions of IMAX, JMAX and KMAX on the first record of 
+  the file attached to the specified logical unit the command is  rejected.
+  DO NOT USE LOGICAL UNITS 5, 6, or 7.
+
+1 Introduction
+ 
+                               RELAX3D
+
+             An Interactive Program for Solving 2 and 3-dimensional
+                    Poisson and Laplace equations.
+
+
+          This program was originally written in 1973 by H. Houtman
+      in collaboration with C.J. Kost and was implemented on the VAX
+      by C.J. Kost.  Since 1983 the program has been maintained and
+      developed by C.J. Kost and F.W. Jones.
+
+2 Batch_mode
+  The program has been designed to run interactively, that is, it is
+  normally run from a terminal keyboard (preferably with
+  Tektronix-compatible graphics capability).  Although RELAX3D can in
+  principle be run in batch mode this is not recommended since this would
+  undermine the high degree of data input checking and reprompting for
+  correction of input commands. There are, however, cases dealing with very
+  large problems in which that are best run in batch with a series of
+  ITERATE commands.  OUTPUT should be used to dump results to a file to be
+  used in a subsequent interactive session to display the results. In batch
+  mode the rate of convergence (as controlled by the over-relaxation factor
+  specified in the ITERATE commands) would not be optimal since the user
+  must more or less set them blindly and cannot rely on the usual feedback
+  during interactive sessions.
+
+2 BND_Subroutine
+ BND is a user-supplied subroutine that is called to initialize the
+ main array at each grid point. The BND parameter list is: 
+
+                 SUBROUTINE BND(I,J,K,V,F,LL)
+      
+ RELAX3D calls BND repetitively for I,J,K ranging between the limits
+ given by the problem size. BND returns the REAL*4 values V and F.
+ The value of F is used in the POISSON option as the density function,
+ and in the DIELECTRIC option as a code for dielectric boundary
+ conditions.  It is ignored for other options. If V is returned as
+ negative it will be treated as a fixed (DIRICHLET) boundary point. If
+ V is zero or positive it will be treated as a point whose value can
+ change on each iteration.  Non-negative points on the edges WILL BE
+ TREATED AS SYMMETRY POINTS. In the POISSON option the program allows
+ negative values of V in the solution,since a positive offset is added
+ to the entire array before and during iteration, if necessary. 
+ However, all initial non-boundary values for V that are supplied by
+ BND must be positive or zero, since a negative sign for V indicates a
+ boundary point. If the user is intending to use either the COMPARE or
+ SOLU commands, BND must test the parameter LL and arrange to supply the
+ exact solution when LL = 1. 
+
+3 Hints
+  Curved boundaries must be approximated by a rectangular box mesh,
+  resulting in inaccuracies close to this approximated boundary.  In
+  practice the difference in the resulting potential is negligible at 2 or
+  more grid cells from the approximated surface.  For our application
+  (tracing particle trajectories thru this field) this is usually not a
+  problem since we are not interested in knowing the potential close to
+  these surfaces. 
+
+  There are some cases, however, where ion trajectories lie close to or even
+  on the boundaries in which case the mesh must be as closely aligned to the
+  surface as possible.  Recall that the discretization error of the RELAX3D
+  relaxation method depends on the 4th power of the mesh spacing. 
+
+  For complex 3 dimensional problems the main task of the user will be to
+  write the BND subroutine describing the potentials on the various
+  boundaries.  This can be a difficult task requiring many re-compilations
+  and re-linking of BND with the main program.
+
+2 Boundaries
+  RELAX3D handles three types of boundaries.  The first type is a DIRICHLET
+  boundary, that is, a boundary (usually metal) on which the potential is
+  known (and hence fixed).  These are always specified as negative in
+  subroutine BND and consequently will not be allowed to change during the
+  relaxation procedure. 
+
+  The second type is a NEUMANN boundary.  All or some of the faces of the 3
+  dimensional box can be of this type (all faces default to NEUMANN). 
+  Equipotential lines always cross perpendicular to NEUMANN boundaries (i.e.
+  they constitute symmetry boundaries). 
+
+  The third type is a DIELECTRIC boundary between two media of different
+  permittivity, used in the DIELECTRIC option only.
+
+  ALL BOUNDARIES MUST LIE ON THE GRID (MESH) POINTS!  This limits the
+  "resolution" with which one can describe a particular geometry (given the
+  maximum number of allowed grid points). However this greatly simplifies
+  the structure of the program and improves its execution speed since the
+  "weights" for each grid point are the same and need never be stored or
+  referenced as in some other (mostly 2 dimensional) relaxation codes.
+
+2 Cpu_time
+  The CPU time needed to solve a particular problem depends to a great
+  extent on the details of a problem.  A problem having mostly NEUMANN
+  boundaries (symmetry for the box surface) will be the most difficult, i.e.
+  will be slow to converge.  On the other hand, problems dealing with
+  boundaries of "known" potential (DIRICHLET (metal) boundaries) will
+  converge rapidly.  For a 20,000 point grid a single "sweep" over all
+  points will take about 1.0 sec on the VAX/780.  The CPU time for other
+  size problems will be in direct proportion.  The number of sweeps for a
+  "typical" problem will be about 100.
+
+2 Error
+  The intrinsic error involved in RELAX3D's approximation of the
+  Poisson/Laplace equations is proportional to the second power of the grid
+  spacing.  Hence when the grid spacing is halved (resulting in 8 times as
+  many grid points and a corresponding increase in CPU time) the error is
+  reduced by a factor of 4.
+
+2 Input
+  Every run (problem) begins with the specification of the size of the 3
+  dimensional grid by the free format input of IMAX, JMAX, and KMAX.  The
+  remaining input records consist of command lines and, for some commands,
+  responses to prompts for additional parameters.
+
+3 IMAX_JMAX_KMAX
+    The first data record in a run specifies the size of the 3
+ dimensional grid.  The record contains IMAX, JMAX and KMAX entered in
+ free format.  IMAX, JMAX and KMAX jointly define the storage in the
+ REAL*4 array V.  If the problem requires N reductions (see REDUCE
+ command) EACH dimension must be of the form M * (2**N) + 1 where M is
+ an integer.  For example: 
+
+               Reductions     Allowable Dimensions
+                   0          3,4,5,6, ...     801
+                   1          5,7,9,11, ...    801
+                   2          9,13,17,21, ...  801
+
+ The program will warn the user when a REDUCE cannot be made and allow the
+ user to continue. The limits on IMAX, JMAX and KMAX are as follows:
+ all three must lie inclusively between 3 and 801, except when solving
+ TWO-DIMENSIONAL problems, when KMAX may be specified as 1. Also the
+ product IMAX*JMAX*KMAX must be less than 500,000 (the dimension of the
+ array V). 
+
+3 Commands
+
+ RELAX3D functions are invoked by typing commands followed by required
+ or optional numerical parameters.  Only the first four characters of
+ each command are significant.  For example, to do to 100 relaxation
+ iterations with relaxation factor 1.25, one would type the following:
+
+            ITER  1.25  100
+
+ Parameters can be entered in "free" format and can be separated by
+ blanks or commas.  If there is an error in reading or recognizing the
+ command or parameters, an error message will be given indicating where
+ the error occurred and the command line can be recalled, using the
+ up arrow key, and corrected.
+
+2 Logical_units
+ The following logical units are used by RELAX3D:
+
+          FORTRAN unit       Use
+
+               5             used for inputting commands
+               6             used for outputting of warning messages,
+                               results of iterations, printer plots
+               7             used for plot files
+
+ Other units are free for use by the INIT and OUTPUT commands.
+
+2 Mesh
+  The mesh spacing can be different for the three dimensions, resulting in a
+  BOX MESH (CUBE mesh when they are identical). Mesh spacing is set by the
+  user after selecting the problem type (OPTION command).
+
+2 Method
+  RELAX3D uses a point successive over-relaxation procedure and prompts the
+  user to supply the commands to control this procedure.  The procedure is
+  not automatic and requires a reasonable degree of interaction with the
+  user (hence it is almost always run "interactively").  Various commands
+  control the initialization, iteration, and plotting procedures.  The basis
+  of the iteration procedure is that the potential V at each grid point on
+  each iteration is replaced using the six point formula:
+
+           V(i,j,k)  <==  V(i,j,k) + R * {V(i,j,k)' - V(i,j,k)}
+               new            old                         old
+
+ where V(i,j,k)' is related to (average for LAPLACE) the six nearest
+ neighbours and R is the "RELAXATION FACTOR" (described in detail in the
+ ITERATE command). 
+
+2 Purpose
+
+ The program, most generally, solves the three-dimensional Poisson
+ equation 
+
+                     grad**2 (V)  =  F(x,y,z)
+
+ in a 3 dimensional rectangular coordinate system subject to boundary
+ conditions supplied by the user via a user coded FORTRAN subroutine
+ BND. 
+
+        Other options are:
+
+      --Laplace equation:
+                   grad**2 (V) = 0
+      --2-d Poisson or Laplace equation optimized in the 3-d
+        context.
+      --Laplace or Poisson equation with cylindrical symmetry (reduces to
+        a 2-dimensional problem).
+      --Laplace equation in dielectric media (2-d only).
+      --Laplace or Poisson equation in 2-d polar or 3-d cylindrical 
+        coordinates
+
+2 Storage
+
+ The main array is one dimensional REAL*4; grid points are mapped into
+ the main array using 
+
+           (i,j,k)  ==>  i + (j-1)*IMAX + (k-1)*(IMAX*JMAX)
+
+ In the case of the POISSON equation, an interleaved storage method is
+ used for the V and F values: a single array is used, where V is
+ stored at even locations and F is stored at odd location.  This
+ eliminates the problem of "paging" one array out of memory and bringing
+ in another when the problem size is large. 
+
+ This interleaving is also used in the DIELECTRIC option, where
+ dielectric boundary conditions are coded by values of F. For the
+ VAX/780 the problem size is in practice limited by the CPU time.  The
+ program by default is dimensioned for a MAXIMUM of 500,000 grid points.
+ The plotting array provides for its own storage up to a maximum of
+ 500,000 grid points for potential contour plots and 250,000 grid points
+ for flux or field plots. The number of grid points in any plotted
+ "slice" should not exceed these limits. 
+
+1 ITERATE
+
+ Usage:   ITERATE rf ncyc      Abbreviation: ITER
+
+ Iterates ncyc times using the relaxation factor rf.  If rf < 0 then for
+ each iteration the program will use relaxation factors from -rf to 1.0
+ in increments of -0.1.  rf must not have a magnitude > 2.0.  (For the
+ Laplace equation, rf must have a magni- tude from 1.0 to 2.0
+ inclusive.)  If ncyc > 100 it is set to 100. 
+
+  The program prints out the maximum absolute and normalized "residual" for
+  the array after each iteration, indicating how well the array values are
+  converging to a solution. The iteration subroutine considers all six end
+  plane points which are positive in value to be symmetry plane points.
+
+2 Relaxation_factor
+
+ The relaxation factor rf should start at about 1.9 and decrease to
+ about 1.0.  For many problems optimal convergence takes place if the
+ user enters a series of ITERATE commands with successively lower rf
+ values.  To reduce the number of input commands we allow rf to be
+ negative (say, -1.7).  The program will then perform "sweeps" starting
+ with ABS(rf) and decreasing by 0.1 until we get to 1.0.  E.g.
+
+                 ITER -1.9 3
+
+ will result in successive sweeps with the following relaxation factors:
+
+                 1.9 1.8 1.7 1.6 1.5 1.4 1.3 1.2 1.1 1.0
+                 1.9 1.8 1.7 1.6 1.5 1.4 1.3 1.2 1.1 1.0
+                 1.9 1.8 1.7 1.6 1.5 1.4 1.3 1.2 1.1 1.0
+                     ...
+                 (a total of 30 sweeps).
+
+1 LIMIT
+
+ Usage:   LIMIT i1 i2 j1 j2 k1 k2
+
+ This command sets the iteration volume to be the subvolume defined by
+ the array index limits i1 - i2 (inclusive for i), j1 - j2 (inclusive
+ for j), and k1 - k2 (inclusive for k). 
+
+ Normally this command is not required since these limits default to the
+ entire volume of the problem (1 - IMAX, 1 - JMAX, 1 - KMAX).
+
+ The purpose of this command is simply to make localized iterations
+ (after making very minor changes to BND) using the results of a
+ previous run.  If this previous run was very large, this command gives
+ an inexpensive alternative to re-doing the calculations over the entire
+ array. 
+
+1 LOAD
+  [VMS only]
+
+ This command dynamically links a compiled BND subroutine and loads it
+ for execution.  This must be done before the INIT command is given to
+ initialize the array, since INIT will call the BND subroutine to get
+ values at the grid points.  When the LOAD command is given, the user is
+ prompted for the name of the object file to be linked and loaded.  The
+ file type .OBJ will be supplied automatically if it is omitted.  The
+ object file must contain the compiled code for the BND subroutine and
+ any other modules it requires. 
+
+ LOAD need be issued only once in an interactive session unless the user
+ wishes to replace the current BND module with a new one. 
+ 
+1 OPTION
+ Usage:   OPTION n [nsymm]     Abbreviation: OPT
+
+ This command selects the type of problem to be solved, asks the
+ user for the grid spacing, if needed, and sets up the constants
+ for the problem.  The options (selected by parameter n) are:
+
+      1  Laplace equation, 2D and 3D Cartesian 
+      2  Laplace equation, 2D cylindrical* 
+      3  Poisson equation, 2D and 3D Cartesian 
+      4  Laplace equation in dielectric media, 2D Cartesian 
+      5  Poisson equation, 2D cylindrical* 
+      6  Laplace equation in dielectric media, 2D cylindrical* 
+      7  Laplace equation, 2D polar and 3D cylindrical 
+      8  Poisson equation, 2D polar and 3D cylindrical 
+
+            *Assumes cylindrical symmetry
+
+  Omitting the parameter will display the list of valid options and the
+  current setting.  The "nsymm" parameter is used only in problem types 7
+  and 8, to specify nsymm-fold rotational symmetry.
+
+1 OUTPUT
+ Usage:   OUTPUT logical_unit
+
+ This command saves intermediate results of an incomplete relaxation (to
+ be completed by a subsequent run using the INIT command) or saves the
+ results for use by another program on the specified logical unit
+ number.  The output is in the form of two binary records.  The first
+ record indicates the problem size, the array offset, if any, and the
+ options selected, e.g. Laplace equation or rotational symmetry.  These
+ are checked against the user's previous input for consistency.  The
+ second record contains the main array. 
+
+ If not enough filespace is available the user is warned and the program
+ waits for the next command.
+ 
+ Note: logical units 5, 6 and 7 are reserved by RELAX3D and cannot
+ be used with this command.
+
+1 PLOT
+
+     PLOT clabel magn iorg jorg iflux idebug
+
+ This command contour plots a series of 2-dimensional slices taken from
+ the main array, using labels on the contours every clabel screen cells
+ and using magn screen cells per grid point.  To zoom in the plot origin
+ is set to grid point iorg (horizontal) and jorg (vertical).  "Flux"
+ lines are plotted if iflux does not equal 0;  if idebug is non- zero a
+ debug listing is provided for the flux option. 
+
+      Default parameter values are:
+        clabel -- 1000        magn   -- 20
+        iorg   -- 1           jorg   -- 1
+        iflux  -- 0           idebug -- 0
+
+2 Slice_list
+
+   After the PLOT command is issued a list of slices to be plotted is
+ entered by the user, using a selection menu.  The list of
+ slices is determined by specifying a series of constant values for
+ one of the array indices: I, J, or K.  Once a slice list is set up
+ it can be used again for subsequent PLOT commands or a new one can
+ be given by selecting the appropriate menu item.
+
+2 Contour_list
+
+   After the slice list is established a new menu is displayed allowing
+ the user to specify a contour list for the slice plots.  A previously
+ set-up contour list can be used or a new one can be specified.  Contour
+ levels are specified as a percentage of the range of the array data.
+ Thus, the minimum contour level is 0 and the maximum is 100.  The 
+ default contour list is 21 contours at 5% intervals from 0 to 100.
+          Each contour is labelled every clabel screen cell units.
+ If all contour levels have integer percent values, the labels will show
+ the actual percent values.  If not, then the labels will show the first
+ three dignificant digits of each percent value.
+
+2 Magnification
+
+ The plot magnification in the PLOT command is controlled by the magn
+ parameter which is simply the number of "screen units" used per
+ relaxation grid cell.  A screen unit is the closest spacing between two
+ plotted points (adjacent addresses in the terminal frame buffer).  The
+ VT640 and Tektronix 4010 have a displayable range of 1023h * 780v
+ units, although on the VT640 this is mapped into a range of 640h * 480v
+ pixels. 
+
+ If the plot magnification parameter magn is less than zero, a hardcopy
+ plot is printed without displaying it on the screen. 
+
+2 Zoom
+
+ If the user wishes to "zoom in" by increasing the MAGN parameter in the
+ PLOT command, he can specify the bottom left-hand corner of the plot to
+ be set to location (IORG,JORG) in the slice.  Note that IORG and JORG
+ refer to the 2-dimensional coordinate system of the slice, and do not
+ necessarily correspond to I,J in the main array. 
+
+ The shift in plotting origin applies to the whole set of requested
+ slices. 
+
+
+1 PRINT
+
+ This command printer plots various slices as requested on the
+ lines to follow.  For example:
+
+        PRINT
+        7    Y            -- printer plot the 7th X-Z plane (J=Y=7)
+        2  K              -- printer plot the 2nd X-Y plane (K=Z=2)
+        12 I              -- printer plot the 12th Y-Z plane (I=X=12)
+        0                 -- terminate request list with a zero plane
+                             number
+
+ The values of V are plotted as characters: the range
+ V(min) --> V(max) is mapped into the alphabetic range
+ A --> U.  The even-numbered values B, D, F, etc. are plotted
+ as blanks, so that the shape of the contours is clear.
+
+
+1 REDUCE
+
+ This command basically sets  INC <== INC*2  in the program so that in
+ subsequent ITERATE commands only every 2nd point in each dimension (thus
+ every 8th point in total) of the current grid will be "relaxed".  The
+ purpose is to get good initial values for the iterations on the full
+ size problem with the minimum CPU time. 
+
+ More than one REDUCE may be done (two result in use of every 64th point
+ of the full grid) but the user must have appropriately dimensioned the
+ initial full grid (see details of IMAX_JMAX_KMAX). 
+
+  Execution of relaxation sweeps on the reduced grids are in direct
+  proportion to the number of "active" grid points.  Thus a doubly reduced
+  problem executes sweeps about 64 times as rapidly.
+      
+  **NOTE**
+  A difficulty arises when the number of iterated grid points is reduced. 
+  Since every 2nd point in each dimension is skipped while iterating on the
+  reduced problem, it is possible that important boundaries are missed (any
+  on the even numbers of the current grid mesh).  To rectify this, the
+  REDUCE subroutine effectively "swells" the boundaries until they fit the
+  new grid by searching around each point to see if there is a boundary
+  point nearby.  (This is of course done only if the point is not already a
+  boundary point.)  If the point is near a boundary point, the value
+  V(i,j,k) is set equal to the boundary point, provided that a call to BND
+  verifies it is a legitimate boundary point and not a point which has been
+  made negative by a previous call to REDUCE. For the POISSON option, use
+  REDUCE with caution if the  distribution function F is not a smooth
+  function over the  volume of interest.  Individual F values may be missed,
+  or masked by shifted boundary points!
+
+1 RETURN
+
+  This command ends processing of the current problem and starts a new one.
+  The prompt for grid dimensions will be given.  This should be followed by
+  an OPTION command to select a new problem type and specify grid spacings.
+
+
+1 SOLU
+
+ This command sets LL  to 1, then calls BND to fill V with the exact
+ solution to the problem. Of course this feature is useful only when
+ such a solution is known and is principally used to verify the accuracy
+ of the code. BND must have been written to test the value of LL and
+ arrange to supply the exact solution when LL = 1.  (See also the COMPARE
+ command.) 
+
+1 STOP
+
+ This command terminates the RELAX3D run and exits to the operating
+ system.  Make sure valuable solution data is saved before giving this
+ command!
+
+1 TERM
+  TERM      --connect terminal to input
+
+  This command ends the current input stream (whatever is connected to Unit
+  5) and reads further input from the terminal.  This is useful when
+  repeated interactive runs are being done for a particular problem.  Rather
+  than having to type in the set-up commands for the problem over and over
+  again, they can be placed  in a command file, with the TERM command at the
+  end. VMS Example:
+
+            $SET VERIFY=IMAGE      !enable echo of program input
+            $RUN RELAX3D           !start Relax3d
+            11 9 1                 !array dimensions
+            OPT 7 1                !problem type 7, 1-fold symmetry
+            1                      !grid spacing Hr
+            LOAD                   !load object module
+            POLAR1                 !object module name
+            INIT                   !initialize array
+            TOL 1.E-10             !set tolerance
+            TERM                   !wait for commands from terminal
+
+  After executing the above command file, further commands such as  ITER,
+  PLOT, etc., can be typed at the terminal, allowing interactive control
+  over the iteration process and the viewing of the results.
+
+  This type of command file also provides a way of documenting a problem by 
+  keeping on file the correct set-up parameters to be used for the run.
+
+1 TIME
+ Usage:    TIME  limit
+
+ This command sets the maximum cpu time that can be consumed, measured
+ from the start of the RELAX3D run, before iteration and command
+ processing are halted. When the time limit is exceeded the run will be
+ automatically saved on logical unit 1, equivalent to the OUTPUT 1 command.
+ The run can later be restored by INIT 1 and the iteration continued.
+ This feature protects against losing results if the run aborts by
+ exceeding the process's maximum cpu time.  The time limit can be
+ changed using the TIME command followed by the desired value in
+ seconds.  By default, the time limit is set to the maximum permitted by
+ RELAX3D, which is 60 seconds less than the total time available before
+ the process cpu limit is reached.  The TIME command displays the
+ following information: 
+
+            1. Current time limit in effect
+            2. Time used in RELAX3D run
+            3. Time remaining until limit is reached
+            4. Process cpu time limit
+            5. Process elapsed cpu time
+
+ To get this display without changing the time limit, omit the LIMIT
+ parameter from the command.
+
+1 TOLER
+ Usage:     TOLER  tolerance
+
+ This command sets the convergence criterion for the numerical solution.
+ Convergence is assumed to occur when the maximum normalized residual
+ over the array is  less than the specified tolerance. The default
+ tolerance is 0.000001. 
+
+1 TRAP
+  [VMS only]
+ 
+  This command is now obsolete and has been removed from the program.
+  Control-C interrupt handling is now provided at appropriate locations
+  in the program.  See topic Control-C.
+
+1 TYPE
+ Usage:     TYPE i j k
+   
+ A quick way to check on individual array values or slices. I, j and k
+ specify the coordinates of the lattice value V(i,j,k) to be displayed. 
+ However, if any of i,j,k are zero, the display ranges over the limits
+ of iteration in that variable, as determined by LIMIT or the problem
+ size. Thus, TYPE 0 0 0 would display the entire array on the screen. 
+
+ All values have the correct sign -- boundary points are indicated by
+ "BDRY" in the listing. 
+
+1 WRITE
+ Usage:     WRITE i j k
+
+ This command may be used to put elements of the array into a file for
+ plotting or printed output.  The user is first asked for a file name,
+ and a new file will be opened in the default directory under which
+ RELAX3D is running.  I, j and k specify the coordinates of the array
+ value V(i,j,k) to be output to the file. However, if any of i, j or k
+ are zero, the output ranges over the limits of iteration in that
+ variable, as specified previously by the LIMIT command or the problem
+ size.  Thus WRITE 0 0 0 will write the entire area of iteration into
+ the file. 
+
+ The values output may optionally be echoed on the screen, as in the
+ TYPE command. 
+
+ All values have the correct sign -- boundary points are indicated by
+ "BDRY" in the output. 
+
+1 Problem_types
+
+2 Laplace
+ (OPTION 1)
+
+ The Laplace equation ( grad**2 (V) = 0 ) is solved. Any F value
+ supplied by BND will be ignored, and interleaved storage for V and
+ F will be disabled. 
+
+2 Cylindrical_symmetry
+ (OPTIONS 2, 5, and 6)
+
+ This option solves the Laplace or Poisson equation in a cylindrical
+ region with cylindrical symmetry. In this case, the problem reduces to a
+ 2-dimensional one where the cylindrical coordinates (z,r) correspond to
+ the program coordinates (x,y) respectively, where (x,y) are indexed by
+ (I,J).  The X axis (J=0) is assumed to be the axis of rotational
+ symmetry, so that radial distance r is given by (J-1)*HY. Option 6
+ allows for dielectric materials in the volume. 
+
+2 Poisson
+ (OPTION 3)
+
+ The Poisson equation ( grad**2 (V) = F ) is solved. In this case,
+ F values should be supplied by the BND subroutine, and these will be
+ interleaved with the V values in the main array. 
+
+2 Dielectric_media
+ (OPTION 4 and 6)
+
+ Laplace's equation is solved in two dimensions in dielectric media of
+ user-specified permittivities.  The solution requires equal grid
+ spacing (HX=HY). 
+
+ The boundary conditions are indicated by the values of F returned by
+ the BND subroutine.  The conditions are: 
+
+  (1) F=0
+      Indicates a boundary point between two regions of different
+      permittivity.
+
+  (2) F>0
+      Indicates an interior point in a region with permittivity F.
+
+      For further details consult the RELAX3D users quide.
+
+2 Polar_coordinates
+  (OPTIONS 7 and 8)
+
+  This option solves Laplace's equation in polar coordinates (KMAX=1) or
+  cylindrical polar coordinates (KMAX>1).  The solution is obtained on a
+  grid consisting of (r,theta,z) points, allowing the exact specification
+  of circular boundaries, which can only be approximated on a cartesian
+  grid.
+
+  An additional parameter "nsymm" can be given in the OPTION command to
+  specify a geometry with nsymm-fold rotational symmetry, allowing a
+  reduction in the number of grid points for these problems.
+
+
+1 STATUS
+
+ This command gives the user a complete summary of the options in
+ effect for the current problem: 
+
+            - Array size Imax, Jmax, Kmax
+            - Number of array points
+            - Problem type
+            - Grid spacings HX,HY,HZ
+            - Reduction factor if array grid is reduced
+            - BND object file loaded
+            - Array offset and maximum boundary value
+            - Current iteration limits
+            - Number of iterations executed for current problem
+            - Alternating sweep status
+            - Active hardcopy devices

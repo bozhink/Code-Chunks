@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>Fractal_2</name>
+            <make-project-type>0</make-project-type>
+            <c-extensions/>
+            <cpp-extensions>cc</cpp-extensions>
+            <header-extensions/>
+            <make-dep-projects/>
+            <sourceRootList/>
+            <confList>
+                <confElem>FastBuild</confElem>
+                <confElem>Debug</confElem>
+                <confElem>PerformanceDebug</confElem>
+                <confElem>DianogsableRelease</confElem>
+                <confElem>Release</confElem>
+                <confElem>PerformanceRelease</confElem>
+                <confElem>PerformanceRelease64Bits</confElem>
+            </confList>
+            <sourceEncoding>UTF-8</sourceEncoding>
+        </data>
+    </configuration>
+</project>

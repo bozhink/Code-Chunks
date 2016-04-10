@@ -1,0 +1,77 @@
+.MAKE_VERSION:	VERSION-1.0
+.BUILT_LAST_MAKE_RUN:
+.build-conf:
+	"/home/bozhin/bin/solstudio12.2/bin/dmake"  -f nbproject/Makefile-Debug.mk dist/Debug/OracleSolarisStudio-Linux-x86/tabulate-i1
+.clean-conf:
+	rm -f -r build/Debug
+	rm -f dist/Debug/OracleSolarisStudio-Linux-x86/tabulate-i1
+	rm -f *.mod
+.BUILT_LAST_MAKE_RUN:
+.depcheck-impl:
+	echo "# This code depends on make tool being used" >.dep.inc
+	if [ -n "" ]; then \
+	    echo "DEPFILES=\$(wildcard \$(addsuffix .d, \${OBJECTFILES}))" >>.dep.inc; \
+	    echo "ifneq (\${DEPFILES},)" >>.dep.inc; \
+	    echo "include \${DEPFILES}" >>.dep.inc; \
+	    echo "endif" >>.dep.inc; \
+	else \
+	    echo ".KEEP_STATE:" >>.dep.inc; \
+	    echo ".KEEP_STATE_FILE:.make.state.\${CONF}" >>.dep.inc; \
+	fi
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1279186697/triangulation.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1279186697
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1279186697/triangulation.o ../integ2d/src/triangulation/triangulation.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/integ2d.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/integ2d.o ../integ2d/src/integ2d.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/setriang.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/setriang.o ../integ2d/src/setriang.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445267685/linspace.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445267685
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445267685/linspace.o ../../lib/linspace.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/basout.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/basout.o ../integ2d/src/twodq/basout.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/greatr.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/greatr.o ../integ2d/src/twodq/greatr.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpdel.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpdel.o ../integ2d/src/twodq/hpdel.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpins.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpins.o ../integ2d/src/twodq/hpins.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/twodq.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/twodq.o ../integ2d/src/twodq/twodq.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/xerrwv.o:	/home/bozhin/Projects/SolStudioProjects/integ2d/src/twodq/stack.h 
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/xerrwv.o ../integ2d/src/twodq/xerrwv.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o ../Superconductivity/src/blockdat.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/tcritical.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/tcritical.o ../Superconductivity/src/tcritical.f
+build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/th.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/th.o ../Superconductivity/src/th.f
+build/Debug/OracleSolarisStudio-Linux-x86/findtc.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/findtc.o findtc.f
+build/Debug/OracleSolarisStudio-Linux-x86/i1.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/i1.o i1.f
+build/Debug/OracleSolarisStudio-Linux-x86/tabi1.o:
+	mkdir -p build/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -c -g -w1 -o build/Debug/OracleSolarisStudio-Linux-x86/tabi1.o tabi1.f
+dist/Debug/OracleSolarisStudio-Linux-x86/findtc:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -o dist/Debug/OracleSolarisStudio-Linux-x86/findtc build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/xerrwv.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpdel.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpins.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1279186697/triangulation.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/twodq.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/basout.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445267685/linspace.o  build/Debug/OracleSolarisStudio-Linux-x86/findtc.o  build/Debug/OracleSolarisStudio-Linux-x86/i1.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/th.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/setriang.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/integ2d.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/greatr.o  
+dist/Debug/OracleSolarisStudio-Linux-x86/libfindTc.so:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95   -G -o dist/Debug/OracleSolarisStudio-Linux-x86/libfindTc.so -KPIC -norunpath -h libfindTc.so build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpdel.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/xerrwv.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpins.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1279186697/triangulation.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/twodq.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/basout.o  build/Debug/OracleSolarisStudio-Linux-x86/findtc.o  build/Debug/OracleSolarisStudio-Linux-x86/i1.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/setriang.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/integ2d.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/greatr.o  
+dist/Debug/OracleSolarisStudio-Linux-x86/tabulate-i1:
+	mkdir -p dist/Debug/OracleSolarisStudio-Linux-x86
+	f95 -lblas -llapack  -o dist/Debug/OracleSolarisStudio-Linux-x86/tabulate-i1 build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/xerrwv.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpdel.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/hpins.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1279186697/triangulation.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/twodq.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/basout.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1445267685/linspace.o  build/Debug/OracleSolarisStudio-Linux-x86/tabi1.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/setriang.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/blockdat.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/452446398/tcritical.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1295769847/integ2d.o  build/Debug/OracleSolarisStudio-Linux-x86/_ext/1546181293/greatr.o  

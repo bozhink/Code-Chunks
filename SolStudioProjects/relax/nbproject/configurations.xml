@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="unix"
+                       displayName="unix"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>src/unix/bnd_dummy.F</itemPath>
+          <itemPath>src/unix/bnd_generic.F</itemPath>
+          <itemPath>src/unix/exe_cut.F</itemPath>
+        </logicalFolder>
+        <itemPath>src/cflux.F</itemPath>
+        <itemPath>src/cldisp.F</itemPath>
+        <itemPath>src/cntour.F</itemPath>
+        <itemPath>src/cross.F</itemPath>
+        <itemPath>src/cross_menu.F</itemPath>
+        <itemPath>src/dev.F</itemPath>
+        <itemPath>src/exfield.F</itemPath>
+        <itemPath>src/expand.F</itemPath>
+        <itemPath>src/expari.F</itemPath>
+        <itemPath>src/field.F</itemPath>
+        <itemPath>src/field3.F</itemPath>
+        <itemPath>src/getpar.F</itemPath>
+        <itemPath>src/ison.F</itemPath>
+        <itemPath>src/iterat.F</itemPath>
+        <itemPath>src/iterat3.F</itemPath>
+        <itemPath>src/plot1.F</itemPath>
+        <itemPath>src/plot2.F</itemPath>
+        <itemPath>src/prnt.F</itemPath>
+        <itemPath>src/raxis.F</itemPath>
+        <itemPath>src/reduce.F</itemPath>
+        <itemPath>src/relax.F</itemPath>
+        <itemPath>src/relax3d.F</itemPath>
+        <itemPath>src/rnum.F</itemPath>
+        <itemPath>src/rnumr.F</itemPath>
+        <itemPath>src/rplti.F</itemPath>
+        <itemPath>src/toura.F</itemPath>
+        <itemPath>src/tourb1.F</itemPath>
+        <itemPath>src/tourt.F</itemPath>
+        <itemPath>src/view.c</itemPath>
+        <itemPath>src/xxxx.F</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-I/usr/X11R6/include</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>-I/usr/X11R6/include</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <commandlineTool>g77</commandlineTool>
+          <commandLine>-Dunix -Dg77 -fno-second-underscore -fno-automatic -finit-local-zero</commandLine>
+        </fortranCompilerTool>
+        <archiverTool>
+          <commandLine>-s</commandLine>
+        </archiverTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-Dunix -Dg77 -fno-second-underscore -fno-automatic -finit-local-zero</commandLine>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
