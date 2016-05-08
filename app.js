@@ -111,5 +111,7 @@ client.search({
         }
     }
 }, function (error, response) {
-    console.log(response);
+    console.log('\n\n');
+    console.log(JSON.stringify(response));
+    console.log('\n\n');
 });
