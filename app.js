@@ -99,3 +99,17 @@ client.search({
     console.log(JSON.stringify(response));
 });
 
+// Count emails grouped by sender
+client.search({
+    index: 'emails',
+    type: 'email',
+    body: {
+        aggs: {
+            count_by_sender: {
+                terms: { field: 'from' }
+            }
+        }
+    }
+}, function (error, response) {
+    console.log(response);
+});
