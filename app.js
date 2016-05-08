@@ -19,4 +19,13 @@ client.index({
     }
 }, function (error, response) {
     console.log(response);
-})
+});
+
+// Retrieve email
+client.get({
+    index: 'emails',
+    type: 'email',
+    id: 1
+}, function (error, response) {
+    console.log(response);
+});
