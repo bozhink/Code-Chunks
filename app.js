@@ -81,3 +81,21 @@ client.bulk({
     console.log(JSON.stringify(response));
 });
 
+// Search for emails to the Hulk after a certain time
+client.search({
+    index: 'emails',
+    type: 'email',
+    body: {
+        query: {
+            bool: {
+                must: [
+                    { match: { to: 'hulk@avengers.org' } },
+                    { range: { sent: { gte: '2015-06-30T00:00:00Z' } } }
+                ]
+            }
+        }
+    }
+}, function (error, response) {
+    console.log(JSON.stringify(response));
+});
+
