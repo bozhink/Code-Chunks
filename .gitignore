@@ -209,3 +209,7 @@ nbdist/
 nbactions.xml
 .nb-gradle/
 
+# VSCode files
+.browse.VC.db.*
+
+
