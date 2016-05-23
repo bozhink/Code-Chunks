@@ -27,6 +27,7 @@ c 'iflag'  -- output; error flag (see twodq)
      *  nevals,iflag,dat,iwork)
       return
       end
+<<<<<<< HEAD
 
 !
 !
@@ -53,3 +54,5 @@ c 'iflag'  -- output; error flag (see twodq)
 !         return
 !      end
 
+=======
+>>>>>>> master
