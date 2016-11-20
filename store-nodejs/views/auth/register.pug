@@ -1,0 +1,65 @@
+extends ../layout.pug
+
+block title
+    title Sign Up
+
+block header
+    h2 Sign Up
+
+block content
+    form#register-form(action='/auth/register' method='POST')
+        .form-horizontal
+            h4 Fill required fields
+            hr
+            .form-group
+                label.control-label.col-md-2(for='firstname') First name
+                .col-md-10
+                    input.form-control#firstname(name='firstname' type='text' required)
+
+            .form-group
+                label.control-label.col-md-2(for='lastname') Last name
+                .col-md-10
+                    input.form-control#lastname(name='lastname' type='text' required)
+
+            .form-group
+                label.control-label.col-md-2(for='email') e-mail
+                .col-md-10
+                    input.form-control#email(name='email' type='email' required)
+
+            .form-group
+                label.control-label.col-md-2(for='username') User name
+                .col-md-10
+                    input.form-control#username(name='username' type='text' required)
+
+            .form-group
+                label.control-label.col-md-2(for='password') Password
+                .col-md-10
+                    input.form-control#password(name='password' type='password' required)
+
+            .form-group
+                label.control-label.col-md-2(for='confirm-password') Repeat password
+                .col-md-10
+                    input.form-control#confirm-password(name='confirm-password' type='password' required)
+
+            .form-group
+                label.control-label.col-md-2(for='picture') Picture
+                .col-md-10
+                    input.form-control#picture(name='picture' type='text' required)
+
+            .form-group
+                label.control-label.col-md-2(for='agree') Agree with terms
+                .col-md-10
+                    input.form-control#agree(name='agree' type='checkbox' required)
+
+            .form-group
+                .col-md-offset-2.col-md-10
+                    input.btn.btn-primary(type='submit' value='Submit')
+                    input.btn.btn-danger(type='reset' value='Reset')
+
+block stylesheet
+    link(rel='stylesheet' href='/css/validation.css')
+
+
+block scripts
+    script(src='/lib/jquery-validation/dist/jquery.validate.min.js')
+    script(src='/js/validation/registration-validation.js')

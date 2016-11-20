@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="register.js"></script>
+</head>
+
+<body>
+    <div ng-app="register-app" ng-controller="RegisterController as vm">
+        <form id="register-form" ng-submit="vm.register()">
+            <div class="form-horizontal">
+                <h4>Fill required fields {{vm.username}}</h4>
+                <hr>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="firstname">First name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="firstname" name="firstname" required="" aria-required="true" type="text" ng-model="vm.firstname" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="lastname">Last name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="lastname" name="lastname" required="" aria-required="true" type="text" ng-model="vm.lastname" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="email">e-mail</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="email" name="email" required="" aria-required="true" type="email" ng-model="vm.email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="username">User name</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="username" name="username" required="" aria-required="true" type="text" ng-model="vm.username" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="password">Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="password" name="password" required="" aria-required="true" type="password" ng-model="vm.password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="confirm-password">Repeat password</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="confirm-password" name="confirm-password" required="" aria-required="true" type="password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="picture">Picture</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="picture" name="picture" required="" aria-required="true" type="text" ng-model="vm.picture" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="agree">Agree with terms</label>
+                    <div class="col-md-10">
+                        <input class="form-control" id="agree" name="agree" required="" aria-required="true" type="checkbox" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input class="btn btn-primary" value="Submit" type="submit" />
+                        <input class="btn btn-danger" value="Reset" type="reset" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
