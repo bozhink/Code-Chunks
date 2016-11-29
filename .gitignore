@@ -211,5 +211,6 @@ nbactions.xml
 
 # VSCode files
 .browse.VC.db.*
-
+.vscode/
+.vs/
 
