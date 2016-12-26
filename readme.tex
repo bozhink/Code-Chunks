@@ -1,0 +1,444 @@
+\section{JavaScript-Applications}\label{javascript-applications}
+
+JavaScript Applications Course Repository
+
+The \textbf{JavaScript Applications} course introduces first steps for
+build web front-end application, using a back-end server
+(Node.js/Business clouds/etc\ldots{}). The topics covered include HTTP,
+AJAX (both native and with frameworks), asynchronous paradigms using
+callbacks and promises and more\ldots{}
+
+All homeworks for the course are test-driven, i.e.~each task has a
+predefined set of unit tests.
+\href{https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/README.md\#user-content-preparing-the-local-machine-for-unit-testing-with-mocha-and-chai}{Here}
+you can find information how to setup your machine for local testing
+
+\subsection{Course Program}\label{course-program}
+
+\paragraph{\texorpdfstring{1. Course Introduction
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/01.\%20Javascript\%20Applications\%20-\%20Course\%20Introduction/slides/index.html}{(view
+online)}}{1. Course Introduction (view online)}}\label{course-introduction-view-online}
+
+\begin{itemize}
+\tightlist
+\item
+  Examination
+\item
+  Trainers
+\item
+  Course program
+\item
+  Tools needed for the course
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Code Editors: Sublime text/Atom.io/Visual Studio Code/Web Storm
+  \item
+    Platforms: Node.js and JavaScript IO
+  \item
+    Servers: Microsoft IIS, WAMP, MAMP, XAMPP
+  \end{itemize}
+\end{itemize}
+
+\paragraph{\texorpdfstring{2. Best practices for writing JavaScript
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/02.\%20Best\%20practices\%20for\%20writing\%20JavaScript/slides/index.html}{(view
+online)}}{2. Best practices for writing JavaScript (view online)}}\label{best-practices-for-writing-javascript-view-online}
+
+\begin{itemize}
+\tightlist
+\item
+  Naming in JavaScript
+\item
+  Global scope
+\item
+  What is the value of \texttt{this}?
+\item
+  Function and ``block'' scopes
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{var} and \texttt{let}
+  \end{itemize}
+\item
+  \texttt{use\ strict}
+\item
+  JavaScript Execution
+\end{itemize}
+
+\paragraph{\texorpdfstring{3. AMD and SystemJS
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/03.\%20AMD\%20and\%20SystemJS/slides/index.html}{(view
+online)}}{3. AMD and SystemJS (view online)}}\label{amd-and-systemjs-view-online}
+
+\begin{itemize}
+\item
+\begin{verbatim}
+[Asynchronous Module Definition (AMD)](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
+\end{verbatim}
+\item
+  Creating modules with
+  \href{https://github.com/systemjs/systemjs}{SystemJS}
+\item
+  Loading modules
+\item
+  Creating dependencies
+\item
+  Supported types of modules
+\end{itemize}
+
+\paragraph{\texorpdfstring{4. Underscore.js Overview
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/04.\%20Underscore.js\%20overview/slides/index.html}{(view
+online)}}{4. Underscore.js Overview (view online)}}\label{underscore.js-overview-view-online}
+
+\begin{itemize}
+\tightlist
+\item
+  What is \href{http://underscorejs.org}{Underscore.js}?
+\item
+  Collections and Array extensions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\_.map()}, \texttt{\_.each()}, \texttt{\_.pluck()},
+    \texttt{\_.sortBy()}, \texttt{\_.groupBy()}, \texttt{\_.first()},
+    \texttt{\_.last()} etc\ldots{}
+  \end{itemize}
+\item
+  Function extensions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\_.memoize()}, \texttt{\_.compose()}
+  \end{itemize}
+\item
+  Object extensions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\_.keys(obj)}, \texttt{\_.values(obj)},
+    \texttt{\_.extend(obj,\ props)}
+  \end{itemize}
+\item
+  Utility functions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{\_.times(count,\ callback)}, \texttt{\_.mixin(obj)}
+  \end{itemize}
+\item
+  Templates
+\item
+  Chaining
+\end{itemize}
+
+\paragraph{\texorpdfstring{5. Web Storages
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/05.\%20Web\%20Storages/slides/index.html\#/title}{(view
+online)}}{5. Web Storages (view online)}}\label{web-storages-view-online}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{localStorage}
+\item
+  \texttt{sessionStorage}
+\item
+  \texttt{cookies}
+\item
+  Polyfills for \texttt{localStorage} and \texttt{sessionStorage}
+\end{itemize}
+
+\paragraph{\texorpdfstring{6. Promises and asynchronous programming
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/06.\%20Promises\%20and\%20asynchronous\%20programming/slides/index.html}{(view
+online)}}{6. Promises and asynchronous programming (view online)}}\label{promises-and-asynchronous-programming-view-online}
+
+\begin{itemize}
+\tightlist
+\item
+  Async programming
+\item
+  Callbacks
+\item
+  Promises
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Native with polyfill
+  \item
+    Using a library: Bluebird, RSVP, Q
+  \end{itemize}
+\item
+  Async operations with ES 2015 function generators
+\end{itemize}
+
+\paragraph{\texorpdfstring{7. HTTP and AJAX
+\href{https://rawgit.com/TelerikAcademy/JavaScript-Applications/master/07.\%20HTTP\%20and\%20AJAX/slides/index.html\#/title}{(view
+online)}}{7. HTTP and AJAX (view online)}}\label{http-and-ajax-view-online}
+
+\begin{itemize}
+\tightlist
+\item
+  What is HTTP?
+\item
+  Request-response model
+\item
+  HTTP Methods
+\item
+  HTTP request:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Headers
+  \item
+    Body
+  \item
+    Methods
+  \end{itemize}
+\item
+  HTTP response
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Headers
+  \item
+    Body
+  \end{itemize}
+\item
+  AJAX
+
+  \begin{itemize}
+  \tightlist
+  \item
+    AJAX principle
+  \item
+    Performing AJAX
+  \item
+    Types of data
+
+    \begin{itemize}
+    \tightlist
+    \item
+      HTML, XML/RSS, plain text, JSON
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\paragraph{8. Consuming web services and
+AJAX}\label{consuming-web-services-and-ajax}
+
+\begin{itemize}
+\tightlist
+\item
+  Creating HTTP requests using:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Native JavaScript
+  \item
+    jQuery.ajax
+  \end{itemize}
+\item
+  Build UI based on received data from a web service
+\end{itemize}
+
+\paragraph{9. Business clouds for persistent
+data}\label{business-clouds-for-persistent-data}
+
+\begin{itemize}
+\tightlist
+\item
+  Creating an application with a ready-to-use server
+\item
+  Samples:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{http://www.telerik.com/backend-services}{Telerik Backend
+    Services}
+  \item
+    \href{https://www.parse.com/}{Parse}
+  \item
+    \href{http://azure.microsoft.com/en-us/services/app-service/mobile/}{Microsoft
+    Mobile App Services}
+  \end{itemize}
+\end{itemize}
+
+\paragraph{10. Unit testing with Mocha \&
+Chai}\label{unit-testing-with-mocha-chai}
+
+\begin{itemize}
+\tightlist
+\item
+  Setup of Mocha and Chai
+\item
+  \href{https://mochajs.org/\#reporters}{Mocha reporters}
+\item
+  Unit testing DOM
+
+  \begin{itemize}
+  \tightlist
+  \item
+    With \href{https://github.com/tmpvar/jsdom}{jsdom}
+  \item
+    With \href{http://phantomjs.org/}{PhantomJS}
+  \end{itemize}
+\item
+  Setting up Mocha with Karma
+\item
+  Spy objects and mocking
+\item
+  Code coverage with
+  \href{https://github.com/gotwarlost/istanbul}{Istanbul}
+\end{itemize}
+
+\paragraph{11. Creating Simple SPA applications with Sammy.js and
+jQuery}\label{creating-simple-spa-applications-with-sammy.js-and-jquery}
+
+\begin{itemize}
+\tightlist
+\item
+  What is a SPA application?
+\item
+  \href{http://sammyjs.org/}{Sammy.js} overview
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Creating routes
+
+    \begin{itemize}
+    \tightlist
+    \item
+      i.e. `pages'
+    \end{itemize}
+  \item
+    Using Templates
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Handlebars, Mustache, etc\ldots{}
+    \end{itemize}
+  \end{itemize}
+\item
+  Creating a simple SPA app using Sammy.js
+\end{itemize}
+
+\paragraph{12. App architecture
+workshop}\label{app-architecture-workshop}
+
+\begin{itemize}
+\tightlist
+\item
+  Creating a complete web app with:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Backend data from business cloud
+  \item
+    AJAX
+  \item
+    Handlebars.js, System.js, jQuery
+  \item
+    Using promises
+  \end{itemize}
+\end{itemize}
+
+\paragraph{13. Exam preparation}\label{exam-preparation}
+
+\paragraph{14. Teamwork Defense}\label{teamwork-defense}
+
+\paragraph{15. Exam}\label{exam}
+
+\subsection{Preparing the local machine for Unit testing with Mocha and
+Chai}\label{preparing-the-local-machine-for-unit-testing-with-mocha-and-chai}
+
+\begin{itemize}
+\tightlist
+\item
+  Install \href{https://iojs.org/en/index.html}{JavaScript I/O}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Try if it is working by typing in CMD/Terminal \texttt{\$\ iojs\ -v}
+    (should produce result)
+  \end{itemize}
+\end{itemize}
+
+\subsection{Preparing for the tests for each
+homework}\label{preparing-for-the-tests-for-each-homework}
+
+\begin{itemize}
+\tightlist
+\item
+  Checkout the repository for the particular homework
+\item
+  Open CMD/Terminal and navigate to the checked-out repository with the
+  homework
+\item
+  Run \texttt{npm\ install} in CMD/Terminal
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A folder \texttt{node\_modules} should appear
+  \end{itemize}
+\item
+  You are ready to run the tests
+\end{itemize}
+
+\subsection{Running the tests}\label{running-the-tests}
+
+\begin{itemize}
+\tightlist
+\item
+  Navigate to the folder of the particular homework in CMD/Terminal
+\item
+  Requirements:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    JavaScript files must be called task-1.js, task-2.js etc..
+  \item
+    Each .js file must contain
+    \texttt{module.exports={[}name\ of\ the\ object/function{]}}
+  \end{itemize}
+\item
+  Run \texttt{npm\ test}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Test results should appear on the CMD/Terminal
+  \end{itemize}
+\end{itemize}
+
+\subsection{\texorpdfstring{Upload in
+\href{http://bgcoder.com/}{BGCoder.com}}{Upload in BGCoder.com}}\label{upload-in-bgcoder.com}
+
+\begin{itemize}
+\item
+  Go to the specific homework
+\item
+  Select the task you will be sending
+\item
+  Wrap your result in:
+
+\begin{verbatim}
+function solve() {
+    return [your solution object/function];
+}
+\end{verbatim}
+\end{itemize}
