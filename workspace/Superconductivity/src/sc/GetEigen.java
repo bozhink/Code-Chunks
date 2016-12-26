@@ -82,4 +82,25 @@ public class GetEigen {
 		if (err !=0 ) System.out.println("Error code="+err+" at px="+px+", py="+py);
 		return epchi;	
 	}
+	
+	public double Td(double x)
+	{
+		double td;
+		if (Math.abs(x)<0.01)
+		{
+			td= (0.4*x*x-1.0)*x*x/3.0+1.0;
+		}
+		else
+		{
+			td=Math.tanh(x)/x;
+		}
+		return td;
+	}
+	
+	public double Integrand(double px, double py, double T)
+	{
+		EigenCalc(px, py);
+		double integrand=chip*chip*Td(epsp*0.5/T);
+		return integrand;
+	}
 }
