@@ -1,0 +1,14 @@
+[project]
+executable=calc.exe
+debug=calc.dm
+entry=calc'control'program
+package=calc
+type=0
+warn:unresolved=0
+[files]
+control.l
+parser.l
+[forwards]
+'calc'modules=calc'control'modules
+'console=win32'io'stdconsole
+'calc'parsing=calc'parser'parsing

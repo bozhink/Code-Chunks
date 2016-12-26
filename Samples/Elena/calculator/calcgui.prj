@@ -1,0 +1,16 @@
+[project]
+executable=calcgui.exe
+debug=calcgui.dm
+entry=calc'gui'start
+package=calc
+type=1
+warn:unresolved=0
+[files]
+parser.l
+control.l
+math.l
+gui.l
+[forwards]
+'calc'parsing=calc'parser'parsing
+'calc'parser=calc'parser'parser
+'calc'modules=calc'control'modules

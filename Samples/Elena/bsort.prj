@@ -1,0 +1,8 @@
+[project]
+executable=bsort.exe
+debug=bsort.dm
+entry=bsort'program
+type=0
+warn:unresolved=0
+[files]
+bsort.l

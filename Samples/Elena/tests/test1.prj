@@ -1,0 +1,11 @@
+[project]
+executable=test1.exe
+debug=test1.dm
+entry=tests'test1'start2
+package=tests
+type=0
+warn:unresolved=0
+[files]
+test1.l
+common.l
+test2.l

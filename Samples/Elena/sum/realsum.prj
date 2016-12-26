@@ -1,0 +1,8 @@
+[project]
+executable=realsum.exe
+debug=realsum.dm
+entry=sum'realsample
+type=0
+warn:unresolved=0
+[files]
+sum.l

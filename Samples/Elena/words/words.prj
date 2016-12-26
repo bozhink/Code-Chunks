@@ -1,0 +1,8 @@
+[project]
+executable=words.exe
+debug=words.dm
+entry=words'program
+type=0
+warn:unresolved=0
+[files]
+words.l

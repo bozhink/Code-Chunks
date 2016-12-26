@@ -1,0 +1,8 @@
+[project]
+executable=intsum.exe
+debug=intsum.dm
+entry=sum'intsample
+type=0
+warn:unresolved=0
+[files]
+sum.l

@@ -1,0 +1,14 @@
+[project]
+executable=bin\upndown.exe
+debug=bin\upndown.dm
+output=tmp
+entry=upndown'main'networkgame
+package=upndown
+type=1
+warn:unresolved=0
+[files]
+main.l
+gui\forms.l
+[forwards]
+'win32'appclass=win32'application'sdiapplication
+'application=win32'application'application

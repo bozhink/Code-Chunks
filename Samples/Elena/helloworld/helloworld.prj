@@ -1,0 +1,8 @@
+[project]
+executable=helloworld.exe
+debug=helloworld.dm
+entry=helloworld'program
+type=0
+warn:unresolved=0
+[files]
+helloworld.l
