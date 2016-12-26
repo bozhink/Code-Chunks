@@ -1,0 +1,1164 @@
+%
+% $Id: formal.tex,v 1.3 2003/04/02 21:35:06 e_gourgoulhon Exp $
+%
+\chapter{3+1 formalism with covariant conformal decomposition}
+
+\section{Einstein equation}
+
+We consider a 4-dimensional spacetime $\cal E$ endowed
+with a Lorentzian metric $\w{g}$, which satisfies 
+to the Einstein equation:
+\be \label{e:einstein}
+	{}^4\!R_{\alpha\beta} - {1\over 2} {}^4\!R g_{\alpha\beta} = 
+	8\pi T_{\alpha\beta},
+\ee
+where
+\begin{itemize}
+\item ${}^4\!R_{\alpha\beta}$ is the Ricci tensor associated with $\w{g}$;
+\item ${}^4\!R := {}^4\!R_\mu^{\ \, \mu}$ is the corresponding curvature scalar ;
+\item $T_{\alpha\beta}$ is the matter energy-momentum tensor.
+\end{itemize}
+By convention, all Greek indices run in $\{0,1,2,3\}$.
+In the following we denote by $\wg{\nabla}$ the covariant 
+derivation associated with $\w{g}$. We will use letters from the
+beginning of the alphabet ($\alpha$, $\beta$, ...) for free indices,
+and letters starting from $\mu$ ($\mu$,$\nu$,$\rho$,...) as dumb indices
+for contraction. In this way the tensorial degree (valence) of any 
+equation is immediately apparent. 
+
+\section{3+1 decomposition}
+
+\subsection{Spacetime foliation}
+
+The spacetime (or at least the part of it under study...)
+is supposed to be foliated by a family of spacelike hypersurfaces $\Sigma_t$,
+labeled by the time coordinate $t$.
+We denote by $\w{n}$ the future directed unit normal to $\Sigma_t$.
+By definition
+$\w{n}$, considered as a 1-form, is parallel to the gradient of $t$:
+\be \label{e:def_n}
+	n_\alpha = - N \nabla_\alpha t . 
+\ee
+The proportionality factor $N$ is called the {\em lapse function}.
+It ensures that $\w{n}$ satisfies to the normalization relation
+\be
+	n_\mu n^\mu = - 1  . 
+\ee
+The minus sign in (\ref{e:def_n}) is such that, when $N>0$, the 
+vector $n^\alpha = g^{\alpha\mu} n_\mu$ (dual to the linear form 
+(\ref{e:def_n}) via the metric) is oriented toward
+increasing $t$'s.
+We will call {\em Eulerian observer} the
+observer whose 4-velocity is $\w{n}$.
+
+\subsection{3-metric}
+
+The metric $\wg{\gamma}$ induced by $\w{g}$ onto each hypersurface $\Sigma_t$
+is given by the orthogonal projector onto $\Sigma_t$:
+\be \label{e:def_3-metric}
+	\gamma_{\alpha\beta} := g_{\alpha\beta} + n_\alpha n_\beta  .
+\ee 
+Since $\Sigma_t$ is assumed to be spacelike, $\wg{\gamma}$ is
+a positive definite Riemannian metric. In the following, we
+call it the {\em 3-metric}. 
+Let us denote by $\wg{D}$ the covariant derivative
+associated with $\wg{\gamma}$.
+For any tensor $\w{T}$ lying in $\Sigma_t$ (i.e. such that
+$\w{n}\cdot\w{T}=0$), $\wg{D}\w{T}$ can be expressed by
+the full orthogonal projection of $\wg{\nabla}\w{T}$
+onto $\Sigma_t$:
+\be \label{e:nab_def}
+D_\gamma T^{\alpha_1\ldots\alpha_p}_{\ \qquad\beta_1\ldots\beta_q}
+		= \gamma_{\mu_1}^{\ \,\alpha_1} \, \cdots 
+		 \gamma_{\mu_p}^{\ \,\alpha_p} \,
+		  \gamma_{\beta_1}^{\ \,\nu_1} \, \cdots
+		  \gamma_{\beta_q}^{\ \,\nu_q} \,
+		  \gamma_\gamma^{\ \,\sigma} \, \nabla_\sigma
+		  T^{\mu_1\ldots\mu_p}_{\ \qquad\nu_1\ldots\nu_q}  .		  	
+\ee  
+
+\subsection{Extrinsic curvature of $\Sigma_t$}
+
+$\wg{\gamma}$ is also called the {\em first fundamental form}
+of the hypersurface $\Sigma_t$. The {\em second fundamental form},
+or {\em extrinsic curvature}, is given by the Lie derivative of
+$\wg{\gamma}$ along the normal vector $\w{n}$:
+\be \label{e:def_courb_extrins}
+	K_{\alpha\beta} := - {1\over 2} \left( \pounds_{\wf{n}}\wg{\gamma}
+		\right) _{\alpha\beta}  .
+\ee
+Expressing the Lie derivative in terms of $\wg{\nabla}$ 
+and using (\ref{e:def_n}), we
+get the identity
+\be \label{e:K_grad_n}
+	K_{\alpha\beta} = - \nabla_\alpha n_\beta - n_\alpha a_\beta  ,
+\ee
+where we have introduced the 4-acceleration of the Eulerian observer:
+\be
+	a_\alpha := n^\mu \nabla_\mu n_\alpha .
+\ee 
+Note that $\w{a}$ is orthogonal to $\w{n}$ (hence it lies in $\Sigma_t$),
+and that (\ref{e:def_n}) gives rise to a relation between
+$\w{a}$ and the 3-gradient of the lapse function:
+\be \label{e:a_grad_N}
+	a_\alpha = D_\alpha \ln N  .
+\ee
+\compar{Eq.~(\ref{e:K_grad_n}) agrees with Eq.~(27) of York 1979
+\cite{York79} and Eq.~(\ref{e:a_grad_N}) agrees with Eq.~(28) of the
+same reference.}
+
+Eq.~(\ref{e:K_grad_n}) is very useful and we make a systematic use
+of it to replace $\nabla_\alpha n_\beta$ in term of $K_{\alpha\beta}$.
+
+We denote by $K$ the trace of $\w{K}$:
+\be
+	K := K_\mu^{\ \,\mu} =  - \nabla_\mu n^\mu  ,
+\ee
+where the second equality is a direct consequence of (\ref{e:K_grad_n}).
+
+\subsection{Spatial coordinates and shift vector}
+
+Let us introduce on each hypersurface $\Sigma_t$ a coordinate
+system $x^i = (x^1,x^2,x^3)$ 
+which varies smoothly between neighboring
+hypersurfaces, so that $x^\alpha=(t,x^1,x^2,x^3)$ constitutes a 
+well-behaved coordinate system of the whole spacetime\footnote{later on 
+we will specify the coordinates $(x^i)$ to be of 
+spherical type, with $x^1=r$, $x^2=\theta$ and $x^3=\phi$, but
+at the present stage we keep $(x^i)$ fully general.}.  
+We denote by 
+\be
+    \der{}{x^\alpha} = \left( \der{}{t}, \der{}{x^i} \right) 
+    = \left( \der{}{t}, \der{}{x^1}, \der{}{x^2}, \der{}{x^3} \right)
+\ee
+the natural vector basis associated with this coordinate system. 
+In the following Latin indices run in $\{1,2,3\}$.
+ 
+The 3+1 decomposition of the basis vector $\partial /\partial t$ defines
+the {\em shift vector} $\wg{\beta}$ of the spatial coordinates:
+\be \label{e:dsdt_ortho}
+	\left( \der{}{t} \right) ^\alpha 
+		= N n^\alpha + \beta^\alpha
+			\qquad \mbox{with} \qquad n_\mu \beta^\mu = 0 .
+\ee
+The fact that the part parallel to $n^\alpha$ is $N n^\alpha$
+results from the duality relation 
+$\nabla_\mu t \, \left( \der{}{t} \right) ^\mu = 1$ and
+Eq.~(\ref{e:def_n}). 
+
+As an immediate consequence of Eqs.~(\ref{e:def_n}) and
+(\ref{e:dsdt_ortho}) the components of $\w{n}$ with respect
+to the coordinates $(x^\alpha)$ are
+\be \label{e:n_comp}
+	n_\alpha = (-N,0,0,0) \qquad \mbox{and} \qquad 
+	n^\alpha = \left( {1\over N}, -{\beta^1\over N},
+		-{\beta^2\over N},-{\beta^3\over N} \right) .
+\ee
+Moreover, thanks to Eq.~(\ref{e:def_3-metric}), the 
+components of the metric with respect to the coordinates 
+$(x^\alpha)$ are
+\be \label{e:g_cov}
+	g_{\alpha\beta} = \left( \begin{array}{cc}
+		g_{00} & g_{0j} \\
+		g_{i0} & g_{ij}
+		\end{array} \right) =
+		\left( \begin{array}{cc}
+		-N^2 + \beta_k \beta^k & \beta_j \\
+		\beta_i & \gamma_{ij}
+		\end{array} \right)
+\ee
+and
+\be \label{e:g_con}
+	g^{\alpha\beta} = \left( \begin{array}{cc}
+		g^{00} & g^{0j} \\
+		g^{i0} & g^{ij}
+		\end{array} \right) =
+		\left( \begin{array}{cc}
+		-{1\over N^2} & {\beta^j\over N^2} \\
+		{\beta^i\over N^2} & \gamma^{ij} 
+		- {\beta^i\beta^j\over N^2}
+		\end{array} \right) .
+\ee
+Hence the line element:
+\be \label{e:line_g}
+	g_{\mu\nu} \, dx^\mu\, dx^\nu
+	= - N^2 dt^2 + \gamma_{ij} (dx^i + \beta^i dt)
+		(dx^j + \beta^j dt) . 
+\ee
+
+\compar{Eq.~(\ref{e:n_comp}) agrees with Eqs.~(21.48) 
+and (21.49) of MTW \cite{MisneTW73}, with the slight change
+of notation $N^i_{\rm MTW} = \beta^i$; Eqs.~(\ref{e:g_cov}),
+(\ref{e:g_con}) and (\ref{e:line_g}) agree with respectively
+Eqs.~(21.42), (21.44) and (21.40) of MTW \cite{MisneTW73}.}
+
+The Christoffel symbols of the covariant derivative $\wg{D}$
+with respect to the coordinates $(x^i)$ are
+\be \label{e:christo_gm}
+	\Gamma^k_{\ \, ij} := {1\over 2} \gm^{kl} 
+		\left( \partial_i\gm_{lj} +\partial_j \gm_{il}
+			- \partial_l\gm_{ij} \right) ,
+\ee
+where we have used the abbreviation
+\be
+	\partial_i := \der{}{x^i} .
+\ee
+
+
+
+\subsection{3+1 decomposition of Einstein equation}
+
+Let us first introduce the 3+1 decomposition of the energy-momentum
+tensor:
+\be
+	T_{\alpha\beta} = S_{\alpha\beta} + n_\alpha J_\beta
+		+ n_\beta J_\alpha + E n_\alpha n_\beta ,
+\ee
+with
+\bea
+	E &:=& T_{\mu\nu} n^\mu n^\nu ,\\
+	J_\alpha & := & - \gm_\alpha^{\ \,\mu} T_{\mu\nu} n^\nu ,\\
+	S_{\alpha\beta} & := & \gm_\alpha^{\ \,\mu} \gm_\beta^{\ \,\nu}
+		T_{\mu\nu} .
+\eea
+Then, by contracting the Einstein equation (\ref{e:einstein})
+by respectively $n^\mu n^\nu$, $\gm_\alpha^{\ \,\mu} n^\mu$ and
+$\gm_\alpha^{\ \,\mu} \gm_\beta^{\ \,\nu}$, and making use of
+Gauss and Codazzi relations (cf. e.g. Appendix A.1 of \cite{GourgB93}),
+we obtain the following system of equations:
+\be \label{e:ham_constr0}
+	R + K^2 - K_{ij} K^{ij} = 16\pi E
+\ee
+\be \label{e:mom_constr0}
+	D_j K_i^{\ \, j} - D_i K = 8\pi J_i
+\ee
+\be \label{e:evol_K0}
+	\der{}{t}K_{ij} =  - D_i D_j N 
+		+ N \left[ R_{ij} - 2 K_{ik} K^k_{\ j} + K K_{ij}
+			+ 4\pi \left( (S-E)\gm_{ij} - 2 S_{ij} \right)
+			\right] 
+		+ \pounds_{\wg{\beta}} K_{ij} .
+\ee 
+\compar{Eqs.~(\ref{e:ham_constr0}), (\ref{e:mom_constr0})
+and (\ref{e:evol_K0}) agree with respectively Eqs.~(23), (24) and
+(39) of York 1979 \cite{York79}.}
+
+Eq.~(\ref{e:ham_constr0}) is called
+the {\em Hamiltonian constraint} and Eq.~(\ref{e:mom_constr0})
+is called the {\em momentum constraint}. In the above equations 
+\begin{itemize}
+\item  $R_{ij}$ denotes the Ricci tensor
+associated with the 3-metric $\wg{\gamma}$,
+\item  $R=R_i^{\ \, i}$ the corresponding scalar curvature.
+\end{itemize}
+
+The Einstein equations (\ref{e:ham_constr0})-(\ref{e:evol_K0}) must
+be supplemented by the kinematical relation (\ref{e:def_courb_extrins})
+between $\w{K}$ and $\wg{\gm}$:
+\be \label{e:kin0}
+	\der{}{t}\gm_{ij} = - 2N K_{ij} + \pounds_{\wg{\beta}} \gm_{ij} ,
+\ee
+with
+\be
+	\pounds_{\wg{\beta}} \gm_{ij} = D_i \beta_j
+		+ D_j \beta_i .	
+\ee
+
+
+\section{Conformal decomposition}
+
+\subsection{Conformal 3-geometry}
+
+Our aim is to separate the 3-metric $\wg{\gm}$ into a constrained
+part [i.e. a part fixed by the Hamiltonian constraint (\ref{e:ham_constr0})],
+and a unconstrained part which carries the dynamical degrees of freedom
+of the gravitational field. York \cite{York72} has shown in 1972 
+that this last role is played by the conformal ``metric''
+\be \label{e:def_hatg}
+	\hat \gm_{ij} := \gm^{-1/3} \, \gm_{ij} ,
+\ee 
+where
+\be \label{e:def_detg}
+	\gm := \det\gm_{ij}.
+\ee
+The quantity defined by (\ref{e:def_hatg}) is a tensor density of
+weight $-2/3$, which has unit determinant and which is invariant in
+any conformal transformation of $\gm_{ij}$. It can be seen as
+representing the equivalence class of conformally related metrics
+to which belongs the 3-metric $\wg{\gm}$. 
+The constrained part of $\gm_{ij}$ is then
+the determinant (\ref{e:def_detg}).
+
+\subsection{Introduction of a flat metric}
+
+One would like to introduce a connection $\tna_i$ which is associated
+with the conformal geometry in the sense that 
+\begin{itemize}
+\item[(i)] $\tna_k \hat \gm_{ij} = 0$ ;
+\item[(ii)] $\tna_i$ has a vanishing Riemann curvature if $\gm_{ij}$
+is conformally flat.
+\end{itemize}
+It is easy to realize that property (i) is already 
+satisfied by the connection $D_i$ associated with $\gm_{ij}$. This
+follows from the basic formula for the variation of the determinant:
+\be \label{e:variation_gm}
+	\delta \ln\gm = \gm^{ij} \, \delta \gm_{ij} ,
+\ee
+which holds for any variation $\delta$ which obeys to the Leibnitz rule
+(partial derivative, covariant derivative, Lie derivative, etc...).
+Indeed, once applied to $\delta=D_i$, this formula results in
+\be \label{e:nab_gm_zero}
+	D_i \gm = 0 ,
+\ee
+from which property (i) follows with $\tna_i = D_i$. However $D_i$
+does not satisfy to property (ii). So we seek for another connection,
+which satisfy both (i) and (ii). Note in passing that the fact that
+there might be two different connections, $D_i$ and $\tna_i$, satisfying
+(i) reflects the fact that $\hat\gm_{ij}$ is not a true metric,
+but a tensor density. In other words the unicity theorem of the 
+associated connection to a given metric cannot be applied to $\hat\gm_{ij}$.
+
+Finding the connection $\tna_i$
+requires the introduction of an extra structure 
+on $\Sigma_t$. Some authors introduce Cartesian coordinates
+\cite{ShibaN95,BaumgS98}, but since we aim at using spherical coordinates,
+we follow another path: we keep general coordinates and introduce
+a flat metric $\w{f}$ on each hypersurface $\Sigma_t$ such that
+\be \label{e:f_notime}
+	\der{}{t} f_{ij} = 0 . 
+\ee
+{\sl ?? Condition topologique sur $\Sigma_t$ pour pouvoir introduire
+une m\'etrique plate ??}
+
+The inverse metric is denoted by $f^{ij}$:
+\be
+	f^{ik} f_{kj} = \delta^i_{\ \, j} . 
+\ee
+In particular note that, except for the very special case
+$\gm_{ij}=f_{ij}$, one has
+\be
+	f^{ij} \not= \gm^{ik} \gm^{jl}\, f_{kl} .
+\ee
+
+We denote by $\wg{\cD}$ the covariant derivative associated
+with $\w{f}$:
+\be \label{e:Df_zero}
+	\cD_k f_{ij} = 0 , 
+\ee
+and define
+\be \label{e:def_upcD}
+	\cD^i = f^{ij} \cD_i . 
+\ee
+The Christoffel symbols of the connection $\wg{\cD}$
+with respect to the coordinates $(x^i)$ are denoted by 
+$\bar\Gamma^k_{\ \, ij}$; they are given by the
+standard expression:
+\be \label{e:christo_f}
+	\bar\Gamma^k_{\ \, ij} = {1\over 2} f^{kl} 
+		\left( \partial_i f_{lj} +\partial_j f_{il}
+			- \partial_l f_{ij} \right) .
+\ee
+
+Let us denote by $f$ the determinant of the matrix of the
+covariant components of $\w{f}$:
+\be \label{e:def_detf}
+	f := \det f_{ij}.
+\ee
+Similarly to (\ref{e:variation_gm}), one has the following 
+formula for any variation $\delta$ which obeys to the Leibnitz
+rule:
+\be \label{e:variation_f}
+	\delta \ln f = f^{ij} \, \delta f_{ij} ,
+\ee
+
+\subsection{Conformal metric}
+
+Instead of the tensor density (\ref{e:def_hatg}), we define
+the {\em conformal metric} as being the tensor field
+\be \label{e:def_metconf}
+	\tgm_{ij} := \left( {\gm\over f} \right) ^{-1/3} \, \gm_{ij},
+\ee
+where $\gm$ is the determinant (\ref{e:def_detg}) and $f$
+the determinant (\ref{e:def_detf}).
+The fact that $\tgm_{ij}$ is a tensor follows from the fact
+that the quotient $\gm/f$ is a scalar field on $\Sigma_t$. Indeed
+a change of coordinates $(x^i) \mapsto (x^{i'})$ induces the following
+changes in the determinants:
+\bea
+	\gm'  & = & (\det J)^2 \gm \label{e:change_g} \\
+	f' & = & (\det J)^2 f ,\label{e:change_f}
+\eea
+where $J$ denotes the Jacobian matrix
+\be
+	J^i_{\ \, i'} := \der{x^i}{x^{i'}} .
+\ee
+From Eqs.~(\ref{e:change_g})-(\ref{e:change_f}) it is obvious
+that $\gm'/f' = \gm /f$, which shows that $\gm/f$ is a scalar field. 
+In the following we introduced the related scalar field:
+\be
+	\Psi := \left( {\gm\over f} \right)^{1/ 12} ,
+\ee
+so that the relation (\ref{e:def_metconf}) becomes
+\be \label{e:def_tgm2}
+	\tgm_{ij} = \Psi^{-4}\, \gm_{ij}
+	\qquad \mbox{or} \qquad \gm_{ij} = \Psi^4 \, \tgm_{ij} .
+\ee
+$\Psi$ being always strictly positive (for $\gm$ and $f$ are 
+strictly positive), $\tgm_{ij}$ is a Riemannian metric on $\Sigma_t$.
+In fact it is the member of the conformal equivalence class of $\gm_{ij}$
+which has the same determinant as the flat metric $f_{ij}$:
+\be \label{e:dettgm_f}
+	\det \tgm_{ij} = f .
+\ee
+In this respect, our approach agrees with the point of view of York in the
+work \cite{York99}, who prefers to introduce a specific member of
+the conformal equivalence class of $\gm_{ij}$ instead of manipulating
+tensor densities such as (\ref{e:def_hatg}). In our case, we 
+use the extra-structure $\w{f}$ to pick out
+the representative member of the conformal equivalence class by the
+requirement (\ref{e:dettgm_f}).
+
+We define the {\em inverse conformal metric} $\tgm^{ij}$ by
+the requirement
+\be
+	\tgm_{ik} \, \tgm^{kj} = \delta_i^{\ \, j} ,
+\ee
+which is equivalent to
+\be
+	\tgm^{ij}  = \Psi^4 \, \gm^{ij} \qquad \mbox{or} \qquad 
+	\gm^{ij}  = \Psi^{-4} \, \tgm^{ij}.
+\ee
+Note also that although we are using the same notation $\tgm$
+for both $\tgm_{ij}$ and $\tgm^{ij}$, one has
+\be
+	\tgm^{ij} \not= \gm^{ik} \gm^{jl}\, \tgm_{kl} ,
+\ee
+except in the special case $\Psi=1$.
+
+The general formula for the variation of the determinant applied
+to the matrix $\tgm_{ij}$ and combined with (\ref{e:dettgm_f})
+gives
+\be \label{e:variation_tgm}
+	\delta \ln f = \tgm^{ij} \, \delta \tgm_{ij} ,
+\ee
+for any infinitesimal variation $\delta$ which obeys to Leibnitz rule. 
+In the special case $\delta = \cD_k$, we deduce immediately that 
+\be \label{e:variation_tgm2}
+	\tgm^{ij} \cD_k \tgm_{ij} = 0 . 
+\ee
+
+
+\subsection{Conformal covariant derivation} 
+
+Let us denote by $\wg{\tna}$ the connection associated with 
+the metric $\tgm_{ij}$:
+\be \label{e:tD_tgm_zero}
+	\tna_k \tgm_{ij} = 0 . 
+\ee
+Its Christoffel symbols 
+with respect to the coordinates $(x^i)$ are given by
+the classical formula:
+\be \label{e:christo_tgm}
+	\tilde\Gamma^k_{\ \, ij} := {1\over 2} \tgm^{kl} 
+		\left( \partial_i\tgm_{lj} +\partial_j \tgm_{il}
+			- \partial_l\tgm_{ij} \right) .
+\ee
+
+The covariant derivatives $\wg{\tna}\w{T}$ and 
+$\wg{\cD}\w{T}$ of any tensor field $\w{T}$ of type
+$(q,p)$ on $\Sigma_t$ are related by the formula
+\be \label{e:def_nablatilde}
+	\tna_k T^{i_1\ldots i_p}_{\quad \quad j_1\ldots j_q}
+	= \cD_k T^{i_1\ldots i_p}_{\quad \quad j_1\ldots j_q}
+	+ \sum_{r=1}^p \Delta^{i_r}_{\ \, kl} \, 
+		T^{i_1\ldots l \ldots i_p}_{\quad\quad \quad j_1\ldots j_q}
+	- \sum_{r=1}^q \Delta^l_{\ \, k j_r} \, 
+		T^{i_1\ldots i_p}_{\quad \quad j_1\ldots l \ldots j_q} ,
+\ee  
+where $\Delta$ denotes the following type (2,1) tensor field:
+\be \label{e:def_Delta}
+  \Delta^k_{\ \, ij} := {1\over 2} \tgm^{kl} 
+		\left( \cD_i \tgm_{lj} + \cD_j \tgm_{il}
+			- \cD_l\tgm_{ij} \right) .
+\ee
+$\Delta^k_{\ \, ij}$ can also be viewed as the difference between
+the Christoffel symbols of $\tna_i$ and those of $\cD_i$:
+\be
+	\Delta^k_{\ \, ij} = \tilde\Gamma^k_{\ \, ij} - 
+	\bar\Gamma^k_{\ \, ij} .	
+\ee
+(Recall that, whereas Christoffel symbols do not represent the 
+components of any tensor field, the difference between two sets
+of them does.)
+ 
+As a direct consequence of (\ref{e:variation_tgm2}), we
+have
+\be
+	\Delta^k_{\ \, ik} = 0 . 
+\ee
+
+The important property of $\wg{\tna}$ is that it coincides
+with the flat covariant derivative $\wg{\cD}$ when the 3-metric is
+conformally flat:
+\bea
+	\gm_{ij} = \Psi^4 f_{ij} & \Longrightarrow &
+	\tgm_{ij} = f_{ij} \\
+	& \Longrightarrow & \Delta^k_{\ \, ij} = 0 \\
+	& \Longrightarrow & \wg{\tna} = \wg{\cD} . \label{e:conf_equalder}	
+\eea
+
+Applying the determinant variation formula (\ref{e:variation_tgm}) to 
+$\delta = \tna_i$, we get immediately that the conformal covariant
+derivative preserves the determinant of $f$ (as a tensor density
+of weight 2):
+\be
+	\tna_i f = 0 .
+\ee
+
+Inserting (\ref{e:def_tgm2}) into (\ref{e:tD_tgm_zero}), we get
+\be \label{e:td_gm}
+	\tna_k \gm_{ij} = 4 \tna_k \ln\Psi \: \gm_{ij} .
+\ee
+
+Another property of $\wg{\tna}$ is that the divergence with respect
+to it of any vector field $\w{V}$ coincides with the divergence with respect
+to the flat covariant derivative $\wg{\cD}$:
+\be
+	\tna_k V^k = \cD_k V^k \ .
+\ee
+This follows from the expression of the divergence 
+in terms of partial derivatives with
+respect to the coordinates $(x^i)$:
+\be
+	\tna_k V^k = {1\over \sqrt{\tgm}}\, 
+		\partial_k \left( \sqrt{\tgm} V^k \right)
+	\qquad \mbox{and} \qquad
+	\cD_k V^k = {1\over \sqrt{f}}\, 
+		\partial_k \left( \sqrt{f} V^k \right)
+\ee
+and the fact that $\tgm = f$ [Eq.~(\ref{e:dettgm_f})].
+
+In Eqs.~(\ref{e:evol_K0}) and (\ref{e:kin0}) appear Lie derivatives
+along the shift vector. A useful formula in this respect is that
+of the Lie derivative of the tensor density $f$:
+\be
+	\pounds_{\wg{\beta}} \ln f = 2 \tna_k \beta^k = 2 \cD_k \beta^k  .
+\ee
+This formula follows from Eq.~(\ref{e:variation_f}).
+
+\subsection{Relation between the Ricci tensors of $\wg{D}$
+and $\wg{\tna}$}
+
+After some computation, we find the following relation between
+the Ricci tensor $R_{ij}$ of the covariant derivative $\wg{D}$
+(associated with the physical 3-metric $\wg{\gm}$) and the
+Ricci tensor $\tilde R_{ij}$ of the covariant derivative $\wg{\tna}$
+(associated with the conformal metric $\tgm_{ij}$):
+\be \label{e:R_tR}
+	R_{ij} = \tilde R_{ij} - 2 \tna_i \tna_j \ln \Psi 
+	+ 4 \tna_i \ln\Psi \, \tna_j\ln\Psi
+	- 2\left( \tna^k \tna_k\ln\Psi
+	 + 2 \tna_k\ln\Psi \, \tna^k\ln\Psi \right)\, \tgm_{ij}  , 
+\ee
+where we have introduced the notation 
+\be \label{e:def_uptD}
+	\tna^i :=\tgm^{ij} \tna_j .
+\ee
+In particular note that the index of $\tna^i$ is not raised with 
+$\gm^{ij}$. 
+
+\compar{Eq.~(\ref{e:R_tR}) agrees with Eqs.~(2.15) and (2.16) of
+Shibata \& Nakamura \cite{ShibaN95}, with $\phi = \ln\Psi + 1/12 \: \ln f$,
+as well as with Eqs.~(19) and (20) of Baumgarte \& Shapiro \cite{BaumgS98}.
+Note that these authors are using Cartesian coordinates only, so 
+that $f=1$ for them.}
+
+Let us recall that $\tilde R_{ij}$ vanishes identically for
+a conformally flat 3-metric [cf. Eq.~(\ref{e:conf_equalder})]:
+\be
+	\gm_{ij} = \Psi^4 f_{ij} \; \Longrightarrow \; 
+	\tilde R_{ij} = 0 .
+\ee
+
+Taking the trace of (\ref{e:R_tR}) results in
+\be \label{e:trR_trtR}
+	R = \Psi^{-4} \left( \tilde R 
+	- 8 \tna_k \tna^k \ln\Psi
+	- 8 \tna_k \ln\Psi \, \tna^k \ln\Psi \right) ,
+\ee
+where we have introduced the scalar curvature of the metric
+$\tgm_{ij}$:
+\be \label{e:tildeR}
+	\tilde R:=\tgm^{ij} \tilde R_{ij} .
+\ee
+An equivalent form of (\ref{e:trR_trtR}) is
+\be
+	R = \Psi^{-4} \tilde R - 8 \Psi^{-5} \tna_k \tna^k \Psi.
+\ee
+
+\compar{This equation agrees with Eq.~(54) of York \cite{York79}.}
+
+\subsection{Conformal decomposition of the extrinsic curvature}
+
+We represent the traceless part of the extrinsic curvature
+by the tensor field
+\be
+	A^{ij} := \Psi^{4} \left( K^{ij} - {1\over 3} K \gm^{ij}
+		\right).
+\ee
+Let us define the following tensor field of type $(2,0)$ 
+\be
+	\taa_{ij} := \tgm_{ik} \tgm_{jl} A^{kl},
+\ee
+which can be seen as $A^{ij}$ with the indices lowered by 
+$\tgm_{ij}$, instead of $\gm_{ij}$. To take care of this 
+distinction, we have put a tilde atop $\taa_{ij}$.
+$\taa_{ij}$ is related to $K_{ij}$ by the formula:
+\be
+	\taa_{ij} = \Psi^{-4} \left( K_{ij} - {1\over 3} K \gm_{ij}
+		\right), 
+\ee
+Both $A^{ij}$ and $\taa_{ij}$ are traceless, in the sense that
+\be
+	\gm_{ij} A^{ij} = \tgm_{ij} A^{ij} = 0 \qquad \mbox{and} \qquad
+	\gm^{ij} \taa_{ij} = \tgm^{ij} \taa_{ij} = 0 .
+\ee
+
+\subsection{Conformal decomposition of Einstein equations}
+
+Thanks to (\ref{e:trR_trtR}), the Hamiltonian constraint 
+(\ref{e:ham_constr0}) can be re-written
+\be \label{e:ham_constr1}
+   \tna_k\tna^k \ln \Psi + \tna_k\ln\Psi \tna^k\ln\Psi
+   = {1\over 8} \tilde R - \Psi^4 \left( 2\pi E 
+   	+ {1\over 8} \taa_{kl}A^{kl} 
+	- {K^2\over 12} \right) .
+\ee
+An equivalent form of this equation is
+\be 
+   \tna_k\tna^k \Psi 
+   = {1\over 8} \tilde R \, \Psi - \Psi^5 \left( 2\pi E 
+   	+ {1\over 8} \taa_{kl}A^{kl} 
+	- {K^2\over 12} \right) .
+\ee
+
+\compar{This equations agrees with Eq.~(70) of York \cite{York79}.}
+
+The momentum constraint (\ref{e:mom_constr0}) becomes
+\be \label{e:mom_constr1}
+	\tna_j A^{ij} + 6 A^{ij} \tna_j\ln\Psi
+		-{2\over 3} \tna^i K = 8\pi\Psi^4 J^i .
+\ee
+
+\compar{This equations agrees with Eq.~(44) of Alcubierre et al.
+\cite{AlcubABSS00} in the special case of Cartesian coordinates;
+these authors are using the quantity $\phi = \ln\Psi + 1/12\: \ln f$,
+with $f=1$ in Cartesian coordinates.}
+
+The trace of the dynamical equation (\ref{e:evol_K0}) [combined
+with the Hamiltonian constraint (\ref{e:ham_constr0})] gives rise to
+an evolution equation for the trace $K$ of the extrinsic curvature:
+\be \label{e:evol_K1tr}
+	\der{K}{t} =  \beta^k \tna_k K  - \Psi^{-4} \left(
+	\tna_k\tna^k N + 2 \tna_k\ln\Psi \, \tna^k N \right)
+	+ N\left[ 4\pi (E+S) + \taa_{kl} A^{kl}
+	+ {K^2\over 3} \right] ,  
+\ee
+whereas the traceless part of (\ref{e:evol_K0}) becomes
+\bea
+  \der{A^{ij}}{t}  & = &  \pounds_{\wg{\beta}} A^{ij} +
+  {2\over 3} \tna_k\beta^k \, A^{ij} - \Psi^{-6}
+   \left( \tna^i\tna^j Q - {1\over 3} \tna_k \tna^k Q \: \tgm^{ij} 
+   \right) \nonumber \\
+  & & + \Psi^{-4} \Bigg\{ N \left(
+  \tgm^{ik} \tgm^{jl} \tilde R_{kl} + 8 \tna^i \ln\Psi\, \tna^j \ln\Psi
+  \right) + 4 \left( \tna^i\ln\Psi \, \tna^j N + \tna^j\ln\Psi \,
+  \tna^i N \right) \nonumber \\
+  & & - {1\over 3} \left[  N \left( \tilde R + 8 \tna_k\ln\Psi \tna^k\ln\Psi
+  \right) + 8 \tna_k\ln\Psi \tna^k N \right] \, \tgm^{ij} \Bigg\} \nonumber \\
+  & & + N \left[ K A^{ij} + 2 \tgm_{kl} A^{ik} A^{jl} 
+   - 8\pi \left( \Psi^4 S^{ij} - {1\over 3} S \tgm^{ij} \right) 
+  \right] , \label{e:evol_K1}
+\eea
+with 
+\be
+  \pounds_{\wg{\beta}} A^{ij} = \beta^k \tna_k A^{ij}
+  	- A^{kj} \tna_k \beta^i - A^{ik} \tna_k \beta^j , 
+\ee
+and where we have introduced the scalar field
+\be
+	Q := \Psi^2 N .
+\ee
+
+Eqs.~(\ref{e:ham_constr1}) and (\ref{e:evol_K1tr}) can be combined into an
+elliptic equation for $Q$:
+\bea
+   \tna_k \tna^k Q &=& \Psi^6 \left[ N \left( 4\pi S
+   + {3\over 4} \taa_{kl}A^{kl} +{K^2\over 2} \right)
+   - \der{K}{t} + \beta^k \tna_k K \right] \nonumber \\
+   & & + \Psi^2 \left[  N \left( {3\over 2}\tilde R + 2
+   	\tna_k \ln\Psi \, \tna^k \ln\Psi \right) 
+	+ 2  \tna_k \ln\Psi \, \tna^k N \right] . \label{e:lapQ1}
+\eea
+
+The trace of the kinematical relation (\ref{e:kin0}) between
+$\w{K}$ and $\wg{\gm}$ results in, thanks to (\ref{e:variation_gm}),
+\be \label{e:kin1_tr}
+   \der{\Psi}{t} = \beta^k\tna_k\Psi + {\Psi\over 6}
+   \left( \tna_k\beta^k - N K \right) . 
+\ee
+The traceless part of (\ref{e:kin0}) results in
+\be \label{e:kin1_st}
+  \der{\tgm^{ij}}{t} = \pounds_{\wg{\beta}} \tgm^{ij} 
+  + {2\over 3} \tna_k\beta^k \, \tgm^{ij} + 2N A^{ij} ,	
+\ee
+or equivalently
+\be
+  \der{\tgm^{ij}}{t} = 2N A^{ij} - \tna^i\beta^j - \tna^j\beta^i
+  	+ {2\over 3} \tna_k\beta^k \, \tgm^{ij} .	
+\ee
+
+
+
+\section{Einstein equations in terms of the flat covariant derivative}
+
+\subsection{Ricci tensor of $\wg{\tna}$ in terms of the
+flat derivatives of $\wg{\tgm}$}
+
+The Ricci tensor $\tilde R_{ij}$ of the covariant derivative $\wg{\tna}$ 
+can be expressed in terms of the flat covariant derivatives of the 
+conformal metric $\wg{\tgm}$ as
+\bea
+   \tilde R_{ij} & = & - {1\over 2} \tgm^{kl} \left( 
+   \cD_k \cD_l \tgm_{ij} - \cD_k \cD_i \tgm_{lj}
+   - \cD_k \cD_j \tgm_{il} \right) \nonumber \\
+   & & + {1\over 2} \cD_k \tgm^{kl} \left( \cD_i \tgm_{lj} + \cD_j \tgm_{il}
+   	- \cD_l \tgm_{ij} \right)
+	- \Delta^k_{\ \, il} \Delta^l_{\ \, jk} . \label{e:ricci1}
+\eea
+
+\compar{This equation agrees with Eq.~(2.17) of Shibata \& Nakamura
+\cite{ShibaN95}, provided it is restricted to Cartesian coordinates,
+for which $\cD_i \rightarrow \partial_i$ and 
+$\Delta^k_{\ \, ij} \rightarrow \tilde\Gamma^k_{\ \, ij}$.}
+
+After some manipulations, (\ref{e:ricci1}) can be written as
+\bea
+   \tilde R_{ij}  & = & - {1\over 2} \tgm^{kl} \left( 
+   \cD_k \cD_l \tgm_{ij} + \tgm_{ik} \cD_j H^k  + \tgm_{jk} \cD_j H^k
+   + H^k \cD_k \tgm_{ij} + \cD_i \tgm^{kl} \cD_k \tgm_{lj}
+   + \cD_j \tgm^{kl} \cD_k \tgm_{il} \right) \nonumber \\
+    & &- \Delta^k_{\ \, il} \Delta^l_{\ \, jk} , \label{e:ricci2}
+\eea
+where we have introduced the vector field
+\be \label{e:def_H}
+	H^i := \cD_j \tgm^{ij} .
+\ee
+From Eq.~(\ref{e:def_Delta}), one can deduce an alternative
+expression of $H^i$:
+\be \label{e:H_Delta}
+	H^i = - \tgm^{kl} \Delta^i_{\ \, kl} . 
+\ee
+
+\compar{When restricted to Cartesian coordinates ($\cD_i = \partial_i$,
+$\Delta^i_{\ \, kl} = \tilde \Gamma^i_{\ \, kl}$), 
+Eqs.~(\ref{e:def_H}) and (\ref{e:H_Delta}) agree 
+with Eq.~(21) of Baumgarte \& Shapiro \cite{BaumgS98}, taking into
+account their notation $\tilde\Gamma^i = - H^i$. 
+Moreover, after some manipulations,
+the expression (\ref{e:ricci2}) for the Ricci tensor can be shown to 
+agree with Eq.~(22) of Baumgarte \& Shapiro \cite{BaumgS98}.}
+
+Starting from (\ref{e:ricci2}), we obtain, after some computations,
+an expression of the Ricci tensor in terms of the flat covariant derivatives
+of $\tgm^{ij}$, instead of $\tgm_{ij}$:
+\bea
+  \tgm^{ik} \tgm^{jl} \tilde R_{kl} & = & {1\over 2} \Bigg(
+  \tgm^{kl} \cD_k \cD_l \tgm^{ij} - \tgm^{ik} \cD_k H^j - \tgm^{jk} \cD_k H^i
+  + H^k \cD_k\tgm^{ij} \nonumber \\
+  &  & - \cD_l \tgm^{ik} \cD_k \tgm^{jl} 
+  - \tgm_{kl} \tgm^{mn} \cD_m \tgm^{ik} \, \cD_n \tgm^{jl}
+  + \tgm^{ik} \tgm_{ml} \cD_k \tgm^{mn} \, \cD_n \tgm^{jl} \nonumber \\
+  & & + \tgm^{jl} \tgm_{kn} \cD_l \tgm^{mn} \, \cD_m \tgm^{ik} 
+  +{1\over 2} \tgm^{ik} \tgm^{jl} \cD_k\tgm_{mn} \, \cD_l \tgm^{mn}
+  \Bigg) \label{e:ricci3}.
+\eea  
+
+\compar{If we restrict ourselves to Cartesian coordinates,
+the terms with second derivatives of $\tgm^{ij}$, i.e. the first
+line of the above equation, agree with Eq.~(12) of Alcubierre et al.
+\cite{AlcubBMS99}.}
+
+The curvature scalar  $\tilde R$ defined from the Ricci
+tensor $\tilde R_{ij}$ by (\ref{e:tildeR}) is basically the divergence
+of $H^i$ plus some quadratic terms:
+\be \label{e:tildeR_divH}
+	\tilde R = - \cD_k H^k + {1\over 4} \tgm^{kl} \cD_k \tgm^{ij}
+	\cD_l \tgm_{ij} - {1\over 2} \tgm^{kl} \cD_k \tgm^{ij} \cD_j \tgm_{il} . 
+\ee
+ 
+
+\subsection{Dirac gauge} \label{s:Dirac}
+
+We define the {\em generalized Dirac gauge} by
+\be
+	H^i = 0 ,
+\ee
+or equivalently
+\be
+	\cD_j \left[ \left({\gm\over f} \right) ^{1/3} 
+		\gm^{ij} \right] = 0 .
+\ee
+In Cartesian coordinates this choice reduces to the gauge introduced
+by Dirac in 1959 \cite{Dirac59} as an attempt to fix the coordinates
+in the Hamiltonian formulation of general relativity, preliminary
+to its quantization (see \cite{Deser03} for a discussion):
+\be
+	\partial_j \left( \gm^{1/3} \gm^{ij} \right) = 0 . 
+\ee
+
+\compar{The above equation agrees with Eq.~(35) of Dirac \cite{Dirac59},
+with Dirac's notation $\tilde e^{ij} = \tgm^{ij}$.}
+
+Within the generalized Dirac gauge:
+\begin{itemize}
+\item the second order derivatives of
+$\tgm^{ij}$ which appear in the expression (\ref{e:ricci3}) for the
+Ricci tensor $\tilde R_{ij}$ reduce to the Laplacian-like term
+$\tgm^{kl} \cD_k \cD_l \tgm^{ij}$;
+\item the curvature scalar $\tilde R$ does not contain any
+second order derivative of $\tgm^{ij}$.
+\end{itemize}
+
+A related coordinate choice is the ``Gamma freezing'' gauge
+introduced by Alcubierre \& Br\"ugmann \cite{AlcubB01}.
+
+\subsection{Einstein equations} \label{s:Einstein2}
+
+The combination (\ref{e:lapQ1})
+of the Hamiltonian constraint and the trace of
+the spatial part of the dynamical Einstein equations 
+can be re-written, taking into account (\ref{e:tildeR_divH}),
+\bea
+   \tgm^{kl}\cD_k \cD_l Q &=& - H^k \cD_k Q 
+   + \Psi^6 \left[  N \left( 4\pi S
+   + {3\over 4} \taa_{kl}A^{kl} +{K^2\over 2} \right) 
+   - \der{K}{t} + \beta^k \cD_k K \right] \nonumber \\
+   & & + \Psi^2 \Bigg[ N \left( - {3\over 2} \cD_k H^k 
+   + {3\over 8} \tgm^{kl} \cD_k \tgm^{ij} \cD_l \tgm_{ij} 
+   - {3\over 4} \tgm^{kl} \cD_k \tgm^{ij} \cD_j \tgm_{il}
+   + 2 \tgm^{kl} \cD_k \ln\Psi \, \cD_l \ln\Psi \right) \nonumber \\
+   & & \qquad + 2  \tgm^{kl}  \cD_k \ln\Psi \, \cD_l N \Bigg].	\label{e:lapQ2}
+\eea
+The momentum constraint (\ref{e:mom_constr1}) becomes
+\be \label{e:mom_constr2}
+	\cD_j A^{ij} + \Delta^i_{\ \, kl} A^{kl}
+	+ 6 A^{ij} \cD_j\ln\Psi
+		-{2\over 3} \tgm^{ij} \cD_j K = 8\pi\Psi^4 J^i .
+\ee
+The combination (\ref{e:evol_K1tr}) of the 
+trace of the dynamical Einstein equations with the Hamiltonian
+constraint equations writes
+\bea 
+	\der{K}{t} & = & \beta^k \cD_k K  - \Psi^{-4} \left(
+	\tgm^{kl} \cD_k \cD_l N + H^k \cD_k N +
+	 2 \tgm^{kl} \cD_k\ln\Psi \, \cD_l N \right) \nonumber \\
+	& & + N\left[ 4\pi (E+S) + \taa_{kl} A^{kl}
+	+ {K^2\over 3} \right] \label{e:evol_K2tr},  
+\eea
+whereas the traceless part becomes, thanks to (\ref{e:ricci3}):
+\bea
+	\der{A^{ij}}{t} & = & \Psi^{-4} \Bigg\{ {N\over 2}
+	\Bigg[ \tgm^{kl} \cD_k \cD_l \tgm^{ij} - \tgm^{ik} \cD_k H^j
+	-\tgm^{jk} \cD_k H^i + H^k \cD_k \tgm^{ij} \nonumber \\
+   & & - \cD_l \tgm^{ik} \, \cD_k \tgm^{jl} 
+   - \tgm_{kl} \tgm^{mn} \cD_m\tgm^{ik} \, \cD_n \tgm^{jl} 
+   + \tgm^{ik} \tgm_{ml} \cD_k \tgm^{mn} \, \cD_n \tgm^{jl}
+   + \tgm^{jl} \tgm_{kn} \cD_l \tgm^{mn} \, \cD_m \tgm^{ik} \nonumber \\
+   &  & + \tgm^{ik} \tgm^{jl} \left( {1\over 2}  \cD_k \tgm_{mn} \cD_l \tgm^{mn}
+   + 16  \cD_k\ln\Psi \, \cD_l \ln\Psi \right) \Bigg]
+   - \Psi^{-2} \Bigg[ \tgm^{ik} \tgm^{jl} \cD_k \cD_l Q \nonumber \\
+   &  & + {1\over 2} \left( \tgm^{il} \cD_l \tgm^{jk}
+   	+ \tgm^{jl} \cD_l \tgm^{ik} - \tgm^{kl} \cD_l \tgm^{ij} \right) 
+	\cD_k Q \Bigg]
+	+ 4 \tgm^{ik} \tgm^{jl} \left( \cD_k \ln\Psi \cD_l N
+		+ \cD_l \ln\Psi \cD_k N \right) \nonumber \\
+   & & + {1\over 3} \Bigg[ \Psi^{-2} \left( \tgm^{kl} \cD_k \cD_l Q 
+   + H^k \cD_k Q \right) - 8 \tgm^{kl} \cD_k\ln\Psi \cD_l N
+   \nonumber \\
+   & & + N \left( \cD_k H^k - {1\over 4} \tgm^{kl} \cD_k \tgm^{mn} \, 
+	\cD_l \tgm_{mn} + {1\over 2} \tgm^{kl} \cD_k \tgm^{mn} \, \cD_n \tgm_{ml}
+	- 8 \tgm^{kl} \cD_k \ln\Psi \, \cD_l \ln\Psi \right)
+	\Bigg] \tgm^{ij} \Bigg\} \nonumber \\
+  & & + N \left[ K A^{ij} + 2\tgm_{kl} A^{ik} A^{jl}
+  	- 8 \pi \left( \Psi^4 S^{ij} - {1\over 3} S \tgm^{ij} 
+	\right) \right] \nonumber \\
+  & & + \beta^k \cD_k A^{ij} - A^{kj} \cD_k \beta^i - A^{ik} \cD_k \beta^j
+		+ {2\over 3} \cD_k \beta^k \: A^{ij} \label{e:evol_K2} .
+\eea 
+These equations must be supplemented by the 
+kinematical relations (\ref{e:kin1_tr}) 
+\be 
+   \der{\Psi}{t} = \beta^k\cD_k\Psi + {\Psi\over 6}
+   \left( \cD_k\beta^k - N K \right) . \label{e:kin2_tr}
+\ee
+and (\ref{e:kin1_st}): 
+\be
+  \der{\tgm^{ij}}{t} = 2N A^{ij} + \beta^k\cD_k\tgm^{ij}
+  	- \tgm^{ik} \cD_k \beta^j - \tgm^{jk} \cD_k \beta^i
+  	+ {2\over 3} \cD_k\beta^k \, \tgm^{ij} . \label{e:kin2_st}	
+\ee
+
+
+
+
+\section{Einstein equations in terms of the
+potentials $h^{ij}$}
+
+\subsection{Definition of $h^{ij}$} \label{s:def_h}
+
+Let us introduce the deviation $\w{h}$ of the inverse conformal
+metric $\tgm^{ij}$ from the inverse flat metric, according to the formula
+\be \label{e:def_h}
+	\tgm^{ij} =: f^{ij} + h^{ij} .
+\ee
+$\w{h}$ is a tensor field onto $\Sigma_t$ which satisfies the
+following property:
+\be
+	\mbox{$\wg{\gm}$ conformally flat} \iff \w{h} = 0 .
+\ee
+Note that $\w{h}$ is a tensor of type $(0,2)$ (``twice contravariant
+tensor'' $h^{ij}$) and, except where otherwise stated, we will manipulate it
+as such, without introducing any bilinear form (``twice covariant tensor''
+$h_{ij}$) dual to it. In particular, note that, except under special
+circumstances (e.g. $\w{h}=0$), 
+\bea
+	\tgm_{ij} & \not = & f_{ij} + \gm_{ik} \gm_{jl} h^{kl} , \\
+	\tgm_{ij} & \not = & f_{ij} + \tgm_{ik} \tgm_{jl} h^{kl} ,\\
+	\tgm_{ij} & \not = & f_{ij} + f_{ik} f_{jl} h^{kl} .
+\eea 
+The flat covariant derivatives of $\w{h}$ coincide with those
+of $\tgm^{ij}$:
+\be
+	\cD_k \tgm^{ij} = \cD_k h^{ij}.
+\ee
+In particular the vector field $\w{H}$ introduced in Eq.~(\ref{e:def_H})
+and from which the Dirac gauge is defined, 
+is the divergence of $\w{h}$:
+\be
+	H^i = \cD_j h^{ij} .
+\ee
+Thanks to the splitting (\ref{e:def_h}), we can express the 
+differential operator
+$\tgm^{kl}\cD_k\cD_l$ which appears in the Einstein equations listed
+in \S~\ref{s:Einstein2} as 
+\be
+	\tgm^{kl}\cD_k\cD_l = \Delta + h^{kl} \cD_k\cD_l ,
+\ee
+where $\Delta$ is the Laplacian operator associated with the flat
+metric:
+\be \label{e:def_flat_lap}
+	\Delta := f^{kl}\cD_k\cD_l = \cD_k \cD^k .
+\ee 
+Let us recall that $\cD^k$ is defined by Eq.~(\ref{e:def_upcD}).
+
+\subsection{Einstein equations}
+
+The combination (\ref{e:lapQ2})
+of the Hamiltonian constraint and the trace of
+the spatial part of the dynamical Einstein equations 
+becomes
+\bea
+  \Delta  Q &=& -h^{kl} \cD_k \cD_l Q - H^k \cD_k Q 
+   + \Psi^6 \left[  N \left( 4\pi S
+   + {3\over 4} \taa_{kl}A^{kl} +{K^2\over 2} \right) 
+   - \der{K}{t} + \beta^k \cD_k K \right] \nonumber \\
+   & & + \Psi^2 \Bigg[ N \Big( - {3\over 2} \cD_k H^k 
+   + {3\over 8} \tgm^{kl} \cD_k h^{ij} \cD_l \tgm_{ij} 
+   - {3\over 4} \tgm^{kl} \cD_k h^{ij} \cD_j \tgm_{il}
+   + 2 \cD_k \ln\Psi \, \cD^k \ln\Psi  \nonumber \\
+   & & \qquad + 2 h^{kl} \cD_k \ln\Psi \cD_l\ln\Psi \Big)
+   + 2 \cD_k \ln\Psi \, \cD^k N + 2 h^{kl}  \cD_k \ln\Psi \, \cD_l N \Bigg].	
+   \label{e:lapQ3}
+\eea
+The momentum constraint (\ref{e:mom_constr2}) writes
+\be 
+	\cD_j A^{ij} + \Delta^i_{\ \, kl} A^{kl}
+	+ 6 A^{ij} \cD_j\ln\Psi
+		-{2\over 3} \tgm^{ij} \cD_j K = 8\pi\Psi^4 J^i ,
+		\label{e:mom_constr3}
+\ee
+with the following expression for $\Delta^i_{\ \, kl}$,
+alternative to (\ref{e:def_Delta}):
+\be
+    \Delta^k_{\ \, ij}	= -{1\over 2} \left( \cD^k \tgm_{ij}
+    	+ h^{kl} \cD_l \tgm_{ij} + \tgm_{il} \cD_j h^{kl}
+	+  \tgm_{lj} \cD_i h^{kl} \right) .
+\ee
+The combination (\ref{e:evol_K2tr}) of the 
+trace of the dynamical Einstein equations with the Hamiltonian
+constraint equations becomes
+\bea 
+	\der{K}{t} & = & \beta^k \cD_k K  - \Psi^{-4} \left(
+	\Delta N + h^{kl} \cD_k \cD_l N + H^k \cD_k N +
+	+ 2 \cD_k\ln\Psi \, \cD^k  N 
+	+  2 h^{kl} \cD_k\ln\Psi \, \cD_l N \right) \nonumber \\
+	& & + N\left[ 4\pi (E+S) + \taa_{kl} A^{kl}
+	+ {K^2\over 3} \right] , \label{e:evol_K3tr} 
+\eea
+whereas the traceless part (\ref{e:evol_K2}) becomes:
+\bea
+	\der{A^{ij}}{t} & = & \Psi^{-4} \Bigg\{ {N\over 2}
+	\Bigg[ \Delta h^{ij} + h^{kl} \cD_k \cD_l h^{ij} 
+	- \tgm^{ik} \cD_k H^j
+	-\tgm^{jk} \cD_k H^i + H^k \cD_k h^{ij} \nonumber \\
+   & & - \cD_l h^{ik} \, \cD_k h^{jl} 
+   - \tgm_{kl} \tgm^{mn} \cD_m h^{ik} \, \cD_n h^{jl} 
+   + \tgm^{ik} \tgm_{ml} \cD_k h^{mn} \, \cD_n h^{jl}
+   + \tgm^{jl} \tgm_{kn} \cD_l h^{mn} \, \cD_m h^{ik} \nonumber \\
+   &  & + \tgm^{ik} \tgm^{jl} \left( {1\over 2}  \cD_k \tgm_{mn} \cD_l h^{mn}
+   + 16  \cD_k\ln\Psi \, \cD_l \ln\Psi \right) \Bigg]
+   - \Psi^{-2} \Bigg[ \tgm^{ik} \tgm^{jl} \cD_k \cD_l Q \nonumber \\
+   &  & + {1\over 2} \left( \tgm^{il} \cD_l h^{jk}
+   	+ \tgm^{jl} \cD_l h^{ik} - \tgm^{kl} \cD_l h^{ij} \right) 
+	\cD_k Q \Bigg]
+	+ 4 \tgm^{ik} \tgm^{jl} \left( \cD_k \ln\Psi \cD_l N
+		+ \cD_l \ln\Psi \cD_k N \right) \nonumber \\
+   & & + {1\over 3} \Bigg[ \Psi^{-2} \left( \Delta Q + h^{kl} \cD_k \cD_l Q 
+   + H^k \cD_k Q \right) - 8 \tgm^{kl} \cD_k\ln\Psi \cD_l N
+   \nonumber \\
+   & & + N \left( \cD_k H^k - {1\over 4} \tgm^{kl} \cD_k h^{mn} \, 
+	\cD_l \tgm_{mn} + {1\over 2} \tgm^{kl} \cD_k h^{mn} \, \cD_n \tgm_{ml}
+	- 8 \tgm^{kl} \cD_k \ln\Psi \, \cD_l \ln\Psi \right)
+	\Bigg] \tgm^{ij} \Bigg\} \nonumber \\
+  & & + N \left[ K A^{ij} + 2\tgm_{kl} A^{ik} A^{jl}
+  	- 8 \pi \left( \Psi^4 S^{ij} - {1\over 3} S \tgm^{ij} 
+	\right) \right] \nonumber \\
+  & & + \beta^k \cD_k A^{ij} - A^{kj} \cD_k \beta^i - A^{ik} \cD_k \beta^j
+		+ {2\over 3} \cD_k \beta^k \: A^{ij} . \label{e:evol_K3}
+\eea 
+These equations must be supplemented by the 
+kinematical relations (\ref{e:kin2_tr}) 
+\be 
+   \der{\Psi}{t} = \beta^k\cD_k\Psi + {\Psi\over 6}
+   \left( \cD_k\beta^k - N K \right) . \label{e:kin3_tr}
+\ee
+and (\ref{e:kin2_st}): 
+\be
+  \der{h^{ij}}{t} = 2N A^{ij} - \cD^i \beta^k - \cD^j \beta^i 
+  	+ \beta^k\cD_k h^{ij}
+  	- h^{ik} \cD_k \beta^j - h^{jk} \cD_k \beta^i
+  	+ {2\over 3} \cD_k\beta^k \, \tgm^{ij} . \label{e:kin3_st}	
+\ee
+To get this last relation, use has been made of (\ref{e:f_notime}).
+
+\section{Equations in maximal slicing and Dirac gauge}
+
+\subsection{Simplifications induced by maximal slicing and Dirac gauge}
+
+The maximal slicing and Dirac gauge coordinate conditions are
+defined by (cf. Sec.~\ref{s:Dirac}):
+\be
+	K  =  0 ,
+\ee
+\be
+	H^i  = \cD_j h^{ij} =  0 .
+\ee
+
+In this case, the combination (\ref{e:lapQ3})
+of the Hamiltonian constraint and the trace of
+the spatial part of the dynamical Einstein equations 
+simplifies somewhat
+\bea
+  \Delta  Q &=& 
+   \Psi^6   N \left( 4\pi S
+   + {3\over 4} \taa_{kl}A^{kl}  \right) -h^{kl} \cD_k \cD_l Q 
+    \nonumber \\
+   & & + \Psi^2 \Bigg[ N \left( {3\over 8} \tgm^{kl} \cD_k h^{ij} \cD_l \tgm_{ij} 
+   - {3\over 4} \tgm^{kl} \cD_k h^{ij} \cD_j \tgm_{il}
+   + 2 \cD_k \ln\Psi \, \cD^k \ln\Psi 
+   + 2 h^{kl} \cD_k \ln\Psi \cD_l\ln\Psi \right)  \nonumber \\
+   &  & \qquad + 2 \cD_k \ln\Psi \, \cD^k N + 2 h^{kl}  \cD_k \ln\Psi \, \cD_l N \Bigg].	
+   \label{e:lapQ4}
+\eea
+
+The momentum constraint (\ref{e:mom_constr3}) becomes
+\be 
+	\cD_j A^{ij} + \Delta^i_{\ \, kl} A^{kl}
+	+ 6 A^{ij} \cD_j\ln\Psi = 8\pi\Psi^4 J^i .
+		\label{e:mom_constr4}
+\ee
+The combination (\ref{e:evol_K3tr}) of the 
+trace of the dynamical Einstein equations with the Hamiltonian
+constraint equations becomes an elliptic equation for the lapse
+function:
+\be 
+	\Delta N =  \Psi^4 N\left[ 4\pi (E+S) + \taa_{kl} A^{kl}
+	\right] 
+	 - h^{kl} \cD_k \cD_l N 
+	- 2 \cD_k\ln\Psi \, \cD^k  N 
+	-  2 h^{kl} \cD_k\ln\Psi \, \cD_l N  . \label{e:evol_K4tr} 
+\ee
+whereas the traceless part (\ref{e:evol_K3}) becomes:
+\bea
+	\der{A^{ij}}{t} & = & \Psi^{-4} \Bigg\{ {N\over 2}
+	\Bigg[ \Delta h^{ij} + h^{kl} \cD_k \cD_l h^{ij} 
+	 - \cD_l h^{ik} \, \cD_k h^{jl} 
+   - \tgm_{kl} \tgm^{mn} \cD_m h^{ik} \, \cD_n h^{jl} \nonumber \\
+  & & + \tgm^{ik} \tgm_{ml} \cD_k h^{mn} \, \cD_n h^{jl}
+   + \tgm^{jl} \tgm_{kn} \cD_l h^{mn} \, \cD_m h^{ik} \nonumber \\
+  & &  + \tgm^{ik} \tgm^{jl} \left( {1\over 2}  \cD_k \tgm_{mn} \cD_l h^{mn}
+   + 16  \cD_k\ln\Psi \, \cD_l \ln\Psi \right) \Bigg]
+   - \Psi^{-2} \Bigg[ \tgm^{ik} \tgm^{jl} \cD_k \cD_l Q \nonumber \\
+   &  & + {1\over 2} \left( \tgm^{il} \cD_l h^{jk}
+   	+ \tgm^{jl} \cD_l h^{ik} - \tgm^{kl} \cD_l h^{ij} \right) 
+	\cD_k Q \Bigg]
+	+ 4 \tgm^{ik} \tgm^{jl} \left( \cD_k \ln\Psi \cD_l N
+		+ \cD_l \ln\Psi \cD_k N \right) \nonumber \\
+   & & + {1\over 3} \Bigg[ \Psi^{-2} \left( \Delta Q + h^{kl} \cD_k \cD_l Q 
+   + H^k \cD_k Q \right) - 8 \tgm^{kl} \cD_k\ln\Psi \cD_l N
+   \nonumber \\
+   & & + N \left( \cD_k H^k - {1\over 4} \tgm^{kl} \cD_k h^{mn} \, 
+	\cD_l \tgm_{mn} + {1\over 2} \tgm^{kl} \cD_k h^{mn} \, \cD_n \tgm_{ml}
+	- 8 \tgm^{kl} \cD_k \ln\Psi \, \cD_l \ln\Psi \right)
+	\Bigg] \tgm^{ij} \Bigg\} \nonumber \\
+  & & + N \left[ 2\tgm_{kl} A^{ik} A^{jl}
+  	- 8 \pi \left( \Psi^4 S^{ij} - {1\over 3} S \tgm^{ij} 
+	\right) \right] \nonumber \\
+  & & + \beta^k \cD_k A^{ij} - A^{kj} \cD_k \beta^i - A^{ik} \cD_k \beta^j
+		+ {2\over 3} \cD_k \beta^k \: A^{ij} . \label{e:evol_K4}
+\eea 
+The kinematical relation (\ref{e:kin3_tr}) becomes 
+\be 
+   \der{\Psi}{t} = \beta^k\cD_k\Psi + {\Psi\over 6}
+   \cD_k\beta^k , \label{e:kin4_tr}
+\ee
+whereas (\ref{e:kin3_st}) remains unchanged: 
+\be
+  \der{h^{ij}}{t} = 2N A^{ij} - \cD^i \beta^j - \cD^j \beta^i 
+  	+ \beta^k\cD_k h^{ij}
+  	- h^{ik} \cD_k \beta^j - h^{jk} \cD_k \beta^i
+  	+ {2\over 3} \cD_k\beta^k \, \tgm^{ij} . \label{e:kin4_st}	
+\ee
+
+\subsection{Expression of Dirac gauge on the shift vector}
+
+Taking the (flat) divergence of (\ref{e:kin4_st}) and using the
+fact that $\partial/\partial t$ commutes with $\cD_i$, thanks to 
+(\ref{e:f_notime}), the Dirac gauge leads to
+\be
+   \cD_j A^{ij} = - {A^{ij}\over N} \cD_j N 
+   + {1\over 2N} \left[ \Delta \beta^i + {1\over 3} \cD^i \left( \cD_j\beta^j
+   \right) + h^{kl} \cD_k \cD_l \beta^i + {1\over 3} h^{ik} \cD_k
+   \left( \cD_l \beta^l \right) \right] .
+\ee
+Inserting this relation into the momentum constraint equation
+(\ref{e:mom_constr4})
+leads to an elliptic equation for $\wg{\beta}$:
+\bea
+  \Delta\beta^i + {1\over 3} \cD^i\left(\cD_j\beta^j\right) & = &
+   2 A^{ij} \cD_j N + 16\pi N \Psi^4 J^i - 12 N A^{ij} \cD_j\ln\Psi
+  - 2 \Delta^i_{\ \, kl} N A^{kl} \nonumber \\
+  & & - h^{kl} \cD_k \cD_l \beta^i - {1\over 3} h^{ik} \cD_k \cD_l \beta^l .
+\eea
+

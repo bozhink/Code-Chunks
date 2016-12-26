@@ -1,0 +1,226 @@
+%
+% $Id: harmonics.tex,v 1.3 2003/06/16 11:57:20 j_novak Exp $
+%
+\chapter{Spherical tensor harmonics}
+The evolution equations for the gravitational field can be written as
+a tensor wave equation, when inserting Eq.~(\ref{e:kin3_st}) into the
+evolution for the extrinsic curvature (\ref{e:evol_K3}). As for the
+scalar wave equation, it may be useful to decompose the tensorial
+field onto a basis of {\em tensorial spherical harmonics}. An extensive
+review of these harmonics has been made by Thorne \cite{Thorn80} and we
+shall use hereafter his definitions and notations.
+
+\section{Pure orbital harmonics}
+
+A first family of tensorial harmonics have been introduced by Mathews
+\cite{Mathe62}, but the
+complete set has been derived by Zerilli \cite{Zeril70}.
+They are constructed from the canonical basis of rank-2 tensors,
+multiplied with scalar spherical harmonics $Y_{lm}$ and combined so that they
+transform under irreducible representations of $SO(3)$. The general
+covariant function on the 2-sphere can be expanded in terms of these pure
+orbital harmonics $\w{T}^{\lambda l', lm}$, which form an
+orthonormal set and are divided into three categories:
+\begin{itemize}
+\item $\lambda=0$ gives the trace of the tensor, and $l'=l$ (one element);
+\item $\lambda = 1$ gives the antisymmetric part of the tensor, and
+$l'=l, l\pm1$ (3 elements);
+\item $\lambda=2$ gives the symmetric trace-free part of the tensor,
+and $l'=l,\  l\pm 1,\ l\pm 2 $ (5 elements).
+\end{itemize}
+They are eigenfunctions of the angular Laplacian 
+$$
+\Delta_{\th\ph} := \dder{}{\th} +{1\over\tan\th} \der{}{\th}
+	+ {1\over\sin^2\th}\dder{}{\ph}
+$$
+so that 
+\be
+\Delta_{\th\ph} \w{T}^{\lambda l', lm} = - l'(l'+1) \w{T}^{\lambda l',
+lm} . 
+\ee
+The general tensor solution of the Laplace's equation
+\be
+\Delta \w{U} = 0
+\ee
+is 
+\be
+\w{U}(r, \th, \ph) = \sum_{\lambda, l', l, m} \left( a^{\lambda
+l', l m} \, r^{-(l'+1)} + b^{\lambda l', l m} \, r^{l'} \right)
+\w{T}^{\lambda l', lm} .
+\ee
+
+\section{Pure spin harmonics}
+
+Pure orbital harmonics are not well suited for describing radiation in
+the radiation zone (where one supposes that the wave vector $\w{k}
+\sim \w{e}_r$) because, under local rotation about the radial vector,
+their tensor components do not transform as the components of the
+polarization tensor. One can find linear combinations of the tensor
+harmonics of a particular degree $l$ which are expressible in terms of
+scalar spherical harmonics $Y_{lm}$ and their derivatives. This is
+done using the following vector operators: $\w{e}_r, \wg{\nabla}$ and
+$\w{L} = \w{e}_r \wedge \wg{\nabla}$ and obtaining another set of tensorial
+harmonics $\w{T}^{J, lm}(\th,\ph )$
+\begin{eqnarray}
+\w{T}^{L_0, lm} &=& \w{e}_r \otimes \w{e}_r Y_{lm} \nonumber\\
+\w{T}^{T_0, lm} &=& \frac{1}{\sqrt{2}} \left( \wg{\delta} -  \w{e}_r
+\otimes \w{e}_r  \right) Y_{lm} \nonumber\\
+\w{T}^{E_1, lm} &=& \sqrt{\frac{2}{l(l+1)}} \left( \w{e}_r \otimes
+\wg{\nabla} Y_{lm} \right)^{\rm sym} \nonumber\\
+\w{T}^{B_1, lm} &=& i\sqrt{\frac{2}{l(l+1)}} \left( \w{e}_r \otimes
+\w{L} Y_{lm} \right)^{\rm sym} \nonumber\\
+\w{T}^{E_2, lm} &=& \frac{1}{\sqrt{2l(l+1)(l-1)(l+2)}} \left(
+\wg{\nabla} \otimes \wg{\nabla} Y_{lm} + 3 \w{e}_r \otimes \wg{\nabla}
+Y_{lm} + \w{L} \otimes \w{L} Y_{lm} \right)^{\rm sym}  \nonumber\\
+\w{T}^{B_2, lm} &=& \frac{i}{\sqrt{2l(l+1)(l-1)(l+2)}} \left(
+\w{L} \otimes \wg{\nabla} Y_{lm} + \w{e}_r \otimes \w{L}
+Y_{lm} \right)^{\rm sym} \label{e:zeril1}
+\end{eqnarray}
+where the superscript ``sym'' indicates the symmetric part of a
+tensor. 
+
+Regge and Wheeler \cite{ReggeW57} have introduced a very similar
+family of spherical 
+harmonics, with the difference that they used a combination of
+$\w{T}^{E_2, lm}$ and $\w{T}^{T_0, lm}$ instead of $\w{T}^{E_2, lm}$,
+making their basis a non-orthonormal one. The set defined in
+(\ref{e:zeril1}) is an orthonormal basis showing all components of a
+tensor:
+\begin{itemize}
+\item $\w{T}^{L_0, lm}$ is spin 0, pure longitudinal;
+\item $\w{T}^{T_0, lm}$ is spin 0, pure transverse and proportional to the
+transverse projection tensor;
+\item $\w{T}^{E_1, lm}$ and $\w{T}^{B_1, lm}$ are spin 1, mixed
+longitudinal and transverse;
+\item $\w{T}^{E_2, lm}$ and $\w{T}^{B_2, lm}$ are spin 2, transverse
+and traceless (they carry the gravitational wave in the wave zone).
+\end{itemize}
+One can note that spin 1 elements ($\w{T}^{E_1, lm}$ and
+$\w{T}^{B_1, lm}$) are only defined for $l \geq 1$, and spin 2 elements
+($\w{T}^{E_2, lm}$ and $\w{T}^{B_2, lm}$) for $l \geq 2$. Finally, one
+can write explicitly:
+\begin{eqnarray*}
+%
+        {}[\w{T}^{L_0, lm}]_{ij} &=&
+        \left( \begin{array}{ccc}
+        1 & 0 & 0 \\
+        0 & 0 & 0 \\
+        0 & 0 & 0 \\
+        \end{array} \right) Y_{lm} \\ 
+%
+        {}[\w{T}^{E_1, lm}]_{ij} &=&
+        \frac{1}{\sqrt{2l(l+1)}}
+        \left( \begin{array}{ccc}
+        0 & \df{}{\th} & \frac{1}{\sin\th}\df{}{\ph} \\
+        \df{}{\th}& 0 & 0 \\
+        \frac{1}{\sin\th}\df{}{\ph} & 0 & 0 \\
+        \end{array} \right) Y_{lm} \\ 
+%
+        {}[\w{T}^{B_1, lm}]_{ij} &=& 
+        \frac{i}{\sqrt{2l(l+1)}}
+        \left( \begin{array}{ccc}
+        0 & \frac{1}{\sin\th} \df{}{\ph} & 
+        -\df{}{\th} \\
+        \frac{1}{\sin\th} \df{}{\ph} & 0 & 0 \\
+        -\df{}{\th} & 0 & 0 \\
+        \end{array} \right) Y_{lm} \\ 
+%
+        {}[\w{T}^{T_0, lm}]_{ij} &=&
+        \frac{1}{\sqrt{2}}\left( \begin{array}{ccc}
+        0 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+        \end{array} \right) Y_{lm} \\ 
+%
+        {}[\w{T}^{E_2, lm}]_{ij} &=&
+        \frac{1}{\sqrt{2l(l+1)(l-1)(l+2)}}
+        \left( \begin{array}{ccc}
+	0 & 0 & 0 \\
+        0 & W_{lm} & X_{lm} \\
+        0 & X_{lm} & -W_{lm} \\
+        \end{array} \right) \;,\\ 
+%
+        {}[\w{T}^{B_2, lm}]_{ij} &=&
+        \frac{i}{\sqrt{2l(l+1)(l-1)(l+2)}}
+        \left( \begin{array}{ccc}
+        0 & 0 & 0 \\
+        0 & X_{lm} & -W_{lm} \\
+        0 & -W_{lm} & -X_{lm} \\
+        \end{array} \right)  
+\end{eqnarray*}
+with 
+\bea
+        X_{lm} &:=& \frac{2}{\sin \th}\left(\df{}{\th} -
+        \cot\th\right)\df{}{\ph} Y_{lm} \\
+        W_{lm} &:=& \left(\dff{}{\th} - \cot\th\df{}{\th}
+        - \frac{1}{\sin^2\theta}\dff{}{\ph}\right) Y_{lm}
+        =\left(l(l+1) + 2\dff{}{\th}\right)Y_{lm}.
+\eea
+
+These pure spin harmonics are not eigenfunctions of the angular
+Laplacian. 
+
+\section{Relations between both types of harmonics}
+
+Following Zerilli \cite{Zeril70} and Thorne \cite{Thorn80}, the
+relation between pure spin and pure orbital harmonics is: 
+\bea
+\w{T}^{L_0, lm} &=& \sqrt{\frac{(l+1)(l+2)}{(2l+1)(2l+3)}} \w{T}^{2\
+l+2, lm} - \sqrt{\frac{2l(l+1)}{3(2l-1)(2l+3)}} \w{T}^{2\
+l, lm} + \sqrt{\frac{l(l-1)}{(2l-1)(2l+1)}} \w{T}^{2\
+l-2, lm} \nonumber\\
+&&-\frac{1}{\sqrt{3}} \w{T}^{0\ l, lm},\nonumber\\
+\w{T}^{T_0, lm} &=& - \sqrt{\frac{(l+1)(l+2)}{2(2l+1)(2l+3)}} \w{T}^{2\
+l+2, lm} + \sqrt{\frac{l(l+1)}{3(2l-1)(2l+3)}} \w{T}^{2\
+l, lm} - \sqrt{\frac{l(l-1)}{2(2l-1)(2l+1)}} \w{T}^{2\
+l-2, lm} \nonumber\\
+&&-\sqrt{\frac{2}{3}} \w{T}^{0\ l, lm}, \nonumber\\
+\w{T}^{E_1, lm} &=& - \sqrt{\frac{2l(l+2)}{(2l+1)(2l+3)}} \w{T}^{2\
+l+2, lm} - \sqrt{\frac{3}{(2l-1)(2l+3)}} \w{T}^{2\
+l, lm} + \sqrt{\frac{2(l-1)(l+1)}{(2l-1)(2l+1)}} \w{T}^{2\
+l-2, lm}, \nonumber\\
+\w{T}^{B_1, lm} &=& i\sqrt{\frac{l+2}{2l+1}} \w{T}^{2\ l+1, lm} - i
+\sqrt{\frac{l-1}{2l+1}} \w{T}^{2\ l-1, lm}, \nonumber\\ 
+\w{T}^{E_2, lm} &=& \sqrt{\frac{l(l-1)}{2(2l+1)(2l+3)}} \w{T}^{2\
+l+2, lm} + \sqrt{\frac{3(l-1)(l+2)}{(2l-1)(2l+3)}} \w{T}^{2\
+l, lm} + \sqrt{\frac{(l+1)(l+2)}{2(2l-1)(2l+1)}} \w{T}^{2\ l-2, lm},
+\nonumber\\ 
+\w{T}^{B_2, lm} &=& -i\sqrt{\frac{l-1}{2l+1}} \w{T}^{2\ l+1, lm} - i
+\sqrt{\frac{l+2}{2l+1}} \w{T}^{2\ l-1, lm}. \label{e:mz2rw}
+\eea
+This transformation is unitary and is ``easily'' inverted:
+\bea
+\w{T}^{0\ l, lm} &=& -\sqrt{3} \w{T}^{L_0, lm} - \sqrt{\frac{2}{3}}
+\w{T}^{T_0, lm}, \nonumber \\
+\w{T}^{2\ l-2, lm} &=& \sqrt{\frac{(l-1)l}{(2l-1)(2l+1)}} \w{T}^{L_0,
+lm} - \sqrt{\frac{(l-1)l}{2(2l-1)(2l+1)}} \w{T}^{T_0, lm} +
+\sqrt{\frac{2(l-1)(l+1)}{(2l-1)(2l+1)}} \w{T}^{E_1, lm} \nonumber\\
+&&+ \sqrt{\frac{(l+1)(l+2)}{2(2l-1)(2l+1)}} \w{T}^{E_2, lm}, \nonumber \\
+\w{T}^{2\ l-1, lm} &=& i\sqrt{\frac{l-1}{2l+1}} \w{T}^{B_1, lm} + i
+\sqrt{\frac{l+2}{2l+1}} \w{T}^{B_2, lm}, \nonumber\\
+\w{T}^{2\ l, lm} &=& - \sqrt{\frac{2l(l+1)}{3(2l-1)(2l+3)}}
+\w{T}^{L_0, lm} + \sqrt{\frac{l(l+1)}{3(2l-1)(2l+3)}} \w{T}^{T_0, lm}
+- \sqrt{\frac{3}{(2l-1)(2l+3)}} \w{T}^{E_1, lm} \nonumber\\
+&&+ \sqrt{\frac{3(l-1)(l+2)}{(2l-1)(2l+3)}} \w{T}^{E_2, lm}, \nonumber\\
+\w{T}^{2\ l+1, lm} &=& - i\sqrt{\frac{l+2}{2l+1}} \w{T}^{B_1, lm} + i
+\sqrt{\frac{l-1}{2l+1}} \w{T}^{B_2, lm}, \nonumber\\
+\w{T}^{2\ l+2, lm} &=& \sqrt{\frac{(l+1)(l+2)}{(2l+1)(2l+3)}}
+  \w{T}^{L_0, lm} - \sqrt{\frac{(l+1)(l+2)}{2(2l+1)(2l+3)}}
+  \w{T}^{T_0, lm} - \sqrt{\frac{2l(l+2)}{(2l+1)(2l+3)}} \w{T}^{E_1,
+  lm} \nonumber\\
+&&+ \sqrt{\frac{l(l-1)}{2(2l+1)(2l+3)}} \w{T}^{E_2, lm}. \label{e:rw2mz}
+\eea
+
+Having in mind the fact that the coefficients of these decompositions
+depend on the quantic number $l$, one can see that in the general
+3-dimensional case, all the components of a tensor describing a wave
+and having the same parity are mixed (longitudinal / transverse). This
+is due to the fact that the pure spin harmonics are not eigenfunctions
+of the angular Laplacian. There can be a decoupling of all modes, when
+applying this analysis to the description of perturbations on a
+spherically symmetric space-time (e.g. Schwarzschild, like the work by
+Regge and Wheeler \cite{ReggeW57}). But, in a more general case, and
+when using numerical methods to tackle the problem, this
+decompositions may not be the best suited. Still, they give very good
+insight on the asymptotic wave structure, where the wave vector
+$\w{k}$ is collinear to $\w{e}_r$. 

@@ -1,0 +1,114 @@
+      SUBROUTINE CSPLINE(N, X, Y, A, B, C, D, H, T, U, V, W, ERROR)
+      IMPLICIT NONE
+C
+C THIS SUBROUTINE CALCULATES THE COEFFICIENTS OF
+C A CUBIC SPLINE THOUGH THE SET OF DATA POINTS
+C WITH X-COORDINATES INT THE X ARRAY AND
+C CORRESPONDING Y-COORDINATES IN THE ARRAY Y.
+C THE COEFFICIENTS OF THE CUBIC POLYNOMIALS WILL
+C BE PUT IN ARRAYS A, B, C, D
+C ERROR WILL INDICATE THE SUCCESS OR FAILURE OF
+C THE FIT
+C
+C DUMMY ARGUMENTS
+      INTEGER N, ERROR
+      DOUBLEPRECISION X(*), Y(*)
+      DOUBLEPRECISION A(*), B(*), C(*), D(*)
+      DOUBLEPRECISION H(*)
+      DOUBLEPRECISION T(*), U(*), V(*), W(*)
+C
+C LOCAL VARIABLES
+      INTEGER I
+C********************************************************************
+C     VALIDITY CHECK
+      IF (N .LT. 1) THEN
+C     THERE IS NO PROBLEM TO SOLVE
+         ERROR = -1
+         RETURN
+      ENDIF
+C********************************************************************
+C TEST THAT THE X-COORDINATE ARE EITHER STRICTLY
+C INCREASING OR STRICTLY DECREASING
+      IF ( X(1) .LT. X(2) ) THEN
+C        TEST THAT X-COORDINATES ARE ORDERED INCREASINGLY
+         DO I = 2, N-2
+            IF (X(I) .LT. X(I+1)) THEN
+               CYCLE
+            END IF
+C           X-COORDINATES AREN'T MONOTONICALLY INCREASING
+            ERROR = -3
+            RETURN
+         END DO
+      ELSE IF (X(1) .EQ. X(2)) THEN
+C         X-COORDINATES AREN'T DISTINCT
+          ERROR = -3
+          RETURN
+      ELSE
+C          TEST THAT X-COORDINATES ARE ORDERED DECREASINGLY
+         DO I = 2, N-2
+            IF (X(I) .GT. X(I+1)) THEN
+               CYCLE
+            END IF
+C           X-COORDINATES AREN'T MONOTONICALLY INCREASING
+            ERROR = -3
+            RETURN
+         END DO
+      END IF
+C********************************************************************
+C     DATA IS OK
+      ERROR = 0
+C     SET H ARRAY TO INTERVAL LENGTHS
+      DO I = 1, N-1
+         H(I) = X(I+1) - X(I)
+      ENDDO
+C     FILL UP COEFFICIENT ARRAYS FOR THE TRIDIAGONAL SET
+      DO I = 2, N-1
+         T(I) = H(I-1)
+         U(I) = 2.0D0*(H(I-1)-H(I))
+         V(I) = H(I)
+         W(I) = 6.0D0*((Y(I+1)-Y(I))/H(I) - (Y(I)-Y(I-1))/H(I-1))
+      ENDDO
+C SET END-POINT CONTITIONS
+      U(1) = 1.0D0
+      V(1) = 0.0D0
+      W(1) = 0.0D0
+      T(N) = 0.0D0
+      U(N) = 1.0D0
+      W(N) = 0.0D0
+C CALCULATE THE SIGMA VALUES
+      CALL TRISOLVE(N, T, U, V, W, ERROR)
+      IF (ERROR .NE. 0) THEN
+         PRINT*, 'AN "IMPOSSIBLE" ERROR HAS OCCURED.'
+         STOP
+      ENDIF
+C CALCULATE THE SPLINE COEFFICIENTS FROM THE SIGMAS
+      DO I = 1, N-1
+         A(I) = (W(I+1) - W(I))/(6.0*H(I))
+         B(I) = 0.5*W(I)
+         C(I) = (Y(I+1)-Y(I))/H(I) - (W(I+1)+2.0*W(I))*H(I)/6.0
+         D(I) = Y(I)
+      END DO
+      END
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+      SUBROUTINE CUBSPL(YZ, Z, N, X, A, B, C, D)
+C THIS FUNCTION CALCULATES THE SPLINE INTERPOLATION VALUES
+C FOR A GIVEN POINT Z
+C YZ IS THE RETURNED VALUE
+      IMPLICIT NONE
+      INTEGER N
+      DOUBLEPRECISION YZ, Z
+      DOUBLEPRECISION X(*), A(*), B(*), C(*), D(*)
+      DOUBLEPRECISION ZJ
+      INTEGER J, K
+      DO K = 1, N-1
+         IF (X(K).LE.Z.AND.Z.LE.X(K+1)) THEN
+            J = K
+            GOTO 100
+         ENDIF
+      ENDDO
+  100 CONTINUE
+      ZJ = Z-X(J)
+      YZ = ((A(J)*ZJ + B(J))*ZJ + C(J))*ZJ + D(J)
+      RETURN
+      END

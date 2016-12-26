@@ -1,0 +1,48 @@
+%
+% $Id: append.tex,v 1.1 2003/02/24 08:08:23 e_gourgoulhon Exp $
+%
+\appendix
+
+\chapter{Notations}
+
+The various metrics and covariant derivatives introduced in these
+notes are listed in 
+Table~\ref{t:metrics}.
+\begin{table}
+\begin{tabular}{cccccc}
+\hline
+ Metric & Associated & Contravariant &Christoffel symbols	       & Ricci   &  Action  \\
+ & cov. derivative    &  derivative & w.r.t. coord. $(x^i)$    & tensor  &  on $\gamma$ \\
+\hline 
+\hline \\
+$g_{\alpha\beta}$ & $\nabla_\alpha$ & $\nabla^\alpha:= g^{\alpha\mu} \nabla_\mu$
+& (unused)  &  ${}^4\! R_{\alpha\beta}$ & (unused) \\
+\hline \\
+$\gm_{ij}$  & $D_i$ & $D^i:=\gm^{ij} D_j$ & $\Gamma^k_{\ \, ij}$& $R_{ij}$ 
+	& $D_i\ln\gm =0$ \\
+\footnotesize Eq.~(\ref{e:def_3-metric})   &  
+\footnotesize Eq.~(\ref{e:nab_def}) & &
+\footnotesize Eq.~(\ref{e:christo_gm}) &  
+& \footnotesize  Eq.~(\ref{e:nab_gm_zero})  \\
+\hline \\
+ $\tgm_{ij}$  & $\tna_i$ & $\tna^i := \tgm^{ij} \tna_j$ & 
+ $\tilde\Gamma^k_{\ \, ij}$& $\tilde R_{ij}$ 
+	& $\tna_i\ln\gm = \partial_i \ln\gm - \partial_i\ln f$ \\
+\footnotesize Eq.~(\ref{e:def_metconf}) &
+\footnotesize Eq.~(\ref{e:def_nablatilde}) & 
+\footnotesize Eq.~(\ref{e:def_uptD}) &
+\footnotesize Eq.~(\ref{e:christo_tgm}) & 
+\footnotesize Eq.~(\ref{e:R_tR}) & 
+\footnotesize \\
+\hline \\
+ $f_{ij}$  &  $\cD_i$ & $\cD^i := f^{ij} \cD_j$ 
+ & $\bar\Gamma^k_{\ \, ij}$& $\bar R_{ij} = 0$ 
+	& $\cD_i\ln\gm = \partial_i \ln\gm - \partial_i\ln f$ \\
+& \footnotesize Eq.~(\ref{e:Df_zero}) &
+ \footnotesize Eq.~(\ref{e:def_upcD}) &
+\footnotesize Eq.~(\ref{e:christo_f}) & 
+& \footnotesize  \\
+\hline
+\end{tabular}
+\caption{\label{t:metrics} Metrics and covariant derivatives.}
+\end{table}

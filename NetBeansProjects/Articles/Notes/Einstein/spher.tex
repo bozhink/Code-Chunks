@@ -1,0 +1,615 @@
+%
+% $Id: spher.tex,v 1.3 2003/03/05 21:27:26 e_gourgoulhon Exp $
+%
+\chapter{Projections onto a spherical orthonormal basis}
+
+\section{Spherical coordinates}
+
+We introduce on $\Sigma_t$ a coordinate system $x^i=(r,\th,\ph)$
+of spherical type (i.e. $\ph$ has periodicity $2\pi$, etc...),
+such that the flat metric $\w{f}$ has the following components
+with respect to these coordinates
+\be
+	f_{ij} = \left( \begin{array}{ccc}
+		1 & 0 & 0 \\
+		0 & r^2& 0 \\
+		0 & 0 & r^2\sin^2\th
+		\end{array} \right) .
+\ee
+The determinant $f$ [Eq.~(\ref{e:def_detf})] is then
+\be \label{e:det_f_spher}
+	f = r^4 \sin^2\th , 
+\ee
+and the inverse metric has the components
+\be
+	f^{ij} = \left( \begin{array}{ccc}
+		1 & 0 & 0 \\
+		0 & {1\over r^2}& 0 \\
+		0 & 0 & {1\over r^2\sin^2\th}
+		\end{array} \right) .
+\ee
+The non-vanishing Christoffel symbols of $\w{f}$ with respect
+to the coordinates $(r,\th,\ph)$ are computed according to
+Eq.~(\ref{e:christo_f}):
+\be
+	\begin{array}{lll}
+	\bar\Gamma^r_{\ \, \th\th} = - r \quad 
+	& \bar\Gamma^\th_{\ \, r\th} = \bar\Gamma^\th_{\ \,\th r}
+		= {1\over r} \quad 
+	& \bar\Gamma^\ph_{\ \, r\ph} = \bar\Gamma^\ph_{\ \, \ph r}
+		={1\over r} \\
+	 \bar\Gamma^r_{\ \, \ph\ph } = - r\sin^2\th \quad
+	& \bar\Gamma^\th_{\ \, \ph\ph} = - \sin\th\cos\th \quad
+	& \bar\Gamma^\ph_{\ \, \th\ph} = \bar\Gamma^\ph_{\ \, \ph\th}
+		={1\over\tan\th} 
+	\end{array} . \label{e:Christo_spher}
+\ee
+All the other $\bar\Gamma^k_{\ \, ij}$ are zero. 
+
+
+\section{Orthonormal basis}
+
+The natural vector basis associated with the coordinates $(r,\th,\ph)$
+is 
+\be \label{e:nat_basis}
+	\left( \der{}{x^i} \right) = \left( \der{}{r},
+	\der{}{\th},\der{}{\ph} \right). 
+\ee
+The corresponding dual basis in the space of 1-forms is
+\be
+	(\dd x^i)= (\dd r, \dd\th, \dd\ph) . 
+\ee 
+From the vector basis (\ref{e:nat_basis}), 
+we construct the following vector fields:
+\bea
+	\w{e}_\hr & := & \der{}{r} \\
+	\w{e}_\hth & := & {1\over r} \der{}{\th} \\
+	\w{e}_\hph & := & {1\over r\sin\th} \der{}{\ph} .
+\eea
+$(\w{e}_{\hat i})= (\w{e}_\hr, \w{e}_\hth, \w{e}_\hph)$ forms a basis
+of the vector space tangent to $\Sigma_t$. Moreover, this basis
+is orthonormal with respect to the flat metric $\w{f}$:
+\be
+	\w{f}(\w{e}_{\hat i}, \w{e}_{\hat i})=\delta_{ij}. 
+\ee
+The components $e_{\hat i}^{\ \, j}$ of $\w{e}_{\hat i}$ with
+respect to the natural basis $(\partial/\partial x^j)$
+define the change of basis matrix:
+\be \label{e:change_ortho}
+	\w{e}_{\hat i} = e_{\hat i}^{\ \, j} \: \der{}{x^j} .
+\ee
+Explicitly
+\be \label{e:passage_ortho}
+ e_{\hat i}^{\ \, j} = \left( \begin{array}{ccc}
+		1 & 0 & 0 \\
+		0 & {1\over r}& 0 \\
+		0 & 0 & {1\over r\sin\th}
+		\end{array} \right) . 
+\ee
+
+Let us denote by $(\w{e}^{\hat i})= (\w{e}^\hr, \w{e}^\hth, \w{e}^\hph)$
+the basis of 1-forms which is dual to $(\w{e}_{\hat i})$:
+\be \label{e:dual_ortho}
+	\langle \w{e}^{\hat i}, \w{e}_{\hat j} \rangle = \delta^i_{\ \, j}.
+\ee 
+The components $e^{\hat i}_{\ \, j}$ of $\w{e}^{\hat i}$ with respect
+to the 1-form basis $(\dd x^j)$ are given by:
+\be
+	\w{e}^{\hat i} = e^{\hat i}_{\ \, j} \: \dd x^j 
+\ee
+The duality relation (\ref{e:dual_ortho}) results in
+\be
+	e^{\hat i}_{\ \, k} e_{\hat j}^{\ \, k} = \delta^i_{\ \, j}
+\qquad\mbox{and}\qquad
+	e^{\hat k}_{\ \, j} e_{\hat k}^{\ \, i} = \delta^i_{\ \, j} ,
+\ee
+i.e. the transpose of the matrix $e^{\hat i}_{\ \, j}$ is the
+inverse of the matrix $e_{\hat i}^{\ \, j}$.
+Hence, from (\ref{e:passage_ortho}), 
+\be \label{e:inv_passage_ortho}
+ e^{\hat i}_{\ \, j} = \left( \begin{array}{ccc}
+		1 & 0 & 0 \\
+		0 & r& 0 \\
+		0 & 0 & r\sin\th
+		\end{array} \right) . 
+\ee
+
+\section{Ricci rotation coefficients}
+
+The flat covariant derivative  $\wg{\cD}\w{e}_{\hat i}$ of the vector 
+$\w{e}_{\hat i}$ is a tensor of type $(1,1)$. Its expansion onto the
+basis $\w{e}^{\hat j}\otimes \w{e}_{\hat k}$ defines
+27 coefficients $\hat \Gamma^{\hat k}_{\ \, \hat j\hat i}$
+according to 
+\be
+	\wg{\cD}\w{e}_{\hat i} =: \hat \Gamma^{\hat k}_{\ \, \hat j\hat i}
+		\: \w{e}^{\hat j}\otimes \w{e}_{\hat k} . 
+\ee
+
+\compar{This definition agrees with that of Hawking \& Ellis \cite{HawkiE73},
+Sec. 2.5, p.~31.}
+
+Equivalently the coefficients $\hat \Gamma^{\hat k}_{\ \, \hat j\hat i}$
+can be defined by the formula
+\be \label{e:hat_gam}
+	\hat \Gamma^{\hat k}_{\ \, \hat i\hat j} = 
+	\langle \w{e}^{\hat k}, \wg{\cD}_{\w{e}_{\hat i}} \w{e}_{\hat j}
+	\rangle , 
+\ee
+where $\wg{\cD}_{\w{e}_{\hat i}} \w{e}_{\hat j}$ denotes the derivative
+of the vector $\w{e}_{\hat j}$ along the vector $\w{e}_{\hat i}$ for
+the flat connection $\wg{\cD}$. 
+
+\compar{Eq.~(\ref{e:hat_gam}) agrees with the equation on page~31
+of Hawking \& Ellis \cite{HawkiE73}, but it differs in the ordering
+of the indices $ij$ from the definition (8.19a) of MTW \cite{MisneTW73}:
+$\left. \hat \Gamma^{\hat k}_{\ \, \hat i\hat j} \right| _{MTW} = 
+ \hat \Gamma^{\hat k}_{\ \, \hat j\hat i}$. Note that contrary to
+Christoffel symbols, the coefficients 
+$\hat \Gamma^{\hat k}_{\ \, \hat i\hat j}$ are not symmetric with
+respect to their last two indices.}
+
+From Eq.~(\ref{e:hat_gam}) and Eq.~(\ref{e:change_ortho}),
+we get an expression for $\hat \Gamma^{\hat k}_{\ \, \hat i\hat j}$
+in terms of the Christoffel symbols 
+$\bar \Gamma^{\hat k}_{\ \, \hat i\hat j}$
+of $\wg{\cD}$:
+\be \label{e:hat_Gam_Christo}
+	\hat \Gamma^{\hat k}_{\ \, \hat i\hat j} = e^{\hat k}_{\ \, l}
+	\, e_{\hat i}^{\ \, m} \left( \der{e_{\hat j}^{\ \, l}}{x^m}
+	+ \bar\Gamma^l_{\ \, mn} e_{\hat j}^{\ \, n} \right) . 
+\ee
+
+
+Given a tensor field $\w{T}$ of type $(q,p)$, the components of the 
+covariant derivative $\wg{\cD} \w{T}$ in the orthonormal
+basis $\w{e}^{\hat k} \otimes \w{e}_{{\hat i}_1} \otimes \cdots
+\otimes\w{e}_{{\hat i}_p}\otimes \cdots \otimes \w{e}^{{\hat j}_1}
+\otimes \cdots \otimes \w{e}^{{\hat j}_q}$ are given by
+\bea 
+ \cD_{\hat k} 
+ T^{{\hat i}_1\ldots {\hat i}_p}_{\quad \quad {\hat j}_1\ldots {\hat j}_q}
+	=   e_{\hat k}^{\ \, l} \der{}{x^l}
+	T^{{\hat i}_1\ldots {\hat i}_p}_{\quad \quad {\hat j}_1\ldots {\hat j}_q}
+	& + & \sum_{r=1}^p \hat\Gamma^{{\hat i}_r}_{\ \, \hat k\hat l} \, 
+T^{{\hat i}_1\ldots \hat l \ldots {\hat i}_p}_{\quad\quad \quad {\hat j}_1\ldots {\hat j}_q}
+	\nonumber \\
+& - & \sum_{r=1}^q \hat\Gamma^{\hat l}_{\ \, \hat k {\hat j}_r} \, 
+T^{{\hat i}_1\ldots {\hat i}_p}_{\quad \quad {\hat j}_1\ldots \hat l \ldots 
+{\hat j}_q} . \label{e:cDT_ortho}
+\eea
+In particular, for the shift vector:
+\be
+	\cD_{\hat k} \beta^{\hat i}= e_{\hat k}^{\ \, l}
+	\partial_l \beta^{\hat i}
+	+  \hat\Gamma^{\hat i}_{\ \, \hat k \hat l} \beta^{\hat l} 	
+\ee
+and for the potentials $h^{ij}$:
+\be \label{e:cD_h_ortho}
+	\cD_{\hat k} h^{\hat i\hat j} =  e_{\hat k}^{\ \, l}
+	\partial_l h^{\hat i\hat j}
+	+  \hat\Gamma^{\hat i}_{\ \, \hat k \hat l} h^{\hat l j} 	
+	+  \hat\Gamma^{\hat j}_{\ \, \hat k \hat l} h^{i \hat l} 	. 
+\ee
+
+The quantities
+\be
+	\hat\Gamma_{\hat k\hat i\hat j} := f_{\hat k\hat l}
+		\hat \Gamma^{\hat l}_{\ \, \hat i\hat j} 
+\ee
+are called the {\em Ricci rotation coefficients}. They obey
+to the symmetry properties:
+\bea
+	(\w{e}_{\hat i}) \ \mbox{natural basis} &\Rightarrow&
+	 \hat\Gamma_{\hat k\hat j\hat i} = \hat\Gamma_{\hat k\hat i\hat j} \\
+	(\w{e}_{\hat i}) \ \mbox{orthonormal basis} &\Rightarrow&
+	\hat\Gamma_{\hat j\hat i\hat k} = - \hat\Gamma_{\hat k\hat i\hat j}
+		\label{e:anti_sym_Ricci_rot}
+\eea
+In the present case, $(\w{e}_{\hat i})$ is not a natural basis, but
+an orthonormal one, so only property (\ref{e:anti_sym_Ricci_rot}) 
+holds. 
+
+\compar{The Ricci rotation coefficients $\omega_{\hat i \hat k \hat j}$
+defined by Eq.~(3.4.14) of Wald \cite{Wald84} corresponds to 
+ours, provided one takes into account the reordering of the indices:
+$\omega_{\hat i \hat k \hat j} = \hat\Gamma_{\hat k\hat i\hat j}$.}
+
+
+
+From Eqs.~(\ref{e:hat_Gam_Christo}), (\ref{e:passage_ortho}), 
+(\ref{e:inv_passage_ortho}) and (\ref{e:Christo_spher}), the only 
+non-vanishing coefficients $\hat \Gamma^{\hat k}_{\ \, \hat i\hat j}$
+are 
+\be
+	\begin{array}{lll}
+	\hat\Gamma^{\hat r}_{\ \, \hat\th\hat\th} = - {1\over r} \quad 
+	& \hat\Gamma^{\hat\th}_{\ \, \hat\th \hat r} =  {1\over r} \quad 
+	& \hat\Gamma^{\hat \ph}_{\ \, \hat \ph \hat r}
+		={1\over r} \\
+	 \hat\Gamma^{\hat r}_{\ \, \hat\ph\hat\ph} = -{1\over r} \quad
+	& \hat\Gamma^{\hat\th}_{\ \, \hat\ph\hat\ph} = 
+	- {1\over r\tan\th} \quad
+	& \hat\Gamma^{\hat\ph}_{\ \, \hat\ph\hat\th}
+		={1\over r\tan\th} 
+	\end{array} . \label{e:Ricci_rot_spher}
+\ee
+All the other coefficients are zero. 
+
+\compar{The expressions (\ref{e:Ricci_rot_spher}) agree with that
+of Exercise 8.6 of MTW \cite{MisneTW73}, taking into account
+the change of notation $\left. \hat \Gamma^{\hat k}_{\ \, \hat i\hat j} \right| _{MTW} = 
+ \hat \Gamma^{\hat k}_{\ \, \hat j\hat i}$.}
+ 
+\section{Orthonormal components of $\w{h}$}
+
+\subsection{Notation}
+
+We denote by $h^{rr}$, $h^{r\th}$, etc... the components of
+the tensor $\w{h}$ introduced in Sec.~\ref{s:def_h} with respect to the 
+orthonormal basis $(\w{e}_{\hat i}\otimes\w{e}_{\hat j})$:
+\be
+	h^{\hat i\hat j} = \left( \begin{array}{ccc}
+		h^{rr} & h^{r\th} & h^{r\ph} \\
+		h^{r\th} & h^{\th\th} & h^{\th\ph} \\
+		h^{r\ph} & h^{\th\ph} & h^{\ph\ph}
+		\end{array} \right) .
+\ee
+Note that we have suppressed the hats on $r$, $\th$ and $\ph$
+to shorten the notations. 
+
+\subsection{Unit value of the determinant of $\tgm^{\hat i\hat j}$}
+
+From the construction of the conformal metric, the determinant 
+of the components $\tgm^{ij}$ is equal to the inverse of that 
+of the flat metric [cf. Eq.~(\ref{e:dettgm_f})]:
+\be \label{e:det_tgm_inv}
+	\det \tgm^{ij} = f^{-1} .
+\ee
+Now the orthonormal components of the inverse conformal metric
+are related to the $\tgm^{ij}$'s by
+\be
+	\tgm^{ij} = e_{\hat k}^{\ \, i} e_{\hat l}^{\ \, j}
+		\tgm^{\hat k\hat l} , 
+\ee
+from which we obtain
+\be \label{e:det_tgm_det_ortho}
+	\det \tgm^{ij} = \left( \det e_{\hat i}^{\ \, j}\right) ^2
+		\det \tgm^{\hat i\hat j} .
+\ee
+A similar relation holds for $\w{f}$:
+\be
+	\det f^{ij} = \left( \det e_{\hat i}^{\ \, j}\right) ^2
+		\det f^{\hat i\hat j} ,
+\ee
+with $\det f^{ij}=f^{-1}$ and, by definition of an orthonormal
+basis, $\det f^{\hat i\hat j} = 1$. We deduce 
+that\footnote{This relation can be checked from the explicit expressions 
+(\ref{e:det_f_spher}) and (\ref{e:passage_ortho}).}
+\be
+	\left( \det e_{\hat i}^{\ \, j}\right) ^2 = f^{-1} .
+\ee
+Applying the above relation to (\ref{e:det_tgm_det_ortho})
+shows that the requirement (\ref{e:det_tgm_inv}) 
+[or (\ref{e:dettgm_f})] is equivalent to 
+\be
+	\det \tgm^{\hat i\hat j} = 1 .  
+\ee
+Replacing $\tgm^{\hat i\hat j}$ by $f^{\hat i\hat j} + h^{\hat i\hat j}$,
+this relation writes
+\be
+	\left| \begin{array}{lll}
+		1+ h^{rr} & h^{r\th} & h^{r\ph} \\
+		h^{r\th} & 1+ h^{\th\th} & h^{\th\ph} \\
+		h^{r\ph} & h^{\th\ph} & 1+ h^{\ph\ph}
+		\end{array} \right|  = 1 .
+\ee
+Expanding the determinant results in
+\bea
+	& & h^{rr} + h^{\th\th} + h^{\ph\ph} + h^{rr} h^{\th\th}
+	+ h^{rr} h^{\ph\ph} + h^{\th\th} h^{\ph\ph}
+	- (h^{r\th})^2 - (h^{r\ph})^2 - (h^{\th\ph})^2 \nonumber \\
+	& & \qquad + h^{rr} h^{\th\th} h^{\ph\ph} 
+	+ 2 h^{r\th} h^{r\ph} h^{\th\ph} - h^{rr} (h^{\th\ph})^2
+	- h^{\th\th} (h^{r\ph})^2 - h^{\ph\ph} (h^{r\th})^2 = 0 .
+	\label{e:det_unit_ortho1}
+\eea
+This relation shows clearly that among the six components 
+$h^{\hat i\hat j}$ only five of them are independent.
+The Dirac gauge (discussed below) will add three relations 
+between the $h^{\hat i\hat j}$, leaving two independent components:
+the two dynamical degrees of freedom of the gravitational field.
+	
+\subsection{Dirac gauge condition}
+
+From (\ref{e:cD_h_ortho}) and the explicit values (\ref{e:passage_ortho})
+and (\ref{e:Ricci_rot_spher}), we get the orthonormal components
+of the divergence of $\w{h}$ as
+\bea
+H^{\hat r} & = & \der{h^{rr}}{r} + {2h^{rr}\over r}
+  + {1\over r} \left[ \der{h^{r\th}}{\th} 
+  + {1\over \sin\th} \der{h^{r\ph}}{\ph}
+  - h^{\th\th} - h^{\ph\ph} + {h^{r\th}\over \tan\th} \right]  \ = \ 0 
+  				\label{e:Dirac_ortho_r}\\ 
+H^{\hat\th} & = & \der{h^{r\th}}{r} + {3h^{r\th}\over r}
+  + {1\over r} \left[ \der{h^{\th\th}}{\th} 
+  + {1\over \sin\th} \der{h^{\th\ph}}{\ph}
+  + {1 \over \tan\th} \left( h^{\th\th} - h^{\ph\ph} \right) \right]
+    \ = \ 0 \label{e:Dirac_ortho_t} \\
+H^{\hat\ph} & = & \der{h^{r\ph}}{r} + {3h^{r\ph}\over r}
+  + {1\over r} \left[  \der{h^{\th\ph}}{\th} 
+  + {1\over \sin\th} \der{h^{\ph\ph}}{\ph}
+  + {2 h^{\th\ph}\over \tan\th} \right] \ = \ 0 , \label{e:Dirac_ortho_p}
+\eea
+where the $=0$ express the Dirac gauge. 
+
+\subsection{Laplacian of $\w{h}$}
+
+The orthonormal components $\Delta h^{\hat i\hat j}$
+of the flat Laplacian of $\w{h}$
+which appears in Eqs.~(\ref{e:evol_K3}) and (\ref{e:evol_K4})
+are obtained from Eqs.~(\ref{e:def_flat_lap}), (\ref{e:cDT_ortho}),
+(\ref{e:passage_ortho}) and (\ref{e:Ricci_rot_spher}):
+\bea
+  \Delta h^{rr}  & = & \dder{h^{rr}}{r} + 
+  {2\over r} \der{h^{rr}}{r}
+  +{1\over r^2} \Bigg[ \dder{h^{rr}}{\th} + {1\over\tan\th} 
+  \der{h^{rr}}{\th} + {1\over\sin^2\th} \dder{h^{rr}}{\ph}
+  - 4 h^{rr} \nonumber \\
+  & & - 4 \der{h^{r\th}}{\th} - {4 h^{r\th}\over\tan\th} 
+  - {4\over\sin\th} \der{h^{r\ph}}{\ph} + 2 h^{\th\th} + 2 h^{\ph\ph} 
+  \Bigg] , \label{e:lap_hrr} \\
+  \Delta h^{r\th} & = & \dder{h^{r\th}}{r} + {2\over r} \der{h^{r\th}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{r\th}}{\th} + {1\over\tan\th} \der{h^{r\th}}{\th}
+  +{1\over \sin^2\th}\dder{h^{r\th}}{\ph} 
+  - \left( 4+{1\over\sin^2\th}	\right) h^{r\th} \nonumber \\
+  & & +2\der{h^{rr}}{\th} - 2\der{h^{\th\th}}{\th}
+  -2{\cos\th\over\sin^2\th} \der{h^{r\ph}}{\ph} 
+  -{2h^{\th\th}\over\tan\th} - {2\over\sin\th}\der{h^{\th\ph}}{\ph}
+  + {2 h^{\ph\ph}\over \tan\th} \Bigg] , \label{e:lap_hrt} \\
+  \Delta h^{r\ph} & = & \dder{h^{r\ph}}{r} + {2\over r} \der{h^{r\ph}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{r\ph}}{\th} + {1\over\tan\th} \der{h^{r\ph}}{\th}
+  +{1\over \sin^2\th}\dder{h^{r\ph}}{\ph}
+  - \left( 5+{1\over\tan^2\th}	\right) h^{r\ph} \nonumber \\
+  & & + {2\over\sin\th} \der{h^{rr}}{\ph}
+  + 2 {\cos\th\over\sin^2\th} \der{h^{r\th}}{\ph}
+  - 2 \der{h^{\th\ph}}{\th} - {2\over\sin\th} \der{h^{\ph\ph}}{\ph}
+  - {4h^{\th\ph}\over\tan\th} \Bigg], \label{e:lap_hrp}\\
+  \Delta h^{\th\th} & = & \dder{h^{\th\th}}{r} + {2\over r} \der{h^{\th\th}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{\th\th}}{\th} 
+  + {1\over\tan\th} \der{h^{\th\th}}{\th}
+  +{1\over \sin^2\th}\dder{h^{\th\th}}{\ph} 
+  - {2h^{\th\th}\over\sin^2\th} \nonumber \\
+  & & + 4 \der{h^{r\th}}{\th} 
+  - 4 {\cos\th\over\sin^2\th} \der{h^{\th\ph}}{\ph}
+  + 2 h^{rr} + {2h^{\ph\ph}\over\tan^2\th} \Bigg] , \label{e:lap_htt}\\
+  \Delta h^{\th\ph} & = & \dder{h^{\th\ph}}{r} + {2\over r} \der{h^{\th\ph}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{\th\ph}}{\th} 
+  + {1\over\tan\th} \der{h^{\th\ph}}{\th}
+  +{1\over \sin^2\th}\dder{h^{\th\ph}}{\ph} 
+  - 2 \left( 1+{2\over\tan^2\th} \right) h^{\th\ph} \nonumber \\
+  & & + {2\over\sin\th} \der{h^{r\th}}{\ph} 
+  + 2 \der{h^{r\ph}}{\th}
+  + 2{\cos\th\over\sin^2\th} \left( \der{h^{\th\th}}{\ph}
+  	-\der{h^{\ph\ph}}{\ph} \right) 
+	- {2 h^{r\ph}\over \tan\th} \Bigg] , \label{e:lap_htp} \\
+  \Delta h^{\ph\ph} & = & \dder{h^{\ph\ph}}{r} + {2\over r} \der{h^{\ph\ph}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{\ph\ph}}{\th} 
+  + {1\over\tan\th} \der{h^{\ph\ph}}{\th}
+  +{1\over \sin^2\th}\dder{h^{\ph\ph}}{\ph} 
+  - {2 h^{\ph\ph}\over\sin^2\th} \nonumber \\
+  & & + {4\over\sin\th} \der{h^{r\ph}}{\ph} 
+  + 4 {\cos\th\over\sin^2\th} \der{h^{\th\ph}}{\ph}
+  + 2 h^{rr} + {2 h^{\th\th}\over \tan^2\th} 
+  + {4 h^{r\th}\over\tan\th} \Bigg] . \label{e:lap_hpp}	
+\eea
+
+\subsection{Trace of $\w{h}$}
+
+The above expressions for $\Delta h^{\hat i\hat j}$ couple all the
+components $h^{rr}$, $h^{r\th}$, etc...
+A first way to decouple it is to consider the trace of $\w{h}$
+with respect to the flat metric $\w{f}$:
+\be \label{e:def_trace_h}
+	h := f_{ij} h^{ij} = f_{\hat i\hat j} h^{\hat i\hat j}
+		= h^{rr} + h^{\th\th} + h^{\ph\ph} .
+\ee
+Indeed, one has the identity
+\be
+	\Delta h = f_{ij} \Delta h^{ij} = \Delta h^{rr}
+		+ \Delta h^{\th\th} + \Delta h^{\ph\ph}.
+\ee
+$h$ being a scalar field, $\Delta h$ is given by the usual expression:
+\be
+	\Delta h = \dder{h}{r} + {2\over r}\der{h}{r}
+	+ {1\over r^2} \left( \dder{h}{\th} + {1\over\tan\th} \der{h}{\th}
+	+ {1\over \sin^2\th} \dder{h}{\ph} \right) .
+\ee
+Note that the relation (\ref{e:det_unit_ortho1})
+between the components $h^{\hat i\hat j}$ which arises from 
+$\det\tgm^{\hat i\hat j}=1$ can be re-expressed in terms of the trace
+$h$ as 
+\bea
+	& & h + h^{rr} h^{\th\th}
+	+ h^{rr} h^{\ph\ph} + h^{\th\th} h^{\ph\ph}
+	- (h^{r\th})^2 - (h^{r\ph})^2 - (h^{\th\ph})^2 \nonumber \\
+	& & \qquad + h^{rr} h^{\th\th} h^{\ph\ph} 
+	+ 2 h^{r\th} h^{r\ph} h^{\th\ph} - h^{rr} (h^{\th\ph})^2
+	- h^{\th\th} (h^{r\ph})^2 - h^{\ph\ph} (h^{r\th})^2 = 0 .
+	\label{e:det_unit_ortho2}
+\eea
+We see clearly on this equation that, at the linear order in
+$h^{\hat i\hat j}$, the condition $\det\tgm^{\hat i\hat j}=1$ is
+equivalent to $h=0$.
+
+
+
+\section{Decoupling of $\Delta h^{\hat i\hat j}$ thanks to the Dirac gauge}
+
+We can use the Dirac gauge (\ref{e:Dirac_ortho_r})-(\ref{e:Dirac_ortho_p})
+to substantially decouple $\Delta h^{\hat i\hat j}$.
+
+\subsection{Decoupling of $\Delta h^{rr}$}
+
+Inserting the first Dirac condition (\ref{e:Dirac_ortho_r}) into
+(\ref{e:lap_hrr}) results in the disappearing of the terms
+in $h^{r\th}$ and $h^{r\ph}$:
+\be
+   \Delta h^{rr} = \dder{h^{rr}}{r} + 
+  {6\over r} \der{h^{rr}}{r}
+  +{1\over r^2} \left( \dder{h^{rr}}{\th} + {1\over\tan\th} 
+  \der{h^{rr}}{\th} + {1\over\sin^2\th} \dder{h^{rr}}{\ph}
+  + 4 h^{rr} - 2 h^{\th\th} - 2 h^{\ph\ph} \right) .
+\ee
+Then, we can use Eq.~(\ref{e:def_trace_h}) to let appear the trace $h$
+instead of the terms in $h^{\th\th}$ and $h^{\ph\ph}$:
+\be
+   \Delta h^{rr} = \dder{h^{rr}}{r} + 
+  {6\over r} \der{h^{rr}}{r}
+  +{1\over r^2} \left( \dder{h^{rr}}{\th} + {1\over\tan\th} 
+  \der{h^{rr}}{\th} + {1\over\sin^2\th} \dder{h^{rr}}{\ph}
+  + 6 h^{rr} \right) - 2 {h\over r^2}.
+\ee
+If we define the function $\chi$ by
+\be
+	h^{rr} =: {\chi \over r^2} ,
+\ee
+the above equation reduces to
+\be
+	\Delta h^{rr} = {1\over r^2} \left( \Delta \chi - 2 h \right) ,
+\ee 
+where $\Delta\chi$ stands for the usual Laplacian applied to $\chi$
+considered as a scalar:
+\be \label{e:lap_chi}
+	\Delta \chi = \dder{\chi}{r} + {2\over r}\der{\chi}{r}
+	+ {1\over r^2} \left( \dder{\chi}{\th} 
+	+ {1\over\tan\th} \der{\chi}{\th}
+	+ {1\over \sin^2\th} \dder{\chi}{\ph} \right) .
+\ee
+
+\subsection{Decoupling of $\Delta h^{r\th}$ and $\Delta h^{r\ph}$}
+
+Inserting the second Dirac condition (\ref{e:Dirac_ortho_t}) into
+(\ref{e:lap_hrt}) results in the disappearing of the terms
+in $h^{\th\th}$, $h^{\ph\ph}$ and $h^{\th\ph}$:
+\bea
+  \Delta h^{r\th} & = & \dder{h^{r\th}}{r} + {4\over r} \der{h^{r\th}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{r\th}}{\th} + {1\over\tan\th} \der{h^{r\th}}{\th}
+  +{1\over \sin^2\th}\dder{h^{r\th}}{\ph} 
+  + \left( 2 - {1\over\sin^2\th} \right) h^{r\th} \nonumber \\
+  & & - 2 {\cos\th\over\sin^2\th} \der{h^{r\ph}}{\ph}
+  	+ 2 \der{h^{rr}}{\th}  \Bigg]. \label{e:lap_hrt2}
+\eea
+Similarly, inserting the third 
+Dirac condition (\ref{e:Dirac_ortho_p}) into
+(\ref{e:lap_hrp}) results in the disappearing of the terms
+in  $h^{\ph\ph}$ and $h^{\th\ph}$:
+\bea
+  \Delta h^{r\ph} & = & \dder{h^{r\ph}}{r} + {4\over r} \der{h^{r\ph}}{r}
+  +{1\over r^2}\Bigg[ \dder{h^{r\ph}}{\th} + {1\over\tan\th} \der{h^{r\ph}}{\th}
+  +{1\over \sin^2\th}\dder{h^{r\ph}}{\ph} 
+  + \left( 2 - {1\over\sin^2\th} \right) h^{r\ph} \nonumber \\
+  & & - 2 {\cos\th\over\sin^2\th} \der{h^{r\th}}{\ph}
+  	+ {2\over\sin\th} \der{h^{rr}}{\ph}  \Bigg]. \label{e:lap_hrp2}
+\eea
+Let us introduce the potentials $\eta$ and $\mu$ such that
+\bea
+  h^{r\th} & =: & {1\over r} \left( \der{\eta}{\th} - {1\over\sin\th}
+  	\der{\mu}{\ph} \right) \label{e:def_eta_mu_t} \\
+  h^{r\ph} & =: & {1\over r} \left( {1\over\sin\th} \der{\eta}{\ph}
+  + \der{\mu}{\th} \right)  \label{e:def_eta_mu_p}	
+\eea
+The above writing amounts to split $(h^{r\th},h^{r\ph})$ considered as
+a 2-D vector into the (angular) gradient of a potential ($\eta$)
+and the curl of a vector along the radial direction ($-\mu \w{e}_{\hat r}$).
+
+Inserting (\ref{e:def_eta_mu_t})-(\ref{e:def_eta_mu_p}) into
+(\ref{e:lap_hrt2}) results in
+\be
+   \Delta h^{r\th} = {1\over r} \left[ \der{}{\th} \left( \Delta\eta \right)
+    - {1\over\sin\th} \der{}{\ph} \left( \Delta\mu \right)
+    + {2\over r} \der{h^{rr}}{\th} \right] ,
+\ee
+where $\Delta\eta$ (resp. $\Delta\mu$) denotes the standard 
+scalar Laplacian of $\eta$ (resp. $\mu$), as given by replacing 
+$\chi$ by $\eta$ (resp. $\mu$) in Eq.~(\ref{e:lap_chi}).
+Similarly, inserting (\ref{e:def_eta_mu_t})-(\ref{e:def_eta_mu_p}) into
+(\ref{e:lap_hrp2}) results in
+\be
+   \Delta h^{r\ph} = {1\over r} \left[ {1\over\sin\th} \der{}{\ph}
+   \left( \Delta\eta \right) + \der{}{\th} \left( \Delta\mu\right)
+   + {2\over r \sin\th} \der{h^{rr}}{\ph} \right] . 
+\ee
+Hence if we decompose $\Delta h^{r\th}$ and
+$\Delta h^{r\ph}$ in a way similar to 
+(\ref{e:def_eta_mu_t})-(\ref{e:def_eta_mu_p}) :
+\bea
+  \Delta h^{r\th} & =: & {1\over r} \left( \der{\sigma}{\th} - {1\over\sin\th}
+  	\der{\tau}{\ph} \right) , \\
+  \Delta h^{r\ph} & =: & {1\over r} \left( {1\over\sin\th} \der{\sigma}{\ph}
+  + \der{\tau}{\th} \right) ,
+\eea
+we can compute $\eta$ and $\mu$ by solving the two Poisson equations:
+\bea
+	\Delta\eta & = & \sigma - {2 h^{rr}\over r} \ , \label{e:poisson_eta}\\
+	\Delta\mu & = & \tau .
+\eea
+
+\subsection{$\eta$ deduced from the Dirac gauge}
+
+Instead of solving the 3-D Poisson equation (\ref{e:poisson_eta}), 
+we can get $\eta$ directly from the Dirac gauge, without any 
+use of $\Delta h^{r\th}$.
+Indeed inserting the decomposition 
+(\ref{e:def_eta_mu_t})-(\ref{e:def_eta_mu_p}) into the first
+Dirac condition (\ref{e:Dirac_ortho_r})
+and using the trace $h$ to replace $h^{\th\th} + h^{\ph\ph}$
+in terms of $h^{rr}$ results in
+\be
+    \Delta_{\th\ph} \eta = r \left( h - r \der{h^{rr}}{r} - 3 h^{rr} \right) , 
+\ee
+where $\Delta_{\th\ph}$ denotes the pure angular part of the
+Laplacian:
+\be
+  \Delta_{\th\ph}\eta := \dder{\eta}{\th} 
+	+ {1\over\tan\th} \der{\eta}{\th}
+	+ {1\over \sin^2\th} \dder{\eta}{\ph} 	.
+\ee
+
+\subsection{$h^{\th\ph}$ and $h^{\ph\ph}$ from Dirac gauge}
+
+Given the trace $h$ and $h^{rr}$, the two components $h^{\th\th}$
+and $h^{\ph\ph}$ play the same role. We may then eliminate the
+former to keep only the latter:
+\be
+	h^{\th\th} = h - h^{rr} - h^{\ph\ph} .
+\ee
+Using this relation in the second Dirac condition (\ref{e:Dirac_ortho_t})
+gives
+\be
+  \der{h^{\ph\ph}}{\th} + {2h^{\ph\ph}\over\tan\th}
+  - {1\over\sin\th} \der{h^{\th\ph}}{\ph} = 
+  \der{}{\th}(h-h^{rr}) + {1\over\tan\th} (h-h^{rr})
+  + r\der{h^{r\th}}{r} + 3 h^{r\th} .
+\ee
+Besides, the third Dirac condition (\ref{e:Dirac_ortho_p})
+writes
+\be
+   {1\over\sin\th} \der{h^{\ph\ph}}{\ph}
+   + \der{h^{\th\ph}}{\th} + {2h^{\th\ph}\over \tan\th}
+   = - r\der{h^{r\ph}}{r} - 3 h^{r\ph} .
+\ee
+Let 
+\bea
+	\Phi & := & \sin^2\th \: h^{\ph\ph} \\
+	\Theta & := & \sin^2\th\:  h^{\th\ph} . 
+\eea
+Then the two equations above become
+\bea
+   \der{\Phi}{\th} - {1\over\sin\th}\der{\Theta}{\ph} & = &
+   \sin^2\th \left[ \der{}{\th}(h-h^{rr}) + {1\over\tan\th} (h-h^{rr})
+  + r\der{h^{r\th}}{r} + 3 h^{r\th} \right] , \\
+  {1\over\sin\th} \der{\Phi}{\ph} + \der{\Theta}{\th} & =&
+  - \sin^2\th \left( r\der{h^{r\ph}}{r} + 3 h^{r\ph} \right) .
+\eea
+
