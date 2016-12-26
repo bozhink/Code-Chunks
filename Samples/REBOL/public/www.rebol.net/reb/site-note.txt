@@ -1,0 +1,18 @@
+NOTE ON SITES:
+
+Please be sure that your site contains something useful
+to REBOL users. That can be REBOL demos, applications,
+documentation, news, links, or whatever.
+
+Sites with nothing about REBOL will be removed to reduce
+the "noise level" in this index.
+
+Also, please provide an email link on your site for
+user comments.  It's as easy as adding:
+
+   file "Contact" you@example.com
+
+in your index.r file.  Or, you can create your own feedback
+method by adapting the feedback.r script to your own use.
+
+

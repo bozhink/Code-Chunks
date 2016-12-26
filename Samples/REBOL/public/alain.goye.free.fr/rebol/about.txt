@@ -1,0 +1,34 @@
+Welcome !
+
+Here are some scripts I wrote while learning REBOL, 
+some are useful to me, please tell me if they also are useful to you !
+Alain Goyé ; xe4iyorw001@sneakemail.com
+
+The most recent is Notereb:
+an exercise to demonstrate a nice tree interface, in the style of TreePad(TM) (http://www.treepad.com/)
+
+mailcheck.r:
+Periodically checks for new messages in different mailboxes. 
+Displays senders and subjects on request.
+I use Outlook Express for reading and sending mail with different identities (personal / professional...).
+The first use of this script is to tell me if other mailboxes are full and if I must switch account to read them.
+I added a function to display basic info. on each message and delete spam before it gets to my mailbox. 
+(to this regard I wish REBOL would allow reading only the 1st lines of a message, as the POP protocol does if I'm right)
+I added the "Deluxe Email Spam Killer" from REBOL library but it still needs a better spam filter... 
+
+smailcheck.r:
+is an earlier version of mailcheck.r... "for beginners".
+
+microbase.r:
+is an exercise on a basic tree-structured database
+The database is made of nested blocks like [ key1 value1 key2 value2 key3 value3... ] where:
+- key is a *** string *** (so that find/any works ; better ideas welcome)
+- value is any type, including a new block like [ key11 value11 key12 value12 key13 value13... ]
+The key function of this file is the select-value function, which can search the database with many options,
+including wildcards, replacement, variable recursion depth...
+The GUI allows to browse the tree basically with right / left key buttons 
+(sorry I don't know how it goes for 1-button mouse systems and users)
+Note that walk-forest from %tree-functions.r can interestingly be applied on such a base...
+
+menuex.r:
+demonstrates an easy way to simulate scrolldown menus with REBOL/view
