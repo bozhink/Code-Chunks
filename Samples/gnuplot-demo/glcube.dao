@@ -1,0 +1,118 @@
+# Adapted from SDL library:
+
+load DaoSDL;
+load DaoOpenGL;
+
+global color = {
+	[ 1.0,  1.0,  0.0],
+	[ 1.0,  0.0,  0.0],
+	[ 0.0,  0.0,  0.0],
+	[ 0.0,  1.0,  0.0],
+	[ 0.0,  1.0,  1.0],
+	[ 1.0,  1.0,  1.0],
+	[ 1.0,  0.0,  1.0],
+	[ 0.0,  0.0,  1.0]
+};
+global cube = {
+	[ 0.5,  0.5, -0.5],
+	[ 0.5, -0.5, -0.5],
+	[-0.5, -0.5, -0.5],
+	[-0.5,  0.5, -0.5],
+	[-0.5,  0.5,  0.5],
+	[ 0.5,  0.5,  0.5],
+	[ 0.5, -0.5,  0.5],
+	[-0.5, -0.5,  0.5]
+};
+
+routine Box2()
+	glBegin( GL_QUADS );
+		glColor3fv( color[0] );
+		glVertex3fv( cube[0] );
+		glColor3fv( color[1] );
+		glVertex3fv( cube[1] );
+		glColor3fv( color[2] );
+		glVertex3fv( cube[2] );
+		glColor3fv( color[3] );
+		glVertex3fv( cube[3] );
+
+		glColor3fv( color[3] );
+		glVertex3fv( cube[3] );
+		glColor3fv( color[4] );
+		glVertex3fv( cube[4] );
+		glColor3fv( color[7] );
+		glVertex3fv( cube[7] );
+		glColor3fv( color[2] );
+		glVertex3fv( cube[2] );
+
+		glColor3fv( color[0] );
+		glVertex3fv( cube[0] );
+		glColor3fv( color[5] );
+		glVertex3fv( cube[5] );
+		glColor3fv( color[6] );
+		glVertex3fv( cube[6] );
+		glColor3fv( color[1] );
+		glVertex3fv( cube[1] );
+
+		glColor3fv( color[5] );
+		glVertex3fv( cube[5] );
+		glColor3fv( color[4] );
+		glVertex3fv( cube[4] );
+		glColor3fv( color[7] );
+		glVertex3fv( cube[7] );
+		glColor3fv( color[6] );
+		glVertex3fv( cube[6] );
+
+		glColor3fv( color[5] );
+		glVertex3fv( cube[5] );
+		glColor3fv( color[0] );
+		glVertex3fv( cube[0] );
+		glColor3fv( color[3] );
+		glVertex3fv( cube[3] );
+		glColor3fv( color[4] );
+		glVertex3fv( cube[4] );
+
+		glColor3fv( color[6] );
+		glVertex3fv( cube[6] );
+		glColor3fv( color[1] );
+		glVertex3fv( cube[1] );
+		glColor3fv( color[2] );
+		glVertex3fv( cube[2] );
+		glColor3fv( color[7] );
+		glVertex3fv( cube[7] );
+
+	glEnd( );
+	glMatrixMode(GL_MODELVIEW);
+	glRotatef(5.0, 1.0, 1.0, 1.0);
+end
+
+SDL_Init( SDL_INIT_VIDEO );
+
+w = 640;
+h = 480;
+
+screen = SDL_SetVideoMode( w, h, 24, SDL_HWSURFACE | SDL_OPENGL );
+event = SDL_Event();
+
+glViewport( 0, 0, w, h );
+glMatrixMode( GL_PROJECTION );
+glLoadIdentity( );
+glOrtho( -1.0, 1.0, -1.0, 1.0, -20.0, 20.0 );
+glEnable(GL_DEPTH_TEST);
+
+while 1 do
+	glClearColor( 0.0, 0.0, 0.0, 1.0 );
+	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glDisable( GL_LIGHTING );
+	Box2();
+
+	SDL_GL_SwapBuffers( );
+
+	SDL_WaitEvent( event );
+    switch event.type do
+        case SDL_KEYDOWN : stdio.println( "key pressed: ", event.keysym.sym );
+        case SDL_KEYUP : stdio.println( "key released: ", event.keysym.sym );
+			if event.keysym.sym == SDLK_ESCAPE do return; end
+        default : #stdio.println( "other event: ", event.type, "\t", SDL_KEYDOWN );
+    end
+end
+
