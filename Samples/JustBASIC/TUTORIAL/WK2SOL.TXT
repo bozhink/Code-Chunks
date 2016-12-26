@@ -1,0 +1,122 @@
+Week 2 course material: Solutions to challenge exercises
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+-----------------------------------------------------------------------------
+
+1) Add code to ARRAYS.BAS after [quit] to display all the names entered.
+
+    'ARRAYS.BAS
+    'List handling with arrays
+    'Here is a version that displays the names entered
+    'after [quit]
+
+    dim names$(10)  'set up our array to contain 10 items
+
+[askForName]  'ask for a name
+    input "Please give me your name ?"; yourName$
+    if yourName$ = "" then print "No name entered." : goto [quit]
+
+    index = 0
+[insertLoop]
+    'check to see if index points to an unused item in the array
+    if names$(index) = "" then names$(index) = yourName$ : goto [nameAdded]
+    index = index + 1 'add 1 to index
+    if index < 10 then [insertLoop] 'loop back until we have counted to 10
+
+    'There weren't any available slots, inform user
+    print "All ten name slots already used!"
+    goto [quit]
+
+[nameAdded]  'Notify the name add was successful
+
+    print yourName$; " has been added to the list."
+    goto [askForName]
+
+[quit]
+
+    'display all the entered names
+    print
+    print "Here is a list of the names entered:"
+    print "------------------------------------"
+    index = 0
+
+[displayLoop]
+
+    if names$(index) <> "" then print names$(index)
+    index = index + 1
+    if index < 10 then [displayLoop]
+
+    end
+
+-----------------------------------------------------------------------------
+
+2) Modify the AVERAGE.BAS program so it asks for a name and age for up to 20
+people.  The names should be managed in a string array (remember ARRAYS.BAS?)
+that you'll add to the program.  When the list of entries is displayed, each
+name is to be displayed with its age.  Then the total and average age will be
+displayed after this.  Call the program AGES.BAS.
+
+
+
+    'AGES.BAS
+    'Accept some names and ages from the user, then total and average them
+    dim numbers(20)
+    dim names$(20)
+    print "AGES.BAS"
+    print
+
+    'loop up to 20 times, getting names and ages
+    print "Enter up to 20 names with ages."
+    print "A blank name entry ends the series."
+
+[entryLoop]  'loop around until a zero entry or until index = 20
+
+    'get a name and age
+    print "Name "; index + 1;
+    input name$
+    if name$ = "" then [endSeries]  'quit if name$ is blank
+    print "Age   ";
+    input age
+
+    index = index + 1       'add one to index
+    names$(index) = name$   'set the specified array item to be name$
+    numbers(index) = age    'set the specified array item to be age
+    total = total + age     'add entry to the total
+
+    if index = 20 then [endSeries]  'if 20 values were entered, exit loop
+
+    goto [entryLoop]  'go back and get another entry
+
+[endSeries]  'entries are finished
+
+    'Set entryCount to index
+    entryCount = index
+    if entryCount = 0 then print "No Entries." : goto [quit]
+
+    print "Entries completed."
+    print
+    print "Here are the "; entryCount; " entries:"
+    print "-----------------------------"
+
+    'This loop displays each entered value in turn.
+    'Notice that we re-use the index variable.  It
+    'can be confusing to use a new variable for each
+    'new loop.
+    index = 0
+[displayLoop]
+    index = index + 1
+    print "Entry "; index; " is "; names$(index); ", age "; numbers(index)
+    if index < entryCount then [displayLoop]
+
+    'Now display the total and average value
+    print
+    print "The total age is "; total
+    print "The average age is "; total / entryCount
+
+[quit]
+
+    end
+
+

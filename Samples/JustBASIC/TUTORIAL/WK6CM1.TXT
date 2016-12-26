@@ -1,0 +1,173 @@
+Week 6 course material
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+
+Files included with this lesson
+==============================================================================
+
+    WK6CM1.TXT    - This file
+
+    TRACKER.BAS   - The finished solution to our week 6 project
+
+    LETTER.BMP    - These five files are used as icons in our application
+    CALL.BMP
+    BROCHURE.BMP
+    SALE.BMP
+    DEADEND.BMP
+
+    LETTER.TXT    - An example letter of introduction for our application
+    PACKSLIP.TXT  - An example packing slip for our application
+
+
+Building Our Application
+==============================================================================
+
+We now arrive at the final stage of our Just BASIC course.  We will build
+a kind of personal information manager for managing sales calls.  Our
+application will manage an address list.  Each sales lead in the list will
+have a field containing an event status for our sales effort.  Here is a list
+of events for each sales lead:
+
+  - Letter of Introduction
+  - Follow-Up Phone Call
+  - Brochure
+  - Sale
+  - Dead End Lead
+
+Our application will provide a means of printing the Letter of Introduction,
+personalized with each name and also dated.  We will launch NOTEPAD.EXE to
+edit our form letter, and we will used tags (like <nameTag> and <dateTag>)
+to insert the name and date where desired.  See the included example file
+LETTER.TXT.  When we have printed a Letter of Introduction for any record,
+its event status will automatically advance to Follow-Up Phone Call.
+
+When making our Follow-Up Phone Call, our application will let us specify
+if there was:
+
+  - no contact, try later
+  - positive contact, send brochure
+  - negative contact, dead end lead
+
+When we have had positive contact, the event status of the record will
+be advanced to brochure.
+
+When the sale is made, we will print a packing slip using a technique
+similar to the one we will use for printing our letter of introduction.
+See the included example file PACKSLIP.TXT.
+
+
+Here is a functional description of our application:
+
+1) Main window - When the program is started, a window will open with the
+following controls:
+
+    a) A combobox with a list of events (letter, call, brochure, etc).
+       When we select an event in this control, our application code
+       will fill our listbox below c) with leads that have the selected
+       event status.
+
+    b) A graphicbox for displaying an icon that represents the selection
+       in our combobox above a).  This is similar to our week 5 homework.
+
+    c) A listbox for holding the names of sales leads.  We will want to
+       select a name from this list to perform actions on.
+
+    d) A statictext to describe what possible action we can take on a
+       lead we select in our listbox above c).
+
+    e) A button to invoke the action described in our statictext d).
+
+So if we want to work on making phone calls, we select 'call' from the
+combobox a).  The graphicbox b) displays our call.bmp file, and listbox c)
+fills up with leads that have an event status of 'call'.  The statictext
+d) displays 'Make Call'.  Then we select a lead from the listbox c) and
+click on button e) and another window opens to present the information we
+need to make the call.  Assuming the call is a success, we provide a way
+to register this in our application, and the event status of this sales
+lead record is advanced to 'brochure'.
+
+Our main window will also need buttons for the following:
+
+    a) New Lead - Open a window for entering a new record.  Each record
+       has these fields:
+
+        - First Name
+        - Last Name
+        - Address 1
+        - Address 2
+        - City
+        - State
+        - Zip
+        - Phone #
+        - Comment
+        - Event Status         (not user editable)
+        - Date of Last Action  (not user editable)
+
+    b) Edit/View Lead - Open a window to view or edit a record.  The fields
+       are the same as above.
+
+    c) Edit Letter - Run NOTEPAD.EXE to edit a letter of introduction
+
+    d) Edit Packslip -Run NOTEPAD.EXE to edit a packing slip
+
+
+Try out TRACKER.BAS
+==============================================================================
+
+To get a good feel for how the application should work, try the included
+TRACKER.BAS program file.  Notice how we use dialog boxes, most of them
+modal dialog boxes.  See how we run NOTEPAD.EXE to edit our templates for
+our letter of introduction and our packing slip.
+
+Because this is a large project, it might be helpful for you to take a
+good look at the TRACKER.BAS file.  Running the debugger on it might also
+be a good idea.  Then once you have a good idea how things work, start
+writing your own code.
+
+
+File Input/Output
+------------------------------------------------------------------------------
+
+The sales lead records are loaded when the program is started into an
+array 500 by 12.  This will work with 500 records (an arbitrary limit).
+The first line in our file is a count of the number of records in the file.
+Each record's fields are stored one to a line, and LINE INPUT is used to read
+them in so that commas can be included in a field's text.  When we quit the
+program, the records are saved back to disk.  
+
+
+Listboxes
+------------------------------------------------------------------------------
+
+The listbox is similar to the combobox we used in our week 5 homework.  It
+fills itself with the contents of an array named in its originating
+statement, like so:
+
+    listbox #main.list, names$(, 10, 10, 100, 250
+
+In the statement above, the listbox will fill itself with the contents of
+they array named names$(), which must be single dimensioned.  Whenever the
+contents of the listbox need to change, the RELOAD command is used, like
+so:
+
+    print #main.list, "reload"
+
+
+Printing the letter of introduction and packing slip
+------------------------------------------------------------------------------
+
+Text is sent to the printer using the LPRINT statement.  The following will
+send Hello World to the printer:
+
+    lprint "Hello World"
+    dump  'force the end of page
+
+The DUMP statement forces the end of page, which is what you will want to do
+each time you print a letter of introduction or print a packing slip.
+
+
+
+
+

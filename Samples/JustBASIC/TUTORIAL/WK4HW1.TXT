@@ -1,0 +1,355 @@
+Week 4 Homework
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+
+Using NOMAINWIN
+==============================================================================
+
+The default text window that opens with each Just BASIC program we create 
+can be optionally turned off.  This can be desirable when we don't want our 
+application to be operated out of a text window.  The statement that 
+accomplishes this effect is NOMAINWIN.  Simply include NOMAINWIN in your 
+program's source code anywhere at all.  This accomplishes two things:
+
+1) It hides the program's main window;
+
+2) It prevents the 'Execution Complete' notice from appearing at the end
+of a program run.
+
+This comes at a cost.  Your program must close itself down properly when all 
+the windows have been closed.  Below is a modified version of our WK4PROG6.BAS
+program.  In this case all we needed to do was add the NOMAINWIN statement.  
+No other changes are needed because we have an END statement after our example
+window and because we don't use the program's main window for anything.
+
+
+    'WK4PROG7.BAS - (WK4PROG6.BAS modified)
+    'open a window with a button, a textbox, and a statictext
+    'show how trapclose works
+    'the window is sized at 300 by 100 at position 200, 150
+
+    nomainwin  'do not open a main window
+
+    WindowWidth = 300
+    WindowHeight = 100
+    UpperLeftX = 200
+    UpperLeftY = 150
+    button #myFirst.ok, "OK!", [okClicked], UL, 220, 35
+    textbox #myFirst.field, 10, 35, 200, 25
+    statictext #myFirst.label, "Type some text here.", 10, 10, 150, 25
+    open "myname's first window!" for window as #myFirst
+
+    'send the trapclose command
+    print #myFirst, "trapclose [quit]"
+
+[waitHere]  'now stop and wait
+    input aVar$
+    goto [quit]
+
+[okClicked]  'OK! was clicked.  Get the contents of the entry field
+
+    'print a command to the textbox
+    print #myFirst.field, "!contents?"
+    'now get the contents from the textbox
+    input #myFirst.field, aString$
+
+    'now pop up a notice saying what was in the textbox
+    notice aString$
+
+[quit]
+    'ask if the user wants to quit
+    confirm "Really Quit?"; answer$
+    if answer$ <> "yes" then [waitHere] 'abort quitting
+
+    'now close the window
+    close #myFirst
+
+    end
+
+
+If there was a GOTO [waitHere] statement after the CLOSE #myFirst statement 
+in our program above, then our program would not terminate properly, and 
+there would be no error message to clue us in.
+
+
+The Structure of a Just BASIC GUI Program
+==============================================================================
+
+We've taken a look at some simple elements of Just BASIC GUI programming.
+Now let's consider how to organize code in a logical and practical way when
+creating GUI programs in LB.
+
+
+Organization
+==============================================================================
+
+In the case of a project that uses more than one window, we should make sure
+that code for each window is grouped together.  Most applications are designed
+around a cental window that is always open and from where other windows are 
+launched.  When the central window is closed, the application ends.  Here is 
+a simple outline (not a working program) that demonstrates this idea:
+
+
+    'MYPROG.BAS
+    'This is an example outline
+    'A description of the program should go here
+
+    '-----------------------Let's define our main application window here
+    button #main.1, ....
+    button #main.2, ....
+    textbox ....
+    open "My Application" for window as #main
+    print #main, "trapclose [closeMain]"
+
+
+[waitWinMain]  'wait here for user action
+    input aVar$
+    goto [waitWinMain]
+
+
+[button1Clicked]  'here is a routine that handles when a button is clicked
+    'do something here
+    'now go back and wait
+    goto [waitWinMain]
+
+[button2Clicked]  'here is a routine that handles when a button is clicked
+    'do something here
+    'now go back and wait
+    goto [waitWinMain]
+
+
+[closeMain]  'perform some cleanup code and close the window
+    close #main
+    gosub [sub1]  'act on user action
+
+    'end application
+    end
+
+
+
+[openWin2]  '--------------------------Let's define our second window here
+
+    button #2.3, ....
+    button #2.4, ....
+    textbox ....
+    open "Window 2" for window as #2
+    print #2, "trapclose [close2]"
+
+
+[waitWin2]  'wait here for user action
+    input aVar$
+    goto [waitWin2]
+
+
+[button3Clicked]  'here is a routine that handles when a button is clicked
+    'do something here
+    'now go back and wait
+    goto [waitWin2]
+
+
+[button4Clicked]  'here is a routine that handles when a button is clicked
+    'do something here
+    'now go back and wait
+    goto [waitWin2]
+
+
+[close2]  'perform some cleanup code and close the window
+    close #2
+    gosub [sub2]  'act on user action
+    goto [waitWin2]
+
+
+'--------------------------------------------------------------------------
+
+    'We might place code here containing general subroutines
+
+
+See how we arrange the code for each window like so:
+
+[openMainWindow]
+[userAction1]
+[userAction2]
+[closeMainWindow]
+    end
+
+[openWindow1]
+[userAction3]
+[userAction4]
+[closeWindow1]
+
+[openWindow2]
+[userAction5]
+[userAction6]
+[closeWindow2]
+
+The names we give to our branch labels above are of course generic.  All the
+code for a given window and user actions performed on it should be grouped
+together.  By structuring things in this way it is relatively easy to develop
+and debug your programs.
+
+NOTE: Be careful to avoid creating a program that closes all its windows but
+doesn't actually end.  If the program stops at an input statement after
+closing all of it's windows, it will not terminate properly and resources
+will not be freed.  If the program loops continuously after closing all its
+windows then our WINDOWS message handler (the one set up to Just BASIC)
+will be locked out.  In this case press CTRL-Break to halt the errant
+program.
+
+
+Using Dialog Boxes
+==============================================================================
+
+A dialog box is a special kind of window.  They are different in several
+respects from other windows:
+
+1) Pressing the Tab key causes WINDOWS to cycle through the controls added
+to a dialog box.  Each control is made the active one in turn.
+
+2) Dialog boxes can be made modal.  This means that if I have a first window
+open and then I open a modal dialog box, that I will be unable to select the
+first window until the modal dialog is closed.  Most 'About' boxes are modal
+dialogs, as are many 'Properties' type windows.  For an example, select
+Just BASIC's Help menu and click on 'About Just BASIC'.  You won't be
+able to do anything else with Just BASIC until you close the dialog box
+that appears.
+
+3) In Just BASIC, dialogs ignore the UpperLeftX and UpperLeftY variables,
+so a dialog box's initial screen position cannot be determined in this way.
+
+4) Dialog boxes cannot be resized by the user.
+
+Some applications are appropriately constructed completely of dialog boxes
+and have no other kind of window at all.  Take a look at the included program
+FreeForm (FF12.BAS).  This program is more typical.  The main application
+windows is a graphics type, but most of the other windows are dialog boxes.
+
+
+'Canned' Dialog Boxes
+==============================================================================
+
+There are some simple preconstructed dialog boxes in Just BASIC.  These are
+useful for displaying simple notices, asking for a yes and no response,
+prompting the user to type some string, or selecting a filename from a list of
+filenames.
+
+Here are some examples:
+
+
+    'display a notice
+    notice "File Not Found!"
+
+    'ask a yes or no question
+    confirm "Would you like to skip the tutorial?"; answer$
+
+    'prompt for input string
+    prompt "Please enter your name:"; name$
+
+    'get a filename from the user
+    filedialog "Pick a text file", "*.txt", selection$
+
+
+There are right and wrong times to use these kinds of dialogs.  Here is the
+HILO.BAS program written using only the above dialog boxes.  This illustrates
+a wrong way to write a WINDOWS program.
+
+
+    ' WK4PROG8.BAS
+    ' Here is an interactive HI-LO
+    ' Program
+
+    'don't use a main window
+    nomainwin
+
+[start]
+    guessMe = int(rnd(1)*100) + 1
+
+    ' Clear the screen and print the title and instructions
+    notice "HI-LO" + chr$(13) + _
+     "I have decided on a number between one " + _
+     "and a hundred, and I want you to guess " + _
+     "what it is.  I will tell you to guess " + _
+     "higher or lower, and we'll count up " + _
+     "the number of guesses you use."
+
+[ask]
+    ' Ask the user to guess the number and tally the guess
+    prompt "OK.  What is your guess ?"; guess$
+    guess = val(guess$)
+
+    ' Now add one to the count variable to count the guesses
+    let count = count + 1
+
+    ' check to see if the guess is right
+    if guess = guessMe then goto [win]
+    ' check to see if the guess is too low
+    if guess < guessMe then notice "Guess higher."
+    ' check to see if the guess is too high
+    if guess > guessMe then notice "Guess lower."
+
+    ' go back and ask again
+    goto [ask]
+
+[win]
+    ' beep once and tell how many guesses it took to win
+    beep
+    notice "You win!  It took" + str$(count) + "guesses."
+
+    ' reset the count variable to zero for the next game
+    let count = 0
+
+    ' ask to play again
+    confirm "Play again (Y/N)?"; play$
+    if instr("YESyes", play$) > 0 then goto [start]
+
+    end
+
+
+What is wrong with the program above?  Technically there is nothing wrong
+with it because it works.  However one obvious thing wrong is that there's
+only one place where you can exit the program (at the end of each game).
+It also looks sloppy.  It doesn't have one application window that is open
+all the time as most WINDOWS programs do, so it will seem strange to most
+users.
+
+
+More About Statictext
+==============================================================================
+
+We saw in our earlier installment of this Week 4 lesson how a statictext
+control is used to label other controls in a window.  Statictext controls do
+not have to always display the same label.  We can print to them in similar
+fashion to the way we print to a textbox control.  Try the example code below:
+
+
+    'WK4PROG9.BAS
+    'demonstrate printing to statictext control
+
+    statictext #countdown.stext, "Counting down:", 10, 10, 200, 25
+    open "Countdown" for window as #countdown
+
+    for count = 10 to 1 step -1
+        print #countdown.stext, "Counting down: "; count
+        t$ = time$()
+        while t$ = time$()
+        wend
+    next count
+
+    print #countdown.stext, "Counting Down: Done."
+
+    end
+
+
+Homework Assignment
+==============================================================================
+
+Create a version of the WK4PROG8.BAS program above (call it MYHILO.BAS).  The
+program should have its own application window using the dialog window type.
+This window should have at least one statictext control.  One of these should
+indicate whether to guess higher or lower and to count the guesses.  There
+should be a textbox for entering guesses, and a button labeled guess to click
+on to register each guess.  An additional button should be labeled 'About'.
+This button should cause an About box to be displayed for the game.  The About
+box can be a canned dialog box, or you can construct one yourself using a
+modal dialog box.

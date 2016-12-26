@@ -1,0 +1,221 @@
+Week 2 Homework 1
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+FOR/NEXT Loops
+==============================================================================
+
+Up to this point most of the loops that we've used in our code have had this
+form:
+
+    variable = 0
+[loopPoint]
+    'put some code in here
+    variable = variable + 1
+    if variable < 10 then [loopPoint]
+
+This will loop 10 times.  The first time through the loop the value of
+variable will be 0, and the tenth time through the loop it will be 9.  This
+kind of coding does work, but it can look complicated and it takes some
+care to make sure it is coded properly (it's easy to make a mistake).  Now
+let's take a look at an alternative:
+
+    for variable = 0 to 9
+        'put some code here
+    next variable
+
+This is called a FOR/NEXT loop.  The code that is inserted between the FOR
+and NEXT statement will be executed 10 times.  The value of variable will
+be 0 the first time through and 9 the last time.
+
+We can use this kind of code to do something a specifed number of times or
+to do something using a range of values (for example 0 to 9).
+
+FOR/NEXT loops require fewer lines of code.  When programming, it is
+usually best to use the simplest possible way to code any solution.  This
+kind of simplicity doesn't come without a price.  There are things you can
+do with the first kind of looping that you cannot do with a FOR/NEXT loop.
+
+Look at this example:
+
+    variable = 0
+[loopPoint]
+    'put your code here
+    if someCondition = 1 then [specialException]
+    variable = variable + 1
+    if variable < 10 then [loopPoint]
+
+Notice the line of code that branches to [specialException] if someCondition
+is equal to 1.  This is perfectly acceptable coding practice.  Now look at
+this example:
+
+    for variable = 0 to 9
+        'put your code here
+        if someCondition = 1 then [specialException]
+    next variable
+
+This is not acceptable.  Just BASIC expects the loop to finish properly.
+It is OK to use GOSUB to call a subroutine from inside a FOR/NEXT loop
+because when the subroutine returns, execution will resume inside the loop
+and it will be allowed to finish properly.
+
+A good question to ask when deciding whether to use a FOR/NEXT loop is "Do
+I know how many times this loop will be executed?"  In our example above
+we don't know because at any time someCondition could suddenly be equal to
+1, and then our loop is finished.
+
+You can cheat.  If you set the value of variable to its finishing value (or
+limit), the loop will think it's all done and it will quit.  For example the
+following code will only count to 5.
+
+    for x = 0 to 9
+        print x
+        if x = 5 then x = 9
+    next x
+
+It's also worth noting that FOR/NEXT loops don't need to use integer values.
+Here is an example that counts from 0 to 1 in steps of less than 1.
+
+    for i = 0 to 1 step 0.04
+        print i
+    next i
+
+By using the word STEP and a value we specified what value to add to our
+variable (i in this case).  We can count backwards using a similar
+technique.
+
+    for j = 10 to 1 step -1
+        print j
+    next j
+
+Finally, if a starting value for the variable in our FOR/NEXT loop is
+greater than its limit, the code between the FOR and NEXT statements will be
+skipped over.  The following code will not display any numbers at all.
+
+    for x = 1 to 0
+        print x  'this line will not be executed
+    next x
+
+Similarly...
+
+    for x = 0 to 1 step -1
+        print x  'this line will not be executed
+    next x
+
+Here is our ARRAYS.BAS program taken from our Week 2 Solutions to Challenge
+Exercises.  We've modified it by replacing one of the loops with a FOR/NEXT
+loop.  Study it carefully.
+
+
+    'ARRAYS.BAS
+    'List handling with arrays
+    'Here is a version that displays the names entered
+    'after [quit]
+
+    dim names$(10)  'set up our array to contain 10 items
+
+[askForName]  'ask for a name
+    input "Please give me your name ?"; yourName$
+    if yourName$ = "" then print "No name entered." : goto [quit]
+
+    index = 0
+[insertLoop]
+    'check to see if index points to an unused item in the array
+    if names$(index) = "" then names$(index) = yourName$ : goto [nameAdded]
+    index = index + 1 'add 1 to index
+    if index < 10 then [insertLoop] 'loop back until we have counted to 10
+
+    'There weren't any available slots, inform user
+    print "All ten name slots already used!"
+    goto [quit]
+
+[nameAdded]  'Notify the name add was successful
+
+    print yourName$; " has been added to the list."
+    highestSlot = index  'this is a new line of code
+    goto [askForName]
+
+[quit]
+
+    'display all the entered names
+    print
+    print "Here is a list of the names entered:"
+    print "------------------------------------"
+    for index = 0 to highestSlot
+         if names$(index) <> "" then print names$(index)
+    next index
+
+    end
+
+
+Here's the assignment
+-------------------------------------------------------------------------
+
+1) In similar fashion to our modification of ARRAYS.BAS (above), modify
+the AGES.BAS program below, replacing appropriate looping code with
+FOR/NEXT loops.
+
+    'AGES.BAS
+    'Accept some names and ages from the user, then total and average them
+    dim numbers(20)
+    dim names$(20)
+    print "AGES.BAS"
+    print
+
+    'loop up to 20 times, getting numbers
+    print "Enter up to 20 non-zero values."
+    print "A zero or blank entry ends the series."
+
+[entryLoop]  'loop around until a zero entry or until index = 20
+
+    'get the user's name and age
+    print "Entry "; index + 1;
+    input name$
+    if name$ = "" then [endSeries]  'quit if name$ is blank
+    print "Age   ";
+    input age
+
+    index = index + 1       'add one to index
+    names$(index) = name$   'set the specified array item to be name$
+    numbers(index) = age    'set the specified array item to be age
+    total = total + age     'add entry to the total
+
+    if index = 20 then [endSeries]  'if 20 values were entered, exit loop
+
+    goto [entryLoop]  'go back and get another entry
+
+[endSeries]  'entries are finished
+
+    'Set entryCount to index
+    entryCount = index
+    if entryCount = 0 then print "No Entries." : goto [quit]
+
+    print "Entries completed."
+    print
+    print "Here are the "; entryCount; " entries:"
+    print "-----------------------------"
+
+    'This loop displays each entered value in turn.
+    'Notice that we re-use the index variable.  It
+    'can be confusing to use a new variable for each
+    'new loop.    
+    index = 0
+[displayLoop]
+    index = index + 1
+    print "Entry "; index; " is "; names$(index); ", age "; numbers(index)
+    if index < entryCount then [displayLoop]
+
+    'Now display the total and average value
+    print
+    print "The total age is "; total
+    print "The average age is "; total / entryCount
+
+[quit]
+
+    end
+
+
+2) Add a routine onto the end of AGES.BAS that asks the user for a name.
+Then using a FOR/NEXT loop searches for that name in the names$ array and
+if the name is found displays the age for that name.

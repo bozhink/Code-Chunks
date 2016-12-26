@@ -1,0 +1,257 @@
+Week 2 course material
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+Using Arrays
+==============================================================================
+
+Computers are more often than not used to keep track of lists of things. 
+These could be lists of customers, lists of stock #'s, or lists of fonts.  A
+list of things doesn't even have to look like a list.  For an example of
+this, take a look at your favorite video games.  If you've ever played PacMan
+or Doom, the monsters are managed in one kind of list or another (but you
+never see the list).  Arrays are what BASIC (and most other programming
+languages) uses to keep lists.
+
+To see why we need arrays, let's look at what programming for lists looks
+like without arrays.  Suppose we want to keep track of a list of 10 names.
+Using only the techniques we've covered so far it would look like this:
+
+    'NOARRAY.BAS
+    'List handling without arrays
+
+[askForName]  'ask for a name
+    input "Please give me your name ?"; yourName$
+    if yourName$ = "" then print "No name entered." : goto [quit]
+
+    if name1$ = "" then name1$ = yourName$ : goto [nameAdded]
+    if name2$ = "" then name2$ = yourName$ : goto [nameAdded]
+    if name3$ = "" then name3$ = yourName$ : goto [nameAdded]
+    if name4$ = "" then name4$ = yourName$ : goto [nameAdded]
+    if name5$ = "" then name5$ = yourName$ : goto [nameAdded]
+    if name6$ = "" then name6$ = yourName$ : goto [nameAdded]
+    if name7$ = "" then name7$ = yourName$ : goto [nameAdded]
+    if name8$ = "" then name8$ = yourName$ : goto [nameAdded]
+    if name9$ = "" then name9$ = yourName$ : goto [nameAdded]
+    if name10$ = "" then name10$ = yourName$ : goto [nameAdded]
+
+    'There weren't any available slots, inform user
+    print "All ten name slots are already used!"
+    goto [quit]
+
+[nameAdded]   'Notify the name add was successful
+
+    print yourName$; " has been added to the list."
+    goto [askForName]
+
+[quit]
+
+    end
+
+In this example when we enter a name, the computer will look at up to ten 
+variables in turn.  If it finds a variable that is an empty string, it will
+set the value of that variable to be equal to yourName$.  Then it will GOTO
+[nameAdded] and display a notice that the name has been added.  If this
+were part of a larger program, we would execute this code whenever we
+wanted to add a name, and the name would be inserted into the next
+available slot.
+
+This technique is manageable only for very small lists.  Imagine how many
+lines of code we would need to track hundreds or thousands of names in this
+way!  Arrays provide a special way to make a single line of BASIC code
+refer to any one variable out of a list of thousands.
+
+Here is our name list example rewritten using a BASIC array.  If it seems
+unclear to you, try running the debugger on it.
+
+    'ARRAYS.BAS
+    'List handling with arrays
+
+    dim names$(10)  'set up our array to contain 10 items
+
+[askForName]  'ask for a name
+    input "Please give me your name ?"; yourName$
+    if yourName$ = "" then print "No name entered." : goto [quit]
+
+    index = 0
+[insertLoop]
+    'check to see if index points to an unused item in the array
+    if names$(index) = "" then names$(index) = yourName$ : goto [nameAdded]
+    index = index + 1 'add 1 to index
+    if index < 10 then [insertLoop] 'loop back until we have counted to 10
+
+    'There weren't any available slots, inform user
+    print "All ten name slots already used!"
+    goto [quit]
+
+[nameAdded]  'Notify the name add was successful
+
+    print yourName$; " has been added to the list."
+    goto [askForName]
+
+[quit]
+
+    end
+
+You'll immediately notice the dim names$(10) statement at the start of this 
+example.  This tells BASIC to create an array called names$ with space for 
+10 items.  Because the name of the array ends with a $ character, this is an
+array of strings.  An array named without a $ character would contain
+numeric values.  The first item in an array is referred to by the value 0,
+and so an array of 10 items starts with item 0 and ends with item 9 (most
+BASICs work like this, but Just BASIC will actually number the array from
+0 to 10, giving you eleven items).
+
+The real work is done in this part of the code:
+
+    index = 0
+[insertLoop]
+    'check to see if index points to an unused item in the array
+    if names$(index) = "" then names$(index) = yourName$ : goto [nameAdded]
+    index = index + 1 'add 1 to index
+    if index < 10 then [insertLoop] 'loop back until we have counted to 10
+
+Here we are using a simple loop to control a search for an empty slot in our 
+array names$.  Take a look at this line:
+
+    if names$(index) = "" then names$(index) = yourName$ : goto [nameAdded]
+
+The  if names$(index) = ""  part of the line uses the value of index to
+point to a selected string in the array.  When index is 0, we are looking
+at the first item in the array.  When the code loops back and index is 1,
+it will be looking at the second item in the array, and so on.
+
+In the same line of code, the  names$(index) = yourName$  part is used to
+set the item selected by index.  The total effect of the line is to set the
+selected item in the array to to be yourName$ if that selected array item
+is an empty string.  When this happens it also exits the loop with GOTO
+[nameAdded].
+
+This is more involved than the technique used in NOARRAY.BAS, but it has the
+advantage of size.  Even if we need to manage 1000 items, we only need to
+change our code like this (most of the code is left out):
+
+    dim names$(1000)
+    .
+    .
+[insertLoop]
+    .
+    .
+    if index < 1000 then [insertLoop] 'loop back until we have counted to 1000
+
+If we extend NOARRAY.BAS to manage 1000 names, the resulting program would
+have one line for each name slot we needed to keep.  Our program would be
+more than 1000 lines long!
+
+
+Index Out Of Bounds
+------------------------------------------------------------------------------
+
+Try running the following mini program.
+
+    'done wrong
+    dim names$(10)
+    print names$(15)
+
+You will get an error message saying 'index out of bounds'.  This means that
+you tried to print the contents of an array item that doesn't exist.  If you
+dimension the array to make it large enough, it will work.
+
+
+    'done right
+    dim names$(20)
+    print names$(15)
+
+
+A similar error will occur if you try to set the item of an array using an
+index that is too large.
+
+    'done wrong again
+    dim names$(10)
+    names$(15) = "John Doe"
+
+
+Playing the numbers
+----------------------------------------------------------------------------
+Numeric arrays work very much like their relative the string array (featured
+above in ARRAYS.BAS).  To demonstrate how numeric arrays work, examine this
+program that asks for some numbers, adds them up, and calculates the
+average value.
+
+    'AVERAGE.BAS
+    'Accept some numbers from the user, then total and average them
+    dim numbers(20)
+    print "AVERAGE.BAS"
+    print
+
+    'loop up to 20 times, getting numbers
+    print "Enter up to 20 non-zero values."
+    print "A zero or blank entry ends the series."
+
+[entryLoop]  'loop around until a zero entry or until index = 20
+
+    'get the user's entry
+    print "Entry "; index + 1;
+    input entry
+
+    if entry = 0 then [endSeries]  'quit if entry is zero or blank
+
+    index = index + 1       'add one to index
+    numbers(index) = entry  'set the specified array item to be entry
+    total = total + entry   'add entry to the total
+
+    if index = 20 then [endSeries]  'if 20 values were entered, exit loop
+
+    goto [entryLoop]  'go back and get another entry
+
+[endSeries]  'entries are finished
+
+    'Set entryCount to index
+    entryCount = index
+    if entryCount = 0 then print "No Entries." : goto [quit]
+
+    print "Entries completed."
+    print
+    print "Here are the "; entryCount; " entries:"
+    print "-----------------------------"
+
+    'This loop displays each entered value in turn.
+    'Notice that we re-use the index variable.  It
+    'can be confusing to use a new variable for each
+    'new loop.    
+    index = 0
+[displayLoop]
+    index = index + 1
+    print "Entry "; index; " is "; numbers(index)
+    if index < entryCount then [displayLoop]
+
+    'Now display the total and average value
+    print
+    print "The total is "; total
+    print "The average is "; total / entryCount
+
+[quit]
+
+    end
+
+Try stepping through this program with the debugger.
+
+
+******************************
+      Challenge exercises
+******************************
+
+1) Add code to ARRAYS.BAS after [quit] to display all the names entered.
+
+
+2) There's no reason we can't have more than one array in a BASIC program.
+For an example of this, look at the program file FF12.BAS.  Altogether, it
+uses no fewer than 18 arrays.  Some of them are string arrays and some are
+of the numeric type.
+
+Modify the AVERAGE.BAS program so it asks for a name and age for up to 20 
+people.  The names should be managed in a string array (remember ARRAYS.BAS?) 
+that you'll add to the program.  When the list of entries is displayed, each 
+name is to be displayed with its age.  Then the total and average age will be 
+displayed after this.  Call the program AGES.BAS.

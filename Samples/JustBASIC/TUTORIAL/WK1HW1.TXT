@@ -1,0 +1,217 @@
+Week 1, homework assignment 1
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+Refining SALESTAX.BAS
+====================================================================
+
+Our SALESTAX.BAS example program provides a good base for us to 
+build on.
+
+Here it is:
+
+
+[start]
+    print "Type a dollar and cent amount."
+    input "(Press 'Enter' alone for help) "; amount
+    if amount = 0 then [help]
+    let tax = amount * 0.05
+    print "Tax is: "; tax; ". Total is: "; tax + amount
+    goto [start]
+
+[help]
+    cls
+    print "SALESTAX.BAS Help"
+    print
+    print "This tax program determines how much tax is"
+    print "due on an amount entered and also computes"
+    print "the total amount.  The tax rate is 5%."
+    print
+    input "Press [Enter] to continue."; dummyVariable
+    cls
+    goto [start]
+
+
+This program calculates a 5% sales tax.  It leaves any rounding
+up to the computer user.  We want to extend our SALESTAX program
+to round up properly and display our amount paid, tax, and total
+amounts in a way suitable for currency.
+
+
+Rounding the tax up
+--------------------------------------------------------------------
+
+Let's define how we will round up tax amounts for our example.
+Where I live, I pay 5 cents for every whole dollar.  The remaining
+non-whole dollar amount is rounded up or down to the nearest 20
+cent amount, and I pay 1 cent for each 20 cents of this rounded
+result.  Let's look at it step by step.
+
+Given a purchase price of $5.45
+
+(a) Strip away the cents from dollars and cents, that gives us $5.
+
+(b) Pay 5 cents for each dollar, or 25 cents ($5 * 5 cents).
+
+(c) Round the 45 cent portion of our purchase price to the nearest
+    multiple of 20, that gives us 40 cents.
+
+(d) Now we will pay 1 cent for every 20 cents in that 40 cent
+    amount for a total of 2 cents (40 / 20 = 2).
+
+(e) Add the 25 cents from (b) to the 2 cents from (d), and we have
+    our total tax amount, 27 cents.
+
+We can compute the value for step (b) using the INT() function.
+Let's see how this works:
+
+    'demonstration of INT() function
+    input "Enter a non integer value (ie. 3.14) ?"; valueA
+    let valueB = int(valueA)
+    print "The integer part of "; valueA; " is "; valueB
+
+To get the cent amount for the above calculations, we subtract
+the integer part from the entered amount, or valueA - valueB.
+Let's see how this works:
+
+    'getting the non-integer part of a value
+    input "Enter a non integer value (ie. 3.14) ?"; valueA
+    let valueB = int(valueA)
+    print "The non-integer part of "; valueA; " is "; valueA - valueB
+
+
+Now that we know how to get the cents out of our dollars and cents
+amount, we need to round it to the nearest 20 cent multiple.  Here is
+a simple way to round any number to a closest chosen multiple (this
+works for values greater than 0):
+
+(a) Divide your chosen multiple by two.  We will use this as an
+    adjustment value.  If we round 0.14 to the nearest multiple of
+    0.20, then our adjustment is 0.10 (0.20 / 2 = 0.10).
+
+(b) Add the adjustment value to the number we want to round.  If
+    our cent amount is 0.45 then our adjusted amount is 0.55.
+
+(c) Now divide the adjusted amount by the multiple we want to round 
+    to.  This will give us 2.75 (0.55 / 0.20 = 2.75).
+
+(d) Compute the integer portion of 2.75 and we have 2.  Take this
+    value and multiply it by 0.20 (our chosen multiple), and we
+    get 0.40 (2 * 0.20 = 0.40).
+
+
+So we see that 0.45 rounded to the nearest multiple of 0.20 is 0.40.
+Here is an expanded version of the program above that shows how to
+round a number in the way outline above:
+
+    'getting the non-integer part of a value
+    input "Enter a non integer value (ie. 3.14) ?"; valueA
+    let valueB = int(valueA)
+    valueC = valueA - valueB
+    print "The non-integer part of "; valueA; " is "; valueC
+
+    'now round valueC to the nearest multiple of 0.20
+    adjustment = 0.20 / 2
+    adjustedC = valueC + adjustment
+    multiples = int(adjustedC / 0.20)
+    roundedC = multiples * 0.20
+    print valueC; " rounded to the closest 0.20 is "; roundedC
+
+
+Displaying Monetary Values
+--------------------------------------------------------------------
+
+When you buy something at the store, the cashier will usually give
+you a receipt for your purchase.  The product price, sales tax, and
+total amount paid are formatted something like this:
+
+Product Price     4.95
+Sales Tax         0.25
+----------------------
+Total             5.20
+
+We want our SALESTAX program to produce information in a similar
+fashion.  Notice that the numbers are all aligned so that their
+decimal points are one under another.  This is called justification.
+Just BASIC provides a function for justifying numeric values
+called USING().  Here is a quick little program that demonstrates
+the USING() function:
+
+    'display 3 values justified
+    valueA = 0.9
+    valueB = 120
+    print using("#####.##", valueA)
+    print using("#####.##", valueB)
+    print using("#####.##", valueA + valueB)
+
+Running this program produces:
+
+    0.90
+  120.00
+  120.90
+
+Notice the string literal "#####.##".  The USING() function uses
+this as a template for formatting a value.
+
+The 5 # characters before the period in "#####.##" tell USING() to
+place extra spaces in front of the number to ensure that there will
+be 5 places before the decimal point.
+
+The 2 # characters after the decimal point in "#####.##" tell
+USING() to add zeros after the decimal point if there are none, or
+to drop all digits after the second digit following the decimal
+point.
+
+
+Loss of Precision
+--------------------------------------------------------------------
+
+In the realm of computers, real numbers are usually represented in
+what's called single precision floating point format.  This format
+is not an absolutely accurate way to represent the value of real
+numbers.  Sometimes in the process of executing BASIC code to arrive
+at a result, some loss of precision will become apparent.  This
+will usually manifest itself as a loss of the minutest amount of a
+value.  For example, a result that should be 1.5 becomes 1.499999.
+
+For many applications, this is not a very significant problem.  In
+the realm of money though, it is a very real problem indeed.  If in
+the course of calculating our sales tax the customer owes $0.24 but
+the computed result is 0.2399999, it slip through unnoticed.  The
+USING() function would remove the 9's after 0.23, and we would never
+see it.
+
+The solution is to add 0.001 to monetary values whenever the USING()
+function is employed.  This is important when using PRINT to display
+results, and also saving information to a disk file (this will be
+covered later in our course).  Here is how that BASIC code would
+look:
+
+    'display 3 values justified
+    valueA = 0.9
+    valueB = 120
+    print using("#####.##", valueA + 0.001)
+    print using("#####.##", valueB + 0.001)
+    print using("#####.##", valueA + valueB + 0.001)
+
+
+Here's the assignment
+--------------------------------------------------------------------
+
+Using the techniques we've just covered, extend the SALESTAX.BAS
+program listed at the start of this text and expand it so that...
+
+  - It uses the method of tax calculation described above
+
+  - It displays a result in sales receipt fashion like so:
+
+    Product Price     4.95
+    Sales Tax         0.25
+    ----------------------
+    Total             5.20
+
+  - It corrects its calculations for loss of precision
+
+
+The solution to this exercise is in the included file WK1HW1.BAS.

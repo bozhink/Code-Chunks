@@ -1,0 +1,394 @@
+Week 3 course material
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+Reading and Writing Sequential Files
+==============================================================================
+
+Now we will learn about how to work with disk files.  With few exceptions,
+all personal computers have at least one floppy disk drive and one hard disk
+drive.  Just BASIC provides ways to write information to disk files on
+these devices, and we can take advantage of this when we write our programs.
+
+There are two ways to read and write files in Just BASIC.  One is called
+sequential and the other is called random access.  We will use the sequential
+method for our examples here.  The reason it is called sequential is that
+when reading or writing we start at the beginning of the file and work one
+item at a time to the end.  An item can be words or characters separated by
+commas, or an item can be a complete line of data.
+
+Let's familiarize ourselves with a few Just BASIC statements that help us
+work with files.
+
+
+OPEN
+------------------------------------------------------------------------------
+
+The OPEN statement causes Just BASIC to open a file.  A file must be
+opened if we want to write into it or read from it.  There are several
+ways to open any file for sequential access.  These 'ways' are called modes.
+
+The OUTPUT mode:  The OUTPUT mode is for writing to a file.  This is what an
+OPEN statement for OUTPUT looks like:
+
+    open "myfile.txt" for output as #myHandle
+
+You can see the OUTPUT mode is specified.  The last item on the line is
+#myHandle.  It is a name (called a file handle) given to Just BASIC to use
+for the open file.  Any code that writes to this file must include a
+reference to #myHandle.  This is so that Just BASIC knows which file to
+write to.
+
+A file handle starts with a # character followed by any word or sequence of
+characters (using letters and digits).  It is best to choose handles that
+make it easy for you to remember which file you are working with while
+writing your program.  Some examples of valid file handles are:
+
+    #1
+    #abc
+    #dataFile
+    #customers
+
+You cannot have more than one file open at a time that uses the same file
+handle or your program will terminate with an error.
+
+The INPUT mode:  There is also a mode for reading sequentially from a file.
+This mode is called INPUT.  Here is an example of an OPEN statement for
+INPUT:
+
+    open "myfile.txt" for input as #myHandle
+
+
+CLOSE
+------------------------------------------------------------------------------
+
+The CLOSE statement is used for closing open files when we are done reading
+or writing them.  This is a required operation when working with files and
+it is a very important thing to remember when writing programs.
+
+Here is how OPEN and CLOSE work together:
+
+    open "myfile.txt" for output as #myHandle
+    'put some code in here that writes to #myHandle
+    close #myHandle
+
+Another thing to remember is that a file opened for one mode must first be
+closed before it can be opened for a different mode.  If you are going to
+read from a file you've just written to, you must close the file and reopen
+it, like so:
+
+    open "myfile.txt" for output as #myHandle
+    'put some code in here that writes to #myHandle
+    close #myHandle
+
+    open "myfile.txt" for input as #myHandle
+    'put some code in here that reads from #myHandle
+    close #myHandle
+
+
+PRINT
+------------------------------------------------------------------------------
+
+We've already seen how the PRINT statement can display text into a window on
+the screen.  PRINT can also be used to write into a file opened for
+sequential OUTPUT.  Here is an example:
+
+    open "myfile.txt" for output as #myHandle
+    print #myHandle, "Hello"
+    print #myHandle, "World!"
+    close #myHandle
+
+This little program produces a file containing two lines of text (each could
+be considered an item, see above).  Type the code in and run it.  When the
+program finishes executing, open Windows Notepad on MYFILE.TXT to see the
+result!
+
+
+Let's Take It For A Spin
+==============================================================================
+
+Now we'll modify the AGES.BAS program from out WK2SOL.TXT file so that it
+saves the names and ages that we enter into a file.  Take a look at this
+modified program:
+
+    'AGES.BAS
+    'Accept some names and ages from the user, then total and average them
+    dim numbers(20)
+    dim names$(20)
+    print "AGES.BAS"
+    print
+
+    'loop up to 20 times, getting numbers
+    print "Enter up to 20 non-zero values."
+    print "A zero or blank entry ends the series."
+
+[entryLoop]  'loop around until a zero entry or until index = 20
+
+    'get the user's name and age
+    print "Entry "; index + 1;
+    input name$
+    if name$ = "" then [endSeries]  'quit if name$ is blank
+    print "Age   ";
+    input age
+
+    index = index + 1       'add one to index
+    names$(index) = name$   'set the specified array item to be name$
+    numbers(index) = age    'set the specified array item to be age
+    total = total + age     'add entry to the total
+
+    if index = 20 then [endSeries]  'if 20 values were entered, exit loop
+
+    goto [entryLoop]  'go back and get another entry
+
+[endSeries]  'entries are finished
+
+    'Set entryCount to index
+    entryCount = index
+    if entryCount = 0 then print "No Entries." : goto [quit]
+
+    print "Entries completed."
+    print
+    print "Here are the "; entryCount; " entries:"
+    print "-----------------------------"
+
+    'This loop displays each entered value in turn.
+    'Notice that we re-use the index variable.  It
+    'can be confusing to use a new variable for each
+    'new loop.    
+    for index = 1 to entryCount
+      print "Entry "; index; " is "; names$(index); ", age "; numbers(index)
+    next index
+
+    '*** New code starts here ***
+
+    'Write the data into ages.dat
+    open "ages.dat" for output as #ages
+    for index = 1 to entryCount
+      print #ages, names$(index)
+      print #ages, numbers(index)
+    next index
+    close #ages
+
+    '*** New code ends here ***
+
+    'Now display the total and average value
+    print
+    print "The total age is "; total
+    print "The average age is "; total / entryCount
+
+[quit]
+
+    end
+
+
+Type the new program lines in.  Run the program and enter a few names and
+ages.  When the program finishes executing, open the file with Notepad and
+you'll the data you entered.  It should look something like:
+
+Tom Jones
+52
+Victor Krueger
+39
+Sue White
+64
+
+Let's see how our newly added code works.
+
+1) First we open the file AGES.DAT with the OPEN statement.  It is opened for
+OUTPUT (writing) and its file handle is #ages.
+
+    open "ages.dat" for output as #ages
+
+2) This sets up a FOR/NEXT loop.
+
+    for index = 1 to entryCount
+
+3) Now we print a name and age, each on a separate line.
+
+    print #ages, names$(index)
+    print #ages, numbers(index)
+
+4) Here's the back end of our FOR/NEXT loop.  Loop back until index equals
+entryCount.
+
+5) Now we will close AGES.DAT.
+
+    close #ages
+
+
+Reading from a file
+------------------------------------------------------------------------------
+
+Now that we've written information to a disk file, we are going to read that
+information back into our program.  This is done using the INPUT statement.
+Just as we saw PRINT used to display information in a window and to write
+information to a disk file, INPUT can be used to get keyboard input, or to
+get information from a disk file.
+
+To read from a file, it must be opened using the INPUT mode.  The OPEN
+statement is used like so:
+
+    open "ages.dat" for input as #ages
+
+Our INPUT statement for reading from a file looks a lot like the PRINT
+statement above:
+
+    input #ages, var$
+
+Notice we use the file handle, and then we specify a variable name to read
+into.  In a program that reads a list of items, an INPUT statement like the
+one above would be placed inside of a loop.  In this way each item in the
+file can be read in turn and stored in an array.
+
+An important point is that that we don't always know how many items
+have been written to AGES.DAT.  This means we don't know when to stop looping
+around and reading items from the file.  One solution is to add a PRINT
+statement to the program that creates the file.  This PRINT statement would
+write the number of items at the start of the file, like so:
+
+    'Write the data into ages.dat
+    open "ages.dat" for output as #ages
+    print #ages, entryCount
+    for index = 1 to entryCount
+      print #ages, names$(index)
+      print #ages, numbers(index)
+    next index
+    close #ages
+
+Then all we would need to do is read that number first, and then loop that
+many times to read each name and age.  I will tackle it from a different
+direction though, because  I want to introduce the EOF() function.
+
+The EOF() function stands for End Of File.  For a given file handle, it will
+return 0 if we are not at the end of file, and -1 if we are at the end of
+file.  For example:
+
+    open "ages.dat" for input as #ages
+    if eof(#ages) = 0 then print "NOT AT END OF FILE"
+    close #ages
+
+The above code would print NOT AT END OF FILE because we haven't read all the
+way to the end of the file.
+
+Here is a version of AGES.BAS that reads it's information from the file we
+created above and uses EOF() to check for the end of file.
+
+
+    'AGES_IN.BAS
+    'Read names and ages from AGES.DAT, then total and average them.
+    'This version doesn't write the data back out to the file.
+    dim numbers(20)
+    dim names$(20)
+    print "AGES_IN.BAS"
+    print
+
+    print "Reading AGES.DAT..."
+
+    'open ages.dat
+    open "ages.dat" for input as #ages
+[entryLoop]  'loop around until end of file or until index = 20
+
+    'test for the end of file
+    if eof(#ages) = -1 then [endSeries]
+
+    'get the user's name and age
+    input #ages, name$
+    input #ages, age
+
+    index = index + 1       'add one to index
+    names$(index) = name$   'set the specified array item to be name$
+    numbers(index) = age    'set the specified array item to be age
+    total = total + age     'add entry to the total
+
+    if index = 20 then [endSeries]  'if 20 values were entered, exit loop
+
+    goto [entryLoop]  'go back and get another entry
+
+[endSeries]  'entries are finished
+
+    'close ages.dat
+    close #ages
+
+    'Set entryCount to index
+    entryCount = index
+    if entryCount = 0 then print "No Entries." : goto [quit]
+
+    print "Entries completed."
+    print
+    print "Here are the "; entryCount; " entries:"
+    print "-----------------------------"
+
+    'This loop displays each entered value in turn.
+    'Notice that we re-use the index variable.  It
+    'can be confusing to use a new variable for each
+    'new loop.    
+    for index = 1 to entryCount
+      print "Entry "; index; " is "; names$(index); ", age "; numbers(index)
+    next index
+
+    'Now display the total and average value
+    print
+    print "The total age is "; total
+    print "The average age is "; total / entryCount
+
+[quit]
+
+    end
+
+
+
+Challenge Exercise
+------------------------------------------------------------------------------
+
+Create a modified ARRAYS.BAS using the code below so that it keeps its list
+in a disk file named ARRAYS.DAT.  The program must read its list from
+ARRAYS.DAT before asking for additional names.  When the user is done
+entering names, or if all the slots are filled, the list will be written to
+ARRAYS.DAT before the program ends.  See the source code below for some
+clues.
+
+
+    'ARRAYS2.BAS
+    'List handling with arrays and file input/output.
+    'This version stores more than 10 names.
+
+    dim names$(50)  'set up our array to contain 50 items
+
+    'Insert code that reads ARRAYS.DAT into the array names$.
+
+[askForName]  'ask for a name
+    input "Please give me your name ?"; yourName$
+    if yourName$ = "" then print "No name entered." : goto [quit]
+
+    index = 0
+[insertLoop]
+    'check to see if index points to an unused item in the array
+    if names$(index) = "" then names$(index) = yourName$ : goto [nameAdded]
+    index = index + 1 'add 1 to index
+    if index < 50 then [insertLoop] 'loop back until we have counted to 50
+
+    'There weren't any available slots, inform user
+    print "All ten name slots already used!"
+    goto [quit]
+
+[nameAdded]  'Notify the name add was successful
+
+    print yourName$; " has been added to the list."
+    goto [askForName]
+
+[quit]
+
+    'display all the entered names
+    print
+    print "Here is a list of the names entered:"
+    print "------------------------------------"
+
+    for index = 0 to 49
+        if names$(index) <> "" then print names$(index)
+    next index
+
+    'Insert code that saves the names$ array to ARRAYS.DAT.
+
+    end
+

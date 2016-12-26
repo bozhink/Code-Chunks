@@ -1,0 +1,266 @@
+Week 3 Homework 1
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+In our first Week 3 installment (WK3CM1.TXT) we covered the OUTPUT and INPUT
+file modes.  These are for writing and reading files, respectively.  This
+part of the lesson covers a new file mode called APPEND.  We will also learn
+how to use the LINE INPUT statement, and we will also use a few other new
+Just BASIC statements in passing.
+
+The APPEND file mode
+=============================================================================
+
+There is a limitation in the OUTPUT file mode.  The OUTPUT mode is only good
+for creating new files because it always deletes the contents of any file
+opened when it is used.  For example:
+
+    'open a file and print some information into it
+    open "numbers.txt" for output as #out
+    for x = 1 to 10
+        print #out, x
+    next x
+    close #out
+
+    'now rewrite the file, replacing its original contents
+    open "numbers.txt" for output as #out
+    for x = 11 to 20
+        print #out, x
+    next x
+
+    end
+
+Run the above program and open Notepad on NUMBERS.TXT.  You'll see that only
+the numbers 11 to 20 will be in the file.  The only way to retain the
+original information in the file and add new information using the OUTPUT
+mode would be to read the original information and insert it into a new
+file.  Then the new information is inserted into the still open file.
+Here is what that code looks like:
+
+    'open a file, and print some information into it, then close it
+    open "numbers.txt" for output as #out
+    for x = 1 to 10
+        print #out, x
+    next x
+    close #out
+
+    'open the original file for input
+    open "numbers.txt" for input as #in
+
+    'open the new file for output
+    open "numbers2.txt" for output as #out
+
+[copyLoop]  'copy the contents of numbers.txt to numbers2.txt
+    if eof(#in) = -1 then [doneCopying]
+    input #in, value
+    print #out, value
+    goto [copyLoop]
+
+[doneCopying]  'close numbers.txt & print new numbers into numbers2.txt
+    close #in
+    for x = 11 to 20
+        print #out, x
+    next x
+    close #out
+
+    'delete the original numbers.txt file
+    kill "numbers.txt"
+    'rename numbers2.txt to numbers.txt
+    name "numbers2.txt" as "numbers.txt"
+
+    end
+
+Once the new file has been created containing the contents of the original
+file, plus our new numbers 11 to 20, we delete the old file using the KILL
+statement and rename the new file using the NAME statement.
+
+There is a better way.  Using the APPEND file mode, we can eliminate a lot
+of program code.  The APPEND mode opens a file for writing, just like the
+OUTPUT mode does.  Instead of erasing the contents of the file opened and
+starting at the beginning, the APPEND mode opens a file and retains
+everything.  All we need to do then is write to the file, and everything we
+write will be added to the end of the file.  Here is the example above
+rewritten using the APPEND mode:
+
+    'open a file, and print some information into it, then close it
+    open "numbers.txt" for output as #out
+    for x = 1 to 10
+        print #out, x
+    next x
+    close #out
+
+    'open the original file for append
+    open "numbers.txt" for append as #out
+    for x = 11 to 20
+        print #out, x
+    next x
+    close #out
+
+    end
+
+This is much shorter and simpler than the last example.  When we are done
+writing the numbers 11 to 20 there is no need to delete or rename files.
+
+
+Comma delimited files
+---------------------------------------------------------------------------
+
+By default, the standard way of reading from a sequential file using the
+INPUT statement breaks up the data we read at each end of line, and at each
+comma.  Look at these equivalent file contents:
+
+File 1 contents:
+
+1,2,3,4,5,6,7,8,9,10
+
+File 2 contents:
+
+1,2,3,4,5
+6,7,8,9,10
+
+File 3 contents:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+All three of the above possible file contents would produce the same
+displayed output using a loop like the following:
+
+[loop]  'display each item on its own line
+    if eof(#in) = -1 then [stopLooping]
+    input #in, item$  'read the next item
+    print item$
+    goto [loop]
+
+Since the comma is used to separate items (in addition to the end of line),
+this kind of file format is often called 'comma delimited'.  This is a
+preferred generic format often used by commercial application software
+(spreadsheets are a good example) as a data export option.  This is so that
+people like you and me can write our own customized software to use that
+information.
+
+What if we want to use commas in our information?  As an example, we decide
+that we will build an application that logs responses to a direct mail
+campaign, and we want the name to be entered in a single field.  The name
+will be entered last name first, with a comma separating the last from the
+first name (example: Doe, John).
+
+Take a look at this hypothetical file entry:
+
+Doe, John
+123 Main Street
+Scottsdale
+AZ
+01234
+
+Now look at this code fragment:
+
+    input #in, name$
+    input #in, street$
+    input #in, city$
+    input #in, state$
+    input #in, zip$
+
+If we read the file entry with the above code, name$ would only contain up to
+the first comma.  So name$ would contain the string "Doe", street$ would
+contain "John", city$ would contain "123 Main Street", and so on.  This is
+not what we want.
+
+There is a special form of the INPUT statement that will read a whole line
+from a file, including commas.  It is the LINE INPUT statement.  Here is the
+code fragment above rewritten using LINE INPUT:
+
+    line input #in, name$
+    line input #in, street$
+    line input #in, city$
+    line input #in, state$
+    line input #in, zip$
+
+Another example of where LINE INPUT is useful is reading of a text document,
+like this one.  There are many commas in this document.  Here is a short
+program that uses the FILEDIALOG statement to ask for a *.txt file to read.
+Then it opens the file and reads and displays it.
+
+    'ask for a filename
+    filedialog "Select a text file", "*.TXT", filename$
+    'if filename$ = "" then the user canceled the file selection
+    if filename$ = "" then end
+
+    'open the file
+    open filename$ for input as #in
+
+[readLoop]  'read and display each line in the text file
+    if eof(#in) = -1 then [stopLooping]
+    line input #in, lineOfText$
+    print lineOfText$
+    goto [readLoop]
+
+[stopLooping]  'close the file
+    close #in
+
+    end
+
+Run this small program and try it with a file that you know has some commas
+in it.  Then change the line containing the LINE INPUT statement to use a
+regular INPUT statement and run the program again on the same file so you can
+see how they function differently.
+
+
+Here's the assignment
+-------------------------------------------------------------------------
+
+Create a program called CALLER.BAS.  This program will give the user
+the following options:
+
+  1) Enter a phone call
+  2) Search by caller's name
+  3) Search by person called
+  3) Quit
+
+Menu item 1 will ask the user for phone call information and append it as
+a new record to the end of a file named PHONELOG.TXT.  The added record must
+include:
+
+  1) Caller's name
+  2) Name of person called
+  3) Date of the call
+  4) Time of the call
+  5) A one line description of the call's purpose
+  6) A phone # where the caller can be reached
+
+When searching, the program should stop and display the six data items for
+each record that matches and ask if the user wants to keep searching or
+quit the search.  The program will display a notice if no matches are found.
+
+
+Possible enhancement to CALLER.BAS
+-------------------------------------------------------------------------
+
+It is possible to search for a partial match.  Look at the following code
+example:
+
+    text$ = "The quick brown fox jumped over the lazy dog."
+    searchFor$ = "FOX"  'change FOX to different values and re-run
+    print "Searching for:"
+    print "  "; searchFor$
+    print "In the following:"
+    print "  "; text$
+    a$ = upper$(text$)
+    b$ = upper$(searchFor$)
+    if instr(a$, b$) > 0 then print "Found!" else print "Not Found!"
+
+The UPPER$() function eliminates any letter case differences.  The INSTR()
+function returns a 0 value if our uppercased searchFor$ is not found in
+our uppercased text, or it returns the position of searchFor$ if it is
+found.
+
+

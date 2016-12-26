@@ -1,0 +1,403 @@
+Week 4 course material
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+A Crash Course in Programming the Windows Graphical User Interface (GUI)
+==============================================================================
+
+What is a GUI (graphical user interface) anyway?  This probably means
+different things to different people but to most it means a way of
+controlling a computer that involves manipulating windows (rectangular areas
+displayed on a computer screen) using a mouse or other pointing device.
+
+If you are using Microsoft WINDOWS then you are using a software system with
+a GUI (we will use all uppercase when referring to Microsoft's product and
+not to any kind of window in general).  WINDOWS isn't just a GUI, but it does
+include one.
+
+You have been using the WINDOWS GUI all along while working through this
+Just BASIC course.  The programs that you've written each run in a window
+that is managed by the WINDOWS GUI.  This simple text-only window is called
+a 'main window' in Just BASIC lingo.  This part of the course is
+concerned with teaching how to do fancier things in the way of designing
+windows for your programs.
+
+In this section we will learn:
+
+1) How to use Just BASIC to open windows in the WINDOWS GUI;
+2) How to set the size, position, and type of our windows;
+3) How to add buttons and other controls to our windows;
+4) How to program the buttons and other controls to do what we want
+
+Note: All of the program examples in this section are also provided as
+individual program files.
+
+
+Your First Window
+==============================================================================
+
+Type in the following short program and run it.  Insert your name in the
+place where it says myname.
+
+    'WK4PROG1.BAS
+    'open a window
+    open "myname's first window!" for window as #myFirst
+
+    'now stop and wait
+    input aVar$
+
+    'now close the window
+    close #myFirst
+
+    end
+
+A window will appear with your name in the title!  That was easy, wasn't it?
+Now click on the program's initial window (called its 'main window') and
+press Enter to respond to the INPUT statement.  The window will close and the
+program will end.
+
+Just BASIC uses file statements like OPEN, CLOSE, INPUT, and PRINT to
+manage and control windows.  Once a window is opened, we can send it
+commands by PRINTing to it, and we can get information by INPUTting from
+it.
+
+Note: There is nothing to prevent a Just BASIC program from opening
+more than one window as demonstrated.  All you need is multiple OPEN
+statements, and each window must have a unique handle.
+
+
+Adjusting Window Size and Position
+------------------------------------------------------------------------------
+
+Let's change the size of our Window.  This is done by changing the value of
+two special variables WindowWidth and WindowHeight before opening the window.
+We can also determine the opening position of the window by adjusting two
+other special variables UpperLeftX and UpperLeftY.  This positioning is
+relative to the upper-left corner of the display screen.  Take a look at this
+example:
+
+    'WK4PROG2.BAS
+    'open a window sized at 300 by 100 at position 200, 150
+    WindowWidth = 300
+    WindowHeight = 100
+    UpperLeftX = 200
+    UpperLeftY = 150
+    open "myname's first window!" for window as #myFirst
+
+    'now stop and wait
+    input aVar$
+
+    'now close the window
+    close #myFirst
+
+    end
+
+
+Adding a button
+------------------------------------------------------------------------------
+
+Now let's add a button to our window.  Look at the following short program:
+
+    'WK4PROG3.BAS
+    'open a window with a button
+    'the window is sized at 399 by 100 at position 200, 150
+    WindowWidth = 300
+    WindowHeight = 100
+    UpperLeftX = 200
+    UpperLeftY = 150
+    button #myFirst.ok, "OK!", [okClicked], UL, 15, 15
+    open "myname's first window!" for window as #myFirst
+
+    'now stop and wait
+    input aVar$
+    goto [quit]
+
+[okClicked]  'the OK! button was clicked
+
+    notice "You clicked on OK!"
+
+[quit]
+    'now close the window
+    close #myFirst
+
+    end
+
+Notice the BUTTON statement we placed before the OPEN statement.  This must
+be inserted BEFORE the OPEN statement.  Let's break that line of code down
+to explain how it works.
+
+    button #myFirst.ok, "OK!", [okClicked], UL, 15, 15
+
+The first item in the BUTTON statement is a handle for the button.  In this
+case our handle is #myFirst.ok.  We are adding this button to a window that
+will have a handle of #myFirst, and we add .ok to extend the handle so that
+the button will have its own handle different from the handle of the window.
+
+The second item is the [okClicked] branch label.  This tells Just BASIC
+to perform an implicit GOTO [okClicked] when the button is clicked on.  In
+this case the NOTICE statement causes a dialog box to appear that displays
+"You clicked on OK!".  Once you clear the dialog box the window will be
+closed and the program will end.
+
+The third item (UL) tells Just BASIC that the button will be positioned
+relative to the upper-left corner of the window.  There are also UR, LL, and
+LR (for placing buttons relative to the upper-right, lower-left and lower-
+right corners).
+
+The fourth and fifth items specify how many pixels from the (in this case
+upper-left) corner to place the button.
+
+One option is to specify the exact width and height of the button.  Just
+BASIC automatically chooses the size of the button if you don't specify it.
+Here's the same button, but we'll change the size to 75 pixels wide and 50
+pixels high:
+
+    button #myFirst.ok, "OK!", [okClicked], UL, 15, 15, 75, 50
+
+The INPUT statement in our program is very important.  Just BASIC will
+only respond to actions performed on buttons or other controls when a
+running program is waiting at an INPUT statement (or a SCAN statement, but
+we won't cover that here).
+
+
+Adding an Entry Field with TEXTBOX
+==============================================================================
+
+Now let's add a textbox control to our window that let's us display and edit
+a line of text.  We will use the TEXTBOX statement to accomplish this.  Look
+at this code:
+
+    'WK4PROG4.BAS
+    'open a window with a button and a textbox
+    'the window is sized at 300 by 100 at position 200, 150
+    WindowWidth = 300
+    WindowHeight = 100
+    UpperLeftX = 200
+    UpperLeftY = 150
+    button #myFirst.ok, "OK!", [okClicked], UL, 15, 15
+    textbox #myFirst.field, 60, 15, 200, 25
+    open "myname's first window!" for window as #myFirst
+
+    'now print some text into the textbox
+    print #myFirst.field, "Type some text here."
+
+    'now stop and wait
+    input aVar$
+    goto [quit]
+
+[okClicked]  'OK! was clicked.  Get the contents of the entry field
+
+    'print a command to the textbox
+    print #myFirst.field, "!contents?"
+    'now get the contents from the textbox
+    input #myFirst.field, aString$
+
+    'now pop up a notice saying what was in the textbox
+    notice aString$
+
+[quit]
+    'now close the window
+    close #myFirst
+
+    end
+
+
+Run the example and see how it works!  Notice the TEXTBOX statement after
+the BUTTON statement.  Its format is very simple.
+
+    textbox #myFirst.field, 60, 15, 200, 25
+
+The first item #myFirst.field is a handle for the textbox.  This is just like
+the handle we gave to our button.
+
+The next two items 60 and 15 are the placement of the control relative to
+the upper-left corner of the window.
+
+The last two items 200 and 25 are the width and height of the control.  If
+it isn't wide enough, the end of the line will not appear.  If it isn't tall
+enough, you won't see any text in the control at all.
+
+After our OPEN statement, see how we print some text "Type some text here."
+into our textbox control.  This is the text that you see in the control when
+the program is run.
+
+Now look at how we changed the code after our [okClicked] branch label.
+Instead of just displaying the same message every time it displays the text
+in our textbox control.  We accomplish this by printing a command to the
+textbox with the line:
+
+    print #myFirst.field, "!contents?"
+
+This tells Just BASIC that we want the contents of that textbox control.
+Then using the following line we get that string and insert it into the
+variable aString$:
+
+    input #myFirst.field, aString$
+
+When printing a command to a textbox control, the command must start with an
+exclamation point.  This is how Just BASIC knows that we want to send a
+command to the textbox.  The contents of our textbox would have been replaced
+with "contents?" if we had left out the exclamation point like so:
+
+    print #myFirst.field, "contents?"
+
+
+Labeling with Statictext Controls
+==============================================================================
+
+So far our window designs have been simple enough that we haven't needed to
+mark any part of our window with a descriptive label or annotation.  This
+is an important matter in many applications where more than one textbox (or
+other kind of control) is used.  Here is a version of our program that uses
+a statictext control as a label:
+
+
+    'WK4PROG5.BAS
+    'open a window with a button, a textbox, and a statictext
+    'the window is sized at 300 by 100 at position 200, 150
+    WindowWidth = 300
+    WindowHeight = 100
+    UpperLeftX = 200
+    UpperLeftY = 150
+    button #myFirst.ok, "OK!", [okClicked], UL, 220, 35
+    textbox #myFirst.field, 10, 35, 200, 25
+    statictext #myFirst.label, "Type some text here.", 10, 10, 150, 25
+    open "myname's first window!" for window as #myFirst
+
+    'now stop and wait
+    input aVar$
+    goto [quit]
+
+[okClicked]  'OK! was clicked.  Get the contents of the entry field
+
+    'print a command to the textbox
+    print #myFirst.field, "!contents?"
+    'now get the contents from the textbox
+    input #myFirst.field, aString$
+
+    'now pop up a notice saying what was in the textbox
+    notice aString$
+
+[quit]
+    'now close the window
+    close #myFirst
+
+    end
+
+
+See how we move the button and the textbox around in the window, and we add
+a text description with instructions to the user.
+
+The format for the STATICTEXT statement is almost the same as for the TEXTBOX
+statement.
+
+    statictext #myFirst.label, "Type some text here.", 10, 10, 150, 25
+
+The first item is a string used for the text in our statictext control.
+
+The second item #myFirst.field is a handle for the statictext.  This is just
+like the handle we gave to our button.
+
+The next two items 10 and 10 are the placement of the control relative to
+the upper-left corner of the window.
+
+The last two items 150 and 25 are the width and height of the control.  The
+size must be large enough to hold the text.  If it isn't wide enough, the end
+of the line will not appear.  If it isn't tall enough, you won't see any
+text in the control at all.
+
+
+Trapping a Window Close Event
+------------------------------------------------------------------------------
+
+When running any of our examples above we can close our custom made window
+at any time by double-clicking on its menu box, by pressing Alt-F4, etc.
+Then WINDOWS will go ahead and close the window, but Just BASIC will still
+think it's open.  This will cause some trouble if our code tries to perform
+some work with a window that just isn't there anymore.
+
+The way around this problem is by sending the trapclose command to our
+window in question.  The trapclose command tells Just BASIC to hook into
+the WINDOWS event that closes our window.  Here is our program modified to
+use trapclose.
+
+    'WK4PROG6.BAS
+    'open a window with a button, a textbox, and a statictext
+    'show how trapclose works
+    'the window is sized at 300 by 100 at position 200, 150
+    WindowWidth = 300
+    WindowHeight = 100
+    UpperLeftX = 200
+    UpperLeftY = 150
+    button #myFirst.ok, "OK!", [okClicked], UL, 220, 35
+    textbox #myFirst.field, 10, 35, 200, 25
+    statictext #myFirst.label, "Type some text here.", 10, 10, 150, 25
+    open "myname's first window!" for window as #myFirst
+
+    'send the trapclose command
+    print #myFirst, "trapclose [quit]"
+
+[waitHere]  'now stop and wait
+    input aVar$
+    goto [quit]
+
+[okClicked]  'OK! was clicked.  Get the contents of the entry field
+
+    'print a command to the textbox
+    print #myFirst.field, "!contents?"
+    'now get the contents from the textbox
+    input #myFirst.field, aString$
+
+    'now pop up a notice saying what was in the textbox
+    notice aString$
+
+[quit]
+    'ask if the user wants to quit
+    confirm "Really Quit?"; answer$
+    if answer$ <> "yes" then [waitHere] 'abort quitting
+
+    'now close the window
+    close #myFirst
+
+    end
+
+See how the trapclose command that we print to our window also specifies the
+[quit] branch label.  This means that when we try to close the window using
+a mouse or keyboard action (using the CLOSE statement doesn't trigger
+trapclose), then WINDOWS will not close the window.  Instead Just BASIC
+will execute an implicit GOTO [quit].
+
+Notice also how we added code following the [quit] branch label.  Using a
+CONFIRM statement we bring up a dialog box to confirm that we really do
+want to quit.
+
+We also added a [waitHere] branch label in from of our INPUT statement so
+that we have a common place for execution to stop and wait for more user
+interaction.  This is pretty much standard practice in Just BASIC.  It
+really doesn't matter at which INPUT statement a Just BASIC stops and
+waits for input, but it makes things simpler if we always know where things
+are happening.
+
+
+Challenge Exercise
+------------------------------------------------------------------------------
+
+We can add many controls to a window in Just BASIC.  If we need a dozen
+textboxes to hold different data items and if we need a statictext to label
+each textbox we can do it.  Using WK4PROG6.BAS as a base, create a program
+that opens a window titled "Caller Record Data".  This window contains
+several textbox controls, each labeled by a statictext control.
+
+The labels for our textbox controls are from our Week 3 homework:
+
+  1) Caller's name
+  2) Name of person called
+  3) Date
+  4) Time of call
+  5) Purpose of call
+  6) Caller can be reached at
+
+When the user clicks on OK!, the program should then extract all the
+information entered into the textbox controls and then close the window.
+The information should then be displayed in the program's main window.

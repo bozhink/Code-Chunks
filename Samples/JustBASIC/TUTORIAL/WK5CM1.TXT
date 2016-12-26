@@ -1,0 +1,365 @@
+Week 5 course material
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+An Introduction to Programming Graphics
+==============================================================================
+
+One of the most interesting and useful things that can computers can do is
+create graphics.  These can be useful diagrams, page layouts, animations,
+beautiful works of art, etc.
+
+
+Kinds of Graphics Controls
+==============================================================================
+
+Just BASIC programs can display graphics using two different types of
+graphics controls.  The first is a graphics window.  We create a graphics
+window in our programs using an OPEN statement in the same fashion we create
+other kinds of windows:
+
+    open "My Drawing Area" for graphics as #graphWin
+
+We can also add one or more graphicbox controls to other windows, like so:
+
+    graphicbox #main.graph, 10, 10, 150, 200
+    open "My Window" for window as #main
+
+Both kinds of graphics controls understand the same set of graphics commands.
+Using the second approach can provide more than one drawing area, or it can
+be used to create a graphics area with other controls in a window or dialog
+box.
+
+
+Turtle Graphics
+==============================================================================
+
+In many computer graphics systems there is a way to draw using a pen and
+paper metaphor.  Because some versions of this system used real paper, and
+also a pen attached to a small robot that looked like a turtle (a
+hemisphere), this way of drawing is often referred to as turtle graphics.
+
+The idea is that you send the turtle commands like:
+
+   -raise the pen up from the paper
+   -lower the pen down to the paper
+   -move forward a specified distance, drawing if the pen is down
+   -turn a specific number of degrees
+
+By stringing these kinds of drawing commands together, useful and meaningful
+things can be drawn.
+
+Just BASIC includes support for this kind of drawing.  Here is a short
+list of the Just BASIC turtle graphics commands:
+
+    up    - lift the pen up (don't draw)
+    down  - lower the pen down (draw)
+    home  - place the pen in the center of the graphics area
+    go    - move foreward in the current direction
+    goto  - go to a specified position
+    place - go to a specified position but don't draw
+    turn  - turn the turtle clockwise a specified number of degrees
+    north - cause the turtle to point north (straight up)
+    posxy - tell us what the location of the turtle is
+
+Let's draw a box in the center of a graphics control:
+
+    'draw a box
+    open "Draw A Box" for graphics as #draw
+    print #draw, "up"
+    print #draw, "home"
+    print #draw, "north"
+    print #draw, "go 50"
+    print #draw, "turn 90"
+    print #draw, "go 50"
+    print #draw, "down"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    input r$
+
+Run the program and look at the box we've drawn.  Now maximize the window.
+See how the box doesn't get redrawn?  This is because we haven't told Just
+BASIC that we're done drawing a sequence.  To make what we've drawn 'stick',
+we must send a FLUSH command.  Insert the following line before our INPUT
+statement:
+
+    print #draw, "flush"
+
+Now rerun the program and maximize the window.  You will see that the box is
+redrawn now whenever the window is resized or redrawn.
+
+
+Doing more with less
+------------------------------------------------------------------------------
+
+For what our box drawing program does it is quite long.  There are a couple
+of things we can do to shorten the program.  One is to print more than one
+command on a line.  Look at this:
+
+    print #draw, "up"
+    print #draw, "home"
+    print #draw, "north"
+    print #draw, "go 50"
+    print #draw, "turn 90"
+    print #draw, "go 50"
+    print #draw, "down"
+
+An equivalent line is:
+
+    print #draw, "up ; home ; north ; go 50 ; turn 90 ; go 50 ; down"
+
+See how we can print more than one command per line by inserting a semicolon
+in between each command.
+
+Now we turn the turtle 90 degrees and go 100 pixels.  This happens four
+times:
+
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+    print #draw, "turn 90"
+    print #draw, "go 100"
+
+With this example we can combine the TURN and GO commands into one line with
+a semicolon, and we can use a loop to perform the action four times, like
+so:
+
+    for x = 1 to 4
+        print #draw, "turn 90 ; go 100"
+    next x
+
+Here is the complete program rewritten as above:
+
+    'draw a box
+    open "Draw A Box" for graphics as #draw
+    print #draw, "up ; home ; north ; go 50 ; turn 90 ; go 50 ; down"
+    for x = 1 to 4
+        print #draw, "turn 90 ; go 100"
+    next x
+    print #draw, "flush"
+
+    input r$
+
+For fun, here is a short program that draws a spiral:
+
+    'draw a spiral
+    open "Draw A Spiral" for graphics as #draw
+    print #draw, " home ; down"
+    for x = 1 to 100
+        print #draw, "turn 91 ; go "; x * 2
+    next x
+    print #draw, "flush"
+
+    input r$
+
+See how we take the value of x in our FOR/NEXT loop and use it in our GO
+command.  We do this to make each next line longer than the last, and this
+is what makes our spiral get bigger as we draw it.
+
+IMPORTANT: Spaces are important in any command that we print to a graphics
+control.  If we remove the spaces, the command will not work, and it will
+not return an error.  For example, the following line will NOT work:
+
+        print #draw, "turn 91 ; go"; x * 2
+
+See how the space was removed after the GO command?  This small change is
+very important.
+
+
+More about FLUSH
+-----------------------------------------------------------------------------
+
+FLUSH doesn't only make drawn items 'stick' so that they redraw.  It gives
+all the items drawn before that FLUSH a common number.  This is useful
+so that a collection of drawing elements can be referred to together.
+
+Here is an example of how we might use this feature:
+
+    'demonstrate the usefulness of flush
+    open "Draw A Circle" for graphics as #draw
+    print #draw, " home ; north ; down"
+    for x = 1 to 30
+        print #draw, "turn 12 ; go 10"
+        print #draw, "flush"
+    next x
+
+    for x = 1 to 29 step 2
+        print #draw, "delsegment "; x
+    next x
+
+    print #draw, "redraw"
+
+    input r$
+
+Notice how we flush after each TURN and GO command.  This give each line
+its own segment number.  Then we loop through the odd numbers 1, 3,
+5, ... 29 so we can delete every other segment.  When we print the REDRAW
+command, it only redraws the segments we haven't deleted and we see a
+dashed effect.
+
+This segmented graphics capability is used a lot in the FreeForm program
+(FF12.BAS) that is included with Just BASIC.
+
+We can get the current segment number at any time while drawing by using
+the SEGMENT command, like so:
+
+    'demonstrate the usefulness of flush
+    open "Draw A Circle" for graphics as #draw
+    print #draw, " home ; north ; down"
+    for x = 1 to 30
+        print #draw, "turn 12 ; go 10"
+        print #draw, "flush"
+        'get the current segment number and print it
+        print #draw, "segment"
+        input #draw, segId
+        print segId
+    next x
+
+    for x = 1 to 29 step 2
+        print #draw, "delsegment "; x
+    next x
+
+    print #draw, "redraw"
+
+    input r$
+
+The SEGMENT command does NOT get the number of the last segment flushed.
+Subtract 1 to get that number.
+
+
+Color Graphics
+-----------------------------------------------------------------------------
+
+We can dress up our graphics by adding some color to them.  Let's look at
+two commands for doing this:
+
+    'draw a spiral
+    open "Draw A Spiral" for graphics as #draw
+    print #draw, "fill blue"
+    print #draw, " home ; down ; color white"
+    for x = 1 to 100
+        print #draw, "turn 91 ; go "; x * 2
+    next x
+    print #draw, "flush"
+
+    input r$
+
+The FILL command (the line after our OPEN statement) causes our graphic
+control to be filled with the color blue.  Then our spiral is drawn as
+white by setting the turtle's pen to white in the next line.
+
+Users running 65,000 or more color drivers on their machine can specify
+RGB values for colors.  Each color can be given a value from 0 to 255 with
+0 being darkest and 255 being lightest.  Try this example:
+
+    'draw a spiral
+    open "Draw A Spiral" for graphics as #draw
+    print #draw, "fill darkgray"
+    print #draw, " home ; down"
+    for x = 1 to 100
+        print #draw, "color "; x * 2 + 55; " 0 " ; 200 - x
+        print #draw, "turn 91 ; go "; x * 2
+    next x
+    print #draw, "flush"
+
+    input r$
+
+Here is a list of valid colors:
+
+    black, blue, brown, cyan, darkblue, darkcyan, darkgray,
+    darkgreen, darkpink, darkred, green, lightgray, palegray,
+    pink, red, white, yellow
+
+
+
+Line Thickness
+------------------------------------------------------------------------------
+
+So far everything we've drawn has been razor-thin.  Drawing with a bold line
+is simple matter.  The SIZE command is all that's needed.  Try this:
+
+    'draw a box
+    open "Draw A Box" for graphics as #draw
+    print #draw, "up ; home ; north ; go 50 ; turn 90 ; go 50 ; down"
+    'use a big fat pen
+    print #draw, "size 10"
+    for x = 1 to 4
+        print #draw, "turn 90 ; go 100"
+    next x
+    print #draw, "flush"
+
+    input r$
+
+If no size is specified, the default is 1.
+
+
+Drawing Text with Graphics
+------------------------------------------------------------------------------
+
+Drawing text in a graphics control is simple.  Position the pen as desired
+and print the text with an backslash in front.  Take a look:
+
+    'display some text
+    open "Text example" for graphics as #draw
+    print #draw, "place 50 50"
+    print #draw, "\Hello world!"
+    print #draw, "flush"
+
+    input r$
+
+Each backslash in printed text causes a new line to be printed.  So if you
+want to display text that has a backslash in it (like a file path), then
+begin your text with a vertical bar '|' like so:
+
+    'display some text
+    open "Text example" for graphics as #draw
+    print #draw, "place 50 50"
+    print #draw, "|c:\config.sys"
+    print #draw, "flush"
+
+    input r$
+
+You can use the COLOR command to change the color of printed text.  Watch
+what happens when you also fill the window with some other color.
+
+    'display some text
+    open "Text example" for graphics as #draw
+    print #draw, "fill red ; color blue"
+    print #draw, "place 50 50"
+    print #draw, "|c:\config.sys"
+    print #draw, "flush"
+
+    input r$
+
+To change this white backdrop to the be the same color as our FILL of red,
+we can use the BACKCOLOR command, like this:
+
+    'display some text
+    open "Text example" for graphics as #draw
+    print #draw, "fill red ; color blue ; backcolor red"
+    print #draw, "place 50 50"
+    print #draw, "|c:\config.sys"
+    print #draw, "flush"
+
+    input r$
+
+
+Challenge Exercise
+------------------------------------------------------------------------------
+
+Create a program named TIME.BAS that gets the current time from the TIME$()
+function and then draws a clock with an hour, minute and second hand.  The
+display should have a background color, and each hand should have its own
+color.  A button on the clock should cause the display to redraw with the
+current time when clicked on.  The program doesn't have to run continuously.
+

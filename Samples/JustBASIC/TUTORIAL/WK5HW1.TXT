@@ -1,0 +1,160 @@
+Week 5 Homework Assignment
+Just BASIC programming course
+Copyright 2004 Shoptalk Systems
+All Rights Reserved
+
+More on Programming Graphics
+==============================================================================
+
+In the first part of week 5 we covered turtle graphics, drawing segments,
+drawing with color, and displaying text.  Now we will examine the use of
+bitmaps in Just BASIC.
+
+NOTICE: This week's homework includes four bitmap files named LETTER.BMP,
+CALL.BMP, BROCHURE.BMP, and SALE.BMP for use in your assignment.
+
+
+Using Bitmaps
+==============================================================================
+
+In WINDOWS, a bitmap is a rectangular area containing an image.  WINDOWS
+supports bitmaps made up of just two colors (black & white), bitmaps made up
+of millions of colors, and everything in between.  Anyone can create their
+own bitmaps using WINDOWS Paintbrush and save them as *.BMP files.  There
+are other ways to create bitmap files, including the use of scanning
+equipment to produce an image from paper.  Electronic cameras are also
+becoming very popular.
+
+Here we will examine Just BASIC's commands for loading bitmaps from a
+disk file and for displaying bitmaps into a graphics window or graphicbox
+control.
+
+Here is a short program that loads one of the bitmaps that comes with
+Just BASIC and displays it in a graphics window:
+
+    'open a graphics window
+    open "Display a bitmap" for graphics as #bitmap
+
+    'load a bmp file, calling it "aBitmap"
+    loadbmp "aBitmap", "bmp\titlettt.bmp"
+
+    'draw the bitmap named aBitmap at position 50, 50 and flush it
+    print #bitmap, "drawbmp aBitmap 50 50"
+    print #bitmap, "flush"
+
+    input r$
+
+The LOADBMP statement is used to load the bitmap "bmp\titlettt.bmp" into
+memory.  Just BASIC gives this bitmap the name "aBitmap" ("aBitmap"
+is NOT the filename of the bitmap file).  See how this is used when
+sending the DRAWBMP command to the graphics window.
+
+We can combine drawn graphics and bitmaps.  Here is a small program that
+combines a drawn spiral and a bitmap file.
+
+    'combine graphics
+    open "Draw combined graphics" for graphics as #draw
+
+    'draw a spiral
+    print #draw, " home ; down"
+    for x = 1 to 100
+        print #draw, "turn 91 ; go "; x * 2
+    next x
+
+    'load a bmp file, calling it "aBitmap"
+    loadbmp "aBitmap", "bmp\titlettt.bmp"
+
+    'display the bitmap named aBitmap at position 100, 100
+    print #draw, "drawbmp aBitmap 100 100"
+
+    'flush the combined drawing
+    print #draw, "flush"
+
+    input r$
+
+Here's an example of this program that draws in a graphicbox instead of a
+graphics window type:
+
+    'draw in a graphicbox
+    graphicbox #main.draw, 10, 10, 150, 150
+    open "Graphicbox example" for dialog as #main
+
+    'draw a spiral
+    print #main.draw, " home ; down"
+    for x = 1 to 100
+        print #main.draw, "turn 91 ; go "; x * 2
+    next x
+
+    'load a bmp file, calling it "aBitmap"
+    loadbmp "aBitmap", "bmp\titlettt.bmp"
+
+    'display the bitmap named aBitmap at position 100, 100
+    print #main.draw, "drawbmp aBitmap 25 45"
+
+    'flush the combined drawing
+    print #main.draw, "flush"
+
+    input r$
+
+Using the idea above, a drawn graphic doesn't have to dominate the entire
+window.
+
+
+Homework assignment
+==============================================================================
+
+Write a program called STATUS.BAS that displays a graphic for one of these
+four status items:
+
+  - initial letter
+  - phone call
+  - mail information pack
+  - sale made
+
+A dialog box should contain a graphicbox control to display the graphic, a
+listbox control to contain a list of the status item, and a statictext
+control to instruct the user to select a status item.
+
+Four bitmap files have been included with this week's homework assignment.
+Their names are LETTER.BMP, CALL.BMP, BROCHURE.BMP, and SALE.BMP.  You
+may use these files to display the graphic for each status item.
+
+Here is a short program that shows how to use a listbox control:
+
+This let's take this idea and add some other controls to the dialog box:
+
+
+    'setup some colors
+    dim color$(5)
+    color$(0) = "red"
+    color$(1) = "green"
+    color$(2) = "blue"
+
+    statictext #main, "Pick a color:", 10, 10, 120, 20
+    listbox #main.colors, color$(, [loop], 10, 35, 120, 60
+    open "Listbox example" for dialog as #main
+
+    'tell the listbox where to branch on a single-click
+    print #main.colors, "singleclickselect [colorSelected]"
+
+
+[loop]  'wait here for user input
+    input r$
+    goto [loop]
+
+[colorSelected]  'draw spiral in the selected color
+
+    print #main.colors, "selection?"
+    input #main.colors, selectedColor$
+
+    notice "You selected " + selectedColor$
+
+    goto [loop]
+
+
+
+
+
+
+
+
