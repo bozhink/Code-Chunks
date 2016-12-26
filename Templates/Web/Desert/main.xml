@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+  <templateinfo>
+    <version>1.0</version>
+    <name>Desert</name>
+    <description>
+    Thumbnails: 128px; Shadow: 0x; Image Size : 640px; Text: [Description];
+    </description>
+    <author>picajet.com</author>
+    <email>info@picajet.com</email>
+    <homepage>http://www.picajet.com</homepage>
+    <screenshot>preview.jpg</screenshot>
+    <thumbnail>t_preview.jpg</thumbnail>
+
+    <mainpage>index.htm</mainpage>
+    <imagepage>image.htm</imagepage>
+
+    <files>
+            uheader.jpg;
+            dheader.jpg;
+            topline.jpg;
+            style.css;
+            first.jpg;
+            prev.jpg;
+            next.jpg;
+            home.jpg;
+            last.jpg;
+            first_d.jpg;
+            prev_d.jpg;
+            next_d.jpg;
+            home_d.jpg;
+            last_d.jpg;
+            leftline.jpg;
+    </files>
+
+    <maxcol>5</maxcol>
+    <maxrow>3</maxrow>
+
+    <bgrcolor>$ACB7BB</bgrcolor>
+    <shdcolor>$FFFFFF</shdcolor>
+    <thumbnailsize>128</thumbnailsize>
+    <imagesize>640</imagesize>
+    <shadowsize>0</shadowsize>
+    <shadowdistance>0</shadowdistance>
+    <bigimagequality>60</bigimagequality>
+
+
+    <bigfilename>image</bigfilename>
+    <thumbfilename>th_image</thumbfilename>
+    <rowheader>rowheader.htm</rowheader>
+    <rowfooter>rowfooter.htm</rowfooter>
+    <thumbheader>thumbheader.htm</thumbheader>
+    <thumbitem>thumbitem.htm</thumbitem>
+    <thumbfooter>thumbfooter.htm</thumbfooter>
+    <imagesdir>images</imagesdir>
+    <thumbsdir>thumbs</thumbsdir>
+	<CDTemplate>
+		              <mainpage>CDMain.htm</mainpage>	
+			<toppage>CDTop.htm</toppage>	
+			<leftpage>CDLeft.htm</leftpage>	
+			<rightpage>CDRight.htm</rightpage>	
+			<imagepage>CDimage.htm</imagepage>
+			<nodeclass>nodeclass</nodeclass>
+			<imagesize>560</imagesize>
+			<bgrcolor>$CFDADE</bgrcolor>
+			<files>
+			            uheader.jpg;
+			            dheader2.jpg;
+			            dheader3.jpg;
+			            topline.jpg;		
+			            style.css;
+			            fullsize.jpg
+            			            cd_first.jpg;
+			            cd_prev.jpg;	
+			            cd_next.jpg;
+			            cd_home.jpg;
+			            cd_last.jpg;
+			            cd_first_d.jpg;
+			            cd_prev_d.jpg;
+			            cd_next_d.jpg;
+			            cd_home_d.jpg;
+			            cd_last_d.jpg;
+   			</files>
+	</CDTemplate>
+
+  </templateinfo>
+
+
+
+

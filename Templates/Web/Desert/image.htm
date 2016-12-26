@@ -1,0 +1,118 @@
+<html>
+<head>
+<title><%GalleryCaption%></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" height="118" align="left" valign="top">
+	   <table width="100%" height="118" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+            <td width="328" height="118" align="left" valign="top">
+			  <table width="328" height="118" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="100%" height="59" align="left" valign="middle" bordercolor="2" background="uheader.jpg"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="9%">&nbsp;</td>
+                        <td width="91%"><span class="textcaption"><%GalleryCaption%></span></td>
+                      </tr>
+                     
+                  </table></td>
+                </tr>
+                <tr>
+                  <td width="329" height="59"align="left" valign="top"><img src="dheader.jpg" width="329"></td>
+                </tr>
+              </table>
+		   </td>
+            <td width="100%" align="left" valign="top">
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="59" align="right" bgcolor="#A60809"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" align="right"></td>
+    <td width="20" nowrap>&nbsp;</td>
+  </tr>
+</table>
+<span class="imagecaption">                        </span></td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" bgcolor="#AAA69B">			      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="80%" align="center"><table width="240" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="48" nowrap>
+							<%IfFirstImageExist%>
+                            <a <%FirstImage%>><img src="first.jpg" border="0" align="top"></a>
+							<%ElseFirstImageExist%>
+							<img src="first_d.jpg" border="0" align="top">
+							<%EndifFirstImageExist%></td>
+                          <td width="48" nowrap>
+  						    <%IfPrevImageExist%>
+						    <a <%PrevImage%>><img src="prev.jpg" border="0" align="top"></a>
+							<%ElsePrevImageExist%>
+							<img src="prev_d.jpg" border="0" align="top">
+							<%EndIfPrevImageExist%></td>
+                          <td width="48" nowrap>
+						    <%IfBackToThumbsExist%>
+						    <a <%BackToThumbs%>><img src="home.jpg" border="0" align="top"></a>
+							<%ElseBackToThumbsExist%>
+							<img src="home_d.jpg" border="0" align="top">
+							<%EndIFBackToThumbsExist%></td>
+                          <td width="48" nowrap>
+  						    <%IfNextImageExist%>
+						    <a <%NextImage%>><img src="next.jpg" border="0" align="top"></a>
+							<%ElseNextImageExist%>
+							<img src="next_d.jpg" border="0" align="top">
+							<%EndifNextImageExist%></td>
+                          <td width="52" nowrap>
+  							<%IfLastImageExist%>
+						    <a <%LastImage%>><img src="last.jpg" border="0" align="top"></a>
+							<%ElseLastImageExist%>
+							<img src="last_d.jpg" border="0" align="top">
+							<%EndIFLastImageExist%></td>
+                        </tr>
+                      </table></td>
+                      <td width="20%" align="center"><span class="pagecounter"><%ImageCounter%></span></td>
+                    </tr>
+                  </table></td>
+                </tr>
+        </table>
+  	</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="75" align="left" valign="bottom" bgcolor="#C3BFB4"><img src="leftline.jpg" width="75" height="440" border="0" usemap="#Map"></td>
+        <td width="100%" height="100%" rowspan="2" align="center" valign="middle"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" height="100%" align="center"><img src=<%BigImage%>></td>
+  </tr>
+<tr>
+<td height="10" align="center" nowrap></td>
+</tr>
+<tr>
+<td align="center"><span class="imagecaption">
+<%ImageDescription%>
+</span></td>
+</tr>
+<tr>
+<td height="10" align="center" nowrap></td>
+</tr>
+  <tr>
+    <td align="center"></td>
+  </tr>
+</table>
+</td>
+      </tr>
+   </table></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="33,258,75,439" href="http://www.picajet.com?ref=template" target="_blank">
+</map>
+</body>
+</html>

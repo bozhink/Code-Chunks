@@ -1,0 +1,110 @@
+<html>
+<head>
+<title><%GalleryCaption%></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%" height="59" align="left" valign="top">
+	   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td width="328" height="118" align="left" valign="top">
+			  <table width="328" height="118" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="100%" height="59" align="left" valign="middle" nowrap background="uheader.jpg">
+                    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="10%">&nbsp;</td>
+                        <td width="90%"><span class="textcaption"><%GalleryCaption%></span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td width="329" height="59" align="left" valign="top"><img src="dheader.jpg"></td>
+                </tr>
+              </table>
+			</td>
+            <td width="100%" align="left" valign="top" nowrap>
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="59" bgcolor="#A60809"></td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" bgcolor="#AAA69B"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="80%" align="center" nowrap><table width="240" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       					  <td width="48" nowrap>
+							<%IfFirstPageExist%>
+						    <a <%FirstPage%>><img src="first.jpg" border="0" align="top"></a>
+							<%ElseFirstPageExist%>
+							<img src="first_d.jpg" border="0" align="top">
+							<%EndifFirstPageExist%>
+						  </td>
+                          <td width="48" nowrap>
+  						    <%IfPrevPageExist%>
+						    <a <%PrevPage%>><img src="prev.jpg" border="0" align="top"></a>
+							<%ElsePrevPageExist%>
+							<img src="prev_d.jpg" border="0" align="top">
+							<%EndIfPrevPageExist%>
+						  </td>
+                          <td width="48" nowrap>
+						    <%IfHomePageExist%>
+						    <a <%HomePage%>><img src="home.jpg" border="0" align="top"></a>
+							<%ElseHomePageExist%>
+							<img src="home_d.jpg" border="0" align="top">
+							<%EndifHomePageExist%>
+						  </td>
+                          <td width="48" nowrap>
+  						    <%IFNextPageExist%>
+						    <a <%NextPage%>><img src="next.jpg" border="0" align="top"></a>
+							<%ElseNextPageExist%>
+							<img src="next_d.jpg" border="0" align="top">
+							<%EndifNextPageExist%>
+ 						  </td>
+                          <td width="48" nowrap>
+  							<%IfLastPageExist%>
+						    <a <%LastPage%>><img src="last.jpg" border="0" align="top"></a>
+							<%ElseLastPageExist%>
+							<img src="last_d.jpg" border="0" align="top">
+							<%EndifLastPageExist%>
+						  </td>
+      </tr>
+    </table></td>
+    <td width="20%" align="center"><span class="pagecounter">
+      <%PagesCounter%>
+    </span></td>
+  </tr>
+</table>
+
+			      </td>
+                </tr>
+        </table>  	</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table height="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="75" align="left" valign="bottom" bgcolor="#C3BFB4"><img src="leftline.jpg" width="75" height="440" border="0" usemap="#Map"></td>
+        <td width="935" height="100%" rowspan="2" align="left" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50">&nbsp;</td>
+          <td><%ThumbsArea%></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">              </td>
+          </tr>
+        </table></td>
+      </tr>
+     
+    </table></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="32,257,74,438" href="http://www.picajet.com?ref=template" target="_blank">
+</map>
+</body>
+</html>
