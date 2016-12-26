@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Angle", "Angle.vfproj", "{A248989C-4B28-49DF-A001-40B7B7B30AC7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A248989C-4B28-49DF-A001-40B7B7B30AC7}.Debug.ActiveCfg = Debug|Win32
+		{A248989C-4B28-49DF-A001-40B7B7B30AC7}.Debug.Build.0 = Debug|Win32
+		{A248989C-4B28-49DF-A001-40B7B7B30AC7}.Release.ActiveCfg = Release|Win32
+		{A248989C-4B28-49DF-A001-40B7B7B30AC7}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

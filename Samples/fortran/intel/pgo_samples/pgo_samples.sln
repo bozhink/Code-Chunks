@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "pgo_samples", "pgo_samples.vfproj", "{FE905AF0-6C2F-4CA6-BF25-28EA3450D853}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		prof_gen = prof_gen
+		prof_use = prof_use
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FE905AF0-6C2F-4CA6-BF25-28EA3450D853}.prof_gen.ActiveCfg = prof_gen|Win32
+		{FE905AF0-6C2F-4CA6-BF25-28EA3450D853}.prof_gen.Build.0 = prof_gen|Win32
+		{FE905AF0-6C2F-4CA6-BF25-28EA3450D853}.prof_use.ActiveCfg = prof_use|Win32
+		{FE905AF0-6C2F-4CA6-BF25-28EA3450D853}.prof_use.Build.0 = prof_use|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "DynamicLoad", "DynamicLoad.vfproj", "{E892D618-A7A1-4714-8781-2977D7BA70AC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1CB34A09-E8F1-4629-9DC1-EEDD191F019D} = {1CB34A09-E8F1-4629-9DC1-EEDD191F019D}
+	EndProjectSection
+EndProject
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "USERDLL", "USERDLL\USERDLL.vfproj", "{1CB34A09-E8F1-4629-9DC1-EEDD191F019D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E892D618-A7A1-4714-8781-2977D7BA70AC}.Debug.ActiveCfg = Debug|Win32
+		{E892D618-A7A1-4714-8781-2977D7BA70AC}.Debug.Build.0 = Debug|Win32
+		{E892D618-A7A1-4714-8781-2977D7BA70AC}.Release.ActiveCfg = Release|Win32
+		{E892D618-A7A1-4714-8781-2977D7BA70AC}.Release.Build.0 = Release|Win32
+		{1CB34A09-E8F1-4629-9DC1-EEDD191F019D}.Debug.ActiveCfg = Debug|Win32
+		{1CB34A09-E8F1-4629-9DC1-EEDD191F019D}.Debug.Build.0 = Debug|Win32
+		{1CB34A09-E8F1-4629-9DC1-EEDD191F019D}.Release.ActiveCfg = Release|Win32
+		{1CB34A09-E8F1-4629-9DC1-EEDD191F019D}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

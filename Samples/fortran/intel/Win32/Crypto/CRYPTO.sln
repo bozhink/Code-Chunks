@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Encrypt", "Encrypt\Encrypt.vfproj", "{16B3ED89-647B-4E2C-B485-F2283A2548E2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Decrypt", "Decrypt\Decrypt.vfproj", "{FF82FE4F-149C-4DD0-A074-3D99DAEA11D9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{16B3ED89-647B-4E2C-B485-F2283A2548E2}.Debug.ActiveCfg = Debug|Win32
+		{16B3ED89-647B-4E2C-B485-F2283A2548E2}.Debug.Build.0 = Debug|Win32
+		{16B3ED89-647B-4E2C-B485-F2283A2548E2}.Release.ActiveCfg = Release|Win32
+		{16B3ED89-647B-4E2C-B485-F2283A2548E2}.Release.Build.0 = Release|Win32
+		{FF82FE4F-149C-4DD0-A074-3D99DAEA11D9}.Debug.ActiveCfg = Debug|Win32
+		{FF82FE4F-149C-4DD0-A074-3D99DAEA11D9}.Debug.Build.0 = Debug|Win32
+		{FF82FE4F-149C-4DD0-A074-3D99DAEA11D9}.Release.ActiveCfg = Release|Win32
+		{FF82FE4F-149C-4DD0-A074-3D99DAEA11D9}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

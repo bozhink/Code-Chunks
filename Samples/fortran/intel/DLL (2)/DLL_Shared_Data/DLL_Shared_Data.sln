@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "DLL_Shared_Data", "DLL_Shared_Data.vfproj", "{07F07530-74E3-4AF7-9B03-30A83C7B8E1F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7582D6C-E87E-453C-886D-5BD64BFBC9B4} = {E7582D6C-E87E-453C-886D-5BD64BFBC9B4}
+	EndProjectSection
+EndProject
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Shared_Globals_DLL", "Shared_Globals_DLL\Shared_Globals_DLL.vfproj", "{E7582D6C-E87E-453C-886D-5BD64BFBC9B4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{07F07530-74E3-4AF7-9B03-30A83C7B8E1F}.Debug.ActiveCfg = Debug|Win32
+		{07F07530-74E3-4AF7-9B03-30A83C7B8E1F}.Debug.Build.0 = Debug|Win32
+		{07F07530-74E3-4AF7-9B03-30A83C7B8E1F}.Release.ActiveCfg = Release|Win32
+		{07F07530-74E3-4AF7-9B03-30A83C7B8E1F}.Release.Build.0 = Release|Win32
+		{E7582D6C-E87E-453C-886D-5BD64BFBC9B4}.Debug.ActiveCfg = Debug|Win32
+		{E7582D6C-E87E-453C-886D-5BD64BFBC9B4}.Debug.Build.0 = Debug|Win32
+		{E7582D6C-E87E-453C-886D-5BD64BFBC9B4}.Release.ActiveCfg = Release|Win32
+		{E7582D6C-E87E-453C-886D-5BD64BFBC9B4}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

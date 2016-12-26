@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{FE905AF0-6C2F-4CA6-BF25-28EA3450D853}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="prof_gen|Win32">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qprof-gen" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool" CommandLine="if exist *.dyn del /Q *.dyn
+if exist *.dpi del /Q *.dpi" Description="Delete old PGO files"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="prof_use|Win32">
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="/Qprof-use" SuppressStartupBanner="true" OptDiagLevel="odlMinimum" OptDiagPhase="odpPGO"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\pgo_sample.f90"/>
+		<File RelativePath=".\ReadMe.txt"/></Filter></Files>
+	<Globals/></VisualStudioProject>

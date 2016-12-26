@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "WHIZZY", "WHIZZY.vfproj", "{A6A65B34-78DF-4844-95AA-3974969137AB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A6A65B34-78DF-4844-95AA-3974969137AB}.Debug.ActiveCfg = Debug|Win32
+		{A6A65B34-78DF-4844-95AA-3974969137AB}.Debug.Build.0 = Debug|Win32
+		{A6A65B34-78DF-4844-95AA-3974969137AB}.Release.ActiveCfg = Release|Win32
+		{A6A65B34-78DF-4844-95AA-3974969137AB}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

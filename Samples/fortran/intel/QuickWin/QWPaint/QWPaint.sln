@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "QWPaint", "QWPaint.vfproj", "{DF92F22B-8CDB-45B2-ADED-BD6BDFBEFE8A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DF92F22B-8CDB-45B2-ADED-BD6BDFBEFE8A}.Debug.ActiveCfg = Debug|Win32
+		{DF92F22B-8CDB-45B2-ADED-BD6BDFBEFE8A}.Debug.Build.0 = Debug|Win32
+		{DF92F22B-8CDB-45B2-ADED-BD6BDFBEFE8A}.Release.ActiveCfg = Release|Win32
+		{DF92F22B-8CDB-45B2-ADED-BD6BDFBEFE8A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+!
+! resource.fd generated from resource.h
+!
+      integer, parameter :: IDC_EDIT_CELSIUS = 1000
+      integer, parameter :: IDC_TEXT_FAHRENHEIT = 1004
+      integer, parameter :: $_WIN32 = 1
+      integer, parameter :: IDC_SCROLLBAR_TEMPERATURE = 1002
+      integer, parameter :: IDD_TEMP = 101
+      integer, parameter :: IDC_EDIT_FAHRENHEIT = 1001
+      integer, parameter :: IDC_TEXT_CELSIUS = 1003
+      character(len=2), parameter :: IDC_BOX_TEMPERATURE = ("-1")

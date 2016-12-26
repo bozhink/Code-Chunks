@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "FXPLORER", "FXPLORER.vfproj", "{2E3ADD17-1642-4F48-B4C6-9CC2EBB09465}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2E3ADD17-1642-4F48-B4C6-9CC2EBB09465}.Debug.ActiveCfg = Debug|Win32
+		{2E3ADD17-1642-4F48-B4C6-9CC2EBB09465}.Debug.Build.0 = Debug|Win32
+		{2E3ADD17-1642-4F48-B4C6-9CC2EBB09465}.Release.ActiveCfg = Release|Win32
+		{2E3ADD17-1642-4F48-B4C6-9CC2EBB09465}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
