@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "monaco-editor": "^0.8.1"
+    "monaco-editor": "^0.10.1"
   },
   "devDependencies": {
-    "eslint": "^3.15.0"
+    "eslint": "^4.12.1"
   }
 }

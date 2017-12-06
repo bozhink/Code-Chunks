@@ -4,7 +4,7 @@
   "description": "Redis in NodeJS test",
   "main": "app.js",
   "dependencies": {
-    "redis": "^2.6.0-2"
+    "redis": "^2.8.0"
   },
   "devDependencies": {},
   "scripts": {

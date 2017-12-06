@@ -12,10 +12,9 @@ class stack
     void init();
     void push(char ch);
     char pop();
-}
+};
 
-void
-stack::init()
+void stack::init()
 {
     tos = 0;
 }

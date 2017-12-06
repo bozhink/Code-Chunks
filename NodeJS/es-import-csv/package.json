@@ -4,7 +4,7 @@
   "description": "",
   "main": "import-csv.js",
   "dependencies": {
-    "elasticsearch-csv": "^0.0.1"
+    "elasticsearch-csv": "^0.0.3"
   },
   "devDependencies": {},
   "scripts": {
