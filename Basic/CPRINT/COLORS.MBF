@@ -1,0 +1,45 @@
+'DEMO: Colors without ANSI.SYS
+'        COLORS.MBF written by BlackLight
+'        IFEGA.MBX written by BlackLight
+'        CPRINT.MBX written by BlackLight
+'      I wrote the MBX files using the MBX Editor, with help of Ralph
+'      Brown's Interrupt List.
+'DESCRIPTION:
+'  This program uses MBX files to display colored texts on the screen.
+'  The disadvantage is that you need to specify the length of the text
+'  string...
+'  The advantage however, is that ANSI.SYS is not required!
+'  The only requirement is an EGA-card (or better), which everyone should
+'  have, since EGA was the first graphics adapter which could display more
+'  than 2 different colors :)
+'NOTE:
+'  I wrote these MBX-files and this program, before I included the new
+'  COLOR, PRINT and CLS in the MicroBASIC compiler. CPRINT does nearly the
+'  same thing as the new COLOR and PRINT. However, detecting EGA is still
+'  appropriate with the new COLOR and PRINT statements.
+
+PRINT "Detecting EGA...";
+MBX_IFEGA[Begin]
+PRINT "failed!"
+PRINT "An EGA card is neccesary to run this program."
+END
+
+Begin:
+PRINT "found!"
+MBX_CPRINT[12 "Hello and welcome to MicroBASIC!" 32]: PRINT
+' attribute^^              ^text^                ^^length
+PRINT "The above text has attribute 12, which is bright-red."
+PRINT
+MBX_CPRINT[31 "Hello and welcome to MicroBASIC!" 32]: PRINT
+PRINT "The above text has attribute 31, which is bright-white on blue."
+PRINT
+PRINT "You can calculate the attribute with the following formula:"
+PRINT "attribute = foregroundcolor + (backgroundcolor * 16)"
+PRINT "For example: red (4) on gray (7) is 4+(7*16)=116"
+PRINT "let's test it, press any key...";
+INKEY
+PRINT
+MBX_CPRINT[116 "well... what do you say? :)" 27]: PRINT
+PRINT
+PRINT "End of this demo..."
+END

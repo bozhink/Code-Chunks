@@ -1,0 +1,68 @@
+PRINT "зддддддддддддддддддддддддддддд©"
+PRINT "Ё SEVERAL DETECTION ROUTINES  Ё"
+PRINT "ц-----------------------------╢"
+
+PRINT "Ё NDOS Installed   : ";
+MBX_IFNDOS[NDOSyes]
+PRINT "No ";
+
+Next0:
+PRINT "      Ё"
+PRINT "Ё 4DOS Installed   : ";
+MBX_IF4DOS[4DOSyes]
+PRINT "No ";
+
+Next1:
+PRINT "      Ё"
+PRINT "Ё KSTACK Installed : ";
+MBX_IFKSTACK[KSTACKyes]
+PRINT "No ";
+
+Next2:
+PRINT "      Ё"
+PRINT "Ё NGUIDES Installed: ";
+MBX_IFGUIDES[NGUIDESyes]
+PRINT "No ";
+
+Next3:
+PRINT "      Ё"
+PRINT "Ё Windows running  : ";
+MBX_IFWIN[WINDOWSyes]
+PRINT "No ";
+
+Next4:
+PRINT "      Ё"
+PRINT "Ё XMS Memory found : ";
+MBX_IFXMS[XMSyes]
+PRINT "No ";
+
+Next5:
+PRINT "      Ё"
+PRINT "ц-----------------------------╢"
+PRINT "Ё Using MicroBASIC Extensions Ё"
+PRINT "юддддддддддддддддддддддддддддды"
+END
+
+NDOSyes:
+PRINT "Yes";
+GOTO Next0
+
+4DOSyes:
+PRINT "Yes";
+GOTO Next1
+
+KSTACKyes:
+PRINT "Yes";
+GOTO Next2
+
+NGUIDESyes:
+PRINT "Yes";
+GOTO Next3
+
+WINDOWSyes:
+PRINT "Yes";
+GOTO Next4
+
+XMSyes:
+PRINT "Yes";
+GOTO Next5
