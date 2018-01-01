@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/semantic/dist/semantic.min.css">
+</head>
+
+<body>
+    <div class="ui three buttons">
+        <button class="ui active button">One</button>
+        <button class="ui button">Two</button>
+        <button class="ui button">Three</button>
+    </div>
+
+    <select name="skills" multiple="multiple" class="ui fluid dropdown">
+        <option value="">Skills</option>
+        <option value="angular">Angular</option>
+        <option value="ember">Ember</option>
+        <option value="css">CSS</option>
+        <option value="html">HTML</option>
+        <option value="javascript">Javascript</option>
+        <option value="meteor">Meteor</option>
+        <option value="node">NodeJS</option>
+    </select>
+
+
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./bower_components/semantic/dist/semantic.js"></script>
+    <script>
+        $('select.dropdown')
+            .dropdown('set selected', ['ember'])
+    </script>
+</body>
+
+</html>
