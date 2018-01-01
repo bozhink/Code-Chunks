@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HadleBars test</title>
+    <script src="Scripts/handlebars-v3.0.3.js"></script>
+</head>
+<body>
+    <main id="main">
+    </main>
+    <script id="my-template" type="text/x-handlebars-template">
+        <div class="class1">
+            <ul>
+                {{#each people}}
+                <li id="person-{{@index}}">
+                    <p><strong>Name:</strong> {{name}}</p>
+                    <p><strong>Age:</strong> {{age}}</p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
+    <script type="text/javascript">
+        var templateHtml = document.getElementById('my-template').innerHTML;
+        var handleBarsCompiledTemplate = Handlebars.compile(templateHtml);
+        var myObject = {
+            people: [
+                {
+                    name: 'Pesho',
+                    age: 32
+                },
+                {
+                    name: 'Ivan',
+                    age: 54
+                }
+            ]
+        };
+
+        document.getElementById('main').innerHTML = handleBarsCompiledTemplate(myObject);
+    </script>
+</body>
+</html>

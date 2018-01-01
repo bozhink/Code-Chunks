@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task 3</title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="handlebars-v3.0.3.js"></script>
+</head>
+<body>
+    <aside>
+        <div id="id" data-template="item-template">
+            <ul id="books-list" data-template="book-item-template"></ul>
+        </div>
+
+        <script id="item-template" type="text/handlebars-template">
+            <div class="outer">
+                <h1>{{title}}</h1>
+                {{#each numbers}}
+                <div class="number-item">{{this}}</div>
+                {{/each}}
+            </div>
+        </script>
+    </aside>
+
+    <script type="text/javascript">
+        (function ($) {
+            $.fn.listview = function (books) {
+                var i, len,
+                    template,
+                    templateHtmlString,
+                    handlebarsCompiledTemplate,
+                    htmlfragment,
+                    $dataTemplateId,
+                    that = this,
+                    $this = $(that);
+                $dataTemplateId = that.attr('data-template');
+                if (books != null) {
+                    template = document.getElementById($dataTemplateId);
+                    if (template != null) {
+                        templateHtmlString = template.innerHTML;
+                        if (templateHtmlString.length > 0) {
+                            handlebarsCompiledTemplate = Handlebars.compile(templateHtmlString);
+
+                            for (i = 0, len = books.length, htmlfragment = ''; i < len; i += 1) {
+                                htmlfragment += '<li class="book-item">' +
+                                    handlebarsCompiledTemplate(books[i]) +
+                                    '</li>';
+                            }
+
+
+                            $this.html('<ul id="books-list" data-template="book-item-template">' + htmlfragment + '</ul>');
+                        }
+                    }
+                }
+
+                return $this;
+            }
+        }(jQuery));
+    </script>
+
+</body>
+</html>
