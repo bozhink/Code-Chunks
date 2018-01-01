@@ -1,0 +1,74 @@
+﻿@using WebApplication1.Controllers
+@using WebApplication1.Models.Data
+@using WebApplication1.ViewModels.Data
+@model DataModel
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New</h2>
+
+@using (Html.BeginForm(actionName: "Update", controllerName: "Data"))
+{
+    <div id="my-form">
+        <div>
+            @Html.HiddenFor(m => m.Id)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Start)
+            <br />
+            @Html.EditorFor(m => m.Start, new { htmlAttributes = new { type = "time" } })
+        </div>
+
+        <div>
+            @Html.Partial("_NewPopup", new DataViewModel())
+        </div>
+
+        <button class="btn btn-default" id="btn-submit">Submit</button>
+    </div>
+}
+
+@section scripts {
+    <script>
+        $('#btn-submit').on('click', function (e) {
+            var k, input, value,
+                form = document.getElementById('my-form'),
+                $form = $(form),
+                $data = $form.find('input[name=Data]'),
+                data = JSON.parse($data.val());
+            for (k in data) {
+                input = $form.find('input[name=' + k + ']');
+                if (input.length > 0) {
+                    input = input[0];
+                }
+
+                switch (input.type) {
+                    case 'checkbox':
+                    case 'radio':
+                        value = input.checked;
+                        break;
+
+                    case 'submit':
+                    case 'reset':
+                    case 'button':
+                        value = null;
+                        break;
+
+                    default:
+                        value = input.value;
+                        break;
+                }
+
+                console.log(k);
+                if (!value) {
+                    continue;
+                }
+
+                console.log(value);
+                data[k] = value;
+            }
+
+            $data.val(JSON.stringify(data));
+        });
+    </script>
+}

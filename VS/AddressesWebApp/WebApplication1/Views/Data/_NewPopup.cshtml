@@ -1,0 +1,24 @@
+﻿@using WebApplication1.Common.Static
+@model WebApplication1.ViewModels.Data.DataViewModel
+
+<div id="pop-up">
+    <input type="hidden" name="Data" value="@Model.SerializeToJson()" />
+    <div>
+        @Html.LabelFor(m => m.FileName) @Html.EditorFor(m => m.FileName)
+    </div>
+    <div>
+        @Html.EditorFor(m => m.Monday) @Html.LabelFor(m => m.Monday)
+        <br />
+        @Html.EditorFor(m => m.Tuesday) @Html.LabelFor(m => m.Tuesday)
+        <br />
+        @Html.EditorFor(m => m.Wednesday) @Html.LabelFor(m => m.Wednesday)
+        <br />
+        @Html.EditorFor(m => m.Thursday) @Html.LabelFor(m => m.Thursday)
+        <br />
+        @Html.EditorFor(m => m.Friday) @Html.LabelFor(m => m.Friday)
+        <br />
+        @Html.EditorFor(m => m.Saturday) @Html.LabelFor(m => m.Saturday)
+        <br />
+        @Html.EditorFor(m => m.Sunday) @Html.LabelFor(m => m.Sunday)
+    </div>
+</div>

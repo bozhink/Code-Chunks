@@ -1,0 +1,10 @@
+﻿@using WebApplication1.Controllers
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="data-form">
+    @Html.ActionLink("New", actionName: nameof(DataController.New))
+</div>

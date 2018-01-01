@@ -1,0 +1,36 @@
+﻿@using WebApplication1.Models.Data
+@model DataModel
+@{
+    ViewBag.Title = "Updated";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    <dl>
+        <dt>
+            @Html.LabelFor(m => m.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(m => m.Id)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(m => m.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(m => m.Data)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(m => m.Start)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(m => m.Start)
+        </dd>
+    </dl>
+}
