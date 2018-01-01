@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Persons>
+  <Person>
+    <Id>1</Id>
+    <Name>John</Name>
+    <Age>32</Age>
+    <City>Stockholm</City>
+    <Email>John@Stockholm.com</Email>
+  </Person>
+  <Person>
+    <Id>2</Id>
+    <Name>Mike</Name>
+    <Age>25</Age>
+    <City>New York</City>
+    <Email>Mike@NewYork.com</Email>
+  </Person>
+  <Person>
+    <Id>3</Id>
+    <Name>Jean</Name>
+    <Age>42</Age>
+    <City>Paris</City>
+    <Email>Jean@Stockholm.com</Email>
+  </Person>
+  <Person>
+    <Id>4</Id>
+    <Name>Phil</Name>
+    <Age>18</Age>
+    <City>London</City>
+    <Email>Phil@London.com</Email>
+  </Person>
+  <Person>
+    <Id>5</Id>
+    <Name>Mark</Name>
+    <Age>36</Age>
+    <City>Sidney</City>
+    <Email>Mark@Sidney.com</Email>
+  </Person>
+</Persons>
