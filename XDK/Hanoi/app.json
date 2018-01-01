@@ -1,0 +1,15 @@
+{
+        "reponame":"sample-towers-of-hanoi",
+        "title":"Towers of Hanoi",
+        "abbr":"TowersOfHanoi",
+        "tooltip":"Animated Towers of Hanoi Puzzle",
+        "description":"Illustrates use of CSS and jQuery to animate solving the Towers of Hanoi puzzle. The game dynamically scales itself to fit any screen size.",
+        "articleurl":"http://software.intel.com/en-us/articles/towers-of-hanoi-using-jquery-and-css",
+        "keywords":["jQuery", "Game"],
+        "highlights":["jQuery", "Game"],
+        "visible": "true",
+        "apppreview":"true",
+        "appname":"demo.towersofhanoinew",
+        "relname":"4.0.0"
+}
+

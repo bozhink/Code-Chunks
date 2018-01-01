@@ -1,0 +1,13 @@
+{
+	"reponame":"sample-helloworldupdate",
+	"caption":"Hello World",
+	"tooltip":"Sample Hello World App",
+	"description":"Just the basics to get new developers started.",
+	"articleurl":"http://software.intel.com/en-us/articles/intel-xdk-hello-world-sample",
+	"keywords":["intel.xdk API"],
+	"highlights":["intel.xdk API"],
+	"visible": "true",
+	"apppreview":"true",
+	"appname":"demo.helloworldupdate",
+	"relname":"4.0.0"
+}
