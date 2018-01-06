@@ -137,3 +137,4 @@ UpgradeLog*.XML
 x64/
 xcuserdata/
 ~$*
+PaxHeaders.*
