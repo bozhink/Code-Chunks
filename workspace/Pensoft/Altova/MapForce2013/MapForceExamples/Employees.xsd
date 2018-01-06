@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Bernhard Wallisch (Altova GmbH) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Company">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Employees">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Manager" type="EmployeeType"/>
+							<xs:element name="Programmer" type="EmployeeType"/>
+							<xs:element name="Support" type="EmployeeType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="EmployeeType">
+		<xs:sequence>
+			<xs:element name="FirstName" type="xs:string"/>
+			<xs:element name="LastName" type="xs:string"/>
+			<xs:element name="PhoneExt" type="xs:string"/>
+			<xs:element name="Email" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

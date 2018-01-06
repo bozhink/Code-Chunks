@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="20">
+	<component name="defaultmap1" blackbox="0" uid="25" editable="1">
+		<properties SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="Person" library="core" uid="29" kind="30">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="143"/>
+						<datapoint pos="1" key="144"/>
+						<datapoint pos="2" key="145"/>
+						<datapoint pos="3" key="146"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="147"/>
+					</targets>
+					<view ltx="370" lty="222" rbx="480" rby="316"/>
+					<data>
+						<wsdl/>
+						<sort>
+							<collation/>
+							<key direction="descending"/>
+							<key index="1" direction="ascending"/>
+							<key index="2" direction="ascending"/>
+						</sort>
+					</data>
+				</component>
+				<component name="OrgChart" library="xml" uid="26" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="10" rbx="260" rby="451"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.xmlspy.com/schemas/orgchart"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="OrgChart" expanded="1">
+										<entry name="Office" outkey="179" expanded="1">
+											<entry name="Name" outkey="180"/>
+											<entry name="Address" outkey="181"/>
+											<entry name="Department" expanded="1">
+												<entry name="Person" outkey="148" expanded="1">
+													<entry name="First" outkey="149"/>
+													<entry name="Last" outkey="150"/>
+													<entry name="Shares" outkey="151"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="OrgChart.xsd" inputinstance="OrgChart.xml" instanceroot="{http://www.xmlspy.com/schemas/orgchart}OrgChart" sps="OrgChart.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Company" library="xml" uid="28" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="555" rbx="761" rby="402"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.xmlspy.com/schemas/orgchart"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Company" ns="1" expanded="1">
+										<entry name="CompanyLogo" ns="1" expanded="1">
+											<entry name="href" type="attribute" inpkey="190"/>
+										</entry>
+										<entry name="Name" ns="1" inpkey="173"/>
+										<entry name="Office" ns="1" inpkey="174" expanded="1">
+											<entry name="Name" ns="1" inpkey="175"/>
+											<entry name="Address" ns="1" inpkey="176"/>
+											<entry name="Person" ns="1" inpkey="164" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Company.xsd" instanceroot="{http://www.xmlspy.com/schemas/orgchart}Company" sps="Company.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="31" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="189"/>
+					</targets>
+					<view ltx="410" lty="41" rbx="520" rby="59"/>
+					<data>
+						<constant value="Share Ranking" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="30" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="188"/>
+					</targets>
+					<view ltx="425" rbx="520" rby="18"/>
+					<data>
+						<constant value="nanonull.gif" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="157">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="168">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="182">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="147">
+						<edges>
+							<edge vertexkey="164" edgekey="168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="143" edgekey="157"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="149">
+						<edges>
+							<edge vertexkey="146" edgekey="159"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="150">
+						<edges>
+							<edge vertexkey="145" edgekey="161"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="151">
+						<edges>
+							<edge vertexkey="144" edgekey="163"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="179">
+						<edges>
+							<edge vertexkey="174" edgekey="185"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="180">
+						<edges>
+							<edge vertexkey="175" edgekey="186"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="181">
+						<edges>
+							<edge vertexkey="176" edgekey="182"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="188">
+						<edges>
+							<edge vertexkey="190" edgekey="191"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="189">
+						<edges>
+							<edge vertexkey="173" edgekey="192"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

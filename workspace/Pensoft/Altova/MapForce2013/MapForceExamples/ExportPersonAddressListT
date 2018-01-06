@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="4">
+	<component name="defaultmap1" uid="36944464" blackbox="0" editable="1">
+		<properties AppName="Mapping" JavaBasePackage="com.mapforce" SelectedLanguage="cpp" ShowAnnotations="1" ShowLibraryNameInHeader="0" ShowSchemaTypes="0" XSLTTargetEncoding="UTF-8"/>
+		<structure>
+			<children>
+				<component name="edi" library="text" kind="1" uid="53628792">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="545" lty="-1" rbx="695" rby="199"/>
+					<data>
+						<root scrollposition="1">
+							<header/>
+							<entry name="Rows" expanded="true" inpkey="49496248">
+								<entry name="Company" inpkey="49420128"/>
+								<entry name="First" inpkey="49374216"/>
+								<entry name="Last" inpkey="49019848"/>
+								<entry name="Phone" inpkey="49373944"/>
+								<entry name="Street" inpkey="49420400"/>
+								<entry name="City" inpkey="49373672"/>
+								<entry name="State" inpkey="49496520"/>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1">
+							<settings separator=";" quote="&quot;" firstrownames="false">
+								<names root="Text file" block="Rows">
+									<field0 name="Company" type="string"/>
+									<field1 name="First" type="string"/>
+									<field2 name="Last" type="string"/>
+									<field3 name="Phone" type="string"/>
+									<field4 name="Street" type="string"/>
+									<field5 name="City" type="string"/>
+									<field6 name="State" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="structure" library="db" kind="1" uid="38395328">
+					<properties DBCatalog="altova" DBDataSource="altova.mdb" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" OLEDBProvider="Microsoft.Jet.OLEDB.4.0" XSLTDefaultOutput="0"/>
+					<view ltx="0" lty="0" rbx="195" rby="358"/>
+					<data>
+						<root scrollposition="172">
+							<header/>
+							<entry name="Altova" expanded="true">
+								<entry name="Office" expanded="true">
+									<entry name="Name" outkey="49259408"/>
+									<entry name="Address" expanded="true">
+										<entry name="city" outkey="52361360"/>
+										<entry name="state" outkey="48854824"/>
+										<entry name="street" outkey="49259192"/>
+										<entry name="zip" outkey="49308024"/>
+									</entry>
+									<entry name="Department" expanded="true">
+										<entry name="Person" expanded="true" outkey="48854664">
+											<entry name="First" outkey="48854504"/>
+											<entry name="Last" outkey="49259680"/>
+											<entry name="PhoneExt" outkey="52361200"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<database>
+							<database_connection>
+								<connect database-kind="Access" import-kind="Access">
+									<connection_type>
+										<connection_string>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=altova.mdb</connection_string>
+									</connection_type>
+								</connect>
+								<server name="altova.mdb">
+									<database name="altova">
+										<schema name="">
+											<table name="Address" kind="UserTable"/>
+											<table name="Altova" kind="UserTable"/>
+											<table name="Department" kind="UserTable"/>
+											<table name="Office" kind="UserTable"/>
+											<table name="Person" kind="UserTable"/>
+										</schema>
+									</database>
+								</server>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="52801288">
+					<sources>
+						<datapoint pos="0" key="52801576"/>
+						<datapoint pos="1" key="52801808"/>
+						<datapoint pos="2" key="38534072"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="38534360"/>
+					</targets>
+					<view ltx="329" lty="54" rbx="42" rby="-272"/>
+				</component>
+				<component name="constant" library="core" kind="2" uid="39121280">
+					<targets>
+						<datapoint pos="0" key="49019520"/>
+					</targets>
+					<view ltx="235" lty="90" rbx="-233" rby="-112"/>
+					<data>
+						<constant value=" " datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="48810760"/>
+					<edge edgekey="48810928"/>
+					<edge edgekey="48811096"/>
+					<edge edgekey="48811264"/>
+					<edge edgekey="48811432"/>
+					<edge edgekey="49338256"/>
+					<edge edgekey="49510080"/>
+					<edge edgekey="49510192"/>
+					<edge edgekey="52649424"/>
+					<edge edgekey="52742000"/>
+					<edge edgekey="52742536"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="38534360">
+						<edges>
+							<edge vertexkey="49373672" edgekey="48811096"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48854504">
+						<edges>
+							<edge vertexkey="49374216" edgekey="48811264"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48854664">
+						<edges>
+							<edge vertexkey="49496248" edgekey="48810928"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48854824">
+						<edges>
+							<edge vertexkey="49496520" edgekey="49510080"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49019520">
+						<edges>
+							<edge vertexkey="52801808" edgekey="49510192"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49259192">
+						<edges>
+							<edge vertexkey="49420400" edgekey="52742536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49259408">
+						<edges>
+							<edge vertexkey="49420128" edgekey="48810760"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49259680">
+						<edges>
+							<edge vertexkey="49019848" edgekey="48811432"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49308024">
+						<edges>
+							<edge vertexkey="52801576" edgekey="49338256"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52361200">
+						<edges>
+							<edge vertexkey="49373944" edgekey="52649424"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52361360">
+						<edges>
+							<edge vertexkey="38534072" edgekey="52742000"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

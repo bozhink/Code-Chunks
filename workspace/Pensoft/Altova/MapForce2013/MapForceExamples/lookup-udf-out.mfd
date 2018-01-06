@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowAnnotations="0" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties ParameterName="Parameter1"/>
+					<view ltx="-14" lty="-12" rbx="126" rby="118"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:ShortPO" expanded="1">
+								<entry name="0:CustomerNr" expanded="1"/>
+								<entry name="0:LineItems" expanded="1" outkey="91327272">
+									<entry name="0:LineItem" expanded="1" outkey="91327704">
+										<entry name="0:ArticleNr" outkey="91139880"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ShortPO.xsd" inputinstance="ShortPO.xml" outputinstance="ShortPO.xml" instanceroot="{}ShortPO"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTDefaultOutput="1" ParameterName="Parameter2"/>
+					<view ltx="536" lty="-16" rbx="679" rby="225"/>
+					<data>
+						<root scrollposition="66">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:CompletePO" expanded="1">
+								<entry name="0:LineItems" expanded="1" inpkey="91418240">
+									<entry name="0:LineItem" expanded="1" inpkey="91418760">
+										<entry name="0:Article" expanded="1" inpkey="91419280"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="CompletePO.xsd" outputinstance="CompletePO.xml" instanceroot="{}CompletePO"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="FindArticle" library="user" blackbox="0" uid="27" kind="19" visible="0">
+					<view ltx="192" lty="145" rbx="444" rby="278"/>
+					<data>
+						<root scrollposition="1">
+							<header/>
+							<entry name="POArtNr" expanded="1" inpkey="91102256" componentid="20"/>
+						</root>
+						<root rootindex="1">
+							<header/>
+							<entry name="CompletePO" expanded="1" componentid="26">
+								<entry name="Article" expanded="1" outkey="91416232"/>
+							</entry>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="91409528"/>
+					<edge edgekey="91448656"/>
+					<edge edgekey="91448776">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="91448896"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="91139880">
+						<edges>
+							<edge vertexkey="91102256" edgekey="91409528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91327272">
+						<edges>
+							<edge vertexkey="91418240" edgekey="91448896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91327704">
+						<edges>
+							<edge vertexkey="91418760" edgekey="91448656"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91416232">
+						<edges>
+							<edge vertexkey="91419280" edgekey="91448776"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="FindArticle" library="user" blackbox="0" editable="1" inline="1">
+		<properties/>
+		<sources>
+			<datapoint name="POArtNr" datatype="string"/>
+		</sources>
+		<structure>
+			<children>
+				<component name="POArtNr" library="core" uid="20" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="91495344"/>
+					</targets>
+					<view ltx="91" lty="9" rbx="-269" rby="-222"/>
+					<data>
+						<input name="POArtNr" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="21" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="91497328"/>
+						<datapoint pos="1" key="91497760"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="91498264"/>
+					</targets>
+					<view ltx="251" lty="60" rbx="-43" rby="-121"/>
+				</component>
+				<component name="filter" library="core" uid="22" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="91501056"/>
+						<datapoint pos="1" key="91501400"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="91501832"/>
+						<datapoint/>
+					</targets>
+					<view ltx="357" lty="59" rbx="-22" rby="-172"/>
+				</component>
+				<component name="document" library="xml" uid="24" kind="14">
+					<properties ParameterName="Parameter17"/>
+					<view ltx="28" lty="116" rbx="227" rby="237"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Articles" expanded="1">
+								<entry name="0:Article" expanded="1" outkey="91741824">
+									<entry name="0:Number" outkey="91828440"/>
+									<entry name="0:Name" outkey="91701552"/>
+									<entry name="0:SinglePrice" outkey="91613976"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Articles.xsd" inputinstance="Articles.xml" outputinstance="Articles.xml" instanceroot="{}Articles"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="23" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="91506456"/>
+						<datapoint pos="1" key="91568128"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="91568632"/>
+					</targets>
+					<view ltx="338" lty="202" rbx="5" rby="-53"/>
+				</component>
+				<component name="document" library="xml" uid="26" kind="14">
+					<properties XSLTDefaultOutput="1" UsageKind="output" ParameterName="CompletePO"/>
+					<view ltx="523" lty="36" rbx="669" rby="156"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Article" expanded="1" inpkey="91555016">
+								<entry name="0:Number" inpkey="91835024"/>
+								<entry name="0:Name" inpkey="91833984"/>
+								<entry name="0:SinglePrice" inpkey="91833728"/>
+								<entry name="0:Price" inpkey="91834504"/>
+							</entry>
+						</root>
+						<document schema="CompletePO.xsd" outputinstance="CompletePO.xml" instanceroot="{}CompletePO/{}LineItems/{}LineItem/{}Article"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="91614112"/>
+					<edge edgekey="91619496"/>
+					<edge edgekey="91669800"/>
+					<edge edgekey="91840664"/>
+					<edge edgekey="91840960"/>
+					<edge edgekey="91841256"/>
+					<edge edgekey="91841552"/>
+					<edge edgekey="91841848"/>
+					<edge edgekey="91842144"/>
+					<edge edgekey="91842440"/>
+					<edge edgekey="91842736"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="91495344">
+						<edges>
+							<edge vertexkey="91497328" edgekey="91842440"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91498264">
+						<edges>
+							<edge vertexkey="91501400" edgekey="91619496"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91501832">
+						<edges>
+							<edge vertexkey="91555016" edgekey="91841552"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91568632">
+						<edges>
+							<edge vertexkey="91834504" edgekey="91842144"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91613976">
+						<edges>
+							<edge vertexkey="91568128" edgekey="91841256"/>
+							<edge vertexkey="91833728" edgekey="91840960"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91701552">
+						<edges>
+							<edge vertexkey="91833984" edgekey="91842736"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91741824">
+						<edges>
+							<edge vertexkey="91501056" edgekey="91841848"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91828440">
+						<edges>
+							<edge vertexkey="91497760" edgekey="91840664"/>
+							<edge vertexkey="91506456" edgekey="91614112"/>
+							<edge vertexkey="91835024" edgekey="91669800"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

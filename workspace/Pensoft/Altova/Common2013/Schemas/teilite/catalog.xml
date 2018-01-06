@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" >
+	<!-- XML Catalog data for TEI -->
+	<!-- XML Catalog data for TEILite XML V1.1 -->
+	<!-- SHIPPING WITH SCHEMA NOW; COMMENTING OUT  -->
+    <!-- 	<public publicId="-//TEI//DTD TEI Lite XML ver. 1.1//EN" uri="files/teixlite.dtd"/> -->
+	<!-- identifer for Schema is also used with TEI, would cause re-direct problems if used, but here for example -->
+	<!-- <uri name="http://www.tei-c.org/ns/1.0" uri="files/teilite.xsd"/> -->	
+	<!-- End of XML Catalog data for TEILite XML V1.1 -->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/teilite/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/teilite/' rewritePrefix='files/'/>
+</catalog>

@@ -1,0 +1,31 @@
+Company,Department,First,Last,Title,EMail,Shares,LeaveTotal,UsedTotal,LeftTotal
+"Nanonull, Inc.",Administration,Vernon,Callaby,Office Manager,v.callaby@nanonull.com,1500,25,4,21
+"Nanonull, Inc.",Administration,Frank,Further,Accounts Receivable,f.further@nanonull.com,0,22,2,20
+"Nanonull, Inc.",Administration,Loby,Matise,Accounting Manager,l.matise@nanonull.com,,25,7,18
+"Nanonull, Inc.",Marketing,Joe,Martin,Marketing Manager Europe,j.martin@nanonull.com,2000,30,14,16
+"Nanonull, Inc.",Marketing,Susi,Sanna,Art Director,s.sanna@nanonull.com,1000,22,1,21
+"Nanonull, Inc.",Engineering,Fred,Landis,Program Manager,f.landis@nanonull.com,2000,28,10,18
+"Nanonull, Inc.",Engineering,Michelle,Butler,Software Engineer,m.butler@nanonull.com,1500,19,9,10
+"Nanonull, Inc.",Engineering,Ted,Little,Software Engineer,t.little@nanonull.com,0,22,10,12
+"Nanonull, Inc.",Engineering,Ann,Way,Technical Writer,a.way@nanonull.com,1000,25,3,22
+"Nanonull, Inc.",Engineering,Liz,Gardner,Software Engineer,l.gardner@nanonull.com,,1,7,14
+"Nanonull, Inc.",Engineering,Paul,Smith,Software Engineer,p.smith@nanonull.com,1000,21,7,14
+"Nanonull, Inc.",IT & Technical Support,Alex,Martin,IT Manager,a.martin@nanonull.com,2000,22,10,12
+"Nanonull, Inc.",IT & Technical Support,George,Hammer,Web Developer,g.hammer@nanonull.com,0,19,9,10
+"Nanonull, Inc.",IT & Technical Support,Jessica,Bander,Support Engineer,j.band@nanonull.com,0,25,13,12
+"Nanonull, Inc.",IT & Technical Support,Lui,King,Support Engineer,l.king@nanonull.com,500,20,6,14
+"Nanonull Europe, AG",Administration,Heidi,Brunner,Office Manager,h.brunner@nanonull.com,1500,10,5,5
+"Nanonull Europe, AG",Administration,Ines,Jameson,Administrator,i.jameson@nanonull.com,1000,20,5,15
+"Nanonull Europe, AG",IT & Technical Support,Gamil,Djervo,IT Manager,g.djervo@nanonull.com,1000,22,5,17
+"Nanonull Europe, AG",IT & Technical Support,Djuna,Urban,IT Engineer,d.urbann@nanonull.com,750,29,3,26
+"Nanonull Europe, AG",IT & Technical Support,Michael,Stein,IT Engineer,m.stein@nanonull.com,,19,7,12
+"Nanonull Europe, AG",Research & Development,Valentin,Rutger,R&D Manager,v.rutger@nanonull.com,1500,28,21,7
+"Nanonull Europe, AG",Research & Development,Gaia,Winkler,Research Scientist,g.winkler@nanonull.com,500,22,5,17
+"Nanonull Europe, AG",Research & Development,Felipe,Gomez,Research Scientist,f.gomez@nanonull.com,500,20,6,14
+"Nanonull Europe, AG",Research & Development,Mirko,Filipcic,Research Scientist,m.filipcic@nanonull.com,500,21,8,13
+"Nanonull Europe, AG",Research & Development,Norbert,Riedler,Research Scientist,n.riedler@nanonull.com,1500,18,2,16
+"Nanonull Europe, AG",Research & Development,Sabine,Kraus,Research Scientist,s.kraus@nanonull.com,0,18,7,11
+"Nanonull Europe, AG",Research & Development,Robert,Manko,Research Scientist,r.manko@nanonull.com,500,20,10,10
+"Nanonull Europe, AG",Research & Development,Mandy,Mitchell,Research Scientist,m.mitchell@nanonull.com,500,19,6,13
+"Nanonull Europe, AG",Research & Development,Lempel,Wenzl,Research Scientist,l.wenzl@nanonull.com,0,28,3,25
+"Nanonull Europe, AG",Research & Development,Max,Matzik,Research Scientist,m.matzik@nanonull.com,0,19,5,14

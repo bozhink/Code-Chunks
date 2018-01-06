@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Mr. Nobody (Altova) -->
+<xs:schema xmlns:sql="urn:schemas-microsoft-com:mapping-schema" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="BranchOffices" sql:relation="Altova">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" nillable="true" sql:relation="Altova" sql:field="Name" sql:datatype="nvarchar">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="Office" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="Altova_UniqueKey">
+			<xs:selector xpath="."/>
+			<xs:field xpath="PrimaryKey"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="Office" sql:relation="Office">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" nillable="true" sql:relation="Office" sql:field="Name" sql:datatype="nvarchar">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="EMail" nillable="true" sql:relation="Office" sql:field="EMail" sql:datatype="nvarchar">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Fax" nillable="true" sql:relation="Office" sql:field="Fax" sql:datatype="nvarchar">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Phone" nillable="true" sql:relation="Office" sql:field="Phone" sql:datatype="nvarchar">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="Address" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Contact" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="Office_UniqueKey">
+			<xs:selector xpath="."/>
+			<xs:field xpath="PrimaryKey"/>
+		</xs:unique>
+		<xs:keyref name="Office_To_Altova" refer="Altova_UniqueKey">
+			<xs:selector xpath="."/>
+			<xs:field xpath="ForeignKey"/>
+		</xs:keyref>
+	</xs:element>
+	<xs:element name="Address" sql:relation="Address">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="line" nillable="true" sql:relation="Address" sql:field="city" sql:datatype="nvarchar" maxOccurs="4">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="Address_UniqueKey">
+			<xs:selector xpath="."/>
+			<xs:field xpath="PrimaryKey"/>
+		</xs:unique>
+		<xs:keyref name="Address_To_Office" refer="Office_UniqueKey">
+			<xs:selector xpath="."/>
+			<xs:field xpath="ForeignKey"/>
+		</xs:keyref>
+	</xs:element>
+	<xs:element name="Contact">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="first" type="xs:string"/>
+				<xs:element name="last" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

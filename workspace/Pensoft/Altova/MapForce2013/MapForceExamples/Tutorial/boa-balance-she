@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="12">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="xbrl-measure-currency" library="xbrl" uid="11" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="613" lty="911" rbx="17" rby="233"/>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="87341784"/>
+					</targets>
+					<view ltx="123" lty="583" rbx="-421" rby="179"/>
+					<data>
+						<constant value="USD" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="excel" library="xlsx" uid="6" kind="26">
+					<properties/>
+					<view ltx="-4" lty="-10" rbx="216" rby="549"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Workbook" expanded="1">
+								<entry name="Worksheet" expanded="1" displayselectionmode="selection">
+									<entry name="Row" expanded="1"/>
+								</entry>
+								<entry name="Worksheet" expanded="1">
+									<condition>
+										<expression>
+											<function name="equal-ignorecase" library="xlsx">
+												<expression>
+													<attribute name="Name"/>
+												</expression>
+												<expression>
+													<constant value="Assets"/>
+												</expression>
+											</function>
+										</expression>
+									</condition>
+									<entry name="Row" expanded="1">
+										<entry name="Cell" expanded="1" displayselectionmode="selection" datatype="string"/>
+										<entry name="Cell" expanded="1" datatype="string">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="1" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="s"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" expanded="1" datatype="string">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="2" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="s"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" expanded="1" datatype="string">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="3" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="s"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87360888" expanded="1" annotation="Available For Sale Securities Debt" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="4" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87363960" expanded="1" annotation="Available for sale Securities Debt Collateral" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="5" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87363184" expanded="1" annotation="Cash And Cash Equivalents Carrying" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="6" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" expanded="1" annotation="Commitments And Contingencies" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="7" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87362408" expanded="1" annotation="Derivative Assets" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="8" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87361664" expanded="1" annotation="Federal Funds Sold - Securities Purchased To Resell" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="9" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87367504" expanded="1" annotation="Federal Funds Sold - Securities Purchased ToResell  Collateral" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="10" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87360224" expanded="1" annotation="Goodwill" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="11" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87364664" expanded="1" annotation="Held To Maturity Securities cost" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="12" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87367008" expanded="1" annotation="Held To Maturity Securities, Fair Value" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="13" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87345472" expanded="1" annotation="Intangible Assets Net Excluding Goodwill" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="14" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87350840" expanded="1" annotation="Loans And Leases Receivable Allowance" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="15" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87357008" expanded="1" annotation="Loans And Leases Receivable Gross Carrying " datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="16" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87357816" expanded="1" annotation="Loans And Leases Receivable Net Reported " datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="17" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87359416" expanded="1" annotation="Mortgage Servicing Rights" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="18" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87366344" expanded="1" annotation="Other Assets" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="19" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87345776" expanded="1" annotation="Premises and Equipment" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="20" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="87368032" expanded="1" annotation="Servicing Asset Fair Value " datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="21" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="370495176" expanded="1" annotation="Time Deposits Placed And Short term Investments" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="22" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="370273696" expanded="1" annotation="Total Debt Securities" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="23" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="376570768" expanded="1" annotation="Trading Securities Other" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="24" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+										<entry name="Cell" outkey="370273328" expanded="1" annotation="Trading Account Assets Pledged As Collateral" datatype="double">
+											<condition>
+												<expression>
+													<function name="logical-and" library="core">
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="n"/>
+																</expression>
+																<expression>
+																	<constant value="25" datatype="long"/>
+																</expression>
+															</function>
+														</expression>
+														<expression>
+															<function name="equal" library="core">
+																<expression>
+																	<attribute name="t"/>
+																</expression>
+																<expression>
+																	<constant value="n"/>
+																</expression>
+															</function>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+										</entry>
+									</entry>
+								</entry>
+								<entry name="Worksheet" expanded="1">
+									<condition>
+										<expression>
+											<function name="equal-ignorecase" library="xlsx">
+												<expression>
+													<attribute name="Name"/>
+												</expression>
+												<expression>
+													<constant value="Liabilities"/>
+												</expression>
+											</function>
+										</expression>
+									</condition>
+									<entry name="Row" expanded="1"/>
+								</entry>
+								<entry name="Worksheet" expanded="1">
+									<condition>
+										<expression>
+											<function name="equal-ignorecase" library="xlsx">
+												<expression>
+													<attribute name="Name"/>
+												</expression>
+												<expression>
+													<constant value="Sheet3"/>
+												</expression>
+											</function>
+										</expression>
+									</condition>
+									<entry name="Row" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<excel inputinstance="BOA balance sheet.xlsx" outputinstance="BOA balance sheet.xlsx"/>
+					</data>
+				</component>
+				<component name="xbrl-measure-currency" library="xbrl" uid="12" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="87342768"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="87342912"/>
+					</targets>
+					<view ltx="235" lty="549" rbx="-180" rby="-121"/>
+				</component>
+				<component name="xbrl" library="xbrl" uid="4" kind="27">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="413" lty="-12" rbx="680" rby="653"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace uid="http://www.xbrl.org/2003/instance"/>
+									<namespace uid="http://xbrl.us/us-gaap/2008-03-31"/>
+									<namespace uid="http://xbrl.boa.com/2006-12-31"/>
+									<namespace uid="view"/>
+									<namespace uid="http://xbrl.org/2006/xbrldi"/>
+								</namespaces>
+							</header>
+							<entry name="xbrl" ns="2" expanded="1">
+								<entry name="//xbrl.boa.com/2006-12-31/ext/BalanceSheet" ns="5" expanded="1">
+									<entry name="Dimensionless (presentation)" expanded="1" showdefaultsnode="1">
+										<dimensions>
+											<qname name="identifier" ns="2"/>
+											<qname name="period" ns="2"/>
+										</dimensions>
+										<entry name="defaults" ns="1">
+											<entry name="monetaryItemType" ns="1">
+												<entry name="unitRef" type="attribute" inpkey="222414064"/>
+												<entry name="decimals" type="attribute" inpkey="222414328"/>
+											</entry>
+											<entry name="numericItemType" ns="1">
+												<entry name="unitRef" type="attribute" inpkey="222414552"/>
+												<entry name="decimals" type="attribute" inpkey="222413048"/>
+											</entry>
+										</entry>
+										<entry name="identifier" ns="2" expanded="1">
+											<entry name="identifier" ns="2" inpkey="369865184">
+												<entry name="scheme" type="attribute" inpkey="370743496"/>
+											</entry>
+											<entry name="period" ns="2" expanded="1">
+												<entry name="period" ns="2" inpkey="222413272" expanded="1">
+													<entry name="instant" ns="2" inpkey="370743760"/>
+												</entry>
+												<entry name="context" ns="2" expanded="1">
+													<entry name="StatementOfFinancialPositionAbstract" ns="3" expanded="1">
+														<entry name="AssetsAbstract" ns="3" expanded="1">
+															<entry name="CashAndCashEquivalentsAtCarryingValue" ns="3" inpkey="222413512"/>
+															<entry name="TimeDepositsPlacedAndOtherShorttermInvestments" ns="4" inpkey="222413744"/>
+															<entry name="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell" ns="3" inpkey="369867400"/>
+															<entry name="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellPledgedAsCollateral" ns="3" inpkey="369868096"/>
+															<entry name="TradingSecuritiesOther" ns="3" inpkey="369867824"/>
+															<entry name="TradingSecuritiesPledgedAsCollateral" ns="3" inpkey="369868280"/>
+															<entry name="DerivativeAssets" ns="3" inpkey="369867584"/>
+															<entry name="DebtSecuritiesAbstract" ns="4" expanded="1">
+																<entry name="AvailableForSaleSecuritiesDebtSecurities" ns="3" inpkey="369866192"/>
+																<entry name="AvailableforsaleSecuritiesDebtSecuritiesCollateral" ns="4" inpkey="369866448"/>
+																<entry name="HeldToMaturitySecurities" ns="3" inpkey="369867128">
+																	<condition>
+																		<expression>
+																			<function name="equal" library="core">
+																				<expression>
+																					<attribute name="preferredLabel"/>
+																				</expression>
+																				<expression>
+																					<constant value="http://www.xbrl.org/2003/role/label"/>
+																				</expression>
+																			</function>
+																		</expression>
+																	</condition>
+																</entry>
+																<entry name="HeldToMaturitySecuritiesFairValue" ns="3" inpkey="369864504"/>
+																<entry name="TotalDebtSecurities" ns="4" inpkey="369864808">
+																	<condition>
+																		<expression>
+																			<function name="equal" library="core">
+																				<expression>
+																					<attribute name="preferredLabel"/>
+																				</expression>
+																				<expression>
+																					<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																				</expression>
+																			</function>
+																		</expression>
+																	</condition>
+																</entry>
+															</entry>
+															<entry name="LoansAndLeasesReceivableGrossCarryingAmount" ns="3" inpkey="369865480"/>
+															<entry name="LoansAndLeasesReceivableAllowance" ns="3" inpkey="369865784">
+																<condition>
+																	<expression>
+																		<function name="equal" library="core">
+																			<expression>
+																				<attribute name="preferredLabel"/>
+																			</expression>
+																			<expression>
+																				<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																			</expression>
+																		</function>
+																	</expression>
+																</condition>
+															</entry>
+															<entry name="LoansAndLeasesReceivableNetReportedAmount" ns="3" inpkey="370744000">
+																<condition>
+																	<expression>
+																		<function name="equal" library="core">
+																			<expression>
+																				<attribute name="preferredLabel"/>
+																			</expression>
+																			<expression>
+																				<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																			</expression>
+																		</function>
+																	</expression>
+																</condition>
+															</entry>
+															<entry name="PropertyPlantAndEquipmentNet" ns="3" inpkey="370744280"/>
+															<entry name="MortgageServicingRights" ns="4" inpkey="370543296"/>
+															<entry name="ServicingAssetAtFairValueAmount" ns="3" inpkey="370543528"/>
+															<entry name="Goodwill" ns="3" inpkey="370543712"/>
+															<entry name="IntangibleAssetsNetExcludingGoodwill" ns="3" inpkey="370544080"/>
+															<entry name="OtherAssets" ns="3" inpkey="369865968"/>
+														</entry>
+														<entry name="LiabilitiesAndStockholdersEquityAbstract" ns="3" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+								<entry name="unit" ns="2">
+									<entry name="id" type="attribute" inpkey="369866904"/>
+									<entry name="measure" ns="2" inpkey="369868464"/>
+								</entry>
+								<entry name="context" ns="2">
+									<entry name="entity" ns="2">
+										<entry name="segment" ns="2">
+											<entry name="StatementEquityComponentsAxis" ns="3" expanded="1">
+												<entry name="explicitMember" ns="6" expanded="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<xbrl schema="boa-20061231.xsd" outputinstance="boa-20061231.xml"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="7" kind="16">
+					<properties/>
+					<view ltx="238" lty="-7" rbx="351" rby="128"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="Rows" outkey="370025920" expanded="1">
+								<entry name="End date" outkey="370026144"/>
+								<entry name="identifier" outkey="370026408"/>
+								<entry name="scheme" outkey="370026632"/>
+								<entry name="unitRef" outkey="370026856"/>
+								<entry name="decimals" outkey="370027080"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" inputinstance="boa-extras.txt" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator=";" quote="&quot;" firstrownames="false" removeempty="true">
+								<names root="boa-extras" block="Rows">
+									<field0 name="Start date" type="date"/>
+									<field1 name="End date" type="date"/>
+									<field2 name="identifier" type="string"/>
+									<field3 name="scheme" type="string"/>
+									<field4 name="unitRef" type="string"/>
+									<field5 name="decimals" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="87341784">
+						<edges>
+							<edge vertexkey="87342768" edgekey="370110848"/>
+							<edge vertexkey="369866904" edgekey="370110984"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87342912">
+						<edges>
+							<edge vertexkey="369868464" edgekey="370110712"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87345472">
+						<edges>
+							<edge vertexkey="370544080" edgekey="370111120"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87345776">
+						<edges>
+							<edge vertexkey="370744280" edgekey="370119448"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87350840">
+						<edges>
+							<edge vertexkey="369865784" edgekey="370111936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87357008">
+						<edges>
+							<edge vertexkey="369865480" edgekey="370110304"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87357816">
+						<edges>
+							<edge vertexkey="370744000" edgekey="370110032"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87359416">
+						<edges>
+							<edge vertexkey="370543296" edgekey="370025496"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87360224">
+						<edges>
+							<edge vertexkey="370543712" edgekey="370110168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87360888">
+						<edges>
+							<edge vertexkey="369866192" edgekey="370109760"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87361664">
+						<edges>
+							<edge vertexkey="369867400" edgekey="370118904"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87362408">
+						<edges>
+							<edge vertexkey="369867584" edgekey="370119176"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87363184">
+						<edges>
+							<edge vertexkey="222413512" edgekey="370112072"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87363960">
+						<edges>
+							<edge vertexkey="369866448" edgekey="370112208"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87364664">
+						<edges>
+							<edge vertexkey="369867128" edgekey="370119312"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87366344">
+						<edges>
+							<edge vertexkey="369865968" edgekey="370119040"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87367008">
+						<edges>
+							<edge vertexkey="369864504" edgekey="370111800"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87367504">
+						<edges>
+							<edge vertexkey="369868096" edgekey="370111664"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="87368032">
+						<edges>
+							<edge vertexkey="370543528" edgekey="370109896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370025920">
+						<edges>
+							<edge vertexkey="222413272" edgekey="370118224"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370026144">
+						<edges>
+							<edge vertexkey="370743760" edgekey="370118088"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370026408">
+						<edges>
+							<edge vertexkey="369865184" edgekey="370117952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370026632">
+						<edges>
+							<edge vertexkey="370743496" edgekey="370118360"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370026856">
+						<edges>
+							<edge vertexkey="222414064" edgekey="370118496"/>
+							<edge vertexkey="222414552" edgekey="370118632"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370027080">
+						<edges>
+							<edge vertexkey="222414328" edgekey="370111256"/>
+							<edge vertexkey="222413048" edgekey="370111392"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370273328">
+						<edges>
+							<edge vertexkey="369868280" edgekey="370118768"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370273696">
+						<edges>
+							<edge vertexkey="369864808" edgekey="370110576"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="370495176">
+						<edges>
+							<edge vertexkey="222413744" edgekey="370110440"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="376570768">
+						<edges>
+							<edge vertexkey="369867824" edgekey="370111528"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap1" blackbox="0" uid="39122552" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="concat" library="core" uid="49360792" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="32"/>
+						<datapoint pos="1" key="49"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+					</targets>
+					<view ltx="538" lty="-54" rbx="613" rby="4"/>
+				</component>
+				<component name="auto-number" library="core" uid="39061568" kind="5">
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="26"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="362" lty="-47" rbx="493" rby="43"/>
+				</component>
+				<component name="constant" library="core" uid="37312944" kind="2">
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="276" lty="-11" rbx="332" rby="7"/>
+					<data>
+						<constant value="1000" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="49342296" kind="2">
+					<targets>
+						<datapoint pos="0" key="31"/>
+					</targets>
+					<view ltx="438" lty="-77" rbx="486" rby="-59"/>
+					<data>
+						<constant value="A" datatype="string"/>
+					</data>
+				</component>
+				<component name="structure" library="db" uid="49606848" kind="15">
+					<properties XSLTDefaultOutput="1" JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="CustomersTarget.mdb" DBCatalog="CustomersTarget" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view ltx="661" lty="-30" rbx="832" rby="479"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="Customers" type="table" inpkey="23" DBUseTransactions="1" expanded="1" dbbefore="sql" dbsqlbefore="INSERT INTO [Journal] ( [Modification Time], [Customer Count Before Modification] ) SELECT Now(), Count(*) FROM Customers;">
+									<tableactions>
+										<action operation="update" deletewithchildren="1" proceedchildren="1">
+											<field name="FirstName" function="equalignorecase"/>
+											<field name="LastName" function="equalignorecase"/>
+										</action>
+									</tableactions>
+									<entry name="Number" valuekeygeneration="databasegenerated"/>
+									<entry name="FirstName" inpkey="11"/>
+									<entry name="LastName" inpkey="61"/>
+									<entry name="CustomerID" inpkey="41"/>
+									<entry name="Addresses|CustomerNr" type="table" inpkey="5" expanded="1">
+										<entry name="Number" valuekeygeneration="databasegenerated"/>
+										<entry name="City" inpkey="17"/>
+										<entry name="State" inpkey="2"/>
+										<entry name="Street" inpkey="8"/>
+										<entry name="ZIP" inpkey="52"/>
+									</entry>
+								</entry>
+								<entry name="Customers" type="table" inpkey="38" DBUseTransactions="1" expanded="1" clone="1">
+									<tableactions>
+										<action operation="update" deletewithchildren="1" proceedchildren="1">
+											<field name="FirstName" function="equalignorecase"/>
+											<field name="LastName" function="equalignorecase"/>
+										</action>
+										<action proceedchildren="1"/>
+									</tableactions>
+									<entry name="Number" valuekeygeneration="databasegenerated"/>
+									<entry name="FirstName" inpkey="58"/>
+									<entry name="LastName" inpkey="46"/>
+									<entry name="CustomerID" inpkey="43"/>
+									<entry name="Addresses|CustomerNr" type="table" inpkey="29" expanded="1">
+										<entry name="Number" valuekeygeneration="databasegenerated"/>
+										<entry name="City" inpkey="55"/>
+										<entry name="State" inpkey="35"/>
+										<entry name="Street" inpkey="20"/>
+										<entry name="ZIP" inpkey="14"/>
+									</entry>
+								</entry>
+								<entry name="Journal" type="table" outkey="66" expanded="1">
+									<entry name="ID" valuekeygeneration="databasegenerated"/>
+									<entry name="Modification Time" outkey="67"/>
+									<entry name="Customer Count Before Modification" outkey="76"/>
+								</entry>
+							</entry>
+						</root>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" name="CustomersTarget" path="CustomersTarget" use_driver_for_retrieval="Yes">
+								<properties>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Root Object" value="CustomersTarget"/>
+									<property name="Data Source" value="CustomersTarget.mdb"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+									<property name="User ID"/>
+									<property name="Password"/>
+									<property name="Persist Security Info"/>
+									<property name="Jet OLEDB:System Database"/>
+									<property name="Jet OLEDB:Sandbox Mode"/>
+									<property name="Jet OLEDB:Exclusive Async Delay"/>
+									<property name="Jet OLEDB:Flush Transaction Timeout"/>
+									<property name="Jet OLEDB:Implicit Commit Sync"/>
+									<property name="Jet OLEDB:Lock Delay"/>
+									<property name="Jet OLEDB:Lock Retry"/>
+									<property name="Jet OLEDB:Max Buffer Size"/>
+									<property name="Jet OLEDB:Max Locks Per File"/>
+									<property name="Jet OLEDB:Page Locks to Table Lock"/>
+									<property name="Jet OLEDB:Page Timeout"/>
+									<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+									<property name="Jet OLEDB:Shared Async Delay"/>
+									<property name="Jet OLEDB:User Commit Sync"/>
+									<property name="Jet OLEDB:Compact Without Replica Repair"/>
+									<property name="Jet OLEDB:Create System Database"/>
+									<property name="Jet OLEDB:Database Locking Mode"/>
+									<property name="Jet OLEDB:Database Password"/>
+									<property name="Jet OLEDB:New Database Password"/>
+									<property name="Jet OLEDB:Registry Path"/>
+								</properties>
+								<LocalViewStorage/>
+								<LocalRelationsStorage/>
+								<selections>
+									<selection>
+										<PathElement Name="CustomersTarget" Kind="DataSource"/>
+										<PathElement Name="CustomersTarget" Kind="Database"/>
+										<PathElement Name="Addresses" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="CustomersTarget" Kind="DataSource"/>
+										<PathElement Name="CustomersTarget" Kind="Database"/>
+										<PathElement Name="Customers" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="CustomersTarget" Kind="DataSource"/>
+										<PathElement Name="CustomersTarget" Kind="Database"/>
+										<PathElement Name="Journal" Kind="Table"/>
+									</selection>
+								</selections>
+							</database_connection>
+							<recordset/>
+						</database>
+					</data>
+				</component>
+				<component name="structure" library="db" uid="52503568" kind="15">
+					<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="altova.mdb" OLEDBProvider="Microsoft.Jet.OLEDB.4.0" DBUseTransactions="1"/>
+					<view ltx="105" lty="181" rbx="247" rby="446"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="Address" type="table" outkey="79" expanded="1">
+									<entry name="city" outkey="80"/>
+									<entry name="state" outkey="81"/>
+									<entry name="street" outkey="82"/>
+									<entry name="zip" outkey="83"/>
+								</entry>
+								<entry name="Person" type="table" outkey="84" expanded="1">
+									<entry name="First" outkey="85"/>
+									<entry name="Last" outkey="86"/>
+								</entry>
+							</entry>
+						</root>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" name="altova" path="altova" use_driver_for_retrieval="Yes">
+								<properties>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Root Object" value="altova"/>
+									<property name="Data Source" value="altova.mdb"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+									<property name="User ID"/>
+									<property name="Password"/>
+									<property name="Persist Security Info"/>
+									<property name="Jet OLEDB:System Database"/>
+									<property name="Jet OLEDB:Sandbox Mode"/>
+									<property name="Jet OLEDB:Exclusive Async Delay"/>
+									<property name="Jet OLEDB:Flush Transaction Timeout"/>
+									<property name="Jet OLEDB:Implicit Commit Sync"/>
+									<property name="Jet OLEDB:Lock Delay"/>
+									<property name="Jet OLEDB:Lock Retry"/>
+									<property name="Jet OLEDB:Max Buffer Size"/>
+									<property name="Jet OLEDB:Max Locks Per File"/>
+									<property name="Jet OLEDB:Page Locks to Table Lock"/>
+									<property name="Jet OLEDB:Page Timeout"/>
+									<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+									<property name="Jet OLEDB:Shared Async Delay"/>
+									<property name="Jet OLEDB:User Commit Sync"/>
+									<property name="Jet OLEDB:Compact Without Replica Repair"/>
+									<property name="Jet OLEDB:Create System Database"/>
+									<property name="Jet OLEDB:Database Locking Mode"/>
+									<property name="Jet OLEDB:Database Password"/>
+									<property name="Jet OLEDB:New Database Password"/>
+									<property name="Jet OLEDB:Registry Path"/>
+								</properties>
+								<LocalViewStorage/>
+								<LocalRelationsStorage/>
+								<selections>
+									<selection>
+										<PathElement Name="altova" Kind="DataSource"/>
+										<PathElement Name="altova" Kind="Database"/>
+										<PathElement Name="Address" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="altova" Kind="DataSource"/>
+										<PathElement Name="altova" Kind="Database"/>
+										<PathElement Name="Person" Kind="Table"/>
+									</selection>
+								</selections>
+							</database_connection>
+							<recordset/>
+						</database>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="49356800" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="104" lty="-42" rbx="245" rby="144"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Customers" expanded="1">
+										<entry name="Customer" outkey="22" expanded="1">
+											<entry name="FirstName" outkey="10"/>
+											<entry name="LastName" outkey="60"/>
+											<entry name="Address" outkey="4" expanded="1">
+												<entry name="Street" outkey="7"/>
+												<entry name="City" outkey="16"/>
+												<entry name="ZIP" outkey="51"/>
+												<entry name="State" outkey="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Customers.xsd" inputinstance="Customers.xml" instanceroot="{}Customers"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="52503569" kind="16">
+					<properties/>
+					<view ltx="894" lty="385" rbx="1020" rby="475"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" inpkey="63" expanded="1">
+										<entry name="Date" inpkey="72"/>
+										<entry name="Time" inpkey="73"/>
+										<entry name="Count" inpkey="77"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="Text file" block="Rows">
+									<field0 name="Date" type="date"/>
+									<field1 name="Time" type="time"/>
+									<field2 name="Count" type="integer"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="41" edgekey="42"/>
+							<edge vertexkey="43" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48">
+						<edges>
+							<edge vertexkey="49" edgekey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="51">
+						<edges>
+							<edge vertexkey="52" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="61" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="63" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67">
+						<edges>
+							<edge vertexkey="72" edgekey="74"/>
+							<edge vertexkey="73" edgekey="75"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="76">
+						<edges>
+							<edge vertexkey="77" edgekey="78"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="79">
+						<edges>
+							<edge vertexkey="29" edgekey="87"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="80">
+						<edges>
+							<edge vertexkey="55" edgekey="88"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="81">
+						<edges>
+							<edge vertexkey="35" edgekey="89"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="82">
+						<edges>
+							<edge vertexkey="20" edgekey="90"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="83">
+						<edges>
+							<edge vertexkey="14" edgekey="91"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="84">
+						<edges>
+							<edge vertexkey="38" edgekey="92"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="85">
+						<edges>
+							<edge vertexkey="58" edgekey="93"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="86">
+						<edges>
+							<edge vertexkey="46" edgekey="94"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2008 XBRL US Inc. All Rights Reserved. http://xbrl.us/ 
+     This document may be copied and furnished to others, and derivative works that 
+     comment on or otherwise explain it or assist in its implementation may be 
+     prepared, copied, published and distributed, in whole or in part, without 
+     restriction of any kind, provided that the above copyright notice and this
+     paragraph are included on all such copies and derivative works.  XBRL is a
+     registered trademark of AICPA licensed exclusively to XBRL International. -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:boa="http://xbrl.boa.com/2006-12-31"
+               xmlns:link="http://www.xbrl.org/2003/linkbase"
+               xmlns:p0="http://xbrl.org/2005/xbrldt"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               xmlns:xbrli="http://www.xbrl.org/2003/instance"
+               xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity"
+                 xlink:type="simple"
+                 xlink:href="boa-20061231.xsd#ChangesInStockholdersEquity"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default"
+                    xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                    xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                    xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"/>
+  <link:arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all" xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"/>
+  <link:definitionLink xlink:type="extended"
+                        xlink:role="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementLineItems"
+                xlink:label="StatementLineItems"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInStockholdersEquityRollForward"
+                xlink:label="IncreaseDecreaseInStockholdersEquityRollForward"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetIncomeLoss"
+                xlink:label="NetIncomeLoss"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                xlink:label="OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                xlink:label="OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherComprehensiveIncomeDerivativesQualifyingAsHedgesNetOfTaxPeriodIncreaseDecrease"
+                xlink:label="OtherComprehensiveIncomeDerivativesQualifyingAsHedgesNetOfTaxPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CashDividendsPaidCommonStock"
+                xlink:label="CashDividendsPaidCommonStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CashDividendsPaidPreferredStock"
+                xlink:label="CashDividendsPaidPreferredStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodValueNewIssues"
+                xlink:label="StockIssuedDuringPeriodValueNewIssues"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"
+                xlink:label="CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CommonStockIssuedunderEmployeeplansandrelatedtaxbenefits"
+                xlink:label="CommonStockIssuedunderEmployeeplansandrelatedtaxbenefits"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRepurchasedDuringPeriodValue"
+                xlink:label="StockRepurchasedDuringPeriodValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRepurchasedDuringPeriodShares"
+                xlink:label="StockRepurchasedDuringPeriodShares"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquityPeriodIncreaseDecrease"
+                xlink:label="StockholdersEquityPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodSharesPeriodIncreaseDecrease"
+                xlink:label="StockIssuedDuringPeriodSharesPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRedeemedOrCalledDuringPeriodValue"
+                xlink:label="StockRedeemedOrCalledDuringPeriodValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRedeemedOrCalledDuringPeriodShares"
+                xlink:label="StockRedeemedOrCalledDuringPeriodShares"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockConvertedFromOneClassToAnotherClassValue"
+                xlink:label="StockConvertedFromOneClassToAnotherClassValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockConvertedFromOneClassToAnotherClassShares"
+                xlink:label="StockConvertedFromOneClassToAnotherClassShares"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodValueAcquisitions"
+                xlink:label="StockIssuedDuringPeriodValueAcquisitions"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodSharesAcquisitions"
+                xlink:label="StockIssuedDuringPeriodSharesAcquisitions"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CumulativeEffectOfInitialAdoptionOfSFAS158"
+                xlink:label="CumulativeEffectOfInitialAdoptionOfSFAS158"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_OtherChangesInShareholdersEquity"
+                xlink:label="OtherChangesInShareholdersEquity"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquity"
+                xlink:label="StockholdersEquity"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_SharesIssued"
+                xlink:label="SharesIssued"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementTable"
+                xlink:label="StatementTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementEquityComponentsAxis"
+                xlink:label="StatementEquityComponentsAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_EquityComponentDomain"
+                xlink:label="EquityComponentDomain"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_EquityComponentDomain"
+                xlink:label="EquityComponentDomain_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PreferredStockIncludingAdditionalPaidInCapitalMember"
+                xlink:label="PreferredStockIncludingAdditionalPaidInCapitalMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommonStockIncludingAdditionalPaidInCapitalMember"
+                xlink:label="CommonStockIncludingAdditionalPaidInCapitalMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_RetainedEarningsMember"
+                xlink:label="RetainedEarningsMember"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_OtherMember"
+                xlink:label="Other"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeMember"
+                xlink:label="AccumulatedOtherComprehensiveIncomeMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ComprehensiveIncomeMember"
+                xlink:label="ComprehensiveIncomeMember_2"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StatementLineItems"
+                          xlink:to="IncreaseDecreaseInStockholdersEquityRollForward"
+                          use="optional"
+                          order="2.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="NetIncomeLoss"
+                          use="optional"
+                          order="3.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                          use="optional"
+                          order="4.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                          use="optional"
+                          order="6.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="OtherComprehensiveIncomeDerivativesQualifyingAsHedgesNetOfTaxPeriodIncreaseDecrease"
+                          use="optional"
+                          order="7.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="CashDividendsPaidCommonStock"
+                          use="optional"
+                          order="9.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="CashDividendsPaidPreferredStock"
+                          use="optional"
+                          order="10.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockIssuedDuringPeriodValueNewIssues"
+                          use="optional"
+                          order="11.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"
+                          use="optional"
+                          order="12.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"
+                          xlink:to="CommonStockIssuedunderEmployeeplansandrelatedtaxbenefits"
+                          use="optional"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockRepurchasedDuringPeriodValue"
+                          use="optional"
+                          order="13.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StockRepurchasedDuringPeriodValue"
+                          xlink:to="StockRepurchasedDuringPeriodShares"
+                          use="optional"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockholdersEquityPeriodIncreaseDecrease"
+                          use="optional"
+                          order="14.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StockholdersEquityPeriodIncreaseDecrease"
+                          xlink:to="StockIssuedDuringPeriodSharesPeriodIncreaseDecrease"
+                          use="optional"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockRedeemedOrCalledDuringPeriodValue"
+                          order="11.5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StockRedeemedOrCalledDuringPeriodValue"
+                          xlink:to="StockRedeemedOrCalledDuringPeriodShares"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockConvertedFromOneClassToAnotherClassValue"
+                          order="13.5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StockConvertedFromOneClassToAnotherClassValue"
+                          xlink:to="StockConvertedFromOneClassToAnotherClassShares"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockIssuedDuringPeriodValueAcquisitions"
+                          order="12.5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StockIssuedDuringPeriodValueAcquisitions"
+                          xlink:to="StockIssuedDuringPeriodSharesAcquisitions"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="CumulativeEffectOfInitialAdoptionOfSFAS158"
+                          order="7.5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="OtherChangesInShareholdersEquity"
+                          order="13.6"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                          xlink:to="StockholdersEquity"
+                          use="optional"
+                          order="17.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="StockholdersEquity"
+                          xlink:to="SharesIssued"
+                          use="optional"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+                          xlink:from="StatementLineItems"
+                          xlink:to="StatementTable"
+                          order="1.0"
+                          p0:contextElement="segment"
+                          p0:targetRole="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="StatementTable"
+                          xlink:to="StatementEquityComponentsAxis"
+                          use="optional"
+                          order="1.0"
+                          p0:targetRole="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+                          xlink:from="StatementEquityComponentsAxis"
+                          xlink:to="EquityComponentDomain"
+                          use="optional"
+                          order="1.0"
+                          p0:targetRole="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="StatementEquityComponentsAxis"
+                          xlink:to="EquityComponentDomain_2"
+                          priority="1"
+                          order="3.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="EquityComponentDomain"
+                          xlink:to="PreferredStockIncludingAdditionalPaidInCapitalMember"
+                          use="optional"
+                          order="1.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="EquityComponentDomain"
+                          xlink:to="CommonStockIncludingAdditionalPaidInCapitalMember"
+                          use="optional"
+                          order="2.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="EquityComponentDomain"
+                          xlink:to="RetainedEarningsMember"
+                          use="optional"
+                          order="3.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="EquityComponentDomain"
+                          xlink:to="Other"
+                          use="optional"
+                          order="5.0"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="EquityComponentDomain"
+                          xlink:to="AccumulatedOtherComprehensiveIncomeMember"
+                          use="optional"
+                          order="4.0"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="StatementEquityComponentsAxis"
+                          xlink:to="ComprehensiveIncomeMember_2"
+                          use="optional"
+                          priority="1"
+                          order="4.0"/>
+   </link:definitionLink>
+</link:linkbase>

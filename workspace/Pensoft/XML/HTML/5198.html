@@ -1,0 +1,1479 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tp="http://www.plazi.org/taxpub" xmlns:php="http://php.net/xsl" xml:lang="bg" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>A new Haptoclinus blenny (Teleostei, Labrisomidae) from deep reefs off Curaçao, southern Caribbean, with comments on relationships of the genus</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="index, follow, all" />
+<script language="javascript">
+	if(self.location==top.location){
+		document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl-large.css" media="all" title="default">');
+	}else{
+		document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl.css" media="all" title="default">');
+	}
+</script>
+<script type="text/javascript">
+	function swapDivClassname(pLink, pId, pClassName){
+		var lDiv = document.getElementById(pId);
+		if( lDiv ){
+			if( lDiv.className == pClassName ){
+				lDiv.className = '';
+				pLink.className = 'inactive'
+			}else{
+				lDiv.className = pClassName;
+				pLink.className = ''
+			}
+		}
+	}
+	function openw(url, title, options) {
+		var newwin = window.open(url, title, options);
+		newwin.focus();
+	}
+	function showBaloon(pBaloonType, pId, pEvent) {
+		if( !pId )
+			return;
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		pEvent = pEvent || window.event;
+		clearTimeout(gTimeout);
+		if( gActiveBaloonId && gActiveBaloonType == pBaloonType && gActiveBaloonId != pId ){
+			gFlagToHideBaloon = true;
+			hideBaloon(gActiveBaloonId);
+		}else if(gActiveBaloonType == pBaloonType && gActiveBaloonId == pId ){
+			return;
+		}
+		gActiveBaloonId = pId;
+		gActiveBaloonType = pBaloonType;
+		gFlagToHideBaloon = false;
+		var lEventTarget = pEvent.target || pEvent.srcElement;
+		if( pBaloonType == 1 ){//xref
+			var lReference = document.getElementById('reference_' + pId);
+			var lText = 'Reference not found!';
+			if( lReference ){
+				lText = lReference.innerHTML;// || lReference.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}else if( pBaloonType == 2 ){//Taxoni
+			var lReferenceName = 'taxon_' + pId + '_baloon_div';
+			var lReference = document.getElementById(lReferenceName);
+			gBaloonInnerWrapper.className = 'smallBaloon';
+			if( lReference ){
+				lText = lReference.innerHTML;// || lReference.innerText;
+			}else{
+				lText = 'Error during loading taxa data';
+			}
+			gBaloon.innerHTML = lText;
+		}else if( pBaloonType == 3 ){//Figuri
+			var lFigure = document.getElementById('fig_' + pId);
+			var lText = 'Figure not found!';
+			if( lFigure ){
+				lText = lFigure.innerHTML;// || lFigure.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}else if( pBaloonType == 4 ){//Tablici
+			var lTable = document.getElementById('table_' + pId);
+			var lText = 'Table not found!';
+			if( lTable ){
+				lText = lTable.innerHTML;// || lTable.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}
+		gActiveBaloonId = pId;
+		displayBaloon(lEventTarget, pEvent);
+	}
+	function displayBaloon(pEventTarget, pEvent){//Pozicionira i pokazva balona
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		var lUseWindowMaxY = parseInt('0');
+		gBaloonWrapper.style.display="block";
+		positionBaloon(pEventTarget, pEvent, lUseWindowMaxY);
+	}
+	function hideBaloonEvent(pId, pEvent){
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		gFlagToHideBaloon = true;
+		gTimeout = setTimeout("hideBaloon('" + pId + "')", 10);
+	}
+	function hideBaloon(pId){
+		clearTimeout(gTimeout);
+		if( !gFlagToHideBaloon )
+			return;
+		gBaloonIsShown = false;
+		gActiveBaloonId = 0;
+		gActiveBaloonType = false;
+		gBaloonWrapper.style.display="none";
+	}
+	function initBalloons(){
+		gBaloon = document.getElementById('baloonContent');
+		gBaloonIsShown = false;
+		gActiveBaloonId = 0;
+		gTimeout = false;
+		gActiveBaloonType = false;
+		gBaloonWrapper = document.getElementById('baloonWrapper');
+		gBaloonInnerWrapper = document.getElementById('baloonInnerWrapper');
+		gBaloonArrowImg = document.getElementById('baloonArrowImg');
+	}
+	function positionBaloon(pEventTarget, pEvent, pUseWindowMaxY){
+		var lMousePos = getMousePosition(pEvent);
+		var lContentWrapper = document.getElementById('contentWrapper');
+		//var lY = pEventTarget.offsetTop + pEventTarget.offsetHeight;
+		var lY = pEventTarget.offsetHeight;
+		//var lX = pEventTarget.offsetLeft;
+		var lX = 0;
+		var lParent = pEventTarget;
+		do {
+			lY += lParent.offsetTop;
+			lX += lParent.offsetLeft;
+			//alert(lParent.tagName + '-' + lY);
+		}
+		while((lParent = lParent.offsetParent) && lParent.id != 'contentWrapper')
+		/*var lXMax = lMousePos['xMax'];*/
+		var lXMax = lContentWrapper.offsetWidth - 20;//-20 zaradi scrolla
+		var lYMax;
+		if( pUseWindowMaxY ){
+			lYMax = lMousePos['yMax'];
+		}else{
+			lYMax = lContentWrapper.scrollHeight;
+		}
+		lYMax = lYMax - 40;
+		var lClassName = 'baloonWrapper';
+		var lLeft = 0;
+		var lTop = 0;
+		var lImageName = 'http://www.pensoft.net/J_FILES/img/baloon_arrow';
+		if( lY + gBaloonWrapper.offsetHeight <= lYMax ){
+			lTop = lY;
+			lClassName = lClassName + 'Bottom';
+			lImageName = lImageName + '_bottom';
+		}else{
+			lTop = lY - gBaloonWrapper.offsetHeight - pEventTarget.offsetHeight;
+			if( lTop < 0 )
+				lTop = 0;
+			lClassName = lClassName + 'Top';
+			lImageName = lImageName + '_top';
+		}
+		if( lX + gBaloonWrapper.offsetWidth <= lXMax ){
+			lLeft = lX;
+			lClassName = lClassName + 'Right';
+			lImageName = lImageName + '_right';
+		}else{
+			lLeft = lX -gBaloonWrapper.offsetWidth + 50;
+			if( lLeft < 0 )
+				lLeft = 0;
+			lClassName = lClassName + 'Left';
+			lImageName = lImageName + '_left';
+		}
+		lImageName = lImageName + '.gif';
+		gBaloonWrapper.style.left = lLeft + 'px';
+		gBaloonWrapper.style.top = lTop + 'px';
+		gBaloonWrapper.className =  lClassName;
+		gBaloonArrowImg.setAttribute('src', lImageName);
+	}
+	function submitForm( pFormName ){
+		eval('document.' + pFormName + '.submit()');
+	}
+	function showLocalitiesMenu(){
+		var lMenu = document.getElementById('localitiesMenuDiv');
+		if( lMenu )
+			lMenu.style.display='block';
+ 		}
+	function hideLocalitiesMenu(){
+		var lMenu = document.getElementById('localitiesMenuDiv');
+		if( lMenu )
+			lMenu.style.display='none';
+	}
+	function getMousePosition(pEvent){
+		if (document.layers) {
+		// When the page scrolls in Netscape, the event's mouse position
+		// reflects the absolute position on the screen. innerHight/Width
+		// is the position from the top/left of the screen that the user is
+		// looking at. pageX/YOffset is the amount that the user has
+		// scrolled into the page. So the values will be in relation to
+		// each other as the total offsets into the page, no matter if
+		// the user has scrolled or not.
+		xMousePos = pEvent.clientX;
+		yMousePos = pEvent.clientY;
+		xMousePosMax = window.innerWidth + window.pageXOffset;
+		yMousePosMax = window.innerHeight + window.pageYOffset;
+		} else if (document.all) {
+		// When the page scrolls in IE, the event's mouse position
+		// reflects the position from the top/left of the screen the
+		// user is looking at. scrollLeft/Top is the amount the user
+		// has scrolled into the page. clientWidth/Height is the height/
+		// width of the current page the user is looking at. So, to be
+		// consistent with Netscape (above), add the scroll offsets to
+		// both so we end up with an absolute value on the page, no
+		// matter if the user has scrolled or not.	;
+		xMousePos = window.event.x + document.body.scrollLeft;
+		yMousePos = window.event.y + document.body.scrollTop;
+		xMousePosMax = document.body.clientWidth + document.body.scrollLeft;
+		yMousePosMax = document.body.clientHeight + document.body.scrollTop;
+		} else if (document.getElementById) {
+		// Netscape 6 behaves the same as Netscape 4 in this regard
+		xMousePos = pEvent.clientX;
+		yMousePos = pEvent.clientY;
+		xMousePosMax = window.innerWidth + window.pageXOffset;
+		yMousePosMax = window.innerHeight + window.pageYOffset;
+		}
+		return {
+		'x' : xMousePos,
+		'y' : yMousePos,
+		'xMax' : xMousePosMax,
+		'yMax' : yMousePosMax
+		};
+	}
+	var gHolderDiv;
+	var gScrolDiv;
+	var gRightBtn;
+	var gLeftBtn;
+	var gLinksTable;
+	var gMinLeft;
+	function initScrollConstants(){
+		gHolderDiv = document.getElementById('scrollHolderDiv');
+		gScrolDiv = document.getElementById('scrollDiv');
+		gRightBtn = document.getElementById('scrollRightBtn');
+		gLeftBtn = document.getElementById('scrollLeftBtn');
+		gLinksTable = document.getElementById('linksButtonHolder');
+		gScrolDiv.style.width = gLinksTable.offsetWidth + 'px';
+		gHolderDiv.style.width = '';
+		var gHolderWidth = gHolderDiv.offsetWidth;
+		var gScrolWidth = gScrolDiv.offsetWidth;
+		gMinLeft = gHolderWidth - gScrolWidth;
+		if(gMinLeft > 0)
+			gMinLeft = 0;
+		gCurrentLeftPos = 0;
+		gInterval = null;
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function scrollDivRight(){
+		if( gMinLeft >= 0 ){
+			stopScroll()
+			return;
+		}
+		if( gCurrentLeftPos - 1 > gMinLeft )
+			gCurrentLeftPos = gCurrentLeftPos - 1;
+		else{
+			stopScroll()
+			gCurrentLeftPos = gMinLeft;
+		}
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function scrollDivLeft(){
+		if( gMinLeft >= 0 ){
+			stopScroll()
+			return;
+		}
+		if( gCurrentLeftPos + 1 < 0 )
+			gCurrentLeftPos = gCurrentLeftPos + 1;
+		else{
+			gCurrentLeftPos = 0;
+			stopScroll()
+		}
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function checkBtnClasses(){
+		if( gLeftBtn ){
+			if( gCurrentLeftPos == 0 || gMinLeft >= 0 ){
+				gLeftBtn.className = 'LeftScrollBtnLinkInactive';
+			}else{
+				gLeftBtn.className = 'LeftScrollBtnLinkActive';
+			}
+		}
+		if( gRightBtn ){
+			if( gCurrentLeftPos == gMinLeft || gMinLeft >= 0 ){
+				gRightBtn.className = 'RightScrollBtnLinkInactive';
+			}else{
+				gRightBtn.className = 'RightScrollBtnLinkActive';
+			}
+		}
+	}
+	function changeDivPosition(pLeft){
+		gScrolDiv.style.left  = pLeft + 'px';
+		checkBtnClasses()
+	}
+	function stopScroll(){
+		if(gInterval)
+			clearInterval(gInterval)
+	}
+	function startScroll(pDir){
+		if( gMinLeft >= 0 ){
+			return;
+		}
+		if( pDir == 0){//Right
+			gInterval = setInterval("scrollDivRight('right')", 20);
+		}else{
+			gInterval = setInterval("scrollDivLeft('left')", 20);
+		}
+	}
+	function getfnlink(pFn, pEl) {
+		lDiv = document.getElementById(pFn);
+		lEl = lDiv.firstChild;
+		while (lEl.nodeType != 1) {
+			lEl = lEl.nextSibling;
+		}
+		for (var i = 0; i < lEl.childNodes.length; i++) {
+			if (lEl.childNodes[i].tagName && lEl.childNodes[i].tagName.toLowerCase() == 'a') {
+				lHref = lEl.childNodes[i].href;
+				break;
+			}
+		}
+		if (lHref)
+			pEl.href = lHref;
+	}
+</script>
+</head>
+<body><div id="highlightWrapper" class=""><div id="highlightTaxonNameWrapper" class="highlightTaxonNameWrapper"><div id="highlightTaxonTreatmentWrapper" class="highlightTaxonTreatmentWrapper"><div id="highlightCountryWrapper" class="highlightCountryWrapper"><div id="highlightCitationWrapper" class="highlightCitationWrapper"><div id="highlightTypeescWrapper" class="highlightTypeescWrapper"><div id="highlightCollectionWrapper" class="highlightCollectionWrapper"><div id="highlightLocalityWrapper" class="highlightLocalityWrapper"><div class="wrapper">
+<div class="headWrapper">
+<table class="highlightButtonHolder" width="100%" cellspacing="1" cellpadding="0"><tr>
+<td class="taxon-treatmentsButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonTreatmentWrapper', 'highlightTaxonTreatmentWrapper')">Taxon treatments</a></td>
+<td class="taxon-namesButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonNameWrapper', 'highlightTaxonNameWrapper')">Taxon names</a></td>
+<td class="citationsButton"><a href="#" onclick="swapDivClassname(this, 'highlightCitationWrapper', 'highlightCitationWrapper')">Citations</a></td>
+<td class="localitiesButton" onmouseover="showLocalitiesMenu()" onmouseout="hideLocalitiesMenu()" id="mapLocalityButton"><div class="localitiesMenu" id="localitiesMenuDiv">
+<div class="localitiesMenuRow"><a onclick="submitForm('all_localities_form');return false;">All</a></div>
+<form name="all_localities_form" class="localitiesForm" method="post" target="_blank" action="http://ptp.pensoft.eu/redirect_to_googlemap.php">
+<input type="hidden" name="coordinates[]" value="12°05.069'N, 68°53.886'W" /><input type="hidden" name="labels[]" value="12°05.069'N, 68°53.886'W" />
+</form>
+<div class="localitiesMenuRow"><a onclick="submitForm('Haptoclinus_dropi_localities_form');return false;">Haptoclinus dropi</a></div>
+<form class="localitiesForm" method="post" target="_blank" action="http://ptp.pensoft.eu/redirect_to_googlemap.php" name="Haptoclinus_dropi_localities_form">
+<input type="hidden" name="coordinates[]" value="12°05.069'N, 68°53.886'W" /><input type="hidden" name="labels[]" value="12°05.069'N, 68°53.886'W" />
+</form>
+</div>
+<a href="#" onclick="swapDivClassname(this, 'highlightLocalityWrapper', 'highlightLocalityWrapper')">Map localities</a></td>
+<td class="offButton"><a href="#" class="inactive" onclick="swapDivClassname(this, 'highlightWrapper', 'highlightWrapper')">Turn highlighting On/Off</a></td>
+</tr></table>
+<div class="linksButtonWrapper">
+<div class="pathTopLeftScrollBtn"><a onmouseover="startScroll(1)" onmouseout="stopScroll()" class="LeftScrollBtnLinkActive" id="scrollLeftBtn"></a></div>
+<div class="pathScrollHolder" id="scrollHolderDiv"><div id="scrollDiv" class="pathScrollDiv">
+<table class="linksButtonHolder" cellspacing="0" cellpadding="3" id="linksButtonHolder"><tr>
+<td class="linksButtonHolder"><a href="#top">Top</a></td>
+<td class="linksButtonHolder"><a href="#abstract" onclick="">Abstract</a></td>
+<td class="linksButtonHolder"><a href="#introduction" onclick="">Introduction</a></td>
+<td class="linksButtonHolder"><a href="#materialsandmethods" onclick="">Materials and methods</a></td>
+<td class="linksButtonHolder"><a href="#results" onclick="">Results</a></td>
+<td class="linksButtonHolder"><a href="#discussionandconclusions" onclick="">Discussion and conclusions</a></td>
+<td class="linksButtonHolder"><a href="#acknowledgements" onclick="">Acknowledgements</a></td>
+<td class="linksButtonHolder"><a href="#references" onclick="">References</a></td>
+</tr></table></div></div>
+<div class="pathTopRightScrollBtn"><a onmouseover="startScroll(0)" onmouseout="stopScroll()" class="RightScrollBtnLinkActive" id="scrollRightBtn"></a></div>
+<div class="unfloat"></div>
+</div>
+</div>
+<div class="contentWrapper" id="contentWrapper">
+<div class="baloonWrapper" id="baloonWrapper" onmouseover="showBaloon(gActiveBaloonType, gActiveBaloonId)" onmouseout="hideBaloonEvent(gActiveBaloonId, event)"><div id="baloonInnerWrapper">
+<div class="baloonTop">
+<div class="baloonTopLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_left.gif" /></div>
+<div class="baloonTopMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_middle.jpg" /></div>
+<div class="baloonTopRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_right.gif" /></div>
+<div class="unfloat"></div>
+</div>
+<div class="baloonContent" id="baloonContent"><div class="unfloat"></div></div>
+<div class="baloonBottomLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_left.gif" /></div>
+<div class="baloonBottomMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_middle.jpg" /></div>
+<div class="baloonBottomRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_right.gif" /></div>
+<div class="unfloat"></div>
+<div class="arrowDiv"><img id="baloonArrowImg" src="http://www.pensoft.net/J_FILES/img/baloon_arrow_top_left.gif" /></div>
+</div></div>
+<a name="top"></a><div class="doiNumber">ZooKeys 306: 71–81, doi: 10.3897/zookeys.306.5198</div>
+<div class="mainTitle">A new <i>Haptoclinus</i> blenny (Teleostei,  Labrisomidae) from deep reefs off Curaçao,  southern Caribbean,  with comments on relationships of the genus</div>
+<div class="authors">Carole C. Baldwin <span class="specialSymbols">1,†</span>, D. Ross Robertson <span class="specialSymbols">2,‡</span>
+</div>
+<div class="affilations">
+<div class="affiliationRow">
+			<span id="1" class="uriSym">1 </span>Department of Vertebrate Zoology,  National Museum of Natural History,  Smithsonian Institution,  Washington,  DC 20560
+		</div>
+<div class="affiliationRow">
+			<span id="1" class="uriSym">2 </span>Smithsonian Tropical Research Institute,  Balboa,  Republic of Panamá
+		</div>
+</div>
+<div class="uris">
+<div class="uriRow">
+<span class="uriSym">† </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:B21379DC-6FF2-4C99-89FC-F9FD5B30911D">urn:lsid:zoobank.org:author:B21379DC-6FF2-4C99-89FC-F9FD5B30911D</a>
+</div>
+<div class="uriRow">
+<span class="uriSym">‡ </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:AD0D80E1-BEAB-4F95-8594-3B1E5774FA18">urn:lsid:zoobank.org:author:AD0D80E1-BEAB-4F95-8594-3B1E5774FA18</a>
+</div>
+</div>
+<div class="authorNotes"><div class="authorNotesRow">
+				<p>Corresponding author: Carole C. Baldwin (<a href="mailto:baldwinc@si.edu">baldwinc@si.edu</a>)</p>
+				<p>Academic editor: Nina Bogutskaya</p>
+		</div></div>
+<div class="lMetaDates">
+<span class="metaDate"><span class="dateLabel">received </span>23 March 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">accepted </span>27 May 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">Published </span>4 June 2013</span><p></p>
+<br /><div class="rifgtsrow">
+<p>(C) 2013 Carole C. Baldwin. This is an open access article distributed under the terms of the <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0 (CC-BY)</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p>
+<br /><p>For reference, use of the paginated PDF or printed version of this article is recommended.</p>
+</div>
+</div>
+<a name="abstract"></a><div class="abstractHolder"><div class="abstractText">
+			<span id="1" class="node_label">Abstract</span>
+			<p>A second species of the blenniiform genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> is described from deep reefs off Curaçao,  southern Caribbean. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> <b>sp. n.</b> differs from the northwestern Caribbean <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> Böhlke and Robins,  1974,  in having 29 total dorsal-fin elements—III-I-XIII,  12 (vs. 31—III-I-XIV,  13 or III-I-XIII,  14); 19 anal-fin soft rays (vs. 20-21); 12 pectoral-fin rays (vs. 13); 12 precaudal vertebrae (vs. 13); and the first dorsal-fin spine longer than the second (vs. the second longer than the first). It further differs from <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> in lacking scales (vs. three-quarters of body densely scaled),  in having a distinctive pattern of spotting on the trunk and fins in preservative (vs. no spotting),  and in lacking a fleshy flap on the anterior rim of the posterior nostril (vs. flap present). Color in life is unknown for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  and the color description presented for the new species constitutes the first color information for the genus. Familial placement of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> remains questionable,  but the limited relevant information obtained from morphological examination of the new species provides additional support for a close relationship with the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae" onmouseover="showBaloon(2, 'Chaenopsidae', event)" onmouseout="hideBaloonEvent('Chaenopsidae', event)">Chaenopsidae</a></span></span>. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> represents one of numerous new teleost species emerging from sampling to 300 m off Curaçao as part of the Smithsonian Institution’s Deep Reef Observation Project (DROP).</p>
+		</div></div>
+<div class="keywordsHolder"><div class="keywordsText">
+<span class="node_label">Keywords</span><p>Blenniiformes, submersible, Substation Curaçao, <i>Haptoclinus apectolophus</i>,  Deep Reef Observation Project (DROP)</p>
+</div></div>
+<div class="secHolder">
+	<div class="section"><a name="introduction"></a>
+		<span id="1" class="node_title">Introduction</span>
+		<p>Diving to 300 m off Curaçao in the southern Caribbean using Substation Curaçao’s (<a target="_blank" href="http://www.substation-curacao.com">http://www.substation-Curacao.com</a>) manned submersible <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Curasub" onmouseover="showBaloon(2, 'Curasub', event)" onmouseout="hideBaloonEvent('Curasub', event)">Curasub</a></span></span></i> is expanding our knowledge of the deep-reef Caribbean fish fauna. Targeted fish specimens are collected with the sub’s two flexible,  hydraulic arms,  one of which is equipped with a quinaldine-ejection system and the other with a suction hose. Occasionally,  small,  inconspicuous,  non-targeted fishes are collected along with the target specimens. One bycatch specimen collected between 157 and 167 m represents a new species and the second known species referable to the blenniiform genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> Böhlke and Robins,  1974. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> Böhlke and Robins,  1974 was described based on two specimens that were trawled from depths of 174−366 m at Arrowsmith Bank in the northwestern Caribbean. The new species is similar to <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> in having the dorsal fin consisting of four parts (three spinous,  one soft) and represents a southern range extension for the genus of 9° latitude and an eastern range extension of 17° longitude. In this paper we describe the new species,  compare it with <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  and comment on the familial placement of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i>.</p>
+	</div>
+	<div class="section"><a name="materialsandmethods"></a>
+		<span id="1" class="node_title">Materials and methods</span>
+		<p>The specimen was collected by submersible using the fish anesthetic quinaldine pumped from a reservoir through a tube attached to one hydraulic arm and a suction hose (that uses the same pump as the anesthetic-delivery apparatus) attached to the other arm. The latter empties into a vented plexiglass cylinder attached to the outside of the sub. At the surface,  the fish was measured,  photographed,  tissue sampled (right eye removed),  and preserved. It was later photographed to document preserved pigment pattern and x-rayed with a digital radiography system. Counts and measurements included in the description are those described for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974)</span>. Measurements were made to the nearest 0.1 mm with an ocular micrometer fitted into a Wild stereomicroscope. Institutional abbreviations follow <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B8', event)" onmouseout="hideBaloonEvent('B8')">Sabaj Pérez (2012)</span>.</p>
+	</div>
+	<div class="section"><a name="results"></a>
+		<span id="1" class="node_title" style="padding-bottom: 0px">Results</span>
+		<div class="taxonTreatmentsHolder secHolder"><div class="taxonTreatmentRow node_taxon-treatment">
+			<div class="taxonNomenclature">
+				<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)"><i>Haptoclinus</i></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Haptoclinus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dropi%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)"><i>dropi</i></a></span></span>
+				sp. n.
+				<p class="node_object_id"><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:act:3091C7AF-C686-4317-AD7E-43D8C8D86357">urn:lsid:zoobank.org:act:3091C7AF-C686-4317-AD7E-43D8C8D86357</a></p>
+				<p class="node_object_id"><a target="_blank" href="http://species-id.net/wiki/Haptoclinus_dropi">http://species-id.net/wiki/Haptoclinus_dropi</a></p>
+				<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F1', event)" onmouseout="hideBaloonEvent('F1')">Figs 1</span>–<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F2', event)" onmouseout="hideBaloonEvent('F2')">2</span>
+				Four-fin blenny
+			</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Type locality.</span>
+				<p>Curaçao,  southern Caribbean</p>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Holotype.</span>
+				<p>USNM 414915,  21.5 mm SL,  female,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Curasub" onmouseover="showBaloon(2, 'Curasub', event)" onmouseout="hideBaloonEvent('Curasub', event)">Curasub</a></span></span></i> submersible,  sta. 12-7,  southern Caribbean,  Curaçao,  east of downline off Substation Curaçao dock,  near <a target="_blank" class="localityLink" href="http://ptp.pensoft.eu/redirect_to_googlemap.php?labels%5B0%5D=12%C2%B005.069%27N%2C++68%C2%B053.886%27W&amp;coordinates%5B0%5D=12%C2%B005.069%27N%2C++68%C2%B053.886%27W"><span class="node_location">12°05.069'N,  68°53.886'W</span></a>,  157−167 m,  quinaldine,  13 Aug 2012,  D. R. Robertson,  A. Schrier,  B. Brandt,  C. Castillo.</p>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Diagnosis.</span>
+				<p>A species of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> distinguished from its congener by the following combination of characters: dorsal-fin elements III-I-XIII,  12; anal-fin soft rays 19; pectoral-fin rays 12; precaudal vertebrae 12; first dorsal-fin spine longer than second dorsal-fin spine; scales absent; posterior nostril without fleshy flap; and trunk,  dorsal- and anal fins with spotted pigment pattern in preservative.</p>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Description.</span>
+				<p>Dorsal-fin elements: III-I-XIII,  12; anal-fin elements II,  19; ultimate pterygiophore of dorsal and anal fins supporting a single segmented soft ray. Pectoral-fin rays 12,  12. Pelvic-fin rays I,  3. Segmented caudal-fin rays 7+6,  procurrent caudal-fin rays 6+5. All fin rays unbranched. Vertebrae 12+24=36. Three anal-fin pterygiophores anterior to first haemal spine.</p>
+				<p>Measurements (in mm): head length 6.6,  snout length 1.3,  eye diameter 1.0,  body depth at fourth dorsal-fin spine 3.5,  depth at caudal peduncle 1.0,  greatest head width 5.4,  body width at anus 2.0,  width of bony interorbital 0.4,  length of upper jaw 2.6,  length of caudal peduncle 2.0,  distance from snout to origin of dorsal fin 4.1,  distance from snout to upper pectoral-fin base 5.9,  distance from snout to insertion of pelvic fin 4.4,  distance from snout to origin of anal fin 9.2,  length of first dorsal-fin spine 4.1,  length of second dorsal-fin spine 3.8,  length of third dorsal-fin spine 1.5,  length of fourth dorsal-fin spine 0.7,  length of longest pectoral-fin ray 4.2,  length of pelvic fin 4.1,  length of longest caudal-fin ray 3.4.</p>
+				<p>Body without scales or scale pockets. Small,  pointed teeth present in both jaws and on vomer and palatines; teeth uniserial except on anterior portion of premaxilla and dentary,  where several teeth form an inner row. Anterior nostril with long tube; posterior nostril a simple opening with minute fleshy rim anteriorly but no fleshy flap; posterior nostril situated closer to eye than to anterior nostril. Mouth terminal and jaws equal. Upper edge of maxilla not sheathed by lacrimal when mouth closed; maxilla reaching vertical through posterior margin of orbit. Gill membranes broadly joined across but free of isthmus. Dorsal margin of upper lip free and continuous across tip of snout. Head lacking cirri. Pores of cephalic lateralis system as drawn for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins 1974</span>: <span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F3', event)" onmouseout="hideBaloonEvent('F3')">Fig. 3</span>).</p>
+				<p>Dorsal fin originating on head about half way between verticals through posterior margins of eye and operculum; fin terminating slightly anterior to vertical through base of ultimate anal-fin ray. Small membrane connecting last dorsal- and anal-fin rays to caudal peduncle. First dorsal-fin spine longest,  reaching base of seventh spine when depressed. Fourth dorsal-fin spine short,  separated by gaps from anterior three and posterior thirteen spines. Low membrane connecting last dorsal-fin spine to first segmented soft ray. First anal-fin spine shorter than second. Membranes of pectoral fin notched; in dorsal portion of fin (dorsal to longest ray),  membranes extending from distal tip of one fin ray to distal tip of adjacent fin ray; in ventral portion of fin,  membranes extending from distal tip of one fin ray dorsally to point well proximal of distal tip of adjacent fin ray. Ninth pectoral-fin ray (from top of fin,  fourth from bottom) longest (broken on left side of holotype),  this ray on right side of body reaching posteriorly to vertical through base of third segmented anal-fin ray. Pelvic fin reaching posteriorly to anus when straightened; innermost (third) pelvic soft ray very small,  about half length of small (0.5-mm long),  pelvic-fin spine. Caudal fin truncate.</p>
+				<p>Color Prior to Preservation (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F2', event)" onmouseout="hideBaloonEvent('F2')">Fig. 2</span>).—When photographed against a white background (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F2', event)" onmouseout="hideBaloonEvent('F2')">Fig. 2</span>,  top),  the following visible on the fresh holotype: ground color of body pale grey; side of belly with rectangular-shaped patch of orange-brown pigment with indistinct whitish diagonal bar across center; spinal column with series of eight internal,  irregular orange blotches; dorsalmost region of trunk (beneath dorsal fin) and ventralmost region of trunk (above anal fin) each with row of eight to nine orange/brown spots; head grey,  densely speckled with fine black melanophores; nape orange-brown,  with several yellow blotches; iris orange,  grading to yellowish inner ring; yellow bar extending anteroventrally from anteroventral corner of orbit to anterolateral aspect of upper jaw and anterior tip of lower jaw; operculum pale orange,  with two yellow-orange spots on lower edge; anterior dorsal finlet (spines I-III) creamy yellow,  with four irregular dark brown horizontal cross-bars; second dorsal finlet (spine IV) translucent; remainder of dorsal fin translucent,  with two or three irregular rows of round orange-brown spots on both spinous and soft portions; anal fin translucent,  with two rows of round orange-brown spots;caudal fin translucent,  with row of round,  mostly orange spots along dorsal and ventral fin margins and two vertical rows of such spots across posterior third of fin pectoral and pelvic finswithout obvious pigment. When photographed against a black background (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F2', event)" onmouseout="hideBaloonEvent('F2')">Fig. 2</span>,  bottom),  the following also visible on the fresh holotype: series of long,  yellow/white,  roughly vertical bars on dorsal fin—one on second finlet (spine IV),  three on main portion of spinous dorsal fin,  four on soft dorsal fin; bars extending onto dorsal portion of trunk as small white blotches; a series of tiny white spots beneath dorsal-fin base just ventral to white blotches; row of small white spots on trunk just above anal-fin base between dark spots,  several extending onto rear of anal fin as short white bars; thin white bar across caudal-fin base; several white spots on outer portion of upper caudal lobe.</p>
+				<p>Color in Alcohol (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F1', event)" onmouseout="hideBaloonEvent('F1')">Fig. 1</span>).—Trunk pale,  central region with midlateral row of four small,  rounded blotches of melanophores; additional small blotch present at center of posterior end of caudal peduncle; eight internal blotches of pigment present on dorsal portion of trunk beneath dorsal fin: first blotch beneath origin of main portion of spinous dorsal fin (spine V); last blotch on caudal peduncle; eight similar internal blotches present on ventral portion of trunk above anal fin,  posterior markings darker and including a few external melanophores. Head tan,  covered entirely with fine melanophores. First dorsal finlet with four dark blotches on membrane between first and second spines; some of this pigment extending onto membrane between second and third spines; second dorsal finlet (spine IV) unpigmented; remainder of fin with two or three rows of small,  rounded spots. Anal fin with rounded spots in single row on most of fin,  posterior portion of fin with two rows; spots in distal row smaller than those in proximal row. Caudal fin with small pigment blotch on bases of dorsal procurrent rays and another on bases of ventral procurrent rays; remainder of fin mostly pale except with several small,  dark markings on dorsal portion of dorsal lobe. Pectoral fin pale,  with a few dark spots on membrane between lowermost third and fourth rays. Pelvic fin pale.</p>
+				<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-071-g001.jpg"><img src="export.php_files/ZooKeys-306-071-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+					<span id="1" class="node_label">Figure 1.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  sp. n.,  holotype,  USNM 414915,  21.5 mm SL,  female. Both photographs were taken after the fish was in preservation for several months,  the top image against a white background,  the bottom against a black background. Photographs by Ian Silver-Gorges.</p>
+				</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F1">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-071-g001.jpg"><img src="export.php_files/ZooKeys-306-071-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+					<span id="1" class="node_label">Figure 1.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi">dropi</a></span></span></i>,  sp. n.,  holotype,  USNM 414915,  21.5 mm SL,  female. Both photographs were taken after the fish was in preservation for several months,  the top image against a white background,  the bottom against a black background. Photographs by Ian Silver-Gorges.</p>
+				</div>
+<div class="unfloat"></div>
+</div>
+				<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-071-g002.jpg"><img src="export.php_files/ZooKeys-306-071-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+					<span id="1" class="node_label">Figure 2.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  sp. n.,  holotype,  USNM 414915,  21.5 mm SL,  female. Both photographs were taken soon after the fish was captured,  the top image against a white background,  the bottom against a black background.</p>
+				</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F2">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-071-g002.jpg"><img src="export.php_files/ZooKeys-306-071-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+					<span id="1" class="node_label">Figure 2.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi">dropi</a></span></span></i>,  sp. n.,  holotype,  USNM 414915,  21.5 mm SL,  female. Both photographs were taken soon after the fish was captured,  the top image against a white background,  the bottom against a black background.</p>
+				</div>
+<div class="unfloat"></div>
+</div>
+				<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-071-g003.jpg"><img src="export.php_files/ZooKeys-306-071-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+					<span id="1" class="node_label">Figure 3.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  holotype,  ANSP 121251,  25.2 mm SL,  male. Modified from <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974)</span>.</p>
+				</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F3">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-071-g003.jpg"><img src="export.php_files/ZooKeys-306-071-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+					<span id="1" class="node_label">Figure 3.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus">apectolophus</a></span></span></i>,  holotype,  ANSP 121251,  25.2 mm SL,  male. Modified from <span class="xrefLink node_citation">Böhlke and Robins (1974)</span>.</p>
+				</div>
+<div class="unfloat"></div>
+</div>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Distribution.</span>
+				<p>Known only from Curaçao,  southern Caribbean.</p>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Etymology.</span>
+				<p>The specific name is in reference to the acronym for the Smithsonian Institution’s Deep Reef Observation Project (DROP),  which is treated here as a noun in the genitive case. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> is the first of numerous new species that will be described from DROP submersible research in the southern Caribbean.</p>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Common Name.</span>
+				<p>“Four-fin blenny” is in reference to the configuration of the dorsal fin.</p>
+			<div class="unfloat"></div>
+</div>
+			<div class="taxonTreatmentSec inlineSec">
+				<span id="1" class="node_title1 taxon-treatment">Comparisons.</span>
+				<p>For comparative purposes,  counts and measurements of the holotypes of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F3', event)" onmouseout="hideBaloonEvent('F3')">Fig. 3</span>) are given in <span class="xrefLink node_citation" onmouseover="showBaloon(4, 'T1', event)" onmouseout="hideBaloonEvent('T1')">Table 1</span>,  along with distinguishing features of general morphology. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> has two fewer dorsal-fin elements than <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> (29 vs. 31),  the differences occurring in the third spinous dorsal finlet and soft dorsal fin (III-I-XIII,  12 in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  III-I-XIII,  14 or III-I-XIV,  13 in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>). <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> also has one or two fewer soft anal-fin rays (19 vs. 20-21),  one fewer pectoral-fin ray (12 vs. 13),  and one fewer precaudal vertebra (12 vs. 13). The shape of the first dorsal finlet is different in the two species because of differences in relative sizes of the first three dorsal-fin spines: the first dorsal-fin spine is the longest of the three elements in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> (length of first three dorsal spines 18,  7 and 3% SL,  respectively); the second dorsal spine is longest in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> (length of first three dorsal-fin spines 22,  26,  and 12% SL,  respectively).</p>
+				<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> have very different preserved pigment patterns. In <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  the trunk is uniformly pale with a row of external blotches along the lateral midline,  a row of mostly internal blotches just beneath the dorsal fin,  and a row of mostly internal blotches just above the anal fin. In <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  there is much more pigment on the ventral portion of the body than there is dorsally,  and there are no obvious internal or external blotches of pigment. In <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  the first dorsal finlet has four dark blotches,  the fourth dorsal-fin spine is unpigmented,  and the remainder of the fin is pale with two or three rows of small dark spots. In <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  the first dorsal finlet is uniformly dark and both the spinous and soft portions of the dorsal fin are peppered with fine melanophores in no apparent pattern. The anal fin is uniformly pale with one or two rows of small dark spots in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>. In <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  the basal three-quarters of that fin are heavily and uniformly pigmented,  and the distal quarter is pale. The caudal fin has dark spots dorsally in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  and the pectoral fin has a few dark spots ventrally. In <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  the caudal and pectoral fins lack melanophores. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> differs from <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> in other minor ways: <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> lacks a fleshy flap on the posterior nostril (vs. fleshly flap extending from anterior margin and covering anterior half of nostril) and has a more slender body (body depth 16.3% SL at the fourth dorsal spine vs. 17.9% SL,  depth at caudal peduncle 6.6% SL vs. 9.1% SL).</p>
+				<div class="tableWrapHolder Table">
+					<span id="1" class="node_label">Table 1.</span>
+					<p>Counts and measurements of the holotypes of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  sp. n., and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> and distinguishing characters of general morphology. Data for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> are from <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974)</span> or from examination of radiographs of the type (see Comparative Material in the text). Standard length is in mm,  other measurements are in % SL.<br /></p>
+					<div class="tableDiv" id="table_T1">
+<table class="innerTable Table">
+<tr>
+<th class="cell_1" colspan="1" rowspan="1"></th>
+<th class="cell_2" colspan="1" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi">dropi</a></span></span></i></b></th>
+<th class="cell_3" colspan="1" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus">apectolophus</a></span></span></i></b></th>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Catalog number</td>
+<td class="cell_2" colspan="1" rowspan="1">USNM 414915,  Holotype</td>
+<td class="cell_3" colspan="1" rowspan="1">ANSP 121251,  Holotype</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">SL</td>
+<td class="cell_2" colspan="1" rowspan="1">21.5</td>
+<td class="cell_3" colspan="1" rowspan="1">25.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Dorsal-fin elements</td>
+<td class="cell_2" colspan="1" rowspan="1">III-I-XIII,  12</td>
+<td class="cell_3" colspan="1" rowspan="1">III-I-XIV,  13</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Total dorsal-fin elements</td>
+<td class="cell_2" colspan="1" rowspan="1">29</td>
+<td class="cell_3" colspan="1" rowspan="1">31</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Anal-fin elements</td>
+<td class="cell_2" colspan="1" rowspan="1">II,  19</td>
+<td class="cell_3" colspan="1" rowspan="1">II,  20</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pectoral-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">12/12</td>
+<td class="cell_3" colspan="1" rowspan="1">13/13</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pelvic-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">I,  3</td>
+<td class="cell_3" colspan="1" rowspan="1">I,  3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Segmented caudal-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">7 + 6</td>
+<td class="cell_3" colspan="1" rowspan="1">7 + 6</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Procurrent caudal-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">6 + 5</td>
+<td class="cell_3" colspan="1" rowspan="1">6 + 5</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Vertebrae</td>
+<td class="cell_2" colspan="1" rowspan="1">12 + 24</td>
+<td class="cell_3" colspan="1" rowspan="1">13 + 24</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Head Length</td>
+<td class="cell_2" colspan="1" rowspan="1">30.7</td>
+<td class="cell_3" colspan="1" rowspan="1">29.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout Length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.0</td>
+<td class="cell_3" colspan="1" rowspan="1">6.7</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Eye Diameter</td>
+<td class="cell_2" colspan="1" rowspan="1">6.6</td>
+<td class="cell_3" colspan="1" rowspan="1">7.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Body depth at 4<sup>th</sup> dorsal spine</td>
+<td class="cell_2" colspan="1" rowspan="1">16.3</td>
+<td class="cell_3" colspan="1" rowspan="1">17.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Depth at caudal peduncle</td>
+<td class="cell_2" colspan="1" rowspan="1">6.6</td>
+<td class="cell_3" colspan="1" rowspan="1">9.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Greatest head width</td>
+<td class="cell_2" colspan="1" rowspan="1">25.1</td>
+<td class="cell_3" colspan="1" rowspan="1">15.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Body width at anus</td>
+<td class="cell_2" colspan="1" rowspan="1">9.3</td>
+<td class="cell_3" colspan="1" rowspan="1">10.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Bony interorbital width</td>
+<td class="cell_2" colspan="1" rowspan="1">1.9</td>
+<td class="cell_3" colspan="1" rowspan="1">2.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Upper jaw length</td>
+<td class="cell_2" colspan="1" rowspan="1">12.1</td>
+<td class="cell_3" colspan="1" rowspan="1">15.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Caudal-peduncle length</td>
+<td class="cell_2" colspan="1" rowspan="1">9.3</td>
+<td class="cell_3" colspan="1" rowspan="1">8.7</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to origin of dorsal fin</td>
+<td class="cell_2" colspan="1" rowspan="1">19.1</td>
+<td class="cell_3" colspan="1" rowspan="1">21.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to upper pectoral-fin base</td>
+<td class="cell_2" colspan="1" rowspan="1">27.4</td>
+<td class="cell_3" colspan="1" rowspan="1">29.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to insertion of pelvic fin</td>
+<td class="cell_2" colspan="1" rowspan="1">20.5</td>
+<td class="cell_3" colspan="1" rowspan="1">24.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to origin of anal fin</td>
+<td class="cell_2" colspan="1" rowspan="1">42.8</td>
+<td class="cell_3" colspan="1" rowspan="1">46.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">First dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">19.1</td>
+<td class="cell_3" colspan="1" rowspan="1">22.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Second dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">17.7</td>
+<td class="cell_3" colspan="1" rowspan="1">26.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Third dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">7.0</td>
+<td class="cell_3" colspan="1" rowspan="1">11.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Fourth dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">3.3</td>
+<td class="cell_3" colspan="1" rowspan="1">8.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Longest pectoral-fin ray</td>
+<td class="cell_2" colspan="1" rowspan="1">19.5</td>
+<td class="cell_3" colspan="1" rowspan="1">23.0</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pelvic-fin length</td>
+<td class="cell_2" colspan="1" rowspan="1">19.1</td>
+<td class="cell_3" colspan="1" rowspan="1">21.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Longest caudal-fin ray</td>
+<td class="cell_2" colspan="1" rowspan="1">21.5</td>
+<td class="cell_3" colspan="1" rowspan="1">20.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Body squamation</td>
+<td class="cell_2" colspan="1" rowspan="1">None</td>
+<td class="cell_3" colspan="1" rowspan="1">Posterior 3/4 scaled</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Spotted pigment pattern</td>
+<td class="cell_2" colspan="1" rowspan="1">Present</td>
+<td class="cell_3" colspan="1" rowspan="1">Absent</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Posterior nostril</td>
+<td class="cell_2" colspan="1" rowspan="1">No fleshy flap</td>
+<td class="cell_3" colspan="1" rowspan="1">Fleshy flap anteriorly</td>
+</tr>
+</table></div>
+<table cellspacing="0" cellpadding="0" class="innerTable Table">
+<tr>
+<th class="cell_1" colspan="1" rowspan="1"></th>
+<th class="cell_2" colspan="1" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i></b></th>
+<th class="cell_3" colspan="1" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i></b></th>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Catalog number</td>
+<td class="cell_2" colspan="1" rowspan="1">USNM 414915,  Holotype</td>
+<td class="cell_3" colspan="1" rowspan="1">ANSP 121251,  Holotype</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">SL</td>
+<td class="cell_2" colspan="1" rowspan="1">21.5</td>
+<td class="cell_3" colspan="1" rowspan="1">25.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Dorsal-fin elements</td>
+<td class="cell_2" colspan="1" rowspan="1">III-I-XIII,  12</td>
+<td class="cell_3" colspan="1" rowspan="1">III-I-XIV,  13</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Total dorsal-fin elements</td>
+<td class="cell_2" colspan="1" rowspan="1">29</td>
+<td class="cell_3" colspan="1" rowspan="1">31</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Anal-fin elements</td>
+<td class="cell_2" colspan="1" rowspan="1">II,  19</td>
+<td class="cell_3" colspan="1" rowspan="1">II,  20</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pectoral-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">12/12</td>
+<td class="cell_3" colspan="1" rowspan="1">13/13</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pelvic-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">I,  3</td>
+<td class="cell_3" colspan="1" rowspan="1">I,  3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Segmented caudal-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">7 + 6</td>
+<td class="cell_3" colspan="1" rowspan="1">7 + 6</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Procurrent caudal-fin rays</td>
+<td class="cell_2" colspan="1" rowspan="1">6 + 5</td>
+<td class="cell_3" colspan="1" rowspan="1">6 + 5</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Vertebrae</td>
+<td class="cell_2" colspan="1" rowspan="1">12 + 24</td>
+<td class="cell_3" colspan="1" rowspan="1">13 + 24</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Head Length</td>
+<td class="cell_2" colspan="1" rowspan="1">30.7</td>
+<td class="cell_3" colspan="1" rowspan="1">29.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout Length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.0</td>
+<td class="cell_3" colspan="1" rowspan="1">6.7</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Eye Diameter</td>
+<td class="cell_2" colspan="1" rowspan="1">6.6</td>
+<td class="cell_3" colspan="1" rowspan="1">7.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Body depth at 4<sup>th</sup> dorsal spine</td>
+<td class="cell_2" colspan="1" rowspan="1">16.3</td>
+<td class="cell_3" colspan="1" rowspan="1">17.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Depth at caudal peduncle</td>
+<td class="cell_2" colspan="1" rowspan="1">6.6</td>
+<td class="cell_3" colspan="1" rowspan="1">9.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Greatest head width</td>
+<td class="cell_2" colspan="1" rowspan="1">25.1</td>
+<td class="cell_3" colspan="1" rowspan="1">15.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Body width at anus</td>
+<td class="cell_2" colspan="1" rowspan="1">9.3</td>
+<td class="cell_3" colspan="1" rowspan="1">10.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Bony interorbital width</td>
+<td class="cell_2" colspan="1" rowspan="1">1.9</td>
+<td class="cell_3" colspan="1" rowspan="1">2.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Upper jaw length</td>
+<td class="cell_2" colspan="1" rowspan="1">12.1</td>
+<td class="cell_3" colspan="1" rowspan="1">15.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Caudal-peduncle length</td>
+<td class="cell_2" colspan="1" rowspan="1">9.3</td>
+<td class="cell_3" colspan="1" rowspan="1">8.7</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to origin of dorsal fin</td>
+<td class="cell_2" colspan="1" rowspan="1">19.1</td>
+<td class="cell_3" colspan="1" rowspan="1">21.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to upper pectoral-fin base</td>
+<td class="cell_2" colspan="1" rowspan="1">27.4</td>
+<td class="cell_3" colspan="1" rowspan="1">29.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to insertion of pelvic fin</td>
+<td class="cell_2" colspan="1" rowspan="1">20.5</td>
+<td class="cell_3" colspan="1" rowspan="1">24.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Snout to origin of anal fin</td>
+<td class="cell_2" colspan="1" rowspan="1">42.8</td>
+<td class="cell_3" colspan="1" rowspan="1">46.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">First dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">19.1</td>
+<td class="cell_3" colspan="1" rowspan="1">22.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Second dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">17.7</td>
+<td class="cell_3" colspan="1" rowspan="1">26.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Third dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">7.0</td>
+<td class="cell_3" colspan="1" rowspan="1">11.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Fourth dorsal-fin spine length</td>
+<td class="cell_2" colspan="1" rowspan="1">3.3</td>
+<td class="cell_3" colspan="1" rowspan="1">8.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Longest pectoral-fin ray</td>
+<td class="cell_2" colspan="1" rowspan="1">19.5</td>
+<td class="cell_3" colspan="1" rowspan="1">23.0</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pelvic-fin length</td>
+<td class="cell_2" colspan="1" rowspan="1">19.1</td>
+<td class="cell_3" colspan="1" rowspan="1">21.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Longest caudal-fin ray</td>
+<td class="cell_2" colspan="1" rowspan="1">21.5</td>
+<td class="cell_3" colspan="1" rowspan="1">20.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Body squamation</td>
+<td class="cell_2" colspan="1" rowspan="1">None</td>
+<td class="cell_3" colspan="1" rowspan="1">Posterior 3/4 scaled</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Spotted pigment pattern</td>
+<td class="cell_2" colspan="1" rowspan="1">Present</td>
+<td class="cell_3" colspan="1" rowspan="1">Absent</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Posterior nostril</td>
+<td class="cell_2" colspan="1" rowspan="1">No fleshy flap</td>
+<td class="cell_3" colspan="1" rowspan="1">Fleshy flap anteriorly</td>
+</tr>
+</table>
+				</div>
+			<div class="unfloat"></div>
+</div>
+		</div></div>
+	</div>
+	<div class="section"><a name="discussionandconclusions"></a>
+		<span id="1" class="node_title">Discussion and conclusions</span>
+		<p>The configuration of the dorsal fin in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i>,  in which the anterior spinous finlet is separated from the main spinous portion by a gap that contains a single isolated spine (the fourth)—thus resulting in a dorsal fin that consists of four parts,  is unique among blenniiforms (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins 1974</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B12', event)" onmouseout="hideBaloonEvent('B12')">Springer 1993</span>). The presence of this configuration in the new species provides solid evidence for its placement in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i>. Furthermore,  of the diagnostic characters listed by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974)</span> for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> that could be assessed from examination of the preserved holotype and a radiograph of the new species,  it deviatesonly in some fin-ray counts and in completely lacking scales. Fin-ray counts often vary intragenerically among species of fishes,  but the presence or absence of scales typically does not. However,  in the blenniiform genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus" onmouseover="showBaloon(2, 'Stathmonotus', event)" onmouseout="hideBaloonEvent('Stathmonotus', event)">Stathmonotus</a></span></span></i>,  five species in the Caribbean and eastern Pacific are naked (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B9', event)" onmouseout="hideBaloonEvent('B9')">Springer 1955</span>),  whereas the Caribbean <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus" onmouseover="showBaloon(2, 'Stathmonotus', event)" onmouseout="hideBaloonEvent('Stathmonotus', event)">Stathmonotus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus%20stahli" onmouseover="showBaloon(2, 'Stathmonotus_stahli', event)" onmouseout="hideBaloonEvent('Stathmonotus_stahli', event)">stahli</a></span></span></i> (Evermann and Marsh) is fully scaled (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Hastings and Springer 1994</span>). Other characters of the two <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> blennies that exhibit interspecific variability are preserved pigment pattern,  number of precaudal vertebrae,  configuration of the posterior nostril,  and some aspects of morphometry (<span class="xrefLink node_citation" onmouseover="showBaloon(4, 'T1', event)" onmouseout="hideBaloonEvent('T1')">Table 1</span>). Relative differences in the lengths of the first two dorsal-fin spines in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> (the first spine is the longest in the former,  the second in the latter) result in different finlet shapes in the two species,  but whether these reflect interspecific or intersexual differences is unknown. The holotype of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> isa male,  and the measurements and illustrations of the first dorsal finlet provided by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974</span>,  also see <span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F3', event)" onmouseout="hideBaloonEvent('F3')">Fig. 3</span>) are for that specimen. The cleared and stained paratype is disarticulated,  and neither sex nor lengths of the first two dorsal-fin spines can be determined. The single specimen of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> is a female,  and no males are currently known.</p>
+		<p>Familial placement of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> is uncertain. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974)</span> assigned <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> to the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clinidae" onmouseover="showBaloon(2, 'Clinidae', event)" onmouseout="hideBaloonEvent('Clinidae', event)">Clinidae</a></span></span>,  but they expanded that family to include all blenniiform genera except those in the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Blenniidae" onmouseover="showBaloon(2, 'Blenniidae', event)" onmouseout="hideBaloonEvent('Blenniidae', event)">Blenniidae</a></span></span> of <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B10', event)" onmouseout="hideBaloonEvent('B10')">Springer (1968)</span>. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B3', event)" onmouseout="hideBaloonEvent('B3')">George and Springer (1980)</span> redefined the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clinidae" onmouseover="showBaloon(2, 'Clinidae', event)" onmouseout="hideBaloonEvent('Clinidae', event)">Clinidae</a></span></span> and restricted it to genera previously placed in the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ophiclinidae" onmouseover="showBaloon(2, 'Ophiclinidae', event)" onmouseout="hideBaloonEvent('Ophiclinidae', event)">Ophiclinidae</a></span></span>,  <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Peronedysidae" onmouseover="showBaloon(2, 'Peronedysidae', event)" onmouseout="hideBaloonEvent('Peronedysidae', event)">Peronedysidae</a></span></span>,  and <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clininae" onmouseover="showBaloon(2, 'Clininae', event)" onmouseout="hideBaloonEvent('Clininae', event)">Clininae</a></span></span> of <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B6', event)" onmouseout="hideBaloonEvent('B6')">Hubbs (1952)</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B7', event)" onmouseout="hideBaloonEvent('B7')">Penrith (1969)</span> and <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B11', event)" onmouseout="hideBaloonEvent('B11')">Springer (1970)</span>. All other fishes previously considered clinids in those three publications,  plus the more recently described <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nemaclinus" onmouseover="showBaloon(2, 'Nemaclinus', event)" onmouseout="hideBaloonEvent('Nemaclinus', event)">Nemaclinus</a></span></span></i> Böhlke and Springer,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cottoclinus" onmouseover="showBaloon(2, 'Cottoclinus', event)" onmouseout="hideBaloonEvent('Cottoclinus', event)">Cottoclinus</a></span></span></i> McCosker,  Stephens and Rosenblatt,  and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Xenomedea" onmouseover="showBaloon(2, 'Xenomedea', event)" onmouseout="hideBaloonEvent('Xenomedea', event)">Xenomedea</a></span></span></i> Rosenblatt andTaylor,  are now placed in the family <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Labrisomidae" onmouseover="showBaloon(2, 'Labrisomidae', event)" onmouseout="hideBaloonEvent('Labrisomidae', event)">Labrisomidae</a></span></span> [see <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B5', event)" onmouseout="hideBaloonEvent('B5')">Hastings and Springer (2009)</span> for a review of the history and current status of blenniiform classification]. In their discussion of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> affinities,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Böhlke and Robins (1974)</span> observed that except for the configuration of its dorsal fin and reduced-but-present squamation,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> looks like a chaenopsid. The discovery of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i>,  which shares with most chaenopsids the complete absence of scales,  lends further phenetic support to their observation.</p>
+		<p>The <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae" onmouseover="showBaloon(2, 'Chaenopsidae', event)" onmouseout="hideBaloonEvent('Chaenopsidae', event)">Chaenopsidae</a></span></span> were not defined phylogenetically until <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B12', event)" onmouseout="hideBaloonEvent('B12')">Springer (1993)</span> listed synapomorphies of each blenniiform family and <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Hastings and Springer’s (1994)</span> reviewed the genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus" onmouseover="showBaloon(2, 'Stathmonotus', event)" onmouseout="hideBaloonEvent('Stathmonotus', event)">Stathmonotus</a></span></span></i> and provided a cladistic analysis of chaenopsids. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Hastings and Springer (1994)</span> commented on a possible relationship between <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> and the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae" onmouseover="showBaloon(2, 'Chaenopsidae', event)" onmouseout="hideBaloonEvent('Chaenopsidae', event)">Chaenopsidae</a></span></span> and indicated (their <span class="xrefLink node_citation" onmouseover="showBaloon(4, 'T1', event)" onmouseout="hideBaloonEvent('T1')">Table 1</span>) that of eight chaenopsid synapomorphies,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> has two: (<i>2</i>) <i>ventral arm of the posttemporal is well separate from the neurocranium</i> and (<i>4</i>) <i>upper jaw of males extends to or beyond a vertical through the posterior margin of the orbit</i>. It lacks (<i>1</i>) <i>a long palatine</i> and (<i>6</i>) <i>a posterior shift in the relative position of the hyomandibula</i>. They were unable to determine if <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> has (<i>3</i>) <i>no lateral-line ossifications</i>,  (<i>5</i>) <i>a long upper jaw in females</i>,  (<i>7</i>) <i>a sphenotic spine</i>,  and (<i>8</i>) <i>a thin dorsal scapular region that is well separated from the cleithrum</i>. Citing insufficient information,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Hastings and Springer (1994)</span> did not assign <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> to the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae" onmouseover="showBaloon(2, 'Chaenopsidae', event)" onmouseout="hideBaloonEvent('Chaenopsidae', event)">Chaenopsidae</a></span></span> and retained it as an enigmatic member of the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Labrisomidae" onmouseover="showBaloon(2, 'Labrisomidae', event)" onmouseout="hideBaloonEvent('Labrisomidae', event)">Labrisomidae</a></span></span>. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B5', event)" onmouseout="hideBaloonEvent('B5')">Hastings and Springer (2009)</span> noted that the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Labrisomidae" onmouseover="showBaloon(2, 'Labrisomidae', event)" onmouseout="hideBaloonEvent('Labrisomidae', event)">Labrisomidae</a></span></span> may not be monophyletic and that of the component genera,  only <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nemaclinus" onmouseover="showBaloon(2, 'Nemaclinus', event)" onmouseout="hideBaloonEvent('Nemaclinus', event)">Nemaclinus</a></span></span></i> have not been assigned to a labrisomid tribe.</p>
+		<p>Morphological examination of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> enables us to add <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Hastings and Springer’s (1994)</span> characters (<i>3</i>) and (<i>5</i>) to the list of synapomorphic features shared by <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> and chaenopsids,  but characters (<i>7</i>) and (<i>8</i>) cannot yet be assessed. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Hastings and Springer (1994)</span> noted that <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> also shares several derived characters with lineages within the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae" onmouseover="showBaloon(2, 'Chaenopsidae', event)" onmouseout="hideBaloonEvent('Chaenopsidae', event)">Chaenopsidae</a></span></span>,  two of which—(<i>20</i>) <i>absence of mandibular pore 1B</i> and (<i>21</i>) <i>absence of an otic pore</i>—characterize no other labrisomids. Several characters tabulated by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B2', event)" onmouseout="hideBaloonEvent('B2')">Böhlke and Springer (1975)</span> that separate <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> from other labrisomid genera they examined may warrant additional study because of their presence in some <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae" onmouseover="showBaloon(2, 'Chaenopsidae', event)" onmouseout="hideBaloonEvent('Chaenopsidae', event)">Chaenopsidae</a></span></span>. In particular,  the complete absence of head cirri is uncommon among blenniiforms but occurs in some chaenopsids (e.g.,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lucayablennius" onmouseover="showBaloon(2, 'Lucayablennius', event)" onmouseout="hideBaloonEvent('Lucayablennius', event)">Lucayablennius</a></span></span></i>),  and the presence of three (vs. one or two) anal-fin pterygiophores anterior to the first haemal spine occurs in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lucayablennius" onmouseover="showBaloon(2, 'Lucayablennius', event)" onmouseout="hideBaloonEvent('Lucayablennius', event)">Lucayablennius</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Neoclinus" onmouseover="showBaloon(2, 'Neoclinus', event)" onmouseout="hideBaloonEvent('Neoclinus', event)">Neoclinus</a></span></span></i> (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B13', event)" onmouseout="hideBaloonEvent('B13')">Springer and Smith-Vaniz 2008</span>). Further comparative morphological work is needed but is hampered by the paucity of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> specimens. If additional samples of the genus are collected in the future that can be cleared-and-stained and dissected,  a more complete assessment of relationships based on morphology can be attempted. The new species has provided the first fresh-tissue sample of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a></span></span></i> for genetic analysis,  and future research plans include incorporating genetic data from <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20dropi" onmouseover="showBaloon(2, 'Haptoclinus_dropi', event)" onmouseout="hideBaloonEvent('Haptoclinus_dropi', event)">dropi</a></span></span></i> into a molecular phylogeny of blenniiformes in hopes of shedding light on the phylogenetic affinities of this poorly known genus.</p>
+		<div class="section"><a name="comparativematerial"></a>
+			<span id="1" class="node_title1 sec">Comparative material</span>
+			<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i>,  holotype,  ANSP 121251,  25.2 mm SL,  male; paratype,  ANSP 121252,  cleared and stained (disarticulated and in poor condition). Radiograph of holotype examined on the ANSP website: <a target="_blank" href="http://clade.ansp.org/ichthyology/FTIP/view.php?mode=details&amp;id=121251">http://clade.ansp.org/ichthyology/FTIP/view.php?mode=details&amp;id=121251</a>.</p>
+		</div>
+	</div>
+	</div>
+<a name="acknowledgements"></a><div class="smallSecHolder acknowledgementsHolder"><div class="acknowledgementsText">
+		<span id="1" class="node_title">Acknowledgments</span>
+		<p>We thank Adriaan (Dutch) Schrier,  Cristina Castillo,  Bruce Brandt,  Barbara van Bebber,  Laureen Schenk,  Lee Weigt,  and Amy Driskell for assistance in the field; Sandra Raredon and Ian Silver-Gorges for providing the radiograph and images of the preserved holotype; and Mark Sabaj Pérez for sending the type material of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus" onmouseover="showBaloon(2, 'Haptoclinus', event)" onmouseout="hideBaloonEvent('Haptoclinus', event)">Haptoclinus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus%20apectolophus" onmouseover="showBaloon(2, 'Haptoclinus_apectolophus', event)" onmouseout="hideBaloonEvent('Haptoclinus_apectolophus', event)">apectolophus</a></span></span></i> on loan to the first author. Funding for the Smithsonian Institution’s <i>Deep Reef Observation Project</i> is provided internally by the Consortium for Understanding and Sustaining a Biodiverse Planet and by National Geographic Society’s Committee for Research and Exploration (Grant #9102-12). Victor Springer,  Philip Hastings,  and Jeffrey Williams provided helpful comments on drafts of this manuscript.</p>
+	</div></div>
+<a name="references"></a><div class="smallSecHolder  referencesHolder"><div class="referencesText">
+<span class="node_title">References</span><div class="referenceRow">Böhlke JE, Robins CR (1974) Description of a new genus and species of clinid fish from the western Caribbean,  with comments on the families of the Blennioidea. Proceedings of the Academy of Natural Sciences of Philadelphia 126: 1-8.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B1">Böhlke JE, Robins CR (1974) Description of a new genus and species of clinid fish from the western Caribbean,  with comments on the families of the Blennioidea. Proceedings of the Academy of Natural Sciences of Philadelphia 126: 1-8.<div class="unfloat"></div></div>
+<div class="referenceRow">Böhlke JE, Springer VG (1975) A new genus and species of fish (<i>Nemaclinus atelestos</i>) from the western Atlantic (Perciformes: Clinidae). Proceedings of the Academy of Natural Sciences of Philadelphia 127: 57-61.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B2">Böhlke JE, Springer VG (1975) A new genus and species of fish (<i>Nemaclinus atelestos</i>) from the western Atlantic (Perciformes: Clinidae). Proceedings of the Academy of Natural Sciences of Philadelphia 127: 57-61.<div class="unfloat"></div></div>
+<div class="referenceRow">George A, Springer VG (1980) Revision of the clinid fish tribe Ophiclinini,  including five new species,  and definition of the family Clinidae. Smithsonian Contributions to Zoology 27: 1-31. doi: <a target="_blank" href="http://dx.doi.org/10.5479/si.00810282.307">10.5479/si.00810282.307</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B3">George A, Springer VG (1980) Revision of the clinid fish tribe Ophiclinini,  including five new species,  and definition of the family Clinidae. Smithsonian Contributions to Zoology 27: 1-31. doi: <a target="_blank" href="http://dx.doi.org/10.5479/si.00810282.307">10.5479/si.00810282.307</a><div class="unfloat"></div></div>
+<div class="referenceRow">Hastings PA, Springer VG (1994) Review of <i>Stathmonotus</i>,  with redefinition and phylogenetic analysis of the Chaenopsidae (Teleostei: Blennioidei). Smithsonian Contributions to Zoology 558: 1-48. doi: <a target="_blank" href="http://dx.doi.org/10.5479/si.00810282.558">10.5479/si.00810282.558</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B4">Hastings PA, Springer VG (1994) Review of <i>Stathmonotus</i>,  with redefinition and phylogenetic analysis of the Chaenopsidae (Teleostei: Blennioidei). Smithsonian Contributions to Zoology 558: 1-48. doi: <a target="_blank" href="http://dx.doi.org/10.5479/si.00810282.558">10.5479/si.00810282.558</a><div class="unfloat"></div></div>
+<div class="referenceRow">Hastings PA, Springer VG (2009) Systematics of the Blennioidei and the included families Dactyloscopidae,  Chaenopsidae,  Clinidae and Labrisomidae. In: Patzner RA, Gonçalves EJ, Hastings PA, Kapoor BG (Eds). . The Biology of Blennies,  Science Publishers,  Enfield,  New Hampshire: 3-30. doi: <a target="_blank" href="http://dx.doi.org/10.1201/b10301-3">10.1201/b10301-3</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B5">Hastings PA, Springer VG (2009) Systematics of the Blennioidei and the included families Dactyloscopidae,  Chaenopsidae,  Clinidae and Labrisomidae. In: Patzner RA, Gonçalves EJ, Hastings PA, Kapoor BG (Eds). . The Biology of Blennies,  Science Publishers,  Enfield,  New Hampshire: 3-30. doi: <a target="_blank" href="http://dx.doi.org/10.1201/b10301-3">10.1201/b10301-3</a><div class="unfloat"></div></div>
+<div class="referenceRow">Hubbs C (1952) A contribution to the classification of the blennioid fishes of the family Clinidae,  with a partial revision of the eastern Pacific forms. Stanford Ichthyological Bulletin 4: 41-165.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B6">Hubbs C (1952) A contribution to the classification of the blennioid fishes of the family Clinidae,  with a partial revision of the eastern Pacific forms. Stanford Ichthyological Bulletin 4: 41-165.<div class="unfloat"></div></div>
+<div class="referenceRow">Penrith ML (1969) The systematics of the fishes of the family Clinidae in South Africa. Annals of the South African Museum 55: 1-121.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B7">Penrith ML (1969) The systematics of the fishes of the family Clinidae in South Africa. Annals of the South African Museum 55: 1-121.<div class="unfloat"></div></div>
+<div class="referenceRow">Sabaj Pérez MH (editor) (2012) Standard symbolic codes for institutional resource collections in herpetology and ichthyology: an Online Reference. Version 3.0 (23 February 2012). Electronically accessible at <a target="_blank" href="http://www.asih.org">http://www.asih.org</a>/,  American Society of Ichthyologists and Herpetologists,  Washington,  DC.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B8">Sabaj Pérez MH (editor) (2012) Standard symbolic codes for institutional resource collections in herpetology and ichthyology: an Online Reference. Version 3.0 (23 February 2012). Electronically accessible at <a target="_blank" href="http://www.asih.org">http://www.asih.org</a>/,  American Society of Ichthyologists and Herpetologists,  Washington,  DC.<div class="unfloat"></div></div>
+<div class="referenceRow">Springer VG (1955) The taxonomic status of the fishes of the genus <i>Stathmonotus</i>,  including a review of the Atlantic species. Bulletin of Marine Sciences of the Gulf and Caribbean 5: 66-80.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B9">Springer VG (1955) The taxonomic status of the fishes of the genus <i>Stathmonotus</i>,  including a review of the Atlantic species. Bulletin of Marine Sciences of the Gulf and Caribbean 5: 66-80.<div class="unfloat"></div></div>
+<div class="referenceRow">Springer VG (1968) Osteology and classification of the fishes of the family Blenniidae. United States National Museum Bulletin 284: 1-85.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B10">Springer VG (1968) Osteology and classification of the fishes of the family Blenniidae. United States National Museum Bulletin 284: 1-85.<div class="unfloat"></div></div>
+<div class="referenceRow">Springer VG (1970) The western South Atlantic clinid fish <i>Ribeiroclinus eigenmanni</i>,  with discussion of the intrarelationships and zoogeography of the Clinidae. Copeia 1970: 430-436. doi: <a target="_blank" href="http://dx.doi.org/10.2307/1442269">10.2307/1442269</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B11">Springer VG (1970) The western South Atlantic clinid fish <i>Ribeiroclinus eigenmanni</i>,  with discussion of the intrarelationships and zoogeography of the Clinidae. Copeia 1970: 430-436. doi: <a target="_blank" href="http://dx.doi.org/10.2307/1442269">10.2307/1442269</a><div class="unfloat"></div></div>
+<div class="referenceRow">Springer VG (1993) Definition of the suborder Blennioidei and its included families (Pisces: Perciformes). Bulletin of Marine Science 52: 472-495.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B12">Springer VG (1993) Definition of the suborder Blennioidei and its included families (Pisces: Perciformes). Bulletin of Marine Science 52: 472-495.<div class="unfloat"></div></div>
+<div class="referenceRow">Springer VG, Smith-Vaniz WF (2008) Supraneural and pterygiophore insertion patterns in carangid fishes,  with description of a new Eocene carangid tribe,  † Paratrachinotini,  and a survey of anterior anal-fin pterygiophore insertion patterns in Acanthomorpha. Bulletin of the Biological Society of Washington 16: 1-73. doi: <a target="_blank" href="http://dx.doi.org/10.2988/0097-0298(2008)16%5B1:SAPIPI%5D2.0.CO;2">10.2988/0097-0298(2008)16[1:SAPIPI]2.0.CO;2</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B13">Springer VG, Smith-Vaniz WF (2008) Supraneural and pterygiophore insertion patterns in carangid fishes,  with description of a new Eocene carangid tribe,  † Paratrachinotini,  and a survey of anterior anal-fin pterygiophore insertion patterns in Acanthomorpha. Bulletin of the Biological Society of Washington 16: 1-73. doi: <a target="_blank" href="http://dx.doi.org/10.2988/0097-0298(2008)16%5B1:SAPIPI%5D2.0.CO;2">10.2988/0097-0298(2008)16[1:SAPIPI]2.0.CO;2</a><div class="unfloat"></div></div>
+</div></div>
+<a name="supplementarymaterials"></a><div class="supMaterialsHolder"></div>
+</div>
+</div></div></div></div></div></div></div></div></div>
+<script>initBalloons();</script>
+<div id="taxonNamesList" class="taxonNamesList">
+	<div id="taxon_Haptoclinus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Haptoclinus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHaptoclinus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHaptoclinus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHaptoclinus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHaptoclinus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHaptoclinus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Haptoclinus_dropi_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus dropi">Haptoclinus dropi</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus dropi">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20dropi&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHaptoclinus%2520dropi">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20dropi&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHaptoclinus%2520dropi">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20dropi&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHaptoclinus%2520dropi">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20dropi&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHaptoclinus%2520dropi">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20dropi&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHaptoclinus%2520dropi">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus dropi">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Haptoclinus_apectolophus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus apectolophus">Haptoclinus apectolophus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus apectolophus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20apectolophus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHaptoclinus%2520apectolophus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20apectolophus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHaptoclinus%2520apectolophus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20apectolophus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHaptoclinus%2520apectolophus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20apectolophus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHaptoclinus%2520apectolophus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Haptoclinus%20apectolophus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHaptoclinus%2520apectolophus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Haptoclinus apectolophus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Chaenopsidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae">Chaenopsidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chaenopsidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FChaenopsidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chaenopsidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DChaenopsidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chaenopsidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DChaenopsidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chaenopsidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DChaenopsidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chaenopsidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DChaenopsidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chaenopsidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Curasub_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Curasub">Curasub</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Curasub">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Curasub&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FCurasub">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Curasub&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DCurasub">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Curasub&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DCurasub">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Curasub&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DCurasub">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Curasub&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DCurasub">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Curasub">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Stathmonotus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus">Stathmonotus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FStathmonotus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DStathmonotus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DStathmonotus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DStathmonotus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DStathmonotus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Stathmonotus_stahli_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus stahli">Stathmonotus stahli</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus stahli">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus%20stahli&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FStathmonotus%2520stahli">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus%20stahli&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DStathmonotus%2520stahli">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus%20stahli&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DStathmonotus%2520stahli">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus%20stahli&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DStathmonotus%2520stahli">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stathmonotus%20stahli&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DStathmonotus%2520stahli">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stathmonotus stahli">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Clinidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clinidae">Clinidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clinidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clinidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FClinidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clinidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DClinidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clinidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DClinidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clinidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DClinidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clinidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DClinidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clinidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Blenniidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Blenniidae">Blenniidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Blenniidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Blenniidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FBlenniidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Blenniidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DBlenniidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Blenniidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DBlenniidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Blenniidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DBlenniidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Blenniidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DBlenniidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Blenniidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Ophiclinidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ophiclinidae">Ophiclinidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ophiclinidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ophiclinidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FOphiclinidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ophiclinidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DOphiclinidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ophiclinidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DOphiclinidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ophiclinidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DOphiclinidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ophiclinidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DOphiclinidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ophiclinidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Peronedysidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Peronedysidae">Peronedysidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Peronedysidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Peronedysidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FPeronedysidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Peronedysidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DPeronedysidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Peronedysidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DPeronedysidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Peronedysidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DPeronedysidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Peronedysidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DPeronedysidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Peronedysidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Clininae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clininae">Clininae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clininae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clininae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FClininae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clininae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DClininae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clininae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DClininae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clininae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DClininae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Clininae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DClininae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Clininae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Nemaclinus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nemaclinus">Nemaclinus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nemaclinus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nemaclinus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FNemaclinus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nemaclinus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DNemaclinus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nemaclinus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DNemaclinus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nemaclinus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DNemaclinus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nemaclinus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DNemaclinus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nemaclinus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Cottoclinus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cottoclinus">Cottoclinus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cottoclinus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cottoclinus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FCottoclinus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cottoclinus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DCottoclinus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cottoclinus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DCottoclinus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cottoclinus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DCottoclinus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cottoclinus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DCottoclinus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cottoclinus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Xenomedea_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Xenomedea">Xenomedea</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Xenomedea">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Xenomedea&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FXenomedea">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Xenomedea&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DXenomedea">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Xenomedea&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DXenomedea">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Xenomedea&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DXenomedea">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Xenomedea&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DXenomedea">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Xenomedea">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Labrisomidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Labrisomidae">Labrisomidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Labrisomidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Labrisomidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLabrisomidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Labrisomidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLabrisomidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Labrisomidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLabrisomidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Labrisomidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLabrisomidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Labrisomidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLabrisomidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Labrisomidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Lucayablennius_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lucayablennius">Lucayablennius</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lucayablennius">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lucayablennius&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLucayablennius">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lucayablennius&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLucayablennius">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lucayablennius&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLucayablennius">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lucayablennius&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLucayablennius">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lucayablennius&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLucayablennius">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lucayablennius">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Neoclinus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Neoclinus">Neoclinus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Neoclinus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Neoclinus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FNeoclinus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Neoclinus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DNeoclinus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Neoclinus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DNeoclinus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Neoclinus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DNeoclinus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Neoclinus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DNeoclinus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Neoclinus">More</a></div>
+		</div>
+	</div>
+	</div>
+		</div>
+<script>initScrollConstants()</script>
+</body>
+</html>

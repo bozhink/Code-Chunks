@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8">
+	<component name="defaultmap1" blackbox="0" uid="54416224" editable="1">
+		<properties SelectedLanguage="java" WSDLFile="query.wsdl" WSDLService="{http://www.altova.com/WS2DB/query.wsdl}WS2DB" WSDLPort="WS2DBSoapPort" WSDLOperation="{http://www.altova.com/WS2DB/query.wsdl}putPerson"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="178423432" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="47687032"/>
+					</targets>
+					<view ltx="234" lty="137" rbx="-106" rby="-124"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="44838944" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="47687776"/>
+					</targets>
+					<view ltx="234" lty="169" rbx="-106" rby="-92"/>
+					<data>
+						<constant value="&lt; " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="54955104" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="47687936"/>
+					</targets>
+					<view ltx="236" lty="202" rbx="-104" rby="-59"/>
+					<data>
+						<constant value="&gt; " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="wsdl" library="wsdl" uid="44927352" kind="17" visible="0">
+					<view ltx="19" lty="129" rbx="203" rby="256"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/WS2DB/query.wsdl"/>
+								</namespaces>
+							</header>
+							<entry name="1:putPersonSoapIn" expanded="1" outkey="47597216">
+								<entry name="0:Put" expanded="1" outkey="47665440">
+									<entry name="0:First" outkey="47663416"/>
+									<entry name="0:Last" outkey="47664016"/>
+									<entry name="0:Title" outkey="47663736"/>
+									<entry name="0:PhoneEXT" outkey="47662856"/>
+									<entry name="0:Email" outkey="47664584"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="wsdl" library="wsdl" uid="46883864" kind="17" visible="0">
+					<view ltx="447" lty="129" rbx="647" rby="184"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/WS2DB/query.wsdl"/>
+								</namespaces>
+							</header>
+							<entry name="1:putPersonSoapOut" expanded="1" inpkey="47589800">
+								<entry name="0:Confirmation" inpkey="47589560"/>
+							</entry>
+						</root>
+						<wsdl kind="output"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="179965168" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="47659808"/>
+						<datapoint pos="1" key="47659496"/>
+						<datapoint pos="2" key="47660216"/>
+						<datapoint pos="3" key="47659976"/>
+						<datapoint pos="4" key="47660736"/>
+						<datapoint pos="5" key="47660456"/>
+						<datapoint pos="6" key="47664344"/>
+						<datapoint pos="7" key="47661056"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="47665104"/>
+					</targets>
+					<view ltx="320" lty="113" rbx="46" rby="-79"/>
+				</component>
+				<component name="structure" library="db" uid="51883880" kind="15">
+					<properties XSLTDefaultOutput="1" JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="people.mdb" DBCatalog="people" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view ltx="319" lty="279" rbx="462" rby="408"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="Persons" type="table" expanded="1" inpkey="61309128">
+								<entry name="First" inpkey="51585032"/>
+								<entry name="Last" inpkey="61329288"/>
+								<entry name="Title" inpkey="51686880"/>
+								<entry name="PhoneEXT" inpkey="61390600"/>
+								<entry name="Email" inpkey="30282832"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<database>
+							<database_connection>
+								<connect database-kind="Access" import-kind="Access">
+									<connection_type>
+										<connection_string>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=people.mdb</connection_string>
+									</connection_type>
+								</connect>
+								<server name="people.mdb">
+									<database name="people">
+										<schema name="">
+											<table name="Persons" kind="UserTable"/>
+										</schema>
+									</database>
+								</server>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="54415816" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="47661776"/>
+					</targets>
+					<view ltx="60" lty="97" rbx="-291" rby="-164"/>
+					<data>
+						<constant value="Thank you for adding..." datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="56841320" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="47663176"/>
+					</targets>
+					<view ltx="62" lty="292" rbx="-289" rby="31"/>
+					<data>
+						<constant value="into our spam database" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="29839480"/>
+					<edge edgekey="29839592"/>
+					<edge edgekey="47666928"/>
+					<edge edgekey="47678296"/>
+					<edge edgekey="47678408"/>
+					<edge edgekey="47683784"/>
+					<edge edgekey="47707104"/>
+					<edge edgekey="47707440"/>
+					<edge edgekey="51164544"/>
+					<edge edgekey="51178584"/>
+					<edge edgekey="51594008"/>
+					<edge edgekey="51636936"/>
+					<edge edgekey="51653392"/>
+					<edge edgekey="61277920"/>
+					<edge edgekey="61278032"/>
+					<edge edgekey="61285528"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="47597216">
+						<edges>
+							<edge vertexkey="47589800" edgekey="29839480"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47661776">
+						<edges>
+							<edge vertexkey="47659808" edgekey="51653392"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47662856">
+						<edges>
+							<edge vertexkey="61390600" edgekey="61277920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47663176">
+						<edges>
+							<edge vertexkey="47661056" edgekey="51636936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47663416">
+						<edges>
+							<edge vertexkey="51585032" edgekey="51594008"/>
+							<edge vertexkey="47659496" edgekey="61278032"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47663736">
+						<edges>
+							<edge vertexkey="51686880" edgekey="47678296"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47664016">
+						<edges>
+							<edge vertexkey="61329288" edgekey="47707440"/>
+							<edge vertexkey="47659976" edgekey="61285528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47664584">
+						<edges>
+							<edge vertexkey="30282832" edgekey="47683784"/>
+							<edge vertexkey="47660456" edgekey="47707104"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47665104">
+						<edges>
+							<edge vertexkey="47589560" edgekey="51178584"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47665440">
+						<edges>
+							<edge vertexkey="61309128" edgekey="29839592"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47687032">
+						<edges>
+							<edge vertexkey="47660216" edgekey="47678408"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47687776">
+						<edges>
+							<edge vertexkey="47660736" edgekey="51164544"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47687936">
+						<edges>
+							<edge vertexkey="47664344" edgekey="47666928"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

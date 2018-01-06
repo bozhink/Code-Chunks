@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+This file is an entry point for Exchange (exch).
+The DTS starting with this entry point includes the concepts defined in Exchange (exch) with their standard, period start, period end, total, axis default, documentation, deprecated label and depreacted date labels. It will also include references. This DTS also includes non industry/statement and non disclosure presentation and definition linkbases.
+-->
+<xs:schema targetNamespace="http://xbrl.sec.gov/exch-ent-dep/2012-01-31" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:exch-ent-dep="http://xbrl.sec.gov/exch-ent-dep/2012-01-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:type="simple" xlink:href="exch-dep-pre-2012-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+<link:linkbaseRef xlink:type="simple" xlink:href="exch-dep-def-2012-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+</xs:appinfo>
+</xs:annotation>
+<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+<xs:import namespace="http://xbrl.sec.gov/exch-ent-all/2012-01-31" schemaLocation="exch-ent-all-2012-01-31.xsd"/>
+</xs:schema>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<public publicId="-//W3C//DTD XMLSCHEMA 19991216//EN" uri="files/W3C_1999/XMLSchemaApr7.dtd"/>
+	<public publicId="-//W3C//DTD XMLSCHEMA 200010//EN" uri="files/W3C_2000_10/XMLSchemaCR.dtd"/>
+	<public publicId="-//W3C//DTD XMLSCHEMA 200102//EN" uri="files/W3C_2001/XMLSchema.dtd"/>
+
+	<uri name="http://www.w3.org/1999/XMLSchema" uri="files/W3C_1999/XMLSchemaApr7.dtd"/>
+	<uri name="http://www.w3.org/2000/10/XMLSchema" uri="files/W3C_2000_10/XMLSchemaCR.dtd"/>
+	<uri name="http://www.w3.org/2001/XMLSchema.dtd" uri="files/W3C_2001/XMLSchema.dtd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/schema/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/schema/' rewritePrefix='files/'/>
+</catalog>

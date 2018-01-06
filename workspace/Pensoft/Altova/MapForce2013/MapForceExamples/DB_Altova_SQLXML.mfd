@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="4">
+	<component name="defaultmap1" uid="49595320" blackbox="0" editable="1">
+		<properties AppName="Mapping" JavaBasePackage="com.mapforce" SelectedLanguage="java" ShowAnnotations="1" ShowLibraryNameInHeader="0" ShowSchemaTypes="0" XSLTTargetEncoding="UTF-8"/>
+		<structure>
+			<children>
+				<component name="structure" library="db" kind="1" uid="49436280">
+					<properties DBCatalog="" DBDataSource="altova.mdb" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" OLEDBOptions="" OLEDBProvider="Microsoft.Jet.OLEDB.4.0" XSLTDefaultOutput="0"/>
+					<view ltx="0" lty="0" rbx="150" rby="313"/>
+					<data>
+						<root scrollposition="1">
+							<header/>
+							<entry name="Address" expanded="true" outkey="37751648">
+								<entry name="PrimaryKey" outkey="38737984"/>
+								<entry name="ForeignKey" outkey="37749744"/>
+								<entry name="city" outkey="37767808"/>
+								<entry name="state" outkey="38738800"/>
+								<entry name="street" outkey="38736080"/>
+								<entry name="zip" outkey="38737712"/>
+							</entry>
+							<entry name="Altova" expanded="true" outkey="38737440">
+								<entry name="PrimaryKey" outkey="38739888"/>
+								<entry name="Name" outkey="37752464"/>
+							</entry>
+							<entry name="Department" expanded="true" outkey="37752736">
+								<entry name="PrimaryKey" outkey="38736624"/>
+								<entry name="ForeignKey" outkey="37749256"/>
+								<entry name="Name" outkey="37751920"/>
+							</entry>
+							<entry name="Office" expanded="true" outkey="38736352">
+								<entry name="PrimaryKey" outkey="38739344"/>
+								<entry name="ForeignKey" outkey="38739616"/>
+								<entry name="Desc" outkey="38738256"/>
+								<entry name="EMail" outkey="38739072"/>
+								<entry name="Established" outkey="49013008"/>
+								<entry name="Fax" outkey="37751104"/>
+								<entry name="Name" outkey="37751376"/>
+								<entry name="Phone" outkey="37749472"/>
+							</entry>
+							<entry name="Person" expanded="true" outkey="38737168">
+								<entry name="PrimaryKey" outkey="38738528"/>
+								<entry name="ForeignKey" outkey="38736896"/>
+								<entry name="EMail" outkey="37750832"/>
+								<entry name="First" outkey="37750016"/>
+								<entry name="Last" outkey="37752192"/>
+								<entry name="PhoneExt" outkey="37750288"/>
+								<entry name="Title" outkey="37750560"/>
+							</entry>
+						</root>
+						<database>
+							<database_connection>
+								<connect database-kind="Access" import-kind="Access">
+									<connection_type>
+										<connection_string>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=altova.mdb</connection_string>
+									</connection_type>
+								</connect>
+								<server name="altova.mdb">
+									<database name="altova">
+										<schema name="altova">
+											<table name="Address" kind="UserTable"/>
+											<table name="Altova" kind="UserTable"/>
+											<table name="Department" kind="UserTable"/>
+											<table name="Office" kind="UserTable"/>
+											<table name="Person" kind="UserTable"/>
+										</schema>
+									</database>
+								</server>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+				<component name="document" library="xml" kind="1" uid="38580832">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="262" lty="0" rbx="409" rby="314"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid=""/>
+								</namespaces>
+							</header>
+							<entry name="0:altova" expanded="true">
+								<entry name="0:altova" expanded="true">
+									<entry name="0:Address" expanded="true">
+										<entry name="0:row" expanded="true" inpkey="38617568">
+											<entry name="0:PrimaryKey" inpkey="38616208"/>
+											<entry name="0:ForeignKey" inpkey="38597272"/>
+											<entry name="0:city" inpkey="38594824"/>
+											<entry name="0:state" inpkey="52770048"/>
+											<entry name="0:street" inpkey="38594552"/>
+											<entry name="0:zip" inpkey="38597000"/>
+										</entry>
+									</entry>
+									<entry name="0:Altova" expanded="true">
+										<entry name="0:row" expanded="true" inpkey="49024720">
+											<entry name="0:PrimaryKey" inpkey="38615936"/>
+											<entry name="0:Name" inpkey="38615664"/>
+										</entry>
+									</entry>
+									<entry name="0:Department" expanded="true">
+										<entry name="0:row" expanded="true" inpkey="38615392">
+											<entry name="0:PrimaryKey" inpkey="52604752"/>
+											<entry name="0:ForeignKey" inpkey="38615176"/>
+											<entry name="0:Name" inpkey="52604528"/>
+										</entry>
+									</entry>
+									<entry name="0:Office" expanded="true">
+										<entry name="0:row" expanded="true" inpkey="38499768">
+											<entry name="0:PrimaryKey" inpkey="38499856"/>
+											<entry name="0:ForeignKey" inpkey="38595912"/>
+											<entry name="0:Desc" inpkey="38596728"/>
+											<entry name="0:EMail" inpkey="38596456"/>
+											<entry name="0:Established" inpkey="38596184"/>
+											<entry name="0:Fax" inpkey="38595096"/>
+											<entry name="0:Name" inpkey="38595368"/>
+											<entry name="0:Phone" inpkey="38595640"/>
+										</entry>
+									</entry>
+									<entry name="0:Person" expanded="true">
+										<entry name="0:row" expanded="true" inpkey="38617840">
+											<entry name="0:PrimaryKey" inpkey="38618112"/>
+											<entry name="0:ForeignKey" inpkey="38594280"/>
+											<entry name="0:EMail" inpkey="38594008"/>
+											<entry name="0:First" inpkey="38616480"/>
+											<entry name="0:Last" inpkey="38616752"/>
+											<entry name="0:PhoneExt" inpkey="38617296"/>
+											<entry name="0:Title" inpkey="38617024"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Altova_SQLXML.xsd" inputinstance="" outputinstance="" instanceroot="{}altova"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="37767512"/>
+					<edge edgekey="38159048"/>
+					<edge edgekey="38243304"/>
+					<edge edgekey="38243592"/>
+					<edge edgekey="38243880"/>
+					<edge edgekey="38244168"/>
+					<edge edgekey="38244456"/>
+					<edge edgekey="38244744"/>
+					<edge edgekey="38245032"/>
+					<edge edgekey="38346592"/>
+					<edge edgekey="38346880"/>
+					<edge edgekey="38347168"/>
+					<edge edgekey="38347456"/>
+					<edge edgekey="38347744"/>
+					<edge edgekey="38348032"/>
+					<edge edgekey="38348320"/>
+					<edge edgekey="38348608"/>
+					<edge edgekey="38348896"/>
+					<edge edgekey="38349184"/>
+					<edge edgekey="38349472"/>
+					<edge edgekey="38349760"/>
+					<edge edgekey="38350048"/>
+					<edge edgekey="38350336"/>
+					<edge edgekey="38350624"/>
+					<edge edgekey="38501056"/>
+					<edge edgekey="38579952"/>
+					<edge edgekey="49014432"/>
+					<edge edgekey="49310816"/>
+					<edge edgekey="52293992"/>
+					<edge edgekey="53721824"/>
+					<edge edgekey="53742360"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="37749256">
+						<edges>
+							<edge vertexkey="38615176" edgekey="38243592"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37749472">
+						<edges>
+							<edge vertexkey="38595640" edgekey="38245032"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37749744">
+						<edges>
+							<edge vertexkey="38597272" edgekey="38348032"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37750016">
+						<edges>
+							<edge vertexkey="38616480" edgekey="38159048"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37750288">
+						<edges>
+							<edge vertexkey="38617296" edgekey="38244744"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37750560">
+						<edges>
+							<edge vertexkey="38617024" edgekey="37767512"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37750832">
+						<edges>
+							<edge vertexkey="38594008" edgekey="38244456"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37751104">
+						<edges>
+							<edge vertexkey="38595096" edgekey="38350048"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37751376">
+						<edges>
+							<edge vertexkey="38595368" edgekey="38350336"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37751648">
+						<edges>
+							<edge vertexkey="38617568" edgekey="38349472"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37751920">
+						<edges>
+							<edge vertexkey="52604528" edgekey="49310816"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37752192">
+						<edges>
+							<edge vertexkey="38616752" edgekey="53721824"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37752464">
+						<edges>
+							<edge vertexkey="38615664" edgekey="38349184"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37752736">
+						<edges>
+							<edge vertexkey="38615392" edgekey="53742360"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37767808">
+						<edges>
+							<edge vertexkey="38594824" edgekey="49014432"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38736080">
+						<edges>
+							<edge vertexkey="38594552" edgekey="38348320"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38736352">
+						<edges>
+							<edge vertexkey="38499768" edgekey="52293992"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38736624">
+						<edges>
+							<edge vertexkey="52604752" edgekey="38243304"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38736896">
+						<edges>
+							<edge vertexkey="38594280" edgekey="38244168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38737168">
+						<edges>
+							<edge vertexkey="38617840" edgekey="38346592"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38737440">
+						<edges>
+							<edge vertexkey="49024720" edgekey="38348896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38737712">
+						<edges>
+							<edge vertexkey="38597000" edgekey="38348608"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38737984">
+						<edges>
+							<edge vertexkey="38616208" edgekey="38347744"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38738256">
+						<edges>
+							<edge vertexkey="38596728" edgekey="38347168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38738528">
+						<edges>
+							<edge vertexkey="38618112" edgekey="38243880"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38738800">
+						<edges>
+							<edge vertexkey="52770048" edgekey="38579952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38739072">
+						<edges>
+							<edge vertexkey="38596456" edgekey="38347456"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38739344">
+						<edges>
+							<edge vertexkey="38499856" edgekey="38346880"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38739616">
+						<edges>
+							<edge vertexkey="38595912" edgekey="38350624"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38739888">
+						<edges>
+							<edge vertexkey="38615936" edgekey="38501056"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49013008">
+						<edges>
+							<edge vertexkey="38596184" edgekey="38349760"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

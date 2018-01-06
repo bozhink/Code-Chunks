@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap1" blackbox="0" uid="20" editable="1">
+		<properties ShowSchemaTypes="1" ShowAnnotations="0" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="structure" library="db" uid="10" kind="15">
+					<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="yearlySales.mdb" DBCatalog="yearlySales" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view lty="-15" rbx="175" rby="233"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="Region" type="table" outkey="74" expanded="1">
+									<entry name="RegionName" outkey="75"/>
+									<entry name="Year|FK_Region" type="table" expanded="1">
+										<entry name="ReportingYear" outkey="84"/>
+										<entry name="Text" outkey="85"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" name="yearlySales" path="yearlySales" use_driver_for_retrieval="Yes">
+								<properties>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Root Object" value="yearlySales"/>
+									<property name="Data Source" value="yearlySales.mdb"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+									<property name="User ID"/>
+									<property name="Password"/>
+									<property name="Persist Security Info"/>
+									<property name="Jet OLEDB:System Database"/>
+									<property name="Jet OLEDB:Sandbox Mode"/>
+									<property name="Jet OLEDB:Exclusive Async Delay"/>
+									<property name="Jet OLEDB:Flush Transaction Timeout"/>
+									<property name="Jet OLEDB:Implicit Commit Sync"/>
+									<property name="Jet OLEDB:Lock Delay"/>
+									<property name="Jet OLEDB:Lock Retry"/>
+									<property name="Jet OLEDB:Max Buffer Size"/>
+									<property name="Jet OLEDB:Max Locks Per File"/>
+									<property name="Jet OLEDB:Page Locks to Table Lock"/>
+									<property name="Jet OLEDB:Page Timeout"/>
+									<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+									<property name="Jet OLEDB:Shared Async Delay"/>
+									<property name="Jet OLEDB:User Commit Sync"/>
+									<property name="Jet OLEDB:Compact Without Replica Repair"/>
+									<property name="Jet OLEDB:Create System Database"/>
+									<property name="Jet OLEDB:Database Locking Mode"/>
+									<property name="Jet OLEDB:Database Password"/>
+									<property name="Jet OLEDB:New Database Password"/>
+									<property name="Jet OLEDB:Registry Path"/>
+								</properties>
+								<LocalViewStorage/>
+								<LocalRelationsStorage>
+									<LocalRelationElement name="Untitled">
+										<SourceTable>
+											<PathElement Name="yearlySales" Kind="DataSource"/>
+											<PathElement Name="yearlySales" Kind="Database"/>
+											<PathElement Name="Year" Kind="Table"/>
+										</SourceTable>
+										<SourceColumns>
+											<Column name="FK_Region"/>
+										</SourceColumns>
+										<DestinationTable>
+											<PathElement Name="yearlySales" Kind="DataSource"/>
+											<PathElement Name="yearlySales" Kind="Database"/>
+											<PathElement Name="Region" Kind="Table"/>
+										</DestinationTable>
+										<DestinationColumns>
+											<Column name="PrimaryKey"/>
+										</DestinationColumns>
+									</LocalRelationElement>
+								</LocalRelationsStorage>
+								<selections>
+									<selection>
+										<PathElement Name="yearlySales" Kind="DataSource"/>
+										<PathElement Name="yearlySales" Kind="Database"/>
+										<PathElement Name="Region" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="yearlySales" Kind="DataSource"/>
+										<PathElement Name="yearlySales" Kind="Database"/>
+										<PathElement Name="Year" Kind="Table"/>
+									</selection>
+								</selections>
+							</database_connection>
+							<recordset/>
+						</database>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="11" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="358" lty="3" rbx="524" rby="137"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Data" expanded="1">
+										<entry name="ChartType" inpkey="29"/>
+										<entry name="Region" inpkey="33" expanded="1">
+											<entry name="id" type="attribute" inpkey="30"/>
+											<entry name="Year" inpkey="28" expanded="1">
+												<entry name="id" type="attribute" inpkey="31"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="YearlySales.xsd" outputinstance="YearlySales.xml" instanceroot="{}Data" sps="YearlySales.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="16" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="56"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="57"/>
+					</targets>
+					<view ltx="239" lty="151" rbx="316" rby="190"/>
+					<data>
+						<wsdl/>
+						<valuemap enableDefaultValue="1">
+							<valuemapTable>
+								<entry from="1" to="Pie Chart 2D"/>
+								<entry from="2" to="Pie Chart 3D"/>
+								<entry from="3" to="Bar Chart 2D"/>
+								<entry from="4" to="Bar Chart 3D"/>
+								<entry from="5" to="Bar Chart 3D Grouped"/>
+								<entry from="6" to="Line Graph"/>
+								<entry from="7" to="Gauge"/>
+							</valuemapTable>
+							<input name="input" type="string"/>
+							<result name="result" type="string" defaultValue="out of range"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="69"/>
+					</targets>
+					<view ltx="191" lty="200" rbx="229" rby="218"/>
+					<data>
+						<constant value="2" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="29" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="56" edgekey="73"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="33" edgekey="78"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="75">
+						<edges>
+							<edge vertexkey="30" edgekey="79"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="84">
+						<edges>
+							<edge vertexkey="31" edgekey="86"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="85">
+						<edges>
+							<edge vertexkey="28" edgekey="87"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

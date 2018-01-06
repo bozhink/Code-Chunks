@@ -1,0 +1,937 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">PhytoKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">PhytoKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">PhytoKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1314-2011</issn>
+            <issn pub-type="epub">1314-2003</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/phytokeys.21.4859</article-id>
+            <title-group>
+                <article-title>A synopsis of 
+                    <bold-italic>Harperocallis</bold-italic> (Tofieldiaceae, Alismatales) with ten new combinations
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Campbell</surname>
+                        <given-names>Lisa M.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Dorr</surname>
+                        <given-names>Laurence J.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>The New York Botanical Garden, Bronx, New York 10458, USA
+            </aff>
+            <aff id="A2">
+                <label>2</label>Department of Botany, National Museum of Natural History, MRC-166, Smithsonian Institution, P.O. Box 37012, Washington, D.C. 20013–7012, USA
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Lisa M. Campbell (<email xlink:type="simple">lcampbell@nybg.org</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: W. John Kress</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>9</day>
+                <month>5</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>21</issue>
+            <fpage>37</fpage>
+            <lpage>52</lpage>
+            <history>
+                <date date-type="received">
+                    <day>12</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+                <date date-type="accepted">
+                    <day>28</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Lisa M. Campbell, Laurence J. Dorr</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Ten new combinations from <italic>Asagraea</italic>, <italic>Isidrogaliva</italic>, and <italic>Tofieldia</italic> are proposed in the previously monospecific genus <italic>Harperocallis </italic>(Tofieldiaceae, Alismatales). As circumscribed here, the genus is restricted to the Americas. The majority of species occur in the Andes or the Guayana region of northern South America; more than half have restricted distributions, and <italic>H. flava</italic> is narrowly endemic in the Coastal Plain of the southeastern United States. A key to species, synonymies, distributions, representative specimens, and salient notes are presented. Populations of the species are mapped and<italic> H</italic>. <italic>robustior</italic> is illustrated. A neotype is selected for <italic>Tofieldia frigida</italic>, here considered a synonym of <italic>H. falcata</italic>. Several recent records of <italic>H. longiflora</italic>, previously known only from the type collected in 1902, are reported.
+                </p>
+                <label><bold>Resúmen</bold>
+                </label>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>Se proponen diez nuevas combinaciones de <italic>Asagraea</italic>
+                </kwd>
+                <kwd><italic>Isidrogaliva</italic>
+                </kwd>
+                <kwd>and <italic>Tofieldia</italic> en <italic>Harperocallis</italic> (Tofieldiaceae
+                </kwd>
+                <kwd>Alismatales)</kwd>
+                <kwd>un género previamente monoespecífico. Como se circunscribe aquí</kwd>
+                <kwd>el género se restringe a las Américas. La mayoría de las especies se encuentran en los Andes o en la región de Guayana</kwd>
+                <kwd>en el norte de América del Sur. Más de la mitad tienen distribuciones restringidas</kwd>
+                <kwd>y <italic>H. flava</italic> es estrictamente endémica en la llanura costera del sudeste de los Estados Unidos. Se presenta una clave para distinguir las especies
+                </kwd>
+                <kwd>sinonimias</kwd>
+                <kwd>distribuciones</kwd>
+                <kwd>muestras representativas y notas salientes. Se mapearon poblaciones de las especies y se ilustra <italic>H. robustior</italic>. Se seleccionó un neotipo para <italic>Tofieldia falcata</italic>
+                </kwd>
+                <kwd>considerado aquí como un sinónimo de <italic>H. falcata</italic>. Se reportan algunos registros adicionales de <italic>H. longiflora</italic>
+                </kwd>
+                <kwd>especie anteriormente conocida sólo con el tipo colectado en 1902.
+
+Andes</kwd>
+                <kwd>Coastal Plain</kwd>
+                <kwd>Florida</kwd>
+                <kwd>Guayana region</kwd>
+                <kwd><italic>Isidrogalvia</italic>
+                </kwd>
+                <kwd>monocot</kwd>
+                <kwd>nomenclature</kwd>
+                <kwd><italic>Tofieldia</italic>
+<!--PageBreak-->                
+                </kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>When Ruiz and Pavon (1802) established the genus <italic>Isidrogalvia</italic> Ruiz &amp; Pav. they described and illustrated a single species, <italic>I. falcata</italic> Ruiz &amp; Pav. This species was collected in Peru, but it is clear from their protologue that they did not intend to recognize a genus restricted to South America as they stated that the European species <italic>Anthericum calyculatum </italic>L. should be referred to their new genus (“Ad hoc Genus referendum est <italic>Anthericum calyculatum </italic>Linn.”). This European species is the type of the generic name <italic>Tofieldia</italic> Huds., which when published by Hudson (1787) included only one named species, <italic>T. palustris </italic>Huds., a name superfluous for, and homotypic with, <italic>A. calyculatum </italic>(McNeill et al. 2012; Arts 7.5 &amp; 52). Thus, Ruiz and Pavon (1802) inadvertently created a generic synonym of <italic>Tofieldia</italic>.
+            </p>
+            <p>The nomenclatural implications of this synonymy were overlooked when the South American taxa were revised by Cruden (1991) and when additional South American taxa were transferred to or described in <italic>Isidrogalvia </italic>(Cruden and Dorr 1992, Remizowa 2007, Campbell 2010). Concurrently, recognition of a distinct South American genus was reinforced as palynological (Mosyakin et al. 2009, Campbell 2010), morphological (Remizowa et al. 2010, 2011), and molecular data (Azuma and Tobe 2011) revealed that these South American taxa were distinct from <italic>Tofieldia</italic>. Phylogenetic analyses of molecular (Azuma and Tobe 2011) and morphological data (Remizowa et al. 2011) resolved the monospecific North American <italic>Harperocallis </italic>McDaniel (1968) as sister to the South American taxa (Azuma and Tobe 2011), or as derived with that lineage, and <italic>H. flava</italic> McDaniel was transferred to <italic>Isidrogalvia</italic> (Remizowa et al. 2011). Long known from only three populations, recent field surveys revealed additional populations (Leonard and Baker 1983, Walker and Silletti 2005, Keppner and Anderson 2008) of this endangered species (US Fish and Wildlife Service 1991, see also Pitts-Singer et al. 2002). <italic>Harperocallis flava</italic>, nonetheless, remains narrowly endemic and has low infraspecific genetic diversity (Godt et al. 1997).
+            </p>
+            <p>Due to the nomenclatural consequences of Ruiz and Pavon’s synonymy (1802), Sokoloff et al. (2011) proposed conservation of the genus <italic>Isidrogalvia</italic> with a conserved type, <italic>I. falcata</italic>, a reasonable solution given that all recent literature treating the South American taxa (see Sokoloff et al. 2011) had employed the generic name <italic>Isidrogalvia</italic>. This proposal, however, was rejected (Applequist 2012) as the Nomenclature Committee for Vascular Plants indicated that they preferred to follow the rule of priority (McNeill et al. 2012; Art. 11.4). Consequently, we propose the following ten transfers of names first published in <italic>Asagraea</italic> Lindl., <italic>Isidrogalvia</italic>, or <italic>Tofieldia</italic> to <italic>Harperocallis</italic>.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Methods
+</bold>
+            </title>
+            <p>Herbarium specimens or their images (indicated by an identifier in brackets) were examined from the following herbaria (herbarium abbreviations follow Index Herbariorum, http://sweetgumnybg.org/ih): A, B-W (Röpert 2000), BC (Courtesy of JSTOR <!--PageBreak-->2012), BM (Courtesy of JSTOR 2012), BRIT (BRIT Virtual Herbarium), F (The Field Museum 2013), FLAS (Florida Museum of Natural History 2013), FSU (Mast et al. 2004), FTG, GH, K (Courtesy of JSTOR 2012), MA (Courtesy of JSTOR 2012), MO, NY, P (Muséum National d’Histoire Naturelle 2012), PH (Courtesy of JSTOR 2012), PORT, US, and VEN. Measurements were obtained visually and augmented from literature (<italic>Asagraea </italic>and<italic> Harperocallis flava</italic>).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Nomenclatural synopsis
+</bold>
+            </title>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis</bold-italic>
+                        <bold> McDaniel, J. Arnold Arbor. 49(1): 36. 1968.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis
+</object-id>
+                    <xref>Figs 1–3
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p><italic>Harperocallis flava</italic> McDaniel.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Key to the Species of </bold><bold-italic>Harperocallis</bold-italic>
+                    </title>
+                    <p> (modified from: Cruden 1991, and Campbell 2010)
+</p>
+                    <table-wrap content-type="key" position="float" orientation="portrait">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="1" colspan="1">1</td>
+                                    <td rowspan="1" colspan="1">Capsules ribbed or unribbed, well-developed lateral veins never extending to the style base</td>
+                                    <td rowspan="1" colspan="1"><bold>6
+</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Capsules 9-ribbed, well-developed lateral veins extending to the style base</td>
+                                    <td rowspan="1" colspan="1"><bold>2</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">2</td>
+                                    <td rowspan="1" colspan="1">Inflorescence compound, the branches subtended by chlorophyllous cataphylls</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. paniculata
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Inflorescence a simple raceme; peduncular bracts scarious</td>
+                                    <td rowspan="1" colspan="1"><bold>3</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">3</td>
+                                    <td rowspan="1" colspan="1">Flowers pendant</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. penduliflora
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Flowers erect</td>
+                                    <td rowspan="1" colspan="1"><bold>4</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">4</td>
+                                    <td rowspan="1" colspan="1">Leaves 2.0–4.0 mm wide, usually glabrous, occasionally ciliate at the sheath apex; peduncles &lt; 1.5 mm wide; calycular bracts longer than wide; tepals 6.0–9.0 <bold>×</bold> 1.5–2.0 mm; anthers 0.9–1.1 mm long
+                                    </td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. duidae</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Leaves 3.0–7.0 mm wide, margin ciliolate to hirsutulous; peduncles &gt; 1.5 mm wide; calycular bracts usually wider than long, sometimes equal; tepals 11–14 <bold>×</bold> 2–4 mm; anthers &gt; 1.1 mm long
+                                    </td>
+                                    <td rowspan="1" colspan="1"><bold>5</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">5</td>
+                                    <td rowspan="1" colspan="1">Leaves 3.0–6.5 mm wide; peduncular bracts 3–8(–10); inflorescence ca. 9–30-flowered; tepals enclosing the rest of the flower; anthers 1.2–1.8 mm long</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. schomburgkiana</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Leaves 6.0–7.0 mm wide; peduncular bracts 3 or 4; inflorescence ca. 25–40-flowered; tepals open; anthers 2.0–2.5 mm long</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. neblinae
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>6
+                                    </td>
+                                    <td rowspan="1" colspan="1">Capsule incompletely 9-ribbed, well-developed lateral veins never extending to the style base</td>
+                                    <td rowspan="1" colspan="1"><bold>7</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">–</td>
+                                    <td rowspan="1" colspan="1">Capsule 3-ribbed or unribbed</td>
+                                    <td rowspan="1" colspan="1"><bold>8</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">7</td>
+                                    <td rowspan="1" colspan="1">Inflorescence with eglandular hairs; peduncular bracts (3–)4–11(–15); flowers (4–)8–28; styles recurved, apices oblique; stigmas facing outward; capsule etuberculate</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. sessiliflora</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><!--PageBreak-->–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Inflorescence glabrous; peduncular bracts 7–17; flowers 23–35; styles straight; stigmas capitate; capsule tuberculate</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. robustior
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>8
+                                    </td>
+                                    <td rowspan="1" colspan="1">Leaves glabrous, veins not prominent; inflorescence 1-flowered; flower erect; ovary densely tuberculate; capsule unribbed</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. flava
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Leaf margin tomentose, ciliolate or glabrous, veins prominent; inflorescence &gt; 1-flowered, or if 1-flowered, the flower pendant; ovary not tuberculate; capsule 3-ribbed</td>
+                                    <td rowspan="1" colspan="1"><bold>9</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><!--PageBreak-->9</td>
+                                    <td rowspan="1" colspan="1">Peduncular bract solitary, chlorophyllous; inflorescence 1–4-flowered; flowers pendant</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. sipapoensis</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">–
+                                    </td>
+                                    <td rowspan="1" colspan="1">Peduncular bracts (1)2–8, scarious; inflorescence &gt; 10-flowered; flowers erect</td>
+                                    <td rowspan="1" colspan="1"><bold>10</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">10</td>
+                                    <td rowspan="1" colspan="1">Calycular bracts usually longer than wide (1.8–3.0 <bold>×</bold> 1.7–2.5 mm); styles 0.3–0.8(–0.9) mm long, straight; stigmas capitate
+                                    </td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. falcata</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">–</td>
+                                    <td rowspan="1" colspan="1">Calycular bracts usually wider than long (1.5–2 <bold>×</bold> 1.8–2.3 mm); styles 0.9–1.1 mm long, recurved, apices oblique; stigmas facing outward
+                                    </td>
+                                    <td rowspan="1" colspan="1"><bold-italic>H. longiflora</bold-italic>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table-wrap>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis duidae</bold-italic>
+                        <bold> (Steyerm.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128356-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_duidae
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Tofieldia duidae</italic> Steyerm., Fieldiana, Bot. 28(1): 156. 1951.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Amazonas:stream bank above Vegas Falls, Brocchinia Hills, summit of Cerro Duida, 1700–1980 m, 1 Sep 1944, <italic>J.A. Steyermark</italic> <italic>58176</italic> (holotype: F [F0046065F!]; isotypes: MO!, NY!, US!, VEN).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia duidae</italic> (Steyerm.) Cruden, Syst. Bot. 16(2): 278. 1991.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on<bold-italic> </bold-italic><italic>Tofieldia duidae</italic> Steyerm.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on<bold-italic> </bold-italic><italic>Tofieldia duidae</italic> Steyerm.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p> (Fig. 1). Endemic to the Guayana Highlands of Venezuela (Amazonas and Bolívar states) where it is known only from two tepuis (Cerros Duida and Jáua); 1000–2100 m.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p><bold> VENEZUELA</bold>. <bold>Amazonas:</bold> Mpio. Atabapo, Parque Nacional Duida-Marahuaka, Macizo del Duida, 2100 m, Apr 1991, <italic>A. Fernández et al. 8094</italic> (US); Cerro Duida, río Cunucunuma, 1000–1100 m, 18 Nov 1950, <italic>B. Maguire et al. 29515</italic> (NY); along upper Caño Culebra, 1500–1600 m, 21 Nov 1950, <italic>B. Maguire et al. 29616 </italic>(NY, US). <bold>Bolívar:</bold> Meseta de Jáua, Cerro Jáua, cumbre de la porción Central-Occidental de la Meseta, 1922–2100 m, 22–27 Mar 1967, <italic>J.A. Steyermark 97899</italic> (NY).
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis falcata</bold-italic>
+                        <bold> (Ruiz &amp; Pav.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128358-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_falcata
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Isidrogalvia falcata</italic> Ruiz &amp; Pav., Fl. Peruv. 3: 69, t. 302b. 1802.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Peru. de Pillao [sic], <italic>H. Ruiz &amp; J.A. Pavon s.n.</italic> (lectotype: MA [MA810531!], F-negative no. 29435 (F!, MO!), selected by Cruden, 1991; possible isolectotypes: BC [BC872749!], BM [BM000938089!], MA [MA810498!, MA [MA810530!]).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Tofieldia falcata</italic> (Ruiz &amp; Pav.) Pers., Syn. Pl. 1: 399. 1805.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><!--PageBreak-->Type: Based on <italic>Isidrogalvia falcata</italic> Ruiz &amp; Pav.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Tofieldia falcata</italic> (Ruiz &amp; Pav.) Willd., Ges. Naturf. Freunde Berlin Mag. Neuesten Entdeck. Gesammten Naturk. 2: 29. 1808, comb. illeg.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Isidrogalvia falcata</italic> Ruiz &amp; Pav.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Narthecium falcatum</italic> (Ruiz &amp; Pav.) Poir., Encycl., Suppl. 4: 61. 1816.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Isidrogalvia falcata</italic> Ruiz &amp; Pav.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Asphodeleris falcata</italic> (Ruiz &amp; Pav.) Kuntze, Revis. Gen. Pl. 2: 706. 1891.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Isidrogalvia falcata</italic> Ruiz &amp; Pav.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Tofieldia flexuosa</italic> Willd., Ges. Naturf. Freunde Berlin Mag. Neuesten Entdeck. Gesammten Naturk. 2: 28. 1808.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Peru [Ecuador?]. <italic>F.W.H.A. von Humboldt &amp; A.J.A. Bonpland 3383</italic> (holotype: B-W [B-W-07103-01 0!]; isotypes: GH-fragm., P [P02137266!]).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Tofieldia frigida</italic> Kunth in H.B.K., Nov. Gen. Sp. [quarto ed.] 1: 267. 1815 [1816]; Ibid. [folio ed.] 1: 213. 1815 [1816]. Type: Peru [Ecuador?]. <italic>F.W.H.A. von Humboldt &amp; A.J.A. Bonpland 3383</italic> (neotype, here designated: B-W [B-W-07103-01 0!]; isoneotypes: GH-fragm., P [P02137266!]).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Isidrogalvia falcata</italic> Ruiz &amp; Pav.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p>(Fig 1). The Andes of Ecuador (Azuay, Cañar, Loja, Morona-Santiago, and Zamora-Chinchipe provinces) and Peru (Amazonas, Cajamarca, Cusco, Huánuco, Junín, and Pasco regions); 2300–3860 m.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p><bold> ECUADOR. Azuay:</bold> Cordillera Oriental, alrededores del Páramo de Patococha entre Gualaceo y Limon, 3400–3450 m, 6–7 Aug 1959, <italic>H.G. Barclay &amp; P. Juajibioy 8632</italic> (MO, NY); Km 85 on Pan American Highway N of Loja, 2850–2950 m, 3 May 1973, <italic>L. Holm-Nielsen et al. 4815</italic> (MO, NY); Hac. Horta-Naque, 3100 m, 11 Jun 1946, <italic>H.N. Moldenke 869</italic> (NY). <bold>Cañar:</bold> Cerro Yanguán NE of Pindilig, 3100 m, 13 Dec 1980, <italic>L.B. Holm-Nielsen et al.</italic> <italic>29300 </italic>(MO, NY). <bold>Loja:</bold> Loma de Oro at Panamerican Highway, 3300 m, 2 Jan 1981, <italic>H. Balslev 1382 </italic>(MO, NY, US); Yangana–Zumba road Km 15–20, N slopes of Cordillera de Sabanilla, 2550 m, 31 Dec 1980, <italic>H. Balslev 1298 </italic>(NY). <bold>Loja/Zamora-Chinchipe:</bold> Parque Nacional Podocarpus, crest of the Cordillera de los Andes E and SE of Nudo de Cajanuma, s.d., <italic>B. Øllgaard 90768 </italic>(NY). <bold>Morona/Santiago:</bold> Gualaceo–Sigsig–Gualaquiza road, SSE of Sigsig, 03°11'S, 78°40'W, ca. 2900–3090 m, 3 Dec 1990, <italic>J.L. Luteyn et al. 14287 </italic>(NY). <bold>PERU.</bold> <bold>Amazonas: </bold>Prov. Chachapoyas: Cerca a Calla-Calla, siguiendo la ruta a Leymebamba–Balsas, 3860 m, 18 Dec 1992, <italic>I. Sanchez Vega &amp; J. Tanta 6481</italic> (US); Cerros [de] Calla Calla, east side, 19 km above Leimebamba [sic] on the road to Balsas, 3100 m, 4 Jun 1964, <italic>P.C. Hutchinson &amp; J.K. Wright 5510</italic> (NY, US).<bold>Cajamarca:</bold> Prov. Cutervo: 2350 m, 22 Jun 1992, <italic>I. Sanchez Vega &amp; A. Miranda 6265 </italic>(NY).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> When compared to its present on-line image (http://plants.jstor.org/specimen/ma810531), a photograph (F-negative no. 29435) of the lectotype of <italic>Isidrogalvia falcata</italic> taken by J. Francis Macbride of the Field Museum before World War II shows <!--PageBreak-->that the original label (“<italic>Isidrogalvia falcata</italic> Sp. Pl. Fl. Per. de Pillao”) was moved from the center of the specimen to the lower left-hand corner.
+                    </p>
+                    <p><italic>Tofieldia frigida</italic> was based on a collection or collections made by F.W.H.A. von Humboldt &amp; A.J.A. Bonpland in Ecuador (“Crescit in frigidis regni Quitensis inter Loxam et pagum Ona, in summis montibus Saraguri, et Alpachacae, alt. 1200–1400 hexap, … Floret Decembri.”). While no material with this name was found in Paris (P-Bonpl.) (Stauffer et al. 2012), the type specimen of <italic>T. flexuosa </italic>in B-W is annotated as <italic>Isidrogalvis </italic>[sic] <italic>frigida</italic> Klotzsch, nom. nud. This strongly supports that the names <italic>T. frigida</italic> and <italic>T. flexuosa</italic> are based on the same gathering (i.e., <italic>F.W.H.A. von Humboldt &amp; A.J.A. Bonpland 3383</italic>) and we have selected this collection to neotypify the name <italic>T. frigida</italic>.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis flava</bold-italic>
+                        <bold> McDaniel, J. Arnold Arbor. 49(1): 38, figs 1, 2. 1968.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_flava
+</object-id>
+                    <xref>Fig. 2 A, B
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Isidrogalvia flava</italic> (McDaniel) Remizowa et al., Taxon 60(4): 1092. 2011.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Harperocallis flava</italic> McDaniel
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type. </bold>
+                    </title>
+                    <p>U.S.A. Florida: Franklin Co: 2.2 miles south of Sumatra, 11 May 1965<italic>, S. McDaniel 6205 </italic>(holotype: A; isotypes: BM, DUKE, FLAS [FLAS-97596!], FSU [000004217!], GA, M!, MO!, NCU, NY!, PH [00013616!], SMU [BRIT 23682], US-not found).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p>(Fig. 1). Endemic to the southeastern U.S.A. where it is known only from the Apalachicola River lowlands on the Coastal Plain of the Florida panhandle (Bay, Franklin, and Liberty counties).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p><bold> U.S.A. Florida:</bold> Bay Co.: North of highway 22 and east of Star Avenue, 16 May 2003, <italic>L. Keppner 37</italic> (FSU [000081383]). Franklin Co.: 15 May 1978, <italic>A.F. Clewell s.n.</italic> (FSU [000004215]; 25 May 1979, <italic>L.C. Anderson 4875</italic> (FSU [000004220]). Liberty Co.: North side of turn in Route 65, 1.8 miles southwest of Wilma, 8 air miles north of Sumatra, 1 May 1986,<italic> L.C. Anderson 9287</italic> (FSU [000004223], NY); 12 May 1982, <italic>A. Gholson, Jr. et al. 9699</italic> (FLAS [FLAS-168245], FSU [000001249]); 19 Oct 2005, <italic>L.C. Anderson et al. 23047 </italic>(FSU [000037492]). <bold>District of Columbia: </bold>U.S. Botanic Garden, Washington, cultivated from Florida, 7 Jul 2007, <italic>L.M. Campbell 1045 </italic>(NY)<italic>.</italic>
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Note.</bold>
+                    </title>
+                    <p>Zomlefer (1997) provides a complete description and detailed illustration of <italic>Harperocallis flava</italic>.
+                    </p>
+                    <p>A search of the collection and accession records of the U.S. National Herbarium (US) indicates that not all of the herbaria McDaniel (1968) listed in his protologue have isotypes accessioned.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis longiflora</bold-italic>
+                        <bold> (Rusby) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128360-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_longiflora
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Asagraea</italic> <italic>longiflora</italic> Rusby, Bull. New York Bot. Gard. 6(22): 491. 1910.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Bolivia. La Paz: Franz Tamayo: Near Apolo, ca. 1785 m, 24 Jul 1902, <italic>R.S. Williams 1471</italic> (holotype: NY!).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia longiflora</italic> (Rusby) Cruden &amp; Dorr, Brittonia 44(3): 368. 1992.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Asagraea</italic> <italic>longiflora</italic> Rusby
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p>(Fig. 1). Known only from the type locality and vicinity in Bolivia (La Paz department); 1785–2000 m.
+                    </p>
+                    <!--PageBreak-->
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimen.</bold>
+                    </title>
+                    <p> <bold>Bolivia. La Paz:</bold> Franz Tamayo: Senda Apolo–San José de Uchupiamonas, último arroyo antes de río Huacataya, 1958 m, 8 Oct 2002, <italic>C. Maldonado et al. 3138 </italic>(MO).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Note.</bold>
+                    </title>
+                    <p> Another recent collection, <italic>C. Maldonado et al. 3121</italic>, from the same locality at a slightly higher elevation (2000 m) is reported to be at LPB (see Missouri Botanical Garden 2013).
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis neblinae</bold-italic>
+                        <bold> (Steyerm. ex L.M. Campb.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128371-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_neblinae
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Isidrogalvia neblinae</italic> Steyerm. ex L.M. Campb., Harvard Pap. Bot. 15(1): 52, fig. 1. 2010.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Amazonas: Cerro de la Neblina, altiplanicie en la cumbre del brazo noroccidental, al norte del campamento base a lo largo del Río Mawarinuma, afluente del Río Baria, 1880 m, 7–8 Feb 1984, <italic>J.A. Steyermark &amp; J.L. Luteyn 129828</italic> (holotype: VEN!; isotype: MO!).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Isidrogalvia neblinae</italic> Steyerm. ex L.M. Campb.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p> (Fig. 1). Known only from Cerro de la Neblina in the Guayana Highlands of Venezuela (Amazonas state); 1700–2100 m. This species is expected to occur also in the Brazilian part of the massif (Amazonas state).
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p><bold> VENEZUELA. Amazonas</bold>: Mpio. Río Negro, Cerro de la Neblina, altiplanicie en la cumbre del brazo noroccidental, al norte del campamento base a lo largo del Río Mawarinuma, afluente del Río Baria, aprox. 0°52–53'N; 66°05'W, 1880 m, 7–8 Feb 1984, <italic>J.A. Steyermark &amp; J.L. Luteyn</italic> 129828-A (VEN-unicate); 4–6 km northeast of Cumbre Camp, 2100 m, 20 Nov 1957, <italic>B. Maguire et al. 42154</italic> (NY); Ridge at divide between Brazil and Venezuela, 26 km east-northeast of Neblina base camp, ca. 0°53'N; 65°56'W, 2000 m, 15 Apr 1984, <italic>T. Plowman &amp; W.W. Thomas 13594</italic> (F).
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis paniculata</bold-italic>
+                        <bold> (L.M. Campb.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128372-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_paniculata
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Isidrogalvia paniculata</italic> L.M. Campb., Harvard Pap. Bot. 15(1): 52, fig. 2. 2010.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Brazil. Amazonas: Serra da Neblina, open slopes to base of cliffs, Pico Phelps, 2600–2700 m, 2 Dec 1965, <italic>B. Maguire, J.M. Pires &amp; C.K. Maguire 60463 p.p. </italic>(holotype: NY!).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on<bold-italic> </bold-italic><italic>Isidrogalvia paniculata</italic> L.M. Campb.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p> (Fig. 1). Known only from Serra da Neblina in Brazil (Amazonas state); 2600–2700 m. This species may occur also in the Venezuelan part of the massif (Amazonas state).
+</p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis penduliflora</bold-italic>
+                        <bold> (L.M. Campb.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128373-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_penduliflora
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Isidrogalvia penduliflora</italic> L.M. Campb., Harvard Pap. Bot. 15(1): 54, fig. 3. 2010.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Amazonas: Mpio. Río Negro, Cerro de la Neblina camp 2, Neblina massif, 2.8 km NE of Pico Phelps, 2100 m, 15 Apr 1984, <italic>B.A. Stein &amp; A.H. Gentry 1559</italic> (holotype: VEN!; isotypes: K [K000400739!] US!).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia schomburgkiana</italic> var. <italic>patula</italic> Remizowa, Byull. Moskovsk. Obshch. Isp. Prir., Otd. Biol. 112(4): 74. 2007.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Amazonas: Mpio. Río Negro, Neblina Massif, Camp II, 2.8 km NE of Pico Phelps (= Neblina), 2085–2100 m, 16 Mar 1984, <italic>B.L. Stannard 137</italic> (holotype: K [K000400738!]; isotype: VEN!).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on<italic>Isidrogalvia penduliflora</italic> L.M. Campb.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p>(Fig. 1). Known only from the vicinity of the type locality in the Guayana Highlands of Venezuela (Amazonas state); 1800–2100 m. This species likely occurs also in the Brazilian part of the massif (Amazonas state).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p> <bold>VENEZUELA. Amazonas:</bold> Mpio. Río Negro, Neblina massif, camp II, 2.8 km NE of Pico Phelps (= Neblina), on plateau, 0°49'40&quot;N; 65°59'W, 2085–2100 m, 17 Mar 1984, <italic>B.L. Stannard 166</italic> (VEN); <italic>S.S. Renner 2026 </italic>pro parte (MO [1434169]).
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis robustior</bold-italic>
+                        <bold> (Steyerm.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128374-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_robustior
+</object-id>
+                    <xref>Figs 2 C, D, 3
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Tofieldia sessiliflora</italic> var. <italic>robustior</italic> Steyerm., Fieldiana, Bot. 28(1): 157. 1951.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Lara:Wet meadow at Las Sabanetas, above Los Aposentos, west of Humocaro Bajo, 2530 m, 5 Feb 1944, <italic>J.A. Steyermark 55291</italic> (holotype: F [F0046066F!]; isotype: NY!).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia robustior</italic> (Steyerm.) Cruden, Syst. Bot. 16(2): 278. 1991.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Tofieldia sessiliflora</italic> var. <italic>robustior</italic> Steyerm.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Tofieldia sessiliflora</italic> var. <italic>robustior</italic> Steyerm.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p>(Fig. 1). Andes of Venezuela (Lara, Mérida, and Trujillo states); 2200–3700 m.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p><bold> Venezuela. Lara:</bold> Mpio. Moran, below Páramo Las Rosas, 2285–3290 m, 25 Jun 1979, <italic>R. Liesner et al. 7965</italic> (MO, NY). <bold>Mérida:</bold> Mpio. Rangel, Cerro el Guamo, 3100–3200 m, 19 Jun 1988, <italic>L.J. Dorr &amp; L.C. Barnett 5627 </italic>(NY). <bold>Trujillo:</bold> Páramo de Cachaco, 3400–3700 m, 7 Nov 1927, <italic>P.</italic> <italic>Christ 84 </italic>(NY); Mpio. Boconó, Páramo de Guaramacal, ca. 3080 m, ca. <!--PageBreak-->9°14'N, 70°11'W, 28 Apr 1988, <italic>L.J. Dorr et al. 4967</italic> (NY, PORT); Páramo de Guirigay, 3000 m, 22 Apr 2002, <italic>L.J. Dorr et al. 9200 </italic>(NY, PORT, US); Parque Nacional Guaramacal, vertiente norte, ca. 1977–2350 m, 28 Apr 1998, <italic>B. Stergios et al. 17327</italic> (PORT-unicate); Laguna Larga via Laguna Las Parias to Laguna Eco, Páramo de Motumbo, 2400–2600 m, 15 Sep 2003, <italic>B. Stergios et al. 20368</italic> (F, MO, NY, PORT, US).
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis schomburgkiana</bold-italic>
+                        <bold> (Oliv.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128375-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_schomburgkiana
+</object-id>
+                    <xref>Fig. 2 E, F
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Tofieldia schomburgkiana</italic> Oliv. in Thurn, Timehri 5: 206. 1886; [Trans. Linn. Soc., ser. 2, 2: 206, t. 49, fig. A 1–6. 1887].
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Roraima, summit, ca. 1845 m, Oct, <italic>M.R.</italic> <italic>Schomburgk s.n.</italic> (lectotype: K [K000099720!], MO [F negative 10002!], selected by Cruden 1991).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia schomburgkiana</italic> (Oliv.) Cruden, Syst. Bot. 16(2): 276. 1991.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Tofieldia schomburgkiana</italic> Oliv.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia guianensis</italic> Klotzsch in Ri. Schomburgk, Reis. Br.-Guiana 3: 1065. 1848 [1849], nom. nud.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Tofieldia guianensis</italic> (Klotzsch) R. Schulze, Bot. Jahrb. Syst. 17(3–4): 330. 1893, comb. illeg.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Tofieldia schomburgkiana</italic> Oliv.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p> (Fig. 1). Guayana Highlands of Venezuela (Amazonas and Bolívar states) and adjacent Guyana; 1430–2800 m.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p><bold> GUYANA. Cuyuni-Mazaruni Region:</bold> Mt. Maringma, summit, 2110 m, 15 Jun 2004, <italic>H.D. Clarke et al</italic>.<italic> 11717</italic> (MO, NY, US); Paruima, 20 km W, Waukauyengtipu, 1430 m, 18 Jul 1997, <italic>H.D. Clarke et al. 5855 </italic>(NY); Below 1st escarpment (of four) of Kamakusa Mt., 0–1 mi. SW of Ducking (1st) Camp [heading] to savanna, 5°45'58.9&quot;N, 60°15'57.6&quot;W, 637m, 15 May 2012, <italic>K.J. Wurdack et al. 5636</italic> (US). <bold>Upper Takutu</bold>-<bold>Upper Essequibo:</bold> Mount Roraima, summit, Autumn 1898, <italic>J.J. Quelch &amp; F. McConnell 657 </italic>(NY). <bold>VENEZUELA. Amazonas:</bold> Mpio. Atabapo, Cerro Marahuaca-Atuhua-Shiho, cumbre, parte aislada al Sur-Oeste del Cerro, 2450–2480 m, 9–10 Feb 1982, <italic>J.A. Steyermark et al. 124367 </italic>(MO, NY), cumbre, sección noroccidental, 2500 m, 16 Feb 1981, <italic>J.A. Steyermark et al.</italic> <italic>124393 </italic>(MO, NY); Caño Sapo, summit of Mount Duida, 1920 m, Aug 1928 to Apr 1929, <italic>J.A. Steyermark 690 </italic>(NY). <bold>Bolívar:</bold> Cerro Guaiquinima, Río Paragua, 1800 m, 29 Dec 1951, <italic>J.J. Wurdack 32817 </italic>(MO, NY); North Valley, 1600–1700 m, 10–12 Jan 1952, <italic>J.J. Wurdack 33039 </italic>(NY); macizo del Chimantá, sección nor-oriental del Acopan-tepui, 1950 m, 8–11 Feb 1985, <italic>J.J. Pipoly et al. 7207 </italic>(NY).
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis sessiliflora</bold-italic>
+                        <bold> (Hook.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128376-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_sessiliflora
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Tofieldia sessiliflora</italic> Hook., Icones Pl., ser. 2, 7: t. 691. 1844.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Colombia.“Andes of New Grenada,” 1842–3, <italic>J.J. Linden 410 </italic>pro parte(lectotype: K, selected by Cruden, 1991; isolectotype: BM [BM000938091!]).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Asphodeleris sessiliflora</italic> (Hook.) Kuntze, Revis. Gen. Pl. 2: 706. 1891. Type: Based on <italic>Tofieldia sessiliflora</italic> Hook.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia sessiliflora</italic> (Hook.) Cruden, Syst. Bot. 16(2): 279. 1991.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Based on <italic>Tofieldia sessiliflora</italic> Hook.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Isidrogalvia moritziana</italic> Klotzsch ex Baker, J. Linn. Soc., Bot. 17(103): 489. 1879, nom. nud., pro syn.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Tofieldia moritziana</italic> (Klotzsch ex Baker) R. Schultze, Bot. Jahrb. Syst. 17(3–4): 330. 1893, comb. illeg.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Tofieldia sessiliflora</italic> Hook.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p> (Fig. 1). Andes of Venezuela (Mérida and Táchira states) and Colombia (Antioquia, Boyacá, César, Cundinamarca, Huila, Magdalena, and Norte de Santander departments); 2500–3200 m. Cruden (1991) also cites a dubious record (<italic>J.A. Steyermark 54804</italic>) from Ecuador (Loja), which we have not mapped.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p> <bold>VENEZUELA. Mérida:</bold> Páramo de los Conejos, 3300 m, 24 Jun 1953, <italic>L. Bernardi 685 </italic>(NY); Mpio. Rivas Dávila, 25 km NE of La Grita, 2830 m, 15 Apr 1984, <italic>J.L. Luteyn &amp; M. Lebrón-Luteyn 9928 </italic>(NY). <bold>Táchira: </bold>NE side of Páramo de Táma, 2900–3200 m, 18 Oct 1978, <italic>J.L. Luteyn et al. 5906 </italic>(MO, NY, US). <bold>COLOMBIA. Boyacá:</bold> Cordillera Oriental, Páramo de Belén, 3150 m, 6 May 1959,<italic> H.G. Barclay &amp; P. Juajibioy 7564 </italic>(MO, NY). <bold>Cundinamarca:</bold> Chapinero, near Bogotá, 3000–3100 m, 18–23 Sep 1917, <italic>F.W. Pennell 2013</italic> (NY, US). <bold>Huila:</bold> Río Balsillas, 2100–2200 m, 3–5 Aug 1917, <italic>H.H. Rusby &amp; F.W. Pennell 756 </italic>(MO, NY-2 sheets, US). <bold>Magdalena:</bold> Sierra de Perijá, east of Manaure, Sabana Rubia, 3000–3100 m, 6 Nov 1959, <italic>J. Cuatrecasas &amp; R. Romero Castaneda 25040</italic> (US). <bold>Norte de Santander/César</bold>: Cerro de Oroque, 3700–3960 m, 19–21 May 1969, <italic>H. García-Barriga &amp; R.J. Mejía 19740</italic> (NY, US).
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Harperocallis sipapoensis</bold-italic>
+                        <bold> (L.M. Campb.) L.M. Campb. &amp; Dorr, comb. nov.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:ipni.org:names:77128377-1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Harperocallis_sipapoensis
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Isidrogalvia sipapoensis</italic> L.M. Campb., Harvard Pap. Bot. 15(1): 57, figs 4, 5. 2010.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Type: Venezuela. Amazonas: Mpio. Autana, Cerro Cuao–Sipapo, canyon on northeastern end of massif, ca. 1700 m, 14 Sep 2001, <italic>L.M. Campbell, G.A. Romero-González &amp; C. Gómez 798</italic> (holotype: VEN!; isotypes: GH!, MO!, NY!, TFAV).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><!--PageBreak--></tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type.</bold>
+                    </title>
+                    <p> Based on <italic>Isidrogalvia sipapoensis</italic> L.M. Campb.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution</bold>
+                    </title>
+                    <p> (Fig. 1). Known only from Cerro Sipapo in the Guayana Highlands of Venezuela (Amazonas state); 1500–1700 m. This species likely occurs also on the geologically and floristically similar Cerro Autana, which is near the type locality.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Representative specimens.</bold>
+                    </title>
+                    <p> <bold>VENEZUELA. Amazonas:</bold> Mpio. Atures, areniscas del Cerro Cuao, Caño Cabeza de Manteco, 73 km SE de Pto. Ayacucho, 5°06'N; 67°24'W, 1580 m, Sep 1989, <italic>A. Fernández et al. 6207</italic> (MO, NY, PORT); Serranía Sipapo, cumbre, 5°N; 67°30'O, 1500 m, 17 Feb 1981, <italic>J.A. Steyermark et al. 124556</italic> (VEN).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Excluded name.</bold>
+                    </title>
+                    <p> <italic>Isidrogalvia borealis</italic> Ruiz &amp; Pav. ex Steud., Nomencl. Bot. 839. 1821., nom. nud., pro syn. = <bold-italic>Tofieldia palustris</bold-italic><bold> Huds.</bold>
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>We especially appreciate the assistance of Rose Gulledge (US) who prepared the map and arranged the figures. We thank Cathy Pasquale for preparing the illustration of <italic>Harperocallis</italic> <italic>robustior</italic>; Donald Wheeler (Mertz Library, NY) for providing critical literature; Andres Botero (NY) for technical assistance; Brett Jestrow (FTG) for providing a specimen image; Kenneth Wurdack (US) for sharing photographs; the curators and staff at A, B, BC, BM, BRIT, F, FLAS, FSU, GH, K, MA, MO, NY, P, PH, PORT, US, and VEN for access to their specimens; and Wendy Zomlefer (GA) for a critical review of the manuscript.
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Applequist</surname> <given-names>WL</given-names></name></person-group> (<year>2012</year>)<article-title> Report of the Nomenclature Committee for Vascular Plants: 64.</article-title> <source>Taxon </source> <volume>61</volume> (<issue>5</issue>): <fpage>1108</fpage>-<lpage>1117</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Azuma</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Tobe</surname> <given-names>H</given-names></name></person-group> (<year>2011</year>)<article-title> Molecular phylogenetic analyses of Tofieldiaceae (Alismatales): Family circumscription and intergeneric relationships.</article-title> <source>Journal of Plant Research </source> <volume>124</volume> (<issue>3</issue>): <fpage>349</fpage>-<lpage>357</lpage>. doi: 10.1007/s10265-010-0387-5
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple">BRIT Virtual Herbarium. Atrium Biodiversity Information System for the Botanical Research Institute of Texas. http://atrium.brit.org [accessed on 16 April 2013]
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Campbell</surname> <given-names>LM</given-names></name></person-group> (<year>2010</year>)<article-title> Four new species of <italic>Isidrogalvia</italic> (Tofieldiaceae) from the Guayana Highlands.</article-title> <source>Harvard Papers in Botany </source> <volume>15</volume> (<issue>1</issue>): <fpage>51</fpage>-<lpage>62</lpage>. doi: 10.3100/025.015.0119
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cruden</surname> <given-names>RW</given-names></name></person-group> (<year>1991</year>)<fake_tag> A revision of <italic>Isidrogalvia</italic> (Liliaceae): Recognition for Ruíz &amp; Pavón’s genus. Systematic Botany 16(2): 270–282. http://www.jstor.org/stable/2419279
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cruden</surname> <given-names>RW</given-names></name>,<name name-style="western"><surname>Dorr</surname> <given-names>LJ</given-names></name></person-group> (<year>1992</year>)<article-title> A previously unrecognized <italic>Isidrogalvia</italic> (Liliaceae) from Bolivia.</article-title> <source>Brittonia </source> <volume>44</volume> (<issue>3</issue>): <fpage>368</fpage>-<lpage>369</lpage>. doi: 10.2307/2806941
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>The</surname> <given-names>Field Museum</given-names></name></person-group> (<year>2013</year>)<fake_tag> http://emuweb.fieldmuseum.org/botany/taxResultsList.php [accessed on 6 February 2013]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Florida</surname> <given-names>Museum of Natural History</given-names></name></person-group> (<year>1995–2013</year>)<fake_tag> University of Florida Herbarium. http://www.flmnh.ufl.edu/herbarium/cat/imagesearch.asp [accessed 6 February 2013]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Godt,</surname> <given-names>MJ</given-names></name>,<name name-style="western"><surname>Walker</surname> <given-names>WJ</given-names></name>,<name name-style="western"><surname>Hamrick</surname> <given-names>JL</given-names></name></person-group> (<year>1997</year>)<article-title> Genetic diversity in the endangered lily <italic>Harperocallis flava</italic> and a close relative, <italic>Tofieldia racemosa</italic>.</article-title> <source>Conservation Biology </source> <volume>11</volume> (<issue>2</issue>): <fpage>361</fpage>-<lpage>366</lpage>. doi: 10.1046/j.1523-1739.1997.95439.x
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hudson</surname> <given-names>WH</given-names></name></person-group> (<year>1787</year>)<fake_tag> Flora Anglica: exhibens Plantas per Regnum Angliae Sponte Crescentes, Distributas Secundum Systema Sexuale. 2 ed. Vol. 1. Impensis auctoris, London.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>JSTOR</surname> <given-names></given-names></name></person-group> (<year>2012</year>)<fake_tag> Trademark of ITHAKA. http://plants.jstor.org/ [accessed on 6 February 2013]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Keppner</surname> <given-names>LA</given-names></name>,<name name-style="western"><surname>Anderson</surname> <given-names>LC</given-names></name></person-group> (<year>2008</year>)<article-title> Notes on Harper’s Beauty, <italic>Harperocallis flava</italic> (Tofieldiaceae), in Bay County, Florida.</article-title> <source>Southeastern Naturalist </source> <volume>7</volume> (<issue>1</issue>): <fpage>180</fpage>-<lpage>184</lpage>. doi: 10.1656/1528-7092(2008)7[180:NOHBHF]2.0.CO;2
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Leonard</surname> <given-names>SW</given-names></name>,<name name-style="western"><surname>Baker</surname> <given-names>WW</given-names></name></person-group> (<year>1983</year>)<fake_tag> Additional populations of <italic>Harperocallis flava</italic> McDaniel (Liliaceae). Castanea 48(2): 151–152.http://www.jstor.org/stable/4033078
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>McDaniel</surname> <given-names>S</given-names></name></person-group> (<year>1968</year>)<article-title> <italic>Harperocallis</italic>, a new genus of the Liliaceae from Florida.</article-title> <source>Journal of the Arnold Arboretum </source> <volume>49</volume> (<issue>1</issue>): <fpage>35</fpage>-<lpage>40</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>McNeill</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Barrie</surname> <given-names>FR</given-names></name>,<name name-style="western"><surname>Buck</surname> <given-names>WR</given-names></name>,<name name-style="western"><surname>Demoulin</surname> <given-names>V</given-names></name>,<name name-style="western"><surname>Greuter</surname> <given-names>W</given-names></name>,<name name-style="western"><surname>Hawksworth</surname> <given-names>DL</given-names></name>,<name name-style="western"><surname>Herendeen</surname> <given-names>PS</given-names></name>,<name name-style="western"><surname>Knapp</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Marhold</surname> <given-names>K</given-names></name>,<name name-style="western"><surname>Prado</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Prud’homme</surname> <given-names>van Reine WF</given-names></name>,<name name-style="western"><surname>Smith</surname> <given-names>GF</given-names></name>,<name name-style="western"><surname>Wiersema</surname> <given-names>JH</given-names></name>,<name name-style="western"><surname>Turland</surname> <given-names>NJ</given-names></name></person-group> (<role>Eds</role>) (<year>2012</year>)<fake_tag> International Code of Nomenclature for algae, fungi, and plants (Melbourne Code): Adopted by the Eighteenth International Botanical Congress Melbourne, Australia, July 2011. Regnum Vegetabile 154. Koeltz Scientific Books, Königstein.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple">Mast AR, Stuy A, Nelson G, Bugher A, Weddington N, Vega J, Weismantel K, Feller DS, Paul D (2004 onward [continuously updated]) Database of Florida State University’s Robert K. Godfrey Herbarium.http://herbarium.bio.fsu.edu/ [accessed on 6 February 2013]</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Missouri</surname> <given-names>Botanical Garden</given-names></name></person-group> (<year>2013</year>)<fake_tag> Tropicos.org. Missouri Botanical Garden. http://www.tropicos.org [accessed 6 February 2013]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mosyakin</surname> <given-names>AS</given-names></name>,<name name-style="western"><surname>Bezusko</surname> <given-names>AG</given-names></name>,<name name-style="western"><surname>Tsymbalyuk</surname> <given-names>ZM</given-names></name></person-group> (<year>2009</year>)<article-title> Palynomorphological peculiarities of representatives of the family Tofieldiaceae (Liliopsida) and <italic>Isidrogalvia</italic>: Evolutionary aspects.</article-title> <source>Naukovy Zapiski, Biologiya ta Ecologiya</source> <volume>93</volume>: <fpage>16</fpage>-<lpage>22</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Muséum</surname> <given-names>National d’Histoire Naturelle</given-names></name></person-group> (<year>2013</year>)<fake_tag> http://coldb.mnhn.fr/Consultation?catalogue=1 [accessed 6 February 2013]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pitts-Singer</surname> <given-names>TL</given-names></name>,<name name-style="western"><surname>Hanula</surname> <given-names>JL</given-names></name>,<name name-style="western"><surname>Walker</surname> <given-names>JL</given-names></name></person-group> (<year>2002</year>)<article-title> Insect pollinators of three rare plants in a Florida longleaf pine forest.</article-title> <source>Florida Entomologist </source> <volume>85</volume> (<issue>2</issue>): <fpage>308</fpage>-<lpage>316</lpage>. doi: 10.1653/0015-4040(2002)085[0308:IPOTRP]2.0.CO;2
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remizowa</surname> <given-names>MV</given-names></name></person-group> (<year>2007</year>)<article-title> A new variety of <italic>Isidrogalvia schomburgkiana</italic> (Oliver) Cruden (Tofieldiaceae) from Venezuela. Byulleten’ Moskovskogo Obshchestva Ispytatelei Prirody. Otdel Biologicheskii.</article-title> <source>Moscow [Bulletin of Moscow Society of Naturalists, Biological Series] </source> <volume>112</volume> (<issue>4</issue>): <fpage>73</fpage>-<lpage>75</lpage>. [In Russian, with English summary].
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remizowa</surname> <given-names>MV</given-names></name>,<name name-style="western"><surname>Sokoloff</surname> <given-names>DD</given-names></name>,<name name-style="western"><surname>Campbell</surname> <given-names>LM</given-names></name>,<name name-style="western"><surname>Stevenson</surname> <given-names>DW</given-names></name>,<name name-style="western"><surname>Rudall</surname> <given-names>PJ</given-names></name></person-group> (<year>2011</year>)<article-title><italic> Harperocallis</italic> is congeneric with <italic>Isidrogalvia</italic> (Tofieldiaceae, Alismatales): Evidence from comparative floral morphology.</article-title> <source>Taxon </source> <volume>60</volume> (<issue>4</issue>): <fpage>1076</fpage>-<lpage>1094</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remizowa</surname> <given-names>MV</given-names></name>,<name name-style="western"><surname>Sokoloff</surname> <given-names>DD</given-names></name>,<name name-style="western"><surname>Rudall</surname> <given-names>PJ</given-names></name></person-group> (<year>2010</year>)<article-title> Evolutionary history of the monocot flower.</article-title> <source>Annals of the Missouri Botanical Garden</source> <volume>97</volume> (<issue>4</issue>): <fpage>617</fpage>-<lpage>645</lpage>. doi: 10.3417/2009142</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Röpert</surname> <given-names>D</given-names></name></person-group> (<year>2000</year>)<fake_tag> [continuously updated] Digital specimen images at the Herbarium Berolinense. Botanischer Garten und Botanisches Museum Berlin-Dahlem, Freie Universität Berlin. http://ww2.bgbm.org/Herbarium/default.cfm [accessed 6 February 2013]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Ruiz</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Pavon</surname> <given-names>JA</given-names></name></person-group> (<year>1802</year>)<fake_tag> Flora Peruviana, et Chilensis. Vol. 3. Typis Gabrielis de Sancha, Madrid.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sokoloff</surname> <given-names>DD</given-names></name>,<name name-style="western"><surname>Remizowa</surname> <given-names>MV</given-names></name>,<name name-style="western"><surname>Campbell</surname> <given-names>LM</given-names></name>,<name name-style="western"><surname>Stevenson</surname> <given-names>DW</given-names></name>,<name name-style="western"><surname>Rudall</surname> <given-names>PJ</given-names></name>,<name name-style="western"><surname>Gandhi</surname> <given-names>KN</given-names></name></person-group> (<year>2011</year>)<fake_tag> (2020) Proposal to conserve the name <italic>Isidrogalvia</italic> (Tofieldiaceae) with a conserved type. Taxon 60(3): 909.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stauffer</surname> <given-names>FW</given-names></name>,<name name-style="western"><surname>Stauffer</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Dorr</surname> <given-names>LJ</given-names></name></person-group> (<year>2012</year>)<article-title> Bonpland and Humboldt specimens, field notes, and herbaria; new insights from a study of the monocotyledons collected in Venezuela.</article-title> <source>Candollea </source> <volume>67</volume> (<issue>1</issue>): <fpage>75</fpage>-<lpage>130</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>US</surname> <given-names>Fish and Wildlife Service</given-names></name>,<name name-style="western"><surname>Region</surname> <given-names>4</given-names></name></person-group> (<year>1991</year>)<fake_tag> Endangered &amp; threatened species of the southeastern United States. USFWS, Atlanta, Georgia.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Walker</surname> <given-names>JL</given-names></name>,<name name-style="western"><surname>Silletti,</surname> <given-names>AM</given-names></name></person-group> (<year>2005</year>)<article-title> A three-year demographic study of Harper’s beauty (<italic>Harperocallis flava </italic>McDaniel), an endangered Florida endemic.</article-title> <source>Journal of the Torrey Botanical Society </source> <volume>132</volume> (<issue>4</issue>): <fpage>551</fpage>-<lpage>560</lpage>. doi: 10.3159/1095-5674(2005)132[551:ATDSOH]2.0.CO;2
+</mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zomlefer</surname> <given-names>WB</given-names></name></person-group> (<year>1997</year>)<article-title> The genera of Tofieldiaceae in the southeastern United States.</article-title> <source>Harvard Papers in Botany </source> <volume>2</volume> (<issue>2</issue>): <fpage>179</fpage>-<lpage>194</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p>Distribution of <italic>Harperocallis</italic>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/PhytoKeys-021-037-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p>Habit and habitats of <italic>Harperocallis</italic>.<italic> H. flava. </italic><bold>A</bold> Flower (note the peduncular bract, pronounced connective, and tuberculate ovary)<bold> B </bold>Habitat. <italic>H. robustior</italic>. <bold>C</bold> Inflorescence<bold> D</bold> Habit and habitat. <italic>H. schomburgkiana</italic>. <bold>E</bold> Flower <bold>F</bold> Leaves. (A, unvouchered, photograph A.R. Schotz; B, photograph G. Anglin, C, D <italic>B. Stergios et al. 20368</italic> (PORT), photograph K.J. Wurdack; E, F <italic>K.J. Wurdack et al. 5636</italic> (US), photograph K.J. Wurdack).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/PhytoKeys-021-037-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3. </label>
+            <caption><p><italic>Harperocallis robustior</italic>. <bold>A</bold> Habit <bold>B </bold>Leaf (detail of parallel veins and tomentose margins) <bold>C</bold> Inflorescence (detail showing peduncular and calycular bracts subtending flowers) <bold>D</bold> Peduncular bracts (detail) <bold>E</bold> Flower <bold>F</bold> Tepal (adaxial view) <bold>G</bold> Ovary (note the tuberculae) <bold>H</bold> Ovary (cross-section showing axile placentation and ovules) <bold>I</bold> Capsule (carpels separating distally). (A, I from <italic>L.J. Dorr et al. 4967</italic> (US); B–H from <italic>B.</italic> <italic>Stergios et al. 17327 </italic>(PORT).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/PhytoKeys-021-037-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

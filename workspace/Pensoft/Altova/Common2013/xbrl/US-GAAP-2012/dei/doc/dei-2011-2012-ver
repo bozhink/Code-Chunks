@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report
+  xmlns="http://xbrl.org/2010/versioning-base"
+  xmlns:_2="http://xbrl.us/us-gaap/attributes"
+  xmlns:dei="http://xbrl.sec.gov/dei/2011-01-31"
+  xmlns:dei_2="http://xbrl.sec.gov/dei/2012-01-31"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:vercb="http://xbrl.org/2010/versioning-concept-basic"
+  xmlns:verce="http://xbrl.org/2010/versioning-concept-extended"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- link:linkbaseRef xlink:type="simple"  xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"  xlink:title="documentation"  xlink:href="sample.xml"/ -->
+    <fromDTS>
+        <link:schemaRef
+          xlink:href="http://xbrl.sec.gov/dei/2011/dei-ent-dep-2011-01-31.xsd"
+          xlink:type="simple"/>
+    </fromDTS>
+    <toDTS>
+        <link:schemaRef
+          xlink:href="http://xbrl.sec.gov/dei/2012/dei-ent-dep-2012-01-31.xsd"
+          xlink:type="simple"/>
+    </toDTS>
+    <assignment id="versioningTask">
+        <technicalCategory/>
+    </assignment>
+    <action id="action00001">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/dei-std/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/dei-std/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00002">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/dei-ent-std/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/dei-ent-std/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00003">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/dei/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/dei/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00004">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/dei-ent-all/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/dei-ent-all/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00005">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/dei-ent-dep/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/dei-ent-dep/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00006">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/dei-all/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/dei-all/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00007">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptLabelChange>
+            <vercb:fromConcept name="dei:EntityCommonStockSharesOutstanding"/>
+            <verce:fromResource value="http://xbrl.sec.gov/dei/2011/dei-doc-2011-01-31.xml#lab_EntityCommonStockSharesOutstanding_documentation_en-US"/>
+            <!--Indicate number of shares outstanding of each of registrant's classes of common stock, as of latest practicable date. Where multiple classes exist define each class by adding class of stock items such as Common Class A [Member], Common Class B [Member] onto the Instrument [Domain] of the Entity Listings, Instrument-->
+            <vercb:toConcept name="dei_2:EntityCommonStockSharesOutstanding"/>
+            <verce:toResource value="http://xbrl.sec.gov/dei/2012/dei-doc-2012-01-31.xml#lab_EntityCommonStockSharesOutstanding_documentation_en-US"/>
+            <!--Indicate number of shares or other units outstanding of each of registrant's classes of capital or common stock or other ownership interests, if and as stated on cover of related periodic report. Where multiple classes or units exist define each class/interest by adding class of stock items such as Common Class A [Member], Common Class B [Member] or Partnership Interest [Member] onto the Instrument [Domain] of the Entity Listings, Instrument.-->
+        </verce:conceptLabelChange>
+    </action>
+    <action id="action00008">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptLabelChange>
+            <vercb:fromConcept name="dei:AmendmentFlag"/>
+            <verce:fromResource value="http://xbrl.sec.gov/dei/2011/dei-doc-2011-01-31.xml#lab_AmendmentFlag_documentation_en-US"/>
+            <!--If the value is true, then the document as an amendment to previously-filed/accepted document.-->
+            <vercb:toConcept name="dei_2:AmendmentFlag"/>
+            <verce:toResource value="http://xbrl.sec.gov/dei/2012/dei-doc-2012-01-31.xml#lab_AmendmentFlag_documentation_en-US"/>
+            <!--If the value is true, then the document is an amendment to previously-filed/accepted document.-->
+        </verce:conceptLabelChange>
+    </action>
+    <action id="action00009">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="dei:EntityInformationCurrentLegalOrRegisteredName"/>
+            <!--from value: 2009-01-31 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+    </action>
+    <action id="action00010">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptLabelChange>
+            <vercb:fromConcept name="dei:DocumentType"/>
+            <verce:fromResource value="http://xbrl.sec.gov/dei/2011/dei-doc-2011-01-31.xml#lab_DocumentType_documentation_en-US"/>
+            <!--The type of document being provided (such as 10-K, 10-Q, N-1A, etc). The document type is limited to the same value as the supporting SEC submission type, minus any "/A" suffix. The acceptable values are as follows: S-1, S-3, S-4, S-11, F-1, F-3, F-4, F-9, F-10, 6-K, 8-K, 10, 10-K, 10-Q, 20-F, 40-F, N-1A, 485BPOS, 497, NCSR, N-CSR, N-CSRS, N-Q, 10-KT, 10-QT, 20-FT, POS AM and Other.-->
+            <vercb:toConcept name="dei_2:DocumentType"/>
+            <verce:toResource value="http://xbrl.sec.gov/dei/2012/dei-doc-2012-01-31.xml#lab_DocumentType_documentation_en-US"/>
+            <!--The type of document being provided (such as 10-K, 10-Q, 485BPOS, etc). The document type is limited to the same value as the supporting SEC submission type, or the word "Other".-->
+        </verce:conceptLabelChange>
+    </action>
+    <action id="action00011">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptLabelChange>
+            <vercb:fromConcept name="dei:EntityFilerCategory"/>
+            <verce:fromResource value="http://xbrl.sec.gov/dei/2011/dei-doc-2011-01-31.xml#lab_EntityFilerCategory_documentation_en-US"/>
+            <!--Indicate whether the registrant is one of the following: (1) Large Accelerated Filer, (2) Accelerated Filer, (3) Non-accelerated Filer, or (4) Smaller Reporting Company. Definitions of these categories are stated in Rule 12b-2 of the Exchange Act. This information should be based on the registrant's current or most recent filing containing the related disclosure.-->
+            <vercb:toConcept name="dei_2:EntityFilerCategory"/>
+            <verce:toResource value="http://xbrl.sec.gov/dei/2012/dei-doc-2012-01-31.xml#lab_EntityFilerCategory_documentation_en-US"/>
+            <!--Indicate whether the registrant is one of the following: (1) Large Accelerated Filer, (2) Accelerated Filer, (3) Non-accelerated Filer, (4) Smaller Reporting Company (Non-accelerated) or (5) Smaller Reporting Accelerated Filer. Definitions of these categories are stated in Rule 12b-2 of the Exchange Act. This information should be based on the registrant's current or most recent filing containing the related disclosure.-->
+        </verce:conceptLabelChange>
+    </action>
+    <action id="action00012">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="dei:DocumentReportType"/>
+            <!--from value: 2009-01-31 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+    </action>
+    <action id="action00013">
+        <assignmentRef ref="versioningTask"/>
+        <vercb:conceptAdd>
+            <vercb:toConcept name="dei_2:UTR"/>
+        </vercb:conceptAdd>
+    </action>
+</report>

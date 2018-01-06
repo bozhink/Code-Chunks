@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="21">
+	<resources>
+		<datasources>
+			<datasource name="altova">
+				<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);DBQ=altova.mdb;" DBDataSource="altova.mdb" DBCatalog="altova" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+				<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=altova.mdb" name="altova" path="altova" use_driver_for_retrieval="Yes" allow_background_retrieval="No">
+					<properties>
+						<property name="Database Kind" value="MS Access"/>
+						<property name="Import Kind" value="ADO"/>
+						<property name="Root Object" value="altova"/>
+						<property name="Data Source" value="altova.mdb"/>
+						<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+						<property name="User ID"/>
+						<property name="Password"/>
+						<property name="Persist Security Info"/>
+						<property name="Jet OLEDB:System Database"/>
+						<property name="Jet OLEDB:Sandbox Mode"/>
+						<property name="Jet OLEDB:Exclusive Async Delay"/>
+						<property name="Jet OLEDB:Flush Transaction Timeout"/>
+						<property name="Jet OLEDB:Implicit Commit Sync"/>
+						<property name="Jet OLEDB:Lock Delay"/>
+						<property name="Jet OLEDB:Lock Retry"/>
+						<property name="Jet OLEDB:Max Buffer Size"/>
+						<property name="Jet OLEDB:Max Locks Per File"/>
+						<property name="Jet OLEDB:Page Locks to Table Lock"/>
+						<property name="Jet OLEDB:Page Timeout"/>
+						<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+						<property name="Jet OLEDB:Shared Async Delay"/>
+						<property name="Jet OLEDB:User Commit Sync"/>
+						<property name="Jet OLEDB:Compact Without Replica Repair"/>
+						<property name="Jet OLEDB:Create System Database"/>
+						<property name="Jet OLEDB:Database Locking Mode"/>
+						<property name="Jet OLEDB:Database Password"/>
+						<property name="Jet OLEDB:New Database Password"/>
+						<property name="Jet OLEDB:Registry Path"/>
+					</properties>
+					<LocalViewStorage>
+						<LocalViewElement SQL="SELECT [First], [Last], [Title], [PhoneExt], [EMail] FROM [Person] WHERE [ForeignKey] = :DepartmentID AND [Title] LIKE &apos;%Manager%&apos;">
+							<PathElement Name="altova" Kind="DataSource"/>
+							<PathElement Name="altova" Kind="Database"/>
+							<PathElement Name="ManagersByDepartment" Kind="Select Statement"/>
+							<Parameters>
+								<Parameter name="DepartmentID" type="INT" null="Yes">
+									<Properties/>
+								</Parameter>
+							</Parameters>
+						</LocalViewElement>
+					</LocalViewStorage>
+					<LocalRelationsStorage/>
+					<RecordSetStructureStorage/>
+				</database_connection>
+			</datasource>
+		</datasources>
+	</resources>
+	<component name="defaultmap2" blackbox="0" uid="67602616" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="builtin" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="67651959" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="260"/>
+					</targets>
+					<view ltx="-64" lty="163" rbx="-26" rby="181"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="ManagersByDepartment" library="db" uid="67651957" kind="28">
+					<properties/>
+					<view ltx="241" lty="76" rbx="541" rby="276"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="procedure" inpkey="263" expanded="1"/>
+							<entry name="ManagersByDepartment" displayselectionmode="selection"/>
+							<entry name="ManagersByDepartment" expanded="1">
+								<condition>
+									<expression>
+										<function name="equal" library="core">
+											<expression>
+												<attribute name="input"/>
+											</expression>
+											<expression>
+												<constant value="true" datatype="boolean"/>
+											</expression>
+										</function>
+									</expression>
+								</condition>
+								<entry name="DepartmentID" type="attribute" inpkey="280"/>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="ManagersByDepartment" displayselectionmode="selection"/>
+							<entry name="ManagersByDepartment" outkey="267" expanded="1">
+								<condition>
+									<expression>
+										<function name="equal" library="core">
+											<expression>
+												<attribute name="input"/>
+											</expression>
+											<expression>
+												<constant value="false" datatype="boolean"/>
+											</expression>
+										</function>
+									</expression>
+								</condition>
+								<entry name="ManagersByDepartment" expanded="1">
+									<entry name="First" type="attribute" outkey="268"/>
+									<entry name="Last" type="attribute" outkey="269"/>
+									<entry name="Title" type="attribute" outkey="272"/>
+									<entry name="PhoneExt" type="attribute" outkey="271"/>
+									<entry name="EMail" type="attribute" outkey="270"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="DepartmentID" library="core" uid="67651958" kind="6">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="261"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="281"/>
+					</targets>
+					<view ltx="14" lty="142" rbx="127" rby="181"/>
+					<data>
+						<input datatype="integer"/>
+						<wsdl/>
+						<parameter usageKind="input" name="DepartmentID" optional="1"/>
+					</data>
+				</component>
+				<component name="structure" library="db" uid="67651946" kind="15">
+					<properties/>
+					<view ltx="-98" lty="41" rbx="117" rby="73"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="ManagersByDepartment" type="routine" outkey="262"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<database ref="altova">
+							<data>
+								<selections>
+									<selection>
+										<PathElement Name="altova" Kind="DataSource"/>
+										<PathElement Name="altova" Kind="Database"/>
+										<PathElement Name="ManagersByDepartment" Kind="Select Statement"/>
+									</selection>
+								</selections>
+							</data>
+						</database>
+					</data>
+				</component>
+				<component name="EmployeesWithDetails" library="xml" uid="67651952" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="703" lty="41" rbx="892" rby="259"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Company" expanded="1">
+										<entry name="Employees" expanded="1">
+											<entry name="Employee" inpkey="245" expanded="1">
+												<entry name="FirstName" inpkey="247"/>
+												<entry name="LastName" inpkey="248"/>
+												<entry name="Title" inpkey="249"/>
+												<entry name="PhoneExt" inpkey="250"/>
+												<entry name="Email" inpkey="251"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="EmployeesWithDetails.xsd" instanceroot="{}Company" sps="DepartmentEmployeesWithDetails.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="260">
+						<edges>
+							<edge vertexkey="261" edgekey="264"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="262">
+						<edges>
+							<edge vertexkey="263" edgekey="283"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="267">
+						<edges>
+							<edge vertexkey="245" edgekey="274"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="268">
+						<edges>
+							<edge vertexkey="247" edgekey="275"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="269">
+						<edges>
+							<edge vertexkey="248" edgekey="276"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="270">
+						<edges>
+							<edge vertexkey="251" edgekey="277"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="271">
+						<edges>
+							<edge vertexkey="250" edgekey="278"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="272">
+						<edges>
+							<edge vertexkey="249" edgekey="279"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="281">
+						<edges>
+							<edge vertexkey="280" edgekey="282"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

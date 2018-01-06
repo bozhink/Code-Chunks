@@ -1,0 +1,732 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4251</article-id>
+            <title-group>
+                <article-title>Mitochondrial COI and morphological specificity of the mealy aphids (
+                    <bold-italic>Hyalopterus</bold-italic> ssp.) collected from different hosts in Europe (Hemiptera, Aphididae)
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Rakauskas</surname>
+                        <given-names>Rimantas</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Havelka</surname>
+                        <given-names>Jekaterina</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Zaremba</surname>
+                        <given-names>Audrius</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Department of Zoology, Vilnius University, M. K. Čiurlionio 21/27, LT-03101, Vilnius, Lithuania
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Rimantas Rakauskas (<email xlink:type="simple">rimantas.rakauskas@gf.vu.lt</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>6</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>27</day>
+                    <month>3</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Rimantas Rakauskas, Jekaterina Havelka, Audrius Zaremba</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Forty three European population samples of mealy aphids from various winter and summer host plants were attributed to respective species of <italic>Hyalopterus</italic> by means of their partial sequences of mitochondrial COIgene. Used <italic>Hyalopterus</italic> samples emerged as monophyletic relative to outgroup and formed three major clades representing three host specific mealy aphid species in the Neighbor joining, Maximum parsimony, Maximum likelihood and Bayesian inference trees. <italic>H. pruni</italic> and <italic>H. persikonus</italic> emerged as a sister species, whilst <italic>H. amygdali</italic> was located basally. Samples representing different clades in the molecular trees were used for canonical discrimination analysis based on twenty two morphological characters. Length of the median dorsal head hair enabled a 97.3 % separation of <italic>H. amygdali</italic> from the remaining two species. No single character enabled satisfactory discrimination between apterous viviparous females of <italic>H. pruni </italic>and<italic> H. persikonus</italic>. A modified key for the morphological identification of <italic>Hyalopterus</italic> species is suggested and their taxonomic status discussed.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Europe</kwd>
+                <kwd><italic>Hyalopterus amygdali</italic>
+                </kwd>
+                <kwd><italic>H. pruni</italic>
+                </kwd>
+                <kwd><italic>H. persikonus</italic>
+                </kwd>
+                <kwd>molecular phylogeny</kwd>
+                <kwd>mitochondrial COI</kwd>
+                <kwd>morphological key to species
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Mealy aphids of the genus Hyalopterus Koch are reported to be serious pests of stone fruits all over the World (Barbagallo et al. 1997; Blackman and Eastop 2000; Lozier et al. 2009). Therefore, their morphology, biology, systematics, evolution, invasion <!--PageBreak-->history and potential harmfulness have been substantially studied (Smolarz 1970; Tscharntke 1989; Mosco et al. 1997; Poulios et al. 2007; Lozier et al. 2008; Tewksbury et al. 2002; Penvern et al. 2010; Symmes et al. 2012; for more and earlier references see Blackman and Eastop 2000). Nonetheless, the species level classification of mealy aphids remains unclear despite the long lasting debate. Since the very beginning, mealy aphids inhabiting various prunoideous plants have been described as a single species, Hyalopterus pruni (Geoffroy, 1762). Later on, almond inhabiting aphids were separated as Hyalopterus amygdali Blanchard, 1840. Such a viewpoint has been subjected for a long lasting controversy (e.g. Börner 1952; Shaposhnikov 1972; Eastop and Hille Ris Lambers 1976; Stroyan 1984; Heie 1986; Remaudiere and Remaudiere 1997). Recently, in addition to the two above mentioned species, Hyalopterus persikonus Miller, Lozier and Foottit, 2008 has been separated from H. amygdali by Lozier et al. (2008). For the present, three host plant associated Hyalopterus species are recognized. All three might inhabit reeds (Phragmites) as a summer hosts, but are different in their winter host specificity: H. amygdali is associated with almonds, whilst H. pruni and H. persikonus with plums and peaches, respectively. Nonetheless, apricot has been reported as a shared resource among the three Hyalopterus species supporting the possibility of interspecific hybridization (Lozier et al. 2007; Poulios et al. 2007; Lozier et al. 2008). Hyalopterus species, although well-defined on molecular level (Lozier et al. 2008), still remain difficult to separate by their morphological characters (Basky and Szalay-Marszό 1987; Blackman and Eastop 1994, 2000, 2006), including the most recent identification key (Lozier et al. 2008). For example, mealy aphids, collected on apricots in Lithuania, run to H. amygdali in the key of Blackman and Eastop (2000), but appeared difficult to identify by means of the key suggested by Lozier et al. (2008) (Kudirkaitė-Akulienė and Rakauskas 2009). Moreover, the above keys do not concern mealy aphid populations on summer hosts, reeds. Host plant mediated developmental pathways might influence morphological characters, therefore, samples from reeds must be included in the analysis, together with those from stone fruit crops.
+</p>
+            <p>The aim of this study was to elaborate morphological identification key of the genus Hyalopterus based on the material from Europe that was identified by means of partial CO-I sequences.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <sec>
+                <title><bold>Material studied
+</bold>
+                </title>
+                <p>Forty three population samples of mealy aphids from five European countries were collected from various winter and summer host plants (Table 1). The entire data set has been subdivided: 21 samples (bolded in Table 1) were used for canonical discrimination procedures and subsequent evaluation of the received discrimination functions was performed on remaining 22 samples.
+</p>
+                <!--PageBreak-->
+                <!--PageBreak-->
+            </sec>
+            <sec>
+                <title><bold>DNA extraction, PCR amplification and sequencing
+</bold>
+                </title>
+                <p>For molecular analysis, a single aphid individual from one sampled plant was considered as a unique sample. Total genomic DNA was extracted from a single aphid using the DNeasy Blood &amp; Tissue kit (Qiagen), which involved at least a 2 h digestion of tissue with proteinase K. Partial sequences of mitochondrial COIwere PCR-amplified using previously published primers (Turčinavičienė et al. 2006). PCR amplification was carried out in a thermal cycler (Eppendorf) in 50 µl volumes containing 1–2 µl genomic DNA, 5 µl of each primer (10 µM), 5 µl of PCR-reaction buffer, 5 µl of dNTP mix (2mM each), 4–8 µl of 25mM MgCl<sub>2</sub> and 1.25 U of AmpliTaq Gold 360 polymerase (5U/µl) and ddH<sub>2</sub>O to 50 µl. The cycling parameters were as follows: denaturizing at 95°C for 10 min (1 cycle), denaturizing at 95°C for 30”, annealing at 49°C for 30” and extension at 72°C for 30” (32–37 cycles in total), and a final extension for 5 min (1 cycle). PCR products were subjected to electrophoresis on 2% TopVision agarose (Fermentas, Lithuania), stained with ethidium bromide and sized against a MassRuler Low Range DNA ladder (Fermentas, Lithuania) under UV light. PCR products were purified and sequenced at Macrogen Europe (Amsterdam, the Netherlands). The amplification primers were also used as sequencing primers. DNA sequences for each specimen were confirmed with both sense and anti-sense strands and aligned in the BioEdit Sequence Alignment Editor (Hall 1999). Partial sequences of COI gene were tested for stop codons and none were found. The sequence data have been submitted to the GenBank, Accession numbers JX943517- JX943559.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Analysis of DNA sequences</bold>
+                </title>
+                <p>Forty three sequences of three <italic>Hyalopterus</italic> species were analyzed. Sequences of <italic>Aphis</italic> <italic>gossypii</italic> Glover, 1877 (Aphidini) and<italic> Nasonovia</italic> <italic>ribisnigri</italic> (Mosley, 1841) (Macrosiphini) were selected as outgroups for the phylogenetic analyses, which included Neighbor joining (NJ), Maximum parsimony (MP), Maximum likelihood (ML) and Bayesian inference in phylogeny (BI). NJ, MP and ML analyses were performed using MEGA <!--PageBreak-->5 (Tamura et al. 2011). For NJ analysis Kimura 2-parameter (K2P) model of base substitution was used. Bootstrap values for NJ, MP and ML trees were generated from 1000 replicates. For ML analysis Tamura 3-parameter model with Gamma distribution (T92+G) was selected by MEGA 5 model selection option (Tamura et al. 2011). Bayesian analysis was conducted in MrBayes 3.2.1 (Ronquist and Huelsenbeck 2003) using General Time Reversible model with Gamma distribution (GTR+G), which was selected by jModeltest (Posada 2008). Four simultaneous chains, 3 heated and 1 “cold”, were run for 3 000 000 generations with tree sampling every 1000 generations. The topologies obtained by NJ, MP, ML and BI were similar, so only ML tree is shown with values of NJ/MP and ML/BI bootstrap support and posterior probabilities indicated above and below branches respectively.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Morphological study and discrimination analysis</bold>
+                </title>
+                <p>Samples representing different clades in the molecular trees were used for canonical discrimination analysis: 2 samples from almond (<italic>H. amygdali</italic> clade), 10 samples from cultivated plums (<italic>H. pruni</italic> clade), and 9 samples from peaches (<italic>H. persikonus</italic> clade) (Table 1).
+                </p>
+                <p>Based on the earlier references (Poulios et al. 2007, Lozier et al. 2008), twenty two metric (in mm) characters were studied:
+</p>
+                <p>A2L – length of antennal segment 2; A2W – width of antennal segment 2; A3BW – basal width of antennal segment 3; A3L – length of antennal segment 3; A3SL – length of the longest hair on antennal segment 3; A4L – length of antennal segment 4; A5L – length of antennal segment 5; A6BL – length of basal part of antennal segment 6; A6TPL – length of terminal process of antennal segment 6; AT8SL – length of submedian hair on abdominal tergite 8; BL – body length (excluding cauda); CL – length of cauda; DT3L – length of the second segment of hind tarsus; F3L – length of hind femur; FSL – length of the frons hair; HW – width of the head across eyes; MDHSL – length of median dorsal head hair; MDHSW – distance between the bases of median dorsal head hairs. SL – length of siphunculus; T3L – length of hind tibia; URL – length of ultimate rostral segment; URW – basal width of ultimate rostral segment.
+</p>
+                <p>Measurements of the slide-mounted apterous viviparous females were performed by means of interactive measurement system Micro-Image (Olympus Optical Co. GmbH). STATISTICA 8 version software (Statsoft 2007) was exploited for data analysis. Pearson’s correlation coefficients were calculated to evaluate the correlation of morphometric characters with body length. Characters with strong (| r | ≥ 0.50) statistically significant (p&lt;0.05) correlation with body length were removed from the further analysis: BL (r=1.00), F3L (r=0.58), T3L (r=0.59), A2L (r=0.57), HW (r=0.51). Remaining seventeen characters were used for forward stepwise discriminant analysis with host plant species as grouping variable followed by canonical analysis. Discriminant analysis was conducted in three steps. The first step was performed to discriminate between the all three mealy aphid species emerged in the COI dendrogram (<italic>H. <!--PageBreak-->amygdali, H. persikonus </italic>and<italic> H. pruni</italic>). The second step was carried out to discriminate between <italic>H</italic>. <italic>persikonus</italic> and non-<italic> H. persikonus</italic> (<italic>H. amygdali </italic>and<italic> H. pruni</italic>) samples. The third step of the discriminant analysis was performed on <italic>H. amygdali </italic>-<italic> H. pruni</italic> data set (<italic>H. persikonus</italic> samples excluded) to separate almond and plum mealy aphid species. Canonical scores were visualized as scatter plots. The morphological interrelationships among different samples were examined using hierarchical cluster analysis based on squared Mahalanobis distances (linkage method – UPGA).
+                </p>
+                <p>Characters that contributed most in canonical discrimination functions were evaluated as having potential for species separation. The eventual species identification key based on these morphological characters and host plant information was constructed. Afterwards, it was applied on mealy aphid samples that were not used for the construction of the identification key (Table 1).
+</p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <sec>
+                <title><bold>Partial sequences of mitochondrial (COI)
+</bold>
+                </title>
+                <p>Lozier et al. (2008) reported partial COI sequences being the most variable in <italic>Hyalopterus</italic> aphids and suggested them as a possible tool for the identification of the mealy aphid species complex. Forty three partial COI sequences of 3 <italic>Hyalopterus</italic> species from 5 countries were included in analysis. The alignment contained 564 bases in final set with 79 variable sites, 35 of which appeared parsimony informative. The sequences were heavily biased towards A and T nucleotides. The average base composition was A = 34.3 %, C = 14.1 %, G = 12.0 % and T = 39.7 %. The overall transition/transversion ratio R = 2.805 for all sites.
+                </p>
+                <p>The maximum parsimony (MP) analysis of partial COI sequences resulted in 425 equally parsimonious trees (length = 152, CI=0.76, RI=0.95). ML tree (T92+G model) showed similar topology, the same as NJ analysis (Kimura 2-parameter distances) and BI (GTR+G model) analyses. NJ, MP and ML bootstrap values over 50 % together with BI posterior probabilities over 0.50 are given at respective nodes of the same tree in Figure 1. One can ensure that used <italic>Hyalopterus</italic> samples emerge as monophyletic relative to outgroup and form three major clades representing three host specific mealy aphid species. <italic>H. pruni</italic> and <italic>H. persikonus</italic> are placed as a sister species, whilst <italic>H. amygdali</italic> is located basally.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Morphology
+</bold>
+                </title>
+                <p>The scatter plot of the first two canonical variates for samples from 18 different geographical localities representing three mealy aphid species (apterous viviparous females) is shown in Figure 2. All individuals were reclassified correctly into their <italic>a priori</italic> specified groups. The following characters proved to be important predictors when separating <!--PageBreak-->between three <italic>Hyalopterus</italic> species: MDHSL, URW, T3L/CL (Table 2). The <italic>post hoc</italic> classification of samples gave 96.7 % correct identification of <italic>H. persikonus</italic> (n=46), 100 % of <italic>H. amygdali</italic> (n=10) and 99% of <italic>H. pruni</italic> (n=94) specimens.
+                </p>
+                <!--PageBreak-->
+                <p>To discriminate between apterous viviparous females of <italic>H. persikonus</italic> and non-<italic> H. persikonus</italic> (<italic>H. amygdali </italic>and<italic> H. pruni</italic>) samples the following canonical function (for character acronyms see above) was obtained: 74.6150*URW-1.2696*T3L/CL+1. The values of canonical scores were &gt;0 for <italic>H. persikonus</italic> and &lt;0 for <italic>H. amygdali + H. pruni</italic>. This combination of canonical variables separated 100 % of <italic>H. persikonus</italic> (n=71) specimens involved in the analysis with <italic>a priori</italic> specified group membership. The <italic>post hoc</italic> classification gave 94.4 % correct identification of <italic>H</italic>. <italic>persikonus</italic> (n=46) specimens.
+                </p>
+                <p>To discriminate between apterous viviparous females of <italic>H. amygdali</italic> and <italic>H. pruni</italic> samples the following canonical function (for character acronyms see above) was obtained: -2.2645*SL-18.6609*MDHSL+1. The values of canonical scores were &gt;0 for <italic>H. amygdali </italic>and &lt;0 for <italic>H. pruni</italic>. This combination of canonical variables separated 94.5 % of <italic>H. amygdali </italic>(n=18) and 100% of <italic>H. pruni</italic> (n=67) specimens involved in the analysis with <italic>a priori</italic> specified group membership. The <italic>post hoc</italic> classification gave 100 % correct identification of <italic>H</italic>. <italic>amygdali</italic> (n=10) and 94.7% of <italic>H. pruni</italic> (n=94) specimens.
+                </p>
+                <p>Out of eleven morphological characters included in the canonical function discriminating between sampled apterous viviparous females of mealy aphidspecies complex, the length of median dorsal head hair (MDHSL) enabled separation of 97.3 % <italic>H. amygdali</italic> specimens<italic>.</italic> Namely, the lengths of median dorsal head hair from 0.026 <!--PageBreak-->to 0.039 mm were characteristic of <italic>H. amygdali</italic>, whilst 0.036 – 0.067 mm – for other two species. Yet we failed to find any single character or ratio enabling satisfactory discrimination between apterous viviparous females of <italic>H. pruni</italic> and<italic> H. persikonus</italic>. For the present, the following morphological identification key might be suggested to identify apterous viviparous females of the mealy aphid species complex.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Species key (apterous viviparous females)
+</bold>
+                </title>
+                <table-wrap content-type="key" position="float" orientation="portrait">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="1" colspan="1">1</td>
+                                <td rowspan="1" colspan="1">Canonical discrimination function 74,6150*URW - 1,2696*T3L/CL + 1 value exceeding 0. Setae on frons stout. On peaches, nectarines, apricots or reeds</td>
+                                <td rowspan="1" colspan="1"><bold-italic>H. persikonus
+</bold-italic>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                </td>
+                                <td rowspan="1" colspan="1">Canonical discrimination function value less than 0. Setae on frons filiform. On almonds, plums, apricots or reed</td>
+                                <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">2
+                                </td>
+                                <td rowspan="1" colspan="1">Length of the median dorsal head hair (MDHSL) 0.026 – 0.039 (average 0.031) mm. Canonical discrimination function -2.2645*SL - 18.6609* MDHSL + 1value exceeds 0. On almond or reeds</td>
+                                <td rowspan="1" colspan="1"><bold-italic>H. amygdali
+</bold-italic>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                </td>
+                                <td rowspan="1" colspan="1">MDHSL 0.036 –0.067 (0.05) mm. Canonical discrimination function value less than 0. On plums, apricots or reeds</td>
+                                <td rowspan="1" colspan="1"><bold-italic>H. pruni
+</bold-italic>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table-wrap>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Discussion and conclusions
+</bold>
+            </title>
+            <p>Our analysis shows the morphological separation of mealy aphid species complex being a really difficult task which is in accordance with the earlier references (Poulios et al. 2007; Lozier et al. 2008). Nonetheless, it appeared that certain morphological char<!--PageBreak-->acters are effective when applied independently on different data. Namely, the length of median dorsal head hair (MDHSL) has been included in the key of Lozier et al. (2008) to separate <italic>H. amygdali </italic>from <italic>H. pruni</italic>/<italic>H. persikonus</italic>. This character enabled separation between <italic>H. amygdali</italic> and <italic>H. pruni</italic>/<italic>H. persikonus</italic> in our analysis also. Ratio hind tibia length/cauda length (T3L/CL) has been employed in the key of Lozier et al. (2008) to discriminate between <italic>H. pruni </italic>and <italic>H. persikonus</italic>, although they reported remarkable overlapping of this character values in <italic>H. pruni </italic>(4.6–8.3, average 6.1) and  <italic>H. persikonus</italic> (3.7–7.6, average 5.1). This was also the case in our study:  4.47–6.71 (5.46) for<italic> H. pruni</italic>, 3.76–5.36 (4.41) for <italic>H. persikonus</italic> and 4.73–6.72 (5.29) for <italic>H. amygdali</italic>.  In addition to the above mentioned characters, our analysis showed the basal width of the ultimate rostral segment being of certain use when discriminating between the mealy aphid species. Its values were 0.059–0.075 mm (average 0.067) for <italic>H. pruni</italic>, 0.064–0.083 (0.073) for <italic>H. persikonus </italic>and 0.061–0.071 (0.066) for <italic>H. amygdali</italic>.
+            </p>
+            <p>When performing discriminant analyses, the body length should be eliminated from the data set together with characters that have strong and statistically significant correlation with the body length. In our case, when the entire data set of morphological characters was used for discriminant analysis, samples from reeds appeared the most different <!--PageBreak-->(not shown). Contrary, after the body length and correlated characters were removed from analysis, samples from reeds scattered amongst samples from plum and peach.
+</p>
+            <p>The results of cluster analysis based on morphological data (Figure 3) show <italic>H. persikonus </italic>being more distantly related with<italic> H. pruni</italic> and <italic>H. amygdali</italic>. This contradicts the results of morphological analysis by Poulios et al. (2007) and supports the opinion of Mosco et al. (1997) on the early separation of <italic>H. persikonus </italic>from<italic> H. pruni/amygdali</italic> stem, which was also supported by the subsequent molecular analyses (Lozier et al. 2007, 2008). Such long lasting controversy might be explained by the fact that all three species share apricot as a winter host (see Lozier et al. (2008) for broader discussion), enabling interspecific gene flow. To clear the matter, precise studies of the host specificity and life cycles of the three taxa (including experimental transfers from plums to reeds and vice versa), together with hybridization trials, are needed. For the present, phylogenetic relationships of the three <italic>Hyalopterus</italic> species remain uncertain.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgments
+</bold>
+            </title>
+            <p>This research was funded by a grant (No LEK-04/2012) from the Research Council of Lithuania.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Barbagallo</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Cravedi</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Pasqualini</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Patti</surname> <given-names>I</given-names></name></person-group> (<year>1997</year>)<source> Aphids of the principal fruit-bearing crops.</source> <publisher-name>Bayer S.p.A.</publisher-name>, <publisher-loc>Milan</publisher-loc>, <lpage>123</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Basky</surname> <given-names>Z</given-names></name>,<name name-style="western"><surname>Szalay-Marszό</surname> <given-names>L</given-names></name></person-group> (<year>1987</year>)<article-title> Study of isolation mechanisms in the <italic>Hyalopterus pruni</italic> and <italic>Hyalopterus amygdali</italic> complex.</article-title> In: <person-group1><name name-style="western"><surname>Holman</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Pelikan</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Dixon</surname> <given-names>AFG</given-names></name>,<name name-style="western"><surname>Weissman</surname> <given-names>L</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Population structure, genetics and taxonomy of aphids and Thysanoptera, Smolenice (Czechoslovakia), September 1985.</issue-title> <source>Spb Academic Publishing, The Hague</source>: <fpage>370</fpage>-<lpage>373</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blackman</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name></person-group> (<year>1994</year>)<source> Aphids on the World’s Trees: An Identification and Information Guide.</source> <publisher-name>CAB International</publisher-name>, <publisher-loc>Wallingford</publisher-loc>, <lpage>1004</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blackman</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name></person-group> (<year>2000</year>)<source> Aphids on the World’s Crops: An Identification and Information Guide. 2<sup>nd</sup> edn.</source> <publisher-name>J. Wiley &amp; Sons</publisher-name>, <publisher-loc>Chichester</publisher-loc>, <lpage>466</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blackman</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name></person-group> (<year>2006</year>)<source> Aphids on the World’s Herbaceous Plants and Shrubs.</source> <publisher-name>J. Wiley &amp; Sons, Chichester</publisher-name>, <publisher-loc>Two volumes</publisher-loc>, <lpage>1439</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Börner</surname> <given-names>C</given-names></name></person-group> (<year>1952</year>)<article-title> Europae centralis aphides. Die Blättlause Mitteeuropas. Namen, Synonyme, Wirtspflanzen, Generationszyklen.</article-title> <source>Mitteilungen der Thüringischen Botanishen Gesselshaft, </source> <volume>3</volume>: <fpage>1</fpage>-<lpage>488</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name>,<name name-style="western"><surname>Hille</surname> <given-names>Ris Lambers D</given-names></name></person-group> (<year>1976</year>)<source> Survey of the World’s Aphids.</source> <publisher-name>Dr. W. Junk b.v., Publishers</publisher-name>, <publisher-loc>The Hague</publisher-loc>, <lpage>573</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hall</surname> <given-names>TA</given-names></name></person-group> (<year>1999</year>)<article-title> BioEdit: a user-friendly biological sequence alignment editor and analysis program for Windows 95/98/NT.</article-title> <source>Nucleic Acids Symposium </source> <volume>41</volume>: <fpage>95</fpage>-<lpage>98</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Heie</surname> <given-names>OE</given-names></name></person-group> (<year>1986</year>)<article-title> The Aphidoidea (Hemiptera) of Fennoscandia and Denmark. 3 Family Aphididae: subfamily Pterocommatinae &amp; tribe Aphidini of subfamily Aphidinae.</article-title> <source>Fauna Entomologica Scandinavica, </source> <volume>17</volume>: <fpage>1</fpage>-<lpage>314</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kudirkaitė-Akulienė</surname> <given-names>V</given-names></name>,<name name-style="western"><surname>Rakauskas</surname> <given-names>R</given-names></name></person-group> (<year>2009</year>)<fake_tag> Contribution to the knowledge of the aphid (Hemiptera: Aphididae) fauna of Šakiai district, Lithuania. Acta Zoologica Lituanica, 19(3): 235–243. </fake_tag>doi: 10.2478/v10043-009-0020-9
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lozier</surname> <given-names>JD</given-names></name>,<name name-style="western"><surname>Foottit</surname> <given-names>RG</given-names></name>,<name name-style="western"><surname>Miller</surname> <given-names>GL</given-names></name>,<name name-style="western"><surname>Mills</surname> <given-names>NJ</given-names></name>,<name name-style="western"><surname>Roderick</surname> <given-names>GK</given-names></name></person-group> (<year>2008</year>)<article-title> Molecular and morphological evaluation of the aphid genus <italic>Hyalopterus </italic>Koch (Insecta: Hemiptera: Aphididae), with a description of a new species.</article-title> <source>Zootaxa </source> <volume>1688</volume>: <fpage>1</fpage>-<lpage>19</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lozier</surname> <given-names>JD</given-names></name>,<name name-style="western"><surname>Mills</surname> <given-names>NJ</given-names></name>,<name name-style="western"><surname>Roderick</surname> <given-names>GK</given-names></name></person-group> (<year>2007</year>)<article-title> Genetic evidence from mitochondrial, nuclear, and endosymbiotic markers for the evolution of host plant associated species in the aphid genus <italic>Hyalopterus</italic> (Hemiptera: Aphididae).</article-title> <source>Evolution </source> <volume>61</volume>: <fpage>1353</fpage>-<lpage>1367</lpage>. doi:10.1111/j.1558-5646.2007.00110.x
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lozier</surname> <given-names>JD</given-names></name>,<name name-style="western"><surname>Roderick</surname> <given-names>GK</given-names></name>,<name name-style="western"><surname>Mills</surname> <given-names>NJ</given-names></name></person-group> (<year>2009</year>)<article-title> Tracing the invasion history of mealy plum aphid, <italic>Hyalopterus pruni</italic> (Hemiptera: Aphididae), in North America: a population genetic approach.</article-title> <source>Biological Invasions </source> <volume>11</volume>: <fpage>299</fpage>-<lpage>314</lpage>. doi: 10.1007/s10530-008-9248-8
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mosco</surname> <given-names>MC</given-names></name>,<name name-style="western"><surname>Arduino</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Bullini</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Barbagallo</surname> <given-names>S</given-names></name></person-group> (<year>1997</year>)<article-title> Genetic heterogeneity, reproductive isolation and host preferences in mealy aphids of the <italic>Hyalopterus pruni</italic> complex (Homoptera, Aphidoidea).</article-title> <source>Molecular Ecology </source> <volume>6</volume>: <fpage>667</fpage>-<lpage>670</lpage>. doi: 10.1046/j.1365-294X.1997.00234.x
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Penvern</surname> <given-names>SS</given-names></name>,<name name-style="western"><surname>Bellon</surname> <given-names>JF</given-names></name>,<name name-style="western"><surname>Sauphanor</surname> <given-names>B</given-names></name></person-group> (<year>2010</year>)<article-title> Peach orchard protection strategies and aphid communities: Towards an integrated agroecosystem approach.</article-title> <source>Crop Protection </source> <volume>29</volume>: <fpage>1148</fpage>-<lpage>1156</lpage>. doi:10.1016/j.cropro.2010.06.010
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Posada</surname> <given-names>D</given-names></name></person-group> (<year>2008</year>)<article-title> jModelTest: Phylogenetic Model Averaging.</article-title> <source>Molecular Biology and Evolution </source> <volume>25</volume>: <fpage>1253</fpage>-<lpage>1256</lpage>. doi: 10.1093/bioinformatics/14.9.817
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Poulios</surname> <given-names>KD</given-names></name>,<name name-style="western"><surname>Margaritapaulos</surname> <given-names>JT</given-names></name>,<name name-style="western"><surname>Tsitsipis</surname> <given-names>JA</given-names></name></person-group> (<year>2007</year>)<article-title> Morphological separation of host adapted taxa within the <italic>Hyalopterus pruni</italic> complex (Hemiptera: Aphididae).</article-title> <source>European Journal of Entomology </source> <volume>104</volume>: <fpage>235</fpage>-<lpage>242</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remaudiere</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Remaudiere</surname> <given-names>M</given-names></name></person-group> (<year>1997</year>)<source> Catalogue of the World’s Aphididae (Homoptera Aphidoidea).</source> <publisher-name>INRA Editions</publisher-name>, <publisher-loc>Paris</publisher-loc>, <lpage>473</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ronquist</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Huelsenbeck</surname> <given-names>JP</given-names></name></person-group> (<year>2003</year>)<article-title> MRBAYES 3: Bayesian phylogenetic inference under mixed models.</article-title> <source>Bioinformatics </source> <volume>19</volume>: <fpage>1572</fpage>-<lpage>1574</lpage>. doi:10.1093/bioinformatics/btg180
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shaposhnikov</surname> <given-names>GKh</given-names></name></person-group> (<year>1972</year>)<fake_tag> Podotriad Aphidinea – Tli. In: Nasekomye i kleshchi – vrediteli selskochoziaystvennych kultur. Nauka, Leningrad, 149–189. </fake_tag>[In Russian]
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Smolarz</surname> <given-names>S</given-names></name></person-group> (<year>1970</year>)<article-title> Biology of the mealy plum aphid – <italic>Hyalopterus pruni</italic> (Geoff.) (Homoptera, Aphidoidea).</article-title> <source>Bulletin Entomologique de Pologne </source> <volume>40</volume> (<issue>2</issue>): <fpage>287</fpage>-<lpage>328</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>StatSoft,</surname> <given-names>Inc.</given-names></name></person-group> (<year>2007</year>)<fake_tag> STATISTICA for Windows (Computer program manual)<italic>.</italic> Tulsa, USA.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stroyan</surname> <given-names>HLG</given-names></name></person-group> (<year>1984</year>)<source> Aphids – Pterocommatinae and Aphidinae (Aphidini). Handbooks for the Identification of British Insects Vol. 2(6).</source> <publisher-name>Royal Entomological Society of London</publisher-name>, <publisher-loc>London</publisher-loc>, <lpage>232</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Symmes</surname> <given-names>EJ</given-names></name>,<name name-style="western"><surname>Dewhirst</surname> <given-names>SY</given-names></name>,<name name-style="western"><surname>Birkett</surname> <given-names>MA</given-names></name>,<name name-style="western"><surname>Campbell</surname> <given-names>CA</given-names></name>,<name name-style="western"><surname>Chamberlain</surname> <given-names>K</given-names></name>,<name name-style="western"><surname>Pickett</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>Zalom</surname> <given-names>FG</given-names></name></person-group> (<year>2012</year>)<article-title> The sex pheromones of mealy plum (<italic>Hyalopterus pruni</italic>) and leaf-curl plum (<italic>Brachycaudus helichrysi</italic>) aphids: identification and field trapping of male and gynoparous aphids in prune orchards.</article-title> <source>Journal of Chemical Ecology: </source> <volume>38</volume> (<issue>5</issue>): <fpage>576</fpage>-<lpage>583</lpage>. doi: 10.1007/s10886-012-0121-y
+</mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Tamura</surname> <given-names>K</given-names></name>,<name name-style="western"><surname>Peterson</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Peterson</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Stecher</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Nei</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Kumar</surname> <given-names>S</given-names></name></person-group> (<year>2011</year>)<article-title> MEGA5: Molecular Evolutionary Genetics Analysis using Maximum Likelihood, Evolutionary Distance, and Maximum Parsimony Methods.</article-title> <source>Molecular Biology and Evolution </source> <volume>28</volume>: <fpage>2731</fpage>-<lpage>2739</lpage>. doi:10.1093/molbev/msr121
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tewksbury</surname> <given-names>LR</given-names></name>,<name name-style="western"><surname>Casagrande</surname> <given-names>BB</given-names></name>,<name name-style="western"><surname>Häfliger</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Schwarzländer</surname> <given-names>M</given-names></name></person-group> (<year>2002</year>)<fake_tag> Potential for Biological Control of <italic>Phragmites australis</italic> in North America. Biological Control 23: 191–212. available online at http://www.idealibrary.com, </fake_tag>doi: 10.1006/bcon.2001.0994
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tscharntke</surname> <given-names>T</given-names></name></person-group> (<year>1989</year>)<fake_tag> Mass attack of <italic>Hyalopterus pruni </italic>(Homoptera, Aphididae) on common reed (<italic>Phragmites australis</italic>). Significance of habitat area, edge attack, and parasitism. Zoologisches Jahrbuch, Abteilung für Systematik, Ökologie und Geographie der Tiere 116: 329–334.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Turčinavičienė</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Pedersen</surname> <given-names>BV</given-names></name>,<name name-style="western"><surname>Rakauskas</surname> <given-names>R</given-names></name></person-group> (<year>2006</year>)<article-title> Phylogenetic relationships in the <italic>„grossulariae“</italic> species group of the genus <italic>Aphis</italic> (Hemiptera: Sternorrhyncha: Aphididae): Molecular evidence.</article-title> <source>European Journal of Entomology </source> <volume>103</volume>: <fpage>597</fpage>-<lpage>604</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> Aphid material used in the present study. Samples used for the morphological discrimination analysis with <italic>a priori</italic> specified group membership are given in bold.&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="1" bodyRowCount="52" columnCount="2" aid:table="table" aid:trows="53" aid:tcols="2">
+                <tbody>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Place, date, collection No</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>GenBank Accession No</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus domestica </bold-italic><bold>(plum)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Galata, Bulgaria, 2012.06.18, z12-101</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943533</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Costinesti, Romania, 2012.06.13, z12-67</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943536 </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Gilau, Romania, 2012.06.19, z12-114</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943537</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Toplita, Romania, 2012.06.10, z12-46b</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943538</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Constanta, Romania, 2012.06.14, z12-78</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943539</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Valu lui Traian, Romania, 2012.06.14, z12-77</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943540</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Michalovce, Slovakia, 2012.06.08, z12-43a</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943545</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Mezopeterd, Hungary, 2012.06.20, z12-121</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943541</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Derecske, Hungary, 2012.06.20, z12-123</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943542</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Gemzse, Hungary, 2012.06.08, z12-44</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943543</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Jieznas, Prienai distr., Lithuania, 2012.05.30, 12-24</td>
+                        <td rowspan="1" colspan="1">JX943544</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Daugai, Alytus distr., Lithuania, 2012.05.30, 12-31</td>
+                        <td rowspan="1" colspan="1">JX943547</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Ignalina, Ignalina distr., Lithuania, 2012.06.19, 12-65</td>
+                        <td rowspan="1" colspan="1">JX943549</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus cerasifera </bold-italic><bold>(cherry plum)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Ditrau, Romania, 2012.06.11, z12-52</td>
+                        <td rowspan="1" colspan="1">JX943534</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Gheorheni, Romania, 2012.06.11, z12-53</td>
+                        <td rowspan="1" colspan="1">JX943535   </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Blagojevgrad, Bulgaria, 2012.06.25, 12-81</td>
+                        <td rowspan="1" colspan="1">JX943550</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Alytus, Alytus distr., Lithuania, 2012.05.30, 12-28</td>
+                        <td rowspan="1" colspan="1">JX943546</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Eišiškės, Šalčininkai distr., Lithuania, 2012.06.13, 12-41</td>
+                        <td rowspan="1" colspan="1">JX943548    </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus cerasifera </bold-italic><bold>var.</bold> <bold-italic>Pissardii</bold-italic><bold> (red plum)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Costinesti, Romania, 2012.06.13, z12-65</td>
+                        <td rowspan="1" colspan="1">JX943553</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus armeniaca</bold-italic><bold> (apricot)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Costinesti, Romania, 2012.06.15, z12-88</td>
+                        <td rowspan="1" colspan="1">JX943551</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Murfatlar, Romania, 2012.06.13, z12-64</td>
+                        <td rowspan="1" colspan="1">JX943531</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Vama Veche, Romania, 2012.06.16, z12-93</td>
+                        <td rowspan="1" colspan="1">JX943552   </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Mezopeterd, Hungary, 2012.06.20, z12-120</td>
+                        <td rowspan="1" colspan="1">JX943555</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kairėnai, Vilnius distr., Lithuania, 2010.07.01, z10-5</td>
+                        <td rowspan="1" colspan="1">JX943558</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus persica</bold-italic><bold> (peach)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Goron, Bulgaria, 2012.06.09, z12-111</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943519</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Bucuresti, Romania, 2012.06.13, z12-58</td>
+                        <td rowspan="1" colspan="1">JX943521</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Constanta, Romania, 2012.06.14, z12-79</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943522</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Costinesti, Romania, 2012.06.15, z12-86</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943523</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Murfatlar, Romania, 2012.06.13, z12-63</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943524</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Pieta Porta Alba, Romania, 2012.06.14, z12-70</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943525</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Valu lui Traian. Romania, 2012.06.14, z12-75</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943526</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Mezopeterd, Hungary, 2012.06.20, z12-119</td>
+                        <td rowspan="1" colspan="1">JX943527</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Szikso, Hungary, 2012.06.20, z12-124</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943528</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Csobad, Hungary, 2012.06.20, z12-126</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943529</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Foro, Hungary, 2012.06.20, z12-127</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943530</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus persica </bold-italic><bold>var. </bold><bold-italic>nectarina</bold-italic><bold> (nectarine)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Pieta Porta Alba, Romania, 2012.06.14, z12-73</td>
+                        <td rowspan="1" colspan="1">JX943520</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus dulcis </bold-italic><bold>(almond)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Varna, Bulgaria, 2012.06.18, z12-104</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943517</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Varna, Bulgaria, 2012.06.18, z12-108</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">JX943518</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Prunus maritima </bold-italic><bold>(beach plum)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kairėnai, Vilnius distr., Lithuania, 2010.07.01, z10-4</td>
+                        <td rowspan="1" colspan="1">JX943557</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold-italic>Phragmites australis </bold-italic><bold>(common reed)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Vama Veche, Romania, 2012.06.16, z12-91</td>
+                        <td rowspan="1" colspan="1">JX943532</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Biharkeresztes, Hungary, 2012.06.20, z12-118</td>
+                        <td rowspan="1" colspan="1">JX943554</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Baltupiai, Vilnius, Lithuania, 2010.06.30, z10-1</td>
+                        <td rowspan="1" colspan="1">JX943556</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Palanga, Klaipėda distr., Lithuania, 2010.07.15, z10-24</td>
+                        <td rowspan="1" colspan="1">JX943559</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Maximum likelihood (ML) tree showing phylogenetic relationships among three <italic>Hyalopterus</italic> species based on partial sequences of mitochondrial COI (564 positions in final set). Numbers above branches indicate support of NJ (left) and MP (right) bootstrap test with 1000 replicates, and numbers below branches indicate support of ML (left) bootstrap test with 1000 replicates and posterior probabilities of BI analysis (right). Samples used for the discriminant analysis with <italic>a priori</italic> specified group membership followed by the construction of identification key are asterisked (*). The remaining samples were used for the <italic>post hoc</italic> classification. Sample numbers are the same as given in Table 1, together with the abbreviated symbol of respective country: <bold>BG</bold> Bulgaria, <bold>HU</bold> Hungary, <bold>LT</bold> Lithuania, <bold>RO</bold> Romania, <bold>SK</bold> Slovakia.</p>
+            </caption>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> Scatter-plot of the individual canonical scores of the first two canonical variates discriminating 21 samples of <italic>Hyalopterus </italic>collected from different host plants in five European countries (Bulgaria, Hungary, Lithuania, Romania, Slovakia).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 2.</bold>
+            </label>
+            <caption><p> Contribution of eleven morphological characters to the canonical functions discriminating 23 European samples of <italic>Hyalopterus</italic>. Character abbreviations the same as in the text (Material and methods).&lt;br/&gt; </p>
+            </caption>
+            <table id="T2" headerRowCount="0" bodyRowCount="12" columnCount="7" aid:table="table" aid:trows="12" aid:tcols="7">
+                <tbody>
+                    <tr>
+                        <td rowspan="1" colspan="1"> </td>
+                        <td rowspan="1" colspan="1"><bold>Wilks’ Lambda</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>Partial Wilks’ Lambda</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>F-remove (2,135)</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>p-level</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>Toler.</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>1-Toler. (R-Sqr.)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>T3L/CL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,05</td>
+                        <td rowspan="1" colspan="1">0,66</td>
+                        <td rowspan="1" colspan="1">34,70</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,71</td>
+                        <td rowspan="1" colspan="1">0,29</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>MDHSL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,81</td>
+                        <td rowspan="1" colspan="1">15,40</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,14</td>
+                        <td rowspan="1" colspan="1">0,86</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>URW</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,82</td>
+                        <td rowspan="1" colspan="1">14,33</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,86</td>
+                        <td rowspan="1" colspan="1">0,14</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>URL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,89</td>
+                        <td rowspan="1" colspan="1">8,37</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,81</td>
+                        <td rowspan="1" colspan="1">0,19</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>DT3L</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,97</td>
+                        <td rowspan="1" colspan="1">1,98</td>
+                        <td rowspan="1" colspan="1">0,14</td>
+                        <td rowspan="1" colspan="1">0,69</td>
+                        <td rowspan="1" colspan="1">0,31</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>A6TPL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,86</td>
+                        <td rowspan="1" colspan="1">11,14</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,60</td>
+                        <td rowspan="1" colspan="1">0,40</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>MDHSW</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,06</td>
+                        <td rowspan="1" colspan="1">0,58</td>
+                        <td rowspan="1" colspan="1">48,13</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,12</td>
+                        <td rowspan="1" colspan="1">0,88</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>MDHSW/MDHSL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,06</td>
+                        <td rowspan="1" colspan="1">0,58</td>
+                        <td rowspan="1" colspan="1">49,50</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,07</td>
+                        <td rowspan="1" colspan="1">0,93</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>A5L</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,90</td>
+                        <td rowspan="1" colspan="1">7,57</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,40</td>
+                        <td rowspan="1" colspan="1">0,61</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>SL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,92</td>
+                        <td rowspan="1" colspan="1">6,30</td>
+                        <td rowspan="1" colspan="1">0,00</td>
+                        <td rowspan="1" colspan="1">0,75</td>
+                        <td rowspan="1" colspan="1">0,25</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>A6BL</bold>
+                        </td>
+                        <td rowspan="1" colspan="1">0,04</td>
+                        <td rowspan="1" colspan="1">0,96</td>
+                        <td rowspan="1" colspan="1">3,04</td>
+                        <td rowspan="1" colspan="1">0,05</td>
+                        <td rowspan="1" colspan="1">0,60</td>
+                        <td rowspan="1" colspan="1">0,40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> Dendrogram of hierarchical cluster analysis based on 17 morphological characters (squared Mahalanobis distances) using unweighted pair-group average linkage among 29 samples of <italic>Hyalopter</italic><italic>us</italic>. Sample numbers the same as in Table 1. <bold>ar</bold> samples from <italic>Prunus</italic> <italic>armeniaca</italic>, <bold>d</bold> <italic>P</italic>.<italic> domestica</italic>, <bold>du</bold> <italic>P</italic>. <italic>dulcis</italic>, <bold>p</bold> <italic>P</italic>. <italic>persica</italic>, <bold>ph</bold> <italic>Phragmites communis</italic>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

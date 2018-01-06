@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2007 sp2 (http://www.altova.com) von Mr. Nobody (Altova GmbH) bearbeitet -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="commentsType">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="comment">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="text" type="xs:string"/>
+					</xs:sequence>
+					<xs:attribute name="user"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="comments" type="commentsType">
+		<xs:annotation>
+			<xs:documentation>All comments</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

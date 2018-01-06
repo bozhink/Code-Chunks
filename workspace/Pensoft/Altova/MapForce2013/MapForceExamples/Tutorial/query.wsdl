@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<wsdl:definitions	xmlns:tns="http://www.altova.com/WS2DB/query.wsdl"
+								xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+								xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+								xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" 
+								xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+								xmlns="http://schemas.xmlsoap.org/wsdl/" 
+								targetNamespace="http://www.altova.com/WS2DB/query.wsdl" 
+								name="WS2DB">
+								
+	<wsdl:types>
+		<schema	xmlns="http://www.w3.org/2001/XMLSchema" 
+						xmlns:tns="http://www.altova.com/WS2DB.xsd" 
+						targetNamespace="http://www.altova.com/WS2DB.xsd">
+			<complexType name="Person">
+				<sequence>
+					<element name="First" nillable="true" type="xsd:string"/>
+					<element name="Last" nillable="true" type="xsd:string"/>
+					<element name="Title" nillable="true" type="xsd:string"/>
+					<element name="PhoneEXT" nillable="true" type="xsd:string"/>
+					<element name="Email" nillable="true" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="ArrayOfPersons">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="tns:Person[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+		</schema>
+	</wsdl:types>
+	
+	<message name="getPersonSoapIn">
+		<part name="Query" type="xsd:string"/>
+	</message>
+
+	<message name="getPersonSoapOut">
+		<part name="Result" type="ns1:ArrayOfPersons" xmlns:ns1="http://www.altova.com/WS2DB.xsd"/>
+	</message>
+
+	<message name="putPersonSoapIn">
+		<part name ="Put" type = "ns1:Person" xmlns:ns1="http://www.altova.com/WS2DB.xsd"/>
+	</message>
+	
+	<message name="putPersonSoapOut">
+		<part name="Confirmation" type="xsd:string"/>
+	</message>
+
+	<portType name="WS2DBSoapPortType">
+		<operation name="getPerson">
+			<input name="getPersonSoapInput" message="tns:getPersonSoapIn"/>
+			<output name="getPersonSoapOutput" message="tns:getPersonSoapOut"/>
+		</operation>
+
+		<operation name="putPerson">
+			<input name="putPersonSoapInput" message="tns:putPersonSoapIn"/>
+			<output name="putPersonSoapOutput" message="tns:putPersonSoapOut"/>
+		</operation>
+	</portType>
+
+	<binding name="WS2DBSoapBinding" type="tns:WS2DBSoapPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getPerson">
+			<soap:operation soapAction="getPerson" style="rpc"/>
+			<input name="getPersonSoapInput">
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output name="getPersonSoapOutput">
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+		
+		<operation name="putPerson">
+			<soap:operation soapAction="putPerson" style="rpc"/>
+			<input name="putPersonSoapInput">
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output name="putPersonSoapOutput">
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+	</binding>
+	
+	<service name="WS2DB">
+		<port name="WS2DBSoapPort" binding="tns:WS2DBSoapBinding">
+			<soap:address location="http://localhost:8080/axis/services/WS2DB"/>
+		</port>
+	</service>
+
+	<!--service name="WS2DB">
+		<port name="WS2DBSoapPort" binding="tns:WS2DBSoapBinding">
+			<soap:address location="http://localhost/services/WS2DB.asmx"/>
+		</port>
+	</service-->
+
+</wsdl:definitions>

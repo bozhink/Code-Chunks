@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="345" lty="381" rbx="62" rby="-36"/>
+					<data>
+						<constant value=", " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="split-name" library="user" blackbox="0" uid="23" kind="19" visible="0">
+					<view ltx="397" lty="263" rbx="505" rby="297"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="name" inpkey="40" componentid="19"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="First" outkey="33" componentid="20"/>
+							<entry name="Last" outkey="36" componentid="21"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="45"/>
+					</targets>
+					<view ltx="247" lty="404" rbx="-21" rby="-60"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="13" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="20"/>
+						<datapoint pos="1" key="48"/>
+						<datapoint pos="2" key="23"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="425" lty="116" rbx="70" rby="-249"/>
+				</component>
+				<component name="concat" library="core" uid="9" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="51"/>
+						<datapoint pos="1" key="8"/>
+						<datapoint pos="2" key="11"/>
+						<datapoint pos="3" key="46"/>
+						<datapoint pos="4" key="14"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="42"/>
+					</targets>
+					<view ltx="425" lty="340" rbx="70" rby="-25"/>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="2" lty="-7" rbx="244" rby="329"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/IPO"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="purchaseOrder" ns="1" expanded="1">
+										<entry name="shipTo" displayselectionmode="all"/>
+										<entry name="shipTo" outkey="25" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.altova.com/IPO}EU-Address" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="name" ns="1" outkey="56"/>
+											<entry name="street" ns="1" outkey="16"/>
+											<entry name="city" ns="1" outkey="19"/>
+											<entry name="postcode" ns="1" outkey="22"/>
+										</entry>
+										<entry name="billTo" displayselectionmode="all"/>
+										<entry name="billTo" outkey="30" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal" library="core">
+														<expression>
+															<attribute ns="http://www.w3.org/2001/XMLSchema-instance" name="type"/>
+														</expression>
+														<expression>
+															<constant value="{http://www.altova.com/IPO}US-Address" datatype="QName"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<entry name="name" ns="1" outkey="39"/>
+											<entry name="street" ns="1" outkey="59"/>
+											<entry name="city" ns="1" outkey="50"/>
+											<entry name="state" ns="1" outkey="10"/>
+											<entry name="zip" ns="1" outkey="13"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ipo.xsd" inputinstance="ipo.xml" outputinstance="ipo.xml" instanceroot="{http://www.altova.com/IPO}purchaseOrder" userdefinedschemalocation="ipo.xsd"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="split-name" library="user" blackbox="0" uid="22" kind="19" visible="0">
+					<view ltx="397" lty="-3" rbx="505" rby="31"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="name" inpkey="57" componentid="19"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="First" outkey="1" componentid="20"/>
+							<entry name="Last" outkey="4" componentid="21"/>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="610" lty="-9" rbx="828" rby="292"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ContactsWithAddress" expanded="1">
+										<entry name="Contact" inpkey="26" expanded="1">
+											<entry name="First" inpkey="2"/>
+											<entry name="Last" inpkey="5"/>
+											<entry name="Address" inpkey="28" expanded="1">
+												<entry name="line" inpkey="17"/>
+												<entry name="line" inpkey="54" clone="1"/>
+											</entry>
+										</entry>
+										<entry name="Contact" inpkey="31" expanded="1" clone="1">
+											<entry name="First" inpkey="34"/>
+											<entry name="Last" inpkey="37"/>
+											<entry name="Address" expanded="1">
+												<entry name="line" inpkey="60"/>
+												<entry name="line" inpkey="43" clone="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Contacts.xsd" instanceroot="{}ContactsWithAddress" userdefinedschemalocation="Contacts.xsd" sps="ContactsWithAddresses.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+							<edge vertexkey="28" edgekey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="31" edgekey="32"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34" edgekey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="37" edgekey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="40" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="43" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="45">
+						<edges>
+							<edge vertexkey="46" edgekey="47"/>
+							<edge vertexkey="48" edgekey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="50">
+						<edges>
+							<edge vertexkey="51" edgekey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="54" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="57" edgekey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="59">
+						<edges>
+							<edge vertexkey="60" edgekey="61"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="split-name" library="user" blackbox="0" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="substring-after" library="core" uid="16" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="12"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="333" lty="66" rbx="-39" rby="-417"/>
+				</component>
+				<component name="substring-before" library="core" uid="17" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="328" rbx="-25" rby="-405"/>
+				</component>
+				<component name="name" library="core" uid="19" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="160" lty="2" rbx="160" rby="2"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="name"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="18" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="210" lty="81" rbx="-104" rby="-365"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Last" library="core" uid="21" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="15"/>
+					</sources>
+					<view ltx="497" lty="81" rbx="497" rby="81"/>
+					<data>
+						<output datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="output" name="Last"/>
+					</data>
+				</component>
+				<component name="First" library="core" uid="20" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="7"/>
+					</sources>
+					<view ltx="494" lty="3" rbx="494" rby="3"/>
+					<data>
+						<output datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="output" name="First"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+							<edge vertexkey="4" edgekey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7" edgekey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="11"/>
+							<edge vertexkey="12" edgekey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15" edgekey="16"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

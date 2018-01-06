@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="9">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowSchemaTypes="1" ShowAnnotations="0" SelectedLanguage="cpp"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="86724168"/>
+					</targets>
+					<view ltx="115" lty="260" rbx="-207" rby="105"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties/>
+					<view rbx="161" rby="206"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://my-company.com/namespace"/>
+								</namespaces>
+							</header>
+							<entry name="Company" expanded="1">
+								<entry name="Person" outkey="230922112" expanded="1">
+									<entry name="First" outkey="230922232"/>
+									<entry name="Last" outkey="230922352"/>
+									<entry name="PhoneExt" outkey="230922472"/>
+									<entry name="Email" outkey="230922592"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="MFCompany.xsd" inputinstance="xml2access.xml" instanceroot="{http://my-company.com/namespace}Company"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="4" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="467706976"/>
+						<datapoint pos="1" key="231777616"/>
+						<datapoint pos="2" key="246326936"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="231779536"/>
+					</targets>
+					<view ltx="219" lty="97" rbx="2" rby="-132"/>
+				</component>
+				<component name="structure" library="db" uid="3" kind="15">
+					<properties XSLTDefaultOutput="1" JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="xml2access.mdb" DBCatalog="xml2access." OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view ltx="335" lty="14" rbx="541" rby="190"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="articles_with_comments" type="table" inpkey="230037128" expanded="1">
+								<tableactions>
+									<action operation="update" deletewithchildren="1" proceedchildren="1">
+										<field name="Number" function="equal"/>
+									</action>
+								</tableactions>
+								<entry name="Number" inpkey="230037808"/>
+								<entry name="Comment" expanded="1">
+									<entry name="{}comments" type="doc-xml" expanded="1">
+										<document schemafile="xml2access.xsd" root="{}comments"/>
+										<entry name="comments" expanded="1">
+											<entry name="comment" expanded="1">
+												<entry name="user" type="attribute" inpkey="230037568"/>
+												<entry name="text" inpkey="230037328"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" kind="database" rootobject="xml2access" name="xml2access" path="xml2access">
+								<properties>
+									<property name="Data Source" value="xml2access.mdb"/>
+									<property name="Root Object" value="xml2access"/>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+								</properties>
+								<selections>
+									<selection database-path="xml2access.xml2access.articles_with_comments" database-kind="Table"/>
+								</selections>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="86724168">
+						<edges>
+							<edge vertexkey="231777616" edgekey="229891448"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230922112">
+						<edges>
+							<edge vertexkey="230037128" edgekey="231077944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230922232">
+						<edges>
+							<edge vertexkey="467706976" edgekey="229418048"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230922352">
+						<edges>
+							<edge vertexkey="246326936" edgekey="229850984"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230922472">
+						<edges>
+							<edge vertexkey="230037808" edgekey="86709528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230922592">
+						<edges>
+							<edge vertexkey="230037328" edgekey="231022384"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="231779536">
+						<edges>
+							<edge vertexkey="230037568" edgekey="86769632"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

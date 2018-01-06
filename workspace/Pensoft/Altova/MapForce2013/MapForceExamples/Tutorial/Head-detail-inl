@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="12">
+	<component name="defaultmap1" blackbox="0" uid="67647624" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" ShowSchemaTypes="1" ShowAnnotations="0" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="67647840" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="262" rbx="440" rby="425"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://my-company.com/namespace"/>
+								</namespaces>
+							</header>
+							<entry name="Order" expanded="1">
+								<entry name="Header" inpkey="112285576" expanded="1">
+									<entry name="OrderNo" inpkey="111818392"/>
+									<entry name="TotalWeight" inpkey="112315168"/>
+									<entry name="TotalUnitCost" inpkey="112315024"/>
+									<entry name="Currency" inpkey="112285800"/>
+									<entry name="Shipping-details" inpkey="111464592"/>
+									<entry name="Detail" inpkey="111123936" expanded="1">
+										<entry name="OrderNo" inpkey="112315408"/>
+										<entry name="ProductNo" inpkey="112182352"/>
+										<entry name="UnitWeight" inpkey="111818496"/>
+										<entry name="UnitNo" inpkey="111516416"/>
+										<entry name="UnitCost" inpkey="112182576"/>
+										<entry name="Unit-description" inpkey="112412456"/>
+									</entry>
+									<entry name="Detail" inpkey="111124344" expanded="1" clone="1">
+										<entry name="OrderNo" inpkey="111516192"/>
+										<entry name="ProductNo" inpkey="111403056"/>
+										<entry name="UnitWeight" inpkey="111464488"/>
+										<entry name="UnitNo" inpkey="111818680"/>
+										<entry name="UnitCost" inpkey="112412232"/>
+										<entry name="Unit-description" inpkey="111464696"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Tut-headerDetail.xsd" instanceroot="{http://my-company.com/namespace}Order"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="82320152" kind="16">
+					<properties/>
+					<view rbx="170" rby="416"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="Rows" outkey="111453176" expanded="1">
+								<entry name="Head-key" outkey="111452448"/>
+								<entry name="Field2" outkey="111453072"/>
+								<entry name="Field3" outkey="111452864"/>
+								<entry name="Field4" outkey="111452968"/>
+								<entry name="Field5" outkey="111452760"/>
+								<entry name="Detail-key-1" outkey="111453488"/>
+								<entry name="Field9" outkey="88468360"/>
+								<entry name="Field10" outkey="88630880"/>
+								<entry name="Field11" outkey="111452552"/>
+								<entry name="Field12" outkey="111781544"/>
+								<entry name="Field13" outkey="111452656"/>
+								<entry name="Detail-key2" outkey="111780536"/>
+								<entry name="Field16" outkey="111453800"/>
+								<entry name="Field17" outkey="111453592"/>
+								<entry name="Field18" outkey="111453696"/>
+								<entry name="Field19" outkey="111453384"/>
+								<entry name="Field20" outkey="111453280"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" inputinstance="Orders-inline-key.csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="," quote="&quot;" firstrownames="false" removeempty="true">
+								<names root="Orders-inline-key" block="Rows">
+									<field0 name="Head-key" type="string"/>
+									<field1 name="Field2" type="string"/>
+									<field2 name="Field3" type="string"/>
+									<field3 name="Field4" type="string"/>
+									<field4 name="Field5" type="string"/>
+									<field5 name="Field6" type="string"/>
+									<field6 name="Field7" type="string"/>
+									<field7 name="Detail-key-1" type="string"/>
+									<field8 name="Field9" type="string"/>
+									<field9 name="Field10" type="string"/>
+									<field10 name="Field11" type="string"/>
+									<field11 name="Field12" type="string"/>
+									<field12 name="Field13" type="string"/>
+									<field13 name="Field14" type="string"/>
+									<field14 name="Detail-key2" type="integer"/>
+									<field15 name="Field16" type="string"/>
+									<field16 name="Field17" type="string"/>
+									<field17 name="Field18" type="string"/>
+									<field18 name="Field19" type="string"/>
+									<field19 name="Field20" type="string"/>
+									<field20 name="Field21" type="string"/>
+									<field21 name="Field22" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="88468360">
+						<edges>
+							<edge vertexkey="112182352" edgekey="88652056"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="88630880">
+						<edges>
+							<edge vertexkey="111818496" edgekey="113527368"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111452448">
+						<edges>
+							<edge vertexkey="111818392" edgekey="88566968"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111452552">
+						<edges>
+							<edge vertexkey="111516416" edgekey="113527640"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111452656">
+						<edges>
+							<edge vertexkey="112412456" edgekey="113527232"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111452760">
+						<edges>
+							<edge vertexkey="111464592" edgekey="88566832"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111452864">
+						<edges>
+							<edge vertexkey="112315024" edgekey="112900296"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111452968">
+						<edges>
+							<edge vertexkey="112285800" edgekey="88613320"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453072">
+						<edges>
+							<edge vertexkey="112315168" edgekey="112900432"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453176">
+						<edges>
+							<edge vertexkey="112285576" edgekey="88567240"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453280">
+						<edges>
+							<edge vertexkey="111464696" edgekey="88652192"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453384">
+						<edges>
+							<edge vertexkey="112412232" edgekey="88651920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453488">
+						<edges>
+							<edge vertexkey="112315408" edgekey="88567104"/>
+							<edge vertexkey="111123936" edgekey="112286992"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453592">
+						<edges>
+							<edge vertexkey="111464488" edgekey="112900568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453696">
+						<edges>
+							<edge vertexkey="111818680" edgekey="88652328"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111453800">
+						<edges>
+							<edge vertexkey="111403056" edgekey="112900160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111780536">
+						<edges>
+							<edge vertexkey="111516192" edgekey="120527992"/>
+							<edge vertexkey="111124344" edgekey="83666440"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111781544">
+						<edges>
+							<edge vertexkey="112182576" edgekey="113527504"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

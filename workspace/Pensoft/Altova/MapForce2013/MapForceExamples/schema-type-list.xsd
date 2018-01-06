@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="schema-types">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="type" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:token"/>
+            <xs:attribute name="base" type="xs:token" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>      
+    </xs:complexType>
+    <xs:key name="type-name">
+      <xs:selector xpath="type"/>
+      <xs:field xpath="@name"/>
+    </xs:key>
+    <xs:keyref name="type-base" refer="type-name">
+      <xs:selector xpath="type"/>
+      <xs:field xpath="@base"/>
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema PUBLIC "-//W3C//DTD XMLSchema 200102//EN" "http://www.w3.org/2001/XMLSchema.dtd">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p3p11bds="http://www.w3.org/2006/01/P3Pv11BDS" xmlns:p3p="http://www.w3.org/2002/01/P3Pv1" xmlns:p3p11="http://www.w3.org/2006/01/P3Pv11" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2006/01/P3Pv11BDS">
+     <import namespace="http://www.w3.org/2002/01/P3Pv1" schemaLocation="http://www.w3.org/2002/01/P3Pv1.xsd"/>
+ <import namespace="http://www.w3.org/2006/01/P3Pv11" schemaLocation="http://www.w3.org/2006/01/P3Pv11.xsd"/>
+ 
+     <complexType name="categoriesComplexType">
+       <all>
+        <element ref="p3p:CATEGORIES" minOccurs="1"/>
+       </all>
+     </complexType>
+     
+     <complexType name="dynamicComplexType">
+      <all>
+       <element minOccurs="0" name="clickstream" type="p3p11bds:loginfoComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+             <computer/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Click-stream Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="http" type="p3p11bds:httpinfoComplexType">
+        <annotation>
+         <appinfo>
+          <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+           <navigation/>
+           <computer/>
+          </CATEGORIES>
+         </appinfo>
+         <documentation>HTTP Protocol Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="clientevents">
+        <annotation>
+         <appinfo>
+          <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+           <navigation/>
+          </CATEGORIES>
+         </appinfo>
+         <documentation>User's Interaction with a Resource</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="cookies" type="p3p11bds:categoriesComplexType">
+        <annotation>
+         <documentation>Use of HTTP Cookies</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="searchtext">
+        <annotation>
+         <appinfo>
+          <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+           <interactive/>
+          </CATEGORIES>
+         </appinfo>
+         <documentation>Search Terms</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="interactionrecord">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <interactive/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Server Stores the Transaction History</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="miscdata" type="p3p11bds:categoriesComplexType">
+        <annotation>
+           <documentation>Miscellaneous Non-base Data Schema = information</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="loginfoComplexType">
+      <all>
+       <element minOccurs="0" name="uri" type="p3p11bds:uriComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>URI of Requested Resource</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="timestamp" type="p3p11bds:dateComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Request Timestamp</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="clientip" type="p3p11bds:ipaddrComplexType">
+        <annotation>
+           <documentation>Client's IP Address or Hostname</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="other.httpmethod">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>HTTP Request Method</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="other.bytes">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Data Bytes in Response</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="other.statuscode">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Response Status Code</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="uriComplexType">
+      <all>
+       <element minOccurs="0" name="authority">
+        <annotation>
+           <documentation>URI Authority</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="stem">
+        <annotation>
+           <documentation>URI Stem</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="querystring">
+        <annotation>
+           <documentation>Query-string Portion of URI</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="dateComplexType">
+      <all>
+       <element minOccurs="0" name="ymd.year">
+        <annotation>
+           <documentation>Year</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="ymd.month">
+        <annotation>
+           <documentation>Month</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="ymd.day">
+        <annotation>
+           <documentation>Day</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="hms.hour">
+        <annotation>
+           <documentation>Hour</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="hms.minute">
+        <annotation>
+           <documentation>Minutes</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="hms.second">
+        <annotation>
+           <documentation>Second</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="fractionsecond">
+        <annotation>
+           <documentation>Fraction of Second</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="timezone">
+        <annotation>
+           <documentation>Time Zone</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="ipaddrComplexType">
+      <all>
+       <element minOccurs="0" name="hostname">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <computer/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Complete Host and Domain Name</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="partialhostname">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Partial Hostname</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="fullip">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <computer/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Full IP Address</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="partialip">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Partial IP Address</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="httpinfoComplexType">
+      <all>
+       <element minOccurs="0" name="referer" type="p3p11bds:uriComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <navigation/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Last URI Requested by the User</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="useragent">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <computer/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User Agent Information</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="userComplexType">
+      <all>
+       <element minOccurs="0" name="name" type="p3p11bds:personnameComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Name</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="bdate" type="p3p11bds:dateComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Birth Date</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="login" type="p3p11bds:loginComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Login Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="cert" type="p3p11bds:certificateComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Identity Certificate</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="gender">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Gender</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="jobtitle">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Job Title</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="home-info" type="p3p11bds:contactComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <online/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Home Contact Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="business-info" type="p3p11bds:contactComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <online/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>User's Business Contact Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="employer">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Name of User's Employer</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="department">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Department or Division of Organization where User is Employed</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="personnameComplexType">
+      <all>
+       <element minOccurs="0" name="prefix">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Name Prefix</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="given">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Given Name (First Name)</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="middle">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Middle Name</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="family">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Family Name (Last Name)</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="suffix">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Name Suffix</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="nickname">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Nickname</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="loginComplexType">
+      <all>
+       <element minOccurs="0" name="id">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Login ID</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="password">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Login Password</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="certificateComplexType">
+      <all>
+       <element minOccurs="0" name="key">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Certificate key</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="format">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Certificate format</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="contactComplexType">
+      <all>
+       <element minOccurs="0" name="postal" type="p3p11bds:postalComplexType">
+        <annotation>
+           <documentation>Postal Address Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="telecom" type="p3p11bds:telecomComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Telecommunications Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="online" type="p3p11bds:onlineComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <online/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Online Address Information</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="postalComplexType">
+      <all>
+       <element minOccurs="0" name="name" type="p3p11bds:personnameComplexType">
+        <annotation>
+           <documentation/>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="street">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Street Address</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="city">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>City</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="stateprov">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>State or Province</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="postalcode">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Postal Code</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="organization">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Organization Name</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="country">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Country Name</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="telecomComplexType">
+      <all>
+       <element minOccurs="0" name="telephone" type="p3p11bds:telephonenumComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Telephone Number</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="fax" type="p3p11bds:telephonenumComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Fax Number</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="mobile" type="p3p11bds:telephonenumComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Mobile Telephone Number</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="pager" type="p3p11bds:telephonenumComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Pager Number</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="telephonenumComplexType">
+      <all>
+       <element minOccurs="0" name="intcode">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>International Telephone Code</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="loccode">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Local Telephone Area Code</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="number">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Telephone Number</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="ext">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Telephone Extension</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="comment">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Telephone Optional Comments</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="onlineComplexType">
+      <all>
+       <element minOccurs="0" name="email">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <online/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Email Address</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="uri">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <online/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Home Page Address</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="thirdpartyComplexType">
+      <all>
+       <element minOccurs="0" name="name" type="p3p11bds:personnameComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Name</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="bdate" type="p3p11bds:dateComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Birth Date</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="login" type="p3p11bds:loginComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Login Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="cert" type="p3p11bds:certificateComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Identity Certificate</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="gender">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Gender</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="jobtitle">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Job Title</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="home-info" type="p3p11bds:contactComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <online/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Home Contact Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="business-info" type="p3p11bds:contactComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <online/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Third Party's Business Contact Information</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="employer">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Name of Third Party's Employer</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="department">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Department or Division of Organization where Third Party is Employed</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+     <complexType name="businessComplexType">
+      <all>
+       <element minOccurs="0" name="orgname">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Organization Name</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="department">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Department or Division of Organization</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="cert" type="p3p11bds:certificateComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <uniqueid/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Organization Identity certificate</documentation>
+        </annotation>
+       </element>
+       <element minOccurs="0" name="contact-info" type="p3p11bds:contactComplexType">
+        <annotation>
+           <appinfo>
+            <CATEGORIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+             <physical/>
+             <online/>
+             <demographic/>
+            </CATEGORIES>
+           </appinfo>
+           <documentation>Contact Information for the Organization</documentation>
+        </annotation>
+       </element>
+      </all>
+     </complexType>
+  </schema>

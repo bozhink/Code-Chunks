@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+This file is an entry point for Investment (invest).
+The DTS starting with this entry point includes the concepts defined in Investment (invest) with their standard, period start, period end, total and axis default labels. It will not include references. This DTS also includes non industry/statement and non disclosure presentation and definition linkbases.
+-->
+<xs:schema targetNamespace="http://xbrl.sec.gov/invest-ent-std/2011-01-31" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:invest-ent-std="http://xbrl.sec.gov/invest-ent-std/2011-01-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+<xs:annotation>
+<xs:appinfo>
+<link:linkbaseRef xlink:type="simple" xlink:href="invest-pre-2011-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+<link:linkbaseRef xlink:type="simple" xlink:href="invest-def-2011-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+</xs:appinfo>
+</xs:annotation>
+<xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+<xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+<xs:import namespace="http://xbrl.sec.gov/invest-std/2011-01-31" schemaLocation="invest-std-2011-01-31.xsd"/>
+</xs:schema>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="18">
+	<component name="defaultmap1" blackbox="0" uid="16" editable="1">
+		<properties SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="position" library="core" uid="3" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="571" lty="59" rbx="638" rby="98"/>
+				</component>
+				<component name="document" library="xml" uid="9" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="703" lty="42" rbx="832" rby="146"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Contacts" expanded="1">
+										<entry name="Contact" inpkey="14" expanded="1">
+											<entry name="ID" inpkey="2"/>
+											<entry name="First" inpkey="28"/>
+											<entry name="Last" inpkey="25"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Contacts.xsd" instanceroot="{}Contacts" sps="ContactList.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="5" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="170" rby="276"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BranchOffices" outkey="52" expanded="1">
+										<entry name="Office" expanded="1">
+											<entry name="Contact" outkey="13" expanded="1">
+												<entry name="last" outkey="24"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" inputinstance="BranchOffices.xml" instanceroot="{}BranchOffices"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="21" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="397" lty="94" rbx="517" rby="174"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when" inpkey="51"/>
+							<entry name="document" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="Contact" ns="1" inpkey="37" outkey="38" expanded="1">
+									<entry name="first" ns="1" outkey="39"/>
+									<entry name="last" ns="1" outkey="40"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" instanceroot="{}BranchOffices/{}Office/{}Contact"/>
+						<wsdl/>
+						<parameter usageKind="variable" name="Contact"/>
+					</data>
+				</component>
+				<component name="Contact" library="core" uid="17" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="34"/>
+						<datapoint pos="1" key="35"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="36"/>
+						<datapoint/>
+					</targets>
+					<view ltx="244" lty="146" rbx="347" rby="202"/>
+				</component>
+				<component name="greater" library="core" uid="18" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="30"/>
+						<datapoint pos="1" key="31"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="244" lty="243" rbx="307" rby="299"/>
+				</component>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="33"/>
+					</targets>
+					<view ltx="164" lty="324" rbx="212" rby="342"/>
+					<data>
+						<constant value="M" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="41">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="42">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="2" edgekey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="34" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="30" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="35" edgekey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="31" edgekey="46"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="37" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="16" edgekey="47"/>
+							<edge vertexkey="14" edgekey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="28" edgekey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="25" edgekey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="51" edgekey="53"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

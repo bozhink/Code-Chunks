@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap1" blackbox="0" uid="9" editable="1">
+		<properties SelectedLanguage="builtin" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="greater" library="core" uid="11" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="37"/>
+						<datapoint pos="1" key="38"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="39"/>
+					</targets>
+					<view ltx="318" lty="133" rbx="381" rby="189"/>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="322" lty="212" rbx="382" rby="230"/>
+					<data>
+						<constant value="high" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="less" library="core" uid="15" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="42"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="43"/>
+					</targets>
+					<view ltx="332" lty="255" rbx="381" rby="311"/>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="44"/>
+					</targets>
+					<view ltx="323" lty="328" rbx="381" rby="346"/>
+					<data>
+						<constant value="low" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="10" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="50"/>
+						<datapoint pos="1" key="51"/>
+						<datapoint pos="2" key="52"/>
+						<datapoint pos="3" key="53"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="55"/>
+					</targets>
+					<view ltx="434" lty="140" rbx="532" rby="252"/>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="150" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Temperatures" expanded="1">
+										<entry name="data" outkey="29" expanded="1">
+											<entry name="temp" type="attribute" outkey="19"/>
+											<entry name="month" type="attribute" outkey="16"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Temperatures.xsd" inputinstance="Temperatures.xml" instanceroot="{}Temperatures"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="25" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="107"/>
+					</targets>
+					<view ltx="7" lty="262" rbx="59" rby="280"/>
+					<data>
+						<constant value="20" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="upper" library="core" uid="12" kind="6">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="106"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="36"/>
+					</targets>
+					<view ltx="87" lty="238" rbx="165" rby="277"/>
+					<data>
+						<input datatype="decimal"/>
+						<wsdl/>
+						<parameter usageKind="input" name="upper" optional="1"/>
+					</data>
+				</component>
+				<component name="lower" library="core" uid="13" kind="6">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="108"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+					</targets>
+					<view ltx="88" lty="290" rbx="166" rby="329"/>
+					<data>
+						<input datatype="decimal"/>
+						<wsdl/>
+						<parameter usageKind="input" name="lower" optional="1"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="26" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="109"/>
+					</targets>
+					<view ltx="11" lty="316" rbx="57" rby="334"/>
+					<data>
+						<constant value="5" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="19" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="584" lty="2" rbx="734" rby="202"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Temperatures" expanded="1">
+										<entry name="data" inpkey="73" expanded="1">
+											<entry name="temp" type="attribute" inpkey="74"/>
+											<entry name="month" type="attribute" inpkey="75"/>
+											<entry name="desc" type="attribute" inpkey="76"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Temperatures.xsd" instanceroot="{}Temperatures" sps="ClassifyTemperatures.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="75" edgekey="77"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="37" edgekey="56"/>
+							<edge vertexkey="41" edgekey="57"/>
+							<edge vertexkey="74" edgekey="78"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="73" edgekey="79"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="38" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="50" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="42" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="52" edgekey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="44">
+						<edges>
+							<edge vertexkey="53" edgekey="105"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="51" edgekey="66"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="76" edgekey="80"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="107">
+						<edges>
+							<edge vertexkey="106" edgekey="110"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="109">
+						<edges>
+							<edge vertexkey="108" edgekey="111"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

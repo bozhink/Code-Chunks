@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="18">
+	<component name="defaultmap1" blackbox="0" uid="54220040" editable="1">
+		<properties SelectedLanguage="java" WSDLFile="query.wsdl" WSDLService="{http://www.altova.com/WS2DB/query.wsdl}WS2DB" WSDLPort="WS2DBSoapPort" WSDLOperation="{http://www.altova.com/WS2DB/query.wsdl}getPerson" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="Persons" library="core" uid="55014496" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+						<datapoint/>
+					</targets>
+					<view ltx="260" lty="63" rbx="363" rby="119"/>
+				</component>
+				<component name="constant" library="core" uid="53578384" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="101" lty="227" rbx="144" rby="245"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="56831968" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="10"/>
+						<datapoint pos="2" key="25"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="194" lty="143" rbx="278" rby="219"/>
+				</component>
+				<component name="structure" library="db" uid="56040552" kind="15">
+					<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="people.mdb" DBCatalog="people" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view ltx="-30" lty="62" rbx="139" rby="193"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="Persons" type="table" outkey="18" expanded="1">
+									<entry name="First" outkey="1"/>
+									<entry name="Last" outkey="24"/>
+									<entry name="Title" outkey="29"/>
+									<entry name="PhoneEXT" outkey="21"/>
+									<entry name="Email" outkey="32"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" name="people" path="people" use_driver_for_retrieval="Yes" allow_background_retrieval="No">
+								<properties>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Root Object" value="people"/>
+									<property name="Data Source" value="people.mdb"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+									<property name="User ID"/>
+									<property name="Password"/>
+									<property name="Persist Security Info"/>
+									<property name="Jet OLEDB:System Database"/>
+									<property name="Jet OLEDB:Sandbox Mode"/>
+									<property name="Jet OLEDB:Exclusive Async Delay"/>
+									<property name="Jet OLEDB:Flush Transaction Timeout"/>
+									<property name="Jet OLEDB:Implicit Commit Sync"/>
+									<property name="Jet OLEDB:Lock Delay"/>
+									<property name="Jet OLEDB:Lock Retry"/>
+									<property name="Jet OLEDB:Max Buffer Size"/>
+									<property name="Jet OLEDB:Max Locks Per File"/>
+									<property name="Jet OLEDB:Page Locks to Table Lock"/>
+									<property name="Jet OLEDB:Page Timeout"/>
+									<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+									<property name="Jet OLEDB:Shared Async Delay"/>
+									<property name="Jet OLEDB:User Commit Sync"/>
+									<property name="Jet OLEDB:Compact Without Replica Repair"/>
+									<property name="Jet OLEDB:Create System Database"/>
+									<property name="Jet OLEDB:Database Locking Mode"/>
+									<property name="Jet OLEDB:Database Password"/>
+									<property name="Jet OLEDB:New Database Password"/>
+									<property name="Jet OLEDB:Registry Path"/>
+								</properties>
+								<LocalViewStorage/>
+								<LocalRelationsStorage/>
+								<selections>
+									<selection>
+										<PathElement Name="people" Kind="DataSource"/>
+										<PathElement Name="people" Kind="Database"/>
+										<PathElement Name="Persons" Kind="Table"/>
+									</selection>
+								</selections>
+							</database_connection>
+							<recordset/>
+						</database>
+					</data>
+				</component>
+				<component name="wsdl" library="wsdl" uid="46715864" kind="17" visible="0">
+					<view ltx="-30" lty="264" rbx="168" rby="343"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/WS2DB/query.wsdl"/>
+								</namespaces>
+							</header>
+							<entry name="getPersonSoapIn" ns="1" expanded="1">
+								<entry name="getPersonSoapIn" ns="1" expanded="1">
+									<entry name="Query" outkey="35"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="contains" library="core" uid="46939272" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="36"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="298" lty="216" rbx="386" rby="272"/>
+				</component>
+				<component name="wsdl" library="wsdl" uid="54023992" kind="17" visible="0">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="400" lty="100" rbx="601" rby="247"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/WS2DB/query.wsdl"/>
+								</namespaces>
+							</header>
+							<entry name="getPersonSoapOut" ns="1" expanded="1">
+								<entry name="getPersonSoapOut" ns="1" expanded="1">
+									<entry name="Result" inpkey="38" expanded="1">
+										<entry name="Person" inpkey="13" expanded="1">
+											<entry name="First" inpkey="4"/>
+											<entry name="Last" inpkey="27"/>
+											<entry name="Title" inpkey="30"/>
+											<entry name="PhoneEXT" inpkey="22"/>
+											<entry name="Email" inpkey="33"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl kind="output"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+							<edge vertexkey="4" edgekey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7" edgekey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16" edgekey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="22" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+							<edge vertexkey="27" edgekey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="30" edgekey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="33" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="36" edgekey="37"/>
+							<edge vertexkey="38" edgekey="39"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

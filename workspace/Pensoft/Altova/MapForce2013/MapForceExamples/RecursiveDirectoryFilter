@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="10" lty="172" rbx="156" rby="273"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="directory" outkey="10" expanded="1">
+										<entry name="name" type="attribute" outkey="13"/>
+										<entry name="file" outkey="16"/>
+										<entry name="directory" outkey="7"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Directory.xsd" inputinstance="Directory.xml" outputinstance="Directory.xml" instanceroot="{}directory"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="22" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="14" lty="368" rbx="-29" rby="3"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SearchFor" library="core" uid="21" kind="6">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="110" lty="317" rbx="-12" rby="-15"/>
+					<data>
+						<input datatype="string" connectiontype="0"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SearchFor" optional="1"/>
+					</data>
+				</component>
+				<component name="FilterDirectory" library="user" blackbox="0" uid="8" kind="19" visible="0">
+					<view ltx="254" lty="173" rbx="585" rby="271"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" componentid="4" expanded="1">
+								<entry name="directory" inpkey="11" expanded="1">
+									<entry name="name" type="attribute" inpkey="14"/>
+									<entry name="file" inpkey="17"/>
+									<entry name="directory" inpkey="8"/>
+								</entry>
+							</entry>
+							<entry name="SearchFor" inpkey="5" componentid="20"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" componentid="16" expanded="1">
+								<entry name="directory" outkey="19" expanded="1">
+									<entry name="name" type="attribute" outkey="22"/>
+									<entry name="file" outkey="25"/>
+									<entry name="directory" outkey="28"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="15" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="691" lty="172" rbx="837" rby="273"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="directory" inpkey="20" expanded="1">
+										<entry name="name" type="attribute" inpkey="23"/>
+										<entry name="file" inpkey="26"/>
+										<entry name="directory" inpkey="29"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Directory.xsd" instanceroot="{}directory" sps="Directory.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="9">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="18">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="27">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="30">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29" edgekey="30"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="FilterDirectory" library="user" blackbox="0" editable="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="16" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="654" lty="11" rbx="804" rby="211"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" inpkey="19" expanded="1">
+								<entry name="name" type="attribute" inpkey="13"/>
+								<entry name="file" inpkey="2" expanded="1"/>
+								<entry name="directory" inpkey="28"/>
+							</entry>
+						</root>
+						<document schema="Directory.xsd" instanceroot="{}directory"/>
+						<wsdl/>
+						<parameter usageKind="output" name="directory"/>
+					</data>
+				</component>
+				<component name="file" library="core" uid="17" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+						<datapoint/>
+					</targets>
+					<view ltx="477" lty="69" rbx="71" rby="-6"/>
+				</component>
+				<component name="document" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-3" lty="11" rbx="147" rby="211"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" outkey="18" expanded="1">
+								<entry name="name" type="attribute" outkey="12"/>
+								<entry name="file" outkey="15" expanded="1">
+									<entry name="name" type="attribute" outkey="24"/>
+								</entry>
+								<entry name="directory" outkey="21"/>
+							</entry>
+						</root>
+						<document schema="Directory.xsd" instanceroot="{}directory"/>
+						<wsdl/>
+						<parameter usageKind="input" name="directory"/>
+					</data>
+				</component>
+				<component name="FilterDirectory" library="user" blackbox="0" uid="5" kind="19" visible="0">
+					<view ltx="245" lty="211" rbx="529" rby="298"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" componentid="4" expanded="1">
+								<entry name="directory" inpkey="22"/>
+							</entry>
+							<entry name="SearchFor" inpkey="10" componentid="20"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" componentid="16" expanded="1">
+								<entry name="directory" outkey="27"/>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="contains" library="core" uid="18" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="25"/>
+						<datapoint pos="1" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="311" lty="111" rbx="-35" rby="1"/>
+				</component>
+				<component name="SearchFor" library="core" uid="20" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="-3" lty="264"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SearchFor"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="3">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="17">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="23">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="29">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+							<edge vertexkey="10" edgekey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16" edgekey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="22" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="28" edgekey="29"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

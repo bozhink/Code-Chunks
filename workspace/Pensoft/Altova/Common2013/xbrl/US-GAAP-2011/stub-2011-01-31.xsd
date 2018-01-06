@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://xbrl.sec.gov/stub/2011-01-31" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/country-ent-all/2011-01-31" schemaLocation="country/2011/country-ent-all-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/currency-ent-all/2011-01-31" schemaLocation="currency/2011/currency-ent-all-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/dei-ent-dep/2011-01-31" schemaLocation="dei/2011/dei-ent-dep-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/exch-ent-dep/2011-01-31" schemaLocation="exch/2011/exch-ent-dep-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/invest-ent-dep/2011-01-31" schemaLocation="invest/2011/invest-ent-dep-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/naics-ent-all/2011-01-31" schemaLocation="naics/2011/naics-ent-all-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/sic-ent-all/2011-01-31" schemaLocation="sic/2011/sic-ent-all-2011-01-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/stpr-ent-all/2011-01-31" schemaLocation="stpr/2011/stpr-ent-all-2011-01-31.xsd"/>
+</xsd:schema>

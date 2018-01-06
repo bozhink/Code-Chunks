@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="18">
+	<component name="defaultmap2" blackbox="0" uid="67602616" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" ShowSchemaTypes="1" ShowAnnotations="0" SelectedLanguage="builtin" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="substring-after" library="core" uid="67651925" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="28"/>
+						<datapoint pos="1" key="29"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="508" lty="129" rbx="608" rby="185"/>
+				</component>
+				<component name="structure" library="db" uid="67603088" kind="15">
+					<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="Accounts.mdb" DBCatalog="Accounts" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view rbx="195" rby="119"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="Users" type="table" outkey="31" expanded="1">
+									<entry name="UserID" valuekeygeneration="databasegenerated"/>
+									<entry name="Username" outkey="13"/>
+								</entry>
+							</entry>
+						</root>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" name="Accounts" path="Accounts" use_driver_for_retrieval="Yes" allow_background_retrieval="No">
+								<properties>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Root Object" value="Accounts"/>
+									<property name="Data Source" value="Accounts.mdb"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+									<property name="User ID"/>
+									<property name="Password"/>
+									<property name="Persist Security Info"/>
+									<property name="Jet OLEDB:System Database"/>
+									<property name="Jet OLEDB:Sandbox Mode"/>
+									<property name="Jet OLEDB:Exclusive Async Delay"/>
+									<property name="Jet OLEDB:Flush Transaction Timeout"/>
+									<property name="Jet OLEDB:Implicit Commit Sync"/>
+									<property name="Jet OLEDB:Lock Delay"/>
+									<property name="Jet OLEDB:Lock Retry"/>
+									<property name="Jet OLEDB:Max Buffer Size"/>
+									<property name="Jet OLEDB:Max Locks Per File"/>
+									<property name="Jet OLEDB:Page Locks to Table Lock"/>
+									<property name="Jet OLEDB:Page Timeout"/>
+									<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+									<property name="Jet OLEDB:Shared Async Delay"/>
+									<property name="Jet OLEDB:User Commit Sync"/>
+									<property name="Jet OLEDB:Compact Without Replica Repair"/>
+									<property name="Jet OLEDB:Create System Database"/>
+									<property name="Jet OLEDB:Database Locking Mode"/>
+									<property name="Jet OLEDB:Database Password"/>
+									<property name="Jet OLEDB:New Database Password"/>
+									<property name="Jet OLEDB:Registry Path"/>
+								</properties>
+								<LocalViewStorage/>
+								<LocalRelationsStorage/>
+								<selections>
+									<selection>
+										<PathElement Name="Accounts" Kind="DataSource"/>
+										<PathElement Name="Accounts" Kind="Database"/>
+										<PathElement Name="Users" Kind="Table"/>
+									</selection>
+								</selections>
+							</database_connection>
+							<recordset/>
+						</database>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="67651931" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="36"/>
+					</targets>
+					<view ltx="476" lty="258" rbx="532" rby="276"/>
+					<data>
+						<constant value=" of " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="structure" library="core" uid="67651928" kind="29">
+					<properties/>
+					<view ltx="398" lty="283" rbx="530" rby="319"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when">
+								<setting value="once"/>
+							</entry>
+							<entry name="document" expanded="1">
+								<entry name="value" ns="1" inpkey="37" outkey="38"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<variable datatype="int"/>
+						<parameter usageKind="variable"/>
+					</data>
+				</component>
+				<component name="position" library="core" uid="67651929" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="39"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+					</targets>
+					<view ltx="465" lty="212" rbx="532" rby="251"/>
+				</component>
+				<component name="count" library="core" uid="67651923" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="48"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="49"/>
+					</targets>
+					<view ltx="251" lty="258" rbx="365" rby="314"/>
+				</component>
+				<component name="concat" library="core" uid="67651930" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="32"/>
+						<datapoint pos="1" key="33"/>
+						<datapoint pos="2" key="34"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="565" lty="212" rbx="649" rby="288"/>
+				</component>
+				<component name="document" library="xml" uid="67651921" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="697" rbx="873" rby="139"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PersonList" expanded="1">
+										<entry name="Person" inpkey="41" expanded="1">
+											<entry name="First" inpkey="42"/>
+											<entry name="Last" inpkey="43"/>
+											<entry name="Details" inpkey="44"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList" sps="PersonList.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="67651926" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="50"/>
+					</targets>
+					<view ltx="398" lty="104" rbx="441" rby="122"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substring-before" library="core" uid="67651924" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="45"/>
+						<datapoint pos="1" key="46"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="47"/>
+					</targets>
+					<view ltx="500" lty="66" rbx="608" rby="122"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="45" edgekey="51"/>
+							<edge vertexkey="28" edgekey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="43" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="41" edgekey="54"/>
+							<edge vertexkey="48" edgekey="55"/>
+							<edge vertexkey="39" edgekey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="44" edgekey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="33" edgekey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="34" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="32" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="42" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="37" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="50">
+						<edges>
+							<edge vertexkey="46" edgekey="63"/>
+							<edge vertexkey="29" edgekey="64"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

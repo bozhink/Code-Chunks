@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cont="urn:oasis:names:tc:opendocument:xmlns:container" targetNamespace="urn:oasis:names:tc:opendocument:xmlns:container" elementFormDefault="qualified">
+	<xs:element name="container">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cont:rootfiles"/>
+			</xs:sequence>
+			<xs:attribute name="version" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rootfiles">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cont:rootfile" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rootfile">
+		<xs:complexType>
+			<xs:attribute name="full-path" use="required"/>
+			<xs:attribute name="media-type" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

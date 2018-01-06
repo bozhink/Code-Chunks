@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:spy="http://www.altova.com/catalog_ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:entity:xmlns:xml:catalog
+Catalog.xsd">
+	<nextCatalog catalog="%PersonalFolder%/Altova/%AppAndVersionName%/CustomCatalog.xml"/> 
+	<nextCatalog catalog="CoreCatalog.xml"/>
+	<!-- Include all catalogs under common schemas folder on the first directory level -->
+	<nextCatalog spy:recurseFrom="%AltovaCommonFolder%/Schemas" catalog="catalog.xml" spy:depth="1"/>
+	<!-- Include all catalogs under common XBRL folder on the first directory level -->
+	<nextCatalog spy:recurseFrom="%AltovaCommonFolder%/XBRL" catalog="catalog.xml" spy:depth="1"/>
+</catalog>

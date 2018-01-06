@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" >
+	<!-- DocBook driver file .................................................. -->
+	<public publicId="-//OASIS//DTD DocBook XML V4.5//EN" uri="files/docbookx.dtd"/>
+	<system systemId="http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" uri="files/docbookx.dtd"/>
+	<system systemId="http://docbook.org/xml/4.5/docbookx.dtd" uri="files/docbookx.dtd"/>
+	<!-- DocBook modules ...................................................... -->
+	<public publicId="-//OASIS//DTD DocBook CALS Table Model V4.5//EN" uri="files/calstblx.dtd"/>
+	<public publicId="-//OASIS//ELEMENTS DocBook XML HTML Tables V4.5//EN" uri="files/htmltblx.mod"/>
+	<!-- commenting out because already defined in USPTO Catalog for XMLSpy -->
+	<!-- <public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN" uri="files/soextblx.dtd"/> -->
+	<public publicId="-//OASIS//ELEMENTS DocBook Information Pool V4.5//EN" uri="files/dbpoolx.mod"/>
+	<public publicId="-//OASIS//ELEMENTS DocBook Document Hierarchy V4.5//EN" uri="files/dbhierx.mod"/>
+	<public publicId="-//OASIS//ENTITIES DocBook Additional General Entities V4.5//EN" uri="files/dbgenent.mod"/>
+	<public publicId="-//OASIS//ENTITIES DocBook Notations V4.5//EN" uri="files/dbnotnx.mod"/>
+	<public publicId="-//OASIS//ENTITIES DocBook Character Entities V4.5//EN" uri="files/dbcentx.mod"/>
+	<!-- ...................................................................... -->
+	<!-- ISO entity sets ...................................................... -->
+	<public publicId="ISO 8879:1986//ENTITIES Diacritical Marks//EN//XML" uri="files/ent/isodia.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML" uri="files/ent/isonum.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Publishing//EN//XML" uri="files/ent/isopub.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES General Technical//EN//XML" uri="files/ent/isotech.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Latin 1//EN//XML" uri="files/ent/isolat1.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Latin 2//EN//XML" uri="files/ent/isolat2.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Greek Letters//EN//XML" uri="files/ent/isogrk1.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Monotoniko Greek//EN//XML" uri="files/ent/isogrk2.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Greek Symbols//EN//XML" uri="files/ent/isogrk3.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Alternative Greek Symbols//EN//XML" uri="files/ent/isogrk4.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Math Symbols: Arrow Relations//EN//XML" uri="files/ent/isoamsa.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Math Symbols: Binary Operators//EN//XML" uri="files/ent/isoamsb.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Math Symbols: Delimiters//EN//XML" uri="files/ent/isoamsc.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Math Symbols: Negated Relations//EN//XML" uri="files/ent/isoamsn.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Math Symbols: Ordinary//EN//XML" uri="files/ent/isoamso.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Added Math Symbols: Relations//EN//XML" uri="files/ent/isoamsr.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Box and Line Drawing//EN//XML" uri="files/ent/isobox.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Russian Cyrillic//EN//XML" uri="files/ent/isocyr1.ent"/>
+	<public publicId="ISO 8879:1986//ENTITIES Non-Russian Cyrillic//EN//XML" uri="files/ent/isocyr2.ent"/>
+	<!-- End of catalog data for DocBook XML V4.5 ............................. -->
+	<!-- ...................................................................... -->
+	
+	<!-- Map DocBook web server URIs to our local copies -->
+	<rewriteURI uriStartString="http://www.oasis-open.org/docbook/xml/4.5/" rewritePrefix="files/"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/DocBook/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/DocBook/' rewritePrefix='files/'/>
+</catalog>

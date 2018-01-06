@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="4">
+	<component name="defaultmap2" uid="67602616" blackbox="0" editable="1">
+		<properties AppName="Mapping" JavaBasePackage="com.mapforce" SelectedLanguage="java" ShowAnnotations="0" ShowLibraryNameInHeader="0" ShowSchemaTypes="1" XSLTTargetEncoding="UTF-8"/>
+		<structure>
+			<children>
+				<component name="structure" library="db" kind="1" uid="67603088">
+					<properties DBCatalog="Accounts" DBDataSource="Accounts.mdb" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" OLEDBProvider="Microsoft.Jet.OLEDB.4.0" XSLTDefaultOutput="0"/>
+					<view ltx="0" lty="0" rbx="206" rby="317"/>
+					<data>
+						<root scrollposition="1">
+							<header/>
+							<entry name="Users" expanded="true">
+								<entry name="Username" outkey="67664664"/>
+								<entry name="Groups" expanded="true">
+									<entry name="Applications" expanded="true" outkey="67665184">
+										<entry name="AppName" outkey="67665584"/>
+										<entry name="Description" outkey="67665984"/>
+										<entry name="Category" outkey="67666384"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<database>
+							<database_connection>
+								<connect database-kind="Access" import-kind="Access">
+									<connection_type>
+										<connection_string>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Accounts.mdb</connection_string>
+									</connection_type>
+								</connect>
+								<server name="Accounts.mdb">
+									<database name="Accounts">
+										<schema name="">
+											<table name="Applications" kind="UserTable"/>
+											<table name="Groups" kind="UserTable"/>
+											<table name="Users" kind="UserTable"/>
+										</schema>
+									</database>
+								</server>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+				<component name="substitute-null" library="db" kind="13" uid="67644064">
+					<sources>
+						<datapoint pos="0" key="67645552"/>
+						<datapoint pos="1" key="67645968"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="67646384"/>
+					</targets>
+					<view ltx="371" lty="174" rbx="-40" rby="-64"/>
+				</component>
+				<component name="constant" library="core" kind="2" uid="67646752">
+					<targets>
+						<datapoint pos="0" key="67647576"/>
+					</targets>
+					<view ltx="270" lty="225" rbx="-198" rby="47"/>
+					<data>
+						<constant value="Misc." datatype="string"/>
+					</data>
+				</component>
+				<component name="substitute-null" library="db" kind="13" uid="67648032">
+					<sources>
+						<datapoint pos="0" key="67649232"/>
+						<datapoint pos="1" key="67649648"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="67650136"/>
+					</targets>
+					<view ltx="371" lty="242" rbx="3" rby="-36"/>
+				</component>
+				<component name="constant" library="core" kind="2" uid="67650504">
+					<targets>
+						<datapoint pos="0" key="67651256"/>
+					</targets>
+					<view ltx="233" lty="312" rbx="-235" rby="134"/>
+					<data>
+						<constant value="No Description" datatype="string"/>
+					</data>
+				</component>
+				<component name="edi" library="text" kind="1" uid="67651920">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="522" lty="42" rbx="702" rby="154"/>
+					<data>
+						<root scrollposition="0">
+							<header/>
+							<entry name="Rows" expanded="true" inpkey="67643728">
+								<entry name="User" inpkey="67682568"/>
+								<entry name="Application" inpkey="67682968"/>
+								<entry name="Category" inpkey="67683368"/>
+								<entry name="Description" inpkey="67683768"/>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1">
+							<settings separator="," quote="&quot;" firstrownames="false">
+								<names root="Text file" block="Rows">
+									<field0 name="User" type="string"/>
+									<field1 name="Application" type="string"/>
+									<field2 name="Category" type="string"/>
+									<field3 name="Description" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="67664368"/>
+					<edge edgekey="67688112"/>
+					<edge edgekey="67688392"/>
+					<edge edgekey="67688672"/>
+					<edge edgekey="67688952"/>
+					<edge edgekey="67689232"/>
+					<edge edgekey="67689512"/>
+					<edge edgekey="67689792"/>
+					<edge edgekey="67690072"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="67646384">
+						<edges>
+							<edge vertexkey="67683368" edgekey="67688672"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67647576">
+						<edges>
+							<edge vertexkey="67645968" edgekey="67690072"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67650136">
+						<edges>
+							<edge vertexkey="67683768" edgekey="67688952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67651256">
+						<edges>
+							<edge vertexkey="67649648" edgekey="67689232"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67664664">
+						<edges>
+							<edge vertexkey="67682568" edgekey="67688392"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67665184">
+						<edges>
+							<edge vertexkey="67643728" edgekey="67664368"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67665584">
+						<edges>
+							<edge vertexkey="67682968" edgekey="67688112"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67665984">
+						<edges>
+							<edge vertexkey="67649232" edgekey="67689512"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67666384">
+						<edges>
+							<edge vertexkey="67645552" edgekey="67689792"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

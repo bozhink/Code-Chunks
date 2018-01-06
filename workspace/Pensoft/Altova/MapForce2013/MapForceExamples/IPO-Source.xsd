@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The list of cities below are used with the CurrencyConvertor.mfd example -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:complexType name="Address">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="US-Address">
+        <xs:complexContent>
+            <xs:extension base="Address">
+                <xs:sequence>
+                    <xs:element name="state" type="US-State"/>
+                    <xs:element name="zip" type="xs:positiveInteger"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="PurchaseOrder">
+        <xs:annotation>
+            <xs:documentation>The PurchaseOrder element is used for population of the CurrencyConverter.mfd example.  IT contains data representing an example purchase order, with multiple currencies</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="shipTo" type="US-Address"/>
+                <xs:element name="billTo" type="US-Address"/>
+                <xs:element name="Suppliers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CompanyName" type="xs:string"/>
+                            <xs:element name="ContactName" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ContactTitle" nillable="true" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Address" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="City" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="PostalCode" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Phone" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Fax" nillable="true" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="HomePage" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="65535"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element ref="Items" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="NationOfOrigin">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="India"/>
+                                    <xs:enumeration value="Canada"/>
+                                    <xs:enumeration value="Russia"/>
+                                    <xs:enumeration value="Brazil"/>
+                                    <xs:enumeration value="Iceland"/>
+                                    <xs:enumeration value="Japan"/>
+                                    <xs:enumeration value="France"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="CurrencyCode">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="AFA"/>
+                                    <xs:enumeration value="ALL"/>
+                                    <xs:enumeration value="DZD"/>
+                                    <xs:enumeration value="ARS"/>
+                                    <xs:enumeration value="AWG"/>
+                                    <xs:enumeration value="AUD"/>
+                                    <xs:enumeration value="BSD"/>
+                                    <xs:enumeration value="BHD"/>
+                                    <xs:enumeration value="BDT"/>
+                                    <xs:enumeration value="BBD"/>
+                                    <xs:enumeration value="BZD"/>
+                                    <xs:enumeration value="BMD"/>
+                                    <xs:enumeration value="BTN"/>
+                                    <xs:enumeration value="BOB"/>
+                                    <xs:enumeration value="BWP"/>
+                                    <xs:enumeration value="BRL"/>
+                                    <xs:enumeration value="GBP"/>
+                                    <xs:enumeration value="BND"/>
+                                    <xs:enumeration value="BIF"/>
+                                    <xs:enumeration value="XOF"/>
+                                    <xs:enumeration value="XAF"/>
+                                    <xs:enumeration value="KHR"/>
+                                    <xs:enumeration value="CAD"/>
+                                    <xs:enumeration value="CVE"/>
+                                    <xs:enumeration value="KYD"/>
+                                    <xs:enumeration value="CLP"/>
+                                    <xs:enumeration value="CNY"/>
+                                    <xs:enumeration value="COP"/>
+                                    <xs:enumeration value="KMF"/>
+                                    <xs:enumeration value="CRC"/>
+                                    <xs:enumeration value="HRK"/>
+                                    <xs:enumeration value="CUP"/>
+                                    <xs:enumeration value="CYP"/>
+                                    <xs:enumeration value="CZK"/>
+                                    <xs:enumeration value="DKK"/>
+                                    <xs:enumeration value="DJF"/>
+                                    <xs:enumeration value="DOP"/>
+                                    <xs:enumeration value="XCD"/>
+                                    <xs:enumeration value="EGP"/>
+                                    <xs:enumeration value="SVC"/>
+                                    <xs:enumeration value="EEK"/>
+                                    <xs:enumeration value="ETB"/>
+                                    <xs:enumeration value="EUR"/>
+                                    <xs:enumeration value="FKP"/>
+                                    <xs:enumeration value="GMD"/>
+                                    <xs:enumeration value="GHC"/>
+                                    <xs:enumeration value="GIP"/>
+                                    <xs:enumeration value="XAU"/>
+                                    <xs:enumeration value="GTQ"/>
+                                    <xs:enumeration value="GNF"/>
+                                    <xs:enumeration value="GYD"/>
+                                    <xs:enumeration value="HTG"/>
+                                    <xs:enumeration value="HNL"/>
+                                    <xs:enumeration value="HKD"/>
+                                    <xs:enumeration value="HUF"/>
+                                    <xs:enumeration value="ISK"/>
+                                    <xs:enumeration value="INR"/>
+                                    <xs:enumeration value="IDR"/>
+                                    <xs:enumeration value="IQD"/>
+                                    <xs:enumeration value="ILS"/>
+                                    <xs:enumeration value="JMD"/>
+                                    <xs:enumeration value="JPY"/>
+                                    <xs:enumeration value="JOD"/>
+                                    <xs:enumeration value="KZT"/>
+                                    <xs:enumeration value="KES"/>
+                                    <xs:enumeration value="KRW"/>
+                                    <xs:enumeration value="KWD"/>
+                                    <xs:enumeration value="LAK"/>
+                                    <xs:enumeration value="LVL"/>
+                                    <xs:enumeration value="LBP"/>
+                                    <xs:enumeration value="LSL"/>
+                                    <xs:enumeration value="LRD"/>
+                                    <xs:enumeration value="LYD"/>
+                                    <xs:enumeration value="LTL"/>
+                                    <xs:enumeration value="MOP"/>
+                                    <xs:enumeration value="MKD"/>
+                                    <xs:enumeration value="MGF"/>
+                                    <xs:enumeration value="MWK"/>
+                                    <xs:enumeration value="MYR"/>
+                                    <xs:enumeration value="MVR"/>
+                                    <xs:enumeration value="MTL"/>
+                                    <xs:enumeration value="MRO"/>
+                                    <xs:enumeration value="MUR"/>
+                                    <xs:enumeration value="MXN"/>
+                                    <xs:enumeration value="MDL"/>
+                                    <xs:enumeration value="MNT"/>
+                                    <xs:enumeration value="MAD"/>
+                                    <xs:enumeration value="MZM"/>
+                                    <xs:enumeration value="MMK"/>
+                                    <xs:enumeration value="NAD"/>
+                                    <xs:enumeration value="NPR"/>
+                                    <xs:enumeration value="ANG"/>
+                                    <xs:enumeration value="NZD"/>
+                                    <xs:enumeration value="NIO"/>
+                                    <xs:enumeration value="NGN"/>
+                                    <xs:enumeration value="KPW"/>
+                                    <xs:enumeration value="NOK"/>
+                                    <xs:enumeration value="OMR"/>
+                                    <xs:enumeration value="XPF"/>
+                                    <xs:enumeration value="PKR"/>
+                                    <xs:enumeration value="XPD"/>
+                                    <xs:enumeration value="PAB"/>
+                                    <xs:enumeration value="PGK"/>
+                                    <xs:enumeration value="PYG"/>
+                                    <xs:enumeration value="PEN"/>
+                                    <xs:enumeration value="PHP"/>
+                                    <xs:enumeration value="XPT"/>
+                                    <xs:enumeration value="PLN"/>
+                                    <xs:enumeration value="QAR"/>
+                                    <xs:enumeration value="ROL"/>
+                                    <xs:enumeration value="RUB"/>
+                                    <xs:enumeration value="WST"/>
+                                    <xs:enumeration value="STD"/>
+                                    <xs:enumeration value="SAR"/>
+                                    <xs:enumeration value="SCR"/>
+                                    <xs:enumeration value="SLL"/>
+                                    <xs:enumeration value="XAG"/>
+                                    <xs:enumeration value="SGD"/>
+                                    <xs:enumeration value="SKK"/>
+                                    <xs:enumeration value="SIT"/>
+                                    <xs:enumeration value="SBD"/>
+                                    <xs:enumeration value="SOS"/>
+                                    <xs:enumeration value="ZAR"/>
+                                    <xs:enumeration value="LKR"/>
+                                    <xs:enumeration value="SHP"/>
+                                    <xs:enumeration value="SDD"/>
+                                    <xs:enumeration value="SRG"/>
+                                    <xs:enumeration value="SZL"/>
+                                    <xs:enumeration value="SEK"/>
+                                    <xs:enumeration value="CHF"/>
+                                    <xs:enumeration value="SYP"/>
+                                    <xs:enumeration value="TWD"/>
+                                    <xs:enumeration value="TZS"/>
+                                    <xs:enumeration value="THB"/>
+                                    <xs:enumeration value="TOP"/>
+                                    <xs:enumeration value="TTD"/>
+                                    <xs:enumeration value="TND"/>
+                                    <xs:enumeration value="TRL"/>
+                                    <xs:enumeration value="USD"/>
+                                    <xs:enumeration value="AED"/>
+                                    <xs:enumeration value="UGX"/>
+                                    <xs:enumeration value="UAH"/>
+                                    <xs:enumeration value="UYU"/>
+                                    <xs:enumeration value="VUV"/>
+                                    <xs:enumeration value="VEB"/>
+                                    <xs:enumeration value="VND"/>
+                                    <xs:enumeration value="YER"/>
+                                    <xs:enumeration value="YUM"/>
+                                    <xs:enumeration value="ZMK"/>
+                                    <xs:enumeration value="ZWD"/>
+                                    <xs:enumeration value="TRY"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="CurrencyName">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Afghanistan Afghani"/>
+                                    <xs:enumeration value="Albanian Lek"/>
+                                    <xs:enumeration value="Algerian Dinar"/>
+                                    <xs:enumeration value="Argentine Peso"/>
+                                    <xs:enumeration value="Brazilian Real"/>
+                                    <xs:enumeration value="Canadian Dollar"/>
+                                    <xs:enumeration value="European Euro"/>
+                                    <xs:enumeration value="Iceland Krona"/>
+                                    <xs:enumeration value="Indian Rupee"/>
+                                    <xs:enumeration value="Japanese Yen"/>
+                                    <xs:enumeration value="Russian Rouble"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="NationOfOrigin">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="USA"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="PurchaseOrders">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="PurchaseOrder" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="US-State">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AK"/>
+            <xs:enumeration value="AL"/>
+            <xs:enumeration value="AR"/>
+            <xs:enumeration value="AZ"/>
+            <xs:enumeration value="CA"/>
+            <xs:enumeration value="CO"/>
+            <xs:enumeration value="CT"/>
+            <xs:enumeration value="DC"/>
+            <xs:enumeration value="DE"/>
+            <xs:enumeration value="FL"/>
+            <xs:enumeration value="GA"/>
+            <xs:enumeration value="GU"/>
+            <xs:enumeration value="HI"/>
+            <xs:enumeration value="IA"/>
+            <xs:enumeration value="ID"/>
+            <xs:enumeration value="IL"/>
+            <xs:enumeration value="IN"/>
+            <xs:enumeration value="KS"/>
+            <xs:enumeration value="KY"/>
+            <xs:enumeration value="LA"/>
+            <xs:enumeration value="MA"/>
+            <xs:enumeration value="MD"/>
+            <xs:enumeration value="ME"/>
+            <xs:enumeration value="MI"/>
+            <xs:enumeration value="MN"/>
+            <xs:enumeration value="MO"/>
+            <xs:enumeration value="MS"/>
+            <xs:enumeration value="MT"/>
+            <xs:enumeration value="NC"/>
+            <xs:enumeration value="ND"/>
+            <xs:enumeration value="NE"/>
+            <xs:enumeration value="NH"/>
+            <xs:enumeration value="NJ"/>
+            <xs:enumeration value="NM"/>
+            <xs:enumeration value="NV"/>
+            <xs:enumeration value="NY"/>
+            <xs:enumeration value="OH"/>
+            <xs:enumeration value="OK"/>
+            <xs:enumeration value="OR"/>
+            <xs:enumeration value="PA"/>
+            <xs:enumeration value="PR"/>
+            <xs:enumeration value="RI"/>
+            <xs:enumeration value="SC"/>
+            <xs:enumeration value="SD"/>
+            <xs:enumeration value="TN"/>
+            <xs:enumeration value="TX"/>
+            <xs:enumeration value="UT"/>
+            <xs:enumeration value="VA"/>
+            <xs:enumeration value="VI"/>
+            <xs:enumeration value="VT"/>
+            <xs:enumeration value="WA"/>
+            <xs:enumeration value="WI"/>
+            <xs:enumeration value="WV"/>
+            <xs:enumeration value="WY"/>
+        </xs:restriction>
+        <!-- and so on ... -->
+    </xs:simpleType>
+    <xs:element name="Items">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="Item" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="price" type="xs:string"/>
+                <xs:element name="quantity" type="xs:int"/>
+                <xs:element name="OrderTotal" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

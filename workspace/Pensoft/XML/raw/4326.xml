@@ -1,0 +1,960 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4326</article-id>
+            <title-group>
+                <article-title>The unusual Afrotropical and Oriental leafhopper subfamily Signoretiinae (Hemiptera, Cicadellidae): taxonomic notes, new distributional records, and description of two new 
+                    <bold-italic>Signoretia</bold-italic> species
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Takiya</surname>
+                        <given-names>Daniela M.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:7E88BC1C-8D6A-411D-B97B-52E64EF5BA70</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Dietrich</surname>
+                        <given-names>Christopher H.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:82FCB86C-54B4-456A-AE5E-D7847D271CB9</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Viraktamath</surname>
+                        <given-names>Chandra A.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A3">3</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:486F2132-7CE9-44DA-B1E9-305AE61CF99A</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Laboratório de Entomologia, Departamento de Zoologia, Instituto de Biologia, Universidade Federal do Rio de Janeiro, Caixa Postal 68044, Rio de Janeiro, 21941-971, RJ, Brazil
+            </aff>
+            <aff id="A2">
+                <label>2</label>Illinois Natural History Survey, University of Illinois, 1816 S. Oak St., Champaign, IL 61820, USA
+            </aff>
+            <aff id="A3">
+                <label>3</label>Department of Entomology, University of Agricultural Sciences, GKVK, Bangalore 560065, India
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Daniela M. Takiya (<email xlink:type="simple">takiya@gmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>15</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>5</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Daniela M. Takiya, Christopher H. Dietrich, Chandra A. Viraktamath</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:909A482E-AF42-48C4-8613-21EF02CEC066
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The leafhopper subfamily Signoretiinae is redescribed and includes two tribes: Signoretiini Baker and Phlogisini Linnavuori. Redescriptions of included tribes, diagnoses and a taxonomic key to genera are provided. New records for genera of Signoretiinae are as follows: <italic>Phlogis</italic> in Central African Republic, Malaysia and Thailand; <italic>Preta</italic> in Thailand; and <italic>Signoretia</italic> in the Republic of the Congo, Thailand, Vietnam, Zambia, and Taiwan (China). <italic>Signoretia pacifica</italic> is newly recorded from Cameroon. In addition, detailed illustrations of the male genitalia of the previously described species, <italic>Chouious tianzeus</italic>, <italic>Preta gratiosa</italic>,and<italic> Signoretia yangli </italic>are provided; the male genitalia of <italic>Signoretia malaya </italic>are described for the first time; and two new species of <italic>Signoretia</italic> are described, <italic>S. delicata</italic> <bold>sp. n.</bold> from the Philippinesand <italic>S. kintendela </italic><bold>sp. n.</bold> from the Republic of the Congo.
+                </p>
+                <!--PageBreak-->
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Taxonomy</kwd>
+                <kwd>Distribution</kwd>
+                <kwd>Morphology</kwd>
+                <kwd>new species
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Signoretiinae is a small, poorly known subfamily of leafhoppers apparently restricted to tropical forests in the Afrotropical and Oriental regions. The group is represented by few specimens in collections and is easily distinguished from nearly all cicadellids by the deeply punctured and enlarged pronotum (see subfamily remarks); other striking morphological features include: face strongly convex with cibarial muscle scars prominent; forewing outer anteapical cell present (vein s present); and hind femur macrosetal formula 2+0+0. Some of these morphological features have led to difficulties in placing the included genera in the Cicadellidae higher classification scheme. Baker (1915) first recognized the group as a subfamily of Stenocotidae (including members of current subfamilies Evacanthinae, Megophthalminae, and Tartessinae) and later (1923) treated Signoretiidae as a family of the Jassoidea. Evans (1947) subsequently placed Signoretiini as a tribe of Aphrodinae. Linnavuori (1978) highlighted the many unusual or unique features present in the group and recognized it as a separate subfamily. For similar reasons, Linnavuori (1979) subsequently recognized an additional subfamily, Phlogisinae, based on a single female specimen of <italic>Phlogis mirabilis</italic> Linnavuori from West Africa.
+            </p>
+            <p>Dietrich (2005) treated Phlogisinae as a junior synonym of Signoretiinae based on the enlarged, punctate pronotum extended to the scutellar suture in both groups. Subsequent morphology and DNA sequence-based phylogenetic analyses (Dietrich et al. 2010; unpublished data) indicate that these two taxa are sister groups, <italic>i.e.</italic>, together form a monophyletic group. Although the relationship of Signoretiinae <italic>sensu lato</italic> to other cicadellid subfamilies was poorly resolved by these analyses, the results indicate that the group belongs to a lineage comprising Cicadellinae, Evacanthinae, and Typhlocybinae.
+            </p>
+            <p>Signoretiinae <italic>sensu lato</italic> are variable for some morphological characters generally used to define taxa at the subfamily-level in Cicadellidae. For example, the position of the ocelli differs between the two included tribes: in Signoretiini they are found on the crown margin close to the eyes; in Phlogisini they are found on the crown, far from the margin. Similarly, Phlogisinihave hind tibiae with macrosetae in row PD, and forewings with crossveins at the bases of the inner and median anteapical cells; while Signoretiini lack these features. Finally, Phlogisini have a distinct maxillary suture and Signoretiini have a complete longitudinal carina on the frontoclypeus, traits fairly uncommon in leafhoppers. Due to all above-mentioned morphological differences found in these taxa, Phlogisini and Signoretiini are herein treated as valid tribes within Signoretiinae.
+            </p>
+            <p>Signoretiini, as treated herein (Fig. 1), includes <italic>Preta</italic> Distant with two species restricted to the Oriental region and <italic>Signoretia,</italic> occurring both in the Afrotropical and Oriental regions, with 27 species. Phlogisini includes the monotypic genera <italic>Phlogis</italic> Linnavuori from Africa and <italic>Chouious</italic> Yang from China. Although the African Signoretiini were revised by Anufriev (1971) and Linnavuori (1978), the male genitalia <!--PageBreak-->have been illustrated and described for only a few species of Oriental Signoretiini. In the present study, we review morphological characters to separate the included tribes and genera of Signoretiinae and a taxonomic key to genera is given. Further taxonomic notes on genera and species of Signoretiinae, new distributional records, descriptions of the male genitalia of <italic>Signoretia malaya </italic>and of two new species of <italic>Signoretia</italic> are also given.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and Methods
+</bold>
+            </title>
+            <p>Morphological terminology follows Dietrich (2005). Specimens examined are deposited in the following institutions: American Museum of Natural History, New York, USA (AMNH); The Natural History Museum, London, UK (BMNH); Field Museum of Natural History, Chicago, USA (FMNH); Illinois Natural History Survey, Champaign, USA (INHS); Muséum national d’Histoire naturelle, Paris, France (MNHN); Northwest Agriculture and Forestry University, Yangling, China (NWAF); Royal Ontario Museum, Toronto, Canada (ROM); Taiwan Agricultural Research Institute, Taiwan (TARI); and United States National Museum, Washington, DC, USA (USNM). In quotations of type-material labels, a backslash (\) separates lines on a label.
+</p>
+            <p>Habitus images were taken with a Digital Lab XLT system by Microptics using a Nikon D1x digital SLR camera and genitalia images were taken with a Q Imaging Micropublisher 3.3 digital camera mounted on an Olympus BX41 compound microscope. Multiple images were combined using the CombineZP software (Hadley 2010). Photographs were modified with Adobe Photoshop and vector illustrations based on the photographs produced with Adobe Illustrator.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Taxonomy
+</bold>
+            </title>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Signoretiinae Baker, 1915
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretiinae
+</object-id>
+                    <xref>Figs 1–42
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation>=<italic>Phlogisinae Linnavuori, 1979</italic>
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p> Medium-sized, cylindrical leafhoppers (Figs 2–14). Head (Figs 2–14) broader than pronotum; ocelli visible in dorsal aspect; frontoclypeus expanded with prominent transverse muscle scars; lateral frontal sutures extended ventromesad of ocelli; antennal ledges well developed; antennae subequal to or longer than width of head; anteclypeus convex and tapered from base to apex; lorum short, narrow, well separated from genal margin, partly bordering frontoclypeus; gena slightly emarginate below eyes, exposing proepisternum; rostrum tapered, surpassing front trochanters.
+</p>
+                    <!--PageBreak-->
+                    <p>Pronotum (Figs 2–5, 7–11, 13, 14) greatly enlarged, strongly convex, distinctly punctate, weakly produced anterad, extended posterad to scutellar suture. Forewings (Figs 15, 17, 19) macropterous with venation distinct and opaque sclerotization, if present, limited to basal third; vein R with two (R1 not visible as separate vein) or three branches; crossvein s present (outer anteapical cell closed); inner apical cell elongate, parallel-sided, extended to wing apex. Hind wings (Figs 16, 18, 20) with venation complete; submarginal vein well separated from wing margin. Forelegs with femur with AM1 weakly developed or absent, intercalary row and distal half of AV well differentiated, each with several setae arranged in single row; tibia cylindrical, AD and PD undifferentiated. Hind legs with femur with macrosetal formula 2+0; tibia with macrosetae of dorsal rows reduced in size and number; tarsomere I without dorsoapical pair of macrosetae; pecten with 2 platellae.
+</p>
+                    <p>Male genital capsule (Figs 21–24, 29–42) with valve articulated or fused laterally to pygofer; pygofer without distinct membranous clefts near base; segment X very large, well sclerotized, with or without processes; subgenital plates digitiform, broadest at base, usually with numerous fine setae dorsally but only rarely with well differentiated macrosetae; connective Y-shaped; style sigmoid; with or without sclerotized dorsal connective or other sclerotized processes between anal tube and aedeagus usually present.
+</p>
+                    <p>Female ovipositor (Figs 26, 27) elongate, variable in shape and dentition.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> Afrotropical and Oriental.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> With the exception of the proconiine sharpshooter genus <italic>Tretogonia</italic> Melichar, 1926 and the recently described dikraneurine (Typhlocybinae) genus <italic>Sweta</italic> Viraktamath &amp; Dietrich 2011, Signoretiinae are the only leafhoppers with fully developed wings that have the pronotum extended to the scutellar suture. Viraktamath and Dietrich (2011) discussed several characters supporting the placement of <italic>Sweta</italic> in <!--PageBreak-->Typhlocybinae rather than Signoretiinae. Interestingly all these leafhoppers have the long pronotum distinctly punctate.
+                    </p>
+                    <p>Nothing is known about the ecology or feeding behavior of Signoretiinae, although the strongly convex or inflated face suggests that they preferably feed on xylem sap.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Key to tribes and genera of Signoretiinae</bold>
+                    </title>
+                    <table-wrap content-type="key" position="float" orientation="portrait">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="1" colspan="1">1</td>
+                                    <td rowspan="1" colspan="1">Dorsal coloration black (Figs 2–7); crown and frontoclypeus without carinae (Figs 2–7); ocelli on crown, each equidistant to adjacent anterior eye angle and other ocellus (Figs 2, 4); forewing with 3 closed anteapical cells (Fig. 15); hind wing submarginal vein not extended onto jugum (Fig. 16); hind tibia with macrosetae in row PD; male pygofer without posteroventral process (Fig. 21); valve fused laterally to pygofer (Fig. 21)</td>
+                                    <td rowspan="1" colspan="1"><bold>Phlogisini</bold>...<bold>2
+</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">1’
+                                    </td>
+                                    <td rowspan="1" colspan="1">Dorsal coloration usually white or yellow (Fig. 8–14); crown with transverse basal carina between ocelli (Figs 8, 10, 13); ocelli on crown-face transition, distinctly closer to adjacent eye angle than to median line of crown (Figs 8, 10, 13); frontoclypeus with complete median longitudinal carina (Figs 9, 12, 14); forewing with only outer anteapical cell closed, inner and median anteapical cells open at base (Figs 17, 19); hind wing submarginal vein extended onto jugum (Fig. 18, 20); hind tibia without macrosetae in row PD; male pygofer with posteroventral process (Figs 31, 34, 37); valve not fused laterally to pygofer, articulated by membranous connection (Fig. 31)</td>
+                                    <td rowspan="1" colspan="1"><bold>Signoretiini</bold>...<bold>3
+</bold>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1">2
+                                    </td>
+                                    <td rowspan="1" colspan="1">Head in profile with lower part of clypeus distinctly produced and angulate, forming shelf over anteclypeus (Fig. 3); frontoclypeus with transverse carina ventrally and median longitudinal carina dorsally (Fig. 3); gena with conspicuous long, pale setae (Fig. 3)</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>Chouious
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>2’
+                                    </td>
+                                    <td rowspan="1" colspan="1">Head in profile evenly rounded, with lower part of frontoclypeus continuing contour of anteclypeus (Figs 6, 7); face without carinae (Fig. 6); gena without conspicuous long, pale setae (Figs 5, 6)</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>Phlogis
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>3
+                                    </td>
+                                    <td rowspan="1" colspan="1">Pronotum with complete paired longitudinal carinae (Fig. 8); forewings with claval veins fused for one-third of their distance (Fig. 17)</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>Preta
+</bold-italic>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="1"><bold-italic></bold-italic>3’
+                                    </td>
+                                    <td rowspan="1" colspan="1">Pronotum with or without incomplete paired longitudinal carinae at basal third (Figs 10, 13); forewings with claval veins separate (Fig. 19)</td>
+                                    <td rowspan="1" colspan="1"><bold-italic>Signoretia
+</bold-italic>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table-wrap>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Phlogisini Linnavuori, 1979
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Phlogisini
+</object-id>
+                    <xref>Figs 2–7, 15, 16, 21–28
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Dorsal coloration dark brown to black (Figs 2–7). Head (Figs 2–7) with crown convex, punctate, carinae indistinct or absent, margins not elevated; ocelli on crown distant from anterior margin, approximately equidistant from eyes and midline; with distinct depression laterad of each ocellus; transition from crown to face rounded; <!--PageBreak-->antennal ledges not prominent, evenly rounded; frontoclypeus without median longitudinal carina; anteclypeus with apex emarginated; maxillary suture present.
+                    </p>
+                    <p>Pronotum (Figs 2–5, 7) evenly convex, without carinae or deep depressions. Forewings (Fig. 15) with or without R1 and crossveins r-m1 and m-cu2 present. Hind wings with crossvein m-cu perpendicular to CuA; submarginal vein not extended onto jugum. Forefemora with intercalary row strongly arcuate. Hind tibiae with row PD with macrosetae and row PV with some setae blunt-tipped.
+</p>
+                    <p>Female ovipositor (Figs 26, 27) slender and evenly curved throughout length; first valvulae (Fig. 26) with dorsal sculpturing imbricate along margin and strigate ventrally; second valvulae (Fig. 27) with dorsal teeth small, simple, somewhat irregularly distributed, restricted to distal half. [Female characters of tribe based on <italic>Phlogis</italic>]
+                    </p>
+                    <p>Male terminalia (Figs 21–24) with pygofer with apical two-thirds distinctly more sclerotized than base, without posteroventral process; valve fused laterally to pygofer; <!--PageBreak-->subgenital plates not extended posteriorly as far as pygofer lobe apex; style without preapical teeth or denticuli; with distinct dorsal connective (separate sclerite connecting aedeagus to anal tube); anal tube segment X with (<italic>Phlogis</italic>) or without (<italic>Chouious</italic>) posterolateral processes.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Chouious</bold-italic>
+                        <bold> Yang, 1991
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Chouious
+</object-id>
+                    <xref>Figs 2, 3, 21–24
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Chouious </italic>Yang, 1991: 82.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type-species.</bold>
+                    </title>
+                    <p><italic>Chouious tianzeus</italic> Yang, 1991.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p>Head (Figs 2, 3) coarsely punctate, lateral frontal sutures elevated and carinate; frontoclypeus with median longitudinal carina dorsally, ventral part produced, in contour forming shelf over anteclypeus, with distinct transverse carina, area above carina depressed medially; genae conspicuously pubescent.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p><italic>Chouious </italic>was described based on one new species, <italic>Chouious tianzeus </italic>from south China (Yang 1991). It is similar to <italic>Phlogis </italic>in external morphology, including wing venation and leg chaetotaxy, but differs in the structure of the head, as indicated in the key.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> China (Guangxi, Yang 1991).
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Chouious tianzeus</bold-italic>
+                        <bold> Yang, 1991
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Chouious_tianzeus
+</object-id>
+                    <xref>Figs 2, 3, 21–24
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Chouious tianzeus</italic> Yang, 1991: 82.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> Forewings of the paratype studied lack crossvein s, but this should be an anomaly of this particular specimen.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> China (Yang 1991)
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p> Male paratype, China, Guanxi, Bose Prov., Tialin Co., 28–30 V 1982, NWAF.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Phlogis</bold-italic>
+                        <bold> Linnavuori, 1979
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Phlogis
+</object-id>
+                    <xref>Figs 4–7, 15, 16, 25–28
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Phlogis</italic> Linnavuori, 1979: 684.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type-species.</bold>
+                    </title>
+                    <p> <italic>Phlogis mirabilis</italic> Linnavuori, 1979.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p>Head (Figs 4–7) distinctly but finely punctate; lateral frontal sutures distinct, but not carinate; frontoclypeus evenly convex, without median or transverse carinae, in profile continuing contour of anteclypeus; genae bare.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> <italic>Phlogis</italic> was originally described based on the single female type specimen of <italic>P. mirabilis</italic> from Cameroon (Linnavuori 1979). The genus is readily distinguished from <italic>Chouious</italic> based on the head morphology, as indicated in the key. Three new specimens are herein studied and assigned to this genus, including a male considered to be conspecific to <italic>P. mirabilis </italic>and undescribed females from the Oriental region.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p>Afrotropical: Cameroon (Linnavuori 1979) and Central African Republic [<bold>new record</bold>]. Oriental: Malaysia [<bold>new record</bold>] and Thailand [<bold>new record</bold>].
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Phlogis mirabilis</bold-italic>
+                        <bold> Linnavuori, 1979
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/ Phlogis mirabilis
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Phlogis mirabilis </italic>Linnavuori, 1979: 684.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <p><bold>Notes. </bold>Previously, the only known specimen of <italic>Phlogis mirabilis</italic> was the female type from Cameroon. A male specimen from Central African Republic is tentatively considered as conspecific to the type-specimen, based on distribution, external morphology, and size (7.4 mm). The male genitalia of this specimen agree with those of <italic>Chouious</italic> in <!--PageBreak-->the characters described for Phlogisini. However, this male can be easily distinguished from <italic>Chouious </italic>because its: (1) pygofer lobe lacks the deep concavity on the dorsal margin, (2) aedeagus lacks ventral atrial processes, but has paired apical recurved processes; and (3) anal tube segment X has posterolateral paired processes.
+                </p>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> Cameroon (Linnavuori 1979) and Central African Republic [<bold>new record</bold>].
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p> Central African Republic: male, Boukoko, 15 III 1969, Michel Boulard, MNHN.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Phlogis</bold-italic>
+                        <bold> spp.
+</bold>
+                    </tp:taxon-name>
+                    <xref>Figs 4–7, 15, 16, 25–28
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p>The only other known specimens of <italic>Phlogis</italic> are two females from the Oriental region, Malaysia and Thailand, examined for this study. Both specimens studied herein (Figs 4–7) agree in most respects with Linnavuori’s original description of the genus, but differ in size (6.4 and 9.5 mm vs. 7.5 mm for <italic>P. mirabilis</italic>) and in some details of body form, indicating that they represent two additional, presumably new species. However, we do not provide formal descriptions, given the meager material available at present. The specimen from Malaysia (Figs 4–6) closely resembles <italic>P. mirabilis</italic>, but is longer (overall length 9.5mm vs. 7.5mm) and differs in the shape of the seventh sternite (Fig. 25). The specimen from Thailand is smaller (6.4mm) and has the shape of the seventh sternite (Fig. 28) very similar to that of <italic>P. mirabilis </italic>(comparison based on photographs of the type-specimen).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p>Malaysia [<bold>new record</bold>]: female, Ranau, 500m, 22–25 I 1959, BMNH. Thailand [<bold>new record</bold>]: female, Petchaburi Kaeng Krachan National Park, km33 helipad, 12°50.177'N ,99°20.688'E 735m, Malaise trap, 18–25 V 2009, Sirichai, DNA voucher LH199, INHS.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Signoretiini Baker, 1915
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretiini
+</object-id>
+                    <xref>Figs 8–14, 17–20, 29–42
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p> Dorsal coloration pale yellow to white (Figs 8–14; except <italic>S. greeni </italic>Distant, 1908). Head (Figs 8–17) with crown bearing prominent medial, lateral and posterior carinae, margins elevated, punctations indistinct; ocelli closely adjacent to eyes, laterad of submarginal carinae, directly above antennal ledges; transition from crown to face sharp, indicated by transverse carina; antennal ledges prominent, with anterior depression; frontoclypeus with complete median longitudinal carina; anteclypeus with apex truncate; maxillary suture absent.
+                    </p>
+                    <p>Pronotum (Figs 8–11, 13–14) with pair of carinae or with median anterior depression. Forewings (Figs 17, 19) without R1 and crossveins r-m1 and m-cu2. Hind wings <!--PageBreak-->(Figs 18, 20) with crossvein m-cu oblique relative to CuA; submarginal vein extended onto jugum. Forefemora with intercalary row weakly arcuate. Hind tibiae with row PD without macrosetae and row PV without blunt-tipped setae.
+</p>
+                    <p><!--PageBreak-->Female ovipositor sigmoid, broadened near midlength; first valvulae with dorsal sculpturing strigate; second valvulae with dorsal teeth numerous, close-set, and bidentate; toothed area occupying more than half entire length of valvula.
+</p>
+                    <p>Male terminalia (Figs 29–42) with pygofer with well-developed posteroventral process; valve articulated laterally to pygofer; subgenital plates extended posteriorly beyond pygofer lobe apex; style with preapical teeth or denticuli; dorsal connective absent; anal tube segment X with or without lobes and/or processes at base or more apically; aedeagus divided into ventral paraphyses-like structure articulated to connective consisting of basal preatrium and paired robust processes and dorsal shaft, dorsal and ventral parts may be loosely connected by membrane (all Oriental species) or completely fused to eachother (some African species).
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Preta </bold-italic>
+                        <bold>Distant, 1908
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Preta
+</object-id>
+                    <xref>Figs 8, 9, 17, 18, 29, 30
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Preta </italic>Distant, 1908: 234.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type-species.</bold>
+                    </title>
+                    <p> <italic>Preta gratiosa</italic> (Melichar, 1903).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p>Head (Figs 8, 9) strongly and angulately produced. Pronotum (Figs 8, 9) with pair of well-developed submedial longitudinal carinae extended entire length. Forewings (Fig. 17) with claval veins fused for short distance near midlength.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes. </bold>
+                    </title>
+                    <p><italic>Preta</italic> is restricted to the Oriental region and currently includes two species, <italic>P. gratiosa</italic> and <italic>P. luzonensis</italic> Baker, 1923, the latter known only from he Philippines. It can be easily distinguished from <italic>Signoretia</italic> by its complete paired longitudinal carinae on the pronotum (Fig. 8) and medially fused claval veins of forewings (Fig. 17), as indicated in the key.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> Indonesia (Sumbawa, Jacobi 1941 <italic>apud</italic> Knight 2010), E. and W. Malaysia (Baker 1923), Myanmar (Distant 1908), Philippines (Luzon, Baker 1923), Singapore (Baker 1923), Sri Lanka (Melichar 1903), and Thailand [new record].
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Preta gratiosa</bold-italic>
+                        <bold> (Melichar, 1903)
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Preta_gratiosa
+</object-id>
+                    <xref>Figs 8, 9, 17, 18, 29, 30
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Signoretia gratiosa</italic> Melichar, 1903: 160.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p>Identification based on illustrations of the external morphology and male genitalia of this species (Melichar 1903: plate IV, Figs 8a, b; Distant 1908: fig. 148; Baker, 1923: plate 1, fig. 8; Anufriev 1971: Figs 20–22). Anufriev (1971) did not illustrate <!--PageBreak-->the membranous shaft, only the paired ventrally recurved sclerotized processes. Aedeagus shaft imaged here.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> Indonesia (Sumbawa, Jacobi 1941 <italic>apud</italic> Knight 2010), E. and W. Malaysia (Baker 1923), Myanmar (Distant 1908), Singapore (Baker 1923), Sri Lanka (Melichar 1903); and Thailand [<bold>new record</bold>].
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p> Thailand: male, Phetchabun Khao Kho NP, mixed deciduous forest at Ta Phol River, 16°32.561'N, 101°2.479'E, 242m, Malaise trap, 5–12 XI 2006, Somchai Chachumnan &amp; Saink Singhtong, INHS. Malaysia: specimen without abdomen, Kedah Province, Lang Kawi island, 25 V 1975, N. D. Penny, INHS.
+</p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia</bold-italic>
+                        <bold> Stål, 1859
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia
+</object-id>
+                    <xref>Figs 10–14, 19, 20, 31–42
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Signoretia</italic> Stål, 1859: 289.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type-species.</bold>
+                    </title>
+                    <p><italic>Thamnotettix malaya</italic> Stål, 1855.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p>Head (Figs 10–14) weakly to strongly produced. Pronotum (Figs 10, 11, 13, 14) with longitudinal carinae absent or, if present, weakly developed and not extended entire length. Forewings (Fig. 19) with claval veins separate throughout length.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p><italic>Signoretia</italic> currently includes 10 Oriental species and 15 Afrotropical species, in addition to the new species described herein. Members of <italic>Signoretia</italic> can be easily distinguished from <italic>Preta</italic> by the lack of paired complete longitudinal carinae on pronotum (Figs 10, 13) and separate claval veins on forewings (Fig. 19). Several nominal species do not have the male genitalia described and illustrated, specially the Oriental ones.
+                    </p>
+                    <p><bold>Distribution.</bold> Afrotropical: Cameroon (Linnavuori 1978), Democratic Republic of Congo (Linnavuori 1978), Equatorial Guinea (Bioko, Anufriev 1971), Ethiopia (Linnavuori 1978), Guinea (Linnavuori 1978), Ivory Coast (Anufriev 1971), Liberia (Linnavuori 1978), Nigeria (Anufriev 1971), Republic of the Congo [<bold>new record</bold>], Rwanda (Linnavuori 1978), Sierra Leone (Anufriev 1971), and Sudan (Linnavuori 1978), and Zambia [<bold>new record</bold>]. Oriental: China (Li 1995), India (Baker 1923), Indonesia (Sumatra, Schimidt 1911 <italic>apud </italic>Knight 2010), E. and W. Malaysia (Baker 1923), Myanmar (Distant 1908), Philippines (Banahao, Luzon, Mindanao, Baker 1915, 1923), Singapore (Baker 1923), Sri Lanka (Distant 1908), Taiwan [<bold>new record</bold>], Thailand [<bold>new record</bold>], and Vietnam [<bold>new record</bold>].
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia aureola</bold-italic>
+                        <bold> Distant, 1908
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_aureola
+</object-id>
+                    <xref>Figs 19, 20
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Signoretia aureola</italic> Distant, 1908: 232.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> Identification of specimens at hand is based on Anufriev’s (1971) illustration of the genitalia of a male syntype (BMNH). However, the male from Thailand has an additional larger median black spot near posterior margin of pronotum.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p>Myanmar (Distant 1908) and Thailand [<bold>new record</bold>].
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p> Thailand: male, Chiang Mai, Doi Chiang Dao WS Nature trail, 19°24.278'N, 098°55.311'E, 491m, Malaise trap, 7–14 X 2007, Songkran &amp; Apichart, DNA voucher LH193, INHS.
+</p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia delicata</bold-italic>
+                        <bold> Takiya &amp; Dietrich, sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:B8DB41FA-7E49-4134-942D-EE3011CC62D6
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_delicata
+</object-id>
+                    <xref>Figs 10–12, 31–33
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Body length.</bold>
+                    </title>
+                    <p> Holotype, 6.0 mm
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p> Crown (Figs 10, 11) very short, median length approximately half interocular and three-tenths of transocular width; median longitudinal carina obsolete. Male pygofer (Fig. 31) with caudal margin of lobe weakly sclerotized; ventral appendage robust, spiniform, produced posteriorly beyond pygofer lobe apex, abruptly narrowed and bent dorsad near apex. Valve triangular. Subgenital plates (Fig. 31) extending posteriorly beyond pygofer lobe apex by approximately one-third lobe length, with relatively few long, fine setae dorsally, concentrated near apex. Connective (Fig. 32) Y-shaped; with dorsal median keel and short, slender median anterior lobe. Style (Fig. 32, 33) slender, tapering towards apex; apex directed dorsolaterally. Aedeagus (Figs 32, 33) with ventral paraphysis-like structure with pair of robust, tapered, recurved <!--PageBreak-->distal processes; dorsal part consisting of pair of parallel dorsolateral arms and median shaft, shaft somewhat depressed and strongly arcuate. Anal tube (Fig. 31) basal section with pair of basal processes short, blunt, extended anteromesad, distal ring weakly sclerotized, retracted into basal section.
+</p>
+                    <p><bold>Coloration. </bold>Stramineous to white (Figs 10–12). Crown (Fig. 10) with paired black markings basolaterally, connecting to paired black maculae at apex. Frontoclypeus (Fig. 12) with longitudinal carina black. Legs yellow, coxae and femora infused with fuscous.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p>The species epithet refers to the relatively small size of this species and its delicate habitus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p>This species is described as new because it does not agree with any of the ten previously described Oriental species based on the following combination of characteristics: (1) stramineous dorsal coloration with two pairs of dark markings on crown; (2) median carina on crown absent; (3) each ocellus close to eye for distance of approximately its own diameter; (4) frontoclipeal longitudinal carina not continuing on clypellus; and (5) pronotum longer than wide and without paired incomplete longitudinal carinae on anterior portion, but with very faintly elevated median longitudinal carina. Exceptionally, the above-mentioned characteristics, will not separate <italic>Signoretia</italic> <italic>delicata</italic> sp. n. from <italic>S. tagalica </italic>Baker, 1915 (another philippine species described from Luzon and Banahao), with which shares other morphological characters, such as, the less produced crown, making the frontoclypeus appear more inflated, and very short outer anteapical cell. Nevertheless, based on the original illustrations and description, <italic>S. tagalica</italic> is larger (male is 6.5 mm) and has a much longer pronotum (more than 4 times the median length of crown) than the species described herein.
+                    </p>
+                    <p>The short crown of this new species, shared with other described <italic>Signoretia</italic>, could be viewed as sufficient diagnostic characteristics to place this group in a new genus. Considering that at the moment, only a small fraction of Oriental <italic>Signoretia</italic> have the male genitalia described, it would be premature to erect a new genus without reviewing all other described Oriental <italic>Signoretia</italic>.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Male holotype, “Mindanao: Davao;\ E. slope Mt. Apo,\ Camp Baclayan. Elev.\ 6500 ft. XI-11-1946”, “CMHN-Philippine\ Zool.Exp. (1946–47)\ H.Hoogstraal leg.”, FMNH.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia errans </bold-italic>
+                        <bold>Linnavuori, 1978
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_errans
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Signoretia errans </italic>Linnavuori, 1978: 37 (characters in key).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> Linnavuori (1978) included this species in his key and provided illustrations of the male genitalia, but did not include a formal description or list of material examined. However, his figure captions indicate that he examined specimens from the Democratic Republic of Congo (Dingila and Mongbawu). The species is considered <!--PageBreak-->valid because Linnavuori (1978) satisfied the criteria of availability by including the species in his identification key for African <italic>Signoretia</italic> and providing illustrations of features that distinguish the species from its congeners.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia kintendela</bold-italic>
+                        <bold> Takiya &amp; Dietrich, sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:ECC53C40-DD5D-483B-988D-4D276DEB9F81
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_kintendela
+</object-id>
+                    <xref>Figs 13, 14, 34–36
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Body length.</bold>
+                    </title>
+                    <p> Holotype, 7.4 mm.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Crown (Fig. 13, 14) elongate, median length approximately six-tenths of interocular and half of transocular width; median longitudinal carina well developed. Male pygofer (Fig. 34) with ventral appendage short, spiniform, produced posteriorly beyond pygofer lobe apex. Valve short, rectangular. Subgenital plate (Fig. 34) extended posteriorly beyond pygofer lobe apex by approximately one-third lobe length, with numerous long, fine setae distributed evenly over entire length of dorsum. Connective (Fig. 35) Y-shaped; without dorsal median keel or median anterior lobe. Style (Fig. 28) slender, tapering towards apex; apex directed laterally, with several denticuli preapically. Aedeagus (Fig. 35, 36) with ventral paraphysis-like structure with pair of elongate, recurved distal processes expanded preapically; dorsal part without sclerotized apodemes, consisting only of shaft, shaft strongly compressed, extended posterad, abruptly bent dorsad in distal third, distal part sinuate. Anal tube (Fig. 34) segment X with pair of posterolateral lobes each bearing small spine and several denticuli and at base with separately articulated robust process with pygofer, extended ventrad and terminating in anteriorly directed spine.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Coloration.</bold>
+                    </title>
+                    <p>Stramineous to white (Figs 14, 15). Crown (Fig. 14) with paired black markings at base of crown and paired maculae at apex of crown. Etymology. The specific epithet, “kintendela”, means “cicada” in Kongo language (Bentley 1895).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p><italic>Signoretia kintendela </italic>sp. n. shares with other members of the <italic>pacifica</italic> group (Linnavuori 1978) the fusion of the aedeagal shaft to the paraphyses-like structure consisting of the robust and sclerotized paired basal aedeagal appendages and elongate preatrium. If the robust process interpreted herein as arising from the membrane between the anal tube and pygofer lobe was viewed as an anal tube appendage by Linnavuori (1978), then in the <italic>pacifica </italic>group, the new species is more similar to <italic>S. congoensis </italic>and <italic>S. augur </italic>because these species share a single pair of processes at base of the anal tube. Nevertheless, the new species can be distinguished from these and all other <italic>Signoretia </italic>by the shorter ventrocaudal processes of the pygofer lobe and very long and slender rami of basal appendages with sinuous and foliaceous apex.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Male holotype, “Rep. of Congo: Dept Pool;\ Iboubikro; Lesio-Loun Pk.\ 3°16.196'S, 15°38.267'E\ 330m, malaise trap, A138\ 23.x.2008, Braet &amp; Sharkey”, INHS.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia malaya</bold-italic>
+                        <bold> (Stål, 1855)
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_malaya
+</object-id>
+                    <xref>Figs 37–39
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Thamnotettix malaya</italic> Stål, 1855: 192.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Male terminalia.</bold>
+                    </title>
+                    <p>Pygofer (Fig. 37) with caudal margin of lobe membranous; ventrocaudal process elongate evenly curved and tapered, spiniform, produced posteriorly beyond pygofer lobe apex. Subgenital plates (Fig. 37) extending posteriorly beyond pygofer lobe apex by approximately one-third of lobe length, dorsal surface with numerous long, fine setae evenly distributed throughout length and three macrosetae in longitudinal row near midlength. Connective (Fig. 38) H-shaped, arms subparallel; without dorsal median keel or median anterior lobe. Style (Fig. 38) slender and elongate; apex globose, directed laterally, with few small denticuli. Aedeagus (Fig. 38, 39) with ventral paraphyses-like structure with pair of robust, tapered, recurved distal processes; dorsal part consisting of pair of round basolateral lobes and tubular shaft. Anal tube (Fig. 37) with segment X without basal processes and distal margin thickened, terminating ventrally in short lobe.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Notes. </bold>
+                    </title>
+                    <p>Identification based on Stål’s (1859) illustration and collecting locality. Male genitalia previously undescribed.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p>W. Malaysia (Stål 1855), Philippines (Baker 1915), and Singapore (Baker 1923).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p>Malaysia: male, Selangor, Kuala Lumpur, IX 1964, N. L. H. Krauss on <italic>Melastoma malabathricus</italic>, USNM.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia pacifica </bold-italic>
+                        <bold>(Walker, 1858)
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_pacifica
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Tettigonia pacifica</italic> Walker, 1858: 357.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p> Identification based on Anufriev’s (1971, Figs 1–5) and Linnavuori’s (1978, Figs 4b, c, d) illustration of the male genitalia. The male holotype is deposited in the BMNH (M. Webb, pers. com.).
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p> Cameroon [<bold>new record</bold>]; Democratic Republic of Congo, Guinea, Liberia (Linnavuori 1978); Ivory Coast, Nigeria, and Sierra Leone (Anufriev 1971).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p>Cameroon: male, Litteral, nr. Limbe on road to Bimbia Village, 03°58'192.&quot;N, 009°14'16.7&quot;E, 15–30 III 2009, J. R. Cryan &amp; G. J. Svenson, INHS.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia yangi</bold-italic>
+                        <bold> Li, 1995
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Signoretia_yangi
+</object-id>
+                    <xref>Figs 40–42
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Signoretia yangi</italic> Li, 1995: 6.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Notes.</bold>
+                    </title>
+                    <p>Identification based on illustrations in original description, although male specimens studied differ from original illustration in the shape of the connective. Additionally, distinctive features not mentioned or illustrated in the original publication include the: highly membranous, small and tubular aedeagal shaft; ventral aedeagal processes being separately articulated and densely clothed with microtrichia; and pair of slender ventral spines on segment X extending basad.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p>China: Fujian (Li 1995) and Taiwan [<bold>new record</bold>].
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p>Taiwan: male, Nantou Hsien, Tungpu, 1200m, 18–21.x.1982, K. C. Chou &amp; S. C. Lin, TARI; male, Nantou Hsien, Sungkang, 2100m, XI.1985, Malaise trap, K. S. Lin, TARI.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Signoretia</bold-italic>
+                        <bold> spp.
+</bold>
+                    </tp:taxon-name>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Material examined. </bold>
+                    </title>
+                    <p>Malaysia: female, Sabah, 1km S. Kundasang, 1530m, 11 IX 1983, G. F. Hevel &amp; W. E. Steiner, USNM. Nigeria: female, Kaduna, Kagoro forest, 29–30 VIII 1973, R. Linnavuori, AMNH [This specimen is similar in external morphology and coloration with the type specimen of <italic>S. astraea</italic> imaged by the AMNH]. Philippines: Mindanao, Davao, Santa Cruz, Badiang, 2000ft, 10 XII 1946, M. Celeston, FMNH. Vietnam [<bold>new genus record</bold>]: female, Thua Thien-Hue: Bach Ma Natl. Pk., edge of stream, ca. 1km along Five Lakes trail 4–16 VI 2000 B. Hubley, Malaise trap, 1200m, subtropical evergreen forest, 16°11'20.1&quot;N, 107°51'08.5&quot;E, DNA voucher PR173, ROM. Zambia [<bold>new genus record</bold>]: female, Northwestern Province, ~15 km N Mwinilunga Lwakera National Forest, 11°34'28.2&quot;S, 24°23'40.1&quot;E, 1445m, 5 XI 2007, Hg-vapor light, J. N. Zahniser, INHS.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>As mentioned in the introduction, despite sharing some features unique among Cicadellidae, the two recognized tribes of Signoretiinae show striking differences in major characters of the external morphology. Likewise, the male genitalia also show differences between the two groups. All described Signoretiini have the valve not fused laterally to the pygofer, a strongly developed ventrocaudal process on the pygofer lobe, and long subgenital plates. Males of Phlogisini have, on the other hand, the valve fused laterally to the pygofer, pygofer without processes, and shorter subgenital plates. Furthermore, the aedeagus is articulated with the anal tube by an additional sclerite, the dorsal con<!--PageBreak-->nective (Hamilton 1983). Signoretiines tend to have one or two pairs of processes arising from the ventral margin of segment X of the anal tube. The presence of these processes is variable within the tribes, and they can originate in different positions and have different shapes, which indicate they may not be homologous structures. For example, all African <italic>Signoretia</italic> and <italic>Preta gratiosa</italic> have processes at the base, while <italic>Signoretia aureola </italic>and <italic>Phlogis mirabilis </italic>bear modifications at a more apical position. However, <italic>Chouious tianzeus</italic> and the remaining Oriental Signoretiini with male genitalia described, <italic>S. delicata</italic> sp. n. and <italic>S. malaya</italic>, have processes strongly reduced or absent.
+            </p>
+            <p>Linnavuori (1978) in his revision of the African Signoretiini (as Signoretiinae) divided the species of <italic>Signoretia</italic> into two groups: the <italic>pacifica</italic> group including species with the aedeagus shaft “reduced, membranous and more or less concealed by the fused, scoop-shaped appendages” and the <italic>karaseki </italic>group including species with the aedeagus shaft “long and sclerified, distinctly separated from the appendages”. Furthermore, in the key to species, Linnavuori (1978) added that in species of the <italic>karaseki</italic> group the paired basal appendages are long and separate, while in the <italic>pacifica</italic> group they are fused both to each other and, more or less, to the membranous shaft. The definition of these groups based on the sclerotization of the shaft can be confusing, because the degree of apparent sclerotization can vary due to differences in procedures used for preparing the genitalia for study. However, whether the paraphyses-like structure (=basal appendages) is completely fused or not to the base of the shaft seems to be an important taxonomic character, as previously noted by Anufriev (1971). At that the time that Anufriev published his study, this character would separate Oriental signoretiines (with an articulated shaft to the basal appendages) from the Afrotropical ones (with a fused shaft and basal appendages). The genitalia of at least some of Linnavuori’s (1978) species from the <italic>karaseki</italic> group do resemble the genitalia of Oriental Signoretiini because of the membranous connection of the highly sclerotized basal appendages to the lightly sclerotized aedeagus shaft. In Oriental species, the shaft can be so short and lightly sclerotized that previous authors have not illustrated it in their genitalia descriptions (Anufriev 1971, Li 1995, see comments above). Although the membranous shaft of members of the Linnavuori’s (1978) African <italic>pacifica </italic>group can be variable, the complete fusion of the paraphyses-like structure to the aedeagal shaft (Fig. 29), seems to be a better character to define this group and has not so far been found in Oriental signoretiines. Additional paired sclerotized cuticular processes were seen associated to this membranous connection in <italic>S. yangi </italic>as triangular tooth-like projections (Fig. 35) and in <italic>P. gratiosa</italic> (Fig. 23) as curved elongate spiniform projections.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgments
+</bold>
+            </title>
+            <p>We are indebted to the following curators or collection managers who granted access to their respective collection or loaned specimens to us: R. Schuh (AMNH), M. Webb (BMNH), V. Thompson and P. Parrillo (FMNH), T. Bourgoin and A. Soulier-Perkins (MNHN), Y. Zhang (NWAF), C. Darling (ROM), G. Hevel (USNM), and H.-T. <!--PageBreak-->Shih (TARI). Additionally, recently collected material from Cameroon was made available to us by J. Cryan (North Carolina Museum of Natural Sciences), Zambia by J. Zahniser (INHS), and from Republic of Congo and Thailand by M. Sharkey (University of Kentucky). M. Webb kindly reviewed preliminary versions of this manuscript and sent us images of <italic>P. mirabilis</italic> type, currently on loan to him. Y. Cao (NWAF) helped us obtain and translate part of the Chinese bibliography. Travel to Illinois by the senior author was funded in part by a Conselho Nacional de Desenvolvimento Científico e Tecnológico grant (CNPq PROTAX proc. 562303/2010-3).
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Anufriev</surname> <given-names>GA</given-names></name></person-group> (<year>1971</year>)<article-title> Study of leafhoppers from the tribe Signoretiini (Homoptera, Auchenorrhyncha) with descriptions of two new species of <italic>Signoretia</italic> Stål from western Africa.</article-title> <source>Bulletin de l’académie polonaise des sciences, série des sciences biologiques </source> <volume>19</volume>: <fpage>721</fpage>-<lpage>726</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Baker</surname> <given-names>CF</given-names></name></person-group> (<year>1915</year>)<article-title> Studies in Philippine Jassoidea: III. The Stenocotidae of the Philippines.</article-title> <source>Philippine Journal of Science </source> <volume>10</volume>: <fpage>189</fpage>-<lpage>200</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Baker</surname> <given-names>CF</given-names></name></person-group> (<year>1923</year>)<article-title> The Jassoidea related to the Stenocotidae with special reference to Malayan species.</article-title> <source>Philippine Journal of Science </source> <volume>23</volume>: <fpage>34</fpage>-<lpage>405</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bentley</surname> <given-names>WH</given-names></name></person-group> (<year>1895</year>)<fake_tag> Appendix to the dictionary and grammar of the kongo language, as spoken at San Salvador, the Ancient Capital of the Old Kongo Empire, West Africa. Baptist Missionary Society &amp; Trubner &amp; Co., London, 721–1051.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name></person-group> (<year>2005</year>)<article-title> Keys to the families of Cicadomorpha and subfamilies and tribes of Cicadellidae (Hemiptera: Auchenorrhyncha).</article-title> <source>Florida Entomologist </source> <volume>88</volume>: <fpage>502</fpage>-<lpage>517</lpage>. doi: 10.1653/0015-4040(2005)88[502:KTTFOC]2.0.CO;2
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name>,<name name-style="western"><surname>Dmitriev</surname> <given-names>DA</given-names></name>,<name name-style="western"><surname>Rakitov</surname> <given-names>RA</given-names></name>,<name name-style="western"><surname>Takiya</surname> <given-names>DM</given-names></name>,<name name-style="western"><surname>Webb</surname> <given-names>MD</given-names></name>,<name name-style="western"><surname>Zahniser</surname> <given-names>JN</given-names></name></person-group> (<year>2010</year>)<fake_tag> Phylogeny of Cicadellidae (Hemiptera: Cicadomorpha: Membracoidea) based on morphological characters. In: Abstracts: talks and posters. 13th International Auchenorrhyncha Congress, Vaison-la-Romaine (France), July 2010. pp 48–49.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Distant</surname> <given-names>WL</given-names></name></person-group> (<year>1908</year>)<source> Rhynchota-Homoptera and appendix (pt), The fauna of British India including Ceylon and Burma.</source> <publisher-name>Taylor &amp; Francis</publisher-name>, <publisher-loc>London</publisher-loc>, <lpage>501</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Evans</surname> <given-names>JW</given-names></name></person-group> (<year>1947</year>)<article-title> A natural classification of leaf-hoppers (Jassoidea, Homoptera).</article-title> <source>Transactions of the Royal Entomological Society of London </source> <volume>97</volume>: <fpage>39</fpage>-<lpage>54</lpage>. doi: 10.1111/j.1365-2311.1946.tb00274.x
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hadley</surname> <given-names>A</given-names></name></person-group> (<year>2010</year>)<fake_tag> Combine ZP. http://www.hadleyweb.pwp.blueyonder.co.uk/
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hamilton</surname> <given-names>KGA</given-names></name></person-group> (<year>1983</year>)<article-title> Revision of the Macropsini and Neopsini of the New World (Rhynchota: Homoptera: Cicadellidae), with notes on intersex morphology.</article-title> <source>Memoirs of the Entomological Society of Canada </source> <volume>123</volume>: <fpage>1</fpage>-<lpage>223</lpage>. doi: 10.4039/entm115123fv
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Li</surname> <given-names>ZZ</given-names></name></person-group> (<year>1995</year>)<article-title> A new species of <italic>Signoretia</italic> (Homoptera: Evacanthinae) from Fujian, China.</article-title> <source>Entomotaxonomia </source> <volume>17</volume>: <fpage>6</fpage>-<lpage>8</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Linnavuori</surname> <given-names>R</given-names></name></person-group> (<year>1978</year>)<fake_tag> Revision of the African Cicadellidae (subfamilies Nioniinae, Signoretiinae and Drabescinae) (Homoptera, Auchenorrhyncha). Annales Entomologici Fennici 44: 33–48.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Linnavuori</surname> <given-names>R</given-names></name></person-group> (<year>1979</year>)<fake_tag> Revision of African Cicadellidae, part I. Revue de Zoologie africaine 93: 647–747.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Melichar</surname> <given-names>L</given-names></name></person-group> (<year>1903</year>)<source> Homopteren-Fauna von Ceylon.</source> <publisher-name>Felix L. Dames</publisher-name>, <publisher-loc>Berlin</publisher-loc>, <lpage>248</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Viraktamath</surname> <given-names>CA</given-names></name>,<name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name></person-group> (<year>2011</year>)<article-title> A remarkable new genus of Dikraneurini (Hemiptera: Cicadomorpha: Cicadellidae: Typhlocybinae) from Southeast Asia.</article-title> <source>Zootaxa </source> <volume>2931</volume>: <fpage>1</fpage>-<lpage>7</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Yang</surname> <given-names>CK</given-names></name></person-group> (<year>1991</year>)<article-title> A new genus and species of leafhoppers (Homoptera: Cicadellidae) named in honor of Prof. Chou Io.</article-title> <source>Entomotaxonomia </source> <volume>13</volume>: <fpage>79</fpage>-<lpage>82</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Current distribution of signoretiine genera, <italic>Chouious</italic>, <italic>Phlogis</italic>, <italic>Preta</italic>, and <italic>Signoretia</italic>. Countries marked with a lighter shade are new records given herein.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figures 2–14.</label>
+            <caption><p> Habitus photographs. <bold>2, 3</bold> <italic>Chouious tianzeus</italic>, dorsal and lateral <bold>4–6</bold> <italic>Phlogis</italic> sp. from Malaysia, dorsal and details of head lateral and face <bold>7</bold> <italic>Phlogis </italic>sp. from Thailand, lateral <bold>8, 9</bold> <italic>Preta gratiosa</italic>, dorsal and lateral <bold>10–12</bold> <italic>Signoretia delicata </italic>sp. n., detail of head, dorsal, lateral, and frontal <bold>13, 14</bold> <italic>Signoretia kintendela</italic> sp. n., dorsal and lateral.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figures 15–20.</label>
+            <caption><p> Fore- and hindwing. <bold>15, 16</bold> <italic>Phlogis </italic>sp. from Thailand.<bold> 17, 18</bold> <italic>Preta gratiosa</italic>. <bold>19, 20</bold> <italic>Signoretia aureola</italic>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figures 21–30. </label>
+            <caption><p>Terminalia of <italic>Chouious</italic>, <italic>Phlogis </italic>and <italic>Preta</italic>. <bold>21–24</bold> <italic>Chouious tianzeus</italic>, male genitalia<bold> 21</bold> genital capsule (without anal tube), lateral view <bold>22</bold> dorsal connective, caudal view <bold>23</bold> connective, styles, aedeagus, dorsal connective, and anal tube, lateral view <bold>24</bold> aedeagus caudal view. <bold>25–27</bold> female terminalia of <italic>Phlogis</italic> sp. from Malaysia <bold>25</bold> sternite VII, ventral view <bold>26</bold> first valvula of ovipositor, lateral view <bold>27</bold> second valvifers, second valvulae and gonoplacs of ovipositor, lateral view <bold>28</bold> <italic>Phlogis</italic> sp. from Thailand, sternite VII, ventral view <bold>29, 30</bold> <italic>Preta gratiosa</italic> <bold>29</bold> pygofer and segment X of anal tube, lateral view <bold>30</bold> subgenital plates, connective, styles, and aedeagus, lateral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figures 31–36.</label>
+            <caption><p> Male genitalia of new species of <italic>Signoretia</italic>. <bold>31–33</bold> <italic>Signoretia delicata</italic> sp. n. <bold>31</bold> genital capsule, lateral view <bold>32</bold> connective, styles, and aedeagus, dorsal view <bold>33</bold> connective, styles, and aedeagus, lateral view <bold>34–36</bold> <italic>Signoretia kintendela</italic> sp. n.<bold> 34</bold> genital capsule, lateral view <bold>35</bold> connective, style, and aedeagus, dorsal view <bold>36</bold> aedeagus, ventrolateral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F6" position="float" orientation="portrait">
+            <label>Figure 37–42.</label>
+            <caption><p> Male genitalia of <italic>Signoretia</italic>. <bold>37–39</bold> <italic>Signoretia malaya</italic>. <bold>37</bold> genital capsule, lateral view <bold>38</bold> connective, styles, and aedeagus, dorsal view <bold>39</bold> connective, styles, and aedeagus, lateral view <bold>40–42</bold> <italic>Signoretia yangli</italic> <bold>40</bold> connective and styles, dorsal view <bold>41</bold> style, lateral view <bold>42</bold> aedeagus, lateral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

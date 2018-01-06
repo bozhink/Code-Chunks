@@ -1,0 +1,1 @@
+select * from user.clients where xmlexists('$c/Client/Address[zip>"95050"]' passing USER.CLIENTS.CONTACTINFO AS "c")

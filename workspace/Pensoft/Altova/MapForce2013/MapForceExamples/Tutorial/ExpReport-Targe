@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 U (http://www.xmlspy.com) by Alex (Altova GmbH) -->
+<xs:schema targetNamespace="http://my-company.com/namespace" xmlns="http://my-company.com/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Company">
+		<xs:annotation>
+			<xs:documentation>Root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Employee">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PersonType">
+								<xs:sequence maxOccurs="unbounded">
+									<xs:element ref="expense-item" maxOccurs="unbounded"/>
+									<xs:element ref="CashAdvance" minOccurs="0"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Exec">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PersonType">
+								<xs:sequence>
+									<xs:element ref="expense-item" maxOccurs="unbounded"/>
+									<xs:element ref="CashAdvance" minOccurs="0"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="TextType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="strong"/>
+			<xs:element ref="italic"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="description" type="TextType"/>
+	<xs:element name="Restaurant">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Date" type="xs:date"/>
+	<xs:simpleType name="emailType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\p{L}_-]+(\.[\p{L}_-]+)*@[\p{L}_]+(\.[\p{L}_]+)+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="expense-item">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ExpenseItemType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Location" type="xs:string"/>
+	<xs:element name="strong" type="TextType"/>
+	<xs:element name="italic" type="TextType"/>
+	<xs:complexType name="PersonType">
+		<xs:sequence>
+			<xs:element name="Title">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="B.A."/>
+						<xs:enumeration value="M.A."/>
+						<xs:enumeration value="Ph.D."/>
+						<xs:enumeration value="Project Manager"/>
+						<xs:enumeration value="Manager"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Name">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Tel.">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9 \-]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email" type="emailType"/>
+			<xs:element name="DomesticDailyRate" type="xs:integer" minOccurs="0"/>
+			<xs:element name="ForeignDailyRate" type="xs:string" minOccurs="0"/>
+			<xs:element name="Expense-detail" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExpenseItemType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="Date"/>
+			<xs:sequence>
+				<xs:element name="Travel" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence minOccurs="0">
+							<xs:element name="Destination" type="xs:string" minOccurs="0"/>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="Car-Rental" type="xs:string" minOccurs="0"/>
+								<xs:element name="Air-Travel" type="xs:string" minOccurs="0"/>
+								<xs:element name="Misc-Travel" type="xs:string" minOccurs="0"/>
+							</xs:choice>
+						</xs:sequence>
+						<xs:attribute name="Travel-Cost" type="xs:decimal" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accommodation" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="DomesticAcc" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="AccomodationType">
+											<xs:attribute name="DomesticAcc-Cost" type="xs:decimal" use="optional" default="0"/>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ForeignAcc" minOccurs="0">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="AccomodationType">
+											<xs:attribute name="ForeignAcc-Cost" type="xs:decimal" use="optional" default="0"/>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Entertainment" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="Client-Name" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="Restaurant" minOccurs="0"/>
+							<xs:element name="Gifts" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string"/>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+						<xs:attribute name="Entertainment-Cost" type="xs:decimal" use="optional" default="0"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Misc" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="MiscExpense-Cost" type="xs:decimal" use="optional" default="0"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:element ref="description" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="Currency" type="xs:string" use="required"/>
+		<xs:attribute name="Bill-to" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Development"/>
+					<xs:enumeration value="Marketing"/>
+					<xs:enumeration value="Accounting"/>
+					<xs:enumeration value="Sales"/>
+					<xs:enumeration value="Operations"/>
+					<xs:enumeration value="Support"/>
+					<xs:enumeration value="IT"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:element name="CashAdvance">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="CashAdvance-Domestic" type="xs:integer" use="optional"/>
+					<xs:attribute name="CashAdvance-Foreign" type="xs:integer" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="AccomodationType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="Location" minOccurs="0"/>
+			<xs:element name="Hotel" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

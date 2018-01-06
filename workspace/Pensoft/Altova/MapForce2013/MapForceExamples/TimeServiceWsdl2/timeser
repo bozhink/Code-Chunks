@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  MapForce Project File  -->
+<Project Expanded="Yes" Type="Root" language="java" OutputDir="output\" Title="timeservice2" OutputName="timeservice2" Version="6">
+	<Folder FolderName="Web Services Folder" Expanded="Yes" Type="WebServiceFolder">
+		<File Expanded="Yes" Type="WebServiceRoot" FilePath="TimeService20.wsdl">
+			<Folder FolderName="{http://www.Nanonull.com/TimeService/}TimeService" Expanded="Yes" Type="WebServiceService" WSQualifiedName="{http://www.Nanonull.com/TimeService/}TimeService">
+				<Folder FolderName="TimeServiceSoap" Expanded="Yes" Type="WebServicePort" WSQualifiedName="TimeServiceSoap">
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getUTCTime" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getUTCTime">
+						<File Type="Mapping" FilePath="getUTCTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getOffsetUTCTime" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getOffsetUTCTime">
+						<File Type="Mapping" FilePath="getOffsetUTCTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerTime" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerTime">
+						<File Type="Mapping" FilePath="getServerTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerTimeZone" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerTimeZone">
+						<File Type="Mapping" FilePath="getServerTimeZone.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerCity" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerCity">
+						<File Type="Mapping" FilePath="getServerCity.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getTimeZoneTime" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getTimeZoneTime">
+						<File Type="Mapping" FilePath="getTimeZoneTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getCityTime" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getCityTime">
+						<File Type="Mapping" FilePath="getCityTime.mfd"/>
+					</Folder>
+				</Folder>
+			</Folder>
+		</File>
+	</Folder>
+</Project>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap1" blackbox="0" uid="50807088" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="65261904" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="381" lty="4" rbx="546" rby="372"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Order" expanded="1">
+										<entry name="Header" inpkey="5" expanded="1">
+											<entry name="Number" inpkey="2"/>
+										</entry>
+										<entry name="Customer" inpkey="26" expanded="1">
+											<entry name="Number" inpkey="8"/>
+											<entry name="ContactName" inpkey="29"/>
+											<entry name="Salutation" inpkey="44"/>
+											<entry name="CompanyName" inpkey="11"/>
+											<entry name="Address" expanded="1">
+												<entry name="Street" inpkey="14"/>
+												<entry name="City" inpkey="17"/>
+												<entry name="ZIP" inpkey="23"/>
+												<entry name="State" inpkey="20"/>
+											</entry>
+										</entry>
+										<entry name="LineItems" expanded="1">
+											<entry name="LineItem" inpkey="32" expanded="1">
+												<entry name="Article" expanded="1">
+													<entry name="Number" inpkey="35"/>
+													<entry name="Name" inpkey="38"/>
+													<entry name="SinglePrice" inpkey="41"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Order-EDI.xsd" instanceroot="{}Order"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="80933824" kind="16">
+					<properties/>
+					<view rbx="278" rby="500"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Envelope" expanded="1">
+										<entry name="Interchange" expanded="1">
+											<entry name="Group" expanded="1">
+												<entry name="Message_ORDERS" expanded="1">
+													<entry name="UNH" outkey="4" expanded="1"/>
+													<entry name="BGM" expanded="1">
+														<entry name="C106" expanded="1">
+															<entry name="F1004" outkey="1"/>
+														</entry>
+													</entry>
+													<entry name="SG2" expanded="1">
+														<entry name="NAD">
+															<entry name="C082">
+																<entry name="F3055" outkey="7"/>
+															</entry>
+															<entry name="C080">
+																<entry name="F3036" outkey="10"/>
+															</entry>
+															<entry name="C059">
+																<entry name="F3042" outkey="13"/>
+															</entry>
+															<entry name="F3164" outkey="16"/>
+															<entry name="C819">
+																<entry name="F3229" outkey="19"/>
+															</entry>
+															<entry name="F3251" outkey="22"/>
+														</entry>
+														<entry name="SG5" expanded="1">
+															<entry name="CTA" expanded="1">
+																<entry name="C056" outkey="25" expanded="1">
+																	<entry name="F3412" outkey="28"/>
+																	<entry name="X1000" outkey="43"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="SG29" expanded="1">
+														<entry name="LIN" outkey="46">
+															<entry name="C212">
+																<entry name="F7140" outkey="47"/>
+															</entry>
+														</entry>
+														<entry name="IMD">
+															<entry name="C273">
+																<entry name="F7008" outkey="48"/>
+															</entry>
+														</entry>
+														<entry name="SG33" expanded="1">
+															<entry name="PRI" expanded="1">
+																<entry name="C509" expanded="1">
+																	<entry name="F5118" outkey="49"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="edi" kind="EDIFACT" inputinstance="Orders-Custom.EDI" encoding="1000" byteorder="1" byteordermark="0" config="EDIFACT.Nanonull\Envelope.Config">
+							<messages>
+								<message type="ORDERS"/>
+							</messages>
+							<settings unpackedformat="false" autocompletedata="true" terminatewithlinefeed="true" syntaxversionnumber="0" controllingagency="UNO" syntaxlevel="A" writeuna="true">
+								<separators dataelement="+" component=":" subcomponent="" segment="&apos;" decimal="." escape="?" repetition="*"/>
+								<validation>
+									<case kind="missing-segment" action="stop"/>
+									<case kind="missing-group" action="stop"/>
+									<case kind="missing-field-or-composite" action="report+reject"/>
+									<case kind="extra-data" action="report+reject"/>
+									<case kind="invalid-field-value" action="report+reject"/>
+									<case kind="invalid-date" action="report+reject"/>
+									<case kind="invalid-time" action="report+reject"/>
+									<case kind="extra-repeat" action="report+reject"/>
+									<case kind="numeric-overflow" action="report+reject"/>
+									<case kind="data-element-too-short" action="report+reject"/>
+									<case kind="data-element-too-long" action="report+reject"/>
+									<case kind="unexpected-eof" action="stop"/>
+									<case kind="invalid-codelist-value" action="report+reject"/>
+									<case kind="semantic" action="report+reject"/>
+									<case kind="segment-not-in-message" action="stop"/>
+									<case kind="unrecognized-segment-id" action="stop"/>
+								</validation>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="44" edgekey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="32" edgekey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="35" edgekey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48">
+						<edges>
+							<edge vertexkey="38" edgekey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="41" edgekey="53"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

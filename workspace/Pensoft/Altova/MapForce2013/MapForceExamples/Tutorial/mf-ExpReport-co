@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://my-company.com/namespace ExpReport-combined.xsd" xmlns="http://my-company.com/namespace">
+	<Employee>
+		<Title>Project Manager</Title>
+		<Name>Landis</Name>
+		<Tel.>123-456-78</Tel.>
+		<Email>f.landis@nanonull.com</Email>
+		<Expense-detail>true</Expense-detail>
+		<expense-item>
+			<Travel Travel-Cost="337.880000"></Travel>
+		</expense-item>
+		<expense-item></expense-item>
+		<expense-item>
+			<Travel Travel-Cost="1014.220000"></Travel>
+		</expense-item>
+		<expense-item>
+			<Travel Travel-Cost="2000.000000"></Travel>
+		</expense-item>
+		<expense-item></expense-item>
+	</Employee>
+	<Employee>
+		<Title>Manager</Title>
+		<Name>Johnson</Name>
+		<Tel.>456-789-123</Tel.>
+		<Email>j.john@nanonull.com</Email>
+		<expense-item>
+			<Travel Travel-Cost="150.440000"></Travel>
+		</expense-item>
+		<expense-item></expense-item>
+		<expense-item>
+			<Travel Travel-Cost="1020.000000"></Travel>
+		</expense-item>
+		<expense-item>
+			<Travel Travel-Cost="70.000000"></Travel>
+		</expense-item>
+	</Employee>
+</Company>

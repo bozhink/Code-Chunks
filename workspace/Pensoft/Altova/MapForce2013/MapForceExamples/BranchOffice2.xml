@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BranchOffices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BranchOffices.xsd">
+	<Name>Nanonull</Name>
+	<Office>
+		<Name>Nanonull Research Outpost</Name>
+		<EMail>sp@nanonull.com</EMail>
+		<Fax xsi:nil="true"/>
+		<Phone>+8817 3141 5926</Phone>
+		<Address>
+			<city>South Pole</city>
+			<state xsi:nil="true"/>
+			<street xsi:nil="true"/>
+			<zip xsi:nil="true"/>
+		</Address>
+		<Contact>
+			<first>Scott</first>
+			<last>Amundsen</last>
+		</Contact>
+	</Office>
+</BranchOffices>

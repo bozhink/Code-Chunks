@@ -1,0 +1,694 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4755</article-id>
+            <title-group>
+                <article-title>New Aradidae from Ecuador (Hemiptera, Heteroptera, Aradidae)
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Heiss</surname>
+                        <given-names>Ernst</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:A4B5783D-568C-4928-86CB-3315714AC586</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Research Entomologist, Tiroler Landesmuseum, Josef Schraffl Strasse 2a, A 6020 Innsbruck, Austria
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Ernst Heiss (<email xlink:type="simple">aradus@aon.at</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000:</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>24</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+                <date date-type="accepted">
+                    <day>13</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Ernst Heiss</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:472B781E-BB3A-4BFF-B219-44C90E606FA3
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>As an addition to the presently poorly known aradid fauna of Ecuador, 3 new genera and 4 new species are described: <italic>Osellaptera setifera</italic> <bold>gen. n.</bold>, <bold>sp. n.</bold>; <italic>Kormilevia ecuadoriana</italic> <bold>sp. n.</bold> both belonging to Mezirinae; and Carventinae <italic>Cotopaxicoris cruciatus</italic> <bold>gen. n.</bold>, <bold>sp. n.</bold> and <italic>Onorecoris piceus</italic> <bold>gen. n.</bold>, <bold>sp. n.</bold> An updated key is provided for all species of the Neotropical genus <italic>Kormilevia</italic> Usinger &amp; Matsuda, 1959.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Hemiptera</kwd>
+                <kwd>Heteroptera</kwd>
+                <kwd>Aradidae</kwd>
+                <kwd>Mezirinae</kwd>
+                <kwd>Carventinae</kwd>
+                <kwd>new genus</kwd>
+                <kwd>new species</kwd>
+                <kwd>apterous</kwd>
+                <kwd>micropterous</kwd>
+                <kwd>Ecuador
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The aradid fauna of Ecuador was first assembled and catalogued by Froeschner 1981 reporting 15 species, belonging to the subfamilies Aneurinae Douglas &amp; Scott, 1865 (2 spp.) and Mezirinae Oshanin 1908 (13 spp.). This reflects very poorly on the known flat bug fauna of this country, which is expected much more diverse and numerous because of its different biotops and suitable habitats. Later additions were recorded in Kormilev and Froeschner’s synonymic list of the “Flat Bugs of the World” in 1987 and again updated by Coscaron and Contreras in their “Catalog of Aradidae for the Neotropical Region” in 2012.
+</p>
+            <!--PageBreak-->
+            <p>A small lot of Aradidae from Central Ecuador in the authors collection contained – not unexpectedly – several new taxa. Although only single specimens are available, their striking morphological differences from other Neotropical Aradidae justify the erection of new genera for them. They are illustrated and described below as <italic>Osellaptera setifera</italic> gen. n., sp. n.; <italic>Kormilevia ecuadoriana</italic> sp. n. both belonging to the subfamily Mezirinae; and <italic>Cotopaxicoris cruciatus</italic> gen. n., sp. n. and <italic>Onorecoris piceus</italic> gen. n., sp. n.of the subfamily Carventinae. An updated key is proposed for all species of the Neotropical genus <italic>Kormilevia</italic> Usinger &amp; Matsuda, 1959.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>The specimens upon which the descriptions are based are dry-mounted and preserved in the collection of the author at the Tiroler Landesmuseum, Innsbruck, Austria (CEHI). As specimens of these apterous and pilose new taxa were mostly covered by detritus or incrustations, they were cleaned by treatment in 10% KOH for the study of abdominal structures. Photos were taken with an Olympus SZX 10 binocular microscope and a Olympus E 3 digital camera, processed with Helicon Focus 4.3 software, using Adobe Photoshop and Lightroom 2.3.
+</p>
+            <p>Measurements were taken with an eyepiece micrometer (20 units = 1 mm).
+</p>
+            <p>Abbreviations used: deltg = dorsal external laterotergite (connexivum); mtg = abdominal median tergite; pe-angles = posteroexterior angles (of deltg); vltg = ventral laterotergite. When citing the text on the labels of a pin attached to the specimens / separates the lines and // different labels.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Taxonomy
+</bold>
+            </title>
+            <sec>
+                <title><bold>Subfamily Mezirinae Oshanin 1908
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Osellaptera</bold-italic>
+                            <bold> gen. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:3B994BCD-645A-4233-96F4-B7CA4CCA2BCD
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Osellaptera
+</object-id>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type species:</bold>
+                        </title>
+                        <p> <italic>Osellaptera setifera</italic> sp. n.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Although superficially resembling the habitus of <italic>Mystilocoris pubescens</italic> Usinger &amp; Matsuda, 1959 from Colombia, the new species cannot be placed in any of the apterous or micropterous Neotropical Mezirinae genera; here therefore <italic>Osellaptera</italic> gen. n. is proposed. It is distinguished from <italic>Mystilocoris pubescens</italic> (the only species of this genus) by its micropterous condition (apterous im <italic>Mystilocoris</italic>), more slender antennae, head as long as wide (about 1.5x wider in<italic> Mystilocoris</italic>), different structure and fusion of thorax and abdomen, and position of spiracles II-IV ventral, V sublateral and hardly visible from above, VI and VI sublateral on a prominent tubercle and vis<!--PageBreak-->ible, VIII lateral (II-VI ventral, VII sublateral and visible, VIII lateral), and the shape of the pygophore.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Small sized micropterous Mezirinae; body oval, laterally constricted at metanotum, attenuated posteriorly, surface of body with deep punctures and long pubescence on carinate structures; legs and antennae beset with long setae; colouration cinnamoneous, legs and antennae are lighter.
+</p>
+                        <p>Head. Triangular as wide as long, clypeus narrow reaching ½ of antennal segment I; antenniferous lobes short; antennae slender twice as long as width of head, segment I longest, II+III shorter, IV shortest; eyes stalked; postocular lobes converging to constricted neck.
+</p>
+                        <p>Pronotum. Distinctly wider than long, lateral margins converging anteriorly with a vertically reflexed triangular expansion, disk with 2 ovate callosities depressed between them.
+</p>
+                        <p>Mesonotum. Strongly transverse, median elevated ridge fused to that of metanotum and mtg I+II; lateral sclerites callous delimited laterally by flap-like structures these regarded as reduced remnants of wingpads.
+</p>
+                        <p>Metanotum. Fused to mtg I+II, lateral sclerites oval and callous; surface of mtg I+II punctured delimited posteriorly by carinae expanding laterally from median ridge.
+</p>
+                        <p>Abdomen. The median ridge of thorax continues along the tergal plate of mtg III-VI and highest on mtg IV; lateral sclerites with subrectangular punctured depressions; deltg II+III fused, anteriorly constricted, reaching mesonotum; lateral margins of deltg II-VI reflexed, those of deltg II-IV laterally expanded and pilose.
+</p>
+                        <p>Venter. Metathoracic scent gland canal curved anteriorly and upward, not visible from above; spiracles II-IV ventral, V sublateral and barely visible from above, VI and VII sublateral on a prominent tubercle and fairly visible, VIII lateral and visible from above.
+</p>
+                        <p>Legs. Long and slender, claws with thin pulvilli.
+</p>
+                        <p>Etymology. It is a pleasure to dedicate this conspicuous new flat bug genus to my friend Giuseppe Osella (Verona), appreciating his long time friendship and generosity donating to me Aradidae from his collection trips, and recognizing his important contributions to various matters of coleopterology.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Osellaptera setifera</bold-italic>
+                            <bold> sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:53337094-CD36-4238-A232-E4386BA21613
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Osellaptera_setifera
+</object-id>
+                        <xref>Fig. 1
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Holotype male</bold>
+                        </title>
+                        <p> labelled: Ecuador, Cotopaxi / Otonga (foresta nublada) / 2000m 23–30 VII 2004 / G. Osella leg. This specimen is designated as holotype and labelled accordingly.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Holotype male, micropterous body surface deeply punctured interrupted with smooth carinae bearing dense pilosity; colouration cinnamomeous, appendages lighter with long dense erect setae curved on apices.
+</p>
+                        <p><!--PageBreak-->Head. As wide as long (26/26); pilose clypeus produced and narrowly rounded anteriorly reaching 1/3 of antennal segment I; genae thin and adherent as long as clypeus; antenniferous lobes short, apex recurved apically; antennae twice as long as width of head (52/26), segment I club-shaped and longest, II and III shorter and cylindrical thickened apically, IV shortest, clavate with pilose apex; length of antennal segments I/II/III/IV = 18/12/14/8; eyes stalked directed anterolaterally; postocular lobes sinuately converging to constricted neck; vertex with a median elevation laterally separated from smooth oval callosities by deep grooves; rostrum arising from a slit-like atrium, shorter than head, rostral groove with carinate borders.
+</p>
+                        <p>Pronotum. About 2.8× as wide as long (31/11); lateral margins converging anteriorly with a vertically reflexed triangular expansion, disk with 2 ovate callosities deeply depressed between them, anterolateral angles slightly produced and rounded; anterior margin concave, ring like; posterior margin convex.
+</p>
+                        <p>Mesonotum. Strongly transverse, 3.35× as wide across wingpads as long, consisting of a median ridge fused to that of metanotum and mtg I+II and of lateral oval callosities delimited by an inclined pilose carina followed by flap-like wingpads produced over lateral margins of abdomen.
+</p>
+                        <p>Metanotum. Fused to mtg I+II these visible as transverse punctured depressions, posteriorly delimited by curved pilose carinae which are connected to median ridge, <!--PageBreak-->lateral sclerites of metanotum punctured and callous, posteriorly sloping to mtg I without a separating suture.
+</p>
+                        <p>Abdomen. Tergal plate of mtg III-VI medially elevated and connected anteriorly to thoracic ridge, highest on mtg IV, lateral sclerites with subrectangular punctured depressions; triangular deltg II+III fused, produced and constricted anteriorly, reaching lateral margin of mesonotum; deltg II-IV laterally expanded, their pe-angles produced and beset with long setae; tergite VII with 2 (1+1) sublateral smooth callosities, strongly medially raised for the reception of the large pygophore, this pyriform projecting posteriorly; paratergites VIII small, much shorter than pygophore, surface with short yellowish pilosity; the cleft visible between tergite VII and anterior margin of pygophore shows triangular apices of parameres; the single male was not dissected for furtherstudy of the latter.
+</p>
+                        <p>Venter. Metathoracic scent gland canal curved anteriorly and upward, not visible from above; spiracles II-IV ventral, V sublateral and barely visible from above, VI and VII sublateral on a prominent tubercle and fairly visible, VIII lateral and visible from above.
+</p>
+                        <p>Legs. Long and slender, claws hook-like with thin pulvilli, with protibial comb.
+</p>
+                        <p>Measurements. Length 5.4mm (incl. cleft pygophore); width of abdomen at apex of deltg II 2.1mm; across tergite III 2.6mm, across tergite VII 2.3mm; length / width of pygophore 0.45/0.75mm; length of antennae 2.6mm.
+</p>
+                        <p>Etymology. The name refers to the dense setae covering legs and antennae and most body parts.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>Genus </bold>
+                            <bold-italic>Kormilevia</bold-italic>
+                            <bold> Usinger &amp; Matsuda 1959
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Kormilevia
+</object-id>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p> The micropterous genus <italic>Kormilevia</italic> Usinger &amp; Matsuda, 1959 was erected for <italic>setifera</italic> Usinger &amp; Matsuda, 1959 from Brazil. These authors recognized that species described as <italic>Acaricoris dureti</italic> Kormilev, 1953a from Argentina, or as <italic>Pictinus plaumanni</italic> Kormilev, 1953b and <italic>Pictinus montrouzieri</italic> Kormilev, 1953b, both from Brazil, belong to <italic>Kormilevia</italic> and were transferred there giving a key to the 4 then known species. They were however uncertain about the taxonomic position of <italic>Acaricoris teresopolitanus</italic> Wygodzinsky, 1948 and did not include this in the key. Kormilev 1963 described the next species <italic>aberrans</italic> sp. n. from Colombia and 1964 <italic>gerali</italic> sp. n. from Brazil, and presents a key to 6 species including <italic>teresopolitana</italic> but omitting his <italic>aberrans</italic>.
+                        </p>
+                        <p>As the comparative notes of Kormilev’s descriptions are partly insufficient, the important structures of the mesonotum are not described or illustrated (e.g., <italic>aberrans</italic>, <italic>gerali</italic>) and the position of spiracles used in Kormilev’s 1964 key are contradictory to the descriptions (<italic>plaumanni</italic>, <italic>montrouzieri</italic>), a comparison of taxa is uncertain and needs a revision based on the types. Here all available data from the literature were assembled and a tentative new key for all 8 taxa is presented below. For <italic>plaumanni</italic> and <italic>montrouzieri</italic> original material was available for study (ex. coll. Plaumann).
+                        </p>
+                        <p>All <italic>Kormilevia</italic> species are micropterous, although not always recognized as such, sharing small nonfunctional wingpads that enable only a very limited range of dis<!--PageBreak-->tribution. It can be assumed that they are therefore endemic to the region of origin. Because of biogeographical considerations – the closest record to the Ecuadorian locality is that of <italic>aberrans</italic> from Bogota, Colombia, which lies about 800km north – and distinct characters, <italic>Kormilevia ecuatoriana</italic> sp. n. is described here although only a single female is available.
+                        </p>
+                        <p><bold>Key to species of Kormilevia
+</bold>
+                        </p>
+                        <table-wrap content-type="key" position="float" orientation="portrait">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">1 (2)</td>
+                                        <td rowspan="1" colspan="1">Spiracles II-VI ventral, remote from lateral margin, VII+VIII lateral and visible from above; only female holotype known (described as A<italic>caricoris</italic>), 4.8mm, fig.7 (Brazil)
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>eresopolitana</bold-italic><bold> (Wygodzinsky) 1948
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">2 (1)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Spiracles II-IV ventral, V-VI sublateral or lateral and barely visible from above, VII-VIII lateral</td>
+                                        <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">3 (4)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennae long, about 2.6x as long as width of head, antennal segment IV as long a</td>
+                                        <td rowspan="1" colspan="1">II, only female holotype known, of larger size, 5.3mm, fig. 2 (Ecuador, Cotopaxi)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>ecuatoriana</bold-italic><bold> sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">4 (3)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennae shorter, 2.03-2.28x as long as width of head, antennal segment IV longer than II, of smaller size (except <italic>aberrans</italic> =4.55-5.3mm)
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold>5
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">5 (6)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Eyes as long as distance from anterior margin of eye to apex of antenniferous lobes, holotype male 3.65mm, paratype female 4.0mm, fig. 8 (Brazil, Est. do Rio)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>etifera</bold-italic><bold> Usinger &amp; Matsuda 1959
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">6 (9)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Eyes large, longer than distance from anterior margin of eye to apex of antenniferous lobes</td>
+                                        <td rowspan="1" colspan="1"><bold>7
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">7 (8)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Length of antennae 2.28x as long as width of head, head about as long as wide,smaller species, only male holotype known, 3.5mm, fig. 6 (Argentinia, Iguazu)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>dureti</bold-italic><bold> (Kormilev) 1953
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">8 (7)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennae 2.12x as long as width of head, head distinctly wider than long, larger species, holotype male 4.55mm, paratype female 5.32mm (Colombia, Bogota)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>aberrans</bold-italic><bold> Kormilev 1963
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">9 (6)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Eyes smaller, shorter than antenniferous lobes</td>
+                                        <td rowspan="1" colspan="1"><bold>10
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">10(11)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Spiracles II-IV ventral, in both sexes, V sublateral and barely visible from above, VI-VIII lateral and distinctly visible from above, holotype male 4.0mm, paratype female 4.5mm (Brazil, Sta.Catarina)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>gerali</bold-italic><bold> Kormilev 1964
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">11(10)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Spiracles II-IV ventral, in females V sublateral and barely visible from above, VI-VIII lateral and visible, in male V-VIII lateral and visible from above</td>
+                                        <td rowspan="1" colspan="1"><bold>12
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">12(13)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Scutellum like mesonotum with a median V-shaped posteriorly raised ridge and a median groove at base, male pygophore posteriorly obtuse, holotype male 3.9mm, paratype female 4.25mm, figs 3,4 (Brazil, Sta.Catarina)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>montrouzieri</bold-italic><bold> (Kormilev) 1953
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">13(12)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Scutellum like mesonotum with a parallel ridge reaching from base to apex with an indistinct median suture, male pygophore posteriorly conical, holotype male 3.9mm, paratype female 4.4mm, fig.5 (Brazil, Sta.Catarina)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>plaumanni</bold-italic><bold> (Kormilev) 1953
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak-->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </table-wrap>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Kormilevia ecuadoriana</bold-italic>
+                            <bold> sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:35441D85-FADC-4EB8-8EAF-EBE72B208B46http://species-id.net/wiki/Kormilevia_ecuadoriana
+</object-id>
+                        <xref>Fig. 2
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Holotype female</bold>
+                        </title>
+                        <p> labelled: Ecuador 2008 / legg. Baviera, Belló / Osella &amp; Poliano // ECU-Cotopaxi / Otonga – Galapagos / m 1620, 5 VIII 2008 / S 00°23.962' / W 58°56.720'. The specimen is designated as holotype and labelled accordingly. CEHI.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> The new species differs from all 7 species assigned to date to the genus <italic>Kormilevia</italic> Usinger &amp; Matsuda, 1959 catalogued by Kormilev and Froeschner 1987 and can be recognized by the long antennae and other characters mentioned in the key.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Small sized micropterous Mezirinae; body oval, abdomen dilated posteriorly, surface of body granulate and rugose, lateral margins with short setae; antennae and legs beset with fine setigerous tubercles. Colouration of body reddish brown, pronotum except oval callosities, smooth part of scutellum, apodemal impressions of tergal plate and anterolateral angles of deltg II-VII and apices of tergites VII-X yellowish; antennae yellowish, apical half of segment I, apex of II and III and basal half of IV darker brown, legs yellowish, femora and tibiae brown on apical half.
+</p>
+                        <p>Head. Slightly longer than width across eyes (20/17.5); clypeus conical; genae thin and adherent, as long as clypeus, reaching about 1/3 of antennal segment I; antenniferous lobes short with acute apex; antennae 2.62× as long as width of head (46/17.5), segment I thickest, II and IV thinner and shortest, dilated apically, III thinnest and longest, cylindrical, IV with pilose apex; length of antennal segments I/II/III/IV = 13/8/17/8; eyes granular inserted in head, their length shorter than antenniferous lobes (9/10); postocular lobes notched behind eyes followed by a round lateral tubercle not reaching outer margin of eyes, then straight, converging to constricted collar; vertex with irregular rugosities separated laterally by a deep groove from oval callosities; rostrum arising from a slit-like atrium, shorter than head.
+</p>
+                        <p>Pronotum. More than twice as wide as long (31/12); sinuate lateral margins emarginate and carinate converging anteriorly, anterolateral angles narrowly rounded, produced over anterior margin; posterior margin carinate, slightly convex; disk smooth depressed at middle, flanked by 2 (+1) oval granulate callosities.
+</p>
+                        <p>Mesonotum. Consisting of a triangular scutellum-like plate with smooth surface and anterior and lateral margins carinate and a median granulate carina, anterolaterally delimited by small rounded wing pads, lateral polygonal sclerites with a median oval granulate callosity; metathoracic scent gland visible from above posterior to wing pads.
+</p>
+                        <p>Metanotum. Transverse, surface rugose with 2(1+1) submedian ovate callosities, depressed between them; posterior margin nearly straight, separated from fused tergites I+II by a distinct suture. Tergites I+II fused, posterior margin delimited by a bisinuate suture, raised medially.
+</p>
+                        <p>Abdomen. Tergal plate flat, consisting of mediotergites III-VI laterally with large oval depressions, medially elevated on tergites IV and V; deltg II-VII slightly reflexed, their lateral margin subparallel at middle attenuated anteriorly and posteriorly, their <!--PageBreak-->surface longitudinally carinate on outer half; deltg II triangular not fused to deltg III, deltg II-VII separated by sutures; pe-angles of deltg VI slightly rounded, of deltg VII produced posteriorly over straight posterior margin of tergite VII; tergite VIII bilobate, visible tergites IX and X tricuspidate.
+</p>
+                        <p><!--PageBreak-->Venter. Spiracles II-IV ventral, V sublateral but barely visible from above, VI-VIII lateral and visible from above.
+</p>
+                        <p>Legs. Long and straight, femora moderately incrassate medially, tarsi two-segmented, claws with pulvilli and a long median setiform parempodium.
+</p>
+                        <p>Measurements. Length 5.3mm; width of mesonotum across wing pads 1.75mm; scutellum length / width 0.6/1.45mm; width of abdomen across tergites IV and V 2.85mm.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> Named after Ecuador, the country of origin.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+            <sec>
+                <title><bold>Subfamily Carventinae Usinger, 1950
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Cotopaxicoris</bold-italic>
+                            <bold> gen. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:02E9A006-655E-4EAF-A28D-D9A8D482740F
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Cotopaxicoris
+</object-id>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type species:</bold>
+                        </title>
+                        <p><italic> Cotopaxicoris cruciatus</italic> sp. n.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> The combination of characters: general habitus, long antennae, stalked eyes, pro-and mesonotum separated by sutures, metanotum fused to mtg I+II and to abdominal tergal plate, long pilosity on body, and appendages and the micropterous condition. This combination of characters is not shared by any apterous or micropterous Carventinae recorded from mainland South and Mesoamerica (<italic>Aparilocoris</italic> Kormilev, 1983; <italic>Dihybogaster</italic> Kormilev, 1953b; <italic>Glyptocoris</italic> Harris &amp; Drake, 1944; <italic>Kolpodaptera</italic> Usinger &amp; Matsuda, 1959; <italic>Peggicoris</italic> Drake, 1956, <italic>Reeceicus</italic> Drake, 1956). It stands also apart and shows no resemblances to genera described from the Caribbean Islands.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p>Micropterous; body subrectangular strongly attenuated anteriorly; surface of head and body with deep punctures, the elevated structures and lateral margins of head and body as well as of legs and antennae beset with fringe-like yellowish setae; colouration light brown, head darker, tibiae lighter.
+                        </p>
+                        <p>Head. Distinctly wider than long, clypeus short, genae adherent shorter than clypeus; antenniferous lobes short diverging anteriorly; antennae about 2.5× as long as width of head; segment I longest, those following shorter and thinner; eyes stalked; postocular lobes converging posteriorly; rostrum arising from an open atrium as long as head.
+</p>
+                        <p>Pronotum. Subrectangular about 3× as wide as long; lateral margins with rounded reflexed carinate paranota, posteriorly delimited by a notch followed by a laterally produced knob-like process; surface of disk with a median carina and rugose lateral sclerites; posterior margin carinate and convex, separated by a distinct suture from mesonotum.
+</p>
+                        <p>Mesonotum. Strongly transverse, about 4x as wide as long; surface with a median ridge which continues throughout thorax and abdomen, laterally flanked by oval smooth depressions followed by rugose sclerites, these delimited laterally by basally elevated flap-like structures representing reduced wingpads; suture separating meso- and metanotum recognizeable lateral of median ridge, where it is marked only by a thin indistinct suture.
+</p>
+                        <p><!--PageBreak-->Metanotum. Fused to mtg I+II and tergal plate; continuous median ridge widened posteriorly then forming a cross-like ridge on mtg I+II; lateral sclerites with rugose callosities, depressed anteriorly; surface of mtg I+II deeply punctured.
+</p>
+                        <p>Abdomen. Tergal plate fused to mtg I+II, median ridge narrower on mtg III continuing and raised posteriorly, highest on mtg IV-V; surface laterally with oval punctured depressions; deltg II+III fused, laterally expanded, an inclined carina marking posteror margin of deltg II; pe-angles of deltg V and VII roundly expanded.
+</p>
+                        <p>Venter. Spiracles I-IV ventral remote from lateral margin, V and VI sublateral but visible from above, VII-VIII lateral and visible.
+</p>
+                        <p>Legs. Long and slender, tarsi with long thin pulvilli.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> Named after the Cotopaxi region, the second highest mountain in Ecuador, where this interesting new taxon was collected.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Cotopaxicoris cruciatus</bold-italic>
+                            <bold> sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:272A0E55-EC1E-48D9-BEAC-04EC9102047C
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Cotopaxicoris_cruciatus
+</object-id>
+                        <xref>Fig. 9
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Holotype male</bold>
+                        </title>
+                        <p> labelled: Ecuador (Cotopaxi) 2008 / legg. Baviera, Belló / Osella &amp; Pogliano // Vaglio bosque / nublado e\o sotto / legno e\o tronchi. CEHI. This specimen is designated as holotype and labelled accordingly.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Holotype male, micropterous; body surface deeply punctured with fringe-like pilosity on lateral margins of head, body, and carinate elevations, legs and antennae with fine erect setae; colouration light brown with darker head and lighter tibiae.
+</p>
+                        <p>Head. Wider than long (27/24); clypeus short subparallel, genae adherent not reaching apex of clypeus; antenniferous lobes diverging anteriorly, apices narrowly rounded; antennae 2.48x as long as width of head (67/27); segment I longest and thickest, moderately incrassate along apical 2/3, II and III shorter and thinner, cylindrical, IV shortest spindle-shaped with pilose apex; length of antennal segments I/II/III/IV = 23/13/19/12; eyes stalked directed anterolaterally; postocular lobes roundly converging toward constricted neck densely beset with long erect setae with curved apices; vertex medially elevated with two rows of setae, laterally with 2(1+1) large oval rugose callosities; rostrum arising from a slit-like atrium, as long as head, lateral margins of rostral groove carinate.
+</p>
+                        <p>Pronotum. Subrectangular, 3× as wide across rounded lateral margins as long (33.5/11); lateral margins with rounded reflexed carinate paranota, posteriorly delimited by a notch followed posterolaterally by a laterally produced knob-like process; surface of disk with median carina and rugose lateral sclerites; posterior margin carinate and convex, separated from mesonotum by distinct suture.
+</p>
+                        <p>Mesonotum. Strongly transverse, 4.5× as wide across wingpads as long at middle (45/10); consisting of two transverse laterally rounded sclerites lateral of median moderately elevated ridge, surface of sclerites with an oval smooth depression adjacent <!--PageBreak-->to median posteriorly widening ridge followed by rugose callosities; all margins carinate, anterolateral angles triangularly raised to level of adjacent knob-like process of pronotum, posterolaterally produced into oval flap-like expansions, these representing reduced wingpads; suture separating meso- and metanotum only developed lateral of median ridge, upon which the transverse fusion line is indistinct and barely discernible.
+</p>
+                        <p>Metanotum. Fused to mtg I+II and tergal plate; continuous median ridge widened posteriorly then forming a cross-like elevated ridge on mtg I+II; lateral sclerites with rugose callosities, depressed anteriorly; surface of mtg I+II deeply punctured.
+</p>
+                        <p>Abdomen. Tergal plate of abdominal mtg III-VI fused to mtg I+II, the median ridge narrower on mtg III continuing, widening and raised posteriorly, highest on abdominal scent gland at posterior margin of mtg IV-V; with oval punctured depressions laterally; lateral margins subparallel at deltg III+IV, dilated at deltg II, V and VI; deltg II+III fused, laterally expanded, an inclined carina marks the posteror margin of deltg II; pe-angles of deltg V and VII rounded expanded; tergite VII medially raised for reception of globose pygophore, this wider than long with a conical median eleva<!--PageBreak-->tion; paratergites VIII cylindrical produced over pygophore; the single male was not dissected for the study of parameres.
+</p>
+                        <p>Venter. Spiracles I-IV ventral, remote from lateral margin, V and VI sublateral but visible from above, VII-VIII lateral and visible.
+</p>
+                        <p>Legs. Long and slender, femora moderately incrassate, tibiae straight, tarsi with long thin pulvilli.
+</p>
+                        <p>Measurements. Length 5.8mm; width of abdomen across tergite III 3.1mm, IV 3.15mm, V 3.2mm; width/length of pygophore 0.75/0.3mm; length of antennae 3.35mm.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> Refers to the cross-like elevated ridge on the thorax.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Onorecoris</bold-italic>
+                            <bold> gen. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:FD590891-3410-449E-9961-33FC189561CC
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Onorecoris
+</object-id>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type species:</bold>
+                        </title>
+                        <p> <italic>Onorecoris piceus</italic> sp. n.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> As in <italic>Cotopaxicoris,</italic> the assemblage of characters: general habitus, antennae twice as long as width of head, stalked eyes, a pentagonal fused median scerite on meso- and metanotum are not shared by apterous Carventinae recorded from South and Mesoamerica as reported for <italic>Cotopaxicoris</italic> description. Therefore, a new genus <italic>Onorecoris</italic> gen. n. is erected for <italic>O</italic>. <italic>piceus</italic> sp. n.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Apterous female; body oval attenuated anteriorly, surface of head and body rugose and tuberculate, legs and antennae beset with stiff hairs bearing tubercles; colouration piceous, tibiae yellowish except base and apex.
+</p>
+                        <p>Head. Slightly longer than width across eyes; clypeus narrow, flanked by anteriorly produced genae reaching about ½ of antennal segment I; antenniferous lobes wide, apex narrowly rounded; antennae about twice as long as width of head, antennal segment III longest, I and II shorter, IV fusiform; eyes slightly stalked; postocular lobes converging uniformly to narrow neck region; rostrum arising from slit-like atrium, shorter than head.
+</p>
+                        <p>Pronotum. About 3× as wide as long, lateral margins angulate at humeri then triangularly projecting anteriorly, produced over anterior margin; disk with median carina flanked by rugose callosities; posterior margin separated from mesonotum by a deep furrow.
+</p>
+                        <p>Mesonotum. With median posteriorly widening and moderately elevated pentagonal ridge and lateral subrectangular sclerites with rugose surface, their lateral margins rounded, produced laterally; separated from metanotum along lateral sclerites by deep grooves, median ridge fused and continuing on metanotum and mtg I+II where its structure disappears.
+</p>
+                        <p>Metanotum. Lateral sclerites separated from continuous median ridge by deep depressions, their surface deeply punctured and callous, posteriorly completely fused to mtg I+II; lateral margins with a small round expansion.
+</p>
+                        <p><!--PageBreak-->Abdomen. Tergal plate roundly elevated at middle, highest on mtg IV-V, lateral parts with oval punctured depressions these laterally delimited by carinate structures; lateral margins rounded with partly visible rims of dorsally reflexed vltg II-VII these increase posteriorly; pe-angles of deltg II-VII with a distinct dorsal tubercle; deltg II-VII separated by sutures, triangular deltg II anteriorly reaching to metanotum .
+</p>
+                        <p>Venter. Surface rugose and punctured, spiracles II-IV ventral, V sublateral and visible from above, VI and VII on sublateral tubercles of reflexed vltg VI and VII and visible from above, VIII dorsolateral.
+</p>
+                        <p>Legs. Long and slender, tibiae medially curved, claws with thin pulvilli.
+</p>
+                        <p>Etymology. It is a pleasure to dedicate this interesting new flat bug genus to my friend Giovanni Onore (Quito), versatile and successful entomologist in Ecuador who made the species available for study.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Onorecoris piceus</bold-italic>
+                            <bold> sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:411698E8-6CA4-4023-81BF-20E4C2E085CB
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Onorecoris_piceus
+</object-id>
+                        <xref>Fig. 10
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Holotype female</bold>
+                        </title>
+                        <p> labelled: Ecuador, Loja 7 Uritujinga 2800m / 19 Dec. 1997 G.Onore. CEHI. The specimen is damaged by a pinhole on the abdomen and lacks the right antennal segments II-IV. It was cleaned and remounted by the author. This specimen is designated as holotype and labelled accordingly.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Medium-sized apterous Carventinae, body broadly ovate, attenuated anteriorly; surface rather flat with rugosities and punctures; colouration piceous.
+</p>
+                        <p>Head. Longer than wide (23/22.5, incl. neck 25/22.5); clypeus narrow, raised with a round tubercle subapically; genae thin, produced over apex of clypeus reaching about ½ of antennal segment I, antenniferous lobes diverging laterally, apex with a round tubercle; antennae 2.09× as long as width of head (47/22.5), segment I thickened on anterior ¾ densely beset with tubercles bearing stiff hairs, II shortest, III longest, IV fusiform with pilose apex; length of antennal segments I/II/III/IV = 12.5/8/18/8.5; eyes slightly stalked; postocular lobes uniformly converging to constricted neck; vertex with a median ridge, this posterolaterally with 2(1+1) elevated round tubercles, separated from lateral oval callosities by deep grooves.
+</p>
+                        <p>Pronotum. Strongly transverse, more than 3× as wide as long (35/11); lateral margins angularly produced on humeri then triangularly projecting anteriorly, longer than collar; disk with a V-shaped median sclerite anteriorly followed posteriorly by small median triangular ridge separated from oval callosities by deep grooves; posterior margin convex, transverse suture separates the mesonotum.
+</p>
+                        <p>Mesonotum. Distinctly wider than long (45/10), consisting of a median posteriorly widening and moderately elevated pentagonal ridge and lateral subrectangular sclerites with rugose surface, their lateral margins rounded, produced laterally; sepa<!--PageBreak-->rated from metanotum along lateral sclerites by deep grooves, median ridge fused, continuing on metanotum and mtg I+II where its structure is obliterated.
+</p>
+                        <p>Metanotum. About 3.5× as wide as length including fused mtg I+II (52/15); lateral sclerites separated from continuous median ridge by deep depressions, their surface deeply punctured and callous, posteriorly completely fused to mtg I+II; lateral margins with a small round expansion.
+</p>
+                        <p>Abdomen. Lateral and anterior margins of tergal plate convex, posterior margin straight; its surface rather flat with moderately rounded elevation on mtg IV-V, highest at scent gland scar IV-V; lateral parts with oval punctured depressions on mtg IV-VI, those of mtg III larger, directed anteriorly, their lateral margins delimited by carinae, these enlarged on anterolateral angles; deltg II-VII separated by sutures, triangular deltg II anteriorly reaching metanotum; pe-angles of deltg II-VII slightly reflexed, rounded, with larger dorsal, granulate tubercle; dorsally reflexed margins of vltg II-VII partly visible from above as lateral rims which increase in size from deltg II-VI forming triangular tubercle on deltg VII; tergite VII with a median elevated ridge, tergite VIII bilobate, visible apices of tergites IX and X tricuspidate, as long as posteriorly produced paratergites VIII.
+</p>
+                        <p>Venter. Spiracles II-IV ventral, V sublateral and visible from above, VI and VII on sublateral tubercles of reflexed vltg VI and VII and visible from above, VIII dorsolateral¸sternites separated by transverse sutures, surface rugose and punctured,
+</p>
+                        <p>Legs. Long and slender, femora cylindrical, tibiae medially curved, tarsi bisegmented, claws with thin pulvilli.
+</p>
+                        <p>Measurements. Length 6.1mm; width of abdomen across tergite III and IV 3.65mm, V 3.5mm; width of tergite VIII 1.05mm; width /length of tergal plate 2.3/2.1mm; length of antennae 2.35mm.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> The epithet refers to the piceous colouration of this unusual specimen.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgments
+</bold>
+            </title>
+            <p>I am very grateful to my friends Giuseppe Osella (Verona, Italy) and Giovanni Onore (Quito, Ecuador) who generously made available these specimens for examination and description. I also thank Stefan Heim (Innsbruck, Austria) for the photos and Alexi Popov and his editorial team (Blagoevgrad, Bulgaria) for the invitation to contribute to this volume and the two anonymous reviewers for their suggestions and linguistical improvement of the text.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Coscaron</surname> <given-names>MC</given-names></name>,<name name-style="western"><surname>Contreras</surname> <given-names>EF</given-names></name></person-group> (<year>2012</year>)<article-title> Catalog of Aradidae (Hemiptera: Heteroptera) for the Neotropical Region.</article-title> <source>Zootaxa </source> <volume>3466</volume>: <fpage>1</fpage>-<lpage>103</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Douglas</surname> <given-names>JW</given-names></name>,<name name-style="western"><surname>J</surname> <given-names>Scott</given-names></name></person-group> (<year>1865</year>)<source> The British Hemiptera.</source> <publisher-name>Volume I, Hemiptera-Heteroptera. Ray Society</publisher-name>, <publisher-loc>London</publisher-loc>, <lpage>628</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Drake</surname> <given-names>CJ</given-names></name></person-group> (<year>1956</year>)<article-title> New Neotropical Genera and Species of Apterous Aradids (Hemiptera).</article-title> <source>Journal of the Washington Academy of Sciences </source> <volume>46</volume>: <fpage>322</fpage>-<lpage>327</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Froeschner</surname> <given-names>RC</given-names></name></person-group> (<year>1981</year>)<article-title> Heteroptera or True Bugs of Ecuador: A Partial Catalog.</article-title> <source>Smithsonian Contributions to Zoology </source> <volume>322</volume>: <fpage>1</fpage>-<lpage>147</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Harris</surname> <given-names>HM</given-names></name>,<name name-style="western"><surname>Drake</surname> <given-names>CJ</given-names></name></person-group> (<year>1944</year>)<article-title> New Apterous Aradidae from the Western Hemisphere Hemiptera).</article-title> <source>Proceedings of the Entomological Society Washington </source> <volume>46</volume>: <fpage>128</fpage>-<lpage>132</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kormilev</surname> <given-names>NA</given-names></name></person-group> (<year>1953a</year>)<fake_tag> The First Apterous Aradid from Argentina (Hemiptera). Dusenia 4: 125–126.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kormilev</surname> <given-names>NA</given-names></name></person-group> (<year>1953b</year>)<article-title> Notes on Neotropical Aradidae III (Hemiptera). On some Apterous  Mezirinae from Brazil.</article-title> <source>Dusenia </source> <volume>4</volume>: <fpage>229</fpage>-<lpage>242</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kormilev</surname> <given-names>NA</given-names></name></person-group> (<year>1963</year>)<article-title> Notes on Aradidae in the Naturhistoriska Riksmuseum Stockholm, Hemiptera-Heteroptera.</article-title> <source>Arkiv för Zoologi </source> <volume>2</volume>: <fpage>443</fpage>-<lpage>455</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kormilev</surname> <given-names>NA</given-names></name></person-group> (<year>1964</year>)<article-title> Neotropical Aradidae XII (Heteroptera: Aradidae).</article-title> <source>New York Entomological Society </source> <volume>72</volume>: <fpage>34</fpage>-<lpage>39</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kormilev</surname> <given-names>NA</given-names></name></person-group> (<year>1983</year>)<fake_tag> On the Homonymy of <italic>Hybocoris</italic> Kormilev, 1982 (Hemiptera: Aradidae). Proceedings of the Entomological Society Washington 85: 690.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kormilev</surname> <given-names>NA</given-names></name>,<name name-style="western"><surname>Froeschner</surname> <given-names>RC</given-names></name></person-group> (<year>1987</year>)<article-title> Flat bugs of the World. A synonymic list. (Heteroptera: Aradidae).</article-title> <source>Entomography </source> <volume>5</volume>: <fpage>1</fpage>-<lpage>246</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Oshanin</surname> <given-names>BF</given-names></name></person-group> (<year>1908</year>)<fake_tag> Verzeichnis der Palaearktischen Hemipteren mit besonderer Berücksichtigung ihrer Verteilung im Russischen Reiche. Volume 1(2), 395–586.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Usinger</surname> <given-names>RL</given-names></name></person-group> (<year>1950</year>)<fake_tag> The Origin and Distribution of Apterous Aradidae. Eight International Congress of Entomology, 174–179.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Usinger</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>R</surname> <given-names>Matsuda</given-names></name></person-group> (<year>1959</year>)<source> Classification of the Aradidae.</source> <publisher-name>London</publisher-name>, <publisher-loc>British  Museum</publisher-loc>, <lpage>410</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wygodzinsky</surname> <given-names>P</given-names></name></person-group> (<year>1948</year>)<fake_tag> Studies on some Apterous Aradidae from Brazil (Hemiptera). Boletim do Museo Nacional, Rio de Janeiro, Zoologia 86: 1–23, 24 plates.</fake_tag></mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figures 1–2.</label>
+            <caption><p> <bold>1</bold> <italic>Osellaptera setifera</italic> gen. n., sp. n., holotype male dorsal view <bold>2</bold> <italic>Kormilevia ecuadoriana</italic> sp. n., holotype female dorsal view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figures 3-8.</label>
+            <caption><p> <italic>Kormilevia</italic> species. <bold>3</bold> <italic>Kormilevia montrouzieri</italic> female from Sta. Catarina, Brazil <bold>4</bold> <italic>Kormilevia montrouzieri</italic> male from same locality <bold>5</bold> <italic>Kormilevia plaumanni</italic> male from Sta. Catarina, Brazil <bold>6</bold> <italic>Kormilevia dureti</italic>, male holotype (from Kormilev 1953) <bold>7</bold> <italic>Kormilevia teresopolitana</italic>, female holotype (from Wygodzinsky 1948) <bold>8</bold> <italic>Kormilevia setifera</italic>, holotype male (from Usinger &amp; Matsuda 1959).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figures 9–10.</label>
+            <caption><p> <bold>9</bold> <italic>Cotopaxicoris cruciatus</italic> gen. n., sp. n., holotype male dorsal view <bold>10</bold> <italic>Onorecoris piceus</italic> gen. n., sp. n., holotype female dorsal view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

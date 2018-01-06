@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  MapForce Project File  -->
+<Project Expanded="Yes" Type="Root" language="java" OutputDir="output\" Title="Query Person database" OutputEncoding="UTF-8" OutputName="Query Person database" Version="6">
+	<Folder FolderName="Webservices Folder" Expanded="Yes" Type="WebServiceFolder">
+		<File Expanded="Yes" Type="WebServiceRoot" FilePath="query.wsdl">
+			<Folder FolderName="{http://www.altova.com/WS2DB/query.wsdl}WS2DB" Expanded="Yes" Type="WebServiceService" WSQualifiedName="{http://www.altova.com/WS2DB/query.wsdl}WS2DB">
+				<Folder FolderName="WS2DBSoapPort" Expanded="Yes" Type="WebServicePort" WSQualifiedName="WS2DBSoapPort">
+					<Folder FolderName="{http://www.altova.com/WS2DB/query.wsdl}getPerson" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.altova.com/WS2DB/query.wsdl}getPerson">
+						<File Type="Mapping" FilePath="getPerson.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.altova.com/WS2DB/query.wsdl}putPerson" Expanded="Yes" Type="WebServiceOperation" WSQualifiedName="{http://www.altova.com/WS2DB/query.wsdl}putPerson">
+						<File Type="Mapping" FilePath="putPerson.mfd"/>
+					</Folder>
+				</Folder>
+			</Folder>
+		</File>
+	</Folder>
+</Project>

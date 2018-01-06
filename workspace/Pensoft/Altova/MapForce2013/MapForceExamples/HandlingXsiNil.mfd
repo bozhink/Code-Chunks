@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="15">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="set-xsi-nil" library="core" uid="10" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="69"/>
+					</targets>
+					<view ltx="433" lty="101" rbx="59" rby="-31"/>
+				</component>
+				<component name="is-xsi-nil" library="core" uid="11" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="77"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="78"/>
+					</targets>
+					<view ltx="313" lty="196" rbx="-232" rby="-272"/>
+				</component>
+				<component name="Address" library="core" uid="14" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="84"/>
+						<datapoint pos="1" key="85"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="86"/>
+					</targets>
+					<view ltx="433" lty="161" rbx="21" rby="-5"/>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="602" rbx="813" rby="319"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BranchOffices" inpkey="30" expanded="1">
+										<entry name="Name" inpkey="31"/>
+										<entry name="Office" inpkey="32" expanded="1">
+											<entry name="Name" inpkey="33"/>
+											<entry name="EMail" inpkey="34"/>
+											<entry name="Fax" inpkey="35"/>
+											<entry name="Phone" inpkey="36"/>
+											<entry name="Address" inpkey="37" expanded="1"/>
+											<entry name="Contact" inpkey="42" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" instanceroot="{}BranchOffices"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="211" rby="319"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BranchOffices" outkey="15" expanded="1">
+										<entry name="Name" outkey="16"/>
+										<entry name="Office" outkey="17" expanded="1">
+											<entry name="Name" outkey="18"/>
+											<entry name="Fax" outkey="20"/>
+											<entry name="Phone" outkey="21"/>
+											<entry name="Address" outkey="22" expanded="1">
+												<entry name="state" outkey="24"/>
+											</entry>
+											<entry name="Contact" outkey="27" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" inputinstance="BranchOffice2.xml" instanceroot="{}BranchOffices"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substitute-missing" library="core" uid="4" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="368" lty="306" rbx="-24" rby="-19"/>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="258" lty="345" rbx="67" rby="-67"/>
+					<data>
+						<constant value="n/a" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="65">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="87">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="88">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="35" edgekey="89"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="5" edgekey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="30" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="31" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="32" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="33" edgekey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="4" edgekey="90"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="36" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="84" edgekey="88"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="77" edgekey="91"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="42" edgekey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="34" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="78">
+						<edges>
+							<edge vertexkey="85" edgekey="92"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="86">
+						<edges>
+							<edge vertexkey="37" edgekey="87"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

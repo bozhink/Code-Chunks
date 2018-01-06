@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report
+  xmlns="http://xbrl.org/2010/versioning-base"
+  xmlns:_2="http://xbrl.us/us-gaap/attributes"
+  xmlns:currency="http://xbrl.sec.gov/currency/2011-01-31"
+  xmlns:currency_2="http://xbrl.sec.gov/currency/2012-01-31"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:vercb="http://xbrl.org/2010/versioning-concept-basic"
+  xmlns:verce="http://xbrl.org/2010/versioning-concept-extended"
+  xmlns:verrels="http://xbrl.org/2010/versioning-relationship-sets"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- link:linkbaseRef xlink:type="simple"  xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"  xlink:title="documentation"  xlink:href="sample.xml"/ -->
+    <fromDTS>
+        <link:schemaRef
+          xlink:href="http://xbrl.sec.gov/currency/2011/currency-ent-all-2011-01-31.xsd"
+          xlink:type="simple"/>
+    </fromDTS>
+    <toDTS>
+        <link:schemaRef
+          xlink:href="http://xbrl.sec.gov/currency/2012/currency-ent-dep-2012-01-31.xsd"
+          xlink:type="simple"/>
+    </toDTS>
+    <assignment id="versioningTask">
+        <technicalCategory/>
+    </assignment>
+    <action id="action00001">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/currency/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/currency/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00002">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/currency-ent-all/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/currency-ent-all/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00003">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/currency-ent-std/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/currency-ent-std/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00004">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/currency-std/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/currency-std/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00005">
+        <assignmentRef ref="versioningTask"/>
+        <namespaceRename>
+            <fromURI value="http://xbrl.sec.gov/currency-all/2011-01-31"/>
+            <toURI value="http://xbrl.sec.gov/currency-all/2012-01-31"/>
+        </namespaceRename>
+    </action>
+    <action id="action00006">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:JEP"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:JEP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/26)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:JEP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/27)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Pound Sterling (GBP)-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00007">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:VEB"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:VEB"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/40)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Venuzuelan Bolivar fuerte (VEF)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:VEB"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/41)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00008">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:GGP"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:GGP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/20)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:GGP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/21)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Pound Sterling (GBP)-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00009">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:TVD"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:TVD"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/38)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:TVD"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/39)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Australian Dollar (AUD)-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00010">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:AllCurrenciesDomain"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#lab_AllCurrenciesDomain_documentation_en-US"/>
+            <!--ISO 4217 currency designators.-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00011">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:ZWD"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:ZWD"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/43)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Zimbabwe dollar (ZWL)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:ZWD"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/42)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00012">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:MTL"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:MTL"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/29)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Euro (EUR)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:MTL"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/28)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00013">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:SPL"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:SPL"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/32)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:SPL"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/33)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Euro (EUR)-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00014">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:CYP"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:CYP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/17)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Euro (EUR)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:CYP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/16)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00015">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:SVC"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:SVC"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/35)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by US Dollar (USD)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:SVC"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/34)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00016">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:GHC"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:GHC"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/23)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Ghanaian Cedi (GHS)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:GHC"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/22)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00017">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:IMP"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:IMP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/25)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Pound Sterling (GBP)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:IMP"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/24)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00018">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:SKK"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:SKK"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/31)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Euro (EUR)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:SKK"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/30)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00019">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptLabelChange>
+            <vercb:fromConcept name="currency:EEK"/>
+            <verce:fromResource value="http://xbrl.sec.gov/currency/2011/currency-lab-2011-01-31.xml#lab_EEK_label_en-US"/>
+            <!--Estonia, Krooni-->
+            <vercb:toConcept name="currency_2:EEK"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-lab-2012-01-31.xml#lab_EEK_label_en-US"/>
+            <!--Estonia, Krooni (Deprecated 2011-08-31)-->
+        </verce:conceptLabelChange>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:EEK"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/19)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Euro (EUR)-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:EEK"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/18)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2011-08-31-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00020">
+        <assignmentRef ref="versioningTask"/>
+        <verce:conceptAttributeDelete>
+            <vercb:fromConcept name="currency:TMM"/>
+            <!--from value: 2010-08-16 -->
+            <verce:fromCustomAttribute name="_2:deprecatedDate"/>
+        </verce:conceptAttributeDelete>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:TMM"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/36)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--2010-08-31-->
+        </verce:conceptLabelAdd>
+        <verce:conceptLabelAdd>
+            <vercb:toConcept name="currency_2:TMM"/>
+            <verce:toResource value="http://xbrl.sec.gov/currency/2012/currency-doc-2012-01-31.xml#element(/1/3/37)"/>
+            <!--(verce:conceptLabelAdd does not have an id attribute)-->
+            <!--Replaced by Turkmenistani manat (TMT)-->
+        </verce:conceptLabelAdd>
+    </action>
+    <action id="action00021">
+        <assignmentRef ref="versioningTask"/>
+        <vercb:conceptAdd>
+            <vercb:toConcept name="currency_2:SSP"/>
+        </vercb:conceptAdd>
+    </action>
+    <action id="action00022">
+        <assignmentRef ref="versioningTask"/>
+        <vercb:conceptAdd>
+            <vercb:toConcept name="currency_2:DeprecatedItemsForCurrency"/>
+        </vercb:conceptAdd>
+    </action>
+    <action id="action00023">
+        <assignmentRef ref="versioningTask"/>
+        <verrels:relationshipSetModelDelete>
+            <verrels:fromRelationshipSet>
+                <verrels:relationshipSet
+                  arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                  linkrole="http://xbrl.sec.gov/role/document/Currency">
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:CYP"/>
+                    <!-- corresponding relationship 41 toDTS toName="currency_2:CZK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:CZK"/>
+                    <!-- corresponding relationship 42 toDTS toName="currency_2:DJF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:DJF"/>
+                    <!-- corresponding relationship 43 toDTS toName="currency_2:DKK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:DKK"/>
+                    <!-- corresponding relationship 44 toDTS toName="currency_2:DOP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:DOP"/>
+                    <!-- corresponding relationship 45 toDTS toName="currency_2:DZD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:DZD"/>
+                    <!-- corresponding relationship 46 toDTS toName="currency_2:EGP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:EEK"/>
+                    <!-- corresponding relationship 47 toDTS toName="currency_2:ERN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:EGP"/>
+                    <!-- corresponding relationship 48 toDTS toName="currency_2:ETB" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ERN"/>
+                    <!-- corresponding relationship 49 toDTS toName="currency_2:EUR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ETB"/>
+                    <!-- corresponding relationship 50 toDTS toName="currency_2:FJD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:EUR"/>
+                    <!-- corresponding relationship 51 toDTS toName="currency_2:FKP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:FJD"/>
+                    <!-- corresponding relationship 52 toDTS toName="currency_2:GBP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:FKP"/>
+                    <!-- corresponding relationship 53 toDTS toName="currency_2:GEL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GBP"/>
+                    <!-- corresponding relationship 54 toDTS toName="currency_2:GHS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GEL"/>
+                    <!-- corresponding relationship 55 toDTS toName="currency_2:GIP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GGP"/>
+                    <!-- corresponding relationship 56 toDTS toName="currency_2:GMD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GHC"/>
+                    <!-- corresponding relationship 57 toDTS toName="currency_2:GNF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GHS"/>
+                    <!-- corresponding relationship 58 toDTS toName="currency_2:GTQ" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GIP"/>
+                    <!-- corresponding relationship 59 toDTS toName="currency_2:GYD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GMD"/>
+                    <!-- corresponding relationship 60 toDTS toName="currency_2:HKD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GNF"/>
+                    <!-- corresponding relationship 61 toDTS toName="currency_2:HNL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GTQ"/>
+                    <!-- corresponding relationship 62 toDTS toName="currency_2:HRK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:GYD"/>
+                    <!-- corresponding relationship 63 toDTS toName="currency_2:HTG" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:HKD"/>
+                    <!-- corresponding relationship 64 toDTS toName="currency_2:HUF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:HNL"/>
+                    <!-- corresponding relationship 65 toDTS toName="currency_2:IDR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:HRK"/>
+                    <!-- corresponding relationship 66 toDTS toName="currency_2:ILS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:HTG"/>
+                    <!-- corresponding relationship 67 toDTS toName="currency_2:INR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:HUF"/>
+                    <!-- corresponding relationship 68 toDTS toName="currency_2:IQD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:IDR"/>
+                    <!-- corresponding relationship 69 toDTS toName="currency_2:IRR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ILS"/>
+                    <!-- corresponding relationship 70 toDTS toName="currency_2:ISK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:IMP"/>
+                    <!-- corresponding relationship 71 toDTS toName="currency_2:JMD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:INR"/>
+                    <!-- corresponding relationship 72 toDTS toName="currency_2:JOD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:IQD"/>
+                    <!-- corresponding relationship 73 toDTS toName="currency_2:JPY" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:IRR"/>
+                    <!-- corresponding relationship 74 toDTS toName="currency_2:KES" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ISK"/>
+                    <!-- corresponding relationship 75 toDTS toName="currency_2:KGS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:JEP"/>
+                    <!-- corresponding relationship 76 toDTS toName="currency_2:KHR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:JMD"/>
+                    <!-- corresponding relationship 77 toDTS toName="currency_2:KMF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:JOD"/>
+                    <!-- corresponding relationship 78 toDTS toName="currency_2:KPW" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:JPY"/>
+                    <!-- corresponding relationship 79 toDTS toName="currency_2:KRW" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KES"/>
+                    <!-- corresponding relationship 80 toDTS toName="currency_2:KWD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KGS"/>
+                    <!-- corresponding relationship 81 toDTS toName="currency_2:KYD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KHR"/>
+                    <!-- corresponding relationship 82 toDTS toName="currency_2:KZT" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KMF"/>
+                    <!-- corresponding relationship 83 toDTS toName="currency_2:LAK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KPW"/>
+                    <!-- corresponding relationship 84 toDTS toName="currency_2:LBP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KRW"/>
+                    <!-- corresponding relationship 85 toDTS toName="currency_2:LKR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KWD"/>
+                    <!-- corresponding relationship 86 toDTS toName="currency_2:LRD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KYD"/>
+                    <!-- corresponding relationship 87 toDTS toName="currency_2:LSL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:KZT"/>
+                    <!-- corresponding relationship 88 toDTS toName="currency_2:LTL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LAK"/>
+                    <!-- corresponding relationship 89 toDTS toName="currency_2:LVL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LBP"/>
+                    <!-- corresponding relationship 90 toDTS toName="currency_2:LYD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LKR"/>
+                    <!-- corresponding relationship 91 toDTS toName="currency_2:MAD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LRD"/>
+                    <!-- corresponding relationship 92 toDTS toName="currency_2:MDL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LSL"/>
+                    <!-- corresponding relationship 93 toDTS toName="currency_2:MGA" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LTL"/>
+                    <!-- corresponding relationship 94 toDTS toName="currency_2:MKD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LVL"/>
+                    <!-- corresponding relationship 95 toDTS toName="currency_2:MMK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:LYD"/>
+                    <!-- corresponding relationship 96 toDTS toName="currency_2:MNT" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MAD"/>
+                    <!-- corresponding relationship 97 toDTS toName="currency_2:MOP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MDL"/>
+                    <!-- corresponding relationship 98 toDTS toName="currency_2:MRO" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MGA"/>
+                    <!-- corresponding relationship 99 toDTS toName="currency_2:MUR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MKD"/>
+                    <!-- corresponding relationship 100 toDTS toName="currency_2:MVR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MMK"/>
+                    <!-- corresponding relationship 101 toDTS toName="currency_2:MWK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MNT"/>
+                    <!-- corresponding relationship 102 toDTS toName="currency_2:MXN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MOP"/>
+                    <!-- corresponding relationship 103 toDTS toName="currency_2:MXV" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MRO"/>
+                    <!-- corresponding relationship 104 toDTS toName="currency_2:MYR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MTL"/>
+                    <!-- corresponding relationship 105 toDTS toName="currency_2:MZN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MUR"/>
+                    <!-- corresponding relationship 106 toDTS toName="currency_2:NAD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MVR"/>
+                    <!-- corresponding relationship 107 toDTS toName="currency_2:NGN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MWK"/>
+                    <!-- corresponding relationship 108 toDTS toName="currency_2:NIO" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MXN"/>
+                    <!-- corresponding relationship 109 toDTS toName="currency_2:NOK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MXV"/>
+                    <!-- corresponding relationship 110 toDTS toName="currency_2:NPR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MYR"/>
+                    <!-- corresponding relationship 111 toDTS toName="currency_2:NZD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:MZN"/>
+                    <!-- corresponding relationship 112 toDTS toName="currency_2:OMR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:NAD"/>
+                    <!-- corresponding relationship 113 toDTS toName="currency_2:PAB" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:NGN"/>
+                    <!-- corresponding relationship 114 toDTS toName="currency_2:PEN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:NIO"/>
+                    <!-- corresponding relationship 115 toDTS toName="currency_2:PGK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:NOK"/>
+                    <!-- corresponding relationship 116 toDTS toName="currency_2:PHP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:NPR"/>
+                    <!-- corresponding relationship 117 toDTS toName="currency_2:PKR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:NZD"/>
+                    <!-- corresponding relationship 118 toDTS toName="currency_2:PLN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:OMR"/>
+                    <!-- corresponding relationship 119 toDTS toName="currency_2:PYG" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PAB"/>
+                    <!-- corresponding relationship 120 toDTS toName="currency_2:QAR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PEN"/>
+                    <!-- corresponding relationship 121 toDTS toName="currency_2:RON" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PGK"/>
+                    <!-- corresponding relationship 122 toDTS toName="currency_2:RSD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PHP"/>
+                    <!-- corresponding relationship 123 toDTS toName="currency_2:RUB" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PKR"/>
+                    <!-- corresponding relationship 124 toDTS toName="currency_2:RWF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PLN"/>
+                    <!-- corresponding relationship 125 toDTS toName="currency_2:SAR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:PYG"/>
+                    <!-- corresponding relationship 126 toDTS toName="currency_2:SBD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:QAR"/>
+                    <!-- corresponding relationship 127 toDTS toName="currency_2:SCR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:RON"/>
+                    <!-- corresponding relationship 128 toDTS toName="currency_2:SDG" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:RSD"/>
+                    <!-- corresponding relationship 129 toDTS toName="currency_2:SEK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:RUB"/>
+                    <!-- corresponding relationship 130 toDTS toName="currency_2:SGD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:RWF"/>
+                    <!-- corresponding relationship 131 toDTS toName="currency_2:SHP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SAR"/>
+                    <!-- corresponding relationship 132 toDTS toName="currency_2:SLL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SBD"/>
+                    <!-- corresponding relationship 133 toDTS toName="currency_2:SOS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SCR"/>
+                    <!-- corresponding relationship 134 toDTS toName="currency_2:SSP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SDG"/>
+                    <!-- corresponding relationship 135 toDTS toName="currency_2:SRD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SEK"/>
+                    <!-- corresponding relationship 136 toDTS toName="currency_2:STD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SGD"/>
+                    <!-- corresponding relationship 137 toDTS toName="currency_2:SYP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SHP"/>
+                    <!-- corresponding relationship 138 toDTS toName="currency_2:SZL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SKK"/>
+                    <!-- corresponding relationship 139 toDTS toName="currency_2:THB" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SLL"/>
+                    <!-- corresponding relationship 140 toDTS toName="currency_2:TJS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SOS"/>
+                    <!-- corresponding relationship 141 toDTS toName="currency_2:TMT" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SPL"/>
+                    <!-- corresponding relationship 142 toDTS toName="currency_2:TND" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SRD"/>
+                    <!-- corresponding relationship 143 toDTS toName="currency_2:TOP" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:STD"/>
+                    <!-- corresponding relationship 144 toDTS toName="currency_2:TRY" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SVC"/>
+                    <!-- corresponding relationship 145 toDTS toName="currency_2:TTD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SYP"/>
+                    <!-- corresponding relationship 146 toDTS toName="currency_2:TWD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:SZL"/>
+                    <!-- corresponding relationship 147 toDTS toName="currency_2:TZS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:THB"/>
+                    <!-- corresponding relationship 148 toDTS toName="currency_2:UAH" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TJS"/>
+                    <!-- corresponding relationship 149 toDTS toName="currency_2:UGX" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TMM"/>
+                    <!-- corresponding relationship 150 toDTS toName="currency_2:USD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TMT"/>
+                    <!-- corresponding relationship 151 toDTS toName="currency_2:USN" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TND"/>
+                    <!-- corresponding relationship 152 toDTS toName="currency_2:USS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TOP"/>
+                    <!-- corresponding relationship 153 toDTS toName="currency_2:UYU" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TRY"/>
+                    <!-- corresponding relationship 154 toDTS toName="currency_2:UZS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TTD"/>
+                    <!-- corresponding relationship 155 toDTS toName="currency_2:VEF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TVD"/>
+                    <!-- corresponding relationship 156 toDTS toName="currency_2:VND" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TWD"/>
+                    <!-- corresponding relationship 157 toDTS toName="currency_2:VUV" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:TZS"/>
+                    <!-- corresponding relationship 158 toDTS toName="currency_2:WST" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:UAH"/>
+                    <!-- corresponding relationship 159 toDTS toName="currency_2:XAF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:UGX"/>
+                    <!-- corresponding relationship 160 toDTS toName="currency_2:XAG" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:USD"/>
+                    <!-- corresponding relationship 161 toDTS toName="currency_2:XAU" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:USN"/>
+                    <!-- corresponding relationship 162 toDTS toName="currency_2:XBA" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:USS"/>
+                    <!-- corresponding relationship 163 toDTS toName="currency_2:XBB" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:UYU"/>
+                    <!-- corresponding relationship 164 toDTS toName="currency_2:XBC" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:UZS"/>
+                    <!-- corresponding relationship 165 toDTS toName="currency_2:XBD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:VEB"/>
+                    <!-- corresponding relationship 166 toDTS toName="currency_2:XCD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:VEF"/>
+                    <!-- corresponding relationship 167 toDTS toName="currency_2:XDR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:VND"/>
+                    <!-- corresponding relationship 168 toDTS toName="currency_2:XFU" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:VUV"/>
+                    <!-- corresponding relationship 169 toDTS toName="currency_2:XOF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:WST"/>
+                    <!-- corresponding relationship 170 toDTS toName="currency_2:XPD" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XAF"/>
+                    <!-- corresponding relationship 171 toDTS toName="currency_2:XPF" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XAG"/>
+                    <!-- corresponding relationship 172 toDTS toName="currency_2:XPT" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XAU"/>
+                    <!-- corresponding relationship 173 toDTS toName="currency_2:XTS" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XBA"/>
+                    <!-- corresponding relationship 174 toDTS toName="currency_2:XXX" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XBB"/>
+                    <!-- corresponding relationship 175 toDTS toName="currency_2:YER" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XBC"/>
+                    <!-- corresponding relationship 176 toDTS toName="currency_2:ZAR" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XBD"/>
+                    <!-- corresponding relationship 177 toDTS toName="currency_2:ZMK" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XCD"/>
+                    <!-- corresponding relationship 178 toDTS toName="currency_2:ZWL" -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XDR"/>
+                    <!-- toDTS does not have a corresponding relationship at position 179 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XFU"/>
+                    <!-- toDTS does not have a corresponding relationship at position 180 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XOF"/>
+                    <!-- toDTS does not have a corresponding relationship at position 181 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XPD"/>
+                    <!-- toDTS does not have a corresponding relationship at position 182 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XPF"/>
+                    <!-- toDTS does not have a corresponding relationship at position 183 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XPT"/>
+                    <!-- toDTS does not have a corresponding relationship at position 184 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XTS"/>
+                    <!-- toDTS does not have a corresponding relationship at position 185 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:XXX"/>
+                    <!-- toDTS does not have a corresponding relationship at position 186 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:YER"/>
+                    <!-- toDTS does not have a corresponding relationship at position 187 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ZAR"/>
+                    <!-- toDTS does not have a corresponding relationship at position 188 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ZMK"/>
+                    <!-- toDTS does not have a corresponding relationship at position 189 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ZWD"/>
+                    <!-- toDTS does not have a corresponding relationship at position 190 -->
+                    <verrels:relationships
+                      fromName="currency:AllCurrenciesDomain"
+                      toName="currency:ZWL"/>
+                    <!-- toDTS does not have a corresponding relationship at position 191 -->
+                </verrels:relationshipSet>
+            </verrels:fromRelationshipSet>
+        </verrels:relationshipSetModelDelete>
+    </action>
+    <action id="action00024">
+        <assignmentRef ref="versioningTask"/>
+        <verrels:relationshipSetModelAdd>
+            <verrels:toRelationshipSet>
+                <verrels:relationshipSet
+                  arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                  linkrole="http://xbrl.sec.gov/role/document/Currency">
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:CZK"/>
+                    <!-- corresponding relationship 41 toDTS toName="currency:CYP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:DJF"/>
+                    <!-- corresponding relationship 42 toDTS toName="currency:CZK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:DKK"/>
+                    <!-- corresponding relationship 43 toDTS toName="currency:DJF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:DOP"/>
+                    <!-- corresponding relationship 44 toDTS toName="currency:DKK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:DZD"/>
+                    <!-- corresponding relationship 45 toDTS toName="currency:DOP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:EGP"/>
+                    <!-- corresponding relationship 46 toDTS toName="currency:DZD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ERN"/>
+                    <!-- corresponding relationship 47 toDTS toName="currency:EEK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ETB"/>
+                    <!-- corresponding relationship 48 toDTS toName="currency:EGP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:EUR"/>
+                    <!-- corresponding relationship 49 toDTS toName="currency:ERN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:FJD"/>
+                    <!-- corresponding relationship 50 toDTS toName="currency:ETB" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:FKP"/>
+                    <!-- corresponding relationship 51 toDTS toName="currency:EUR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GBP"/>
+                    <!-- corresponding relationship 52 toDTS toName="currency:FJD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GEL"/>
+                    <!-- corresponding relationship 53 toDTS toName="currency:FKP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GHS"/>
+                    <!-- corresponding relationship 54 toDTS toName="currency:GBP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GIP"/>
+                    <!-- corresponding relationship 55 toDTS toName="currency:GEL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GMD"/>
+                    <!-- corresponding relationship 56 toDTS toName="currency:GGP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GNF"/>
+                    <!-- corresponding relationship 57 toDTS toName="currency:GHC" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GTQ"/>
+                    <!-- corresponding relationship 58 toDTS toName="currency:GHS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:GYD"/>
+                    <!-- corresponding relationship 59 toDTS toName="currency:GIP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:HKD"/>
+                    <!-- corresponding relationship 60 toDTS toName="currency:GMD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:HNL"/>
+                    <!-- corresponding relationship 61 toDTS toName="currency:GNF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:HRK"/>
+                    <!-- corresponding relationship 62 toDTS toName="currency:GTQ" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:HTG"/>
+                    <!-- corresponding relationship 63 toDTS toName="currency:GYD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:HUF"/>
+                    <!-- corresponding relationship 64 toDTS toName="currency:HKD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:IDR"/>
+                    <!-- corresponding relationship 65 toDTS toName="currency:HNL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ILS"/>
+                    <!-- corresponding relationship 66 toDTS toName="currency:HRK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:INR"/>
+                    <!-- corresponding relationship 67 toDTS toName="currency:HTG" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:IQD"/>
+                    <!-- corresponding relationship 68 toDTS toName="currency:HUF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:IRR"/>
+                    <!-- corresponding relationship 69 toDTS toName="currency:IDR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ISK"/>
+                    <!-- corresponding relationship 70 toDTS toName="currency:ILS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:JMD"/>
+                    <!-- corresponding relationship 71 toDTS toName="currency:IMP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:JOD"/>
+                    <!-- corresponding relationship 72 toDTS toName="currency:INR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:JPY"/>
+                    <!-- corresponding relationship 73 toDTS toName="currency:IQD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KES"/>
+                    <!-- corresponding relationship 74 toDTS toName="currency:IRR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KGS"/>
+                    <!-- corresponding relationship 75 toDTS toName="currency:ISK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KHR"/>
+                    <!-- corresponding relationship 76 toDTS toName="currency:JEP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KMF"/>
+                    <!-- corresponding relationship 77 toDTS toName="currency:JMD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KPW"/>
+                    <!-- corresponding relationship 78 toDTS toName="currency:JOD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KRW"/>
+                    <!-- corresponding relationship 79 toDTS toName="currency:JPY" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KWD"/>
+                    <!-- corresponding relationship 80 toDTS toName="currency:KES" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KYD"/>
+                    <!-- corresponding relationship 81 toDTS toName="currency:KGS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:KZT"/>
+                    <!-- corresponding relationship 82 toDTS toName="currency:KHR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LAK"/>
+                    <!-- corresponding relationship 83 toDTS toName="currency:KMF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LBP"/>
+                    <!-- corresponding relationship 84 toDTS toName="currency:KPW" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LKR"/>
+                    <!-- corresponding relationship 85 toDTS toName="currency:KRW" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LRD"/>
+                    <!-- corresponding relationship 86 toDTS toName="currency:KWD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LSL"/>
+                    <!-- corresponding relationship 87 toDTS toName="currency:KYD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LTL"/>
+                    <!-- corresponding relationship 88 toDTS toName="currency:KZT" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LVL"/>
+                    <!-- corresponding relationship 89 toDTS toName="currency:LAK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:LYD"/>
+                    <!-- corresponding relationship 90 toDTS toName="currency:LBP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MAD"/>
+                    <!-- corresponding relationship 91 toDTS toName="currency:LKR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MDL"/>
+                    <!-- corresponding relationship 92 toDTS toName="currency:LRD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MGA"/>
+                    <!-- corresponding relationship 93 toDTS toName="currency:LSL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MKD"/>
+                    <!-- corresponding relationship 94 toDTS toName="currency:LTL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MMK"/>
+                    <!-- corresponding relationship 95 toDTS toName="currency:LVL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MNT"/>
+                    <!-- corresponding relationship 96 toDTS toName="currency:LYD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MOP"/>
+                    <!-- corresponding relationship 97 toDTS toName="currency:MAD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MRO"/>
+                    <!-- corresponding relationship 98 toDTS toName="currency:MDL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MUR"/>
+                    <!-- corresponding relationship 99 toDTS toName="currency:MGA" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MVR"/>
+                    <!-- corresponding relationship 100 toDTS toName="currency:MKD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MWK"/>
+                    <!-- corresponding relationship 101 toDTS toName="currency:MMK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MXN"/>
+                    <!-- corresponding relationship 102 toDTS toName="currency:MNT" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MXV"/>
+                    <!-- corresponding relationship 103 toDTS toName="currency:MOP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MYR"/>
+                    <!-- corresponding relationship 104 toDTS toName="currency:MRO" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:MZN"/>
+                    <!-- corresponding relationship 105 toDTS toName="currency:MTL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:NAD"/>
+                    <!-- corresponding relationship 106 toDTS toName="currency:MUR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:NGN"/>
+                    <!-- corresponding relationship 107 toDTS toName="currency:MVR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:NIO"/>
+                    <!-- corresponding relationship 108 toDTS toName="currency:MWK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:NOK"/>
+                    <!-- corresponding relationship 109 toDTS toName="currency:MXN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:NPR"/>
+                    <!-- corresponding relationship 110 toDTS toName="currency:MXV" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:NZD"/>
+                    <!-- corresponding relationship 111 toDTS toName="currency:MYR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:OMR"/>
+                    <!-- corresponding relationship 112 toDTS toName="currency:MZN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PAB"/>
+                    <!-- corresponding relationship 113 toDTS toName="currency:NAD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PEN"/>
+                    <!-- corresponding relationship 114 toDTS toName="currency:NGN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PGK"/>
+                    <!-- corresponding relationship 115 toDTS toName="currency:NIO" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PHP"/>
+                    <!-- corresponding relationship 116 toDTS toName="currency:NOK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PKR"/>
+                    <!-- corresponding relationship 117 toDTS toName="currency:NPR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PLN"/>
+                    <!-- corresponding relationship 118 toDTS toName="currency:NZD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:PYG"/>
+                    <!-- corresponding relationship 119 toDTS toName="currency:OMR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:QAR"/>
+                    <!-- corresponding relationship 120 toDTS toName="currency:PAB" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:RON"/>
+                    <!-- corresponding relationship 121 toDTS toName="currency:PEN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:RSD"/>
+                    <!-- corresponding relationship 122 toDTS toName="currency:PGK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:RUB"/>
+                    <!-- corresponding relationship 123 toDTS toName="currency:PHP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:RWF"/>
+                    <!-- corresponding relationship 124 toDTS toName="currency:PKR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SAR"/>
+                    <!-- corresponding relationship 125 toDTS toName="currency:PLN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SBD"/>
+                    <!-- corresponding relationship 126 toDTS toName="currency:PYG" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SCR"/>
+                    <!-- corresponding relationship 127 toDTS toName="currency:QAR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SDG"/>
+                    <!-- corresponding relationship 128 toDTS toName="currency:RON" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SEK"/>
+                    <!-- corresponding relationship 129 toDTS toName="currency:RSD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SGD"/>
+                    <!-- corresponding relationship 130 toDTS toName="currency:RUB" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SHP"/>
+                    <!-- corresponding relationship 131 toDTS toName="currency:RWF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SLL"/>
+                    <!-- corresponding relationship 132 toDTS toName="currency:SAR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SOS"/>
+                    <!-- corresponding relationship 133 toDTS toName="currency:SBD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SSP"/>
+                    <!-- corresponding relationship 134 toDTS toName="currency:SCR" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SRD"/>
+                    <!-- corresponding relationship 135 toDTS toName="currency:SDG" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:STD"/>
+                    <!-- corresponding relationship 136 toDTS toName="currency:SEK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SYP"/>
+                    <!-- corresponding relationship 137 toDTS toName="currency:SGD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:SZL"/>
+                    <!-- corresponding relationship 138 toDTS toName="currency:SHP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:THB"/>
+                    <!-- corresponding relationship 139 toDTS toName="currency:SKK" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TJS"/>
+                    <!-- corresponding relationship 140 toDTS toName="currency:SLL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TMT"/>
+                    <!-- corresponding relationship 141 toDTS toName="currency:SOS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TND"/>
+                    <!-- corresponding relationship 142 toDTS toName="currency:SPL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TOP"/>
+                    <!-- corresponding relationship 143 toDTS toName="currency:SRD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TRY"/>
+                    <!-- corresponding relationship 144 toDTS toName="currency:STD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TTD"/>
+                    <!-- corresponding relationship 145 toDTS toName="currency:SVC" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TWD"/>
+                    <!-- corresponding relationship 146 toDTS toName="currency:SYP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:TZS"/>
+                    <!-- corresponding relationship 147 toDTS toName="currency:SZL" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:UAH"/>
+                    <!-- corresponding relationship 148 toDTS toName="currency:THB" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:UGX"/>
+                    <!-- corresponding relationship 149 toDTS toName="currency:TJS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:USD"/>
+                    <!-- corresponding relationship 150 toDTS toName="currency:TMM" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:USN"/>
+                    <!-- corresponding relationship 151 toDTS toName="currency:TMT" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:USS"/>
+                    <!-- corresponding relationship 152 toDTS toName="currency:TND" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:UYU"/>
+                    <!-- corresponding relationship 153 toDTS toName="currency:TOP" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:UZS"/>
+                    <!-- corresponding relationship 154 toDTS toName="currency:TRY" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:VEF"/>
+                    <!-- corresponding relationship 155 toDTS toName="currency:TTD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:VND"/>
+                    <!-- corresponding relationship 156 toDTS toName="currency:TVD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:VUV"/>
+                    <!-- corresponding relationship 157 toDTS toName="currency:TWD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:WST"/>
+                    <!-- corresponding relationship 158 toDTS toName="currency:TZS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XAF"/>
+                    <!-- corresponding relationship 159 toDTS toName="currency:UAH" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XAG"/>
+                    <!-- corresponding relationship 160 toDTS toName="currency:UGX" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XAU"/>
+                    <!-- corresponding relationship 161 toDTS toName="currency:USD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XBA"/>
+                    <!-- corresponding relationship 162 toDTS toName="currency:USN" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XBB"/>
+                    <!-- corresponding relationship 163 toDTS toName="currency:USS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XBC"/>
+                    <!-- corresponding relationship 164 toDTS toName="currency:UYU" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XBD"/>
+                    <!-- corresponding relationship 165 toDTS toName="currency:UZS" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XCD"/>
+                    <!-- corresponding relationship 166 toDTS toName="currency:VEB" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XDR"/>
+                    <!-- corresponding relationship 167 toDTS toName="currency:VEF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XFU"/>
+                    <!-- corresponding relationship 168 toDTS toName="currency:VND" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XOF"/>
+                    <!-- corresponding relationship 169 toDTS toName="currency:VUV" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XPD"/>
+                    <!-- corresponding relationship 170 toDTS toName="currency:WST" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XPF"/>
+                    <!-- corresponding relationship 171 toDTS toName="currency:XAF" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XPT"/>
+                    <!-- corresponding relationship 172 toDTS toName="currency:XAG" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XTS"/>
+                    <!-- corresponding relationship 173 toDTS toName="currency:XAU" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:XXX"/>
+                    <!-- corresponding relationship 174 toDTS toName="currency:XBA" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:YER"/>
+                    <!-- corresponding relationship 175 toDTS toName="currency:XBB" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ZAR"/>
+                    <!-- corresponding relationship 176 toDTS toName="currency:XBC" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ZMK"/>
+                    <!-- corresponding relationship 177 toDTS toName="currency:XBD" -->
+                    <verrels:relationships
+                      fromName="currency_2:AllCurrenciesDomain"
+                      toName="currency_2:ZWL"/>
+                    <!-- corresponding relationship 178 toDTS toName="currency:XCD" -->
+                </verrels:relationshipSet>
+            </verrels:toRelationshipSet>
+        </verrels:relationshipSetModelAdd>
+    </action>
+    <action id="action00025">
+        <assignmentRef ref="versioningTask"/>
+        <verrels:relationshipSetModelAdd>
+            <verrels:toRelationshipSet>
+                <verrels:relationshipSet
+                  arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                  linkrole="http://xbrl.sec.gov/currency/role/deprecated/currency">
+                    <verrels:relationships
+                      axis="descendant-or-self"
+                      fromName="currency_2:DeprecatedItemsForCurrency"/>
+                    <!-- root relationship -->
+                </verrels:relationshipSet>
+            </verrels:toRelationshipSet>
+        </verrels:relationshipSetModelAdd>
+    </action>
+</report>

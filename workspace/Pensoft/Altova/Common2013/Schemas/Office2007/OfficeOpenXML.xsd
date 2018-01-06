@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:whatever">
+	<xs:import schemaLocation="dml-stylesheet.xsd" namespace="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+	<xs:import schemaLocation="dml-tableStyle.xsd" namespace="http://schemas.openxmlformats.org/drawingml/2006/main"/>
+	<xs:import schemaLocation="opc-contentTypes.xsd" namespace="http://schemas.openxmlformats.org/package/2006/content-types"/>
+	<xs:import schemaLocation="opc-coreProperties.xsd" namespace="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"/>
+	<xs:import schemaLocation="opc-relationships.xsd" namespace="http://schemas.openxmlformats.org/package/2006/relationships"/>
+	<xs:import schemaLocation="pml-presentation.xsd" namespace="http://schemas.openxmlformats.org/presentationml/2006/main"/>
+	<xs:import schemaLocation="pml-presentationProperties.xsd" namespace="http://schemas.openxmlformats.org/presentationml/2006/main"/>
+	<xs:import schemaLocation="pml-slide.xsd" namespace="http://schemas.openxmlformats.org/presentationml/2006/main"/>
+	<xs:import schemaLocation="pml-viewProperties.xsd" namespace="http://schemas.openxmlformats.org/presentationml/2006/main"/>
+	<xs:import schemaLocation="shared-documentPropertiesCustom.xsd" namespace="http://schemas.openxmlformats.org/officeDocument/2006/custom-properties"/>
+	<xs:import schemaLocation="shared-documentPropertiesExtended.xsd" namespace="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"/>
+	<xs:import schemaLocation="sml-calculationChain.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="sml-customXmlMappings.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="sml-sharedStringTable.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="sml-sheet.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="sml-styles.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="sml-table.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="sml-workbook.xsd" namespace="http://schemas.openxmlformats.org/spreadsheetml/2006/main"/>
+	<xs:import schemaLocation="wml.xsd" namespace="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>
+	<!-- [2008r2sp1] fix for ttp 25120 -->
+	<xs:import schemaLocation="dml-picture.xsd" namespace="http://schemas.openxmlformats.org/drawingml/2006/picture"/>
+</xs:schema>

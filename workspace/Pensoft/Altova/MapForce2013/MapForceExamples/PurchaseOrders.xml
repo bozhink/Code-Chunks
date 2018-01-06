@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The list of cities below are used with the CurrencyConvertor.mfd example -->
+<PurchaseOrders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="IPO-source.xsd">
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Nikki Devgood</name>
+			<street>99 Main Street</street>
+			<city>Boston</city>
+			<state>MA</state>
+			<zip>23320</zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>Robert Smith</name>
+			<street>8 Oak Avenue</street>
+			<city>Old Town</city>
+			<state>AK</state>
+			<zip>95819</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="Canada" CurrencyName="Canadian Dollar" CurrencyCode="CAD">
+			<CompanyName>Nanonull of Canada</CompanyName>
+			<ContactName>Mark Redgreen</ContactName>
+			<ContactTitle>Sales Manager</ContactTitle>
+			<Address>123 Happy Valley</Address>
+			<City>Montreal</City>
+			<PostalCode>QC H3N 1R8</PostalCode>
+			<Phone/>
+			<Fax/>
+			<HomePage/>
+			<Items>
+				<Item>Altova XMLSpy 2007</Item>
+				<price>61.25</price>
+				<quantity>12</quantity>
+				<OrderTotal>735.00</OrderTotal>
+			</Items>
+			<Items>
+				<Item>Altova SchemaAgent 2007</Item>
+				<price>30.00</price>
+				<quantity>12</quantity>
+				<OrderTotal>360.00</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Frank Further</name>
+			<street>1000 First Avenue</street>
+			<city>Philadelphia</city>
+			<state>PA</state>
+			<zip>19175 </zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>Loby Matise</name>
+			<street>50 SunnySide Avenue</street>
+			<city>Orlando</city>
+			<state>FL</state>
+			<zip>95819</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="India" CurrencyName="Indian Rupee" CurrencyCode="INR">
+			<CompanyName>Nanonull of India</CompanyName>
+			<ContactName>Joe Firstbread</ContactName>
+			<Address/>
+			<City>Ranipool</City>
+			<PostalCode>737135</PostalCode>
+			<Phone/>
+			<HomePage/>
+			<Items>
+				<Item>Altova StyleVision 2007 </Item>
+				<price>60.00</price>
+				<quantity>12</quantity>
+				<OrderTotal>720.00</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Maxwell Smart</name>
+			<street>5 Long Way</street>
+			<city>Los Angeles</city>
+			<state>CA</state>
+			<zip>34424</zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>Susi Susanna</name>
+			<street>100 Alamo Way</street>
+			<city>Austin</city>
+			<state>TX</state>
+			<zip>95819</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="Brazil" CurrencyName="Brazilian Real" CurrencyCode="BRL">
+			<CompanyName>Nanonull of Brazil</CompanyName>
+			<ContactName>Paul Smith</ContactName>
+			<Address/>
+			<City/>
+			<PostalCode/>
+			<Phone/>
+			<HomePage/>
+			<Items>
+				<Item>Altova Authentic 2007</Item>
+				<price>78.75</price>
+				<quantity>12</quantity>
+				<OrderTotal>945.00</OrderTotal>
+			</Items>
+			<Items>
+				<Item>XML Schema Accelerated</Item>
+				<price>69.00</price>
+				<quantity>12</quantity>
+				<OrderTotal>828.00</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Link Lister</name>
+			<street>855 Millennium Center</street>
+			<city>New York</city>
+			<state>NY</state>
+			<zip>89233</zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>Nancy Peacock</name>
+			<street>507 Moss Bay Blvd.</street>
+			<city>Kirkland</city>
+			<state>WA</state>
+			<zip>98033</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="Iceland" CurrencyName="Iceland Krona" CurrencyCode="ISK">
+			<CompanyName>Nanonull of Iceland</CompanyName>
+			<ContactName>Lui King</ContactName>
+			<Address/>
+			<City>Reykjavík</City>
+			<PostalCode>101</PostalCode>
+			<Phone/>
+			<HomePage/>
+			<Items>
+				<Item>Altova DiffDog 2007</Item>
+				<price>17.00</price>
+				<quantity>12</quantity>
+				<OrderTotal>204.00</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Barbara Feldon</name>
+			<street>123 Any Street</street>
+			<city>Anchorage</city>
+			<state>AL</state>
+			<zip>99501</zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>George Hammer</name>
+			<street>8012 Fairbanks Street</street>
+			<city>Fairbanks</city>
+			<state>AK</state>
+			<zip>99701</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="Russia" CurrencyName="Russian Rouble" CurrencyCode="RUB">
+			<CompanyName>Nanonull of Russia</CompanyName>
+			<ContactName>Theo Bone</ContactName>
+			<Address/>
+			<City/>
+			<PostalCode>103009</PostalCode>
+			<Phone/>
+			<HomePage/>
+			<Items>
+				<Item>Altova UModel 2007</Item>
+				<price>40.00</price>
+				<quantity>10</quantity>
+				<OrderTotal>400.00</OrderTotal>
+			</Items>
+			<Items>
+				<Item>Altova MapForce 2007</Item>
+				<price>78.75</price>
+				<quantity>24</quantity>
+				<OrderTotal>1890.00</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Helen Zoe</name>
+			<street>47 Eden Street</street>
+			<city>Cambridge</city>
+			<state>MA</state>
+			<zip>02140</zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>Jessica Bander</name>
+			<street>4111 Old Redmond Rd.</street>
+			<city>Redmond</city>
+			<state>WA</state>
+			<zip>98052</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="Japan" CurrencyName="Japanese Yen" CurrencyCode="JPY">
+			<CompanyName>Nanonull of Japan</CompanyName>
+			<ContactName>Anne Way</ContactName>
+			<Address/>
+			<City/>
+			<PostalCode/>
+			<Phone/>
+			<HomePage/>
+			<Items>
+				<Item>Altova SemanticWorks 2007</Item>
+				<price>27.50</price>
+				<quantity>7</quantity>
+				<OrderTotal>192.50</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+	<PurchaseOrder NationOfOrigin="USA">
+		<shipTo xsi:type="US-Address">
+			<name>Alex Martin</name>
+			<street>478 Golden Avenue</street>
+			<city>San Francisco</city>
+			<state>CA</state>
+			<zip>91341</zip>
+		</shipTo>
+		<billTo xsi:type="US-Address">
+			<name>Dorothy Gale</name>
+			<street>1 Yellow Brick Road</street>
+			<city>Abbyville</city>
+			<state>KS</state>
+			<zip>67510</zip>
+		</billTo>
+		<Suppliers NationOfOrigin="France" CurrencyName="European Euro" CurrencyCode="EUR">
+			<CompanyName>Nanonull France, AG</CompanyName>
+			<ContactName>Ted Little</ContactName>
+			<Address/>
+			<City>Paris</City>
+			<PostalCode/>
+			<Phone/>
+			<HomePage/>
+			<Items>
+				<Item>Altova Database Spy 2007</Item>
+				<price>30.00</price>
+				<quantity>4</quantity>
+				<OrderTotal>120.00</OrderTotal>
+			</Items>
+			<Items>
+				<Item>XSLT Accelerated</Item>
+				<price>65.00</price>
+				<quantity>8</quantity>
+				<OrderTotal>520.00</OrderTotal>
+			</Items>
+		</Suppliers>
+	</PurchaseOrder>
+</PurchaseOrders>

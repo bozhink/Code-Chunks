@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:Company xmlns:a="http://my-company.com/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://my-company.com/namespace ExpReport-Target.xsd">
+	<a:Employee>
+		<a:Title>Project Manager</a:Title>
+		<a:Name>Fred Landis</a:Name>
+		<a:Tel.>123-456-78</a:Tel.>
+		<a:Email>f.landis@nanonull.com</a:Email>
+		<a:Expense-detail>true</a:Expense-detail>
+		<a:expense-item Currency="USD" Bill-to="Sales">
+			<a:Date>2003-01-01</a:Date>
+			<a:Accommodation>
+				<a:DomesticAcc DomesticAcc-Cost="121.2"/>
+			</a:Accommodation>
+		</a:expense-item>
+		<a:expense-item Currency="USD" Bill-to="Sales">
+			<a:Date>2003-03-03</a:Date>
+		</a:expense-item>
+	</a:Employee>
+</a:Company>

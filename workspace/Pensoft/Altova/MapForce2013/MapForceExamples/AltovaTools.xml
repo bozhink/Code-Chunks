@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AltovaTools xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AltovaTools.xsd">
+	<Version>2010</Version>
+	<Tool Name="XMLSpy" Code="XS">XML editor, XSLT editor, XSLT debugger, XQuery editor, XQuery debugger, XML Schema / DTD editor, WSDL editor, SOAP debugger</Tool>
+	<Tool Name="MapForce" Code="MF">Data integration, XML mapping, database mapping, text conversion, EDI translator, Excel mapping, XBRL mapping, Web services</Tool>
+	<Tool Name="StyleVision" Code="SV">Stylesheet designer, electronic forms, XSLT design, XSL:FO design, database reporting, XBRL rendering</Tool>
+	<Tool Name="UModel" Code="UM">UML modeling tool, code generation, reverse engineering, UML, BPMN, SysML, project documentation, XMI interchange</Tool>
+	<Tool Name="DatabaseSpy" Code="DS">Multi-database tool, SQL auto-completion, graphical database design, table browser, content editor, database comparison tool</Tool>
+	<Tool Name="DiffDog" Code="DD">Diff / merge tool, compare files, sync directories, compare XML, compare OOXML, compare database tables</Tool>
+	<Tool Name="SchemaAgent" Code="SA">XML Schema management tool, IIR management, XSLT management, WSDL management, view / manage file relationships</Tool>
+	<Tool Name="SemanticWorks" Code="SW">Semantic Web tool, RDF editor, OWL editor, RDF/XML and N-Triples generation and conversion</Tool>
+	<Tool Name="Authentic" Code="AU">XML authoring tool, database editor, XML publishing tool, e-Forms editor</Tool>
+	<MissionKit Edition="Enterprise Software Architects" ToolCodes="XSMFSVUMDSDDSASW"/>
+	<MissionKit Edition="Professional Software Architects" ToolCodes="XSMFSVUMDS"/>
+	<MissionKit Edition="Enterprise XML Developers" ToolCodes="XSMFSVDDSASW"/>
+	<MissionKit Edition="Professional XML Developers" ToolCodes="XSMFSV"/>
+</AltovaTools>

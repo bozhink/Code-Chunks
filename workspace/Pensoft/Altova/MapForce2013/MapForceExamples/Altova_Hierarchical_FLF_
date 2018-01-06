@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexText>
+	<Commands>
+		<Project FileName="Altova_Hierarchical_FLF.txt" ByteOrderMark="0">
+			<Version/>
+			<RootName Value="Root"/>
+			<Connections>
+				<Connection>
+					<SplitMultiple Mode="DynLS" Behavior="LineStartsWith">
+						<Version/>
+						<Separator Value="O"/>
+						<Name Value="Office"/>
+						<Connections>
+							<Connection>
+								<SplitSingle>
+									<Version/>
+									<Upper Offset="1"/>
+									<Lower/>
+									<Name Value="Split%20once"/>
+									<Connections>
+										<Connection>
+											<FLF>
+												<Version/>
+												<RecordName Value="Office_Data"/>
+												<Fields>
+													<Field Type="string">
+														<Name Value="LineType_O"/>
+														<Version/>
+													</Field>
+													<Field Type="string" Size="5">
+														<Name Value="Number"/>
+														<Version/>
+													</Field>
+													<Field Type="string" Size="25">
+														<Name Value="Name"/>
+														<Version/>
+													</Field>
+													<Field Type="string" Size="25">
+														<Name Value="Phone"/>
+														<Version/>
+													</Field>
+													<Field Type="string" Size="25">
+														<Name Value="Fax"/>
+														<Version/>
+													</Field>
+												</Fields>
+												<Connections>
+													<Connection/>
+												</Connections>
+												<XData>
+													<OpenState Property="1" Preview="1" Connector="1"/>
+													<Dimension FullWidth="799" TextHeight="147"/>
+												</XData>
+											</FLF>
+										</Connection>
+										<Connection>
+											<SplitSingle>
+												<Version/>
+												<Upper Offset="1"/>
+												<Lower/>
+												<Name Value="Split%20once"/>
+												<Connections>
+													<Connection>
+														<FLF>
+															<Version/>
+															<RecordName Value="Address_Data"/>
+															<Fields>
+																<Field Type="string">
+																	<Name Value="LineType_A"/>
+																	<Version/>
+																</Field>
+																<Field Type="string" Size="5">
+																	<Name Value="Number"/>
+																	<Version/>
+																</Field>
+																<Field Type="string" Size="2">
+																	<Name Value="State"/>
+																	<Version/>
+																</Field>
+																<Field Type="string" Size="20">
+																	<Name Value="City"/>
+																	<Version/>
+																</Field>
+																<Field Type="string" Size="5">
+																	<Name Value="Zip"/>
+																	<Version/>
+																</Field>
+																<Field Type="string" Size="25">
+																	<Name Value="Street"/>
+																	<Version/>
+																</Field>
+															</Fields>
+															<Connections>
+																<Connection/>
+															</Connections>
+															<XData>
+																<OpenState Property="1" Preview="1" Connector="1"/>
+																<Dimension FullWidth="681" FullHeight="4294967295" TextHeight="142"/>
+															</XData>
+														</FLF>
+													</Connection>
+													<Connection>
+														<SplitMultiple Mode="DynLS" Behavior="LineStartsWith">
+															<Version/>
+															<Separator Value="D"/>
+															<Name Value="Department"/>
+															<Connections>
+																<Connection>
+																	<SplitSingle>
+																		<Version/>
+																		<Upper Offset="1"/>
+																		<Lower/>
+																		<Name Value="Split%20once"/>
+																		<Connections>
+																			<Connection>
+																				<FLF>
+																					<Version/>
+																					<RecordName Value="Department_Data"/>
+																					<Fields>
+																						<Field Type="string">
+																							<Name Value="LineType_D"/>
+																							<Version/>
+																						</Field>
+																						<Field Type="string" Size="5">
+																							<Name Value="Number"/>
+																							<Version/>
+																						</Field>
+																						<Field Type="string" Size="25">
+																							<Name Value="Name"/>
+																							<Version/>
+																						</Field>
+																					</Fields>
+																					<Connections>
+																						<Connection/>
+																					</Connections>
+																					<XData>
+																						<OpenState Property="1" Preview="1" Connector="1"/>
+																						<Dimension FullWidth="939" FullHeight="4294967295" TextHeight="140"/>
+																					</XData>
+																				</FLF>
+																			</Connection>
+																			<Connection>
+																				<SplitMultiple Mode="DynLS" Behavior="LineStartsWith">
+																					<Version/>
+																					<Separator Value="P"/>
+																					<Name Value="Person"/>
+																					<Connections>
+																						<Connection>
+																							<FLF>
+																								<Version/>
+																								<RecordName Value="Person_Data"/>
+																								<Fields>
+																									<Field Type="string">
+																										<Name Value="LineType_P"/>
+																										<Version/>
+																									</Field>
+																									<Field Type="string" Size="5">
+																										<Name Value="Number"/>
+																										<Version/>
+																									</Field>
+																									<Field Type="string" Size="15">
+																										<Name Value="Last"/>
+																										<Version/>
+																									</Field>
+																									<Field Type="string" Size="15">
+																										<Name Value="First"/>
+																										<Version/>
+																									</Field>
+																									<Field Type="string" Size="3">
+																										<Name Value="PhoneExt"/>
+																										<Version/>
+																									</Field>
+																									<Field Type="string" Size="25">
+																										<Name Value="Title"/>
+																										<Version/>
+																									</Field>
+																									<Field Type="string" Size="25">
+																										<Name Value="EMail"/>
+																										<Version/>
+																									</Field>
+																								</Fields>
+																								<Connections>
+																									<Connection/>
+																								</Connections>
+																								<XData>
+																									<OpenState Property="1" Preview="1" Connector="1"/>
+																									<Dimension FullWidth="855" FullHeight="4294967295" TextHeight="151"/>
+																								</XData>
+																							</FLF>
+																						</Connection>
+																					</Connections>
+																					<XData>
+																						<OpenState Property="1" Preview="1" Connector="1"/>
+																						<Dimension TextHeight="140"/>
+																					</XData>
+																				</SplitMultiple>
+																			</Connection>
+																		</Connections>
+																		<XData>
+																			<OpenState Property="1" Preview="1" Connector="1"/>
+																			<Dimension TextHeight="140"/>
+																		</XData>
+																	</SplitSingle>
+																</Connection>
+															</Connections>
+															<XData>
+																<OpenState Property="1" Preview="1" Connector="1"/>
+																<Dimension TextHeight="140"/>
+															</XData>
+														</SplitMultiple>
+													</Connection>
+												</Connections>
+												<XData>
+													<OpenState Property="1" Preview="1" Connector="1"/>
+													<Dimension TextHeight="140"/>
+												</XData>
+											</SplitSingle>
+										</Connection>
+									</Connections>
+									<XData>
+										<OpenState Property="1" Preview="1" Connector="1"/>
+										<Dimension FullWidth="153" TextHeight="137"/>
+									</XData>
+								</SplitSingle>
+							</Connection>
+						</Connections>
+						<XData>
+							<OpenState Property="1" Preview="1" Connector="1"/>
+							<Dimension FullWidth="232" FullHeight="400" TextHeight="167"/>
+						</XData>
+					</SplitMultiple>
+				</Connection>
+			</Connections>
+			<XData>
+				<OpenState Property="1" Preview="1" Connector="1"/>
+				<Dimension/>
+			</XData>
+		</Project>
+		<Functions/>
+	</Commands>
+</FlexText>

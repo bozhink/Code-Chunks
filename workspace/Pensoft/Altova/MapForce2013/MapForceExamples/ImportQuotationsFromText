@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="52631040" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="cpp" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="edi" library="text" uid="39124176" kind="16">
+					<properties/>
+					<view rbx="112" rby="104"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" outkey="10" expanded="1">
+										<entry name="Field1" outkey="1"/>
+										<entry name="Field2" outkey="7"/>
+										<entry name="Field3" outkey="4"/>
+										<entry name="Field4" outkey="13"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="flf" inputinstance="Quotations.dat" outputinstance="Quotations-output.dat" encoding="1000" byteorder="1" byteordermark="0">
+							<settings delimiter="true" fillchar="@" removeempty="true">
+								<names root="Quotations" block="Rows">
+									<field0 name="Field1" type="string" length="6"/>
+									<field1 name="Field2" type="string" length="8"/>
+									<field2 name="Field3" type="string" length="4"/>
+									<field3 name="Field4" type="string" length="120"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="38395328" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="248" lty="-17" rbx="381" rby="104"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="People" expanded="1">
+										<entry name="Person" inpkey="11" expanded="1">
+											<entry name="FirstName" inpkey="2"/>
+											<entry name="LastName" inpkey="8"/>
+											<entry name="DOB" inpkey="5"/>
+											<entry name="Quotation" inpkey="14"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Quotations.xsd" instanceroot="{}People" sps="Quotations.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

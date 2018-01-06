@@ -1,0 +1,1634 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tp="http://www.plazi.org/taxpub" xmlns:php="http://php.net/xsl" xml:lang="bg" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The remarkable scorpion diversity in the Ecuadorian Andes and description of a new species of Tityus C. L. Koch, 1836 (Scorpiones, Buthidae)</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="index, follow, all" />
+<script language="javascript">
+	if(self.location==top.location){
+		document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl-large.css" media="all" title="default">');
+	}else{
+		document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl.css" media="all" title="default">');
+	}
+</script>
+<script type="text/javascript">
+	function swapDivClassname(pLink, pId, pClassName){
+		var lDiv = document.getElementById(pId);
+		if( lDiv ){
+			if( lDiv.className == pClassName ){
+				lDiv.className = '';
+				pLink.className = 'inactive'
+			}else{
+				lDiv.className = pClassName;
+				pLink.className = ''
+			}
+		}
+	}
+	function openw(url, title, options) {
+		var newwin = window.open(url, title, options);
+		newwin.focus();
+	}
+	function showBaloon(pBaloonType, pId, pEvent) {
+		if( !pId )
+			return;
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		pEvent = pEvent || window.event;
+		clearTimeout(gTimeout);
+		if( gActiveBaloonId && gActiveBaloonType == pBaloonType && gActiveBaloonId != pId ){
+			gFlagToHideBaloon = true;
+			hideBaloon(gActiveBaloonId);
+		}else if(gActiveBaloonType == pBaloonType && gActiveBaloonId == pId ){
+			return;
+		}
+		gActiveBaloonId = pId;
+		gActiveBaloonType = pBaloonType;
+		gFlagToHideBaloon = false;
+		var lEventTarget = pEvent.target || pEvent.srcElement;
+		if( pBaloonType == 1 ){//xref
+			var lReference = document.getElementById('reference_' + pId);
+			var lText = 'Reference not found!';
+			if( lReference ){
+				lText = lReference.innerHTML;// || lReference.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}else if( pBaloonType == 2 ){//Taxoni
+			var lReferenceName = 'taxon_' + pId + '_baloon_div';
+			var lReference = document.getElementById(lReferenceName);
+			gBaloonInnerWrapper.className = 'smallBaloon';
+			if( lReference ){
+				lText = lReference.innerHTML;// || lReference.innerText;
+			}else{
+				lText = 'Error during loading taxa data';
+			}
+			gBaloon.innerHTML = lText;
+		}else if( pBaloonType == 3 ){//Figuri
+			var lFigure = document.getElementById('fig_' + pId);
+			var lText = 'Figure not found!';
+			if( lFigure ){
+				lText = lFigure.innerHTML;// || lFigure.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}else if( pBaloonType == 4 ){//Tablici
+			var lTable = document.getElementById('table_' + pId);
+			var lText = 'Table not found!';
+			if( lTable ){
+				lText = lTable.innerHTML;// || lTable.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}
+		gActiveBaloonId = pId;
+		displayBaloon(lEventTarget, pEvent);
+	}
+	function displayBaloon(pEventTarget, pEvent){//Pozicionira i pokazva balona
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		var lUseWindowMaxY = parseInt('0');
+		gBaloonWrapper.style.display="block";
+		positionBaloon(pEventTarget, pEvent, lUseWindowMaxY);
+	}
+	function hideBaloonEvent(pId, pEvent){
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		gFlagToHideBaloon = true;
+		gTimeout = setTimeout("hideBaloon('" + pId + "')", 10);
+	}
+	function hideBaloon(pId){
+		clearTimeout(gTimeout);
+		if( !gFlagToHideBaloon )
+			return;
+		gBaloonIsShown = false;
+		gActiveBaloonId = 0;
+		gActiveBaloonType = false;
+		gBaloonWrapper.style.display="none";
+	}
+	function initBalloons(){
+		gBaloon = document.getElementById('baloonContent');
+		gBaloonIsShown = false;
+		gActiveBaloonId = 0;
+		gTimeout = false;
+		gActiveBaloonType = false;
+		gBaloonWrapper = document.getElementById('baloonWrapper');
+		gBaloonInnerWrapper = document.getElementById('baloonInnerWrapper');
+		gBaloonArrowImg = document.getElementById('baloonArrowImg');
+	}
+	function positionBaloon(pEventTarget, pEvent, pUseWindowMaxY){
+		var lMousePos = getMousePosition(pEvent);
+		var lContentWrapper = document.getElementById('contentWrapper');
+		//var lY = pEventTarget.offsetTop + pEventTarget.offsetHeight;
+		var lY = pEventTarget.offsetHeight;
+		//var lX = pEventTarget.offsetLeft;
+		var lX = 0;
+		var lParent = pEventTarget;
+		do {
+			lY += lParent.offsetTop;
+			lX += lParent.offsetLeft;
+			//alert(lParent.tagName + '-' + lY);
+		}
+		while((lParent = lParent.offsetParent) && lParent.id != 'contentWrapper')
+		/*var lXMax = lMousePos['xMax'];*/
+		var lXMax = lContentWrapper.offsetWidth - 20;//-20 zaradi scrolla
+		var lYMax;
+		if( pUseWindowMaxY ){
+			lYMax = lMousePos['yMax'];
+		}else{
+			lYMax = lContentWrapper.scrollHeight;
+		}
+		lYMax = lYMax - 40;
+		var lClassName = 'baloonWrapper';
+		var lLeft = 0;
+		var lTop = 0;
+		var lImageName = 'http://www.pensoft.net/J_FILES/img/baloon_arrow';
+		if( lY + gBaloonWrapper.offsetHeight <= lYMax ){
+			lTop = lY;
+			lClassName = lClassName + 'Bottom';
+			lImageName = lImageName + '_bottom';
+		}else{
+			lTop = lY - gBaloonWrapper.offsetHeight - pEventTarget.offsetHeight;
+			if( lTop < 0 )
+				lTop = 0;
+			lClassName = lClassName + 'Top';
+			lImageName = lImageName + '_top';
+		}
+		if( lX + gBaloonWrapper.offsetWidth <= lXMax ){
+			lLeft = lX;
+			lClassName = lClassName + 'Right';
+			lImageName = lImageName + '_right';
+		}else{
+			lLeft = lX -gBaloonWrapper.offsetWidth + 50;
+			if( lLeft < 0 )
+				lLeft = 0;
+			lClassName = lClassName + 'Left';
+			lImageName = lImageName + '_left';
+		}
+		lImageName = lImageName + '.gif';
+		gBaloonWrapper.style.left = lLeft + 'px';
+		gBaloonWrapper.style.top = lTop + 'px';
+		gBaloonWrapper.className =  lClassName;
+		gBaloonArrowImg.setAttribute('src', lImageName);
+	}
+	function submitForm( pFormName ){
+		eval('document.' + pFormName + '.submit()');
+	}
+	function showLocalitiesMenu(){
+		var lMenu = document.getElementById('localitiesMenuDiv');
+		if( lMenu )
+			lMenu.style.display='block';
+ 		}
+	function hideLocalitiesMenu(){
+		var lMenu = document.getElementById('localitiesMenuDiv');
+		if( lMenu )
+			lMenu.style.display='none';
+	}
+	function getMousePosition(pEvent){
+		if (document.layers) {
+		// When the page scrolls in Netscape, the event's mouse position
+		// reflects the absolute position on the screen. innerHight/Width
+		// is the position from the top/left of the screen that the user is
+		// looking at. pageX/YOffset is the amount that the user has
+		// scrolled into the page. So the values will be in relation to
+		// each other as the total offsets into the page, no matter if
+		// the user has scrolled or not.
+		xMousePos = pEvent.clientX;
+		yMousePos = pEvent.clientY;
+		xMousePosMax = window.innerWidth + window.pageXOffset;
+		yMousePosMax = window.innerHeight + window.pageYOffset;
+		} else if (document.all) {
+		// When the page scrolls in IE, the event's mouse position
+		// reflects the position from the top/left of the screen the
+		// user is looking at. scrollLeft/Top is the amount the user
+		// has scrolled into the page. clientWidth/Height is the height/
+		// width of the current page the user is looking at. So, to be
+		// consistent with Netscape (above), add the scroll offsets to
+		// both so we end up with an absolute value on the page, no
+		// matter if the user has scrolled or not.	;
+		xMousePos = window.event.x + document.body.scrollLeft;
+		yMousePos = window.event.y + document.body.scrollTop;
+		xMousePosMax = document.body.clientWidth + document.body.scrollLeft;
+		yMousePosMax = document.body.clientHeight + document.body.scrollTop;
+		} else if (document.getElementById) {
+		// Netscape 6 behaves the same as Netscape 4 in this regard
+		xMousePos = pEvent.clientX;
+		yMousePos = pEvent.clientY;
+		xMousePosMax = window.innerWidth + window.pageXOffset;
+		yMousePosMax = window.innerHeight + window.pageYOffset;
+		}
+		return {
+		'x' : xMousePos,
+		'y' : yMousePos,
+		'xMax' : xMousePosMax,
+		'yMax' : yMousePosMax
+		};
+	}
+	var gHolderDiv;
+	var gScrolDiv;
+	var gRightBtn;
+	var gLeftBtn;
+	var gLinksTable;
+	var gMinLeft;
+	function initScrollConstants(){
+		gHolderDiv = document.getElementById('scrollHolderDiv');
+		gScrolDiv = document.getElementById('scrollDiv');
+		gRightBtn = document.getElementById('scrollRightBtn');
+		gLeftBtn = document.getElementById('scrollLeftBtn');
+		gLinksTable = document.getElementById('linksButtonHolder');
+		gScrolDiv.style.width = gLinksTable.offsetWidth + 'px';
+		gHolderDiv.style.width = '';
+		var gHolderWidth = gHolderDiv.offsetWidth;
+		var gScrolWidth = gScrolDiv.offsetWidth;
+		gMinLeft = gHolderWidth - gScrolWidth;
+		if(gMinLeft > 0)
+			gMinLeft = 0;
+		gCurrentLeftPos = 0;
+		gInterval = null;
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function scrollDivRight(){
+		if( gMinLeft >= 0 ){
+			stopScroll()
+			return;
+		}
+		if( gCurrentLeftPos - 1 > gMinLeft )
+			gCurrentLeftPos = gCurrentLeftPos - 1;
+		else{
+			stopScroll()
+			gCurrentLeftPos = gMinLeft;
+		}
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function scrollDivLeft(){
+		if( gMinLeft >= 0 ){
+			stopScroll()
+			return;
+		}
+		if( gCurrentLeftPos + 1 < 0 )
+			gCurrentLeftPos = gCurrentLeftPos + 1;
+		else{
+			gCurrentLeftPos = 0;
+			stopScroll()
+		}
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function checkBtnClasses(){
+		if( gLeftBtn ){
+			if( gCurrentLeftPos == 0 || gMinLeft >= 0 ){
+				gLeftBtn.className = 'LeftScrollBtnLinkInactive';
+			}else{
+				gLeftBtn.className = 'LeftScrollBtnLinkActive';
+			}
+		}
+		if( gRightBtn ){
+			if( gCurrentLeftPos == gMinLeft || gMinLeft >= 0 ){
+				gRightBtn.className = 'RightScrollBtnLinkInactive';
+			}else{
+				gRightBtn.className = 'RightScrollBtnLinkActive';
+			}
+		}
+	}
+	function changeDivPosition(pLeft){
+		gScrolDiv.style.left  = pLeft + 'px';
+		checkBtnClasses()
+	}
+	function stopScroll(){
+		if(gInterval)
+			clearInterval(gInterval)
+	}
+	function startScroll(pDir){
+		if( gMinLeft >= 0 ){
+			return;
+		}
+		if( pDir == 0){//Right
+			gInterval = setInterval("scrollDivRight('right')", 20);
+		}else{
+			gInterval = setInterval("scrollDivLeft('left')", 20);
+		}
+	}
+	function getfnlink(pFn, pEl) {
+		lDiv = document.getElementById(pFn);
+		lEl = lDiv.firstChild;
+		while (lEl.nodeType != 1) {
+			lEl = lEl.nextSibling;
+		}
+		for (var i = 0; i < lEl.childNodes.length; i++) {
+			if (lEl.childNodes[i].tagName && lEl.childNodes[i].tagName.toLowerCase() == 'a') {
+				lHref = lEl.childNodes[i].href;
+				break;
+			}
+		}
+		if (lHref)
+			pEl.href = lHref;
+	}
+</script>
+</head>
+<body><div id="highlightWrapper" class=""><div id="highlightTaxonNameWrapper" class="highlightTaxonNameWrapper"><div id="highlightTaxonTreatmentWrapper" class="highlightTaxonTreatmentWrapper"><div id="highlightCountryWrapper" class="highlightCountryWrapper"><div id="highlightCitationWrapper" class="highlightCitationWrapper"><div id="highlightTypeescWrapper" class="highlightTypeescWrapper"><div id="highlightCollectionWrapper" class="highlightCollectionWrapper"><div id="highlightLocalityWrapper" class="highlightLocalityWrapper"><div class="wrapper">
+<div class="headWrapper">
+<table class="highlightButtonHolder" width="100%" cellspacing="1" cellpadding="0"><tr>
+<td class="taxon-treatmentsButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonTreatmentWrapper', 'highlightTaxonTreatmentWrapper')">Taxon treatments</a></td>
+<td class="taxon-namesButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonNameWrapper', 'highlightTaxonNameWrapper')">Taxon names</a></td>
+<td class="citationsButton"><a href="#" onclick="swapDivClassname(this, 'highlightCitationWrapper', 'highlightCitationWrapper')">Citations</a></td>
+<td class="offButton"><a href="#" class="inactive" onclick="swapDivClassname(this, 'highlightWrapper', 'highlightWrapper')">Turn highlighting On/Off</a></td>
+</tr></table>
+<div class="linksButtonWrapper">
+<div class="pathTopLeftScrollBtn"><a onmouseover="startScroll(1)" onmouseout="stopScroll()" class="LeftScrollBtnLinkActive" id="scrollLeftBtn"></a></div>
+<div class="pathScrollHolder" id="scrollHolderDiv"><div id="scrollDiv" class="pathScrollDiv">
+<table class="linksButtonHolder" cellspacing="0" cellpadding="3" id="linksButtonHolder"><tr>
+<td class="linksButtonHolder"><a href="#top">Top</a></td>
+<td class="linksButtonHolder"><a href="#abstract" onclick="">Abstract</a></td>
+<td class="linksButtonHolder"><a href="#introduction" onclick="">Introduction</a></td>
+<td class="linksButtonHolder"><a href="#methods" onclick="">Methods</a></td>
+<td class="linksButtonHolder"><a href="#taxonomictreatment" onclick="">Taxonomic treatment</a></td>
+<td class="linksButtonHolder"><a href="#theremarkablediversityoftheecuadorianscorpionfauna" onclick="">The remarkable diversity of the Ecuadorian scorpion fauna</a></td>
+<td class="linksButtonHolder"><a href="#acknowledgements" onclick="">Acknowledgements</a></td>
+<td class="linksButtonHolder"><a href="#references" onclick="">References</a></td>
+</tr></table></div></div>
+<div class="pathTopRightScrollBtn"><a onmouseover="startScroll(0)" onmouseout="stopScroll()" class="RightScrollBtnLinkActive" id="scrollRightBtn"></a></div>
+<div class="unfloat"></div>
+</div>
+</div>
+<div class="contentWrapper" id="contentWrapper">
+<div class="baloonWrapper" id="baloonWrapper" onmouseover="showBaloon(gActiveBaloonType, gActiveBaloonId)" onmouseout="hideBaloonEvent(gActiveBaloonId, event)"><div id="baloonInnerWrapper">
+<div class="baloonTop">
+<div class="baloonTopLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_left.gif" /></div>
+<div class="baloonTopMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_middle.jpg" /></div>
+<div class="baloonTopRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_right.gif" /></div>
+<div class="unfloat"></div>
+</div>
+<div class="baloonContent" id="baloonContent"><div class="unfloat"></div></div>
+<div class="baloonBottomLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_left.gif" /></div>
+<div class="baloonBottomMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_middle.jpg" /></div>
+<div class="baloonBottomRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_right.gif" /></div>
+<div class="unfloat"></div>
+<div class="arrowDiv"><img id="baloonArrowImg" src="http://www.pensoft.net/J_FILES/img/baloon_arrow_top_left.gif" /></div>
+</div></div>
+<a name="top"></a><div class="doiNumber">ZooKeys 307: 1–13, doi: 10.3897/zookeys.307.5334</div>
+<div class="mainTitle">The remarkable scorpion diversity in the Ecuadorian Andes and description of a new species of <i>Tityus</i> C. L. Koch,  1836 (Scorpiones,  Buthidae)</div>
+<div class="authors">Wilson R. Lourenço <span class="specialSymbols">1,†</span>, Eric Ythier <span class="specialSymbols">2,‡</span>
+</div>
+<div class="affilations">
+<div class="affiliationRow">
+			<span id="1" class="uriSym">1 </span>Muséum national d’Histoire naturelle,  Département Systématique et Evolution,  UMR7205,  CP 053,  57 rue Cuvier,  75005 Paris,  France
+		</div>
+<div class="affiliationRow">
+			<span id="1" class="uriSym">2 </span>SynTech Research,  613 route du Bois de Loyse,  71570 La Chapelle de Guinchay,  France
+		</div>
+</div>
+<div class="uris">
+<div class="uriRow">
+<span class="uriSym">† </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:58448BD6-79D7-46CE-AFDD-91EFF2B7D4EF">urn:lsid:zoobank.org:author:58448BD6-79D7-46CE-AFDD-91EFF2B7D4EF</a>
+</div>
+<div class="uriRow">
+<span class="uriSym">‡ </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:06FD0852-A88E-49E5-B8E6-E1494B86C4E1">urn:lsid:zoobank.org:author:06FD0852-A88E-49E5-B8E6-E1494B86C4E1</a>
+</div>
+</div>
+<div class="authorNotes"><div class="authorNotesRow">
+				<p>Corresponding author: Wilson R. Lourenço (<a href="mailto:arachne@mnhn.fr">arachne@mnhn.fr</a>)</p>
+				<p>Academic editor: Lyubomir Penev</p>
+		</div></div>
+<div class="lMetaDates">
+<span class="metaDate"><span class="dateLabel">received </span>16 April 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">accepted </span>16 May 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">Published </span>5 June 2013</span><p></p>
+<br /><div class="rifgtsrow">
+<p>(C) 2013 Wilson R. Lourenço. This is an open access article distributed under the terms of the <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0 (CC-BY)</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p>
+<br /><p>For reference, use of the paginated PDF or printed version of this article is recommended.</p>
+</div>
+</div>
+<a name="abstract"></a><div class="abstractHolder"><div class="abstractText">
+			<span id="1" class="node_label">Abstract</span>
+			<p>A new species of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a></span></span></i>,  subgenus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">Atreus</a></span></span></i> (<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Scorpiones" onmouseover="showBaloon(2, 'Scorpiones', event)" onmouseout="hideBaloonEvent('Scorpiones', event)">Scorpiones</a></span></span>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Buthidae" onmouseover="showBaloon(2, 'Buthidae', event)" onmouseout="hideBaloonEvent('Buthidae', event)">Buthidae</a></span></span>) is described from the Province of Pichincha in the Ecuadorian Andes. Ecuadorian scorpion fauna remains one of the less well studied among those of South America. Nevertheless,  some comments are addressed about its remarkable diversity and high level of endemic elements.</p>
+		</div></div>
+<div class="keywordsHolder"><div class="keywordsText">
+<span class="node_label">Keywords</span><p>Scorpiones, Buthidae, <i>Tityus</i>, Ecuador, New Species, diversity</p>
+</div></div>
+<div class="secHolder">
+	<div class="section"><a name="introduction"></a>
+		<span id="1" class="node_title">Introduction</span>
+		<p>The scorpion fauna inhabiting the regions between Southern Colombia and the Ecuadorian Andes has attracted the attention of experts since the middle of the 19<sup>th</sup> century (e.g. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B7', event)" onmouseout="hideBaloonEvent('B7')">Gervais 1844</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B28', event)" onmouseout="hideBaloonEvent('B28')">Thorell 1876</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B25', event)" onmouseout="hideBaloonEvent('B25')">Pocock 1893</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B26', event)" onmouseout="hideBaloonEvent('B26')">1898</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Borelli 1899</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B9', event)" onmouseout="hideBaloonEvent('B9')">Kraepelin 1912a</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B10', event)" onmouseout="hideBaloonEvent('B10')">b</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B24', event)" onmouseout="hideBaloonEvent('B24')">Mello-Leitão 1945</span>). Only since the 1980s has this fauna been more frequently studied and several new species have been described (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B11', event)" onmouseout="hideBaloonEvent('B11')">Lourenço 1984</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B12', event)" onmouseout="hideBaloonEvent('B12')">1988</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B13', event)" onmouseout="hideBaloonEvent('B13')">1991</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">1992</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B15', event)" onmouseout="hideBaloonEvent('B15')">1994a</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B17', event)" onmouseout="hideBaloonEvent('B17')">1995</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B18', event)" onmouseout="hideBaloonEvent('B18')">1997</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B19', event)" onmouseout="hideBaloonEvent('B19')">1999</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B20', event)" onmouseout="hideBaloonEvent('B20')">2000</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B2', event)" onmouseout="hideBaloonEvent('B2')">Botero-Trujillo 2008</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B3', event)" onmouseout="hideBaloonEvent('B3')">2009</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Botero-Trujillo and Francke 2009</span>).</p>
+		<p>Although studies by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B12', event)" onmouseout="hideBaloonEvent('B12')">Lourenço (1988</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B17', event)" onmouseout="hideBaloonEvent('B17')">1995</span>) represented the first attempt to produce a synthesis of the Ecuadorian scorpion fauna,  these contributions probably only represented a small part of the fauna actually present in Ecuador. This conjecture is supported by the descriptions of new species from different regions of the country (e. g. <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B21', event)" onmouseout="hideBaloonEvent('B21')">Lourenço 2005</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B22', event)" onmouseout="hideBaloonEvent('B22')">2007</span>). In the winter (southern hemisphere) of 2012,  scorpions were collected from mountains within the Ecuadorian Andes. Two specimens (1 male,  1 female) were discovered to be a new species belonging to the genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a></span></span></i>. Herein,  we describe this new species and comment on the scorpion fauna found within the Ecuadorian region,  and suggest several hypotheses regarding mechanisms that generated this remarkable diversity.</p>
+	</div>
+	<div class="section"><a name="methods"></a>
+		<span id="1" class="node_title">Methods</span>
+		<p>Illustrations and measurements were made with the aid of a Wild M5 stereo-microscope with a drawing tube (camera lucida) and an ocular micrometer. Measurements follow <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B27', event)" onmouseout="hideBaloonEvent('B27')">Stahnke (1970)</span> and are given in mm. Trichobothrial notations follow <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B30', event)" onmouseout="hideBaloonEvent('B30')">Vachon (1974)</span> while morphological terminology mostly follows <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B8', event)" onmouseout="hideBaloonEvent('B8')">Hjelle (1990)</span>.</p>
+	</div>
+	<div class="section"><a name="taxonomictreatment"></a>
+		<span id="1" class="node_title" style="padding-bottom: 0px">Taxonomic treatment</span>
+		<div class="section"><a name="familybuthidaeclkoch1837"></a>
+			<span id="1" class="node_title1 sec" style="padding-bottom: 0px">Family <span class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Buthidae" onmouseover="showBaloon(2, 'Buthidae', event)" onmouseout="hideBaloonEvent('Buthidae', event)">Buthidae</a></span></span> C. L. Koch,  1837 </span>
+			<span id="1" class="node_title1 sec" style="padding-bottom: 0px">Genus <i><span class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a></span></span></i> C. L. Koch,  1836 </span>
+			<span id="1" class="node_title1 sec" style="padding-bottom: 0px">Subgenus <i><span class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">Atreus</a></span></span></i> Gervais,  1843 </span>
+			<div class="taxonTreatmentsHolder secHolder"><div class="taxonTreatmentRow node_taxon-treatment">
+				<div class="taxonNomenclature">
+					<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)"><i>Tityus</i></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"><i></i></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"><i></i></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Tityus%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20(Atreus)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20crassicauda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)"><i>crassicauda</i></a></span></span>
+					sp. n.
+					<p class="node_object_id"><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:act:2F53526B-67DB-419D-8F64-650AF221B19E">urn:lsid:zoobank.org:act:2F53526B-67DB-419D-8F64-650AF221B19E</a></p>
+					<p class="node_object_id"><a target="_blank" href="http://species-id.net/wiki/Tityus_crassicauda">http://species-id.net/wiki/Tityus_crassicauda</a></p>
+					<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F1', event)" onmouseout="hideBaloonEvent('F1')">Figs 1</span>–<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F7', event)" onmouseout="hideBaloonEvent('F7')">18</span>
+				</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Material examined.</span>
+					<p>Ecuador,  Pichincha Province,  Tandayapa,  2200 m,  VIII/2012 (G. Onore &amp; I. Tapia leg.). Inside of <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lauraceae" onmouseover="showBaloon(2, 'Lauraceae', event)" onmouseout="hideBaloonEvent('Lauraceae', event)">Lauraceae</a></span></span> rotten logs.</p>
+					<p>Male holotype and female paratype. Deposited in the Muséum national d’Histoire naturelle,  Paris.</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Etymology.</span>
+					<p>Specific name refers to the strongly enlarged posterior metasomal segments.</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Diagnosis.</span>
+					<p>Scorpions of medium size in relation to other species within the genus. Total length in male and female,  51.9 and 50.5 mm,  respectively. General coloration reddish-brown with darker blackish zones; carapace and tergites with three longitudinal brownish stripes,  separated by yellow zones. Metasomal segments flattened,  comparatively to other species of the group; segments IV and V very strongly enlarged,  especially in the male holotype. Dorsal carinae of metasomal II to IV terminating distally with two very strong spinoid granules,  more distinct on the female paratype. Pectines small with 15–15 teeth on male and 15–14 on female; basal piece of the middle lamella strongly dilated on female,  and oval in shape. Cutting edges of fixed and movable fingers of pedipalp chela with 12–13 and 12–14 rows of granules on the male and female,  respectively.</p>
+					<p>Relationships. The new species is clearly allied to <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula" onmouseover="showBaloon(2, 'Tityus_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_forcipula', event)">forcipula</a></span></span></i> (Gervais,  1843) and other associated species such as <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20spinatus" onmouseover="showBaloon(2, 'Tityus_spinatus', event)" onmouseout="hideBaloonEvent('Tityus_spinatus', event)">spinatus</a></span></span></i> Pocock,  1898 and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20cuellari" onmouseover="showBaloon(2, 'Tityus_cuellari', event)" onmouseout="hideBaloonEvent('Tityus_cuellari', event)">cuellari</a></span></span></i> Lourenço,  1994,  species also known from the Colombian and Ecuadorian Andes and,  previously defined as part of the <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula" onmouseover="showBaloon(2, 'Tityus_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_forcipula', event)">forcipula</a></span></span></i> complex (see <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B11', event)" onmouseout="hideBaloonEvent('B11')">Lourenço 1984</span> for details). It can,  however,  be distinguished from all these species and in particular from <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula" onmouseover="showBaloon(2, 'Tityus_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_forcipula', event)">forcipula</a></span></span></i> by a number of features: (i) a distinct pattern of coloration and pigmentation,  with brownish longitudinal stripes on the carapace and tergites,  which are absent from the other species,  (ii) sternites III to VII with a very strongly marked granulation but a moderately marked setation; granulations are less marked on the other species,  (iii) metasomal segments strongly flattened and very strongly enlarged,  especially in the male holotype; less enlarged in the other species,  (iv) tergites with only moderately marked granulation,  (v) pedipalp segments and chela are smooth to lustrous; somewhat granular in the other species.</p>
+					<p>Description based on male holotype and female paratype (measurements in <span class="xrefLink node_citation" onmouseover="showBaloon(4, 'T1', event)" onmouseout="hideBaloonEvent('T1')">Table 1</span>).</p>
+					<p>Coloration. Reddish-brown with darker,  blackish areas. Prosoma: carapace reddish-brown,  with yellowish zones between posterior median carinae. Mesosoma: reddish-brown with three brown to blackish longitudinal stripes extending from the posterior zone of the carapace and over tergites I to VII. Metasomal segments I to III reddish-brown,  with dark to blackish carinae; IV and V reddish-brown dorsally,  blackish laterally and ventrally. Vesicle: brownish-black; aculeus yellowish. Venter is reddish-brown,  with some yellowish zones. Chelicerae yellowish-brown,  with a very dark thread of variegated spots; fingers dark; teeth reddish. Pedipalps: reddish; fingers blackish,  with extremities yellowish. Legs reddish-yellow to reddish-brown,  with some diffuse and discrete fuscous spots; tarsi yellowish.</p>
+					<div class="tableWrapHolder Table">
+						<span id="1" class="node_label">Table 1.</span>
+						<p>Measurements (in mm) of male holotype and female paratype of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20crassicauda" onmouseover="showBaloon(2, 'Tityus_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_crassicauda', event)">crassicauda</a></span></span></i> sp. n.,  and of male and female of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula" onmouseover="showBaloon(2, 'Tityus_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_forcipula', event)">forcipula</a></span></span></i> from Pichincha. <br /></p>
+						<div class="tableDiv" id="table_T1">
+<table class="innerTable Table">
+<tr>
+<td class="cell_1" colspan="1" rowspan="1"></td>
+<td class="cell_2" colspan="2" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20crassicauda">crassicauda</a></span></span></i> sp. n.</b></td>
+<td class="cell_3" colspan="2" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula">forcipula</a></span></span></i></b></td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1"></td>
+<td class="cell_2" colspan="1" rowspan="1">♂</td>
+<td class="cell_3" colspan="1" rowspan="1">♀</td>
+<td class="cell_4" colspan="1" rowspan="1">♂</td>
+<td class="cell_5" colspan="1" rowspan="1">♀</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Total length (including telson)</td>
+<td class="cell_2" colspan="1" rowspan="1">51.9</td>
+<td class="cell_3" colspan="1" rowspan="1">50.5</td>
+<td class="cell_4" colspan="1" rowspan="1">58.4</td>
+<td class="cell_5" colspan="1" rowspan="1">57.8</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Carapace</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">5.7</td>
+<td class="cell_3" colspan="1" rowspan="1">5.7</td>
+<td class="cell_4" colspan="1" rowspan="1">6.4</td>
+<td class="cell_5" colspan="1" rowspan="1">6.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">anterior width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.9</td>
+<td class="cell_3" colspan="1" rowspan="1">3.9</td>
+<td class="cell_4" colspan="1" rowspan="1">4.5</td>
+<td class="cell_5" colspan="1" rowspan="1">4.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">posterior width</td>
+<td class="cell_2" colspan="1" rowspan="1">6.5</td>
+<td class="cell_3" colspan="1" rowspan="1">6.9</td>
+<td class="cell_4" colspan="1" rowspan="1">7.4</td>
+<td class="cell_5" colspan="1" rowspan="1">7.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Mesosoma length:</td>
+<td class="cell_2" colspan="1" rowspan="1">13.3</td>
+<td class="cell_3" colspan="1" rowspan="1">14.9</td>
+<td class="cell_4" colspan="1" rowspan="1">13.6</td>
+<td class="cell_5" colspan="1" rowspan="1">17.8</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment I:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">4.1</td>
+<td class="cell_3" colspan="1" rowspan="1">3.7</td>
+<td class="cell_4" colspan="1" rowspan="1">4.3</td>
+<td class="cell_5" colspan="1" rowspan="1">4.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.7</td>
+<td class="cell_3" colspan="1" rowspan="1">3.5</td>
+<td class="cell_4" colspan="1" rowspan="1">4.2</td>
+<td class="cell_5" colspan="1" rowspan="1">3.7</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment II:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">4.9</td>
+<td class="cell_3" colspan="1" rowspan="1">4.2</td>
+<td class="cell_4" colspan="1" rowspan="1">5.5</td>
+<td class="cell_5" colspan="1" rowspan="1">4.6</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">4.0</td>
+<td class="cell_3" colspan="1" rowspan="1">3.3</td>
+<td class="cell_4" colspan="1" rowspan="1">4.3</td>
+<td class="cell_5" colspan="1" rowspan="1">3.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Metasomal segment III:</td>
+<td class="cell_2" colspan="1" rowspan="1"></td>
+<td class="cell_3" colspan="1" rowspan="1"></td>
+<td class="cell_4" colspan="1" rowspan="1"></td>
+<td class="cell_5" colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">5.3</td>
+<td class="cell_3" colspan="1" rowspan="1">4.6</td>
+<td class="cell_4" colspan="1" rowspan="1">6.2</td>
+<td class="cell_5" colspan="1" rowspan="1">5.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">4.3</td>
+<td class="cell_3" colspan="1" rowspan="1">3.5</td>
+<td class="cell_4" colspan="1" rowspan="1">4.8</td>
+<td class="cell_5" colspan="1" rowspan="1">3.9</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment IV:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">5.9</td>
+<td class="cell_3" colspan="1" rowspan="1">5.2</td>
+<td class="cell_4" colspan="1" rowspan="1">7.2</td>
+<td class="cell_5" colspan="1" rowspan="1">5.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">5.4</td>
+<td class="cell_3" colspan="1" rowspan="1">4.0</td>
+<td class="cell_4" colspan="1" rowspan="1">5.3</td>
+<td class="cell_5" colspan="1" rowspan="1">4.5</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment V:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.5</td>
+<td class="cell_3" colspan="1" rowspan="1">6.1</td>
+<td class="cell_4" colspan="1" rowspan="1">8.3</td>
+<td class="cell_5" colspan="1" rowspan="1">6.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">5.8</td>
+<td class="cell_3" colspan="1" rowspan="1">4.3</td>
+<td class="cell_4" colspan="1" rowspan="1">5.3</td>
+<td class="cell_5" colspan="1" rowspan="1">4.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">depth</td>
+<td class="cell_2" colspan="1" rowspan="1">3.2</td>
+<td class="cell_3" colspan="1" rowspan="1">2.6</td>
+<td class="cell_4" colspan="1" rowspan="1">4.3</td>
+<td class="cell_5" colspan="1" rowspan="1">3.6</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Telson length:</td>
+<td class="cell_2" colspan="1" rowspan="1">6.2</td>
+<td class="cell_3" colspan="1" rowspan="1">6.1</td>
+<td class="cell_4" colspan="1" rowspan="1">6.9</td>
+<td class="cell_5" colspan="1" rowspan="1">6.6</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Vesicle:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.0</td>
+<td class="cell_3" colspan="1" rowspan="1">2.6</td>
+<td class="cell_4" colspan="1" rowspan="1">3.3</td>
+<td class="cell_5" colspan="1" rowspan="1">3.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">depth</td>
+<td class="cell_2" colspan="1" rowspan="1">2.5</td>
+<td class="cell_3" colspan="1" rowspan="1">2.3</td>
+<td class="cell_4" colspan="1" rowspan="1">2.7</td>
+<td class="cell_5" colspan="1" rowspan="1">2.4</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Pedipalp Femur:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.0</td>
+<td class="cell_3" colspan="1" rowspan="1">5.5</td>
+<td class="cell_4" colspan="1" rowspan="1">6.8</td>
+<td class="cell_5" colspan="1" rowspan="1">6.5</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">1.7</td>
+<td class="cell_3" colspan="1" rowspan="1">1.8</td>
+<td class="cell_4" colspan="1" rowspan="1">2.0</td>
+<td class="cell_5" colspan="1" rowspan="1">2.0</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pedipalp Patella:</td>
+<td class="cell_2" colspan="1" rowspan="1"></td>
+<td class="cell_3" colspan="1" rowspan="1"></td>
+<td class="cell_4" colspan="1" rowspan="1"></td>
+<td class="cell_5" colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.8</td>
+<td class="cell_3" colspan="1" rowspan="1">6.1</td>
+<td class="cell_4" colspan="1" rowspan="1">7.7</td>
+<td class="cell_5" colspan="1" rowspan="1">7.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">2.5</td>
+<td class="cell_3" colspan="1" rowspan="1">2.2</td>
+<td class="cell_4" colspan="1" rowspan="1">2.8</td>
+<td class="cell_5" colspan="1" rowspan="1">2.4</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Pedipalp Chela:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">11.6</td>
+<td class="cell_3" colspan="1" rowspan="1">10.2</td>
+<td class="cell_4" colspan="1" rowspan="1">13.2</td>
+<td class="cell_5" colspan="1" rowspan="1">12.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.4</td>
+<td class="cell_3" colspan="1" rowspan="1">2.2</td>
+<td class="cell_4" colspan="1" rowspan="1">4.1</td>
+<td class="cell_5" colspan="1" rowspan="1">2.5</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">depth</td>
+<td class="cell_2" colspan="1" rowspan="1">3.5</td>
+<td class="cell_3" colspan="1" rowspan="1">2.0</td>
+<td class="cell_4" colspan="1" rowspan="1">3.9</td>
+<td class="cell_5" colspan="1" rowspan="1">2.6</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Movable finger:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">7.6</td>
+<td class="cell_3" colspan="1" rowspan="1">7.1</td>
+<td class="cell_4" colspan="1" rowspan="1">8.2</td>
+<td class="cell_5" colspan="1" rowspan="1">8.2</td>
+</tr>
+</table></div>
+<table cellspacing="0" cellpadding="0" class="innerTable Table">
+<tr>
+<td class="cell_1" colspan="1" rowspan="1"></td>
+<td class="cell_2" colspan="2" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20crassicauda" onmouseover="showBaloon(2, 'Tityus_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_crassicauda', event)">crassicauda</a></span></span></i> sp. n.</b></td>
+<td class="cell_3" colspan="2" rowspan="1"><b><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula" onmouseover="showBaloon(2, 'Tityus_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_forcipula', event)">forcipula</a></span></span></i></b></td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1"></td>
+<td class="cell_2" colspan="1" rowspan="1">♂</td>
+<td class="cell_3" colspan="1" rowspan="1">♀</td>
+<td class="cell_4" colspan="1" rowspan="1">♂</td>
+<td class="cell_5" colspan="1" rowspan="1">♀</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Total length (including telson)</td>
+<td class="cell_2" colspan="1" rowspan="1">51.9</td>
+<td class="cell_3" colspan="1" rowspan="1">50.5</td>
+<td class="cell_4" colspan="1" rowspan="1">58.4</td>
+<td class="cell_5" colspan="1" rowspan="1">57.8</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Carapace</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">5.7</td>
+<td class="cell_3" colspan="1" rowspan="1">5.7</td>
+<td class="cell_4" colspan="1" rowspan="1">6.4</td>
+<td class="cell_5" colspan="1" rowspan="1">6.3</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">anterior width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.9</td>
+<td class="cell_3" colspan="1" rowspan="1">3.9</td>
+<td class="cell_4" colspan="1" rowspan="1">4.5</td>
+<td class="cell_5" colspan="1" rowspan="1">4.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">posterior width</td>
+<td class="cell_2" colspan="1" rowspan="1">6.5</td>
+<td class="cell_3" colspan="1" rowspan="1">6.9</td>
+<td class="cell_4" colspan="1" rowspan="1">7.4</td>
+<td class="cell_5" colspan="1" rowspan="1">7.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Mesosoma length:</td>
+<td class="cell_2" colspan="1" rowspan="1">13.3</td>
+<td class="cell_3" colspan="1" rowspan="1">14.9</td>
+<td class="cell_4" colspan="1" rowspan="1">13.6</td>
+<td class="cell_5" colspan="1" rowspan="1">17.8</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment I:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">4.1</td>
+<td class="cell_3" colspan="1" rowspan="1">3.7</td>
+<td class="cell_4" colspan="1" rowspan="1">4.3</td>
+<td class="cell_5" colspan="1" rowspan="1">4.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.7</td>
+<td class="cell_3" colspan="1" rowspan="1">3.5</td>
+<td class="cell_4" colspan="1" rowspan="1">4.2</td>
+<td class="cell_5" colspan="1" rowspan="1">3.7</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment II:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">4.9</td>
+<td class="cell_3" colspan="1" rowspan="1">4.2</td>
+<td class="cell_4" colspan="1" rowspan="1">5.5</td>
+<td class="cell_5" colspan="1" rowspan="1">4.6</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">4.0</td>
+<td class="cell_3" colspan="1" rowspan="1">3.3</td>
+<td class="cell_4" colspan="1" rowspan="1">4.3</td>
+<td class="cell_5" colspan="1" rowspan="1">3.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Metasomal segment III:</td>
+<td class="cell_2" colspan="1" rowspan="1"></td>
+<td class="cell_3" colspan="1" rowspan="1"></td>
+<td class="cell_4" colspan="1" rowspan="1"></td>
+<td class="cell_5" colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">5.3</td>
+<td class="cell_3" colspan="1" rowspan="1">4.6</td>
+<td class="cell_4" colspan="1" rowspan="1">6.2</td>
+<td class="cell_5" colspan="1" rowspan="1">5.4</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">4.3</td>
+<td class="cell_3" colspan="1" rowspan="1">3.5</td>
+<td class="cell_4" colspan="1" rowspan="1">4.8</td>
+<td class="cell_5" colspan="1" rowspan="1">3.9</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment IV:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">5.9</td>
+<td class="cell_3" colspan="1" rowspan="1">5.2</td>
+<td class="cell_4" colspan="1" rowspan="1">7.2</td>
+<td class="cell_5" colspan="1" rowspan="1">5.9</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">5.4</td>
+<td class="cell_3" colspan="1" rowspan="1">4.0</td>
+<td class="cell_4" colspan="1" rowspan="1">5.3</td>
+<td class="cell_5" colspan="1" rowspan="1">4.5</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Metasomal segment V:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.5</td>
+<td class="cell_3" colspan="1" rowspan="1">6.1</td>
+<td class="cell_4" colspan="1" rowspan="1">8.3</td>
+<td class="cell_5" colspan="1" rowspan="1">6.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">5.8</td>
+<td class="cell_3" colspan="1" rowspan="1">4.3</td>
+<td class="cell_4" colspan="1" rowspan="1">5.3</td>
+<td class="cell_5" colspan="1" rowspan="1">4.8</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">depth</td>
+<td class="cell_2" colspan="1" rowspan="1">3.2</td>
+<td class="cell_3" colspan="1" rowspan="1">2.6</td>
+<td class="cell_4" colspan="1" rowspan="1">4.3</td>
+<td class="cell_5" colspan="1" rowspan="1">3.6</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Telson length:</td>
+<td class="cell_2" colspan="1" rowspan="1">6.2</td>
+<td class="cell_3" colspan="1" rowspan="1">6.1</td>
+<td class="cell_4" colspan="1" rowspan="1">6.9</td>
+<td class="cell_5" colspan="1" rowspan="1">6.6</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Vesicle:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.0</td>
+<td class="cell_3" colspan="1" rowspan="1">2.6</td>
+<td class="cell_4" colspan="1" rowspan="1">3.3</td>
+<td class="cell_5" colspan="1" rowspan="1">3.2</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">depth</td>
+<td class="cell_2" colspan="1" rowspan="1">2.5</td>
+<td class="cell_3" colspan="1" rowspan="1">2.3</td>
+<td class="cell_4" colspan="1" rowspan="1">2.7</td>
+<td class="cell_5" colspan="1" rowspan="1">2.4</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Pedipalp Femur:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.0</td>
+<td class="cell_3" colspan="1" rowspan="1">5.5</td>
+<td class="cell_4" colspan="1" rowspan="1">6.8</td>
+<td class="cell_5" colspan="1" rowspan="1">6.5</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">1.7</td>
+<td class="cell_3" colspan="1" rowspan="1">1.8</td>
+<td class="cell_4" colspan="1" rowspan="1">2.0</td>
+<td class="cell_5" colspan="1" rowspan="1">2.0</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">Pedipalp Patella:</td>
+<td class="cell_2" colspan="1" rowspan="1"></td>
+<td class="cell_3" colspan="1" rowspan="1"></td>
+<td class="cell_4" colspan="1" rowspan="1"></td>
+<td class="cell_5" colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">6.8</td>
+<td class="cell_3" colspan="1" rowspan="1">6.1</td>
+<td class="cell_4" colspan="1" rowspan="1">7.7</td>
+<td class="cell_5" colspan="1" rowspan="1">7.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">2.5</td>
+<td class="cell_3" colspan="1" rowspan="1">2.2</td>
+<td class="cell_4" colspan="1" rowspan="1">2.8</td>
+<td class="cell_5" colspan="1" rowspan="1">2.4</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Pedipalp Chela:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">11.6</td>
+<td class="cell_3" colspan="1" rowspan="1">10.2</td>
+<td class="cell_4" colspan="1" rowspan="1">13.2</td>
+<td class="cell_5" colspan="1" rowspan="1">12.1</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">width</td>
+<td class="cell_2" colspan="1" rowspan="1">3.4</td>
+<td class="cell_3" colspan="1" rowspan="1">2.2</td>
+<td class="cell_4" colspan="1" rowspan="1">4.1</td>
+<td class="cell_5" colspan="1" rowspan="1">2.5</td>
+</tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">depth</td>
+<td class="cell_2" colspan="1" rowspan="1">3.5</td>
+<td class="cell_3" colspan="1" rowspan="1">2.0</td>
+<td class="cell_4" colspan="1" rowspan="1">3.9</td>
+<td class="cell_5" colspan="1" rowspan="1">2.6</td>
+</tr>
+<tr><td class="cell_1" colspan="5" rowspan="1">Movable finger:</td></tr>
+<tr>
+<td class="cell_1" colspan="1" rowspan="1">length</td>
+<td class="cell_2" colspan="1" rowspan="1">7.6</td>
+<td class="cell_3" colspan="1" rowspan="1">7.1</td>
+<td class="cell_4" colspan="1" rowspan="1">8.2</td>
+<td class="cell_5" colspan="1" rowspan="1">8.2</td>
+</tr>
+</table>
+					</div>
+					<p>Morphology. Carapace moderately to strongly granular; anterior margin with a moderately marked concavity. Anterior median superciliary and posterior median carinae moderate to strong. Furrows moderately to strongly deep. Median ocular tubercle distinctly anterior to the centre of carapace. Eyes separated by a little more than one ocular diameter. Three pairs of lateral eyes. Sternum triangular. Mesosomal tergites moderately granular. Median carina strong on all tergites. Tergite VII pentacarinate. Venter: genital operculum divided longitudinally,  forming two semi-oval plates. Pectines small; pectinal tooth count 15–15 in male holotype and 15–14 in female paratype; basal piece of the middle lamellae of the female pectines oval shaped and strongly dilated. Sternites very strongly granular,  in particular on male holotype; spiracles moderately elongated; VII with four moderately to strongly marked carinae. Metasomal segments strongly flattened dorsally; IV and V very strongly enlarged,  especially in the male holotype; segments I and II with ten carinae; III and IV with eight carinae,  crenulate; V with five carinae. Dorsal carinae on segments II to IV with two very strong spinoid granules,  distally. Lateral inframedian carinae on segment I complete,  crenulate; on II almost complete; absent from III and IV. Ventrolateral carinae strong,  crenulated; ventral submedian carinae strongly crenulate. Intercarinal spaces moderately granular. Segment V with weak dorsolateral carinae; ventrolateral and ventromedian carinae strong,  crenulate. Lateral intercarinal spaces moderately to strongly granular. Telson moderately granular,  with a long,  strongly curved aculeus. Dorsal surface smooth; ventral surface weakly granular; subaculear tooth strong and spino-rhomboidal in shape. Cheliceral dentition characteristic of the family <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Buthidae" onmouseover="showBaloon(2, 'Buthidae', event)" onmouseout="hideBaloonEvent('Buthidae', event)">Buthidae</a></span></span> (Vachon,  1963); movable finger with two basal teeth well distinct; ventral aspect of both fingers and manus with long,  dense setae. Pedipalps: femur pentacarinate; patella with seven carinae; chela with nine carinae,  more distinct on female paratype; all faces with only a few granules; smooth. Fixed and movable fingers of chela with respectively 12 and13 oblique rows of granules on the male holotype and 12–14 on the female paratype. Trichobothriotaxy; orthobothriotaxy A-α (alpha) (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B30', event)" onmouseout="hideBaloonEvent('B30')">Vachon 1974</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B31', event)" onmouseout="hideBaloonEvent('B31')">1975</span>). Legs: tarsus with two series of 6–7 setae on ventral surface.</p>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g001.jpg"><img src="export.php_files/ZooKeys-307-001-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 1–2.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)">crassicauda</a></span></span></i> sp. n.,  male holotype,  dorsal and ventral aspects.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F1">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g001.jpg"><img src="export.php_files/ZooKeys-307-001-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 1–2.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda">crassicauda</a></span></span></i> sp. n.,  male holotype,  dorsal and ventral aspects.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g002.jpg"><img src="export.php_files/ZooKeys-307-001-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 3–4.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)">crassicauda</a></span></span></i> sp. n.,  female paratype,  dorsal and ventral aspects.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F2">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g002.jpg"><img src="export.php_files/ZooKeys-307-001-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 3–4.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda">crassicauda</a></span></span></i> sp. n.,  female paratype,  dorsal and ventral aspects.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g003.jpg"><img src="export.php_files/ZooKeys-307-001-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 5–9.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)">crassicauda</a></span></span></i> sp. n. Trichobothrial pattern of male holotype <b>5–6</b> Chela dorso-external and ventral aspects <b>7–8</b> Patella,  dorsal and external aspects <b>9</b> Femur,  dorsal aspect (scale bar = 3 mm).</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F3">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g003.jpg"><img src="export.php_files/ZooKeys-307-001-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 5–9.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda">crassicauda</a></span></span></i> sp. n. Trichobothrial pattern of male holotype <b>5–6</b> Chela dorso-external and ventral aspects <b>7–8</b> Patella,  dorsal and external aspects <b>9</b> Femur,  dorsal aspect (scale bar = 3 mm).</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g004.jpg"><img src="export.php_files/ZooKeys-307-001-g004.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 10–12.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)">crassicauda</a></span></span></i> sp. n. <b>10</b> Right chelicera,  dorsal aspect (male holotype) <b>11–12</b> Metasomal segments III-V and telson,  lateral aspect (male holotype and female paratype) <b>13</b> Segments IV,  V and telson for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20forcipula" onmouseover="showBaloon(2, 'Tityus_(Atreus)_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_forcipula', event)">forcipula</a></span></span></i>,  male holotype <b>14</b> Segments II to V and telson for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20spinatus" onmouseover="showBaloon(2, 'Tityus_(Atreus)_spinatus', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_spinatus', event)">spinatus</a></span></span></i>,  female holotype (scale bars = 3 mm).</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F4">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g004.jpg"><img src="export.php_files/ZooKeys-307-001-g004.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 10–12.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda">crassicauda</a></span></span></i> sp. n. <b>10</b> Right chelicera,  dorsal aspect (male holotype) <b>11–12</b> Metasomal segments III-V and telson,  lateral aspect (male holotype and female paratype) <b>13</b> Segments IV,  V and telson for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20forcipula">forcipula</a></span></span></i>,  male holotype <b>14</b> Segments II to V and telson for <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20spinatus">spinatus</a></span></span></i>,  female holotype (scale bars = 3 mm).</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g005.jpg"><img src="export.php_files/ZooKeys-307-001-g005.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 15.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)">crassicauda</a></span></span></i> sp. n. Male holotype alive in the field.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F5">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g005.jpg"><img src="export.php_files/ZooKeys-307-001-g005.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 15.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda">crassicauda</a></span></span></i> sp. n. Male holotype alive in the field.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g006.jpg"><img src="export.php_files/ZooKeys-307-001-g006.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 16–17.</span>
+						<p>The natural habitat of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus" onmouseover="showBaloon(2, 'Atreus', event)" onmouseout="hideBaloonEvent('Atreus', event)">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda" onmouseover="showBaloon(2, 'Tityus_(Atreus)_crassicauda', event)" onmouseout="hideBaloonEvent('Tityus_(Atreus)_crassicauda', event)">crassicauda</a></span></span></i> sp. n. <b>16</b> General view of the Andean Mountains <b>17</b> Detail of the vegetation cover.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F6">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g006.jpg"><img src="export.php_files/ZooKeys-307-001-g006.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figures 16–17.</span>
+						<p>The natural habitat of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">(Atreus)</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20(Atreus)%20crassicauda">crassicauda</a></span></span></i> sp. n. <b>16</b> General view of the Andean Mountains <b>17</b> Detail of the vegetation cover.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Habitat.</span>
+					<p>The new species inhabits the tropical forests of the Ecuadorian Andean Mountains,  in the Pichincha Province. The specimens were collected at an altitude of 2200 m,  inside of rotten <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lauraceae" onmouseover="showBaloon(2, 'Lauraceae', event)" onmouseout="hideBaloonEvent('Lauraceae', event)">Lauraceae</a></span></span> logs.</p>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g007.jpg"><img src="export.php_files/ZooKeys-307-001-g007.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 18.</span>
+						<p>Map of Ecuador showing the distribution of the known species of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a></span></span></i>.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F7">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-001-g007.jpg"><img src="export.php_files/ZooKeys-307-001-g007.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 18.</span>
+						<p>Map of Ecuador showing the distribution of the known species of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a></span></span></i>.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+				<div class="unfloat"></div>
+</div>
+			</div></div>
+		</div>
+	</div>
+	<div class="section"><a name="theremarkablediversityoftheecuadorianscorpionfauna"></a>
+		<span id="1" class="node_title">The remarkable diversity of the Ecuadorian scorpion fauna</span>
+		<p>As already outlined by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B16', event)" onmouseout="hideBaloonEvent('B16')">Lourenço (1994b)</span>,  many if not most authors working on the floras and faunas of the Neotropical region seem to agree that the possible ‘epicentre’ of global diversity occurs in the tropical and subtropical Andean region (the upper Amazon,  North of Peru,  and most of Ecuador and Southern Colombia). This hypothesis is supported by studies conducted on various taxa (plants,  vertebrates and butterflies (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B5', event)" onmouseout="hideBaloonEvent('B5')">Gentry 1988</span>,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B6', event)" onmouseout="hideBaloonEvent('B6')">1992</span>)). In the same line of thinking,  <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B16', event)" onmouseout="hideBaloonEvent('B16')">Lourenço (1994b)</span> suggested that one of the areas exhibiting the highest alpha-diversity for scorpions in the world ranged from Southern Colombia,  Ecuador,  the Northeast region of Peru,  and the Upper Amazon region of Brazil. This region has been already the subject of other previous research programs,  namely the ‘Transecto Ecuadorial Pacifico Amazonico’,  as defined by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B32', event)" onmouseout="hideBaloonEvent('B32')">Van Velzen (1992)</span>. Despite studies such as these,  there still remain important gaps in the knowledge of scorpion communities within the Andean region. By expanding the area studied eastward,  it would allow for a more accurate survey of Colombia,  Peru and Brazil.</p>
+		<p>The number of endemic taxa in this region is very high - more than 80% - and is comparable to the number of endemic taxa found in other previously studied regions such as Baja California (about 75%) (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B33', event)" onmouseout="hideBaloonEvent('B33')">Williams 1980</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B16', event)" onmouseout="hideBaloonEvent('B16')">Lourenço 1994b</span>). However,  desert areas such as Baja California are much better studied than tropical areas. Consequently,  a substantial increase in the total number of species in North American deserts is unlikely. The use of ultra-violet light in the detection of scorpions in open areas such as deserts has been intense for many decades. On the other hand,  inventory work in tropical forests is still fairly new and UV light is not as efficient in this type of habitat,  mainly because of the landscape vegetation. Moreover,  for several sections of the tropical forests such as the canopy,  knowledge of the scorpion fauna is virtually non-existent (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B23', event)" onmouseout="hideBaloonEvent('B23')">Lourenço and Pézier 2002</span>). Consequently,  the effective number of species in rainforests may be much greater than what is presently estimated; see <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B16', event)" onmouseout="hideBaloonEvent('B16')">Lourenço (1994b)</span> for comparative numbers.</p>
+		<p>The scorpion fauna of the Ecuadorian Andes is characterized by an outstanding concentration of species belonging to genera such as <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Teuthraustes" onmouseover="showBaloon(2, 'Teuthraustes', event)" onmouseout="hideBaloonEvent('Teuthraustes', event)">Teuthraustes</a></span></span></i> Simon,  1878 (<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chactidae" onmouseover="showBaloon(2, 'Chactidae', event)" onmouseout="hideBaloonEvent('Chactidae', event)">Chactidae</a></span></span>). Within each genus,  the species show to be closely related. The speciation pattern of the scorpions corresponds to the explosive model proposed by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B6', event)" onmouseout="hideBaloonEvent('B6')">Gentry (1992)</span> for plants of the genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Gasteranthus" onmouseover="showBaloon(2, 'Gasteranthus', event)" onmouseout="hideBaloonEvent('Gasteranthus', event)">Gasteranthus</a></span></span></i> which have a similar range of distribution in this same area. The proposed mechanism operating process is associated with some type of genetic transilience associated with genetic drift in small founder populations,  a process also postulated for Hawaiian <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Drosophila" onmouseover="showBaloon(2, 'Drosophila', event)" onmouseout="hideBaloonEvent('Drosophila', event)">Drosophila</a></span></span></i> (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B6', event)" onmouseout="hideBaloonEvent('B6')">Gentry 1992</span>).</p>
+	</div>
+	<div class="section"><a name="acknowledgements"></a>
+		<span id="1" class="node_title">Acknowledgements</span>
+		<p>We are most grateful to Michael M. Webber,  University of Nevada,  Las Vegas for her comments and review of the manuscript and to two anonymous referees for useful comments and suggestions; to Elise-Anne Leguin,  MNHN,  Paris for the preparation of some photos and to Peter Schwendinger of the Geneva Museum for the loan of specimens of <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus" onmouseover="showBaloon(2, 'Tityus', event)" onmouseout="hideBaloonEvent('Tityus', event)">Tityus</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus%20forcipula" onmouseover="showBaloon(2, 'Tityus_forcipula', event)" onmouseout="hideBaloonEvent('Tityus_forcipula', event)">forcipula</a></span></span></i>. We also want to express our sincere gratitude to Prof. G. Onore for providing the collected specimens.</p>
+	</div>
+	</div>
+<a name="acknowledgements"></a><div class="smallSecHolder acknowledgementsHolder"><div class="acknowledgementsText"></div></div>
+<a name="references"></a><div class="smallSecHolder  referencesHolder"><div class="referencesText">
+<span class="node_title">References</span><div class="referenceRow">Borelli A (1899) Viaggio del Dr. Enrico Festa nell’Ecuador e regioni vicine. XVIII: Scorpioni. Bollettino dei Musei di zoologia ed anatomia comparata della Real Università di Torino 14 (345): 1-18.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B1">Borelli A (1899) Viaggio del Dr. Enrico Festa nell’Ecuador e regioni vicine. XVIII: Scorpioni. Bollettino dei Musei di zoologia ed anatomia comparata della Real Università di Torino 14 (345): 1-18.<div class="unfloat"></div></div>
+<div class="referenceRow">Botero-Trujillo R (2008) The scorpion genus <i>Ananteris</i> in Colombia: comments and description of two new species (Scorpiones,  Buthidae). The Journal of Arachnology 36: 287-299. doi: <a target="_blank" href="http://dx.doi.org/10.1636/CH07-98.1">10.1636/CH07-98.1</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B2">Botero-Trujillo R (2008) The scorpion genus <i>Ananteris</i> in Colombia: comments and description of two new species (Scorpiones,  Buthidae). The Journal of Arachnology 36: 287-299. doi: <a target="_blank" href="http://dx.doi.org/10.1636/CH07-98.1">10.1636/CH07-98.1</a><div class="unfloat"></div></div>
+<div class="referenceRow">Botero-Trujillo R (2009) Two new species of <i>Ananteris</i> (Scorpiones,  Buthidae) from El Tuparro Natural National Park,  eastern Colombia. Comptes Rendus Biologies 332: 83-94. doi: <a target="_blank" href="http://dx.doi.org/10.1016/j.crvi.2008.08.012">10.1016/j.crvi.2008.08.012</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B3">Botero-Trujillo R (2009) Two new species of <i>Ananteris</i> (Scorpiones,  Buthidae) from El Tuparro Natural National Park,  eastern Colombia. Comptes Rendus Biologies 332: 83-94. doi: <a target="_blank" href="http://dx.doi.org/10.1016/j.crvi.2008.08.012">10.1016/j.crvi.2008.08.012</a><div class="unfloat"></div></div>
+<div class="referenceRow">Botero-Trujillo R, Francke OF (2009) A new species of troglomorphic leaf litter scorpion from Colombia belonging to the genus <i>Troglotayosicus</i> (Scorpiones: Troglotayosicidae). Texas Memorial Museum Speleological Monograph 7: 1-10.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B4">Botero-Trujillo R, Francke OF (2009) A new species of troglomorphic leaf litter scorpion from Colombia belonging to the genus <i>Troglotayosicus</i> (Scorpiones: Troglotayosicidae). Texas Memorial Museum Speleological Monograph 7: 1-10.<div class="unfloat"></div></div>
+<div class="referenceRow">Gentry AH (1988) Tree species richness of upper Amazonian forests. Proceedings of the national Academy of Sciences USA 85: 156-159. doi: <a target="_blank" href="http://dx.doi.org/10.1073/pnas.85.1.156">10.1073/pnas.85.1.156</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B5">Gentry AH (1988) Tree species richness of upper Amazonian forests. Proceedings of the national Academy of Sciences USA 85: 156-159. doi: <a target="_blank" href="http://dx.doi.org/10.1073/pnas.85.1.156">10.1073/pnas.85.1.156</a><div class="unfloat"></div></div>
+<div class="referenceRow">Gentry AH (1992) Tropical forest biodiversity: distributional patterns and their conservation significance. Oikos 63 (1): 19-28. doi: <a target="_blank" href="http://dx.doi.org/10.2307/3545512">10.2307/3545512</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B6">Gentry AH (1992) Tropical forest biodiversity: distributional patterns and their conservation significance. Oikos 63 (1): 19-28. doi: <a target="_blank" href="http://dx.doi.org/10.2307/3545512">10.2307/3545512</a><div class="unfloat"></div></div>
+<div class="referenceRow">Gervais P (1844) Remarques sur la famille des Scorpions et description de plusieurs espèces nouvelles de la collection du Muséum. Archives du Muséum national d’Histoire naturelle 4: 203-240.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B7">Gervais P (1844) Remarques sur la famille des Scorpions et description de plusieurs espèces nouvelles de la collection du Muséum. Archives du Muséum national d’Histoire naturelle 4: 203-240.<div class="unfloat"></div></div>
+<div class="referenceRow">Hjelle JT (1990) Anatomy and morphology. In: Polis GA (Ed).  The Biology of Scorpions. Stanford University Press,  Stanford: 9-63.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B8">Hjelle JT (1990) Anatomy and morphology. In: Polis GA (Ed).  The Biology of Scorpions. Stanford University Press,  Stanford: 9-63.<div class="unfloat"></div></div>
+<div class="referenceRow">Kraepelin K (1912a) Neue Beiträge zur Systematik der Gliederspinnen. Mitteilungen aus dem Naturhistorischen Museum 29: 45-88.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B9">Kraepelin K (1912a) Neue Beiträge zur Systematik der Gliederspinnen. Mitteilungen aus dem Naturhistorischen Museum 29: 45-88.<div class="unfloat"></div></div>
+<div class="referenceRow">Kraepelin K (1912b) Beitrag zur Kenntnis der Skorpione und Pedipalpen Columbiens. Mémoires de la Société des Sciences naturelles,  Neuchâtel 5: 15-28.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B10">Kraepelin K (1912b) Beitrag zur Kenntnis der Skorpione und Pedipalpen Columbiens. Mémoires de la Société des Sciences naturelles,  Neuchâtel 5: 15-28.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1984) Etude systématique de quelques espèces appartenant au complexe <i>Tityus forcipula</i> (Gervais,  1844) (Scorpiones,  Buthidae). Bulletin du Muséum national d’Histoire naturelle,  Paris 4e sér.,  6(A3): 729–739.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B11">Lourenço WR (1984) Etude systématique de quelques espèces appartenant au complexe <i>Tityus forcipula</i> (Gervais,  1844) (Scorpiones,  Buthidae). Bulletin du Muséum national d’Histoire naturelle,  Paris 4e sér.,  6(A3): 729–739.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1988) La faune des scorpions de l’Equateur. I. Les Buthidae. Systématique et biogéographie. Revue suisse de Zoologie 95 (3): 681-687.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B12">Lourenço WR (1988) La faune des scorpions de l’Equateur. I. Les Buthidae. Systématique et biogéographie. Revue suisse de Zoologie 95 (3): 681-687.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1991) Les scorpions (Chelicerata) de Colombie. II. Les faunes des régions de Santa Marta et de la Cordillère Orientale. Approche biogéographique. Senckenbergiana Biologica 7(4–6)): 275-288.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B13">Lourenço WR (1991) Les scorpions (Chelicerata) de Colombie. II. Les faunes des régions de Santa Marta et de la Cordillère Orientale. Approche biogéographique. Senckenbergiana Biologica 7(4–6)): 275-288.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1992) Biogéographie des espèces du groupe naturel ‘ <i>Tityus clathratus</i>’ (Chelicerata,  Scorpiones,  Buthidae). Bulletin du Muséum national d’Histoire naturelle,  Paris,  4e sér.,  14(A2): 473–481.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B14">Lourenço WR (1992) Biogéographie des espèces du groupe naturel ‘ <i>Tityus clathratus</i>’ (Chelicerata,  Scorpiones,  Buthidae). Bulletin du Muséum national d’Histoire naturelle,  Paris,  4e sér.,  14(A2): 473–481.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1994a) Scorpions (Chelicerata) de Colombie. VI. Quatre nouvelles espèces de Buthidae des régions Amazonienne,  Sud-Pacifique et de la Cordillère Orientale. Revista de la Academia Colombiana de Ciencias Exactas,  Fisicas y Naturales 19 (73): 387-392.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B15">Lourenço WR (1994a) Scorpions (Chelicerata) de Colombie. VI. Quatre nouvelles espèces de Buthidae des régions Amazonienne,  Sud-Pacifique et de la Cordillère Orientale. Revista de la Academia Colombiana de Ciencias Exactas,  Fisicas y Naturales 19 (73): 387-392.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1994b) Diversity and endemism in tropical versus temperate scorpion communities. Biogeographica 70 (3): 155-160.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B16">Lourenço WR (1994b) Diversity and endemism in tropical versus temperate scorpion communities. Biogeographica 70 (3): 155-160.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1995) Les scorpions (Chelicerata,  Scorpiones) de l’Equateur,  avec quelques considérations sur la biogéographie et la diversité des espèces. Revue suisse de Zoologie 102 (1): 61-88.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B17">Lourenço WR (1995) Les scorpions (Chelicerata,  Scorpiones) de l’Equateur,  avec quelques considérations sur la biogéographie et la diversité des espèces. Revue suisse de Zoologie 102 (1): 61-88.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1997) Synopsis de la faune de scorpions de Colombia,  avec des considérations sur la systématique et la biogéographie des espèces. Revue suisse de Zoologie 104 (1): 61-94.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B18">Lourenço WR (1997) Synopsis de la faune de scorpions de Colombia,  avec des considérations sur la systématique et la biogéographie des espèces. Revue suisse de Zoologie 104 (1): 61-94.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (1999) New species of <i>Ananteris</i> from the north of Chocó,  Colombia (Scorpiones,  Buthidae). Anales del Instituto de Biologia,  UNAM,  ser. Zool.  70 (2): 93-98.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B19">Lourenço WR (1999) New species of <i>Ananteris</i> from the north of Chocó,  Colombia (Scorpiones,  Buthidae). Anales del Instituto de Biologia,  UNAM,  ser. Zool.  70 (2): 93-98.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (2000) Synopsis of the Colombian species of <i>Tityus</i> (Chelicerata,  Scorpiones,  Buthidae),  with descriptions of three new species. Journal of Natural History 34: 449-461. doi: <a target="_blank" href="http://dx.doi.org/10.1080/002229300299561">10.1080/002229300299561</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B20">Lourenço WR (2000) Synopsis of the Colombian species of <i>Tityus</i> (Chelicerata,  Scorpiones,  Buthidae),  with descriptions of three new species. Journal of Natural History 34: 449-461. doi: <a target="_blank" href="http://dx.doi.org/10.1080/002229300299561">10.1080/002229300299561</a><div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (2005) A new species of <i>Tityus</i> Koch,  1836 (Scorpiones,  Buthidae) from Ecuador. Entomologische Mitteilungen aus dem Zoologischen Museum Hamburg 14 (171): 221-227.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B21">Lourenço WR (2005) A new species of <i>Tityus</i> Koch,  1836 (Scorpiones,  Buthidae) from Ecuador. Entomologische Mitteilungen aus dem Zoologischen Museum Hamburg 14 (171): 221-227.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR (2007) A new species of <i>Tityus</i> C. L. Koch,  1836 from Ecuador: the first element of the ‘ <i>Tityus androcottoides</i>’ subgroup for this country. Entomologische Mitteilungen aus dem Zoologischen Museum Hamburg 14 (176): 375-385.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B22">Lourenço WR (2007) A new species of <i>Tityus</i> C. L. Koch,  1836 from Ecuador: the first element of the ‘ <i>Tityus androcottoides</i>’ subgroup for this country. Entomologische Mitteilungen aus dem Zoologischen Museum Hamburg 14 (176): 375-385.<div class="unfloat"></div></div>
+<div class="referenceRow">Lourenço WR, Pézier A (2002) Addition to the scorpion fauna of the Manaus region (Brazil),  with a description of two new species of <i>Tityus</i> from the canopy. Amazoniana 17(1/2): 177–186.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B23">Lourenço WR, Pézier A (2002) Addition to the scorpion fauna of the Manaus region (Brazil),  with a description of two new species of <i>Tityus</i> from the canopy. Amazoniana 17(1/2): 177–186.<div class="unfloat"></div></div>
+<div class="referenceRow">Mello-Leitão C (1945) Escorpiões Sul Americanos. Arquivos do Museu Nacional,  Rio de Janeiro 40: 1-468.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B24">Mello-Leitão C (1945) Escorpiões Sul Americanos. Arquivos do Museu Nacional,  Rio de Janeiro 40: 1-468.<div class="unfloat"></div></div>
+<div class="referenceRow">Pocock RI (1893) A contribution to the study of Neotropical Scorpions. Annals and Magazine of Natural History,  ser. 6,  12: 77–103.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B25">Pocock RI (1893) A contribution to the study of Neotropical Scorpions. Annals and Magazine of Natural History,  ser. 6,  12: 77–103.<div class="unfloat"></div></div>
+<div class="referenceRow">Pocock RI (1898) Description of some new scorpions from Ecuador. Annals and Magazine of Natural History,  ser. 7,  1: 413–422. doi: <a target="_blank" href="http://dx.doi.org/10.1080/00222939808677995">10.1080/00222939808677995</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B26">Pocock RI (1898) Description of some new scorpions from Ecuador. Annals and Magazine of Natural History,  ser. 7,  1: 413–422. doi: <a target="_blank" href="http://dx.doi.org/10.1080/00222939808677995">10.1080/00222939808677995</a><div class="unfloat"></div></div>
+<div class="referenceRow">Stahnke HL (1970) Scorpion nomenclature and mensuration. Entomological News 81: 297-316.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B27">Stahnke HL (1970) Scorpion nomenclature and mensuration. Entomological News 81: 297-316.<div class="unfloat"></div></div>
+<div class="referenceRow">Thorell T (1876) On the classification of scorpions. Annals and Magazine of Natural History: 1–15. doi: <a target="_blank" href="http://dx.doi.org/10.1080/00222937608681889">10.1080/00222937608681889</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B28">Thorell T (1876) On the classification of scorpions. Annals and Magazine of Natural History: 1–15. doi: <a target="_blank" href="http://dx.doi.org/10.1080/00222937608681889">10.1080/00222937608681889</a><div class="unfloat"></div></div>
+<div class="referenceRow">Vachon M (1963) De l’utilité,  en systématique,  d’une nomenclature des dents des chélicères chez les Scorpions. Bulletin du Muséum national d’Histoire naturelle,  Paris 2è sér. 35(2): 161–166.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B29">Vachon M (1963) De l’utilité,  en systématique,  d’une nomenclature des dents des chélicères chez les Scorpions. Bulletin du Muséum national d’Histoire naturelle,  Paris 2è sér. 35(2): 161–166.<div class="unfloat"></div></div>
+<div class="referenceRow">Vachon M (1974) Etude des caractères utilisés pour classer les familles et les genres de Scorpions (Arachnides). 1. La trichobothriotaxie en arachnologie. Sigles trichobothriaux et types de trichobothriotaxie chez les Scorpions. Bulletin du Muséum national d’Histoire naturelle,  Paris,  3è sér. n° 140,  Zool.  104: 857-958.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B30">Vachon M (1974) Etude des caractères utilisés pour classer les familles et les genres de Scorpions (Arachnides). 1. La trichobothriotaxie en arachnologie. Sigles trichobothriaux et types de trichobothriotaxie chez les Scorpions. Bulletin du Muséum national d’Histoire naturelle,  Paris,  3è sér. n° 140,  Zool.  104: 857-958.<div class="unfloat"></div></div>
+<div class="referenceRow">Vachon M (1975) Sur l’utilisation de la trichobothriotaxie du bras des pédipalpes des Scorpions (Arachnides) dans le classement des genres de la famille des Buthidae Simon. Comptes Rendus de l’Académie des Sciences,  Paris 281: 1597-1599.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B31">Vachon M (1975) Sur l’utilisation de la trichobothriotaxie du bras des pédipalpes des Scorpions (Arachnides) dans le classement des genres de la famille des Buthidae Simon. Comptes Rendus de l’Académie des Sciences,  Paris 281: 1597-1599.<div class="unfloat"></div></div>
+<div class="referenceRow">Van Velzen HP (1992) Priorities for conservation of the biodiversity in the Colombian Andes. Novedades Colombianas 4: 1-32.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B32">Van Velzen HP (1992) Priorities for conservation of the biodiversity in the Colombian Andes. Novedades Colombianas 4: 1-32.<div class="unfloat"></div></div>
+<div class="referenceRow">Williams SC (1980) Scorpions of Baja California,  Mexico,  and adjacent islands. Occasional Papers of the California Academy of Sciences 135: 1-127.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B33">Williams SC (1980) Scorpions of Baja California,  Mexico,  and adjacent islands. Occasional Papers of the California Academy of Sciences 135: 1-127.<div class="unfloat"></div></div>
+</div></div>
+<a name="supplementarymaterials"></a><div class="supMaterialsHolder"></div>
+</div>
+</div></div></div></div></div></div></div></div></div>
+<script>initBalloons();</script>
+<div id="taxonNamesList" class="taxonNamesList">
+	<div id="taxon_Tityus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Tityus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Atreus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">Atreus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Atreus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FAtreus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Atreus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DAtreus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Atreus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DAtreus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Atreus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DAtreus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Atreus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DAtreus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Atreus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Scorpiones_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Scorpiones">Scorpiones</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Scorpiones">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Scorpiones&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FScorpiones">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Scorpiones&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DScorpiones">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Scorpiones&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DScorpiones">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Scorpiones&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DScorpiones">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Scorpiones&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DScorpiones">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Scorpiones">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Buthidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Buthidae">Buthidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Buthidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Buthidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FButhidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Buthidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DButhidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Buthidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DButhidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Buthidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DButhidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Buthidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DButhidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Buthidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_(Atreus)_crassicauda_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) crassicauda">Tityus (Atreus) crassicauda</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) crassicauda">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20crassicauda&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520%2528Atreus%2529%2520crassicauda">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20crassicauda&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520%2528Atreus%2529%2520crassicauda">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20crassicauda&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520%2528Atreus%2529%2520crassicauda">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20crassicauda&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520%2528Atreus%2529%2520crassicauda">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20crassicauda&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520%2528Atreus%2529%2520crassicauda">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) crassicauda">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Lauraceae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lauraceae">Lauraceae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lauraceae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lauraceae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLauraceae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lauraceae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLauraceae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lauraceae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLauraceae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lauraceae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLauraceae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lauraceae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLauraceae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lauraceae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_forcipula_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus forcipula">Tityus forcipula</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus forcipula">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20forcipula&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520forcipula">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20forcipula&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520forcipula">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20forcipula&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520forcipula">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20forcipula&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520forcipula">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20forcipula&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520forcipula">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus forcipula">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_spinatus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus spinatus">Tityus spinatus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus spinatus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20spinatus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520spinatus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20spinatus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520spinatus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20spinatus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520spinatus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20spinatus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520spinatus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20spinatus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520spinatus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus spinatus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_cuellari_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus cuellari">Tityus cuellari</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus cuellari">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20cuellari&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520cuellari">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20cuellari&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520cuellari">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20cuellari&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520cuellari">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20cuellari&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520cuellari">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20cuellari&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520cuellari">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus cuellari">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_crassicauda_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus crassicauda">Tityus crassicauda</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus crassicauda">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20crassicauda&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520crassicauda">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20crassicauda&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520crassicauda">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20crassicauda&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520crassicauda">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20crassicauda&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520crassicauda">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20crassicauda&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520crassicauda">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus crassicauda">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_(Atreus)_forcipula_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) forcipula">Tityus (Atreus) forcipula</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) forcipula">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20forcipula&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520%2528Atreus%2529%2520forcipula">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20forcipula&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520%2528Atreus%2529%2520forcipula">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20forcipula&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520%2528Atreus%2529%2520forcipula">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20forcipula&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520%2528Atreus%2529%2520forcipula">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20forcipula&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520%2528Atreus%2529%2520forcipula">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) forcipula">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tityus_(Atreus)_spinatus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) spinatus">Tityus (Atreus) spinatus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) spinatus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20spinatus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTityus%2520%2528Atreus%2529%2520spinatus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20spinatus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTityus%2520%2528Atreus%2529%2520spinatus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20spinatus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTityus%2520%2528Atreus%2529%2520spinatus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20spinatus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTityus%2520%2528Atreus%2529%2520spinatus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tityus%20%28Atreus%29%20spinatus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTityus%2520%2528Atreus%2529%2520spinatus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tityus (Atreus) spinatus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Teuthraustes_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Teuthraustes">Teuthraustes</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Teuthraustes">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Teuthraustes&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTeuthraustes">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Teuthraustes&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTeuthraustes">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Teuthraustes&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTeuthraustes">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Teuthraustes&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTeuthraustes">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Teuthraustes&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTeuthraustes">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Teuthraustes">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Chactidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chactidae">Chactidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chactidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chactidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FChactidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chactidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DChactidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chactidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DChactidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chactidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DChactidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Chactidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DChactidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Chactidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Gasteranthus_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Gasteranthus">Gasteranthus</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Gasteranthus">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Gasteranthus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FGasteranthus">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Gasteranthus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DGasteranthus">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Gasteranthus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DGasteranthus">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Gasteranthus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DGasteranthus">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Gasteranthus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DGasteranthus">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Gasteranthus">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Drosophila_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Drosophila">Drosophila</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Drosophila">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Drosophila&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FDrosophila">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Drosophila&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DDrosophila">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Drosophila&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DDrosophila">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Drosophila&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DDrosophila">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Drosophila&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DDrosophila">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Drosophila">More</a></div>
+		</div>
+	</div>
+	</div>
+		</div>
+<script>initScrollConstants()</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.0" xmlns="http://www.crossref.org/doi_resources_schema/4.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/doi_resources_schema/4.3.0 http://www.crossref.org/schema/deposit/doi_resources4.3.0.xsd">
+<head>
+<doi_batch_id>65de378b-9db5-4e8d-ba46-5cef3e059ada</doi_batch_id>
+<depositor>
+<name>pens</name>
+<email_address>bozhin.karaivanov@gmail.com</email_address>
+</depositor>
+</head>
+<body>
+<doi_citations>
+<doi>part-3-281-4171</doi>
+<citation_list>
+	<citation key="ref1"><author>Sowerby</author><cYear>1806</cYear><volume_title>British Miscellany or coloured figures of new rare or little known animal subjects not before ascertained to be inhabitants of the British Isles</volume_title><unstructured_citation>Sowerby J (1806) British Miscellany, or coloured figures of new rare or little known animal subjects, not before ascertained to be inhabitants of the British Isles. Taylor &amp; Co., London, 2 Vols: 660 pp.</unstructured_citation></citation>
+	<citation key="ref2"><journal_title>Mémoires de la Société Zoologique de France</journal_title><author>Topsent</author><volume>9</volume><first_page>113</first_page><cYear>1896</cYear><article_title>Matériaux pour servir à l'étude de la faune des spongiaires de France.</article_title><unstructured_citation>Topsent E (1896) Matériaux pour servir à l'étude de la faune des spongiaires de France. Mémoires de la Société Zoologique de France 9: 113–133.</unstructured_citation></citation>
+	<citation key="ref3"><journal_title>Archives de Zoologie Expérimentale et Generale</journal_title><author>Topsent</author><volume>63</volume><issue>5</issue><first_page>623</first_page><cYear>1925</cYear><article_title>Etude des Spongiaires du Golfe de Naples.</article_title><unstructured_citation>Topsent E (1925) Etude des Spongiaires du Golfe de Naples. Archives de Zoologie Expérimentale et Generale 63(5): 623–725.</unstructured_citation></citation>
+	<citation key="ref4"><journal_title>Bulletin de l Institut Océanographique de Monaco</journal_title><author>Topsent</author><volume>537</volume><first_page>1</first_page><cYear>1929</cYear><article_title>Spongionella Bow. et Cacospongia Schm.</article_title><unstructured_citation>Topsent E (1929) Spongionella Bow. et Cacospongia Schm. Bulletin de l'Institut Océanographique de Monaco 537: 1–14.</unstructured_citation></citation>
+	<citation key="ref5"><journal_title>Atti Associazione Italiana di Oceanologia e Limnologia</journal_title><author>Tunesi</author><volume>19</volume><first_page>489</first_page><cYear>2008</cYear><article_title>Marine protected species and habitats of conservation interest in the Gallinaria Island (Ligurian Sea): a study for the establishment of the marine protected area.</article_title><unstructured_citation>Tunesi L, Agnesi S, Di Nora T, Molinari A, Mo G (2008) Marine protected species and habitats of conservation interest in the Gallinaria Island (Ligurian Sea): a study for the establishment of the marine protected area. Atti Associazione Italiana di Oceanologia e Limnologia 19: 489–497.</unstructured_citation></citation>
+	<citation key="ref5"><doi>10.3989/scimar.2009.73n2387</doi></citation>
+	<citation key="ref6"><issn>12809551</issn><journal_title>Zoosystema</journal_title><author>Uriz</author><volume>22</volume><issue>2</issue><first_page>401</first_page><cYear>2000</cYear><article_title>The genus Acanthodendrilla in the Mediterranean Sea with description of a new species.</article_title><unstructured_citation>Uriz JM, Maldonado M (2000) The genus Acanthodendrilla in the Mediterranean Sea with description of a new species. Zoosystema 22(2): 401–410.</unstructured_citation></citation>
+	<citation key="ref6"><doi>10.1111/j.1439-0485.1992.tb00343.x</doi></citation>
+	<citation key="ref7"><journal_title>Recueil des Travaux de la Station Marine d Endoume Marseille</journal_title><author>Vacelet</author><volume>26</volume><issue>16</issue><first_page>1</first_page><cYear>1959</cYear><article_title>Répartition générale des éponges et systématique des éponges cornées de la région de Marseille et de quelque station Méditerranée.</article_title><unstructured_citation>Vacelet J (1959) Répartition générale des éponges et systématique des éponges cornées de la région de Marseille et de quelque station Méditerranée. Recueil des Travaux de la Station Marine d'Endoume, Marseille 26(16): 1–101.</unstructured_citation></citation>
+	<citation key="ref8"><journal_title>Recueil des Travaux de la Station Marine d Endoume Marseille</journal_title><author>Vacelet</author><volume>22</volume><first_page>21</first_page><cYear>1961</cYear><article_title>Spongiaires (Démosponges) de la région de Bonifacio (Corse).</article_title><unstructured_citation>Vacelet J (1961b) Spongiaires (Démosponges) de la région de Bonifacio (Corse). Recueil des Travaux de la Station Marine d'Endoume Marseille 22: 21–45.</unstructured_citation></citation>
+	<citation key="ref9"><journal_title>Memoires du Museum National d Histoire Naturelle</journal_title><author>Vacelet</author><volume>59</volume><first_page>146</first_page><cYear>1969</cYear><article_title>Eponges de la roche du large et de l'etage bathyal de Mediterranee.</article_title><unstructured_citation>Vacelet J (1969) Eponges de la roche du large et de l'etage bathyal de Mediterranee. Memoires du Museum National d'Histoire Naturelle, 59: 146–219.</unstructured_citation></citation>
+	<citation key="ref10"><journal_title>Travaux Scientifique Parc National de Port-Cros</journal_title><author>Vacelet</author><volume>2</volume><first_page>167</first_page><cYear>1976</cYear><article_title>Inventaire des Spongiaires du Parc National de Port-Cros (Var).</article_title><unstructured_citation>Vacelet J (1976) Inventaire des Spongiaires du Parc National de Port-Cros (Var). Travaux Scientifique Parc National de Port-Cros 2: 167–186.</unstructured_citation></citation>
+	<citation key="ref10"><doi>10.1017/S0025315407060687</doi></citation>
+	<citation key="ref11"><author>Van Soest</author><volume>213</volume><cYear>1994</cYear><volume_title>Sponges in Time and Space</volume_title><article_title>Demosponge distribution patterns.</article_title><unstructured_citation>Van Soest RW (1994) Demosponge distribution patterns. In: Van Soest RMW, Van Kempen TMB, Braekman JC (Eds) Sponges in Time and Space. Balkema, Rotterdam 213–223pp.</unstructured_citation></citation>
+	<citation key="ref11"><doi>10.1371/journal.pone.0035105</doi></citation>
+	<citation key="ref12"><author>von Lendenfeld</author><cYear>1889</cYear><volume_title>A Monograph of Horny Sponges</volume_title><unstructured_citation>von Lendenfeld R (1889) A Monograph of Horny Sponges. Trübner, Ludgate Hill, London, 936 pp.</unstructured_citation></citation>
+	<citation key="ref12"><doi>10.1080/11250000509356653</doi></citation>
+	<citation key="ref12"><doi>10.1002/mmnz.19930690105</doi></citation>
+	<citation key="ref12"><doi>10.1111/j.1463-6409.1991.tb00284.x</doi></citation>
+	<citation key="ref12"><doi>10.1007/s10750-011-0880-4</doi></citation>
+	<citation key="ref12"><unstructured_citation>Topsent E (1892) Diagnoses d'éponges nouvelles de la Méditerranée et plus particulièrement de Banyuls. Archives de Zoologie expérimentale et générale (2) 10 (Notes et Revue 6) 17–28.</unstructured_citation></citation>
+	<citation key="ref12"><unstructured_citation>Topsent E (1905) Étude sur les Dendroceratida. Archives de Zoologie expérimentale et générale (4) 3(8): 171-192.</unstructured_citation></citation>
+	<citation key="ref12"><unstructured_citation>Vacelet J (1961a) Quelques Eponges remarquables de Méditerranée. Revue des Travaux de l'Institut des Pêches maritimes 25(3): 351–354.</unstructured_citation></citation>
+	<citation key="ref12"><unstructured_citation>Van Soest RWM, Boury-Esnault N, Hooper JNA, Rützler K, De Voogd NJ, Alvarez B, Hajdu E, Pisera AB, Vacelet J, Manconi R, Schoenberg C, Janussen D, Tabachnick KR, Klautau M, Picton B, Kelly M (2012b) World Porifera Database [available online at http://www.marinespecies.org/porifera].</unstructured_citation></citation>
+	<citation key="ref12"><unstructured_citation>Vosmaer GCJ (1883) Studies on Sponges. I. On Velinea gracilis, n. g.; n. sp. Mitteilungen aus der Zoologischen Station zu Neapel 4: 437–447, pls 31–32.</unstructured_citation></citation>
+</citation_list>
+</doi_citations>
+</body>
+</doi_batch>

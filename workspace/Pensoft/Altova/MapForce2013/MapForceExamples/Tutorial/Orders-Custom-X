@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<component name="defaultmap2" blackbox="0" uid="50918840" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="cpp"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="49495808" kind="2">
+					<targets>
+						<datapoint pos="0" key="153442856"/>
+					</targets>
+					<view ltx="403" lty="57" rbx="-69" rby="-293"/>
+					<data>
+						<constant value="2004-04-30T17:42:00" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="65524368" kind="2">
+					<targets>
+						<datapoint pos="0" key="168772504"/>
+					</targets>
+					<view ltx="372" lty="526" rbx="-100" rby="176"/>
+					<data>
+						<constant value="100" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="divide" library="core" uid="65525192" kind="5">
+					<sources>
+						<datapoint pos="0" key="150722688"/>
+						<datapoint pos="1" key="150723056"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="79146040"/>
+					</targets>
+					<view ltx="529" lty="451" rbx="34" rby="12"/>
+				</component>
+				<component name="multiply" library="core" uid="65527272" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="150509544"/>
+						<datapoint pos="1" key="150509968"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="79291680"/>
+					</targets>
+					<view ltx="438" lty="389" rbx="-15" rby="-21"/>
+				</component>
+				<component name="document" library="xml" uid="121404576" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="676" lty="16" rbx="910" rby="521"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Order" expanded="1" inpkey="145348064">
+								<entry name="0:Header" expanded="1">
+									<entry name="0:Number" inpkey="145154608"/>
+									<entry name="0:Received" inpkey="145865944"/>
+								</entry>
+								<entry name="0:Customer" expanded="1">
+									<entry name="0:Number" inpkey="145866864"/>
+									<entry name="0:ContactName" inpkey="145866416"/>
+									<entry name="0:Salutation" inpkey="145875176"/>
+									<entry name="0:CompanyName" inpkey="145867336"/>
+									<entry name="0:Address" expanded="1">
+										<entry name="0:Street" inpkey="145868216"/>
+										<entry name="0:City" inpkey="145370808"/>
+										<entry name="0:ZIP" inpkey="145153776"/>
+										<entry name="0:State" inpkey="145158904"/>
+									</entry>
+								</entry>
+								<entry name="0:LineItems" expanded="1">
+									<entry name="0:LineItem" expanded="1" inpkey="145867776">
+										<entry name="0:Article" expanded="1">
+											<entry name="0:Number" inpkey="145159272"/>
+											<entry name="0:Name" inpkey="144790576"/>
+											<entry name="0:SinglePrice" inpkey="145395096"/>
+											<entry name="0:Amount" inpkey="145333120"/>
+											<entry name="0:Price" inpkey="145349304"/>
+											<entry name="0:Tax" inpkey="145360784"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Order-EDI.xsd" instanceroot="{}Order"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="65315208" kind="16">
+					<properties/>
+					<view rbx="277" rby="618"/>
+					<data>
+						<root scrollposition="743">
+							<header/>
+							<entry name="Envelope" expanded="1">
+								<entry name="Interchange" expanded="1" outkey="168978008">
+									<entry name="ISA" expanded="1"/>
+									<entry name="Group" expanded="1">
+										<entry name="Message" expanded="1">
+											<entry name="BEG">
+												<entry name="F324" outkey="168978232"/>
+											</entry>
+											<entry name="LoopAMT">
+												<entry name="AMT" expanded="1"/>
+											</entry>
+											<entry name="LoopN1" expanded="1">
+												<entry name="N1" expanded="1">
+													<entry name="F93" outkey="168978456"/>
+													<entry name="F67" outkey="168978824"/>
+												</entry>
+												<entry name="N2" expanded="1">
+													<entry name="F93" outkey="168979264"/>
+													<entry name="X1000" outkey="145744288"/>
+												</entry>
+												<entry name="N3" expanded="1">
+													<entry name="F166" outkey="169417072"/>
+												</entry>
+												<entry name="N4" expanded="1">
+													<entry name="F19" outkey="169417440"/>
+													<entry name="F156" outkey="169417952"/>
+													<entry name="F116" outkey="169418392"/>
+												</entry>
+											</entry>
+											<entry name="LoopPO1">
+												<entry name="PO1" expanded="1" outkey="169418760">
+													<entry name="F380" outkey="169419272"/>
+													<entry name="F212" outkey="169419712"/>
+													<entry name="F234_01" outkey="169420152"/>
+												</entry>
+												<entry name="LoopPID">
+													<entry name="PID" expanded="1">
+														<entry name="F352" outkey="169420592"/>
+													</entry>
+												</entry>
+												<entry name="TXI">
+													<entry name="F954" outkey="169421032"/>
+												</entry>
+												<entry name="LoopN1">
+													<entry name="N1" expanded="1"/>
+													<entry name="N2" expanded="1"/>
+													<entry name="N3" expanded="1"/>
+												</entry>
+												<entry name="LoopAMT">
+													<entry name="AMT" expanded="1">
+														<entry name="F782" outkey="169421472"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="edi" kind="EDIX12" inputinstance="Orders-Custom.X12" encoding="1000" byteorder="0" config="X12.Nanonull\850.Config">
+							<settings unpackedformat="false" autocompletedata="true" terminatewithlinefeed="true" subelementseparator="!" interchangecontrolversionnumber="05012" requestacknowledgement="true">
+								<separators dataelement="+" component=":" segment="&apos;" decimal="." escape="?" repetition="!"/>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="145416024"/>
+					<edge edgekey="145449856"/>
+					<edge edgekey="145883920"/>
+					<edge edgekey="145884168"/>
+					<edge edgekey="145884416"/>
+					<edge edgekey="145884664"/>
+					<edge edgekey="145884912"/>
+					<edge edgekey="145885160"/>
+					<edge edgekey="145885408"/>
+					<edge edgekey="145885656"/>
+					<edge edgekey="146110088"/>
+					<edge edgekey="168975744"/>
+					<edge edgekey="168977568"/>
+					<edge edgekey="169023896"/>
+					<edge edgekey="169236864"/>
+					<edge edgekey="169237792"/>
+					<edge edgekey="169239152"/>
+					<edge edgekey="169239704"/>
+					<edge edgekey="169242352"/>
+					<edge edgekey="169242600"/>
+					<edge edgekey="169364128"/>
+					<edge edgekey="169375952"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="79146040">
+						<edges>
+							<edge vertexkey="145360784" edgekey="169242600"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="79291680">
+						<edges>
+							<edge vertexkey="150722688" edgekey="169242352"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="145744288">
+						<edges>
+							<edge vertexkey="145875176" edgekey="146110088"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="153442856">
+						<edges>
+							<edge vertexkey="145865944" edgekey="168975744"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168772504">
+						<edges>
+							<edge vertexkey="150723056" edgekey="145883920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168978008">
+						<edges>
+							<edge vertexkey="145348064" edgekey="169375952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168978232">
+						<edges>
+							<edge vertexkey="145154608" edgekey="169239704"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168978456">
+						<edges>
+							<edge vertexkey="145867336" edgekey="145884912"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168978824">
+						<edges>
+							<edge vertexkey="145866864" edgekey="145449856"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168979264">
+						<edges>
+							<edge vertexkey="145866416" edgekey="145885408"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169417072">
+						<edges>
+							<edge vertexkey="145868216" edgekey="145885160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169417440">
+						<edges>
+							<edge vertexkey="145370808" edgekey="145885656"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169417952">
+						<edges>
+							<edge vertexkey="145158904" edgekey="169364128"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169418392">
+						<edges>
+							<edge vertexkey="145153776" edgekey="168977568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169418760">
+						<edges>
+							<edge vertexkey="145867776" edgekey="169236864"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169419272">
+						<edges>
+							<edge vertexkey="145333120" edgekey="145416024"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169419712">
+						<edges>
+							<edge vertexkey="145349304" edgekey="169023896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169420152">
+						<edges>
+							<edge vertexkey="145159272" edgekey="169237792"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169420592">
+						<edges>
+							<edge vertexkey="144790576" edgekey="169239152"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169421032">
+						<edges>
+							<edge vertexkey="150509544" edgekey="145884168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169421472">
+						<edges>
+							<edge vertexkey="150509968" edgekey="145884664"/>
+							<edge vertexkey="145395096" edgekey="145884416"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

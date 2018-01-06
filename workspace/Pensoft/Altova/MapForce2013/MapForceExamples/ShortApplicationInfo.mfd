@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap2" blackbox="0" uid="70504912" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="80935560" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="260" rby="255"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Page" expanded="1">
+										<entry name="Item" outkey="13" expanded="1">
+											<entry name="Title" outkey="10"/>
+											<entry name="MainSection" expanded="1">
+												<entry name="SubSection" outkey="1" expanded="1">
+													<entry name="#text" outkey="16"/>
+													<entry name="Trademark" outkey="4"/>
+													<entry name="Keyword" outkey="7"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SectionedPage.xsd" inputinstance="ApplicationsPage.xml" outputinstance="ApplicationsPage.xml" instanceroot="{}Page"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="70236680" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="395" lty="46" rbx="543" rby="191"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ShortInfo" expanded="1">
+										<entry name="Info" inpkey="14" expanded="1">
+											<entry name="Title" inpkey="11"/>
+											<entry name="Description" inpkey="2" expanded="1">
+												<entry name="#text" inpkey="17"/>
+												<entry name="Bold" inpkey="5"/>
+												<entry name="Italic" inpkey="8"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ShortInfo.xsd" instanceroot="{}ShortInfo" sps="ShortInfo.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="3">
+						<data>
+							<dataconnection type="1" copy_text="1"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

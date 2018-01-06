@@ -1,0 +1,774 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4189</article-id>
+            <title-group>
+                <article-title>Morphological differences among egg nests and adult individuals of 
+                    <bold-italic>Cicadatra persica</bold-italic> (Hemiptera, Cicadidae), distributed in Erneh, Syria
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Dardar</surname>
+                        <given-names>Marah A.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Belal</surname>
+                        <given-names>Hamzeh MR.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>General Commission for Scientific Agricultural research, Administration of Plant Protection Research, Dep. Insects Research, Alkoatly street, Douma, Damascus, Syria
+            </aff>
+            <aff id="A2">
+                <label>2</label>University of Damascus, Faculty of Agriculture, Dep. Plant Protection, Damascus, Syria
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Marah A. Dardar (<email xlink:type="simple">marah.dardar@hotmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>25</day>
+                    <month>10</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>4</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Marah A. Dardar, Hamzeh MR. Belal</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The aim of this study is determining the different patterns of egg nests and the morphological differences between the specimens of <italic>Cicadatra persica</italic> Kirkalidy, 1909 (Hemiptera: Cicadidae) distributed in fruit orchards in Erneh located on AL-Sheikh mountain south west of Syria. The appearance of 80 egg nests was studied, and the results showed that there were two basic patterns of egg nests laid by <italic>C. persica</italic>, 90% of the egg nests were of the first pattern (consists of several adjacent slits), while 10% of them were of the second pattern (consists of several divergent slits). A random sample consisting of 300 specimens (150 males and 150 females) were also studied concentrating on the differences in the color of the supra-antennal plate and in the number of spurs on the tibia of the hind legs. The results showed that there were two basic patterns of individuals based on the differences in the color of supra-antennal plate. The first pattern (individuals with yellow supra-antennal plates), constituted more than 90%, and the second one (individuals with black supra-antennal plates) constituted less than 10%. The results also showed that there were 27 different patterns based on the number of spurs on the tibia of the hind legs. One of them was a common pattern (2, 3) whose individuals have 2 spurs on the upper side of the tibia of the hind legs and 3 spurs on the lateral side of the tibia of the hind legs. The total percent of this common pattern was 76%. The other 26 patterns were different from each other, and the total percent of all these different patterns was 24%.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Cicadidae</kwd>
+                <kwd>individuals</kwd>
+                <kwd>pattern</kwd>
+                <kwd>orchards</kwd>
+                <kwd>Erneh
+<!--PageBreak--></kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Cicadas are large insects obvious in their environment because of their mating calls. However, they receive relatively little attention because they are often difficult to catch and there are few individuals who can identify insects of the group (Sanborn 2008). Morphological studies on cicadas were restricted to identify some species. There are few studies which were conducted to distinguish between some closely species. For example, morphological and occurrence studies of species of the genus <italic>Fidicinoides</italic> have been carried out by Boulard and Martinelli (1996), Sanborn (2008), Sanborn et al.(2008), Santos and Martinelli (2007, 2009a, 2009b) and Santos et al. (2010). Some species of Brazilian <italic>Fidicinoides</italic> were also characterized morphologically, presenting illustrations of the head, thorax, abdomen, right forewing and male sternite VIII of the species of Brazilian <italic>Fidicinoides</italic> (Santos and Martinelli 2011).
+            </p>
+            <p>In practice it is usually not always possible to have live specimens and thus difficulties may arise in the identification of cicadas. In many instances, like in the genus <italic>Cicada</italic> Linnaeus, it is difficult to separate species only on the basis of their morphology. Five species of the genus<italic> Cicada</italic> were analyzed to use a set of measurements of the external morphology and male genitalia to identify and quantify subtle differences among the five species (Simões and Quartau 2009). Another study was conducted to test the discrimination capabilities of numerical techniques commonly used for classificatory purposes, as well as to discover the most effective characters to distinguish between <italic>Cicada orni </italic>and<italic> C. barbara</italic> which are very similar and sometimes difficult to distinguish using external keys (Quartau 1988).
+            </p>
+            <p>For the species<italic> Cicadatra persica</italic>, morphological studies have been restricted to describe the morphological characters of the species like in the research of Mozaffarian and Sanborn (2009). There is also another morphological study on<italic> Cicadatra persica</italic> in which the morphology of genital organs and maximum oviposition of capacity of female was determined in Turkey (Kartal and Zeybekoğlu 1999). <italic>Cicadatra persica</italic> was recorded for the first time in Syria in summer 2011 (Dardar et al. 2012). Little is known about the morphological patterns of <italic>C. persica</italic>. This study was undertaken with two main objectives in mind. The first was to distinguish between two basic patterns of egg nests laid by <italic>C. persica</italic> during summer 2011. The second objective is to distinguish among the patterns of <italic>C. persica</italic> based on the color of the supra-antennal plate and the number of spurs located on the tibia of the hind legs as well as the patterns of egg nests.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <sec>
+                <title><bold>Egg nests
+</bold>
+                </title>
+                <p>80 egg nests were collected from three different apple fruit orchards in the village Erneh. The samples were collected on 9<sup>th</sup>, 11<sup>th</sup>, and 17<sup>th</sup> of July. 50 twigs hold one egg nest were cut from each orchard by using a paring scissor. The collected twigs (150) were mixed well <!--PageBreak-->together, then 80 twigs were chosen randomly from them one after one, then they were left in the room temperature to be dried and to prevent them from decomposition caused by humidity. The external structure of the chosen egg nests were studied in the laboratory.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Adult individuals
+</bold>
+                </title>
+                <p>300 adults (150 males + 150 females) were collected from several fruit orchards in the village Erneh on 27<sup>th</sup> of June, 2011. Then they were put in a plastic container and kept in the refrigerator under 4°- 6°C. The color of the supra-antennal plate and the number of spurs on the tibia of the hind legs of the collected adults were studied in the laboratory by using a Binocular microscope.
+                </p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <sec>
+                <title><bold>Egg nests
+</bold>
+                </title>
+                <p>It was observed that the female of <italic>Cicadatra persica</italic> lay two basic patterns of egg nests. The first pattern of egg nest consists of several adjacent slits (Fig. 1), while the second pattern of egg nest consists of several divergent slits (Fig. 2). 72 egg nests were from the first pattern which constituted 90% (Fig. 1) and 8 egg nests were from the second pattern which constituted 10% (Fig. 2).
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Adult individuals
+</bold>
+                </title>
+                <p>The results showed that there were two basic patterns of specimens according to the color of the supra-antennal plate (Table 1). The first pattern involved Individuals with <!--PageBreak--><!--PageBreak-->yellow supra-antennal plates (Fig. 3), and the second pattern involved Individuals with black supra-antennal plates (Fig. 4).
+</p>
+                <p>The results also showed that there were several patterns of individuals according to the number of spurs on the lateral and upper sides of the hind legs. The total number of patterns was 27. There were 26 patterns which was different from each other. The percent of those different patterns in individuals with yellow supra-antennal plates was 22%, and 2% in individuals with black supra-antennal plates, and the total percent was 24%. The most common pattern was (2, 3) whose individuals have 2 spurs on the upper side of the tibia of the hind legs and 3 spurs on the lateral side (Fig. 5). The per<!--PageBreak-->cent of that common pattern was 72.33% in individuals with yellow supra-antennal plates, and 3.67% in individuals with black supra-antennal plates, and the total percent was 76% (Table 2, 3). The hind leg of <italic>Cicadatra persica</italic> had 14 different patterns (Figs 5–18) based on the number of spurs on its tibia, and they were:
+                </p>
+                <p>(2, 3), (2, 4), (2, 5), (3, 5), (3, 3), (3, 4), (1, 3), (2, 2), (1, 1), (1, 2), (0, 1), (2, 6), (1, 6), (4, 4).
+</p>
+                <!--PageBreak-->
+                <!--PageBreak-->
+                <!--PageBreak-->
+                <!--PageBreak-->
+                <!--PageBreak-->
+                <!--PageBreak-->
+                <!--PageBreak-->
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <sec>
+                <title><bold>Egg nests and adults
+</bold>
+                </title>
+                <p>The results showed that there could be a relation between the two basic patterns of egg nests made by females of <italic>C. persica</italic> and the two basic patterns of individuals based on the color of supra-antennal plate. The first pattern of egg nests which formed 90% could be laid by the first pattern of females with yellow supra- antennal plates which formed more than 90% of total individuals. The second pattern of egg nests which formed 10% could be laid by the second pattern of females with black supra- antennal plates which formed less than 10% of total individuals. But this supposition needs to be proved by separating the individuals of each pattern and monitoring the egg nests laid by each of them. This result also refer to that could be two basic strains of <italic>C. persica</italic> the first one with a yellow supra- antennal plate, and the second with a black supra-antennal plate, and this supposition also need to be proved by doing some microbiological studies on the DNA of this species.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Adults and host plants
+</bold>
+                </title>
+                <p>The results showed that there was a common pattern (2, 3) of individuals based on the number of spurs on the tibia of the hind legs whose individuals have 2 spurs on the upper side of the tibia and 3 spurs on the lateral side of the tibia. The total percent of that pattern was 76% and this percent correspond with the percent of apple fruit <!--PageBreak-->orchards in Erneh which is about 75%. The total percent of other patterns was 24% and this corresponds with the percent of other different fruit orchards in Erneh which is about 25%. The morphological differences among the individuals of <italic>C. persica</italic> in the number of spurs on the tibia of the hind legs may be related to the host plant which the individual feed on its sap during the juvenile stage underground.
+                </p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Conclusion
+</bold>
+            </title>
+            <p>This research showed that there are different patterns of egg nests and morphological differences of <italic>Cicadatra persica</italic>, distributed in fruit orchards in Erneh. The result lead to do further investigations on the morphological differences and studying other morphological characters of this species and also to study the DNA of those different patterns of <italic>C. persica</italic> to prove if these differences in the morphological characters related to the genetic differences or other ecological factors.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgments
+</bold>
+            </title>
+            <p>General commission for Scientific Agricultural Research supported this research. We thank the Biological Control Studies and Research Center which is dependent to the Faculty of Agriculture, University of Damascus, Syria. We also thank the farmer Ismael Masoud in village Erneh for helping us in collecting individuals of <italic>Cicadatra persica</italic> from fruit orchards of Erneh.
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Boulard</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Martinelli</surname> <given-names>NM</given-names></name></person-group> (<year>1996</year>)<article-title> Révision des fidicinini; nouveau statut de la tribu, spèces connues et nouvelles spèces (Cicadomorpha, Cicadidae, Cicadinae). EPHE.</article-title> <source>Biologie et Evolution des Insectes </source> <volume>9</volume>: <fpage>11</fpage>-<lpage>81</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dardar</surname> <given-names>MA</given-names></name>,<name name-style="western"><surname>Belal</surname> <given-names>HMR</given-names></name>,<name name-style="western"><surname>Basheer</surname> <given-names>AM</given-names></name></person-group> (<year>2012</year>)<fake_tag> Occurance of <italic>Cicadatra persica</italic> on apple trees <italic>Malus domestica</italic> in Erneh, Syria. Journal of Insect Science. </fake_tag>[In Press].
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kartal</surname> <given-names>V</given-names></name>,<name name-style="western"><surname>Zeybekoğlu</surname> <given-names>Ü</given-names></name></person-group> (<year>1999</year>)<article-title> An Investigation on the morphology of genital organs and oviposition capacity of <italic>Cicadatra persica</italic> Kirkaldy, 1909 (Cicadidae: Homoptera).</article-title> <source>Turkish Journal of Zoology </source> <volume>23</volume> (<issue>1</issue>): <fpage>59</fpage>-<lpage>62</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mozaffarian</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Sanborn</surname> <given-names>AF</given-names></name></person-group> (<year>2010</year>)<article-title> The cicadas of Iran with the description of two new species (Hemiptera, Cicadidae).</article-title> <source>Deutsche Entomologische Zeitschrift </source> <volume>57</volume> (<issue>1</issue>): <fpage>69</fpage>-<lpage>84</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Quartau</surname> <given-names>JA</given-names></name></person-group> (<year>1988</year>)<article-title> A numerical taxonomic analysis of inter specific morphological differences in two closely related species of <italic>Cicada</italic> (Homoptera: Cicadidae) in Portugal.</article-title> <source>Great Basin Naturalist Memoirs </source> <volume>12</volume>: <fpage>171</fpage>-<lpage>181</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sanborn</surname> <given-names>AF</given-names></name></person-group> (<year>2008</year>)<article-title> New records of Brazilian cicadas including the description of a new species (Hemiptera: Cicadoidea, Cicadidae).</article-title> <source>Neotropical Entomology </source> <volume>37</volume> (<issue>6</issue>): <fpage>685</fpage>-<lpage>690</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Sanborn</surname> <given-names>AF</given-names></name>,<name name-style="western"><surname>Moore</surname> <given-names>TE</given-names></name>,<name name-style="western"><surname>Young</surname> <given-names>AM</given-names></name></person-group> (<year>2008</year>)<fake_tag> Two new cicada species from Costa Rica (Hemiptera: Cicadomorpha: Cicadidae) with a key to the species of <italic>Fidicinoides</italic> in Costa Rica: Zootaxa 1846: 1–20. </fake_tag>doi: 10.1590/S1519-566X2008000600010
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santos</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Martinelli</surname> <given-names>NM</given-names></name></person-group> (<year>2007</year>)<fake_tag> Ocorrência de <italic>Fidicinoides pauliensis</italic> Boulard &amp; Martinelli, 1996 (Hemiptera: Cicadidae) em cafeeiro em Tapiratiba, SP. Revista de Agricultura 82: 311–314.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santos</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Martinelli</surname> <given-names>NM</given-names></name></person-group> (<year>2009a</year>)<article-title> Primeiro registro de <italic>Fidicinoides picea</italic> (Walker, 1850) e <italic>Fidicinoides poulaini</italic> Boulard and Martinelli. 1996 no Brazil.</article-title> <source>Ciência Rural </source> <volume>39</volume>: <fpage>559</fpage>-<lpage>562</lpage>. doi: 10.1590/S0103-84782008005000086
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santos</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Martinelli</surname> <given-names>NM</given-names></name></person-group> (<year>2009b</year>)<article-title> Descrição de novas espécies de <italic>Fidicinoides </italic>Boulard &amp; Martinelli, 1996 (Hemiptera: Cicadidae) de ocorrência no Brazil.</article-title> <source>Neotropical Entomology </source> <volume>38</volume>: <fpage>638</fpage>-<lpage>642</lpage>. doi: 10.1590/S1519-566X2009000500012
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santos</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Martinelli</surname> <given-names>NM</given-names></name>,<name name-style="western"><surname>Maccagnan</surname> <given-names>DHB</given-names></name>,<name name-style="western"><surname>Sanborn</surname> <given-names>AF</given-names></name>,<name name-style="western"><surname>Ribeiro</surname> <given-names>R</given-names></name></person-group> (<year>2010</year>)<article-title> Description of new cicada species associated with the coffee plant and identification key for the species of <italic>Fidicinoides</italic> (Hemiptera: Cicadidae) from Brazil.</article-title> <source>Zootaxa </source> <volume>2602</volume>: <fpage>48</fpage>-<lpage>56</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santos</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Martinelli</surname> <given-names>NM</given-names></name></person-group> (<year>2011</year>)<article-title> Morphological characterization of five Brazilian species of <italic>Fidicinoides</italic> (Hemiptera: Cicadidae).</article-title> <source>Revista Colombia de Entomologia </source> <volume>37</volume> (<issue>1</issue>): <fpage>341</fpage>-<lpage>345</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Simões</surname> <given-names>PC</given-names></name>,<name name-style="western"><surname>Quartau</surname> <given-names>JA</given-names></name></person-group> (<year>2009</year>)<article-title> Patterns of morphometric variation among species of the genus <italic>Cicada</italic> (Hemiptera: Cicadidae) in the Mediterranean area.</article-title> <source>European Journal of Entomology </source> <volume>106</volume>: <fpage>393</fpage>-<lpage>403</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> The first pattern of egg nests of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> The distribution of two basic patterns of individuals of <italic>C. Persica</italic>.&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="1" bodyRowCount="8" columnCount="4" aid:table="table" aid:trows="9" aid:tcols="4">
+                <tbody>
+                    <tr>
+                        <th rowspan="1" colspan="2"><bold>Gender</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>No. of yellow supra-antennal plate individuals</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>No. of black supra-antennal plate individuals</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" colspan="1">Males</td>
+                        <td rowspan="1" colspan="1">Number</td>
+                        <td rowspan="1" colspan="1">138</td>
+                        <td rowspan="1" colspan="1">12</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Percent of total males</td>
+                        <td rowspan="1" colspan="1">92%</td>
+                        <td rowspan="1" colspan="1">8%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Percent of total individuals</td>
+                        <td rowspan="1" colspan="1">46%</td>
+                        <td rowspan="1" colspan="1">4%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" colspan="1">Females</td>
+                        <td rowspan="1" colspan="1">Number</td>
+                        <td rowspan="1" colspan="1">145</td>
+                        <td rowspan="1" colspan="1">5</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Percent of total females</td>
+                        <td rowspan="1" colspan="1">96.67%</td>
+                        <td rowspan="1" colspan="1">3.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Percent of total individuals</td>
+                        <td rowspan="1" colspan="1">48.33%</td>
+                        <td rowspan="1" colspan="1">1.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1">Males and females</td>
+                        <td rowspan="1" colspan="1">Total number</td>
+                        <td rowspan="1" colspan="1">283</td>
+                        <td rowspan="1" colspan="1">17</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Total percent</td>
+                        <td rowspan="1" colspan="1">94.33%</td>
+                        <td rowspan="1" colspan="1">5.67%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> The second pattern of egg nests<italic> Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> Pattern with yellow supra-antennal plate</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> Pattern with black supra-antennal plate</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figure 5.</label>
+            <caption><p> The common pattern (2, 3) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 2.</bold>
+            </label>
+            <caption><p> Number of yellow supra-antennal plate individuals of <italic>C. persica</italic> based on the number of spurs on the tibia of the hind legs.&lt;br/&gt; </p>
+            </caption>
+            <table id="T2" headerRowCount="2" bodyRowCount="28" columnCount="7" aid:table="table" aid:trows="30" aid:tcols="7">
+                <tbody>
+                    <tr>
+                        <th rowspan="2" colspan="1"><bold>Number of Patterns</bold>
+                        </th>
+                        <th rowspan="1" colspan="2"><bold>*Number of spurs on the tibia of the hind legs</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Number of males</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Number of females</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Total number</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Total percent</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Left leg</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Right leg</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">103</td>
+                        <td rowspan="1" colspan="1">114</td>
+                        <td rowspan="1" colspan="1">217</td>
+                        <td rowspan="1" colspan="1">72.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">5</td>
+                        <td rowspan="1" colspan="1">1.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">7</td>
+                        <td rowspan="1" colspan="1">4</td>
+                        <td rowspan="1" colspan="1">11</td>
+                        <td rowspan="1" colspan="1">3.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">4</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">5</td>
+                        <td rowspan="1" colspan="1">1.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">5</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">6</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(3, 3)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">6</td>
+                        <td rowspan="1" colspan="1">8</td>
+                        <td rowspan="1" colspan="1">2.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">7</td>
+                        <td rowspan="1" colspan="1">(3, 3)</td>
+                        <td rowspan="1" colspan="1">(3, 4)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">8</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(1, 3)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">4</td>
+                        <td rowspan="1" colspan="1">1.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">9</td>
+                        <td rowspan="1" colspan="1">(1, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">10</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">11</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 2)</td>
+                        <td rowspan="1" colspan="1">5</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">7</td>
+                        <td rowspan="1" colspan="1">2.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">12</td>
+                        <td rowspan="1" colspan="1">(3, 3)</td>
+                        <td rowspan="1" colspan="1">(3, 3)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">13</td>
+                        <td rowspan="1" colspan="1">(3, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">1%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">14</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">15</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(1, 1)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0.7%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">16</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(3, 4)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">17</td>
+                        <td rowspan="1" colspan="1">(2, 6)</td>
+                        <td rowspan="1" colspan="1">(2, 6)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">18</td>
+                        <td rowspan="1" colspan="1">(3, 4)</td>
+                        <td rowspan="1" colspan="1">(0, 1)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">19</td>
+                        <td rowspan="1" colspan="1">(3, 4)</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">20</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">21</td>
+                        <td rowspan="1" colspan="1">(1, 6)</td>
+                        <td rowspan="1" colspan="1">(3, 5)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">22</td>
+                        <td rowspan="1" colspan="1">(4, 4)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">23</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">(4, 4)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">24</td>
+                        <td rowspan="1" colspan="1">(2, 6)</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">25</td>
+                        <td rowspan="1" colspan="1">(2, 5)</td>
+                        <td rowspan="1" colspan="1">(3, 4)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">26</td>
+                        <td rowspan="1" colspan="1">(2, 2)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">27</td>
+                        <td rowspan="1" colspan="1">(1, 2)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Total</td>
+                        <td rowspan="1" colspan="1">-</td>
+                        <td rowspan="1" colspan="1">-</td>
+                        <td rowspan="1" colspan="1">139</td>
+                        <td rowspan="1" colspan="1">145</td>
+                        <td rowspan="1" colspan="1">284</td>
+                        <td rowspan="1" colspan="1">94.33%</td>
+                    </tr>
+                </tbody>
+            </table>&lt;br/&gt; 
+            <table-wrap-foot>
+                <fn>
+                    <p>* :the first number refer to the number of the spurs on the upper side of tibia of the hind leg, and the second number refer to the number of the spurs on the lateral side of tibia of the hind leg.</p>
+                </fn>
+            </table-wrap-foot>
+        </table-wrap>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 3.</bold>
+            </label>
+            <caption><p> Number of black supra-antennal plate individuals of <italic>C. persica</italic> based on the number of spurs on the tibia of the hind legs.&lt;br/&gt; </p>
+            </caption>
+            <table id="T3" headerRowCount="2" bodyRowCount="5" columnCount="7" aid:table="table" aid:trows="7" aid:tcols="7">
+                <tbody>
+                    <tr>
+                        <th rowspan="2" colspan="1"><bold>Number of Patterns</bold>
+                        </th>
+                        <th rowspan="1" colspan="2"><bold>*Number of spurs on the tibia of the hind legs</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Number of males</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Number of females</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Total number</bold>
+                        </th>
+                        <th rowspan="2" colspan="1"><bold>Total percent</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Left leg</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Right leg</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">8</td>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">11</td>
+                        <td rowspan="1" colspan="1">3.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">0.67%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">(2, 4)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">1%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">13</td>
+                        <td rowspan="1" colspan="1">(3, 3)</td>
+                        <td rowspan="1" colspan="1">(2, 3)</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0</td>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">0.33%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Total</td>
+                        <td rowspan="1" colspan="1">-</td>
+                        <td rowspan="1" colspan="1">-</td>
+                        <td rowspan="1" colspan="1">12</td>
+                        <td rowspan="1" colspan="1">5</td>
+                        <td rowspan="1" colspan="1">17</td>
+                        <td rowspan="1" colspan="1">5.67%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F6" position="float" orientation="portrait">
+            <label>Figure 6.</label>
+            <caption><p> Pattern (2, 4) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F7" position="float" orientation="portrait">
+            <label>Figure 7.</label>
+            <caption><p> Pattern (2, 5) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g007.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F8" position="float" orientation="portrait">
+            <label>Figure 8.</label>
+            <caption><p> Pattern (3, 5) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g008.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F9" position="float" orientation="portrait">
+            <label>Figure 9.</label>
+            <caption><p> Pattern (3, 3) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g009.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F10" position="float" orientation="portrait">
+            <label>Figure 10.</label>
+            <caption><p> Pattern (3, 4) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g010.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F11" position="float" orientation="portrait">
+            <label>Figure 11.</label>
+            <caption><p> Pattern (1, 3) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g011.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F12" position="float" orientation="portrait">
+            <label>Figure 12.</label>
+            <caption><p> <bold>a, b</bold> Pattern (2, 2) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g012.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F13" position="float" orientation="portrait">
+            <label>Figure 13.</label>
+            <caption><p> Pattern (1, 1) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g013.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F14" position="float" orientation="portrait">
+            <label>Figure 14.</label>
+            <caption><p> Pattern (1, 2) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g014.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F15" position="float" orientation="portrait">
+            <label>Figure 15.</label>
+            <caption><p> Pattern (0, 1) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g015.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F16" position="float" orientation="portrait">
+            <label>Figure 16.</label>
+            <caption><p> Pattern (2, 6) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g016.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F17" position="float" orientation="portrait">
+            <label>Figure 17.</label>
+            <caption><p> Pattern (1, 6) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g017.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F18" position="float" orientation="portrait">
+            <label>Figure 18.</label>
+            <caption><p> Pattern (4, 4) of <italic>Cicadatra persica</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g018.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

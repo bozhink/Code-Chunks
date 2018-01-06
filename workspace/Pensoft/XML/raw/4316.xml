@@ -1,0 +1,2115 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.@@.4316</article-id>
+            <title-group>
+                <article-title>True bugs (Hemiptera, Heteroptera) as psyllid predators (Hemiptera, Psylloidea)
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Jerinić-Prodanović</surname>
+                        <given-names>Dušanka</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Protić</surname>
+                        <given-names>Ljiljana</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>University of Belgrade, Faculty of Agriculture, Nemanjina 6, 11080 Zemun, Serbia
+            </aff>
+            <aff id="A2">
+                <label>2</label>Natural History Museum, Njegoševa 51, 11000 Belgrade, Serbia
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Dušanka Jerinić-Prodanović (<email xlink:type="simple">dusanka@agrif.bg.ac.rs</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <issue>@@</issue>
+            <fpage>@</fpage>
+            <lpage>@</lpage>
+            <history>
+                <date date-type="received">
+                    <day>14</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>28</day>
+                    <month>5</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Dušanka Jerinić-Prodanović, Ljiljana Protić</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Data on natural enemies of psyllids are rare and can usually be found in papers about economically significant species. During investigation of psyllid fauna in Serbia, natural enemies were investigated, too. True bugs were the most numerous among them. From 28 psyllid species, 21 species of true bugs from families Anthocoridae and Miridae were reared. Seven species of Anthocoridae were identified: <italic>Anthocoris amplicollis </italic>(Horváth, 1839),<italic> A. confusus </italic>Reuter, 1884, <italic>A. nemoralis </italic>(Fabricius, 1794), <italic>A. nemorum </italic>(Linnaeus, 1761), <italic>Orius majusculus</italic> Reuter, 1884, <italic>O. minutus</italic> (Linnaeus, 1758) and<italic> O. niger</italic> Wolff, 1811. The following 14 species of Miridae were identified: <italic>Atractotomus mali </italic>Meyer-Dür, 1843, <italic>Campylomma verbasci </italic>(Meyer-Dür, 1843), <italic>Deraeocoris</italic> <italic>flavilinea </italic>(A. Costa, 1862), <italic>D. ruber </italic>(Linnaeus, 1758), <italic>D. lutescens </italic>(Schilling, 1836),<italic> Heterocordylus genistae </italic>(Scopoli, 1763), <italic>Hypseloecus visci</italic> (Puton, 1888), <italic>Malacocoris chlorizans</italic> Panzer, 1794, <italic>Miris striatus </italic>(Linnaeus, 1758), <italic>Orthotylus marginalis</italic> Reuter, 1884, <italic>Psallus</italic> <italic>assimilis</italic> Stichel, 1956, <italic>Ps. quercus </italic>Kirschbaum, 1856, <italic>Ps. flavellus </italic>Stichel, 1933 and<italic> Pseudoloxops coccinea</italic> (Meyer-Dür, 1843). The aim of the research was to provide list of true bugs recorded as predators of psyllids in order to preserve their diversity and significance, especially on cultivated plants.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Psylloidea</kwd>
+                <kwd>Heteroptera</kwd>
+                <kwd>predators</kwd>
+                <kwd>natural enemies</kwd>
+                <kwd>Serbia
+<!--PageBreak--></kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Predators of psyllids (Psylloidea) have been poorly known. So far, detailed researches were carried out only on the predators of economically significant species, such as pear psyllids <italic>Cacopsylla pyri</italic> (Linnaeus, 1758), <italic>C. pyricola</italic> (Foerster, 1848) and <italic>C. pyrisuga </italic>(Foerster, 1848); apple psyllid <italic>C. mali</italic> (Schmidberger, 1836) and eucalyptus psyllids from the subfamily Spondyliaspidinae (Jonsson 1983, Herard 1985, 1986, Santas 1987, Erler 2004, Horton et al. 2004, Sigsgaard et al. 2006<italic>,</italic> Jauset et al. 2006, Luiz de Queiroz et al. 2012). There are too few data on predators of other psyllid species. Hodkinson and Flint (1971) investigated predators of ash psyllid, <italic>Psyllopsis fraxini </italic>(Linnaeus, 1758), in England, and Harizanova et al. (2012), predatory complex of <italic>Acizzia jamatonica </italic>(Kuwayama, 1908) in Bulgaria. In these papers, the most represented are psyllid predators from the order Hemiptera (suborder Heteroptera) followed by Coleoptera, Neuroptera, Diptera, Dermaptera and Acari. Within the Heteroptera, the most numerous in species families are Anthocoridae, Miridae and Nabidae. A polyphagous species, <italic>Anthocoris nemoralis</italic> (Fabricius, 1794), was most frequently found, with a preference for the species from superfamily Psylloidea (Jonsson 1983, Herard 1986). <italic>Anthocoris nemoralis</italic> (Anthocoridae) was introduced from Europe to North America (British Columbia) in 1963 in order to control <italic>C. pyricola</italic>, where its establishment was successful. Besides giving satisfactory effects, this species also spread in the new environment suppressing autochthonous species <italic>Anthocoris antevolens</italic> White, 1879 and <italic>A. melanocerus</italic> Reuter, 1884, which are most common anthocorid predators in orchards (Herard 1986, Horton et al. 2004).
+            </p>
+            <p>Data on psyllid predators in Serbia relate only to the predators of pear psyllids (Pavićević 1977, Grbić et al. 1989, Jerinić-Prodanović et al. 2010).
+</p>
+            <p>Pavićević (1977) found a large number of predatory species, among which two Anthocoridae. Grbić et al. (1989) recorded four species of Heteroptera: <italic>Anthocoris nemoralis</italic> and <italic>Orius</italic> sp. (both Anthocoridae), <italic>Pilophorus clavatus</italic> (Linnaeus, 1767) (Miridae) and <italic>Nabis pseudoferus </italic>Remane, 1949 (Nabidae), while Jerinić-Prodanović et al. (2010) reported seven species: <italic>Anthocoris nemoralis </italic>(Fabricius, 1794), <italic>A. nemorum</italic> (Linnaeus, 1761), <italic>Orius </italic>(<italic>Heterorius</italic>)<italic> minutus </italic>(Linnaeus, 1758) and<italic> Orius</italic> (<italic>Orius</italic>)<italic> niger </italic>Wolff, 1811 from the family Anthocoridae and <italic>Campylomma verbasci </italic>(Meyer-Dür, 1843), <italic>Deraeocoris </italic>(<italic>Deraeocoris</italic>)<italic> ruber </italic>(Linnaeus, 1758) and<italic> Deraeocoris </italic>(<italic>Knightocapsus</italic>)<italic> lutescens</italic> (Schilling, 1836) from the family Miridae.
+            </p>
+            <p>There is no data on other predatory psyllid species in Serbia.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Methods
+</bold>
+            </title>
+            <p>Insect material was collected from 419 localities within the whole territory of the Republic of Serbia. Investigations were carried out in the period from 2005 to 2010, in field conditions and in the laboratory of the Faculty of Agriculture in Zemun, University of Belgrade. Locality mapping was carried out in World UTM (Universal Trans<!--PageBreak-->verse Mercator) cartographic projection. Determination of coordinates of investigated localities in the field was carried out using GPS devices Geoexplorer 3 (Trimble) and E-trex Vista Hcx (Garmin), with an accuracy of 3 to 5 meters.
+</p>
+            <p>Adults of predatory true bugs were collected from psyllid colonies by an aspirator and their larvae were collected together with plant material and psyllids and further reared to adults in laboratory conditions in Petri dishes.
+</p>
+            <p>The species identification of Heteroptera was based on Wagner (1970–1971, 1975), Péricart (1972) and Kerzhner and Josifov (1999).
+</p>
+            <p>A part of the material is deposited in the first author’s collection in the Faculty of Agriculture, University of Belgrade, and another part, in the second author’s collection in Natural History Museum, Belgrade.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results and discussion
+</bold>
+            </title>
+            <p>We collected and reared 21 true bug species predating on 28 psyllid species (Table 1) from 44 localities (Figure 1 and Table 2). The identified true bugs belong to families Anthocoridae and Miridae.
+</p>
+            <sec>
+                <title><bold>Anthocoridae
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>1) </bold>
+                            <bold-italic>Anthocoris amplicollis </bold-italic>
+                            <bold>(Horváth, 1839)</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey.</bold>
+                        </title>
+                        <p> <bold-italic>Psylla buxi</bold-italic><bold> (Linnaeus, 1758)</bold>, from <italic>Buxus sempervirens</italic>, Nova Galenika, 13.VI.2009, reared 3♂♂, 2♀♀.
+                        </p>
+                        <p><italic>A. amplicollis</italic> was already reported in Serbia (Protić and Stojanović 2003) but the above mentioned record is the first one in Serbia as a psyllid predator. In Switzerland, it was registered by Wyniger and Burckhardt (2003) in galls of <italic>Psyllopsis fraxini. </italic>According to available literature data, <italic>A. amplicollis</italic> has not been published as a predator of <italic>P. buxi</italic>.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>2) </bold>
+                            <bold-italic>Anthocoris confusus</bold-italic>
+                            <bold> Reuter, 1884
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Palaearctic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey. </bold>
+                        </title>
+                        <p><bold-italic>Psylla buxi</bold-italic>, from <italic>Buxus</italic> <italic>semprevirens</italic>, Sokobanja, 25.IX.2009, reared 1♀.
+                        </p>
+                        <p>Registered as a psyllid predator on conifers (Wyniger and Burckhardt 2003) and aphids (Herard 1986). In the present paper, reported for the first time as a psyllid predator in Serbia.
+</p>
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>3) </bold>
+                            <bold-italic>Anthocoris nemoralis </bold-italic>
+                            <bold>(Fabricius, 1794)</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Euro-Mediterranean.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla bidens </bold-italic><bold>(Šulc, 1907)</bold>, from<italic> Pyrus communis</italic>, Beograd–Karaburma, 19.V.2006, reared 2♀♀ ‘ex larva'25.V.2006. <bold-italic>Cacopsylla pyri</bold-italic>, from<italic> Pyrus communis</italic>, Nemenikuće, 15.VI.2006, reared 1♂ ‘ex larva'22.VI.2006; Radmilovac, 2.IX.2005, reared 1♂; 12.VI.2006, reared 1♂ ‘ex larva'25.VI.2006; 26.X.2006, collected 1♂; 7.VI.2007, reared 1♂, 1♀ ‘ex larva'11.VI.2007, 20.VI.2007, collected 1 larva and 1♂; 26.X.2008, reared 1♂ ‘ex larva'3.XI.2008. <bold-italic>Cacopsylla pyrisuga</bold-italic>, from <italic>Pyrus communis</italic>, Zemunski kej, 28.V.2007, collected 1♀. <bold-italic>Cacopsylla visci </bold-italic><bold>(Curtis, 1835)</bold>, from <italic>Viscum album</italic>, Beograd–Bulevar Aleksandra Karađorđevića, 25.III.2007, reared 2♂♂, 1♀ ‘ex larva'12.IV.2007; 23.IV.2007, reared 2♂♂, 5♀♀ <!--PageBreak-->‘ex larva'3.V.2007. <bold-italic>Camarotoscena speciosa</bold-italic><bold> (Flor, 1861)</bold>, from <italic>Populus nigra</italic>, Radmilovac, 22.V.2000, reared 1♂ ‘ex larva'25.V.2000; Zemun–Nova Galenika, 25.VIII.2008, collected 1♀; 1.IX.2008, reared 3♀♀ ‘ex larva'9.IX.2008; 10.IX.2008, collected 1♀, 1♂; 17.IX.2008, collected 1♀, 1♂; 24.IX.2008, reared 2♂♂, 2♀♀ ‘ex larva'1.X.2008; 27.VII.2010, collected 1♂, 1♀, 18.X.2010, collected 1♂, 1♀. <bold-italic>Psyllopsis discrepans </bold-italic><bold>(Flor, 1861)</bold>, from <italic>Fraxinus </italic>sp., Beograd–Autokomanda, 10.V.2007, reared 1♀; Brestovačka Banja, 25.V.2007, reared 5♂♂, 4♀♀ ’ex larva'8.VI.2007; Ilinci, 24.V.2008, collected 1♂; Majdanpek, 25.V.2007, reared 1♂, 1♀ ‘ex larva'3.VI.2007, Milošev konak, 21.VI.2007, 1♂. <bold-italic>Psyllopsis fraxini</bold-italic>, from <italic>Fraxinus </italic>sp., Veliko Središte, 30.V.2006, reared 2♀♀. <bold-italic>Psyllopsis fraxinicola </bold-italic><bold>(Foerster, 1848)</bold>, from<italic> Fraxinus </italic>sp<italic>.</italic>, Beograd–Autokomanda, 10.V.2007, reared 1♀; Beograd–Kalemegdan, 24.V.2007, collected 1♂; Brestovačka Banja, 25.V.2007, reared 5♂♂, 4♀♀ ‘ex larva'8.VI.2007; Majdanpek, 25.V.2007, reared 1♂, 1♀ ‘ex larva'3.VI.2007; Veliko Središte, 4.VI.2006, reared 2♀♀ ‘ex larva'19.VI.2006. <bold-italic>Psyllopsis machinosa </bold-italic><bold>Loginova, 1963</bold>, from <italic>Fraxinus </italic>sp<italic>.</italic>, Beograd–Autokomanda, 10.V. 2007, reared 1♀. <bold-italic>Psyllopsis meliphila </bold-italic><bold>Löw, 1881</bold>, from<italic> Fraxinus </italic>sp., Nemenikuće, 15.VI.2006, collected 1♂. <bold-italic>Psyllopsis repens </bold-italic><bold>Loginova, 1963</bold>, from<italic> Fraxinus </italic>sp<italic>.</italic>, Beograd–Autokomanda, 14.X.2008, reared 1♀.<bold-italic> Trioza urticae </bold-italic><bold>(Linnaeus, 1758)</bold>, from<italic> Urtica dioica</italic>, Ilinci, 24.VI.2007, collected 2♀♀ .
+                        </p>
+                        <p><italic>A. nemoralis</italic> is an important component of the natural enemy community in pear and apple orchards where it provides biological control against arthropod pests, particularly psyllids (Horton et al. 2004). Investigating the predator–prey complex of <italic>C. pyri</italic> in a pear orchard in France, Herard (1986) found that <italic>A. nemoralis</italic> was the most efficient enemy against this pest. <italic>A. nemoralis</italic> is mentioned in many papers as a permanent member of biocomplexes of pear psyllids in Europe (Wheeler 2000b, Erler 2004, Sigsgaard et al. 2006). In Turkey, <italic>A. nemoralis</italic> was an equally present and efficient predator of pear psyllid <italic>C. pyri</italic>, both in treated and untreated orchards, but still insufficient for its full control (Erler 2004). In Spain, Jauset et al. (2006) determined <italic>A. nemoralis</italic> as a very efficient predator of <italic>C. pyri</italic>, both in treated and untreated pear orchards. Now, there is a mass production of <italic>A. nemoralis</italic> in companies specialized for biological control of harmful insects (Sigsgaard et al. 2006). The same authors reported that <italic>A. nemoralis </italic>mostly prefers <italic>C. pyri</italic> to aphids, and that it prefers laying eggs on pear to apple. <italic>A. nemoralis</italic> is a polyphagous predatory species having psyllids as a usual prey.
+                        </p>
+                        <p>It is distributed in Europe and the Mediterranean. From Europe it was introduced into North America in 1963 in order to control pear psyllid <italic>C. pyricola</italic>, giving satisfactory results (Horton et al. 2004). This species has adapted to this region so well that it has suppressed autochthonous predatory species <italic>A. antevolens</italic> and <italic>A. melanocerus</italic> (Herard 1986, Horton et al. 2004). In Serbia, in a pear orchard, Pavićević (1977), Grbić et al. (1989) and Jerinić-Prodanović (2010) note a permanent presence of <italic>A. nemoralis</italic>, both during vegetation and winter period together with an overwintering adult of <italic>C. pyri</italic>. <italic>A. nemoralis</italic> was also reported as a predator of <italic>Psyllopsis repens</italic> in Serbia (Malenovský and Jerinić-Prodanović 2011).
+                        </p>
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>4) </bold>
+                            <bold-italic>Anthocoris nemorum </bold-italic>
+                            <bold>(Linnaeus, 1761)</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Eurosiberian.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla affinis </bold-italic><bold>(Löw, 1880)</bold>, from <italic>Crataegus monogyna</italic>, Ilinci, 27.IV.2008, reared 1♂ ‘ex larva'14.V. 2008. <bold-italic>Cacopsylla bidens</bold-italic>, from <italic>Pyrus communis</italic>, Nemenikuće, 15.VI.2006, reared 1♀. <bold-italic>Cacopsylla melanoneura </bold-italic><bold>(Foerster, 1848)</bold>, from <italic>Crataegus monogyna</italic>, Ilinci, 27.IV.2008, reared 1♂ ‘ex larva'14.V.2008; Klokočevac, 10.V.2008, collected 1♀. <bold-italic>Cacopsylla peregrina </bold-italic><bold>(Foerster, 1848)</bold>, from <italic>Crataegus monogyna</italic>, Ilinci, 27.IV.2008, reared 1♂ ‘ex larva'14.V.2008. <bold-italic>Cacopsylla pulchra </bold-italic><bold>(Zetterstedt, 1838)</bold>, from <italic>Salix purpurea</italic>, Zlatibor–Kraljevske Vode, 30.IV.2007, collected 1♀ and 1 larva. <bold-italic>Cacopsylla pyri</bold-italic>, from <italic>Pyrus communis</italic>, Novi Sad–Detelinara, 23.V.2008, reared 2♂♂, 3♀♀ ‘ex larva'4.VI.2008; 14.VI.2008, reared 3♂♂ ‘ex larva'17.VI.2008. <bold-italic>Cacopsylla pyrisuga</bold-italic>, from <italic>Pyrus communis</italic>, Grocka, 10.V.2008, reared 1♀ ‘ex larva'23.V.2008. <bold-italic>Cacopsylla visci</bold-italic>, from<italic> Viscum album</italic>, Beograd–Bulevar Aleksandra Karađorđevića, 23.IV.2007, reared 1♂ ‘ex larva'3.V.2007. <bold-italic>Psylla buxi</bold-italic>, from <italic>Buxus sempervirens</italic>, Vrujci, 1.VI.2009, collected 2♂♂, 1♀; Šid, 3.V.2008, collected 2♀♀; Zemun–Nova Galenika, 4.V.2008, reared 2♂♂, 3♀♀ ‘ex larva'15.V.2008; 30.VII.2008, collected 1♀; 14.VI.2009, collected 2 specimens. <bold-italic>Psyllopsis fraxinicola</bold-italic>, from<italic> Fraxinus angustifolia</italic>, Beograd–Hram Svetog Save, 14.IV.2008, reared 1♂ and 1 larva.
+                        </p>
+                        <p><italic>A. nemorum</italic> is noted as a predator of many insect species, in the first place Hemiptera, Diptera, eggs of Lepidoptera and mites (Herard 1986, Wheeler 2000b, Sigsgaard et al. 2006), already registered as a predator of both <italic>C. pyri</italic> and <italic>Ps. fraxini </italic>(Herard 1986). It is also largely reported as an efficient predator of apple psyllid <italic>Cacopsylla mali</italic> in Norway (Jonsson 1983). In England, Hodkinson and Flint (1971) determined <italic>A. nemorum</italic> as a predator of <italic>Psyllopsis fraxini</italic> collected from ash, while in Germany Novak and Achtziger (1995) registered it as a predator of hawthorn psyllids <italic>Cacopsylla melanoneura</italic> and <italic>C. peregrina</italic>. Sigsgaard et al. (2006) note <italic>A. nemorum </italic>as a more polyphagous species than <italic>A. nemoralis</italic>. They also determined in experimental conditions that <italic>A. nemorum </italic>prefers aphids to psyllids, and has a preference for laying eggs on apple rather than on pear.
+                        </p>
+                        <p><italic>A. nemorum </italic>is an Eurosiberian species, introduced to North America in order to control <italic>C. pyricola</italic> just like <italic>A. nemoralis</italic>, but without satisfactory results (Herard 1986).
+                        </p>
+                        <p><italic>A. nemorum </italic>is reported here for the first time as a predator of psyllids in Serbia.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>5)</bold>
+                            <bold-italic> Orius </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Heterorius</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> majusculus </bold-italic>
+                            <bold>Reuter, 1884
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Euro-Atlantic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Psyllopsis discrepans</bold-italic> and<bold-italic> Psyllopsis machinosa</bold-italic>, from<italic> Fraxinus </italic>spp., Beograd–Autokomanda, 6.V.2009, collected 1♂.
+                        </p>
+                        <p><!--PageBreak--><italic>O. majusculus</italic> was registered as a predator of psyllids (Herard 1986). It is noted as a predator of aphids, such as <italic>Diuraphis noxia</italic> and <italic>Schizaphis graminum</italic> in Russia, mites in France, whiteflies in greenhouses in Italy and pear psyllid <italic>Cacopsylla pyri</italic> in France (Péricart 1972, Herard 1986).
+                        </p>
+                        <p>The present paper reports <italic>O. majusculus</italic> as a psyllid predator for the first time in Serbia and <italic>Psyllopsis discrepans</italic> and <italic>Ps. machinosa</italic> for the first time as a prey of <italic>O. majusculus</italic>.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>6)</bold>
+                            <bold-italic> Orius </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Heterorius</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> minutus</bold-italic>
+                            <bold>(Linnaeus, 1758)
+</bold>
+                        </tp:taxon-name>
+                        <xref>Figure 2
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Palaearctic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Baeopelma foersteri </bold-italic><bold>(Flor, 1861)</bold>, from <italic>Alnus glutinosa</italic>, Radenković, 3.VI.2006, collected 1♀. <bold-italic>Cacopsylla melanoneura</bold-italic>,from <italic>Malus domestica</italic>, Beograd–Hotel Jugoslavija, 26.V.2005, reared 1♂; Ilinci, 2.V.2010, reared 1♂, 2♀♀ ‘ex larva'10.V.2010. <bold-italic>Cacopsylla picta </bold-italic><bold>(Foerster, 1848)</bold>, from <italic>Malus domestica</italic>, Beograd–Hotel Jugoslavija, 26.V.2005, reared 1♂. <bold-italic>Cacopsylla pyri</bold-italic>, from <italic>Pyrus communis</italic>, Radmilovac, 10.VII.2006, reared 1♂, 2♀♀ ‘ex larva'20.VII.2006; 26.VII.2006, collected 1♂; 4.IX.2006, collected 1♂. <bold-italic>Cacopsylla rhamnicola </bold-italic><bold>(Scott, 1876)</bold>, from <italic>Rhamnus cathartica</italic>, Kelebija, 25.V.2005, reared 1♀ ‘ex larva'6.VI.2005. <bold-italic>Camarotoscena speciosa</bold-italic>, from <italic>Populus nigra</italic>, Zemun–Nova Galenika, 1.IX.2008, reared 1♂ ‘ex larva'9.IX.2008; 24.IX.2008, reared 1♂ ‘ex larva'1.X.2008. <bold-italic>Homotoma ficus </bold-italic><bold>(Linnaeus, 1758)</bold>, from <italic>Ficus carica</italic>, Beograd–Banjica, 23.IX.2008, collected 2♂♂, 3♀♀, feeding on eggs. <bold-italic>Psyllopsis discrepans</bold-italic>, from <italic>Fraxinus ornus</italic>, Ilinci, 21.V.2005, collected 1♂. <bold-italic>Psyllopsis discrepans</bold-italic>and<bold-italic>Psyllopsis repens</bold-italic>, from <italic>Fraxinus ornus</italic>, Beograd–Autokomanda, 7.IX.2008, reared 5♂♂, 4♀♀ ‘ex larva'11.IX.2008; 21.IX.2008, collected 3♂♂; 23.IX.2008, collected 1♂; 7.X.2008, collected 1♂, 1♀; 14.X.2008, collected 1♀; 21.X.2008, collected 1♀. <bold-italic>Psyllopsis fraxinicola</bold-italic>, from<italic> Fraxinus </italic>sp<italic>.</italic>,Vrujci, 1.VII.2009, 1♀. <bold-italic>Psyllopsis machinosa</bold-italic>, from <italic>Fraxinus ornus</italic>, Beograd–Autokomanda, 6.V.2009, reared 1♀ ‘ex larva'10.V.2009. <bold-italic>Psyllopsis repens</bold-italic>, from <italic>Fraxinus ornus</italic>, Beograd–Autokomanda, 21.VIII.2010, reared 1♀. <bold-italic>Trioza mesembrina </bold-italic><bold>Burckhardt, 1986</bold>, from <italic>Chaerophyllum hirsutum</italic>, Kopaonik–Srebrenac, 7.VIII.2008, reared 1♂. <bold-italic>Trioza rhamni </bold-italic><bold>(Schrank, 1801)</bold>, from <italic>Rhamnus cathartica</italic>, Kelebija, 25.V.2005, reared 1♀ ‘ex larva'6.VI.2005; Ilinci, 2.V.2009, 1♂.
+                        </p>
+                        <p><italic>O. minutus</italic> is an extremely polyphagous species distributed in Europe, Siberia, China and Mediterranean region. Many authors determined it as a predator of harmful insect species from a number of orders (Thysanoptera, Diptera, Lepidoptera, Coleoptera and Hemiptera Homoptera). Already reported as a psyllid predator (Herard 1986). In France, Herard (1986) determined <italic>O. minutus</italic> as a predator of pear psyllids, primarily <italic>C. pyri</italic>,and hawthorn psyllids. Also in Slovenia, Vrabl and Matis (1977) register it as a predator of <italic>C. pyri</italic> and <italic>C. pyrisuga</italic>. In Serbia, Pavićević (1977) and Jerinić-Prodanović et al. (2010) determined <italic>O. minutus </italic>as a predator of <italic>C. pyri</italic> in <!--PageBreak-->pear orchards. Malenovský and Jerinić-Prodanović (2011) also found it as a predator of <italic>Ps. repens</italic>. In Croatia, Arčanin and Balarin (1972) recognized the significance of <italic>O. minutus</italic> in the reduction of the mite <italic>Panonychus ulmi</italic>.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>7) </bold>
+                            <bold-italic>Orius </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Orius</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> niger</bold-italic>
+                            <bold>Wolff, 1811
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Palaearctic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla bidens</bold-italic>, from <italic>Pyrus communis</italic>, Ilinci, 13.X.2008, collected 1♂. <bold-italic>Cacopsylla melanoneura</bold-italic>, from <italic>Malus domestica</italic>, Lipovača, 29.IV.2006, collected 1♂. <bold-italic>Cacopsylla pyri</bold-italic>, from <italic>Pyrus communis</italic>, Radmilovac, 26.VI.2006, reared 1♂ ‘ex larva'30.VI.2006; 10.VII.2006, reared 1♀ ‘ex larva'20.VII.2006. <bold-italic>Craspedolepta </bold-italic><bold>sp.</bold>, from <italic>Artemisia</italic> <italic>vulgaris</italic>, Sutjeska, 2.X.2009, reared 1♂ and 4♀♀. <bold-italic>Psyllopsis fraxinicola</bold-italic>, from <italic>Fraxinus ornus</italic>, Vrujci, 30.VI.2009, collected 1 specimen. <bold-italic>Livia junci </bold-italic><bold>(Schrank, 1789)</bold>, from <italic>Juncus bulbosus</italic>, Beograd–Block 45, 10.VIII.2005, reared 1♂ ‘ex larva'16.VIII.2005. <bold-italic>Trichochermes walkeri </bold-italic><bold>(Foerster, 1848)</bold>, from <italic>Rhamnus cathartica</italic>, Ilinci, 14.IX.2008, 2♂♂, 2♀♀. <bold-italic>Trioza chenopodii </bold-italic><bold>Reuter, 1876</bold>, from <italic>Atriplex tatarica</italic>, Ilinci, 20.VIII.2006, 1♂ ‘ex larva'23.VIII.2006. <bold-italic>Trioza urticae</bold-italic>, from <italic>Urtica dioica</italic>, Bački breg, 7.VI.2005, reared 1♂; Ilinci, 14.V.2005, reared 1♂, 1♀ ‘ex larva'27.V.2005; Luka, 25.V.2007, reared 1♂.
+                        </p>
+                        <p><italic>O. niger</italic> is widespread in Western Palaearctic, very rare in the Mediterranean region, also reported from China. It is a very polyphagous species, preying on aphids, psyllids, whiteflies, thrips, larvae of noctuids, mites (Péricart 1972, Herard 1986, Protić 1993).
+                        </p>
+                        <p><!--PageBreak-->In South France, Herard (1986) determined <italic>Orius niger</italic> on pears as a predator of <italic>Cacopsylla pyri</italic>, but also collected it in a large number from <italic>Trioza urticae </italic>from nettle, which was surrounding the pear orchards. In Croatia, <italic>O. niger</italic> was determined along with <italic>O. minutus</italic> on <italic>Panonychus ulmi</italic> in an apple orchard (Arčanin and Balarin 1972).
+                        </p>
+                        <p>In Serbia, Grbić et al. (1989), investigating pear psyllid predators, reported <italic>Orius</italic> spp., so we are not able to compare our results with theirs. In the same paper, authors mentioned the presence of other <italic>Orius</italic> species frequently during summer and autumn which is in accordance with our investigations.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+            <sec>
+                <title><bold>Miridae
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>8) </bold>
+                            <bold-italic>Atractotomus mali</bold-italic>
+                            <bold>Meyer-Dür, 1843</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Phytozoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Palaearctic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla affinis</bold-italic>, from <italic>Crataegus monogyna</italic>, Koruška, 1.V.2008, reared 1♀ ‘ex larva'8.V.2008. <bold-italic>Cacopsylla melanoneura</bold-italic>, from <italic>Crataegus monogyna</italic>, Beograd–Hotel Jugoslavija, 22.IV.2008, reared 2♂♂, 1♀ ‘ex larva'30.IV.2008; 18.V.2008, reared 1♀ ‘ex larva'23.V.2008; Dobra, 10.V.2008, reared 1♂, 1♀ ‘ex larva'21.V.2008; Draževac, 20.IV.2008, reared 1♂, 1♀ 2.V.2008; Koruška, 1.V.2008, reared 1♀ ‘ex larva'8.V.2008. <bold-italic>Cacopsylla melanoneura</bold-italic>, from <italic>Malus domestica</italic>, Ilinci, 24.V.2008, reared 1♀ ‘ex larva'30.V.2008; Oparić, 4.V.2008, reared 2♂ ‘ex larva'19.V.2008; Ilinci, 2.V.2010, reared 1♀. <bold-italic>Cacopsylla peregrina</bold-italic>, from <italic>Crataegus monogyna</italic>, Beograd–Hotel Jugoslavija, 22.IV.2008, reared 2♂♂, 1♀ ‘ex larva'30.IV.2008; Dobra, 10.V.2008, reared 1♂, 1♀ ‘ex larva'21.V.2008; Koruška, 1.V.2008, reared 1♀ ‘ex larva'8.V.2008. <bold-italic>Cacopsylla picta</bold-italic>, from <italic>Malus domestica</italic>, Ilinci, 24.V.2008, 1♀ ‘ex larva'30.V.2008.
+                        </p>
+                        <p><italic>A. mali</italic> has been reported so far as a predator of mites, aphids, thrips, psyllids, butterfly larvae and pupae (Wheeler 2000b). It was registered as a predator of apple psyllid <italic>Cacopsylla mali</italic> in Norway (Jonsson 1983) and of pear psyllid <italic>C. pyri </italic>in Greece (Santas 1987). In Germany, Novak and Achtziger (1995) registered it as a predator of hawthorn psyllids <italic>Cacopsylla </italic>spp.
+                        </p>
+                        <p>First record of <italic>A. mali</italic> as a predator of <italic>C. picta</italic>. The above mentioned data are the first ones for <italic>A. mali</italic> as a psyllid predator in Serbia.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>9) </bold>
+                            <bold-italic>Campylomma verbasci</bold-italic>
+                            <bold>(Meyer-Dür, 1843)
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophytophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Holarctic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla bidens</bold-italic>, from <italic>Pyrus communis</italic>, Ilinci, 24.V.2008, reared 1♂ ‘ex larva'29.V.2008; Bavanište, 25.V.2006, reared 1♂, 1♀ ‘ex larva'30.V.2006. <bold-italic>Cacopsylla pyri</bold-italic>, <bold-italic>Cacopsylla pyricola </bold-italic>and<bold-italic>Cacopsylla pyrisuga</bold-italic>, from <italic>Pyrus communis</italic>, <!--PageBreak-->Bavanište, 25.V.2006, 1♂, 1♀ ‘ex larva'30.V. 2006. <bold-italic>Cacopsylla melanoneura</bold-italic>,from <italic>Malus domestica</italic>, Ilinci, 2.V.2010, reared 2♂♂.
+                        </p>
+                        <p><italic>C. verbasci</italic> is a zoophytophagous species preying on apple aphids, pear psyllids, codling moth, thrips and mites (Wheeler 2000b). Its most common prey among insects are <italic>Aphis pomi</italic> and <italic>Cacopsylla mali</italic>, and among mites <italic>Panonychus ulmi</italic> and <italic>Tetranychus urticae</italic> (Hagen et al. 1999, Wheeler 2000b, Bradley 2007).
+                        </p>
+                        <p>However, if there is a lack of prey, it can feed on apple fruits, rarely pear, causing the harm to their aesthetic value. Therefore, <italic>C. verbasci</italic> is a significant fruit pest in Canada (Hagen et al. 1999, Wheeler 2000a, Bradley 2007). Erler (2004) reported the presence of <italic>C. verbasci</italic> as a predator of <italic>C. pyri</italic> in treated and untreated pear orchards in Turkey, and Harizanova et al. (2012) mentioned it on <italic>Acizzia jamatonica</italic> in Bulgaria.
+                        </p>
+                        <p>Already known in Serbia (Protić 1993) but in our investigations registered for the first time as a predator of psyllids in this country.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>10)</bold>
+                            <bold-italic> Deraeocoris</bold-italic>
+                            <bold> (</bold>
+                            <bold-italic>Deraeocoris</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> flavilinea</bold-italic>
+                            <bold>(A. Costa, 1862)</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophytophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Western and Central Europe.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla bidens</bold-italic>, from <italic>Pyrus communis</italic>, Beograd–Karaburma, 4.V.2006, reared 1♀ ‘ex larva'18.V.2006. <bold-italic>Homotoma ficus</bold-italic>, from <italic>Ficus carica</italic>, Beograd–Banjica, 21.V.2009, collected 1♂, 2♀♀. <bold-italic>Trioza rhamni</bold-italic>, from <italic>Rhamnus cathartica</italic>, Beograd–Hotel Jugoslavija, 26.V.2005, reared 1♂ ‘ex larva'29.V.2005. <bold-italic>Psyllopsis discrepans </bold-italic>and<bold-italic> Psyllopsis machinosa</bold-italic>, from <italic>Fraxinus angustifolia</italic>, Beograd–Autokomanda, 21.V.2009, 1♂, 1♀.
+                        </p>
+                        <p><italic>D. flavilinea</italic> is reported so far as a predator of psyllids (Jerinić-Prodanović and Protić 2011, Simov et al. 2012). Until 1980’s, it was known only from Sicily, from where it has spread to Central Europe where it is now considered as an invasive species (Rabitsch 2008). As a predator of psyllids, it has been known in Serbia since 2011 (Jerinić-Prodanović and Protić 2011).
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>11) </bold>
+                            <bold-italic>Deraeocoris (Deraeocoris ) ruber</bold-italic>
+                            <bold>(Linnaeus, 1758)</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophytophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Holarctic.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla pyri</bold-italic>, from <italic>Pyrus communis</italic>, Radmilovac, 10.VII.2006, reared 1♀.
+                        </p>
+                        <p>A very polyphagous zoophytophagous species. A Holarctic species occurring in large quantities in the south of Europe.
+</p>
+                        <p>Already mentioned as a predator of <italic>C. pyri</italic> (Herard 1986). It also preys on younger caterpillar instars of some butterflies, mites and various other small insects in apple orchards, on <italic>Rubus</italic> spp. and <italic>Urtica</italic> spp. as well as on aphids on <italic>Corylus</italic> spp. (Herard 1986).
+                        </p>
+                        <p>Reported as a predator of <italic>A. jamatonica</italic> (Harizanova et al. 2012) in Bulgaria and <italic>C. pyri</italic> in Serbia (Jerinić-Prodanović et al. 2010).
+                        </p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>12) </bold>
+                            <bold-italic>Deraeocoris </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Knightocapsus</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> lutescens</bold-italic>
+                            <bold>(Schilling, 1836)</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Euro-Mediterranean.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla pyri</bold-italic>, from <italic>Pyrus communis</italic>, Izvor, 14.IV.2009, 1♂. <bold-italic>Cacopsylla rhamnicola</bold-italic>, from <italic>Rhamnus cathartica</italic>, Obedska bara, 4.VI.2005, reared 1♂ ‘ex larva'18.VI.2005. <bold-italic>Camarotoscena speciosa</bold-italic>,from <italic>Populus</italic> <italic>nigra</italic>, Zemun–Nova Galenika, 18.X.2010, collected 1♀. <bold-italic>Psyllopsis fraxinicola</bold-italic>, from <italic>Fraxinus angustifolia</italic>, Zemun–Nova Galenika, 1.IX.2006, collected 1♀. <bold-italic>Trioza chenopodii</bold-italic>, from <italic>Atriplex oblongifolia</italic>, Galovica, 18.VII.2003, reared 1♂.
+                        </p>
+                        <p><italic>D. lutescens</italic> is a Mediterranean species, distributed also in small numbers in Central Europe. Known mainly as an egg predator of pear psyllid <italic>C. pyri</italic> and hawthorn psyllid <italic>C. crataegi</italic> (Herard 1986). It is also reported as a predator of aphids and mite <italic>Panonychus ulmi</italic> in apple orchards in Croatia (Arčanin and Balarin 1972) and in pear orchards as a predator of <italic>C. pyri</italic> in France and Turkey (Herard 1986, Erler 2004).
+                        </p>
+                        <p><italic>D. lutescens</italic> has been already registered in Serbia (Protić 1993) but here is reported for the first time as a predator of psyllids in this country.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>13) </bold>
+                            <bold-italic>Heterocordylus </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Heterodactylus</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> genistae</bold-italic>
+                            <bold>(Scopoli, 1763)</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Phytozoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla melanoneura</bold-italic>, from <italic>Malus domestica</italic>, Beloljin, 4.V.2008, collected 1♂; Ilinci, 20.V.2006, reared 1♂ ‘ex larva'25.V.2006; Uzovnica, 29.IV.2007, collected 1 specimen.
+                        </p>
+                        <p><italic>H. genistae </italic>is mentioned in the literature as a beneficial insect being a predator of psyllids both in larval and adult stage. It is registered as a predator of various other insects (Protić 1993, 1998).
+                        </p>
+                        <p>In the present paper, we report <italic>H. genistae</italic> for the first time as a predator of psyllids in Serbia.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>14)</bold>
+                            <bold-italic> Hypseloecus visci</bold-italic>
+                            <bold> (Puton, 1888)</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla v</bold-italic><bold-italic>isci</bold-italic>, from <italic>Viscum album</italic>, Beograd–Bulevar Aleksandra Karađorđevića, 25.III.2007, reared 4♀♀ ‘ex larva'16.IV.2007.
+                        </p>
+                        <p>An exclusively zoophagous species.
+</p>
+                        <p>Already known from Serbia as a psyllid predator (Jerinić-Prodanović and Protić 2011).
+</p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>15) </bold>
+                            <bold-italic>Malacocoris chlorizans</bold-italic>
+                            <bold> Panzer, 1794</bold>
+                            <bold-italic>
+</bold-italic>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Eurasia.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey. </bold>
+                        </title>
+                        <p><bold-italic>Homotoma ficus</bold-italic>, from <italic>Ficus carica</italic>, Beograd–Hotel Jugoslavija, 16.V.2007, collected 1♂, 1♀; Beograd–Voždovac, 26.V.2007, collected 5♂♂, 1♀; Zemunski kej, 15.V.2008, collected 1 larva.
+                        </p>
+                        <p>A general predator on aphids, psyllids, eggs and larvae of leaf miner moths (Wheeler 2000b, Wyniger and Burckhardt 2003). In Croatia, it is registered as a predator of <italic>Panonychus ulmi</italic> in apple orchards by Arčanin and Balarin (1972).
+                        </p>
+                        <p><italic>Malacocoris chlorizans</italic> has been already registered in Serbia (Protić 1998) but in the present paper is reported for the first time as a predator of psyllids in this country.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>16)</bold>
+                            <bold-italic> Miris striatus</bold-italic>
+                            <bold>(Linnaeus, 1758)
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe, Central Asia.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla melanoneura </bold-italic>and<bold-italic> Cacopsylla peregrina</bold-italic>,from <italic>Crataegus monogyna</italic>, Dobra, 10.V.2008, reared 1♀ ‘ex larva'21.V.2008.
+                        </p>
+                        <p>Already reported from Serbia (Protić 1993, 1998). The above mentioned record is the first one of <italic>M. striatus</italic> as a predator of psyllids.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>17) </bold>
+                            <bold-italic>Orthotylus </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Orthotylus</bold-italic>
+                            <bold>)</bold>
+                            <bold-italic> marginalis</bold-italic>
+                            <bold>Reuter, 1884
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophytophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Eurosiberian.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Prey. </bold>
+                        </title>
+                        <p><bold-italic>Cacopsylla rhamnicola</bold-italic>, from <italic>Rhamnus cathartica</italic>, Beograd–Hotel Jugoslavija, 15.V.2008, reared 1♀ ‘ex larva'19.V.2008.
+                        </p>
+                        <p><italic>O. marginalis</italic> is registered as a predator of aphids and psyllids (Wheeler 2000b). In Finland and Russia, it was mentioned as a predator of <italic>C. mali</italic> (Jonsson 1983).
+                        </p>
+                        <p>Registered in Serbia (Protić 2011) but here reported for the first time as a psyllid predator.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>18) </bold>
+                            <bold-italic>Psallus </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Hylopsallus</bold-italic>
+                            <bold>) assimilis Stichel, 1956</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Phytozoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Psyllopsis discrepans</bold-italic>, from <italic>Fraxinus </italic>sp., Ilinci, 21.V.2005, reared 2♂♂, 2♀♀; Umčari, 25.V.2007, reared 1♀. <bold-italic>Psyllopsis fraxinicola </bold-italic>and<bold-italic>Psyllopsis d</bold-italic><bold-italic>iscrepans</bold-italic>,from <italic>Fraxinus </italic>sp., Beograd–Autokomanda, 10.V.2007, reared 5♂♂, 8♀♀ ‘ex larva'16.V.2007.
+                        </p>
+                        <p><!--PageBreak-->Already known as a predator of various insect species, inlcuding psyllids.
+</p>
+                        <p>Previously registered in Serbia (Protić 1998) but in the present paper reported for the first time as a psyllid predator in this country.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>19) </bold>
+                            <bold-italic>Psallus </bold-italic>
+                            <bold>(</bold>
+                            <bold-italic>Psallus</bold-italic>
+                            <bold>) </bold>
+                            <bold-italic>flavellus</bold-italic>
+                            <bold> Stichel, 1933
+</bold>
+                        </tp:taxon-name>
+                        <xref>Figure 3
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Phytozoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Psyllopsis</bold-italic><bold> spp.</bold>, from <italic>Fraxinus</italic> sp., Beograd–Autokomanda, 8.V.2010, reared 3♂♂, 1♀. <bold-italic>Psyllopsis discrepans</bold-italic>, from <italic>Fraxinus</italic> sp., Beograd–Autokomanda, 13.V.2010, reared 2♂♂, 1♀.
+                        </p>
+                        <p>Previously registered in Serbia (Protić 2011). Reported here for the first time as a psyllid predator.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>20) </bold>
+                            <bold-italic>Psallus</bold-italic>
+                            <bold> (</bold>
+                            <bold-italic>Phylidea</bold-italic>
+                            <bold>) </bold>
+                            <bold-italic>quercus</bold-italic>
+                            <bold>Kirschbaum, 1856
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Phytozoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Europe, Asia.
+</p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Psyllopsis discrepans</bold-italic>, from <italic>Fraxinus ornus</italic>, Ilinci, 24.V. 2008, collected 1♀; 17.V. 2009, 1♂, 2♀♀. <bold-italic>Psyllopsis discrepans</bold-italic>and<bold-italic>Ps. machinosa</bold-italic>,from<italic> Fraxinus</italic> sp.,Beograd–Autokomanda, 6.V.2009, reared 4♀♀ ‘ex larva'10.V.2009; 21.V.2009, reared 1♂, 3♀♀.
+                        </p>
+                        <p>So far known as a predator of aphids, psyllids, thrips, spiders and eggs of various insects (Protić 1998).
+</p>
+                        <p>Registered in Serbia (Protić 2011) but here reported for the first time as a psyllid predator in this country.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>21) </bold>
+                            <bold-italic>Pseudoloxops coccinea</bold-italic>
+                            <bold> Meyer-Dür, 1843
+</bold>
+                        </tp:taxon-name>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Trophic status.</bold>
+                        </title>
+                        <p> Zoophagous.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Euro-Mediterranean.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Preys. </bold>
+                        </title>
+                        <p><bold-italic>Psyllopsis fraxinicola</bold-italic>, from <italic>Fraxinus </italic>sp., Niš, 27.V.2008, collected 1♂. <bold-italic>Psyllopsis</bold-italic><bold> sp.</bold>, <italic>Fraxinus</italic> sp., Beograd–Autokomanda 8.V.2010, reared 1♂ ‘ex larva'21.V.2010.
+                        </p>
+                        <p>Registered in Serbia (Protić 1999). Reported for the first time as a predator of psyllids.
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Conclusions
+</bold>
+            </title>
+            <p>From 28 psyllid species and 19 host plants, we reared or collected 21 species of true bugs belonging to the families Anthocoridae and Miridae. According to available literature data, 12 of the registered species are zoophagous, while the other nine have mixed nutrition.
+</p>
+            <p><italic>Miris striatus</italic>, <italic>Pseudoloxops coccinea </italic>and<italic> Psallus flavellus</italic> (Miridae) have not been registered as psyllid predators so far. Sixteen species of true bugs are recorded here for the first time as psyllid predators in Serbia (<italic>Anthocoris amplicollis</italic>, <italic>A. nemorum</italic>, <italic>A. confusus</italic>, <italic>Orius majusculus</italic>, <italic>O. niger</italic>, <italic>Atractotomus mali</italic>, <italic>Campylomma verbasci</italic>, <italic>Deraeocoris lutescens</italic>, <italic>Heterocordylus genistae</italic>, <italic>Malacocoris chlorizans</italic>, <italic>Orthotylus marginalis</italic>, <italic>Psallus assimilis</italic>, <italic>Ps. quercus</italic>, <italic>Ps. flavellus</italic>, <italic>Miris striatus</italic> and <italic>Pseudoloxops coccinea</italic>).
+            </p>
+            <p>From the family Anthocoridae, we identified seven species: <italic>Anthocoris amplicollis</italic>,<italic> A. confusus</italic>, <italic>A. nemoralis</italic>, <italic>A. nemorum</italic>, <italic>Orius majusculus</italic>, <italic>O. minutus</italic> and<italic> O. niger</italic>. The most polyphagous among them was <italic>O. minutus</italic>, found on 13 species of psyllids:<italic> Baeopelma foersteri</italic>, <italic>Cacopsylla melanoneura</italic>, <italic>C. picta</italic>, <italic>C. pyri</italic>, <italic>C. rhamnicola</italic>, <italic>Camarotoscena speciosa</italic>, <italic>Homotoma ficus</italic>, <italic>Psyllopsis discrepans</italic>, <italic>Ps. fraxinicola</italic>, <italic>Ps. machinosa</italic>, <italic>Ps. repens</italic>, <italic>Trioza mesembrina </italic>and <italic>T. rhamni</italic>.
+            </p>
+            <p>From the family Miridae, we reared or collected 14 species: <italic>Atractotomus mali</italic>, <italic>Campylomma verbasci</italic>, <italic>Deraeocoris</italic> <italic>flavilinea</italic>, <italic>D. ruber</italic>, <italic>D. lutescens</italic>, <italic>Heterocordylus genistae</italic>, <italic>Hypseloecus visci</italic>, <italic>Malacocoris chlorizans</italic>, <italic>Miris striatus</italic>, <italic>Orthotylus marginalis</italic>, <italic>Psallus assimilis</italic>, <italic>P. flavellus</italic>, <italic>P. quercus </italic>and<italic> Pseudoloxops coccinea</italic>. Among them, the most polyphagous were <italic>C. verbasci</italic>, <italic>D. flavillinea</italic> and <italic>D. lutescens</italic>, each registered on five psyllid species.
+            </p>
+            <p><!--PageBreak-->Most of predatory true bugs are registered on deciduous perennial plants. We found the highest number of predatory true bugs on psyllids which overwinter on host plant and have more than one generation per year, e.g. <italic>Cacopsylla pyri</italic>, <italic>Psyllopsis fraxinicola</italic> and <italic>Ps. discrepans</italic>. On each of them, seven predatory true bugs were registered. Species from the genus <italic>Psallus </italic>were registered as predators only of psyllid genus <italic>Psyllopsis.</italic>
+            </p>
+            <p>Further investigations are necessary for the preservation of known beneficial predatory true bugs and finding of new ones, potentially usable for biological control on economically significant psyllid species.
+</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgments
+</bold>
+            </title>
+            <p>We thank Alexi Popov and two anonymous reviewers for comments and suggestions on the manuscript. They helped us improve our manuscript. We owe special thanks also to Goran Prodanović and Dragica Smiljanić, who collected a part of insect material.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Arčanin</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Balarin</surname> <given-names>I</given-names></name></person-group> (<year>1972</year>)<fake_tag> Predatorske vrste Heteroptera zastupljene u fauni jabučnih nasada Hrvatske. Acta entomologica Jugoslavica 8 (1/2): 11–21.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bradley</surname> <given-names>SH</given-names></name></person-group> (<year>2007</year>)<fake_tag> <italic>Campylomma verbasci</italic> (Meyer) (Hemiptera: Miridae).Mullein plant bug. Biological control. A guide to Natural Enemies in North America. http://www.nysaes.cornell.edu/ent/biocontrol/.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Erler</surname> <given-names>F</given-names></name></person-group> (<year>2004</year>)<article-title> Natural enemies of the pear psylla <italic>Cacopsylla pyri </italic>in treated vs untreated pear orchards in Antalya, Turkey.</article-title> <source>Phytoparasitica </source> <volume>32</volume> (<issue>3</issue>): <fpage>295</fpage>-<lpage>304</lpage>. doi: 10.1007/BF02979824
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Grbić</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Lakić</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Mihajlović</surname> <given-names>Lj</given-names></name></person-group> (<year>1989</year>)<fake_tag> Predators and parasitoids of <italic>Psylla pyri</italic> L. (Hom. Psyllidae) in Vojvodina (YU). OILB Workshop Lutte integree en verger de poires, 28 juin–1 juillet 1988. Changius (Rac) Switzerland. Proceedings. 1–11.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hagen</surname> <given-names>KS</given-names></name>,<name name-style="western"><surname>Mills</surname> <given-names>NJ</given-names></name>,<name name-style="western"><surname>Gordh</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Mcmurty</surname> <given-names>JA</given-names></name></person-group> (<year>1999</year>)<article-title> Terestrial arthropod predators of insects and mite pests.</article-title> In: <person-group1><name name-style="western"><surname>Bellows</surname> <given-names>TS</given-names></name>,<name name-style="western"><surname>Fisher</surname> <given-names>TW</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Principles and Applications of Biological Control.</issue-title> <source>Handbook of Biological Control. Academic Press, San Diego</source>: <fpage>383</fpage>-<lpage>461</lpage>. doi: 10.1016/B978-012257305-7/50063-1
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Harizanova</surname> <given-names>V</given-names></name>,<name name-style="western"><surname>Stoeva</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Mohamedova</surname> <given-names>M</given-names></name></person-group> (<year>2012</year>)<article-title> Preliminary study on the invasive <italic>Acizzia jamatonica</italic> (Hemiptera: Psyllidae) and its predators in Bulgaria.</article-title> <source>Agricultural Science and Technology </source> <volume>4</volume> (<issue>1</issue>): <fpage>56</fpage>-<lpage>61</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Herard</surname> <given-names>F</given-names></name></person-group> (<year>1985</year>)<article-title> Analysis of parasite and predator populations observed in pear orchards infested by <italic>Psylla pyri</italic> (L.) (Hom. Psyllidae) in France.</article-title> <source>Agronomie </source> <volume>5</volume>: <fpage>773</fpage>-<lpage>778</lpage>. doi: 10.1051/agro:19850901
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Herard</surname> <given-names>F</given-names></name></person-group> (<year>1986</year>)<article-title></article-title> <source>Agronomie </source> <volume>6</volume>: <fpage>1</fpage>-<lpage>34</lpage>. doi: 10.1051/agro:19860101
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hodkinson</surname> <given-names>ID</given-names></name>,<name name-style="western"><surname>Flint</surname> <given-names>PWH</given-names></name></person-group> (<year>1971</year>)<article-title> Some predators from the galls of <italic>Psyllopsis fraxini</italic> L. (Hem., Psyllidae).</article-title> <source>Entomologist’s monthly magazine </source> <volume>107</volume>: <fpage>11</fpage>-<lpage>12</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Horton</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Lewis</surname> <given-names>TM</given-names></name>,<name name-style="western"><surname>Broers</surname> <given-names>DA</given-names></name></person-group> (<year>2004</year>)<fake_tag> Ecological and geographic range expansion of the introduced predator <italic>Anthocoris nemoralis</italic> (Heteroptera: Anthocoridae) in North America: Potential for nontarget effects? American entomologist 50 (1): 18–30.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jauset</surname> <given-names>AM</given-names></name>,<name name-style="western"><surname>Artigues</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Sarasúa</surname> <given-names>MJ</given-names></name></person-group> (<year>2006</year>)<fake_tag> Abundance and seasonal distribution of natural enemies in treated vs untreated pear orchards in Lleida (NE Spain). International Organization for Biological and Integrated Control of Noxious Animals and Plants. West Palearctic Regional Section. Workshop on Arthropod Pest Problems in Pome Fruit Production at Lleida (Spain), 4–6 September 2006. Book of abstracts, p. 54.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jerinić-Prodanović</surname> <given-names>D</given-names></name></person-group> (<year>2010</year>)<source> Diverzitet lisnih buva (Homoptera: Psylloidea) i njihovih prirodnih neprijatelja u Srbiji, sa posebnim osvrtom na vrste značajne u poljoprivredi.</source> <publisher-name>PhD thesis. Belgrade, Serbia: University of Belgrade</publisher-name>, <publisher-loc>Faculty of Agriculture</publisher-loc>, <lpage>339</lpage> pp.doi: 10.2298/PIF1001029J
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jerinić-Prodanović</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name>,<name name-style="western"><surname>Mihajlović</surname> <given-names>Lj</given-names></name></person-group> (<year>2010</year>)<article-title> Predatori i parazitoidi<italic> Cacopsylla pyri</italic> (L.) (Hemiptera: Psyllidae) u Srbiji.</article-title> <source>Pesticidi i Fitomedicina(Belgrade) </source> <volume>25</volume> (<issue>1</issue>): <fpage>29</fpage>-<lpage>42</lpage>. doi: 10.2298/PIF1001029J
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jerinić-Prodanović</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name></person-group> (<year>2011</year>)<fake_tag> New data on true bug predators (Heteroptera: Miridae) of jumping plant-lice (Sternorrhyncha: Psylloidea) in Serbia. Acta entomologica Serbica 16 (1/2): 143–146.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jonsson</surname> <given-names>N</given-names></name></person-group> (<year>1983</year>)<article-title> The life history of <italic>Psylla mali</italic> Schmidberger (Hom., Psyllidae); and its relationship to the development of the apple blossom. Fauna Norvegica. Norvegian Journal of Entomology, Ser.</article-title> <source>B, </source> <volume>30</volume> (<issue>1</issue>): <fpage>3</fpage>-<lpage>8</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kerzhner</surname> <given-names>IM</given-names></name>,<name name-style="western"><surname>Josifov</surname> <given-names>M</given-names></name></person-group> (<year>1999</year>)<source> Miridae Hahn, 1833. In: Aukema B, Rieger Ch (Eds) Catalogue of the Heteroptera of the Palaearctic Region. Vol. 3.</source> <publisher-name>Cimicomorpha II. The Netherlands Entomological Society</publisher-name>, <publisher-loc>Amsterdam</publisher-loc>, <lpage>577</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Luiz</surname> <given-names>de Queiroz D</given-names></name>,<name name-style="western"><surname>Burckhardt</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Majer</surname> <given-names>J</given-names></name></person-group> (<year>2012</year>)<fake_tag> Integrated pest management of eucalypt psyllids (Insecta, Hemiptera, Psylloidea). – In: Larramendy ML, Soloneski S. (Eds) Integrated Pest Management and Pest Control – Current and Future Tactics. InTech, 385–412. doi: 10.5772/32631. http://www.intechopen.com/books/integrated-pest-management-and-pest-control-current-and-future-tactics/integrated-pest-management-of-eucalypt-psyllids-insecta-hemiptera-psylloidea-, </fake_tag>doi: 10.5772/32631
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Malenovský</surname> <given-names>I</given-names></name>,<name name-style="western"><surname>Jerinić-Prodanović</surname> <given-names>D</given-names></name></person-group> (<year>2011</year>)<article-title> A revised description of <italic>Psyllopsis repens </italic>Loginova, 1963 (Hemiptera: Psylloidea: Psyllidae), with first records from Europe.</article-title> <source>Archives of Biological Sciences (Belgrade) </source> <volume>63</volume> (<issue>1</issue>): <fpage>257</fpage>-<lpage>286</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Novak</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Achtziger</surname> <given-names>R</given-names></name></person-group> (<year>1995</year>)<article-title> Influence of heteropteran predators (Het., Anthocoridae, Miridae) on larval populations of hawthorn psyllids (Hom., Psyllidae).</article-title> <source>Journal of Applied Entomology </source> <volume>119</volume>: <fpage>479</fpage>-<lpage>486</lpage>. doi: 10.1111/j.1439-0418.1995.tb01321.x
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pavićević</surname> <given-names>B</given-names></name></person-group> (<year>1977</year>)<source> Morfologija i biologija vrsta roda <italic>Psylla</italic> (Psyllidae, Homoptera) na kruškama u Srbiji.</source> <publisher-name>PhD thesis. Belgrade, Serbia: University of Belgrade</publisher-name>, <publisher-loc>Faculty of Agriculture</publisher-loc>, <lpage>139</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Péricart</surname> <given-names>J</given-names></name></person-group> (<year>1972</year>)<source> Hémiptères Anthocoridae, Cimicidae, Microphysidae de l’Ouest Paléarctique. In: Faune de l’Europe et du bassin méditerranéen 7.</source> <publisher-name>Masson et Cie</publisher-name>, <publisher-loc>Paris</publisher-loc>, <lpage>403</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name></person-group> (<year>1993</year>)<source> Proučavanje faune stenica (Heteroptera) u voćnim zasadima Srbije.</source> <publisher-name>PhD thesis. Belgrade, Serbia: University of Belgrade</publisher-name>, <publisher-loc>Faculty of Agriculture</publisher-loc>, <lpage>294</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name></person-group> (<year>1998</year>)<article-title> Catalogue of the Heteroptera fauna of Yugoslav countries. Part one. Natural History Museum, Belgrade.</article-title> <source>Special issue </source> <volume>38</volume>: <fpage>1</fpage>-<lpage>215</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name></person-group> (<year>1999</year>)<article-title> Six species of Miridae new to the fauna of Yugoslavia.</article-title> <source>Acta entomologica Slovenica </source> <volume>7</volume> (<issue>1</issue>): <fpage>53</fpage>-<lpage>57</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name></person-group> (<year>2011</year>)<fake_tag> Heteroptera. Natural History Museum, Belgrade, Posebna izdanja 43: 259 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Protić</surname> <given-names>Lj</given-names></name>,<name name-style="western"><surname>Stojanović</surname> <given-names>A</given-names></name></person-group> (<year>2003</year>)<fake_tag> New records of <italic>Anthocoris amplicollis</italic> Horváth (Heteroptera: Anthocoridae) on the Balkan peninsula. Acta entomologica Serbica, 8 (1/2): 103–104.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Rabitsch</surname> <given-names>W</given-names></name></person-group> (<year>2008</year>)<article-title> Alien true bugs of Europe (Insecta: Hemiptera: Heteroptera).</article-title> <source>Zootaxa</source> <volume>1827</volume>: <fpage>1</fpage>-<lpage>44</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santas</surname> <given-names>LA</given-names></name></person-group> (<year>1987</year>)<article-title> The predators'complex of pear-feeding psyllids in unsprayed wild pear trees in Greece.</article-title> <source>Entomophaga </source> <volume>32</volume> (<issue>3</issue>): <fpage>291</fpage>-<lpage>297</lpage>. doi: 10.1007/BF02373253
+</mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sigsgaard</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Esbjerg</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Philipsen</surname> <given-names>H</given-names></name></person-group> (<year>2006</year>)<fake_tag> Controlling pear psyllids by mass-releasing <italic>Anthocoris nemoralis </italic>and <italic>A. nemorum</italic> (Heteroptera: Anthocoridae). Journal of Fruit and Ornamental Plant Research 14 (Suppl. 3): 89–98.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Simov</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Langourov</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Grozeva</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Gradinarov</surname> <given-names>D</given-names></name></person-group> (<year>2012</year>)<article-title> New and interesting records of alien and native true bugs (Hemiptera: Heteroptera) from Bulgaria.</article-title> <source>Acta zoologica bulgarica </source> <volume>64</volume> (<issue>3</issue>): <fpage>241</fpage>-<lpage>252</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Vrabl</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Matis</surname> <given-names>G</given-names></name></person-group> (<year>1977</year>)<article-title> Prilog poznavanju biologije i suzbijanja kruškinih buva u Sloveniji. Zaštita bilja 28 (1), No.</article-title> <source> </source> <volume>139</volume>: <fpage>41</fpage>-<lpage>52</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="32"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wagner</surname> <given-names>E</given-names></name></person-group> (<year>1970–1971</year>)<fake_tag> Die Miridae Hahn, 1831 des Mittelmeerraumes und der Makaronesischen Inseln (Hemiptera, Heteroptera). Entomologische Abhandlungen, Suppl. 39: 421 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="33"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wagner</surname> <given-names>E</given-names></name></person-group> (<year>1975</year>)<fake_tag> Die Miridae Hahn, 1831 des Mittelmeerraumes und der Makaronesischen Inseln (Hemiptera, Heteroptera). Entomologische Abhandlungen, Suppl. 40: 484 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="34"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wheeler</surname> <given-names>Jr AG</given-names></name></person-group> (<year>2000a</year>)<article-title> Plant bugs (Miridae) as plant pests.</article-title> In: <person-group1><name name-style="western"><surname>Schaefer</surname> <given-names>CW</given-names></name>,<name name-style="western"><surname>Pannizzi</surname> <given-names>AR</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Heteroptera of Economic Importance.</issue-title> <source>CRC Press, Washington</source>: <fpage>37</fpage>-<lpage>87</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="35"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wheeler</surname> <given-names>Jr AG</given-names></name></person-group> (<year>2000b</year>)<article-title> Predacious plant bugs (Miridae).</article-title> In: <person-group1><name name-style="western"><surname>Schaefer</surname> <given-names>CW</given-names></name>,<name name-style="western"><surname>Pannizzi</surname> <given-names>AR</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Heteroptera of Economic Importance.</issue-title> <source>CRC Press, Washington</source>: <fpage>657</fpage>-<lpage>693</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="36"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wyniger</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Burckhardt</surname> <given-names>D</given-names></name></person-group> (<year>2003</year>)<article-title> Die Landwanzenfauna (Hemiptera, Heteroptera) von Basel (Schweiz) und Umgebung.</article-title> <source>Mitteilungen der Schweizerischen entomologischen Gesellschaft </source> <volume>76</volume>: <fpage>1</fpage>-<lpage>136</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> List of preys (Psylloidea) and their predators (Heteroptera) and host plants in Serbia.&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="3" bodyRowCount="28" columnCount="22" aid:table="table" aid:trows="31" aid:tcols="22">
+                <tbody>
+                    <tr>
+                        <th rowspan="3" colspan="1"><bold>Preys (Psylloidea)</bold>
+                        </th>
+                        <th rowspan="1" colspan="21"><bold>Predators (Heteroptera)</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th rowspan="1" colspan="7"><bold>Anthocoridae</bold>
+                        </th>
+                        <th rowspan="1" colspan="14"><bold>Miridae</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Ant amp</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ant con</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ant nea</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ant neu</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ori maj</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ori min</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ori nig</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Atr mal</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Cam ver</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Der fla</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Der lut</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Der rub</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Het gen</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Hyp vis</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Mal chl</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Mir str</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Ort mar</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Psa ass</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Psa fla</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Psa que</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Pse coc</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Baeopelma foersteri</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Aln glu</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla affinis</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla bidens</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla melanoneura</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Mal dom</td>
+                        <td rowspan="1" colspan="1">Mal dom</td>
+                        <td rowspan="1" colspan="1">Mal dom, Cra mon</td>
+                        <td rowspan="1" colspan="1">Mal dom</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Mal dom, Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla peregrina</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cra mon</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla picta</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Mal dom</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Mal dom</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla pulchra</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Sal pur</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla pyri</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla pyricola</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla pyrisuga</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pyr com</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla rhamnicola</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Rha cat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Rha cat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Rha cat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cacopsylla visci</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Vis alb</td>
+                        <td rowspan="1" colspan="1">Vis alb</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Vis alb</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Camarotoscena speciosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pop nig</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pop nig</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Pop nig</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Craspedolepta </italic>sp<italic>.</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Art vul</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Homotoma ficus</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fic car</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fic car</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fic car</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Livia junci</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Jun bul</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psylla buxi</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">Bux sem</td>
+                        <td rowspan="1" colspan="1">Bux sem</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Bux sem</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psyllopsis discrepans</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1">Fra orn</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra ang</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1">Fra orn, Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psyllopsis fraxini</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psyllopsis fraxinicola</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1">Fra ang</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1">Fra orn</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra ang</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psyllopsis machinosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1">Fra orn</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra ang</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psyllopsis meliphila</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Psyllopsis repens</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra spp</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Fra orn</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Trichochermes walkeri</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Rha cat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Trioza chenopodii</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Atr tat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Atr obl</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Trioza mesembrina</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Cha hir</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Trioza rhamni</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Rha cat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Rha cat</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Trioza urticae</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Urt dio</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">Urt dio</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                </tbody>
+            </table>&lt;br/&gt; 
+            <table-wrap-foot>
+                <fn>
+                    <p><bold>Abbreviations&lt;br/&gt; Predators</bold>. <bold>Anthocoridae</bold>: Ant amp, <italic>Anthocoris amplicollis</italic>; Ant con, <italic>Anthocoris confusus</italic>; Ant nea, <italic>Anthocoris nemoralis</italic>; Ant neu, <italic>Anthocoris nemorum</italic>; Ori maj, <italic>Orius majusculus</italic>; Ori min, <italic>Orius minutus</italic>; Ori nig, <italic>Orius niger</italic>; <bold>Miridae</bold>: Atr mal, <italic>Atractotomus mali</italic>; Cam ver, <italic>Campylomma verbasci</italic>; Der fla, <italic>Deraeocoris flavilinea</italic>; Der lut, <italic>Deraeocoris lutescens</italic>; Der rub, <italic>Deraeocoris ruber</italic>; Het gen, <italic>Heterocordylus genistae</italic>; Hyp vis, <italic>Hypseloecus visci</italic>; Mal chl, <italic>Malacocoris chlorizans</italic>; Mir str, <italic>Miris striatus</italic>; Ort mar, <italic>Orthotylus marginalis</italic>; Psa ass, <italic>Psallus assimilis</italic>; Psa fla, <italic>Psallus flavellus</italic>; Psa que, <italic>Psallus quercus</italic>; Pse coc, <italic>Pseudoloxops coccinea</italic>.&lt;br/&gt; <bold>Host plants</bold>: Aln glu, <italic>Alnus glutinosa</italic>; Art vul, <italic>Artemisia vulgaris</italic>; Atr obl, <italic>Atriplex oblongifolia</italic>; Atr tat, <italic>Atriplex tatarica</italic>; Bux sem, <italic>Buxus sempervirens</italic>; Cha hir, <italic>Chaerophyllum hirsutum</italic>; Cra mon, <italic>Crataegus monogyna</italic>; Fic car, <italic>Ficus carica</italic>; Fra ang, <italic>Fraxinus angustifolia</italic>; Fra orn, <italic>Fraxinus ornus</italic>; Fra spp, <italic>Fraxinus</italic> spp.; Jun bul, <italic>Juncus bulbosus</italic>; Mal dom, <italic>Malus domestica</italic>; Pop nig, <italic>Populus nigra</italic>; Pyr com, <italic>Pyrus communis</italic>; Rha cat, <italic>Rhamnus cathartica</italic>; Sal pur, <italic>Salix purpurea</italic>; Vis alb, <italic>Viscum album</italic>; Urt dio, <italic>Urtica dioica</italic>.
+                    </p>
+                </fn>
+            </table-wrap-foot>
+        </table-wrap>
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Localities in Serbia where true bug predators of psyllids were collected.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-000NaN-000NaN-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 2.</bold>
+            </label>
+            <caption><p> Geographical coordinates of inspected localities.&lt;br/&gt; </p>
+            </caption>
+            <table id="T2" headerRowCount="1" bodyRowCount="44" columnCount="5" aid:table="table" aid:trows="45" aid:tcols="5">
+                <tbody>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>No</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Locality</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Latitude</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Longitude</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Altitude</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">1</td>
+                        <td rowspan="1" colspan="1">Bački breg</td>
+                        <td rowspan="1" colspan="1">45°55'21&quot;N</td>
+                        <td rowspan="1" colspan="1">18°55'24&quot;E</td>
+                        <td rowspan="1" colspan="1">90</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">2</td>
+                        <td rowspan="1" colspan="1">Bavanište</td>
+                        <td rowspan="1" colspan="1">44°48'42&quot;N</td>
+                        <td rowspan="1" colspan="1">20°53'10&quot;E</td>
+                        <td rowspan="1" colspan="1">80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">3</td>
+                        <td rowspan="1" colspan="1">Beloljin</td>
+                        <td rowspan="1" colspan="1">43°14'03&quot;N</td>
+                        <td rowspan="1" colspan="1">21°24'26&quot;E</td>
+                        <td rowspan="1" colspan="1">290</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">4</td>
+                        <td rowspan="1" colspan="1">Beograd–Autokomanda</td>
+                        <td rowspan="1" colspan="1">44°47'20&quot;N</td>
+                        <td rowspan="1" colspan="1">20°28'20&quot;E</td>
+                        <td rowspan="1" colspan="1">100</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">5</td>
+                        <td rowspan="1" colspan="1">Beograd–Banjica</td>
+                        <td rowspan="1" colspan="1">44°45'18&quot;N</td>
+                        <td rowspan="1" colspan="1">20°28'58&quot;E</td>
+                        <td rowspan="1" colspan="1">190</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">6</td>
+                        <td rowspan="1" colspan="1">Beograd–Block 45</td>
+                        <td rowspan="1" colspan="1">44°47'36&quot;N</td>
+                        <td rowspan="1" colspan="1">20°22'47&quot;E</td>
+                        <td rowspan="1" colspan="1">75</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">7</td>
+                        <td rowspan="1" colspan="1">Beograd–Bulevar Aleksandra Karadjordjevića</td>
+                        <td rowspan="1" colspan="1">44°46'50&quot;N</td>
+                        <td rowspan="1" colspan="1">20°27'31&quot;E</td>
+                        <td rowspan="1" colspan="1">175</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">8</td>
+                        <td rowspan="1" colspan="1">Beograd–Hotel Jugoslavija</td>
+                        <td rowspan="1" colspan="1">44°49'36&quot;N</td>
+                        <td rowspan="1" colspan="1">20°25'22&quot;E</td>
+                        <td rowspan="1" colspan="1">75</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">9</td>
+                        <td rowspan="1" colspan="1">Beograd–Hram Svetog Save</td>
+                        <td rowspan="1" colspan="1">44°47'53&quot;N</td>
+                        <td rowspan="1" colspan="1">20°28'03&quot;E</td>
+                        <td rowspan="1" colspan="1">120</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">10</td>
+                        <td rowspan="1" colspan="1">Beograd–Kalemegdan</td>
+                        <td rowspan="1" colspan="1">44°49'19&quot;N</td>
+                        <td rowspan="1" colspan="1">20°26'52&quot;E</td>
+                        <td rowspan="1" colspan="1">110</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">11</td>
+                        <td rowspan="1" colspan="1">Beograd–Karaburma</td>
+                        <td rowspan="1" colspan="1">44°48'48&quot;N</td>
+                        <td rowspan="1" colspan="1">20°29'15&quot;E</td>
+                        <td rowspan="1" colspan="1">110</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">12</td>
+                        <td rowspan="1" colspan="1">Beograd–Milošev konak</td>
+                        <td rowspan="1" colspan="1">44°46'38&quot;N</td>
+                        <td rowspan="1" colspan="1">20°25'36&quot;E</td>
+                        <td rowspan="1" colspan="1">80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">13</td>
+                        <td rowspan="1" colspan="1">Beograd–Voždovac</td>
+                        <td rowspan="1" colspan="1">44°47'17&quot;N</td>
+                        <td rowspan="1" colspan="1">20°28'28&quot;E</td>
+                        <td rowspan="1" colspan="1">85</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">14</td>
+                        <td rowspan="1" colspan="1">Brestovačka Banja</td>
+                        <td rowspan="1" colspan="1">44°03'36&quot;N</td>
+                        <td rowspan="1" colspan="1">22°02'36&quot;E</td>
+                        <td rowspan="1" colspan="1">360</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">15</td>
+                        <td rowspan="1" colspan="1">Dobra</td>
+                        <td rowspan="1" colspan="1">44°38'23&quot;N</td>
+                        <td rowspan="1" colspan="1">21°54'06&quot;E</td>
+                        <td rowspan="1" colspan="1">85</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">16</td>
+                        <td rowspan="1" colspan="1">Draževac</td>
+                        <td rowspan="1" colspan="1">43°28'08&quot;N</td>
+                        <td rowspan="1" colspan="1">21°46'37&quot;E</td>
+                        <td rowspan="1" colspan="1">205</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">17</td>
+                        <td rowspan="1" colspan="1">Galovica</td>
+                        <td rowspan="1" colspan="1">44°46'22&quot;N</td>
+                        <td rowspan="1" colspan="1">20°21'04&quot;E</td>
+                        <td rowspan="1" colspan="1">75</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">18</td>
+                        <td rowspan="1" colspan="1">Grocka</td>
+                        <td rowspan="1" colspan="1">44°41'21&quot;N</td>
+                        <td rowspan="1" colspan="1">20°42'02&quot;E</td>
+                        <td rowspan="1" colspan="1">125</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">19</td>
+                        <td rowspan="1" colspan="1">Ilinci</td>
+                        <td rowspan="1" colspan="1">45°06'41&quot;N</td>
+                        <td rowspan="1" colspan="1">19°07'16&quot;E</td>
+                        <td rowspan="1" colspan="1">80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">20</td>
+                        <td rowspan="1" colspan="1">Izvor</td>
+                        <td rowspan="1" colspan="1">43°04'58&quot;N</td>
+                        <td rowspan="1" colspan="1">22°23'57&quot;E</td>
+                        <td rowspan="1" colspan="1">290</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">21</td>
+                        <td rowspan="1" colspan="1">Kelebija</td>
+                        <td rowspan="1" colspan="1">46°08'59&quot;N</td>
+                        <td rowspan="1" colspan="1">19°35'10&quot;E</td>
+                        <td rowspan="1" colspan="1">125</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">22</td>
+                        <td rowspan="1" colspan="1">Kopaonik–Srebrenac</td>
+                        <td rowspan="1" colspan="1">43°19'02&quot;N</td>
+                        <td rowspan="1" colspan="1">20°50'08&quot;E</td>
+                        <td rowspan="1" colspan="1">1740</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">23</td>
+                        <td rowspan="1" colspan="1">Klokočevac</td>
+                        <td rowspan="1" colspan="1">44°20'53&quot;N</td>
+                        <td rowspan="1" colspan="1">22°10'45&quot;E</td>
+                        <td rowspan="1" colspan="1">140</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">24</td>
+                        <td rowspan="1" colspan="1">Koruška</td>
+                        <td rowspan="1" colspan="1">45°11'46&quot;N</td>
+                        <td rowspan="1" colspan="1">19°34'23&quot;E</td>
+                        <td rowspan="1" colspan="1">110</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">25</td>
+                        <td rowspan="1" colspan="1">Lipovača</td>
+                        <td rowspan="1" colspan="1">45°08'24&quot;N</td>
+                        <td rowspan="1" colspan="1">19°16'53&quot;E</td>
+                        <td rowspan="1" colspan="1">165</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">26</td>
+                        <td rowspan="1" colspan="1">Luka</td>
+                        <td rowspan="1" colspan="1">44°09'46&quot;N</td>
+                        <td rowspan="1" colspan="1">22°11'56&quot;E</td>
+                        <td rowspan="1" colspan="1">340</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">27</td>
+                        <td rowspan="1" colspan="1">Majdanpek</td>
+                        <td rowspan="1" colspan="1">44°25'10&quot;N</td>
+                        <td rowspan="1" colspan="1">21°57'10&quot;E</td>
+                        <td rowspan="1" colspan="1">520</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">28</td>
+                        <td rowspan="1" colspan="1">Nemenikuće</td>
+                        <td rowspan="1" colspan="1">44°29'38&quot;N</td>
+                        <td rowspan="1" colspan="1">20°34'00&quot;E</td>
+                        <td rowspan="1" colspan="1">280</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">29</td>
+                        <td rowspan="1" colspan="1">Niš</td>
+                        <td rowspan="1" colspan="1">43°18'35&quot;N</td>
+                        <td rowspan="1" colspan="1">21°53'50&quot;E</td>
+                        <td rowspan="1" colspan="1">200</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">30</td>
+                        <td rowspan="1" colspan="1">Novi Sad–Detelinara</td>
+                        <td rowspan="1" colspan="1">45°15'50&quot;N</td>
+                        <td rowspan="1" colspan="1">19°48'56&quot;E</td>
+                        <td rowspan="1" colspan="1">80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">31</td>
+                        <td rowspan="1" colspan="1">Obedska bara</td>
+                        <td rowspan="1" colspan="1">44°44'10&quot;N</td>
+                        <td rowspan="1" colspan="1">19°59'15&quot;E</td>
+                        <td rowspan="1" colspan="1">80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">32</td>
+                        <td rowspan="1" colspan="1">Oparić</td>
+                        <td rowspan="1" colspan="1">43°44'40&quot;N</td>
+                        <td rowspan="1" colspan="1">21°06'38&quot;E</td>
+                        <td rowspan="1" colspan="1">310</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">33</td>
+                        <td rowspan="1" colspan="1">Radenković</td>
+                        <td rowspan="1" colspan="1">44°56'01&quot;N</td>
+                        <td rowspan="1" colspan="1">19°29'05&quot;E</td>
+                        <td rowspan="1" colspan="1">80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">34</td>
+                        <td rowspan="1" colspan="1">Radmilovac</td>
+                        <td rowspan="1" colspan="1">44°45'15&quot;N</td>
+                        <td rowspan="1" colspan="1">20°34'39&quot;E</td>
+                        <td rowspan="1" colspan="1">160</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">35</td>
+                        <td rowspan="1" colspan="1">Sokobanja</td>
+                        <td rowspan="1" colspan="1">43°38'41&quot;N</td>
+                        <td rowspan="1" colspan="1">21°53'11&quot;E</td>
+                        <td rowspan="1" colspan="1">350</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">36</td>
+                        <td rowspan="1" colspan="1">Sutjeska</td>
+                        <td rowspan="1" colspan="1">45o 23'02&quot;N</td>
+                        <td rowspan="1" colspan="1">20°41'53&quot;E</td>
+                        <td rowspan="1" colspan="1">75</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">37</td>
+                        <td rowspan="1" colspan="1">Šid</td>
+                        <td rowspan="1" colspan="1">45°07'31&quot;N</td>
+                        <td rowspan="1" colspan="1">19°12'58&quot;E</td>
+                        <td rowspan="1" colspan="1">105</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">38</td>
+                        <td rowspan="1" colspan="1">Umčari</td>
+                        <td rowspan="1" colspan="1">44°34'10&quot;N</td>
+                        <td rowspan="1" colspan="1">20°43'00&quot;E</td>
+                        <td rowspan="1" colspan="1">160</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">39</td>
+                        <td rowspan="1" colspan="1">Uzovnica</td>
+                        <td rowspan="1" colspan="1">44°16'12&quot;N</td>
+                        <td rowspan="1" colspan="1">19°19'47&quot;E</td>
+                        <td rowspan="1" colspan="1">170</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">40</td>
+                        <td rowspan="1" colspan="1">Veliko Središte</td>
+                        <td rowspan="1" colspan="1">45°12'54&quot;N</td>
+                        <td rowspan="1" colspan="1">21°25'30&quot;E</td>
+                        <td rowspan="1" colspan="1">120</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">41</td>
+                        <td rowspan="1" colspan="1">Vrujci</td>
+                        <td rowspan="1" colspan="1">44°13'26&quot;N</td>
+                        <td rowspan="1" colspan="1">20°09'53&quot;E</td>
+                        <td rowspan="1" colspan="1">170</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">42</td>
+                        <td rowspan="1" colspan="1">Zemun–Nova Galenika</td>
+                        <td rowspan="1" colspan="1">44°51'41&quot;N</td>
+                        <td rowspan="1" colspan="1">20°22'11&quot;E</td>
+                        <td rowspan="1" colspan="1">90</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">43</td>
+                        <td rowspan="1" colspan="1">Zemunski kej</td>
+                        <td rowspan="1" colspan="1">44°50'29&quot;N</td>
+                        <td rowspan="1" colspan="1">20°25'06&quot;E</td>
+                        <td rowspan="1" colspan="1">75</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">44</td>
+                        <td rowspan="1" colspan="1">Zlatibor–Kraljevske Vode</td>
+                        <td rowspan="1" colspan="1">43°43'39&quot;N</td>
+                        <td rowspan="1" colspan="1">19°42'06&quot;E</td>
+                        <td rowspan="1" colspan="1">950</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> <italic>Orius minutus</italic> feeding on <italic>Trioza rhamni.</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-000NaN-000NaN-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> Larva of <italic>Psallus</italic> <italic>flavellus</italic> feeding on <italic>Psyllopsis fraxinicola.</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-000NaN-000NaN-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

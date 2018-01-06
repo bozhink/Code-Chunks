@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap2" blackbox="0" uid="65048328" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="expense-item" library="core" uid="65061952" kind="3">
+					<sources>
+						<datapoint pos="0" key="26"/>
+						<datapoint pos="1" key="56"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="49"/>
+						<datapoint/>
+					</targets>
+					<view ltx="227" lty="262" rbx="-261" rby="-98"/>
+				</component>
+				<component name="equal" library="core" uid="65483336" kind="5">
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="53"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="55"/>
+					</targets>
+					<view ltx="202" lty="342" rbx="-16" rby="-113"/>
+				</component>
+				<component name="constant" library="core" uid="65912614" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="228"/>
+					</targets>
+					<view ltx="492" lty="465" rbx="-27" rby="233"/>
+					<data>
+						<constant value="1500" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Travel" library="core" uid="65912612" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="227"/>
+						<datapoint pos="1" key="231"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="233"/>
+						<datapoint/>
+					</targets>
+					<view ltx="608" lty="245" rbx="142" rby="13"/>
+				</component>
+				<component name="equal-or-less" library="core" uid="65912613" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="232"/>
+						<datapoint pos="1" key="229"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="230"/>
+					</targets>
+					<view ltx="582" lty="327" rbx="-27" rby="-31"/>
+				</component>
+				<component name="document" library="xml" uid="50114920" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="9" rbx="162" rby="421"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="expense-report" expanded="1">
+										<entry name="detailed" type="attribute" outkey="137" expanded="1"/>
+										<entry name="currency" type="attribute" outkey="7" expanded="1"/>
+										<entry name="Person" outkey="31" expanded="1"/>
+										<entry name="expense-item" outkey="25" expanded="1">
+											<entry name="type" type="attribute" outkey="1" expanded="1"/>
+											<entry name="expto" type="attribute" outkey="4" expanded="1"/>
+											<entry name="Date" outkey="40" expanded="1"/>
+											<entry name="Lodging" expanded="1"/>
+											<entry name="Travel" outkey="262" expanded="1"/>
+											<entry name="description" expanded="1">
+												<entry name="#text" outkey="265"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="mf-ExpReport.xsd" inputinstance="mf-ExpReport.xml" outputinstance="mf-ExpReport.xml" instanceroot="{}expense-report"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="65677320" kind="2">
+					<targets>
+						<datapoint pos="0" key="52"/>
+					</targets>
+					<view ltx="183" lty="453" rbx="-305" rby="22"/>
+					<data>
+						<constant value="Travel" datatype="string"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="65912611" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="745" rbx="935" rby="432"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="expense-report" inpkey="234" expanded="1">
+										<entry name="detailed" type="attribute" inpkey="256"/>
+										<entry name="currency" type="attribute" inpkey="257"/>
+										<entry name="Person" inpkey="235" expanded="1"/>
+										<entry name="expense-item" inpkey="236" expanded="1">
+											<entry name="type" type="attribute" inpkey="251"/>
+											<entry name="expto" type="attribute" inpkey="237"/>
+											<entry name="Date" inpkey="238"/>
+											<entry name="Lodging" expanded="1"/>
+											<entry name="Travel" expanded="1">
+												<entry name="Trav-cost" type="attribute" inpkey="239"/>
+											</entry>
+											<entry name="description" expanded="1">
+												<entry name="#text" inpkey="258"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="mf-ExpRep-Target.xsd" instanceroot="{}expense-report" sps="mf-ExpReport-chain.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="50115216" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" PassThrough="1"/>
+					<view ltx="363" rbx="541" rby="429"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="expense-report" outkey="203" expanded="1">
+										<entry name="detailed" type="attribute" inpkey="138" outkey="253"/>
+										<entry name="currency" type="attribute" inpkey="139" outkey="254"/>
+										<entry name="Person" inpkey="140" outkey="169" expanded="1"/>
+										<entry name="expense-item" inpkey="146" expanded="1">
+											<entry name="type" type="attribute" inpkey="162" outkey="250"/>
+											<entry name="expto" type="attribute" inpkey="154" outkey="175"/>
+											<entry name="Date" inpkey="155" outkey="176"/>
+											<entry name="Lodging" expanded="1"/>
+											<entry name="Travel" inpkey="156" outkey="147" expanded="1">
+												<entry name="Trav-cost" type="attribute" outkey="148"/>
+											</entry>
+											<entry name="description" expanded="1">
+												<entry name="#text" inpkey="264" outkey="255"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ExpRep-Target.xsd" inputinstance="mf-ExpReport-co.xml" instanceroot="{}expense-report"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="141">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="240">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="263">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="149"/>
+							<edge vertexkey="162" edgekey="165"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="154" edgekey="158"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="139" edgekey="142"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="150"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="140" edgekey="141"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="155" edgekey="161"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="146" edgekey="151"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="53" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="56" edgekey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="137">
+						<edges>
+							<edge vertexkey="138" edgekey="145"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="147">
+						<edges>
+							<edge vertexkey="227" edgekey="241"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="232" edgekey="242"/>
+							<edge vertexkey="239" edgekey="243"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169">
+						<edges>
+							<edge vertexkey="235" edgekey="240"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="175">
+						<edges>
+							<edge vertexkey="237" edgekey="244"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="176">
+						<edges>
+							<edge vertexkey="238" edgekey="245"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="203">
+						<edges>
+							<edge vertexkey="234" edgekey="246"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="228">
+						<edges>
+							<edge vertexkey="229" edgekey="247"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230">
+						<edges>
+							<edge vertexkey="231" edgekey="248"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="233">
+						<edges>
+							<edge vertexkey="236" edgekey="249"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="250">
+						<edges>
+							<edge vertexkey="251" edgekey="252"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="253">
+						<edges>
+							<edge vertexkey="256" edgekey="259"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="254">
+						<edges>
+							<edge vertexkey="257" edgekey="260"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="255">
+						<edges>
+							<edge vertexkey="258" edgekey="267"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="262">
+						<edges>
+							<edge vertexkey="156" edgekey="263"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="265">
+						<edges>
+							<edge vertexkey="264" edgekey="266"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

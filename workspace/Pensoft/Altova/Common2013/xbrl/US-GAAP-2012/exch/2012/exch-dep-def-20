@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:roleRef roleURI="http://xbrl.sec.gov/exch/role/deprecated/exch" xlink:type="simple" xlink:href="exch-2012-01-31.xsd#dep-exch"/>
+<link:arcroleRef arcroleURI="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:type="simple" xlink:href="http://www.xbrl.org/lrr/arcrole/deprecated-2009-12-16.xsd#dep-concept-deprecatedConcept"/>
+<link:definitionLink xlink:type="extended" xlink:role="http://xbrl.sec.gov/exch/role/deprecated/exch">
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XOSE" xlink:label="XOSE"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_TRQD" xlink:label="TRQD"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XSTO" xlink:label="XSTO"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_ICAH" xlink:label="ICAH"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_MTAA" xlink:label="MTAA"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XBCV" xlink:label="XBCV"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XKLS" xlink:label="XKLS"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_ICUS" xlink:label="ICUS"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_TPCD" xlink:label="TPCD"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XEQT" xlink:label="XEQT"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XIDX" xlink:label="XIDX"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XLON" xlink:label="XLON"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XDUB" xlink:label="XDUB"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_BVMF" xlink:label="BVMF"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_FNEE" xlink:label="FNEE"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XTAL" xlink:label="XTAL"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_FNLT" xlink:label="FNLT"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_JATA" xlink:label="JATA"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XHER" xlink:label="XHER"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XEDX" xlink:label="XEDX"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_NASN" xlink:label="NASN"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_ICAT" xlink:label="ICAT"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_MTAX" xlink:label="MTAX"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_EXPA" xlink:label="EXPA"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XHON" xlink:label="XHON"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XLOF" xlink:label="XLOF"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XNYF" xlink:label="XNYF"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_PCDS" xlink:label="PCDS"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XEAS" xlink:label="XEAS"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XSUR" xlink:label="XSUR"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XJKT" xlink:label="XJKT"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_AIMX" xlink:label="AIMX"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XASM" xlink:label="XASM"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XIEX" xlink:label="XIEX"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XBMF" xlink:label="XBMF"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XBSP" xlink:label="XBSP"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XTAA" xlink:label="XTAA"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XTAR" xlink:label="XTAR"/>
+<link:loc xlink:type="locator" xlink:href="exch-2012-01-31.xsd#exch_XVIA" xlink:label="XVIA"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XOSE" xlink:to="JATA" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XOSE" xlink:to="XHER" order="2.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="TRQD" xlink:to="XEDX" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XSTO" xlink:to="NASN" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="ICAH" xlink:to="ICAT" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="MTAA" xlink:to="MTAX" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="MTAA" xlink:to="EXPA" order="2.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XBCV" xlink:to="XHON" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XKLS" xlink:to="XLOF" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="ICUS" xlink:to="XNYF" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="TPCD" xlink:to="PCDS" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XEQT" xlink:to="XEAS" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XIDX" xlink:to="XSUR" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XIDX" xlink:to="XJKT" order="2.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XLON" xlink:to="AIMX" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XDUB" xlink:to="XASM" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XDUB" xlink:to="XIEX" order="2.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="BVMF" xlink:to="XBMF" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="BVMF" xlink:to="XBSP" order="2.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="FNEE" xlink:to="XTAA" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="XTAL" xlink:to="XTAR" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="FNLT" xlink:to="XVIA" order="1.0"/>
+</link:definitionLink>
+</link:linkbase>

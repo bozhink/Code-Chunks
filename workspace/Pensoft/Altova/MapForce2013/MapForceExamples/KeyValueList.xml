@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyValueList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KeyValueList.xsd">
+	<Item>
+		<Property Key="role">Manager</Property>
+		<Property Key="First">Vernon</Property>
+		<Property Key="Last">Callaby</Property>
+	</Item>
+	<Item>
+		<Property Key="role">Programmer</Property>
+		<Property Key="First">Frank</Property>
+		<Property Key="Last">Further</Property>
+	</Item>
+	<Item>
+		<Property Key="role">Support</Property>
+		<Property Key="First">Loby</Property>
+		<Property Key="Last">Matise</Property>
+	</Item>
+	<Item>
+		<Property Key="role">Support</Property>
+		<Property Key="First">Susi</Property>
+		<Property Key="Last">Sanna</Property>
+	</Item>
+</KeyValueList>

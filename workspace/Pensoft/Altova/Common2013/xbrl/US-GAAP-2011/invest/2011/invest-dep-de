@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+<link:roleRef roleURI="http://xbrl.sec.gov/role/document/InvestDeprecatedConcepts" xlink:type="simple" xlink:href="invest-2011-01-31.xsd#investDeprecatedConcepts"/>
+<link:arcroleRef arcroleURI="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:type="simple" xlink:href="http://www.xbrl.org/lrr/arcrole/deprecated-2009-12-16.xsd#dep-concept-deprecatedConcept"/>
+<link:definitionLink xlink:type="extended" xlink:role="http://xbrl.sec.gov/role/document/InvestDeprecatedConcepts">
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentIssuerAxis" xlink:label="InvestmentIssuerAxis"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentMaturityDate1" xlink:label="InvestmentMaturityDate1"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentMaturityDateRangeStart1" xlink:label="InvestmentMaturityDateRangeStart1"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentMaturityDateRangeEnd1" xlink:label="InvestmentMaturityDateRangeEnd1"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentIssuer" xlink:label="InvestmentIssuer"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentMaturityDate" xlink:label="InvestmentMaturityDate"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentMaturityDateRangeStart" xlink:label="InvestmentMaturityDateRangeStart"/>
+<link:loc xlink:type="locator" xlink:href="invest-2011-01-31.xsd#invest_InvestmentMaturityDateRangeEnd" xlink:label="InvestmentMaturityDateRangeEnd"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="InvestmentIssuerAxis" xlink:to="InvestmentIssuer" use="optional" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="InvestmentMaturityDate1" xlink:to="InvestmentMaturityDate" use="optional" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="InvestmentMaturityDateRangeStart1" xlink:to="InvestmentMaturityDateRangeStart" use="optional" order="1.0"/>
+<link:definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2009/arcrole/dep-concept-deprecatedConcept" xlink:from="InvestmentMaturityDateRangeEnd1" xlink:to="InvestmentMaturityDateRangeEnd" use="optional" order="1.0"/>
+</link:definitionLink>
+</link:linkbase>

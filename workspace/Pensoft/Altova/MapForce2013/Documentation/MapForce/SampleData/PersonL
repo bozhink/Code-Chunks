@@ -1,0 +1,1138 @@
+<MapForceDocumentation xmlns="http://www.altova.com/documentation" xmlns:doc="http://www.altova.com/documentation">
+	<Document title="PersonListByBranchOffice.mfd" application="MapForce" homepage="http://www.altova.com/mapforce"/>
+	<DocumentationSettings>
+		<Includes inputComponents="true" outputComponents="true" userDefinedFunctions="true" remainingComponents="true" variableComponents="true" constants="true"/>
+		<Details annotations="true" datatypes="true" libraryNames="true" connectedNodes="true" unconnectedNodes="true"/>
+	</DocumentationSettings>
+	<Inputs>
+		<Structure id="Link1" type="Input" name="core.OfficeName">
+			<Node id="Link2" name="OfficeName" type="string">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link3">core.equal</Component>
+								<ComponentParameters ref="Link3"> =&gt; a | result =&gt;</ComponentParameters>
+							</Edge>
+							<Edge>
+								<Component ref="Link4">core.filter</Component>
+								<ComponentParameters ref="Link4"> =&gt; bool | on-true =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="restriction of xs:anyType [0..1]">
+							<Component ref="Link5">PersonList</Component>
+							<Annotation>List of Persons</Annotation>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link6">user.LookupPerson</Component>
+								<ComponentParameters ref="Link6"> =&gt; Office_Name | result =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link7">PersonList/Person/Details</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+		</Structure>
+		<Structure id="Link8" type="Input" name="BranchOffices" passThrough="false">
+			<Source href="BranchOffices.xsd">BranchOffices.xsd</Source>
+			<Node id="Link9" name="File: BranchOffices.xml" type="string"/>
+			<Node id="LinkA" name="BranchOffices" type="restriction of xs:anyType [0..1]"/>
+			<Node id="LinkB" name="BranchOffices/Name" type="restriction of xs:string [0..1]"/>
+			<Node id="LinkC" name="BranchOffices/Office" type="restriction of xs:anyType [0..∞]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link4">core.filter</Component>
+								<ComponentParameters ref="Link4"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="restriction of xs:anyType [0..1]">
+							<Component ref="Link5">PersonList</Component>
+							<Annotation>List of Persons</Annotation>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="LinkD" name="BranchOffices/Office/Name" type="restriction of xs:string [0..1]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link3">core.equal</Component>
+								<ComponentParameters ref="Link3"> =&gt; b | result =&gt;</ComponentParameters>
+							</Edge>
+							<Edge>
+								<Component ref="Link4">core.filter</Component>
+								<ComponentParameters ref="Link4"> =&gt; bool | on-true =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="restriction of xs:anyType [0..1]">
+							<Component ref="Link5">PersonList</Component>
+							<Annotation>List of Persons</Annotation>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="LinkE" name="BranchOffices/Office/EMail" type="restriction of xs:string [0..1]"/>
+			<Node id="LinkF" name="BranchOffices/Office/Fax" type="restriction of xs:string [0..1]"/>
+			<Node id="Link10" name="BranchOffices/Office/Phone" type="restriction of xs:string [0..1]"/>
+			<Node id="Link11" name="BranchOffices/Office/Location" type="xs:string [0..1]"/>
+			<Node id="Link12" name="BranchOffices/Office/Address" type="restriction of xs:anyType [0..∞]"/>
+			<Node id="Link13" name="BranchOffices/Office/Address/city" type="restriction of xs:string [0..1]"/>
+			<Node id="Link14" name="BranchOffices/Office/Address/state" type="restriction of xs:string [0..1]"/>
+			<Node id="Link15" name="BranchOffices/Office/Address/street" type="restriction of xs:string [0..1]"/>
+			<Node id="Link16" name="BranchOffices/Office/Address/zip" type="restriction of xs:integer [0..1]"/>
+			<Node id="Link17" name="BranchOffices/Office/Contact" type="restriction of xs:anyType [0..∞]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint type="restriction of xs:anyType [0..∞]">
+							<Component ref="Link18">PersonList/Person</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="Link19" name="BranchOffices/Office/Contact/first" type="xs:string [0..1]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link1A">PersonList/Person/First</Component>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link6">user.LookupPerson</Component>
+								<ComponentParameters ref="Link6"> =&gt; First_Name | result =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link7">PersonList/Person/Details</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="Link1B" name="BranchOffices/Office/Contact/last" type="xs:string [0..1]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link1C">PersonList/Person/Last</Component>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link6">user.LookupPerson</Component>
+								<ComponentParameters ref="Link6"> =&gt; Last_Name | result =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link7">PersonList/Person/Details</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+		</Structure>
+	</Inputs>
+	<Outputs>
+		<Structure id="Link1D" type="Input" name="core.OfficeName">
+			<Node id="Link1E" name="default" type="string">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint>
+							<Component ref="Link1F">core.constant(&quot;Nanonull, Inc.&quot;)</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+		</Structure>
+		<Structure id="Link20" type="Output" name="PersonList" passThrough="false">
+			<Source href="PersonList.xsd">PersonList.xsd</Source>
+			<Signature create="true" placement="detached" extension=".xsig"/>
+			<Node id="Link21" name="File: (default)" type="string"/>
+			<Node id="Link5" name="PersonList" type="restriction of xs:anyType [0..1]">
+				<Annotation>List of Persons</Annotation>
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link1">core.input</Component>
+								<ComponentParameters ref="Link1"> =&gt; default | OfficeName =&gt;</ComponentParameters>
+							</Edge>
+							<Edge>
+								<Component ref="Link3">core.equal</Component>
+								<ComponentParameters ref="Link3"> =&gt; a | result =&gt;</ComponentParameters>
+							</Edge>
+							<Edge>
+								<Component ref="Link4">core.filter</Component>
+								<ComponentParameters ref="Link4"> =&gt; bool | on-true =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint>
+							<Component ref="Link1F">core.constant(&quot;Nanonull, Inc.&quot;)</Component>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link4">core.filter</Component>
+								<ComponentParameters ref="Link4"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="restriction of xs:anyType [0..∞]">
+							<Component ref="LinkC">BranchOffices/Office</Component>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link3">core.equal</Component>
+								<ComponentParameters ref="Link3"> =&gt; b | result =&gt;</ComponentParameters>
+							</Edge>
+							<Edge>
+								<Component ref="Link4">core.filter</Component>
+								<ComponentParameters ref="Link4"> =&gt; bool | on-true =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="restriction of xs:string [0..1]">
+							<Component ref="LinkD">BranchOffices/Office/Name</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="Link18" name="PersonList/Person" type="restriction of xs:anyType [0..∞]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint type="restriction of xs:anyType [0..∞]">
+							<Component ref="Link17">BranchOffices/Office/Contact</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="Link22" name="PersonList/Person/@role" type="xs:string [0..1]"/>
+			<Node id="Link1A" name="PersonList/Person/First" type="xs:string [0..1]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link19">BranchOffices/Office/Contact/first</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="Link1C" name="PersonList/Person/Last" type="xs:string [0..1]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge type="direct"/>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link1B">BranchOffices/Office/Contact/last</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+			<Node id="Link7" name="PersonList/Person/Details" type="xs:string [0..1]">
+				<Connections>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link1">core.input</Component>
+								<ComponentParameters ref="Link1"> =&gt; default | OfficeName =&gt;</ComponentParameters>
+							</Edge>
+							<Edge>
+								<Component ref="Link6">user.LookupPerson</Component>
+								<ComponentParameters ref="Link6"> =&gt; Office_Name | result =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint>
+							<Component ref="Link1F">core.constant(&quot;Nanonull, Inc.&quot;)</Component>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link6">user.LookupPerson</Component>
+								<ComponentParameters ref="Link6"> =&gt; First_Name | result =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link19">BranchOffices/Office/Contact/first</Component>
+						</EndPoint>
+					</Connection>
+					<Connection>
+						<Edges>
+							<Edge>
+								<Component ref="Link6">user.LookupPerson</Component>
+								<ComponentParameters ref="Link6"> =&gt; Last_Name | result =&gt;</ComponentParameters>
+							</Edge>
+						</Edges>
+						<EndPoint type="xs:string [0..1]">
+							<Component ref="Link1B">BranchOffices/Office/Contact/last</Component>
+						</EndPoint>
+					</Connection>
+				</Connections>
+			</Node>
+		</Structure>
+	</Outputs>
+	<LibraryComponents>
+		<Component id="Link3" name="core.equal" neighbours="core.input, BranchOffices -&gt; core.filter">
+			<Input name="a">
+				<From ref="Link1">core.OfficeName.OfficeName</From>
+			</Input>
+			<Input name="b">
+				<From ref="LinkD">BranchOffices.Name</From>
+			</Input>
+			<Output name="result">
+				<To ref="Link4">core.Office.bool</To>
+			</Output>
+		</Component>
+		<Component id="Link4" name="core.filter" neighbours="BranchOffices, core.equal -&gt; PersonList">
+			<Input name="node/row">
+				<From ref="LinkC">BranchOffices.Office</From>
+			</Input>
+			<Input name="bool">
+				<From ref="Link3">core.equal.result</From>
+			</Input>
+			<Output name="on-true">
+				<To ref="Link5">PersonList.PersonList</To>
+			</Output>
+		</Component>
+	</LibraryComponents>
+	<UDFComponents>
+		<Component id="Link6" name="user.LookupPerson" neighbours="core.input, BranchOffices -&gt; PersonList" refDetails="Link23">
+			<Input name="Office_Name">
+				<From ref="Link1">core.OfficeName.OfficeName</From>
+			</Input>
+			<Input name="First_Name">
+				<From ref="Link19">BranchOffices.first</From>
+			</Input>
+			<Input name="Last_Name">
+				<From ref="Link1B">BranchOffices.last</From>
+			</Input>
+			<Output name="result">
+				<To ref="Link7">PersonList.Details</To>
+			</Output>
+		</Component>
+	</UDFComponents>
+	<ConstantComponents>
+		<Constant id="Link1F" name="core.constant" neighbours=" -&gt; core.input">Nanonull, Inc.</Constant>
+	</ConstantComponents>
+	<UserDefinedFunctionsDefines>
+		<Mapping id="Link23" name="user.LookupPerson">
+			<ShortDescription>LookupPerson( OfficeName, First, Last )</ShortDescription>
+			<LongDescription>Searches for detailed information about the person in Altova_Hierarchical.xml.</LongDescription>
+			<Inputs>
+				<Structure id="Link24" type="Input" required="true" name="core.Office_Name">
+					<Node id="Link25" name="Office_Name" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link26">user.EqualAnd</Component>
+										<ComponentParameters ref="Link26"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link2B" type="Input" name="Altova_Hierarchical" passThrough="false">
+					<Source href="Altova_Hierarchical.xsd">Altova_Hierarchical.xsd</Source>
+					<Node id="Link2C" name="File: Altova_Hierarchical.xml" type="string"/>
+					<Node id="Link2D" name="Altova" type="restriction of xs:anyType [0..1]"/>
+					<Node id="Link2E" name="Altova/PrimaryKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link2F" name="Altova/Name" type="restriction of xs:string [0..1]"/>
+					<Node id="Link30" name="Altova/Office" type="restriction of xs:anyType [0..∞]"/>
+					<Node id="Link31" name="Altova/Office/PrimaryKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link32" name="Altova/Office/ForeignKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link33" name="Altova/Office/Desc" type="restriction of xs:string [0..1]"/>
+					<Node id="Link34" name="Altova/Office/EMail" type="restriction of xs:string [0..1]"/>
+					<Node id="Link35" name="Altova/Office/Established" type="restriction of xs:string [0..1]"/>
+					<Node id="Link36" name="Altova/Office/Fax" type="restriction of xs:string [0..1]"/>
+					<Node id="Link37" name="Altova/Office/Name" type="restriction of xs:string [0..1]">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link26">user.EqualAnd</Component>
+										<ComponentParameters ref="Link26"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+					<Node id="Link38" name="Altova/Office/Phone" type="restriction of xs:string [0..1]"/>
+					<Node id="Link39" name="Altova/Office/Address" type="restriction of xs:anyType [0..∞]"/>
+					<Node id="Link3A" name="Altova/Office/Department" type="restriction of xs:anyType [0..∞]"/>
+					<Node id="Link3B" name="Altova/Office/Department/PrimaryKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link3C" name="Altova/Office/Department/ForeignKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link3D" name="Altova/Office/Department/Name" type="restriction of xs:string [0..1]"/>
+					<Node id="Link3E" name="Altova/Office/Department/Person" type="restriction of xs:anyType [0..∞]"/>
+					<Node id="Link3F" name="Altova/Office/Department/Person/PrimaryKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link40" name="Altova/Office/Department/Person/ForeignKey" type="restriction of xs:integer [0..1]"/>
+					<Node id="Link41" name="Altova/Office/Department/Person/EMail" type="restriction of xs:string [0..1]">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link42">user.Person2Details</Component>
+										<ComponentParameters ref="Link42"> =&gt; EMail | Details =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+					<Node id="Link43" name="Altova/Office/Department/Person/First" type="restriction of xs:string [0..1]">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+					<Node id="Link44" name="Altova/Office/Department/Person/Last" type="restriction of xs:string [0..1]">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+					<Node id="Link45" name="Altova/Office/Department/Person/PhoneExt" type="restriction of xs:integer [0..1]">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link42">user.Person2Details</Component>
+										<ComponentParameters ref="Link42"> =&gt; Phone | Details =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+					<Node id="Link46" name="Altova/Office/Department/Person/Title" type="restriction of xs:string [0..1]">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link42">user.Person2Details</Component>
+										<ComponentParameters ref="Link42"> =&gt; Title | Details =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link47" type="Input" required="true" name="core.First_Name">
+					<Node id="Link48" name="First_Name" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link49" type="Input" required="true" name="core.Last_Name">
+					<Node id="Link4A" name="Last_Name" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link2A">core.output</Component>
+									<ComponentParameters ref="Link2A"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+			</Inputs>
+			<Outputs>
+				<Structure id="Link2A" type="Output" name="core.result">
+					<Node id="Link4B" name="result" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link26">user.EqualAnd</Component>
+										<ComponentParameters ref="Link26"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link24">core.input</Component>
+									<ComponentParameters ref="Link24"> | Office_Name =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link26">user.EqualAnd</Component>
+										<ComponentParameters ref="Link26"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="restriction of xs:string [0..1]">
+									<Component ref="Link37">Altova/Office/Name</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link42">user.Person2Details</Component>
+										<ComponentParameters ref="Link42"> =&gt; EMail | Details =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="restriction of xs:string [0..1]">
+									<Component ref="Link41">Altova/Office/Department/Person/EMail</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="restriction of xs:string [0..1]">
+									<Component ref="Link43">Altova/Office/Department/Person/First</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="restriction of xs:string [0..1]">
+									<Component ref="Link44">Altova/Office/Department/Person/Last</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link42">user.Person2Details</Component>
+										<ComponentParameters ref="Link42"> =&gt; Phone | Details =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="restriction of xs:integer [0..1]">
+									<Component ref="Link45">Altova/Office/Department/Person/PhoneExt</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link42">user.Person2Details</Component>
+										<ComponentParameters ref="Link42"> =&gt; Title | Details =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; node/row | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="restriction of xs:string [0..1]">
+									<Component ref="Link46">Altova/Office/Department/Person/Title</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link27">user.EqualAnd</Component>
+										<ComponentParameters ref="Link27"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; and | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link47">core.input</Component>
+									<ComponentParameters ref="Link47"> | First_Name =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link28">user.EqualAnd</Component>
+										<ComponentParameters ref="Link28"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link29">core.filter</Component>
+										<ComponentParameters ref="Link29"> =&gt; bool | on-true =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link49">core.input</Component>
+									<ComponentParameters ref="Link49"> | Last_Name =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+			</Outputs>
+			<LibraryComponents>
+				<Component id="Link29" name="core.filter" neighbours="user.Person2Details, user.EqualAnd -&gt; core.output">
+					<Input name="node/row">
+						<From ref="Link4C">user.Person2Details.Details</From>
+					</Input>
+					<Input name="bool">
+						<From ref="Link4D">user.EqualAnd.result</From>
+					</Input>
+					<Output name="on-true">
+						<To ref="Link2A">core.result.result</To>
+					</Output>
+				</Component>
+			</LibraryComponents>
+			<UDFComponents>
+				<Component id="Link26" name="user.EqualAnd" neighbours="core.input, Altova_Hierarchical -&gt; user.EqualAnd" refDetails="Link4F">
+					<Input name="a">
+						<From ref="Link24">core.Office_Name.Office_Name</From>
+					</Input>
+					<Input name="b">
+						<From ref="Link37">Altova_Hierarchical.Name</From>
+					</Input>
+					<Output name="result">
+						<To ref="Link4E">user.EqualAnd.and</To>
+					</Output>
+				</Component>
+				<Component id="Link27" name="user.EqualAnd" neighbours="core.input, Altova_Hierarchical, user.EqualAnd -&gt; user.EqualAnd" refDetails="Link4F">
+					<Input name="a">
+						<From ref="Link47">core.First_Name.First_Name</From>
+					</Input>
+					<Input name="b">
+						<From ref="Link43">Altova_Hierarchical.First</From>
+					</Input>
+					<Input name="and">
+						<From ref="Link50">user.EqualAnd.result</From>
+					</Input>
+					<Output name="result">
+						<To ref="Link51">user.EqualAnd.and</To>
+					</Output>
+				</Component>
+				<Component id="Link28" name="user.EqualAnd" neighbours="core.input, Altova_Hierarchical, user.EqualAnd -&gt; core.filter" refDetails="Link4F">
+					<Input name="a">
+						<From ref="Link49">core.Last_Name.Last_Name</From>
+					</Input>
+					<Input name="b">
+						<From ref="Link44">Altova_Hierarchical.Last</From>
+					</Input>
+					<Input name="and">
+						<From ref="Link52">user.EqualAnd.result</From>
+					</Input>
+					<Output name="result">
+						<To ref="Link29">core.Details.bool</To>
+					</Output>
+				</Component>
+				<Component id="Link42" name="user.Person2Details" neighbours="Altova_Hierarchical -&gt; core.filter" refDetails="Link53">
+					<Input name="Title">
+						<From ref="Link46">Altova_Hierarchical.Title</From>
+					</Input>
+					<Input name="EMail">
+						<From ref="Link41">Altova_Hierarchical.EMail</From>
+					</Input>
+					<Input name="Phone">
+						<From ref="Link45">Altova_Hierarchical.PhoneExt</From>
+					</Input>
+					<Output name="Details">
+						<To ref="Link29">core.Details.node/row</To>
+					</Output>
+				</Component>
+			</UDFComponents>
+		</Mapping>
+		<Mapping id="Link4F" name="user.EqualAnd">
+			<ShortDescription>EqualAnd( a, b, and )</ShortDescription>
+			<LongDescription>Returns true if &apos;a&apos;=&apos;b&apos; and &apos;and&apos;=true if given - otherwise false.</LongDescription>
+			<Inputs>
+				<Structure id="Link54" type="Input" required="true" name="core.a">
+					<Node id="Link55" name="a" type="anySimpleType">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link56">core.equal</Component>
+										<ComponentParameters ref="Link56"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link57">core.logical-and</Component>
+										<ComponentParameters ref="Link57"> =&gt; value1 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="boolean">
+									<Component ref="Link58">core.output</Component>
+									<ComponentParameters ref="Link58"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link59" type="Input" required="true" name="core.b">
+					<Node id="Link5A" name="b" type="anySimpleType">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link56">core.equal</Component>
+										<ComponentParameters ref="Link56"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link57">core.logical-and</Component>
+										<ComponentParameters ref="Link57"> =&gt; value1 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="boolean">
+									<Component ref="Link58">core.output</Component>
+									<ComponentParameters ref="Link58"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link5B" type="Input" name="core.and">
+					<Node id="Link5C" name="and" type="boolean">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link57">core.logical-and</Component>
+										<ComponentParameters ref="Link57"> =&gt; value2 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="boolean">
+									<Component ref="Link58">core.output</Component>
+									<ComponentParameters ref="Link58"> =&gt; result</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+			</Inputs>
+			<Outputs>
+				<Structure id="Link58" type="Output" name="core.result">
+					<Node id="Link5D" name="result" type="boolean">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link56">core.equal</Component>
+										<ComponentParameters ref="Link56"> =&gt; a | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link57">core.logical-and</Component>
+										<ComponentParameters ref="Link57"> =&gt; value1 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="anySimpleType">
+									<Component ref="Link54">core.input</Component>
+									<ComponentParameters ref="Link54"> | a =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link56">core.equal</Component>
+										<ComponentParameters ref="Link56"> =&gt; b | result =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link57">core.logical-and</Component>
+										<ComponentParameters ref="Link57"> =&gt; value1 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="anySimpleType">
+									<Component ref="Link59">core.input</Component>
+									<ComponentParameters ref="Link59"> | b =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link5B">core.input</Component>
+										<ComponentParameters ref="Link5B"> =&gt; default | and =&gt;</ComponentParameters>
+									</Edge>
+									<Edge>
+										<Component ref="Link57">core.logical-and</Component>
+										<ComponentParameters ref="Link57"> =&gt; value2 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint>
+									<Component ref="Link5E">core.constant(true)</Component>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link5F" type="Input" name="core.and">
+					<Node id="Link60" name="default" type="boolean">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge type="direct"/>
+								</Edges>
+								<EndPoint>
+									<Component ref="Link5E">core.constant(true)</Component>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+			</Outputs>
+			<LibraryComponents>
+				<Component id="Link56" name="core.equal" neighbours="core.input, core.input -&gt; core.logical-and">
+					<Input name="a">
+						<From ref="Link54">core.a.a</From>
+					</Input>
+					<Input name="b">
+						<From ref="Link59">core.b.b</From>
+					</Input>
+					<Output name="result">
+						<To ref="Link57">core.logical-and.value1</To>
+					</Output>
+				</Component>
+				<Component id="Link57" name="core.logical-and" neighbours="core.equal, core.input -&gt; core.output">
+					<Input name="value1">
+						<From ref="Link56">core.equal.result</From>
+					</Input>
+					<Input name="value2">
+						<From ref="Link5B">core.and.and</From>
+					</Input>
+					<Output name="result">
+						<To ref="Link58">core.result.result</To>
+					</Output>
+				</Component>
+			</LibraryComponents>
+			<ConstantComponents>
+				<Constant id="Link5E" name="core.constant" neighbours=" -&gt; core.input">true</Constant>
+			</ConstantComponents>
+		</Mapping>
+		<Mapping id="Link53" name="user.Person2Details">
+			<ShortDescription>Person2Details( Title, EMail, PhoneExt )</ShortDescription>
+			<LongDescription>Creates a complete details-string out of three part values.</LongDescription>
+			<Inputs>
+				<Structure id="Link61" type="Input" required="true" name="core.Title">
+					<Node id="Link62" name="Title" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value1 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link64">core.output</Component>
+									<ComponentParameters ref="Link64"> =&gt; Details</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link65" type="Input" required="true" name="core.EMail">
+					<Node id="Link66" name="EMail" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value3 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link64">core.output</Component>
+									<ComponentParameters ref="Link64"> =&gt; Details</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+				<Structure id="Link67" type="Input" required="true" name="core.Phone">
+					<Node id="Link68" name="Phone" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value5 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link64">core.output</Component>
+									<ComponentParameters ref="Link64"> =&gt; Details</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+			</Inputs>
+			<Outputs>
+				<Structure id="Link64" type="Output" name="core.Details">
+					<Node id="Link69" name="Details" type="string">
+						<Connections>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value1 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link61">core.input</Component>
+									<ComponentParameters ref="Link61"> | Title =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value3 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link65">core.input</Component>
+									<ComponentParameters ref="Link65"> | EMail =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value2 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint>
+									<Component ref="Link6A">core.constant(&quot;, EMail:&quot;)</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value4 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint>
+									<Component ref="Link6B">core.constant(&quot;, Phone: &quot;)</Component>
+								</EndPoint>
+							</Connection>
+							<Connection>
+								<Edges>
+									<Edge>
+										<Component ref="Link63">core.concat</Component>
+										<ComponentParameters ref="Link63"> =&gt; value5 | result =&gt;</ComponentParameters>
+									</Edge>
+								</Edges>
+								<EndPoint type="string">
+									<Component ref="Link67">core.input</Component>
+									<ComponentParameters ref="Link67"> | Phone =&gt;</ComponentParameters>
+								</EndPoint>
+							</Connection>
+						</Connections>
+					</Node>
+				</Structure>
+			</Outputs>
+			<LibraryComponents>
+				<Component id="Link63" name="core.concat" neighbours="core.input, core.constant, core.input, core.constant, core.input -&gt; core.output">
+					<Input name="value1">
+						<From ref="Link61">core.Title.Title</From>
+					</Input>
+					<Input name="value2">
+						<From ref="Link6A">core.constant.&quot;, EMail:&quot;</From>
+					</Input>
+					<Input name="value3">
+						<From ref="Link65">core.EMail.EMail</From>
+					</Input>
+					<Input name="value4">
+						<From ref="Link6B">core.constant.&quot;, Phone: &quot;</From>
+					</Input>
+					<Input name="value5">
+						<From ref="Link67">core.Phone.Phone</From>
+					</Input>
+					<Output name="result">
+						<To ref="Link64">core.Details.Details</To>
+					</Output>
+				</Component>
+			</LibraryComponents>
+			<ConstantComponents>
+				<Constant id="Link6A" name="core.constant" neighbours=" -&gt; core.concat">, EMail:</Constant>
+				<Constant id="Link6B" name="core.constant" neighbours=" -&gt; core.concat">, Phone: </Constant>
+			</ConstantComponents>
+		</Mapping>
+	</UserDefinedFunctionsDefines>
+</MapForceDocumentation>

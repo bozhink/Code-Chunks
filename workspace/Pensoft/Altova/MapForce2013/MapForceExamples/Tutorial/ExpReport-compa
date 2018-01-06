@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?altova_sps ExpReport-Target.sps?>
+<a:Company xmlns:a="http://my-company.com/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://my-company.com/namespace ExpReport-Target.xsd">
+	<a:Employee>
+		<a:Title>Project Manager</a:Title>
+		<a:Name>Fred Landis</a:Name>
+		<a:Tel.>123-456-78</a:Tel.>
+		<a:Email>f.landis@nanonull.com</a:Email>
+		<a:Expense-detail>true</a:Expense-detail>
+		<a:expense-item Currency="USD" Bill-to="Development">
+			<a:Date>2003-01-02</a:Date>
+			<a:Travel Travel-Cost="337.88"/>
+		</a:expense-item>
+		<a:expense-item Currency="USD" Bill-to="Accounting">
+			<a:Date>2003-07-07</a:Date>
+			<a:Travel Travel-Cost="1014.22"/>
+		</a:expense-item>
+		<a:expense-item Currency="USD" Bill-to="Marketing">
+			<a:Date>2003-02-02</a:Date>
+			<a:Travel Travel-Cost="2000"/>
+		</a:expense-item>
+	</a:Employee>
+</a:Company>

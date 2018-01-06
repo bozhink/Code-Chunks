@@ -1,0 +1,1945 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.302.5357</article-id>
+            <title-group>
+                <article-title>Review of the millipede family Opisotretidae (Diplopoda, Polydesmida), with descriptions of new species
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Golovatch</surname>
+                        <given-names>Sergei I.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:71532F45-BDD5-415D-BC54-86256E5D5D4A</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Geoffroy</surname>
+                        <given-names>Jean-Jacques</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:01CF9A1C-794D-4EE3-8AA0-DBE935A44CE2</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Stoev</surname>
+                        <given-names>Pavel</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A3">3</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:333ECF33-329C-4BC2-BD6A-8D98F6E340D4</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Spiegel</surname>
+                        <given-names>Didier Vanden</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A4">4</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:9FF1A0A7-B5C9-41BA-B69B-98136C938F52</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Institute for Problems of Ecology and Evolution, Russian Academy of Sciences, Moscow, Russia
+            </aff>
+            <aff id="A2">
+                <label>2</label>Muséum national d’Histoire naturelle, Département Ecologie &amp; Gestion de la Biodiversité, UMR 7204 CESCO, Brunoy, France
+            </aff>
+            <aff id="A3">
+                <label>3</label>National Museum of Natural History, Bulgarian Academy of Sciences, Sofia, Bulgaria
+            </aff>
+            <aff id="A4">
+                <label>4</label>Musée Royal de l’Afrique centrale, Tervuren, Belgium
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Sergei I. Golovatch (<email xlink:type="simple">sgolovatch@yandex.ru</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: Robert Mesibov</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>20</day>
+                <month>5</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>302</issue>
+            <fpage>13</fpage>
+            <lpage>77</lpage>
+            <history>
+                <date date-type="received">
+                    <day>19</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+                <date date-type="accepted">
+                    <day>8</day>
+                    <month>5</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Sergei I. Golovatch, Jean-Jacques Geoffroy, Pavel Stoev, Didier Vanden Spiegel</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:7A088E76-D618-448B-8CE7-04E7B07A7074
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The small, basically Oriental family Opisotretidae is rediagnosed, reclassified, and shown to comprise the following seven genera, all keyed: <italic>Carlotretus</italic> Hoffman, 1980, with two species, including <italic>C. triramus</italic> <bold>sp. n.</bold> from southern China; <italic>Corypholophus</italic> Attems, 1938, with two species, one in Vietnam, the other in the Ryukyus, Japan; <italic>Martensodesmus</italic> Golovatch, 1987, with eight species, all keyed, including <italic>M. cattienensis </italic><bold>sp. n.</bold> from southern Vietnam, as well as <italic>M. bedosae</italic> <bold>sp. n.</bold> and <italic>M. spiniger </italic><bold>sp. n.</bold> from southern China; <italic>Opisotretus</italic> Attems, 1907, with seven species, all keyed, including <italic>O. beroni</italic> <bold>sp. n.</bold> and <italic>O. hagen</italic> <bold>sp. n.</bold>, both from Papua New Guinea, <italic>O. deharvengi</italic> <bold>sp. n.</bold> from Sulawesi, Indonesia, and <italic>O. spinosus </italic><bold>sp. n.</bold> from Nusakambangan Island, off Java, Indonesia; <italic>Opisthoporodesmus </italic>Silvestri, 1899, with six nominate species; <italic>Retrodesmus </italic>Chamberlin, 1945, with two species, i.e. the type-species<italic> R. dammermani</italic> Chamberlin, 1945, from Java, Indonesia, revised from the holotype, and <italic>R. cavernicola</italic> <bold>sp. n.</bold>, from Papua New Guinea; and <italic>Solaenaulus </italic>Attems, 1940, with two species. Comments are presented on the family’s possible relationships and palaeogeographic history. Instead of being considered as the sole component of the superfamily Opisotretoidea, the Opisotretidae is believed here to form one of the families of the diverse superfamily Trichopolydesmoidea, perhaps the sister-group to, <!--PageBreak-->if not immediately derived from, the pantropical family Fuhrmannodesmidae. The origin of Opisotretidae, previously dated as far back as the Triassic (220 Ma) in relation to the fragmentation of eastern Gondwanaland, mainly in the region of present-day Indonesia, could have had nothing to do with Gondwanaland. Opisotretids might have originated in mainland Southeast Asia well within the Cenozoic, with subsequent dispersals along the Himalayas in the West and across Indonesia (including New Guinea) in the East, also reaching as far north as the Ryukyus, Japan and Guangxi, southern China.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Diplopoda</kwd>
+                <kwd>Opisotretidae</kwd>
+                <kwd>taxonomy</kwd>
+                <kwd>new species</kwd>
+                <kwd>cave</kwd>
+                <kwd>China</kwd>
+                <kwd>Vietnam</kwd>
+                <kwd>Indonesia</kwd>
+                <kwd>Papua New Guinea
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The small millipede family Opisotretidae was first proposed by Hoffman (1980) as a member of the superfamily Polydesmoidea, suborder Polydesmidea, to incorporate the following genera: <italic>Opisotretus</italic> Attems, 1907, <italic>Corypholophus</italic> Attems, 1938, <italic>Solaenaulus</italic> Attems, 1940 and <italic>Carlotretus </italic>Hoffman, 1980. Another two genera were also included, but only with qualifications: <italic>Opisthoporodesmus</italic> Silvestri, 1899 and <italic>Retrodesmus</italic> Chamberlin, 1945. Soon after that Hoffman (1982) firmly assigned all these six genera to Opisotretidae. Golovatch (1987) added one more genus, <italic>Martensodesmus</italic> Golovatch, 1987. Simonsen (1990), based on the results of a cladistic analysis, not only unequivocally included all these genera except <italic>Carlotretus</italic> (likely just forgotten) in Opisotretidae, but he also considered this family as the sole component of a separate superfamily, Opisotretoidea, in the infraorder Polydesmoides, suborder Polydesmidea.
+            </p>
+            <p>Opisotretidae have hitherto been known to contain the following 20 species, arranged in alphabetic order:
+</p>
+            <p>1.	<italic>Carlotretus setosus</italic> (Carl, 1922)
+            </p>
+            <p><italic>Opisotretus setosus</italic> Carl, 1922: 574.
+            </p>
+            <p><italic>Solaenaulus setosus </italic>– Attems 1940: 173.
+            </p>
+            <p><italic>Carlotretus setosus </italic>– Hoffman 1980: 188.
+            </p>
+            <p>The type species of <italic>Carlotretus</italic> Hoffman, 1980, which Hoffman (1980) erected, based on certain gonopod traits alone. Originally described as <italic>Opisotretus setosus</italic> Carl, 1922, from Sumatra, Indonesia (Carl 1922).
+            </p>
+            <p>2.	<italic>Corypholophus</italic> <italic>minutus</italic> Attems, 1938
+            </p>
+            <p><italic>Corypholophus</italic> <italic>minutus</italic> Attems, 1938: 249.
+            </p>
+            <p><italic>Corypholophus</italic> <italic>minutus</italic> – Attems 1940: 190; Golovatch 1987: 205.
+            </p>
+            <p>The type species of <italic>Corypholophus</italic>, originally described from near Nhatrang, southern Vietnam (Attems 1938), later recorded and clearly depicted from material taken from a locality in northern Vietnam (Golovatch 1987).
+            </p>
+            <p>3.	<italic>Corypholophus ryukyuensis</italic> Murakami, 1975
+            </p>
+            <p><italic>Corypholophus ryukyuensis</italic> Murakami, 1975: 108.
+            </p>
+            <p><!--PageBreak--><italic>Corypholophus ryukyuensis</italic> – Golovatch 1987: 205; Nakamura and Korsós 2010: 82.
+            </p>
+            <p>Described from several islands of the Ryukyu Archipelago, Japan (Murakami 1975), whence all later records have been summarized by Nakamura &amp; Korsós (2010). Based on gonopod conformation, the assignment of <italic>ryukyuensis</italic> to <italic>Corypholophus</italic> was questioned by Golovatch (1987).
+            </p>
+            <p>4.	<italic>Martensodesmus bicuspidatus</italic> Golovatch, 1988
+            </p>
+            <p><italic>Martensodesmus bicuspidatus</italic> Golovatch, 1988: 32.
+            </p>
+            <p>Described from Bhutan, Himalaya (Golovatch 1988).
+</p>
+            <p>5.	<italic>Martensodesmus excornis</italic> Golovatch, 1988
+            </p>
+            <p><italic>Martensodesmus excornis</italic> Golovatch, 1988: 30.
+            </p>
+            <p>Described from Bhutan, Himalaya (Golovatch 1988).
+</p>
+            <p>6.<italic>	Martensodesmus himalayensis</italic> Golovatch, 1987
+            </p>
+            <p><italic>Martensodesmus himalayensis</italic> Golovatch, 1987: 205.
+            </p>
+            <p>The type species of <italic>Martensodesmus</italic> Golovatch, 1987, described from Nepal, Himalaya (Golovatch 1987).
+            </p>
+            <p>7.	<italic>Martensodesmus nagarjungicus</italic> Golovatch, 1987
+            </p>
+            <p><italic>Martensodesmus nagarjungicus</italic> Golovatch, 1987: 207.
+            </p>
+            <p>Described from Nepal, Himalaya (Golovatch 1987).
+</p>
+            <p>8.	<italic>Martensodesmus sherpa </italic>Golovatch, 1987
+            </p>
+            <p><italic>Martensodesmus sherpa </italic>Golovatch, 1987: 206.
+            </p>
+            <p>Described from Nepal, Himalaya (Golovatch 1987).
+</p>
+            <p>9.	<italic>Opisotretus euthus</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Opisotretus euthus</italic> Chamberlin, 1945: 4.
+            </p>
+            <p>Rather poorly described from near Tjibodas (now Cibodas), Java, Indonesia (Chamberlin 1945).
+</p>
+            <p>10.	<italic>Opisotretus kraepelini</italic> Attems, 1907
+            </p>
+            <p><italic>Opisotretus Kraepelini</italic> Attems, 1907: 113.
+            </p>
+            <p><italic>Opisotretus kraepelini</italic> – Attems 1940: 150.
+            </p>
+            <p>The type species of <italic>Opisotretus</italic> Attems, 1907, described from Mount Pangerango, Java, Indonesia (Attems 1907).
+            </p>
+            <p>11.	<italic>Opisotretus</italic> <italic>mimus</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Opisotretus</italic> <italic>mimus</italic> Chamberlin, 1945: 4.
+            </p>
+            <p>Very poorly described from ♀ material from near Tjibodas (now Cibodas), Java, Indonesia (Chamberlin 1945).
+</p>
+            <p><!--PageBreak-->12.<italic>	Opisthoporodesmus anandrus</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Opisthoporodesmus anandrus</italic> Chamberlin, 1945: 3.
+            </p>
+            <p>Very poorly described from a ♀ holotype from Doormanpad, Irian Jaya, central mountains, 1410–1450 m a.s.l., 3°24'S, 138°38'E, New Guinea, Papua Province, Indonesia (Chamberlin 1945).
+</p>
+            <p>13.	<italic>Opisthoporodesmus</italic> <italic>bacillifer</italic> Carl, 1912
+            </p>
+            <p><italic>Opisthoporodesmus</italic> <italic>bacillifer</italic> Carl, 1912: 153.
+            </p>
+            <p><italic>Opisthoporodesmus</italic> <italic>bacillifer</italic> – Attems 1940: 152.
+            </p>
+            <p>Very poorly described from two presumably subadult ♀♀ from Masarang, northern Sulawesi, Indonesia (Carl 1912).
+</p>
+            <p>14.	<italic>Opisthoporodesmus conservandus</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Opisthoporodesmus conservandus</italic> Chamberlin, 1945: 3.
+            </p>
+            <p>Very poorly described from Prauwenbivak, Mamberamo River, 3°15'S, 138°35'E, ca 40 km SW of Sukarnapura, Irian Jaya, New Guinea, Papua Province, Indonesia (Chamberlin 1945).
+</p>
+            <p>15.	<italic>Opisthoporodesmus</italic> <italic>obtectus</italic> Silvestri, 1899
+            </p>
+            <p><italic>Opisthoporodesmus</italic> <italic>obtectus</italic> Silvestri, 1899: 206.
+            </p>
+            <p><italic>Opisthoporodesmus</italic> <italic>obtectus</italic> – Attems 1940: 151.
+            </p>
+            <p>The type species of <italic>Opisthoporodesmus</italic> Silvestri, 1899, describedfrom Tamara Island, near Berlinhafen (now Aitape), 3°13'S, 142°35'E, North Sepik Province, Papua New Guinea (Silvestri 1899).
+            </p>
+            <p>16.	<italic>Opisthoporodesmus silvestri</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Opisthoporodesmus. silvestri</italic> Chamberlin, 1945: 2.
+            </p>
+            <p>Very poorly described from a ♀ holotype from Pionierbivak, 4°19'S, 141°55'E, Irian Jaya, New Guinea, Papua Province, Indonesia (Chamberlin 1945).
+</p>
+            <p>17.	<italic>Opisthoporodesmus simplex</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Opisthoporodesmus simplex</italic> Chamberlin, 1945: 4.
+            </p>
+            <p>Very poorly described from ♀ and juvenile material from near Tjibodas (now Cibodas), Java, Indonesia (Chamberlin 1945).
+</p>
+            <p>18.	<italic>Retrodesmus</italic> <italic>dammermani</italic> Chamberlin, 1945
+            </p>
+            <p><italic>Retrodesmus</italic> <italic>dammermani</italic> Chamberlin, 1945: 5.
+            </p>
+            <p>The type species of <italic>Retrodesmus</italic> Chamberlin, 1945, quite poorly described from Tjibodas (now Cibodas), Java, Indonesia (Chamberlin 1945), briefly redescribed and properly illustrated below.
+            </p>
+            <p>19.	<italic>Solaenaulus</italic> <italic>birmanicus</italic> Carl, 1941
+            </p>
+            <p><italic>Solaenaulus butteli</italic>, ssp. <italic>birmanica</italic> Carl, 1941: 374.
+            </p>
+            <p><italic>Solaenaulus butteli </italic>– Jeekel 2006: 162.
+            </p>
+            <p><italic><!--PageBreak-->Solaenaulus</italic> <italic>birmanicus</italic> – Golovatch et al. 2010: 143.
+            </p>
+            <p>Originally described as <italic>S. butteli</italic>, ssp. <italic>birmanicus</italic> (incorrectly spelled as “<italic>birmanica</italic>”), from Irawadi, Myanmar (Carl 1941). Golovatch et al. (2010) consider it a full species, as opposed to Jeekel (2006) who believed it was only a variety of the type species, thus deserving no taxonomic rank.
+            </p>
+            <p>20.	<italic>Solaenaulus</italic> <italic>butteli</italic> (Carl, 1922)
+            </p>
+            <p><italic>Opisotretus butteli</italic> Carl, 1922: 573.
+            </p>
+            <p><italic>Solaenaulus butteli</italic> – Attems 1940: 172; Carl 1941: 374; Jeekel 2006: 61; Golovatch et al. 2010: 140.
+            </p>
+            <p>The type species of <italic>Solaenaulus</italic> Attems, 1940, which Attems (1940) erected, based on certain gonopod traits alone. Originally described as <italic>Opisotretus butteli</italic> Carl, 1922, from Sumatra, Indonesia (Carl 1922), since then recorded in Christmas Island, Indian Ocean, Australia (Jeekel 2006) and redescribed in due detail from material from Lae, Morobe Province, Papua New Guinea (Golovatch et al. 2010). Apparently, introduced to both latter localities.
+            </p>
+            <p>In addition, unidentified Opisotretidae, provisionally referred to as ?<italic>Corypholophus</italic> sp. or <italic>Martensodesmus</italic> sp., respectively, occur also in Taiwan (Golovatch et al. 2011a) and southern Vietnam (Golovatch et al. 2011b).
+            </p>
+            <p>As one can see from the above list, several species have been described too poorly to realistically become recognized. This holds especially true of what Chamberlin (1945) described in <italic>Opisthoporodesmus</italic>, making the compilation of even a superficial key to <italic>Opisthoporodesmus</italic> species impossible. The few he described from ♂ material must be revised, whereas the identities of the species which were based on ♀ and/or juvenile samples are bound to remain enigmatic until ♂ topotypes have been obtained and properly described. Since the main objective of the present paper is to address the generic classification of Opisotretidae in order to identify and name a number of fresh samples ranging from continental southern China, through Indochina and Indonesia, to Papua New Guinea, only <italic>Retrodesmus dammermani</italic>, fortunately an intact ♂ holotype, has been revised here.
+            </p>
+            <sec>
+                <title><bold>Abbreviations used
+</bold>
+                </title>
+                <p><bold>AMNH	</bold>American Museum of Natural History, New York, U.S.A.
+                </p>
+                <p><bold>IZAS</bold>	Institute of Zoology, Academia Sinica, Beijing, China
+                </p>
+                <p><bold>MNHN	</bold>Muséum national d’Histoire naturelle, Paris, France
+                </p>
+                <p><bold>MZB	</bold>Museum Zoologicum Bogoriense, Cibinong, Indonesia
+                </p>
+                <p><bold>NMNHS</bold>	National Museum of Natural History, Sofia, Bulgaria
+                </p>
+                <p><bold>SCAU	</bold>South China Agricultural University, Guangzhou, China
+                </p>
+                <p><bold>SEM	</bold>Scanning electron microscopy
+                </p>
+                <p><bold>ZMUC</bold>	National Museum of Natural History, Copenhagen, Denmark
+                </p>
+                <p><bold>ZMUM	</bold>Zoological Museum, State University of Moscow, Moscow, Russia
+                </p>
+                <!--PageBreak-->
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>The bulk of the material treated below was taken by Louis Deharveng and Anne Bedos (MNHN) in Indonesia and China, as well as nearly entirely by Petar Beron (NMNHS) in Papua New Guinea. A few samples derive from ZMUM. The holotype of <italic>Retrodesmus dammermani</italic> was received on loan from AMNH. The holotypes from Indonesia have been housed in MZB, those from China in the collection of IZAS, whereas a few paratypes from China have been deposited in SCAU. Much of the material has been kept at MNHN, a few duplicates have also been donated to ZMUC and NMNHS, as indicated below.
+            </p>
+            <p>SEM micrographs were taken using a JEOL JSM-6480LV scanning electron microscope.
+</p>
+            <p>After examination, SEM material was removed from stubs and returned to alcohol, all such samples from Papua New Guinea being kept in NMNHS, from the remaining places in MNHN.
+</p>
+            <sec>
+                <title><bold>The main characters used in the classification of Opisotretidae
+</bold>
+                </title>
+                <p>The following characters have been used for defining the genera in Opisotretidae, the only family in the entire order Polydesmida in which the gonopods are directed dorsolaterad, curving very strongly around coxae 8 along the sides of segment 7:
+</p>
+                <p><bold>Number of body segments.
+</bold>
+                </p>
+                <p>Like in most other families in Polydesmida, the number varies from 19 to 20, mostly being sex-characteristic. Thus, in <italic>Carlotretus setosus,</italic> <italic>Corypholophus</italic> <italic>minutus</italic> and <italic>Opisotretus kraepelini</italic>, the type species of their respective genera, the ♂ has 19 segments, whereas ♀♀ are unknown. Regrettably, Chamberlin (1945) did not care to mention the number of body segments in the ♀♀ of his <italic>Opisotretus</italic> <italic>mimus </italic>and<italic> O. euthus.</italic> <italic>Opisthoporodesmus</italic> species, perhaps including also <italic>O. bacillifer</italic> which was described from presumably subadult ♀♀ with 19 segments (Carl 1912), show equally 20 segments in both sexes. All of the remaining genera and species seem to have 19 segments in the ♂ versus 20 segments in the ♀.
+                </p>
+                <p><bold>Number of rows of setae on body metaterga.</bold>
+                </p>
+                <p>Only two known species show two transverse rows on the metaterga: <italic>Carlotretus setosus</italic> and <italic>Corypholophus ryukyuensis</italic>, as opposed to the other species which clearly have three transverse rows of bacilliform setae, these sometimes being evidently shifted caudad. However, this character appears to be only species-specific, as one of the new species of <italic>Martensodesmus</italic> described below also has only two rows of tergal setae.
+                </p>
+                <p>These setae are longitudinally ribbed (Figs 5F, 14I, 19L, 22J, 24J, 28B, 30L, 34B, C, 37J, 40B). However, similar setae occur in certain Fuhrmannodesmidae as well. For example, a still unpublished fuhrmannodesmid from Vietnam shows tergal setae of <!--PageBreak-->two types, one claviform (Fig. 42M), the other bacilliform (Fig. 42F), both ribbed the same way. Moreover, some, but not all, species of the genus <italic>Boreviulisoma</italic> Brolemann, 1928, representing the distantly related family Paradoxosomatidae, also have similarly ribbed bacilliform setae (Reboleira and Enghoff 2013).
+                </p>
+                <p><bold>Metatergal sculpture.
+</bold>
+                </p>
+                <p>The pattern of metatergal sculture is that typical of the Polydesmidea, i.e. three transverse rows of polygonal bosses, with a more or less deep sulcus separating the first row from the two following ones. Each boss is typically surmounted by a seta sometimes borne on a small knob, the pattern being 3+3 per row (see above). In Opisotretidae, only few species show very distinct bosses, like those observed in <italic>Solaenaulus butteli</italic> (Figs 4, 5) or <italic>Opisotretus beroni</italic> sp. n. (Figs 17A–F), whereas in most species the bosses tend to be poorly visible to virtually untraceable (Figs 24A–F), whereas the transverse sulcus is largely superficial.
+                </p>
+                <p><bold>Location of ozopores.
+</bold>
+                </p>
+                <p>The location of ozopores is often quite peculiar in species of Opisotretidae. The pore formula always being normal, 5, 7, 9, 10, 12, 13, 15-18(19), the ozopores are normally placed near the caudolateral corner of paraterga, very to quite close to the caudal margin of the tergite (Figs 1A, 5B, G, 8A, B, 11A, B, 14B, G, K, 17C, L, 22C, E, M, 24B, C, K, 26B, C, 30B, C, E, F, K, 31B, 33B, C, F, 34B, 36, 37B, E, F, 39B–E, 40B). Chamberlin (1945) paid special attention to this character when assigning his species to either <italic>Opisotretus</italic> or <italic>Opisthoporodesmus</italic>, or <italic>Retrodesmus</italic>. In particular, he tended to treat all species with ozopores placed especially close to the caudal metatergal margin in <italic>Opisotretus</italic>, apparently following Attems (1907), whereas the species with the ozopores slightly more strongly removed forward from the caudal margin he placed in <italic>Opisthoporodesmus</italic>. In the type species of <italic>Retrodesmus</italic>, the ozopore is well removed from the caudal corner of paraterga, lying closer to their lateral margin, but in a new congener described below the ozopores lie just at the caudal margin, this being more typical of the family.
+                </p>
+                <p>However, this feature must be admitted as not being unique to and characteristic of some Opisotretidae alone. Thus, many species of Fuhrmannodesmidae possess ozopores which also flush open at the caudolateral corner of poriferous paraterga quite close to very close to the caudal margin, in South America (Golovatch 1994) and Vietnam (Figs 42C, F). In general, this condition strongly depends on the degree of development of paraterga which varies between species, as well as between segments. The more strongly the caudal corner of a paratergum is drawn caudad, this being increasingly marked towards the telson, the closer the ozopore to the caudal margin.
+</p>
+                <p>In other words, the distinctions based on ozopore location are species-specific at most and clearly fail to characterize opisotretid genera.
+</p>
+                <p><bold>Shape of paraterga.
+</bold>
+                </p>
+                <p>Variation in the degree of development of paraterga is great, ranging from very poorly developed, e.g. in<italic> Solaenaulus butteli</italic> (Figs 4, 5), to very broad and upturned, e.g. in <italic>Retrodesmus cavernicola</italic> sp. n. (Figs 14A–E, G, H). Paraterga tend to be more strongly developed, up to directed dorsolaterad, only in <italic>Opisthoporodesmus</italic> and <italic>Ret<!--PageBreak-->rodesmus</italic> species, where the midbody paraterga usually show considerable shoulders anterolaterally and a no less considerable emargination caudally (Figs 11A, B, 12). In the remaining Opisotretidae, however, the paraterga tend to be modest to very modest (Figs 1A, 3E, 8A–C, 33A–F, H, 34A, 37A–F, 39A–E, H, J), especially in ♀♀ and juveniles.
+                </p>
+                <p>The presence of especially prominent shoulders seems to correlate positively with a shift caudad of the transverse rows of tergal setae. In such species, the frontal row of setae is situated close to the metatergite’s midway sulcus, whereas both following rows are considerably shortened in extent, strongly shifted to the caudal margin of the tergite and placed very close to each other (Figs 11A, B).
+</p>
+                <p>♂<bold> head modifications.
+</bold>
+                </p>
+                <p>The ♂ vertex of several Opisotretidae is modified. In particular, <italic>Martensodesmus</italic>, among other things, was first distinguished by ♂ vertigial modifications usually traceable as humps or tubercles above the antennal sockets (Golovatch 1987). Later this feature had to be abandoned as a generic-level character after the discovery of <italic>M. excornis</italic> which lacks any such modifications. Moreover, sexual dimorphism in <italic>M. bicuspidatus</italic> was found to concern not only a complex structure (a fossa with two cusps of filaments) on the ♂ vertex, but also the shape of the collum (Golovatch 1988). ♂ vertigial modifications are also known in <italic>Corypholophus</italic> <italic>minutus</italic> (a hump with a tuft, Fig. 2A)and two new <italic>Opisotretus</italic> described below.
+                </p>
+                <p>However, like in the case of ozopore location (see above), similar vertigial modifications in the ♂ concern numerous species of Fuhrmannodesmidae, including those occurring in South America (Golovatch 1994) and Vietnam (Figs 42D, G).
+</p>
+                <p><bold>Legs.</bold>
+                </p>
+                <p>Variation in leg length and armament in Opisotretidae is pronounced, ranging from short and stout, sometimes also supplied with special ventral trichomes in the ♂, e.g. in <italic>Solaenaulus butteli</italic> (Fig. 5H), to extremely long and slender, e.g. in <italic>Retrodesmus cavernicola</italic> sp. n. (Figs 15B, 16A), but most species show medium-sized, moderately stout legs which are usually devoid of special trichomes in the ♂ and thus fail to differ much between the sexes. Claw length seems to vary proportionately to leg length (Figs 5H, I, 8C, 15B, 16A, 27K, 28D).
+                </p>
+                <p><bold>Gonopod structure.</bold>
+                </p>
+                <p>As usual in the systematics of any subgroup of Polydesmida, the gonopods offer most of the characters deemed useful, if not crucial, for the discrimination of genera and species. This fully applies to Opisotretidae as well.
+</p>
+                <p>As noted above, the gonopods in Opisotretidae are really unique in obviously having rather small, subglobose, medially fused and nearly fully exposed coxae, these being only very poorly sunken into an unusually small gonocoel. The gonopod aperture is invariably obcordate (Fig. 6B). The coxae support the usual cannulae medially and elongated, sometimes strongly curved telopodites laterally. The telopodites are directed dorsolaterad, curving, often very strongly, around coxae 8 along the sides of segment 7. The seminal groove runs along most of the telopodite’s extent to termi<!--PageBreak-->nate distally either on a special branch or tooth (= solenomere), or flush open on the surface, or debauch inside an accessory seminal chamber which normally is supplied with a hairy pulvillus.
+</p>
+                <p>Against this general pattern, various species and genera show several important modifications. Species in two of the genera are recognized for the presence of a very peculiar frontobasal process placed on the ventral side of the femorite: in <italic>Corypholophus minutus</italic>, this process (<bold>p</bold>) is neatly attached to a rather slender, unipartite and suberect gonotelopodite, and it carries an additional groove (Fig. 2B), whereas <bold>p</bold> in<italic> Solaenaulus</italic> is devoid of a groove, being well separated from a strongly unciform, bipartite telopodite beset with bacilliform structures distally (Figs 6A, C–F, 7). Because <italic>Corypholophus ryukyuensis</italic> has no process <bold>p </bold>(Fig. 3), its generic assignment has been questioned (Golovatch 1987). However, since a well-developed <bold>p</bold> also occurs in a new species of <italic>Martensodesmus</italic> described below, this character must be regarded as being only species-specific. This clearly supports maintaining <italic>Corypholophus ryukyuensis </italic>in <italic>Corypholophus</italic>, even though <italic>C. minutus</italic> has a <bold>p </bold>(Fig. 2B).
+                </p>
+                <p><italic>Carlotretus</italic> seems to be the only genus in Opisotretidae in which the distal part of a unipartite gonotelopodite is totally free from fringes or bacilli, including a long, erect and simple solenomere (<bold>sl</bold>) (Figs 1B, C, 40D–H, 41). <italic>Solaenaulus</italic>, in addition to <bold>p</bold>, also shows a prominent solenomere (<bold>sl</bold>) attached closely to a similarly long exomere (<bold>ex</bold>), both the branches being curved and abundantly ornamented with bacilli (Figs 6, 7). In all other opisotretid genera and species, the solenomere is a rather small denticle or lobule at most. The gonopods of <italic>Opisotretus</italic>, of <italic>O. kraepelini</italic> at least (Fig. 8D), look very similar to those of <italic>Solaenaulus</italic>, especially as regards the unciform appearance and the distal ornamentation of the telopodite, but the latter in <italic>Opisotretus</italic> is unipartite, sometimes being also devoid even of a vestigial solenomere (Figs 26F, G). <italic>Opisthoporodesmus</italic>, at least <italic>O.</italic> <italic>obtectus</italic>, <italic>Martensodesmus</italic> and <italic>Retrodesmus</italic> share the gonopod telopodite being rather short, poorly curved and, in the former two genera, modestly ornamented distally. The gonotelopodite in <italic>Martensodesmus</italic> species is often more or less hollow or flattened on the caudal face and carries considerable lobes or processes, sometimes including <bold>p</bold>. In <italic>Opisthoporodesmus</italic> <italic>obtectus</italic>, the gonopod telopodite (Fig. 11C) is very simple, attenuating distad and virtually fully devoid of a trichome other than the one on a subterminal hairy pulvillus. In contrast, <italic>Retrodesmus</italic> has an enlarged, bifid and elaborate tip of the gonotelopodite, one of its apical branches being beset with bacilliform ornamentations, but showing neither a solenomere nor an accessory seminal chamber, nor a hairy pulvillus.
+                </p>
+                <p><bold>Vulva.</bold>
+                </p>
+                <p>No special studies have been conducted on the conformation of the vulva in Opisotretidae. Only Chamberlin (1945) depicted the vulva of<italic> Opisthoporodesmus silvestri</italic> as showing a remarkable subelliptic lobe. The epigynal crest has never been described either. Because these structures are too small and inconspicuous in the samples we have examined, they have been omitted from the descriptions.
+                </p>
+                <!--PageBreak-->
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Generic reclassification
+</bold>
+            </title>
+            <p>Based on the above information, as well as facing the need to properly allocate several new species described below, we propose the following new classification of Opisotretidae.
+</p>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Family Opisotretidae Hoffman, 1980
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisotretidae
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation>Opisotretidae Hoffman, 1980: 176, 188.
+</tp:nomenclature-citation>
+                        <tp:nomenclature-citation>Opisotretidae – Hoffman 1982: 722; Simonsen 1990: 53, 82.
+</tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A family of the suborder Polydesmidea with 19 (♂) or 20 (♂, ♀) segments. Body small to very small (3–16 mm long). Tegument microalveolate, limbus microspiculate. ♂ head with or without vertigial modifications. Antennae geniculate between segments 5 and 6, antennomeres 5 and 6 each with a compact group of bacilliform sensilla distodorsally. Metaterga with 2 or 3 regular, transverse rows of bacilliform, longitudinally ribbed setae sometimes borne on minute knobs; frontal margin of midbody paraterga only seldom forming clear-cut shoulders; side margin of paraterga often slightly incised, with 2 or 3 bacilliform setae. Pore formula normal, ozopores flush open dorsally, usually near to very near caudolateral corner of paraterga, only seldom clearly removed from caudal margin. Legs rather short to long, ♂ ones often stouter and longer, sometimes with peculiar, bi- or trifid ventral trichomes, but sphaerotrichomes missing.
+</p>
+                    <p>Gonopods peculiar in having rather small, subglobose, medially fused coxae nearly fully exposed in a small gonocoel; coxae at most only slightly setose ventrally, supporting usual cannulae medially and elongated, sometimes strongly curved telopodites laterally; the latter directed dorsolaterad, curving, often very strongly, around coxae 8 along sides of segment 7; seminal groove running along most of telopodite on caudal face to terminate distally either on a special branch or tooth (= solenomere), or flush open on caudal surface, or debauching inside an accessory seminal chamber which normally, but not always, is supplied with a hairy pulvillus.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type genus.</bold>
+                    </title>
+                    <p><italic>Opisotretus</italic> Attems, 1907.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p> The above somatic features of Opisotretidae are in no way unique to the family, at least sometimes being also encountered, in various combinations, in the other families of the micropolydesmoid superfamily Trichopolydesmoidea, such as Fuhrmannodesmidae, Trichopolydesmidae, Macrosternodesmidae, Mastigonodesmidae and Nearctodesmidae (e.g. Golovatch 1994, 2011). This can also be said about the basically finely microspiculate limbus obviously characteristic of most of the Polydesmidea. It is only the gonopod structure that is truly characteristic of Opisotretidae, the family formally representing a superfamily of its own, the Opisotretoidea (Simonsen 1990). Superficially, female and/or juvenile Opisotretidae are not or only barely distinguishable from the often sympatric or even syntopic female or juvenile Fuhr<!--PageBreak-->mannodesmidae, the latter family dominating most of the tropical micropolydesmoid faunas. In this connection, we rather believe that Opisotretidae is also a family of Trichopolydesmoidea, probably the closest to Fuhrmannodesmidae (see below).
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus </bold>
+                        <bold-italic>Carlotretus</bold-italic>
+                        <bold> Hoffman, 1980
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Carlotretus
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Carlotretus </italic>Hoffman, 1980: 176, 188.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Carlotretus </italic>– Hoffman 1982: 722.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 19 (♂) or 20 (♀) body segments. ♂ head without modifications. Metaterga with two regular, transverse rows of bacilliform setae. Frontolateral margin of midbody paraterga devoid of evident shoulders. Ozopore lying close to caudal margin of paratergite’s caudolateral corner.
+</p>
+                    <p>Gonopod telopodite rather stout, unipartite, at best slightly hollow on caudal face; distal part devoid of ornamentations (spines or setae), being a long and simple solenomere (<bold>sl</bold>) supplied with lobes or processes either subtending it or lying at its base. Neither an accessory seminal chamber nor a hairy pulvillus (Figs 1B, C, 38B–E, 40D–H, 41). 
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p> <italic>Opisotretus setosus</italic> Carl, 1922, by original designation of Hoffman (1980).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p> In addition to the type species, this genus includes a new congener described below. The differences are depicted in Fig. 1 and Figs 38, 40, 41, being also mentioned in the diagnosis of <italic>C. triramus</italic> sp. n.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus </bold>
+                        <bold-italic>Corypholophus</bold-italic>
+                        <bold> Attems, 1938
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Corypholophus
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Corypholophus</italic> Attems, 1938: 249.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Corypholophus</italic> – Attems 1940: 190; Murakami 1975: 108; Hoffman 1980: 176, 188; 1982: 722; Golovatch 1987: 205; Simonsen 1990: 53.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 19 (♂) or 20 (♀) body segments. ♂ vertex with or without modifications. Metaterga with 2 or 3 regular, transverse rows of bacilliform setae. Frontolateral margin of midbody paraterga devoid of shoulders. Ozopore lying close to caudal margin of paratergite’s caudolateral corner.
+</p>
+                    <p>Gonopod telopodite slender, unipartite, slightly hollow on caudal face only distally; basal frontoventral process (<bold>p</bold>) either present or absent; distal part devoid of ornamentations (spines, bacilli or setae), lobes or prominent processes, at most microdenticulate near both a small accessory seminal chamber and a hairy pulvillus (Figs 2B, 3). 
+                    </p>
+                    <p><!--PageBreak--><bold>Type species: </bold><italic>Corypholophus minutus</italic> Attems, 1938, by original designation.
+                    </p>
+                    <p><bold>Remarks.</bold> This genus also includes <italic>C.</italic> <italic>ryukyuensis</italic> from the Ryukyus, Japan (and Taiwan?). The differences between these two species are depicted in Fig. 2B and Fig. 3.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus </bold>
+                        <bold-italic>Martensodesmus</bold-italic>
+                        <bold> Golovatch, 1987
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Martensodesmus
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Martensodesmus</italic> Golovatch, 1987: 203.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Martensodesmus</italic> – Golovatch 1988: 34; Simonsen 1990: 53.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 19 (♂) or 20 (♀) body segments. ♂ head often, but not always, with modifications on vertex, collum rarely enlarged. Most of metaterga with 2 (more rarely) or 3 (more usually) regular, transverse rows of bacilliform setae. Frontolateral margin of midbody paraterga usually without evident shoulders, in any event not so strongly developed as to cause a caudad shift of the rows of tergal setae. Ozopore lying from close to, to rather far in front of caudal margin of paratergite’s caudolateral corner.
+</p>
+                    <p>Gonopod telopodite rather stout, at least basal half so, unipartite, usually only faintly curved, slightly, more usually clearly, hollow/excavate/flattened on caudal face all along; parabasal and/or distal parts with lobes or processes, sometimes including <bold>p</bold>; both accessory seminal chamber and hairy pulvillus wanting, but a very short, dentiform solenomere usually ornamented with a few bacilli- or setiform structures nearby often present (Figs 9, 10C, D, 28E–I, 29, 31E–H, 32, 35).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic>Martensodesmus himalayensis </italic>Golovatch, 1987, by original designation.
+                    </p>
+                    <p><bold>Remarks.</bold> In addition to the type species, the genus currently contains further four Himalayan congeners: <italic>Martensodesmus bicuspidatus</italic> Golovatch, 1988, <italic>M. excornis</italic> Golovatch, 1988, <italic>M. nagarjungicus</italic> Golovatch, 1987 and <italic>M. sherpa </italic>Golovatch, 1987, as well as one new species in Vietnam and two more in southern China. A key to <italic>Martensodesmus</italic> species is given below.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus</bold>
+                        <bold-italic> Opisotretus</bold-italic>
+                        <bold> Attems, 1907
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisotretus
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Opisotretus</italic> Attems, 1907: 113.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Opisotretus</italic> – Attems 1940: 150; Chamberlin 1945: 4; Hoffman 1980: 176, 188; 1982: 722; Simonsen 1990: 53.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 19 (♂) or 20 (♀) body segments. ♂ vertex with or without modifications. Metaterga with three regular, transverse rows of bacilliform setae. Frontal margin of midbody paraterga devoid of obvious shoulders. Ozopore usually lying close to very close to caudal margin of paratergite’s caudolateral corner.
+</p>
+                    <!--PageBreak-->
+                    <p>Gonopod telopodite elongate, unciform, unipartite; distal part beset with ornamentations (small spines, bacilli or setae) and at least with one evident process, either devoid of or supplied with a short solenomere, but with both an evident accessory seminal chamber and a hairy pulvillus (Figs 8D, 18B–D, 20C, D, 21, 23C, D, 25, 26F, G). 
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic>Opisotretus kraepelini </italic>Attems 1907, by monotypy.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p> In addition to the type species, the genus currently contains two described congeners: <italic>Opisotretus euthus</italic> Chamberlin, 1945 and <italic>O.</italic> <italic>mimus</italic> Chamberlin, 1945. Because the gonopods of <italic>O. euthus</italic> are indeed very similar to those of<italic> O. kraepelini</italic> as depicted by Chamberlin (1945), the former species is definitely congeneric with the latter one. The identity of <italic>O.</italic> <italic>mimus</italic>, however, remains uncertain, but superficially it strongly reminds of <italic>Peronorchus parvicollis</italic> Attems, 1907, a species we think belongs in the family Fuhrmannodesmidae. It was originally described from Buitenzorg (= Bogor), Java, Indonesia <!--PageBreak--><!--PageBreak-->(Attems 1907) and seems to be very similar to an opisotretid in showing long bacilliform tergal setae arranged in three transverse rows, notably reduced paraterga, and the ozopores located near the paratergite’s caudal corner. Interestingly, Mauriès and Geoffroy (1999), when redescribing <italic>P. parvicollis</italic> from material taken on Mauritius, Indian Ocean, assigned <!--PageBreak-->this genus to the family Trichopolydesmidae, as opposed to Hoffman (1980) who had left <italic>Peronorchu</italic>s among the genera of Polydesmidea of uncertain status and family position.
+                    </p>
+                    <p>Four new species described below also belong in <italic>Opisotretus</italic>. A key to all seven <italic>Opisotretus</italic> species, including <italic>O. mimus</italic>, is given below.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus</bold>
+                        <bold-italic> Opisthoporodesmus</bold-italic>
+                        <bold> Silvestri, 1899
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisthoporodesmus
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Opisthoporodesmus</italic> Silvestri, 1899: 206.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Opisthoporodesmus</italic> – Attems 1940: 151; Chamberlin 1945: 2-4; Hoffman 1982: 722; Simonsen 1990: 53.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 20 body segments (♂, ♀). ♂ vertex without modifications. Metaterga with three regular, transverse rows of bacilliform setae, <!--PageBreak--><!--PageBreak-->but, probably in conjunction with frontolateral margin of midbody paraterga bearing prominent shoulders, at least sometimes all three rows strongly shifted caudad, last two being also abbreviated. Ozopore usually lying close to caudal margin of paratergite’s caudolateral corner.
+</p>
+                    <p>Gonopod telopodite elongate, subunciform, unipartite, markedly attenuating distad; distal part with only a few small outgrowths at best, devoid of both bacilliform ornamentations and a solenomere, but supplied with both a small accessory seminal chamber and a hairy pulvillus (Fig. 11C). 
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic> Opisthoporodesmus obtectus</italic> Silvestri, 1899, by monotypy.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p> In addition to the type species, the genus currently contains five formal congeners: <italic>Opisthoporodesmus anandrus</italic> Chamberlin, 1945, <italic>O. bacillifer</italic> Carl, 1912, <italic>O. conservandus</italic> Chamberlin, 1945, <italic>O. silvestri</italic> Chamberlin, 1945 and <italic>O.</italic> <italic>simplex</italic> Chamberlin, 1945. As these five species require revision and their identities remain uncertain, no key to <italic>Opisthoporodesmus</italic> species is possible for the time being.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus </bold>
+                        <bold-italic>Retrodesmus </bold-italic>
+                        <bold>Chamberlin, 1945
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Retrodesmus
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Retrodesmus </italic>Chamberlin, 1945: 4.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Retrodesmus</italic> – Hoffman 1982: 722; Simonsen 1990: 53.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 19 (♂) or 20 (♀) body segments. ♂ vertex without modifications. Metaterga with three regular, transverse rows of bacilliform setae, but, in conjunction with frontolateral margin of midbody paraterga bearing <!--PageBreak-->evident shoulders, all three rows strongly shifted caudad, last two being also abbreviated. Ozopore from well removed from, to very near caudal margin of paratergite’s caudolateral incision.
+</p>
+                    <p>Gonopod telopodite rather stout, only slightly curved, unipartite, divided only distally into a frontal stump heavily beset with bacilliform ornamentions and a simple to complex caudal branch; seminal groove terminating near base of both these branches; neither a solenomere nor a hairy pulvillus (Figs 13B, 15C, D, 16B, C), only sometimes with a visible accessory seminal chamber.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic> Retrodesmus dammermani</italic> Chamberlin, 1945, by original designation.
+                    </p>
+                    <!--PageBreak-->
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p> The holotype of this species has been examined in order to shed light on the identity of both the genus and species. A new species is added as well. The differences between both are clear from Figs 12, 13 and Figs 14–16, as well as from the diagnosis of <italic>R. cavernicola</italic> sp. n.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Retrodesmus dammermani</bold-italic>
+                        <bold> Chamberlin, 1945
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Retrodesmus_dammermani
+</object-id>
+                    <xref>Figs 12, 13
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation>Holotype ♂ (AMNH), Java, Tjibodas, 1400 m, Aug. 1921, Dammerman [on label].
+</tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Descriptive notes and remarks.</bold>
+                    </title>
+                    <p> The series also contains a microvial with several fragments of a presumed ♀ labeled “♀ allotype”, but, having not been mentioned in the original description (Chamberlin 1945), this ♀ cannot be considered as part of the type series.
+</p>
+                    <p>The holotype, an intact ♂, has been restudied, with several colour pictures taken to show the habitus (Fig. 12), and line drawings executed of a midbody paratergite and the gonopods <italic>in situ </italic>(Fig. 13).
+                    </p>
+                    <p><!--PageBreak-->Chamberlin’s (1945) succinct description is basically correct in showing quite broad and mostly slightly upturned paraterga with 2 or 3 minute, lateral, setiferous incisions; the caudal corners of postcollum paraterga until the 17<sup>th</sup> are produced increasingly well behind the rear tergal margin, roundly dentiform; the metaterga support three rather regular, transverse rows of short to medium-sized bacilliform setae; the ozopores are located rather close to the lateral margin of ozoporiferous paraterga, but quite far from the caudal corner (Fig. 13A). Body length ca 6 mm, width 0.55 mm.
+                    </p>
+                    <p>The gonopods (Fig. 13B), contrary to Chamberlin’s (1945) sketch (his fig. 20), show only a slightly curved telopodite devoid of a drastic parabasal geniculation. The coxae bear several setae on the ventral side. The telopodite is rather stout, <!--PageBreak-->unipartite, slightly hollow on the caudal face, only subterminally subdivided into a frontal stump (<bold>s</bold>) beset with bacilliform ornamentations and surmounted by a long spine (<bold>sp</bold>), and a simple, similarly spinigerous branch (<bold>b</bold>). The seminal groove runs along the caudal face to flush open on the surface, with neither a solenomere nor an accessory seminal chamber, nor a hairy pulvillus, terminating near the base of both <bold>s</bold> and <bold>b</bold>.
+                    </p>
+                    <p><!--PageBreak-->As Hoffman (2005, p. 75) once put it quite sarcastically as regards the quality of Chamberlin’s (1945) paper, “There is no evidence that Professor Chamberlin invested much time in consultation of available literature sources”. Nevertheless, his <italic>Retrodesmus </italic>remains a valid genus sufficiently distinct from the other opisotretid genera.
+                    </p>
+                    <p>In addition to the type species, <italic>Retrodesmus</italic> also includes <italic>R. cavernicola</italic> sp. n., a presumed troglobite from Papua New Guinea.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus </bold>
+                        <bold-italic>Solaenaulus </bold-italic>
+                        <bold>Attems, 1940
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Solaenaulus
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> A genus of Opisotretidae with 19 (♂) or 20 (♀) body segments. ♂ vertex without modifications. Metaterga with three regular, transverse rows of bacilliform setae. Frontolateral margin of midbody paraterga without shoulders. Ozopore usually lying very close to caudal margin of paratergite’s caudolateral corner (Figs 4C, D, F, 5B, G).
+</p>
+                    <p>Gonopod telopodite elongate, subunciform, bipartite; basal process (<bold>p</bold>) on frontoventral face of femorite prominent, removed from femorite proper; distal part of telopodite usually beset with bacilliform ornamentations both over a prominent solenomere (<bold>sl</bold>) and an even more prominent exomere (<bold>ex</bold>); a small accessory seminal chamber present, but a hairy pulvillus absent (Figs 6A, C–F, 7).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic> Opisotretus</italic> <italic>butteli</italic> Carl, 1922, by original designation of Attems (1940).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p> In addition to the type species, the genus currently contains only one known species: <italic>S. birmanicus</italic> Carl, 1941 (Golovatch et al. 2010), which, however, is sometimes treated as a variety of the type species (Jeekel 2006).
+                    </p>
+                    <!--PageBreak-->
+                    <sec>
+                        <title><bold>Descriptions of new species
+</bold>
+                        </title>
+                    </sec>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Retrodesmus cavernicola</bold-italic>
+                        <bold> sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:F9034C5B-EC1B-4AD8-968D-7F77FF1AD0EB
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Retrodesmus_cavernicola
+</object-id>
+                    <xref>Figs 14–16
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (NMNHS), Papua New Guinea, Western Prov., Finim tel Plateau, Peep Hole Cave, 18.08.1975, leg. P. Beron (British Speleological Expedition).
+                    </p>
+                    <p>Paratypes: 1 ♂, 1 ♀, 1 ♂ (incomplete), 5 juv. (17 segments) (NMNHS), 1 juv. (17 segments) (ZMUC), 1 ♀ subadult (19 segments) (MNHN JC 338), Papua New Guinea, Western Prov., Telefomin, Cave Bem Tem (No. 1), 31.07.1975, leg. British Speleological Expedition; 1 ♀ subadult (19 segments) (ZMUM), 1 ♀ subadult (19 segments) (SEM), 1 juv. (17 segments) (NMNHS), Finim tel Plateau, Upper Bitip Cave, west chamber, 21.11.1975, leg. British Speleological Expedition, FT-11; 1 ♀ (fragments) (NMNHS), Finim tel Plateau, bottom of a 150 m shaft near Girtoil, 08.08.1975, leg. British Speleological Expedition; 1 ♀ (fragments) (NMNHS), Chimbu Prov., Goglme Village, Cave Ogon I, 1975, leg. P. Beron (British Speleological Expedition).
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily from<italic>R. dammermani</italic> Chamberlin, 1945, the only other known species of <italic>Retrodesmus</italic>, by the particularly broad paraterga, several clearly troglomorphic features such as especially long and slender antennae, legs and metatergal setae, the latter also being very dense, the subcaudal position of the ozopores, and the shape and ornamentation of the gonopod apex.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>To emphasize the obvious troglomorphic traits strongly suggesting obligate cave-dwelling; a noun in apposition.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of adults of both sexes ca 12 (♂) or 16 mm (♀), width of midbody pro- and metazona 0.95–1.0 and 2.0 mm (holotype and ♂ paratype) or 1.5 and 2.8 mm (♀ paratypes), respectively. Coloration in alcohol from uniformly pallid to light yellowish.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. Tegument mainly dull, at most slightly shining, texture very delicately alveolate. Head densely pilose throughout; epicranial suture superficial and thin; isthmus between antennae about twice the diameter of antennal socket. Antennae very long and slender, reaching behind segment 2 when stretched dorsally, geniculate between antennomeres 5 and 6, each latter with an apicodorsal group of tiny sensilla; antennomere 7 with a tiny mid-dorsal knob; antennomeres 2-6 subequal in length (Fig. 15A).
+</p>
+                    <p>In width, collum &lt;&lt; head &lt; segment 2 &lt; 3 = 4 &lt; 5(6)=15 (♂, ♀), thereafter body gradually tapering towards telson. Paraterga very strongly developed, starting from collum, invariably slightly to clearly upturned, set high, but always lying slightly below a faintly convex dorsum, with shoulders frontolaterally (Figs 14A–C). Caudal corner of postcollum paraterga invariably spiniform, pointed, extending increasingly behind rear tergal margin. Lateral edge of paraterga with 2 or 3 clear and deep seti<!--PageBreak--><!--PageBreak-->gerous indentations in poreless and poriferous segments, respectively. Pore formula normal; ozopores evident, round, flush open on dorsal surface, located very close to caudal margin at bottom of caudalmost lateral incision (Fig. 14J), lateral tooth being considerably shorter than medial one. Collum and each following metatergum with mostly 3+3 long, nearly pointed, but ribbed and subbacilliform setae arranged in three transverse, rather regular rows and borne on small stalks; polygonal bosses very flat; both rear rows of setae more irregular, placed very close to each other (Figs 14A–E, H). Stricture between pro- and metazona wide, shallow and smooth. Limbus very fine, microspiculate, the spikes mostly being rather sparse and irregular. Pleurosternal carinae absent (Figs 14D, E). Epiproct short, conical, directed caudoventrally; pre-apical papillae small (Figs 14C, E, G). Hypoproct trapeziform (Fig. 14G), setiferous papillae at caudal corners very small and well separated.
+</p>
+                    <p>Sterna without modifications, rather broad, strongly setose (Fig. 14G). Epigynal ridge very low. Legs very long and slender, growing slightly slenderer towards telson (Figs 15B, 16A), ca 1.5 (♂) times as long as midbody height; femora and tarsi longest, subequal in length; sphaerotrichomes missing.
+</p>
+                    <p>Gonopod aperture evident, transversely oblong-oval, taking up most of ventral part of metazonite 7. Gonopods (Figs 15C, D, 16B, C) with globose, medially fused coxae carrying a few setae on ventral face and a normal cannula mesally. Telopodite nearly straight, unipartite, rather short and stout. Distal part of telopodite split into a shorter frontal stump (<bold>s</bold>) (= solenomere?) beset with bacilliform ornamentations and <!--PageBreak-->a quite complex, subtriangular, pointed, caudal branch (<bold>b</bold>) with a spine (<bold>sp</bold>) at base. Seminal groove terminating near base of both <bold>s</bold> and <bold>b</bold>, with neither a distinct solenomere nor a hairy pulvillus, but with a small accessory seminal chamber.
+                    </p>
+                    <!--PageBreak-->
+                    
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>Because of several apparent troglomorphic traits,this species seems to be a troglobite. Surprisingly, it appears to be rather widespread in western Papua New Guinea, occurring in places like Finim tel and Goglme which are separated from each other by &gt;200 km.
+                    </p>
+                    <p>It is the gonopod conformation, not the location of the ozopores, that clearly indicates the true affinities of <italic>R. cavernicola</italic> sp. n. to <italic>R. dammermani</italic>, despite the great geographical gap between Java and New Guinea that also separates these species.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Opisotretus beroni</bold-italic>
+                        <bold> sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:8B8C4BC4-80C2-4243-916A-057600056EFA
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisotretus_beroni
+</object-id>
+                    <xref>Figs 17–21
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (NMNHS), Papua New Guinea, Western Prov., Mount Fugilil, at camp, 2980 m a.s.l., 09.10.1975, leg. P. Beron (British Speleological Expedition).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratype.</bold>
+                    </title>
+                    <p> 1 ♀ subadult (19 segments) (ZMUC), same locality, together with holotype; 1 ♂, 1 ♀, 1 ♀ subadult (19 segments) (NMNHS), 1 ♂, 1 ♀ (ZMUM), 1 ♂ (SEM), same locality, Mount Fugilil, summit, 3150 m a.s.l., 29.09.1975, leg. P. Beron (British Speleological Expedition); 1 ♂, 1 ♀ (MNHN JC 339), Western Prov., Finim tel Plateau, Selminum doline, 2300 m a.s.l., forest litter, 02.10.1975, leg. Ph. Chapman &amp; P. Beron (British Speleological Expedition); 1 ♀ (NMNHS), Papua New Guinea: Mount Wilhelm, Lake Pinde, 3480 m, 25.10.1975, leg. P. Beron (British Speleological Expedition); 1 ♂, 1 ♀ (NMNHS), 1 ♀ subadult (19 segments) (SEM), same locality, Mount Wilhelm, from 4260 m a.s.l. (14000 feet) to summit (4694 m a.s.l.), 24.10.1975, leg. P. Beron (British Speleological Expedition).
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners by the shorter and bifid apical piece of the gonopod telopodite devoid of a spine level to a short solenomere, coupled with a deeper caudalmost incision of paraterga harbouring the ozopore in poriferous segments.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>Honours Petar Beron (NMNHS), the principal collector of material.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of adults of both sexes ca 10-11 mm, width of midbody pro- and metazona 1.0 and 1.4 mm (holotype), 0.95 and 1.3 mm (♂ paratypes) or 1.1–1.2 and 1.5–1.6 mm (♀ paratypes), respectively. Coloration in alcohol from uniformly pallid to light yellowish.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p>Antennae medium-sized, strongly clavate, extending behind segment 2 when stretched dorsally (Figs 17K, 20A).
+</p>
+                    <p>In width, collum &lt;&lt; segment 2 &lt; 3 &lt; head = 4 &lt; 5(6)=15 (♂, ♀), thereafter body gradually tapering towards telson. Paraterga of adults rather strongly developed, considerably smaller and set lower in ♀ subadults (Figs 17J, 19I), starting from collum, mostly subhorizontal to slightly declivous, set high, but always lying slightly below a faintly convex dorsum, with very faint shoulders frontolaterally (Figs <!--PageBreak-->17A–C). Caudal corner of postcollum paraterga dentiform, narrowly rounded to nearly pointed, extending increasingly behind rear tergal margin only in a few caudalmost segments. Lateral edge of paraterga with 2 or 3 small setigerous indentations in poreless and poriferous segments, respectively. Ozopores evident, round, flush <!--PageBreak-->open on dorsal surface, located very close to caudal margin at bottom of caudalmost lateral incision (Figs 17C, L), lateral tooth being considerably shorter than medial one. Collum and each following metatergum with 3+3 very short bacilliform setae arranged in three regular transverse rows; polygonal bosses evident, transverse sulcus superficial (Figs 17A–F).
+</p>
+                    <p>Sterna without modifications, rather broad, strongly setose (Fig. 17H). Epigynal ridge very low. Legs rather long, clearly incrassate in ♂ (Figs 17D–F), ca 1.2–1.3 (♂) or 1.0–1.1 times (♀, juveniles) as long as midbody height; femora and tarsi longest, subequal in length; sphaerotrichomes missing, but ♂ prefemora and femora beset with short spiniform setae ventrally (Fig. 20B).
+</p>
+                    <p>Gonopod telopodite (Figs 18B–D, 20C, D, 21) only slightly curved, unipartite, rather long and slender; apical piece (<bold>a</bold>) distal to a very short solenomere (<bold>sl</bold>) elongate, more strongly curved, clearly bifid, on caudal face with a few to several denti- or spiniform ornamentations, but devoid of a strong parabasal spine level to <bold>sl</bold>. An accessory seminal chamber at base of <bold>sl</bold> evident, crowned with a hairy pulvillus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>The gonopod structure of this new species has already been illustrated by mistake elsewhere (Golovatch et al. 2010, figs 78 &amp; 80), in connection with documenting the record of <italic>Solaenaulus butteli</italic> in Papua New Guinea. The same drawings (Fig. 21) are reproduced here again.
+                    </p>
+                    <!--PageBreak-->
+                    
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Opisotretus hagen</bold-italic>
+                        <bold> sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:9CD9B717-7849-4122-B437-ABCF2AC79C48
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisotretus_hagen
+</object-id>
+                    <xref>Figs 22, 23
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (NMNHS), Papua New Guinea, Western Highlands Prov., Mount Hagen, ca 1990 m a.s.l., in town, 22.10.1975, leg. P. Beron (British Speleological Expedition).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratypes.</bold>
+                    </title>
+                    <p> 1 ♀ subadult (19 segments), 1 juv. (fragments) (NMNHS), 1 ♀ subadult (19 segments) (SEM; MNHN JC 340), same locality, together with holotype.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners by a modified ♂ head (two prominent paramedian tubercles above the antennal sockets), coupled with a less strongly curved, nearly suberect gonopod telopodite, with its apical piece crowned with several peculiar, mostly digitiform outgrowths.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>Referring to the type locality; a noun in apposition.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of holotype (and of subadult ♀ paratypes) ca 9 mm, width of midbody pro- and metazona 0.8 and 1.15 mm, respectively. Coloration in alcohol from uniformly pallid to light yellowish.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p>♂ head with two round, paramedian, rather high tubercles (<bold>t</bold>) above antennal sockets (Fig. 23A). Antennae medium-sized, strongly clavate, extending behind segment 2 when stretched dorsally (Figs 22D, 23A).
+                    </p>
+                    <p>In width, collum &lt;&lt; segment 2 &lt; head = 3 &lt; 4 &lt; 5(6)=15 (♂), thereafter body gradually tapering towards telson. Paraterga rather strongly developed, starting from collum, mostly subhorizontal to slightly declivous, set high, but always lying slightly below a moderately (♀, juv.) to weakly (♂) convex dorsum, with rather faint shoulders frontolaterally (Figs 22A–C). Caudal corner of postcollum paraterga dentiform, always pointed and extending increasingly well behind rear tergal margin. Lateral edge of paraterga with 2 or 3 small setigerous indentations in poreless and poriferous segments, respectively. Ozopores evident, round, flush open on dorsal surface, located very close to caudal margin at bottom of caudalmost lateral incision (Figs 22C, E, M), lateral tooth being very considerably shorter than medial one. Collum and each following metatergum with 3+3 long bacilliform setae arranged in three regular transverse rows; polygonal bosses flat, but visible (Figs 22A–F).
+</p>
+                    <p>Sterna without modifications, rather broad, strongly setose (Fig. 22H). Legs long, incrassate in ♂ due to prefemora alone (Figs 22N, 23B), ca 1.5 times (♂) as long as midbody height; femora and tarsi longest, subequal in length; sphaerotrichomes or other modified setae missing.
+</p>
+                    <p>Gonopod telopodite (Figs 23C, D) only very slightly curved, nearly suberect, unipartite, rather long and slender; apical piece (<bold>a</bold>) distal to a very short solenomere (<bold>sl</bold>) rather short, on caudal face with a few finger-shaped ornamentations and a strong, <!--PageBreak-->parabasal, subspiniform process (<bold>pr</bold>). An accessory seminal chamber at base of <bold>sl</bold> evident, crowned with a hairy pulvillus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>This is the first <italic>Opisotretus</italic> showing ♂ head modifications, thus confirming the character as being only species-specific (Golovatch 1988).
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Opisotretus deharvengi</bold-italic>
+                        <bold> sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:3BE21451-287B-47B4-BE42-0CBB5FC8AB8D
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisotretus_deharvengi
+</object-id>
+                    <xref>Figs 24, 25
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (MZB), Indonesia, Sulawesi Selatan, Bone (Watampone), Taccipi, Cave GuaKarabice, inside cave, hand collection, 30.07.1989, leg. L. Deharveng (SULS-068).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratype.</bold>
+                    </title>
+                    <p> 1 ♀ (SEM; MNHN JC 341), same locality, together with holotype.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners both by tergal sculpture and lateral paratergal incisions being rather poorly developed, coupled with the presence of a short solenomere and a peculiar ornamentation in the apical piece (<bold>a</bold>) of the gonopod telopodite.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>Honours Louis Deharveng, the collector.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description. </bold>
+                    </title>
+                    <p>Length of holotype ca 9 mm, width of midbody pro- and metazona 0.7 and 1.0 mm, respectively. Coloration in alcohol uniformly pallid.
+</p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p><!--PageBreak-->Antennae broken off, but likely long and slender.
+</p>
+                    <p>In width, collum &lt;&lt; segments 2-4 &lt; 5 &lt; 6=15 &lt; head (♂); after 15<sup>th</sup>, body gradually tapering towards telson. Paraterga strongly developed, starting from a kidney-shaped collum, mostly subhorizontal, largely set high, almost level to (♂) or only very slightly below a weakly convex dorsum (♀), with faint shoulders frontolaterally (Figs 24A–C). Caudal corner of postcollum paraterga dentiform, always narrowly rounded and extending increasingly well behind rear tergal margin only in segments 16-18(19). Lateral edge of paraterga with 2 or 3 small setigerous indentations in poreless and pori-ferous segments, respectively. Ozopores evident, round, flush open on dorsal surface, located very close to caudal margin at bottom of caudalmost lateral incision (Fig. 24B, C, I, K), lateral tooth being only slightly shorter than medial one. Collum and each following metatergum with 3+3 long bacilliform setae arranged in three regular transverse rows; polygonal bosses flat, but visible (Figs 24A–F).
+                    </p>
+                    <p>Legs long and very slender (Fig. 24M), ca 2.0-2.1 (♂) or 1.5-1.6 times (♀) as long as midbody height; ♂ prefemora not incrassate, femora and tarsi longest, subequal in length, but tarsi especially slender; sphaerotrichomes or other modified setae missing.
+</p>
+                    <p>Gonopod telopodite (Fig. 25) clearly curved, unipartite, long and slender; apical piece (<bold>a</bold>) distal to a short solenomere (<bold>sl</bold>) rather long due to a terminal uncus (<bold>u</bold>) bearing near its base a strong subcaudal spine (<bold>sp</bold>) and a short field of subspiniform, mostly curved ornamentations. An accessory seminal chamber at base of <bold>sl</bold> evident, crowned with a hairy pulvillus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>This is the first formal encounter of an <italic>Opisotretus</italic> species in Sulawesi, Indonesia. Due to its long legs and uncoloured tegument, <italic>O. deharvengi</italic> sp. n. is <!--PageBreak-->likely to represent a troglobite. <italic>Opisthoporodesmus bacillifer</italic>, the only other opisotretid known from Sulawesi, differs readily in having only two, not three, lateral incisions on the paraterga (Carl 1912).
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Opisotretus spinosus </bold-italic>
+                        <bold>sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:155B2375-F1DF-46D8-A194-3FD75766B75D
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Opisotretus_spinosus
+</object-id>
+                    <xref>Fig. 26
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (MZB), Indonesia, Java, Jawa Tengah, Cilicap, Nusakambangan Island, near Cave Goa Kali Empat, litter, sieving and Berlese extraction, 19.02.2011, leg. L. Deharveng &amp; Dito (JAVA-NK32).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratype.</bold>
+                    </title>
+                    <p> 1 ♀ (MNHN JC 342), same locality, together with holotype.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners by the presence of a clear, bare hump on the ♂ vertex, coupled with the presence both of only a rudimentary solenomere and a peculiar spination of the apical piece (<bold>a</bold>) of the gonopod telopodite.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>To emphasize the highly spinose apical piece of the gonopod telopodite.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of holotype ca 4 mm, width of midbody pro- and metazona 0.3 and 0.5 mm, respectively. Length of paratype ca 5 mm, width of midbody pro- and metazona 0.45 and 0.6 mm, respectively. Coloration in alcohol uniformly pallid.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p>♂ head with an evident, bare, rounded vertigial hump (Fig. 26A, <bold>h</bold>). Antennae broken off, but obviously medium-sized.
+                    </p>
+                    <p><!--PageBreak--><!--PageBreak-->In width, collum &lt;&lt; segments 2 &amp; 3 &lt; head = 4 ≤ 5 &lt; 6=15 &lt; (♂, ♀); thereafter body gradually tapering towards telson. Paraterga rather poorly developed (Figs 26B, C), starting from a subcordiform, broadly rounded collum, mostly faintly declivous and continuing the outline of a quite convex dorsum (especially so in ♀), largely set rather high, at about ¼ to 1/3 of midbody height, with faint shoulders frontolaterally (Figs 26B, C). Caudal corner of postcollum paraterga dentiform, always narrowly rounded and extending increasingly well behind rear tergal margin in segments 12-18 (♂) or 15-19 (♀). Lateral edge of paraterga with 2-3 or 3-4 small setigerous indentations in poreless and poriferous segments, respectively. Ozopores evident, round, flush open on dorsal surface, lying clearly in front of caudal margin at bottom of caudalmost lateral incision, both lateral and medial teeth being subequal (Figs 26B, C). Collum and each following metatergum with 3+3, rather long, bacilliform setae arranged in three regular transverse rows; polygonal bosses flat, poorly visible. Hypoproct subtrapeziform, as in Fig. 26D.
+</p>
+                    <p>Legs rather short and stout, ca 1.2-1.3 (♂) or 1.0-1.1 times (♀) as long as midbody height; tarsi longest and particularly slender (Fig. 26E), sphaerotrichomes or other modified setae missing.
+</p>
+                    <p>Gonopod telopodite (Figs 26F, G) clearly curved, unipartite, long and slender; apical piece (<bold>a</bold>) distal to a vestigial solenomere strongly curved due to a terminal uncus (<bold>u</bold>) bearing near its base a strong subcaudal spine (<bold>sp</bold>) and a field of spiniform orna<!--PageBreak-->mentations. An accessory seminal chamber at base of solenomere rather evident, but probably devoid of a hairy pulvillus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>This new <italic>Opisotretus</italic> species has been taken together with several immature females (18 segments) of a different, somewhat larger and slightly pigmented (reddish metaterga and antennae) opisotretid with somewhat broader paraterga and a different location of the ozopores (these being placed close to the caudal tergal margin) which could not be identified in the absence of adult male material.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Martensodesmus cattienensis </bold-italic>
+                        <bold>sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:6B037C95-B3CB-4016-80C3-68CFB46E1BF2
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Martensodesmus cattienensis
+</object-id>
+                    <xref>Figs 27–29
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Martensodesmus </italic>sp. – Golovatch et al. 2011b: 81.
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (MNHN JC 343), Vietnam, Dongnai Prov., Cat Tien National Park, lowland semi-deciduous tropical monsoon forest, ca 150 m a.s.l., 107°10'–107°34'E, 11°21'–11°48'N, 08-22.11.2005, leg. A. E. Anichkin.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratypes.</bold>
+                    </title>
+                    <p> 1 ♂, 1 ♀ (MNHN JC 343), 1 ♂, 1 ♀, 1 ♀ fragment (ZMUM), 1 ♂ (ZMUC), same locality, together with holotype; 1 ♂, 1 ♀, 1 ♀ subadult (MNHN JC <!--PageBreak-->343), 1 ♂ , 1 ♀ (SEM), 1 ♂, 1 ♀, 1 ♀ subadult (ZMUM), same locality, 01.06.2005, leg. A. E. Anichkin; 1 ♂ (MNHN JC 343), 1 ♂ (NMNHS) same locality, 15.07.2005, leg. A. E. Anichkin.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners by the missing modifications on the ♂ vertex, coupled with quite well developed shoulders on metaterga, the high and broad paraterga, as well as the presence near the gonopod telopodite’s midpoint of three strong spines proximally to a considerably attenuating acropodite.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>To emphasize the type locality.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of holotype ca 5.5 mm, width of midbody pro- and metazona ca 0.8 and 1.0 mm, respectively. Length of ♂ paratypes ca 5.5–6.0 mm, width of midbody pro- and metazona ca 0.75–0.8 and 1.0–1.1 mm, respectively. Length of ♀ paratypes ca 7.0-8.0 mm, width of midbody pro- and metazona ca 0.9–0.95 and 1.1–1.15 mm, respectively. Coloration in alcohol from nearly uniformly light yellowish to head and several anterior segments slightly infuscate, light yellow-brown, more rarely with a rusty reddish tint.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p>Antennae very long, but strongly clavate (Fig. 27G), extending behind segment 4 (♂) or 3 (♀) when stretched dorsally.
+</p>
+                    <p>In width, collum &lt;&lt; head = segments 2 &amp; 3 &lt; 4 &lt; 5 &lt; 6=15(16); thereafter body gradually tapering towards telson. Paraterga well-developed (Fig. 27), starting from a broadly rounded, kidney-shaped collum, mostly only very faintly declivous to continue the outline of a rather slightly convex dorsum, largely set high, at about ¼ of midbody height, with quite strong shoulders frontolaterally (Figs 27D, E). Caudal corner of postcollum paraterga mostly dentiform, always narrowly rounded and extending increasingly well behind rear tergal margin only in segments 15-18 (♂) or 16-19 (♀). Lateral edge of paraterga with 2 or 3 small setigerous indentations in poreless and poriferous segments, respectively. Ozopores very evident, round, flush open on dorsal surface, clearly removed from caudal margin and lying anteriorly to bottom of caudalmost lateral incision (Figs 27A–C, E, F, H, I, L), lateral tooth being clearly shorter than medial one. Each postcollum metatergum with 3+3, long, bacilliform setae arranged in three regular transverse rows; polygonal bosses flat, but visible, while transverse sulcus mostly rather deep (Figs 27A–I).
+</p>
+                    <p>Legs rather long and slender, ca 1.4–1.5 (♂) or 1.2–1.3 (♀) times as long as midbody height (♂); tarsi longest and particularly slender (Figs 27A, B, G–I, K, 28D), sphaerotrichomes or other modified setae missing.
+</p>
+                    <p>Gonopod telopodite (Figs 28E–I, 29) clearly curved, but stout, unipartite; basal half voluminous and supplied with three strong spines, distal half gradually attenuating, apical piece (<bold>a</bold>) distal to a vestigial solenomere with a number of short spinules. Neither bacilliform ornamentations nor an accessory seminal chamber, nor a hairy pulvillus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>This species has already been referred to as <italic>Martensodesmus</italic> sp. elsewhere (Golovatch et al. 2011b).
+                    </p>
+                    <!--PageBreak-->
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Martensodesmus bedosae </bold-italic>
+                        <bold>sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:4CE2CCEE-F30A-4E9D-88FE-757C874FD3E8
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Martensodesmus_bedosae
+</object-id>
+                    <xref>Figs 30–32
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (IZAS), China, Guangxi, Hechi County, Duan Xian, Baling karst hill, disturbed forest, 109.07333°E, 23.98171°N, litter, sieving and Berlese extraction, 26.04.2010, leg. L. Deharveng &amp; A. Bedos (CHIgx10-61).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratypes.</bold>
+                    </title>
+                    <p> 1 ♂ fragmented, 1 ♀ fragment (SCAU), 1 ♂, 1 ♀ (MNHN JC 344), 1 ♂ (SEM), same locality, together with holotype.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners by the presence of a well-developed frontobasal process <bold>p</bold> on the ventral side of the gonopod femorite, coupled with no modifications on the ♂ vertex.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>Honours Anne Bedos, one of the collectors.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of holotype and ♂ paratypes ca 4.0 mm, width of midbody pro- and metazona ca 0.4 and 0.6 mm, respectively. Length of ♀ paratypes ca 5.5 mm, width of midbody pro- and metazona ca 0.6-0.65 and 0.8-0.9 mm, respectively. Coloration in alcohol from nearly uniformly pallid to head, collum and following metazona (especially their caudal halves) light rusty brown, anterior body portion in ♂♂ being clearly more infuscate, rusty brown, compared to ♀♀.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p>Antennae medium-sized, strongly clavate, extending behind segment 3 (♂, broken off in the sole complete ♀) when stretched dorsally.
+</p>
+                    <p>In width, collum &lt;&lt; segments 2 &amp; 3 &lt; head = 4 &lt; 5 &lt; 6=15(16); thereafter body gradually tapering towards telson. Paraterga well-developed (Figs 30A–F, H, J), starting from a rather broadly rounded, kidney-shaped collum, mostly only faintly declivous to continue the outline of a rather slightly convex dorsum, largely set high, at about 1/3 of midbody height, with evident shoulders frontolaterally (Figs 30A–C). Caudal corner of postcollum paraterga mostly broadly rounded, obtuse-angular, more narrowly rounded and very slightly extending behind rear tergal margin only in segments 16-18 (♂) or 17-19 (♀). Lateral edge of paraterga with 2 or 3 small setigerous indentations in poreless and poriferous segments, respectively. Ozopores very evident, round, flush open on dorsal surface, clearly removed from caudal margin and lying anteriorly to bottom of caudalmost lateral incision (Figs 30B, C, E, F, K, 31B), lateral tooth being clearly shorter than medial one. Each metatergum with 3+3, long, bacilliform setae arranged in 2 or 3 regular transverse rows; polygonal bosses invisible, transverse sulcus very shallow (Figs 30A–F, K).
+</p>
+                    <p>Legs rather long and slender, ca 1.3-1.4 (♂) or 1.1-1.2 (♀) times as long as midbody height (♂); tarsi longest and particularly slender, with modified, dense, bifid setae ventrally (Fig. 31D), but sphaerotrichomes missing.
+</p>
+                    <p>Gonopod telopodite (Figs 31E–H, 32) clearly curved, but stout, unipartite; basal half especially voluminous due to an unciform frontoventral process (<bold>p)</bold>, more distally <!--PageBreak-->on caudal face with a strong subtriangular tooth (<bold>z</bold>) and two long spines (<bold>x</bold> and <bold>y</bold>), distal half with a short, finger-shaped, caudal process (<bold>d</bold>). Neither bacilliform ornamentations nor an accessory seminal chamber, nor a hairy pulvillus, seminal groove ending at base of a small subapical tooth.
+                    </p>
+                    <!--PageBreak-->
+                    
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Remarks.</bold>
+                    </title>
+                    <p>This new species is still unique in showing a marked process <bold>p</bold> at the base of the gonotelopodite.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Martensodesmus spiniger </bold-italic>
+                        <bold>sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:4BB13E54-F108-46E3-A603-B45F0F67BCA1
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Martensodesmus_spiniger
+</object-id>
+                    <xref>Figs 33–36
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (IZAS), China, Guangxi, Chongzuo County, Longzhou Xian, Shanglong Xiang, Lenglei, Nonggang Forest, 106.964835°E, 22.467175°N, litter, Berlese extraction, 07.03.2005, leg. L. Deharveng &amp; A. Bedos (CHIgx05-062).
+                    </p>
+                    <!--PageBreak-->
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratypes.</bold>
+                    </title>
+                    <p> 1 ♂ (SCAU), same locality, together with holotype; 1 ♂ (MNHN JC 345), same locality, Shanglong Xiang, Nonghang, Nonggang Forest, 106.90575°E, 22.48617°N, litter, sieving and Berlese extraction, 14.04.2010, leg. L. Deharveng &amp; A. Bedos (CHIgx10-07).
+</p>
+                    <p><!--PageBreak--><bold>Non-type:</bold> 1 ♀ (MNHN JC 345), 1 ♂ subadult, 1 ♀ (SEM), same locality (CHIgx10-07); 1 ♂ subadult (SEM), same data as holotype (CHIgx05-062).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily fromcongeners by the presence of only two transverse rows of setae on metaterga, combined with five strong spines on the caudal face of a rather strongly curved gonopod telopodite which lacks even traces of a solenomere.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>To emphasize the highly spinose gonopod telopodite.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of holotype ca 4.0 mm, width of midbody pro- and metazona ca 0.35 and 0.5 mm, respectively. Length of paratype ♂ ca 4.5 mm, width of midbody pro- and metazona ca 0.4 and 0.6 mm, respectively. Length of adult ♀ ca 4.7 mm, width of midbody pro- and metazona ca 0.5 and 0.6 mm, respectively. Coloration in alcohol from uniformly pallid to head, several anterior segments and following metaterga clearly infuscate, rusty reddish, increasingly poorly pigmented towards telson.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀) segments. All characters like in <italic>R. cavernicola</italic> sp. n., except as follows.
+                    </p>
+                    <p>Antennae broken off, but obviously medium-sized.
+</p>
+                    <p>In width, collum &lt;&lt; segments 2 &amp; 3 &lt; head = 4 ≤ 5 &lt; 6=15(16); thereafter body gradually tapering towards telson. Paraterga medium-sized, keel-shaped (Figs 33A–F, 34A, 36C, D), a little better developed in ♂ compared to ♀, starting from a broadly rounded collum, mostly faintly declivous and continuing the outline of a rather convex dorsum, largely set rather high, at about ¼ to 1/3 of midbody height, with faint shoulders frontolaterally (Figs 33D–F, H). Caudal corner of postcollum paraterga mostly dentiform, always clearly rounded to narrowly rounded and extending increasingly well <!--PageBreak-->behind rear tergal margin only in segments 15-18 (♂) or 16-19 (♀). Lateral edge of paraterga with 2 or 3 small setigerous indentations in poreless and poriferous segments, respectively. Ozopores evident, round, flush open on dorsal surface, mostly clearly removed from caudal margin, lying slightly above and close to caudalmost lateral incision (Figs 33B, C, F, 34B, 36C, D), lateral tooth being shorter than medial one, in segment 17 clearly lateral, in 18<sup>th</sup> caudal (Figs 36C, D). Each postcollum metatergum until 18<sup>th</sup> (♂) or 19 (♀) with 3+3, long, bacilliform setae arranged in two regular transverse rows, <!--PageBreak-->only collum and segment 18 with three transverse rows of bacilliform setae, in segment 18 (♂) or 19 (♀) both posterior rows being placed close to each other; polygonal bosses flat, barely visible, even transverse sulcus very faint (Figs 33A–F).
+                    </p>
+                    <p>Legs rather long, but stout, ca 1.4-1.5 times as long as midbody height (♂); tarsi longest and particularly slender (Fig. 34D), sphaerotrichomes or other modified setae missing.
+</p>
+                    <p>Gonopod telopodite (Fig. 35) clearly curved, but stout, unipartite; apical piece (<bold>a</bold>) distal to orifice of seminal groove complex, consisting of a very strong apical spine (<bold>sp</bold>) protected in its basal half by a membranous ventral velum (<bold>ve</bold>) with a faintly fringed apical margin and a similarly membranous, apically spinigerous, dorsal lobe (<bold>k</bold>); caudal face below <bold>a</bold> with three distinct spines (<bold>x</bold>, <bold>y</bold> and <bold>z</bold>), <bold>z</bold> being longest. Neither bacilliform ornamentations, nor accessory seminal chamber, nor even traces of a solenomere, nor a hairy pulvillus.
+                    </p>
+                    <p><bold>Remarks. </bold>This new <italic>Martensodesmus</italic> species appears to co-occur, even syntopically, together with another opisotretid, <italic>Carlotretus triramus</italic> sp. n., described just below. Moreover, these two species are superficially so similar that only adult males can be separated with confidence. We therefore prefer to regard the females and juveniles as non-type material.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Carlotretus triramus </bold-italic>
+                        <bold>sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:62FEDFD9-45E8-4B52-BDAD-7511C98AD4D3
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Carlotretus_triramus
+</object-id>
+                    <xref>Figs 36–41
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype ♂ (IZAS), China, Guangxi, Chongzuo County, Longzhou Xian, Shanglong Xiang, Lenglei, Nonggang Forest, 106.964835°E, 22.467175°N, litter, Berlese extraction, 07.03.2005, leg. L. Deharveng &amp; A. Bedos (CHIgx05-068).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Paratypes.</bold>
+                    </title>
+                    <p> 1 ♂ (SEM), same data as holotype (CHIgx05-066); 1 ♂ (SCAU), same locality, Shanglong Xiang, Nonghang, Nonggang Forest, 106.90575°E, 22.48617°N, <!--PageBreak-->litter, sieving and Berlese extraction, 14.04.2010, leg. L. Deharveng &amp; A. Bedos (CHIgx10-07).
+</p>
+                    <p><bold>Non-types.</bold> 1 ♂ subadult (SEM), same locality, together with holotype (CHIgx05-068); 1♀ (SEM), same data as holotype (CHIgx05-064); 1♀, 3 ♀ subadults (MNHN JC 346), same locality (CHIgx10-07).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Diagnosis.</bold>
+                    </title>
+                    <p> Differs readily from<italic>C. setosus</italic>, the only known congener, by the much longer, strong and totally unprotected solenomere branch, whereas the parabasal branches are slender and subunciform.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Name.</bold>
+                    </title>
+                    <p>To emphasize the clearly triramous midlength process of the gonopod telopodite.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Length of holotype ca 4.3 mm, width of midbody pro- and metazona ca 0.4 and 0.55 mm, respectively. Length of paratype ♂ ca 4.6 mm, <!--PageBreak-->width of midbody pro- and metazona ca 0.45 and 0.6 mm, respectively. Length of adult ♀ ca 6.0 mm, width of midbody pro- and metazona ca 0.6 and 0.7 mm, respectively. Coloration in alcohol from uniformly pallid to head and metaterga faintly rusty reddish.
+                    </p>
+                    <p>Body with 19 (♂) or 20 (♀)segments. All characters like in <italic>M. spiniger</italic> sp. n., except as follows.
+                    </p>
+                    <p>Antennae medium-sized, extending behind segment 2 when stretched dorsally.
+</p>
+                    <p>Caudal corner of postcollum paraterga mostly dentiform, always clearly rounded and extending increasingly well behind rear tergal margin only in segments 15-18 (♂) or 16-19 (♀), a little better produced behind than in <italic>M. spiniger</italic> sp. n. (Figs 36A, B).
+                    </p>
+                    <p>Gonopod telopodite (Figs 38B–E, 40D–H, 41) clearly curved, but its basal half quite stout, unipartite; solenomere (<bold>sl</bold>) very long, slender and simple, only faintly curved, orifice of seminal groove placed on a small subapical tooth, with neither bacilliform ornamentations, nor accessory seminal chamber, nor a hairy pulvillus. Two large, subunciform processes, <bold>m</bold> and <bold>n</bold>, at base of <bold>sl</bold>, process <bold>n</bold> lying more dorsally and being slightly larger than a ventral, very finely and densely microspinulate <bold>m</bold>.
+                    </p>
+                    <!--PageBreak-->
+                    <sec>
+                        <title><bold>A key to genera of Opisotretidae, based mainly on male characters
+</bold>
+                        </title>
+                        <table-wrap content-type="key" position="float" orientation="portrait">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">1</td>
+                                        <td rowspan="1" colspan="1">Adults of both sexes with 20 body segments (including telson). Prominent shoulders of paraterga causing a caudad shift of all three rows of tergal setae (Figs 11A, B). Gonopod telopodite (Fig. 11C) very simple, attenuating distad and virtually fully devoid of a trichome other than the one of a subterminal hairy pulvillus</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Opisthoporodesmus</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak-->–Females with 20, males with 19 body segments. Shoulders of paraterga usually not so prominent. Gonopod telopodite usually more complex
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">2
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite bipartite (<bold>sl</bold> and <bold>ex</bold>), with a strong, frontobasal process <bold>p</bold> on ventral face (Figs 6, 7)
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Solaenaulus</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–</td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite unipartite, usually devoid of such a basal process <bold>p</bold> on ventral face
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak-->3
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite rather stout, its distal part devoid of ornamentations (spines or setae), being a long and simple solenomere (<bold>sl</bold>), either with lobes or processes to subtend <bold>sl</bold> or with processes near <bold>sl</bold> base. Neither an accessory seminal chamber nor a hairy pulvillus (Figs 1B, C, 40D–H, 41)
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Carlotretus</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite variable, often with bacilliform ornamentations distally, but solenomere never so conspicuous and simple</td>
+                                        <td rowspan="1" colspan="1"><bold>4</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">4</td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite slender and suberect, devoid both of prominent outgrowths and distal ornamentations, at most microdenticulate near both a small accessory seminal chamber and a hairy pulvillus, with or without process <bold>p</bold> (Figs 2B, 3)
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Corypholophus</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak-->–</td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite usually either clearly curved when elongate and slender or nearly straight at least in basal half when thick and stout, often with various evident outgrowths, sometimes also with bacilliform ornamentations distally</td>
+                                        <td rowspan="1" colspan="1"><bold>5
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">5Gonopod telopodite (at least its basal half) rather stout, its basal and/or distal parts with lobes or processes, sometimes including a <bold>p</bold>; both accessory seminal chamber and hairy pulvillus wanting, but a very short, dentiform solenomere usually ornamented with a few bacilli- or setiform structures nearby often present (Figs 9, 10C, D, 29, 32, 35)
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Martensodesmus</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–</td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite with abundant bacilli- and/or setiform ornamentations distally</td>
+                                        <td rowspan="1" colspan="1"><bold>6
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">6
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite rather stout, only slightly curved; distal part divided into a frontal stump heavily beset with bacilliform ornamentions and a simple to complex caudal branch (Figs 13B, 15C, D, 16B, C)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Retrodesmus
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite slender, more clearly curved; distal part beset with ornamentations (small spines, bacilli or setae) and at least with one evident process, either devoid of or supplied with a short solenomere, but with both an evident accessory seminal chamber and a hairy pulvillus (Figs 8D, 18B–D, 20C, D, 21, 23C, D, 25, 26F, G)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Opisotretus
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </table-wrap>
+                    </sec>
+                    <sec>
+                        <title><bold>A key to species of </bold><bold-italic>Martensodesmus</bold-italic>
+                        </title>
+                        <table-wrap content-type="key" position="float" orientation="portrait">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">1</td>
+                                        <td rowspan="1" colspan="1">♂ vertex with modifications. Himalaya</td>
+                                        <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–♂ vertex without modifications
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold>5
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">2
+                                        </td>
+                                        <td rowspan="1" colspan="1">♂ vertex with a fossa supporting two cusps of filaments; 2+2 long bacilliform setae at the caudal edge of an elongated ♂ collum (Figs 10A, B). Gonopod as in Figs 10C, D. Bhutan</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. bicuspidatus
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">♂ vertex with a hump. Gonopods different. Nepal</td>
+                                        <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">3
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopods as in Fig. 9</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. himalayensis
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopods different</td>
+                                        <td rowspan="1" colspan="1"><bold>4
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">4Apex of gonopod telopodite with a long slender process
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. sherpa
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Apex of gonopod telopodite with a broad, bifid, membranous lobe, devoid of any prominent processes</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. nagarjungicus
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>5
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite with a basal <bold>p</bold>, as in Figs 31E–H, 32. Guangxi, China
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. bedosae</bold-italic><bold> sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Process <bold>p</bold> absent
+                                        </td>
+                                        <td rowspan="1" colspan="1">6
+</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">6</td>
+                                        <td rowspan="1" colspan="1">Metaterga 2-17 (♂) or 2-18 (♀) with two transverse rows of bacilliform setae. Gonopods as in Fig. 35. Guangxi, China</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. spiniger</bold-italic><bold> sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">All metaterga with three transverse rows of bacilliform setae. Gonopods different</td>
+                                        <td rowspan="1" colspan="1"><bold>8
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">7
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite suberect, with a broadened apex, no process proximal to apical part. Bhutan</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. excornis
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopod telopodite with a strongly attenuating and curved apical half, three strong processes parabasally (Figs 28E–I, 29). Vietnam</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>M. cattienensis</bold-italic><bold> sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak-->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </table-wrap>
+                    </sec>
+                    <sec>
+                        <title><bold>A key to species of </bold><bold-italic>Opisotretus</bold-italic>
+                        </title>
+                        <table-wrap content-type="key" position="float" orientation="portrait">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">1</td>
+                                        <td rowspan="1" colspan="1">♂ vertex with modification</td>
+                                        <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–♂ vertex without modifications
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">2
+                                        </td>
+                                        <td rowspan="1" colspan="1">♂ vertex with two paramedian tubercles (Fig. 23A). Gonopods as in Figs 23C, D. Papua New Guinea</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. hagen</bold-italic><bold> sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">♂ vertex with a bare hump (Fig. 26A). Gonopods as in Figs 26F, G. Nusakambangan Island south off Java, Indonesia</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. spinosus </bold-italic><bold>sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">3
+                                        </td>
+                                        <td rowspan="1" colspan="1">♀ paraterga 18 and 19 with caudal teeth nearly obsolete, not extending behind rear tergal margin. Gonopod structure unknown. Java, Indonesia</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. mimus
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Caudal teeth of two last paraterga at least slightly produced behind rear tergal margin. Gonopod structure known</td>
+                                        <td rowspan="1" colspan="1"><bold>4
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">4Lateral tooth of caudalmost incision in a few last paraterga considerably longer than median one. Gonopods as in Fig. 8D. Java, Indonesia
+                                        </td>
+                                        <td rowspan="1" colspan="1"><bold>5
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Lateral tooth of caudalmost incision in a few last paraterga clearly shorter than median one. Gonopods different</td>
+                                        <td rowspan="1" colspan="1"><bold>6
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">5
+                                        </td>
+                                        <td rowspan="1" colspan="1">Body about 8 mm long and 1.25 mm wide (♀)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. euthus
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Body about 12 mm long and 1.5 mm wide (♂)</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. kraepelini
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>6
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopods as in Figs 18B–D, 20C, D. Papua New Guinea</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. beroni </bold-italic><bold>sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Gonopods as in Fig. 25. Sulawesi, Indonesia</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>O. deharvengi</bold-italic><bold> sp. n.
+</bold>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </table-wrap>
+                    </sec>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+        <sec>
+            <title><bold>Evolutionary and biogeographic implications
+</bold>
+            </title>
+            <p>The family Opisotretidae appears to range from the Ryukyu Islands, Japan and southern China, through Indochina and Indonesia, to Papua New Guinea. Simonsen (1992) dates the origin of Opisotretidae back to the Triassic (220 Ma) in relation to the geological history and fragmentation of eastern Gondwanaland, placing it mainly in the region of present-day Indonesia. However, such a reconstruction fails to account for the presence of opisotretid species all over Indonesia, including Sulawesi and New Guinea, only parts of which might have been derived from Gondwanaland. Even less convincing is the attribution of such remote and outlying areas as the Ryukyus and southern China to Gondwanaland. Thus there is no compelling reason to suppose that the evolution of Opisotretidae is linked to Gondwanaland. It seems far more logical to consider Opisotretidae as a purely Oriental family, probably the sister-group to, or even a disjunct offshoot of, the pantropical family Fuhrmannodesmidae. Opisotretids might well have originated in mainland Southeast Asia, with subsequent dispersals along the Himalayas in the West and across Indonesia (including New Guinea) in the East. Such patterns do not need to be dated as far back as the early Mesozoic, but could have instead become established much more recently, well within the Cenozoic. Moreover, Southeast Asia hosts the largest number of higher diplopod taxa, including all sixteen Recent orders of the class, and it provides many other examples, at various taxonomic levels, <!--PageBreak-->of connections with the Himalayas and Southeast Asian expansions to Indonesia/East Indies (Shelley &amp; Golovatch 2011).
+</p>
+            <p>In the present work we place Opisotretidae in the superfamily Trichopolydesmoidea, as recently reviewed by Golovatch (2011), considering them to be close to, if not immediately derived from, the still poorly defined, highly diverse and mostly pantropical family Fuhrmannodesmidae. The reasons for this view of the relationships between them are as follows. Golovatch (1994) provided an evolutionary scenario for the genera of Fuhrmannodesmidae known from the Neotropical realm, accepting as the basalmost those genera showing rather small, subglobose gonopod coxae that form no significant gonocoel in which to hinge the largely exposed, usually rather simple and elongate telopodites. Moreover, as in some true Trichopolydesmoidea, the prefemoral (= setose) part of the gonopod is mostly orientated transversely to the body axis, extending mesally across the entire width of the coxae. Following a series of transitional states, such forms ultimately culminate in having the gonopod coxae strongly enlarged, forming a large gonocoel in which to conceal the clearly shortened, usually highly complex and deeply sunken telopodites. Their prefemoral parts already tend to be positioned increasingly parallel to the body’s main axis, thus providing a transition between the usually small-sized Trichopolydesmoidea (= so-called “micropolydesmoids”) to the normally medium- to large-sized Polydesmoidea (= so-called “macropolydesmoids”). In this respect, Fuhrmannodesmidae might well prove to be a paraphyletic group.
+</p>
+            <p>Naturally, similar general trends can be surmised to have occurred in the fuhrmannodesmids of the Afrotropical and, especially, Oriental realms, which support fairly diverse faunas of this family.
+</p>
+            <p>Based on the published record and the available collections of Fuhrmannodesmidae (largely kept at MNHN) from Southeast Asia and adjacent regions, including southern China, Indonesia and Melanesia (Golovatch et al., in preparation), most of the Oriental Fuhrmannodesmidae are indeed highly advanced, showing complex and strongly shortened gonopod telopodites deeply sunken inside the gonocoel formed by enlarged coxae. The orientation of the prefemoral part also varies, but it tends to be held parallel, not transversely, to the main axis of the body. However, amongst the Asian fuhrmannodesmids, there are certain genera and species that instead show quite primitive conditions, i.e. long, usually less complex gonopod telopodites that remain strongly exposed above a relatively small gonocoel. At least some of these have the prefemoral parts orientated strictly parallel to the main axis, a condition typical of the sister-superfamily Polydesmoidea. Moreover, one of these species (Figs 42, 43), from Vietnam, yet to be described, shows the distal parts of the gonopod telopodites elongated and directed laterad. This is in contrast to the much more frequent condition of the gonotelopodites in Fuhrmannodesmidae and most other groups of Polydesmida, which either cross mesally or are held parallel to each other. Based on this example, the evolution of the Opisotretidae might well be viewed as a case when the gonotelopodite of fuhrmannodesmids grows increasingly elongate and orientated laterally, while the coxae remain rather small and do not form a significant gonocoel. Against this back<!--PageBreak-->ground, we would again emphasize that none of the peripheral, non-gonopod features of Opisotretidae seems to characterize this family alone.
+</p>
+            <p>To summarize, the Opisotretidae could have originated directly from a disjunct member of Fuhrmannodesmidae in which the gonopod coxae would have remained <!--PageBreak-->small and probably been held parallel to the main axis of the body, but the development of the telopodite would have culminated in its considerable elongation and fully dorsolaterad orientation. In addition, the gonopods of this stem species must have been equipped with an accessory seminal chamber and a hairy pulvillus, the apomorphies which are absent from present-day Fuhrmannodesmidae, but retained in most of the Polydesmoidea and a few Trichopolydesmoidea, including Opisotretidae. So the ancestor of Opisotretidae might have also been a species of Polydesmoidea or even a common stem member of the Polydesmoidea+Trichopolydesmoidea. A clear-cut trend to having these apomorphies (as well as ♂ sphaerotrichomes) reduced is evident, apparently along with body miniaturization, not only in Opisotretidae, but also in some typical Polydesmidae, e.g. within the Siberian genus <italic>Uniramidesmus</italic> Golovatch, 1979 (Mikhaljova 2004, 2006), and Trichopolydesmidae, e.g. within the western Mediterranean genus <italic>Cottodesmus</italic> Verhoeff, 1936 (Verhoeff 1936, Mauriès and Vicente 1977, Mauriès 1983).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Conclusions
+</bold>
+            </title>
+            <p>There can be no doubt that many more species of Opisotretidae await discovery and description. Representatives of this family seem to be rare, but it is likely that they are <!--PageBreak-->seriously under-collected due to their small size. Even in caves, they seem never to be abundant, making them easy to overlook, which is in strong contrast to most diplopod groups common in tropical caves, including those of the Oriental realm (Deharveng &amp; Bedos 2012). Sympatry, even syntopy, of two different opisotretid species also seems to be common.
+</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>This work only became possible through the support rendered to the first author by the Muséum national d’Histoire naturelle, Paris. We heartily thank Louis Deharveng and Anne Bedos (both MNHN), as well as Petar Beron (NMNHS), for the precious material they provided for study. The field work of Louis Deharveng and Anne Bedos in Guangxi, China was funded by the World Bank – GEF project “Guangxi integrated forestry development and conservation”. Their collecting and studying the Nusakambangan material (Java) was made possible thanks to LIPI-MZB which arranged the necessary permits, and to both FFI (Fauna Flora International - Indonesia) and Holcim for the organization and funding of a field trip. Lorenzo Prendini (AMNH) kindly sent us the holotype of <italic>Retrodesmus dammermani</italic> on loan. Mark Judson (MNHN) very generously checked the English of certain parts of an advanced draft.
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Attems</surname> <given-names>C</given-names></name></person-group> (<year>1907</year>)<article-title> Javanische Myriopoden gesammelt von Direktor K. Kraepelin im Jahre 1903.</article-title> <source>Mitteilungen aus dem Naturhistorischen Museum Hamburg </source> <volume>24</volume>: <fpage>77</fpage>-<lpage>122</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Attems</surname> <given-names>C</given-names></name></person-group> (<year>1938</year>)<article-title> Die von Dr. C. Dawydoff in Französisch Indochina gesammelten Myriopoden.</article-title> <source>Mémoires du Muséum national d’Histoire naturelle, Nouvelle série, </source> <volume>6</volume> (<issue>2</issue>): <fpage>187</fpage>-<lpage>353</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Attems</surname> <given-names>C</given-names></name></person-group> (<year>1940</year>)<fake_tag> Myriopoda 3. Polydesmoidea III. Fam. Polydesmidae, Vanhoeffeniidae, Cryptodesmidae, Oniscodesmidae, Sphaeriotrichopidae, Peridontodesmidae, Rhachidesmidae, Macellolophidae, Pandirodesmidae. Das Tierreich 70: i-xxxii+1–577.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Carl</surname> <given-names>J</given-names></name></person-group> (<year>1912</year>)<article-title> Die Diplopoden-Fauna von Celebes.</article-title> <source>Revue suisse de Zoologie </source> <volume>20</volume> (<issue>4</issue>): <fpage>73</fpage>-<lpage>202</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Carl</surname> <given-names>J</given-names></name></person-group> (<year>1922</year>)<fake_tag> Wissenschafliche Ergebnisse einer Forschungsreise nach Ostindien, ausgeführt im Auftrage der Akademie der Wissenschaften von H. v. Buttel-Reepen. VIII. Diplopoden aus Sumatra, Java, Malakka und Ceylon. Gesammelt von Herrn Prof. Dr. V. Buttel-Reepen in den Jahren 1911–1912. Zoologische Jahrbücher, Abteilung für Systematik 44: 565–578.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Carl</surname> <given-names>J</given-names></name></person-group> (<year>1941</year>)<article-title> Orientalische Polydesmoiden.</article-title> <source>Revue suisse de Zoologie </source> <volume>48</volume> (<issue>6</issue>): <fpage>359</fpage>-<lpage>376</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Chamberlin</surname> <given-names>RV</given-names></name></person-group> (<year>1945</year>)<article-title> On some diplopods from the Indo-Australian Archipelago.</article-title> <source>American Museum Novitates </source> <volume>1282</volume>: <fpage>1</fpage>-<lpage>43</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Deharveng</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Bedos</surname> <given-names>A</given-names></name></person-group> (<year>2012</year>)<fake_tag> Diversity patterns in the tropics. Pp 238–250. In White WB, Culver DC (Eds) Encyclopedia of Caves. Chennai: Academic Press. </fake_tag>doi: 10.1016/B978-0-12-383832-2.00032-3
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name></person-group> (<year>1987</year>)<article-title> Diplopoda from the Nepal Himalayas. Opisotretidae, additional Polydesmidae and Fuhrmannodesmidae.</article-title> <source>Courier Forschungsinstitut Senckenberg </source> <volume>93</volume>: <fpage>203</fpage>-<lpage>217</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name></person-group> (<year>1988</year>)<article-title> On the first Polydesmidae, Opisotretidae and Fuhrmannodesmidae from Bhutan (Diplopoda, Polydesmida).</article-title> <source>Entomologica Basiliensia </source> <volume>12</volume>: <fpage>15</fpage>-<lpage>48</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name></person-group> (<year>1994</year>)<fake_tag> Further new Fuhrmannodesmidae from the environs of Manaus, Central Amazonia, Brazil, with a revision of <italic>Cryptogonodesmus</italic> Silvestri, 1898 (Diplopoda, Polydesmida). Amazoniana 13(1/2): 131–161.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name></person-group> (<year>2011</year>)<article-title>The millipede genus <italic>Caucasodesmus </italic>Golovatch, 1985, with the description of a new species from the Crimea, Ukraine (Polydesmida, Diplopoda, Trichopolydesmidae).</article-title> <source>ZooKeys </source> <volume>93</volume>: <fpage>1</fpage>-<lpage>8</lpage>. doi: 10.3897/zookeys.93.1159
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name>,<name name-style="western"><surname>Stoev</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>VandenSpiegel</surname> <given-names>D</given-names></name></person-group> (<year>2010</year>)<article-title> New or poorly-known millipedes (Diplopoda) from Papua New Guinea, 2.</article-title> <source>Arthropoda Selecta </source> <volume>19</volume> (<issue>3</issue>): <fpage>129</fpage>-<lpage>143</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name>,<name name-style="western"><surname>Mikhaljova</surname> <given-names>EV</given-names></name>,<name name-style="western"><surname>Chang</surname> <given-names>HW</given-names></name></person-group> (<year>2011a</year>)<article-title> The millipede families Cryptodesmidae, Haplodesmidae, Pyrgodesmidae, Opisotretidae and Xystodesmidae in Taiwan (Diplopoda, Polydesmida).</article-title> <source>Tropical Natural History </source> <volume>11</volume> (<issue>2</issue>): <fpage>119</fpage>-<lpage>134</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name>,<name name-style="western"><surname>Tiunov</surname> <given-names>AV</given-names></name>,<name name-style="western"><surname>Anichkin</surname> <given-names>AE</given-names></name></person-group> (<year>2011b</year>)<article-title> [Millipedes (Diplopoda)].</article-title> In: <person-group1><name name-style="western"><surname>Tiunov</surname> <given-names>AV</given-names></name></person-group1> (<role>Ed</role>). <issue-title>Structure and functions of soil communities of a monsoon tropical forest (Cat Tien National Park, southern Vietnam).</issue-title> <source>KMK Scientific Press, Moscow</source>: <fpage>76</fpage>-<lpage>90</lpage>. [In Russian, with an English abstract].
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hoffman</surname> <given-names>RL</given-names></name></person-group> (<year>1980</year>)<fake_tag> Classification of the Diplopoda. Muséum d’histoire naturelle, Genève. 237 pp. [for 1979].
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hoffman</surname> <given-names>RL</given-names></name></person-group> (<year>2005</year>)<article-title> Zoological Results of the British Speleological Expedition to Papua New Guinea, 1975. A note on the characters and status of the genus <italic>Caloma</italic> Chamberlin, 1945 (Polydesmida: Paradoxosomatidae).</article-title> <source>Myriapodologica </source> <volume>8</volume> (<issue>8</issue>): <fpage>75</fpage>-<lpage>82</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jeekel</surname> <given-names>CAW</given-names></name></person-group> (<year>2006</year>)<article-title> Some notes on Diplopoda from Christmas Island (Indian Ocean).</article-title> <source>Myriapod Memoranda </source> <volume>9</volume>: <fpage>59</fpage>-<lpage>63</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mauriès</surname> <given-names>JP</given-names></name></person-group> (<year>1983</year>)<article-title> Le genre <italic>Galliocookia</italic> Ribaut, 1954. Deux espèces nouvelles des grottes de l’Ardèche et du Gard (Mryripoda, Diplopoda, Polydesmida).</article-title> <source>Bulletin de la Société d’Histoire Naturelle de Toulouse </source> <volume>119</volume>: <fpage>103</fpage>-<lpage>110</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mauriès</surname> <given-names>JP</given-names></name>,<name name-style="western"><surname>Geoffroy</surname> <given-names>JJ</given-names></name></person-group> (<year>1999</year>)<article-title> Les diplopodes édaphiques et souterrains de l’Ile Maurice (Myriapoda, Diplopoda).</article-title> <source>Revue suisse de Zoologie </source> <volume>106</volume> (<issue>1</issue>): <fpage>69</fpage>-<lpage>79</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mauriès</surname> <given-names>JP</given-names></name>,<name name-style="western"><surname>Vicente</surname> <given-names>MC</given-names></name></person-group> (<year>1977</year>)<fake_tag> Myriapodes diplopodes nouveaux ou peu connus des Pyrénées espagnoles, des monts Cantabriques et de Galice. Bulletin du Muséum national d’Histoire naturelle, série 3, 452 (Zoologie 315): 529–546.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mikhaljova</surname> <given-names>EV</given-names></name></person-group> (<year>2004</year>)<fake_tag> The millipedes (Diplopoda) of the Asian part of Russia. Sofia &amp; Moscow: Pensoft. 292 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mikhaljova</surname> <given-names>EV</given-names></name></person-group> (<year>2006</year>)<fake_tag> New data on the millipede fauna of the basin of Amur River (Diplopoda). Arthropoda Selecta 14(3): 129–132 [for 2005].
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Murakami</surname> <given-names>Y</given-names></name></person-group> (<year>1975</year>)<article-title> The cave myriapods of the Ryukyu Islands (I).</article-title> <source>Bulletin of the National Science Museum, Series A (Zoology), </source> <volume>1</volume> (<issue>2</issue>): <fpage>85</fpage>-<lpage>113</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Nakamura</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Korsós</surname> <given-names>Z</given-names></name></person-group> (<year>2010</year>)<article-title> Distribution and diversity of millipedes of the Ryukyu Archipelago, with the Senkaku and Daito Island groups: A literature review.</article-title> <source>Acta Arachnologica </source> <volume>59</volume> (<issue>2</issue>): <fpage>73</fpage>-<lpage>86</lpage>. doi: 10.2476/asjaa.59.73
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Reboleira</surname> <given-names>ASPS</given-names></name>,<name name-style="western"><surname>Enghoff</surname> <given-names>H</given-names></name></person-group> (<year>2013</year>)<article-title> The genus <italic>Boreviulisoma</italic> Brolemann, 1928 - an Iberian-N African outlier of a mainly tropical tribe of millipedes (Diplopoda: Polydesmida: Paradoxosomatidae).</article-title> <source>Zootaxa </source> <volume>3646</volume> (<issue>5</issue>): <fpage>516</fpage>-<lpage>528</lpage>. doi: 10.11646/zootaxa.3646.5.2
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shelley</surname> <given-names>RM</given-names></name>,<name name-style="western"><surname>Golovatch</surname> <given-names>SI</given-names></name></person-group> (<year>2011</year>)<article-title> Atlas of myriapod biogeography. I. Indigenous ordinal and supra-ordinal distributions in the Diplopoda: Perspectives on taxon origins and ages, and a hypothesis on the origin and early evolution of the class.</article-title> <source>Insecta Mundi </source> <volume>0158</volume>: <fpage>1</fpage>-<lpage>134</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Silvestri</surname> <given-names>F</given-names></name></person-group> (<year>1899</year>)<article-title> Diplopoda nova a L. Biró in Nova-Guinea collecta.</article-title> <source>Természetrajzi Fűzetek </source> <volume>22</volume>: <fpage>205</fpage>-<lpage>212</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Simonsen</surname> <given-names>Å</given-names></name></person-group> (<year>1990</year>)<fake_tag> Phylogeny and biogeography of the millipede order Polydesmida, with special emphasis on the suborder Polydesmidea. Institute of Zoology, University of Bergen, Bergen. 114 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Simonsen</surname> <given-names>Å</given-names></name></person-group> (<year>1992</year>)<article-title> Importance of polydesmidean millipedes for the reconstruction of the palaeogeographic evolution of eastern Gondwanaland in the Permo-Triassic.</article-title> <source>Berichte des Naturwissenschaftlich-medizinischen Vereins in Innsbruck, Supplement </source> <volume>10</volume>: <fpage>17</fpage>-<lpage>22</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Verhoeff</surname> <given-names>KW</given-names></name></person-group> (<year>1936</year>)<article-title> Chilognathen aus Nordwestitalien und über einige andere mediterrane Diplopoden. 128. Diplopoden-Aufsatz.</article-title> <source>Zoologische Jahrbücher, Abteilung für Systematik </source> <volume>68</volume>: <fpage>353</fpage>-<lpage>444</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <caption><p><bold>Figure 1.</bold> <italic>Carlotretus setosus</italic> Carl, 1922; ♂ holotype from Sumatra, Indonesia; <bold>A</bold> midbody segments, dorsal view <bold>B, C</bold> right gonopod and its apical part, mesal and lateral views, respectively. Depicted not to scale. After Carl (1922).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <caption><p><bold>Figure 2.</bold> <italic>Corypholophus minutus</italic> Attems, 1938, ♂ from left bank of Ma River, Von Mai, Mai Tiao Distr., Hoa Binh Prov., northern Vietnam; <bold>A</bold> head, lateral view <bold>B</bold> left gonopod, caudal view. – Scale bars: <bold>A</bold> 0.3 mm; <bold>B</bold> 0.1 mm. After Golovatch (1987).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <caption><p><bold>Figure 3.</bold> <italic>Corypholophus ryukyuensis</italic> Murakami, 1975, ♂ paratype from Ryukyu Islands, Japan; <bold>A–E</bold> both gonopods <italic>in situ</italic>, ventral, caudal, subcaudal and caudal views, respectively <bold>F</bold> gonopod tip, dorsal view. Depicted not to scale. After Murakami (1975).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <caption><p><bold>Figure 4.</bold> <italic>Solaenaulus butteli </italic>(Carl, 1922), ♂ from Lae, Papua New Guinea; <bold>A </bold>habitus, lateral view <bold>B, E, H</bold> anterior body part, lateral, dorsal and ventral views, respectively <bold>C, F, I</bold> midbody segments, lateral, dorsal and ventral views, respectively <bold>D, G, J</bold> posterior body part, lateral, dorsal and ventral views, respectively. – Scale bars: <bold>A</bold> 0.5 mm; <bold>B–I</bold> 0.1 mm; J, 0.12 mm. After Golovatch et al. (2010).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <caption><p><bold>Figure 5</bold>. <italic>Solaenaulus butteli </italic>(Carl, 1922), ♂ from Lae, Papua New Guinea <bold>A </bold>head and collum, dorsal view <bold>B</bold> metatergum 18 and telson, caudal view <bold>C</bold> cross-section of a midbody segment, caudal view <bold>D–G</bold> tegument texture and tergal setae, dorsal, dorsal, dorsal and lateral views, respectively <bold>H</bold> midbody leg <bold>I</bold> claw <bold>J</bold> segment 7 with left gonopod <italic>in situ</italic>. – Scale bars: <bold>A, C, J</bold> 0.1 mm; <bold>B, D, G, H</bold> 0.05 mm; <bold>E</bold> 0.02 mm; <bold>F, I</bold> 0.01 mm. After Golovatch et al. (2010).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F6" position="float" orientation="portrait">
+            <caption><p><bold>Figure 6.</bold> <italic>Solaenaulus butteli </italic>(Carl, 1922), ♂ from Lae, Papua New Guinea <bold>A </bold>both gonopods <italic>in situ</italic>, ventral view <bold>B</bold> gonopod aperture, ventral view <bold>C–F</bold> individual gonopods, subventral, subfrontal, lateral and mesal views, respectively. – Scale bars: <bold>A, B</bold> 0.05 mm; <bold>C–F</bold> 0.01 mm. After Golovatch et al. (2010).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F7" position="float" orientation="portrait">
+            <caption><p><bold>Figure 7.</bold> <italic>Solaenaulus butteli </italic>(Carl, 1922), ♂ from Lae, Papua New Guinea; <bold>A, B</bold> left gonopod, lateral and submesal views, respectively. – Scale bars: A, 0.4 mm; B, 0.1 mm. After Golovatch et al. (2010).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g007.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F8" position="float" orientation="portrait">
+            <caption><p><bold>Figure 8.</bold><italic> Opisotretus</italic> <italic>kraepelini</italic> Attems, 1907, ♂ holotype from Java, Indonesia <bold>A, B</bold> anterior and posterior body parts, respectively <bold>C</bold> cross-section of segment 7, frontal view <bold>D</bold> left gonopod, sublateral view. Depicted not to scale. After Attems (1907).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g008.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F9" position="float" orientation="portrait">
+            <caption><p><bold>Figure 9. </bold><italic>Martensodesmus himalayensis</italic> Golovatch, 1987, ♂ paratype from Nepal; <bold>A, B</bold> right gonopod, subcaudal and subfrontal views, respectively <bold>C</bold> left gonopod, frontal view. – Scale bar: 0.1 mm. After Golovatch (1987).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g009.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F10" position="float" orientation="portrait">
+            <caption><p><bold>Figure 10. </bold><italic>Martensodesmus bicuspidatus </italic>Golovatch, 1988, ♂ paratype from Bhutan; <bold>A, B</bold> head and collum, frontal and lateral views, respectively <bold>C, D</bold> right gonopod, caudal and frontal views, respectively. – Scale bars: <bold>A, B</bold> 0.5 mm; <bold>C, D</bold> 0.1 mm. After Golovatch (1988).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g010.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F11" position="float" orientation="portrait">
+            <caption><p><bold>Figure 11.</bold><italic> Opisthoporodesmus</italic> <italic>obtectus</italic> Silvestri, 1899, ♂ ?holotype from Papua New Guinea; <bold>A</bold> segments 8 and 9, dorsal view <bold>B</bold> posterior body part, dorsal view <bold>C</bold> right gonopod, subcaudal view. Depicted not to scale. After Silvestri (1899).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g011.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F12" position="float" orientation="portrait">
+            <caption><p><bold>Figure 12.</bold><italic> Retrodesmus</italic> <italic>dammermani</italic> Chamberlin, 1945, ♂ holotype from Java, Indonesia; <bold>A–C</bold> habitus, dorsal, lateral and ventral views, respectively.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g012.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F13" position="float" orientation="portrait">
+            <caption><p><bold>Figure 13.</bold><italic> Retrodesmus</italic> <italic>dammermani</italic> Chamberlin, 1945, ♂ holotype from Java, Indonesia <bold>A</bold> left paratergite 10, dorsal view <bold>B</bold> both gonopods <italic>in situ</italic>, ventral view. – Scale bars: 0.2 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g013.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F14" position="float" orientation="portrait">
+            <caption><p><bold>Figure 14.</bold><italic> Retrodesmus</italic> <italic>cavernicola</italic> sp. n., ♀ subadult, paratype; <bold>A, D</bold> anterior body part, dorsal and lateral views, respectively <bold>B</bold> midbody segments, dorsal view <bold>C, E, G </bold>posterior body part, dorsal, lateral and ventral views, respectively <bold>F</bold> head, ventral view <bold>H</bold> cross-section of a midbody segment, caudal view <bold>I </bold>tergal seta <bold>J, K</bold> paratergite 15, dorsal and subcaudal views, respectively <bold>L</bold> limbus, dorsal view. – Scale bars: <bold>A</bold> 0.5 mm; <bold>B–E, G, H</bold> 0.2 mm; <bold>F, J, K</bold> 0.1 mm; <bold>I, L</bold> 0.02 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g014.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F15" position="float" orientation="portrait">
+            <caption><p><bold>Figure 15.</bold><italic> Retrodesmus</italic> <italic>cavernicola</italic> sp. n., ♂ paratype from Cave Bem Tem; <bold>A</bold> antenna, lateral view <bold>B</bold> midbody leg <bold>C</bold> left gonopod, submesal view <bold>D</bold> right gonopod, subfrontal view. – Scale bars: <bold>A, B</bold> 1.0 mm; <bold>C, D</bold> 0.2 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g015.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F16" position="float" orientation="portrait">
+            <caption><p><bold>Figure 16.</bold><italic> Retrodesmus</italic> <italic>cavernicola</italic> sp. n., ♂ holotype; <bold>A</bold> leg 9 <bold>B, C</bold> left gonopod, subdorsal and subventral views, respectively. – Scale bars: <bold>A</bold> 0.5 mm; <bold>B, C</bold> 0.2 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g016.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F17" position="float" orientation="portrait">
+            <caption><p><bold>Figure 17. </bold><italic>Opisotretus beroni</italic> sp. n., ♂ paratype from Mount Fugilil (summit); <bold>A,</bold> <bold>D, G</bold> anterior body part, dorsal, lateral and ventral views, respectively <bold>B, E, H</bold> midbody segments, dorsal, lateral and ventral views, respectively <bold>C, F, I</bold> posterior body part, dorsal, lateral and ventral views, respectively <bold>J</bold> cross-section of a midbody segment <bold>K</bold> antenna, lateral view <bold>L </bold>right paratergite 13, dorsal view <bold>M</bold> tergal setae <bold>N</bold> claw. – Scale bars: <bold>G</bold> 0.5 mm; <bold>A, C–F, H–K</bold> 0.2 mm; <bold>B, L</bold> 0.1 mm; <bold>M</bold> 0.05 mm; <bold>N</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g017.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F18" position="float" orientation="portrait">
+            <caption><p><bold>Figure 18. </bold><italic>Opisotretus beroni</italic> sp. n., ♂ paratype from Mount Fugilil (summit); <bold>A</bold> head, ventral view <bold>B</bold> both gonopods <italic>in situ</italic>, ventral view <bold>C, D</bold> left gonopod, sublateral and submesal views, respectively. – Scale bars: 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g018.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F19" position="float" orientation="portrait">
+            <caption><p><bold>Figure 19. </bold><italic>Opisotretus beroni</italic> sp. n., ♀ subadult, paratype from Mount Fugilil (summit); <bold>A,</bold> <bold>D </bold>anterior body part, dorsal and lateral views, respectively <bold>B, E, G</bold> midbody segments, dorsal, lateral and ventral views, respectively <bold>C, F, H</bold> posterior body part, dorsal, lateral and ventral views, respectively <bold>I</bold> cross-section of a midbody segment <bold>J</bold> midbody leg <bold>K </bold>right paratergite 13, dorsal view <bold>L,</bold> <bold>M</bold> tergal setae <bold>N</bold> gnathochilarium, ventral view. – Scale bars: <bold>B–H</bold>,0.2 mm; <bold>A, I, N</bold> 0.1 mm; <bold>J, K</bold> 0.05 mm; <bold>M</bold> 0.02 mm; <bold>L</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g019.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F20" position="float" orientation="portrait">
+            <caption><p><bold>Figure 20. </bold><italic>Opisotretus beroni</italic> sp. n., ♂ paratype from Mount Fugilil (summit); <bold>A</bold> antenna, lateral view <bold>B</bold> midbody leg <bold>C, D</bold> left gonopod, sublateral and submesal views, respectively. – Scale bar: 0.2 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g020.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F21" position="float" orientation="portrait">
+            <caption><p><bold>Figure 21. </bold><italic>Opisotretus beroni</italic> sp. n., ♂ paratype from Selminum doline; <bold>A, B</bold> left gonopod, submesal and sublateral views, respectively. – Scale bar: 0.2 mm. After Golovatch et al. (2010).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g021.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F22" position="float" orientation="portrait">
+            <caption><p><bold>Figure 22. </bold><italic>Opisotretus hagen </italic>sp. n., ♀ subadult, paratype; <bold>A,</bold> <bold>D, G, </bold>anterior body part, dorsal, lateral and ventral views, respectively <bold>B, E, H</bold> midbody segments, dorsal, lateral and ventral views, respectively <bold>C, F, I</bold> posterior body part, dorsal, lateral and caudal views, respectively <bold>J</bold> tergal seta, lateral view <bold>K</bold> tegument texture, dorsal view <bold>L</bold> limbus, dorsal view <bold>M </bold>midbody paratergite, subcaudal view <bold>N</bold> midbody leg; <bold>O, </bold>claw. – Scale bars: <bold>A, G</bold> 0.2 mm; <bold>B–F, H, I, K, N</bold> 0.1 mm; <bold>M</bold> 0.05 mm; <bold>J, L, O</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g022.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F23" position="float" orientation="portrait">
+            <caption><p><bold>Figure 23. </bold><italic>Opisotretus hagen </italic>sp. n., ♂ holotype; <bold>A</bold> head, frontal view <bold>B</bold> midbody leg <bold>C, D</bold> right gonopod, mesal and lateral views, respectively. – Scale bars: <bold>A</bold> 1.0; <bold>B</bold> 0.5 mm; <bold>C, D</bold> 0.2 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g023.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F24" position="float" orientation="portrait">
+            <caption><p><bold>Figure 24. </bold><italic>Opisotretus deharvengi </italic>sp. n., ♀ paratype; <bold>A,</bold> <bold>D </bold>anterior body part, dorsal and lateral views, respectively <bold>B, E, H</bold> midbody segments, dorsal, lateral and ventral views, respectively <bold>C, F, I</bold> posterior body part, dorsal, lateral and caudal views, respectively <bold>G</bold> head ventral view <bold>J</bold> tergal seta, lateral view <bold>K</bold> left paratergite 13, dorsal view <bold>L</bold> tegument texture and limbus, dorsal view <bold>M </bold>midbody paratergite and leg <italic>in situ</italic>, ventrolateral view. – Scale bars: <bold>A, B, D, E, H</bold> 0.2 mm; <bold>C, F, G, I, M</bold> 0.1 mm; <bold>K</bold> 0.05 mm; <bold>L</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g024.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F25" position="float" orientation="portrait">
+            <caption><p><bold>Figure 25. </bold><italic>Opisotretus deharvengi </italic>sp. n., ♂ holotype; <bold>A,</bold> <bold>B</bold> left gonopod, subventral and subdorsal views, respectively. – Scale bar: 0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g025.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F26" position="float" orientation="portrait">
+            <caption><p><bold>Figure 26. </bold><italic>Opisotretus</italic><bold-italic> </bold-italic><italic>spinosus </italic>sp. n., ♂ holotype; <bold>A</bold> head, frontolateral view <bold>B, C</bold> right paratergites 15 and 18, respectively, dorsal view <bold>D</bold> hypoproct, ventral view <bold>E</bold> midbody leg <bold>F,</bold> <bold>G</bold> right gonopod, subventral and subdorsal views, respectively. – Scale bar: <bold>A–C</bold> 0.2 mm; <bold>D, E</bold> 0.1 mm; <bold>F, G</bold> 0.05 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g026.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F27" position="float" orientation="portrait">
+            <caption><p><bold>Figure 27.</bold><bold-italic> </bold-italic><italic>Martensodesmus cattienensis </italic>sp. n., ♂ paratype; <bold>A,</bold> <bold>D, G </bold>anterior body part, lateral, dorsal and ventrolateral views, respectively <bold>B, E </bold>midbody segments, lateral and dorsal views, respectively <bold>C, F, I,</bold> <bold>J</bold> posterior body part, dorsolateral, dorsal, lateral and caudal views, respectively <bold>H</bold> segments 5-7 with an exposed left gonopod, lateral view <bold>K</bold> cross-section of a midbody segment, caudal view <bold>L</bold> midbody paratergite with setae and an ozopore, lateral view. – Scale bars: <bold>A–E, G, I, K</bold> 0.2 mm; <bold>F, H, J, L </bold>0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g027.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F28" position="float" orientation="portrait">
+            <caption><p><bold>Figure 28.</bold><bold-italic> </bold-italic><italic>Martensodesmus cattienensis </italic>sp. n., ♀ (<bold>A–F</bold>) &amp; ♂ (<bold>G–L</bold>) paratypes; <bold>A</bold> tegument texture, dorsal view <bold>B</bold> tergal seta, sublateral view <bold>C</bold> gnathochilarium, ventral view <bold>D </bold>midbody leg <bold>E</bold> right gonopod <italic>in situ</italic>, ventral view <bold>F</bold> tip of gonopod telopodite, ventral view <bold>G–I</bold> dissected left gonopod, subdorsal, frontal and submesal views, respectively. – Scale bars: <bold>C, D</bold> 0.1 mm; <bold>E, G–I</bold> 0.05 mm; <bold>A, F</bold> 0.02 mm; <bold>B</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g028.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F29" position="float" orientation="portrait">
+            <caption><p><bold>Figure 29.</bold><bold-italic> </bold-italic><italic>Martensodesmus cattienensis </italic>sp. n., ♂ paratype; <bold>A, B</bold> right gonopod, subventral and subfrontal views, respectively. – Scale bar: 0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g029.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F30" position="float" orientation="portrait">
+            <caption><p><bold>Figure 30.</bold><bold-italic> </bold-italic><italic>Martensodesmus</italic><bold-italic> </bold-italic><italic>bedosae </italic>sp. n., ♂ paratype; <bold>A,</bold> <bold>D, G </bold>anterior body part, dorsal, lateral and ventral views, respectively <bold>B, E, H </bold>midbody segments, dorsal, lateral and ventral views, respectively <bold>C, F, I</bold> posterior body part, dorsal, lateral and ventral views, respectively <bold>J</bold> cross-section of a midbody segment, caudal view <bold>K</bold> midbody paratergite with setae and an ozopore, lateral view <bold>L</bold> tergal seta, lateral view. – Scale bars: <bold>A–J</bold> 0.1 mm; <bold>K</bold> 0.02 mm; <bold>L</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g030.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F31" position="float" orientation="portrait">
+            <caption><p><bold>Figure 31.</bold><bold-italic> </bold-italic><italic>Martensodesmus</italic><bold-italic> </bold-italic><italic>bedosae </italic>sp. n., ♂ paratype; <bold>A, B </bold>tegument texture, tergal setae and ozopore, dorsal view <bold>C</bold> head, frontoventral view <bold>D </bold>midbody leg, subventral view; <bold>E,</bold> both gonopods <italic>in situ</italic>, ventral view; <bold>F,</bold> right gonopod, ventral view <bold>G, H</bold> dissected left gonopod, subdorsal and frontal views, respectively. – Scale bars: <bold>C, E</bold> 0.1 mm; <bold>D, F–H</bold> 0.05 mm; <bold>A, B</bold> 0.02 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g031.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F32" position="float" orientation="portrait">
+            <caption><p><bold>Figure 32.</bold><bold-italic> </bold-italic><italic>Martensodesmus bedosae </italic>sp. n., ♂ paratype; <bold>A, B</bold> left gonopod, ventral and dorsal views, respectively. – Scale bar: 0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g032.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F33" position="float" orientation="portrait">
+            <caption><p><bold>Figure 33.</bold><bold-italic> </bold-italic><italic>Martensodesmus</italic><bold-italic> </bold-italic><italic>spiniger </italic>sp. n., ♂ subadult, non-type; <bold>A,</bold> <bold>D </bold>anterior body part, lateral and dorsal views, respectively <bold>B, E </bold>midbody segments, lateral and dorsal views, respectively <bold>C, F, I</bold> posterior body part, lateral, dorsal and ventral views, respectively <bold>G</bold> head, ventral view <bold>H</bold> segments 6 and 7, ventral view. – Scale bars: <bold>A–D, F, H, I</bold> 0.1 mm; <bold>E, G</bold> 0.05 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g033.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F34" position="float" orientation="portrait">
+            <caption><p><bold>Figure 34.</bold><bold-italic> </bold-italic><italic>Martensodesmus</italic><bold-italic> </bold-italic><italic>spiniger </italic>sp. n., ♂ subadult, non-type; <bold>A</bold> cross-section of a midbody segment, caudal view <bold>B</bold> midbody paratergite with setae and an ozopore, lateral view <bold>C</bold> tegument texture, limbus and setae <bold>D</bold> midbody leg. – Scale bars: <bold>A</bold> 0.1 mm; <bold>D</bold> 0.05 mm; <bold>B</bold> 0.02 mm; <bold>C </bold>0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g034.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F35" position="float" orientation="portrait">
+            <caption><p><bold>Figure 35.</bold><bold-italic> </bold-italic><italic>Martensodesmus</italic><bold-italic> </bold-italic><italic>spiniger </italic>sp. n., ♂ paratype; <bold>A</bold> right gonopod, ventral view <bold>B, C</bold> left gonopod, frontodorsal and subdorsal views, respectively. – Scale bar: 0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g035.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F36" position="float" orientation="portrait">
+            <caption><p><bold>Figure 36.</bold><bold-italic> </bold-italic><italic>Martensodesmus</italic><bold-italic> </bold-italic><italic>spiniger </italic>sp. n., ♂ holotype (<bold>A, B</bold>), and <italic>Carlotretus</italic> <italic>triramus </italic>sp. n., ♂ paratype (<bold>C, D</bold>) <bold>A, C</bold> left paratergite 13, dorsal view <bold>B, D</bold> left paratergites 17 and 18, dorsal view. – Scale bar: 0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g036.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F37" position="float" orientation="portrait">
+            <caption><p><bold>Figure 37.</bold><bold-italic> </bold-italic><italic>Carlotretus</italic> <italic>triramus </italic>sp. n., ♂ paratype (CHIgx10-07); <bold>A,</bold> <bold>D, G, K </bold>anterior body part, dorsal, lateral, ventral and frontodorsal views, respectively <bold>B, E, H </bold>midbody segments, dorsal, lateral and ventral views, respectively <bold>C, F, I</bold> posterior body part, dorsal, lateral and ventral views, respectively <bold>J</bold> tergal seta, lateral view <bold>L, M </bold>tegument texture, limbus and tergal seta, dorsal view <bold>N</bold> midbody leg. – Scale bars: <bold>A, B, D–H, K</bold> 0.1 mm; <bold>C, I, N</bold> 0.05 mm; <bold>L, M</bold> 0.02 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g037.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F38" position="float" orientation="portrait">
+            <caption><p><bold>Figure 38.</bold><bold-italic> </bold-italic><italic>Carlotretus</italic> <italic>triramus </italic>sp. n., ♂ paratype (CHIgx10-07); <bold>A</bold> head, ventral view <bold>B–D</bold> gonopods <italic>in situ</italic> <bold>E</bold> dissected left gonopod, subdorsal view. – Scale bars: <bold>B, C</bold> 0.1 mm; <bold>A, D, E</bold> 0.05 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g038.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F39" position="float" orientation="portrait">
+            <caption><p><bold>Figure 39.</bold><bold-italic> </bold-italic><italic>Carlotretus</italic> <italic>triramus </italic>sp. n., ♂ paratype (CHIgx05-068); <bold>A</bold> anterior body part, dorsal view <bold>B, D</bold> midbody segments, dorsal and lateral views, respectively <bold>C, E, I</bold> posterior body part, dorsal, lateral and ventrocaudal views, respectively <bold>F</bold> gnathochilarium, ventral view <bold>G</bold> antennomeres 5-8, dorsal view <bold>H</bold> segments 6 and 7 with gonopods <italic>in situ</italic>, ventral view <bold>J </bold>cross-section of a midbody segment, caudal view. – Scale bars: <bold>A–D, F–J</bold> 0.1 mm; <bold>E</bold> 0.05 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g039.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F40" position="float" orientation="portrait">
+            <caption><p><bold>Figure 40.</bold><bold-italic> </bold-italic><italic>Carlotretus</italic> <italic>triramus </italic>sp. n., ♂ paratype (CHIgx05-068); <bold>A</bold> long tactile distodorsal seta on a midbody tibia <bold>B</bold> caudolateral corner of a midbody ozoporiferous paratergite <bold>C</bold> tegument texture, limbus and setae, dorsal view <bold>D</bold> left gonopod <italic>in situ</italic>, ventral view <bold>E–H</bold> dissected left gonopod, frontomesal, frontal, subventral and ventral views, respectively. – Scale bars: <bold>G</bold> 0.1 mm; <bold>D–F, H</bold> 0.05 mm; <bold>A–C</bold> 0.02 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g040.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F41" position="float" orientation="portrait">
+            <caption><p><bold>Figure 41. </bold><italic>Carlotretus</italic> <italic>triramus </italic>sp. n., ♂ paratype (CHIgx10-07), right gonopod, mesal view. – Scale bar: 0.1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g041.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F42" position="float" orientation="portrait">
+            <caption><p><bold>Figure 42. </bold>Fuhrmannodesmidae gen. sp., ♂ from near Kien Luong, Kien Giang Prov., Vietnam (Vn0308-112); <bold>A,</bold> <bold>D </bold>anterior body part, lateral and dorsal views, respectively <bold>B, E, H </bold>midbody segments, lateral, dorsal and ventral views, respectively <bold>C, F, I</bold> posterior body part, lateral, dorsal and ventrocaudal views, respectively <bold>G</bold> head, frontoventral view <bold>J</bold> antennomeres 3-8, subdorsal view <bold>K</bold> cross-section of a midbody segment, caudal view <bold>L </bold>tegument texture, limbus and setae, dorsal view <bold>M</bold> tergal seta, lateral view; <bold>N,</bold> midbody leg. – Scale bars: <bold>D</bold> 0.2 mm; <bold>A, B, E, G, H, K</bold> 0.1 mm; <bold>C, F, I, J, L, N</bold> 0.05 mm; <bold>M</bold> 0.005 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g042.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F43" position="float" orientation="portrait">
+            <caption><p><bold>Figure 43. </bold>Fuhrmannodesmidae gen. sp., ♂ from near Kien Luong, Kien Giang Prov., Vietnam (Vn0308-112); <bold>A</bold> tegument texture and tergal setae, subdorsal view <bold>B</bold> gnathochilarium, ventral view <bold>C, E </bold>gonopods <italic>in situ</italic>, ventral and frontoventral views, respectively <bold>D, F</bold> left gonopod, subventral and sublateral views, respectively. – Scale bars: <bold>B, C, E</bold> 0.05 mm; <bold>D, F</bold> 0.02 mm; <bold>A</bold> 0.01 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-302-013-g043.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" >
+	<!-- XML Catalog data for NITF V3.4-->
+	<uri name="http://iptc.org/std/NITF/2006-10-18/" uri="files/nitf-3-4.xsd"/>
+	<!-- End of XML Catalog data for NITF V3.4-->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/NITF/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/NITF/' rewritePrefix='files/'/>
+</catalog>

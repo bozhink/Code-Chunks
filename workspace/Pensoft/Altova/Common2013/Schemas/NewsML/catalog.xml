@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<!-- Previously, the mapping source URI was urn:newsml:iptc.org:20021018:NewsMLv1.2:1
+		Our example uses urn:newsml:iptc.org:20021018:NewsMLv1.2.dtd:1 and 
+		http://www.iptc.org/std/catalog/catalog.IptcMasterCatalog.xml 
+		(written by Michael W. Steidl in the name of Altova) specifies a mapping source URI of 
+		urn:newsml:iptc.org:20001006:NewsMLv1.0.dtd:1
+		All three will be mapped here to be on the safe side.
+	-->
+	<public publicId="urn:newsml:iptc.org:20001006:NewsMLv1.0.dtd:1" uri="files/NewsMLv1.2.dtd"/>
+	<public publicId="urn:newsml:iptc.org:20021018:NewsMLv1.2:1" uri="files/NewsMLv1.2.dtd"/>
+	<public publicId="urn:newsml:iptc.org:20021018:NewsMLv1.2.dtd:1" uri="files/NewsMLv1.2.dtd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/NewsML/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/NewsML/' rewritePrefix='files/'/>
+</catalog>

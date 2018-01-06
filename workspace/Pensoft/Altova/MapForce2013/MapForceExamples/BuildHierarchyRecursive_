@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="150" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="FileList" outkey="2" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="FileList.xsd" inputinstance="FileList.xml" instanceroot="{}FileList"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="651" rbx="801" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="directory" inpkey="1" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Directory.xsd" instanceroot="{}directory" sps="Directory.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="BuildFileHierarchy" library="user" blackbox="0" uid="15" kind="19" visible="0">
+					<view ltx="250" rbx="550" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="FileList" componentid="6" expanded="1">
+								<entry name="FileList" inpkey="3" expanded="1"/>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" componentid="7" expanded="1">
+								<entry name="directory" expanded="1">
+									<entry name="directory" outkey="7" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="5">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="8">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3" edgekey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="1" edgekey="8"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="BuildFileHierarchy" library="user" blackbox="0" uid="4" editable="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="group-by" library="core" uid="13" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="20"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+						<datapoint pos="1" key="22"/>
+					</targets>
+					<view ltx="507" lty="116" rbx="616" rby="172"/>
+				</component>
+				<component name="substring-after" library="core" uid="12" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="39"/>
+					</targets>
+					<view ltx="180" lty="211" rbx="280" rby="267"/>
+				</component>
+				<component name="document" library="xml" uid="6" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="4" lty="18" rbx="94" rby="57"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="FileList" expanded="1">
+								<entry name="File" outkey="6"/>
+							</entry>
+						</root>
+						<document schema="FileList.xsd" instanceroot="{}FileList"/>
+						<wsdl/>
+						<parameter usageKind="input" name="FileList"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="7" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="709" lty="18" rbx="859" rby="218"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" expanded="1">
+								<entry name="file" inpkey="15" expanded="1">
+									<entry name="name" type="attribute" inpkey="16"/>
+								</entry>
+								<entry name="directory" inpkey="17" expanded="1">
+									<entry name="name" type="attribute" inpkey="18"/>
+									<entry name="file" inpkey="37"/>
+									<entry name="directory" inpkey="38"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Directory.xsd" instanceroot="{}directory"/>
+						<wsdl/>
+						<parameter usageKind="output" name="directory"/>
+					</data>
+				</component>
+				<component name="contains" library="core" uid="8" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="176" lty="38" rbx="264" rby="94"/>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="57" lty="100" rbx="100" rby="118"/>
+					<data>
+						<constant value="\" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substring-before" library="core" uid="11" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="180" lty="124" rbx="288" rby="180"/>
+				</component>
+				<component name="File" library="core" uid="10" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+						<datapoint pos="1" key="11"/>
+					</targets>
+					<view ltx="344" lty="9" rbx="447" rby="65"/>
+				</component>
+				<component name="BuildFileHierarchy" library="user" blackbox="0" uid="14" kind="19" visible="0">
+					<view ltx="324" lty="209" rbx="630" rby="280"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="FileList" componentid="6" expanded="1">
+								<entry name="FileList" expanded="1">
+									<entry name="File" inpkey="40"/>
+								</entry>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="directory" componentid="7" expanded="1">
+								<entry name="directory" expanded="1">
+									<entry name="file" outkey="41"/>
+									<entry name="directory" outkey="42"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="43">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="44">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="9" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="1" edgekey="24"/>
+							<edge vertexkey="8" edgekey="25"/>
+							<edge vertexkey="16" edgekey="26"/>
+							<edge vertexkey="12" edgekey="27"/>
+							<edge vertexkey="4" edgekey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="2" edgekey="29"/>
+							<edge vertexkey="13" edgekey="30"/>
+							<edge vertexkey="5" edgekey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="19" edgekey="32"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="15" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="20" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="17" edgekey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="18" edgekey="36"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="40" edgekey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="41">
+						<edges>
+							<edge vertexkey="37" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="38" edgekey="43"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

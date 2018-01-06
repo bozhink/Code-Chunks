@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" >
+	<!--UBL 2.0 Section-->
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" uri="files/maindoc/UBL-ApplicationResponse-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:AttachedDocument-2" uri="files/maindoc/UBL-AttachedDocument-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:BillOfLading-2" uri="files/maindoc/UBL-BillOfLading-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" uri="files/maindoc/UBL-Catalogue-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:CatalogueDeletion-2" uri="files/maindoc/UBL-CatalogueDeletion-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:CatalogueItemSpecificationUpdate-2" uri="files/maindoc/UBL-CatalogueItemSpecificationUpdate-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:CataloguePricingUpdate-2" uri="files/maindoc/UBL-CataloguePricingUpdate-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2" uri="files/maindoc/UBL-CatalogueRequest-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:CertificateOfOrigin-2" uri="files/maindoc/UBL-CertificateOfOrigin-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" uri="files/maindoc/UBL-CreditNote-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:DebitNote-2" uri="files/maindoc/UBL-DebitNote-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" uri="files/maindoc/UBL-DespatchAdvice-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:ForwardingInstructions-2" uri="files/maindoc/UBL-ForwardingInstructions-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:FreightInvoice-2" uri="files/maindoc/UBL-FreightInvoice-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" uri="files/maindoc/UBL-Invoice-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Order-2" uri="files/maindoc/UBL-Order-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:OrderCancellation-2" uri="files/maindoc/UBL-OrderCancellation-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2" uri="files/maindoc/UBL-OrderChange-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" uri="files/maindoc/UBL-OrderResponse-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:OrderResponseSimple-2" uri="files/maindoc/UBL-OrderResponseSimple-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:PackingList-2" uri="files/maindoc/UBL-PackingList-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Quotation-2" uri="files/maindoc/UBL-Quotation-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:ReceiptAdvice-2" uri="files/maindoc/UBL-ReceiptAdvice-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Reminder-2" uri="files/maindoc/UBL-Reminder-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:RemittanceAdvice-2" uri="files/maindoc/UBL-RemittanceAdvice-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:RequestForQuotation-2" uri="files/maindoc/UBL-RequestForQuotation-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:SelfBilledCreditNote-2" uri="files/maindoc/UBL-SelfBilledCreditNote-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:SelfBilledInvoice-2" uri="files/maindoc/UBL-SelfBilledInvoice-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Statement-2" uri="files/maindoc/UBL-Statement-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatus-2" uri="files/maindoc/UBL-TransportationStatus-2.0.xsd"/>
+	<uri name="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2" uri="files/maindoc/UBL-Waybill-2.0.xsd"/>
+	<!-- End of UBL 2.0 section -->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/UBL/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/UBL/' rewritePrefix='files/'/>
+</catalog>

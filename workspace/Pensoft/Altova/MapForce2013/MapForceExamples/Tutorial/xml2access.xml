@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns="http://my-company.com/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://my-company.com/namespace MFCompany.xsd">
+	<Person>
+		<First>Vernon</First>
+		<Last>Callaby</Last>
+		<Title>Office Manager</Title>
+		<PhoneExt>1</PhoneExt>
+		<Email>v.callaby@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Frank</First>
+		<Last>Further</Last>
+		<Title>Accounts Receivable</Title>
+		<PhoneExt>2</PhoneExt>
+		<Email>f.further@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Loby</First>
+		<Last>Matise</Last>
+		<Title>Accounting Manager</Title>
+		<PhoneExt>3</PhoneExt>
+		<Email>l.matise@nanonull.com</Email>
+	</Person>
+</Company>

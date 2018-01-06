@@ -1,0 +1,2604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tp="http://www.plazi.org/taxpub" xmlns:php="http://php.net/xsl" xml:lang="bg" lang="bg"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FORMIDABEL: The Belgian Ants Database</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="index, follow, all" />
+<script language="javascript">
+					   if(self.location==top.location){
+					     document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl-large.css" media="all" title="default">');
+					   }else{
+					     document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl.css" media="all" title="default">');
+					   }
+					</script><script type="text/javascript">
+		function swapDivClassname(pLink, pId, pClassName){
+			var lDiv = document.getElementById(pId);
+			if( lDiv ){
+				if( lDiv.className == pClassName ){
+					lDiv.className = '';
+					pLink.className = 'inactive'
+				}else{
+					lDiv.className = pClassName;
+					pLink.className = ''
+				}
+			}
+		}
+		function openw(url, title, options) {
+			var newwin = window.open(url, title, options);
+			newwin.focus();
+		}
+		
+		
+		function showBaloon(pBaloonType, pId, pEvent) {
+			
+			if( !pId )
+				return;
+			if( !gBaloon || !gBaloonWrapper)
+				return;
+				
+			
+			pEvent = pEvent || window.event;
+			clearTimeout(gTimeout);			
+			if( gActiveBaloonId && gActiveBaloonType == pBaloonType && gActiveBaloonId != pId ){
+				gFlagToHideBaloon = true;
+				hideBaloon(gActiveBaloonId);
+			}else if(gActiveBaloonType == pBaloonType && gActiveBaloonId == pId ){
+				return;
+			}
+			
+			gActiveBaloonId = pId;
+			gActiveBaloonType = pBaloonType;
+			gFlagToHideBaloon = false;
+			var lEventTarget = pEvent.target || pEvent.srcElement;	
+			if( pBaloonType == 1 ){//xref
+				var lReference = document.getElementById('reference_' + pId);
+				var lText = 'Reference not found!';
+				if( lReference ){
+					lText = lReference.innerHTML;// || lReference.innerText;
+				}
+				gBaloon.innerHTML = lText;
+				gBaloonInnerWrapper.className = 'largeBaloon';
+			}else if( pBaloonType == 2 ){//Taxoni
+				var lReferenceName = 'taxon_' + pId + '_baloon_div';
+				
+				var lReference = document.getElementById(lReferenceName);
+				gBaloonInnerWrapper.className = 'smallBaloon';
+				if( lReference ){
+					lText = lReference.innerHTML;// || lReference.innerText;
+				}else{
+					lText = 'Error during loading taxa data';
+				}
+				gBaloon.innerHTML = lText;
+				
+				
+			}else if( pBaloonType == 3 ){//Figuri				
+				var lFigure = document.getElementById('fig_' + pId);
+				var lText = 'Figure not found!';
+				if( lFigure ){
+					lText = lFigure.innerHTML;// || lFigure.innerText;
+				}
+				gBaloon.innerHTML = lText;
+				gBaloonInnerWrapper.className = 'largeBaloon';
+				
+				
+			}else if( pBaloonType == 4 ){//Tablici				
+				var lTable = document.getElementById('table_' + pId);
+				var lText = 'Table not found!';
+				if( lTable ){
+					lText = lTable.innerHTML;// || lTable.innerText;
+				}
+				gBaloon.innerHTML = lText;
+				gBaloonInnerWrapper.className = 'largeBaloon';
+				
+				
+			}			
+			gActiveBaloonId = pId;			
+			displayBaloon(lEventTarget, pEvent);			
+		}
+		
+		function displayBaloon(pEventTarget, pEvent){//Pozicionira i pokazva balona
+			if( !gBaloon || !gBaloonWrapper)
+				return;
+			var lUseWindowMaxY = parseInt('0');
+			gBaloonWrapper.style.display="block";			
+			positionBaloon(pEventTarget, pEvent, lUseWindowMaxY);
+			
+		}
+		
+		function hideBaloonEvent(pId, pEvent){			
+			if( !gBaloon || !gBaloonWrapper)
+				return;
+			gFlagToHideBaloon = true;
+			gTimeout = setTimeout("hideBaloon('" + pId + "')", 10);
+			
+		}
+		
+		function hideBaloon(pId){	
+			clearTimeout(gTimeout);
+			if( !gFlagToHideBaloon )
+				return;
+			
+			gBaloonIsShown = false;
+			gActiveBaloonId = 0;
+			gActiveBaloonType = false;
+			gBaloonWrapper.style.display="none";
+		}		
+
+		
+		function initBalloons(){
+			gBaloon = document.getElementById('baloonContent');
+			gBaloonIsShown = false;
+			gActiveBaloonId = 0;
+			gTimeout = false;
+			gActiveBaloonType = false;
+			gBaloonWrapper = document.getElementById('baloonWrapper');
+			gBaloonInnerWrapper = document.getElementById('baloonInnerWrapper');
+			gBaloonArrowImg = document.getElementById('baloonArrowImg');
+		}
+		
+		function positionBaloon(pEventTarget, pEvent, pUseWindowMaxY){
+			var lMousePos = getMousePosition(pEvent);
+			var lContentWrapper = document.getElementById('contentWrapper');						
+			
+			
+			
+			
+			//var lY = pEventTarget.offsetTop + pEventTarget.offsetHeight;
+			var lY = pEventTarget.offsetHeight;
+			//var lX = pEventTarget.offsetLeft;
+			var lX = 0;
+			var lParent = pEventTarget;
+			do {
+				lY += lParent.offsetTop;
+				lX += lParent.offsetLeft;
+				//alert(lParent.tagName + '-' + lY);
+			}
+			while((lParent = lParent.offsetParent) && lParent.id != 'contentWrapper')
+			
+			/*var lXMax = lMousePos['xMax'];*/
+			var lXMax = lContentWrapper.offsetWidth - 20;//-20 zaradi scrolla
+			var lYMax;
+			if( pUseWindowMaxY ){
+				lYMax = lMousePos['yMax'];
+			}else{
+				lYMax = lContentWrapper.scrollHeight;
+			}
+			lYMax = lYMax - 40;
+			var lClassName = 'baloonWrapper';
+			var lLeft = 0;
+			var lTop = 0;
+			var lImageName = 'http://www.pensoft.net/J_FILES/img/baloon_arrow';
+			if( lY + gBaloonWrapper.offsetHeight <= lYMax ){
+				lTop = lY;
+				lClassName = lClassName + 'Bottom';
+				lImageName = lImageName + '_bottom';
+			}else{
+				lTop = lY - gBaloonWrapper.offsetHeight - pEventTarget.offsetHeight;
+				if( lTop < 0 )
+					lTop = 0;				
+				lClassName = lClassName + 'Top';
+				lImageName = lImageName + '_top';
+			}
+			if( lX + gBaloonWrapper.offsetWidth <= lXMax ){
+				lLeft = lX;
+				lClassName = lClassName + 'Right';
+				lImageName = lImageName + '_right';
+			}else{
+				lLeft = lX -gBaloonWrapper.offsetWidth + 50;
+				if( lLeft < 0 )
+					lLeft = 0;							
+				lClassName = lClassName + 'Left';
+				lImageName = lImageName + '_left';
+			}
+			
+			lImageName = lImageName + '.gif';
+			gBaloonWrapper.style.left = lLeft + 'px';
+			gBaloonWrapper.style.top = lTop + 'px';
+			
+			gBaloonWrapper.className =  lClassName;
+			gBaloonArrowImg.setAttribute('src', lImageName);
+		}
+		
+		function submitForm( pFormName ){
+			eval('document.' + pFormName + '.submit()');			
+		}
+		
+		function showLocalitiesMenu(){
+			var lMenu = document.getElementById('localitiesMenuDiv');
+			if( lMenu )
+				lMenu.style.display='block';
+ 		}
+		
+		function hideLocalitiesMenu(){
+			var lMenu = document.getElementById('localitiesMenuDiv');
+			if( lMenu )
+				lMenu.style.display='none';
+		}
+		
+		function getMousePosition(pEvent){	
+		    if (document.layers) {
+			// When the page scrolls in Netscape, the event's mouse position
+			// reflects the absolute position on the screen. innerHight/Width
+			// is the position from the top/left of the screen that the user is
+			// looking at. pageX/YOffset is the amount that the user has
+			// scrolled into the page. So the values will be in relation to
+			// each other as the total offsets into the page, no matter if
+			// the user has scrolled or not.
+			xMousePos = pEvent.clientX;
+			yMousePos = pEvent.clientY;
+			xMousePosMax = window.innerWidth + window.pageXOffset;
+			yMousePosMax = window.innerHeight + window.pageYOffset;
+		    } else if (document.all) {
+			// When the page scrolls in IE, the event's mouse position
+			// reflects the position from the top/left of the screen the
+			// user is looking at. scrollLeft/Top is the amount the user
+			// has scrolled into the page. clientWidth/Height is the height/
+			// width of the current page the user is looking at. So, to be
+			// consistent with Netscape (above), add the scroll offsets to
+			// both so we end up with an absolute value on the page, no
+			// matter if the user has scrolled or not.	;
+			xMousePos = window.event.x + document.body.scrollLeft;
+			yMousePos = window.event.y + document.body.scrollTop;
+			xMousePosMax = document.body.clientWidth + document.body.scrollLeft;
+			yMousePosMax = document.body.clientHeight + document.body.scrollTop;
+		    } else if (document.getElementById) {
+			// Netscape 6 behaves the same as Netscape 4 in this regard
+			xMousePos = pEvent.clientX;
+			yMousePos = pEvent.clientY;
+			xMousePosMax = window.innerWidth + window.pageXOffset;
+			yMousePosMax = window.innerHeight + window.pageYOffset;
+		    }
+		    return {
+			'x' : xMousePos,
+			'y' : yMousePos,
+			'xMax' : xMousePosMax,
+			'yMax' : yMousePosMax
+		    };
+		}
+		
+		var gHolderDiv;
+		var gScrolDiv;
+		var gRightBtn;
+		var gLeftBtn;
+		var gLinksTable;
+		var gMinLeft;
+		function initScrollConstants(){
+			gHolderDiv = document.getElementById('scrollHolderDiv');
+			gScrolDiv = document.getElementById('scrollDiv');
+			gRightBtn = document.getElementById('scrollRightBtn');
+			gLeftBtn = document.getElementById('scrollLeftBtn');						
+			gLinksTable = document.getElementById('linksButtonHolder');
+			gScrolDiv.style.width = gLinksTable.offsetWidth + 'px';
+			gHolderDiv.style.width = '';
+			var gHolderWidth = gHolderDiv.offsetWidth;	
+			var gScrolWidth = gScrolDiv.offsetWidth;
+				
+			gMinLeft = gHolderWidth - gScrolWidth;
+			if(gMinLeft > 0)
+				gMinLeft = 0;
+			gCurrentLeftPos = 0;
+			
+			gInterval = null;
+			changeDivPosition(gCurrentLeftPos);
+		}
+		function scrollDivRight(){	
+			if( gMinLeft >= 0 ){
+				stopScroll()
+				return;
+			}
+			if( gCurrentLeftPos - 1 > gMinLeft )
+				gCurrentLeftPos = gCurrentLeftPos - 1;
+			else{
+				stopScroll()
+				gCurrentLeftPos = gMinLeft;
+			}
+			changeDivPosition(gCurrentLeftPos);
+		}
+
+		function scrollDivLeft(){
+			if( gMinLeft >= 0 ){
+				stopScroll()
+				return;
+			}
+			if( gCurrentLeftPos + 1 < 0 )
+				gCurrentLeftPos = gCurrentLeftPos + 1;
+			else{
+				gCurrentLeftPos = 0;
+				stopScroll()
+			}
+			changeDivPosition(gCurrentLeftPos);
+		}
+
+		function checkBtnClasses(){
+			if( gLeftBtn ){
+				if( gCurrentLeftPos == 0 || gMinLeft >= 0 ){
+					gLeftBtn.className = 'LeftScrollBtnLinkInactive';
+				}else{
+					gLeftBtn.className = 'LeftScrollBtnLinkActive';
+				}
+			}
+			if( gRightBtn ){
+				if( gCurrentLeftPos == gMinLeft || gMinLeft >= 0 ){
+					gRightBtn.className = 'RightScrollBtnLinkInactive';
+				}else{
+					gRightBtn.className = 'RightScrollBtnLinkActive';
+				}
+			}
+		}
+
+		function changeDivPosition(pLeft){
+			gScrolDiv.style.left  = pLeft + 'px';	
+			checkBtnClasses()
+		}
+
+		function stopScroll(){	
+			if(gInterval)
+				clearInterval(gInterval)
+		}
+
+		function startScroll(pDir){
+			if( gMinLeft >= 0 ){		
+				return;
+			}
+			if( pDir == 0){//Right		
+				gInterval = setInterval("scrollDivRight('right')", 20);
+			}else{	
+				gInterval = setInterval("scrollDivLeft('left')", 20);
+			}	
+		}
+		
+		function getfnlink(pFn, pEl) {
+			
+			
+			lDiv = document.getElementById(pFn);
+			lEl = lDiv.firstChild;
+			while (lEl.nodeType != 1) {
+				lEl = lEl.nextSibling;
+			}
+			for (var i = 0; i < lEl.childNodes.length; i++) {
+				if (lEl.childNodes[i].tagName && lEl.childNodes[i].tagName.toLowerCase() == 'a') {
+					lHref = lEl.childNodes[i].href;
+					break;
+				}
+			}
+			if (lHref)
+				pEl.href = lHref;
+		}
+
+        </script>
+</head>
+<body><div id="highlightWrapper" class=""><div id="highlightTaxonNameWrapper" class="highlightTaxonNameWrapper"><div id="highlightTaxonTreatmentWrapper" class="highlightTaxonTreatmentWrapper"><div id="highlightCountryWrapper" class="highlightCountryWrapper"><div id="highlightCitationWrapper" class="highlightCitationWrapper"><div id="highlightTypeescWrapper" class="highlightTypeescWrapper"><div id="highlightCollectionWrapper" class="highlightCollectionWrapper"><div id="highlightLocalityWrapper" class="highlightLocalityWrapper"><div class="wrapper">
+<div class="headWrapper">
+<table class="highlightButtonHolder" width="100%" cellspacing="1" cellpadding="0"><tr>
+<td class="taxon-namesButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonNameWrapper', 'highlightTaxonNameWrapper')">Taxon names</a></td>
+<td class="citationsButton"><a href="#" onclick="swapDivClassname(this, 'highlightCitationWrapper', 'highlightCitationWrapper')">Citations</a></td>
+<td class="offButton"><a href="#" class="inactive" onclick="swapDivClassname(this, 'highlightWrapper', 'highlightWrapper')">Turn highlighting On/Off</a></td>
+</tr></table>
+<div class="linksButtonWrapper">
+<div class="pathTopLeftScrollBtn"><a onmouseover="startScroll(1)" onmouseout="stopScroll()" class="LeftScrollBtnLinkActive" id="scrollLeftBtn"></a></div>
+<div class="pathScrollHolder" id="scrollHolderDiv"><div id="scrollDiv" class="pathScrollDiv"><table class="linksButtonHolder" cellspacing="0" cellpadding="3" id="linksButtonHolder"><tr>
+<td class="linksButtonHolder"><a href="#top">Top</a></td>
+<td class="linksButtonHolder"><a href="#abstract" onclick="">Abstract</a></td>
+<td class="linksButtonHolder"><a href="#taxonomiccoverage" onclick="">Taxonomic coverage</a></td>
+<td class="linksButtonHolder"><a href="#taxonomicranks" onclick="">Taxonomic ranks</a></td>
+<td class="linksButtonHolder"><a href="#spatialcoverage" onclick="">Spatial coverage</a></td>
+<td class="linksButtonHolder"><a href="#temporalcoverage" onclick="">Temporal coverage</a></td>
+<td class="linksButtonHolder"><a href="#methods" onclick="">Methods</a></td>
+<td class="linksButtonHolder"><a href="#dataset" onclick="">Dataset</a></td>
+<td class="linksButtonHolder"><a href="#datasetpreview" onclick="">Dataset preview</a></td>
+<td class="linksButtonHolder"><a href="#additionalinformation" onclick="">Additional information</a></td>
+<td class="linksButtonHolder"><a href="#acknowledgements" onclick="">Acknowledgements</a></td>
+<td class="linksButtonHolder"><a href="#references" onclick="">References</a></td>
+</tr></table></div></div>
+<div class="pathTopRightScrollBtn"><a onmouseover="startScroll(0)" onmouseout="stopScroll()" class="RightScrollBtnLinkActive" id="scrollRightBtn"></a></div>
+<div class="unfloat"></div>
+</div>
+</div>
+<div class="contentWrapper" id="contentWrapper">
+<div class="baloonWrapper" id="baloonWrapper" onmouseover="showBaloon(gActiveBaloonType, gActiveBaloonId)" onmouseout="hideBaloonEvent(gActiveBaloonId, event)"><div id="baloonInnerWrapper">
+<div class="baloonTop">
+<div class="baloonTopLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_left.gif" /></div>
+<div class="baloonTopMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_middle.jpg" /></div>
+<div class="baloonTopRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_right.gif" /></div>
+<div class="unfloat"></div>
+</div>
+<div class="baloonContent" id="baloonContent"><div class="unfloat"></div></div>
+<div class="baloonBottomLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_left.gif" /></div>
+<div class="baloonBottomMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_middle.jpg" /></div>
+<div class="baloonBottomRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_right.gif" /></div>
+<div class="unfloat"></div>
+<div class="arrowDiv"><img id="baloonArrowImg" src="http://www.pensoft.net/J_FILES/img/baloon_arrow_top_left.gif" /></div>
+</div></div>
+<a name="top"></a><div class="doiNumber">ZooKeys 306: 59–70, doi: 10.3897/zookeys.306.4898 </div>
+<div class="mainTitle">FORMIDABEL: The Belgian Ants Database</div>
+<div class="authors">Dimitri Brosens <span class="specialSymbols">1</span>, François Vankerkhoven <span class="specialSymbols">2</span>, David Ignace <span class="specialSymbols">3</span>, Philippe Wegnez <span class="specialSymbols">4</span>, Nicolas Noé <span class="specialSymbols">5</span>, André Heughebaert <span class="specialSymbols">5</span>, Jeannine Bortels <span class="specialSymbols">6</span>, Wouter Dekoninck <span class="specialSymbols">7</span>
+</div>
+<div class="affilations">
+<div class="affiliationRow">
+                <span id="1" class="uriSym">1 </span>Instituut voor Natuur en Bosonderzoek,  Kliniekstraat 25,  B-1070,  Brussels,  Belgium
+            </div>
+<div class="affiliationRow">
+                <span id="1" class="uriSym">2 </span>Polyergus,  Wolvenstraat 9,  B-3290,  Diest,  Belgium
+            </div>
+<div class="affiliationRow">
+                <span id="1" class="uriSym">3 </span>FourmisWalBru,  Rue Winston Churchill 91,  B-6180,  Courcelles,  Belgium
+            </div>
+<div class="affiliationRow">
+                <span id="1" class="uriSym">4 </span>FourmisWalBru,  Rue de la Grotte,  23,  B-4651,  Herve,  Belgium
+            </div>
+<div class="affiliationRow">
+                <span id="1" class="uriSym">5 </span>ULB,  Université Libre de Bruxelles,  Campus de la Plaine CP257,  Brussels,  Belgium
+            </div>
+<div class="affiliationRow">
+                <span id="1" class="uriSym">6 </span>ULG,  Université de Liège,  Gembloux Agro-Bio Tech,  Passage des Déportés,  2,  B-5030 Gembloux - Belgium
+            </div>
+<div class="affiliationRow">
+                <span id="1" class="uriSym">7 </span>Royal Belgian Institute of Natural Sciences (RBINS),  Vautierstraat 29,  B-1000,  Brussels,  Belgium
+            </div>
+</div>
+<div class="uris"></div>
+<div class="authorNotes"><div class="authorNotesRow">
+                
+                    <p>Corresponding author: Wouter Dekoninck (<a href="mailto:Wouter.Dekoninck@naturalsciences.be">Wouter.Dekoninck@naturalsciences.be</a>)
+                    </p>
+                
+                
+                    <p>Academic editor: V. Chavan</p>
+                
+            </div></div>
+<div class="lMetaDates">
+<span class="metaDate"><span class="dateLabel">received </span>25 February 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">accepted </span>22 May 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">Published </span>3 June 2013</span><p> </p>
+<br /><div class="rifgtsrow">
+<p>(C) 2013 Dimitri Brosens. This is an open access article distributed under the terms of the <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0 (CC-BY)</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p>
+<br /><p>For reference, use of the paginated PDF or printed version of this article is recommended.</p>
+</div>
+</div>
+<a name="abstract"></a><div class="abstractHolder"><div class="abstractText">
+                <p><b>Resource citation:</b> Polyergus Working Group and FourmisWalBru Working Group (2013 -). FORMIDABEL: The Belgian Ants Database,  27264 records. Contributed by Brosens D,  Vankerkhoven F,  Ignace D,  Wegnez P,  Noé N,  Heughebaert A,  Bortels J and W Dekoninck. Online at <a target="_blank" href="http://ipt.biodiversity.be/resource.do?r=formidabel">http://ipt.biodiversity.be/resource.do?r=formidabel</a> and,  <a target="_blank" href="http://www.formicidae-atlas.be">www.formicidae-atlas.be</a>,  Version 1.0 (last updated on 2013-04-19),  GBIF key: <a target="_blank" href="http://gbrds.gbif.org/browse/agent?uuid=b528799a-2d52-4023-aa02-9ce081e3ca5f">http://gbrds.gbif.org/browse/agent?uuid=b528799a-2d52-4023-aa02-9ce081e3ca5f</a>. Data Paper ID: doi: <a target="_blank" href="http://dx.doi.org/10.3897/zookeys.305.4898">10.3897/zookeys.305.4898</a>
+                </p>
+                <span id="1" class="node_label">Abstract</span>
+                <p>FORMIDABEL is a database of Belgian Ants containing more than 27.000 occurrence records. These records originate from collections,  field sampling and literature. The database gives information on 76 native and 9 introduced ant species found in Belgium. The collection records originated mainly from the ants collection in Royal Belgian Institute of Natural Sciences (RBINS),  the ‘Gaspar’ Ants collection in Gembloux and the zoological collection of the University of Liège (ULG). The oldest occurrences date back from May 1866,  the most recent refer to August 2012. FORMIDABEL is a work in progress and the database is updated twice a year.</p>
+                <p>The latest version of the dataset is publicly and freely accessible through this url: <a target="_blank" href="http://ipt.biodiversity.be/resource.do?r=formidabel">http://ipt.biodiversity.be/resource.do?r=formidabel</a>. The dataset is also retrievable via the GBIF data portal through this link: <a target="_blank" href="http://data.gbif.org/datasets/resource/14697">http://data.gbif.org/datasets/resource/14697</a>
+                </p>
+                <p>A dedicated geo-portal,  developed by the Belgian Biodiversity Platform is accessible at: <a target="_blank" href="http://www.formicidae-atlas.be">http://www.formicidae-atlas.be</a>
+                </p>
+                <p><b>Purpose:</b> FORMIDABEL is a joint cooperation of the Flemish ants working group “Polyergus” (<a target="_blank" href="http://formicidae.be">http://formicidae.be</a>) and the Wallonian ants working group “FourmisWalBru” (<a target="_blank" href="http://fourmiswalbru.be">http://fourmiswalbru.be</a>). The original database was created in 2002 in the context of the preliminary red data book of Flemish Ants (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B2', event)" onmouseout="hideBaloonEvent('B2')">Dekoninck et al. 2003</span>). Later,  in 2005,  data from the Southern part of Belgium; Wallonia and Brussels were added. In 2012 this dataset was again updated for the creation of the first Belgian Ants Atlas (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F1', event)" onmouseout="hideBaloonEvent('F1')">Figure 1</span>) (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B5', event)" onmouseout="hideBaloonEvent('B5')">Dekoninck et al. 2012</span>). The main purpose of this atlas was to generate maps for all outdoor-living ant species in Belgium using an overlay of the standard Belgian ecoregions. By using this overlay for most species,  we can discern a clear and often restricted distribution pattern in Belgium,  mainly based on vegetation and soil types.
+                </p>
+            </div></div>
+<div class="keywordsHolder"><div class="keywordsText">
+<span class="node_label">Keywords</span><p>Formicidae, Belgium, Flanders, Wallonia, Brussels Capital Region, ecological data, grid mapping, UTM, historical data, literature, collections, observations, trapping, ants</p>
+</div></div>
+<div class=" secHolder">
+        <div class="section">
+<a name="taxonomiccoverage"></a>
+            <span id="1" class="node_title">Taxonomic coverage</span>
+            <div class="section">
+<a name="generaltaxonomiccoveragedescription"></a>
+                <span id="1" class="node_title1 sec">General taxonomic coverage description</span>
+                <p>The taxonomic coverage (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F2', event)" onmouseout="hideBaloonEvent('F2')">Figure 2</span>) of this database spans the full range of ants pertaining to Belgium (indigenous ant species and exotic introduced species). The determination level is species level and,  if appropriate,  hybrid level. For some species,  information on micro-and macrogynes is available. Key milestones of FORMIDABEL from conception till date are described in the ”Dataset” section of this manuscript.
+                </p>
+                <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g001.jpg"><img src="export.php_files/ZooKeys-306-059-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 1.</span>
+                    <p><a target="_blank" href="http://www.formicidae-atlas.be">www.formicidae-atlas.be</a></p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F1">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g001.jpg"><img src="export.php_files/ZooKeys-306-059-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 1.</span>
+                    <p><a target="_blank" href="http://www.formicidae-atlas.be">www.formicidae-atlas.be</a></p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+</div>
+                <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g002.jpg"><img src="export.php_files/ZooKeys-306-059-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 2.</span>
+                    <p>Taxonomic range of the FORMIDABEL database subfamilies</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F2">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g002.jpg"><img src="export.php_files/ZooKeys-306-059-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 2.</span>
+                    <p>Taxonomic range of the FORMIDABEL database subfamilies</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+</div>
+                
+                <p>The taxonomic authorities followed are: <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B7', event)" onmouseout="hideBaloonEvent('B7')">Radchenko and Elmes (2010)</span> for the genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica" onmouseover="showBaloon(2, 'Myrmica', event)" onmouseout="hideBaloonEvent('Myrmica', event)">Myrmica</a></span></span></i> and <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B6', event)" onmouseout="hideBaloonEvent('B6')">Seifert (2007)</span> for the other genera. The dataset contains occurrences of 76 native and 9 introduced species.
+                </p>
+                <p>As depicted in <span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F2', event)" onmouseout="hideBaloonEvent('F2')">Figure 2</span>,  the most abundant subfamily in the database is the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicinae" onmouseover="showBaloon(2, 'Formicinae', event)" onmouseout="hideBaloonEvent('Formicinae', event)">Formicinae</a></span></span> (49, 4%) followed by the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmicinae" onmouseover="showBaloon(2, 'Myrmicinae', event)" onmouseout="hideBaloonEvent('Myrmicinae', event)">Myrmicinae</a></span></span> (48, 7%),  the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderinae" onmouseover="showBaloon(2, 'Dolichoderinae', event)" onmouseout="hideBaloonEvent('Dolichoderinae', event)">Dolichoderinae</a></span></span> (0, 9%) and the <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponerinae" onmouseover="showBaloon(2, 'Ponerinae', event)" onmouseout="hideBaloonEvent('Ponerinae', event)">Ponerinae</a></span></span> (0, 8%). The top five most recorded species are <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius" onmouseover="showBaloon(2, 'Lasius', event)" onmouseout="hideBaloonEvent('Lasius', event)">Lasius</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius%20niger" onmouseover="showBaloon(2, 'Lasius_niger', event)" onmouseout="hideBaloonEvent('Lasius_niger', event)">niger</a></span></span></i> (2846 records),  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica" onmouseover="showBaloon(2, 'Myrmica', event)" onmouseout="hideBaloonEvent('Myrmica', event)">Myrmica</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica%20rubra" onmouseover="showBaloon(2, 'Myrmica_rubra', event)" onmouseout="hideBaloonEvent('Myrmica_rubra', event)">rubra</a></span></span></i> (2601 records),  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica" onmouseover="showBaloon(2, 'Myrmica', event)" onmouseout="hideBaloonEvent('Myrmica', event)">Myrmica</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica%20scabrinodis" onmouseover="showBaloon(2, 'Myrmica_scabrinodis', event)" onmouseout="hideBaloonEvent('Myrmica_scabrinodis', event)">scabrinodis</a></span></span></i> (1626 records),  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica" onmouseover="showBaloon(2, 'Formica', event)" onmouseout="hideBaloonEvent('Formica', event)">Formica</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica%20fusca" onmouseover="showBaloon(2, 'Formica_fusca', event)" onmouseout="hideBaloonEvent('Formica_fusca', event)">fusca</a></span></span></i> (1467 records) and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica" onmouseover="showBaloon(2, 'Myrmica', event)" onmouseout="hideBaloonEvent('Myrmica', event)">Myrmica</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica%20sabuleti" onmouseover="showBaloon(2, 'Myrmica_sabuleti', event)" onmouseout="hideBaloonEvent('Myrmica_sabuleti', event)">sabuleti</a></span></span></i> (1202 records).
+                </p>
+            </div>
+        </div>
+        <div class="section">
+<a name="taxonomicranks"></a>
+            <span id="1" class="node_title">Taxonomic ranks</span>
+            <p><b>Phylum</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Arthropoda" onmouseover="showBaloon(2, 'Arthropoda', event)" onmouseout="hideBaloonEvent('Arthropoda', event)">Arthropoda</a></span></span>
+            </p>
+            <p><b>Subphylum</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hexapoda" onmouseover="showBaloon(2, 'Hexapoda', event)" onmouseout="hideBaloonEvent('Hexapoda', event)">Hexapoda</a></span></span>
+            </p>
+            <p><b>Class</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Insecta" onmouseover="showBaloon(2, 'Insecta', event)" onmouseout="hideBaloonEvent('Insecta', event)">Insecta</a></span></span>
+            </p>
+            <p><b>Order</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hymenoptera" onmouseover="showBaloon(2, 'Hymenoptera', event)" onmouseout="hideBaloonEvent('Hymenoptera', event)">Hymenoptera</a></span></span>
+            </p>
+            <p><b>Suborder</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Apocrita" onmouseover="showBaloon(2, 'Apocrita', event)" onmouseout="hideBaloonEvent('Apocrita', event)">Apocrita</a></span></span>
+            </p>
+            <p><b>Superfamily</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Vespoidea" onmouseover="showBaloon(2, 'Vespoidea', event)" onmouseout="hideBaloonEvent('Vespoidea', event)">Vespoidea</a></span></span>
+            </p>
+            <p><b>Family</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicidae" onmouseover="showBaloon(2, 'Formicidae', event)" onmouseout="hideBaloonEvent('Formicidae', event)">Formicidae</a></span></span>
+            </p>
+            <p><b>Subfamily</b>: <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderinae" onmouseover="showBaloon(2, 'Dolichoderinae', event)" onmouseout="hideBaloonEvent('Dolichoderinae', event)">Dolichoderinae</a></span></span>,  <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicinae" onmouseover="showBaloon(2, 'Formicinae', event)" onmouseout="hideBaloonEvent('Formicinae', event)">Formicinae</a></span></span>,  <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmicinae" onmouseover="showBaloon(2, 'Myrmicinae', event)" onmouseout="hideBaloonEvent('Myrmicinae', event)">Myrmicinae</a></span></span>,  <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponerinae" onmouseover="showBaloon(2, 'Ponerinae', event)" onmouseout="hideBaloonEvent('Ponerinae', event)">Ponerinae</a></span></span>
+            </p>
+            <p><b>Genera</b>: <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Anergates" onmouseover="showBaloon(2, 'Anergates', event)" onmouseout="hideBaloonEvent('Anergates', event)">Anergates</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Aphaenogaster" onmouseover="showBaloon(2, 'Aphaenogaster', event)" onmouseout="hideBaloonEvent('Aphaenogaster', event)">Aphaenogaster</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Camponotus" onmouseover="showBaloon(2, 'Camponotus', event)" onmouseout="hideBaloonEvent('Camponotus', event)">Camponotus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderus" onmouseover="showBaloon(2, 'Dolichoderus', event)" onmouseout="hideBaloonEvent('Dolichoderus', event)">Dolichoderus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica" onmouseover="showBaloon(2, 'Formica', event)" onmouseout="hideBaloonEvent('Formica', event)">Formica</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicoxenus" onmouseover="showBaloon(2, 'Formicoxenus', event)" onmouseout="hideBaloonEvent('Formicoxenus', event)">Formicoxenus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Harpagoxenus" onmouseover="showBaloon(2, 'Harpagoxenus', event)" onmouseout="hideBaloonEvent('Harpagoxenus', event)">Harpagoxenus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hypoponera" onmouseover="showBaloon(2, 'Hypoponera', event)" onmouseout="hideBaloonEvent('Hypoponera', event)">Hypoponera</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius" onmouseover="showBaloon(2, 'Lasius', event)" onmouseout="hideBaloonEvent('Lasius', event)">Lasius</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Leptothorax" onmouseover="showBaloon(2, 'Leptothorax', event)" onmouseout="hideBaloonEvent('Leptothorax', event)">Leptothorax</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Linepithema" onmouseover="showBaloon(2, 'Linepithema', event)" onmouseout="hideBaloonEvent('Linepithema', event)">Linepithema</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Manica" onmouseover="showBaloon(2, 'Manica', event)" onmouseout="hideBaloonEvent('Manica', event)">Manica</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Monomorium" onmouseover="showBaloon(2, 'Monomorium', event)" onmouseout="hideBaloonEvent('Monomorium', event)">Monomorium</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmecina" onmouseover="showBaloon(2, 'Myrmecina', event)" onmouseout="hideBaloonEvent('Myrmecina', event)">Myrmecina</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica" onmouseover="showBaloon(2, 'Myrmica', event)" onmouseout="hideBaloonEvent('Myrmica', event)">Myrmica</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Plagiolepis" onmouseover="showBaloon(2, 'Plagiolepis', event)" onmouseout="hideBaloonEvent('Plagiolepis', event)">Plagiolepis</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Polyergus" onmouseover="showBaloon(2, 'Polyergus', event)" onmouseout="hideBaloonEvent('Polyergus', event)">Polyergus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponera" onmouseover="showBaloon(2, 'Ponera', event)" onmouseout="hideBaloonEvent('Ponera', event)">Ponera</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Solenopsis" onmouseover="showBaloon(2, 'Solenopsis', event)" onmouseout="hideBaloonEvent('Solenopsis', event)">Solenopsis</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stenamma" onmouseover="showBaloon(2, 'Stenamma', event)" onmouseout="hideBaloonEvent('Stenamma', event)">Stenamma</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Strongylognathus" onmouseover="showBaloon(2, 'Strongylognathus', event)" onmouseout="hideBaloonEvent('Strongylognathus', event)">Strongylognathus</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tapinoma" onmouseover="showBaloon(2, 'Tapinoma', event)" onmouseout="hideBaloonEvent('Tapinoma', event)">Tapinoma</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Technomyrmex" onmouseover="showBaloon(2, 'Technomyrmex', event)" onmouseout="hideBaloonEvent('Technomyrmex', event)">Technomyrmex</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Temnothorax" onmouseover="showBaloon(2, 'Temnothorax', event)" onmouseout="hideBaloonEvent('Temnothorax', event)">Temnothorax</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tetramorium" onmouseover="showBaloon(2, 'Tetramorium', event)" onmouseout="hideBaloonEvent('Tetramorium', event)">Tetramorium</a></span></span></i>.
+            </p>
+            <p><b>Common names:</b> Ants
+            </p>
+            
+        </div>
+        <div class="section">
+<a name="spatialcoverage"></a>
+            <span id="1" class="node_title">Spatial coverage</span>
+            <div class="section">
+<a name="generalspatialcoverage"></a>
+                <span id="1" class="node_title1 sec">General spatial coverage</span>
+                <p>Belgium is a small country in Western Europe. To the west,  its 70 km coastline fronts the North Sea; to the north lies the Netherlands; to the east,  Germany,  and to the south,  France and Luxembourg. Biologeographically,  the fauna of eastern Belgium belongs to the Central European Province of the Eurasian (Palaearctic) region. By contrast,  the rest of the country primarily consists of an Atlantic fauna plus a few Central European relict species.</p>
+                <p>Politically and geographically,  the country is divided into three parts: Flanders,  Wallonia and the Brussels Capital Region (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F3', event)" onmouseout="hideBaloonEvent('F3')">Figure 3</span>). In Flanders (13, 522 km² and population about 6 million people),  to the north,  soils are mainly sandy to loamy. Here,  the most important habitats for ants are heathlands and dry grasslands. The Brussels Capital Region is a small region (162 km²) entirely situated in the sandy loam area. In Wallonia (17, 006 km² and about 3, 5 million people),  to the south,  soils and habitats are more diverse,  ranging from forests to rocky and calcareous grasslands on loam and chalky soils. Eastern Wallonia,  near the German border,  includes the Hautes Fagnes,  a large area of bogs and peat with some typical ant species.
+                </p>
+                <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g003.jpg"><img src="export.php_files/ZooKeys-306-059-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 3.</span>
+                    <p>The UTM 5 Km grid of Belgium</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F3">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g003.jpg"><img src="export.php_files/ZooKeys-306-059-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 3.</span>
+                    <p>The UTM 5 Km grid of Belgium</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+</div>
+            </div>
+            <div class="section">
+<a name="geographicalmethod"></a>
+                <span id="1" class="node_title1 sec">Geographical method</span>
+                <p>The Universal Transverse Mercator Projection (UTM),  an adaptation of the standard Mercator projection,  uses a two dimensional Cartesian co-ordinate system to identify locations on the surface of the Earth (Wikipedia).</p>
+                <p>The UTM 5 Km (Universal Transverse Mercator Projection) raster projection divides Belgium in approximately 1200 25 km² squares (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F3', event)" onmouseout="hideBaloonEvent('F3')">Figure 3</span>). A representative number of UTM squares has been sampled (1125 UTM 5×5 km squares of which 659 squares with more than 10 records: see <span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F3', event)" onmouseout="hideBaloonEvent('F3')">Figures 3</span> and <span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F4', event)" onmouseout="hideBaloonEvent('F4')">4</span>) to complete the dataset. All the records in FORMIDABEL are georeferenced through the centroid coordinates of the corresponding UTM 5 km square. Therefore,  the uncertainty on these coordinates is 3.500 meters,  the distance between the centre and the corner of the UTM square.
+                </p>
+                <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g004.jpg"><img src="export.php_files/ZooKeys-306-059-g004.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 4.</span>
+                    <p>Projection of the number of records per UTM 5x5 km square (grey dots= 1-20 records,  pink dots= 21-50 records,  red dots= 51-150 records,  dark red dots=151-300 records and black dots=301-644 records).</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F4">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g004.jpg"><img src="export.php_files/ZooKeys-306-059-g004.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 4.</span>
+                    <p>Projection of the number of records per UTM 5x5 km square (grey dots= 1-20 records,  pink dots= 21-50 records,  red dots= 51-150 records,  dark red dots=151-300 records and black dots=301-644 records).</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+</div>
+            </div>
+            <div class="section">
+<a name="ecocodes"></a>
+                <span id="1" class="node_title1 sec">Ecocodes</span>
+                <p>More than half of the records are provided with a description of the microhabitat of the record locality. This allows us to give details on ecological preferences of all Belgian ant species. In FORMIDABEL we created a list of potential microhabitats for ants in Belgium. For each of these microhabitats we use a code called the “ecocode”. This code thus gives information on the habitat were the occurrence was made. Nine types of habitat and landscape were defined to collect accurate information on the habitat preference of all ant species (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B3', event)" onmouseout="hideBaloonEvent('B3')">Dekoninck et al. 2005</span>). These nine types are based on the EIS-code and the Flemish nature types (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B8', event)" onmouseout="hideBaloonEvent('B8')">Vandenbussche 2002</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B9', event)" onmouseout="hideBaloonEvent('B9')">Zwaenepoel et al. 2002</span>). When no habitat description was available for a record (for example,  with some older records) the habitat was coded as ‘Not known or not observed’. The nine main habitats we defined were: i) anthropogenic habitats,  ii) dry grasslands,  iii) moist grasslands,  iv) forests,  v) chalk grasslands,  stony slopes and other rocky xerothermic habitats,  vi) shrubs,  vii) heathlands,  viii) fens and highland bogs and ix) coastal and inland dunes.
+                </p>
+            </div>
+            <div class="section">
+<a name="coordinates"></a>
+                <span id="1" class="node_title1 sec">Coordinates</span>
+                <p>49°27'0"N and 51°32'24"N Latitude; 2°28'12"E and 6°27'36"E Longitude</p>
+            </div>
+        </div>
+        <div class="section">
+<a name="temporalcoverage"></a>
+            <span id="1" class="node_title">Temporal coverage</span>
+            <p>The oldest record in the database goes back to May 5,  1866 and the most recent records are from August 2012. The largest part of the records were obtained after 1991 (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F5', event)" onmouseout="hideBaloonEvent('F5')">Figure 5</span>).
+            </p>
+            <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g005.jpg"><img src="export.php_files/ZooKeys-306-059-g005.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                <span id="1" class="node_label">Figure 5.</span>
+                <p>Temporal distribution of the records</p>
+                
+                
+            </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F5">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g005.jpg"><img src="export.php_files/ZooKeys-306-059-g005.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                <span id="1" class="node_label">Figure 5.</span>
+                <p>Temporal distribution of the records</p>
+                
+                
+            </div>
+<div class="unfloat"></div>
+</div>
+        </div>
+        <div class="section">
+<a name="methods"></a>
+            <span id="1" class="node_title">Methods</span>
+            <div class="section">
+<a name="methodstepdescription"></a>
+                <span id="1" class="node_title1 sec">Method step description:</span>
+                <p>A large portion of the occurrence data have been collected by volunteers,  other records originated from several projects and research programs. The data and specimens were sent to the Belgian ant curators,  and after validation,  the information was incorporated in the database. The collection records “dry specimen” originate from the Gembloux “Ant” collection and the Charles Gaspar collection,  the collection of the “Cercle des entomologists Liégeois”,  the RBINS collection and the private collection “Roland Vannieuwenhuyse”. After revision and validation,  this information was also included in the database. The literature-based records were retrieved from <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B24', event)" onmouseout="hideBaloonEvent('B24')">van Boven 1970</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B25', event)" onmouseout="hideBaloonEvent('B25')">van Boven and Mabelis 1986</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Dekoninck et al. 2006</span> and references therein. How the database evolved is described in the Database history section.
+                </p>
+                <p><b>Sampling description:</b> Most occurrence records originate from hand/nest sampling (42, 3% of all records and mainly from Wallonia) andpitfall sampling (36, 7% mainly from Flanders). The followed procedure differs from region to region. This is due to historical reasons. Some very interesting occurrence records were obtained by sifting,  coloured water traps and Malaise traps (all less than 3 % of the total sampling). An extensive description of the sampling methods is provided by <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Schauff (2001)</span>.
+                </p>
+                <p><b>Quality control description:</b> All the records were validated by the dataset curators before being added to the FORMIDABEL database. The dataset curators also checked the determinations of the collection specimens. If needed,  the determination was adapted and made consistent with modern taxonomy; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B7', event)" onmouseout="hideBaloonEvent('B7')">Radchenko and Elmes (2010)</span> for the genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica" onmouseover="showBaloon(2, 'Myrmica', event)" onmouseout="hideBaloonEvent('Myrmica', event)">Myrmica</a></span></span></i> and <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B6', event)" onmouseout="hideBaloonEvent('B6')">Seifert (2007)</span> for the other genera. Before the final publication of the database all the records were tested on geographical consistency by the Belgian Biodiversity Platform and corrected if necessary.
+                </p>
+            </div>
+        </div>
+        <div class="section">
+<a name="dataset"></a>
+            <span id="1" class="node_title">Dataset</span>
+            <div class="section">
+<a name="datasethistory"></a>
+                <span id="1" class="node_title1 sec">Dataset history</span>
+                <p>At the beginning of 2001 all available records of ants in Flanders (northern part of Belgium) were brought together for the first time and several inventories were started. More than 20.000 records (for the most part gathered after 1990) were assembled in the FORMIDABEL (FORMIcidaeDAtaBELgium) database resulting in the ‘Verspreidingsatlas en voorlopige Rode lijst van de mieren van Vlaanderen; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B2', event)" onmouseout="hideBaloonEvent('B2')">Dekoninck et al. 2003</span>. [Distribution atlas and preliminary Red list of ant species in Flanders,  Belgium]. This report contains all available distribution data for Flanders. In the southern part of Belgium (Wallonia) intensive inventorying started in 2005. Until then knowledge on the distribution of ants in Wallonia was limited. Only a few areas (Haute Fagnes,  Famenne and the Viroin valley) had already been inventoried. Thanks to the good cooperation between the Polyergus and the FourmisWalBru working groups; many Belgian ant records were brought together in the FORMIDABEL database. Since then,  FORMIDABEL is updated with data originating from FourmisWalBru twice a year. The FORMIDABEL dataset was then used for the creation of the “Belgian Ant Atlas”,  (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B5', event)" onmouseout="hideBaloonEvent('B5')">Dekoninck et al. 2012</span>). In 2010 a cooperation agreement between the authors of the atlas and the Belgian Biodiversity Platform (<a target="_blank" href="http://www.biodiversity.be">www.biodiversity.be</a>) was made. Together with the publication of the book,  the data was published in Darwin Core Archives to GBIF (url: <a target="_blank" href="http://data.gbif.org/datasets/resource/14697/">http://data.gbif.org/datasets/resource/14697/</a>) and a dedicated data portal was created: <a target="_blank" href="http://www.formicidae-atlas.be">www.formicidae-atlas.be</a>.
+                </p>
+                <p>The original FORMIDABEL database was created in Microsoft Access. Later,  this database was completely imported in a relational SQL database. During this process additional data cleaning was performed; see section Quality control description. The dataflow is illustrated in <span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F6', event)" onmouseout="hideBaloonEvent('F6')">Figure 6</span>.
+                </p>
+                <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g006.jpg"><img src="export.php_files/ZooKeys-306-059-g006.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 6.</span>
+                    <p>Formidabel flowchart</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F6">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g006.jpg"><img src="export.php_files/ZooKeys-306-059-g006.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 6.</span>
+                    <p>Formidabel flowchart</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+</div>
+            </div>
+            <div class="section">
+<a name="datasetdescription"></a>
+                <span id="1" class="node_title1 sec">Dataset description</span>
+                <p>The FORMIDABEL Darwin Core Archive is a custom made SQL view on the original version of the FORMIDABEL access database which is in the custody of the Belgian Ant working groups Polyergus and fourmisWalBru. Mind that every record in FORMIDABEL represent at least one occurrence,  but primarily contains information on the presence of a species. The view only shows data that are accepted for publication. Fields given are:</p>
+                <p>id,  decimalLatitude,  family,  basisOfRecord,  stateProvince,  identifiedBy,  eventDate,  modified,  country,  individualCount,  scientificName,  kingdom,  order,  geodeticDatum,  genus,  collectionCode,  decimalLongitude,  samplingProtocol,  catalogNumber,  phylum,  recordNumber,  countryCode,  coordinatePrecision,  language,  coordinateUncertaintyInMeters,  locality,  specificEpithet,  recordedBy,  institutionCode,  nomenclaturalCode,  class.</p>
+                <p>The dataset contains primary biodiversity data,  mostly occurrence data (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F7', event)" onmouseout="hideBaloonEvent('F7')">Figure 7</span>). Some records hold an indirect link to collection specimens. This link is only available in the original database.
+                </p>
+                <div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g007.jpg"><img src="export.php_files/ZooKeys-306-059-g007.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 7.</span>
+                    <p>A small preview of the Darwin Core-Archive</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F7">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-306-059-g007.jpg"><img src="export.php_files/ZooKeys-306-059-g007.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+                    <span id="1" class="node_label">Figure 7.</span>
+                    <p>A small preview of the Darwin Core-Archive</p>
+                    
+                    
+                </div>
+<div class="unfloat"></div>
+</div>
+                
+            </div>
+        </div>
+        <div class="section">
+<a name="datasetpreview"></a>
+            <span id="1" class="node_title">Dataset preview</span>
+            <p><b>Object name:</b> Darwin Core Archive Formidabel; Belgian Ants Database
+            </p>
+            <p><b>Character encoding: UTF-8Format name:</b> Darwin Core Archive format
+            </p>
+            <p><b>Format version:</b> 1.0
+            </p>
+            <p><b>Distribution:</b> <a target="_blank" href="http://ipt.biodiversity.be/resource.do?r=formidabel">http://ipt.biodiversity.be/resource.do?r=formidabel</a>
+            </p>
+            <p><b>Publication date of data: 2013-08-02</b>
+            </p>
+            <p><b>Language: English</b>
+            </p>
+            <p><b>Licenses of use:</b> This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</a>
+            </p>
+            <p><b>Metadata language:</b> English
+            </p>
+            <p><b>Date of metadata creation:</b> 2013-02-18
+            </p>
+            <p><b>Hierarchy level:</b> Dataset
+            </p>
+            <p><b>Norms for data use and publication:</b>
+            </p>
+            <p>Based on <a target="_blank" href="http://www.canadensys.net/norms">http://www.canadensys.net/norms</a>
+            </p>
+            <p><i>Give credit where credit is due</i>
+            </p>
+            <p>As is common practice in scientific research,  cite the data you are using.</p>
+            <p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be" onmouseover="showBaloon(2, 'Be', event)" onmouseout="hideBaloonEvent('Be', event)">Be</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be%20responsible" onmouseover="showBaloon(2, 'Be_responsible', event)" onmouseout="hideBaloonEvent('Be_responsible', event)">responsible</a></span></span></i>
+            </p>
+            <p>Use the data responsibly. The data are published to allow anyone to better study and understand the world around us,  so please do not use the data in any way that is unlawful,  harmful or misleading. Understand that the data are subject to change,  errors and sampling bias. Protect the reputation of the data publisher and clearly indicate any changes you may have made to the data.</p>
+            <p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share" onmouseover="showBaloon(2, 'Share', event)" onmouseout="hideBaloonEvent('Share', event)">Share</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share%20knowledge" onmouseover="showBaloon(2, 'Share_knowledge', event)" onmouseout="hideBaloonEvent('Share_knowledge', event)">knowledge</a></span></span></i>
+            </p>
+            <p>Let us know if you have used the data. It helps our participants to showcase their efforts and it helps you reach a wider audience. Inform the data publisher(s) if you have comments about the data,  notice errors,  or want more information.</p>
+            <p><i>Respect the data license</i>
+            </p>
+            <p>Understand and respect the data license or waiver under which the data are published. It is indicated in the rights field of every record and in the dataset metadata.</p>
+            <p><b>Collection data:</b> Ant Collection Gembloux (<a target="_blank" href="http://biocol.org/urn:lsid:biocol.org:col:33368">urn:lsid:biocol.org:col:33368</a>),  Collection Charles Gaspar,  Collection “Cercle des entomologists Liégeois”,  RBINS Belgian <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicidae" onmouseover="showBaloon(2, 'Formicidae', event)" onmouseout="hideBaloonEvent('Formicidae', event)">Formicidae</a></span></span> Collection (<a target="_blank" href="http://biocol.org/urn:lsid:biocol.org:col:35271">urn:lsid:biocol.org:col:35271</a>),  Private collection “Van Nieuwenhuyse”. All collections are dry prepared insect collections. The dataset does not contain unique identifiers for specimens. To track a collection specimen,  the corresponding author should be contacted.
+            </p>
+            
+        </div>
+        <div class="section">
+<a name="additionalinformation"></a>
+            <span id="1" class="node_title">Additional information</span>
+            <p>This dataset was originally created to develop the Belgian Ants Atlas. However,  the dataset can be reused for a variety of purposes. Since the link between individual data records and underlined specimens (stored in multiple collections) is not recorded,  we doubt if the dataset can be used for taxonomic or systematic studies. However,  this being an occurrence dataset,  it can be used for understanding species richness,  distribution pattern and modeling studies such as ecological niche modeling. In order to enhance the confidence of use,  we have documented the metadata as well as subjected the data records to a series of quality assessment and enhancement processes as described in the earlier section quality control description.</p>
+        </div>
+    </div>
+<a name="acknowledgements"></a><div class="smallSecHolder acknowledgementsHolder"><div class="acknowledgementsText">
+            <span id="1" class="node_title">Acknowledgments</span>
+            <p>The authors would like to thank all the contributors to this data paper. Especially all the volunteers who spend hours in the field collecting ants. We would also like to thank the Entomology Department of RBINS (Dr. Patrick Grootaert),  the Cercle des Entomologistes Liégeois (P. Lays) and Gembloux Agro-Bio Tech,  Unité d’Entomologie fonctionnelle et évolutive for giving us access to the collections and the Belgian Biodiversity Platform and GBIF to make this work possible. Last but not least we would like to thank Thomas Little for making sure that the English language was respected during the creation of this paper.</p>
+        </div></div>
+<a name="references"></a><div class="smallSecHolder  referencesHolder"><div class="referencesText">
+<span class="node_title">References</span><div class="referenceRow">Schauff ME (2001) Collecting And Preserving Insects And Mites Techniques And Tools Update and modified WWW version of: Steyskal GC,  Murphy WL,  Hoover EM (Eds) (1986) Insects and mites: techniques for collection and preservation. Agricultural Research Service,  USDA,  Miscellaneous Publication,  Vol. 1443
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B1">Schauff ME (2001) Collecting And Preserving Insects And Mites Techniques And Tools Update and modified WWW version of: Steyskal GC,  Murphy WL,  Hoover EM (Eds) (1986) Insects and mites: techniques for collection and preservation. Agricultural Research Service,  USDA,  Miscellaneous Publication,  Vol. 1443
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dekoninck W, Vankerkhoven F, Maelfait J-P (2003) Verspreidingsatlas en voorlopige Rode Lijst van de mieren van Vlaanderen. Rapport van het Instituut voor Natuurbehoud IN.R.2003.07. Brussel 191 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B2">Dekoninck W, Vankerkhoven F, Maelfait J-P (2003) Verspreidingsatlas en voorlopige Rode Lijst van de mieren van Vlaanderen. Rapport van het Instituut voor Natuurbehoud IN.R.2003.07. Brussel 191 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dekoninck W, Maelfait J-P, Vankerkhoven F, Grootaert P (2005) Remarks on the distribution and use of a provisional red list of the ants of Flanders (Formicidae,  Hymenoptera). In: Procter D, Harding PY (Eds). JNCC Report No. 367 Proceedings of <i>IN</i> Cardiff 2003,  Red Lists for Invertebrates: their application at different spatial scales – practical issues,  pragmatic approaches: 74-85.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B3">Dekoninck W, Maelfait J-P, Vankerkhoven F, Grootaert P (2005) Remarks on the distribution and use of a provisional red list of the ants of Flanders (Formicidae,  Hymenoptera). In: Procter D, Harding PY (Eds). JNCC Report No. 367 Proceedings of <i>IN</i> Cardiff 2003,  Red Lists for Invertebrates: their application at different spatial scales – practical issues,  pragmatic approaches: 74-85.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dekoninck W, Maelfait J-P, Vankerkhoven F, Baugnée J-Y, Grootaert P (2006) – An update of the checklist of the Belgian ant fauna with comments on new species for the country (Hymenoptera,  Formicidae). Belgium Journal of Entomology 8: 27-41.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B4">Dekoninck W, Maelfait J-P, Vankerkhoven F, Baugnée J-Y, Grootaert P (2006) – An update of the checklist of the Belgian ant fauna with comments on new species for the country (Hymenoptera,  Formicidae). Belgium Journal of Entomology 8: 27-41.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dekoninck W, Igance D, Vankerkhoven F, Wegnez P (2012) Verspreidingsatlas van de mieren van België/Atlas des fourmis de Belgique. Bulletin SRBE/KBVE,  148 (III): 95–186pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B5">Dekoninck W, Igance D, Vankerkhoven F, Wegnez P (2012) Verspreidingsatlas van de mieren van België/Atlas des fourmis de Belgique. Bulletin SRBE/KBVE,  148 (III): 95–186pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Seifert B (2007) Die Ameisen Mittel-und Nordeuropas <i>- Lutra Verlags- und Vertriebgesellschaft</i>. Klitten,  368 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B6">Seifert B (2007) Die Ameisen Mittel-und Nordeuropas <i>- Lutra Verlags- und Vertriebgesellschaft</i>. Klitten,  368 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Radchenko AG, Elmes GW (2010) <i>Myrmica</i> ants (Hymenoptera: Formicidae) of the Old World. Fauna Mundi,  Vol. 3,  789 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B7">Radchenko AG, Elmes GW (2010) <i>Myrmica</i> ants (Hymenoptera: Formicidae) of the Old World. Fauna Mundi,  Vol. 3,  789 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Vandenbussche V (2002) Systematiek van natuurtypes voor de biotopen heide,  moeras,  duin,  slik en schor: deel 1: Inleiding. Brussels,  Instituut voor Natuurbehoud.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B8">Vandenbussche V (2002) Systematiek van natuurtypes voor de biotopen heide,  moeras,  duin,  slik en schor: deel 1: Inleiding. Brussels,  Instituut voor Natuurbehoud.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Zwaenepoel A, T’Jollyn F, Vandenbussche V, Hoffmann M (2002) Systematiek van Natuurtypes voor de biotoop grasland. Brugge &amp; Brussels,  WVI &amp; Instituut voor Natuurbehoud.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B9">Zwaenepoel A, T’Jollyn F, Vandenbussche V, Hoffmann M (2002) Systematiek van Natuurtypes voor de biotoop grasland. Brugge &amp; Brussels,  WVI &amp; Instituut voor Natuurbehoud.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Bondroit J (1909) Les fourmis de Belgique. Annales de la Société royale belge d’Entomologie 1909,  53: 479–500.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B10">Bondroit J (1909) Les fourmis de Belgique. Annales de la Société royale belge d’Entomologie 1909,  53: 479–500.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Bondroit J (1910) Compte rendu d’une excursion aux environs de Hockai. Annales de la Société royale belge d’Entomologie,  54: 231-232.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B11">Bondroit J (1910) Compte rendu d’une excursion aux environs de Hockai. Annales de la Société royale belge d’Entomologie,  54: 231-232.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Bondroit J (1911) Contribution à la fauna de Belgique,  Notes diverses. Annales de la Société royale belge d’Entomologie,  55: 8-13.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B12">Bondroit J (1911) Contribution à la fauna de Belgique,  Notes diverses. Annales de la Société royale belge d’Entomologie,  55: 8-13.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Bondroit J (1912) Fourmis des Hautes Fagnes. Bulletin et Annales de la Société royale belge d’Entomologie,  56: 351-352.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B13">Bondroit J (1912) Fourmis des Hautes Fagnes. Bulletin et Annales de la Société royale belge d’Entomologie,  56: 351-352.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Bondroit J (1918) Les Fourmis de France et de Belgique. Annales de la Société d’Entomologie de France,  87: 1-174.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B14">Bondroit J (1918) Les Fourmis de France et de Belgique. Annales de la Société d’Entomologie de France,  87: 1-174.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Cammaerts R, Cammaerts M-C (1988) Four ants (Hym.: Formicidae) new to the Belgian Fauna. Entomolgist’s Record,  100: 37-38.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B15">Cammaerts R, Cammaerts M-C (1988) Four ants (Hym.: Formicidae) new to the Belgian Fauna. Entomolgist’s Record,  100: 37-38.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">De Biseau J-C, Couvreur J-M (1994) Fourmis (Formicidae). <i>Faune de Belgique</i>. Institut royal des Sciences naturelles de Belgique,  56 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B16">De Biseau J-C, Couvreur J-M (1994) Fourmis (Formicidae). <i>Faune de Belgique</i>. Institut royal des Sciences naturelles de Belgique,  56 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dessart P, Cammaerts R (1995) Recaptures d’Hypoponera punctatissima en Belgique (Hymenoptera Formicidae Ponerinae). Bulletin S.R.B.E./K.B.V.E. ,  131: 487-489.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B17">Dessart P, Cammaerts R (1995) Recaptures d’Hypoponera punctatissima en Belgique (Hymenoptera Formicidae Ponerinae). Bulletin S.R.B.E./K.B.V.E. ,  131: 487-489.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Gaspar C (1970) Hymenoptera Formicidae: cartes 143–164. In Atlas Provisoire des Insectes de Belgique,  cartes 101–200. Edité par J. Leclercq,  Faculté des Sciences Agronomiques de l’Etat,  Zoologie générale et Faunistique,  Gembloux.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B18">Gaspar C (1970) Hymenoptera Formicidae: cartes 143–164. In Atlas Provisoire des Insectes de Belgique,  cartes 101–200. Edité par J. Leclercq,  Faculté des Sciences Agronomiques de l’Etat,  Zoologie générale et Faunistique,  Gembloux.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Gaspar C (1970) Hymenoptera Formicidae: cartes 15–30. In Atlas Provisoire des Insectes de Belgique,  cartes 1–100. Edité par J. Leclercq,  Faculté des Sciences Agronomiques de l’Etat,  Zoologie générale et Faunistique,  Gembloux.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B19">Gaspar C (1970) Hymenoptera Formicidae: cartes 15–30. In Atlas Provisoire des Insectes de Belgique,  cartes 1–100. Edité par J. Leclercq,  Faculté des Sciences Agronomiques de l’Etat,  Zoologie générale et Faunistique,  Gembloux.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Gaspar C (1971) Hymenoptera Formicidae: cartes 203–216. In Atlas Provisoire des Insectes de Belgique,  cartes 201–300. Edité par J. Leclercq,  Faculté des Sciences Agronomiques de l’Etat,  Zoologie générale et Faunistique,  Gembloux.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B20">Gaspar C (1971) Hymenoptera Formicidae: cartes 203–216. In Atlas Provisoire des Insectes de Belgique,  cartes 201–300. Edité par J. Leclercq,  Faculté des Sciences Agronomiques de l’Etat,  Zoologie générale et Faunistique,  Gembloux.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Schoeters E, Vankerkhoven F (2001) Onze mieren. Educatie Limburgs Landschap,  Heusden-Zolder,  175 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B21">Schoeters E, Vankerkhoven F (2001) Onze mieren. Educatie Limburgs Landschap,  Heusden-Zolder,  175 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">van Boven JKA (1947) Liste de détermination des principales espèces de Fourmis belges (Hymenoptera: Formicidae). Bulletin S.R.B.E./K.B.V.E. ,  83: 163-190.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B22">van Boven JKA (1947) Liste de détermination des principales espèces de Fourmis belges (Hymenoptera: Formicidae). Bulletin S.R.B.E./K.B.V.E. ,  83: 163-190.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">van Boven JKA (1949) Notes sur la faune des Hautes Fagnes en Belgique. Bulletin S.R.B.E./K.B.V.E. ,  85: 135-143.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B23">van Boven JKA (1949) Notes sur la faune des Hautes Fagnes en Belgique. Bulletin S.R.B.E./K.B.V.E. ,  85: 135-143.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">van Boven,  JKA (1970) Vliesvleugelige insecten - Hymenoptera,  Angeldragers - Aculeata,  Mieren - Formicidae. Wetenschappelijke Mededelingen van de Koninklijke Nederlandse Natuurhistorische Vereniging,  30: 52 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B24">van Boven,  JKA (1970) Vliesvleugelige insecten - Hymenoptera,  Angeldragers - Aculeata,  Mieren - Formicidae. Wetenschappelijke Mededelingen van de Koninklijke Nederlandse Natuurhistorische Vereniging,  30: 52 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">van Boven JKA, Mabelis AA (1986) De mieren van de Benelux. Wetenschappelijke Mededelingen van de KNNV 173,  64 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B25">van Boven JKA, Mabelis AA (1986) De mieren van de Benelux. Wetenschappelijke Mededelingen van de KNNV 173,  64 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dekoninck W, Igance D, Vankerkhoven F, Wegnez P (2012) Verspreidingsatlas van de mieren van België/Atlas des fourmis de Belgique. Bulletin SRBE/KBVE,  148 (II): 94 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B26">Dekoninck W, Igance D, Vankerkhoven F, Wegnez P (2012) Verspreidingsatlas van de mieren van België/Atlas des fourmis de Belgique. Bulletin SRBE/KBVE,  148 (II): 94 pp.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceRow">Dekoninck W, Maelfait J-P, Vankerkhoven F, Baugnée J-Y, Grootaert P (2006) An update of the checklist of the Belgian ant fauna with comments on new species for the country (Hymenoptera,  Formicidae). Belgium Journal of Entomology,  8: 27-41.
+            <div class="unfloat"></div>
+</div>
+<div class="referenceBaloonContent" id="reference_B27">Dekoninck W, Maelfait J-P, Vankerkhoven F, Baugnée J-Y, Grootaert P (2006) An update of the checklist of the Belgian ant fauna with comments on new species for the country (Hymenoptera,  Formicidae). Belgium Journal of Entomology,  8: 27-41.
+            <div class="unfloat"></div>
+</div>
+</div></div>
+<a name="supplementarymaterials"></a><div class="supMaterialsHolder"></div>
+</div>
+</div></div></div></div></div></div></div></div></div>
+<script>
+			initBalloons();			
+		</script><div id="taxonNamesList" class="taxonNamesList">
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+										
+				
+				
+		<div id="taxon_Myrmica_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica">Myrmica</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMyrmica">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMyrmica">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMyrmica">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMyrmica">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMyrmica">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Formicinae_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicinae">Formicinae</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicinae">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicinae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FFormicinae">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicinae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DFormicinae">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicinae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DFormicinae">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicinae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DFormicinae">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicinae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DFormicinae">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicinae">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Myrmicinae_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmicinae">Myrmicinae</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmicinae">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmicinae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMyrmicinae">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmicinae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMyrmicinae">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmicinae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMyrmicinae">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmicinae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMyrmicinae">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmicinae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMyrmicinae">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmicinae">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Dolichoderinae_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderinae">Dolichoderinae</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderinae">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderinae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FDolichoderinae">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderinae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DDolichoderinae">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderinae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DDolichoderinae">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderinae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DDolichoderinae">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderinae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DDolichoderinae">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderinae">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Ponerinae_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponerinae">Ponerinae</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponerinae">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponerinae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FPonerinae">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponerinae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DPonerinae">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponerinae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DPonerinae">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponerinae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DPonerinae">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponerinae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DPonerinae">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponerinae">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Lasius_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius">Lasius</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLasius">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLasius">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLasius">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLasius">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLasius">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Lasius_niger_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius niger">Lasius niger</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius niger">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius%20niger&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLasius%2520niger">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius%20niger&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLasius%2520niger">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius%20niger&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLasius%2520niger">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius%20niger&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLasius%2520niger">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Lasius%20niger&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLasius%2520niger">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Lasius niger">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Myrmica_rubra_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica rubra">Myrmica rubra</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica rubra">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20rubra&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMyrmica%2520rubra">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20rubra&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMyrmica%2520rubra">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20rubra&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMyrmica%2520rubra">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20rubra&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMyrmica%2520rubra">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20rubra&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMyrmica%2520rubra">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica rubra">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Myrmica_scabrinodis_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica scabrinodis">Myrmica scabrinodis</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica scabrinodis">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20scabrinodis&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMyrmica%2520scabrinodis">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20scabrinodis&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMyrmica%2520scabrinodis">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20scabrinodis&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMyrmica%2520scabrinodis">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20scabrinodis&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMyrmica%2520scabrinodis">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20scabrinodis&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMyrmica%2520scabrinodis">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica scabrinodis">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Formica_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica">Formica</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FFormica">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DFormica">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DFormica">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DFormica">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DFormica">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Formica_fusca_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica fusca">Formica fusca</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica fusca">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica%20fusca&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FFormica%2520fusca">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica%20fusca&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DFormica%2520fusca">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica%20fusca&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DFormica%2520fusca">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica%20fusca&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DFormica%2520fusca">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formica%20fusca&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DFormica%2520fusca">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formica fusca">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Myrmica_sabuleti_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica sabuleti">Myrmica sabuleti</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica sabuleti">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20sabuleti&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMyrmica%2520sabuleti">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20sabuleti&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMyrmica%2520sabuleti">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20sabuleti&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMyrmica%2520sabuleti">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20sabuleti&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMyrmica%2520sabuleti">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmica%20sabuleti&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMyrmica%2520sabuleti">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmica sabuleti">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Arthropoda_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Arthropoda">Arthropoda</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Arthropoda">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Arthropoda&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FArthropoda">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Arthropoda&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DArthropoda">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Arthropoda&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DArthropoda">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Arthropoda&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DArthropoda">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Arthropoda&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DArthropoda">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Arthropoda">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Hexapoda_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hexapoda">Hexapoda</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hexapoda">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hexapoda&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHexapoda">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hexapoda&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHexapoda">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hexapoda&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHexapoda">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hexapoda&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHexapoda">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hexapoda&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHexapoda">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hexapoda">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Insecta_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Insecta">Insecta</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Insecta">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Insecta&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FInsecta">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Insecta&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DInsecta">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Insecta&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DInsecta">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Insecta&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DInsecta">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Insecta&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DInsecta">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Insecta">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Hymenoptera_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hymenoptera">Hymenoptera</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hymenoptera">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hymenoptera&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHymenoptera">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hymenoptera&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHymenoptera">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hymenoptera&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHymenoptera">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hymenoptera&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHymenoptera">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hymenoptera&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHymenoptera">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hymenoptera">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Apocrita_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Apocrita">Apocrita</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Apocrita">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Apocrita&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FApocrita">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Apocrita&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DApocrita">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Apocrita&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DApocrita">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Apocrita&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DApocrita">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Apocrita&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DApocrita">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Apocrita">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Vespoidea_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Vespoidea">Vespoidea</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Vespoidea">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Vespoidea&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FVespoidea">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Vespoidea&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DVespoidea">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Vespoidea&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DVespoidea">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Vespoidea&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DVespoidea">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Vespoidea&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DVespoidea">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Vespoidea">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Formicidae_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicidae">Formicidae</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicidae">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FFormicidae">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DFormicidae">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DFormicidae">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DFormicidae">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DFormicidae">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicidae">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Anergates_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Anergates">Anergates</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Anergates">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Anergates&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FAnergates">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Anergates&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DAnergates">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Anergates&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DAnergates">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Anergates&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DAnergates">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Anergates&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DAnergates">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Anergates">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Aphaenogaster_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Aphaenogaster">Aphaenogaster</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Aphaenogaster">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Aphaenogaster&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FAphaenogaster">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Aphaenogaster&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DAphaenogaster">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Aphaenogaster&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DAphaenogaster">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Aphaenogaster&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DAphaenogaster">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Aphaenogaster&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DAphaenogaster">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Aphaenogaster">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Camponotus_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Camponotus">Camponotus</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Camponotus">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Camponotus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FCamponotus">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Camponotus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DCamponotus">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Camponotus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DCamponotus">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Camponotus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DCamponotus">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Camponotus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DCamponotus">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Camponotus">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Dolichoderus_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderus">Dolichoderus</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderus">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FDolichoderus">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DDolichoderus">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DDolichoderus">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DDolichoderus">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Dolichoderus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DDolichoderus">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Dolichoderus">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Formicoxenus_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicoxenus">Formicoxenus</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicoxenus">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicoxenus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FFormicoxenus">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicoxenus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DFormicoxenus">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicoxenus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DFormicoxenus">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicoxenus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DFormicoxenus">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Formicoxenus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DFormicoxenus">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Formicoxenus">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Harpagoxenus_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Harpagoxenus">Harpagoxenus</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Harpagoxenus">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Harpagoxenus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHarpagoxenus">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Harpagoxenus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHarpagoxenus">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Harpagoxenus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHarpagoxenus">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Harpagoxenus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHarpagoxenus">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Harpagoxenus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHarpagoxenus">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Harpagoxenus">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Hypoponera_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hypoponera">Hypoponera</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hypoponera">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hypoponera&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHypoponera">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hypoponera&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHypoponera">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hypoponera&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHypoponera">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hypoponera&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHypoponera">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Hypoponera&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHypoponera">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Hypoponera">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Leptothorax_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Leptothorax">Leptothorax</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Leptothorax">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Leptothorax&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLeptothorax">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Leptothorax&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLeptothorax">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Leptothorax&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLeptothorax">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Leptothorax&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLeptothorax">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Leptothorax&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLeptothorax">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Leptothorax">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Linepithema_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Linepithema">Linepithema</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Linepithema">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Linepithema&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FLinepithema">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Linepithema&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DLinepithema">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Linepithema&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DLinepithema">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Linepithema&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DLinepithema">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Linepithema&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DLinepithema">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Linepithema">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Manica_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Manica">Manica</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Manica">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Manica&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FManica">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Manica&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DManica">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Manica&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DManica">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Manica&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DManica">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Manica&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DManica">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Manica">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Monomorium_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Monomorium">Monomorium</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Monomorium">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Monomorium&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMonomorium">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Monomorium&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMonomorium">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Monomorium&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMonomorium">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Monomorium&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMonomorium">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Monomorium&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMonomorium">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Monomorium">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Myrmecina_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmecina">Myrmecina</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmecina">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmecina&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMyrmecina">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmecina&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMyrmecina">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmecina&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMyrmecina">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmecina&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMyrmecina">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Myrmecina&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMyrmecina">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Myrmecina">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Plagiolepis_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Plagiolepis">Plagiolepis</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Plagiolepis">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Plagiolepis&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FPlagiolepis">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Plagiolepis&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DPlagiolepis">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Plagiolepis&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DPlagiolepis">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Plagiolepis&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DPlagiolepis">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Plagiolepis&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DPlagiolepis">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Plagiolepis">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Polyergus_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Polyergus">Polyergus</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Polyergus">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Polyergus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FPolyergus">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Polyergus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DPolyergus">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Polyergus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DPolyergus">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Polyergus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DPolyergus">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Polyergus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DPolyergus">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Polyergus">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Ponera_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponera">Ponera</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponera">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponera&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FPonera">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponera&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DPonera">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponera&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DPonera">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponera&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DPonera">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Ponera&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DPonera">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Ponera">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Solenopsis_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Solenopsis">Solenopsis</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Solenopsis">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Solenopsis&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FSolenopsis">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Solenopsis&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DSolenopsis">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Solenopsis&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DSolenopsis">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Solenopsis&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DSolenopsis">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Solenopsis&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DSolenopsis">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Solenopsis">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Stenamma_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stenamma">Stenamma</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stenamma">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stenamma&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FStenamma">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stenamma&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DStenamma">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stenamma&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DStenamma">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stenamma&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DStenamma">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Stenamma&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DStenamma">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Stenamma">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Strongylognathus_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Strongylognathus">Strongylognathus</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Strongylognathus">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Strongylognathus&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FStrongylognathus">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Strongylognathus&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DStrongylognathus">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Strongylognathus&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DStrongylognathus">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Strongylognathus&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DStrongylognathus">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Strongylognathus&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DStrongylognathus">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Strongylognathus">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Tapinoma_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tapinoma">Tapinoma</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tapinoma">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tapinoma&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTapinoma">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tapinoma&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTapinoma">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tapinoma&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTapinoma">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tapinoma&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTapinoma">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tapinoma&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTapinoma">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tapinoma">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Technomyrmex_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Technomyrmex">Technomyrmex</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Technomyrmex">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Technomyrmex&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTechnomyrmex">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Technomyrmex&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTechnomyrmex">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Technomyrmex&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTechnomyrmex">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Technomyrmex&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTechnomyrmex">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Technomyrmex&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTechnomyrmex">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Technomyrmex">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Temnothorax_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Temnothorax">Temnothorax</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Temnothorax">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Temnothorax&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTemnothorax">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Temnothorax&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTemnothorax">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Temnothorax&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTemnothorax">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Temnothorax&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTemnothorax">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Temnothorax&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTemnothorax">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Temnothorax">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Tetramorium_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tetramorium">Tetramorium</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tetramorium">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tetramorium&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTetramorium">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tetramorium&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTetramorium">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tetramorium&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTetramorium">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tetramorium&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTetramorium">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tetramorium&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTetramorium">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tetramorium">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Be_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be">Be</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FBe">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DBe">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DBe">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DBe">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DBe">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Be_responsible_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be responsible">Be responsible</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be responsible">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be%20responsible&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FBe%2520responsible">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be%20responsible&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DBe%2520responsible">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be%20responsible&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DBe%2520responsible">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be%20responsible&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DBe%2520responsible">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Be%20responsible&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DBe%2520responsible">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Be responsible">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Share_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share">Share</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FShare">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DShare">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DShare">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DShare">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DShare">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+		<div id="taxon_Share_knowledge_baloon_div"> 
+			
+		<div class="taxonMenu">
+			<div class="taxonMenuLabel">
+				<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share knowledge">Share knowledge</a>
+			</div>			
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share knowledge">Pensoft Taxon Profile</a></div>				
+			</div>
+	
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share%20knowledge&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FShare%2520knowledge">Global Biodiversity Information Facility</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share%20knowledge&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DShare%2520knowledge">National Center for Biotechnology Information</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share%20knowledge&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DShare%2520knowledge">Encyclopedia of Life</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share%20knowledge&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DShare%2520knowledge">Biodiversity Heritage Library</a></div>				
+				</div>
+				<div class="taxonMenuRow">
+					<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Share%20knowledge&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DShare%2520knowledge">Wikipedia</a></div>				
+				</div>
+			
+			<div class="taxonMenuRow noBackground">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Share knowledge">More</a></div>
+			</div>
+		</div>
+	
+		</div>
+	
+			</div>
+<script>initScrollConstants()</script></body></html>

@@ -1,0 +1,708 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.293.4649</article-id>
+            <title-group>
+                <article-title>On the cicada genus 
+                    <bold-italic>Nipponosemia</bold-italic> Kato, with description of one new species from China (Hemiptera, Cicadidae)
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Yang</surname>
+                        <given-names>Mingsheng</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:52F4D534-3ED3-43FB-AA5B-AB40BD31C043</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Wei</surname>
+                        <given-names>Cong</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:1BCA52BD-B926-40A7-B5B3-2A51CF211AAE</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Key Laboratory of Plant Protection Resources and Pest Management of Ministry of Education, Entomological Museum, Northwest A&amp;F University, Yangling, Shaanxi 712100, China
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Cong Wei (<email xlink:type="simple">Congwei@nwsuaf.edu.cn</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: A. Sanborn</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>19</day>
+                <month>4</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>293</issue>
+            <fpage>19</fpage>
+            <lpage>39</lpage>
+            <history>
+                <date date-type="received">
+                    <day>9</day>
+                    <month>1</month>
+                    <year>2013</year>
+                </date>
+                <date date-type="accepted">
+                    <day>2</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Mingsheng Yang, Cong Wei</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:A6046198-BFE6-4E1E-B165-B13DAD7A853D
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The cicada genus <italic>Nipponosemia</italic> Kato is reviewed. Four species are illustrated, photographed and described, including three known species and one new species. A key to all species of this genusis presented, and information on the biology of <italic>Nipponosemia</italic> are provided. The systematic status of the tribe Cicadatrini and biogeography of <italic>Nipponosemia</italic> are discussed.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Cicadatrini</kwd>
+                <kwd>Cicadinae</kwd>
+                <kwd>Cicadettinae</kwd>
+                <kwd>morphology</kwd>
+                <kwd>taxonomy</kwd>
+                <kwd>biogeography
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The cicada genus <italic>Nipponosemia</italic> was established by Kato (1925a) based on external morphology, e.g., head (including eyes) about as wide as base of mesonotum, a little shorter than pronotum, mesonotum distinctly longer than pronotum, abdomen moderately robust and shorter than distance from head to cruciform elevation, timbal cover large, covering timbal almost entirely, opercula reaching middle of abdomen, fore wing <!--PageBreak-->with eight apical cells, hind wing with six apical cells,<italic> etc</italic>. This genus was formerly treated as a member of Cicadini (Metcalf 1963; Duffels and van der Laan 1985; Chou et al. 1997). However, Hayashi (1974) defined <italic>Nipponosemia</italic> as a member of Moganniini Distant (<italic>sensu</italic> Lee and Hayashi 2004, Pham and Yang 2009) after examining the male genitalia of <italic>Nipponosemia</italic> and its relatives. Chou et al<italic>.</italic> (1993) described two species from Guangxi Province of China for <italic>Nipponosemia</italic>, increasing the known species from two to four of this genus. Recently, Lee and Hill (2010) recognized Moganniini as a junior synonym of Cicadatrini Distant, and redefined the latter by including <italic>Nipponosemia </italic>Kato, <italic>Cicadatra </italic>Kolenati, <italic>Psalmocharias</italic> Kirkaldy, <italic>Mogannia </italic>Amyot and Serville and <italic>Emathia </italic>Stål. Wei et al<italic>.</italic> (2010) established another genus and species, <italic>Shaoshia zhangi</italic> Wei, Ahmed and Rizvi for the Cicadatrini. More recently, the genus <italic>Klapperichicen </italic>Jacobi was also included in the Cicadatrini by Lee (2012).
+            </p>
+            <p>In the present paper we review the <italic>Nipponosemia</italic> including the description of one new species. A key to all the five species of <italic>Nipponosemia</italic> is provided. In addition, the biogeography of <italic>Nipponosemia</italic> and the systematic status of the tribe Cicadatrini are discussed.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>This study is based on specimens deposited in the Entomological Museum, Northwest A&amp;F University, Yangling, China (abbreviated as NWAF in the text). The type specimens of the new species are also deposited in NWAF.
+</p>
+            <p>External morphology was observed and illustrated using a Motic SMZ 168-BL microscope. Photos were taken using a Scientific Digital micrography system equipped with an Auto-montage imaging system and a QIMAGING Retiga 4000R digital camera (CCD). The male genitalia were studied and illustrated using a compound light microscope (Nikon Eclipse 50i).
+</p>
+            <p>Terminology for morphological features follows that of Moulds (2005).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Taxonomy
+</bold>
+            </title>
+            <sec>
+                <title><bold>Family Cicadidae Latreille
+</bold>
+                </title>
+                <title><bold>Subfamily Cicadinae Latreille
+</bold>
+                </title>
+                <title><bold>Tribe C</bold><bold>icadatrini Distant
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold>Genus </bold>
+                            <bold-italic>Nipponosemia</bold-italic>
+                            <bold> Kato, 1925
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Nipponosemia
+</object-id>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Nipponosemia</italic> Kato, 1925a: 55. Type species: <italic>Abroma terminalis</italic> Matsumura, 1913.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p>Body medium-sized. Head short, slightly produced anteriorly, not longer than pronotum; about as wide as base of mesonotum; postclypeus moderately swollen, <!--PageBreak-->longitudinally sulcate medially. Pronotum nearly trapezoid in dorsal view, wider than head; anterolateral margin not dentate, lateral angle of pronotal collar ampliated. Abdomen moderately obconical, usually shorter than distance from head to cruciform elevation; timbal cover somewhat semicircular, slightly wider than long, covering timbal almost entirely. Fore wing and hind wing with eight and six apical cells, respectively. Male pygofer with basal lobe absent; upper lobe present; uncus short, not dominant, median lobe of uncus weakly developed; claspers separated from each other in ventral view, with median clasper process long and lateral clasper lobe rounded; aedeagus cylindrical, long and somewhat stout, with six to eight spine-like processes apically and subapically.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Key to the males of the species of </bold>
+                        </title>
+                        <p><bold-italic>Nipponosemia</bold-italic>
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold> Kato</bold>
+                        </title>
+                        
+                        <table-wrap content-type="key" position="float" orientation="portrait">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">1</td>
+                                        <td rowspan="1" colspan="1">Fore wing with infuscations on most apical cells</td>
+                                        <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Fore wing without infuscations on apical cells, or merely with a infuscation on apical cell 1</td>
+                                        <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">2
+                                        </td>
+                                        <td rowspan="1" colspan="1">Body small (approximately 20mm in length); mesonotum with two pair of obconical marks originated from anterior margin; primary spine of fore femur slanted</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>N. metulata
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Body large (approximately 28mm in length); mesonotum with only one pair of obconical marks originated from anterior margin; primary spine of fore femur prostrate</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>N. guangxiensis
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>3
+                                        </td>
+                                        <td rowspan="1" colspan="1">Fore wing with an infuscation on apical cell 1</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>N. terminalis
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><bold-italic></bold-italic>–
+                                        </td>
+                                        <td rowspan="1" colspan="1">Fore wing without infuscations on apical cells</td>
+                                        <td rowspan="1" colspan="1"><bold>4
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">4
+                                        </td>
+                                        <td rowspan="1" colspan="1">Pronotum with a pair of large reddish brown to dark brown patches with border black; male opercula with subapical portion enlarged toward body center, posterior margin broadly rounded</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>N. longidactyla </bold-italic><bold>sp. n.</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">–</td>
+                                        <td rowspan="1" colspan="1">Pronotum without distinct markings; male opercula with apical two-thirds somewhat oblong, posterior margin strongly convex</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>N. virescens
+</bold-italic>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </table-wrap>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Nipponosemia terminalis</bold-italic>
+                            <bold> (Matsumura, 1913)
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Nipponosemia_terminalis
+</object-id>
+                        <xref>Figures 1–3
+</xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Abroma terminalis</italic> Matsumura, 1913: 82.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Cicada fuscoplaga</italic> Schumacher, 1915: 109; Kato 1925b: 9.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Lemuriana terminalis</italic>, Matsumura 1917: 208.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Cicada terminalis</italic>, Kato 1925b: 9.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Nipponosemia terminalis</italic>, Kato 1925a: 56; Duffels and van der Laan 1985: 164; Chou et al. 1997: 123; Lee and Hayashi 2004: 61; Hayashi and Saisho 2011: 175.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>M</bold><bold>aterial examined.</bold>
+                        </title>
+                        <p> 1♂ (NWAF), China: Sichuan Prov., Chengdu, ?-VI-1951, coll. Huang Keren; 1♂ (NWAF), China: Sichuan Prov., Mt. Emeishan, 17-VII-1957, coll. Zheng Leyi <!--PageBreak-->and Cheng Hanhua; 1♀ (NWAF), China: Fujian Prov., Mt. Baiyunshan, 25-V-1987, coll. unknown; 1♂ (NWAF), China: Chongqing, Xiema, 25-VII-2007, coll. Wu Yiling; 1♂ (NWAF), China: Sichuan Prov., Mt. Emeishan, 7-VII-2010, coll. Wang Junchao.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Additional material.</bold>
+                        </title>
+                        <p> 1♀ (NWAF), China: Fujian Prov., Mt. Baiyunshan, 25-V-1987, coll. unknown.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p>Head (Fig. 1A–D) mostly yellowish brown, with black markings on vertex and postclypeus in dorsal view; clypeus brownish yellow and depressed; ocellus reddish, eye dark castaneous, distance between lateral ocellus and corresponding eye a lit<!--PageBreak-->tle longer than distance between lateral ocelli; gena and lorum brownish yellow, with tuft of golden hairs; rostrum yellowish with apical half black, extending to apex of mid coxae.
+                        </p>
+                        <p>Pronotum (Fig. 1C) with central longitudinal greenish yellow fascia well broadened at anterior part; symmetrically with two brown and black areas lateral to the central fasciae; pronotal collar greenish yellow. Mesonotum (Fig. 1C) mostly reddish yellow, with central longitudinal yellowish fascia extending to cruciform elevation; pair of somewhat obconical black fasciae lateral to the central longitudinal fascia short and curved outwardly, reaching to about 2/5 of mesonotum; pair of somewhat obconical black fasciae lateral to the short fasciae long and curved outwardly, with apices connecting with the black roundish spots enclosing scutal depressions; cruciform elevation greenish yellow. Ventral surface of thorax brownish yellow.
+</p>
+                        <p>Legs (Fig. 1G) brownish yellow except for black pretarsal claws; fore femur with primary spine long, digitate and slanted; secondary spine short, sharp and erect; subapical spine short, sharp and slanted.
+</p>
+                        <p>Wings (Fig. 1A–B) hyaline, veins in basal half yellowish brown and dark brown apically; fore wing with a light brown infuscation on apical part of apical cell 1.
+</p>
+                        <p>Male abdomen (Fig. 1A–B) mostly black dorsally and yellowish green ventrally, with yellowish brown band on each posterior margin of terga 3–8; timbal cover (Fig. 1F) dark reddish brown; operculum (Fig. 1E) pale greenish yellow, extending slightly beyond posterior margin of abdominal sternite II, widest at half-length, medial margin somewhat convex, posterior margin rounded, lateral margin very weakly sinuate and gradually curved inwardly, medial margins nearly touching each other. Female abdomen mostly black dorsally and yellowish brown ventrally; operculum small, somewhat semicircular, with posterior margin extending not beyond posterior margin of abdominal sternite II, both opercula well separated from each other.
+</p>
+                        <p>Male genitalia (Fig. 2A–D). Pygofer oval in ventral view; dorsal beak long, slightly protruding upwards in lateral view; distal shoulder very broad and sinuate, with somewhat triangular process near upper lobe of pygofer; upper lobe of pygofer short and obtuse in lateral view. Uncus with median lobe with rounded process adjacent anal tube in lateral view. Clasper in ventral view with median clasper process fairly broadened basally and narrowed apically, with apex acute and curved inwardly; lateral clasper lobe roundly developed, without distinct concave between median clasper process and corresponding lateral clasper lobe. Aedeagus with broadened and curved membranous sheet apically; eight short to long processes present on the sheet marginally, of which two long ones curved dorsad and the others curved downward in ventral view, with the basal-most ventral one the longest in lateral view. Posterior margin of sternite VII short and angularly produced.
+</p>
+                        <p>Female pygofer (Fig. 3A–B) with dorsal beak short and acute, much shorter than protruding part of ovipositor; posterior margin of sternite VII with median incision very deep and broad, deep to about 4/5 the length of sternite VII.
+</p>
+                        <p><bold>Measurements (</bold>4♂♂, 1♀) (in mm). Body length: ♂ 25.0–26.0, ♀ 24.5; fore wing length: ♂ 27.0–30.0, ♀ 29.5; fore wing width: ♂ 9.5–10.5, ♀ 10.5; width of head including eyes: ♂ 7.5–9.5, ♀ 7.5; pronotum width (including pronotal collar): ♂ 9.0–10.0, ♀ 9.5; mesonotum width: ♂ 7.5–8.5, ♀ 8.0.
+                        </p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Biology.</bold>
+                        </title>
+                        <p>This species is distributed from lowlands to low mountainous areas. Adults appear from May to August. They usually perch on low branches or trunks of various trees and sing in the sunshine (Lee and Hayashi 2004).
+                        </p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p>China (Sichuan, Fujian, Chongqing, Taiwan), Japan.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p> Hayashi and Saisho (2011) recorded the variation in body coloration of this species among geographic populations from the Ryukyus. The materials of this species from China mainland examined in the present paper are most externally similar to those distributed in Miyuan, Ishigaki Island. In addition, we include one female specimen as additional material for this species based on its external morphology and collecting data. This specimen has some differences with the one female specimen of <italic>N. terminalis</italic> we examined in body coloration and the length of ovipositor. The identity of this female specimen needs to be investigated further when more specimens become available.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Nipponosemia metulata</bold-italic>
+                            <bold> Chou &amp; Lei, 1993
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Nipponosemia_metulata
+</object-id>
+                        <xref>Figures 4–6
+</xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Nipponosemia metulata</italic> Chou &amp; Lei, 1993: 83; Chou et al. 1997: 125.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> 1♀ (NWAF), China: Guangxi Prov., Longzhou, 17-VI-1980, coll. Xi Fusheng; 1♂ (NWAF), China: Guangxi Prov., Longzhou, light strap, 21-V-1982, coll. unkuown; 1♂ (NWAF), China: Guangxi Prov., Ningming, light strap, 16-V-1984, coll. Zhi Tian.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p>Head (Fig. 4A–D) mostly brownish yellow, with black markings on vertex and postclypeus in dorsal view; clypeus brownish yellow and depressed; ocellus reddish, eye dark castaneous, distance between lateral ocellus and corresponding eye as long as distance between lateral ocelli; gena and lorum brownish yellow, with tuft of golden hairs; rostrum yellowish with apical half brown, extending to apex of mid coxae.
+                        </p>
+                        <p><!--PageBreak-->Pronotum (Fig. 4C) with central longitudinal brownish yellow fascia well broadened at anterior part; symmetrically with two brown and black areas lateral to the central fasciae; pronotal collar mostly greenish yellow. Mesonotum (Fig. 4C) mostly reddish yellow, centrally with pair of obconical black fasciae short and slightly curved outwardly, reaching to about 1/4 of mesonotum; pair of obconical black fasciae lateral to the short outwardly curved fasciae long and curved inwardly, with apices connecting with the black roundish spots enclosing scutal depressions; cruciform elevation mostly greenish yellow. Ventral surface of thorax mostly brownish yellow.
+</p>
+                        <p><!--PageBreak-->Legs (Fig. 4G) mostly yellow; tarsi and tibiae brown to dark brown and apices of pretarsal claws reddish brown; fore femur with primary spine long, digitate and slanted; secondary and subapical spines short, sharp and somewhat erect.
+</p>
+                        <p><!--PageBreak-->Wings (Fig. 4A–B) hyaline, veins generally in basal half yellowish green and dark brown apically; fore wing with continuous brown fascia along apical parts of apical cells 1–7 and associated outer margin of fore wing; hind wing with continuous brown fascia along apical parts of apical 1–4 and associated outer margin of hind wing.
+</p>
+                        <p>Male abdomen (Fig. 4A–B) mostly black except for reddish brown tergite 8; timbal cover (Fig. 4F) dark brown; operculum (Fig. 4E) mostly brownish yellow with apical 1/3 mostly greenish, extending slightly beyond posterior margin of abdominal sternite II, obliquely ellipsoidal, subapical portion enlarged toward body center, posterior margin rounded, medial margins not touching each other. Female abdomen mostly black dorsally and reddish brown ventrally, with golden hairs on each posterior margin of terga 2–8; operculum small, somewhat semicircular, with posterior margin truncated, extending not beyond posterior margin of abdominal sternite II, both opercula well separated from each other.
+</p>
+                        <p>Male genitalia (Fig. 5A–D). Pygofer oval in ventral view; dorsal beak well developed, protruding upwards in lateral view; distal shoulder very broadly rounded; upper lobe of pygofer produced posteriorly, triangular-shaped in lateral view. Uncus with beak-like process adjacent to anal tube in lateral view (as arrow indicated in Fig. 5C). Clasper in ventral view with median clasper process long, with apex acute and curved laterally, falcate in shape; lateral clasper lobe roundly developed. Aedeagus in ventral view with broadened membranous sheet apically, which is remarkably developed ventrally and bears seven short to long processes: one long and two short processes at the upper margin curved upward, three at the lower margin curved downward, and one short process arising medially in ventral view. Posterior margin of sternite VII short and rounded.
+</p>
+                        <p>Female pygofer (Fig. 6A–B) with dorsal beak short and acute, slightly shorter than protruding part of ovipositor; posterior margin of sternite VII with median incision broad and deep, deep to about 4/5 the length of sternite VII.
+</p>
+                        <p><!--PageBreak--><bold>Measurements (</bold>2♂♂, 1♀<bold>)</bold> (in mm). Body length: ♂ 20.0–20.5, ♀ 22.0; fore wing length: ♂ 22.0–23.0, ♀ 24.5; fore wing width: ♂ 8.0–8.5, ♀ 9.0; width of head including eyes: ♂ 7.0–7.5, ♀ 8.5; pronotum width (including pronotal collar): ♂ 7.0–7.5, ♀ 8.5; mesonotum width: ♂ 6.0–6.5, ♀ 7.5.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Biology.</bold>
+                        </title>
+                        <p>Unknown.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p>China (Guangxi).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p>This species is similar to <italic>N. terminalis,</italic> but it can be distinguished from the latter by a smaller body size, the big markings on wings, the shape of clasper and aedeagus, and the shorter protruding part of ovipositor (Chou et al<italic>.</italic> 1993, 1997).
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Nipponosemia guangxiensis</bold-italic>
+                            <bold> Chou &amp; Wang, 1993
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Nipponosemia_guangxiensis
+</object-id>
+                        <xref>Figures 7–9
+</xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Nipponosemia guangxiensis</italic> Chou &amp; Wang, 1993: 84; Chou et al. 1997: 127; Pham and Yang 2009: 5.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> 1♂ (NWAF), China: Guangxi Prov., Ningming, 19-V-1984, coll. Wang Jijian; 1♀ (NWAF), China: Guangxi Prov., Longzhou, 17-V-1983, coll. Liu Sikong.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p>Head (Fig. 7A–D) mostly reddish brown, symmetrically with small black stripes on vertex; clypeus reddish brown and depressed; ocellous reddish, eye castaneous, distance between lateral ocellus and corresponding eye as long as distance between lateral ocelli; gena and lorum mostly reddish brown, with tuft of golden hairs and lorum symmetrically with pair of black stipes; rostrum reddish with apical half dark brown, extending to apex of mid coxae.
+                        </p>
+                        <p>Pronotum (Fig. 7C) reddish brown, with paramedian and lateral fissures ochreous. Mesonotum (Fig. 7C) mostly reddish brown, centrally with pair of short and slightly outwardly curved obconical black fasciae, reaching to about the 1/4 of mesonotum; pair of slender short black stripes and irregular markings lateral to the outwardly curved fasciae; cruciform elevation reddish brown. Ventral surface of thorax mostly reddish brown.
+</p>
+                        <p>Legs (Fig. 7G) mostly reddish brown; tarsi and pretarsal claws dark reddish brown; fore femur with primary spine long, digitate and prostrate; secondary spine short, sharp and erect; subapical spine short, sharp and almost prostrate.
+</p>
+                        <p>Wings (Fig. 7A–B) hyaline, veins generally in basal half reddish brown and brown apically; fore wing with continuous brown fascia along apical parts of apical cells 1–7 and associated outer margin; hind wing with two continuous brown fascia: one along apical parts of apical cells 1–5 and associated outer margin, the other along outer margin of vannal region.
+</p>
+                        <p>Male abdomen (Fig. 7A–B) mostly black dorsally and reddish brown ventrally, with central trapezoid reddish brown mark on tergite II; timbal cover (Fig. 7F) reddish brown; operculum (Fig. 7E) reddish brown, extending slightly beyond posterior margin of abdominal sternite II, widest at half-length, medial margin of operculum <!--PageBreak-->slightly convex, posterior margin rounded, lateral margin weakly sinuate and gradually curved inwardly, medial margins nearly touching each other. Female abdomen mostly black dorsally and yellowish brown ventrally, with golden hairs on each posterior margin of terga 2–8; operculum small, triangular, with posterior margin truncated, extending not beyond posterior margin of abdominal sternite II, both opercula well separated from each other.
+</p>
+                        <p><!--PageBreak-->Male genitalia (Fig. 8A–D). Pygofer oval in ventral view; dorsal beak protruding upwards in lateral view; distal shoulder broadly rounded; upper lobe remarkably developed, forming a very large triangular-shaped protrusion in lateral view. Uncus with apex of median lobe slightly developed ventrally, forming a small process in both lateral and ventral views. Clasper in ventral view with median clasper process very long, broaden basally, apex strongly curved laterally, hook-like in shape; lateral <!--PageBreak-->clasper lobe roundly developed. Aedeagus in ventral view with three long apical processes curved dorsad and other three small to large lobe-like processes curved ventrad; the shortest lobe-like process with three short spines apically in ventral view; the medial lobe-like process bifurcate subapically, with apices acute; the third lobe-like process large, with apex somewhat rounded. Posterior margin of sternite VII short and rounded.
+</p>
+                        <p>Female pygofer (Fig. 9A–B) with dorsal beak short and acute, shorter than protruding part of ovipositor; posterior margin of sternite VII with median incision large and broad, deep to about 4/5 the length of sternite VII.
+</p>
+                        <p><bold>Measurements</bold> (1♂, 1♀) (in mm). Body length: ♂ 28.0, ♀ 26.0; fore wing length: ♂ 31.0, ♀ 31.0; fore wing width: ♂ 11.5, ♀ 11.0; width of head including eyes: ♂ 9.5, ♀ 9.0; pronotum width (including pronotal collar): ♂ 10.0, ♀ 11.0; mesonotum width: ♂ 9.0, ♀ 10.0.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Biology.</bold>
+                        </title>
+                        <p>Unknown.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p>China (Guangxi), Vietnam.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p>This species is similar to <italic>N. terminalis</italic> but can be distinguished from the latter by a larger body size, the wings with large brown markings, the pronotum without markings, and the mesonotum with only one pair of obconical marks, in addition to the differences in male genitalia (Chou et al<italic>.</italic> 1993, 1997).
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Nipponosemia virescens</bold-italic>
+                            <bold> Kato, 1926
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Nipponosemia_virescens
+</object-id>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Nipponosemia virescens</italic> Kato, 1926: 172; Hayashi 1979: 262; Duffels and van der Laan 1985: 164; Chou et al. 1997: 125; Lee and Hayashi 2004: 62.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><!--PageBreak--></tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p>No specimen available.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Biology.</bold>
+                        </title>
+                        <p>This species is found in lowlands. Adults appear from April to July and both sexes are attracted to electric light at night (Lee and Hayashi 2004).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> China (Taiwan).
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p>Chou et al. (1997) incorrectly recorded this species from Japan. Considering the morphological similarity between this species and <italic>N. terminalis</italic>,Lee and Hayashi (2004) suggested that they may represent one species and <italic>N. virescens</italic> should be a kind of geographical variation within <italic>N. terminalis</italic>, and the identity of this species needs to be confirmed when material becomes available. We included this species in the key in this paper according to the photograph provided by Lee and Hayashi (2004).
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Nipponosemia longidactyla </bold-italic>
+                            <bold>sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:E7A095F0-914F-4F56-A6EA-FDBB2E4155EE
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Nipponosemia_longidactyla
+</object-id>
+                        <xref>Figures 10–12
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p><bold> Type material. Holotype:</bold> ♂ (NWAF),<bold> China</bold>: Hainan Prov., Jianfengling Nature Reserve, 1-VI-1982, coll. Liu Yuanfu. <bold>Paratypes: </bold>1♂ (NWAF), <bold>China</bold>: Hainan Prov., Limushan Nature Reserve, light trap, 26-V-1984, coll. Gu Maobin; 1♀ (NWAF), <bold>China</bold>: Hainan Prov., Jianfengling Nature Reserve, 980 m, light trap, 5-V-2008, coll. Fu Qiang. <bold>Additional material.</bold> 1♂ (NWAF), <bold>China</bold>: Hainan Prov., Jianfengling Nature Reserve, 960 m, light trap, 29-V-2011, coll. Yang Mingsheng.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p>This new species can be easily distinguished from other species of <italic>Nipponosemia </italic>by the following features: upper lobe of pygofer very long and arched, protruding inward; median lobe of uncus weak, with apex slightly produced, forming a small process curved upwards in ventral view; median clasper process well developed and twisted subbasally, forming a large process curved laterally; lateral clasper lobe roundly developed inwards and partially overlapped by the large subapical process of the median clasper process. In addition, we include one male specimen from Jianfengling Nature Reserve as additional material for this species based on its external morphology and the morphology of genitalia except for the aedeagus, as the aedeagus was broken, and its identity needs to be investigated further when more specimens become available.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p>Head (Fig. 10A–B) mostly pale yellow, with reddish markings on vertex; clypeus yellow and depressed; ocellus orange, eye castaneous, distance between lateral ocellus and corresponding eye about as long as distance between lateral ocelli; face and gena yellow; rostrum yellowish with apical half light brown, extending to apex of mid coxae.
+                        </p>
+                        <p>Pronotum (Fig. 10C) with central longitudinal yellowish fascia well broadened at both anterior and posterior parts; symmetrically with two large reddish brown to dark brown patches with border black; pronotal collar mostly reddish with lateral part pale yellow. Mesonotum (Fig. 10C) mostly yellowish, symmetrically tinged with red to reddish brown laterally in male but with blackish fasciae in female; cruciform elevation yellowish. Ventral surface of thorax mostly yellow, without distinct markings.
+</p>
+                        <p><!--PageBreak-->Legs (Fig. 10G) yellow except for reddish brown pretarsal claws; fore femur with primary spine long, digitate and slanted; secondary spine short, sharp and erect; subapical spine short, sharp and slanted.
+</p>
+                        <p><!--PageBreak-->Wings (Fig. 10A–B) hyaline, without any markings; veins in basal half reddish and yellowish apically.
+</p>
+                        <p>Male abdomen (Fig. 10A–B) obconical, mostly dark red, with discontinuous central longitudinal yellowish fascia in dorsal view; timbal cover (Fig. 10F) ochreous; operculum (Fig. 10E) pale yellowish, obliquely ellipsoidal, subapical portion enlarged toward body center, extending slightly beyond posterior margin of abdominal sternite II, medial margins almost touching (holotype) or even touching (male paratype) each other. Female abdomen mostly black dorsally and yellowish brown ventrally, with discontinuous central longitudinal yellowish fascia in dorsal view, with reddish brown band on each posterior margin of terga 2–7; operculum small, semicircular, extending slightly beyond posterior margin of abdominal sternite II, both opercula well separated from each other.
+</p>
+                        <p>Male genitalia (Fig. 11A–D). Pygofer oval in ventral view; dorsal beak long with obtuse tip; distal shoulder broadly convex in lateral view; upper lobe of pygofer remarkably long, digitate, curved inwardly. Uncus undeveloped in lateral view; apex of median lobe slightly produced, forming a small process curved upwards in ventral view. Clasper in ventral view with median clasper process well developed and twisted subbasally, forming a large process curved laterally; apex of median clasper process curved laterally and acute apically; lateral clasper lobe roundly developed inwards, partially overlapped by the large subapical process of median clasper process. Aedeagus with seven short to long processes apically and subapically, which are all pointed upward in ventral view but arranged into two groups in lateral view (three located ventrally and four dorsally). Posterior margin of sternite VII rounded.
+</p>
+                        <p>Female pygofer (Fig. 12A–B) with dorsal beak short and acute; ovipositor short, not extending beyond the end of abdomen; posterior margin of sternite VII with median incision very broad and relatively shallow, deep to about 1/2 the length of sternite VII.
+</p>
+                        <p><bold>Measurement </bold>(2♂♂, 1♀) (in mm). Length of body: ♂20.0–21.0, ♀ 21.0; length of fore wing: ♂21.0, ♀ 25.5; width of fore wing: ♂7.0, ♀ 8.0; width of head including eyes: ♂6.0, ♀ 6.5; width of pronotum (including pronotal collar):♂ 7.0, ♀ 7.5; width of mesonotum:♂ 6.5, ♀ 7.0.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Biology.</bold>
+                        </title>
+                        <p>All the examined materials including the additional material were collected from the same tropical rainforest.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> China (Hainan).
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p>The specific name is derived from Latin prefix “<italic>longi-</italic>”and “<italic>dactyla</italic>” which refer to the long upper lobe of pygofer.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>We review the cicada genus<italic> Nipponosemia</italic> and describe a new species, <italic>N. longidactyla </italic>sp. n., for this genus in this paper. However, compared to other species of <italic>Nipponosemia</italic>, this new species has several peculiar characters, viz, the well developed upper <!--PageBreak--><!--PageBreak-->lobe of pygofer and the complicated and twisted median clasper process, as indicate that this species might not be congeneric to other species of<italic> Nipponosemia</italic>. We tentatively place this new species in <italic>Nipponosemia</italic> until its status being addressed definitely via phylogenetic analysis.
+            </p>
+            <p>Chen et al. (2012) reviewed the <italic>Mogannia</italic> from China and noted that the Cicadatrini (represented by <italic>Mogannia</italic>) could be a member of the subfamily Cicadettinae, but they tentatively retained it in the subfamily Cicadinae since other genera of Cicadatrini such as <italic>Nipponosemia</italic>, <italic>Cicadatra</italic>, <italic>etc</italic>. were not addressed. Herein, we scored the morphological attributes for <italic>Nipponosemia</italic> that are identified in Moulds (2005, Fig. 59 and associated text) as defining subfamilies. Similar to <italic>Mogannia</italic>, <italic>Nipponosemia</italic> also appears to be more allied to the Cicadettinae in having the following morphological characters: 1) width of first cubital cell of hind wing at distal end much broader than second cubital cell (twice or more); 2) upper lobe of pygofer present; 3) large claspers dominating the whole 10<sup>th</sup> abdominal segment; 4) uncus short, not dominant; 5) aedeagus restrained by claspers; and 6) fore wing vein CuA<sub>1</sub> divided by crossvein (m-cu) so that proximal portion is shorter. However, we tentatively retained <italic>Nipponosemia</italic> in Cicadinae, as the phylogenetic relationship of genera in the Cicadatrini (<italic>sensu</italic> Lee and Hill 2010) with other related taxa needs to be adequately analyzed by more morphological features and molecular data from extensive sampling taxa.
+            </p>
+            <p>Regarding the biogeography of <italic>Nipponosemia</italic>, <italic>N. terminalis</italic> has the widest distribution range among the five <italic>Nipponosemia</italic> species (Fig. 13), i.e., from southwestern China (Sichuan and Chongqing) to Taiwan Island and the southern Ryukyus. This disjunctive distribution indicates that <italic>N. terminalis</italic> had dispersed over oceanic barriers <!--PageBreak-->during the Ice Ages. The remaining species of <italic>Nipponosemia</italic> are all restricted to narrow regions: <italic>N. guangxiensis</italic> occurs in Guangxi Prov. of southern China and Vinh Phuc of northern Vietnam (Pham and Yang 2009); <italic>N. metulata</italic> is only known from Guangxi Prov. of China (Chou et al<italic>.</italic> 1993, 1997); <italic>N. virescens</italic> is restricted to southernmost Taiwan of China (Lee and Hayashi 2004); and <italic>N. longidactyla</italic> sp. n. is currently only known from Hainan Island of China. The above distribution pattern indicates that this genus is distributed in the Oriental Region, particularly southern China and Pacific islands adjacent to the China Mainland. Higher biodiversity of this genus in the Oriental Region probably can be revealed when more biodiversity inventory projects covering biodiversity hotspots there are completed.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>We are grateful to Ms. Xiao Chen (Northwest A&amp;F University, Yangling, China) for illustrating and photographing the known species of the genus <italic>Nipponosemia</italic>. This work is supported by the National Natural Science Foundation of China (Grant No. 31093430) and Program for New Century Excellent Talents in Universities of China (NCET-10-0691).
+            </p>
+            <!--PageBreak-->
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Chen</surname> <given-names>X</given-names></name>,<name name-style="western"><surname>Yang</surname> <given-names>MS</given-names></name>,<name name-style="western"><surname>Wei</surname> <given-names>C</given-names></name></person-group> (<year>2012</year>)<article-title> Review of the cicada genus <italic>Mogannia</italic> Amyot &amp; Serville from China, with descriptions of three new species (Hemiptera: Cicadidae).</article-title> <source>Zootaxa </source> <volume>3568</volume>: <fpage>1</fpage>-<lpage>35</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Chou</surname> <given-names>I</given-names></name>,<name name-style="western"><surname>Lei</surname> <given-names>ZR</given-names></name>,<name name-style="western"><surname>Li</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Lu</surname> <given-names>XL</given-names></name>,<name name-style="western"><surname>Yao</surname> <given-names>W</given-names></name></person-group> (<year>1997</year>)<source> The Cicadidae of China (Homoptera: Cicadoidea).</source> <publisher-name>Tianze Eldoneio</publisher-name>, <publisher-loc>Hong Kong</publisher-loc>, <lpage>380</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Chou</surname> <given-names>I</given-names></name>,<name name-style="western"><surname>Lei</surname> <given-names>ZR</given-names></name>,<name name-style="western"><surname>Wang</surname> <given-names>JJ</given-names></name></person-group> (<year>1993</year>)<article-title> A study on classification of the genus <italic>Nipponosemia</italic> Kato (Homoptera: Cicadoidea) from China.</article-title> <source>Entomotaxonomia </source> <volume>15</volume>: <fpage>82</fpage>-<lpage>86</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Duffels</surname> <given-names>JP</given-names></name>,<name name-style="western"><surname>van der</surname> <given-names>Laan PA</given-names></name></person-group> (<year>1985</year>)<fake_tag> Catalogue of the Cicadoidea (Homoptera, Auchenorhyncha) 1956–1980. Series Entomologica 34. Dr. W. Junk Publishers, Dordrecht, xiv+414 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hayashi</surname> <given-names>M</given-names></name></person-group> (<year>1974</year>)<fake_tag> Which tribe the genus <italic>Nipponosemia</italic> should belong to? Rostria 23: 123–127.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hayashi</surname> <given-names>M</given-names></name></person-group> (<year>1979</year>)<article-title> A list of Taiwanese Cicadidae collected by Prof. K. Kojima and Mr. S. Nakamura (Homoptera).</article-title> <source>Rostria </source> <volume>30</volume>: <fpage>259</fpage>-<lpage>262</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hayashi</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Saisho</surname> <given-names>Y</given-names></name></person-group> (<year>2011</year>)<source> The Cicadidae of Japan.</source> <publisher-name>Seibundo-shinkosha</publisher-name>, <publisher-loc>Tokyo</publisher-loc>, <lpage>224</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kato</surname> <given-names>M</given-names></name></person-group> (<year>1925a</year>)<article-title> Japanese Cicadidae, with descriptions of some new species and genera.</article-title> <source>Transactions of the Natural History Society of Formosa </source> <volume>15</volume>: <fpage>55</fpage>-<lpage>76</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kato</surname> <given-names>M</given-names></name></person-group> (<year>1925b</year>)<article-title> Japanese Cicadidae, with descriptions of new species.</article-title> <source>Transactions of the Natural History Society of Formosa </source> <volume>15</volume>: <fpage>1</fpage>-<lpage>47</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kato</surname> <given-names>M</given-names></name></person-group> (<year>1926</year>)<article-title> Japanese Cicadidae, with descriptions of four new species.</article-title> <source>Transactions of the Natural History Society of Formosa </source> <volume>16</volume>: <fpage>171</fpage>-<lpage>176</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lee</surname> <given-names>YJ</given-names></name></person-group> (<year>2012</year>)<article-title> Descriptions of two new genera and species of Cicadidae (Hemiptera) from India with some notes on tribal classification.</article-title> <source>Deutsche Entomologische Zeitschrift </source> <volume>59</volume>: <fpage>225</fpage>-<lpage>231</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lee</surname> <given-names>YJ</given-names></name>,<name name-style="western"><surname>Hayashi</surname> <given-names>M</given-names></name></person-group> (<year>2004</year>)<article-title> Taxonomic review of Cicadidae (Hemiptera, Auchenorrhyncha) from Taiwan, part 3. Dundubiini (two other genera of Cicadina), Moganiini, and Huechysini with a new genus and two new species.</article-title> <source>Journal of Asia-Pacific Entomology </source> <volume>7</volume>: <fpage>45</fpage>-<lpage>72</lpage>. doi: 10.1016/S1226-8615(08)60200-9
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lee</surname> <given-names>YJ</given-names></name>,<name name-style="western"><surname>Hill</surname> <given-names>KBR</given-names></name></person-group> (<year>2010</year>)<article-title> Systematic revision of the genus <italic>Psithyristria</italic> Stål (Hemiptera: Cicadidae) with seven new species and a molecular phylogeny of the genus and higher taxa.</article-title> <source>Systematic Entomology </source> <volume>35</volume>: <fpage>277</fpage>-<lpage>305</lpage>. doi: 10.1111/j.1365-3113.2009.00509.x
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Matsumura</surname> <given-names>S</given-names></name></person-group> (<year>1913</year>)<article-title> Thousand insects of Japan.</article-title> <source>Additamenta </source> <volume>1</volume>: <fpage>1</fpage>-<lpage>184</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Matsumura</surname> <given-names>S</given-names></name></person-group> (<year>1917</year>)<article-title> A list of the Japanese and Formosan Cicadidae, with descriptions of new species and genera.</article-title> <source>Transactions of the Sapporo Natural History Society </source> <volume>6</volume>: <fpage>186</fpage>-<lpage>212</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Metcalf</surname> <given-names>ZP</given-names></name></person-group> (<year>1963</year>)<fake_tag> General catalogue of the Homoptera, fascicle VIII, Cicadoidea, part 1. Cicadidae. section II. Gaeninae and Cicadinae. North Carolina State College, Raleigh,  587–919.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Moulds</surname> <given-names>MS</given-names></name></person-group> (<year>2005</year>)<article-title> An appraisal of the higher classification of cicadas (Hemiptera: Cicadoidea) with special reference to the Australian fauna.</article-title> <source>Records of the Australian Museum </source> <volume>57</volume>: <fpage>375</fpage>-<lpage>446</lpage>. doi: 10.3853/j.0067-1975.57.2005.1447
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pham</surname> <given-names>HT</given-names></name>,<name name-style="western"><surname>Yang</surname> <given-names>JT</given-names></name></person-group> (<year>2009</year>)<article-title> A contribution to the Cicadidae fauna of Vietnam (Hemiptera: Auchenorrhyncha), with one new species and twenty new records.</article-title> <source>Zootaxa </source> <volume>2249</volume>: <fpage>1</fpage>-<lpage>19</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schumacher</surname> <given-names>F</given-names></name></person-group> (<year>1915</year>)<article-title> Homoptera in Sauter’s Formosa-Ausbcute.</article-title> <source>Supplementa Entomologica </source> <volume>4</volume>: <fpage>108</fpage>-<lpage>142</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wei</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Zubair</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Rizvi</surname> <given-names>SA</given-names></name></person-group> (<year>2010</year>)<article-title> <italic>Shaoshia</italic>, an unusual new cicada genus from Pakistan with the description of a new species (Hemiptera: Cicadidae).</article-title> <source>Zootaxa </source> <volume>2421</volume>: <fpage>28</fpage>-<lpage>34</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p><italic>Nipponosemia terminalis</italic> (Matsumura, 1913),male. <bold>A</bold> habitus, dorsal view <bold>B</bold> habitus, ventral view <bold>C</bold> head and thorax, dorsal view <bold>D</bold> face <bold>E</bold> abdomen and posterior part of thorax, ventral view<bold> F </bold>timbal and timbal cover, dorsal view<bold> G </bold>left fore leg, showing the spines on fore femur.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p><italic>Nipponosemia terminalis</italic> (Matsumura, 1913),male. <bold>A, C</bold> male genitalia, left lateral view<bold> B, D</bold> male genitalia, ventral view. ds, distal shoulder; mcp, median clasper process; mdl, median lobe of uncus; upl, upper lobe of pygofer.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p><italic>Nipponosemia terminalis</italic> (Matsumura, 1913),female. <bold>A</bold> female genitalia, left lateral view<bold> B </bold>female genitalia, ventral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p><italic>Nipponosemia metulata</italic> Chou &amp; Lei, 1993,male. <bold>A</bold> habitus, dorsal view<bold> B </bold>habitus, ventral view<bold> C </bold>head and thorax, dorsal view<bold> D </bold>face<bold> E </bold>abdomen and posterior part of thorax, ventral view<bold> F </bold>timbal and timbal cover, dorsal view<bold> G </bold>left fore leg, showing the spines on fore femur.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figure 5.</label>
+            <caption><p><italic>Nipponosemia metulata</italic> Chou &amp; Lei, 1993,male. <bold>A, C</bold> male genitalia, left lateral view<bold> B, D</bold> male genitalia, ventral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F6" position="float" orientation="portrait">
+            <label>Figure 6.</label>
+            <caption><p><italic>Nipponosemia metulata</italic> Chou &amp; Lei, 1993,female. <bold>A</bold> female genitalia, left lateral view<bold> B </bold>female genitalia, ventral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F7" position="float" orientation="portrait">
+            <label>Figure 7.</label>
+            <caption><p><italic>Nipponosemia guangxiensis</italic> Chou &amp; Wang, 1993,male. <bold>A</bold> habitus, dorsal view<bold> B </bold>habitus, ventral view<bold> C </bold>head and thorax, dorsal view<bold> D </bold>face<bold> E </bold>abdomen and posterior part of thorax, ventral view<bold> F </bold>timbal and timbal cover, dorsal view<bold> G </bold>left fore leg, showing the spines on fore femur.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g007.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F8" position="float" orientation="portrait">
+            <label>Figure 8.</label>
+            <caption><p><italic>Nipponosemia guangxiensis</italic> Chou &amp; Wang, 1993,male. <bold>A, C</bold> male genitalia, left lateral view<bold> B, D</bold> male genitalia, ventral view. un, uncus; lcl, lateral clasper lobe.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g008.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F9" position="float" orientation="portrait">
+            <label>Figure 9.</label>
+            <caption><p><italic>Nipponosemia guangxiensis</italic> Chou &amp; Wang, 1993,female. <bold>A</bold> female genitalia, left lateral view<bold> B </bold>female genitalia, ventral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g009.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F10" position="float" orientation="portrait">
+            <label>Figure 10.</label>
+            <caption><p><italic>Nipponosemia</italic> <italic>longidactyla</italic> sp. n.,male. <bold>A</bold> habitus (holotype), dorsal view<bold> B </bold>habitus (holotype), ventral view<bold> C </bold>head and thorax (paratype), dorsal view<bold> D </bold>face (paratype)<bold> E </bold>abdomen and posterior part of thorax (paratype), ventral view<bold> F </bold>timbal and timbal cover (paratype), dorsal view<bold> G </bold>left fore leg (paratype), showing the spines on fore femur.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g010.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F11" position="float" orientation="portrait">
+            <label>Figure 11.</label>
+            <caption><p><italic>Nipponosemia</italic> <italic>longidactyla</italic> sp. n., male (holotype). <bold>A, C</bold> male genitalia, left lateral view<bold> B, D</bold> male genitalia, ventral view</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g011.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F12" position="float" orientation="portrait">
+            <label>Figure 12.</label>
+            <caption><p><italic>Nipponosemia</italic> <italic>longidactyla</italic> sp. n., female (paratype). <bold>A</bold> female genitalia, left lateral view<bold> B </bold>female genitalia, ventral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g012.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F13" position="float" orientation="portrait">
+            <label>Figure 13.</label>
+            <caption><p>Distribution of <italic>Nipponosemia</italic> species. <italic>N. terminalis</italic> (triangle);<italic> N. metulata</italic> (round);<italic> N. guangxiensis</italic> (five-pointed star);<italic> N. virescens</italic> (diamond);<italic> N. longidactyla</italic> sp. n. (square).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-019-g013.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

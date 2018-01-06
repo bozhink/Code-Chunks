@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" >
+	<!-- XML Catalog Data for XMLSpec V2.10 -->
+	<public publicId="-//W3C//DTD Specification V2.10//EN" uri="files/xmlspec.dtd"/>
+	<!-- The following public identifier mapping is included because our XML spec examples use it -->
+	<public publicId="-//W3C//DTD Specification V2.2//EN" uri="files/xmlspec.dtd"/>
+	<!-- End of XML Catalog Data for XMLSpec V2.10 -->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/xmlspec/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/xmlspec/' rewritePrefix='files/'/>
+</catalog>

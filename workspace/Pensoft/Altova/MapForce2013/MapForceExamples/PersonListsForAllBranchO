@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="38784368" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="xslt2"/>
+		<sources>
+			<datapoint name="OfficeName" datatype="string" connectiontype="0"/>
+		</sources>
+		<structure>
+			<children>
+				<component name="filter" library="core" uid="54360536" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+						<datapoint/>
+					</targets>
+					<view ltx="430" lty="-15" rbx="-18" rby="-34"/>
+				</component>
+				<component name="exists" library="core" uid="54360537" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="326" lty="83" rbx="-1" rby="30"/>
+				</component>
+				<component name="constant" library="core" uid="54360535" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="225" lty="70" rbx="-78" rby="-11"/>
+					<data>
+						<constant value=".xml" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="54360534" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="25"/>
+						<datapoint pos="1" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="301" lty="-8" rbx="-69" rby="-14"/>
+				</component>
+				<component name="document" library="xml" uid="39018568" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" AddSchemaLocation="0"/>
+					<view rbx="160" rby="279"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BranchOffices" expanded="1">
+										<entry name="Office" expanded="1">
+											<entry name="Name" outkey="24"/>
+											<entry name="Address" expanded="1"/>
+											<entry name="Contact" outkey="13" expanded="1">
+												<entry name="first" outkey="21"/>
+												<entry name="last" outkey="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" inputinstance="BranchOffices.xml" outputinstance="BranchOffices.xml" instanceroot="{}BranchOffices"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="38594440" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="583" lty="-6" rbx="733" rby="194"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" inpkey="8" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PersonList" expanded="1">
+										<entry name="Person" inpkey="14" expanded="1">
+											<entry name="First" inpkey="22"/>
+											<entry name="Last" inpkey="2"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList" userdefinedschemalocation="PersonList.xsd" sps="PersonList.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+							<edge vertexkey="16" edgekey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="22" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

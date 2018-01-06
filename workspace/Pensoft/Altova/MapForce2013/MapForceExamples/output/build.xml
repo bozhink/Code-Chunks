@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="MapForceExamples" default="test" basedir=".">
+	<property name="build.sysclasspath" value="last"/>
+
+	<target name="compile">
+		<javac srcdir="." classpath="." />
+	</target>
+	<target name="test" depends="compile">
+		<java classpath="C:\Users\Bozhin Karaivanov\Documents\Altova\MapForce2013\MapForceExamples\output" classname="com.mapforce.MapForceExamplesConsole" fork="true" failonerror="true">
+			<arg line="${cmdline}"/>
+		</java>
+	</target>
+	<target name="clean">
+		<delete>
+			<fileset dir=".">
+				<include name="**/*.class"/>
+				<include name="*.jar"/>
+			</fileset>
+		</delete>
+	</target>
+	<target name="manifest" depends="compile">
+		<mkdir dir="C:\Users\Bozhin Karaivanov\Documents\Altova\MapForce2013\MapForceExamples\output/META-INF"/>
+		<manifest file="C:\Users\Bozhin Karaivanov\Documents\Altova\MapForce2013\MapForceExamples\output/META-INF/MANIFEST.MF" mode="replace">
+			<attribute name="Created-By" value="MapForce 2013r2"/>
+			<attribute name="Main-Class" value="com.mapforce.MapForceExamplesConsole"/>
+		</manifest>
+	</target>
+	<target name="jar" depends="manifest">
+		<jar destfile="MapForceExamples.jar" manifest="C:\Users\Bozhin Karaivanov\Documents\Altova\MapForce2013\MapForceExamples\output/META-INF/MANIFEST.MF" basedir="." includes="**/*.xml **/*.class **/*.png **/*.wsdl **/MANIFEST.MF" excludes="**/*.java"/>
+	</target>
+</project>

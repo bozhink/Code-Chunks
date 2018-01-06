@@ -1,0 +1,380 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4452</article-id>
+            <title-group>
+                <article-title>New distributional and bioacoustic data about 
+                    <bold-italic>Cicadivetta goumenissa</bold-italic> from Peloponnese, Greece (Hemiptera, Cicadidae)
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Gogala</surname>
+                        <given-names>Matija</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Drosopoulos</surname>
+                        <given-names>Sakis</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Trilar</surname>
+                        <given-names>Tomi</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A3">3</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Slovenian Academy of Sciences and Arts, Novi trg 3, SI-1000 Ljubljana, Slovenia
+            </aff>
+            <aff id="A2">
+                <label>2</label>Elatis 6, GR-14564, Nea Kifisia, Greece
+            </aff>
+            <aff id="A3">
+                <label>3</label>Slovenian Museum of Natural History, Prešernova 20, SI-1000 Ljubljana, Slovenia
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Matija Gogala (<email xlink:type="simple">matija.gogala@guest.arnes.si</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>5</day>
+                    <month>12</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>4</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Matija Gogala, Sakis Drosopoulos, Tomi Trilar</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p><italic>Cicadivetta goumenissa,</italic> a small singing cicada described recently by Gogala, Drosopoulos and Trilar (2012), has been previously found only around the village of Goumenissa in northern Peloponnese. We visited this area again in June 2012 and tried to determine the distribution range of this species. We found <italic>C. goumenissa </italic>in some further localities, but all within a very small area of about 15 by 25 km. We also made more than one hour of new song recordings and extended our knowledge of the song repertoire of this species.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Hemiptera</kwd>
+                <kwd>Cicadidae</kwd>
+                <kwd><italic>Cicadivetta goumenissa</italic>
+                </kwd>
+                <kwd>geographical distribution</kwd>
+                <kwd>song pattern
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>We found and described this year the new cicada species <italic>Cicadivetta goumenissa</italic> Gogala, Drosopoulos, Trilar 2012 in just a small area in northern Peloponnese, Greece (Gogala et al. 2012). As mentioned in the paper, we first discovered this species in 2005 near the village of Goumenissa by its characteristic high pitched song with very fast repetitions of short echemes, interrupted by single long echemes. Until this year, we have <!--PageBreak-->never heard such sound pattern or ever collected this cicada in any other parts of the Peloponnese or elsewhere during our field work. Therefore, we decided to visit this area again this year (2012) to get more data on this peculiar cicada and to find out whether <italic>C. goumenissa</italic> is really restricted just to this locality and possibly why.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Materials and methods
+</bold>
+            </title>
+            <p>We made a field trip to the Peloponnese from 9 to 11 of June, 2012. From previous visits to this area in 2005, 2006 and 2010 we knew that <italic>C. goumenissa </italic>could not be found in July or later in the year.
+            </p>
+            <p>We were searching for the presence of this cicada with bioacoustic equipment described below in localities around Kalavrita, Goumenissa, Pteri, Manesi, Vlasia, Dendra, Mirali, Priolithos, Lagovouni and on Mt. Erymanthos (see Table 1).
+</p>
+            <p>For the names and spelling of localities we follow the local inscriptions and transliterations used in the maps of the “Road Editions”, Nr. 4 and 5, Athens (1996).
+</p>
+            <p>The distribution map was created by GPS Visualizer (Schneider 2003–2012).
+</p>
+            <p>For acoustic detection and recording of songs we used the ultrasonic detector Pettersson D-200 (heterodyne system) with electret microphones of the same producer (frequency range 10–120 kHz), mounted in front of a Telinga reflector (57 cm diameter) or a Renault R-4 front light reflector and connected to the solid state recorders Marantz PMD-660 (sampling rate up to 48 kS) or Zoom H2 (sampling rate up to 96 kS). Due to the high frequency range (see Gogala et al. 2012), we would not have been able to hear the acoustic signals of this cicada species without ultrasonic detectors. For sound analyses we used RAVEN 1.4 (Cornell Lab of Ornithology) and AMADEUS Pro 2.0 (HairerSoft). We first localized cicadas acoustically and then, if possible, collected them with an entomological net.
+</p>
+            <p>For the nomenclature of cicadas we are following the publication of Puissant and Sueur (2010).
+</p>
+            <p>Collected specimens are deposited in the collection of the Slovenian Museum of Natural History (PMSL). Song recordings are deposited in the Slovenian Wildlife Sound Archive of the same museum. A sample of a selected recording is available on the web pages Songs of European singing cicadas (http://www.cicadasong.eu).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <p><bold>Distribution area:</bold>
+            </p>
+            <p>We visited 13 localities in June 2012 and two more in previous years in the neighbourhood of Goumenissa (covering more than 200 km<sup>2</sup>) and tried to detect the characteristic sounds of <italic>C. goumenissa</italic>. Reference to other cicada species found is also given (Table 1). Moreover, the visited localities are also shown on the map, where the places with presence of <italic>C. goumenissa </italic>are shown in red and those without this species in green (Fig. 2).
+            </p>
+            <p><!--PageBreak--><!--PageBreak-->During the last eight years we have searched for cicadas in many other localities in Greece, including several field trips to other parts of the Peloponnese (Mt. Menalo, Mt. Parnon, Kastanitsa, Agios Andreas etc.) and have never heard, recorded or collected <italic>C. goumenissa</italic>. Therefore we assume that the distribution area of this species is really restricted to a very small area, not exceeding about 15 by 25 km.
+            </p>
+            <p><bold>Song pattern:</bold>
+            </p>
+            <p>During our last excursion to the Kalavrita and Goumenissa region we made many new recordings (more than one hour) of the <italic>C. goumenissa </italic>song. Therefore, we can further comment on our description of the song pattern published previously (Gogala et al. 2012).
+            </p>
+            <p>The main addition to this description is that the part of the song with longer echemes and a few or even without short echemes interspersed is apparently a regular part of the song and not an exception. Such phrases appear usually in the middle part of a song sequence (Fig. 3). The long echemes (LE) in such phrases can in extreme <!--PageBreak--><!--PageBreak-->cases fuse to the longest echemes (XLE), which can last up to 15 s. Therefore the part of a song with such extremely long echemes resembles the so called continuous song of <italic>Cicadatra atra</italic> or related species.
+            </p>
+            <p>The whole song starts usually, but not always, with a long echeme followed by a sequence of short echemes (SE). The first long echeme may have also a preceding SE. <!--PageBreak-->The main part of the song comprises phrases of some SE and one LE, as described previously (Gogala et al. 2012). At the end of a song there are usually longer sequences of SE, interrupted only by a few LE (Fig. 4). The repetition rate of SE is as described previously 19±3 SE/s and at the end of a song usually falls down to 10±2 SE/s. The whole song lasts between a few ten seconds and 3 – 4 minutes, and may be repeated without a longer pause or after a short silent period. We observed many times that the males in this silent period or at the end of a song fly away and change the singing post.
+</p>
+            <p>In most cases <italic>C. goumenissa</italic> males are perching and singing on branches of Kermes Oak (<italic>Quercus coccifera</italic>)as described earlier (Gogala et al. 2012) (Fig. 1)<italic>.</italic> However, in one locality we observed and recorded some males for hours also on one and the same tree of Oriental Plane (<italic>Platanus orientalis</italic>).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>Why this cicada species is present only in such a restricted area, as described above, is one of the most puzzling questions concerning <italic>C. goumenissa. </italic>We do not see any reason why this cicada would not be able to move to other places, disperse and acquire similar habitats nearby. One possible explanation is that they are, unlike other cicadas, in the larval stage bound to restricted plant species. However, we do not have yet any sound evidence for this hypothesis. Nevertheless, the distribution of endemic cicada species of Evia shows clear similarities with the distribution of endemic plant species on this island (Gogala et al. 2011). Some endemic plants of the Peloponnese are also restricted to small mountainous areas similar to that of the present cicada, as is described by Kit Tan and Iatrou (2006). But we do not know if any of them is in any way connected with this insect.
+            </p>
+            <p>The type of vegetation in the distribution area of <italic>C. goumenissa</italic> is everywhere very similar and can be described as garrigue or phrygana vegetation with Kermes Oak (<italic>Quercus coccifera</italic>)and other typical shrubs (Fig. 5)<italic>.</italic>
+            </p>
+            <p>Another possibility would be that this species was in the geological past confined to a small refugium and adapted to particular environmental conditions, which can be found only in the described habitat in this area. We have seen that one environmental parameter, the elevation of localities with <italic>C. goumenissa</italic>, is in all cases very similar. The lowest value is according to our measurements 670 m, the highest 860 m and the average 750 m. Is here hidden a hint for its limited distribution?
+            </p>
+            <p>In the paper with the original description of <italic>C. goumenissa</italic> we have already mentioned the unusually high repetition rate of short echemes in the song (13-22 SE/s). In the southern part of Greece there are some other species with a high SE rate such as <italic>Cicadivetta flaveola </italic>(7-11 SE/s), which is found everywhere on the Peloponnese and in some other localities on the Greek mainland. This species occurs also in the distribution area of <italic>C. goumenissa </italic>in sympatry with the latter. Another example is also <italic>Cicadivetta carayoni</italic> (Boulard 1982), an endemic species of Crete with a similar rate of SE in its song (Trilar and Gogala 2010), which according to Puissant and <!--PageBreak-->Sueur (2010) also belongs to the same genus. But even many species of the genus <italic>Cicadetta – </italic>e.g.<italic> C. hannekeae </italic>Gogala, Drosopoulos, Trilar 2008<italic>, C. macedonica </italic>Schedl 1999<italic>, C. dirfica </italic>Gogala, Trilar, Drosopoulos 2011or<italic> C. kissavi </italic>Gogala, Drosopoulos, Trilar 2009 -all occurring in various regions of Greece,share with these species long sequences of short echemes and some long echemes. Nevertheless, none of them reaches such a high repetition rate of short echemes in their calling songs, as does <italic>C. goumenissa</italic>. Similarly high repetition rates of SE were reported for some western European species like some species of the genus <italic>Tettigettalna </italic>(Puissant and Sueur 2010).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Conclusions
+</bold>
+            </title>
+            <p><italic>Cicadivetta goumenissa</italic> occurs particularly in early June. It is, as expected, not restricted to the neighbourhood of the village Goumenissa, but can be found also in surrounding localities with a similar habitat. Nevertheless, we found it only in an area of about 15 ×25 km. From the new sound recordings here analysed we came to the conclusion that also the phrases with long echemes and without or with only a few short echemes are a regular component of its song and not just an exception.
+            </p>
+            <!--PageBreak-->
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>We are grateful to Andrej Gogala (Slovenian Museum of Natural History, Ljubljana), who did again the preparations of the material. We appreciate the financial support to one of us (MG) by the Slovenian Academy of Sciences and Arts. The research of one of us (TT) was part of the program “Communities, relations and communications in the ecosystems” (No. P1- 0255) financed by Ministry of Higher Education, Science and Technology of the Republic of Slovenia. We are grateful to both reviewers Jérôme Sueur and José Quartau for useful suggestions and corrections.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gogala</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Drosopoulos</surname> <given-names>S</given-names></name></person-group> (<year>2006</year>)<article-title> Song of <italic>Cicadetta flaveola</italic> Brullé (Auchenorrhyncha: Cicadoidea: Tibicinidae) from Greece.</article-title> <source>Russian Entomological Journal </source> <volume>15</volume> (<issue>3</issue>): <fpage>275</fpage>-<lpage>278</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gogala</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Drosopoulos</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Trilar</surname> <given-names>T</given-names></name></person-group> (<year>2012</year>)<article-title> <italic>Cicadivetta goumenissa,</italic> a new cicada species from Peloponesos, Greece (Hemiptera: Cicadidae).</article-title> <source>Acta entomologica slovenica </source> <volume>20</volume> (<issue>1</issue>): <fpage>5</fpage>-<lpage>16</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gogala</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Trilar</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Drosopoulos</surname> <given-names>S</given-names></name></person-group> (<year>2011</year>)<article-title> Two new species and a new genus of Cicadettini (Hemiptera, Cicadidae) from the Greek island of Evia.</article-title> <source>Deutsche entomologische Zeitschrift </source> <volume>58</volume> (<issue>1</issue>): <fpage>105</fpage>-<lpage>117</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kit</surname> <given-names>Tan</given-names></name>,<name name-style="western"><surname>Iatrou</surname> <given-names>G</given-names></name></person-group> (<year>2001</year>)<source> Endemic plants of Greece - The Peloponnese.</source> <publisher-name>Gad Publishers</publisher-name>, <publisher-loc>Copenhagen</publisher-loc>, <lpage>480</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Puissant</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Sueur</surname> <given-names>J</given-names></name></person-group> (<year>2010</year>)<article-title> A hotspot for Mediterranean cicadas (Insecta: Hemiptera: Cicadidae): new genera, species and songs from southern Spain.</article-title> <source>Systematics and Biodiversity </source> <volume>8</volume> (<issue>4</issue>): <fpage>555</fpage>-<lpage>574</lpage>. doi: 10.1080/14772000.2010.532832
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schneider</surname> <given-names>A</given-names></name></person-group> (<year>2003–2012</year>)<fake_tag> GPS Visualizer. http://www.gpsvisualizer.com [1.12.2012]
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Trilar</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Gogala</surname> <given-names>M</given-names></name></person-group> (<year>2010</year>)<article-title> <italic>Tettigetta carayoni</italic> Boulard (Hemiptera: Cicadidae) from Crete, faunistic data and first description of its song.</article-title> <source>Acta entomologica slovenica </source> <volume>18</volume> (<issue>1</issue>): <fpage>5</fpage>-<lpage>18</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> List of localities, where we searched for <italic>Cicadivetta goumenissa</italic>. In the table are given the names of the localities (column 1), dates of visits (column 2), geographic coordinates with elevations (column 3) and names of the cicadas, heard (H), recorded (R), collected (C), observed (O) or photographed (P) in a particular locality (column 4). Included are also data from previous years. The shortened scientific names of species represent the following taxa:&lt;br/&gt; <bold-italic>C. goumenissa</bold-italic><italic> – Cicadivetta goumenissa </italic>Gogala, Drosopoulos, Trilar 2012&lt;br/&gt; <italic>C. flaveola – Cicadivetta flaveola</italic> (Brullé 1832)&lt;br/&gt; <italic>C. hannekeae – Cicadetta hannekeae </italic>Gogala, Drosopoulos, Trilar 2008&lt;br/&gt; <italic>C. atra – Cicadatra atra </italic>Fieber 1776&lt;br/&gt; <italic>C. orni – Cicada orni </italic>Linné 1758&lt;br/&gt; <italic>D. dimissa – Dimissalna dimissa</italic> (Hagen 1856)&lt;br/&gt; <italic>L. plebejus – Lyristes plebejus </italic>(Scopoli 1763)&lt;br/&gt; <italic>P. annulata – Pagiphora annulata</italic> (Brullé 1832)&lt;br/&gt; <italic>T. haematodes – Tibicina haematodes </italic>(Scopoli 1763)&lt;br/&gt; <italic>T. pygmea – Tettigetula pygmea </italic>(Olivier 1790)&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="0" bodyRowCount="18" columnCount="4" aid:table="table" aid:trows="18" aid:tcols="4">
+                <tbody>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Goumenissa</td>
+                        <td rowspan="1" colspan="1">9. 6. 2005</td>
+                        <td rowspan="1" colspan="1">N38°3.63', E22°1.87'&lt;br/&gt; 780 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa </bold-italic><italic>– </italic>R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" colspan="1">Kalavryta, Goumenissa,&lt;br/&gt; deviation to Pteri</td>
+                        <td rowspan="1" colspan="1">9. 6. 2005</td>
+                        <td rowspan="1" colspan="1">N38°3.10, E22°1.72&lt;br/&gt; 740 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa </bold-italic><italic>– </italic>C, R&lt;br/&gt; <italic>T. pygmea</italic> – R
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">9. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°3.10', E 22°1.63'&lt;br/&gt; 720 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – C, R&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>D. dimissa</italic> – R&lt;br/&gt; <italic>T. haematodes</italic> – H, O
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">28. 6. 2006</td>
+                        <td rowspan="1" colspan="1">N38°3.10', E22°1.72'&lt;br/&gt; 720 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – C, R&lt;br/&gt; <italic>C. atra</italic> – H&lt;br/&gt; <italic>T. haematodes</italic> – C&lt;br/&gt; <italic>D. dimissa</italic> – H&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>C. flaveola</italic> – C, F&lt;br/&gt; <italic>L. plebejus</italic> – H
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">16. 7. 2010</td>
+                        <td rowspan="1" colspan="1">N38°2.80', E22°1.30'&lt;br/&gt; 720 m</td>
+                        <td rowspan="1" colspan="1"><italic>C. orni</italic> – H&lt;br/&gt; <italic>L. plebejus</italic> – H&lt;br/&gt; <italic>T. haematodes</italic> – H&lt;br/&gt; <italic>C. flaveola</italic> – C, R, P&lt;br/&gt; <italic>C. atra</italic> – H&lt;br/&gt; <italic>T. pygmea</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Petsaki, deviation to Valta</td>
+                        <td rowspan="1" colspan="1">28. 6. 2006</td>
+                        <td rowspan="1" colspan="1">N38°7.07', E22°3.32'&lt;br/&gt; 970 m</td>
+                        <td rowspan="1" colspan="1"><italic>C. flaveola</italic> – R&lt;br/&gt; <italic>C. atra</italic> – H&lt;br/&gt; <italic>D. dimissa</italic> – H&lt;br/&gt; <italic>L. plebejus</italic> – P 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Skepasto (near the road to Goumenissa)</td>
+                        <td rowspan="1" colspan="1">9. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°1.70', E22°2.77'&lt;br/&gt; 800 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta,&lt;br/&gt; Mega Spileo</td>
+                        <td rowspan="1" colspan="1">9. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°5.29', E22°10.36'&lt;br/&gt; 830 m</td>
+                        <td rowspan="1" colspan="1"><italic>D. dimissa – </italic>R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, (deviation to Kerpini and Rogi)</td>
+                        <td rowspan="1" colspan="1">9. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°3.28', E22°8.51'&lt;br/&gt; 740 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – R&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>T. haematodes</italic> – H&lt;br/&gt; <italic>C. flaveola</italic> – C, R
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta,&lt;br/&gt; road to Mt. Helmos</td>
+                        <td rowspan="1" colspan="1">10. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°1.51', E22°7.75'&lt;br/&gt; 970 m</td>
+                        <td rowspan="1" colspan="1"><italic>C. hannekeae</italic> – R&lt;br/&gt; <italic>T. haematodes</italic> – H&lt;br/&gt; <italic>C. flaveola</italic> – R&lt;br/&gt; <italic>D. dimissa</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Manesi</td>
+                        <td rowspan="1" colspan="1">10. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°0.83', E21°56.69'&lt;br/&gt; 860 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – R&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>T. haematodes</italic> – H&lt;br/&gt; <italic>C. flaveola</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Ano Vlasia,&lt;br/&gt; Mt. Erymanthos</td>
+                        <td rowspan="1" colspan="1">10. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N37°58.00', E21°53.85'&lt;br/&gt; 1140 m</td>
+                        <td rowspan="1" colspan="1"><italic>C. hannekeae</italic> – R&lt;br/&gt; <italic>T. haematodes</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Lagovouni</td>
+                        <td rowspan="1" colspan="1">10. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N37°57.75', E22°3.40'&lt;br/&gt; 770 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Lagovouni, deviation to Kandalos</td>
+                        <td rowspan="1" colspan="1">10. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N37°57.11', E22°2.92'&lt;br/&gt; 750 m</td>
+                        <td rowspan="1" colspan="1"><italic>D. dimissa</italic> – R&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>C. flaveola</italic> – R&lt;br/&gt; <italic>T. haematodes</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Klitoria, Priolithos, near the monument</td>
+                        <td rowspan="1" colspan="1">10. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N37°54.97', E22°2.99'&lt;br/&gt; 1020 m</td>
+                        <td rowspan="1" colspan="1"><italic>T. pygmea</italic> – R&lt;br/&gt; <italic>C. flaveola</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Kalavryta, Kampigadi, Dendra</td>
+                        <td rowspan="1" colspan="1">11. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°2.40', E21°52.94'&lt;br/&gt; 670 m</td>
+                        <td rowspan="1" colspan="1"><bold-italic>C. goumenissa</bold-italic> – C, R<italic>&lt;br/&gt; P. annulata</italic> – H&lt;br/&gt; <italic>T. haematodes</italic> – R&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>C. flaveola</italic> – R&lt;br/&gt; <italic>D. dimissa</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Halandritsa,&lt;br/&gt; deviation to Mirali</td>
+                        <td rowspan="1" colspan="1">11. 6. 2012</td>
+                        <td rowspan="1" colspan="1">N38°5.75', E21°48.76'&lt;br/&gt; 470 m</td>
+                        <td rowspan="1" colspan="1"><italic>P. annulata</italic> – H&lt;br/&gt; <italic>T. haematodes</italic> – R&lt;br/&gt; <italic>T. pygmea</italic> – R&lt;br/&gt; <italic>D. dimissa</italic> – R 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Pteri</td>
+                        <td rowspan="1" colspan="1">28. 6. 2006</td>
+                        <td rowspan="1" colspan="1">N38°8.79', E22°4.53'&lt;br/&gt; 1060 m</td>
+                        <td rowspan="1" colspan="1"><italic>C. hannekeae </italic>– R&lt;br/&gt; <italic>C. flaveola </italic>– C, R, P
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p>Male of<italic>Cicadivetta goumenissa</italic> on leaves of Kermes Oak (<italic>Quercus coccifera</italic>)(Photo T. Trilar).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p>Distribution map of <italic>Cicadivetta goumenissa. </italic>Red points – localities with <italic>C. goumenissa</italic>, green points – localities where we searched for but did not find this species. Map created by GPS Visualizer (Schneider 2003-2012). Inset: position of localities on Peloponnese peninsula.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p>Oscillogram of the song selection of <italic>Cicadivetta goumenissa</italic> with the transition from prevailing phrases with SE sequence followed by LE toward the phrases with very long echemes XLE with a few SE or without them.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p>Oscillogram of the song selection of <italic>Cicadivetta goumenissa</italic> at the end of the song with long sequences of SE and with decreasing repetition rate.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figure 5.</label>
+            <caption><p>The garrigue or phrygana habitat in the locus typicus of <italic>Cicadivetta goumenissa</italic> near Goumenissa.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

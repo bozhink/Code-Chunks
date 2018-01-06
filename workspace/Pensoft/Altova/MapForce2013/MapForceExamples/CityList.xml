@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The list of cities below are used with the US-WeatherForcast.mfd example -->
+<CityList>
+	<City>
+		<CityName>New York</CityName>
+		<CityState>NY</CityState>
+	</City>
+	<City>
+		<CityName>San Francisco</CityName>
+		<CityState>CA</CityState>
+	</City>
+	<!-- The cities below are commented out -->
+	<!-- remove comments for even further output -->
+	<!-- 
+	<City>
+		<CityName>Miami</CityName>
+		<CityState>FL</CityState>
+	</City>
+	<City>
+		<CityName>Seattle</CityName>
+		<CityState>WA</CityState>
+	</City>
+	<City>
+		<CityName>Chicago</CityName>
+		<CityState>IL</CityState>
+	</City>
+    -->
+</CityList>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="18">
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="7" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="6"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="306" lty="282" rbx="359" rby="338"/>
+				</component>
+				<component name="equal" library="core" uid="14" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="306" lty="373" rbx="359" rby="429"/>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="212" lty="416" rbx="273" rby="434"/>
+					<data>
+						<constant value="Last" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="212" lty="325" rbx="273" rby="343"/>
+					<data>
+						<constant value="First" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Property" library="core" uid="5" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+						<datapoint/>
+					</targets>
+					<view ltx="401" lty="244" rbx="504" rby="300"/>
+				</component>
+				<component name="Property" library="core" uid="13" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="22"/>
+						<datapoint/>
+					</targets>
+					<view ltx="401" lty="335" rbx="504" rby="391"/>
+				</component>
+				<component name="structure" library="core" uid="19" kind="29">
+					<properties/>
+					<view ltx="537" lty="322" rbx="639" rby="358"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when" inpkey="57"/>
+							<entry name="document" expanded="1">
+								<entry name="value" ns="1" inpkey="19" outkey="26"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<variable datatype="string"/>
+						<parameter usageKind="variable"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="674" lty="88" rbx="803" rby="106"/>
+					<data>
+						<constant value="List of participants" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="28"/>
+					</targets>
+					<view ltx="674" lty="292" rbx="717" rby="310"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="16" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="29"/>
+						<datapoint pos="1" key="30"/>
+						<datapoint pos="2" key="31"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="777" lty="253" rbx="861" rby="329"/>
+				</component>
+				<component name="structure" library="core" uid="21" kind="29">
+					<properties/>
+					<view ltx="443" lty="116" rbx="545" rby="152"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when" inpkey="34"/>
+							<entry name="document" expanded="1">
+								<entry name="value" ns="1" inpkey="35" outkey="36"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<variable datatype="string"/>
+						<parameter usageKind="variable"/>
+					</data>
+				</component>
+				<component name="string-join" library="core" uid="11" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="23"/>
+						<datapoint pos="2" key="24"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="674" lty="112" rbx="788" rby="185"/>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="595" lty="167" rbx="641" rby="185"/>
+					<data>
+						<constant value=", " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="9" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="841" lty="16" rbx="1043" rby="162"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ShortInfo" expanded="1">
+										<entry name="Info" expanded="1">
+											<entry name="Title" inpkey="1"/>
+											<entry name="Description" expanded="1">
+												<entry name="#text" inpkey="37"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ShortInfo.xsd" instanceroot="{}ShortInfo" sps="ShortInfo.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="8" lty="112" rbx="218" rby="231"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="KeyValueList" expanded="1">
+										<entry name="Item" outkey="33" expanded="1">
+											<entry name="Property" outkey="9" expanded="1">
+												<entry name="Key" type="attribute" outkey="10"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="KeyValueList.xsd" inputinstance="KeyValueList.xml" instanceroot="{}KeyValueList"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="structure" library="core" uid="18" kind="29">
+					<properties/>
+					<view ltx="537" lty="231" rbx="639" rby="267"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="compute-when" inpkey="58"/>
+							<entry name="document" expanded="1">
+								<entry name="value" ns="1" inpkey="17" outkey="27"/>
+							</entry>
+						</root>
+						<wsdl/>
+						<variable datatype="string"/>
+						<parameter usageKind="variable"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="38">
+						<data>
+							<dataconnection name="Person"/>
+						</data>
+					</edge>
+					<edge edgekey="39">
+						<data>
+							<dataconnection name="First name"/>
+						</data>
+					</edge>
+					<edge edgekey="40">
+						<data>
+							<dataconnection name="Last name"/>
+						</data>
+					</edge>
+					<edge edgekey="41">
+						<data>
+							<dataconnection name="Full name"/>
+						</data>
+					</edge>
+					<edge edgekey="56">
+						<data>
+							<dataconnection name="All names"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="4" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="6" edgekey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="3" edgekey="44"/>
+							<edge vertexkey="11" edgekey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="5" edgekey="46"/>
+							<edge vertexkey="16" edgekey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15" edgekey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="17" edgekey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="24" edgekey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="1" edgekey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="19" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="37" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="31" edgekey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="29" edgekey="39"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="30" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="35" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34" edgekey="38"/>
+							<edge vertexkey="58" edgekey="59"/>
+							<edge vertexkey="57" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="23" edgekey="56"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

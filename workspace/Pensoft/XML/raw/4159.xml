@@ -1,0 +1,1659 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4159</article-id>
+            <title-group>
+                <article-title>A preliminary study on the distribution patterns of endemic species of Fulgoromorpha (Hemiptera, Auchenorrhyncha) in Iran
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Mozaffarian</surname>
+                        <given-names>Fariba</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Insect Taxonomy Research Department, Iranian Research Institute of Plant Protection, Tehran, 19395, P.O. Box 1454, Iran
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Fariba Mozaffarian (<email xlink:type="simple">mozaffarian@iripp.ir</email>; <email xlink:type="simple">faribamozaffarian@gmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>23</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>24</day>
+                    <month>1</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Fariba Mozaffarian</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Iran is known as the most complex and varied country in South West Asia, in terms of geography, vegetation, climate and consequently biological diversity. The rather high number of recorded endemic species of Fulgoromorpha in Iran indicates a high potential for speciation in some areas.
+</p>
+                <p>In this study, in order to identify the endemic zones for Fulgoromorpha of Iran, three main biogeographic regions of the country were divided into 13 primary zones, mainly according to the distribution of published and unpublished locality records of endemic species. Using Venn diagrams and cluster analyses on the primary zones, 6 final endemic zones were recognized: Caspian zone, Southern slopes of Alborz, Zagros Mountains, Kerman Mountains, Khorasan Mountains, and Baluchestan &amp; Persian Gulf coasts. Then a similarity map was produced for endemic zones using a Multidimensional analysis (Alscal) and the differences between the positions of the same zones in the similarity and geographic maps were discussed.
+</p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Zoogeography</kwd>
+                <kwd>Iran</kwd>
+                <kwd>Fulgoromorpha
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Iran is located in South West Asia between the latitudes of 25°30' and 40° North and the longitudes of 44° and 63°30' East and has a surface area of 1,648,195 square kilometers. It is limited by central Asia, Caspian Sea, Caucasus Mountains and Aras <!--PageBreak-->River to the North, Anatolian Plateau and Mesopotamian region to the West, Persian Gulf and Oman Sea which is connected to the Indian Ocean to the South and Afghanistan and Pakistan to the East. The major part of the land of Iran is covered by the Plateau of Iran, a triangle between the Alborz Mountain Range in the North, the Zagros Mountains in the West and the Sulaiman Mountain Range in Pakistan and Afghanistan.
+</p>
+            <p>According to Manuel Berberian (1981), the continental crust of Iran has been originally developed by some complex movements which made the plate of the Alborz and central Iran and then the Zagros and Arabian plate detach from the Gondwana supercontinent in the southern hemisphere, drift northwards and attach to Eurasia from Permian to late Miocene. Consequently some parts of the old Tethys have been recognized in some parts of the country (Ghorbani 2002).
+</p>
+            <p>In terms of biodiversity richness, Iran is considered as an extremely complex area and wide ranges in the extremes of altitude (below sea-level in shores of the Caspian sea to 5,770 m of the Damavan Mt.), climate (humid and nearly jungle-like forests in the North to arid places in Dasht-e Lut with less than 100 m annual rainfall) and temperature (from -35°C in the North West to 70°C in the deserts of Dasht- e Lut) (Hedge and Wendelbo 1978; Frey and Probst 1986, Zohary 1963). The high biodiversity of the Iranian fauna is also the result of its location and the influences of four ecozones from North (Palaearctic and old periodical connections with the Nearctic by Bering Strait), South (Afrotropical from the Arabian Peninsula) and South East (Oriental) (Madjnoonian et al. 2005).
+</p>
+            <p>Biogeographic studies in Iran have been carried out mainly on plants (Zohary 1963, 1973, Frey and Probst 1886, Hedge and Wendelbo 1978, Hangay and Szekely 2005). Those studies recognized three main biogeographic regions in Iran which are usually applied as useful framework and references in analyses: Hyrcanian, Irano- Turanian and Nubo-Sindian and also a small area in the West of Iran which is touched by the Saharo-Arabian region according to Zohary (1973) (Fig. 1).
+</p>
+            <p>The oldest zoogeographic division was performed by Zarudny (1911), an ornithologist who organized some trips to different parts of Iran during 1884-1904 and divided Iran into 9 zones: South Caspian Sea, North West, Khorasan, Kerman, South West, Sistan, Baluchestan, Karun plains and South coasts. In 1968, Anderson recognized 13 zones in his extensive study on endemic lizards of Iran: the central plateau, the Urmia basin, the Sistan basin, the Caspian region, the Khuzestan plain and Persian Gulf coast, Baluchestan and Makran coast, the Turkmen steppe, the Mogan steppe, the Zagross, the western foothills of the Zagros, the Kope Dag, the Alborz, the Islands of the Persian Gulf. Emeljanov (1974) considered Iran in the Sethian Desert Region in his Palaearctic biogeographic divisions and showed 2 subregions inside Iran: Sahara-Arabian (Makran mixed and Sind plane) and Irano- Turanian (Middlear Eastern mixed (Armenian and Zagrossan), Hyrcanian Mountain, Iranian Mixed and Khorasan Mountain). Dlabola (1981) classified different habitats in Iran and described the origin of studied Auchenorrhyncha species in three groups: arboreal, eremian and oreal.
+</p>
+            <p><!--PageBreak-->A total of 235 species of Fulgoromorpha have been recorded from Iran since 1902 (Mozaffarian and Wilson 2011), 117 of which from 13 families have never been recorded from other parts of the world and are restricted to the borders of Iran according to our knowledge. The high endemism (nearly 50%) in the recorded fauna of Iran shows a high potential of speciation inside Iran. The aim of this study is recognizing distribution patterns and endemic areas for endemic species of Fulgoromorpha in Iran.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Materials and methods
+</bold>
+            </title>
+            <p>A total of 473 locality records of 117 species of planthoppers endemic to Iran were gathered, 416 of which derived from publications, 48 were newly collected and identified species in the Hayk Mirzayans Insect Museum (HMIM), and 9 were studied in the Zoological Institute of the Russian Academy of Science (ZIN). Due to the lack of the exact locality data of 3 endemic species: <italic>Phantia lactea </italic>Rusiecka, 1902 (Flatidae), <italic>Ph. putoni</italic> Rusiecka, 1902 (Flatidae) and <italic>Oliarus convergens (</italic>Melichar, 1902) (Cixiidae), <!--PageBreak-->they were deleted from further analyses. Then the distribution maps were prepared using Arc Map 9.3. and the country was divided into 13 primary zones according to the distribution of the endemic planthoppers, topography, climate condition and published zoogeographic zones (Fig. 1). Venn diagrams and cluster analyses were performed using Gliffy venn diagram software and NTSYS (2.02g) (Rohlf 1998) to find the relationship between those primary zones and to identify the final zones. The input data for cluster analyses were qualitative data: 1 and 0 for presence and absence of any species in any division, respectively. The similarity between final endemic zones was shown by a similarity map using a multidimensional scaling analysis (Alscal) by SPSS.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Results and discussion
+</bold>
+            </title>
+            <sec>
+                <title><bold>Hyrcanian district
+</bold>
+                </title>
+                <p>This is a small area in Northern Iran, from the Caucasian-Euxino-Hyrcanian province of the Euro-Siberian region (Frey and Probst 1986). The district is limited to the Alborz Mountain and Caspian Sea, stretches from Talesh in Azarbaijan in the West to Gorgan in the East and characterized by predominantly deciduous forests.
+</p>
+                <p>The district is considered as one zone (Caspian zone) in this study. Fifteen endemic planthoppers of Iran have been recorded from this zone, 9 of which are endemic to the region (Table 1 and Fig. 2). The high and wall-like Alborz Mountain separates the south coast of the Caspian Sea from the Irano-Turanian region. This barrier not only prevents the fauna from migrating to south parts but also limits the high humidity of the Caspian Sea to the North and produces two very different climatic regions in the Northern and Southern slopes which can be considered a major factor for differentiating the fauna of North Iran from other parts of the country. Most of the Iranian endemic species common between Hyrcanian and other regions are limited to the Alborz Mt. and are distributed in areas very close to the borders of the Hyrcanian district. <italic>Malenia masirica</italic> Dlabola, 1986 (Derbidae) is the only endemic planthopper recorded in all three main regions. There are only a few records of the presence of this species in Iran which belong mostly to the Southern Zagros, the Nubo-Sindian region, close to Irano-Turan, and one record of a female specimen from the North of Iran, all made by Dlabola (1986), and the specimens are deposited in Prague. <italic>Morsina persica </italic>Melichar, 1902 (Nogodinidae) is the only endemic planthopper common between the Caspian zone and the Nubo-Sindian in spite of the distance and lack of records in the Irano-Turanian. The species was originally described from South East of Iran by Melichar (1902) and there are also other published and unpublished records of this species from there, deposited in HMIM. However the only record of the presence of this species in the Hyrcanian district is made by Dlabola (1981) and he mentioned the species as an eremian faunal element which can be often found as oreal. According to this reference, the only specimen of this species from the North of Iran belongs to the museum of Plant Pests and Disease Research Institute, Tehran-Evin which is the former name <!--PageBreak--><!--PageBreak--><!--PageBreak--><!--PageBreak-->used for HMIM, while it is not mentioned in the list of museum specimens (Mirzayans 1995) and is not currently existing in this museum either. However another specimen of this species is deposited in the HMIM museum collected from South East of Iran, by the same collector and in the same date mentioned by Dlabola’s northern specimen. Therefore the presence of this species in the Hyrcanian district is doubtful and appears to be a mistake in recording the locality in Dlabola (1981).
+                </p>
+                <p>Historically, the North of Iran was occupied by the old Tethys 55-20 mya (Ghorbani, 2002) so the occupation should have occurred after the area got dry. During the Pliocene ice age (100,000 years ago) the region was used as a refugee, and species spread northwards after the ice age, which may be a reason for rather small numbers of endemic species in this region. Hedge and Wendelbo (1978) also indicated rather small numbers of endemic Phanerogamic plants in this area. However the area has a considerably different climate and fauna from other parts of Iran and has been considered as a separate zoogeographic division both by Zarudny (1911), Anderson (1968) and Emeljanov (1974).
+</p>
+            </sec>
+            <sec>
+                <title><bold>Saharo-Arabian region
+</bold>
+                </title>
+                <p>According to Zohary (1973), the west of Iran is touched by the Saharo-Arabian region. Short and mild winters and long and dry hot summers are typical for this part of the country (Frey and Probst 1986). Two endemic planthoppers of Iran (<italic>Callodictya kazeruna</italic> (Dlabola, 1986) (Dictyopharidae) and <italic>Phantia helleri</italic> Linnavuori, 1962 (Flatidae)) have been recorded from this part while the former is in common with other <!--PageBreak-->parts of the Irano-Turan (Zagros Mt.) and the latter has a rather wide distribution in the Irano-Turanian and Nubo-Sindian regions (Fig. 2). Hence this region is not considered as an endemic zone in distribution patterns of endemic planthoppers.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Irano-Turanian region
+</bold>
+                </title>
+                <p>The region covers nine tenths of the land of Iran and major parts of the Iranian Plateau, from Central to South of Asia. The region consists of plains, deserts and mountains which are divided into 8 primary divisions in this study: Kerman, Karkas Mt., Humid Zagros, Dry Zagros, North Khorasan Mt., South Khorasan Mt., Southern slopes of Alborz Mt. and Deserts and Plains.
+</p>
+                <p><bold>Kerman Mountains</bold>
+                </p>
+                <p>The complex of the Kerman Mts located in the South East of the Irano-Turanian region and partially in the Nubo-Sindian (Fig. 1). The mountain range is a part of the Zagros chain but far from the other mountains and surrounded by deserts. The mountain and the deserts around have been considered as a zoogeographic zone by Zarudny (1911). Twenty eight endemic planthoppers of Iran were recorded from this mountain range, 8 of which endemic for there (Table 1, Fig. 3). The mountain range appears to be rather isolated from the Zagros and is limited by the Jazmurian lowlands in the South, Dasht-e Lut kavirs and other Irano-Turanian plains on the other sides. The isolation of mountains by plains and deserts creates a rather suitable condition for isolating populations and speciation. The high mountains in this complex (eg.: Hezar: 4,465 m, Lalehzar: 4,351 m, Tang-e Dalfard, 3,348 m) may be convenient places for relict species after the cold temperature of the Pleistocene ice age. However the fauna of endemic species is rather affected by both Nubo-Sindian (19 common species) and other parts of Irano-Turan (10 common species) (Fig. 3).
+</p>
+                <p><bold>Zagros mountains (Humid and Dry Zagros and Karkas Mt.)</bold>
+                </p>
+                <p>The Zagros mountain chain stretches from North West of Iran to South East near the Strait of Hormoz and is considered as the south branches of the Alpine-Himalayan orogenic belt (Dewey et al. 1986). The formation of the Zagros orogenic belt is subjected to controversy. Some geologists believe it has been made by the collision between the Afro-Arabian and Eurasian plate during the Cenozoic (Takin 1972, Agard 2005). As a result of this collision, several parallel folds were formed (Alan, 1969). The long mountain chain divides the Mediterranean climatic zone from the arid regions of west Asia. It is also a barrier between Mesopotamia and the Plateau of Iran with some corridors for the distribution of the fauna between the two zones (Anderson 1968).
+</p>
+                <p>In this study the Zagros chain was divided into 3 primary zones (Fig. 1): “Humid Zagros” in the North West which consists of higher mountains and is affected by Mediterranean winds, “Dry Zagros” in the South East with a drier climate and rather isolated mountains as the result of wider parallel valleys, and the Karkas mountain <!--PageBreak-->which appears to be a rather isolated mountain surrounded by Maranjab kavir and other lower lands around. Two different zones in North West and South East Zagros are also applied by Hedge and Wendelbo (1978) for distribution patterns of endemic phanerogamic plants, named: Armeno-Kurdic and Zagros, respectively. Similarly, Zarudny (1911) recognized the North West of Zagros as a separate zone with a fauna similar to the Caucasus. North West of Zagros, (Armenian) was mentioned as a different area from South East of Zagros, (Zagrossan) in Emeljanov (1974) as well. However both of them were considered as divisions of “Middle Eastern mixed”.
+</p>
+                <p>A total of 36 endemic planthoppers of Iran have been recorded from Zagros Mts, 19 of which are endemic to the Zagros (Table 1), 17 endemic to Dry Zagros, and 2 in common with Dry Zagros and Karkas Mt. or Humid Zagros (Fig. 4). The Venn diagram (Fig. 4) shows there are no endemic species for Humid Zagors and Karkas Mt. and the fauna of Iranian endemic planthoppers in those primary zones are mainly in common with Dry Zagros and partially with the South Alborz and Caspian zones. Therefore, those two primary divisions of the Zagros Mountains are not considered as endemic zones. Differently from the wall-like Alborz Mt., the Zagros chain comprises series of parallel ridges and valleys. The distances between mountains increases from North west to South East. Although the wider lower lands between the mountains in the South of Zagros (Dry Zagros) form corridors for the distribution and migration of species, mountains surrounded by those lower lands can provide a vicariant condition for speciation or at least prevent the distribution of species to other locations. The fauna of endemic planthoppers in Dry Zagros has some species in common with the Nubo-Sindian (10) and Kerman Mt. (2) which can be explained by the rather short distance between them.
+</p>
+                <!--PageBreak-->
+                <p><bold>Khorasan mountains</bold>
+                </p>
+                <p>It is believed that Iran has been connected to central Asia since the Oligocene. Then the plateau of Iran was uplifted during the Tertiary orogeny and consequently Kope Dagh (North East of Iran), Hindukush and Himalaya were created (Anderson 1968). Mountains in Northern Khorasan are a continuation of the Alborz but lack the wall-like integration of the Alborz and the humidity of the Caspian Sea, and mountains in both Northern and Southern Khorasan are rather parallel with the Zagros. In this study they were considered as different primary zones due to their distances and the distribution of endemic planthoppers.
+</p>
+                <p>A total of 11 Iranian endemic planthoppers have been recorded from Khorasan Mts, 5 of which are endemic to this mountain range (Table 1), 3 in the South, 1 in the North and 1 in common (Fig. 5). The cluster analysis shows the similarity of the Northern and Southern fauna (Fig. 6). Hence the two mountains can be considered as a same zone in the distribution pattern. While south parts, which are surrounded by Kavir-e Lut and Dasht-e Kavir to the west and lowlands in Afghanistan to the east, have more endemic species and appear to be more suitable places for speciation.
+</p>
+                <p><bold>Southern slopes of Alborz</bold>
+                </p>
+                <p>The Alborz mountain chain represents a north branch of the Alpine-Himalayan orogenic system (Dewey et al. 1986). It stretches from North West of Iran to South East of the Caspian Sea and includes the highest mountain of West Asia, Damavand 5,670 m. It forms a consistent barrier between the fauna of the Caspian zone and the Plateau of Iran.
+</p>
+                <p>Seventeen endemic planthoppers of Iran are recorded from the South of Alborz, 12 of which endemic to the region (Table 1, Fig. 7). The southern slopes of Alborz <!--PageBreak-->have an absolutely different climatic condition from the Northern Slopes due to the lack of corridors for receiving the humidity of the Caspian Sea. The presence of the Dasht-e Kavir desert in the South can be another factor for preventing the distribution of populations and probably speciation. There is only one common endemic planthopper between the Southern slopes of Alborz and Northern Khorasan whereas three species in common with the Zagros show a relationship with the Western mountains.
+</p>
+                <p><bold>Deserts and plains</bold>
+                </p>
+                <p>Two big salt pans or Kavirs in central Iran are undrained basins and the lands surrounding them have typical features such as clayey or sandy soil and a high amount of salt on the surface. The inner lands of these salt marshes are nearly free of vegetation (Hangay and Szekely 2005, Frey and Probst 1986, Zohary 1973). It is said that Dasht-e Lut is considered as the hottest place in the world exceeding 70°C of temperature in some parts of it (Mildrexler et al. 2011). There are marshes and mud grounds with large crusts of salt in inner parts of Kavirs while some parts have a steppe-like appearance and some other regions are surrounded by <italic>Tamarix </italic>spp., <italic>Calligonum</italic> spp. etc. (Frey and Probst 1986). Hedge and Wendelbo (1978) and Anderson (1968) recognized deserts and plains of the central Plateau of Iran as biogeographic zones. However Zarudny (1911) did not mention them in his list. The distribution patterns of the Iranian endemic planthoppers appear to be very restricted in central Iran. <italic>Malenia masirica</italic> Dlabola, 1986<italic>, Mesophantia pallens</italic> Melichar, 1902and<italic> Persepolia servadeina</italic> <!--PageBreak-->Dlabola, 1982 are the only endemic species recorded from this part of the country while none of them are endemic for those deserts. The two first species have a rather wide distribution in Iran and the third one has been collected so close to Kerman Mt. <!--PageBreak-->Few records of endemic Iranian planthoppers from the deserts may be simply because of less collecting in those dry areas or poor vegetation in some parts of them. None the less, according to our current knowledge, deserts and plains of the Irano-Turan cannot be considered as an endemic zone for planthoppers.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Nubo-Sindian region
+</bold>
+                </title>
+                <p>This part of the country in Southern and South Eastern Iran is the only region which is not considered as Palaearctic but as a part of the Oriental. A varied terminology has been used for this region. Hedge and Wendelbo (1978) used the term “Sahara-Sindian” to show a west to east continuum from South West Asia to Send deserts while Frey and Probst (1986) preferred Nubo-Sindian because they believed the distribution patterns of the Nubo-Sindian province are obvious here while Saharo-Arabian and Mediterranean species have migrated to this region.
+</p>
+                <p>By subtracting the endemic species of a small part of the Kerman Mountain from the Nubo-Sindian, 54 recorded endemic species of Iran, which is more than half of the total, are distributed in this region and 32 of these are endemic to the region (Table 1). The distribution of endemic Fulgoromorpha shows three rather separate groups which are recognized as three primary zones here: Baluchestan, the Strait of Hormoz and the coasts of the Persian Gulf (Fig. 1). The cluster analysis showed the similarity of the fauna of the endemic species in the Strait of Hormoz and the Persian Gulf coasts (Fig. 8) so those two primary zones can be considered as a same zone. Anderson (1968) found a discontinuity in the faunal elements of Southern and South Eastern Iran and justified it with the relatively recent position of the Persian Gulf and lower sea levels during the Pleistocene which must have caused dry land contact between Iran and Arabia. This belief is confirmed by evidence for ecological continuity across the two sides of the Persian Gulf. Therefore the higher sea levels after the ice age can also produce a vicariant condition in the Persian Gulf coasts and isolating endemic species between mountains and a different climate condition to the North and the waters of the Persian Gulf to the South. The number of endemic species in the Nubo-Sindian is reduced from east to west which may be because of the isolation of the eastern species by the Kavie-e Lut and Jazmurian lowlands. On the other hand, the Venn diagram (Fig. 9) shows a rather high number of common species between Baluchestan and the two other adjacent areas. Hence according to our current knowledge of distribution patterns of endemic planthoppers, the Baluchestan primary zone can also be united with the other primary zones of the Nubo-Sindian region. The area was also considered mainly as one division (Makran mixed) with a very small area of Baluchestan in South East (Sind plane) by Emeljanov (1974). According to Ghorbani (2002), some parts of Baluchestan, the Strait of Hormoz and the area between them had been occupied by the old Tethys so the common endemic species between Baluchestan and two other primary zones in Southern Iran should have crossed the area after drying.
+</p>
+                <p><!--PageBreak-->The final 6 endemic zones (Caspian zone, South slopes of Alborz, Khorasan Mts, Zagros Mts, Kerman Mts and Baluchestan &amp; Persian Gulf coasts) are shown in Fig. 10. The cluster analysis on six final endemic zones of Iranian planthoppers (Fig. 6) indicates Baluchestan and Perisan Gulf coasts the only region which is considered as a part of the Oriental Region, as the most different zone from the others. Then Zagros Mts, Kerman Mts, Alborz, Khorasan Mts and Caspian zones are diverging, respectively. Alscal analysis produced a map according to the similarity of endemic zones. Rotating the similarity map canvas horizontally (Fig. 11), makes it more comparable with the geographic map (Fig. 10). The Caspian zone and the Nubo-Sindian region are located in similar situations in both maps. While the Khorasan zone is closer to the <!--PageBreak-->Caspian zone in the similarity map rather than its geographic situation. This similarity can be justified by the possibility of specimens migrating between two zones at the end of the wall-like mountains of Alborz at the East of the Caspian zone. This is why the Southern slopes of Alborz go farther in the Alscal map and confirms the efficiency of the barrier of the Alborz mountain in separating species of the two adjacent zones. <!--PageBreak-->Although the Zagros mountain has rather similar situations in both maps, it is farther from the Nubo-Sindian in similarity rather than its geographic situation. The reason may be the higher number of endemic species in Baluchestan rather than in the coasts of Persian Gulf and the Strait of Hormoz close to the Zagros Mountains. The situation of the Kermann Mts in the similarity map moved from its geographic situation towards the North. The rather far distance of this zone from the others, confirms the isolation of the species living there. However, deleting the doubtful record of<italic> Morsina persica</italic>, common between the Caspian zone and the Nubo-Sindian part of the Kerman Mountains may move the situation of the Kerman zone in the similarity map towards the South.
+                </p>
+                <p>The records of the endemic planthoppers of Iran belong to recent 110 years (Mozaffarian and Wilson 2011). The nature of Iran, like any other land, has been exposed to various changes during this long period by events, such as agriculture, war, fire in woods and forests, overgrazing, urbanization and so on. Hence, probably the presence of some endemic species with a limited distribution and the probable extinction of some of them should be subjected to further investigations.
+</p>
+            </sec>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgement
+</bold>
+            </title>
+            <p>I sincerely thank Prof. A. F. Emeljanov and Dr V. M. Gnezdilov for an opportunity to study the Iranian specimens in the Zoological Institute of the Russian Academy of Sciences in St. Petersburg (Russia) and Dr M. R. Wilson, Dr P. J. Mazzoglio, Dr I. Gjonov, Dr N. Simov and anonymous reviewers for valuable suggestions.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Agard</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Omrani</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Jolivet</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Mouthereau</surname> <given-names>F</given-names></name></person-group> (<year>2005</year>)<article-title> Convergence history across Zagros, Iran; constraints from collisional and earlier deformation.</article-title> <source>International journal of earth sciences </source> <volume>94</volume>: <fpage>401</fpage>-<lpage>419</lpage>. doi: 10.1007/s00531-005-0481-4
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Alan</surname> <given-names>W</given-names></name></person-group> (<year>1969</year>)<fake_tag> The crush zone of the Iranian Zagros mountains, and its implication. Geological Magazine 106z: 385–394.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Anderson</surname> <given-names>SC</given-names></name></person-group> (<year>1968</year>)<fake_tag> Zoogeographic analysis of the lizard fauna. p. 305–371. pp. In: Fisher WB (Eds), The Land of Iran, The Cambridge History of Iran, Cambridge University Press, Cambridge.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Berberian</surname> <given-names>M</given-names></name></person-group> (<year>1981</year>)<article-title> Active tectonic faulting and tectonics of Iran.</article-title> <source>American Geophysics Union And Geolological Socociety of America, Geodynamics Series, </source> <volume>3</volume>: <fpage>33</fpage>-<lpage>69</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dewey</surname> <given-names>JF</given-names></name>,<name name-style="western"><surname>Hempton</surname> <given-names>MR</given-names></name>,<name name-style="western"><surname>Kidd</surname> <given-names>WSF</given-names></name>,<name name-style="western"><surname>Saroglu</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Sengor</surname> <given-names>AMC</given-names></name></person-group> (<year>1986</year>)<fake_tag> Shortening of continental lithosphere: the neotectonics of Eastern Anatolia – a young collision zone. In: Coward MP, Ries AC (Eds) Collision Tectonics, Geological Society special publications no: 19, 3–36.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Dlabola</surname> <given-names>J</given-names></name></person-group> (<year>1981</year>)<article-title> Ergebnisse der tschechoslovakisch-iranischen entomologischen Expeditionen nach dem Iran (Mit Angaben uber einige Sammelresultate in Anatolien) (1970 und 1973) (Homoptera, Auchenorrhycha).- II Teil.</article-title> <source>Acta Musei Nationalis Pragae </source> <volume>40</volume>: <fpage>127</fpage>-<lpage>311</lpage>. doi: 10.1029/GD003p0033
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dlabola</surname> <given-names>J</given-names></name></person-group> (<year>1986</year>)<article-title> Neue Arten der Fulgoromorphen Zikadenfamilien vom Mittelmeergebiet und Nahen Osten. (Homoptera, Auchenorrhyncha: Cixiidae, Meenoplidae, Derbidae, Dictyopharidae, Lophopidae und Issidae).</article-title> <source>Acta Musei Nationalis Pragae </source> <volume>42</volume>(<issue>3–4</issue>)): <fpage>169</fpage>-<lpage>196</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Emeljanov</surname> <given-names>AF</given-names></name></person-group> (<year>1974</year>)<article-title> Proposals on the Classification and Nomenclature of Ranges.</article-title> <source>Entomological Review </source> <volume>53</volume> (<issue>3</issue>): <fpage>11</fpage>-<lpage>26</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Frey</surname> <given-names>W</given-names></name>,<name name-style="western"><surname>Probst</surname> <given-names>P</given-names></name></person-group> (<year>1986</year>)<fake_tag> A synopsis of the vegetation of Iran, In: Kiirschner H (Ed) Contributions to the Vegetation of Southwest Asia. Dr. Ludwig Reichert Verlag, 9-–43.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mozaffarian</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Wilson</surname> <given-names>M</given-names></name></person-group> (<year>2011</year>)<article-title> An annotated checklist of the planthoppers of Iran (Hemiptera, Auchenorrhyncha, Fulgoromorpha) with distribution data.</article-title> <source>ZooKeys </source> <volume>145</volume>: <fpage>1</fpage>-<lpage>58</lpage>. doi: 10.3897/zookeys.145.1846
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hangay</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Nadai</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Szekely</surname> <given-names>K</given-names></name></person-group> (<year>2005</year>)<article-title> Report on Hungarian entomological expedition to Iran.</article-title> <source>Folia Historico Naturalia Musei Matraensis </source> <volume>29</volume>: <fpage>7</fpage>-<lpage>18</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hedge</surname> <given-names>IC</given-names></name>,<name name-style="western"><surname>Wendelbo</surname> <given-names>P</given-names></name></person-group> (<year>1978</year>)<article-title> Patterns of distribution and endemism in Iran.</article-title> <source>Notes from the Royal Botanic Garden Edinburgh </source> <volume>36</volume>: <fpage>441</fpage>-<lpage>464</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Madjnoonian</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Kiabi</surname> <given-names>BH</given-names></name>,<name name-style="western"><surname>Danesh</surname> <given-names>M</given-names></name></person-group> (<year>2005</year>)<fake_tag> Readings in Zoogeography of Iran, Part I, Department of Environment, Iran, 384 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Melichar</surname> <given-names>L</given-names></name></person-group> (<year>1902</year>)<article-title> Homopteren aus West- China, Persien und dem Sud-Ussuri- Gebiete, St. Petersburg Museum.</article-title> <source>Zoological Annals </source> <volume>7</volume>: <fpage>76</fpage>-<lpage>146</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mildrexler</surname> <given-names>DJ</given-names></name>,<name name-style="western"><surname>Zhao</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Running</surname> <given-names>SW</given-names></name></person-group> (<year>2011</year>)<article-title> Satellite Finds Highest Land Skin Temperatures on Earth.</article-title> <source>Bulletin of American Meteorology Society </source> <volume>92</volume>: <fpage>855</fpage>-<lpage>860</lpage>. doi: 10.1175/2011BAMS3067.1
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mirzayans</surname> <given-names>H</given-names></name></person-group> (<year>1995</year>)<source> Insects of Iran, The list of Homoptera: Auchenorrhyncha in the Insect Collection of plant Pests &amp; Diseases Research Institute.</source> <publisher-name>Ministry of Agriculture, Agricultural Research</publisher-name>, <publisher-loc>Iran</publisher-loc>, <lpage>63</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mozaffarian</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Wilson</surname> <given-names>MR</given-names></name></person-group> (<year>2011</year>)<article-title> An annotated checklist of the planthoppers of Iran (Hemiptera, Auchenorrhyncha, Fulgoromorpha) with distribution data.</article-title> <source>Zookeys </source> <volume>145</volume>: <fpage>1</fpage>-<lpage>57</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Rohlf</surname> <given-names>FJ</given-names></name></person-group> (<year>1998</year>)<fake_tag> NTSYSpc, version 2.02g. Exter Software. Applied Biosystematics Inc.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Takin</surname> <given-names>M</given-names></name></person-group> (<year>1972</year>)<fake_tag> Iranian geology and continental drift in the Middle East. Nature 235, 147–150. </fake_tag>doi: 10.1038/235147a0
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zarudny</surname> <given-names>NA</given-names></name></person-group> (<year>1911</year>)<article-title>( Verzeichnis der Vögel Persiens.</article-title> <source>Journal für Ornithologie</source> <volume>59</volume>: <fpage>185</fpage>-<lpage>241</lpage>. doi: 10.1007/BF02091053
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zohary</surname> <given-names>M</given-names></name></person-group> (<year>1963</year>)<fake_tag> On the geobotanical structure of Iran. The Bulletin of the Research Council of Israel, 11D supplementary: 1–113.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zohary</surname> <given-names>M</given-names></name></person-group> (<year>1973</year>)<source> Geobotanical Faoundations of the Middle East.</source> <publisher-name>Gustav Fischer Verlag</publisher-name>, <publisher-loc>Stuttgart</publisher-loc>, <lpage>739</lpage> pp.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Distribution of endemic Fulgoromorpha of Iran, Phytogeographical regions (Black lines) (after Zohary 1973, altered by Frey and Probst, 1986 and Primary divisions (Red lines) suggested for the distribution pattern of endemic planthoppers of Iran.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> List of endemic species of Iran, indicating endemic species of suggested endemic zones (Extracted from Mozaffarian and Wilson 2011 and new data).&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="0" bodyRowCount="131" columnCount="7" aid:table="table" aid:trows="131" aid:tcols="7">
+                <tbody>
+                    <tr>
+                        <td rowspan="1" colspan="1">Endemic species</td>
+                        <td rowspan="1" colspan="1">Caspian zone</td>
+                        <td rowspan="1" colspan="1">Kerman Mountains</td>
+                        <td rowspan="1" colspan="1">Zagros mountains</td>
+                        <td rowspan="1" colspan="1">Khorasan Mountains</td>
+                        <td rowspan="1" colspan="1">Southern Slopes of Alborz</td>
+                        <td rowspan="1" colspan="1">Baluchestan and Persian Gulf coasts</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Caliscelidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Adenissus baluchestanicus </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Adenissus isinus </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Adenissus zabolicus </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Adenissus zahedanicus </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Aphelonema brunneolutea </italic>Dlabola 1994
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Perissana dlabolai </italic>Gnezdilov &amp; Wilson, 2006
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Reinhardema pasagarda</italic> (Dlabola, 1982)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Cixiidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Duilius</italic> <italic>v-atrum</italic> (Dlabola, 1985) 
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cixius</italic> <italic>persicus</italic> Distant, 1907
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Myndus</italic> <italic>genocolus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Myndus sarbazus </italic>Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Anoculiarus</italic> <italic>ornatus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eumecurus</italic> <italic>apunctatus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eumecurus</italic> <italic>baluchestanicus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eumecurus</italic> <italic>octopus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eumecurus</italic> <italic>superstylus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eumecurus transpunctatus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eumecurus vilbastei</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Hyalesthes restultus</italic> Dlabola, 1994
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Hyalesthes</italic> <italic>zabolicus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Oliarus</italic> <italic>convergens</italic> Melichar, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Pentastira bahtiaricus</italic> (Dlabola, 1981)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Pentastira</italic> <italic>superspicata</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Pentastira shul</italic> (Dlabola, 1985)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Reptalus</italic> <italic>eremicus</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Reptalus reductus </italic>Dlabola, 1994
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Reptalus</italic> <italic>ziaran</italic> Dlabola, 1985
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Delphacidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Tropidocephala</italic> <italic>prasina</italic> Melichar, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Muirodelphax</italic> <italic>amol</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1">*</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Pseudaraeopus</italic> <italic>curtulus</italic> Dlabola, 1960
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Pseudaraeopus</italic> <italic>iranicus</italic> Dlabola, 1960
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Ribautodelphax</italic> <italic>hyrcanus</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Derbidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Malenia isinica </italic>Dlabola, 1986
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Malenia masirica </italic>Dlabola,1986
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Proutista</italic> <italic>jezeki</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Dictyopharidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Callodictya kazeruna</italic> (Dlabola, 1986)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Dictyophara</italic> <italic>albata</italic> Dlabola &amp; Heller, 1962
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Dictyophara</italic> <italic>exoptata</italic> Dlabola &amp; Heller, 1962
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Dictyophara pazukii</italic> (Dlabola, 1984)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Dictyophara hoberlandti</italic> Dlabola, 1974
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Kumlika mandrita </italic>Emeljanov, 1997
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Nymphorgerius convergens</italic> Emeljanov, 1972
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Nymphorgerius emeljanovi</italic> Dlabola, 1979
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Nymphorgerius mullah</italic> Dlabola, 1979
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Nymphorgerius rostratus</italic> Emeljanov, 2009
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Flatidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Bahuflata punctata</italic> Dlabola, 1979
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Derisa atratula</italic> Melichar, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mesophantia kanganica </italic>Dlabola, 1983
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mesophantia pallens</italic> Melichar, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mesophantia sabzevaranica</italic> Dlabola, 1983
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mesophantia tisina</italic> Dlabola, 1983
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Persepolia jasmuriana</italic> Dlabola, 1982
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Persepolia secunda</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Persepolia servadeina</italic> Dlabola, 1982
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia borazianica</italic> Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia crucispina </italic>Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia denasuta </italic>Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia finita </italic>Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia helleri</italic> Linnavuori, 1962
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia lactea </italic>Rusiecka, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia ovatospina</italic> Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia picea </italic>Dlabola, 1989
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phantia putoni</italic> Rusiecka, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Tisia esfandiarii</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Issidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cavatorium ardakanum </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cavatorium bispinatum </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cavatorium quadrispinatum </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cavatorium sarbaz </italic>Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Eusarima</italic> <italic>iranica </italic>Gnezdilov &amp; Mozaffarian 2011
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Inflatodus astyages</italic> Dlabola, 1982
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Inflatodus kyaxares</italic> Dlabola, 1982
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Inflatodus persicus (</italic>Dlabola, 1981)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Inflatodus viridans</italic> (Dlabola, 1974)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranodus amygdalinus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranodus dumetorus (</italic>Dlabola, 1981) 
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranodus khatunus </italic>(Dlabola, 1981) 
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranodus nishabur</italic> Dlabola, 1982
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranodus repandus </italic>(Dlabola, 1981) 
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranodus transversalis</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus astragalicus</italic> Dlabola, 1974
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus demavendinus</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus elbursicus </italic>(Logvinenko, 1974)
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus fagetophilus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus guilanicus</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus hezarmeshedi</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus inassuetus</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus kandavanicus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus krameri</italic> Dlabola, 1974
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus lanceatus </italic>Dlabola 1997
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus peterseni</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus sexpunctatus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Mycterodus shahrudicus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Pentissus bamicus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phasmena adyoungi</italic> Dlabola, 1982
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Phasmena</italic> <italic>telifera</italic> Melichar, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva aurita</italic> (Dlabola, 1982)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva dehbakrina </italic>(Dlabola, 1980)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva lassa </italic>(Dlabola, 1981)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva proxima </italic>(Dlabola, 1980)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva sabzevarana </italic>(Dlabola, 1980)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva taftanica </italic>(Dlabola, 1980)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Quadriva tangesarhena </italic>(Dlabola, 1980)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Scorlupaster emersum </italic>(Dlabola, 1981)
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Kinnaridae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Perloma boroumandi </italic>(Dlabola, 1981)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Perloma</italic> <italic>satrapa</italic> (Dlabola, 1981)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Perloma zarudnyi</italic> (Emeljanov, 1984)
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Meenoplidae </bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Anigrus farsicus </italic>Dlabola, 1986
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Nogodinidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Hadjia nerii</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Hadjia quadrifasciata</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Iranissus ephedrinus</italic> Dlabola, 1980
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Morsina persica</italic> Melichar, 1902
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Philbyella glarea</italic> Dlabola &amp; Heller, 1962
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Ricaniidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Ricania soraya</italic> Dlabola, 1983
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Tettigometridae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Tettigometra demavenda</italic> Dlabola, 1981
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="7"><bold>Family: Tropiduchidae</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Kazerunia leguaniforma</italic> Dlabola, 1977
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Kazerunia ochreata</italic> Dlabola, 1974
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Kazerunia undulata</italic> Dlabola, 1977
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>*</bold>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> The number of endemic planthoppers of Iran in the main biogeographic areas.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> Venn diagrams for the number of endemic species in Kerman Mts and other areas with common species.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> Venn diagram for the number of endemic species in Zagros Mts. (Humid Zagros, Dry Zagros and Karkas Mt.) and other areas with common species.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figure 5.</label>
+            <caption><p> Venn diagram for the number of endemic species in Khorasan Mts and common species with other areas.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F6" position="float" orientation="portrait">
+            <label>Figure 6.</label>
+            <caption><p> Cluster diagram for the endemic areas of Fulgoromorpha in Iran.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F7" position="float" orientation="portrait">
+            <label>Figure 7.</label>
+            <caption><p> Venn diagram for the number of endemic species in Southern slopes of Alborz and common species with other areas.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g007.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F8" position="float" orientation="portrait">
+            <label>Figure 8.</label>
+            <caption><p> Cluster diagram for the primary zones of endemic Fulgoromorpha in tjr Nubo- Sindian region.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g008.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F9" position="float" orientation="portrait">
+            <label>Figure 9.</label>
+            <caption><p> Venn diagram for the number of endemic species of the Nubo-Sindian region in three primary zones (Numbers in the parentheses are the number of endemic species in that specific primary zone)</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g009.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F10" position="float" orientation="portrait">
+            <label>Figure 10.</label>
+            <caption><p> Final endemic zones and distribution of endemic Fulgoromorpha of Iran.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g010.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F11" position="float" orientation="portrait">
+            <label>Figure 11.</label>
+            <caption><p> A similarity map of endemic zones of Fulgoromorpha of Iran resulted from Aslcal analysis.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g011.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

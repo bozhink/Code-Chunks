@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BranchOffices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BranchOffices.xsd">
+	<Name>Nanonull</Name>
+	<Office>
+		<Name>Nanonull, Inc.</Name>
+		<EMail>office@nanonull.com</EMail>
+		<Fax>+1 (321) 555 5155 - 9</Fax>
+		<Phone>+1 (321) 555 5155</Phone>
+		<Address>
+			<city>Vereno</city>
+			<state>CA</state>
+			<street>119 Oakstreet, Suite 4876</street>
+			<zip>29213</zip>
+		</Address>
+		<Contact>
+			<first>Vernon</first>
+			<last>Callaby</last>
+		</Contact>
+		<Contact>
+			<first>Frank</first>
+			<last>Further</last>
+		</Contact>
+		<Contact>
+			<first>Loby</first>
+			<last>Matise</last>
+		</Contact>
+		<Contact>
+			<first>Joe</first>
+			<last>Firstbread</last>
+		</Contact>
+		<Contact>
+			<first>Susi</first>
+			<last>Sanna</last>
+		</Contact>
+		<Contact>
+			<first>Fred</first>
+			<last>Landis</last>
+		</Contact>
+		<Contact>
+			<first>Michelle</first>
+			<last>Butler</last>
+		</Contact>
+		<Contact>
+			<first>Ted</first>
+			<last>Little</last>
+		</Contact>
+		<Contact>
+			<first>Ann</first>
+			<last>Way</last>
+		</Contact>
+		<Contact>
+			<first>Liz</first>
+			<last>Gardner</last>
+		</Contact>
+		<Contact>
+			<first>Paul</first>
+			<last>Smith</last>
+		</Contact>
+		<Contact>
+			<first>Alex</first>
+			<last>Martin</last>
+		</Contact>
+		<Contact>
+			<first>George</first>
+			<last>Hammer</last>
+		</Contact>
+		<Contact>
+			<first>Jessica</first>
+			<last>Bander</last>
+		</Contact>
+		<Contact>
+			<first>Lui</first>
+			<last>King</last>
+		</Contact>
+	</Office>
+	<Office>
+		<Name>Nanonull Partners, Inc.</Name>
+		<EMail>nextoffice@nanonull.com</EMail>
+		<Fax>+1 (927) 555 1845</Fax>
+		<Phone>+1 (927) 555 0094</Phone>
+		<Address>
+			<city>Brenton</city>
+			<state>MA</state>
+			<street>9865 Millenium Center, Suite 456</street>
+			<zip>5985</zip>
+		</Address>
+		<Contact>
+			<first>Steve</first>
+			<last>Meier</last>
+		</Contact>
+		<Contact>
+			<first>Theo</first>
+			<last>Bone</last>
+		</Contact>
+		<Contact>
+			<first>Max</first>
+			<last>Nafta</last>
+		</Contact>
+		<Contact>
+			<first>Valentin</first>
+			<last>Bass</last>
+		</Contact>
+		<Contact>
+			<first>Carl</first>
+			<last>Franken</last>
+		</Contact>
+		<Contact>
+			<first>Mark</first>
+			<last>Redgreen</last>
+		</Contact>
+	</Office>
+	<Office>
+		<Name>Nanonull Holding, Inc.</Name>
+		<EMail>holding@nanonull.com</EMail>
+		<Fax>+1 (123) 555 2222 - 15</Fax>
+		<Phone>+1 (123) 555 2222 - 0</Phone>
+	</Office>
+</BranchOffices>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<component name="defaultmap3" blackbox="0" uid="37311072" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="xslt"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="49530496" kind="2">
+					<targets>
+						<datapoint pos="0" key="93630032"/>
+					</targets>
+					<view ltx="214" lty="209" rbx="-221" rby="1"/>
+					<data>
+						<constant value="Support" datatype="string"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="39124176" kind="14">
+					<properties/>
+					<view rbx="172" rby="327"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Company" expanded="1">
+								<entry name="0:Employees" expanded="1">
+									<entry name="0:Manager" expanded="1" outkey="94176600">
+										<entry name="0:FirstName" outkey="94178160"/>
+										<entry name="0:LastName" outkey="94178680"/>
+									</entry>
+									<entry name="0:Programmer" expanded="1" outkey="94177120">
+										<entry name="0:FirstName" outkey="94179200"/>
+										<entry name="0:LastName" outkey="94179720"/>
+									</entry>
+									<entry name="0:Support" expanded="1" outkey="94177640">
+										<entry name="0:FirstName" outkey="94180240"/>
+										<entry name="0:LastName" outkey="94180760"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Employees.xsd" inputinstance="Employees.xml" instanceroot="{}Company"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="38395328" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="342" lty="17" rbx="494" rby="311"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:PersonList" expanded="1">
+								<entry name="0:Person" expanded="1" inpkey="86711024">
+									<entry name="0:@role" inpkey="94198752"/>
+									<entry name="0:First" inpkey="94199792"/>
+									<entry name="0:Last" inpkey="94052912"/>
+								</entry>
+								<entry name="0:Person" expanded="1" inpkey="94199272" clone="1">
+									<entry name="0:@role" inpkey="86713056"/>
+									<entry name="0:First" inpkey="94198232"/>
+									<entry name="0:Last" inpkey="94197712"/>
+								</entry>
+								<entry name="0:Person" expanded="1" inpkey="94063928" clone="1">
+									<entry name="0:@role" inpkey="94200312"/>
+									<entry name="0:First" inpkey="94200832"/>
+									<entry name="0:Last" inpkey="94201352"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="52576136" kind="2">
+					<targets>
+						<datapoint pos="0" key="94175776"/>
+					</targets>
+					<view ltx="216" lty="42" rbx="-219" rby="-166"/>
+					<data>
+						<constant value="Manager" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="52459432" kind="2">
+					<targets>
+						<datapoint pos="0" key="94173168"/>
+					</targets>
+					<view ltx="195" lty="162" rbx="-240" rby="-46"/>
+					<data>
+						<constant value="Programmer" datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="94077736"/>
+					<edge edgekey="94101104"/>
+					<edge edgekey="94101904"/>
+					<edge edgekey="94166648"/>
+					<edge edgekey="94168344"/>
+					<edge edgekey="94169888"/>
+					<edge edgekey="94171880"/>
+					<edge edgekey="94172424"/>
+					<edge edgekey="94214920"/>
+					<edge edgekey="94215216"/>
+					<edge edgekey="94215512"/>
+					<edge edgekey="94215808"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="93630032">
+						<edges>
+							<edge vertexkey="94200312" edgekey="94215808"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94173168">
+						<edges>
+							<edge vertexkey="86713056" edgekey="94172424"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94175776">
+						<edges>
+							<edge vertexkey="94198752" edgekey="94166648"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94176600">
+						<edges>
+							<edge vertexkey="86711024" edgekey="94101104"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94177120">
+						<edges>
+							<edge vertexkey="94199272" edgekey="94077736"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94177640">
+						<edges>
+							<edge vertexkey="94063928" edgekey="94168344"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94178160">
+						<edges>
+							<edge vertexkey="94199792" edgekey="94215216"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94178680">
+						<edges>
+							<edge vertexkey="94052912" edgekey="94169888"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94179200">
+						<edges>
+							<edge vertexkey="94198232" edgekey="94215512"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94179720">
+						<edges>
+							<edge vertexkey="94197712" edgekey="94101904"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94180240">
+						<edges>
+							<edge vertexkey="94200832" edgekey="94214920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94180760">
+						<edges>
+							<edge vertexkey="94201352" edgekey="94171880"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

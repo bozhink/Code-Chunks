@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="convertToISBN13" library="IsbnConverterService" uid="9" kind="20" visible="0">
+					<properties WSDLFile="ISBNConverter.wsdl" WSDLService="{http://www.booksprice.com/IsbnConverter.jws}IsbnConverterService" WSDLPort="{http://www.booksprice.com/IsbnConverter.jws}IsbnConverter" WSDLOperation="{http://www.booksprice.com/IsbnConverter.jws}convertToISBN13" WSDLEndPoint="http://www.booksprice.com/IsbnConverter.jws"/>
+					<view ltx="209" lty="279" rbx="633" rby="314"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.booksprice.com/IsbnConverter.jws"/>
+								</namespaces>
+							</header>
+							<entry name="convertToISBN13" ns="1" expanded="1">
+								<entry name="Body" expanded="1">
+									<entry name="convertToISBN13" ns="1" expanded="1">
+										<entry name="isbn10" inpkey="26"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.booksprice.com/IsbnConverter.jws"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="convertToISBN13" expanded="1">
+								<entry name="Body" ns="1" expanded="1">
+									<entry name="convertToISBN13Response" outkey="38"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="convertToEAN" library="IsbnConverterService" uid="10" kind="20" visible="0">
+					<properties WSDLFile="ISBNConverter.wsdl" WSDLService="{http://www.booksprice.com/IsbnConverter.jws}IsbnConverterService" WSDLPort="{http://www.booksprice.com/IsbnConverter.jws}IsbnConverter" WSDLOperation="{http://www.booksprice.com/IsbnConverter.jws}convertToEAN" WSDLEndPoint="http://www.booksprice.com/IsbnConverter.jws"/>
+					<view ltx="209" lty="196" rbx="632" rby="241"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.booksprice.com/IsbnConverter.jws"/>
+								</namespaces>
+							</header>
+							<entry name="convertToEAN" ns="1" expanded="1">
+								<entry name="Body" expanded="1">
+									<entry name="convertToEAN" ns="1" expanded="1">
+										<entry name="isbn10" inpkey="30"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.booksprice.com/IsbnConverter.jws"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="convertToEAN" expanded="1">
+								<entry name="Body" ns="1" expanded="1">
+									<entry name="convertToEANResponse" outkey="4" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-2" lty="2" rbx="173" rby="182"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BookList" expanded="1">
+										<entry name="Book" outkey="7" expanded="1">
+											<entry name="ISBN10" type="attribute" outkey="25"/>
+											<entry name="Title" type="attribute" outkey="13"/>
+											<entry name="Year" type="attribute" outkey="16"/>
+											<entry name="Price" type="attribute" outkey="22"/>
+											<entry name="Author" outkey="19"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BookList.xsd" inputinstance="BookList.xml" instanceroot="{}BookList" userdefinedschemalocation="BookList.xsd"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="13" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="23"/>
+						<datapoint pos="1" key="36"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="341" lty="3" rbx="-20" rby="-112"/>
+				</component>
+				<component name="round-precision" library="core" uid="16" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="33"/>
+						<datapoint pos="1" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="483" lty="6" rbx="22" rby="-60"/>
+				</component>
+				<component name="constant" library="core" uid="17" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="387" lty="84"/>
+					<data>
+						<constant value="2" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="241" lty="28"/>
+					<data>
+						<constant value="0.85" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="686" lty="3" rbx="837" rby="191"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BookList" expanded="1">
+										<entry name="Book" inpkey="8" expanded="1">
+											<entry name="EAN13" type="attribute" inpkey="5"/>
+											<entry name="ISBN10" type="attribute" inpkey="28"/>
+											<entry name="ISBN13" type="attribute" inpkey="39"/>
+											<entry name="Title" type="attribute" inpkey="14"/>
+											<entry name="Year" type="attribute" inpkey="17"/>
+											<entry name="Price" type="attribute" inpkey="2"/>
+											<entry name="Author" inpkey="20"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BookList.xsd" outputinstance="BookListOutput.xml" instanceroot="{}BookList" userdefinedschemalocation="BookList.xsd" sps="BookList.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+							<edge vertexkey="28" edgekey="29"/>
+							<edge vertexkey="30" edgekey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="33" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="36" edgekey="37"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="39" edgekey="40"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

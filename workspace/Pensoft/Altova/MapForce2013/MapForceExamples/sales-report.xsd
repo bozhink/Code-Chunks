@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="sales-report">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="period" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="region-sales" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="regioncode" use="required"/>
+									<xs:attribute name="amount" type="xs:decimal" use="required"/>
+									<xs:attribute name="units-sold" type="xs:integer"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="start-date" type="xs:date" use="required"/>
+						<xs:attribute name="end-date" type="xs:date" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

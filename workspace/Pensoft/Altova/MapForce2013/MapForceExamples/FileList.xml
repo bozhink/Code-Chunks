@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FileList.xsd">
+	<File>Examples\ExampleSite\blocks.sps</File>
+	<File>Examples\ExampleSite\blocks.xml</File>
+	<File>Examples\ExampleSite\block_file.xml</File>
+	<File>Examples\ExampleSite\block_schema.xml</File>
+	<File>Examples\ExampleSite\contact.xml</File>
+	<File>Examples\ExampleSite\dictionaries.xml</File>
+	<File>Examples\ExampleSite\examplesite.dtd</File>
+	<File>Examples\ExampleSite\examplesite.spp</File>
+	<File>Examples\ExampleSite\examplesite.sps</File>
+	<File>Examples\ExampleSite\files.xml</File>
+	<File>Examples\ExampleSite\home.xml</File>
+	<File>Examples\ExampleSite\html_icon.bmp</File>
+	<File>Examples\ExampleSite\introduction.xml</File>
+	<File>Examples\ExampleSite\navigation.sps</File>
+	<File>Examples\ExampleSite\navigation.xml</File>
+	<File>Examples\ExampleSite\nav_file.xml</File>
+	<File>Examples\ExampleSite\nav_schema.xml</File>
+	<File>Examples\ExampleSite\readme.txt</File>
+	<File>Examples\ExampleSite\site.xsd</File>
+	<File>Examples\ExampleSite\site.xsl</File>
+	<File>Examples\ExampleSite\output\examplesite1.css</File>
+	<File>Examples\ExampleSite\output\images\blank.gif</File>
+	<File>Examples\ExampleSite\output\images\block_file.gif</File>
+	<File>Examples\ExampleSite\output\images\block_schema.gif</File>
+	<File>Examples\ExampleSite\output\images\nav_file.gif</File>
+	<File>Examples\ExampleSite\output\images\nav_schema.gif</File>
+	<File>Examples\Import\altova.mdb</File>
+	<File>Examples\Import\Data_shape.mdb</File>
+	<File>Examples\IndustryStandards\News\high-tide.jpg</File>
+	<File>Examples\IndustryStandards\News\Newsml-example.xml</File>
+	<File>Examples\IndustryStandards\News\nitf-example.xml</File>
+	<File>Examples\IndustryStandards\P3P\p3p-example.xml</File>
+	<File>Examples\IndustryStandards\W3C\datatypes.xml</File>
+	<File>Examples\IndustryStandards\W3C\xml.xml</File>
+	<File>Examples\IndustryStandards\W3C\xmlspec.sps</File>
+	<File>Examples\IndustryStandards\W3C\xmlspec.xsl</File>
+	<File>Examples\IndustryStandards\xmlresume\xmlresume-example.xml</File>
+	<File>Examples\MapForce\Article.xsd</File>
+	<File>Examples\MapForce\Articles.xml</File>
+	<File>Examples\MapForce\Articles.xsd</File>
+	<File>Examples\MapForce\CompletePO.mfd</File>
+	<File>Examples\MapForce\CompletePO.xsd</File>
+	<File>Examples\MapForce\Customer.xsd</File>
+	<File>Examples\MapForce\Customers.xml</File>
+	<File>Examples\MapForce\Customers.xsd</File>
+	<File>Examples\MapForce\CustomersAndArticles.mdb</File>
+	<File>Examples\MapForce\DB_CompletePO.mfd</File>
+	<File>Examples\MapForce\ShortPO.xml</File>
+	<File>Examples\MapForce\ShortPO.xsd</File>
+	<File>Examples\Office2007\AltovaProductLine.pptx</File>
+	<File>Examples\Office2007\docx2html.xslt</File>
+	<File>Examples\Office2007\EuroExchangeRates.xlsx</File>
+	<File>Examples\Office2007\ExcelDemo.xlsx</File>
+	<File>Examples\Office2007\ExcelDemo.xq</File>
+	<File>Examples\Office2007\pptx2html.xslt</File>
+	<File>Examples\Office2007\users.xsd</File>
+	<File>Examples\Office2007\xlsx2html.xslt</File>
+	<File>Examples\Office2007\XMLSpy2007.docx</File>
+	<File>Examples\Tutorial\AddressFirst.xsd</File>
+	<File>Examples\Tutorial\AddressLast.xsd</File>
+	<File>Examples\Tutorial\Company.html</File>
+	<File>Examples\Tutorial\company.mdb</File>
+	<File>Examples\Tutorial\Company.xsl</File>
+	<File>Examples\Tutorial\CompanyFirst.xml</File>
+	<File>Examples\Tutorial\CompanyLast.xml</File>
+	<File>Examples\Tutorial\Data_shape.mdb</File>
+	<File>Examples\Tutorial\Data_shape.xml</File>
+	<File>Examples\Tutorial\Data_shape.xsd</File>
+	<File>Examples\Tutorial\DB-based-xsd.mdb</File>
+	<File>Examples\Tutorial\DB2schema.mdb</File>
+	<File>Examples\Tutorial\DB2schema.xsd</File>
+	<File>Examples\Tutorial\DBschema2xml.xsd</File>
+	<File>Examples\Tutorial\No-constraints.xsd</File>
+	<File>Examples\Tutorial\Person-import.xml</File>
+	<File>Examples\Tutorial\Shapes.txt</File>
+	<File>Examples\Tutorial\Tiger.fo</File>
+	<File>Examples\XBRL Examples\Carnival Corp\Carnival Corp.sps</File>
+	<File>Examples\XBRL Examples\Carnival Corp\ccl-20090831.xml</File>
+	<File>Examples\XBRL Examples\Carnival Corp\ccl-20090831.xsd</File>
+	<File>Examples\XBRL Examples\Carnival Corp\ccl-20090831_cal.xml</File>
+	<File>Examples\XBRL Examples\Carnival Corp\ccl-20090831_lab.xml</File>
+	<File>Examples\XBRL Examples\Carnival Corp\ccl-20090831_pre.xml</File>
+	<File>Examples\XBRL Examples\Nanonull\Nanonull.sps</File>
+	<File>Examples\XBRL Examples\Nanonull\nanonull.xbrl</File>
+	<File>Examples\XBRL Examples\Nanonull\nanonull.xsd</File>
+	<File>Examples\XBRL Examples\Nanonull\nanonull_cal.xml</File>
+	<File>Examples\XBRL Examples\Nanonull\nanonull_def.xml</File>
+	<File>Examples\XBRL Examples\Nanonull\nanonull_lab.xml</File>
+	<File>Examples\XBRL Examples\Nanonull\nanonull_pre.xml</File>
+</FileList>

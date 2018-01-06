@@ -1,0 +1,403 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4465</article-id>
+            <title-group>
+                <article-title>Taxonomic changes in some predominantly Palaearctic distributed genera of Drymini (Heteroptera, Rhyparochromidae)
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Kondorosy</surname>
+                        <given-names>Előd</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:637ACD73-2A1F-41CA-918D-1C37D1B0F341</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Pannon University, Department of Animal Science, H-8360 Deák F. u. 16., Keszthely, Hungary
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Előd Kondorosy (<email xlink:type="simple">kondorosy@georgikon.hu</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>9</day>
+                    <month>12</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>29</day>
+                    <month>1</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Előd Kondorosy</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:FADB4026-D41D-4EB7-9388-8B78C012F2CF
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The history of the taxonomic research of Rhyparochromidae and especially Drymini is briefly reviewed. Two new species level synonyms are proposed: <italic>Taphropeltus javanus</italic> Bergroth, 1916, <bold>syn. n.</bold> = <italic>T. australis </italic>Bergroth, 1916, <bold>syn. n.</bold> = <italic>Brentiscerus putoni </italic>(Buchanan White, 1878). A monotypic new genus, <italic>Malipatilius</italic> <bold>gen. n.</bold> (type species: <italic>Scolopostethus forticornis </italic>Gross, 1965 from Australia) is established.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Rhyparochromidae</kwd>
+                <kwd>Drymini</kwd>
+                <kwd>new synonyms</kwd>
+                <kwd>new genus</kwd>
+                <kwd>Palaearctic Region</kwd>
+                <kwd>Oriental Region</kwd>
+                <kwd>Australia
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The knowledge on the taxonomy of the true bugs (Hemiptera: Heteroptera) and among them the family Rhyparochromidae developed unevenly during the past more than 250 years (Figure 1). From Linnaeus till the end of the 19th century the European fauna was most intensively studied. The fauna of the temperate and tropical Americas started to receive more attention from the second half of the century; among others, the work of C. Stål, W. L. Distant and P. R. Uhler is outstanding. The first twenty <!--PageBreak-->years of the 20th century was the Golden Age of the research on the Oriental fauna thanks primarily to E. Bergroth, G. Breddin and W. L. Distant). Between the first and second World Wars the research intensity decreased globally except of the Nearctic region where important works were published by H. G. Barber and others. In the 1960’s–1980’s the research underwent an active period, and a high number of new taxa was described especially from the Afrotropical and Australian (+ Pacific) Regions, but also from other regions; the activity of J. A. Slater and G. G. E. Scudder, furthermore A. C. Eyles, R. E. Linnavuori, M. Malipatil and T. E. Woodward was especially significant. In the last twenty years the descriptive activity slackened again.
+</p>
+            <p>The species occurring in more than one zoogeographical regions are included only once in Figure 1: in the region of the type locality. Therefore the known species number in each region is more or less higher than the listed one (Palaearctic: 475:442, Oriental: 456:339, Afrotropical: 544:430, Australian: 360:305, Nearctic: 258:206, Neotropical: 393:277). These differences refer to the many common species between certain regions (especially Palaearctic and Oriental or Afrotropical; and Nearctic and Neotropical regions).
+</p>
+            <p>The situation in respect of the tribe Drymini is similar to the general trends of Rhyparochromidae. This tribe is of worldwide distribution but in the Western Hemisphere the species richness is much lower (and only one species reaches the Neotropical area in Middle America). A good characterization of the world distribution of the Drymini (and of the other Rhyparochromidae) was given by Slater (1986) in his excellent work but this is the only tribe which dispersion is not evaluated in Slater’s interpretations.
+</p>
+            <p><!--PageBreak-->Members of Drymini are usually moderately vagile. This might partly explain the fact that only a few species are distributed in more than one zoogeographical area. Most of these species occur in China where they center the Oriental areas but more or less broadly extend to the neighbouring Palaearctic territories or vice versa. Therefore the species numbers described from the each region are only slightly lower than the actual number of the species known in the respective areas (Palaearctic: 83:87, Oriental: 71:79, Afrotropical: 69:72, Australian: 25:26, Nearctic: 34:36, Neotropical: 1:1).
+</p>
+            <p>Examining the history of the genus and species description in Drymini, the following things can be observed (Figure 2): during the 19<sup>th</sup> century 12 genera of Drymini were described, 11 of them from the Palaearctic Region. Of the 65 discovered species 51 have Palaearctic distribution. In the first quarter of the 20<sup>th</sup> century 18 genera and 42 species were described (among them 14 genera and 30 species from Southeast Asia). Before World War II the Nearctic species were most intensively studied. The knowledge of the Drymini of the Australian Region was developed extremely thanks to Gross (1965): he described 7 of the known 9 genera and 20 of the 25 species. The Afrotropical region was most intensively studied betwen 1950 and 2000; 7 of the 10 known genera and 65 of the 69 known species were described during these fifty years.
+            </p>
+            <p>The species described before the activity of F. X. Fieber were placed in large “general” genera as <italic>Lygaeus </italic>Fabricius, 1794, <italic>Pachymerus </italic>Lepeletier et Serville, 1825, or <!--PageBreak--><italic>Rhyparochromus </italic>Hahn, 1826. Fieber proposed six genera in the Palaearctic Drymini. For the coming few decades the European genera were used to accommodate several new extrapalaearctic species; since most species occurring in the Nearctic Region belong to shared genera it was justified in many cases. Bergroth and Distant were the first to describe several extrapalaearctic genera in the beginning of the 20<sup>th</sup> century. As a result of their activity, the use of the Palaearctic genera became more restricted. Currently several of these have already been transferred to other genera, but some species have remained “forgotten” or are of uncertain status.
+            </p>
+            <p>The aim of this paper is to correct some of these incorrect combinations.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>Type and non-type specimens of Drymini of the following institutions were examined: Natural History Museum, London (BMNH); Finnish Museum of Natural History (Helsinki (FMNH); Hungarian Natural History Museum, Budapest, Hungary (HNHM); Moravian Museum, Brno, Czech Republic (MMBC); National Museum of Natural History (Naturalis), Leiden, the Nederlands (RMNH); Natural History Museum, Vienna (NHMW); Tirolese Regional Museum (Ferdinandeum), Innsbruck (TLMF); Zoological Museum, Amsterdam (ZMAN), and Natural History Museum, Berlin (MFNB).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <sec>
+                <title><bold>Distribution of Palaearctic genera of Drymini
+</bold>
+                </title>
+                <p>As it was pointed out before, most species of Drymini are restricted to a single zoogeographical region. Similarly, most of the genera are also restricted to a single region. As an example, <italic>Ischnocoris </italic>Fieber, 1860, <italic>Notochilus </italic>Fieber, 1864, <italic>Orsillodes </italic>Puton, 1884, and <italic>Thaumastopus </italic>Fieber, 1870 are of exclusively Palaearctic distribution.
+                </p>
+                <p><italic>Hidakacoris </italic>Tomokuni, 1998 is currently known only from Japan, but there are some undescribed Oriental species which belong to this genus too.
+                </p>
+                <p>All more widely distributed Palaearctic genera (13) extend to the Oriental region; 7 of them are found only in these two regions. Palaearctic genera containing species extending to Oriental areas are <italic>Gastrodes</italic> Westwood, 1840, <italic>Lamproplax </italic>Douglas &amp; Scott, 1868, and <italic>Trichodrymus </italic>Lindberg, 1927. It is also frequent that an Oriental or pantropical genus has some species inhabiting marginal areas of the Palaearctic Region, most frequently China and Japan. Such genera are <italic>Appolonius </italic>Distant, 1901, <italic>Mizaldus </italic>Distant, 1901 (<italic>Neomizaldus </italic>Scudder, 1968, is probably a junior synonym of the latter), <italic>Paradieuches </italic>Distant, 1883, <italic>Potamiaena </italic>Distant, 1910, and <italic>Retoka </italic>China, 1935.
+                </p>
+                <p><italic>Drymus </italic>Fieber, 1860, is a genus centered in the Holarctic but also having some described and a few undescribed Oriental species.
+                </p>
+                <!--PageBreak-->
+            </sec>
+            <sec>
+                <title><bold-italic>Taphropeltus</bold-italic><bold> Stål, 1872</bold><bold-italic>
+</bold-italic>
+                </title>
+                <p><italic>Taphropeltus</italic> is a predominantly Palaearctic genus which currently contains one exotic species, too (two other Palaearctic species are reaching the northern part of the Afrotropical region). The Australian <italic>Taphropeltus australis </italic>Bergroth, 1916, was originally included in this genus (Bergroth 1916b). Gross (1965) described <italic>Isopeltus </italic>Gross, 1965, and designated <italic>T. australis</italic> as its type species. Subsequently Slater (1976) synonymized <italic>Isopeltus </italic>with <italic>Brentiscerus</italic> Scudder, 1962 (type species: <italic>Scolopostethus putoni </italic>Buchanan White, 1878).
+                </p>
+                <p>The othertropical <italic>Taphropeltus</italic> species is <italic>T. javanus </italic>Bergroth, 1916, described from Java, Indonesia (Bergroth 1916a).
+                </p>
+                <p>Both <italic>T. australis</italic> and <italic>T. javanus </italic>show similarity to the Palaearctic members of <italic>Taphropeltus</italic>, but they are readily distinguished from the true <italic>Taphropeltus </italic>species among others by having a more strongly developed pronotal collar and three rows of claval punctures. Based on the original descriptions only, Scudder (1962) presumed that the two species are congeneric. Because no important differences between the Australian and Javanese specimens could be found which would justify considering them as representing two different species, furthermore there specimens were seen from islands between the two type localities (Bali, Flores, Sumba, New Guinea: none of them was previously known as inhabited by any <italic>Taphropeltus </italic>species), the two species are considered as conspecific.
+                </p>
+                <p>Both species were described in 1916. Both of the two journal issues contain explicit information about the date of the publication: the description of <italic>T. javanus</italic> is dated to 12 September 1916, while the article describing <italic>T. australis </italic>was published during October of the same year.
+                </p>
+                <p>Furthermore, I compared the lectotype and additional non-type specimens of <italic>Brentiscerus putoni </italic>(Buchanan White, 1878), which is described from New Zealand, with the mentioned species. They are virtually identical. As a conclusion, the following nomenclatural changes are required:
+                </p>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Brentiscerus putoni</bold-italic>
+                            <bold> (Buchanan White, 1878)
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Brentiscerus_putoni
+</object-id>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Scolopostethus putoni</italic> Buchanan White, 1878: 75. Syntypes (♂, ♀): New Zealand; BMNH!
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Taphropeltus javanus</italic> Bergroth, 1906a [12 Sep.]: 220. Syntype(s): [Indonesia:] Java, Mt. Tengger; lost? <bold>New synonym.</bold>
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Taphropeltus australis</italic> Bergroth, 1906b [Oct.]: 13. Syntype(s): Australia: Victoria; lost? <bold>syn. n.</bold>
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type material examined.</bold>
+                        </title>
+                        <p><bold-italic>Scolopostethus putoni</bold-italic><bold>. Lectotype</bold> (designated by Scudder 1967): round label with purple margin LECTOTYPE // round label with red margin <!--PageBreak-->TYPE // hw: New Zealand // Scolopostethus / putoni B.W. // Brentiscerus / putoni (Wk.) / ExDr. 77 // printed: Pres. by / Perth Museum / B. M. 1953-629. //pink hw. Scolopostethus / putoni White 1878 / G.G.E. Scudder 1965 / LECTOTPYE (female, BMNH). <bold>Paralectotypes</bold>: round label with blue margin PARALECTOTYPE // round label with yellow margin COTYPE // hw: New Zealand // Scolopostethus / putoni B.W. // printed: Pres. by / Perth Museum / B. M. 1953-629. (1 male, 2 females all with the same labels, BMNH).
+                        </p>
+                        <p>The types of <bold-italic>Taphropeltus australis</bold-italic>and <bold-italic>T. javanus</bold-italic>are probably lost, no references mentioning them could be traced and they could not be found in FMNH where most of Bergroth’s collection is deposited. Taxonomic decisions were made based by examination of non-type specimens from Australia, New Guinea and Indonesia, respectively.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Additional material examined.</bold>
+                        </title>
+                        <p><bold> INDONESIA.</bold> Dammerman / O. Soemba / 700 m 249 / Kananggar / v. 1925 (1 male, RMNH); Dammerman / Idjen 1850 m / Ongop-ongop / 19. V. 1924 / No. 17 (RMNH); Banjoewangi / JAVA 1909 / MacGillavry (1 female, HNHM); INDONESIA: centr. Java / Pokalongan Reg., Bandar / 1050 m / 2.1998., leg. S. Jakl (1 female, NHMW); IDN-Bali Isl. / Bedugul reg. 1300m / Tamblingan lak.N.R. / S. Jakl lg., 3.2005 (1 female, MMBC); Sunda Exp. Rensch / W.-Flores / Rana Mêsé / 20.–30.6.1927 (1 male, MFNB); Sumba (E) / Luku-Melolo N. R. / 550 m, VII. 2005 / leg. S. Jakl (2 ex., NHMW). <bold>PAPUA NEW GUINEA.</bold> New Guinea / Mt. Kaindi / 2400 m / 15-16. IV. 1965 // Nr. 34 / Coll. Balogh et / Szent-Ivány (1 female, HNHM); Austr. New Guinea / Wau 1250 m / 10.-20. XI. 1972 / J. v. d. Vecht (1 male, ZMAN); Museum Leiden / Neth. New Guinea Exp. / Star Range 1260 m / Sibil / 15. VI. 1959 // Taphropeltus 3 (handwriting) (1 female, RMNH); <bold>AUSTRALIA</bold>. N.S.W. / Cassilis “Kuloo” / Station 710 m / 31°50'9&quot;S, 150°8'E // 25.X.2000 / Hung. Entom. Exped. / leg. A. Podlussány, G. Hangay &amp; I. Rozner (1 male, HNHM); N.S.W. / Karai State Forest / Kookaburra, 943 m / 31°1'4&quot;S, 152°20'2&quot;E // 27–28.X.2000 / Hung. Entom. Exped. / leg. A. Podlussány, G. Hangay &amp; I. Rozner (1 female, HNHM); N.S.W., Putty / Road, Cases Courvert / 10–11.I.2006 leg. G. Hangay, I. Rozner &amp; A. Podlussány (1 male, 2 female, HNHM); N.S.W. / Milton, 21.I.2006 / leg. A. Podlussány, G. Hangay &amp; I. Rozner (1 female, HNHM); New South Wales / J.P. Duffels // Eucalyptus / forest // 48 km N of Singleton / 15 I 1983 (1 female, ZMAN). <bold>NEW ZEALAND</bold>. C. Darwin / 85–119. (1 male, BMNH); (handwriting): Kaitaia NZ / 1 VIII 23 / JG Myers // Base of prairie grass // (printed): J. G. Myers Coll. B.M. 1937-789. (1 male, BMNH).
+                        </p>
+                        <p>The population of <italic>B. putoni </italic>in New Zealand possibly originates from Australia, where all congeners are native. There are no autochthonous Drymini species in New Zealand, only some introduced species occur, as <italic>B. putoni</italic>, <italic>Grossander major </italic>(Gross, 1965) and <italic>Paradrymus exilirostris</italic> Bergroth, 1916 (Malipatil 1977). Since it feeds on <italic>Eucalyptus </italic>seeds (Gross 1965), <italic>B. putoni </italic>likely was introduced with <italic>Eucalyptus </italic>trees.
+                        </p>
+                        <p><!--PageBreak-->The other species of the genus <italic>Taphropeltus </italic>species which are partly of extrapalaearctic distribution are <italic>T. nervosus</italic> (Fieber, 1861) and <italic>T. ornatus </italic>Linnavuori, 1978. Both of these species are morphologically rather distinct from the type species, <italic>T. hamulatus </italic>Thomson, 1870, and the other known Palaearctic members of the genus. It is sure that at least <italic>T. ornatus </italic>belongs to another genus, as it also was suggested by Péricart (1999). This problem needs further investigation.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+            <sec>
+                <title><bold-italic>Eremocoris </bold-italic><bold>Fieber, 1860, and </bold><bold-italic>Scolopostethus </bold-italic><bold>Fieber, 1860
+</bold>
+                </title>
+                <p>Although the West Palaearctic species of this complex are easy to classify into one of the two genera, <italic>Eremocoris </italic>and <italic>Scolopostethus </italic>are morphologically very close to each other. Some of the described species and also certain undescribed species from the Afrotropical and Oriental Regions are morphologically transitional between <italic>Eremocoris </italic>and <italic>Scolopostethus</italic>. E.g., the African <italic>S. maumus </italic>Scudder, 1962, is apparently very closely related to <italic>E. africanus </italic>Slater, 1964. The possible synonymy of them was already suggested by Slater (1972).
+                </p>
+                <p>Species currently placed to <italic>Scolopostethus </italic>live in all major zoogeographic regions, with many undescribed Oriental species. The Australian <italic>S. forticornis</italic> Gross, 1965,belongs to a different, so far undescribed genus which is described below as new. Each of the African <italic>S. daulias </italic>Linnavuori, 1978 and <italic>S. kilimandjariensis </italic>Scudder, 1962 represent another undescribed genus. <italic>S. daulias </italic>seems to be related with <italic>Taphropeltus ornatus </italic>Linnavuori, 1978, but their relationship needs further investigation.<italic> S. kilimandjariensis </italic>belongs to a new genus but its description must be done in frames of a comprehensive study on all other Afrotropical members of the <italic>Scolopostethus</italic>–<italic>Eremocoris </italic>complex.
+                </p>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Malipatilius</bold-italic>
+                            <bold> gen. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:1B42F8DE-6D15-4B14-BE9B-BD02DEAF79FC
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Malipatilius
+</object-id>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type species.</bold>
+                        </title>
+                        <p> <italic>Scolopostethus forticornis </italic>Gross, 1965, by present designation.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description. </bold>
+                        </title>
+                        <p><italic>Body</italic> elongate oval, dull, extensively punctate, dorsally glabrous (Fig. 3).
+                        </p>
+                        <p><italic>Head</italic> pentagonal, with dense fine punctures. Eyes small, very prominent. Ocelli well developed, located very far from each other, near the eyes. Antenniferous tubercle curved laterally. <italic>Antenna</italic> very robust, subclavate.
+                        </p>
+                        <p><italic>Pronotum</italic> without anterior collar, transversal furrow deep, disk densely punctured. Anterior and posterior margins straight, lateral margin concave, explanate but not widened at transversal furrow. Anterior lobe more globose in male, lateral margin partially parallel here. <italic>Scutellum</italic> elevated at middle. <italic>Fore wing.</italic> Clavus with 3 regular rows of punctures. Corium evenly and densely punctate, nearly parallel, costal margin only slightly concave subbasally, apical margin straight. <italic>Thoracic sternum</italic> punctate except <!--PageBreak-->submedian parts of mesosternum. <italic>Legs</italic> robust, fore femur strongly incrassate, especially in male, with two rows of spines and a very large spine in inner row.
+                        </p>
+                        <p><italic>Abdomen</italic> with dense decumbent pilosity, lateral portion of intersegmental suture between sternites IV–V curved anteriorly, not reaching lateral margin and sublateral furrow; trichobothrial pattern as typical in Drymini.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Included species.</bold>
+                        </title>
+                        <p> The genus is apparently not monotypic, because besides of the type species very probably congeneric specimens were seen at least from Java, Kalimantan and the New Hebrides.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Discussion:.</bold>
+                        </title>
+                        <p> The type species of <italic>Malipatilius </italic>gen. n. was originally placed into the genus <italic>Scolopostethus</italic>. The diagnostic characters of the two genera are presented in Table 1. A typical <italic>Scolopostethus </italic>species, <italic>S. ornandus </italic>Distant, 1904 is imaged for comparison on Figure 4. <italic>Faelicianus </italic>Bergroth, 1918, is perhaps the sister genus of <italic>Malipatilius</italic> gen. n. This genus has a pale wide lateral carina on pronotum, which is broadened <!--PageBreak--><!--PageBreak-->at transversal impression, therefore the pronotum is evenly convex laterally. The antenna is also slender, much more than even in <italic>Scolopostethus</italic>. Another known genera of Drymini, e.g. the superficially similar <italic>Salaciola </italic>Bergroth, 1893, which sometimes has similar colour and explanate pronotal carina, are certainly not closely related.
+                        </p>
+                        <p><bold>Etymology.</bold> Patronymic, named after and dedicated to Mallik B. Malipatil, recognizing his excellent contributions to various groups of Australian Heteroptera, particularly Rhyparochromidae. Gender masculine.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>I am very thankful to Dávid Rédei for the reviewing of the text. I am indebted to Michael D. Webb (BMNH), Dávid Rédei (HNHM), Petr Baňař (MMBC), Herbert Zettel (NHMW), Jan van Tol (RMNH), Joannes Petrus Duffels (ZMAN) and Jürgen Deckert (MFNB) for the opportunity of studying the type and another specimens.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bergroth</surname> <given-names>E</given-names></name></person-group> (<year>1916a</year>)<fake_tag> Neue Myodochidae (Hem. Het.). Wiener Entomologische Zeitung 35: 215–221.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bergroth</surname> <given-names>E</given-names></name></person-group> (<year>1916b</year>)<article-title> New genera and species of Australian Hemiptera.</article-title> <source>Proceedings of the Royal Society of Victoria </source> <volume>29</volume> (<issue>1</issue>): <fpage>1</fpage>-<lpage>18</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Buchanan</surname> <given-names>White F</given-names></name></person-group> (<year>1878</year>)<fake_tag> List of the Hemiptera of New Zealand. Entomologists’ Monthly Magazine 15: 31–34, 73–76.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gross</surname> <given-names>GF</given-names></name></person-group> (<year>1965</year>)<article-title> A revision of the Australian and New Guinea Drymini (Heteroptera-Lygaeidae).</article-title> <source>Records of the South Australian Museum </source> <volume>15</volume>: <fpage>39</fpage>-<lpage>76</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Malipatil</surname> <given-names>MB</given-names></name></person-group> (<year>1977</year>)<article-title> Additions to the Drymini of New Zealand (Heteroptera: Lygaeidae).</article-title> <source>New Zealand Journal of Zoology </source> <volume>4</volume>: <fpage>177</fpage>-<lpage>182</lpage>. doi: 10.1080/03014223.1977.9517950
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Péricart</surname> <given-names>J</given-names></name></person-group> (<year>1999</year>)<fake_tag> Hémiptères Lygaeidae euro-méditerranéens II. – Fauna de France, 84 B, Fédération Française des Sociétés de Sciences Naturelles, Paris, 453 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Scudder</surname> <given-names>GGE</given-names></name></person-group> (<year>1962</year>)<article-title> The World Rhyparochrominae (Hemiptera: Lygaeidae) II. New genera for previously described species.</article-title> <source>The Canadian Entomologist </source> <volume>94</volume> (<issue>9</issue>): <fpage>981</fpage>-<lpage>989</lpage>. doi: 10.4039/Ent94981-9
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Scudder</surname> <given-names>GGE</given-names></name></person-group> (<year>1967</year>)<article-title> Rhyparochrominae types in the British Museum (Natural History) (Hemiptera: Lygaeidae).</article-title> <source>Bulletin of the British Museum (Natural History) Entomology </source> <volume>20</volume> (<issue>6</issue>): <fpage>251</fpage>-<lpage>285</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Slater</surname> <given-names>JA</given-names></name></person-group> (<year>1972</year>)<article-title> The Lygaeidae of Upemba National Park (Hemiptera: Heteroptera). Parc National de l’Upemba – Mission G. F.</article-title> <source>de Witte </source> <volume>72</volume> (<issue>2</issue>): <fpage>17</fpage>-<lpage>81</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Slater</surname> <given-names>JA</given-names></name></person-group> (<year>1976</year>)<fake_tag> The biology, distribution and taxonomy of some Lygaeidae of Southwest Australia (Hemiptera: Heteroptera). Journal of the Australian Entomological Society, 15: 129–151. </fake_tag>doi: 10.1111/j.1440-6055.1976.tb01684.x
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Slater</surname> <given-names>JA</given-names></name></person-group> (<year>1986</year>)<article-title> A synopsis of the zoogeography of the Rhyparochrominae (Hemiptera: Lygaeidae).</article-title> <source>Journal of the New York Entomological Society </source> <volume>94</volume> (<issue>2</issue>): <fpage>262</fpage>-<lpage>280</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Number of described valid species of the family Rhyparochromidae from the main zoogeographical regions.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> Number of described valid genera of the tribe Drymini from the main zoogeographical regions.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> <italic>Malipatilius forticornis</italic> (Gross, 1965), new combination.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> Scolopostethus ornandus Distant, 1904.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> Diagnostic characters of <italic>Malipatilius </italic>gen. n. and <italic>Scolopostethus.</italic>&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="0" bodyRowCount="14" columnCount="3" aid:table="table" aid:trows="14" aid:tcols="3">
+                <tbody>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Character</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold-italic>Malipatilius</bold-italic><bold> gen. n.</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold-italic>Scolopostethus</bold-italic>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Eye</td>
+                        <td rowspan="1" colspan="1">hind margin straight</td>
+                        <td rowspan="1" colspan="1">rounded</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Antennal segment I surpassing apex of head</td>
+                        <td rowspan="1" colspan="1">short, less than half length of segment</td>
+                        <td rowspan="1" colspan="1">longer, more than half length of segment</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Length : width ratio of antennal segment III</td>
+                        <td rowspan="1" colspan="1">~3.5</td>
+                        <td rowspan="1" colspan="1">more than 5</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Colour of pronotum</td>
+                        <td rowspan="1" colspan="1">unicolorous dark (sometimes posteriorly slightly paler)</td>
+                        <td rowspan="1" colspan="1">tricoloured</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Lateral margin of pronotum</td>
+                        <td rowspan="1" colspan="1">invariably dark</td>
+                        <td rowspan="1" colspan="1">always pale on middle</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Pronotal margin at transverse furrow</td>
+                        <td rowspan="1" colspan="1">virtually not widened; strongly concave</td>
+                        <td rowspan="1" colspan="1">distinctly widened, straight or slightly concave</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Anterior pronotal lobe of male in side-view</td>
+                        <td rowspan="1" colspan="1">strongly emerging, approximately as high as posterior margin</td>
+                        <td rowspan="1" colspan="1">slightly emerging, nearly evenly sloping</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Transversal furrow</td>
+                        <td rowspan="1" colspan="1">deep</td>
+                        <td rowspan="1" colspan="1">shallow</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Posterior pronotal margin</td>
+                        <td rowspan="1" colspan="1">straight</td>
+                        <td rowspan="1" colspan="1">concave</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Scutellum in side-view</td>
+                        <td rowspan="1" colspan="1">convex</td>
+                        <td rowspan="1" colspan="1">flat</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Number of rows of punctures on clavus</td>
+                        <td rowspan="1" colspan="1">3 (inner row sometimes incomplete)</td>
+                        <td rowspan="1" colspan="1">3.5–4</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Punctures on corium</td>
+                        <td rowspan="1" colspan="1">even and dense</td>
+                        <td rowspan="1" colspan="1">inner part with smooth parts </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Apical margin of corium</td>
+                        <td rowspan="1" colspan="1">straight</td>
+                        <td rowspan="1" colspan="1">slightly S-shaped</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+    </article_figs_and_tables>
+</article>

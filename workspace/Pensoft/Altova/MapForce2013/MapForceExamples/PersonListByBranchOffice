@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="38784368" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="xslt" MakePathsAbsoluteOnGeneration="1"/>
+		<sources>
+			<datapoint name="OfficeName" datatype="string" connectiontype="0"/>
+		</sources>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="39018568" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="172" rby="274"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="BranchOffices" expanded="1">
+										<entry name="Office" outkey="20" expanded="1">
+											<entry name="Name" outkey="17"/>
+											<entry name="Address" expanded="1"/>
+											<entry name="Contact" outkey="4" expanded="1">
+												<entry name="first" outkey="7"/>
+												<entry name="last" outkey="12"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" inputinstance="BranchOffices.xml" outputinstance="BranchOffices.xml" instanceroot="{}BranchOffices"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="53674776" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="2" lty="-27" rbx="-466" rby="-142"/>
+					<data>
+						<constant value="Nanonull, Inc." datatype="string"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="53674512" kind="5">
+					<sources>
+						<datapoint pos="0" key="27"/>
+						<datapoint pos="1" key="18"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="34"/>
+					</targets>
+					<view ltx="285" lty="-48" rbx="-44" rby="-142"/>
+				</component>
+				<component name="Office" library="core" uid="38159760" kind="3">
+					<sources>
+						<datapoint pos="0" key="21"/>
+						<datapoint pos="1" key="35"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="23"/>
+						<datapoint/>
+					</targets>
+					<view ltx="393" lty="-30" rbx="-75" rby="-206"/>
+				</component>
+				<component name="OfficeName" library="core" uid="38413808" kind="6">
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view ltx="140" lty="-48" rbx="-144" rby="-87"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="OfficeName" optional="1"/>
+					</data>
+				</component>
+				<component name="LookupPerson" library="user" blackbox="0" uid="54360529" kind="19" visible="0">
+					<view ltx="301" lty="210" rbx="455" rby="261"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Office_Name" inpkey="29" componentid="54324160"/>
+							<entry name="First_Name" inpkey="10" componentid="37209376"/>
+							<entry name="Last_Name" inpkey="15" componentid="37210824"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="31" componentid="53630696"/>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="38594440" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="522" lty="-23" rbx="672" rby="177"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PersonList" inpkey="24" expanded="1">
+										<entry name="Person" inpkey="5" expanded="1">
+											<entry name="First" inpkey="8"/>
+											<entry name="Last" inpkey="13"/>
+											<entry name="Details" inpkey="32"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList" sps="PersonList.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+							<edge vertexkey="10" edgekey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="14"/>
+							<edge vertexkey="15" edgekey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18" edgekey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21" edgekey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="24" edgekey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="27" edgekey="28"/>
+							<edge vertexkey="29" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="35" edgekey="36"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="EqualAnd" library="user" blackbox="0" uid="54337592" editable="1">
+		<sources>
+			<datapoint name="a" datatype="anySimpleType"/>
+			<datapoint name="b" datatype="anySimpleType"/>
+			<datapoint name="and" datatype="boolean" connectiontype="0"/>
+		</sources>
+		<targets>
+			<datapoint name="result" datatype="boolean"/>
+		</targets>
+		<description>
+			<short>EqualAnd( a, b, and )</short>
+			<long>Returns true if &apos;a&apos;=&apos;b&apos; and &apos;and&apos;=true if given - otherwise false.</long>
+		</description>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="54339136" kind="5">
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view lty="-4" rbx="13" rby="2"/>
+				</component>
+				<component name="logical-and" library="core" uid="54340544" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="14"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="87" lty="-3" rbx="-367" rby="-202"/>
+				</component>
+				<component name="and" library="core" uid="54341984" kind="6">
+					<sources>
+						<datapoint pos="0" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="-133" lty="85" rbx="-190" rby="-118"/>
+					<data>
+						<input datatype="boolean"/>
+						<parameter usageKind="input" name="and" optional="1"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="54343992" kind="2">
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="-223" lty="106" rbx="-561" rby="-59"/>
+					<data>
+						<constant value="true" datatype="anySimpleType"/>
+					</data>
+				</component>
+				<component name="result" library="core" uid="54344760" kind="7">
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<view ltx="199" lty="5" rbx="-138" rby="5"/>
+					<data>
+						<output datatype="boolean"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="a" library="core" uid="54346400" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="-131" lty="-4" rbx="-1" rby="-4"/>
+					<data>
+						<input datatype="anySimpleType"/>
+						<parameter usageKind="input" name="a"/>
+					</data>
+				</component>
+				<component name="b" library="core" uid="54348000" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="-132" lty="41" rbx="-2" rby="-9"/>
+					<data>
+						<input datatype="anySimpleType"/>
+						<parameter usageKind="input" name="b"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="LookupPerson" library="user" blackbox="0" uid="53628792" editable="1">
+		<sources>
+			<datapoint name="Office_Name" datatype="string"/>
+			<datapoint name="First_Name" datatype="string"/>
+			<datapoint name="Last_Name" datatype="string"/>
+		</sources>
+		<targets>
+			<datapoint name="result" datatype="string"/>
+		</targets>
+		<description>
+			<short>LookupPerson( OfficeName, First, Last )</short>
+			<long>Searches for detailed information about the person in Altova_Hierarchical.xml.</long>
+		</description>
+		<structure>
+			<children>
+				<component name="result" library="core" uid="53630696" kind="7">
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<view ltx="832" lty="236" rbx="-64" rby="136"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="53711744" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="50" lty="15" rbx="199" rby="288"/>
+					<data>
+						<root scrollposition="149">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Altova" expanded="1">
+										<entry name="Office" expanded="1">
+											<entry name="Name" outkey="28"/>
+											<entry name="Department" expanded="1">
+												<entry name="Person" expanded="1">
+													<entry name="EMail" outkey="13"/>
+													<entry name="First" outkey="16"/>
+													<entry name="Last" outkey="19"/>
+													<entry name="PhoneExt" outkey="22"/>
+													<entry name="Title" outkey="25"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Altova_Hierarchical.xsd" inputinstance="Altova_Hierarchical.xml" outputinstance="Altova_Hierarchical.xml" instanceroot="{}Altova"/>
+					</data>
+				</component>
+				<component name="Details" library="core" uid="54360528" kind="3">
+					<sources>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="32"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+						<datapoint/>
+					</targets>
+					<view ltx="707" lty="228" rbx="209" rby="34"/>
+				</component>
+				<component name="Office_Name" library="core" uid="54324160" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="238" lty="14" rbx="105" rby="-61"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="Office_Name"/>
+					</data>
+				</component>
+				<component name="First_Name" library="core" uid="37209376" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="237" lty="69" rbx="38" rby="-133"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="First_Name"/>
+					</data>
+				</component>
+				<component name="Last_Name" library="core" uid="37210824" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="235" lty="121" rbx="-24" rby="-180"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="Last_Name"/>
+					</data>
+				</component>
+				<component name="EqualAnd" library="user" blackbox="0" uid="54360530" kind="19" visible="0">
+					<view ltx="585" lty="121" rbx="189" rby="106"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="a" inpkey="11" componentid="54346400"/>
+							<entry name="b" inpkey="20" componentid="54348000"/>
+							<entry name="and" inpkey="35" componentid="54341984"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="31" componentid="54344760"/>
+						</root>
+					</data>
+				</component>
+				<component name="EqualAnd" library="user" blackbox="0" uid="54360531" kind="19" visible="0">
+					<view ltx="479" lty="69" rbx="83" rby="54"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="a" inpkey="8" componentid="54346400"/>
+							<entry name="b" inpkey="17" componentid="54348000"/>
+							<entry name="and" inpkey="38" componentid="54341984"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="34" componentid="54344760"/>
+						</root>
+					</data>
+				</component>
+				<component name="EqualAnd" library="user" blackbox="0" uid="54360532" kind="19" visible="0" prioritycontext="29">
+					<view ltx="371" lty="14" rbx="-25" rby="-1"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="a" inpkey="5" componentid="54346400"/>
+							<entry name="b" inpkey="29" componentid="54348000"/>
+							<entry name="and" componentid="54341984"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="37" componentid="54344760"/>
+						</root>
+					</data>
+				</component>
+				<component name="Person2Details" library="user" blackbox="0" uid="54360533" kind="19" visible="0">
+					<view ltx="458" lty="228" rbx="68" rby="-86"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Title" inpkey="26" componentid="54312352"/>
+							<entry name="EMail" inpkey="14" componentid="54313960"/>
+							<entry name="Phone" inpkey="23" componentid="54315544"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Details" outkey="40" componentid="54319360"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="35" edgekey="36"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="38" edgekey="39"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="41" edgekey="42"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="Person2Details" library="user" blackbox="0" uid="54310696" editable="1">
+		<sources>
+			<datapoint name="Title" datatype="string"/>
+			<datapoint name="EMail" datatype="string"/>
+			<datapoint name="Phone" datatype="string"/>
+		</sources>
+		<targets>
+			<datapoint name="Details" datatype="string"/>
+		</targets>
+		<description>
+			<short>Person2Details( Title, EMail, PhoneExt )</short>
+			<long>Creates a complete details-string out of three part values.</long>
+		</description>
+		<structure>
+			<children>
+				<component name="Title" library="core" uid="54312352" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="-130"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="Title"/>
+					</data>
+				</component>
+				<component name="EMail" library="core" uid="54313960" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="-131" lty="48" rbx="-1" rby="-2"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="EMail"/>
+					</data>
+				</component>
+				<component name="Phone" library="core" uid="54315544" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="-131" lty="107" rbx="-1" rby="7"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="Phone"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="54317128" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="14"/>
+						<datapoint pos="2" key="5"/>
+						<datapoint pos="3" key="17"/>
+						<datapoint pos="4" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="106" lty="13" rbx="1" rby="-282"/>
+				</component>
+				<component name="Details" library="core" uid="54319360" kind="7">
+					<sources>
+						<datapoint pos="0" key="11"/>
+					</sources>
+					<view ltx="252" lty="48" rbx="-106" rby="48"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="Details"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="54330632" kind="2">
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="-35" lty="52" rbx="-533" rby="-211"/>
+					<data>
+						<constant value=", EMail:" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="54331456" kind="2">
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="-36" lty="86" rbx="-534" rby="-177"/>
+					<data>
+						<constant value=", Phone: " datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowAnnotations="0" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="2" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="65" lty="-33" rbx="-458" rby="-335"/>
+					<data>
+						<constant value="USD" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="9" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="19"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="596" lty="-13" rbx="-61" rby="-64"/>
+				</component>
+				<component name="multiply" library="core" uid="22" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="56"/>
+						<datapoint pos="1" key="25"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="476" lty="-178" rbx="-181" rby="-229"/>
+				</component>
+				<component name="value-map" library="core" uid="171" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="50"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="356" lty="-290" rbx="-62" rby="-44"/>
+					<data>
+						<wsdl/>
+						<valuemap enableDefaultValue="1">
+							<valuemapTable>
+								<entry from="JPY" to="Japanese Yen"/>
+								<entry from="CAD" to="Canadian Dollar"/>
+								<entry from="BRL" to="Brazilian Real"/>
+								<entry from="ISK" to="Iceland Krona"/>
+								<entry from="RUB" to="Russian Rouble"/>
+								<entry from="EUR" to="Euro"/>
+								<entry from="INR" to="IndiaRupees"/>
+							</valuemapTable>
+							<input name="Currency" type="string"/>
+							<result name="Description" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="roundto2decimals" library="user" blackbox="0" uid="165" kind="19" visible="0">
+					<view ltx="699" lty="-2" rbx="803" rby="15"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="value" inpkey="10" componentid="166"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="77" componentid="164"/>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="15" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-6" lty="-507" rbx="197" rby="-98"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PurchaseOrders" expanded="1">
+										<entry name="PurchaseOrder" outkey="66" expanded="1">
+											<entry name="shipTo" outkey="15"/>
+											<entry name="billTo" outkey="41"/>
+											<entry name="Suppliers" outkey="74" expanded="1">
+												<entry name="CurrencyCode" type="attribute" outkey="47"/>
+												<entry name="CompanyName" outkey="21" expanded="1"/>
+												<entry name="ContactName" outkey="60"/>
+												<entry name="ContactTitle" outkey="38"/>
+												<entry name="Address" outkey="35"/>
+												<entry name="City" outkey="29"/>
+												<entry name="PostalCode" outkey="44"/>
+												<entry name="Phone" outkey="32"/>
+												<entry name="Fax" outkey="80"/>
+												<entry name="HomePage" outkey="81"/>
+												<entry name="Items" outkey="69" expanded="1">
+													<entry name="Item" outkey="52"/>
+													<entry name="price" outkey="55"/>
+													<entry name="quantity" outkey="24"/>
+													<entry name="OrderTotal" outkey="125"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="IPO-Source.xsd" inputinstance="PurchaseOrders.xml" outputinstance="PurchaseOrders.xml" instanceroot="{}PurchaseOrders"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="ConversionRate" library="CurrencyConvertor" uid="145" kind="20" visible="0">
+					<properties WSDLFile="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL" WSDLService="{http://www.webserviceX.NET/}CurrencyConvertor" WSDLPort="{}CurrencyConvertorSoap12" WSDLOperation="{http://www.webserviceX.NET/}ConversionRate" WSDLEndPoint="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+					<view ltx="235" lty="-94" rbx="539" rby="9"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.webserviceX.NET/"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="ConversionRateSoapIn" expanded="1">
+								<entry name="ConversionRateSoapIn" expanded="1">
+									<entry name="parameters" ns="1" expanded="1">
+										<entry name="FromCurrency" inpkey="48"/>
+										<entry name="ToCurrency" inpkey="2"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.webserviceX.NET/"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="ConversionRateSoapOut" expanded="1">
+								<entry name="ConversionRateSoapOut" expanded="1">
+									<entry name="parameters" ns="1" expanded="1">
+										<entry name="ConversionRateResult" outkey="127"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="21" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="624" lty="-506" rbx="824" rby="-64"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PurchaseOrders" expanded="1">
+										<entry name="purchaseOrder" inpkey="82" expanded="1">
+											<entry name="shipTo" inpkey="83"/>
+											<entry name="billTo" inpkey="84"/>
+											<entry name="Suppliers" inpkey="85" expanded="1">
+												<entry name="CompanyName" inpkey="86"/>
+												<entry name="ContactName" inpkey="87"/>
+												<entry name="ContactTitle" inpkey="88"/>
+												<entry name="Address" inpkey="89"/>
+												<entry name="City" inpkey="90"/>
+												<entry name="PostalCode" inpkey="91"/>
+												<entry name="Phone" inpkey="92"/>
+												<entry name="Fax" inpkey="93"/>
+												<entry name="HomePage" inpkey="94"/>
+												<entry name="Items" inpkey="95" expanded="1">
+													<entry name="item" inpkey="96" expanded="1">
+														<entry name="productName" inpkey="97"/>
+														<entry name="quantity" inpkey="98"/>
+														<entry name="price" inpkey="99"/>
+														<entry name="SupplierPrice" inpkey="124" expanded="1">
+															<entry name="CurrencyCode" type="attribute" inpkey="100"/>
+														</entry>
+														<entry name="CustomerPrice" expanded="1">
+															<entry name="USD" type="attribute" inpkey="101"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="IPO-Target.xsd" instanceroot="{}PurchaseOrders" sps="IPO-Target.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="102">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="103">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="100" edgekey="104"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="83" edgekey="103"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="86" edgekey="105"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+							<edge vertexkey="98" edgekey="106"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="90" edgekey="107"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="92" edgekey="108"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="89" edgekey="109"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="88" edgekey="110"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="41">
+						<edges>
+							<edge vertexkey="84" edgekey="102"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="44">
+						<edges>
+							<edge vertexkey="91" edgekey="111"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="48" edgekey="49"/>
+							<edge vertexkey="50" edgekey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="97" edgekey="112"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="56" edgekey="57"/>
+							<edge vertexkey="99" edgekey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="87" edgekey="114"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="82" edgekey="115"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="95" edgekey="116"/>
+							<edge vertexkey="96" edgekey="117"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="85" edgekey="118"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="77">
+						<edges>
+							<edge vertexkey="101" edgekey="119"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="80">
+						<edges>
+							<edge vertexkey="93" edgekey="120"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="81">
+						<edges>
+							<edge vertexkey="94" edgekey="121"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="125">
+						<edges>
+							<edge vertexkey="124" edgekey="126"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="127">
+						<edges>
+							<edge vertexkey="19" edgekey="128"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="roundto2decimals" library="user" blackbox="0" editable="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="value" library="core" uid="166" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="42" lty="7" rbx="-160" rby="-100"/>
+					<data>
+						<input datatype="decimal"/>
+						<wsdl/>
+						<parameter usageKind="input" name="value"/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="168" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="14"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="189" lty="7" rbx="-1078" rby="-26"/>
+				</component>
+				<component name="round" library="core" uid="169" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="325" lty="15" rbx="-963" rby="75"/>
+				</component>
+				<component name="result" library="core" uid="164" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="11"/>
+					</sources>
+					<view ltx="565" lty="66" rbx="-206" rby="-34"/>
+					<data>
+						<output datatype="decimal"/>
+						<wsdl/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="167" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="4" lty="94" rbx="-1038" rby="259"/>
+					<data>
+						<constant value="100" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="divide" library="core" uid="170" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="449" lty="54" rbx="-906" rby="76"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+							<edge vertexkey="16" edgekey="17"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

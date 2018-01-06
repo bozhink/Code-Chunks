@@ -1,0 +1,349 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tp="http://www.plazi.org/taxpub">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4148</article-id>
+            <title-group>
+                <article-title>Madagascar Flatidae (Hemiptera, Fulgoromorpha): state-of-the-art and research challenges
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Świerczewski</surname>
+                        <given-names>Dariusz</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Stroiński</surname>
+                        <given-names>Adam</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Department of Zoology and Animal Ecology, Jan Długosz University, Al. Armii Krajowej 13/15, 42-201 Częstochowa, Poland
+            </aff>
+            <aff id="A2">
+                <label>2</label>Museum and Institute of Zoology PAS, Wilcza 64, 00-679 Warszawa, Poland
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Dariusz Świerczewski (<email xlink:type="simple">dswier@ajd.czest.pl</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>20</day>
+                    <month>10</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>4</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Dariusz Świerczewski, Adam Stroiński</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The paper provides a historical review of the research on Flatidae in Madagascar and indicates future prospects. While the first two species of Madagascar Flatidae were described by Guérin-Méneville (1844), it was Signoret (1860) who made the first real attempt to enhance our knowledge of the Hemiptera fauna of Madagascar by describing several additional species. Over the following century and a half, several investigators have turned their attention to this group of insects, with the final number of species recorded for the island reaching 79. Despite this long history of research, it is evident that much still remains to be done. Detailed taxonomic research will allow the natural history of Madagascar and changes in the biological diversity of its endemic ecosystems to be better understood. This paper should be considered as an introduction to a complex study on the systematics and phylogeny of worldwide Flatidae planthoppers.
+</p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Fulgoromorpha</kwd>
+                <kwd>Flatidae</kwd>
+                <kwd>taxonomy</kwd>
+                <kwd>research</kwd>
+                <kwd>history</kwd>
+                <kwd>Madagascar
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Flatidae constitute one of the largest families within planthoppers (Fulgoromorpha, Hemiptera) with 1446 species described in 299 genera and 12 tribes distributed worldwide (Bourgoin 2013). These phytophagous insects are highly diverse in terms of their colour and size (from 4.5 up to 32 mm), and are found on all continents, but are espe<!--PageBreak-->cially common and abundant in the tropics (O’Brien 2002). They are divided into two subfamilies – Flatinae and Flatoidinae, which, in most cases, can be easily distinguished from each other by the shape of the body. A greater number of Flatinae are flattened laterally, in contrast to Flatoidinae which hold their wings horizontally (O’Brien and Wilson 1985). About 20 species of Flatidae are regarded as serious pests of economically important crops such as coffee, tea, cacao, mango, citrus, apple and cherry (Wilson and O’Brien 1986). In Europe the only recognized pest is <italic>Metcalfa pruinosa</italic> (Say, 1830), a flatid species introduced into Italy from USA in 1973 (Arzone et al. 1987).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Data resources
+</bold>
+            </title>
+            <p>The data underpinning the analyses reported in this paper are deposited in the Dryad Data Repository at doi: 10.5061/dryad.d43j8
+</p>
+        </sec>
+        <sec>
+            <title><bold>Madagascar as a global biodiversity hotspot
+</bold>
+            </title>
+            <p>Madagascar is one of eight important global biodiversity hotspots owing to its unique biota and the high level of threat to its natural habitats (McNeelyet al. 1990, Myerset al. 2000, Ganzhorn et al. 2001). Being a part of the southern supercontinent Gondwana, it started to separate from Africa as a Madgascar-India block ca. 130 million years ago. At ca. 90 million years, India started breaking off from Madagascar and drifting northeastwards (Ali and Aitchison 2008). Despite Madagascar’s extreme isolation from India and its geographical proximity to Africa, a high proportion of the biota of the Madagascar region reveals some Asian affinities (Yoder and Nowak 2006). The suggested explanation of this might be the results of analyses obtained by Warren et al. (2010), which support the repeated existence of sizeable islands across the western Indian Ocean, reducing the distance of open ocean to be crossed.
+            </p>
+            <p>Madagascar has evolved an incredible wealth of biodiversity, with thousands of species that can be found nowhere else on earth. On the one hand, this is due to its long isolation from all other landmasses (Storey et al. 1995), on the other, several alternative mechanisms have generated local endemism such as isolation within watersheds (Wilmé et al. 2006), adaptation along environmental gradients (Smith et al. 1997) and ecologically mediated postspeciation range shifts (Losos and Glor 2003). The relative importance of these mechanisms, both for Madagascar and globally, is still under discussion (Pearson and Raxworthy 2009, Vences et al. 2009). For example, of its estimated 12 000 plant species, nearly 10 000 are unique to Madagascar (Gautier and Goodman 2007). Among the fauna, vertebrates have been the most thoroughly studied Madagascan animals (Raxworthy and Nussbaum 1996, Raxworthy et al. 2002, Goodman and Ganzorn 2004). With regard to invertebrates, and insects in particular, the best known groups are butterflies (Torres et al. 2001, Zakharov et al. 2004), dung beetles (Wirta et al. 2008), minnow mayflies (Monaghan et al. 2005) and ants (Fisher 1997).
+</p>
+            <p><!--PageBreak-->However, unsustainable use of natural resources such as wood for charcoal, bushmeat for protein supply and land for crop cultivations and cattle farming are having a profound impact on the Malagasy environment (Brown 2007). According to Kull (2012), an aerial photograph-based analysis of land-cover change of Madagascar’s high plateau in the latter half of the 20th century, based on a stratified rand sample of twenty eight sites, reveals a dramatic expansion of the cultural landscape of villages and agro-ecosystems into wetland and grassland environments. In response, significant environmental conservation efforts have been undertaken by the Malagasy government with international funding and technical support (Mittermeier et al. 2005). These environmental efforts in Madagascar have evolved over the past two decades from a Yellowstone model – transformation of large tracts of land into uninhabited, strictly protected areas, through the Integrated Conservation and Development Project (ICDP), which combines conservation of biological diversity with the social and economic needs of local people, to more recent initiatives that are the cutting edge of environmental innovation (Marcus and Kull 1999).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Flatidae research in Madagascar: a historical account
+</bold>
+            </title>
+            <p>The Flatidae fauna of Madagascar has intrigued natural historians for centuries and continues to attract more interest with time. The first description of flatid species dates back to the first half of the 19th century when French entomologist Félix Édouard Guérin-Méneville (1799–1874) gave a drawing and a short note on <italic>Flata malgacha</italic> (presently in genus <italic>Flatida</italic> White, 1846)and <italic>Flatoides tortrix</italic> in the work Iconographie du Règne Animal (Guérin-Méneville 1844). However, it was Victor Signoret (1816–1889) who made the first real attempt to enhance our knowledge of the Hemiptera fauna of Madagascar (Signoret 1860) by describing several additional species, in particular: <italic>Nephesa antica</italic>, <italic>Nephesa suturalis</italic>, <italic>Phyllyphanta nivea</italic>, <italic>Elidiptera madagascariensis</italic>, <italic>Flatoides cicatricosus</italic>, <italic>F. hyalinipennis</italic>, <italic>F. sinuatus</italic>, <italic>F. vicinus</italic> (presently in the genera <italic>Latois</italic> Stål, 1866, <italic>Flatopsis</italic> Melichar, 1902, <italic>Ulundia</italic> Distant, 1910 and <italic>Flatoidessa</italic> Melichar, 1923). Moreover, the second half of 19th century was the realase of further papers by such eminent naturalists-hemipterologists as Carl Stål (1833–1878) and Ferdinand Karsch (1853–1936), which provided descriptions of additional representatives of Madagascan Flatidae (Stål 1866, Karsch 1890). Leopold Melichar (1856–1924), the foremost worker on Hemiptera at that time, made a substantial contribution with his two-part monograph of the world fauna of Flatidae by publishing re-descriptions of a number of species and describing a large number of new taxa, including several restricted just to Madagascar (Melichar 1901, 1902). This work was followed by a more concise volume of <italic>Genera Insectorum</italic> (Melichar 1923) also dedicated in part to Flatidae. Further species were described by Victor Lallemand (1880–1965) and Jacques Auber (1916–1995) (Lallemand 1933, 1950, Auber 1954, 1955). In 1956, Belgian entomologist Henri Synave (1921–1980) gave a short overview of Madagascan Flatinae, providing a key to all known species and simplified illustrations <!--PageBreak-->of some genital characters (Synave 1956). He also published a faunistic paper based on material collected in Madagascar during an expedition organized by The Natural History Museum in Basel, which was in fact the last one dedicated to Madagascan flatids (Synave 1966). Although John T. Medler (1914–2006), an outstanding researcher on the world fauna of Flatidae, later published two papers on West and Southern African flatids (Medler 1988, 2001), neither of them contained any data referring to Madagascar. Summarizing, the Madagascan flatid fauna presently consists of 18 genera with 40 species of Flatinae and 12 genera with 39 species of Flatoidinae (Metcalf 1957, Stroiński and Świerczewski 2011, Stroiński and Świerczewski 2012a).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Flatidae as a tool for biodiversity conservation: preliminary results
+</bold>
+            </title>
+            <p>The accurate and rapid measurement of patterns of species richness, species turnover, and endemism is fundamental to current conservation efforts in Madagascar (Fisher 2007). One approach is to sample taxa that are ecologically important, but at the same time relatively easily collected, diverse at site and contain a high level of information for conservation planning. Flatidae meet these criteria and so might serve as an appropriate environmental indicator. According to Prof. Thierry Bourgoin from The Natural History Museum in Paris, this is the most abundant and easily collected group of the hemipterans in Madagascar (pers. comm.). Yet, the knowledge of the group is still very limited.
+</p>
+            <p>The wildlife of Madagascar is considered to be one of the most important human heritage resources of our time. The lack of appropriate tools for the recognition of biodiversity, which would also be useful in the protection of environment and natural resources, is a great disadvantage. Studies of Flatidae as a model group of phytophagous insects could be the solution for these needs, especially in relation to rare and endangered ecosystems. One of these is tapia woodlands – a short, endemic, sclerophyllous forest formation in Madagascar, with dominant canopy tree species <italic>Uapaca bojeri</italic> Baillon, 1874 or tapia in Malagasy. It can be found in four zones located in the central and southern part of the island, covering approximately 2600 km<sup>2</sup> (Kull 2002). Tapia woodlands reveal strong adaptations to fire and are specifically human-shaped through controlled burning and selective cutting as they serve as a source of non-timber forest products for local residents (Kull 2003). The characteristic species for this ecosystem was recently described <italic>Phleboterum tapiae</italic> Świerczewski et Stroiński, 2012 (Świerczewski and Stroiński 2012b). Moreover, we discovered two new species <italic>Flatopsis medleri</italic> Świerczewski et Stroiński, 2011 and <italic>Latois nigrofasciata</italic> Świerczewski et Stroiński, 2012 confined exclusively to littoral forests (Świerczewski and Stroiński 2011, Świerczewski and Stroiński 2012a). Littoral forests have once formed an uninterrupted, narrow band along the entire length of Madagascar’s eastern coastline but as a result of anthropogenic activity their cover has been dramatically reduced to isolated, remnant fragments. Littoral forests are presently one of the smallest yet most <!--PageBreak-->diverse habitats in Madagascar. However, they are relatively unexplored and poorly documented ecosystems (De Gouvenain and Silander 2003). Approximately 13% of Madagascar’s total native flora can been found in these ecosystems and over 25% of the 1535 plant species known from littoral forests are endemic to this community (Consiglio et al. 2006). With respect to fauna, littoral forest are one of four major areas of ant endemism in Madagascar (Fisher and Girman 2000) Additionally, mountain flatid fauna seems quite rich and diverse, with endemic species and genera restricted to particular mountain massifs (work in prep.). An example can be the representatives of the genus <italic>Urana</italic> Melichar, 1902 – <italic>Urana paradoxa</italic> Melichar, 1902 and <italic>Urana unica</italic> Stroiński et Świerczewski, 2012, which are exclusively related to high altitude mountain rainforests (Stroiński and Świerczewski 2012b). Finally, we discovered the first representatives of the tribe Phantiini in Madagascar – <italic>Soares testudinarius</italic> Stroiński et Świerczewski, 2012 and <italic>Madoxychara unicornis</italic> Stroiński et Świerczewski, 2013 (Stroiński and Świerczewski 2012a, Stroiński and Świerczewski 2013). Phantiini is a small flatid tribe established by Melichar (1923) distributed worldwide and numbering 12 genera with 35 species. In Afrotropic it is represented by 6 genera and 11 species.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Future research perspectives
+</bold>
+            </title>
+            <p>Summarizing, despite a long history of observation and investigation, the state of knowledge of Madagascar’s Flatidae is deeply unsatisfactory. After gathering material from the most important entomological collections and two years of study we realized how much still remains to be discerned. In the area of systematics our research efforts are focused on redescriptions of all Madagascan Flatidae based on type specimens, descriptions of new species, complete synonymy, identification keys for genera and species, documentation of research in the form of drawings, SEM images and maps and a distribution catalogue of the species. Reinterpretation of characters formerly used for the identification of species and distinguishing higher taxa (tegmen venation and male genital structures) will also be included. Additionally, as a novelty, we will provide analysis of Flatidae female genital structures.
+</p>
+            <p>With respect to biodiversity and endemism, the basic parameters of the distribution, dispersal and zoogeographic status have yet to be understood. Furthermore, distinguishing species characteristic for particular vegetational formations is key to understanding the dynamics of endangered ecosystems. The revision will make it possible to estimate the level of endemism of Madagascan flatid fauna and its connections with the fauna of Oriental and Afrotropical regions. The project presented above is the first step in a complex study on the systematics and phylogeny of worldwide Flatidae planthoppers. It aims to clear up views on the species variability and diversity, create a modern classification system, and know in detail all the world genera and species. The goal of the long-term project is to complete the work on cladistic analysis, phylogeny and the evolutionary scenario proposal for the family.
+</p>
+            <!--PageBreak-->
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>References
+</bold>
+            </title>
+        </ack>
+        <ref-list>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ali</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Aitchison</surname> <given-names>JC</given-names></name></person-group> (<year>2008</year>)<article-title> Gondwana to Asia: Plate tectonics, paleogeography and the biological connectivity of the Indian sub-continent from the Middle Jurassic through latest Eocene (166–35 Ma).</article-title> <source>Earth-Science Review </source> <volume>88</volume>: <fpage>145</fpage>-<lpage>166</lpage>. doi: 10.1016/j.earscirev.2008.01.007
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Auber</surname> <given-names>J</given-names></name></person-group> (<year>1954</year>)<article-title> Un noveau <italic>Phromnia</italic> de Madagascar (Hom. Flatidae).</article-title> <source>Bulletin de la Société Entomologique de France </source> <volume>59</volume>: <fpage>29</fpage>-<lpage>30</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Auber</surname> <given-names>J</given-names></name></person-group> (<year>1955</year>)<article-title> Deux nouveaux Flatides malgaches (Homopt.).</article-title> <source>Bulletin de la Société Entomologique de France </source> <volume>60</volume>: <fpage>77</fpage>-<lpage>80</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Arzone</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Vidano</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Alma</surname> <given-names>A</given-names></name></person-group> (<year>1987</year>)<article-title> Auchenorrhyncha introduced into Europe from the Nearctic region: taxonomic and phytopathological problems.</article-title> In: <person-group1><name name-style="western"><surname>Wilson</surname> <given-names>MR</given-names></name>,<name name-style="western"><surname>Nault</surname> <given-names>LR</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Proc.</issue-title> <source>2nd Int. Workshop on Leafhoppers and Planthoppers of Economic Importance, Provo, Utah, USA, 28th July-1st Aug. 1986, CIE, London</source>: <fpage>3</fpage>-<lpage>17</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Baillon</surname> <given-names>H</given-names></name></person-group> (<year>1874</year>)<article-title> <italic>Stirpes exoticae novae</italic>.</article-title> <source>Adansonia </source> <volume>11</volume>: <fpage>175</fpage>-<lpage>182</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bourgoin</surname> <given-names>Th</given-names></name></person-group> (<year>2013</year>)<fake_tag> FLOW (Fulgoromorpha Lists on The Web): a world knowledge base dedicated to Fulgoromorpha. Version 8, updated [2013–01–23]. http://hemiptera-databases.org/flow/
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Brown</surname> <given-names>M</given-names></name></person-group> (<year>2007</year>)<fake_tag> The wealth of trees and the pressures of population. Madagascar Conservation &amp; Development 2: 3.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Consiglio</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Schatz</surname> <given-names>GE</given-names></name>,<name name-style="western"><surname>McPherson</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Lowry</surname> <given-names>II PP</given-names></name>,<name name-style="western"><surname>Rabenantoandro</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Rogers</surname> <given-names>ZS</given-names></name>,<name name-style="western"><surname>Rabevohitra</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Rabehevitra</surname> <given-names>D</given-names></name></person-group> (<year>2006</year>)<article-title> Deforestation and plant diversity of Madagascar’s Littoral Forests.</article-title> <source>Conservation Biology </source> <volume>20</volume>: <fpage>1799</fpage>-<lpage>1803</lpage>. doi: 10.1111/j.1523-1739.2006.00562.x
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>De Gouvenain</surname> <given-names>RC</given-names></name>,<name name-style="western"><surname>Silander</surname> <given-names>Jr JA</given-names></name></person-group> (<year>2003</year>)<article-title> Littoral Forest.</article-title> In: <person-group1><name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name>,<name name-style="western"><surname>Benstead</surname> <given-names>JP</given-names></name></person-group1> (<role>Eds</role>). <issue-title>The Natural History of Madagascar.</issue-title> <source>The University of Chicago Press, Chicago-London</source>: <fpage>103</fpage>-<lpage>109</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Distant</surname> <given-names>WL</given-names></name></person-group> (<year>1910</year>)<article-title> Cercopidae concluded, Jassidae with additions to the Fulgoridae and many new genera and species. Insecta Transvaaliensia.</article-title> <source>A contribution to a knowledge of the entomology of South Africa </source> <volume>10</volume>: <fpage>229</fpage>-<lpage>252</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Fisher</surname> <given-names>BL</given-names></name></person-group> (<year>1997</year>)<article-title> Biogeography and ecology of the ant fauna of Madagascar (Hymenoptera: Formicidae).</article-title> <source>Journal of Natural History </source> <volume>31</volume> (<issue>2</issue>): <fpage>269</fpage>-<lpage>302</lpage>. doi: 10.1080/00222939700770141
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Fisher</surname> <given-names>BL</given-names></name></person-group> (<year>2007</year>)<article-title> Formicidae, Ants. Role in Conservation.</article-title> In: <person-group1><name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name>,<name name-style="western"><surname>Benstead</surname> <given-names>JP</given-names></name></person-group1> (<role>Eds</role>). <issue-title>The Natural History of Madagascar.</issue-title> <source>The University of Chicago Press, Chicago-London</source>: <fpage>811</fpage>-<lpage>819</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Fisher</surname> <given-names>BL</given-names></name>,<name name-style="western"><surname>Girman</surname> <given-names>DJ</given-names></name></person-group> (<year>2000</year>)<article-title> Biogeography of ants in eastern Madagascar.</article-title> In: <person-group1><name name-style="western"><surname>Lourenco</surname> <given-names>WR</given-names></name>,<name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Diversité et Endémisme à Madagascar.</issue-title> <source>Mémoires de la Société de Biogéographie, Paris</source>: <fpage>331</fpage>-<lpage>344</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ganzhorn</surname> <given-names>JU</given-names></name>,<name name-style="western"><surname>Lowry</surname> <given-names>II PP</given-names></name>,<name name-style="western"><surname>Schatz</surname> <given-names>GE</given-names></name>,<name name-style="western"><surname>Sommer</surname> <given-names>S</given-names></name></person-group> (<year>2001</year>)<article-title> The biodiversity of Madagascar: one the world’s hottest hotspots on its way out.</article-title> <source>Oryx </source> <volume>35</volume> (<issue>4</issue>): <fpage>346</fpage>-<lpage>348</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gautier</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name></person-group> (<year>2007</year>)<article-title> Introduction to the Flora of Madagascar.</article-title> In: <person-group1><name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name>,<name name-style="western"><surname>Benstead</surname> <given-names>JP</given-names></name></person-group1> (<role>Eds</role>). <issue-title>The Natural History of Madagascar.</issue-title> <source>The University of Chicago Press, Chicago-London</source>: <fpage>229</fpage>-<lpage>250</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name>,<name name-style="western"><surname>Ganzhorn</surname> <given-names>JU</given-names></name></person-group> (<year>2004</year>)<article-title> Biogeography of lemurs in the humid forests of Madagascar: the role of elevational distribution and rivers.</article-title> <source>Journal of Biogeography </source> <volume>31</volume> (<issue>1</issue>): <fpage>47</fpage>-<lpage>55</lpage>. doi: 10.1111/j.1365-2699.2004.00953.x
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Guérin-Méneville</surname> <given-names>FE</given-names></name></person-group> (<year>1844</year>)<fake_tag> Insectes. In: Cuvier GLCFD. Iconographie du Règne Animal, Paris, 355–370.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Karsch</surname> <given-names>FAF</given-names></name></person-group> (<year>1890</year>)<article-title> Afrikanische Fulgoriden.</article-title> <source>Berliner Entomologische Zeitschrift </source> <volume>35</volume>: <fpage>57</fpage>-<lpage>70</lpage>. doi: 10.1002/mmnd.18900350105
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kull</surname> <given-names>ChA</given-names></name></person-group> (<year>2002</year>)<article-title> The “Degraded” Tapia Woodlands of Highland Madagascar: Rural Economy, fire Ecology, and Forest Conservation.</article-title> <source>Journal of Cultural Geography </source> <volume>19</volume> (<issue>2</issue>): <fpage>95</fpage>-<lpage>128</lpage>. doi: 10.1080/08873630209478290
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kull</surname> <given-names>ChA</given-names></name></person-group> (<year>2003</year>)<article-title> <italic>Uapaca</italic> Woodlands.</article-title> In: <person-group1><name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name>,<name name-style="western"><surname>Benstead</surname> <given-names>JP</given-names></name></person-group1> (<role>Eds</role>). <issue-title>The Natural History of Madagascar.</issue-title> <source>The University of Chicago Press, Chicago-London</source>: <fpage>393</fpage>-<lpage>398</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kull</surname> <given-names>ChA</given-names></name></person-group> (<year>2012</year>)<article-title> Air photo evidence of historical land cover change in the highlands: Wetlands and grasslands give way to crops and woodlots.</article-title> <source>Madagascar Conservation &amp; Development </source> <volume>7</volume> (<issue>3</issue>): <fpage>144</fpage>-<lpage>152</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lallemand</surname> <given-names>V</given-names></name></person-group> (<year>1933</year>)<article-title> Homoptères Africains.</article-title> <source>Revue de Zoologie et de Botanique Africaines </source> <volume>24</volume> (<issue>2</issue>): <fpage>198</fpage>-<lpage>199</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lallemand</surname> <given-names>V</given-names></name></person-group> (<year>1950</year>)<article-title> Contribution à l’étude des Homoptères de Madagascar.</article-title> <source>Mémoires de l’Institut Scientifique de Madagascar Serie A </source> <volume>4</volume>: <fpage>83</fpage>-<lpage>95</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Losos</surname> <given-names>JB</given-names></name>,<name name-style="western"><surname>Glor</surname> <given-names>RE</given-names></name></person-group> (<year>2003</year>)<article-title> Phylogenetic comparative methods and the geography of speciation.</article-title> <source>Trends in Ecology and Evolution </source> <volume>18</volume> (<issue>5</issue>): <fpage>220</fpage>-<lpage>227</lpage>. doi: 10.1016/S0169-5347(03)00037-5
+</mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Marcus</surname> <given-names>RR</given-names></name>,<name name-style="western"><surname>Kull</surname> <given-names>ChA</given-names></name></person-group> (<year>1999</year>)<article-title> Setting the Stage: The Politics of Madagascar’s Environmental Efforts.</article-title> <source>African Studies Quaterly </source> <volume>3</volume> (<issue>2</issue>): <fpage>1</fpage>-<lpage>8</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>McNeely</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>Miller</surname> <given-names>KR</given-names></name>,<name name-style="western"><surname>Reid</surname> <given-names>WV</given-names></name>,<name name-style="western"><surname>Mittermeier</surname> <given-names>RA</given-names></name>,<name name-style="western"><surname>Werner</surname> <given-names>TB</given-names></name></person-group> (<year>1990</year>)<fake_tag> Conserving the World’s Biological Diversity. International Union for Conservation of Nature and Natural Resources, 193 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Medler</surname> <given-names>JT</given-names></name></person-group> (<year>1988</year>)<article-title> Flatidae from the Tai Forest, Cote d’Ivore, and taxonomic notes on the family in West Africa [Homoptera, Auchenorrhyncha, Fulgoroidea]. Revue Francaise d’Entomologie (N. S.</article-title> <source>) </source> <volume>10</volume>: <fpage>117</fpage>-<lpage>148</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Medler</surname> <given-names>JT</given-names></name></person-group> (<year>2001</year>)<article-title> Review of Flatidae in Southern Africa, with keys and descriptions of new species (Homoptera: Fulgoroidea).</article-title> <source>Contributions on Entomology-International </source> <volume>4</volume>: <fpage>323</fpage>-<lpage>375</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Melichar</surname> <given-names>L</given-names></name></person-group> (<year>1901</year>)<article-title> Monographie der Acanaloniiden und Flatiden (Homoptera). Annalen des k.k Naturhistorischen Hofmuseums.</article-title> <source>Wien </source> <volume>16</volume>: <fpage>178</fpage>-<lpage>258</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Melichar</surname> <given-names>L</given-names></name></person-group> (<year>1902</year>)<article-title> Monographie der Acanaloniiden und Flatiden (Homoptera) (Fortsetzung). Annalen des k.k Naturhistorischen Hofmuseums.</article-title> <source>Wien </source> <volume>17</volume>: <fpage>1</fpage>-<lpage>253</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Melichar</surname> <given-names>L</given-names></name></person-group> (<year>1923</year>)<article-title> Homoptera, fam. Acanaloniidae, Flatidae et Ricaniidae. Genera Insectorum.</article-title> <source>Bruxelles </source> <volume>182</volume>: <fpage>1</fpage>-<lpage>185</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="32"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Metcalf</surname> <given-names>ZP</given-names></name></person-group> (<year>1957</year>)<source> Flatidae and Hypochthonellidae. Part 13.</source> <publisher-name>General Catalogue of the Homoptera. Fascicule IV. North Carolina State College</publisher-name>, <publisher-loc>Raleigh (USA)</publisher-loc>, <lpage>565</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="33"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mittermeier</surname> <given-names>RA</given-names></name>,<name name-style="western"><surname>Hawkins</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Rajaobelina</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Langrand</surname> <given-names>O</given-names></name></person-group> (<year>2005</year>)<article-title> Wilderness conservation in a biodiversity hotspot.</article-title> <source>International Journal of Wilderness </source> <volume>11</volume> (<issue>3</issue>): <fpage>42</fpage>-<lpage>46</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="34"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Monaghan</surname> <given-names>MT</given-names></name>,<name name-style="western"><surname>Gattolliat</surname> <given-names>J-L</given-names></name>,<name name-style="western"><surname>Sartori</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Elouard</surname> <given-names>J-M</given-names></name>,<name name-style="western"><surname>James</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Derleth</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Glaizot</surname> <given-names>O</given-names></name>,<name name-style="western"><surname>de Moor</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Vogler</surname> <given-names>AP</given-names></name></person-group> (<year>2005</year>)<article-title> Trans-oceanic and endemic origins of the small minnow mayflies (Ephemeroptera, Baetidae) of Madagascar. Proceedings of the Royal Society.</article-title> <source>Biological Sciences, Series B </source> <volume>272</volume>: <fpage>1829</fpage>-<lpage>1836</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="35"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Myers</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Mittermeier</surname> <given-names>RA</given-names></name>,<name name-style="western"><surname>Mittermeier</surname> <given-names>CG</given-names></name>,<name name-style="western"><surname>da</surname> <given-names>Fonseca GAB</given-names></name>,<name name-style="western"><surname>Kent</surname> <given-names>J</given-names></name></person-group> (<year>2000</year>)<article-title> Biodiversity hotspots for conservation priorities.</article-title> <source>Nature </source> <volume>403</volume>: <fpage>853</fpage>-<lpage>858</lpage>. doi: 10.1038/35002501
+</mixed-citation>
+            </ref>
+            <ref id="36"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>O‘Brien</surname> <given-names>L</given-names></name></person-group> (<year>2002</year>)<article-title> The Wild Wonderful World of Fulgoromorpha.</article-title> <source>Denisia (NF) </source> <volume>4</volume>: <fpage>83</fpage>-<lpage>102</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="37"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>O‘Brien</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Wilson</surname> <given-names>SW</given-names></name></person-group> (<year>1985</year>)<article-title> Planthopper Systematics and External Morphology.</article-title> In: <person-group1><name name-style="western"><surname>Nault</surname> <given-names>LR</given-names></name>,<name name-style="western"><surname>Rodriguez</surname> <given-names>JG</given-names></name></person-group1> (<role>Eds</role>). <issue-title>The Leafhoppers and Planthoppers.</issue-title> <source>John Wiley &amp; Sons, New York</source>: <fpage>61</fpage>-<lpage>102</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="38"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pearson</surname> <given-names>RG</given-names></name>,<name name-style="western"><surname>Raxworthy</surname> <given-names>ChJ</given-names></name></person-group> (<year>2009</year>)<article-title> The evolution of local endemism in Madagascar: watershed versus climatic gradient hypotheses evaluated by null biogeographic models.</article-title> <source>Evolution </source> <volume>63</volume> (<issue>4</issue>): <fpage>959</fpage>-<lpage>967</lpage>. doi: 10.1111/j.1558-5646.2008.00596.x
+</mixed-citation>
+            </ref>
+            <ref id="39"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Raxworthy</surname> <given-names>CJ</given-names></name>,<name name-style="western"><surname>Nussbaum</surname> <given-names>RA</given-names></name></person-group> (<year>1996</year>)<article-title> Montane amphibian and reptile communities in Madagascar.</article-title> <source>Conservation Biology </source> <volume>10</volume> (<issue>3</issue>): <fpage>750</fpage>-<lpage>756</lpage>. doi: 10.1046/j.1523-1739.1996.10030750.x
+</mixed-citation>
+            </ref>
+            <ref id="40"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Raxworthy</surname> <given-names>CJ</given-names></name>,<name name-style="western"><surname>Forstner</surname> <given-names>MRJ</given-names></name>,<name name-style="western"><surname>Nussbaum</surname> <given-names>RA</given-names></name></person-group> (<year>2002</year>)<article-title> Chameleon radiation by oceanic dispersal.</article-title> <source>Nature </source> <volume>415</volume>: <fpage>784</fpage>-<lpage>787</lpage>. doi: 10.1038/415784a
+</mixed-citation>
+            </ref>
+            <ref id="41"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Say</surname> <given-names>T</given-names></name></person-group> (<year>1830</year>)<article-title> Descriptions of new North American Hemipterous Insects, belonging to the first family of the section Homoptera of Latreille.</article-title> <source>Journal of the Academy of Natural Sciences of Philadelphia </source> <volume>6</volume>: <fpage>235</fpage>-<lpage>244</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="42"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Signoret</surname> <given-names>V</given-names></name></person-group> (<year>1860</year>)<fake_tag> Faune des hémiptères de Madagascar. 1ère partie. Homoptères. Annales de la Société Entomologique de France. Paris (Ser. 3) 8: 177–206.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="43"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Smith</surname> <given-names>TB</given-names></name>,<name name-style="western"><surname>Wayne</surname> <given-names>RK</given-names></name>,<name name-style="western"><surname>Girman</surname> <given-names>DJ</given-names></name>,<name name-style="western"><surname>Bruford</surname> <given-names>MW</given-names></name></person-group> (<year>1997</year>)<article-title> A role for ecotones in generating rainforest biodiversity.</article-title> <source>Science </source> <volume>276</volume>: <fpage>1855</fpage>-<lpage>1857</lpage>. doi: 10.1126/science.276.5320.1855
+</mixed-citation>
+            </ref>
+            <ref id="44"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stål</surname> <given-names>C</given-names></name></person-group> (<year>1866</year>)<article-title> Hemiptera Homoptera Latr.</article-title> <source>Hemiptera Africana </source> <volume>4</volume>: <fpage>1</fpage>-<lpage>276</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="45"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Storey</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Mahoney</surname> <given-names>JJ</given-names></name>,<name name-style="western"><surname>Sounders</surname> <given-names>AD</given-names></name>,<name name-style="western"><surname>Duncan</surname> <given-names>RA</given-names></name>,<name name-style="western"><surname>Kelley</surname> <given-names>SP</given-names></name>,<name name-style="western"><surname>Coffin</surname> <given-names>MF</given-names></name></person-group> (<year>1995</year>)<article-title> Timing of hot spot-related volcanism and the breakup of Madagascar and India.</article-title> <source>Science </source> <volume>267</volume>: <fpage>852</fpage>-<lpage>855</lpage>. doi: 10.1126/science.276.5320.1855
+</mixed-citation>
+            </ref>
+            <ref id="46"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name></person-group> (<year>2011</year>)<article-title> A new flatid species of the genus <italic>Panormenis</italic> Melichar, 1923 from Madagascar (Hemiptera: Flatidae). Genus.</article-title> <source>Wrocław </source> <volume>22</volume> (<issue>2</issue>): <fpage>191</fpage>-<lpage>203</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="47"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name></person-group> (<year>2012a</year>)<article-title> <italic>Soares testudinarius </italic>gen. et sp. nov. (Hemiptera: Fulgoromorpha: Flatidae), a new representative of the tribe Phantiini from Madagascar.</article-title> <source>Zootaxa </source> <volume>3256</volume>: <fpage>38</fpage>-<lpage>50</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="48"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name></person-group> (<year>2012b</year>)<article-title> Revision of an extraordinary Selizini genus <italic>Urana</italic> Melichar, 1902 from Madagascar (Hemiptera: Fulgoromorpha: Flatidae).</article-title> <source>Journal of Natural History </source> <volume>46</volume>(<issue>41–42</issue>)): <fpage>2577</fpage>-<lpage>2593</lpage>. doi: 10.1080/00222933.2012.70845
+</mixed-citation>
+            </ref>
+            <ref id="49"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name></person-group> (<year>2013</year>)<article-title> <italic>Madoxychara</italic> gen. nov. (Hemiptera: Fulgoromorpha: Flatidae), a new genus of the tribe Phantiini Melichar from Madagascar.</article-title> <source>Zootaxa </source> <volume>3599</volume> (<issue>4</issue>): <fpage>377</fpage>-<lpage>389</lpage>. doi: 10.11646/zootaxa.3599.4.6
+</mixed-citation>
+            </ref>
+            <ref id="50"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Synave</surname> <given-names>H</given-names></name></person-group> (<year>1956</year>)<article-title> Les Flatidae de Madagascar (Hemiptera-Homoptera). Mémoires de l’Institut Scientifique de Madagascar (Ser.</article-title> <source>E) </source> <volume>7</volume>: <fpage>197</fpage>-<lpage>217</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="51"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Synave</surname> <given-names>H</given-names></name></person-group> (<year>1966</year>)<article-title> Homoptères de Madagascar.</article-title> <source>Verhandlungen der Naturforschenden Gesellschaft in Basel </source> <volume>77</volume>: <fpage>55</fpage>-<lpage>75</lpage>.</mixed-citation>
+            </ref>
+            <ref id="52"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name></person-group> (<year>2011</year>)<fake_tag> <italic>Flatopsis medleri</italic> sp. n. – a new flatid species from Madagascar (Hemiptera: Fulgoromorpha: Flatidae). Acta zoologica cracoviensia 54B (1–2): 23–30.</fake_tag>doi: 10.3409/azc.54b_1-2.23-30.
+</mixed-citation>
+            </ref>
+            <ref id="53"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name></person-group> (<year>2012a</year>)<article-title> A new species of the genus <italic>Latois</italic> Stål, 1866 from Madagascar (Hemiptera: Fulgoromorpha: Flatidae).</article-title> <source>Acta zoologica cracoviensia </source> <volume>55</volume> (<issue>1</issue>): <fpage>65</fpage>-<lpage>77</lpage>. doi: 10.3409/azc.55_1.65
+</mixed-citation>
+            </ref>
+            <ref id="54"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Świerczewski</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Stroiński</surname> <given-names>A</given-names></name></person-group> (<year>2012b</year>)<fake_tag> A new species of <italic>Phlebopterum</italic> Stål, 1854 (Hemiptera: Fulgoromorpha: Flatidae) from the tapia woodlands of Madagascar. Annales Zoologici 62 (4): 577–592. </fake_tag>doi: 10.3161/000345412X659641
+</mixed-citation>
+            </ref>
+            <ref id="55"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Torres</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Lees</surname> <given-names>DC</given-names></name>,<name name-style="western"><surname>Vane-Wright</surname> <given-names>RI</given-names></name>,<name name-style="western"><surname>Kremen</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Leonard</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>Wayne</surname> <given-names>RK</given-names></name></person-group> (<year>2001</year>)<article-title> Examining Monophyly in a Large Radiation of Madagascan Butterflies (Lepidoptera: Satyrinae: Mycalesina) Based on Mitochondrial DNA Data.</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>20</volume> (<issue>3</issue>): <fpage>460</fpage>-<lpage>473</lpage>. doi: 10.1006/mpev.2001.0984
+</mixed-citation>
+            </ref>
+            <ref id="56"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Vences</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Wollenberg</surname> <given-names>KC</given-names></name>,<name name-style="western"><surname>Vieites</surname> <given-names>DR</given-names></name>,<name name-style="western"><surname>Lees</surname> <given-names>DC</given-names></name></person-group> (<year>2009</year>)<article-title> Madagascar as a model region of species diversification.</article-title> <source>Trends in Ecology and Evolution </source> <volume>24</volume> (<issue>8</issue>): <fpage>456</fpage>-<lpage>465</lpage>. doi: 10.1006/mpev.2001.0984
+</mixed-citation>
+            </ref>
+            <ref id="57"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Warren</surname> <given-names>BH</given-names></name>,<name name-style="western"><surname>Strasberg</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Bruggemann</surname> <given-names>JH</given-names></name>,<name name-style="western"><surname>Prys-Jones</surname> <given-names>RP</given-names></name>,<name name-style="western"><surname>Thébaud</surname> <given-names>Ch</given-names></name></person-group> (<year>2010</year>)<fake_tag> Why does the biota of the Madagascar region have such a strong Asiatic flavour? Cladistics 26 (5): 526–538. </fake_tag>doi: 10.1111/j.1096-0031.2009.00300.x
+</mixed-citation>
+            </ref>
+            <ref id="58"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>White</surname> <given-names>A</given-names></name></person-group> (<year>1846</year>)<article-title> Descriptions of some apparently new species of Orthopterous and Homopterous insects. Annals and Magazine of Natural History.</article-title> <source>London </source> <volume>18</volume>: <fpage>23</fpage>-<lpage>26</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="59"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wilmé</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Goodman</surname> <given-names>SM</given-names></name>,<name name-style="western"><surname>Ganzhorn</surname> <given-names>JU</given-names></name></person-group> (<year>2006</year>)<article-title> Biogeographic Evolution of Madagascar’s Microendemic Biota.</article-title> <source>Science </source> <volume>312</volume>: <fpage>1063</fpage>-<lpage>1065</lpage>. doi: 10.1126/science.1122806
+</mixed-citation>
+            </ref>
+            <ref id="60"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wilson</surname> <given-names>SW</given-names></name>,<name name-style="western"><surname>O’Brien</surname> <given-names>LB</given-names></name></person-group> (<year>1986</year>)<article-title> A Survey of planthopper pests of economically important plants (Homoptera: Fulgoroidea).</article-title> In: <person-group1><name name-style="western"><surname>Wilson</surname> <given-names>MR</given-names></name>,<name name-style="western"><surname>Nault</surname> <given-names>LR</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Proceedings of 2nd International Workshop on Leafhoppers and Planthoppers of Economic Importance, Provo, Utah, USA, 28th July-1st August 1986.</issue-title> <source>CIE, London</source>: <fpage>343</fpage>-<lpage>360</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="61"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wirta</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Orsini</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Hanskii</surname> <given-names>I</given-names></name></person-group> (<year>2008</year>)<article-title> An old adaptive radiation of forest dung beetles in Madagascar.</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>47</volume> (<issue>3</issue>): <fpage>1076</fpage>-<lpage>1089</lpage>. doi: 10.1016/j.ympev.2008.03.010
+</mixed-citation>
+            </ref>
+            <ref id="62"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Yoder</surname> <given-names>AD</given-names></name>,<name name-style="western"><surname>Nowak</surname> <given-names>MD</given-names></name></person-group> (<year>2006</year>)<article-title> Has vicariance or dispersal been the predominant biogeographic force in Madagascar? Only time will tell.</article-title> <source>Annual Review of Ecology, Evolution and Systematics </source> <volume>37</volume>: <fpage>405</fpage>-<lpage>431</lpage>. doi: 10.1146/annurev.ecolsys.37.091305.110239
+</mixed-citation>
+            </ref>
+            <ref id="63"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zakharov</surname> <given-names>EV</given-names></name>,<name name-style="western"><surname>Smith</surname> <given-names>CR</given-names></name>,<name name-style="western"><surname>Lees</surname> <given-names>DC</given-names></name>,<name name-style="western"><surname>Cameron</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Vane-Wright</surname> <given-names>RI</given-names></name>,<name name-style="western"><surname>Sperling</surname> <given-names>FAH</given-names></name></person-group> (<year>2004</year>)<article-title> Independent gene phylogenies and morphology demonstrate a Malagasy origin for a wide-ranging group of swallowtail butterflies.</article-title> <source>Evolution </source> <volume>58</volume> (<issue>12</issue>): <fpage>2763</fpage>-<lpage>2782</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>

@@ -1,0 +1,455 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4328</article-id>
+            <title-group>
+                <article-title>Aquatic Heteroptera (Nepomorpha, Gerromorpha) in small intermittent rivers of Ukraine steppe zone
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Grandova</surname>
+                        <given-names>Maria A.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>UkrSCES, Frantsuzskiy Blvd., 89, Odessa, Ukraine
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Maria A. Grandova (<email xlink:type="simple">nepa@mail.ru</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>6</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>5</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Maria A. Grandova</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Small intermittent rivers are some of the most widespread types of water currents in the steppe zone. In the ecosystems of the intermittent rivers we have found 28 species of water bugs that compose the majority of the described fauna in the South Ukraine. Our study added two new species to the faunistic list of this zone <italic>(Sigara fossarum</italic>, <italic>Hydrometra gracilenta)</italic>, and finally confirmed the presence of <italic>Micronecta scholtzi</italic> in Ukraine<italic>. </italic>We also studied the seasonal changes of biotopic distribution and quantitative characteristics of aquatic Heteroptera. It was shown thatfor water bugs the ecosystem of the small intermittent rivers consists of three closely connected components: the riverbed, the flooded areas and the extra inundated constant basins. During the droughty period when the riverbed is dry, the extra inundated basins (including artificial ones – sandy pits) serve as refugia. The wintering of many species takes place there, especially when the riverbed is not filled before the cold period. However, the reproduction of most species takes place in the riverbed and associated flooded areas. Thus, this work is a confirmation and development of the concept for “a uniform architectonic complex of a river valley”.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Aquatic Heteroptera</kwd>
+                <kwd>Nepomorpha</kwd>
+                <kwd>Gerromorpha</kwd>
+                <kwd>steppe zone</kwd>
+                <kwd>small intermittent rivers
+<!--PageBreak--></kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The small intermittent rivers are some of the most widespread types of water currents in the south of Ukraine steppe zone. Under droughty climate conditions, they and the associated water bodies serve as refugia for aquatic organisms (Dyadichko 2008, 2009), while valleys serve as “ecological corridors” for the distribution of species from other landscape-climatic zones (Gramma 1974), playing a significant role in formation and maintenance of biodiversity in the steppe zone. The overall studying of small intermittent rivers is essential for understanding the function of the entire steppe biocenosis. Special studies of aquatic Hemiptera in this region haven’t been carried out yet.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Materials and methods
+</bold>
+            </title>
+            <p>The materials of our own expeditions (2007-2011), the collections of V. Dyadichko, A. Martynov and V. Martynov, as well as the collection of the Zoology Department of Donetsk National University were examined in this study. During the study, small intermittent rivers and associated water bodies of Odessa, Nykolaev and Donetsk areas were examined. For the study of quantitative characteristics, the material from the middle Tiligul River and associated water bodies in the Berezovkij wildlife reserve was used (Fig. 1).
+</p>
+            <p>The following typical biotopes were studied:
+</p>
+            <p>1.	The riverbed. The bottom is sandy or oozy and sandy, sometimes with stones. Depth up to 1,5 m, current speed up to 1 m/s. The vegetation is abundant including marsh (<italic>Carex</italic> spp.<italic>, Iris</italic> spp.<italic>, Typha</italic> spp.<italic>, Phragmites</italic> spp.), and submerged forms (<italic>Ceratophyllum</italic> spp.<italic>, Utricularia</italic> spp.<italic>, Chara</italic> spp.<italic>, Ranunculus </italic>spp., filamentous algae). At the end of May-June, the current decreases, then it turns into several small pools and by the end of July - the beginning of August completely dries up. In October-November or later, depending on precipitation, autumn filling of the riverbed occurs.
+            </p>
+            <p>2.	The flooded area can be divided into three zones: a) the water meadows with land cereals that are flooded at a high water level and dry at the end of April-May; b) the inundated lowlands which dry up after water meadows (at the end of May - the beginning of June), and where land and marsh vegetation are combined; c) inundated pools with an oozy bottom which dry last, and vegetation includes sedge, mosses and cane.
+</p>
+            <p>3.	The constant extra inundated basins are not connected directly to the river, but they are filled with the river water filtering through the soil. They can be both natural and artificial (sandy, clay pits). The surface area is up to 200 m<sup>2</sup>, depth is up to 2-3 m, usually with a shallow coastal strip. Vegetation is poor. Some of these basins do not dry out even in the driest summer.
+            </p>
+            <p><!--PageBreak-->The periodization for the steppe intermittent rivers was offered by Dyadichko (2008). His division includes five periods, suitable also for aquatic Hemiptera:
+            </p>
+            <p>1.<bold>	The early-spring period</bold> continues from the ice melting and floods formation at the end of February – the beginning of March till the beginning of water vegetation growth at the end of March – April. Light day duration is about 10,9–12,3 h.
+            </p>
+            <p>2.<bold>	The spring period</bold> begins at the end of March, when water vegetation starts growing. It lasts till the depression of the water level in the flooded areas and the beginning of <italic>Phragmites</italic> spp. and <italic>Typha</italic> spp. growth at the end of April. Light day duration is about 12,4–14,2 h.
+            </p>
+            <p>3.<bold>	The late-spring period</bold> lasts through the end of April and May. It is characterized by desiccation of the flooded areas, normal water level in the riverbed, vegetation of <italic>Phragmites</italic> spp. and <italic>Typha</italic> spp., and flowering of iris marsh. Light day duration is about 14,3–15,4 h.
+            </p>
+            <p>4.<bold>	The summer-autumn period </bold>continues from June till the beginning of October. It is characterized by desiccation of the riverbed and many small basins. In June, the current is practically absent, water temperature is 24–27°C, and the semi-shipped vegetation (<italic>Carex</italic> spp.<italic>, Typha</italic> spp.<italic>, Phragmites</italic> spp.) and filamentous algae grow. Usually up to the end of July the riverbed has completely dried.
+            </p>
+            <p>5.<bold>	The autumn-winter period</bold> lasts from the filling of the riverbed in October – November till water freezing in December – the middle of February.
+            </p>
+            <p>Quantitative samples were taken approximately every two weeks with the help of a Balfour-Browne hand net or hydrobiological drag, and also using meiobenthic methods for Micronectidae and nymphs of younger stages. Modified fish-traps and light attraction were also used for general collecting. In total, about 10000 specimens of aquatic Hemiptera were studied. They were identified based on the works of Kanyu<!--PageBreak-->kova (2006), Savage (1989), Poisson (1957) and Wroblewski (1958). The systematic order is after Aukema and Rieger (1995) and Nieser (2002). The numbers and biomass of aquatic bugs from the quantitative samples were calculated per square meter.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results and discussion
+</bold>
+            </title>
+            <p>In the ecosystems of the intermittent rivers, we have found 28 species of water bugs from 9 families of Nepomorpha: Corixidae – 12 (Corixinae – 11, Cymatiinae – 1), Micronectidae – 1, Naucoridae - 1, Nepidae – 2, Notonectidae – 2, Pleidae – 1, and Gerromorpha: Gerridae – 6, Hebridae – 1, Hydrometridae – 1, Vellidae – 1 (Table 1). This is the majority (67%) of the known fauna for the steppe zone in the south of Ukraine (Putshkov and Putshkov 1996). Two new species are added to the faunistic list of this zone (<italic>Sigara fossarum, Hydrometra gracilenta</italic>) and new data on biology and  presence of recently confirmed in Ukraine <italic>Micronecta scholtzi</italic>  (Grandova and Prokin 2012) are added. It has been found only in intermittent rivers and small steppe basins.
+            </p>
+            <p>The results of quantitative characteristics of water bugs are shown on Fig. 2. Data on numbers and biomass of Micronectidae species will be discussed separately.
+</p>
+            <p>During <bold>the early-spring period</bold>, the specific structure and quantitative characteristics of water bugs in different biotopes are defined by weather conditions during the year, the period of previous autumn filling of the riverbed playing a very important role.
+            </p>
+            <p>During the autumn of 2007, the riverbed was filled in October, therefore a portion of the water bugs remained there for wintering. Next year the first specimens, which belonged to <italic>Sigara stagnalis,</italic> were caught in the riverbed in the middle of February, soon after ice melting. At the beginning of March, water bugs were observed both in the riverbed and in the flooded areas, and <italic>Sigara striata, S. stagnalis, S. lateralis, Hesperocorixa linnaei</italic> prevailed.
+            </p>
+            <p>In 2008 the autumn filling of the riverbed occurred late, therefore the water bugs did not winter there and during the next early-spring period were absent in the quantitative samples from the riverbed. During general collecting we found singular specimens of Gerridae. The highest numbers and biomass were observed in extra inundated basins (sandy pits) where the majority of Nepomorpha wintered. The highest numbers during this period belonged to Corixidae. The maximum of biomass at the beginning of this period also belonged to Corixidae, but from the beginning of March Notonectidae started to dominate by biomass. In 2009 the numbers at this period reached 48,15 ind./m<sup>2</sup>, the biomass – 871 mg/m<sup>2</sup>. The highest numbers belonged to <italic>Sigara lateralis, </italic>the highest biomass - to<italic> Notonecta glauca</italic>.
+            </p>
+            <p>In the early-spring period the overwintered nymphs of Micronectidae gather near the shore line, and their numbers can reach high values. At the beginning of March 2009, their numbers were 0,37 ind./m<sup>2</sup>, and the biomass – 0,19 mg/m<sup>2</sup>
+            </p>
+            <p>During <bold>the spring period,</bold> water bugs migrated to the flooded areas and the riverbed. The area of suitable habitats sharply increased and as a result, the number and the biomass of water bugs per square meter decreased. At the beginning of the spring <!--PageBreak-->period, the majority of Nepomorpha continued to remain in the extra inundated basins, therefore the numbers and the biomass of water bugs there exceeded these values both in the riverbed and in the flooded area.
+            </p>
+            <p>At the end of March 2009, the numbers of water bugs in the riverbed were 0,83 ind./m<sup>2</sup>, the biomass was 14,17 mg/m<sup>2</sup>, while in the flooded area, the numbers were 1,11 ind./m<sup>2</sup>, and the biomass 12,84 mg/m<sup>2</sup>. In the quantitative samples only Corixidae were found (<italic>Sigara striata</italic>, <italic>S. stagnalis, Hesperocorixa linnaei </italic>dominated), and during general collecting singular specimens of other families were found. In the extra inundated basins the quantitative characteristics were more than 10 times higher: the numbers were 19,68 ind./m<sup>2</sup>, the biomass was 220,79 mg/m<sup>2</sup>, dominated by <italic>S. stagnalis, S. lateralis, S. assimilis</italic> and<italic> H. linnaei</italic>. In quantitative samples besides Corixidae, there were also species of Pleidae, Gerridae, Notonectidae.
+            </p>
+            <p><!--PageBreak-->Throughout the next two weeks, the numbers and the biomass of water bugs in the riverbed and the flooded area continued to increase quickly. In the riverbed the numbers reached 3,02 ind./m<sup>2</sup>, the biomass - 36,19 mg/m<sup>2</sup>. In the flooded area the numbers went up 7 times (up to 7,58 ind./m<sup>2</sup>), and the biomass – almost 14 times (up to 167,07 mg/m<sup>2</sup>). The higher increase of the biomass in comparison with the numbers of water bugs was due to migration of larger species – <italic>Notonecta viridis, N. glauca, Ilycoris cimicoides,</italic> to the flooded area, but the main contribution to the biomass and the numbers in these biotopes still belonged to Corixidae (6,16 ind./m<sup>2</sup>, 58,99 mg/m<sup>2</sup>). In the riverbed the four dominant Corixidae species were presented approximately in a peer ratio, in the flooded area <italic>Sigara stagnalis </italic>prevailed.
+            </p>
+            <p>Closer to the middle of the spring period the majority of overwintered Gerridae species (<italic>Gerris argentatus, G. odontogaster, G. thoracicus</italic>) occupied not only the river<!--PageBreak-->bed and the flooded areas but also the extra inundated basins, so the total numbers and biomass there increased a little, despite of migration of water bugs to the inundated water bodies. In the middle of April 2009, the numbers in the inundated basins reached 24,22 ind./m<sup>2</sup>, the biomass - 237,56 mg/m<sup>2</sup>, and Corixidae (<italic>Sigara stagnalis, S. lateralis</italic>) continued to dominate.
+            </p>
+            <p>In the middle of the spring period (in April) the highest number and biomass per square meter and the greatest numbers of species were observed in the flooded area where mating of the wintered imagoes and oviposition took place. Up to the middle of April 2009, the numbers in the riverbed reached 6,67 ind./m<sup>2</sup>, the biomass - 169,44 mg/m<sup>2</sup>, while in the flooded area - 10 ind./m<sup>2</sup>, and 213,7 mg/m<sup>2</sup> respectively. During this time in the flooded area, <italic>Plea minutissima </italic>and<italic> Microvelia reticulata</italic> appeared and started reproduction. In both types of inundated biotopes, Corixidae dominated by numbers (in the riverbed 3,7 ind./m<sup>2</sup>, in the basins 5,56 ind./m<sup>2</sup>), and Naucoridae - by biomass (74,81 and 130,74 mg/m<sup>2 </sup>respectively). The numbers and the biomass of water bugs in the extra inundated basins decreased by several times (to 5,4 ind./m<sup>2</sup> and 47,62 mg/m<sup>2</sup>, respectively), by both indicators Corixidae dominated.
+            </p>
+            <p>During <bold>the late spring period</bold> in the riverbed and the flooded area, the numbers continued to increase, and the biomass decreased, due to the appearance of nymphs and the death of overwintered imagoes. The first nymphs of Corixidae and Notonectidae appeared in flooded area in the middle of May. On 17.05.2009 the numbers were 11,39 ind./m<sup>2 </sup>in the riverbed, and 14,89 ind./m<sup>2 </sup>in the flooded area, the biomass  – 61,39 and 52,79 mg/m<sup>2 </sup>respectively. The maximum numbers in the flooded area coincided with the minimum numbers in the extra inundated basins. In 2009 the minimum of the numbers and the biomass was 1,56 ind./m<sup>2</sup> and 10,22 mg/m<sup>2 </sup>respectively. In the years with lower water levels (as for example 2008), the flooded area was smaller, they started to dry up at the end of April and therefore the difference in the numbers of water bugs between inundated and extra inundated basins was not so great.
+            </p>
+            <p>During the late spring period, the highest numbers in the riverbed and the flooded area belonged to <italic>Plea minutissima</italic> imagoes (9,72 and 11,1 ind./m<sup>2</sup> respectively), in the flooded area an essential contribution was also made by young nymphs of Notonectidae. In the extra inundated basins nymphs appeared later, therefore in the middle of May there were only single adult specimens, among which <italic>Sigara stagnalis </italic>and<italic> S. lateralis</italic> prevailed.
+            </p>
+            <p>During this period the overwintered nymphs of Micronectidae became adults and started reproduction. They did not move to the flooded area, some imagoes moved to the riverbed, but generally they remained in the extra inundated basins. The numbers of Micronectidae in the basins in the middle of May were 52,78 ind./m<sup>2</sup> and the biomass – 50 mg/m<sup>2</sup>.
+            </p>
+            <p>At the end of the late spring period (the end of May – the beginning of June) nymphs of Naucoridae, Veliidae, Gerridae appeared, and up until the middle of June the first nymphs of Pleidae were noticed. After desiccation of the flooded area, the riverbed became an optimum habitat for reproduction and development of water bugs. Some adult specimens came back to the extra inundated basins. In the basins, nymphs <!--PageBreak-->appeared approximately two weeks later than in the flooded area and the riverbed, possibly due to the later heating of these biotopes. Most of the nymphs developed in the riverbed; therefore the quantitative characteristics there were much higher than in the extra inundated basins. The numbers were 34,4 ind./m<sup>2</sup> in the basins, and 150 ind./m<sup>2 </sup>in the riverbed, the biomass – 170,4 and 498,89 mg/m<sup>2</sup> respectively. The ratio between nymphs and imagoes was about 2,5:1 in the basins, and 14:1 in the riverbed. Young nymphs of Corixidae and Notonectidae dominated, but certain nymphs of small species of Corixidae (<italic>Sigara stagnalis, S. lateralis</italic>) and some Notonectidae (<italic>Notonecta glauca</italic>) in the riverbed had already managed to reach the fourth stage.
+            </p>
+            <p>At the beginning of <bold>the summer-autumn period</bold> quantitative characteristics in the riverbed and in the extra inundated basins continued to increase. Biomass/numbers ratio in the riverbed was higher, than in the basins. It implies more favorable conditions for the development of the nymphs in the riverbed and so they matured earlier. At the end of June 2009, the numbers in the riverbed were lower than in the basins (223,33 and 340,83 ind./m<sup>2</sup> respectively), while the biomass, on the contrary, was higher (3403,89and 914,44 mg/m<sup>2</sup> respectively). The numbers of the nymphs in 1<sup>st</sup>-2<sup>nd</sup> stages in the riverbed were almost 3 times lower, than in the basins (104,44 and 284,17 ind./m<sup>2</sup> respectively), and the numbers of the nymphs in 4th-5th stages in the riverbed was 7 times higher (31,1 and 4,15 ind./m<sup>2</sup> respectively).
+            </p>
+            <p>The first nymphs of the new generation of Micronectidae also appeared in the riverbed and the extra inundated basins at the beginning of the summer-autumn period. At the beginning of June 2009 the numbers of Micronectidae nymphs were 25,19 ind./m<sup>2 </sup>in the basins, and 2,2 ind./m<sup>2 </sup>in the riverbed.
+            </p>
+            <p>In June the riverbed began to dry. The adult water bugs moved from the drying riverbed to the extra inundated basins, as a result the numbers in the riverbed decreased. The biomass continued to be rather high, due to the high numbers of nymphs growing to 4th-5th stages and imago. Drying of the riverbed in 2009 started at the end of June - the beginning of July. In the middle of June 2009, the numbers in the riverbed were 52,78 ind./m<sup>2</sup>, and the biomass - 50 mg/m<sup>2</sup>. Dominant in numbers was the nymphs of <italic>Plea minutissima</italic> of elder stages, while dominant in biomass were the nymphs of elder stages and imago of <italic>Notonecta glauca, N. viridis, Ilyocoris cimicoides, Hesperocorixa linnaei.</italic>
+            </p>
+            <p>When the riverbed completely dries, water bugs gather in the extra inundated basins where the second reproduction of polivoltine species takes place. In 2009 the riverbed completely dried up at the end of July. The adult <italic>Hesperocorixa linnaei </italic>dominated in numbers and biomass. At the same time the first nymphs of the second generation of <italic>Plea minutissima, Sigara stagnalis </italic>and<italic> S. lateralis</italic> appeared.
+            </p>
+            <p>In the middle of July, most nymphs of <italic>Micronecta scholtzi</italic> also finished their development, and separate individuals managed to couple and oviposite so that at the end of July the first nymphs of the next generation appeared. The second generation of polivoltine Corixidae was probably rather extended, because nymphs of younger stages were found until the beginning of November. The nymphs of Corixidae in 1<sup>st</sup>-2<sup>nd</sup> stages dominated in numbers and biomass in September samples (20.09.2009, 88,9 ind./<!--PageBreak-->m<sup>2</sup> and 115,56 mg/m<sup>2</sup>). At the beginning of October, nymphs of 4th-5th stages prevailed, but imagoes mostly belonging to <italic>Sigara lateralis</italic> had the highest total number. The highest biomass was due to the adult Notonectidae. Up until the end of October the majority of Corixidae turned into imago. At the end of October-November in the extra inundated basins there were a large numbers of species which gathered for wintering. High numbers were shown by <italic>Sigara striata</italic> (up to 57,22 ind./m<sup>2</sup>), <italic>S. lateralis </italic>(up to 67,2 ind./m<sup>2</sup>), and also <italic>S. stagnalis </italic>(up to 10,56 ind./m<sup>2</sup>), <italic>Hesperocorixa linnaei </italic>(up to 12,78 ind./m<sup>2</sup>), <italic>Notonecta glauca </italic>(up to 4,4 ind./m<sup>2</sup>) and <italic>N. viridis</italic> (up to 6,67 ind./m<sup>2</sup>).
+            </p>
+            <p>In the south of Ukraine, <italic>Micronecta scholtzi</italic> most likely had a partial third generation where the first nymphs appeared at the end of September. Nymphs of younger stages were observed up to the middle of November – most likely, the majority of them managed to reach the 4<sup>th</sup> stage and safely overwintered. Imagoes were observed up to the beginning of November, after which there were only nymphs, and the wintering stages prevailed. The decrease in numbers at the beginning of November in comparison with October samples was probably due to them leaving the shoreline for wintering in the bottom remote parts of the basins.
+            </p>
+            <p>Next settling of the riverbed depends on the period of its autumn filling. During a late filling, bugs don’t manage to occupy the riverbed and winter only in the constant extra inundated basins; during an early filling, a part of the bugs gathers for wintering in the riverbed, concentrating in creeks. It’s a risk, because during cold years the riverbed can freeze to the bottom, and water bugs trapped there die. On the other hand, because of the faster warming up of the riverbed in spring, the individuals wintering there can start the reproduction earlier.
+</p>
+            <p>Our study of seasonal changes in the numbers of Heteroptera imagoes and nymphs gives an opportunity to clarify some characteristics of the life cycle for the following mass species:
+            </p>
+            <p><italic>Notonecta glauca</italic> in the studied area usually has one generation per year. Mating is observed in March; first nymphs appear in the middle of May, imagoes of new generation – from the middle to the end of June. Therefore, most of <italic>N. glauca </italic>nymphs grow in the flooded areas, and after their desiccation in the riverbed; then during the imago stage, they move to the extra inundated basins, where they dispause. This diapause is optional, and during the warm years <italic>N. glauca </italic>can also have a partial second generation.
+            </p>
+            <p><italic>Notonecta viridis </italic>also has one generation per year, but the term of its development differs so the first imagoes of the new generation appear at the beginning of July. Therefore, not all the nymphs of <italic>N. viridis </italic>have enough time to finish their development before the complete desiccation of the riverbed; that is why <italic>N. viridis</italic> stays for reproduction in the extra inundated basins more often than <italic>N. glauca, </italic>and their number in the extra inundated basins is higher than the number of <italic>N. glauca.
+</italic>
+            </p>
+            <p><italic>Hesperocorixa linnaei </italic>in the studied area also has one generation per year. First imagoes of the new generation appear in June, reaching the maximum number in the middle of July. This fact fits with the literary data that another close species, <italic>H. castanea, </italic>is also univoltine (Saulich and Musolin 2007). In the literature for <italic>H. castanea, </italic>a partial <!--PageBreak-->second generation was reported, and most likely during the warm years, <italic>H. linnaei </italic>can also have a partial second generation.
+            </p>
+            <p><italic>Sigara stagnalis </italic>and <italic>S. lateralis </italic>belong to polivoltine species which have at least two generations per year in the region. Imagoes of the first generation appear from the middle to the end of June, imagoes of the second generation – in September. These facts fit with the literature data about the life cycle of <italic>S. lateralis</italic> in Rostov area (Russia) (Sokolskaya and Zhiteneva 1973) They may have a partial third generation, at least, in September we observed the nymphs of younger stages, but it is not clear if they belong to the third generation or to the late second generation. Maximum numbers of imagoes of these species was observed in October.
+            </p>
+            <p><italic>Plea minutissima</italic> is also polivoltine species which has at least two generations. Nymphs of the first generation appear from the beginning to the middle of June, in the middle of July they imaginate and begin to mate, and soon the first nymphs of the second generation appear. Almost all the first cycles of reproduction take place in the flooded areas and the riverbed, and the second in the extra inundated basins.
+            </p>
+            <p>Reproduction of <italic>Ilyocoris cimicoides </italic>starts at the end of May. Oviposition is prolonged; therefore nymphs of different stages may be noticed simultaneously through the whole summer.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Conclusions
+</bold>
+            </title>
+            <p>In the studied rivers and associated water bodies we have found 28 species of water bugs belonging to 10 families and 15 genera. That is 67% of the total number of species registered in the steppe zone of the South Ukraine. This fact shows the important role of intermittent rivers in the forming of regional biodiversity of water bugs. Two species (<italic>Sigara fossarum</italic> and <italic>Hydrometra gracilenta</italic>) were registered for the first time in South Ukraine, and for <italic>Micronecta scholtzi</italic> this is the first proven record in the Ukraine.
+            </p>
+            <p>Seasonal changes in species numbers, biomass and number of water bugs in the ecosystem of small intermittent rivers are undulating and depend on the climatic conditions of each year and peculiarities of life cycles of the dominant species. Among registered species there are polivoltine (<italic>Sigara stagnalis, S. lateralis, Plea minutissima</italic>) and univoltine (<italic>Notonecta glauca, N. viridis, Hesperocorixa linnaei, Ilyocoris cimicoides</italic>) species, but some univoltine species may have a partial second generation. Almost all species overwinter as imago, excluding Micronectidae wintering at a nymphs’ stage, usually at the 4<sup>th</sup> stage. Wintering at the egg stage was not registered.
+            </p>
+            <p>During the early spring period, the maximum of quantitative indicators was observed in the extra inundated basins. During the middle of the spring period, maximum of the numbers, and later of the biomass was observed in the flooded area. During the late spring period and the beginning of the summer-autumn period, the maximum of quantitative indicators was observed in the riverbed. Maximums of the numbers (449 ind./m<sup>2</sup>) and the biomass (8811 mg/m<sup>2</sup>) were observed in the extra inundated basins in the middle of summer-autumn period (the end of July – the beginning of Au<!--PageBreak-->gust) after desiccation of inundated biotopes and appearance of nymphs of the second generation of polivoltine species. Thus, during the droughty period when the riverbed is dry, the extra inundated basins (including artificial ones – sandy pits) serve as refugia for aquatic Heteroptera. The wintering of many species takes place there, especially when the riverbed is not filled before the cold period. However, the reproduction of the most species takes place in the riverbed and associated flooded area. Thus, this study is a confirmation and development of the concept for “a uniform architectonic complex of a river valley” (Beklemishev 1970).
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgments
+</bold>
+            </title>
+            <p>I would like to express my gratitude to V. Dyadichko for all-round support during the research and preparing of this work, to A. Prokin for the help in identification of <italic>Micronecta</italic> species, to A. Puchkov for his work as my supervisor, to E. Kanyukova for literature and consultations, to A. Martynov, V. Martynov and the Zoology Department of Donetsk National University for providing the collection materials and to Teodora Trichkova, Snejana Grozeva and Nikolay Simov for help with edition and translation of the text of this paper.
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Aukema</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Rieger</surname> <given-names>C</given-names></name></person-group> (<role>Eds</role>) (<year>1995</year>)<source> Catalogue of the Heteroptera of the Palaearctic Region. Vol. 1.</source> <publisher-name>Enticocephalomorpha, Dipsocoromorpha, Nepomorpha, Gerromorpha and Leptopodomorpha. The Netherlands Entomological Society</publisher-name>, <publisher-loc>Amsterdam</publisher-loc>, <lpage>222</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Beklemishev</surname> <given-names>BN</given-names></name></person-group> (<year>1970</year>)<source> Biocoenological principles of comparative parasitology.</source> <publisher-name>Nauka</publisher-name>, <publisher-loc>Moscow</publisher-loc>, <lpage>502</lpage> pp.[In Russian]
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dyadichko</surname> <given-names>VG</given-names></name></person-group> (<year>2008</year>)<article-title> Seasonal changes in species content of water predator beetles Hydradephaga (Coleoptera) intermittent rivers of South Ukraine.</article-title> <source>Vestnik zoologii </source> <volume>42</volume> (<issue>3</issue>): <fpage>255</fpage>-<lpage>261</lpage>. [In Russian]
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dyadichko</surname> <given-names>VG</given-names></name></person-group> (<year>2009</year>)<fake_tag> Seasonal dynamic of numbers and biomass of Hydradephaga (Coleoptera) in flood area ecosystems and springs of northwestern Black sea region. Hydrobiological journal 45 (3): 24–35. [In Russian] </fake_tag>doi: 10.1615/HydrobJ.v45.i5.30
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gramma</surname> <given-names>BN</given-names></name></person-group> (<year>1974</year>)<fake_tag> Ecofaunistic survey of water Adephaga (Coleoptera: Haliplidae, Dytiscidae, Gyrinidae) Left bank Ukraine. PhD thesis, Kharkov State University, Kharkov. </fake_tag>[In Russian]
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Grandova</surname> <given-names>MA</given-names></name>,<name name-style="western"><surname>Prokin</surname> <given-names>AA</given-names></name></person-group> (<year>2012</year>)<article-title> First record of <italic>Velia </italic>(<italic>Plesiovelia</italic>) <italic>caprai</italic> and <italic>Micronecta</italic> (<italic>Dichaetonecta</italic>) <italic>scholtzi</italic> (Heteroptera: Veliidae, Corixidae) for Ukraine.</article-title> <source>Lauterbornia </source> <volume>74</volume>: <fpage>49</fpage>-<lpage>51</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kanyukova</surname> <given-names>EV</given-names></name></person-group> (<year>2006</year>)<source> Aquatic Heteroptera (Nepomorpha, Gerromorpha) fauna of Russia and neighboring regions.</source> <publisher-name>Dal’nauka</publisher-name>, <publisher-loc>Vladivostok</publisher-loc>, <lpage>297</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Nieser</surname> <given-names>N</given-names></name></person-group> (<year>2002</year>)<article-title> Guide to aquatic Heteroptera of Singapore and Peninsular Malaysia. IV. Corixoidea.</article-title> <source>Raffles Bulletin of Zoology </source> <volume>50</volume> (<issue>1</issue>): <fpage>263</fpage>-<lpage>274</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Poisson</surname> <given-names>R</given-names></name></person-group> (<year>1957</year>)<fake_tag>. Hétéroptères aquatiques. Faune de France 61. Paris Cedex, 263 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Putshkov</surname> <given-names>VG</given-names></name>,<name name-style="western"><surname>Putshkov</surname> <given-names>PV</given-names></name></person-group> (<year>1996</year>)<fake_tag>Heteroptera of the Ukraine: check list and distribution. St. Petersburg, 108 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Saulich</surname> <given-names>AH</given-names></name>,<name name-style="western"><surname>Musolin</surname> <given-names>DL</given-names></name></person-group> (<year>2007</year>)<source> Seasonal development of aquatic and semiaquatic true bugs (Heteroptera).</source> <publisher-name>St Petersburg University</publisher-name>, <publisher-loc>St Petersburg</publisher-loc>, <lpage>205</lpage> pp.[In Russian]
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Savage</surname> <given-names>AA</given-names></name></person-group> (<year>1989</year>)<fake_tag> Adults of the British aquatic Hemiptera Heteroptera: a key with ecological notes. Freshwater Biological Association. Scientific Publication 50, 173 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sokolskaya</surname> <given-names>NP</given-names></name>,<name name-style="western"><surname>Zhiteneva</surname> <given-names>LD</given-names></name></person-group> (<year>1973</year>)<article-title> On the water boatmen (Heteroptera, Corixidae), harmful in fisheries of Rostov region.</article-title> <source>Zoological journal </source> <volume>52</volume> (<issue>9</issue>): <fpage>1330</fpage>-<lpage>1334</lpage>. [In Russian]
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wroblewski</surname> <given-names>A</given-names></name></person-group> (<year>1958</year>)<article-title> The Polish species of the genus <italic>Micronecta</italic> Kirk. (Heteroptera, Corixidae).</article-title> <source>Annales Zoologici (Warszawa) </source> <volume>17</volume> (<issue>10</issue>): <fpage>247</fpage>-<lpage>381</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> The studied area of Ukrainian steppe zone (sampling sites were marked with small red dots, the site of quantitative sampling – with a large red dot).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> List of species and occurrence of water bugs in small intermittent rivers and associated water bodies.&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="1" bodyRowCount="27" columnCount="3" aid:table="table" aid:trows="28" aid:tcols="3">
+                <tbody>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Family</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Species</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Occurrence index (%)</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Nepidae</td>
+                        <td rowspan="1" colspan="1"><italic>Nepa cinerea </italic>Linnaeus, 1758
+                        </td>
+                        <td rowspan="1" colspan="1">3,92</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>Ranatra linearis </italic>(Linnaeus, 1758)
+                        </td>
+                        <td rowspan="1" colspan="1">1,96</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Corixidae</td>
+                        <td rowspan="1" colspan="1"><italic>Corixa affinis</italic> Leach, 1817
+                        </td>
+                        <td rowspan="1" colspan="1">3,92</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>Corixa dentipes</italic> Thomson, 1869
+                        </td>
+                        <td rowspan="1" colspan="1">15,69</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>Cymatia</italic> <italic>rogenhoferi </italic>(Fieber, 1864)
+                        </td>
+                        <td rowspan="1" colspan="1">11,76</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>Hesperocorixa linnaei</italic> (Fieber, 1848)
+                        </td>
+                        <td rowspan="1" colspan="1">74,51</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>Paracorixa concinna</italic> (Fieber, 1848)
+                        </td>
+                        <td rowspan="1" colspan="1">9,80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>Sigara assimilis</italic> (Fieber, 1848)
+                        </td>
+                        <td rowspan="1" colspan="1">13,73</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>S. fossarum</italic> (Leach, 1817)
+                        </td>
+                        <td rowspan="1" colspan="1">1,96</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>S. iactans</italic> Jansson, 1983
+                        </td>
+                        <td rowspan="1" colspan="1">9,80</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>S. lateralis</italic> (Leach, 1817)
+                        </td>
+                        <td rowspan="1" colspan="1">78,43</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>S. nigrolineata</italic> (Fieber, 1848)
+                        </td>
+                        <td rowspan="1" colspan="1">7,84</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>S. stagnalis</italic> (Leach, 1817)
+                        </td>
+                        <td rowspan="1" colspan="1">64,71</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>S. striata</italic> (Linnaeus, 1758)
+                        </td>
+                        <td rowspan="1" colspan="1">66,67</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Micronectidae</td>
+                        <td rowspan="1" colspan="1"><italic>Micronecta scholtzi </italic>(Fieber, I860)
+                        </td>
+                        <td rowspan="1" colspan="1">19,61</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Naucoridae</td>
+                        <td rowspan="1" colspan="1"><italic>Ilyocoris cimicoides</italic> (Linnaeus, 1758)
+                        </td>
+                        <td rowspan="1" colspan="1">21,57</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Notonectidae</td>
+                        <td rowspan="1" colspan="1"><italic>Notonecta glauca</italic> Linnaeus, 1758
+                        </td>
+                        <td rowspan="1" colspan="1">27,45</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>N. viridis</italic> Delcourt, 1909
+                        </td>
+                        <td rowspan="1" colspan="1">29,41</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Pleidae</td>
+                        <td rowspan="1" colspan="1"><italic>Plea minutissima</italic> Leach, 1817
+                        </td>
+                        <td rowspan="1" colspan="1">29,41</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Hebridae</td>
+                        <td rowspan="1" colspan="1"><italic>Hebrus ruficeps</italic> Thomson, 1871
+                        </td>
+                        <td rowspan="1" colspan="1">1,96</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Hydrometridae</td>
+                        <td rowspan="1" colspan="1"><italic>Hydrometra gracilenta </italic>Horvath, 1899
+                        </td>
+                        <td rowspan="1" colspan="1">1,96</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Veliidae</td>
+                        <td rowspan="1" colspan="1"><italic>Microvelia reticulata</italic> (Burmeister, 1835)
+                        </td>
+                        <td rowspan="1" colspan="1">5,88</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Gerridae</td>
+                        <td rowspan="1" colspan="1"><italic>Gerris argentatus </italic>Schummel, 1832
+                        </td>
+                        <td rowspan="1" colspan="1">25,49</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>G. asper</italic> (Fieber, 1860)
+                        </td>
+                        <td rowspan="1" colspan="1">3,92</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>G. lacustris</italic> (Linnaeus, 1758)
+                        </td>
+                        <td rowspan="1" colspan="1">1,96</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>G. odontogaster </italic>(Zetterstedt, 1828)
+                        </td>
+                        <td rowspan="1" colspan="1">13,73</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><italic>G. thoracicus </italic>Schummel, 1832
+                        </td>
+                        <td rowspan="1" colspan="1">23,53</td>
+                    </tr>
+                </tbody>
+            </table>&lt;br/&gt; 
+            <table-wrap-foot>
+                <fn>
+                    <p><italic>S. stagnalis</italic>, <italic>S. striata</italic>, <italic>S. lateralis</italic>,<italic> H. linnaei </italic>belong to dominants, <italic>N. glauca</italic>, <italic>N. viridis</italic>,<italic> P. minutissima</italic>, <italic>G. argentatus</italic>, <italic>G. thoracicus, I. cimicoides – </italic>to subdominants.
+                    </p>
+                </fn>
+            </table-wrap-foot>
+        </table-wrap>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> Seasonal changes in numbers (<bold>A</bold> ind./m<sup>2</sup>) and biomass (<bold>B</bold> mg/m<sup>2</sup>) of water bugs in Tiligul River and associated water bodies.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

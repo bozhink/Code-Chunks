@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 (x64) (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="UnsolicitedVaccinationLog">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="UnsolicitedVaccinationRecord" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Order">
+								<xs:complexType>
+									<xs:attribute name="startdate" type="xs:date"/>
+									<xs:attribute name="enddate" type="xs:date"/>
+									<xs:attribute name="amount" type="xs:decimal"/>
+									<xs:attribute name="unit" type="xs:string"/>
+									<xs:attribute name="lotnumber" type="xs:string"/>
+									<xs:attribute name="text" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="patientname" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

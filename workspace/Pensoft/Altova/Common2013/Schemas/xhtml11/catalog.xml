@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+
+	<!-- XHTML 1.1 driver file .................................................. -->
+
+	<public publicId="-//W3C//DTD XHTML 1.1//EN"							 uri="files/xhtml11.dtd"/>
+
+	<!-- XHTML 1.1 document model .................................................. -->
+
+	<public publicId="-//W3C//ENTITIES XHTML 1.1 Document Model 1.0//EN"	 uri="files/xhtml11-model-1.mod"/>
+
+	<!-- XHTML Ruby module .................................................. -->
+
+	<public publicId="-//W3C//ELEMENTS XHTML Ruby 1.0//EN"      			 uri="files/xhtml-ruby-1.mod"/>
+
+	<!-- XHTML framework modules .................................................. -->
+
+	<public publicId="-//W3C//ENTITIES XHTML Modular Framework 1.0//EN"      uri="files/xhtml-framework-1.mod"/>
+	<public publicId="-//W3C//NOTATIONS XHTML Notations 1.0//EN"             uri="files/xhtml-notations-1.mod"/>
+	<public publicId="-//W3C//ENTITIES XHTML Datatypes 1.0//EN"              uri="files/xhtml-datatypes-1.mod"/>
+	<public publicId="-//W3C//ENTITIES XHTML Qualified Names 1.0//EN"        uri="files/xhtml-qname-1.mod"/>
+	<public publicId="-//W3C//ENTITIES XHTML Common Attributes 1.0//EN"      uri="files/xhtml-attribs-1.mod"/>
+	<public publicId="-//W3C//ENTITIES XHTML Character Entities 1.0//EN"     uri="files/xhtml-charent-1.mod"/>
+
+	<!-- XHTML modules ............................................................ -->
+
+	<public publicId="-//W3C//ELEMENTS XHTML Document Structure 1.0//EN"     uri="files/xhtml-struct-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Text 1.0//EN"                   uri="files/xhtml-text-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Hypertext 1.0//EN"              uri="files/xhtml-hypertext-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Lists 1.0//EN"                  uri="files/xhtml-list-1.mod"/>
+
+	<public publicId="-//W3C//ELEMENTS XHTML Inline Structural 1.0//EN"      uri="files/xhtml-inlstruct-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Inline Presentation 1.0//EN"    uri="files/xhtml-inlpres-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Inline Phrasal 1.0//EN"         uri="files/xhtml-inlphras-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Block Structural 1.0//EN"       uri="files/xhtml-blkstruct-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Block Presentation 1.0//EN"     uri="files/xhtml-blkpres-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Block Phrasal 1.0//EN"          uri="files/xhtml-blkphras-1.mod"/>
+
+	<public publicId="-//W3C//ELEMENTS XHTML Java Applets 1.0//EN"           uri="files/xhtml-applet-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Base Architecture 1.0//EN"      uri="files/xhtml-arch-1.mod"/>
+	<public publicId="-//W3C//DTD XHTML Architecture 1.1//EN"                uri="files/xhtml11-arch.dtd"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Param Element 1.0//EN"          uri="files/xhtml-param-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Presentation 1.0//EN"           uri="files/xhtml-pres-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Editing Elements 1.0//EN"       uri="files/xhtml-edit-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML BIDI Override Element 1.0//EN"  uri="files/xhtml-bdo-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Basic Forms 1.0//EN"            uri="files/xhtml-basic-form-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Forms 1.0//EN"                  uri="files/xhtml-form-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Basic Tables 1.0//EN"           uri="files/xhtml-basic-table-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Tables 1.0//EN"                 uri="files/xhtml-table-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Images 1.0//EN"                 uri="files/xhtml-image-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Client-side Image Maps 1.0//EN" uri="files/xhtml-csismap-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Server-side Image Maps 1.0//EN" uri="files/xhtml-ssismap-1.mod"/>
+	<public publicId="-//W3C//ENTITIES XHTML Intrinsic Events 1.0//EN"       uri="files/xhtml-events-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Metainformation 1.0//EN"        uri="files/xhtml-meta-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Scripting 1.0//EN"              uri="files/xhtml-script-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Style Sheets 1.0//EN"           uri="files/xhtml-style-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Link Element 1.0//EN"           uri="files/xhtml-link-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Base Element 1.0//EN"           uri="files/xhtml-base-1.mod"/>
+
+	<public publicId="-//W3C//ELEMENTS XHTML Legacy Redeclarations 1.0//EN"  uri="files/xhtml-legacy-redecl-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Legacy Markup 1.0//EN"          uri="files/xhtml-legacy-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Embedded Object 1.0//EN"        uri="files/xhtml-object-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Frames 1.0//EN"                 uri="files/xhtml-frames-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Target 1.0//EN"                 uri="files/xhtml-target-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Inline Frame Element 1.0//EN"   uri="files/xhtml-iframe-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Inline Style 1.0//EN"           uri="files/xhtml-inlstyle-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS XHTML Name Identifier 1.0//EN"        uri="files/xhtml-nameident-1.mod"/>
+
+	<!-- XHTML entity sets  ....................................................... -->
+
+	<public publicId="-//W3C//ENTITIES Latin 1 for XHTML//EN"                uri="files/xhtml-lat1.ent"/>
+	<public publicId="-//W3C//ENTITIES Special for XHTML//EN"                uri="files/xhtml-special.ent"/>
+	<public publicId="-//W3C//ENTITIES Symbols for XHTML//EN"                uri="files/xhtml-symbol.ent"/>
+
+	<!-- End of catalog data  ..................................................... -->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/xhtml11/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/xhtml11/' rewritePrefix='files/'/>
+</catalog>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="14">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowAnnotations="0" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="234" lty="249" rbx="-2" rby="27"/>
+					<data>
+						<constant value="1000" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="5" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="210" rby="169"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="sales-report" expanded="1">
+										<entry name="period" expanded="1">
+											<entry name="start-date" type="attribute" outkey="19"/>
+											<entry name="end-date" type="attribute" outkey="20"/>
+											<entry name="region-sales" outkey="8" expanded="1">
+												<entry name="regioncode" type="attribute" outkey="9"/>
+												<entry name="amount" type="attribute" outkey="10"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\sales-report.xsd" inputinstance="..\sales-report.xml" outputinstance="..\sales-report.xml" instanceroot="{}sales-report" userdefinedschemalocation="C:/Projects/Files/XMLSpyExeFolder/MapForceExamples/sales-report.xsd"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="6" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="326" lty="145" rbx="17" rby="19"/>
+				</component>
+				<component name="edi" library="text" uid="8" kind="16">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="686" lty="-1" rbx="836" rby="199"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" inpkey="5" expanded="1">
+										<entry name="Start date" inpkey="21"/>
+										<entry name="End date" inpkey="22"/>
+										<entry name="Region" inpkey="23"/>
+										<entry name="Amount" inpkey="24"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="Text file" block="Rows">
+									<field0 name="Start date" type="string"/>
+									<field1 name="End date" type="string"/>
+									<field2 name="Region" type="string"/>
+									<field3 name="Amount" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="Format.Format.FormatNumber" library="Format.Format" uid="9" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="29"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="454" lty="145" rbx="-4" rby="-52"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="3" edgekey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="29" edgekey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="5" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="23" edgekey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="2" edgekey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="21" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="22" edgekey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="24" edgekey="32"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

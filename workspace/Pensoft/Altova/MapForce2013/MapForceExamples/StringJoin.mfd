@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="10">
+	<component name="defaultmap3" blackbox="0" uid="37311072" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="cpp"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="52576138" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="124737208"/>
+					</targets>
+					<view ltx="357" lty="88" rbx="-63" rby="-179"/>
+					<data>
+						<constant value="Dear " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="52576142" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="124738976"/>
+					</targets>
+					<view ltx="425" lty="194" rbx="5" rby="-73"/>
+					<data>
+						<constant value="You are all promoted." datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="string-join" library="core" uid="52576139" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="124740808"/>
+						<datapoint pos="1" key="124741104"/>
+						<datapoint pos="2" key="124741456"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="124741824"/>
+					</targets>
+					<view ltx="313" lty="115" rbx="-10" rby="-29"/>
+				</component>
+				<component name="document" library="xml" uid="52576153" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="64" lty="24" rbx="237" rby="230"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BranchOffices" outkey="136230776" expanded="1">
+								<entry name="Office" expanded="1">
+									<entry name="Contact" expanded="1">
+										<entry name="first" outkey="136205000"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="BranchOffices.xsd" inputinstance="BranchOffices.xml" outputinstance="BranchOffices.xml" instanceroot="{}BranchOffices"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="52576140" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="136050064"/>
+					</targets>
+					<view ltx="201" lty="264" rbx="-219" rby="-3"/>
+					<data>
+						<constant value=", " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="52576141" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="135905936"/>
+						<datapoint pos="1" key="136232616"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="136223144"/>
+					</targets>
+					<view ltx="480" lty="114" rbx="33" rby="-62"/>
+				</component>
+				<component name="document" library="xml" uid="52576137" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="608" lty="99" rbx="797" rby="218"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="ShortInfo" expanded="1">
+								<entry name="Info" expanded="1">
+									<entry name="Title" inpkey="136313032"/>
+									<entry name="Description" inpkey="136376440" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ShortInfo.xsd" instanceroot="{}ShortInfo"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="124737208">
+						<edges>
+							<edge vertexkey="135905936" edgekey="136381960"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="124738976">
+						<edges>
+							<edge vertexkey="136376440" edgekey="136382208"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="124741824">
+						<edges>
+							<edge vertexkey="136232616" edgekey="136382512"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136050064">
+						<edges>
+							<edge vertexkey="124741456" edgekey="136381464"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136205000">
+						<edges>
+							<edge vertexkey="124741104" edgekey="136383232"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136223144">
+						<edges>
+							<edge vertexkey="136313032" edgekey="136381712"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136230776">
+						<edges>
+							<edge vertexkey="124740808" edgekey="136382872"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

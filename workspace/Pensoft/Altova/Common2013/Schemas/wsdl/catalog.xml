@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<uri name="http://schemas.xmlsoap.org/wsdl/" uri="files/wsdl.xsd"/>
+	<uri name="http://schemas.xmlsoap.org/wsdl/http/" uri="files/http.xsd"/>
+	<uri name="http://schemas.xmlsoap.org/wsdl/soap/" uri="files/soap.xsd"/>
+	<uri name="http://schemas.xmlsoap.org/wsdl/mime/" uri="files/mime.xsd"/>
+	<uri name="http://schemas.xmlsoap.org/soap/encoding/" uri="files/encoding.xsd"/>
+	<uri name="http://schemas.xmlsoap.org/soap/envelope/" uri="files/envelope.xsd"/>
+	
+	<public publicId="http://www.w3.org/ns/wsdl" uri="files/wsdl2.xsd"/>
+	<uri name="http://www.w3.org/2002/ws/desc/ns/wsdl20.xsd" uri="files/wsdl2.xsd"/>
+	<uri name="http://www.w3.org/2007/06/wsdl/wsdl20.xsd" uri="files/wsdl2.xsd"/>
+	
+	<public publicId="http://www.w3.org/ns/wsdl-instance" uri="files/wsdl20-instance.xsd"/>
+	<uri name="http://www.w3.org/2002/ws/desc/ns/wsdl-instance.xsd" uri="files/wsdl20-instance.xsd"/>
+	<uri name="http://www.w3.org/2007/06/wsdl/wsdl20-instance.xsd" uri="files/wsdl20-instance.xsd"/>
+	
+	<public publicId="http://www.w3.org/ns/wsdl-extensions" uri="files/wsdl20-extensions.xsd"/>
+	<uri name="http://www.w3.org/2002/ws/desc/ns/wsdl-extensions.xsd" uri="files/wsdl20-extensions.xsd"/>
+	<uri name="http://www.w3.org/2007/06/wsdl/wsdl20-extensions.xsd" uri="files/wsdl20-extensions.xsd"/>
+	
+	<public publicId="http://www.w3.org/ns/wsdl/soap" uri="files/wsdl20_soap.xsd"/>
+	<uri name="http://www.w3.org/2002/ws/desc/ns/soap.xsd" uri="files/wsdl20_soap.xsd"/>
+	<uri name="http://www.w3.org/2007/06/wsdl/soap.xsd" uri="files/wsdl20_soap.xsd"/>
+
+	<public publicId="http://www.w3.org/ns/wsdl/http" uri="files/wsdl20_http.xsd"/>
+	<uri name="http://www.w3.org/2002/ws/desc/ns/http.xsd" uri="files/wsdl20_http.xsd"/>
+	<uri name="http://www.w3.org/2007/06/wsdl/http.xsd" uri="files/wsdl20_http.xsd"/>
+
+	<public publicId="http://www.w3.org/ns/wsdl/rpc" uri="files/wsdl20_rpc.xsd"/>
+	<uri name="http://www.w3.org/2002/ws/desc/ns/rpc.xsd" uri="files/wsdl20_rpc.xsd"/>
+	<uri name="http://www.w3.org/2007/06/wsdl/rpc.xsd" uri="files/wsdl20_rpc.xsd"/>
+	
+	<uri name="http://www.w3.org/2003/05/soap-envelope" uri="files/soap-envelope.xsd"/>
+		
+	
+	<spy:fileExtSchema ext="wsdl" uri="files/wsdl.xsd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/wsdl/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/wsdl/' rewritePrefix='files/'/>
+</catalog>

@@ -1,0 +1,661 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4309</article-id>
+            <title-group>
+                <article-title>Redescription of 
+                    <bold-italic>Urartucoris ermolenkoi</bold-italic> (Hemiptera, Heteroptera, Coreidae) and a revised key to the genera of Pseudophloeini of the Western Palaearctic Region
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Kment</surname>
+                        <given-names>Petr</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Fent</surname>
+                        <given-names>Meral</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Japoshvili</surname>
+                        <given-names>George</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A3">3</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Department of Entomology, National Museum, 14800 Prague 4, Czech Republic
+            </aff>
+            <aff id="A2">
+                <label>2</label>Department of Biology, Faculty of Science, Trakya University, 22030 Edirne, Turkey
+            </aff>
+            <aff id="A3">
+                <label>3</label>Entomology and Biocontrol Research Centre, Agricultural University of Georgia, Tbilisi, Georgia
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Petr Kment (<email xlink:type="simple">sigara@post.cz</email>); Meral Fent (<email xlink:type="simple">m_fent@hotmail.com</email>); 	George Japoshvili (<email xlink:type="simple">giorgij70@yahoo.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>4</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>14</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>15</day>
+                    <month>12</month>
+                    <year>2012</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Petr Kment, Meral Fent, George Japoshvili</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p><italic>Urartucoris ermolenkoi </italic>P. V. Putshkov, 1979 (Hemiptera: Heteroptera: Coreidae: Pseudophloeinae) is recorded from Turkey for the first time. Redescriptions of the genus and species are provided, the male of <italic>U. ermolenkoi </italic>being described for the first time, and intraspecific variability of the species is discussed. Adults of <italic>U. ermolenkoi </italic>were collected from mid April to end of July and in mid September by means of pitfall traps. First data on the habitat of the species are provided: it is epigeic, inhabiting sparse forests and shrublands at higher elevations (ca. 1400–1600 m a.s.l.) in arid regions of central Anatolia. A revised key to the genera of the West Palaearctic Pseudophloeini is provided. Translations of the original descriptions from Russian are given in Appendix.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Heteroptera</kwd>
+                <kwd>Coreidae</kwd>
+                <kwd>Pseudophloeinae</kwd>
+                <kwd>key</kwd>
+                <kwd>morphology</kwd>
+                <kwd>ecology</kwd>
+                <kwd>distribution</kwd>
+                <kwd>Turkey</kwd>
+                <kwd>Palaearctic Region
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The subfamily Pseudophloeinae Stål, 1868 is represented in the Palaearctic Region (<italic>sensu</italic> Aukema and Rieger 2006) by two tribes, the mostly tropical Clavigrallini Stål, 1873 with 3 genera and 9 species distributed in the southern border areas – Arabian Peninsula, Iran, Afghanistan, central and southern China, Taiwan, and Japan, and <!--PageBreak-->Pseudophloeini with 17 genera and 42 species distributed throughout the region (Dolling 2006, Aukema et al. 2012). Moulet (1995) monographed the Coreoidea and Pyrrhocoroidea fauna of the Euro-Mediterranean region, keying 10 genera and 26 species of Pseudophloeini: <italic>Anoplocerus </italic>Kiritshenko, 1926 (3 species), <italic>Arenocoris </italic>Hahn, 1834 (4 species), <italic>Bathysolen</italic> Fieber, 1860 (2 species), <italic>Bothrostethus</italic> Fieber, 1860 (1 species), <italic>Ceraleptus </italic>A. Costa, 1847 (4 species), <italic>Loxocnemis </italic>Fieber, 1860 (1 species), <italic>Coriomeris </italic>Westwood, 1842 (9 species), <italic>Nemocoris </italic>R. F. Sahlberg, 1848 (1 species), <italic>Strobilotoma</italic> Fieber, 1860 (1 species), and <italic>Ulmicola</italic> Kirkaldy, 1909 (1 species). However, some Eastern-Mediterranean genera and species were omitted from this work, as follows:
+            </p>
+            <p>i) The genus <italic>Microtelocerus </italic>Reuter, 1900 contains two species, <italic>M. testaceus</italic> Reuter, 1900 (described from Tajikistan) and <italic>M. linnavuorii </italic>Dolling, 1979 (described from Sinai, Egypt). Dolling (2006) listed <italic>M. linnavuorii</italic> also from Libya (as a new record) and <italic>M. testaceus</italic> also from Iran without further details (no record was listed by Hoberlandt (1989) or Ghahari et al. (2012)). Records of <italic>M. testaceus</italic> from Sinai (Egypt) by Priesner and Wagner (1961) and El Hamouly et al. (2010) almost certainly pertain to <italic>M. linnavuorii</italic>.
+            </p>
+            <p>ii) The monotypic genus <italic>Urartucoris</italic> P. V. Putshkov, 1979 contains <italic>U. ermolenkoi </italic>P. V. Putshkov, 1979 described based on two females from the Nakhchivan Autonomous Republic of Azerbaijan (Putshkov 1979).
+            </p>
+            <p>iii) Moulet (1995) keyed 4 species of <italic>Ceraleptus</italic> and did not deal with <italic>C. sartus</italic> Kiritshenko, 1912 which is a Central Asian species also recorded from the Asian part of Turkey (Wagner 1959: 106).
+            </p>
+            <p>iv) Moulet (1995) also omitted three species of <italic>Coriomeris</italic> inhabiting Transcaucasia and the Near East: <italic>C. armeniacus</italic> Tshernova, 1978 (Armenia, Asian Turkey, Azerbaijan, Iran), <italic>C. pallidus</italic> Reuter, 1900 (South European Territory of Russia, Asian Turkey, Lebanon, Syria, Iran, Central Asia up to North-Western China and Afghanistan), and <italic>C. validicornis</italic> Jakovlev, 1904 (Armenia, Asian Turkey, Azerbaijan, Georgia, Iran) (Tshernova 1978, Dolling 2006).
+            </p>
+            <p>The knowledge on the Coreidae fauna of Turkey was recently improved by several faunistic surveys, especially those by Dursun and Fent (2009), Yıldırım et al. (2011), and Dursun (2011), including references to further minor studies. Finally, the Turkish fauna was summarized in form of a checklist by Dursun (2011), listing 17 genera and 31 species, of which 8 genera and 24 species belong to Pseudophloeinae. An additional species, <italic>Gonocerus patellatus</italic> Kiritshenko, 1916 (Coreinae), was recorded from Anatolia by Yıldırım et al. (2011).
+            </p>
+            <p>Specimens of an additional genus and species so far unrecorded from Turkey, <italic>Urartucoris ermolenkoi</italic>, were recently obtained by the third author. This species has never been recorded after its original description, and its male sex has remained unknown so far. In this contribution we redescribe the genus and species, provide the first description and illustra<!--PageBreak-->tions of the male of <italic>U. ermolenkoi</italic>, and give the first information on its habitat preference. An updated key to the West Palaearctic genera of Pseudophloeini is presented as well.
+            </p>
+            <p>The examined material of <italic>U. ermolenkoi</italic> was collected during the ongoing systematic studies on insect diversity of the Gölcük Natural Park, which has already been a subject of several papers, including i.a. records of two genera and 25 species new to Turkish fauna and among them five species of Encyrtidae (Hymenoptera: Chalcidoidea) described as new to science (Fent and Japoshvili 2012; Japoshvili 2011; Japoshvili and Anlas 2011; Japoshvili and Çelik 2010; Japoshvili and Ljubomirov 2011; Japoshvili and Toyganözü 2011; Japoshvili et al. 2009, 2010, 2011). Concerning Heteroptera, Fent and Japoshvili (2012) identified 66 species of true bugs from 13 families, the family Coreidae being represented by 9 species (7 in the tribe Pseudophloeini).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>The Gölcük Natural Park (GNP) (Fig. 1) is situated in Isparta Province (Mediterranean Region of Turkey) in an arid region located 8 km southwest of the city Isparta. With its diverse vegetation and wildlife, geomorphological structure, and aesthetically pleasing landscape, GNP is one of the most important areas of the Lakes District in Turkey (Fig. 17). This area of 5,925 ha was proclaimed a natural park but its condition is deteriorating because it has no master plan and only minimal management (Gül et al. 2005). Area of the GNP has a rather complex geology, composed of alternating sedimentary (Akdağ limestone, conglomerates, flysch), magmatic (harzburgite, serpentinite), and volcanic rocks (trachy-andesites, tight tuffs, ash, and pumice tuff stones). Isparta Province itself is located at the border between the Irano-Anatolian and Mediterranean basin biodiversity hotspots, and this is reflected in the flora of the GNP as well: 22 (9.7 %) species endemic for Irano-Anatolian hotspot and 17 (7.5 %) endemic for Mediterranean basin hotspot are represented in this region (Fakir 1998, Fakir and Dutkuner 1999); 25 species (11 %) are endemic for Turkey (Fakir 1998). The studies performed around Gölcük Lake showed that 227 plant taxa from 136 genera within 47 families existed there, and among them red pine (<italic>Pinus brutia</italic> Ten.), black pine (<italic>Pinus nigra</italic> Arnold. ssp. <italic>pallasiana</italic> (Lamb.), oaks (<italic>Quercus</italic> spp.), cedar (<italic>Cedrus libani </italic>A. Rich.), pseudoacacia (<italic>Robinia pseudoacacia</italic> L.) and some other shrubs are characteristic for the Gölcük Natural Park (Fakir and Dutkuner 1999, Karatepe et al. 2005).
+            </p>
+            <p>Dry-mounted specimens were measured under a stereomicroscope using an ocular micrometer. The following measurements were examined: body length (from apex of clypeus to apex of membrane), head length (from apex of clypeus to the anterior pronotal margin), head width (maximum width across eyes), interocular width (between inner margins of eyes), lengths of antennomeres (maximum lengths), pronotum length (medially in most exposed view), pronotum width (maximum width between humeral angles), scutellum length (medially from base to apex), scutellum width (maximum width at base), and abdomen width (maximum width).
+</p>
+            <p><!--PageBreak-->All line drawings (using camera lucida) and the dissections of genitalia were made under a Leica MZ75 stereomicroscope. For the study of genitalia, a male specimen was softened in distilled water, and the pygophore was removed under stereomicroscope using a fine forceps, then put into concentrated KOH solution and heated until the solution started to boil. After maceration the pygophore was washed in distilled water and dissected under stereomicroscope. The dissected phallus is preserved in a plastic microvial with glycerol attached to the same pin as the specimen. The morphological terminology follows mostly Tsai et al. (2011).
+</p>
+            <!--PageBreak-->
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Urartucoris </bold-italic>
+                        <bold>P. V. Putshkov, 1979
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Urartucoris
+</object-id>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Urartucoris </italic>P. V. Putshkov, 1979: 62 (original description). Type species:<italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979, by original designation.
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Urartucoris</italic>: Dolling (1986): 206–207 (taxonomic relationships, distribution), Dolling (2006): 55 (catalogue).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p><bold-italic>Structure</bold-italic><bold>. </bold><italic>Head </italic>porrect, robust, about as long as wide across eyes, strongly gibbose dorsally, anterior portion of head (anteriad of antenniferous tubercles) long (Fig. 2). Clypeus anteriorly surpassing mandibular plates. Antenniferous tubercles large, apically produced into long, inward-curved projection embracing base of antennal segment I. Compound eyes small, globular, protruding from head outline by most of their width (Fig. 2). Ocelli situated on small tubercles slightly posteriad of posterior margin of compound eyes, directed dorsolaterad; each ocellus closer to eye than to each other. Antennal segments ordered from longest to shortest: II &gt; IV &gt; III ≥ I. Antennal segment I robust, obovate, narrowing in basal one quarter of its length, slightly curved towards base, its apex surpassing apex of clypeus anteriorly; antennal segments II–IV much more slender, II and III almost cylindrical, slightly widening towards apex, IV spindle-shaped, with constricted base (Fig. 2). Bucculae short, covering approximately anterior half of labial segment I, surpassing labial segment I ventrally, ventral margin rounded, anteriorly reaching apex of clypeus (Fig. 4). Labial segments ordered from longest to shortest: I &gt; II &gt; IV &gt; III; apex of segment I not reaching posterior margin of head, apex of segment II reaching anterior margin of procoxae, and apex of segment IV reaching anterior margin of mesocoxae (Figs 3, 4).
+                    </p>
+                    <p><italic>Pronotum</italic> trapezoid, anterior margin slightly concave, lateral and posterior margin nearly straight (Fig. 2). Pronotum highest at line connecting humeral angles, sloping anteriorly towards head (Fig. 4). Pronotal disk flat, slightly sloping towards lateral and posterior margin. Anterior margin of pronotum raised, forming sharp collar (most prominent laterally) (Figs 2, 3), constricted posteriorly by deep transverse groove continuing to propleura; anterolateral angles of pronotum such as in <italic>Ceraleptus</italic> not developed. Lateral margins of pronotum and humeral angles rounded, unarmed, not protruding (Fig. 2).
+                    </p>
+                    <p><italic>Scutellum </italic>triangular, slightly wider than long, flat, only anterolateral angles with small depressions, apex acutangulate (Fig. 2).
+                    </p>
+                    <p><italic>Thoracic venter</italic>. Mesosternum depressed between mesocoxae. Metasternum anteriorly convex, narrowing posteriad, metacoxae situated close to each other (Fig. 3). Metapleuron posterolaterally rounded, not protruding (Fig. 3). Ostiole of metathora- cic scent glands shifted somewhat laterad, situated between meso- and metacetabulum, laterally accompanied with a short peritreme; vestibular scar well visible; evaporatorium very small, narrowly surrounding vestibular scar, ostiole, and peritreme.
+                    </p>
+                    <p><!--PageBreak--><italic>Legs</italic>. All femora oval in cross-section. Profemur widest in midlength, mesofemur approximately in its apical third (Fig. 3), both unarmed. Metafemur clavate, widest subapically (Fig. 3), its ventral surface with two parallel rows of more than ten spines and small denticles getting bigger from base to apex, two to four of the spines being large, the spines in rows being situated in nearly equal distances; surface between both rows flat, smooth. Tibiae somewhat flattened laterally, slightly widening from base to apex, unarmed. Tarsomeres ordered from longest to shortest: I &gt; III &gt; II, tarsomere I being slightly longer than II and III combined (Fig. 3).
+                    </p>
+                    <p><italic>Wings.</italic> Corium widest approximately at midlength, narrowing both anteriad and posteriad, costal margin of corium therefore slightly convex medially; posterolateral angle of corium acutangulate (Fig. 2). Membrane apically rounded, reaching apex of abdomen (♂; Fig. 2) or slightly shorter (♀). Hind wings developed.
+                    </p>
+                    <p><italic>Abdomen </italic>widest slightly behind its midlength (Fig. 3). Corium exposed, directed dorsolaterad, its outer margin smooth, posterolateral angles of laterotergites not protruding (Fig. 3), except for obtusangulate posterolateral angles of laterotergite VII in females. Abdominal venter regularly convex.
+                    </p>
+                    <p><italic>Male genitalia.</italic> Pygophore (Figs 5–9) black, lateral angles slightly brownish, insinuated anterolaterally, posterolateral angles distinctly produced, lobe-like, surrounding parameres laterally; infolding of ventral rim large, with a pair of depressions harbouring basal portion of parameres (Fig. 7). Paramere sockets not visible in dorsal view, covered by posterolateral angles of pygophore (Figs 6–7). Paramere (Figs 10–13) clavate in posterior (outer) and anterior (inner) view, slightly S-shaped in lateral view; posterior surface (Fig. 13) of head of paramere flattened, pale brown, bearing sparse and stout setae arising from large punctures; rest of paramere body blackish; inner surface (Fig. 11) produced into two ridges holding acute angle, distal ridge higher, apically rounded, proximal one lower and angulate; surface between the ridges and between proximal ridge and base of the paramere concave, rest of anterior surface convex. Phallus (Figs 14–16) with sclerotized vesica with two coils and a single pair of long endophallic reservoir outgrowths.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Differential diagnosis.</bold>
+                    </title>
+                    <p><italic>Urartucoris</italic> differs from all Palaearctic Pseudophloeini in very long antennal segment II, sharp and well delimited pronotal collar, and presence of two nearly identical rows of denticles and spines on metafemora, the spines in the rows being situated in nearly equal distances. It resembles the genus <italic>Ceraleptus</italic> (especially <italic>Ceraleptus gracilicornis</italic> (Herrich-Schaeffer, 1835)) in the close position of the metacoxae but it differs from it, besides the above mentioned generic characters, in the robust antennae and the body being covered by stiff spinules (Putshkov 1979). See also the Key below. Also Dolling (1986) suggested close relationship between <italic>Urartucoris</italic>, <italic>Ceraleptus</italic>, and <italic>Microtelocerus</italic>, but without listing a single shared character.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p>Originally, etymology of the name was not specified. The name consists of the name Urartu, which was an ancient Armenian kingdom (ca. 860–585 B.C.) spread out between Asia Minor, Caucasus and Mesopotamia, with center around the Van Lake (today in eastern Turkey), and the ending -<italic>coris</italic>, used for true bug. The name is masculine.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Urartucoris ermolenkoi </bold-italic>
+                        <bold>P. V. Putshkov, 1979
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Urartucoris_ermolenkoi
+</object-id>
+                    <xref>Figs 2–16
+</xref>
+                    <tp:nomenclature-citation-list>
+                        <tp:nomenclature-citation><italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979: 63–64. Type material: Holotype: ♀, Azerbaijan: ‘Nakhichevanskaya ASSR: 6 km N of Bilav village, 1700 m, 22 V 1966 (V. M. Ermolenko)’ (coll. Institute of Zoology, Ukrainian Academy of Sciences, Kiev); paratype: 1 ♀, Azerbaijan, Nakhchivan: ‘0.5 km E of Ak-Dar village, 2000 m, 19 VII 1977 (P. V. Puchkov)’ (coll. Zoological Institute, Russian Academy of Sciences, St. Petersburg).
+                        </tp:nomenclature-citation>
+                        <tp:nomenclature-citation><italic>Urartucoris ermolenkoi</italic>: Dolling (2005): 55 (catalogue), Putshkov and Putshkov (2012): 95 (type depository).
+                        </tp:nomenclature-citation>
+                    </tp:nomenclature-citation-list>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p><bold> TURKEY: Isparta province: </bold>Gölcük (site A), 17.iv.2008, 1 ♂, M. Kaya lgt.; (sites A,B), 17.iv.2008, 3 ♂♂, M. Kaya lgt.; (site D), 24.iv.2008, 1 ♂ 1 ♀, G. Japoshvili lgt.; (site C), 15.v.2008, 1 ♀, M. Kaya lgt.; (site E), 10.vii.2008, 1 ♂ 1 ♀, G. Japoshvili lgt.; (site B), 24.vii.2008, 1 ♀, G. Japoshvili lgt.; (site E), 11.ix.2008, 1 ♂ 1 ♀, G. Japoshvili lgt. (coll. Trakya University, Edirne, Turkey, except 1 ♂ 1 ♀ in coll. National Museum, Praha, Czech Republic).
+                    </p>
+                    <p>Location of the collecting sites: A – N37°43'33.81&quot;, E30°30'26.22&quot;, 1472 m alt.; B – N37°44'13.12&quot;, E30°29'22.95&quot;, 1420 m alt.; C – N37°42'49.02&quot;, E30°29'48.93&quot;, 1485 m alt.; D – N37°43'03.00&quot;, E30°29'56.90&quot;, 1443 m alt.; E – N37°42'09.05&quot;, E30°29'43.97&quot;, 1621 m alt.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p> <bold-italic>Colouration </bold-italic>(Figs 2–5).Body dorsally dark brown, except three ochraceous stripes dorsally on head, one in midline, running from base of head towards base of clypeus, and two lateral ones, running from base of head along inner margin of eye towards base of antenniferous tubercle; elongate ivory spot on apex of scutellum; and rather irregular whitish spots posterolaterally on laterotergites. Membrane brownish, with small round pale spots; veins dark brown. Antennae and labium black. Head ventrally brown. Thorax ventrally dark brown, pleura to various extent covered with smaller to larger, irregular, sometimes confluent ochraceous spots, especially on metapleuron. Profemora, metatibiae and metatarsi blackish brown. Meso- and metafemora blackish brown with irregular ochraceous spots, especially on dorsal surface. Pro- and mesotibiae ochraceous, basally and apically infuscated with dark brown, pro- and mesotarsi dark brown. Abdomen ventrally pale with nearly continuous wide blackish stripes laterally and at mid-distance between lateral margin and midline, sternites III–VII with narrow, black, nearly continuous to interrupted stripe along midline.
+                    </p>
+                    <p><italic>Measurements</italic>. Males (mm; n = 8): Body length 9.4–10.3; head: length 1.7–1.8, width across eyes 1.7–1.8, interocular width 1.0–1.3; pronotum: length 1.9–2.1, width across pronotal collar 1.6–1.8, width across humeral angles 2.9–3.3; scutellum: length 1.1–1.3, width 1.4–1.6; abdomen: maximum width (slightly behind its midlength) 4.0–4.2; length of antennal segments: I – 0.9–1.1, II – 1.2–1.5, III – 0.9–1.1, IV – 1.0–1.2; profemur: length 1.8–2.2; protibia: length 1.7–2.0; mesofemur: length 2.1–2.5; mesotibia: length 2.0–2.3; metafemur: length 2.7–3.6; metatibia: length 3.0–3.5.
+                    </p>
+                    <p><!--PageBreak-->Females (mm; n = 4): Body length 10.5–11.0; head: length 1.7–1.9, width across eyes 1.8–2.0, interocular width 1.2–1.25; pronotum: length 2.0–2.1, width across pronotal collar 1.7–1.9, width across humeral angles 3.1–3.4; scutellum: length 1.2–1.4, width 1.5–1.7; abdomen: maximum width (slightly behind its midlength) 4.2–4.6; length of antennal segments: I – 0.9–1.1, II – 1.3–1.4, III – 1.1 (n = 1), IV – 1.2 (n = 1); profemur: length 2.0–2.3; protibia: length 1.9–2.2; mesofemur: length 2.3–2.6; mesotibia: length 2.1–2.3; metafemur: length 3.1–3.8; metatibia: length 3.0–3.4.
+</p>
+                    <p><bold-italic>Pilosity and vestiture. </bold-italic>Body dorsum (except membrane), antennae and legs covered with long, stiff, semi-erect to erect, brown to black spinules, arising from apices of small tubercles (best visible in lateral view); tubercles largest on vertex and anterior portion of pronotum, those on posterior portion of pronotum, scutellum, and coriaceous part of hemelytra smaller. Spinules on tibiae nearly as long as half of diameter of tibia, those on <!--PageBreak-->femora nearly as long as the large spinules on pronotum. Body venter with double pilosity: Long, stiff, semi-erect to erect, dark spinules as those on body dorsum, but distinctly sparser, arising from smaller tubercles, short on pleura and ventral surface of head. Besides the dark spinules, body venter covered with intermingled, sparse, adpressed, whitish setae, slightly shorter than the spinules. Antennal segment IV covered with very short and fine adpressed pubescence among the sparse, long black spinulae. Besides the tubercles body covered with irregularly scattered, deep and dark punctures, largest on clavus.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Variability.</bold>
+                    </title>
+                    <p>The male resembles the female in most of the characters except for slightly smaller body (9.4–10.3 mm) than in females (10.5–11.2 mm), membrane reaching apex of abdomen (slightly shorter in females) and shape of last abdominal segments. We found also some differences in colouration, but this may represent rather intraspecific variability than sexual dimorphism: Peritreme yellowish, only slightly infuscated on its lateral edge (♂); peritreme black (♀). Abdominal sternites III–VII with narrow, black, nearly continuous stripe along midline (♂); sternite III medially with large blackish spot, the black longitudinal stripe in ventral midline being interrupted, <!--PageBreak-->ventrites IV–VI medially with only smaller black spots posteriorly (♀). The extent of ochraceous colouration on thoracic pleura is certainly variable among specimens.
+                    </p>
+                    <p>The Turkish specimens fit well the original description except for a few details. The mesofemora of the Turkish specimens are unarmed, while Putshkov (1979) mentioned mesofemora with two small spines. There are also slight differences in colouration. According to Putshkov (1979), the Nakhchivan specimens differed, e.g., in antennae dark brown with antennal segment I black; anterior portion of pronotum paler than its posterior portion, darkened near lateral margins and along midline; meso- and metafemora pale, apically darkened, especially dorsally; and abdomen ventrally pale with isolated dark spots, forming two interrupted stripes in lateral midlines (halfway between connexivum and ventral midline of abdomen). The Turkish females are either slightly smaller or approximately as large as the Nakhchivan specimens.
+                    </p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p>Originally, etymology of the name was not specified. Most probably, the species was dedicated to Valeriy Mikhaylovich Ermolenko (1920–2006), an Ukrainian expert in Hymenoptera: Symphyta and collector of the holotype.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Phenology.</bold>
+                    </title>
+                    <p>Adults were collected from mid April to end of July and in mid September (Putshkov 1979, this paper).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Habitat.</bold>
+                    </title>
+                    <p>All the specimens of <italic>Urartucoris ermolenkoi</italic><bold-italic> </bold-italic>(all adults) were collected between April and September 2008 using pitfall traps; collecting by other methods (yellow traps) yielded no specimens of this apparently epigeic species. The species was collected at five different semi-natural collecting sites in higher altitudes (1420–1621 m a.s.l.), ranging from sparse forest to mountain grassland (Figs 18–20).
+                    </p>
+                    <p>– <bold>A</bold>	Xerophilic natural plants with a reforested area with pine trees (<italic>Pinus </italic>sp.) and cedars (<italic>Cedrus </italic>sp.) planted between 1959–1969 (Şahbudak &amp; Cengiz 2007); about 4.8 % of the plants that were recorded from this site were endemic to Turkish flora. Altitude 1472 m (Fig. 18).
+                    </p>
+                    <p>– <bold>B</bold>	Main entrance to the GNP, this is an area close to the lake, with areas reforested with <italic>Robinia pseudoacacia</italic> planted between 1960–1965. Some natural plants like <italic>Crataegus</italic> <italic>orientalis</italic>, <italic>Cotoneaster nummularia</italic>, <italic>Pistacia terebinthus </italic>and other are also represented in this site which has high human activity (picnic area). Altitude 1420 m.
+                    </p>
+                    <p>– <bold>C</bold>	Mesophilous area with plantation of 50–60 years old <italic>Populus</italic> spp. trees, accompanied by <italic>Crataegus</italic> <italic>orientalis</italic>, <italic>Cotoneaster nummularia</italic>, <italic>Pistacia terebinthus</italic>,<italic> Rosa canina</italic>,<italic> Pyrus</italic>,<italic> Juglans </italic>and <italic>Malus </italic>spp. Altitude 1485 m.
+                    </p>
+                    <p>– <bold>D</bold>	Dry xerophilic sandy place with <italic>Robinia pseudoacacia</italic> plantations and natural shrubland with different dominant <italic>Astragalus </italic>spp., many of them endemic. Altitude 1443 m (Fig. 19).
+                    </p>
+                    <p>– <bold>E</bold>	Highland site, reforested in 1989 with <italic>Cedrus </italic>sp. and <italic>Robinia pseudoacacia. </italic>Altitude 1621 m (Fig. 20).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Distribution.</bold>
+                    </title>
+                    <p>Asian Turkey (Isparta province) (this paper, see Fig. 1), Azerbaijan: Nakhchivan (Putshkov 1979).
+                    </p>
+                    <sec>
+                        <title><bold>Revised key to the genera of the West Palaearctic Pseudophloeini
+</bold>
+                        </title>
+                        <p>The following key is based on translation of Moulet (1995). The characters of <italic>Microtelocerus</italic> are based on examination of the male holotype of <italic>M. linnavuorii</italic> deposited in the National Museum and Gallery of Wales, Cardiff (type labels: ‘Holo- / type [p, white label with red margin] // HEBREW UNIVERSITY OF JERUSALEM, ISRAEL / Department of Entomology [p] + m [hw] / LOC: [p] Gabal Sarbal 1300 [hw] / DATE: [p] 8.8.68 [hw] / COL: [p] Broza &amp; Toren [hw, white label] // HOLOTYPE / Microtelocerus / Linnavuorii [hw] / det. [p] n. sp. M.S. [hw] / W.R. Dolling 197[p]2[hw, white label]’) (see Figs 21–23), supplemented by information from Reuter (1900), Dolling (1979) and the habitus illustration by Kiritshenko (1952: 169, fig. 18). The key allows <!--PageBreak--><!--PageBreak--><!--PageBreak-->identification of all Pseudophloeini genera occurring in the western half of the Palaearctic Region (up to Central Asia), except Yemen where two additional genera of Afrotropical origin occur – <italic>Mevanidea</italic> Reuter, 1882 and <italic>Risbecocoris </italic>Izzard, 1949 (Dolling 2006).
+                        </p>
+                        <table-wrap content-type="key" position="float" orientation="portrait">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">1 (8)</td>
+                                        <td rowspan="1" colspan="1">Antennal segment III more than 2 times longer than segment II</td>
+                                        <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">2 (7)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennal segment III much (3–4 times) longer than segment II</td>
+                                        <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">3 (4)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Posterior margin of pronotum with a spine at each side of scutellum. Head and pronotum with long setae</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Strobilotoma</bold-italic><bold> Fieber, 1860</bold> (1 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">4 (3)</td>
+                                        <td rowspan="1" colspan="1">Posterior margin of pronotum without spines. Head and pronotum with short setae</td>
+                                        <td rowspan="1" colspan="1"><bold>5
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">5 (6)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Metafemora tuberculate, generally without or at most with an inconspicuous spine apically. Lateral margins of pronotum concave medially</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Arenocoris </bold-italic><bold>Hahn, 1834 </bold>(4 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak-->6 (5)</td>
+                                        <td rowspan="1" colspan="1">Metafemora smooth with a strong apical spine. Lateral margins of pronotum straight</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Bathysolen</bold-italic><bold> Fieber, 1860 </bold>(2 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">7 (2)</td>
+                                        <td rowspan="1" colspan="1">Antennal segment III 2.5 times longer than segment II</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Ulmicola</bold-italic><bold> Kirkaldy, 1909</bold> (1 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">8 (1)</td>
+                                        <td rowspan="1" colspan="1">Antennal segments II and III subequal, rarely antennal segment III longer (no more than 2 times) or shorter than segment II</td>
+                                        <td rowspan="1" colspan="1"><bold>9
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">9 (22)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennal segments II and III subequal, rarely antennal segment III longer (no more than 2 times). Metafemora without two parallel rows of spines ventrally</td>
+                                        <td rowspan="1" colspan="1"><bold>10
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">10 (11)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Posterior margin of pronotum conspicuously denticulate</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Coriomeris</bold-italic><bold> Westwood, 1842 </bold>(12 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">11 (10)</td>
+                                        <td rowspan="1" colspan="1">Posterior margin of pronotum unarmed.</td>
+                                        <td rowspan="1" colspan="1"><bold>12
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">12 (17)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antenniferous tubercles terminating in spine directed more or less distinctly forward</td>
+                                        <td rowspan="1" colspan="1"><bold>13
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">13 (14)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennal segment IV distinctly longer and thicker than III. Pro- and meso-femora dentate, with one big and few small spines subapically. Head dorsally, pronotum and scutellum covered with long and dense pubescence</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Loxocnemis</bold-italic><bold> Fieber, 1860 </bold>(1 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">14 (13)</td>
+                                        <td rowspan="1" colspan="1">Antennal segment IV distinctly shorter and only slightly thicker than antennal segment III. Pro- and mesofemora unarmed or granulate, mesofemora with only one small spine or without a spine subapically. Head dorsally, pronotum and scutellum at most with short pubescence</td>
+                                        <td rowspan="1" colspan="1"><bold>15
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">15 (14)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennal segment IV less shorter (0.75–0.85 times) and thicker than antennal segment III. Profemora and mesofemora with only one small spine subapically or unarmed</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Anoplocerus</bold-italic><bold> Kiritshenko, 1926 </bold>(3 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">16 (15)</td>
+                                        <td rowspan="1" colspan="1">Antennal segment IV much shorter (0.42 times) and slender than antennal segment III. Pro- and mesofemora unarmed</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Microtelocerus</bold-italic><bold> Reuter, 1900 </bold>(1 species; Figs 21–23)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">17 (12)</td>
+                                        <td rowspan="1" colspan="1">Antenniferous tubercles obtuse or, if terminating in spine, this is curved inwards, hook-shaped.</td>
+                                        <td rowspan="1" colspan="1"><bold>18
+</bold>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">18 (19)
+                                        </td>
+                                        <td rowspan="1" colspan="1">Antennal segment I with conspicuous spine-like tubercles laterally, each with an apical seta. Humeral angles of pronotum armed with a distinct tooth. Mandibular plates reaching anterior margin of clypeus, well developed</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Bothrostethus</bold-italic><bold> Fieber, 1860 </bold>(1 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">19 (18)</td>
+                                        <td rowspan="1" colspan="1">Antennal segment I without such tubercles. Humeral angles of pronotum unarmed. Mandibular plates not conspicuously developed</td>
+                                        <td rowspan="1" colspan="1">20
+</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">20 (21)</td>
+                                        <td rowspan="1" colspan="1">Metafemora with group of spines apically, 2–3 of the spines larger than remaining ones</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Ceraleptus</bold-italic><bold> A. Costa, 1847 </bold>(5 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">21 (20)</td>
+                                        <td rowspan="1" colspan="1">Metafemora with a single spine apically</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Nemocoris</bold-italic><bold> R. F. Sahlberg, 1848 </bold>(1 species)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1">22 (9)</td>
+                                        <td rowspan="1" colspan="1">Antennal segment II distinctly longer than segment III. Metafemora bearing two parallel rows of spines on their ventral surface, between which the tibia could rest.</td>
+                                        <td rowspan="1" colspan="1"><bold-italic>Urartucoris</bold-italic><bold> P. V. Putshkov, 1979 </bold>(1 species; Figs 2–4)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="1"><!--PageBreak--></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </table-wrap>
+                    </sec>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>We are obliged to Dimitry A. Gapon (Zoological Institute of the Russian Academy of Sciences, St. Petersburg, Russia) for help with the translation from Russian, Michael Wilson (National Museum and Gallery of Wales, Cardiff, U.K.) for photos of the holotype of <italic>Microtelocerus linnavuorii</italic>, Dávid Rédei (Nankai University, Tianjin, China) and two anonymous reviewers for critical comments on earlier drafts of the manuscript, and Jitka Aldhoun (Natural History Museum, London, U.K.) for che- cking the English. The preparation of this manuscript received financial support from the Ministry of Culture of the Czech Republic to the National Museum, Prague (DKRVO MK-S 760/2012 OVV).
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Aukema</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Rabitsch</surname> <given-names>W</given-names></name>,<name name-style="western"><surname>Rieger</surname> <given-names>C</given-names></name></person-group> (<year>2012</year>)<fake_tag> Catalogue of the Heteroptera of the Palaearctic Region. VI. Supplement. Amsterdam: The Netherlands Entomological Society, in press.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Aukema</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Rieger</surname> <given-names>C</given-names></name></person-group> (<role>Eds</role>) (<year>2006</year>)<fake_tag> Catalogue of the Heteroptera of the Palaearctic Region. Vol. 5. Pentatomomorpha II. Amsterdam: The Netherlands Entomological Society, xiii + 550 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dolling</surname> <given-names>WR</given-names></name></person-group> (<year>1979</year>)<article-title> A second species of <italic>Microtelocerus</italic> Reuter (Hem., Coreidae) with a redescription of the genus.</article-title> <source>Entomologist’s Monthly Magazine </source> <volume>114</volume> (<issue>1978</issue>): <fpage>99</fpage>-<lpage>101</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dolling</surname> <given-names>WR</given-names></name></person-group> (<year>1986</year>)<article-title> The tribe Pseudophloeini (Hemiptera: Coreidae) in the Old World tropics with a discussion on the distribution of the Pseudophloeinae.</article-title> <source>Bulletin of the British Museum (Natural History), Entomology </source> <volume>53</volume>: <fpage>151</fpage>-<lpage>212</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dolling</surname> <given-names>WR</given-names></name></person-group> (<year>2006</year>)<article-title> Coreidae Leach, 1815.</article-title> In: <person-group1><name name-style="western"><surname>Aukema</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Rieger</surname> <given-names>C</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Catalogue of the Heteroptera of the Palaearctic Region.</issue-title> <source>Vol. 5. Pentatomorpha II. Amsterdam: The Netherlands Entomological Society, Vol. 5</source>: <fpage>43</fpage>-<lpage>101</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dursun</surname> <given-names>A</given-names></name></person-group> (<year>2012</year>)<fake_tag> Additional records of Coreidae (Hemiptera: Heteroptera) from Turkey, with a checklist. Entomological News122(2) (2011): 135–148.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dursun</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Fent</surname> <given-names>M</given-names></name></person-group> (<year>2009</year>)<article-title> A study on the Coreidae (Insecta: Heteroptera) of the Kelkit Valley, Turkey.</article-title> <source>Acta Entomologica Serbica </source> <volume>14</volume>: <fpage>13</fpage>-<lpage>25</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>El</surname> <given-names>Hamouly H</given-names></name>,<name name-style="western"><surname>Sawaby</surname> <given-names>RF</given-names></name>,<name name-style="western"><surname>Fadl</surname> <given-names>HH</given-names></name></person-group> (<year>2010</year>)<article-title> Taxonomic review of the subfamily Pseudophloeinae (Hemiptera: Coreidae) from Egypt.</article-title> <source>Egyptian Journal of Biology </source> <volume>12</volume>: <fpage>108</fpage>-<lpage>124</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Fakir</surname> <given-names>H</given-names></name></person-group> (<year>1998</year>)<fake_tag> [Research on the flora of Isparta Golcuk lake district]. MSc thesis. Isparta: Suleyman Demirel University (in Turkish).
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Fakir</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Dutkuner</surname> <given-names>I</given-names></name></person-group> (<year>1999</year>)<fake_tag> Floristic studies on Isparta Gölcük Natural Reserve, pp. 77–87. In: Proceedings of the 1st International Symposium on Natural Environment Protection &amp; Black Pine (<italic>Pinus nigra</italic> Arnold. ssp. <italic>pallasiana</italic> (Lamb.) <italic>Holmboe</italic> var. <italic>pyramidata</italic> (Acat.) Yaltırık), Kütahya, Turkey.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Fent</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name></person-group> (<year>2012</year>)<fake_tag> Heteroptera (Insecta: Hemiptera) Fauna of Isparta-Gölcük Natural Park with some rare and peculiar species and new records for Mediterranean Region of Turkey. Türkiye Entomoloji Bülteni, 2(3): in press.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Ghahari</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Moulet</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Linnavuori</surname> <given-names>RE</given-names></name>,<name name-style="western"><surname>Ostovan</surname> <given-names>H</given-names></name></person-group> (<year>2012</year>)<article-title> An annotated catalog of the Iranian Coreidae, Rhopalidae, and Stenocephalidae (Hemiptera: Heteroptera: Pentatomomorpha: Coreoidea).</article-title> <source>Zootaxa </source> <volume>3519</volume>: <fpage>1</fpage>-<lpage>31</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gül</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Orucu</surname> <given-names>O</given-names></name>,<name name-style="western"><surname>Karaca</surname> <given-names>O</given-names></name></person-group> (<year>2005</year>)<fake_tag> Determination of Potential Regions by Using Recreation Suitabilty Analaysis (Reference Gölcük Reserve). Symposium of Protected Natural Areas. 8–10 September 2005, S.D.Ü., Isparta, Turkey.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hoberlandt</surname> <given-names>L</given-names></name></person-group> (<year>1989</year>)<article-title> Results of the Czechoslovak-Iranian entomological expeditions to Iran 1970, 1973 and 1977. Heteroptera, Coreidae.</article-title> <source>Acta Musei Nationalis Pragae B </source> <volume>45</volume>: <fpage>73</fpage>-<lpage>89</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name></person-group> (<year>2012</year>)<article-title> New data on encyrtid (Hymenoptera: Chalcidoidea: Encyrtidae) parasitoids of Coccoids (Hemiptera: Coccoidea) from Turkey, with description of five new species.</article-title> <source>Entomologica Fennica </source> <volume>23</volume>: <fpage>72</fpage>-<lpage>82</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Anlaş</surname> <given-names>S</given-names></name></person-group> (<year>2011</year>)<article-title> Notes on the family Staphylinidae (Coleoptera) collected by pitfall traps in Gölcük Natural Park, Isparta Province of Turkey.</article-title> <source>Journal of Entomological Research Society </source> <volume>13</volume> (<issue>1</issue>): <fpage>41</fpage>-<lpage>48</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Çelik</surname> <given-names>H</given-names></name></person-group> (<year>2010</year>)<article-title> Fauna of Encyrtidae, parasitoids of coccids in Gölcük Natural Park.</article-title> <source>Entomologia Hellenica </source> <volume>19</volume> (<issue>2</issue>): <fpage>132</fpage>-<lpage>136</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Karaca</surname> <given-names>I</given-names></name></person-group> (<year>2010</year>)<article-title> List of Vespidae, Scoliidae and Tiphiidae (Hymenoptera) of Gölcük Natural Park in Isparta Province, Turkey.</article-title> <source>SDU Journal of Science </source> <volume>5</volume> (<issue>2</issue>): <fpage>194</fpage>-<lpage>199</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Ljubomirov</surname> <given-names>T</given-names></name></person-group> (<year>2011</year>)<article-title> Recent records of Chrysididae, Mutillidae, Crabronidae, and Sphecidae (Insecta: Hymenoptera) from Gölcük Natural Park (Isparta, Turkey).</article-title> <source>Journal of the Entomological Society of Iran </source> <volume>31</volume> (<issue>1</issue>): <fpage>95</fpage>-<lpage>97</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Toyganözü</surname> <given-names>C</given-names></name></person-group> (<year>2011</year>)<article-title> Use of Encyrtid (Hymenoptera: Chalcidoidea, Encyrtidae) fauna to estimate like number of scale (Hemiptera: Coccoidea) fauna in Gölcük Natural Park, Turkey.</article-title> <source>Proceedings of the Georgian Academy of Sciences, Biological Series</source> <volume>9</volume>(<issue>1–4</issue>)): <fpage>54</fpage>-<lpage>64</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Celik</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Aslan</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Karaca</surname> <given-names>I</given-names></name></person-group> (<year>2010</year>)<article-title> Hymenopteran diversity and abundance in Gölcük Natural Park in Isparta, Turkey.</article-title> <source>Turkish Journal of Entomology </source> <volume>34</volume> (<issue>4</issue>): <fpage>435</fpage>-<lpage>446</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Karaca</surname> <given-names>I</given-names></name>,<name name-style="western"><surname>Wahis</surname> <given-names>R</given-names></name></person-group> (<year>2011</year>)<article-title> A list of Pompilidae (Hymenoptera) of Gölcük Natural Park, Isparta, Turkey.</article-title> <source>Munis Entomology and Zoology </source> <volume>6</volume> (<issue>1</issue>): <fpage>386</fpage>-<lpage>388</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Japoshvili</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Kaya</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Aslan</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Karaca</surname> <given-names>I</given-names></name></person-group> (<year>2009</year>)<article-title> Coleoptera diversity and abundance in Gölcük Natural Park, in Isparta, Turkey.</article-title> <source>Entomologia Hellenica </source> <volume>18</volume>: <fpage>47</fpage>-<lpage>55</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Karatepe</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Süel</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Yetüt</surname> <given-names>İ</given-names></name></person-group> (<year>2005</year>)<fake_tag> Isparta Gölcük Tabiat Parkı’nda Toros Sediri (<italic>Cedrus libani </italic>A. Rich.)’nin Farklı Anakayalardan Oluşmuş Topraklardaki Gelişiminin Ekolojik İrdelenmesi. [Ecological evaluation of growth of Taurus cedar (<italic>Cedrus</italic> <italic>libani </italic>A. Rich.) in soils with different bedrock origins in Isparta Gölcük Natural Park]. SDÜ Orman Fakültesi Dergisi 1: 64–75 (in Turkish).
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kiritshenko</surname> <given-names>AN</given-names></name></person-group> (<year>1952</year>)<fake_tag> Novye i maloizvestnye poluzhestkokrylye (Hemiptera – Heteroptera) Tadzhikistana. [New and little known true bugs (Hemiptera-Heteroptera) of Tajikistan)]. Trudy Zoologicheskogo Instituta Akademiya Nauk SSSR 10: 140–198 (in Russian).
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Moulet</surname> <given-names>P</given-names></name></person-group> (<year>1995</year>)<fake_tag> Hémiptères Coreoidea Euro-Mediterranéens. Faune de France 81. Paris: Fédération Française des Sociétés de Sciences Naturelles, 336 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Priesner</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Wagner</surname> <given-names>E</given-names></name></person-group> (<year>1961</year>)<article-title> Supplement to “A review of the Hemiptera, Heteroptera known to us from Egypt”.</article-title> <source>Bulletin de la Société Entomologique d’Egypte </source> <volume>45</volume>: <fpage>323</fpage>-<lpage>339</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Putshkov</surname> <given-names>PV</given-names></name></person-group> (<year>1979</year>)<fake_tag> Novye rod i vid podsemeystva Pseudophloeinae (Heteroptera, Coreidae) iz Zakavkaz’ya. [New genus and species of the subfamily Pseudophloeinae (Heteroptera, Coreidae) from Transcaucasia]. Trudy Vsesoyuznogo Entomologicheskogo Obshchestva 61: 62–64 (in Russian).
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Putshkov</surname> <given-names>PV</given-names></name>,<name name-style="western"><surname>Putshkov</surname> <given-names>AV</given-names></name></person-group> (<year>2012</year>)<fake_tag> Typi poluzhestkokrylykh (Heteroptera), chervetsov, shchitovok (Coccoidea) i tsikadovykh (Auchenorhyncha [sic!]) khranyashchiesya v Institute Zoologii im I.I. Schmal'gauzena Natsional'noy Akademii Nauk Ukrainy (The type-specimens of true bugs (Heteroptera), scale insects (Coccoidea) and leafhoppers (Auchenorrhyncha) deposited in the collection of the Schmalhausen Institute of Zoology of National Academy of Sciences of Ukraine). Vestnik Zoologii, Supplement 26: 3–150. (in Russian, English Summary)
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Reuter</surname> <given-names>OM</given-names></name></person-group> (<year>1900</year>)<article-title> Heteroptera palaearctica nova et minus cognita.</article-title> <source>Öfversigt af Finska Vetenskaps Societetens Förhandlingar </source> <volume>42</volume>: <fpage>268</fpage>-<lpage>281</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Şahbudak</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Cengiz</surname> <given-names>N</given-names></name></person-group> (<year>2007</year>)<fake_tag> The past, present, future of wash control and afforestation studies in Isparta city streams and Gölcük Lake basin. Journal of Turkish Forest Engineer Society1–2–3(44): 43–48.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="32"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tsai</surname> <given-names>JF</given-names></name>,<name name-style="western"><surname>Rédei</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Yeh</surname> <given-names>GF</given-names></name>,<name name-style="western"><surname>Yang</surname> <given-names>MM</given-names></name></person-group> (<year>2011</year>)<fake_tag> Jewel bugs of Taiwan (Heteroptera: Scutelleridae). Taichung: National Chung Hsing University, 309 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="33"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tshernova</surname> <given-names>GP</given-names></name></person-group> (<year>1978</year>)<fake_tag> Palearkticheskie vidy klopov-kraevikov roda <italic>Coriomeris </italic>Westw. (Hete- roptera, Coreidae). (Palaearctic species of the genus <italic>Coriomeris</italic> Westw. (Heteroptera, Coreidae)). Entomologicheskoe Obozrenie 57: 551–567 (in Russian, English summary).
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="34"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wagner</surname> <given-names>E</given-names></name></person-group> (<year>1959</year>)<article-title> Beitrag zur Heteropterenfauna Anatoliens.</article-title> <source>Zeitschrift für Angewandte Entomologie </source> <volume>44</volume>: <fpage>102</fpage>-<lpage>113</lpage>. doi: 10.1111/j.1439-0418.1959.tb00916.x
+</mixed-citation>
+            </ref>
+            <ref id="35"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Yıldırım</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Yazıcı</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Linnavuori</surname> <given-names>R</given-names></name></person-group> (<year>2011</year>)<article-title> Contribution to the knowledge of Alydidae, Coreidae, Rhopalidae and Stenocephalidae (Coreoidea: Heteroptera: Hemiptera) fauna of Turkey.</article-title> <source>Linzer Biologische Beiträge </source> <volume>43</volume>: <fpage>1625</fpage>-<lpage>1639</lpage>.
+</mixed-citation>
+            </ref>
+        </ref-list>
+        <sec>
+            <title><bold>Appendix
+</bold>
+            </title>
+            <p>Translation of the original descriptions published in Russian (Putshkov 1979):
+</p>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Urartucoris</bold-italic>
+                        <bold> P. Putshkov, gen. n.
+</bold>
+                    </tp:taxon-name>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p> <italic>Urartucoris ermolenkoi</italic> P. Putshkov, sp. n.
+                    </p>
+                    <p>Entire body completely scattered over with hard black spinules originating from small tubercles, which are less developed on ventral surface of the body. Width of head across eyes nearly equal to head length. Antennae robust, covered with hard spinules, and so are the legs. Antennal segment II distinctly longer than segment III. Pronotum slightly sloping anteriad, its anterior margin forming a collar, divided from lateral margins by deep furrow, which is best visible in dorsal view. All margins of pronotum without setae, its lateral angles rounded, without spines or processes. Metacoxae convergent. Metafemora bearing two parallel rows of spines on their posterior surface, between which the tibia can rest.
+</p>
+                    <p>The new genus belong to the subfamily Pseudophloeinae, differing from all its Pa-laearctic representatives in very long antennal segment II, wide pronotal collar, and two <!--PageBreak-->nearly identical rows of spines on metafemora, the spines in the rows stand in nearly equal distances. It resembles the genus <italic>Ceraleptus</italic> (especially <italic>Ceraleptus gracilicornis</italic> H.-S.) in the degree of convergence of metacoxae but it differs, apart from the above mentioned generic characters, in robust antennae and body covered with hard spinules.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Urartucoris ermolenkoi P. Putshkov, sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <xref>(see figure)
+</xref>
+                </tp:nomenclature>
+                <p>Body dorsally blackish-brown with dense black punctures, ventrally pale brown with black spots. Body length 11–11.2 mm, body width (at level of last quarter of body) 4.5–4.8 mm. Head length 1.95–2.1 mm, head width including eyes 1.9 mm, between eyes 1.5 mm. Total length of antennae 5–5.5 mm, ratio of antennal segments 22–28 : 30–33 : 22–25 : 24–25. Lateral processes of antenniferous tubercles bent around antennal bases in form of annulus, in dorsal view it seems that antennae originate at bottom of a bowl. Tubercles on head big, bearing setae 2–3 times longer than height of tubercles. Antennae dark brown with antennal segment I black. Antennal segment I obovate, elongate, slightly curved towards base, apically 1.3–1.4 times wider than segment II. Segments II and III gradually widening (from 0.15 to 0.24 mm) towards apex, as wide as segment IV. Segment II 1.35 as long as segment III. Setae covering antennae nearly as long as width of segments II and III. Rostrum reaching mesocoxae.
+</p>
+                <p>Length of pronotum 2.1 mm, width across humeral angles 3.4–3.65 mm, across pronotal collar 1.9 mm, equally wide as head across eyes. Anterior portion of pronotum bearing large setiferous tubercles, the same as on the head. Anterior portion of pronotum paler than its posterior portion, darkened near lateral margins and along midline. Tubercles on the posterior portion of the pronotal disk lower, setae shorter, punctures more dense and darker. Sculpture of scutellum and the coriaceous part of hemelytra the same as on posterior surface of pronotum, except the punctures on clavus being larger.
+</p>
+                <p>Metacoxae convergent, as far as 2/3 of width of tibia or 1/4 of width of coxal cavity. Spines in both rows on metafemora nearly the same, regularly shortening towards base of femur. Each row including more than ten spines, two to four being large. Mesofemora with two small spines or none. Profemora completely dark, meso- and metafemora pale, apically darkened, especially dorsally. Metatibiae darker than pro- and mesotibiae. Tarsi dark, length ratio of metatarsal segments 15 : 4 : 7. Legs covered with black semierect setae, setae on tibiae nearly as long as half of the tibia width, those on femora nearly as long as the large spines.
+</p>
+                <p>Abdomen ventrally pale with isolated dark spots, forming two interrupted stripes in lateral midlines (half the distance between connexivum and ventral midline of abdomen). Connexivum dark with pale spots.
+</p>
+                <p>Material. 1 ♀ (holotype), Nakhichevanskaya ASSR: 6 km north of village Bilav, 1700 m, 22 V 1966 (V. M. Ermolenko); 1 ♀, 0.5 km east of village Ak-Dar, 2000 m, 19 VII 1977 (P. V. Putshkov). Holotype deposited in Institute of Zoology, AN USSR, and paratype in Zoological Institute AN SSSR in Leningrad.</p>
+            </tp:taxon-treatment>
+        </sec>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Location of the Gölcük Natural Park within Turkey and position of the collection sites of <italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979 within the Natural Park.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figures 2–5.</label>
+            <caption><p> <italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979, male (10.2 mm). <bold>2–4</bold> habitus (<bold>2</bold> dorsal view <bold>3</bold> ventral view <bold>4</bold> lateral view) <bold>5</bold> intact pygophore in posterior view. (Photos P. Kment).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figures 6–9.</label>
+            <caption><p> <italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979, dissected pygophore: <bold>6</bold> dorsal view <bold>7</bold> posterodorsal view <bold>8</bold> posterior view <bold>9</bold> lateral view. Scale bar: 1 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figures 10–16.</label>
+            <caption><p> <italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979. <bold>10–13</bold> paramere (<bold>10, 12</bold> lateral views <bold>11</bold> anterior view <bold>13</bold> posterior view). <bold>14–16</bold>  phallus (not inflated, articulatory apparatus lost) <bold>14</bold> dorsal view <bold>15</bold> lateral view <bold>16</bold> ventral view). Lettering: <bold>ero</bold> endophallic reservoir outgrowths, <bold>ds</bold> ductus seminis, <bold>ve</bold> vesica. Scale bar: 0.5 mm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figures 17–18.</label>
+            <caption><p> Habitats of <italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979. <bold>17</bold> Landscape of the Gölcük NP <bold>18</bold> collecting site A. (Photos G. Japoshvili).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F6" position="float" orientation="portrait">
+            <label>Figures 19–20.</label>
+            <caption><p> Microhabitats of <italic>Urartucoris ermolenkoi</italic> P. V. Putshkov, 1979, showing also placement of the pitfall trap <bold>19</bold> collecting site D <bold>20</bold> collecting site E. (Photos G. Japoshvili).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F7" position="float" orientation="portrait">
+            <label>Figures 21–23.</label>
+            <caption><p> <italic>Microtelocerus linnavuorii</italic> Dolling, 1979, habitus of male holotype (<bold>21</bold> dorsal view <bold>22</bold> ventral view <bold>23</bold> lateral view). (Photos M. Wilson).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g007.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

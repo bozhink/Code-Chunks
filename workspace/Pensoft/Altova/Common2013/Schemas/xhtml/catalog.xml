@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<public publicId="-//W3C//DTD XHTML 1.0 Transitional//EN" uri="files/xhtml1-transitional.dtd"/>
+	<public publicId="-//W3C//DTD XHTML 1.0 Strict//EN" uri="files/xhtml1-strict.dtd"/>
+	<system systemId="about:legacy-compat" uri="files/xhtml5.dtd"/>
+	<spy:fileExtHelper ext="htm" uri="files/xhtml1-transitional.dtd"/>
+	<spy:fileExtHelper ext="html" uri="files/xhtml1-transitional.dtd"/>
+	<spy:fileExtHelper ext="xhtml" uri="files/xhtml1-transitional.dtd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/xhtml/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/xhtml/' rewritePrefix='files/'/>
+</catalog>

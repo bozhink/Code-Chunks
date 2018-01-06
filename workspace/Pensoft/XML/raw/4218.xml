@@ -1,0 +1,250 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.100.4218</article-id>
+            <title-group>
+                <article-title>Thorax morphology of selected species of the genus 
+                    <bold-italic>Cacopsylla</bold-italic> (Hemiptera, Psylloidea)
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Drohojowska</surname>
+                        <given-names>Jowita</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Kalandyk-Kołodziejczyk</surname>
+                        <given-names>Małgorzata</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Simon</surname>
+                        <given-names>Ewa</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Department of Zoology, University of Silesia, Bankowa 9, 40-036 Katowice, Poland
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Jowita Drohojowska (<email xlink:type="simple">jowita.drohojowska@us.edu.pl</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>30</day>
+                    <month>10</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>3</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Jowita Drohojowska, Małgorzata Kalandyk-Kołodziejczyk, Ewa Simon</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The paper concerns with characteristics of a thorax morphological structure <italic>Cacopsylla </italic>Ossiannilsson, 1970 species, referring to an analysis of five species classified in the past in three subgenera. The structure of the sternites, tergites and pleurites of all the parts of the thorax was studied by a scanning microscope. Descriptions of particular elements building up thorax plates, their shape, size and links as well as a course of all the clefts and sulcus are provided. The study of thorax morphology of <italic>Cacopsylla</italic> species suggests that the thorax morphology is relatively homogenous within a genus.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Psylloidea</kwd>
+                <kwd><italic>Cacopsylla</italic>
+                </kwd>
+                <kwd>morphology</kwd>
+                <kwd>thorax
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Jumping plant-lice or psyllids (Psylloidea) constitute a superfamily of Sternorrhyncha comprising over 3800 described species of small plant-sap feeding insects (Li 2011).
+</p>
+            <p>Studies of the adult morphology have concentrated mainly on the head, fore and hindwings as well as the terminalia (Klimaszewki 1975, Hodkinson and White 1979, Ossiannilsson 1992). Despite the fact that the thorax of adult psyllids is relatively large compared to the total body length, there is surprisingly little information available on <!--PageBreak-->its detailed morphology (Stough 1910, Crawford 1914, Taylor 1918, Weber 1929, Tremblay 1965, Ouvrard et al. 2002, 2008). This is mainly because most morphological data relate to diagnostic features of which few have been found on the thorax. Heslop-Harrison (1951) sought taxonomically useful characters in the prothorax (shape of propleurites and propleural sulcus) to separate his subfamilies Liviinae and Aphalarinae. Loginova (1978) used the relative lengths of the pronotum, mesopraescutum and mesoscutum to separate <italic>Thamnopsylla</italic> from the other subgenera of <italic>Cacopsylla</italic>. This character was also used by Burckhardt (2010). Klimaszewski (1975) used the shape of propleural sulcus to separate Arytaininae from Psyllinae.
+            </p>
+            <p>The genus <italic>Cacopsylla</italic> Ossiannilsson, 1970 belongs to the subfamily Psyllinae (Psyllidae) and consists of approximately 170 described species associated with woody dicotyledonous plants as does the majority of species of this family and psyllids in general. The genus has a predominantly Holarctic distribution with a few species occurring in the Afrotropical, Oriental and Australian biogeographical regions (Hollis 2004, Burckhardt pers. comm.). This large genus has been divided into the taxa <italic>Cacopsylla</italic> s.str. Ossiannilsson, 1970, <italic>Hepatopsylla</italic> Ossiannilsson, 1970, <italic>Osmopsylla</italic> Loginova, 1978 and<italic> Thamnopsylla</italic> Loginova, 1978. Recently Burckhardt and Ouvrard (2012) synonymised all subgenera with <italic>Cacopsylla</italic>.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>Adult psyllids were collected with an entomological sweep-net and killed in vapours of potassium cyanide. After air drying and removing the wings and legs, the specimens were cleaned with 10% alcohol and then mounted on a stub for the analysis in a low vacuum electron scanning microscope S-3400N. The specimens were not gold coated. The following species were analysed: <italic>Cacopsylla peregrina</italic> (Foerster, 1848), syn. <italic>C. (Cacopsylla) peregrina</italic> (Foerster, 1848); <italic>Cacopsylla sorbi </italic>(Linnaeus, 1767), syn. <italic>C (Cacopsylla) sorbi </italic>(Linnaeus, 1767); <italic>Cacopsylla ambigua</italic> (Foerster, 1848), syn.<italic> C.(Hepatopsylla) ambigua</italic> (Foerster, 1848);<italic> Cacopsylla crataegi</italic> (Schrank, 1801), syn. <italic>C. (Thamnopsylla) crataegi</italic> (Schrank, 1801); <italic>Cacopsylla melanoneura</italic> (Foerster, 1848),syn. <italic>C. (Thamnopsylla) melanoneura</italic> (Foerster, 1848). Additional 24 <italic>Cacopsylla</italic> species deposited in the Department of Zoology, University of Silesia (Poland) were analysed using Nikon MZ1500 stereoscopic microscope.
+            </p>
+            <p>Morphological terminology and the list of abbreviations used to describe the photographs is after Ouvrard et al. (2002, 2008): aas- anterior accessory sclerite, acl2- anapleural cleft, apwp- anterior pleural wing process, axc2- axillary cord, cx1- procoxa, cx2- mesocoxa, cx3- metacoxa, epm1- proepimeron, epm2- mesepimeron, epm3- metepimeron, eps1- proepisternum, eps2- mesepisternum, eps3- metepisternum, fpa2- fossa of the pleural apophysis, ftna2- fossa of the trochantinal apodeme on mesothorax, ftna3- fossa of the trochantinal apodeme on metathorax, kes2- katepisternum, mcs- meracanthus, nt1- pronotum, pas- posterior accessory sclerite, pls1- propleural sulcus, pls2- mesopleural sulcus, pls3- metapleural sulcus, <!--PageBreak-->pnt2- mesopostnotum, pnt3- metapostnotum, ppt- parapterum, psc2- mesopraescutum, ptm2- mesothorax peritreme, ptm3- metathorax peritreme, s2- mesosternum, sc2- mesoscutum, sc3- metascutum, scl2- mesoscutellum, scl3- metascutellum, tg- tegula, trn2- mesothorax trochantin, trn3- metathorax trochantin.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <p>In all <italic>Cacopsylla</italic> species the head is strongly inclined from longitudinal body axis resulting in an arched dorsal outline of the thorax. The prothorax is the smallest thorax segment and undergoes strong modifications because the mouth parts are displaced posteriad. Mesothorax is the biggest part of the thorax related to a functional dominaton of forewings, which is further connected with the development of muscles that move them.
+            </p>
+            <p>Dorsum (Fig. 1A, B, C). The dorsum of the prothorax consists of one sclerite, the pronotum (nt 1), which is narrow and arcuate medially. Anterior and posterior margins of pronotum are distinct. The pronotum is narrower than the head including eyes but wider than vertex. Laterally the pronotum is as long as the pronotum along midline. The dorsum of the mesothorax is divided into the large mesonotum and the small, transverse, weakly raised mesopostnotum. The mesonotum is divided into three sclerites: mesopraescutum (psc2), mesoscutum (sc2) and mesoscutellum (scl2), which are separated from each other by a distinct sulcus. The mesopraescutum (psc2) is a medium sized sclerite, it’s fore margin is slightly arched and covered by the hind margin of the pronotum. The hind margin of the mesopraescutum is vaguely semicircular. The mesopraescutum and mesoscutum are linked together because the sulcus which separates them is not complete. In the middle there are two symmetrical joints except for <italic>C. ambiqua</italic>. The mesoscuctum (sc2), the biggest sclerite of the mesonotum, is U-shaped with elongated processes reaching the parapteron. The mesoscutellum (scl2) is <!--PageBreak--><!--PageBreak-->small and trapezoidal. The hind part of the mesoscutellum is strongly incised in the middle in <italic>Hepatopsylla</italic> and some <italic>Thamnopsylla</italic> species. The mesopostnotum, situated behind mesonotum, is not visible dorsally as it is covered by the mesoscutellum (scl2), laterally it forms a narrow ridge running diagonally towards the mesoepimeral sclerite. The metathorax consists dorsally of the metanotum and metapostnotum. The metanotum consists of two plates, the metascutum (sc3) and the metascutellum (scl3). The metascutum (sc3) is a small sclerite, while the metascutellum (scl3) is bigger and clearly raised in relation to the metascutum. The metapostnotum (pnt3) is relatively large and trapezoidal. The metapostnotum is completely fused with the first abdominal tergite.
+            </p>
+            <p>Pleura (Fig. 2A, B, C). Laterally the pronotum is constituted by two easily visible pleurites (Fig. 4), the proepisternum (eps1) in front and the proepimeron (epm1) at the rear. Proepisternum and proepimeron are of the same size. They are always clearly separated from each other by the propleural sulcus, while their border with prothorax is not always visible. The propleural sulcus (pls1) runs from the basal coxal appendix up to the hind corner of the pronotum. The sulcus is straight without any curves. Between the pleurites of pro- and mesothorax, there are three tiny, well visible sclerites of arguable origin, which are called frontal and hind additional sclerites (aas and pas), and peritrema (ptm2) which surrounds the mesothoracic spiracle (Fig. 4). The mesothoracic pleurae consist of two large sclerites (Fig. 2), the anterior mesepisternum (eps2) and posterior mesepimeron (epm2). The shape of the mesepisternum (eps2) depends on the position of the pleural sulcus (pls2) and anapleural cleft (acl2). The mesothoracic pleural sulcus (pls2) is well visible and runs from the coxal condyle and approaches the middle of pleuron but does not reach the wing base. Shape and position of the mesopleural sulcus are variable within <italic>Cacopsylla</italic>. It is relatively straight in <italic>C. peregrina</italic>, slighty curved in the distal part in <italic>C. melanoneura</italic> or S-shaped and strongly curved in <italic>C. crataegi</italic> and <italic>C. ambigua</italic>. It forms a shallow furrow pleural with small, shallow fossa (ftna2) in <italic>C. melanoneura </italic>or a distinct furrow with deep fossa in <italic>C. ambigua</italic>. It is very long, reaching the end of the mesepisternum in <italic>C. crataegi </italic>but considerably shorter in the other <!--PageBreak-->species. The anapleural cleft (acl2) is straight and almost horizontal, the transepimeral sulcus is very short and distinct, it is never straight. The anterior pleural wing process (apwp) is thin and elastic. Parapteron (ppt) and tegula (tg) have the same oval shape and <!--PageBreak-->the katepisternal complex (kes2) is rounded and subtle striped. The metapleurites are well developed. The metapleural sulcus (pls3) is visible and reduced at a short distance ventrad. This sulcus does not separate metaepimeron and metaepisternum entirely. The metapleuron is strongly modified by a vertical prolongation of the coxal meron. The latter enforces on metaepimeron and metaepisternum a development into a long, thickened arch stretching above the metacoxa. The metathoracic stigma (stg3), trochantin (trn3) and external fossa of the trochantinal apodeme (ftna3) are well visible.
+            </p>
+            <p>Venter (Fig. 3A, B, C). The prothoracic sternum of psyllids is significantly reduced and covered by the rostrum. The mesothoracic venter is constituted by a well-developed sclerite, the mesosternum (s2), connected with mesocoxa. The metathoracic venter is narrow, in front it takes the form of a thickened plate, surrounding metacoxae (cx3) (Fig. 3A, B).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>The analysis of the thorax morphology of selected <italic>Cacopsylla </italic>species did not indicate any characters defining the subgenera described by Ossiannilsson (1970) and Loginova (1978). However, characters which are common for all <italic>Cacopsylla</italic> species are described. In the analysed species the pronotum is narrow, arcuate medially and well-defined laterally. The pronotum is narrower than the head including eyes, but wider than vertex; in all species it is laterally as long as it is along the midline. The pronotal shape is homogenous within this genus but differs from some other psyllid genera (Ouvrard et al. 2002, Drohojowska 2009a). Detailed studies on the thorax morphology were made by the senior author and the results will be published soon. Generally, a massive, wide and straight pronotum is observed in the Lividae family, narrower than the width of the head and slightly bended is observed in the Aphalaridae, Homotomidae and Phacopteronidae families. In the representatives of the Triozidae family one can observe a narrowing and bending of pronotum which modify it to become a thin, hardly visible batten. In the species of Carsidaridae the pronotum is wide, slightly bended, whereas in the case of Calyophyidae the pronotum is much bended and narrowing to a different extent in the middle part. In the species of the Psyllidae family the pronotum has a diversified shape (Drohojowska 2009a, Drohojowska unpublished data).
+            </p>
+            <p>An additional feature common for all <italic>Cacopsylla</italic> species is the straight rather than undulating propleural sulcus stretching from the basal coxal appendix to hind corner of the pronotum, and not in the middle, like for example in <italic>Craspedolepta</italic> species or the fore corner of pronotum like in <italic>Livia</italic> species (Drohojowska 2009a, b). Three additional sclerites (aas, pas and peritrema) are well visible in all examined species. The shape of mesothoracic sclerites and sulcus is the same in all <italic>Cacopsylla</italic> species. Loginova (1978) suggested that the mesoscutum is distinctly longer than the mesopraescutum along the median longitudinal body axis and the mesopraescutum is about twice as long as the pronotum in <italic>Thamnopsylla</italic> species<italic>,</italic>whereas in the other subgenera the mesoscutum is as long as or slightly longer than the mesopraescutum and both <!--PageBreak-->are more than twice as long as the pronotum. We could not confirm this suggestion. An additional character common to all species is the shape of anapleural cleft. The position of the anapleural cleft (acl2) varies in psyllids ranging from diagonal to almost horizontal (Drohojowska 2009a) but in all <italic>Cacopsylla</italic> species it is straight and almost horizontal. The parapteron (ppt) and tegula (tg) have the same oval shape, the anterior pleural wing process (apwp) is thin and elastic, the metathorax stigma (stg3), trochantin on metathorax (trn3) and the external fossa of the trochantinal apodeme (ftna3) are well visible and the katepisternal complex (kes2) is rounded and striped in all <italic>Cacopsylla</italic> species<italic>. </italic>The connecting points of the mesopraescutum with the mesoscutum are symmetrical and onefolded for every species. Only in <italic>C. ambiqua</italic> the points are double (Fig. 1B). It seems that it is a character specific to this species because this type of connection does not occur in other <italic>Hepatopsylla</italic> species and in other examined <italic>Cacopsylla</italic> species<italic>.
+</italic>
+            </p>
+            <p>This and earlier studies (Journet and Vickery 1978, Drohojowska 2009b) suggest that the thorax morphology is relatively homogenous within a genus.
+            </p>
+            <p>The study of thorax morphology of <italic>Cacopsylla</italic> species shows that the only difference between the male and the female is in the size of the latter. Shapes and proportions between particular elements of the thorax are the same in the representatives of both sexes. The results confirm those of previous studies (Drohojowska 2009b).
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>Special thanks go to Magdalena Kowalewska-Groszkowska and Malwina Roszkowska (Department of Scanning Microscopy, Polish Academy of Science) for taking microscopic pictures. Daniel Burckhardt (Naturhistorisches Museum, Basel, Switzerland) is thanked for critical reading of the manuscript and useful comments.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Burckhardt</surname> <given-names>D</given-names></name></person-group> (<year>2010</year>)<fake_tag> Identification key for the Central European <italic>Cacopsylla</italic> species. http://www.psyllidkey.eu
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Burckhardt</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Ouvrard</surname> <given-names>D</given-names></name></person-group> (<year>2012</year>)<article-title> A revised classification of the jumping plant- lice (Hemiptera: Psylloidea).</article-title> <source>Zootaxa </source> <volume>3509</volume>: <fpage>1</fpage>-<lpage>34</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Crawford</surname> <given-names>DL</given-names></name></person-group> (<year>1914</year>)<article-title> A monograph of the jumping plant- lice or Psyllidae of the new world.</article-title> <source>Smithsonian Institution United States National Museum Bulletin </source> <volume>85</volume>: <fpage>1</fpage>-<lpage>186</lpage>. doi: 10.5479/si.03629236.85.1
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Drohojowska</surname> <given-names>J</given-names></name></person-group> (<year>2009a</year>)<article-title> General information on thorax morphology of selected species of psyllids (Hemiptera, Psylloidea).</article-title> <source>Monograph Aphids and Other Hemipterous Insects </source> <volume>15</volume>: <fpage>5</fpage>-<lpage>16</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Drohojowska</surname> <given-names>J</given-names></name></person-group> (<year>2009b</year>)<article-title> Structure of head and thorax of <italic>Livia juncorum</italic> (Hemiptera, Psylloidea).</article-title> <source>Monograph Aphids and Other Hemipterous Insects </source> <volume>15</volume>: <fpage>17</fpage>-<lpage>30</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Heslop-</surname> <given-names>Harrison G</given-names></name></person-group> (<year>1951</year>)<article-title> Subfamily separation in the Homopterous Psyllidae-II.</article-title> <source>Annals and Magazine of Naturel History </source> <volume>12</volume> (<issue>4</issue>): <fpage>1</fpage>-<lpage>35</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hodkinson</surname> <given-names>ID</given-names></name>,<name name-style="western"><surname>White</surname> <given-names>IM</given-names></name></person-group> (<year>1979</year>)<article-title> Homoptera Psylloidea.</article-title> <source>Handbooks for the Identification of British Insects </source> <volume>2</volume>: <fpage>1</fpage>-<lpage>98</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hollis</surname> <given-names>D</given-names></name></person-group> (<year>2004</year>)<source> Australian Psylloidea: Jumping Plantlice and Lerp Insects.</source> <publisher-name>Australian Biological Resources Study, Canberra</publisher-name>, <publisher-loc>Australia</publisher-loc>, <lpage>216</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Journet</surname> <given-names>AR</given-names></name>,<name name-style="western"><surname>Vickery</surname> <given-names>VR</given-names></name></person-group> (<year>1978</year>)<article-title> Studies on Nearctic Craspedolepta Enderlain, 1921 (Homoptera, Psylloidea): external morphology.</article-title> <source>Canadian Entomologist, </source> <volume>110</volume>: <fpage>13</fpage>-<lpage>36</lpage>. doi: 10.4039/Ent11013-1
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Klimaszewki</surname> <given-names>SM</given-names></name></person-group> (<year>1975</year>)<article-title> Psyllodea- Koliszki (Insecta: Homoptera).</article-title> <source>Fauna Polski, Warszawa, </source> <volume>3</volume>: <fpage>1</fpage>-<lpage>294</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Li</surname> <given-names>F</given-names></name></person-group> (<year>2011</year>)<source> Psyllidomorpha of China (Insecta: Hemiptera).</source> <publisher-name>Science Press, Beijing</publisher-name>, <publisher-loc>China</publisher-loc>, <lpage>1976</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Loginova</surname> <given-names>MM</given-names></name></person-group> (<year>1978</year>)<article-title> Classification of the genus Psylla Geoffr. (Homoptera, Psyllidae).</article-title> <source>Entomologicheskoe Obozrenie </source> <volume>57</volume>: <fpage>808</fpage>-<lpage>824</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ouvrard</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Bourgoin</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Campbell</surname> <given-names>BC</given-names></name></person-group> (<year>2002</year>)<article-title> Comparative morphological assessment of the psyllid pleuron (Insecta, Hemiptera, Sternorrhyncha).</article-title> <source>Journal of morphology </source> <volume>252</volume>: <fpage>276</fpage>-<lpage>290</lpage>. doi: 10.1002/jmor.1105
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ouvrard</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Burckhardt</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Soulier-Perkins</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Bourgoin</surname> <given-names>T</given-names></name></person-group> (<year>2008</year>)<article-title> Comparative morphological assessment and phylogenetic significance of the wing base articulation in Psylloidea (Insecta, Hemiptera, Sternorrhyncha).</article-title> <source>Zoomorphology </source> <volume>127</volume>: <fpage>37</fpage>-<lpage>47</lpage>. doi: 10.1007/s00435-007-0049-x
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ossiannilsson</surname> <given-names>F</given-names></name></person-group> (<year>1970</year>)<article-title> Contributions to the Knowledge of Swedish Psyllids (Hem. Psylloidea) 1-4.</article-title> <source>Entomologica scandinavica, </source> <volume>1</volume>: <fpage>135</fpage>-<lpage>144</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ossiannilsson</surname> <given-names>F</given-names></name></person-group> (<year>1992</year>)<source> The Psylloidea (Homoptera) of Fennoscandia and Danmark. Fauna entomologica Scandinavica 26.</source> <publisher-name>E. J. Brill</publisher-name>, <publisher-loc>Leiden- New York- Köln</publisher-loc>, <lpage>346</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stough</surname> <given-names>HB</given-names></name></person-group> (<year>1910</year>)<article-title> The hackberry Psylla, <italic>Pachypsylla celtidismammae</italic> Riley. A study in comparative morphology.</article-title> <source>Kansas University Science Bulletin </source> <volume>5</volume>: <fpage>121</fpage>-<lpage>165</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Taylor</surname> <given-names>LH</given-names></name></person-group> (<year>1918</year>)<article-title> The thoracic sclerites of Hemiptera and Heteroptera.</article-title> <source>Annals of the Entomological Society of America </source> <volume>11</volume>: <fpage>225</fpage>-<lpage>254</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tremblay</surname> <given-names>E</given-names></name></person-group> (<year>1965</year>)<fake_tag> Studio morfo- biologico sulla <italic>Trioza tremblayi</italic> Wagner (Hemiptera- Homoptera, Psyllidae). Bolletino del Laboratorio di Entomological Agraria Filippo Silvestri 23: 37–138.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Weber</surname> <given-names>H</given-names></name></person-group> (<year>1929</year>)<fake_tag> Kopf und Thorax von Psylla mali Schmidberger (Hemiptera- Homoptera). Eine morphogenetische Studie. Zeitschrift für Morphologie und Ökologie der Tiere 14: 59–165. </fake_tag>doi: 10.1007/BF00419345</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Dorsal side. <bold>A</bold> <italic>Cacopsylla peregrina</italic> <bold>B</bold> <italic>C. crataegi </italic><bold>C</bold> <italic>C. ambigua</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> Lateral side <bold>A</bold> <italic>Cacopsylla peregrina</italic> <bold>B</bold> <italic>C. crataegi </italic><bold>C</bold> <italic>C. ambigua</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> Ventral side <bold>A</bold> <italic>Cacopsylla peregrina</italic> <bold>B</bold> <italic>C. crataegi </italic><bold>C</bold> <italic>C. ambigua</italic>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> Sclerites between pleurites of pro- and mesothorax of <italic>Cacopsylla crataegi</italic></p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

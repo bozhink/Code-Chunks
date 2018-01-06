@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) 2008 XBRL US Inc. All Rights Reserved. http://xbrl.us/ 
+     This document may be copied and furnished to others, and derivative works that 
+     comment on or otherwise explain it or assist in its implementation may be 
+     prepared, copied, published and distributed, in whole or in part, without 
+     restriction of any kind, provided that the above copyright notice and this
+     paragraph are included on all such copies and derivative works.  XBRL is a
+     registered trademark of AICPA licensed exclusively to XBRL International. -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:boa="http://xbrl.boa.com/2006-12-31"
+               xmlns:link="http://www.xbrl.org/2003/linkbase"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               xmlns:xbrli="http://www.xbrl.org/2003/instance"
+               xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://xbrl.boa.com/2006-12-31/ext/BalanceSheet" xlink:type="simple"
+                 xlink:href="boa-20061231.xsd#BalanceSheet"/>
+  <link:roleRef roleURI="http://xbrl.boa.com/2006-12-31/ext/IncomeStatement"
+                 xlink:type="simple"
+                 xlink:href="boa-20061231.xsd#IncomeStatement"/>
+  <link:roleRef roleURI="http://xbrl.boa.com/2006-12-31/ext/CashFlow" xlink:type="simple"
+                 xlink:href="boa-20061231.xsd#CashFlows"/>
+  <link:roleRef roleURI="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity"
+                 xlink:type="simple"
+                 xlink:href="boa-20061231.xsd#ChangesInStockholdersEquity"/>
+  <link:roleRef roleURI="http://xbrl.us/us-gaap/role/label/negated" xlink:type="simple"
+                 xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-roles-2008-03-31.xsd#negated"/>
+  <link:presentationLink xlink:type="extended"
+                          xlink:role="http://xbrl.boa.com/2006-12-31/ext/IncomeStatement">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncomeStatementAbstract"
+                xlink:label="IncomeStatementAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansAndLeasesAbstract"
+                xlink:label="InterestIncomeLoansAndLeasesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndFeeIncomeLoansAndLeases"
+                xlink:label="InterestIncomeLoansAndLeases"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendIncomeSecurities"
+                xlink:label="InterestIncomeSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"
+                xlink:label="InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendIncomeSecuritiesTradingOrMeasuredAtFairValue"
+                xlink:label="InterestIncomeSecuritiesTrading"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherInterestAndDividendIncome"
+                xlink:label="OtherInterestAndDividendIncome"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestAndDividendIncomeOperating"
+                xlink:label="InterestAndDividendIncomeOperating"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseAbstract"
+                xlink:label="InterestExpenseAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseTradingLiabilities"
+                xlink:label="InterestExpenseTradingLiabilities_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpense"
+                xlink:label="InterestExpense"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseDeposits"
+                xlink:label="InterestExpenseDeposits_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseShortTermBorrowings"
+                xlink:label="InterestExpenseShortTermBorrowings_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseLongTermDebt"
+                xlink:label="InterestExpenseLongTermDebt"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestIncomeExpenseNet"
+                xlink:label="InterestIncomeExpenseNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestIncomeAbstract"
+                xlink:label="NoninterestIncomeAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestIncome"
+                xlink:label="NoninterestIncome"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_FeesAndCommissionsCreditCards"
+                xlink:label="FeesAndCommissionsCreditCards"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ServicingFeesNet"
+                xlink:label="ServicingFeesNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_InvestmentAndBrokerageServices"
+                xlink:label="InvestmentAndBrokerageServices"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InvestmentBankingRevenue"
+                xlink:label="RevenueInvestmentBanking"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_EquityInvestmentGains"
+                xlink:label="EquityInvestmentGains"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PrincipalTransactionsRevenue"
+                xlink:label="RevenuePrincipalTransactions"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_FeesAndCommissionsMortgageBanking"
+                xlink:label="FeesAndCommissionsMortgageBanking"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestIncomeOther"
+                xlink:label="NoninterestIncomeOther"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_Revenues"
+                xlink:label="Revenues"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProvisionForOtherCreditLosses"
+                xlink:label="ProvisionForOtherCreditLosses"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_GainLossOnSaleOfSecuritiesNet"
+                xlink:label="GainLossOnSaleOfSecuritiesNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestExpenseAbstract"
+                xlink:label="NoninterestExpenseAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherNoninterestExpense"
+                xlink:label="OtherNoninterestExpense"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestExpense"
+                xlink:label="NoninterestExpense"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LaborAndRelatedExpense"
+                xlink:label="LaborAndRelatedExpense"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OccupancyNet"
+                xlink:label="OccupancyNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_MarketingExpense"
+                xlink:label="MarketingExpense"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProfessionalFees"
+                xlink:label="ProfessionalFees"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AmortizationOfIntangibleAssets"
+                xlink:label="AmortizationOfIntangibleAssets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommunicationsAndInformationTechnology"
+                xlink:label="CommunicationsAndInformationTechnology"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_Telecommunications"
+                xlink:label="Telecommunications"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_RestructuringSettlementAndImpairmentProvisions"
+                xlink:label="RestructuringSettlementAndImpairmentProvisions"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_EquipmentExpense"
+                xlink:label="lbl_EquipmentExpense"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+                xlink:label="IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncomeTaxExpenseBenefit"
+                xlink:label="IncomeTaxExpenseBenefit"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetIncomeLoss"
+                xlink:label="NetIncomeLoss"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetIncomeLossAvailableToCommonStockholdersBasic"
+                xlink:label="NetIncomeLossAvailableToCommonStockholdersBasic"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_PerCommonShareInformationAbstract"
+                xlink:label="PerCommonShareInformationAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncomeLossFromContinuingOperationsPerBasicShare"
+                xlink:label="IncomeLossFromContinuingOperationsPerBasicShare"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_EarningsPerShareDiluted"
+                xlink:label="EarningsPerShareDiluted"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommonStockDividendsPerShareCashPaid"
+                xlink:label="CommonStockDividendsPerShareCashPaid"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_WeightedAverageNumberOfSharesOutstandingBasic"
+                xlink:label="WeightedAverageNumberOfSharesOutstandingBasic"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_WeightedAverageNumberOfDilutedSharesOutstanding"
+                xlink:label="WeightedAverageNumberOfDilutedSharesOutstanding"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseTradingLiabilities"
+                xlink:label="InterestExpenseTradingLiabilities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpense"
+                xlink:label="InterestExpenseOperating"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseDeposits"
+                xlink:label="InterestExpenseDeposits"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestExpenseShortTermBorrowings"
+                xlink:label="InterestExpenseShortTermBorrowings"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="InterestIncomeLoansAndLeasesAbstract"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestIncomeLoansAndLeasesAbstract"
+                            xlink:to="InterestIncomeLoansAndLeases"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestIncomeLoansAndLeasesAbstract"
+                            xlink:to="InterestIncomeSecurities"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestIncomeLoansAndLeasesAbstract"
+                            xlink:to="InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestIncomeLoansAndLeasesAbstract"
+                            xlink:to="InterestIncomeSecuritiesTrading"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestIncomeLoansAndLeasesAbstract"
+                            xlink:to="OtherInterestAndDividendIncome"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestIncomeLoansAndLeasesAbstract"
+                            xlink:to="InterestAndDividendIncomeOperating"
+                            use="optional"
+                            order="6.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="InterestExpenseAbstract"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestExpenseAbstract"
+                            xlink:to="InterestExpenseTradingLiabilities_2"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestExpenseAbstract"
+                            xlink:to="InterestExpense"
+                            order="5.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestExpenseAbstract"
+                            xlink:to="InterestExpenseDeposits_2"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestExpenseAbstract"
+                            xlink:to="InterestExpenseShortTermBorrowings_2"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="InterestExpenseAbstract"
+                            xlink:to="InterestExpenseLongTermDebt"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="InterestIncomeExpenseNet"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="NoninterestIncomeAbstract"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="NoninterestIncome"
+                            use="optional"
+                            order="9.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="FeesAndCommissionsCreditCards"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="ServicingFeesNet"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="InvestmentAndBrokerageServices"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="RevenueInvestmentBanking"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="EquityInvestmentGains"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="RevenuePrincipalTransactions"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="FeesAndCommissionsMortgageBanking"
+                            use="optional"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestIncomeAbstract"
+                            xlink:to="NoninterestIncomeOther"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="Revenues"
+                            use="optional"
+                            order="5.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="ProvisionForOtherCreditLosses"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="GainLossOnSaleOfSecuritiesNet"
+                            use="optional"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="NoninterestExpenseAbstract"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="OtherNoninterestExpense"
+                            use="optional"
+                            order="9.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="NoninterestExpense"
+                            use="optional"
+                            order="11.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="LaborAndRelatedExpense"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="OccupancyNet"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="MarketingExpense"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="ProfessionalFees"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="AmortizationOfIntangibleAssets"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="CommunicationsAndInformationTechnology"
+                            use="optional"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="Telecommunications"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="RestructuringSettlementAndImpairmentProvisions"
+                            use="optional"
+                            order="10.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NoninterestExpenseAbstract"
+                            xlink:to="lbl_EquipmentExpense"
+                            order="3.5"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+                            use="optional"
+                            order="9.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="IncomeTaxExpenseBenefit"
+                            use="optional"
+                            order="10.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="NetIncomeLoss"
+                            use="optional"
+                            order="11.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="NetIncomeLossAvailableToCommonStockholdersBasic"
+                            use="optional"
+                            order="12.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="PerCommonShareInformationAbstract"
+                            use="optional"
+                            order="13.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="PerCommonShareInformationAbstract"
+                            xlink:to="IncomeLossFromContinuingOperationsPerBasicShare"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="PerCommonShareInformationAbstract"
+                            xlink:to="EarningsPerShareDiluted"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="PerCommonShareInformationAbstract"
+                            xlink:to="CommonStockDividendsPerShareCashPaid"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="WeightedAverageNumberOfSharesOutstandingBasic"
+                            use="optional"
+                            order="17.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncomeStatementAbstract"
+                            xlink:to="WeightedAverageNumberOfDilutedSharesOutstanding"
+                            use="optional"
+                            order="18.0"/>
+   </link:presentationLink>
+  <link:presentationLink xlink:type="extended"
+                          xlink:role="http://xbrl.boa.com/2006-12-31/ext/StockholdersEquity">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementOfStockholdersEquityAbstract"
+                xlink:label="StatementOfStockholdersEquityAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementTable"
+                xlink:label="StatementTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementEquityComponentsAxis"
+                xlink:label="StatementEquityComponentsAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_EquityComponentDomain"
+                xlink:label="EquityComponentDomain"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommonStockIncludingAdditionalPaidInCapitalMember"
+                xlink:label="CommonStockIncludingAdditionalPaidInCapitalMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PreferredStockIncludingAdditionalPaidInCapitalMember"
+                xlink:label="PreferredStockIncludingAdditionalPaidInCapitalMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_RetainedEarningsMember"
+                xlink:label="RetainedEarningsMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeMember"
+                xlink:label="AccumulatedOtherComprehensiveIncomeMember"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_OtherMember"
+                xlink:label="Other"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ComprehensiveIncomeMember"
+                xlink:label="ComprehensiveIncomeMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementLineItems"
+                xlink:label="StatementLineItems"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInStockholdersEquityRollForward"
+                xlink:label="IncreaseDecreaseInStockholdersEquityRollForward"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquity"
+                xlink:label="StockholdersEquity"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquity"
+                xlink:label="StockholdersEquity_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_SharesIssued"
+                xlink:label="SharesIssued_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_SharesIssued"
+                xlink:label="SharesIssued"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetIncomeLoss"
+                xlink:label="NetIncomeLoss"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodValueNewIssues"
+                xlink:label="StockIssuedDuringPeriodValueNewIssues"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                xlink:label="OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                xlink:label="OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherComprehensiveIncomeDerivativesQualifyingAsHedgesNetOfTaxPeriodIncreaseDecrease"
+                xlink:label="OtherComprehensiveIncomeDerivativesQualifyingAsHedgesNetOfTaxPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CashDividendsPaidCommonStock"
+                xlink:label="CashDividendsPaidCommonStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CashDividendsPaidPreferredStock"
+                xlink:label="CashDividendsPaidPreferredStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"
+                xlink:label="CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CommonStockIssuedunderEmployeeplansandrelatedtaxbenefits"
+                xlink:label="CommonStockIssuedunderEmployeeplansandrelatedtaxbenefits"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquityPeriodIncreaseDecrease"
+                xlink:label="StockholdersEquityPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodSharesPeriodIncreaseDecrease"
+                xlink:label="StockIssuedDuringPeriodSharesPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRepurchasedDuringPeriodValue"
+                xlink:label="StockRepurchasedDuringPeriodValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRepurchasedDuringPeriodShares"
+                xlink:label="StockRepurchasedDuringPeriodShares"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodValueAcquisitions"
+                xlink:label="StockIssuedDuringPeriodValueAcquisitions"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockIssuedDuringPeriodSharesAcquisitions"
+                xlink:label="StockIssuedDuringPeriodSharesAcquisitions"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRedeemedOrCalledDuringPeriodValue"
+                xlink:label="StockRedeemedOrCalledDuringPeriodValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockRedeemedOrCalledDuringPeriodShares"
+                xlink:label="StockRedeemedOrCalledDuringPeriodShares"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockConvertedFromOneClassToAnotherClassValue"
+                xlink:label="StockConvertedFromOneClassToAnotherClassValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockConvertedFromOneClassToAnotherClassShares"
+                xlink:label="StockConvertedFromOneClassToAnotherClassShares"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CumulativeEffectOfInitialAdoptionOfSFAS158"
+                xlink:label="CumulativeEffectOfInitialAdoptionOfSFAS158_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_OtherChangesInShareholdersEquity"
+                xlink:label="OtherChangesInShareholdersEquity"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfStockholdersEquityAbstract"
+                            xlink:to="StatementTable"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementTable"
+                            xlink:to="StatementEquityComponentsAxis"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementEquityComponentsAxis"
+                            xlink:to="EquityComponentDomain"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="EquityComponentDomain"
+                            xlink:to="CommonStockIncludingAdditionalPaidInCapitalMember"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="EquityComponentDomain"
+                            xlink:to="PreferredStockIncludingAdditionalPaidInCapitalMember"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="EquityComponentDomain"
+                            xlink:to="RetainedEarningsMember"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="EquityComponentDomain"
+                            xlink:to="AccumulatedOtherComprehensiveIncomeMember"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="EquityComponentDomain"
+                            xlink:to="Other"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementEquityComponentsAxis"
+                            xlink:to="ComprehensiveIncomeMember"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementTable"
+                            xlink:to="StatementLineItems"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementLineItems"
+                            xlink:to="IncreaseDecreaseInStockholdersEquityRollForward"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockholdersEquity"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockholdersEquity_2"
+                            use="optional"
+                            priority="1"
+                            order="15.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquity"
+                            xlink:to="SharesIssued_2"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquity"
+                            xlink:to="SharesIssued"
+                            use="optional"
+                            priority="1"
+                            order="2.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="NetIncomeLoss"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockIssuedDuringPeriodValueNewIssues"
+                            use="optional"
+                            order="11.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="OtherComprehensiveIncomeForeignCurrencyTransactionAndTranslationAdjustmentNetOfTaxPeriodIncreaseDecrease"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="OtherComprehensiveIncomeDerivativesQualifyingAsHedgesNetOfTaxPeriodIncreaseDecrease"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="CashDividendsPaidCommonStock"
+                            use="optional"
+                            order="9.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="CashDividendsPaidPreferredStock"
+                            use="optional"
+                            order="10.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"
+                            use="optional"
+                            order="12.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="CommonStockIssuedUnderEmployeePlansAndRelatedTaxBenefitsValue"
+                            xlink:to="CommonStockIssuedunderEmployeeplansandrelatedtaxbenefits"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockholdersEquityPeriodIncreaseDecrease"
+                            use="optional"
+                            order="14.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityPeriodIncreaseDecrease"
+                            xlink:to="StockIssuedDuringPeriodSharesPeriodIncreaseDecrease"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockRepurchasedDuringPeriodValue"
+                            use="optional"
+                            order="13.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockRepurchasedDuringPeriodValue"
+                            xlink:to="StockRepurchasedDuringPeriodShares"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockIssuedDuringPeriodValueAcquisitions"
+                            use="optional"
+                            order="12.5"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockIssuedDuringPeriodValueAcquisitions"
+                            xlink:to="StockIssuedDuringPeriodSharesAcquisitions"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockRedeemedOrCalledDuringPeriodValue"
+                            use="optional"
+                            order="11.5"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockRedeemedOrCalledDuringPeriodValue"
+                            xlink:to="StockRedeemedOrCalledDuringPeriodShares"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="StockConvertedFromOneClassToAnotherClassValue"
+                            use="optional"
+                            order="13.5"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockConvertedFromOneClassToAnotherClassValue"
+                            xlink:to="StockConvertedFromOneClassToAnotherClassShares"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="CumulativeEffectOfInitialAdoptionOfSFAS158_2"
+                            use="optional"
+                            priority="1"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="IncreaseDecreaseInStockholdersEquityRollForward"
+                            xlink:to="OtherChangesInShareholdersEquity"
+                            order="13.6"/>
+   </link:presentationLink>
+  <link:presentationLink xlink:type="extended"
+                          xlink:role="http://xbrl.boa.com/2006-12-31/ext/BalanceSheet">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementOfFinancialPositionAbstract"
+                xlink:label="StatementOfFinancialPositionAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AssetsAbstract"
+                xlink:label="AssetsAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_Goodwill"
+                xlink:label="Goodwill"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherAssets"
+                xlink:label="OtherAssets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_Assets"
+                xlink:label="Assets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue"
+                xlink:label="CashAndCashEquivalentsAtCarryingValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_TimeDepositsPlacedAndOtherShorttermInvestments"
+                xlink:label="TimeDepositsPlacedAndOtherShorttermInvestments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"
+                xlink:label="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellPledgedAsCollateral"
+                xlink:label="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellPledgedAsCollateral"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_TradingSecuritiesOther"
+                xlink:label="TradingSecuritiesUnclassifiedOther"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_TradingSecuritiesPledgedAsCollateral"
+                xlink:label="lbl_TradingSecuritiesPledgedAsCollateral"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PropertyPlantAndEquipmentNet"
+                xlink:label="PropertyPlantAndEquipmentNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IntangibleAssetsNetExcludingGoodwill"
+                xlink:label="IntangibleAssetsNetExcludingGoodwill"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_DebtSecuritiesAbstract"
+                xlink:label="DebtSecuritiesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_HeldToMaturitySecurities"
+                xlink:label="HeldToMaturitySecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_HeldToMaturitySecuritiesFairValue"
+                xlink:label="lbl_HeldToMaturitySecuritiesFairValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+                xlink:label="AvailableForSaleSecuritiesDebtSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_AvailableforsaleSecuritiesDebtSecuritiesCollateral"
+                xlink:label="AvailableforsaleSecuritiesDebtSecuritiesCollateral"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_TotalDebtSecurities"
+                xlink:label="TotalDebtSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableGrossCarryingAmount"
+                xlink:label="lbl_LoansAndLeasesReceivableGrossCarryingAmount"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableAllowance"
+                xlink:label="LoansAndLeasesReceivableAllowance"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LoansAndLeasesReceivableNetReportedAmount"
+                xlink:label="lbl_LoansAndLeasesReceivableNetReportedAmount"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_DerivativeAssets"
+                xlink:label="DerivativeAssets"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_MortgageServicingRights"
+                xlink:label="mortgageServicingRights"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ServicingAssetAtFairValueAmount"
+                xlink:label="lbl_ServicingAssetAtFairValueAmount"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LiabilitiesAndStockholdersEquityAbstract"
+                xlink:label="LiabilitiesAndStockholdersEquityAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LiabilitiesAbstract"
+                xlink:label="LiabilitiesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_TradingLiabilities"
+                xlink:label="TradingLiabilities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_Liabilities"
+                xlink:label="Liabilities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_Deposits"
+                xlink:label="Deposits"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_FederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase"
+                xlink:label="FederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ShortTermBorrowings"
+                xlink:label="ShortTermBorrowings"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_AccruedExpensesAndOtherLiabilitiesincludes397And395OfReserveForUnfundedLendingCommitments"
+                xlink:label="AccruedExpensesAndOtherLiabilitiesincludes397And395OfReserveForUnfundedLendingCommitments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_Accruedexpensesandotherliabilitiesofreserveforunfundedlendingcommitments"
+                xlink:label="Accruedexpensesandotherliabilitiesofreserveforunfundedlendingcommitments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LongTermDebt"
+                xlink:label="LongTermDebt"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_DepositsInDomesticOfficesAbstract"
+                xlink:label="DepositsInDomesticOfficesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestBearingDepositLiabilitiesDomestic"
+                xlink:label="NoninterestBearingDepositLiabilitiesDomestic"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestBearingDepositLiabilitiesDomestic"
+                xlink:label="InterestBearingDepositLiabilitiesDomestic"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_DepositsInForeignOfficesAbstract"
+                xlink:label="DepositsInForeignOfficesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NoninterestBearingDepositLiabilitiesForeign"
+                xlink:label="NoninterestBearingDepositLiabilitiesForeign"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_InterestBearingDepositLiabilitiesForeign"
+                xlink:label="InterestBearingDepositLiabilitiesForeign"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_DerivativeLiabilities"
+                xlink:label="lbl_DerivativeLiabilities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommitmentsAndContingencies"
+                xlink:label="CommitmentsAndContingencies"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquityAbstract"
+                xlink:label="StockholdersEquityAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StockholdersEquity"
+                xlink:label="StockholdersEquity"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PreferredStockCarryingAmount"
+                xlink:label="NonredeemablePreferredStockCarryingAmount"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PreferredStockSharesOutstanding"
+                xlink:label="NonredeemablePreferredStockSharesOutstanding"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PreferredStockSharesAuthorized"
+                xlink:label="NonredeemablePreferredStockSharesAuthorized"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommonStockIncludingAdditionalPaidInCapital"
+                xlink:label="CommonStockIncludingAdditionalPaidInCapital"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommonStockSharesAuthorized"
+                xlink:label="CommonStockSharesAuthorized"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CommonStockSharesIssued"
+                xlink:label="CommonStockSharesIssued"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_CommonStockSharesOutstanding"
+                xlink:label="CommonStockSharesOutstanding"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_RetainedEarningsAccumulatedDeficit"
+                xlink:label="RetainedEarnings"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossNetOfTax"
+                xlink:label="AccumulatedOtherComprehensiveIncomeLossNetOfTax"/>
+      <link:loc xlink:type="locator" xlink:href="boa-20061231.xsd#boa_OtherBalance"
+                xlink:label="OtherBalance"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_LiabilitiesAndStockholdersEquity"
+                xlink:label="LiabilitiesAndStockholdersEquity"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfFinancialPositionAbstract"
+                            xlink:to="AssetsAbstract"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="Goodwill"
+                            use="optional"
+                            order="15.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="OtherAssets"
+                            use="optional"
+                            order="17.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="Assets"
+                            use="optional"
+                            order="18.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="CashAndCashEquivalentsAtCarryingValue"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="TimeDepositsPlacedAndOtherShorttermInvestments"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell"
+                            xlink:to="FederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellPledgedAsCollateral"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="TradingSecuritiesUnclassifiedOther"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="TradingSecuritiesUnclassifiedOther"
+                            xlink:to="lbl_TradingSecuritiesPledgedAsCollateral"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="PropertyPlantAndEquipmentNet"
+                            use="optional"
+                            order="13.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="IntangibleAssetsNetExcludingGoodwill"
+                            order="16.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="DebtSecuritiesAbstract"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DebtSecuritiesAbstract"
+                            xlink:to="HeldToMaturitySecurities"
+                            use="optional"
+                            order="2.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/label"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="HeldToMaturitySecurities"
+                            xlink:to="lbl_HeldToMaturitySecuritiesFairValue"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DebtSecuritiesAbstract"
+                            xlink:to="AvailableForSaleSecuritiesDebtSecurities"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AvailableForSaleSecuritiesDebtSecurities"
+                            xlink:to="AvailableforsaleSecuritiesDebtSecuritiesCollateral"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DebtSecuritiesAbstract"
+                            xlink:to="TotalDebtSecurities"
+                            use="optional"
+                            order="3.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="lbl_LoansAndLeasesReceivableGrossCarryingAmount"
+                            order="9.5"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="lbl_LoansAndLeasesReceivableGrossCarryingAmount"
+                            xlink:to="LoansAndLeasesReceivableAllowance"
+                            use="optional"
+                            order="1.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="lbl_LoansAndLeasesReceivableNetReportedAmount"
+                            order="12.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="DerivativeAssets"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AssetsAbstract"
+                            xlink:to="mortgageServicingRights"
+                            order="13.5"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="mortgageServicingRights"
+                            xlink:to="lbl_ServicingAssetAtFairValueAmount"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfFinancialPositionAbstract"
+                            xlink:to="LiabilitiesAndStockholdersEquityAbstract"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAndStockholdersEquityAbstract"
+                            xlink:to="LiabilitiesAbstract"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="TradingLiabilities"
+                            use="optional"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="Liabilities"
+                            use="optional"
+                            order="13.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="Deposits"
+                            use="optional"
+                            order="5.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="FederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="ShortTermBorrowings"
+                            use="optional"
+                            order="9.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="AccruedExpensesAndOtherLiabilitiesincludes397And395OfReserveForUnfundedLendingCommitments"
+                            use="optional"
+                            order="10.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AccruedExpensesAndOtherLiabilitiesincludes397And395OfReserveForUnfundedLendingCommitments"
+                            xlink:to="Accruedexpensesandotherliabilitiesofreserveforunfundedlendingcommitments"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="LongTermDebt"
+                            use="optional"
+                            order="12.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="DepositsInDomesticOfficesAbstract"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DepositsInDomesticOfficesAbstract"
+                            xlink:to="NoninterestBearingDepositLiabilitiesDomestic"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DepositsInDomesticOfficesAbstract"
+                            xlink:to="InterestBearingDepositLiabilitiesDomestic"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="DepositsInForeignOfficesAbstract"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DepositsInForeignOfficesAbstract"
+                            xlink:to="NoninterestBearingDepositLiabilitiesForeign"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="DepositsInForeignOfficesAbstract"
+                            xlink:to="InterestBearingDepositLiabilitiesForeign"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAbstract"
+                            xlink:to="lbl_DerivativeLiabilities"
+                            order="8.5"
+                            preferredLabel="http://www.xbrl.org/2003/role/label"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAndStockholdersEquityAbstract"
+                            xlink:to="CommitmentsAndContingencies"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAndStockholdersEquityAbstract"
+                            xlink:to="StockholdersEquityAbstract"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityAbstract"
+                            xlink:to="StockholdersEquity"
+                            use="optional"
+                            order="11.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityAbstract"
+                            xlink:to="NonredeemablePreferredStockCarryingAmount"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NonredeemablePreferredStockCarryingAmount"
+                            xlink:to="NonredeemablePreferredStockSharesOutstanding"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NonredeemablePreferredStockCarryingAmount"
+                            xlink:to="NonredeemablePreferredStockSharesAuthorized"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityAbstract"
+                            xlink:to="CommonStockIncludingAdditionalPaidInCapital"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="CommonStockIncludingAdditionalPaidInCapital"
+                            xlink:to="CommonStockSharesAuthorized"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="CommonStockIncludingAdditionalPaidInCapital"
+                            xlink:to="CommonStockSharesIssued"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="CommonStockIncludingAdditionalPaidInCapital"
+                            xlink:to="CommonStockSharesOutstanding"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityAbstract"
+                            xlink:to="RetainedEarnings"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityAbstract"
+                            xlink:to="AccumulatedOtherComprehensiveIncomeLossNetOfTax"
+                            use="optional"
+                            order="9.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StockholdersEquityAbstract"
+                            xlink:to="OtherBalance"
+                            use="optional"
+                            order="10.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="LiabilitiesAndStockholdersEquityAbstract"
+                            xlink:to="LiabilitiesAndStockholdersEquity"
+                            use="optional"
+                            order="4.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+   </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://xbrl.boa.com/2006-12-31/ext/CashFlow">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_StatementOfCashFlowsAbstract"
+                xlink:label="StatementOfCashFlowsAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract"
+                xlink:label="NetCashProvidedByUsedInOperatingActivitiesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities"
+                xlink:label="NetCashProvidedByUsedInOperatingActivities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetIncomeLoss"
+                xlink:label="NetIncomeLoss"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                xlink:label="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProvisionForLoanAndLeaseLosses"
+                xlink:label="ProvisionForLoanAndLeaseLosses"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_GainLossOnSaleOfDebtInvestments"
+                xlink:label="GainLossOnSaleOfDebtInvestments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_DepreciationPremisesAndEquipment"
+                xlink:label="DepreciationPremisesAndEquipment"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_AmortizationOfIntangibleAssets"
+                xlink:label="AmortizationOfIntangibleAssets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInTradingSecurities"
+                xlink:label="IncreaseDecreaseInTradingSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInOtherOperatingAssets"
+                xlink:label="IncreaseDecreaseInOtherOperatingAssets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInOperatingLiabilities"
+                xlink:label="IncreaseDecreaseInOperatingLiabilities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_OtherAdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations"
+                xlink:label="OtherAdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_DeferredIncomeTaxExpenseBenefit"
+                xlink:label="DeferredIncomeTaxExpenseBenefit"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                xlink:label="NetCashProvidedByUsedInInvestingActivitiesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivities"
+                xlink:label="NetCashProvidedByUsedInInvestingActivities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromPaymentsForInInterestBearingDepositsInBanks"
+                xlink:label="ProceedsFromPaymentsForInInterestBearingDepositsInBanks"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromPaymentsForFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellNet"
+                xlink:label="ProceedsFromPaymentsForFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromSaleOfAvailableForSaleSecurities"
+                xlink:label="ProceedsFromSaleOfAvailableForSaleSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities"
+                xlink:label="ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsToAcquireAvailableForSaleSecurities"
+                xlink:label="PaymentsToAcquireAvailableForSaleSecurities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromMaturitiesPrepaymentsAndCallsOfOtherInvestments"
+                xlink:label="ProceedsFromMaturitiesPrepaymentsAndCallsOfOtherInvestments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsForProceedsFromOtherLoansAndLeases"
+                xlink:label="PaymentsForProceedsFromOtherLoansAndLeases"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsToAcquirePropertyPlantAndEquipment"
+                xlink:label="PaymentsToAcquirePropertyPlantAndEquipment"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromSaleOfForeclosedAssets"
+                xlink:label="ProceedsFromSaleOfForeclosedAssets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsForProceedsFromBusinessesAndInterestInAffiliates"
+                xlink:label="PaymentsForProceedsFromBusinessesAndInterestInAffiliates"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsForProceedsFromOtherInvestingActivities"
+                xlink:label="PaymentsForProceedsFromOtherInvestingActivities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="boa-20061231.xsd#boa_InvestmentinChinaConstructionBank"
+                xlink:label="InvestmentinChinaConstructionBank"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromSaleOfLoansAndLeasesHeldForInvestment"
+                xlink:label="ProceedsFromSaleOfLoansAndLeasesHeldForInvestment"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                xlink:label="NetCashProvidedByUsedInFinancingActivitiesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities"
+                xlink:label="NetCashProvidedByUsedInFinancingActivities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInDeposits"
+                xlink:label="IncreaseDecreaseInDeposits"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncreaseDecreaseInFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchaseNet"
+                xlink:label="IncreaseDecreaseInFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchaseNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromShortTermDebt"
+                xlink:label="ProceedsFromShortTermDebt"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromIssuanceOfPreferredStockAndPreferenceStock"
+                xlink:label="ProceedsFromIssuanceOfPreferredStockAndPreferenceStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsForRepurchaseOfRedeemablePreferredStock"
+                xlink:label="PaymentsForRepurchaseOfRedeemablePreferredStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromIssuanceOfCommonStock"
+                xlink:label="ProceedsFromIssuanceOfCommonStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsForRepurchaseOfCommonStock"
+                xlink:label="PaymentsForRepurchaseOfCommonStock"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_PaymentsOfDividends"
+                xlink:label="PaymentsOfDividends"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ExcessTaxBenefitFromShareBasedCompensationFinancingActivities"
+                xlink:label="ExcessTaxBenefitFromShareBasedCompensationFinancingActivities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromPaymentsForOtherFinancingActivities"
+                xlink:label="ProceedsFromPaymentsForOtherFinancingActivities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_ProceedsFromIssuanceOfLongTermDebt"
+                xlink:label="ProceedsFromIssuanceOfLongTermDebt"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_RepaymentsOfLongTermDebt"
+                xlink:label="RepaymentsOfLongTermDebt"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_EffectOfExchangeRateOnCashAndCashEquivalents"
+                xlink:label="EffectOfExchangeRateOnCashAndCashEquivalents"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CashAndCashEquivalentsPeriodIncreaseDecrease"
+                xlink:label="CashAndCashEquivalentsPeriodIncreaseDecrease"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue"
+                xlink:label="CashAndCashEquivalentsAtCarryingValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue"
+                xlink:label="CashAndCashEquivalentsAtCarryingValue_2"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_SupplementalCashFlowInformationAbstract"
+                xlink:label="SupplementalCashFlowInformationAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_CashPaidForCapitalizedInterest"
+                xlink:label="CashPaidForCapitalizedInterest"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd#us-gaap_IncomeTaxesPaid"
+                xlink:label="IncomeTaxesPaid"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="NetCashProvidedByUsedInOperatingActivitiesAbstract"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInOperatingActivitiesAbstract"
+                            xlink:to="NetCashProvidedByUsedInOperatingActivities"
+                            use="optional"
+                            order="3.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInOperatingActivitiesAbstract"
+                            xlink:to="NetIncomeLoss"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInOperatingActivitiesAbstract"
+                            xlink:to="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="ProvisionForLoanAndLeaseLosses"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="GainLossOnSaleOfDebtInvestments"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="DepreciationPremisesAndEquipment"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="AmortizationOfIntangibleAssets"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="IncreaseDecreaseInTradingSecurities"
+                            use="optional"
+                            order="6.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="IncreaseDecreaseInOtherOperatingAssets"
+                            use="optional"
+                            order="7.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="IncreaseDecreaseInOperatingLiabilities"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="OtherAdjustmentsForNoncashItemsIncludedInIncomeLossFromContinuingOperations"
+                            use="optional"
+                            order="9.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="AdjustmentsToReconcileIncomeLossToNetCashProvidedByUsedInContinuingOperationsAbstract"
+                            xlink:to="DeferredIncomeTaxExpenseBenefit"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="NetCashProvidedByUsedInInvestingActivities"
+                            use="optional"
+                            order="14.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromPaymentsForInInterestBearingDepositsInBanks"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromPaymentsForFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellNet"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromSaleOfAvailableForSaleSecurities"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="PaymentsToAcquireAvailableForSaleSecurities"
+                            use="optional"
+                            order="5.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromMaturitiesPrepaymentsAndCallsOfOtherInvestments"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="PaymentsForProceedsFromOtherLoansAndLeases"
+                            use="optional"
+                            order="8.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="PaymentsToAcquirePropertyPlantAndEquipment"
+                            use="optional"
+                            order="9.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromSaleOfForeclosedAssets"
+                            use="optional"
+                            order="10.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="PaymentsForProceedsFromBusinessesAndInterestInAffiliates"
+                            use="optional"
+                            order="12.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="PaymentsForProceedsFromOtherInvestingActivities"
+                            use="optional"
+                            order="13.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="InvestmentinChinaConstructionBank"
+                            use="optional"
+                            order="11.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInInvestingActivitiesAbstract"
+                            xlink:to="ProceedsFromSaleOfLoansAndLeasesHeldForInvestment"
+                            use="optional"
+                            order="7.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="NetCashProvidedByUsedInFinancingActivities"
+                            use="optional"
+                            order="13.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/totalLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="IncreaseDecreaseInDeposits"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="IncreaseDecreaseInFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchaseNet"
+                            use="optional"
+                            order="2.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="ProceedsFromShortTermDebt"
+                            use="optional"
+                            order="3.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="ProceedsFromIssuanceOfPreferredStockAndPreferenceStock"
+                            use="optional"
+                            order="6.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="PaymentsForRepurchaseOfRedeemablePreferredStock"
+                            use="optional"
+                            order="7.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="ProceedsFromIssuanceOfCommonStock"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="PaymentsForRepurchaseOfCommonStock"
+                            use="optional"
+                            order="9.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="PaymentsOfDividends"
+                            use="optional"
+                            order="10.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="ExcessTaxBenefitFromShareBasedCompensationFinancingActivities"
+                            use="optional"
+                            order="11.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="ProceedsFromPaymentsForOtherFinancingActivities"
+                            use="optional"
+                            order="12.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="ProceedsFromIssuanceOfLongTermDebt"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="NetCashProvidedByUsedInFinancingActivitiesAbstract"
+                            xlink:to="RepaymentsOfLongTermDebt"
+                            use="optional"
+                            order="5.0"
+                            preferredLabel="http://xbrl.us/us-gaap/role/label/negated"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="EffectOfExchangeRateOnCashAndCashEquivalents"
+                            use="optional"
+                            order="4.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="CashAndCashEquivalentsPeriodIncreaseDecrease"
+                            use="optional"
+                            order="5.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="CashAndCashEquivalentsAtCarryingValue"
+                            use="optional"
+                            priority="1"
+                            order="7.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="CashAndCashEquivalentsAtCarryingValue_2"
+                            use="optional"
+                            order="6.0"
+                            preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="StatementOfCashFlowsAbstract"
+                            xlink:to="SupplementalCashFlowInformationAbstract"
+                            use="optional"
+                            order="8.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="SupplementalCashFlowInformationAbstract"
+                            xlink:to="CashPaidForCapitalizedInterest"
+                            use="optional"
+                            order="1.0"/>
+      <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+                            xlink:from="SupplementalCashFlowInformationAbstract"
+                            xlink:to="IncomeTaxesPaid"
+                            use="optional"
+                            order="2.0"/>
+   </link:presentationLink>
+</link:linkbase>

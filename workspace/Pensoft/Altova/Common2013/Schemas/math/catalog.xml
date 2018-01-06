@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<uri name="http://www.w3.org/1998/Math/MathML" uri="files/mathml2.xsd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/math/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/math/' rewritePrefix='files/'/>
+</catalog>

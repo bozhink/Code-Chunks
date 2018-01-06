@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<public publicId="-//W3C//DTD SMIL 2.1//EN" uri="files/SMIL21.dtd"/>
+	<public publicId="-//W3C//ENTITIES SMIL 2.1 Document Model 1.0//EN" uri="files/smil-language-profile-model-1.mod"/>
+	<public publicId="-//W3C//ENTITIES SMIL 2.1 Modular Framework 1.0//EN" uri="files/smil-framework-1.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Animation//EN" uri="files/SMIL-anim.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Content Control//EN" uri="files/SMIL-control.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Layout//EN" uri="files/SMIL-layout.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Media Objects//EN" uri="files/SMIL-media.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Document Metainformation//EN" uri="files/SMIL-metainformation.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Timing//EN" uri="files/SMIL-timing.mod"/>
+	<public publicId="-//W3C//ELEMENTS SMIL 2.1 Transition//EN" uri="files/SMIL-transition.mod"/>
+	<public publicId="-//W3C//ENTITIES SMIL 2.1 Modular Framework 1.0//EN" uri="files/SMIL21ExtendedMobile.dtd"/>
+	<public publicId="-//W3C//DTD SMIL 2.1 Mobile//EN" uri="files/SMIL21Mobile.dtd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/smil/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/smil/' rewritePrefix='files/'/>
+</catalog>

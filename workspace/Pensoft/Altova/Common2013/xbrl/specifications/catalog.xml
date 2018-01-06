@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:spy="http://www.altova.com/catalog_ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:entity:xmlns:xml:catalog
+Catalog.xsd">
+	<public publicId="http://xbrl.org/2006/xbrldi" uri="files/xbrldi-2006.xsd"/>
+	<uri name="http://www.xbrl.org/2006/xbrldi-2006.xsd" uri="files/xbrldi-2006.xsd"/>
+	<public publicId="http://xbrl.org/2005/xbrldt" uri="files/xbrldt-2005.xsd"/>
+	<uri name="http://www.xbrl.org/2005/xbrldt-2005.xsd" uri="files/xbrldt-2005.xsd"/>
+	<public publicId="http://www.xbrl.org/2003/instance" uri="files/xbrl-instance-2003-12-31.xsd"/>
+	<uri name="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" uri="files/xbrl-instance-2003-12-31.xsd"/>
+	<public publicId="http://www.xbrl.org/2003/linkbase" uri="files/xbrl-linkbase-2003-12-31.xsd"/>
+	<uri name="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" uri="files/xbrl-linkbase-2003-12-31.xsd"/>
+	<public publicId="http://www.xbrl.org/2003/XLink" uri="files/xl-2003-12-31.xsd"/>
+	<uri name="http://www.xbrl.org/2003/xl-2003-12-31.xsd" uri="files/xl-2003-12-31.xsd"/>
+	<uri name="http://www.xbrl.org/2003/xlink-2003-12-31.xsd" uri="files/xlink-2003-12-31.xsd"/>
+	<public publicId="http://www.xbrl.org/2004/ref" uri="files/ref-2004-08-10.xsd"/>
+	<uri name="http://www.xbrl.org/2004/ref-2004-08-10.xsd" uri="files/ref-2004-08-10.xsd"/>
+	<public publicId="http://www.xbrl.org/2006/ref" uri="files/ref-2006-02-27.xsd"/>
+	<uri name="http://www.xbrl.org/2006/ref-2006-02-27.xsd" uri="files/ref-2006-02-27.xsd"/>
+	<public publicId="http://www.xbrl.org/dtr/type/non-numeric" uri="files/nonNumeric-2009-12-16.xsd"/>
+	<uri name="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" uri="files/nonNumeric-2009-12-16.xsd"/>
+	<public publicId="http://www.xbrl.org/dtr/type/numeric" uri="files/numeric-2009-12-16.xsd"/>
+	<uri name="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" uri="files/numeric-2009-12-16.xsd"/>
+	<public publicId="http://www.xbrl.org/2009/role/negated" uri="files/negated-2009-12-16.xsd"/>
+	<uri name="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" uri="files/negated-2009-12-16.xsd"/>
+	<public publicId="http://www.xbrl.org/2009/role/net" uri="files/net-2009-12-16.xsd"/>
+	<uri name="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" uri="files/net-2009-12-16.xsd"/>
+	<public publicId="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" uri="files/factExplanatory-2009-12-16.xsd"/>
+	<uri name="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" uri="files/factExplanatory-2009-12-16.xsd"/>
+</catalog>

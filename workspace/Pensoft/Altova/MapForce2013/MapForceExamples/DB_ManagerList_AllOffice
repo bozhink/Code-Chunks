@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="21">
+	<resources>
+		<datasources>
+			<datasource name="altova">
+				<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);DBQ=altova.mdb;" DBDataSource="altova.mdb" DBCatalog="altova" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+				<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=altova.mdb" name="altova" path="altova" use_driver_for_retrieval="Yes" allow_background_retrieval="No">
+					<properties>
+						<property name="Database Kind" value="MS Access"/>
+						<property name="Import Kind" value="ADO"/>
+						<property name="Root Object" value="altova"/>
+						<property name="Data Source" value="altova.mdb"/>
+						<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+						<property name="User ID"/>
+						<property name="Password"/>
+						<property name="Persist Security Info"/>
+						<property name="Jet OLEDB:System Database"/>
+						<property name="Jet OLEDB:Sandbox Mode"/>
+						<property name="Jet OLEDB:Exclusive Async Delay"/>
+						<property name="Jet OLEDB:Flush Transaction Timeout"/>
+						<property name="Jet OLEDB:Implicit Commit Sync"/>
+						<property name="Jet OLEDB:Lock Delay"/>
+						<property name="Jet OLEDB:Lock Retry"/>
+						<property name="Jet OLEDB:Max Buffer Size"/>
+						<property name="Jet OLEDB:Max Locks Per File"/>
+						<property name="Jet OLEDB:Page Locks to Table Lock"/>
+						<property name="Jet OLEDB:Page Timeout"/>
+						<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+						<property name="Jet OLEDB:Shared Async Delay"/>
+						<property name="Jet OLEDB:User Commit Sync"/>
+						<property name="Jet OLEDB:Compact Without Replica Repair"/>
+						<property name="Jet OLEDB:Create System Database"/>
+						<property name="Jet OLEDB:Database Locking Mode"/>
+						<property name="Jet OLEDB:Database Password"/>
+						<property name="Jet OLEDB:New Database Password"/>
+						<property name="Jet OLEDB:Registry Path"/>
+					</properties>
+					<LocalViewStorage>
+						<LocalViewElement SQL="SELECT [First], [Last], [Title], [PhoneExt], [EMail] FROM [Person] WHERE [ForeignKey] = :DepartmentID AND [Title] LIKE &apos;%Manager%&apos;">
+							<PathElement Name="altova" Kind="DataSource"/>
+							<PathElement Name="altova" Kind="Database"/>
+							<PathElement Name="ManagersByDepartment" Kind="Select Statement"/>
+							<Parameters>
+								<Parameter name="DepartmentID" type="INT" null="Yes">
+									<Properties/>
+								</Parameter>
+							</Parameters>
+						</LocalViewElement>
+					</LocalViewStorage>
+					<LocalRelationsStorage>
+						<LocalRelationElement name="Untitled">
+							<SourceTable>
+								<PathElement Name="altova" Kind="DataSource"/>
+								<PathElement Name="altova" Kind="Database"/>
+								<PathElement Name="ManagersByDepartment" Kind="Select Statement"/>
+							</SourceTable>
+							<SourceColumns>
+								<Column name="DepartmentID" kind="Parameter"/>
+							</SourceColumns>
+							<DestinationTable>
+								<PathElement Name="altova" Kind="DataSource"/>
+								<PathElement Name="altova" Kind="Database"/>
+								<PathElement Name="Department" Kind="Table"/>
+							</DestinationTable>
+							<DestinationColumns>
+								<Column name="PrimaryKey" kind="Column"/>
+							</DestinationColumns>
+						</LocalRelationElement>
+					</LocalRelationsStorage>
+					<RecordSetStructureStorage/>
+				</database_connection>
+			</datasource>
+		</datasources>
+	</resources>
+	<component name="defaultmap2" blackbox="0" uid="67602616" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="builtin" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="value-map" library="core" uid="67651953" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="227"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="228"/>
+					</targets>
+					<view ltx="284" lty="53" rbx="361" rby="92"/>
+					<data>
+						<wsdl/>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="Nanonull, Inc."/>
+								<entry from="2" to="Nanonull Partners, Inc."/>
+							</valuemapTable>
+							<input name="input" type="integer"/>
+							<result name="result" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="67651955" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="229"/>
+						<datapoint pos="1" key="230"/>
+						<datapoint pos="2" key="231"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="232"/>
+					</targets>
+					<view ltx="443" lty="53" rbx="528" rby="129"/>
+				</component>
+				<component name="constant" library="core" uid="67651956" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="233"/>
+					</targets>
+					<view ltx="341" lty="111" rbx="392" rby="129"/>
+					<data>
+						<constant value="@" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="structure" library="db" uid="67651946" kind="15">
+					<properties/>
+					<view ltx="-98" lty="41" rbx="208" rby="259"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="Department" type="table" expanded="1">
+									<entry name="ForeignKey" outkey="213"/>
+									<entry name="Name" outkey="203"/>
+									<entry name="ManagersByDepartment|DepartmentID" type="routine" displayselectionmode="selection"/>
+									<entry name="ManagersByDepartment|DepartmentID" type="routine" outkey="214" expanded="1">
+										<condition>
+											<expression>
+												<function name="equal" library="core">
+													<expression>
+														<attribute name="input"/>
+													</expression>
+													<expression>
+														<constant value="false" datatype="boolean"/>
+													</expression>
+												</function>
+											</expression>
+										</condition>
+										<entry name="ManagersByDepartment" type="table" expanded="1">
+											<entry name="First" outkey="215"/>
+											<entry name="Last" outkey="216"/>
+											<entry name="EMail" outkey="217"/>
+											<entry name="PhoneExt" outkey="218"/>
+											<entry name="Title" outkey="219"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<database ref="altova">
+							<data>
+								<selections>
+									<selection>
+										<PathElement Name="altova" Kind="DataSource"/>
+										<PathElement Name="altova" Kind="Database"/>
+										<PathElement Name="Department" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="altova" Kind="DataSource"/>
+										<PathElement Name="altova" Kind="Database"/>
+										<PathElement Name="ManagersByDepartment" Kind="Select Statement"/>
+									</selection>
+								</selections>
+							</data>
+						</database>
+					</data>
+				</component>
+				<component name="EmployeesWithDetails" library="xml" uid="67651952" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="601" lty="41" rbx="790" rby="259"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Company" expanded="1">
+										<entry name="Employees" expanded="1">
+											<entry name="Employee" inpkey="245" expanded="1">
+												<entry name="Department" type="attribute" inpkey="246"/>
+												<entry name="FirstName" inpkey="247"/>
+												<entry name="LastName" inpkey="248"/>
+												<entry name="Title" inpkey="249"/>
+												<entry name="PhoneExt" inpkey="250"/>
+												<entry name="Email" inpkey="251"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="EmployeesWithDetails.xsd" instanceroot="{}Company" sps="EmployeesWithDetails.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="203">
+						<edges>
+							<edge vertexkey="229" edgekey="234"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="213">
+						<edges>
+							<edge vertexkey="227" edgekey="235"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="214">
+						<edges>
+							<edge vertexkey="245" edgekey="252"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="215">
+						<edges>
+							<edge vertexkey="247" edgekey="253"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="216">
+						<edges>
+							<edge vertexkey="248" edgekey="254"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="217">
+						<edges>
+							<edge vertexkey="251" edgekey="255"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="218">
+						<edges>
+							<edge vertexkey="250" edgekey="256"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="219">
+						<edges>
+							<edge vertexkey="249" edgekey="257"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="228">
+						<edges>
+							<edge vertexkey="231" edgekey="242"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="232">
+						<edges>
+							<edge vertexkey="246" edgekey="258"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="233">
+						<edges>
+							<edge vertexkey="230" edgekey="244"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

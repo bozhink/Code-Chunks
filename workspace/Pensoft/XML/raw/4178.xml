@@ -1,0 +1,523 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4178</article-id>
+            <title-group>
+                <article-title>Secondary structure models of 18S and 28S rRNAs of the true bugs based on complete rDNA sequences of 
+                    <bold-italic>Eurydema maracandica</bold-italic> Oshanin, 1871 (Heteroptera, Pentatomidae)
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Yu</surname>
+                        <given-names>Shasha</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Wang</surname>
+                        <given-names>Yanhui</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Rédei</surname>
+                        <given-names>Dávid</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Xie</surname>
+                        <given-names>Qiang</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Bu</surname>
+                        <given-names>Wenjun</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Institute of Entomology, College of Life Sciences, Nankai University, 94 Weijin Road, Tianjin 300071, China
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Qiang Xie (<email xlink:type="simple">qiangxie@nankai.edu.cn</email>); Wenjun Bu (<email xlink:type="simple">wenjunbu@nankai.edu.cn</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>25</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>7</day>
+                    <month>1</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Shasha Yu, Yanhui Wang, Dávid Rédei, Qiang Xie, Wenjun Bu</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The sequences of 18S and 28S rDNAs have been used as molecular markers to resolve phylogenetic relationships of Heteroptera for two decades. The complete sequences of 18S rDNAs have been used in many studies, while in most studies only partial sequences of 28S rDNAs have been used due to technical difficulties of amplifying the complete lengths. In this study, we amplified the complete 18S and 28S rDNA sequences of <italic>Eurydema maracandica</italic> Oshanin, 1871, and reconstructed the secondary structure models of the corresponding rRNAs. In addition, and more importantly, all of the length variable regions of 18S rRNA were compared among 37 families of Heteroptera based on 140 sequences, and the D3 region of 28S rRNA was compared among 51 families based on 84 sequences. It was found that 8 length variable regions could potentially serve as molecular synapomorphies for some monophyletic groups. Therefore discoveries of more molecular synapomorphies for specific clades can be anticipated from amplification of complete 18S and 28S rDNAs of more representatives of Heteroptera.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>rRNA, secondary structure, Heteroptera, molecular synapomorphy, 
+    <italic>Eurydema maracandica</italic>
+    <!--PageBreak-->
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Each cluster of rDNA in turn contains external transcribed spacer (ETC), 18S rDNA, internal transcribed spacer 1 (ITS1), 5.8S rDNA, ITS2 and 28S rDNA (Hillis and Dixon 1991). These genes and spacer regions, separately or in combination, have been used as molecular markers for resolving phylogenetic relationships of Heteroptera for two decades from Wheeler et al. (1993). Among them, the length-conservative regions of 18S rDNA and 28S rDNA have been mostly used for resolving phylogenetic relationships between higher level group (Wheeler et al. 1993, Xie et al. 2005, Shuh et al. 2009), while the length-variable regions (LVRs), ITS1 and ITS2 have been used at species level (Marcilla et al. 2001, Hebsgaard et al. 2004, Damgaard et al. 2005, Calleros et al. 2010).
+</p>
+            <p>As far as the rDNAs are concerned, complete sequences of 18S rDNA have been used in various phylogenetic studies on Heteroptera (Tian et al. 2008, Jung and Lee 2011). Comparatively, so far only partial sequences of 28S rDNAs have been involved in phylogenetic studies on Heteroptera due to technical difficulties of amplifying the complete lengths. These difficulties are twofold. First, the amplification of 28S rDNA is more likely interfered by the hairpin structures, or tandem replicates of single nucleotides or oligonucleotides. Second, universal primers are unavailable for amplifying the 28S rDNA of Heteroptera.
+</p>
+            <p>Reconstruction of the complete secondary structure model of 28S rRNA can only be achieved by full sequencing of 28S rDNA. According to the results of comparative studies of 18S rRNAs of Insecta (Xie et al. 2009) and Hemiptera (Xie et al. 2008), the secondary structure model can have significance in two aspects. First, the alignment results of rDNAs can be corrected based on the secondary structure models of the corresponding rRNAs (Kjer et al. 2006). Further, it is possible to evaluate the potential influences to the results of phylogenetic reconstruction. Second, the secondary structure model provides a novel view and datasets to discover synapomorphies, such as group-specific insertions or deletions (indels), exactly the same length of some LVRs, and length expansions. In this study, the secondary structure models of 18S and 28S rRNAs of Heteroptera were reconstructed based on corresponding rDNA sequences of the pentatomid species <italic>Eurydema maracandica </italic>Oshanin, 1871. Additionally, all LVRs of complete 18S rRNA and the Divergent region 3 (D3) of 28S rRNA were compared based on data of nearly all available families of Heteroptera from GenBank (www.ncbi.nlm.nih.gov/Genbank), with exception of a few problematic sequences.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Methods
+</bold>
+            </title>
+            <sec>
+                <title><bold>Taxon sampling
+</bold>
+                </title>
+                <title><!--PageBreak-->
+                </title>
+                <p>According to the currently accepted classification of Heteroptera (Schuh, Slater 1995, Schuh et al. 2008), heteropterans are divided into 7 infraorders, 23 superfamilies and 76 families. In this study, the 18S rDNA dataset comprises 140 sequences representing 7 infraorders, 16 superfamilies and 37 families of Heteroptera. The 28S rDNA dataset, which only included the D3 region, comprises 84 sequences of 7 infraorders, 21 superfamilies and 51 families.
+</p>
+            </sec>
+            <sec>
+                <title><bold>Molecular experiments
+</bold>
+                </title>
+                <p>The specimen was collected from Yining, Xinjiang Uyghur Autonomous Region, China (43°56'N, 81°19'E, 570m) on July 26, 2011 by Qiang Xie. In the alcohol-kept insects’ collection of Nankai University, the ID number for the voucher specimen is NKU0150177. The species was identified based on the available literature and comparative material, its identity was confirmed by P. Kment. The specimen perfectly fits the original description (Oshanin 1871) and the available detailed redescriptions and illustrations (Stichel 1961, Putshkov 1965, Zheng 1983, Nonnaizab 1988) of <italic>E. maracandica</italic>.
+                </p>
+                <p>Genomic DNA was extracted from thoracic tissue of ethanol-preserved specimen. Total genomic DNA was isolated using the CTAB-based method (Reineke et al. 2002). The primers Ns1 and Ns8 used for amplifying the 18S rDNA were those used by Barker et al. (2003). The others were designed by the software Primer Premier 5.00 (Lalitha 2000). These primer sets were used to amplify six overlapping fragments of 28S rDNA and two overlapping fragments of 18S rDNA. All of the sequences were sequenced in both directions. In addition, 18S rDNA was cloned, which used pEASY-T3 (TransGen, Beijing, China) as vector, following the manufacturer’s instructions. Amplification was carried out in a 50 µL volume reaction, with 1.5 units of <italic>LA Taq</italic> DNA Polymerase, 2.5 mM of dNTP and 10 µM of each primer. The thermal cycling program of PCR consisted of an initial denaturation at 94°C for 1 min, followed by 35 cycles (94°C for 30 s, 49–57°C for 30 s, 72°C for 1 min), and ending with a final extension at 72°C for 8 min. Colony PCR was carried out in a 25 µL volume reaction, and consisted of 30 amplification cycles. All of the primer pairs and annealing temperatures are listed in Supplementary File 1. The GenBank accession numbers of 18S and 28S rDNAs of <italic>Eurydema maracandica</italic> are JX997807 and JX997806 respectively.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Reconstruction of secondary structure and Sequence alignment
+</bold>
+                </title>
+                <p>The secondary structure of 18S rRNA was slightly revised from the universal model of insects (Xie et al. 2009) based on the sequence of <italic>Drosophila melanogaster</italic> (GenBank accession number M21017). In the group specific optimization of the universal model according to the sequences of Heteroptera, secondary structures of LVRs were reconstructed using the thermodynamics folding method of the software RNAstructure 5.4 <!--PageBreak-->(Reuter, Mathews 2010). The secondary structure of 28S rRNA was revised from the model of insects (Wang et al. 2013) based on the sequence of <italic>Drosophila melanogaster</italic> (GenBank accession number M21017). The numbering system for LVRs of 28S rRNA followed the D system (Hassouna et al. 1984, Ellis et al. 1986). In the optimization of the previous model of insects, secondary structures of LVRs were reconstructed using RNAstructure 5.4 as well. The re-calculated results in this study were selected under the principle of co-variation: the fewer the secondary structural elements, especially the paired regions, are destroyed by each sequence, the better the model is (Gutell et al. 2002). We simplified the principle in this study as: the longer the stems are kept by each sequence, the better the model is. Sequence alignment was performed by ClustalW, which is imbedded within BioEdit 7.1.3 (Hall 2011). Manual alignments were based on the rRNA secondary structure models reconstructed in this study.
+                </p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Data resources
+</bold>
+            </title>
+            <p>The data underpinning the analyses reported in this paper are deposited in the Dryad Data Repository at doi: 10.5061/dryad.j8kp5
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results and discussion
+</bold>
+            </title>
+            <sec>
+                <title><bold>General description of secondary structures
+</bold>
+                </title>
+                <p>The complete sequence of 18S rDNA of <italic>Eurydema maracandica</italic> is 1,894 bp. In the secondary structure of the corresponding rRNA (Fig. 1) the LVRs L and X regions were specifically optimized. The 18S rDNA sequence of <italic>Eurydema maracandica</italic> was aligned with other 140 orthologous sequences of 37 families in Heteroptera. The alignment result suggested that the local length variations of 18S rDNA are localized in 13 independent LVRs except for various indels. Most LVRs were restrained in three domains, which were previously named as V2, V4 and V7 (Neefs et al. 1993). Among all of the 13 LVRs, LVR L is the most variable one in length.
+                </p>
+                <p>The complete sequence of 28S rDNA of <italic>Eurydema maracandica</italic> is 4,030 bp. In the secondary structure of corresponding rRNA (Figs 2 and 3), the LVRs D2, D3, D7, D8, D10, and D11 were specifically optimized. Compared with the secondary structure of the universal model of insect 28S rRNA, LVRs of heteropteran 28S rRNAs are distributed in 10 regions (D2–D11). Only D3 region of most superfamilies has corresponding data in GenBank, therefore only this region was comparatively analyzed and the results may serve as an inspiring case for the other LVRs of 28S rRNA. Alignment results suggested that in the D3 region, LVRs can be further divided into three sections <!--PageBreak--><!--PageBreak--><!--PageBreak--><!--PageBreak-->(D3-1, D3-2 and D3-3), which are interspaced by several short length-conservative regions. Among these three separate LVRs, D3-2 is the most variable one in length.
+                </p>
+                <p>According to the above results, the local length variations of heteropteran rRNAs are moderate in comparison with the length variations of eukaryotic rRNAs (Xie et al. 2011). The local length variations of heteropteran rRNAs did not cause overlap between adjacent regions (See Supplementary Files 2 and 3) like it was documented in the suborder Sternorrhyncha of Hemiptera (Xie et al. 2008) and some other insect orders (Xie et al. 2009). However, the ambiguity in alignment caused by length variations might have impact on the results of phylogenetic reconstruction of Heteroptera, and it deserves further evaluation.
+</p>
+            </sec>
+            <sec>
+                <title><bold>The LVRs potentially serving as synapomorphies
+</bold>
+                </title>
+                <p>Campbell et al. (1994) hypothesized that length expansion in 18S rDNA could serve as synapomorphy for Sternorrhyncha. Later, the concepts of “molecular morpho-metrics” (Billoud et al. 2000) and “morpho-molecular structures” (Ouvrard et al. 2000) were introduced. It was found that length variation and indels could serve as synapomorphies for specific monophyletic groups of insects (Xie et al. 2009). The results of this study indicate that, the LVRs B, M, T, U and W of 18S rDNA, and D3-1, D3-2 <!--PageBreak--><!--PageBreak-->and D3-3 of 28S rDNA could potentially serve as molecular synapomorphies (Table 1). According to the lengths of LVRs B and T of 18S rDNA, there only a few exceptions exist within Pentatomomorpha. Therefore, the 11nt length of LVR B and the 4nt length of LVR T very likely originate from the last ancestor of Pentatomomorpha and are the synapomorphies of this infraorder. In the same sense, the 10nt length of LVR M is a dominant state in the clade (Cimicomorpha+Pentatomomorpha), and the 9nt length of LVR U is very conservative within Neoheteroptera. Figure 4 shows the secondary structure models of LVR W of Naboidea and Cimicoidea. Within Heteroptera, Naboidea and Cimicoidea have the same unique length of 5nt in this region. Taking the problem of the phylogeny within the superfamily Pentatomoidea for more instances, the 5nt length of LVR D3-1 and 19nt length of LVR D3-2 in 28S rRNA could possibly serve as synapomorphies for an Acanthosomatidae+Lestoniidae clade (Grazia et al. 2008). Additionally, the Paraphrynoveliidae+Macroveliidae clade shares the same length of LVR D3-1, D3-2 and D3-3. Gelastocoridae and Ochteridae have the same length of 4nt in D3-1 region. Therefore amplification of complete 18S and 28S rDNAs of more representatives very likely will result in more representative dataset for reconstruction of ancestral states and discoveries of more molecular synapomorphies for specific clades within Heteroptera.
+</p>
+            </sec>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgement
+</bold>
+            </title>
+            <p>We are grateful to Dr. Petr Kment (National Museum, Prague) for confirming the identity of <italic>E. maracandicum</italic>. We also thank Dr. Zhong-Hua Fan (Nankai University) for helpful advices. This work was supported by the National Science Foundation of China (grant numbers 31222051, J1210005, J0930005, 30970350), China Postdoctoral Science Foundation (grant number 20110490769) and Science Foundation of Tianjin (grant number 11JCYBJC08100).
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>Reference
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Barker</surname> <given-names>SC</given-names></name>,<name name-style="western"><surname>Whiting</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Johnson</surname> <given-names>KP</given-names></name>,<name name-style="western"><surname>Murrell</surname> <given-names>A</given-names></name></person-group> (<year>2003</year>)<article-title> Phylogeny of the lice (Insecta, Phthiraptera) inferred from small subunit rRNA.</article-title> <source>Zoologica Scripta </source> <volume>32</volume>: <fpage>407</fpage>-<lpage>414</lpage>. doi:10.1046/j.1463-6409.2003.00120.x
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Billoud</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Guerrucci</surname> <given-names>MA</given-names></name>,<name name-style="western"><surname>Masselot</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Deutsch</surname> <given-names>JS</given-names></name></person-group> (<year>2000</year>)<article-title> Cirripede phylogeny using a novel approach: molecular morphometrics.</article-title> <source>Molecular Biology and Evolution </source> <volume>17</volume>: <fpage>1435</fpage>-<lpage>1445</lpage>. doi: 10.1093/oxfordjournals.molbev.a026244
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Calleros</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Panzera</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Bargues</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Monteiro</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Klisiowicz</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Zuriaga</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Mas-Coma</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Pérez</surname> <given-names>R</given-names></name></person-group> (<year>2010</year>)<article-title> Systematics of <italic>Mepraia</italic> (Hemiptera-Reduviidae): Cytogenetic and molecular variation.</article-title> <source>Infection, Genetics and Evolution </source> <volume>10</volume>: <fpage>221</fpage>-<lpage>228</lpage>. doi:10.1016/j.meegid.2009.12.002
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Campbell</surname> <given-names>BC</given-names></name>,<name name-style="western"><surname>Steffen-Campbell</surname> <given-names>JD</given-names></name>,<name name-style="western"><surname>Gill</surname> <given-names>RJ</given-names></name></person-group> (<year>1994</year>)<article-title> Evolutionary origin of whiteflies (Hemiptera: Sternorrhyncha: Aleyrodidae) inferred from 18S rDNA sequences.</article-title> <source>Insect Molecular Biology </source> <volume>3</volume>: <fpage>73</fpage>-<lpage>88</lpage>. doi: 10.1111/j.1365-2583.1994.tb00154.x
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Damgaard</surname> <given-names>J</given-names></name></person-group> (<year>2008</year>)<article-title> Phylogeny of the semiaquatic bugs (Hemiptera-Heteroptera, Gerromorpha).</article-title> <source>Insect Systematics and Evolution </source> <volume>39</volume>: <fpage>431</fpage>-<lpage>460</lpage>. doi: 10.1163/187631208788784264
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Damgaard</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Andersen</surname> <given-names>NM</given-names></name>,<name name-style="western"><surname>Meier</surname> <given-names>R</given-names></name></person-group> (<year>2005</year>)<article-title> Combining molecular and morphological analyses of water strider phylogeny (Hemiptera-Heteroptera, Gerromorpha): effects of alignment and taxon sampling.</article-title> <source>Systematic Entomology </source> <volume>30</volume>: <fpage>289</fpage>-<lpage>309</lpage>. doi:10.1111/j.1365-3113.2004.00275.x
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ellis</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Sulston</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Coulson</surname> <given-names>A</given-names></name></person-group> (<year>1986</year>)<article-title> The rDNA of <italic>C. elegans</italic>: sequence and structure.</article-title> <source>Nucleic Acids Research </source> <volume>14</volume>: <fpage>2345</fpage>-<lpage>2364</lpage>. doi:10.1093/nar/14.5.2345
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Grazia</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Schuh</surname> <given-names>RT</given-names></name>,<name name-style="western"><surname>Wheeler</surname> <given-names>WC</given-names></name></person-group> (<year>2008</year>)<article-title> Phylogenetic relationships of family groups in Pentatomoidea based on morphology and DNA sequences (Insecta: Heteroptera).</article-title> <source>Cladistics </source> <volume>24</volume>: <fpage>932</fpage>-<lpage>976</lpage>. doi: 10.1111/j.1096-0031.2008.00224.x
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gutell</surname> <given-names>RR</given-names></name>,<name name-style="western"><surname>Lee</surname> <given-names>JC</given-names></name>,<name name-style="western"><surname>Cannone</surname> <given-names>JJ</given-names></name></person-group> (<year>2002</year>)<article-title> The accuracy of ribosomal RNA comparative structure models.</article-title> <source>Current opinion in structural biology </source> <volume>12</volume>: <fpage>301</fpage>-<lpage>310</lpage>. doi:10.1016/S0959-440X(02)00339-1
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hall</surname> <given-names>T</given-names></name></person-group> (<year>2011</year>)<fake_tag> Bioedit: a biological sequence alignment editor. v7.1.3. Ibis Therapeutics, a division of Isis Pharmaceuticals, Carlsbad.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hassouna</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Michot</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Bachellerie</surname> <given-names>JP</given-names></name></person-group> (<year>1984</year>)<article-title> The complete nucleotide sequence of mouse 28S rRNA gene. Implications for the process of size increase of the large subunit rRNA in higher eukaryotes.</article-title> <source>Nucleic Acids Research </source> <volume>12</volume>: <fpage>3563</fpage>-<lpage>3583</lpage>. doi:10.1093/nar/12.8.3563
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hebsgaard</surname> <given-names>MB</given-names></name>,<name name-style="western"><surname>Andersen</surname> <given-names>NM</given-names></name>,<name name-style="western"><surname>Damgaard</surname> <given-names>J</given-names></name></person-group> (<year>2004</year>)<article-title> Phylogeny of the true water bugs (Nepomorpha: Hemiptera-Heteroptera) based on 16S and 28S rDNA and morphology.</article-title> <source>Systematic Entomology </source> <volume>29</volume>: <fpage>488</fpage>-<lpage>508</lpage>. doi: 10.1111/j.0307-6970.2004.00254.x
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Henry</surname> <given-names>TJ</given-names></name></person-group> (<year>1997</year>)<article-title> Phylogenetic analysis of family groups within the infraorder Pentatomomorpha (Hemiptera: Heteroptera), with emphasis on the Lygaeoidea.</article-title> <source>Annals of the Entomological Society of America </source> <volume>90</volume>: <fpage>275</fpage>-<lpage>301</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hillis</surname> <given-names>DM</given-names></name>,<name name-style="western"><surname>Dixon</surname> <given-names>MT</given-names></name></person-group> (<year>1991</year>)<article-title> Ribosomal DNA: molecular evolution and phylogenetic inference.</article-title> <source>Quarterly Review of Biology </source> <volume>66</volume>: <fpage>411</fpage>-<lpage>453</lpage>. doi: 10.1086/417338
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jung</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Lee</surname> <given-names>S</given-names></name></person-group> (<year>2011</year>)<article-title> Molecular phylogeny of the plant bugs (Heteroptera: Miridae) and the evolution of feeding habits.</article-title> <source>Cladistics </source> <volume>28</volume>: <fpage>50</fpage>-<lpage>79</lpage>. doi:10.1111/j.1096-0031.2011.00365.x
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kjer</surname> <given-names>KM</given-names></name>,<name name-style="western"><surname>Carle</surname> <given-names>FL</given-names></name>,<name name-style="western"><surname>Litman</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Ware</surname> <given-names>J</given-names></name></person-group> (<year>2006</year>)<article-title> A molecular phylogeny of Hexapoda.</article-title> <source>Arthropod Systematics and Phylogeny </source> <volume>64</volume>: <fpage>35</fpage>-<lpage>44</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lalitha</surname> <given-names>S</given-names></name></person-group> (<year>2000</year>)<article-title> Primer premier 5.</article-title> <source>Biotech Software and Internet Report: The Computer Software Journal for Scientists </source> <volume>1</volume>: <fpage>270</fpage>-<lpage>272</lpage>. doi: 10.1089/152791600459894
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Leston</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Pendergrast</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Southwood</surname> <given-names>T</given-names></name></person-group> (<year>1954</year>)<fake_tag> Classification of the terrestrial Heteroptera (Geocorisae). Nature 174: 91. </fake_tag>doi: 10.1038/174091b0
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Marcilla</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Bargues</surname> <given-names>MD</given-names></name>,<name name-style="western"><surname>Ramsey</surname> <given-names>JM</given-names></name>,<name name-style="western"><surname>Magallon-Gastelum</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Salazar-Schettino</surname> <given-names>PM</given-names></name>,<name name-style="western"><surname>Abad-Franch</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Dujardin</surname> <given-names>JP</given-names></name>,<name name-style="western"><surname>Schofield</surname> <given-names>CJ</given-names></name>,<name name-style="western"><surname>Mas-Coma</surname> <given-names>S</given-names></name></person-group> (<year>2001</year>)<article-title> The ITS-2 of the nuclear rDNA as a molecular marker for populations, species, and phylogenetic relationships in Triatominae (Hemiptera: Reduviidae), vectors of Chagas disease.</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>18</volume>: <fpage>136</fpage>-<lpage>142</lpage>. doi:10.1006/mpev.2000.0864
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Neefs</surname> <given-names>JM</given-names></name>,<name name-style="western"><surname>Van de Peer</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>De Rijk</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Chapelle</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>De Wachter</surname> <given-names>R</given-names></name></person-group> (<year>1993</year>)<article-title> Compilation of small ribosomal subunit RNA structures.</article-title> <source>Nucleic Acids Research </source> <volume>21</volume>: <fpage>3025</fpage>-<lpage>3049</lpage>. doi: 10.1093/nar/21.13.3025
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Nonnaizab</surname> <given-names></given-names></name></person-group> (<year>1988</year>)<fake_tag> Fauna of Inner Mongolia (Hemiptera: Heteroptera). Volum [sic] I. Book 1. Inner Mongolia People’s Publishing House, Hohhot, 2+2+469 pp </fake_tag>[in Chinese, English summary].
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Oshanin</surname> <given-names>B</given-names></name></person-group> (<year>1871</year>)<article-title> [On heteropterous insects of the Zaravshan Valley.</article-title> <source>] Izvestiya Imperatorskago Obshchestva Lyubitelei Estestvoznaniya, Antropologii i Etnografii pri Imperatorskom Moskovskom Universitete </source> <volume>8</volume>: <fpage>194</fpage>-<lpage>213</lpage> [in Russian].
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ouvrard</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Campbell</surname> <given-names>BC</given-names></name>,<name name-style="western"><surname>Bourgoin</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Chan</surname> <given-names>KL</given-names></name></person-group> (<year>2000</year>)<article-title> 18S rRNA Secondary structure and phylogenetic position of Peloridiidae (Insecta, Hemiptera).</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>16</volume>: <fpage>403</fpage>-<lpage>417</lpage>. doi:10.1006/mpev.2000.0797
+</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Putshkov</surname> <given-names>VG</given-names></name></person-group> (<year>1965</year>)<fake_tag> [Shield-bugs of Middle Asia (Hemiptera, Pentatomoidea).] Ilim, Frunze, 331 pp </fake_tag>[in Russian].
+</mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Reineke</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Karlovsky</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Zebitz</surname> <given-names>C</given-names></name></person-group> (<year>2002</year>)<article-title> Preparation and purification of DNA from insects for AFLP analysis.</article-title> <source>Insect Molecular Biology </source> <volume>7</volume>: <fpage>95</fpage>-<lpage>99</lpage>. doi:10.1046/j.1365-2583.1998.71048.x
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Reuter</surname> <given-names>JS</given-names></name>,<name name-style="western"><surname>Mathews</surname> <given-names>DH</given-names></name></person-group> (<year>2010</year>)<fake_tag> RNAstructure: software for RNA secondary structure prediction and analysis. BMC Bioinformatics 11: 129. </fake_tag>doi:10.1186/1471-2105-11-129
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schaefer</surname> <given-names>CW</given-names></name></person-group> (<year>1993</year>)<article-title> The Pentatomomorpha (Hemiptera: Heteroptera): an annotated outline of its systematic history.</article-title> <source>European Journal of Entomology </source> <volume>90</volume>: <fpage>105</fpage>-<lpage>105</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schuh</surname> <given-names>RT</given-names></name></person-group> (<year>1979</year>)<article-title> (Review of Cobben 1978).</article-title> <source>Systematic Zoology </source> <volume>28</volume>: <fpage>653</fpage>-<lpage>656</lpage>. doi: 10.2307/2412577
+</mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schuh</surname> <given-names>RT</given-names></name>,<name name-style="western"><surname>Slater</surname> <given-names>JA</given-names></name></person-group> (<year>1995</year>)<source> True bugs of the world (Hemiptera: Heteroptera): classification and natural history.</source> <publisher-name>Cornell University Press, Ithaca</publisher-name>, <publisher-loc>London</publisher-loc>, <lpage>336</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schuh</surname> <given-names>RT</given-names></name>,<name name-style="western"><surname>Weirauch</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Henry</surname> <given-names>TJ</given-names></name>,<name name-style="western"><surname>Halbert</surname> <given-names>SE</given-names></name></person-group> (<year>2008</year>)<article-title> Curaliidae, a new family of Heteroptera (Insecta: Hemiptera) from the eastern United States.</article-title> <source>Annals of the Entomological Society of America </source> <volume>101</volume>: <fpage>20</fpage>-<lpage>29</lpage>. doi:10.1603/0013-8746(2008)101[20:CANFOH]2.0.CO;2
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Schuh</surname> <given-names>RT</given-names></name>,<name name-style="western"><surname>Weirauch</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Wheeler</surname> <given-names>WC</given-names></name></person-group> (<year>2009</year>)<article-title> Phylogenetic relationships within the Cimicomorpha (Hemiptera: Heteroptera): a total-evidence analysis.</article-title> <source>Systematic Entomology </source> <volume>34</volume>: <fpage>15</fpage>-<lpage>48</lpage>. doi:10.1111/j.1365-3113.2008.00436.x
+</mixed-citation>
+            </ref>
+            <ref id="32"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Stichel</surname> <given-names>W</given-names></name></person-group> (<year>1961</year>)<fake_tag> Pentatomomorpha, Pentatomidae, Trib. Eurydemini Dist. [partim]. In: Stichel W (Ed) Illustrierte Bestimmungstabellen der Wanzen. II. Europa. (Hemiptera-Heteroptera Europae) 4 (39–41): 609–656. Stichel, Berlin-Hermsdorf.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="33"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Štys</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Kerziner</surname> <given-names>I</given-names></name></person-group> (<year>1975</year>)<article-title> The rank and nomenclature of higher taxa in recent Heteroptera.</article-title> <source>Acta entomologica Bohemoslovaca </source> <volume>72</volume>: <fpage>65</fpage>-<lpage>79</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="34"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tian</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Zhu</surname> <given-names>WB</given-names></name>,<name name-style="western"><surname>Li</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Xie</surname> <given-names>Q</given-names></name>,<name name-style="western"><surname>Bu</surname> <given-names>WJ</given-names></name></person-group> (<year>2008</year>)<article-title> Influence of data conflict and molecular phylogeny of major clades in Cimicomorphan true bugs (Insecta: Hemiptera: Heteroptera).</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>47</volume>: <fpage>581</fpage>-<lpage>597</lpage>. doi: 10.1016/j.ympev.2008.01.034
+</mixed-citation>
+            </ref>
+            <ref id="35"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wang</surname> <given-names>YH</given-names></name>,<name name-style="western"><surname>Engel</surname> <given-names>MS</given-names></name>,<name name-style="western"><surname>Rafael</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>Dang</surname> <given-names>K</given-names></name>,<name name-style="western"><surname>Wu</surname> <given-names>HY</given-names></name>,<name name-style="western"><surname>Wang</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Xie</surname> <given-names>Q</given-names></name>,<name name-style="western"><surname>Bu</surname> <given-names>WJ</given-names></name></person-group> (<year>2013</year>)<fake_tag> A Unique Box in 28S rRNA is Shared by the Enigmatic Insect Order Zoraptera and Dictyoptera. PloS one 8: e53679. </fake_tag>doi:10.1371/journal.pone.0053679
+</mixed-citation>
+            </ref>
+            <ref id="36"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wheeler</surname> <given-names>WC</given-names></name>,<name name-style="western"><surname>Schuh</surname> <given-names>RT</given-names></name>,<name name-style="western"><surname>Bang</surname> <given-names>R</given-names></name></person-group> (<year>1993</year>)<article-title> Cladistic relationships among higher groups of Heteroptera: congruence between morphological and molecular data sets.</article-title> <source>Insect Systematics and Evolution </source> <volume>24</volume>: <fpage>121</fpage>-<lpage>137</lpage>. doi: 10.1163/187631293X00235
+</mixed-citation>
+            </ref>
+            <ref id="37"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Xie</surname> <given-names>Q</given-names></name>,<name name-style="western"><surname>Bu</surname> <given-names>WJ</given-names></name>,<name name-style="western"><surname>Zheng</surname> <given-names>LY</given-names></name></person-group> (<year>2005</year>)<article-title> The Bayesian phylogenetic analysis of the 18S rRNA sequences from the main lineages of Trichophora (Insecta: Heteroptera: Pentatomomorpha).</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>34</volume>: <fpage>448</fpage>-<lpage>451</lpage>. doi:10.1016/j.ympev.2004.10.015
+</mixed-citation>
+            </ref>
+            <ref id="38"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Xie</surname> <given-names>Q</given-names></name>,<name name-style="western"><surname>Lin</surname> <given-names>JZ</given-names></name>,<name name-style="western"><surname>Qin</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Zhou</surname> <given-names>JF</given-names></name>,<name name-style="western"><surname>Bu</surname> <given-names>W</given-names></name></person-group> (<year>2011</year>)<article-title> Structural diversity of eukaryotic 18S rRNA and its impact on alignment and phylogenetic reconstruction.</article-title> <source>Protein and Cell </source> <volume>2</volume>: <fpage>161</fpage>-<lpage>170</lpage>. doi:10.1007/s13238-011-1017-2.
+</mixed-citation>
+            </ref>
+            <ref id="39"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Xie</surname> <given-names>Q</given-names></name>,<name name-style="western"><surname>Tian</surname> <given-names>XX</given-names></name>,<name name-style="western"><surname>Qin</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Bu</surname> <given-names>WJ</given-names></name></person-group> (<year>2009</year>)<article-title> Phylogenetic comparison of local length plasticity of the small subunit of nuclear rDNAs among all Hexapoda orders and the impact of hyper-length-variation on alignment.</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>50</volume>: <fpage>310</fpage>-<lpage>316</lpage>. doi:10.1016/j.ympev.2008.10.025
+</mixed-citation>
+            </ref>
+            <ref id="40"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Xie</surname> <given-names>Q</given-names></name>,<name name-style="western"><surname>Tian</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Zheng</surname> <given-names>LY</given-names></name>,<name name-style="western"><surname>Bu</surname> <given-names>WJ</given-names></name></person-group> (<year>2008</year>)<article-title> 18S rRNA hyper-elongation and the phylogeny of Euhemiptera (Insecta: Hemiptera).</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>47</volume>: <fpage>463</fpage>-<lpage>471</lpage>. doi:10.1016/j.ympev.2008.01.024
+</mixed-citation>
+            </ref>
+            <ref id="41"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zheng</surname> <given-names>LY</given-names></name></person-group> (<year>1983</year>)<article-title> Notes on genus <italic>Eurydema</italic> from China.</article-title> <source>Acta Scientiarum Naturalium Universitatis Nankaiensis </source> <volume>1983</volume>: <fpage>125</fpage>-<lpage>130</lpage> [in Chinese, English summary].
+</mixed-citation>
+            </ref>
+        </ref-list>
+        <sec>
+            <title><bold>Appendix 1
+</bold>
+            </title>
+            <p>Primer pairs and the annealing temperatures for amplifying rDNAs of <italic>Eurydema maracandica</italic>. (doi: 10.3897/zookeys.@@.@@.app1) File format: Mircrosoft Word Document (doc).
+            </p>
+            <p><bold>Explanation note:</bold> List of primer pairs and annealing temperatures. 
+            </p>
+            <p><bold>Copyright notice: </bold>This dataset is made available under the Open Database License (http://opendatacommons.org/licenses/odbl/1.0/). The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Dataset while maintaining this same freedom for others, provided that the original source and author(s) are credited.
+            </p>
+            <p><bold>Citation:</bold> Yu S, Wang Y, Rédei D, Xie Q, Bu W (2013) Secondary structure models of 18S and 28S rRNAs of the true bugs based on complete rDNA sequences of <italic>Eurydema maracandica</italic> Oshanin, 1871 (Heteroptera, Pentatomidae). In: Popov A, Grozeva S, Simov N, Tasheva E (Eds) Advances in Hemipterology. ZooKeys @@: @–@. doi: 10.3897/zookeys.@@.4178.app1
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Appendix 2
+</bold>
+            </title>
+            <p>Alignment of 18S rDNA sequence of Heteroptera. (doi: 10.3897/zookeys.@@.@@.app2) File format: DNA and Protein Sequence Alignment (fas).
+</p>
+            <p><bold>Explanation note:</bold> The alignment of <italic>Eurydema maracandica</italic> 18S rDNA sequence with other 140 orthologous sequences of Heteroptera.
+            </p>
+            <p><bold>Copyright notice: </bold>This dataset is made available under the Open Database License (http://opendatacommons.org/licenses/odbl/1.0/). The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Dataset while maintaining this same freedom for others, provided that the original source and author(s) are credited.
+            </p>
+            <p><bold>Citation:</bold> Yu S, Wang Y, Rédei D, Xie Q, Bu W (2013) Secondary structure models of 18S and 28S rRNAs of the true bugs based on complete rDNA sequences of <italic>Eurydema maracandica</italic> Oshanin, 1871 (Heteroptera, Pentatomidae). In: Popov A, Grozeva S, Simov N, Tasheva E (Eds) Advances in Hemipterology. ZooKeys @@: @–@. doi: 10.3897/zookeys.@@.4178.app2
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Appendix 3
+</bold>
+            </title>
+            <p>Alignment of D3 region in 28S rDNA sequence of Heteroptera. (doi: 10.3897/zookeys.@@.@@.app3) File format: DNA and Protein Sequence Alignment (fas).
+</p>
+            <p><bold>Explanation note:</bold> The alignment of <italic>Eurydema maracandica</italic> D3 region in 28S rDNA sequence with other 84 orthologous sequences of Heteroptera.
+            </p>
+            <p><bold>Copyright notice: </bold>This dataset is made available under the Open Database License (http://opendatacommons.org/licenses/odbl/1.0/). The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Dataset while maintaining this same freedom for others, provided that the original source and author(s) are credited.
+            </p>
+            <p><bold>Citation:</bold> Yu S, Wang Y, Rédei D, Xie Q, Bu W (2013) Secondary structure models of 18S and 28S rRNAs of the true bugs based on complete rDNA sequences of <italic>Eurydema maracandica</italic> Oshanin, 1871 (Heteroptera, Pentatomidae). In: Popov A, Grozeva S, Simov N, Tasheva E (Eds) Advances in Hemipterology. ZooKeys @@: @–@. doi: 10.3897/zookeys.@@.4178.app3
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Appendix 4
+</bold>
+            </title>
+            <p>The summarization of length variation in 18S rDNA sequence of Heteroptera. (doi: 10.3897/zookeys.@@.@@.app4) File format: Microsoft Excel Worksheed (xls).
+</p>
+            <p><bold>Explanation note:</bold> The length of 12 LVRs in all currently known 18S rDNA sequences of Heteroptera.
+            </p>
+            <p><bold>Copyright notice: </bold>This dataset is made available under the Open Database License (http://opendatacommons.org/licenses/odbl/1.0/). The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Dataset while maintaining this same freedom for others, provided that the original source and author(s) are credited.
+            </p>
+            <p><bold>Citation:</bold> Yu S, Wang Y, Rédei D, Xie Q, Bu W (2013) Secondary structure models of 18S and 28S rRNAs of the true bugs based on complete rDNA sequences of <italic>Eurydema maracandica</italic> Oshanin, 1871 (Heteroptera, Pentatomidae). In: Popov A, Grozeva S, Simov N, Tasheva E (Eds) Advances in Hemipterology. ZooKeys @@: @–@. doi: 10.3897/zookeys.@@.4178.app4
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Appendix 5
+</bold>
+            </title>
+            <p>The summarization of length variation in D3 region of 28S rDNA sequence of Heteroptera. (doi: 10.3897/zookeys.@@.@@.app5) File format: Microsoft Excel Worksheed (xls).
+</p>
+            <p><bold>Explanation note:</bold> The length of 3 LVRs in all currently known sequences of D3 region of 28S rDNA of Heteroptera.
+            </p>
+            <p><bold>Copyright notice: </bold>This dataset is made available under the Open Database License (http://opendatacommons.org/licenses/odbl/1.0/). The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use this Dataset while maintaining this same freedom for others, provided that the original source and author(s) are credited.
+            </p>
+            <p><bold>Citation:</bold> Yu S, Wang Y, Rédei D, Xie Q, Bu W (2013) Secondary structure models of 18S and 28S rRNAs of the true bugs based on complete rDNA sequences of <italic>Eurydema maracandica</italic> Oshanin, 1871 (Heteroptera, Pentatomidae). In: Popov A, Grozeva S, Simov N, Tasheva E (Eds) Advances in Hemipterology. ZooKeys @@: @–@. doi: 10.3897/zookeys.@@.4178.app5
+            </p>
+        </sec>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Secondary structure model of 18S rRNA of <italic>Eurydema maracandica</italic>. The bases marked in black represent length-conservative regions, and the bases labeled as capital letters <bold>B</bold> to <bold>W</bold> in red represent 13 LVRs. CP and NC represent monophyletic groups Cimicomorpha+Pentatomomorpha and Naboidea+Cimicoidea, respectively. Base pairing is indicated as follows: standard canonical pairs by lines (G–C, A–U), wobble G:U pairs by dots (G·U), A:G or A:C pairs by open circles (A○G, A○C), and other non-canonical pairs by filled circles (e.g., A●A).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> The 5’-half part of secondary structure model of 28S rRNA of <italic>Eurydema maracandica</italic>. The numbers D2 to D7 represent six LVRs. PM, GO and AL represent monophyletic groups Paraphrynoveliidae+Macroveliidae, Gelastocoridae+Ochteridae and Acanthosomatidae+Lestoniidae, respectively.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> The 3’-half part of secondary structure model of 28S rRNA of <italic>Eurydema maracandica</italic>. The numbers D8 to D11 represent four LVRs.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> Monophyletic groups within Heteroptera with some LVRs serving as potential synapomorphies.&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="0" bodyRowCount="20" columnCount="4" aid:table="table" aid:trows="20" aid:tcols="4">
+                <tbody>
+                    <tr>
+                        <td rowspan="2" colspan="1"><bold>Monophyletic group</bold>
+                        </td>
+                        <td rowspan="2" colspan="1"><bold>Reference</bold>
+                        </td>
+                        <td rowspan="1" colspan="2"><bold>LVR (number of sequences examined)</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>18S rDNA</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>28S rDNA</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" colspan="1">Neoheteroptera</td>
+                        <td rowspan="1" colspan="1">Štys et al. (1975)</td>
+                        <td rowspan="3" colspan="1">9nt U (131)</td>
+                        <td rowspan="3" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Schuh (1979)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Wheeler et al. (1993)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" colspan="1">Paraphrynoveliidae+Macroveliidae</td>
+                        <td rowspan="3" colspan="1">Damgaard (2008)</td>
+                        <td rowspan="3" colspan="1"></td>
+                        <td rowspan="1" colspan="1">4nt D3-1 (3)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">6nt D3-2 (3)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">15nt D3-3 (3)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Gelastocoridae+Ochteridae</td>
+                        <td rowspan="1" colspan="1">Hebsgaard (2004)</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1">4nt D3-1 (4)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" colspan="1">Cimicomorpha + Pentatomomorpha</td>
+                        <td rowspan="1" colspan="1">Štys et al. (1975)</td>
+                        <td rowspan="4" colspan="1">10nt M (117)</td>
+                        <td rowspan="4" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Schuh (1979)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Schaefer (1993)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Wheeler et al. (1993)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Naboidea+Cimicoidea</td>
+                        <td rowspan="1" colspan="1">Schuh et al. (2009)</td>
+                        <td rowspan="1" colspan="1">5nt W (36)</td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" colspan="1">Pentatomomorpha</td>
+                        <td rowspan="1" colspan="1">Leston et al. (1954)</td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="4" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Schuh (1979)</td>
+                        <td rowspan="1" colspan="1">11nt B (39)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Schaefer (1993)</td>
+                        <td rowspan="1" colspan="1">4nt T (37)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">Wheeler et al. (1993)</td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1">Acanthosomatidae+Lestoniidae</td>
+                        <td rowspan="2" colspan="1">Grazia et al. (2008)</td>
+                        <td rowspan="2" colspan="1"></td>
+                        <td rowspan="1" colspan="1">5nt D3-1 (8)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">19nt D3-2 (8)</td>
+                    </tr>
+                </tbody>
+            </table>&lt;br/&gt; 
+            <table-wrap-foot>
+                <fn>
+                    <p>Note: Detailed information see Supplementary Files 4 and 5.</p>
+                </fn>
+            </table-wrap-foot>
+        </table-wrap>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> Secondary structure models of LVR W of Naboidea and Cimicoidea. These sequences are from 15 genera, 19 species of Naboidea and Cimicoidea. The species names and GenBank Accession numbers are as follow: Nabidae (<bold>a</bold>) <italic>Nabis ferus</italic> EF487300 (<bold>b</bold>) <italic>Nabis flavomarginatus</italic> GQ258424 (<bold>c</bold>) <italic>Himacerus apterus </italic>GQ258425; Lyctocoridae (<bold>d</bold>) <italic>Lyctocoris beneficus</italic> EF487298; Anthocoridae (<bold>e</bold>) <italic>Anthocoris </italic>sp.AY252319 (<bold>f</bold>) <italic>Anthocoris confusus </italic>EF487297 (<bold>g</bold>)<italic> Anthocoris montanus</italic> EF487307 (<bold>h</bold>)<italic> Tetraphleps aterrimus </italic>EF487295 (<bold>i</bold>) <italic>Amphiareus obscuriceps</italic> EF487301 (<bold>j</bold>) <italic>Orius agilis</italic> EF487296 (<bold>k</bold>) <italic>Physopleurella armata</italic> EF487308 (<bold>l</bold>) <italic>Montandoniola moraguesi</italic> EF487310 (<bold>m</bold>) <italic>Xylocoris cerealis</italic> GQ258395 (<bold>n</bold>) <italic>Bilia </italic>sp. GQ258406 (<bold>o</bold>) <italic>Buchananiella crassicornis </italic>GQ258407 (<bold>p</bold>) <italic>Lasiochilus japonicus</italic> GQ258410 (<bold>q</bold>) <italic>Lasiochilus luceonotatus </italic>GQ25841; Cimicidae (<bold>r</bold>) <italic>Cimex lectularius </italic>GQ258396; Curaliidae (<bold>s</bold>) <italic>Curalium cronini</italic> EU683128.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8">
+	<component name="defaultmap2" blackbox="0" uid="52810560" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="52745704" kind="14">
+					<properties/>
+					<view ltx="216" lty="213" rbx="382" rby="601"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:expense-report" expanded="1">
+								<entry name="0:@currency" expanded="1"/>
+								<entry name="0:Person" expanded="1">
+									<entry name="0:Last" expanded="1" outkey="58400040"/>
+									<entry name="0:Title" outkey="58536248"/>
+									<entry name="0:Phone" outkey="47903304"/>
+									<entry name="0:Email" outkey="58399952"/>
+								</entry>
+								<entry name="0:expense-item" expanded="1" outkey="58400128">
+									<entry name="0:Travel" expanded="1" outkey="58535944">
+										<entry name="0:@Trav-cost" outkey="58536408"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="mf-ExpReport.xsd" inputinstance="mf-ExpReport2.xml" outputinstance="mf-ExpReport2.xml" instanceroot="{}expense-report"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="36996464" kind="14">
+					<properties/>
+					<view ltx="9" rbx="180" rby="554"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:expense-report" expanded="1" outkey="61268792">
+								<entry name="0:@detailed" expanded="1"/>
+								<entry name="0:@currency" expanded="1"/>
+								<entry name="0:Person" expanded="1" outkey="61268592">
+									<entry name="0:First" expanded="1"/>
+									<entry name="0:Last" expanded="1" outkey="58475056"/>
+									<entry name="0:Title" expanded="1" outkey="58474776"/>
+									<entry name="0:Phone" expanded="1" outkey="58474536"/>
+									<entry name="0:Email" expanded="1" outkey="61998536"/>
+								</entry>
+								<entry name="0:expense-item" expanded="1" outkey="61268312">
+									<entry name="0:@type" expanded="1"/>
+									<entry name="0:@expto" expanded="1"/>
+									<entry name="0:Date" expanded="1"/>
+									<entry name="0:Meal" expanded="1">
+										<entry name="0:@mealtype" expanded="1"/>
+										<entry name="0:Name" expanded="1"/>
+										<entry name="0:Location" expanded="1"/>
+									</entry>
+									<entry name="0:Lodging" expanded="1">
+										<entry name="0:@Lodge-cost" expanded="1"/>
+										<entry name="0:Name" expanded="1"/>
+										<entry name="0:Location" expanded="1"/>
+									</entry>
+									<entry name="0:Travel" expanded="1" outkey="61998856">
+										<entry name="0:@means" expanded="1"/>
+										<entry name="0:@Trav-cost" expanded="1" outkey="61269112"/>
+										<entry name="0:Destination" expanded="1"/>
+										<entry name="0:Mileage" expanded="1"/>
+									</entry>
+									<entry name="0:Parking" expanded="1">
+										<entry name="0:Location" expanded="1"/>
+									</entry>
+									<entry name="0:Entertainment" expanded="1">
+										<entry name="0:Client-name" expanded="1"/>
+									</entry>
+									<entry name="0:Misc" expanded="1">
+										<entry name="0:@misctype" expanded="1"/>
+									</entry>
+									<entry name="0:description" expanded="1">
+										<entry name="0:strong" expanded="1">
+											<entry name="0:italic" expanded="1"/>
+										</entry>
+										<entry name="0:italic" expanded="1">
+											<entry name="0:strong" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="mf-ExpReport.xsd" inputinstance="mf-ExpReport.xml" outputinstance="mf-ExpReport.xml" instanceroot="{}expense-report"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="55236752" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="526" lty="2" rbx="721" rby="553"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://my-company.com/namespace"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Company" expanded="1" inpkey="58395856">
+								<entry name="0:Employee" expanded="1" inpkey="51654040">
+									<entry name="0:Title" inpkey="51617752"/>
+									<entry name="0:Name" expanded="1" inpkey="58395536"/>
+									<entry name="0:Tel." inpkey="58396096"/>
+									<entry name="0:Email" inpkey="58396376"/>
+									<entry name="0:expense-item" expanded="1" inpkey="51653760">
+										<entry name="0:Travel" expanded="1" inpkey="29839592">
+											<entry name="1:@Travel-Cost" inpkey="51654520"/>
+										</entry>
+										<entry name="0:Accommodation" expanded="1">
+											<entry name="0:DomesticAcc" expanded="1"/>
+											<entry name="0:ForeignAcc" expanded="1"/>
+										</entry>
+										<entry name="0:Entertainment" expanded="1"/>
+										<entry name="0:Misc" expanded="1"/>
+										<entry name="0:description" expanded="1">
+											<entry name="0:strong" expanded="1"/>
+											<entry name="0:italic" expanded="1"/>
+										</entry>
+									</entry>
+									<entry name="0:CashAdvance" expanded="1"/>
+								</entry>
+								<entry name="0:Employee" expanded="1" clone="1">
+									<entry name="0:Title" inpkey="51616952"/>
+									<entry name="0:Name" inpkey="51617192"/>
+									<entry name="0:Tel." expanded="1" inpkey="58483456"/>
+									<entry name="0:Email" inpkey="58139256"/>
+									<entry name="0:expense-item" expanded="1" inpkey="58139536">
+										<entry name="0:Travel" expanded="1" inpkey="58139816">
+											<entry name="1:@Travel-Cost" inpkey="51654280"/>
+										</entry>
+									</entry>
+								</entry>
+								<entry name="0:Exec" expanded="1"/>
+							</entry>
+						</root>
+						<document schema="ExpReport-combined.xsd" outputinstance="ExpReport-combined.xml" instanceroot="{http://my-company.com/namespace}Company"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="51055752"/>
+					<edge edgekey="51604928"/>
+					<edge edgekey="51605080"/>
+					<edge edgekey="51605232"/>
+					<edge edgekey="51605384"/>
+					<edge edgekey="51605536"/>
+					<edge edgekey="51605688"/>
+					<edge edgekey="51605840"/>
+					<edge edgekey="58190624"/>
+					<edge edgekey="58190776"/>
+					<edge edgekey="58190928"/>
+					<edge edgekey="58191080"/>
+					<edge edgekey="58191232"/>
+					<edge edgekey="58191384"/>
+					<edge edgekey="58191536"/>
+					<edge edgekey="58191688"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="47903304">
+						<edges>
+							<edge vertexkey="58483456" edgekey="51605384"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58399952">
+						<edges>
+							<edge vertexkey="58139256" edgekey="51605840"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58400040">
+						<edges>
+							<edge vertexkey="51617192" edgekey="51604928"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58400128">
+						<edges>
+							<edge vertexkey="58139536" edgekey="51605232"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58474536">
+						<edges>
+							<edge vertexkey="58396096" edgekey="58191080"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58474776">
+						<edges>
+							<edge vertexkey="51617752" edgekey="58191232"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58475056">
+						<edges>
+							<edge vertexkey="58395536" edgekey="58190776"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58535944">
+						<edges>
+							<edge vertexkey="58139816" edgekey="51605688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58536248">
+						<edges>
+							<edge vertexkey="51616952" edgekey="51605080"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58536408">
+						<edges>
+							<edge vertexkey="51654280" edgekey="51605536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61268312">
+						<edges>
+							<edge vertexkey="51653760" edgekey="58191384"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61268592">
+						<edges>
+							<edge vertexkey="51654040" edgekey="58191688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61268792">
+						<edges>
+							<edge vertexkey="58395856" edgekey="58190624"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61269112">
+						<edges>
+							<edge vertexkey="51654520" edgekey="58191536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61998536">
+						<edges>
+							<edge vertexkey="58396376" edgekey="51055752"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61998856">
+						<edges>
+							<edge vertexkey="29839592" edgekey="58190928"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

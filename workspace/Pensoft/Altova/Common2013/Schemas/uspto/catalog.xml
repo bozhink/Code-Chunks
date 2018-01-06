@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" >
+	<!-- USPTO Application + Grant v4.2 main -->
+	<public publicId="-//USPTO//DTD us-patent-application v4.2 2006-08-23//EN" uri="files/us-patent-application-v42-2006-08-23.dtd"/>
+	<public publicId="-//USPTO//DTD us-patent-grant v4.2 2006-08-23//EN" uri="files/us-patent-grant-v42-2006-08-23.dtd"/>
+	<!-- USPTO Application v4.2 support modules -->
+	<public publicId="-//USPTO//DTD open-index v1.0 2003-12-08//EN" uri="files/open-index.dtd"/>
+	<public publicId="-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" uri="files/mathml2-qname-1.mod"/>
+	<public publicId="-//W3C//DTD MathML 2.0//EN" uri="files/mathml2.dtd"/>
+	<public publicId="-//USPTO//DTD manifest v1.0 2003-12-08//EN" uri="files/manifest.dtd"/>
+	<public publicId="-//WIPO//ENTITIES WIPO 1.0//EN" uri="files/wipo.ent"/>
+	<public publicId="-//USPTO//DTD ICE SEQLST 1.2//EN" uri="files/us-sequence-listing-2004-03-09.dtd"/>
+	<public publicId="-//USPTO//DTD open-index v1.1 2006-10-17//EN" uri="files/open-index-v1-1-2006-11-09.dtd"/>
+	<!-- shared with Docbook -->
+	<public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN" uri="files/soextblx.dtd"/>
+	<!--End of XML Catalog data for USPTO Red Book -->
+
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/uspto/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/uspto/' rewritePrefix='files/'/>
+</catalog>

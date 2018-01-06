@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexText>
+	<Commands>
+		<Project FileName="Setup.ini" ByteOrderMark="0">
+			<Version/>
+			<RootName Value="Root"/>
+			<Connections>
+				<Connection>
+					<SplitMultiple Mode="DynLS" Behavior="LineStartsWith">
+						<Version/>
+						<Separator Value="["/>
+						<Name Value="Sections"/>
+						<Connections>
+							<Connection>
+								<SplitSingle>
+									<Version/>
+									<Upper Offset="1"/>
+									<Lower/>
+									<Name Value="Split%20once"/>
+									<Connections>
+										<Connection>
+											<SplitSingle Mode="DynF">
+												<Version/>
+												<Separator Value="]"/>
+												<Name Value="Split%20once"/>
+												<Connections>
+													<Connection>
+														<Store Type="string" TrimSide="Left" TrimCharSet="%20[">
+															<Version/>
+															<Name Value="Section%20Name"/>
+															<Connections>
+																<Connection/>
+															</Connections>
+															<XData>
+																<OpenState Property="1" Preview="1" Connector="1"/>
+																<Dimension FullWidth="236" FullHeight="228" TextHeight="70"/>
+															</XData>
+														</Store>
+													</Connection>
+													<Connection>
+														<Store Type="string" TrimSide="Both" TrimCharSet="%20;%0D%0A">
+															<Version/>
+															<Name Value="Section%20Comment"/>
+															<Connections>
+																<Connection/>
+															</Connections>
+															<XData>
+																<OpenState Property="1" Preview="1" Connector="1"/>
+																<Dimension FullWidth="237" FullHeight="228" TextHeight="70"/>
+															</XData>
+														</Store>
+													</Connection>
+												</Connections>
+												<XData>
+													<OpenState Property="1" Preview="1" Connector="1"/>
+													<Dimension FullWidth="211" FullHeight="228" TextHeight="70"/>
+												</XData>
+											</SplitSingle>
+										</Connection>
+										<Connection>
+											<SplitMultiple Mode="Fix" Offset="1">
+												<Version/>
+												<Name Value="Parameters"/>
+												<Connections>
+													<Connection>
+														<SplitSingle Mode="DynF">
+															<Version/>
+															<Separator Value="="/>
+															<Name Value="Split%20once"/>
+															<Connections>
+																<Connection>
+																	<Store Type="string" TrimSide="Both" TrimCharSet="%20">
+																		<Version/>
+																		<Name Value="Parameter%20Name"/>
+																		<Connections>
+																			<Connection/>
+																		</Connections>
+																		<XData>
+																			<OpenState Property="1" Preview="1" Connector="1"/>
+																			<Dimension FullWidth="180" FullHeight="228" TextHeight="70"/>
+																		</XData>
+																	</Store>
+																</Connection>
+																<Connection>
+																	<SplitSingle Mode="DynF">
+																		<Version/>
+																		<Separator Value=";"/>
+																		<Name Value="Split%20once"/>
+																		<Connections>
+																			<Connection>
+																				<Store Type="string" TrimSide="Both" TrimCharSet="%20%09%0D%0A">
+																					<Version/>
+																					<Name Value="Parameter%20Value"/>
+																					<Connections>
+																						<Connection/>
+																					</Connections>
+																					<XData>
+																						<OpenState Property="1" Preview="1" Connector="1"/>
+																						<Dimension FullWidth="238" FullHeight="228" TextHeight="70"/>
+																					</XData>
+																				</Store>
+																			</Connection>
+																			<Connection>
+																				<Store Type="string" TrimSide="Both" TrimCharSet="%20%09%0D%0A">
+																					<Version/>
+																					<Name Value="Comment"/>
+																					<Connections>
+																						<Connection/>
+																					</Connections>
+																					<XData>
+																						<OpenState Property="1" Preview="1" Connector="1"/>
+																						<Dimension FullWidth="333" FullHeight="228" TextHeight="70"/>
+																					</XData>
+																				</Store>
+																			</Connection>
+																		</Connections>
+																		<XData>
+																			<OpenState Property="1" Preview="1" Connector="1"/>
+																			<Dimension FullWidth="182" FullHeight="228" TextHeight="70"/>
+																		</XData>
+																	</SplitSingle>
+																</Connection>
+															</Connections>
+															<XData>
+																<OpenState Property="1" Preview="1" Connector="1"/>
+																<Dimension FullWidth="236" FullHeight="228" TextHeight="70"/>
+															</XData>
+														</SplitSingle>
+													</Connection>
+												</Connections>
+												<XData>
+													<OpenState Property="1" Preview="1" Connector="1"/>
+													<Dimension FullWidth="461" FullHeight="228" TextHeight="151"/>
+												</XData>
+											</SplitMultiple>
+										</Connection>
+									</Connections>
+									<XData>
+										<OpenState Property="1" Preview="1" Connector="1"/>
+										<Dimension FullWidth="471" FullHeight="228" TextHeight="145"/>
+									</XData>
+								</SplitSingle>
+							</Connection>
+						</Connections>
+						<XData>
+							<OpenState Property="1" Preview="1" Connector="1"/>
+							<Dimension FullWidth="424" FullHeight="400" TextHeight="191"/>
+						</XData>
+					</SplitMultiple>
+				</Connection>
+			</Connections>
+			<XData>
+				<OpenState Property="1" Preview="1" Connector="1"/>
+				<Dimension/>
+			</XData>
+		</Project>
+		<Functions/>
+	</Commands>
+</FlexText>

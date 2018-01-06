@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<uri name="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" uri="files/xmldsig-core-schema.xsd"/>
+	<public publicId="http://www.w3.org/2000/09/xmldsig#" uri="files/xmldsig-core-schema.xsd"/>	
+</catalog>

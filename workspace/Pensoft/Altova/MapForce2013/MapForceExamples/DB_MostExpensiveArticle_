@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="11">
+	<component name="defaultmap1" blackbox="0" uid="52418656" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="structure" library="db" uid="52785328" kind="15">
+					<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="CustomersAndArticles.mdb" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view ltx="1" lty="88" rbx="300" rby="317"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="Articles" type="table" expanded="1">
+								<entry name="Number" expanded="1"/>
+								<entry name="SinglePrice" expanded="1"/>
+							</entry>
+							<entry name="MostExpensiveArticle" type="table" outkey="274212160" expanded="1">
+								<entry name="Number" outkey="274212816"/>
+								<entry name="Name" outkey="274213320"/>
+								<entry name="SinglePrice" outkey="274213824"/>
+							</entry>
+						</root>
+						<database>
+							<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" rootobject="CustomersAndArticles" name="CustomersAndArticles" path="CustomersAndArticles">
+								<properties>
+									<property name="Database Kind" value="MS Access"/>
+									<property name="Import Kind" value="ADO"/>
+									<property name="Root Object" value="CustomersAndArticles"/>
+									<property name="Data Source" value="CustomersAndArticles.mdb"/>
+									<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+									<property name="User ID"/>
+									<property name="Password"/>
+									<property name="Persist Security Info" value="false"/>
+									<property name="Jet OLEDB:System Database"/>
+									<property name="Jet OLEDB:Sandbox Mode"/>
+									<property name="Jet OLEDB:Exclusive Async Delay"/>
+									<property name="Jet OLEDB:Flush Transaction Timeout"/>
+									<property name="Jet OLEDB:Implicit Commit Sync"/>
+									<property name="Jet OLEDB:Lock Delay"/>
+									<property name="Jet OLEDB:Lock Retry"/>
+									<property name="Jet OLEDB:Max Buffer Size"/>
+									<property name="Jet OLEDB:Max Locks Per File"/>
+									<property name="Jet OLEDB:Page Locks to Table Lock"/>
+									<property name="Jet OLEDB:Page Timeout"/>
+									<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+									<property name="Jet OLEDB:Shared Async Delay"/>
+									<property name="Jet OLEDB:User Commit Sync"/>
+									<property name="Jet OLEDB:Compact Without Replica Repair"/>
+									<property name="Jet OLEDB:Create System Database"/>
+									<property name="Jet OLEDB:Database Locking Mode"/>
+									<property name="Jet OLEDB:Database Password"/>
+									<property name="Jet OLEDB:New Database Password"/>
+									<property name="Jet OLEDB:Registry Path"/>
+								</properties>
+								<LocalViewStorage>
+									<LocalViewElement SQL="SELECT TOP 1 * FROM Articles ORDER BY SinglePrice DESC">
+										<PathElement Name="CustomersAndArticles" Kind="DataSource"/>
+										<PathElement Name="CustomersAndArticles" Kind="Database"/>
+										<PathElement Name="MostExpensiveArticle" Kind="Select Statement"/>
+									</LocalViewElement>
+								</LocalViewStorage>
+								<LocalRelationsStorage/>
+								<selections>
+									<selection>
+										<PathElement Name="CustomersAndArticles" Kind="DataSource"/>
+										<PathElement Name="CustomersAndArticles" Kind="Database"/>
+										<PathElement Name="Articles" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="CustomersAndArticles" Kind="DataSource"/>
+										<PathElement Name="CustomersAndArticles" Kind="Database"/>
+										<PathElement Name="MostExpensiveArticle" Kind="Select Statement"/>
+									</selection>
+								</selections>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="53603937" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="527" lty="113" rbx="677" rby="313"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Article" inpkey="145364072" expanded="1">
+								<entry name="Number" inpkey="142676048"/>
+								<entry name="Name" inpkey="145365880"/>
+								<entry name="SinglePrice" inpkey="145347512"/>
+							</entry>
+						</root>
+						<document schema="Article.xsd" instanceroot="{}Article"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="274212160">
+						<edges>
+							<edge vertexkey="145364072" edgekey="274221896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="274212816">
+						<edges>
+							<edge vertexkey="142676048" edgekey="274222176"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="274213320">
+						<edges>
+							<edge vertexkey="145365880" edgekey="274222456"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="274213824">
+						<edges>
+							<edge vertexkey="145347512" edgekey="274222736"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

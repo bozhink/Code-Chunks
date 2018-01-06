@@ -1,0 +1,629 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">CompCytogen</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">CompCytogen</journal-title>
+                <abbrev-journal-title xml:lang="en">CompCytoGen</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1993-0771</issn>
+            <issn pub-type="epub">1993-078X</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/CompCytogen.v7i2.4136</article-id>
+            <title-group>
+                <article-title>Heterochromatin variation among the populations of 
+                    <bold-italic>Mus terricolor</bold-italic> Blyth, 1851 (Rodentia, Muridae) chromosome type I
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Rudra</surname>
+                        <given-names>Mahua</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Bahadur</surname>
+                        <given-names>Min</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Genetics and Molecular Biology Laboratory, Department of Zoology, University of North Bengal, Siliguri-734013, West Bengal, India
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Min Bahadur (<email xlink:type="simple">bahadurmin@rediffmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: I. Bakloushinskaya</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>27</day>
+                <month>5</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>7(2)</issue>
+            <fpage>37</fpage>
+            <lpage>49</lpage>
+            <history>
+                <date date-type="received">
+                    <day>6</day>
+                    <month>10</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>9</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Mahua Rudra, Min Bahadur</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Twenty five to thirty specimens each from ten populations of <italic>Mus  terricolor </italic>of the Terai and the Dooars regions of the Darjeeling foothills of West Bengal were cytogenetically analyzed using C-banding. Results showed intra- and inter- population variation of C-band positive heterochromatin ranging from very large blocks to minute amounts or even complete absence of heterochromatin. Large blocks of centromeric C-bands were found in Bidhan Nagar, Garidhura, Malbazar, Nagrakata and Maynaguri populations in most of the autosomes, while the rest of the populations had large blocks of C-bands on a few autosomes only. Such intra- and inter- population variation may be due to accumulation of C-positive heterochromatin, which has not got fixed homogeneously in all autosome pairs. X-chromosomes invariably possess a C-banded short arm a telomeric C-band at the distal end of the long arm in all populations. The entire Y-chromosome was C-band positive with slight population differences in staining intensity. The results suggest quantitative as well as qualitative variation of C-positive heterochromatin.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Heterochromatin</kwd>
+                <kwd>C-banding</kwd>
+                <kwd><italic>Mus terricolor</italic>
+                </kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The earth-colored mouse <italic>Mus terricolor</italic> is a common field mouse of the Indian sub-continent infesting paddy and wheat fields and was known as <italic>Mus dunni </italic>Wroughton, 1912until Musser and Carleton (1993) synonymised it with the former name. This <!--PageBreak--><italic>Mus</italic> species co-exists in the same habitat with the sibling species <italic>Mus booduga</italic> Gray, 1837. Both the species have 2n=40 chromosomes like other species of the subgenus <italic>Mus</italic>. In contrast to all acrocentric chromosomes of <italic>M. booduga</italic>, <italic>M. terricolor </italic>is characterized by a large submetacentric X and a large acrocentric Y chromosome (Matthey and Petter 1968, Sharma and Garg 1975, Markvong et al. 1975, Manjunatha and Aswathanarayana 1979). The short arm of X and the entire Y chromosome are heterochromatic (Sharma et al. 1986, 1990). Compared to the conserved karyotype of <italic>M. booduga</italic> throughout its distribution range, <italic>M. terricolor</italic> shows divergent karyotypes due to a variable number of heterochromatic short arms established in homozygous condition (Sen and Sharma 1983, Sharma et al<italic>.</italic>1986, 1990) which indicates that <italic>M. terricolor</italic> is in an active phase of evolutionary differentiation. Cytogenetic studies by Sharma and his associates revealed that <italic>M. terricolor</italic> is differentiated into three distinct karyotypes (2n = 40) designated as chromosome types I, II and III. Chromosome type I has a wide distribution throughout the subcontinent except the southern peninsular region and has all acrocentric autosomes with C-band positive minute perceptible short arms. Chromosome type II, characterized by two pairs of submetacentric autosomes 1 and 3 with heterochromatic short arms, is found in Mysore and Erode in the peninsular India, while Chromosome type III distributed in Chennai, Tirupati and Madurai is characterized by three pairs of submetacentric autosomes 1, 3 and 6 with heterochromatic short arms.
+            </p>
+            <p>Karyotype differentiation in <italic>Mus terricolor</italic> is due to acquisition of varying amount of constitutive heterochromatin in and around the centromere on specific autosomes. Different studies have been carried out in <italic>M. terricolor</italic> chromosome types and their populations covering vast regions of southern, central and western part of India (Sharma and Garg 1975, Sen and Sharma 1983, Sharma et al. 1986, Sharma 1996) but populations from West Bengal in eastern India were not included. The northern part of West Bengal, characterized by hills (Darjeeling District) and the Terai and the Dooars regions in the foothills, is well known for biodiversity and diverse ecological features.
+            </p>
+            <p>In view of the aforesaid situation, this study has been conducted to know the extent of intra- and inter- population heterochromatin variation in <italic>M. terricolor</italic> chromosome type I from the Terai and the Dooars regions of foothills of Darjeeling in West Bengal.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Materials and methods
+</bold>
+            </title>
+            <sec>
+                <title><bold>Animals
+</bold>
+                </title>
+                <p>The individuals of <italic>M. terricolor</italic> were collected from paddy fields by digging burrows during harvesting season of the crop (November to December) from ten different locations of the Terai and the Dooars of foothills of Darjeeling in West Bengal, India. Three of the collection sites are in the Terai and seven collection sites are in the Dooars. The river Tista separates the Terai and the Dooars as a physical barrier. The name of the collection sites and their provisional geographical coordinates has been shown in <!--PageBreak-->Table 1 along with population name and number of individuals studied from each site. Animals were collected and identified by mitotic chromosome preparation. 25–30 individuals from each population were analyzed for this study. Individuals of <italic>Mus terricolor</italic> are abbreviated for convenience according to their collection localities. In the Terai region these are NXL (Naxalbari), GDH (Garidhura), BDN (Bidhan Nagar), and in the Dooars these are APD (Alipurduar), RBD (Rohimabad), KGM (Kumargram), MNG (Maynaguri), NGK (Nagrakata), MLB (Malbazar) and CBH (Cooch Behar).
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Mitotic Chromosome Preparation
+</bold>
+                </title>
+                <p>Mitotic chromosomes were prepared from bone marrow of colchicine injected mice with hypotonic treatment following air dried method after Lee and Elder (1980) and modified by Baker et al. (1982).
+</p>
+            </sec>
+            <sec>
+                <title><bold>C-Banding
+</bold>
+                </title>
+                <p>C-banding was carried out using the BSG (Barium/Saline/Giemsa) method of Sumner (1972) with slight modifications. Two to three day old slides were treated with 0.2N Hydrochloric acid for 1h at room temperature followed by 2-3 rinses in distilled water. The slides were treated in freshly prepared 5% aqueous solution of Barium hydroxide [Ba(OH)<sub>2.</sub>] at 50°C for about 2-5 minutes, followed by thorough rinsing in distilled water.
+                </p>
+                <p>Slides were dried and incubated for 2 h at 60°C in 2 x SSC, pH 7.2 (0.3M Sodium Chloride containing 0.03 M Tri-Sodium Citrate). SSC treated slides were rinsed in distilled water and stained in 5% Giemsa, buffered with phosphate buffer (pH 6.8) for 20–30 minutes and were differentiated in distilled water, dried and mounted in DPX medium.
+</p>
+                <!--PageBreak-->
+            </sec>
+            <sec>
+                <title><bold>Karyotype preparation
+</bold>
+                </title>
+                <p>A minimum of 10 plates of metaphase spreads were scored for each specimen and karyotypes were prepared from selected metaphase plates. The chromosomes were numbered on the basis of euchromatic long arms as per recommendations of the Committee on Standardized Genetic Nomenclature for mice (1972).
+                </p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <p>All the individuals of <italic>M. terricolor</italic> analyzed from ten populations of the Terai and the Dooars demonstrated the diploid number 2n=40 with all acrocentric autosomes and <!--PageBreak-->a large submetacentric X and a large acrocentric Y chromosomes in the complement as characteristic. No chromosomal polymorphisms like inversion and Robertsonian translocations were observed. Chromosomes prepared from each individual showed C-band staining, however, few metaphases in each slide either did not show C-band staining or has weak stain. Analyzable metaphase spreads always showed C-bands shown in the representative karyotypes from each population (Figs 1–3).
+            </p>
+            <sec>
+                <title><bold>Autosomal heterochromatin variation
+</bold>
+                </title>
+                <p>Differential C-banding revealed extensive heterochromatin variation between and within populations. C-bands were found to be localized in the centromeric region of autosomes throughout the populations varying in size. According to the size of C-bands, the heterochromatin was divided into large blocks, and small to minute C-positive <!--PageBreak-->heterochromatin (Table 2). Results showed that individuals of BDN, GDH, MLB, NGK and MNG had large blocks of centromeric heterochromatin in most of the autosomes (Figs 1b,c, 2d, 3a,b). Moreover, the distribution of C-positive heterochromatin was not found to be homogeneous in all autosome pairs. Each chromosome of such pair was stained differentially. Autosome pair 19 consistently showed a large block of C-positive heterochromatin in almost all populations of the Terai and the Dooars with variation between the homologs of the pair (Figs 1–3). In the individuals of populations GDH, BDN, RBD, MLB, NGK and MNG large blocks of heterochromatin were also observed in chromosome 18, which was fixed in homologous condition. In contrast to other populations, NXL, RBD, APD, KGM and CBH were found to have few <!--PageBreak-->autosomes with prominent large blocks of C-bands (Figs 1a, 2a,b,c, 3c). Interestingly, autosome 16 was found to be C-band negative in <italic>M. terricolor </italic>NXL of the Terai while rest of the autosomes showed moderate to prominent C-bands (Fig. 1a).
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Heterochromatin variation in sex chromosomes
+</bold>
+                </title>
+                <p>The X and Y chromosomes of <italic>M. terricolor </italic>were found to be consistently C-band positive in all populations, however, minute differences were observed in size and intensity of C-bands both at intra- and inter- population level (Table 2, Figs 1–3).
+                </p>
+            </sec>
+            <sec>
+                <title><bold>X chromosome
+</bold>
+                </title>
+                <p>The short arm of X chromosomes in all populations were found to be invariably C-band positive i.e. heterochromatic while the long arms were euchromatic. The telomere of long arms revealed prominent C-band positive staining. In some individuals of NXL and BDN the C-band was found to be localized at two distinct points of short arm of X, so that the short arm was differentiated into faint and darkly stained regions with strong C-band positive distal telomere (Fig. 1a, d). One female <italic>M. terricolor</italic> in GDH population showed interesting result. One of the two X-chromosomes in this specimen was strongly stained at the telomeric end but the other X was totally devoid of C-band positive telomeric staining, while short arm was intensly C-band positive (Fig. 1c).
+                </p>
+                <!--PageBreak-->
+            </sec>
+            <sec>
+                <title><bold>Y chromosome
+</bold>
+                </title>
+                <p>The entire Y chromosome was found to be consistently C-band positive in all populations; however, some differences were noticed in the intensity of banding (Table 2). Faintly stained Y chromosome was observed in NXL, GDH, KGM and MLB populations (Figs 1a, c, 2c and 3a), while rest of the populations revealed intensely stained Y which is the characteristic of the species. Like X chromosomes, the telomeric end of the Y was also found to be C-banded with population differences.
+</p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>The mouse major satellite DNA, largely present as pericentromeric constitutive heterochromatin blocks in all chromosomes except Y, is highly repetitive (Jones 1970, Pardue and Gall 1970, Dev et al. 1973). This region has been found to be highly variable andfast evolving indicating its role in early stages of evolution (Shaw 1994). Constitutive heterochromatin has been shown to be highly polymorphic between and within species of <italic>Mus</italic> (Akeson and Davisson 1991, Forejt 1973, She 1990, Piálek 2005, Mitsainas et al. 2009). The studies on different rodents of the genera <italic>Peromyscus, Mastomys, Oryzomys, Sigmodon, Rattus, Apodemus</italic> and <italic>Mus </italic>revealed a common C-band pattern, i.e. large sized centromeric C-bands in the autosomes and X- chromosomes, and a completely heterochromatic small Y-chromosome (Modi 1987 and references there in).
+            </p>
+            <p><italic>Mus terricolor</italic> is an actively speciating incipient species complex in which constitutive heterochromatin is playing a major role in karyotype differentiation (Sen and Sharma 1983, Sharma et al<italic>.</italic> 1986, 1990, Bahadur 1995). Variation in autosomal C-positive heterochromatin in the range of populations studied, suggest that <italic>M. terricolor</italic> is in a dynamic state of speciation. Variation and accumulation of heterochromatin have been shown in rodents by many workers. They have agreed that the accumulation of C-heterochromatin represents a recently evolved trait in rodents (Baverstock et al. 1976, Greenbaum and Baker 1978, Gamperl 1982a, Gamperl et al. 1982, Sen and Sharma1983, Qumsiyeh et al. 1988, Gallardo 1991). C-band polymorphisms in terms of size variation in wild derived inbred strains of mice have also been reported by Akeson and Davisson (1991). In our study the presence of population specific and/ or chromosome specific large blocks of C-bands, either in homozygous or in heterozygous condition suggest an increase or accumulation of C-positive heterochromatin which is consistent with above findings.
+            </p>
+            <p>C-band polymorphism in X chromosomes of <italic>M. terricolor</italic> populations revealed interesting features. Two discrete heterochromatic blocks on short arms of X chromosomes in NXL and BDN (Fig. 1a, d) suggest segmental localization of heterochromatin. Balajee and Sharma (1994) have also shown the same result in <italic>M.</italic> <italic>terricolor </italic>by digesting the metaphase chromosomes with <italic>Alu</italic>I and staining with Giemsa which produces C-band like features.
+            </p>
+            <p><!--PageBreak-->The large size of the Y chromosome in <italic>M. terricolor</italic> is due to accumulation of C-positive heterochromatin (Sharma 1996) which shows population wise variation in banding intensity. In our study the cause of staining differentiation is not clear, though C-band polymorphism and apparent absence of C-positive chromatin in the Y chromosome has been shown in different species of rodents (<italic>Phenacomys intermedius </italic>Merriam, 1889, <italic>Microtus</italic> <italic>californicus </italic>Peale, 1848, <italic>Microtus orchogaster</italic> Schreber, 1842, <italic>Clethrionomys californicus</italic> Merriam, 1890 and <italic>Microtus oregoni </italic>Bachman, 1839, <italic>Microtus arvalis </italic>Pallas, 1778) by different workers (Zenzes and Voiculescu 1975, Gamperl 1982a,b, Vorontsov et al. 1984, Modi 1987) which suggests compositional heterogeneity of heterochromatin (Peacock et al. 1981, Patton and Sherwood 1982, Gallardo 1992) or unusual DNA sequences with different staining properties. (John and Miklos 1979, Peacock et al. 1981).
+            </p>
+            <p>Populations of <italic>M. terricolor </italic>showed prominent telomeric C-band on the long arm of X and also on acrocentric Y, but telomeric C-bands were not observed in autosomes in any population. Large prominent autosomal telomeric C-bands have been shown in the common wood mouse, <italic>Sylvaemus sylvaticus</italic> Linnaeus, 1758 by Nadjafova et al. (1993) and Nadjafova (2008) who implicated its role in differentiation of the species. The evolution of telomeric heterochromatin has been suggested to occur due to transposition and amplification of the centromeric satellite component (Hirning et al. 1989) in case of <italic>Sylvaemus sylvaticus</italic>. The situation in <italic>M. terricolor</italic> needs to be intensively investigated for conclusive inferences.
+            </p>
+            <p>Intra- and inter-specific karyotype evolution involving heterochromatin has been studied and discussed in many species but the evolutionary significance of heterochromatin is not established due to simultaneous involvement of chromosomal rearrangements, like inversions and Robertsonian translocations (Duffey 1972, Bradshaw and Hsu 1972, Pathak et al. 1973, Robbins and Baker 1981, Patton and Sherwood 1982, Davis et al. 1985, Modi 1987). However, evolutionary classification of the European wood mice of the subgenus <italic>Sylvaemus</italic> and genus <italic>Apodemus </italic>is based on chromosomal markers, like species specific C-positive heterochromatin (Orlov et al. 1996, Nadjafova 2008). Comparative FISH analysis of C–positive blocks of centromeric heterochromatin in different species of wood mice, <italic>Sylvaemus </italic>(Rubtsov et al. 2011) and three chromosomal forms of <italic>Sylvaemus uralensis </italic>Pallas, 1811 (Karamysheva et al. 2010) revealed variation in copy number and the level of homology of repetitive sequences as well as their localization. In the present study overall centromeric heterochromatin variation in size and intensity of bands in autosomes and heterochromosomes in <italic>M</italic>. <italic>terricolor </italic>populations is also suggestive of quantitative as well as qualitative variation. Chatterjee et al. (2003) have commented on the basis of their southern hybridization experiments that <italic>M. terricolor</italic> types differ in satellite DNA organization from that of <italic>Mus musculus</italic> Linnaeus, 1758, an allied species, and<italic> Mus booduga</italic>, the sibling species.
+            </p>
+            <p>It can be concluded that very large to minute C-bands and even absence of C-bands in centromere of autosomes within and between populations of <italic>M. terricolor </italic>indicates presence of differential amount of heterochromatin which might have evolved by non-reciprocal DNA turnover mechanisms in wild populations that has also been suggested by many workers (Dover 1982, Redi et al. 1990), however, this needs more extensive studies.
+            </p>
+            <!--PageBreak-->
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>This work has been supported by the Department of Zoology, University of North Bengal. The authors gratefully acknowledge Professor Ananda Mukhopadhyay, Department of Zoology, University of North Bengal for his valuable comments and suggestions on the language of manuscript. Authors also acknowledge Mr. Premananda Roy, Head, Chathat High School, Siliguri, District Darjeeling who has kindly read the manuscript and made valuable suggestions.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Akeson</surname> <given-names>EC</given-names></name>,<name name-style="western"><surname>Davisson</surname> <given-names>MT</given-names></name></person-group> (<year>1991</year>)<article-title> C-band polymorphisms in exotic inbred strains of mice: a method for mapping centromeric ends of chromosomes.</article-title> <source>Cytogenetic and Genome Research </source> <volume>57</volume>: <fpage>217</fpage>-<lpage>220</lpage>. doi: 10.1159/000133151
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bachman</surname> <given-names>J</given-names></name></person-group> (<year>1839</year>)<article-title> Description of several new species of American quadrupeds.</article-title> <source>Journal of the Academy of Natural Sciences of Philadelphia </source> <volume>8</volume> (<issue>1</issue>): <fpage>57</fpage>-<lpage>74</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bahadur</surname> <given-names>M</given-names></name></person-group> (<year>1995</year>)<fake_tag> Study on evolutionary divergence in the Indian pygmy field mice. Ph.D. Thesis. Department of Zoology. Banaras Hindu University, 1–78.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Baker</surname> <given-names>RJ</given-names></name>,<name name-style="western"><surname>Haiduk</surname> <given-names>MW</given-names></name>,<name name-style="western"><surname>Robbins</surname> <given-names>LW</given-names></name>,<name name-style="western"><surname>Cad-ena</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Koop</surname> <given-names>BF</given-names></name></person-group> (<year>1982</year>)<article-title> Chromosomal studies of South American bats and their systematic implications.</article-title> In: <person-group1><name name-style="western"><surname>Mares</surname> <given-names>MA</given-names></name>,<name name-style="western"><surname>Genoways</surname> <given-names>HH</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Mammalian Biology in South America.</issue-title> <source>Pymatuning Lab Ecol., Univ. Pittsburgh, Pittsburgh, PA</source>: <fpage>303</fpage>-<lpage>327</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Balajee</surname> <given-names>AS</given-names></name>,<name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name></person-group> (<year>1994</year>)<article-title> The chromosomal distribution of <italic>Mus musculus</italic>-like AT-rich heterochromatin in the <italic>M. dunni</italic> complex as revealed by Alu I digestion of metaphase chromosomes.</article-title> <source>Cytogenetic and Genome Research </source> <volume>66</volume>: <fpage>89</fpage>-<lpage>92</lpage>. doi: 10.1159/000133673
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Baverstock</surname> <given-names>PR</given-names></name>,<name name-style="western"><surname>Watts</surname> <given-names>CH</given-names></name>,<name name-style="western"><surname>Hogarth</surname> <given-names>JT</given-names></name></person-group> (<year>1976</year>)<article-title> Heterochromatin variation in the Australian rodent <italic>Uromys caudimaculatus</italic>.</article-title> <source>Chromosoma (Berlin) </source> <volume>57</volume>: <fpage>397</fpage>-<lpage>403</lpage>. doi: 10.1007/BF00332163
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blyth</surname> <given-names>E</given-names></name></person-group> (<year>1851</year>)<fake_tag> Report on the mammalia and more remarkable birds inhabiting Ceylon. Journalof the Asiatic Society of Bengal 20 (2, NS XLV, Issue II): 20, 153–185.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bradshaw</surname> <given-names>WN</given-names></name>,<name name-style="western"><surname>Hsu</surname> <given-names>TC</given-names></name></person-group> (<year>1972</year>)<article-title> Chromosomes of <italic>Peromyscus</italic> (Rodentia, Cricetidae) III. Polymorphism in <italic>Peromyscus maniculatus</italic>.</article-title> <source>Cytogenetics </source> <volume>11</volume>: <fpage>436</fpage>-<lpage>451</lpage>. doi: 10.1159/000130209
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Chatterjee</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Bahadur</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Srivastava</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name></person-group> (<year>2003</year>)<article-title> Differential organization of a LINE–1 family in Indian pygmy field mice.</article-title> <source>Indian Journal of Experimental biology </source> <volume>41</volume>: <fpage>53</fpage>-<lpage>57</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Committee</surname> <given-names>on Standardized Genetic Nomenclature of Mice</given-names></name></person-group> (<year>1972</year>)<article-title> Standard Karyotype of the mouse, <italic>Mus musculus</italic>.</article-title> <source>Journal of Heredity </source> <volume>63</volume>: <fpage>69</fpage>-<lpage>72</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Davis</surname> <given-names>KM</given-names></name>,<name name-style="western"><surname>Smith</surname> <given-names>AS</given-names></name>,<name name-style="western"><surname>Greenbaum</surname> <given-names>IF</given-names></name></person-group> (<year>1985</year>)<article-title> Evolutionary implications of chromosomal polymorphisms in <italic>Peromyscus boylii</italic> from southwestern Mexico.</article-title> <source>Evolution </source> <volume>40</volume>: <fpage>645</fpage>-<lpage>649</lpage>. doi: 10.2307/2408587
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dev</surname> <given-names>VG</given-names></name>,<name name-style="western"><surname>Miller</surname> <given-names>DA</given-names></name>,<name name-style="western"><surname>Miller</surname> <given-names>OJ</given-names></name></person-group> (<year>1973</year>)<article-title> Chromosome markers in <italic>Mus musculus</italic> strain differences in C-banding.</article-title> <source>Genetics </source> <volume>75</volume>: <fpage>663</fpage>-<lpage>670</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dover</surname> <given-names>G</given-names></name></person-group> (<year>1982</year>)<article-title> Molecular drive: a cohesive mode of species evolution.</article-title> <source>Nature </source> <volume>299</volume>: <fpage>111</fpage>-<lpage>117</lpage>. doi: 10.1038/299111a0
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Duffey</surname> <given-names>PA</given-names></name></person-group> (<year>1972</year>)<article-title> Chromosome variation in <italic>Peromyscus</italic>: a new mechanism.</article-title> <source>Science </source> <volume>176</volume>: <fpage>1333</fpage>-<lpage>1334</lpage>. doi: 10.1126/science.176.4041.1333
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Forejt</surname> <given-names>J</given-names></name></person-group> (<year>1973</year>)<article-title> Centromeric heterochromatin polymorphism in the house mouse.</article-title> <source>Chromosoma (Berlin) </source> <volume>43</volume>: <fpage>187</fpage>-<lpage>201</lpage>. doi: 10.1007/BF00483378
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gallardo</surname> <given-names>MH</given-names></name></person-group> (<year>1991</year>)<article-title> Karyotypic evolution in <italic>Ctenomys</italic> (Rodentia: Ctenomyidae).</article-title> <source>Journal of Mammalogy </source> <volume>72</volume>: <fpage>11</fpage>-<lpage>21</lpage>. doi: 10.2307/1381976
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gallardo</surname> <given-names>MH</given-names></name></person-group> (<year>1992</year>)<article-title> Karyotypic evolution in Octodontid rodents based on C-band analysis.</article-title> <source>Journal of Mammalogy </source> <volume>73</volume>: <fpage>89</fpage>-<lpage>98</lpage>. doi: 10.2307/1381869
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gamperl</surname> <given-names>R</given-names></name></person-group> (<year>1982a</year>)<article-title> Chromosomal evolution in the genus <italic>Clethrinomys</italic>.</article-title> <source>Genetica (Neatherlands) </source> <volume>57</volume>: <fpage>193</fpage>-<lpage>197</lpage>. doi: 10.1007/BF00056482
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gamperl</surname> <given-names>R</given-names></name></person-group> (<year>1982b</year>)<article-title> Die Chromosomen von Microtus arvalis (Rodentia, Microtinae).</article-title> <source>Zeitschrift fur Saugetierkunde </source> <volume>47</volume>: <fpage>356</fpage>-<lpage>363</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gamperl</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Ehmann</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Bachmann</surname> <given-names>K</given-names></name></person-group> (<year>1982</year>)<article-title> Genome size and heterochromatin variation in rodents.</article-title> <source>Genetica </source> <volume>58</volume>: <fpage>199</fpage>-<lpage>212</lpage>. doi: 10.1007/BF00128014
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gray</surname> <given-names>JE</given-names></name></person-group> (<year>1837</year>)<article-title> Description of some new or little known Mammalia principally in the British Museum collection.</article-title> <source>Magazine of Natural History </source> <volume>1</volume>: <fpage>577</fpage>-<lpage>587</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Greenbaum</surname> <given-names>IF</given-names></name>,<name name-style="western"><surname>Baker</surname> <given-names>RJ</given-names></name></person-group> (<year>1978</year>)<article-title> Determination of primitive karyotype for <italic>Peromyscus</italic>.</article-title> <source>Journal of Mammalogy </source> <volume>59</volume>: <fpage>820</fpage>-<lpage>834</lpage>. doi: 10.2307/1380146
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hirning</surname> <given-names>U</given-names></name>,<name name-style="western"><surname>Schulz</surname> <given-names>WA</given-names></name>,<name name-style="western"><surname>Just</surname> <given-names>W</given-names></name>,<name name-style="western"><surname>Adolph</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Vogel</surname> <given-names>W</given-names></name></person-group> (<year>1989</year>)<article-title> A comparative study of the heterochromatin of <italic>Apodemus sylvaticus</italic> and <italic>Apodemus flavicollis</italic>.</article-title> <source>Chromosoma (Berlin) </source> <volume>98</volume>: <fpage>450</fpage>-<lpage>455</lpage>. doi: 10.1007/BF00292791
+</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>John</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Miklos</surname> <given-names>GLG</given-names></name></person-group> (<year>1979</year>)<fake_tag> Functional aspects of satellite DNA and heterochromatin. In: Bourne GH, Danielli JF (Eds) International Review of Cytology. Academic Press, 58: 1–114.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jones</surname> <given-names>KW</given-names></name></person-group> (<year>1970</year>)<article-title> Chromosomal and nuclear location of mouse satellite DNA in individual cells.</article-title> <source>Nature </source> <volume>225</volume>: <fpage>912</fpage>-<lpage>915</lpage>. doi: 10.1038/225912a0
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Karamysheva</surname> <given-names>TV</given-names></name>,<name name-style="western"><surname>Bogdanov</surname> <given-names>AS</given-names></name>,<name name-style="western"><surname>Kartavtseva</surname> <given-names>IV</given-names></name>,<name name-style="western"><surname>Likhoshvay</surname> <given-names>TV</given-names></name>,<name name-style="western"><surname>Bochkarev</surname> <given-names>MN</given-names></name>,<name name-style="western"><surname>Kolcheva</surname> <given-names>NE</given-names></name>,<name name-style="western"><surname>Marochkina</surname> <given-names>VV</given-names></name>,<name name-style="western"><surname>Rubtsov</surname> <given-names>NB</given-names></name></person-group> (<year>2010</year>)<article-title> Comparative FISH analysis of C-positive blocks of centromeric chromosomal regions of Pygmy Wood Mice <italic>Sylvaemus uralensis </italic>(Rodentia, Muridae).</article-title> <source>Russian Journal of Genetics </source> <volume>46</volume>: <fpage>712</fpage>-<lpage>724</lpage>. doi: 10.1134/S1022795410060128
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lee</surname> <given-names>MR</given-names></name>,<name name-style="western"><surname>Elder</surname> <given-names>FFB</given-names></name></person-group> (<year>1980</year>)<article-title> Yeast stimulation of bone marrow mitoses for cytogenetic investigations.</article-title> <source>Cytogenetics and Cell Genetics </source> <volume>26</volume>: <fpage>36</fpage>-<lpage>40</lpage>. doi: 10.1159/000131419
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Manjunatha</surname> <given-names>KA</given-names></name>,<name name-style="western"><surname>Aswathanarayana</surname> <given-names>NV</given-names></name></person-group> (<year>1979</year>)<article-title> Studies on the chromosomes of the genus <italic>Mus</italic>: Autosomal polymorphism in the Indian pygmy mouse <italic>Mus dunni</italic> (Wroughton).</article-title> <source>Current Science </source> <volume>48</volume>: <fpage>657</fpage>-<lpage>659</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Markvong</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Marshall</surname> <given-names>JT</given-names></name>,<name name-style="western"><surname>Pathak</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Hsu</surname> <given-names>TC</given-names></name></person-group> (<year>1975</year>)<article-title> Chromosomes and DNA of <italic>Mus</italic>: the karyotype of <italic>M. fulvidiventris </italic>and <italic>Mus dunni</italic>.</article-title> <source>Cytogenetics and Cell Genetics </source> <volume>14</volume>: <fpage>116</fpage>-<lpage>125</lpage>. doi: 10.1159/000130331
+</mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Matthey</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Petter</surname> <given-names>F</given-names></name></person-group> (<year>1968</year>)<article-title> Existence de deux especes distinctes, l’une chromosomiquement polymorphe chez der <italic>Mus indiens</italic> du groupe <italic>boodug</italic>a. Etude cytogenetique et taxonomique.</article-title> <source>Reviue Suisse de Zoologie </source> <volume>75</volume>: <fpage>461</fpage>-<lpage>498</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Merriam</surname> <given-names>CH</given-names></name></person-group> (<year>1889</year>)<article-title> Description of a new genus <italic>Phenacomys</italic> and four new species of <italic>Arvicolinae</italic>.</article-title> <source>North American Fauna </source> <volume>2</volume>: <fpage>27</fpage>-<lpage>45</lpage>. doi: 10.3996/nafa.2.0009
+</mixed-citation>
+            </ref>
+            <ref id="32"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Merriam</surname> <given-names>CH</given-names></name></person-group> (<year>1890</year>)<article-title> Descriptions of twenty-six new species of North American mammals.</article-title> <source>North American Fauna </source> <volume>4</volume>: <fpage>1</fpage>-<lpage>60</lpage>. doi: 10.3996/nafa.4.0001
+</mixed-citation>
+            </ref>
+            <ref id="33"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mitsainas</surname> <given-names>GP</given-names></name>,<name name-style="western"><surname>Rovatsos</surname> <given-names>MT</given-names></name>,<name name-style="western"><surname>Giagia-Athanasopoulou</surname> <given-names>EB</given-names></name></person-group> (<year>2009</year>)<article-title> The HSR and heterochromatin distribution in natural populations of <italic>Mus musculus domesticus</italic> (Rodentia: Murinae) from Greece.</article-title> <source>Caryologia </source> <volume>62</volume>: <fpage>53</fpage>-<lpage>61</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="34"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Modi</surname> <given-names>WS</given-names></name></person-group> (<year>1987</year>)<article-title> C-banding analyses and the evolution of heterochromatin among arvicolid rodents.</article-title> <source>Journal of Mammalogy </source> <volume>68</volume>: <fpage>704</fpage>-<lpage>714</lpage>. doi: 10.2307/1381612
+</mixed-citation>
+            </ref>
+            <ref id="35"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Musser</surname> <given-names>GG</given-names></name>,<name name-style="western"><surname>Carleton</surname> <given-names>MD</given-names></name></person-group> (<year>1993</year>)<article-title> Family Muridae.</article-title> In: <person-group1><name name-style="western"><surname>Wilson</surname> <given-names>DE</given-names></name>,<name name-style="western"><surname>Reeder</surname> <given-names>DM</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Mammal species of the world: A taxonomic and geographic reference, 2<sup>nd</sup> edition.</issue-title> <source>Washington, DC: Smithsonian Instititution</source>: <fpage>501</fpage>-<lpage>756</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="36"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Nadjafova</surname> <given-names>RS</given-names></name></person-group> (<year>2008</year>)<article-title> Cytogenetic recognition of the common wood mouse, <italic>Sylvaemus sylvaticus</italic> s.1. (Mammals: Rodentia: Muridae) in European Russia.</article-title> <source>Comparative Cytogenetics </source> <volume>2</volume>: <fpage>1</fpage>-<lpage>6</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="37"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Nadjafova</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Bulatova</surname> <given-names>NSh</given-names></name>,<name name-style="western"><surname>Chasovlikarova</surname> <given-names>Z</given-names></name>,<name name-style="western"><surname>Gerassimov</surname> <given-names>S</given-names></name></person-group> (<year>1993</year>)<article-title> Karyological differences between two <italic>Apodemus</italic> species in Bulgaria.</article-title> <source>Zeitschrift für Säugetierkunde </source> <volume>58</volume>: <fpage>232</fpage>-<lpage>239</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="38"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Orlov</surname> <given-names>VN</given-names></name>,<name name-style="western"><surname>Kozlovsky</surname> <given-names>AI</given-names></name>,<name name-style="western"><surname>Nadjafova</surname> <given-names>RS</given-names></name>,<name name-style="western"><surname>Bulatova</surname> <given-names>NS</given-names></name></person-group> (<year>1996</year>)<fake_tag> Karyological diagnoses, distribution and evolutionary classification of wood mice of the subgenus <italic>Sylvaemus </italic>(Apodemus, Muridae, and Rodentia) in Europe. Zoologichesky Zhurnal 75: 88–102. (In Russian).
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="39"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pardue</surname> <given-names>ML</given-names></name>,<name name-style="western"><surname>Gall</surname> <given-names>JG</given-names></name></person-group> (<year>1970</year>)<article-title> Chromosomal localization of mouse satellite DNA.</article-title> <source>Science </source> <volume>168</volume>: <fpage>1356</fpage>-<lpage>1358</lpage>. doi: 10.1126/science.168.3937.1356</mixed-citation>
+            </ref>
+            <ref id="40"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Peale</surname> <given-names>TR</given-names></name></person-group> (<year>1848</year>)<article-title> U.S. exploring expeditions 1838, 1839, 1840, 1841, 1842 under the command of Charles Wilkes, U.S.N. Mammalogy and Ornithology (Asherman and Co.</article-title> <source>, Philadelphia) </source> <volume>8</volume>: <fpage>1</fpage>-<lpage>338</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="41"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pathak</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Hsu</surname> <given-names>TC</given-names></name>,<name name-style="western"><surname>Arrighi</surname> <given-names>FE</given-names></name></person-group> (<year>1973</year>)<fake_tag> Chromosomes of <italic>Peromyscus</italic> (<italic>Rodentia, Cricetidae</italic>). IV. The role of heterochromatin in karyotypic evolution. Cytogenetics and Cell Genetics 12: 315–326. </fake_tag>doi: 10.1159/000130470
+</mixed-citation>
+            </ref>
+            <ref id="42"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Patton</surname> <given-names>JL</given-names></name>,<name name-style="western"><surname>Sherwood</surname> <given-names>SW</given-names></name></person-group> (<year>1982</year>)<article-title> Genome evolution in (genus <italic>Thomomys</italic>): I. Heterochromatin variation and speciation potential.</article-title> <source>Chromosoma </source> <volume>85</volume>: <fpage>149</fpage>-<lpage>162</lpage>. doi: 10.1007/BF00294962
+</mixed-citation>
+            </ref>
+            <ref id="43"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Peacock</surname> <given-names>WJ</given-names></name>,<name name-style="western"><surname>Dennis</surname> <given-names>ES</given-names></name>,<name name-style="western"><surname>Hilliker</surname> <given-names>AJ</given-names></name>,<name name-style="western"><surname>Pryor</surname> <given-names>AJ</given-names></name></person-group> (<year>1981</year>)<article-title> Differentiation of heterochromatin.</article-title> In: <person-group1><name name-style="western"><surname>Atchley</surname> <given-names>WR</given-names></name>,<name name-style="western"><surname>Woodruff</surname> <given-names>DS</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Evolution and speciation.</issue-title> <source>Cambridge University Press, Cambridge</source>: <fpage>78</fpage>-<lpage>100</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="44"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Piálek</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Hauffe</surname> <given-names>HC</given-names></name>,<name name-style="western"><surname>Searle</surname> <given-names>JB</given-names></name></person-group> (<year>2005</year>)<article-title> Chromosomal variation in the house mouse: a review.</article-title> <source>Biological Journal of the Linnean Society </source> <volume>84</volume>: <fpage>535</fpage>-<lpage>563</lpage>. doi: 10.1111/j.1095-8312.2005.00454.x
+</mixed-citation>
+            </ref>
+            <ref id="45"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Qumsiyeh</surname> <given-names>MB</given-names></name>,<name name-style="western"><surname>Sanchez-Hernandez</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Davis</surname> <given-names>SK</given-names></name>,<name name-style="western"><surname>Patton</surname> <given-names>JC</given-names></name>,<name name-style="western"><surname>Baker</surname> <given-names>RJ</given-names></name></person-group> (<year>1988</year>)<article-title> Chromosomal evolution in <italic>Geomys </italic>as revealed by G- and C-band analysis. The Southwestern Naturalist.</article-title> <source> </source> <volume>33</volume>: <fpage>1</fpage>-<lpage>13</lpage>. doi: 10.2307/3672082
+</mixed-citation>
+            </ref>
+            <ref id="46"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Redi</surname> <given-names>CA</given-names></name>,<name name-style="western"><surname>Garagna</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Zuccotti</surname> <given-names>M</given-names></name></person-group> (<year>1990</year>)<article-title> Robertsonian chromosome formation and fixation: The genomic scenario.</article-title> In: <person-group1><name name-style="western"><surname>Berry</surname> <given-names>RJ</given-names></name>,<name name-style="western"><surname>Corti</surname> <given-names>M</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Inherited Variation and Evolution in the House Mouse.</issue-title> <source>Academic Press, New York-London</source>: <fpage>235</fpage>-<lpage>255</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="47"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Robbins</surname> <given-names>LW</given-names></name>,<name name-style="western"><surname>Baker</surname> <given-names>RJ</given-names></name></person-group> (<year>1981</year>)<fake_tag> An assessment of the nature of chromosomal rearrangements in 18 species of <italic>Peromyscus</italic> (Rodentia: Cricetidae). Cytogenetics and Cell Genetics 31: 194–202. </fake_tag>doi: 10.1159/000131649
+</mixed-citation>
+            </ref>
+            <ref id="48"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Rubtsov</surname> <given-names>NB</given-names></name>,<name name-style="western"><surname>Karamysheva</surname> <given-names>TV</given-names></name>,<name name-style="western"><surname>Bogdanov</surname> <given-names>AS</given-names></name>,<name name-style="western"><surname>Likhoshvay</surname> <given-names>TV</given-names></name>,<name name-style="western"><surname>Kartavtseva</surname> <given-names>IV</given-names></name></person-group> (<year>2011</year>)<fake_tag> Comparative FISH analysis of C_positive regions of chromosomes of Wood Mice (Rodentia, Muridae, <italic>Sylvaemus</italic>). Russian Journal of Genetics 47: 1096–1110. 10.1134/S1022795411090158
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="49"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sen</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name></person-group> (<year>1983</year>)<article-title> Role of constitutive heterochromatin in evolutionary divergence: results of chromosome banding and condensation inhibition studies in <italic>Mus musculus, Mus booduga</italic> and <italic>Mus dunni</italic>.</article-title> <source>Evolution </source> <volume>37</volume>: <fpage>628</fpage>-<lpage>636</lpage>. doi: 10.2307/2408275
+</mixed-citation>
+            </ref>
+            <ref id="50"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name></person-group> (<year>1996</year>)<article-title></article-title> <source>Genetica </source> <volume>97</volume>: <fpage>331</fpage>-<lpage>338</lpage>. doi: 10.1007/BF00055319
+</mixed-citation>
+            </ref>
+            <ref id="51"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Balajee</surname> <given-names>AS</given-names></name>,<name name-style="western"><surname>Cheong</surname> <given-names>N</given-names></name></person-group> (<year>1990</year>)<article-title> Chromosomal speciation: constitutive heterochromatin and evolutionary differentiation of the Indian pygmy field mice.</article-title> In: <person-group1><name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name></person-group1> (<role>Eds</role>). <issue-title></issue-title> <source>Narosa, New Delhi &amp; Springer Verlag</source>: <fpage>265</fpage>-<lpage>283</lpage>. doi: 10.1007/978-3-662-10621-1_18
+</mixed-citation>
+            </ref>
+            <ref id="52"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Cheong</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Sen</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Sen</surname> <given-names>S</given-names></name></person-group> (<year>1986</year>)<article-title> Constitutive heterochromatin and evolutionary divergence of <italic>Mus dunni</italic>,<italic> M. booduga </italic>and<italic> M. musculus</italic>.</article-title> <source>Current topics in Microbiology and Immunology </source> <volume>127</volume>: <fpage>35</fpage>-<lpage>44</lpage>. doi: 10.1007/978-3-642-71304-0_4
+</mixed-citation>
+            </ref>
+            <ref id="53"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sharma</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Garg</surname> <given-names>GS</given-names></name></person-group> (<year>1975</year>)<article-title> Constitutive heterochromatin and karyotype variation in Indian pygmy mouse, <italic>Mus dunni</italic>.</article-title> <source>Genetical Research </source> <volume>25</volume>: <fpage>189</fpage>-<lpage>191</lpage>. doi: 10.1017/S0016672300015585
+</mixed-citation>
+            </ref>
+            <ref id="54"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shaw</surname> <given-names>DD</given-names></name></person-group> (<year>1994</year>)<article-title> Centromeres: moving chromosomes through space and time.</article-title> <source>Trends in Ecology and Evolution </source> <volume>9</volume>: <fpage>170</fpage>-<lpage>175</lpage>. doi: 10.1016/0169-5347(94)90080-9
+</mixed-citation>
+            </ref>
+            <ref id="55"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>She</surname> <given-names>JX</given-names></name>,<name name-style="western"><surname>Bonhomme</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Boursot</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Thaler</surname> <given-names>L</given-names></name>,<name name-style="western"><surname>Catzeflis</surname> <given-names>F</given-names></name></person-group> (<year>1990</year>)<article-title> Molecular phylogenies in the genus <italic>Mus</italic>: comparative analysis of electrophoretic scnDNA hybridisation and mtDNA RFLP data.</article-title> <source>Biological Journal of the Linnean Society </source> <volume>41</volume>: <fpage>83</fpage>-<lpage>103</lpage>. doi: 10.1111/j.1095-8312.1990.tb00823.x
+</mixed-citation>
+            </ref>
+            <ref id="56"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sumner</surname> <given-names>AT</given-names></name></person-group> (<year>1972</year>)<article-title> A simple technique for demonstrating centromeric heterochromatin.</article-title> <source>Experimental Cell Research </source> <volume>75</volume>: <fpage>305</fpage>-<lpage>306</lpage>. doi: 10.1016/0014-4827(72)90558-7
+</mixed-citation>
+            </ref>
+            <ref id="57"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Vorontsov</surname> <given-names>NN</given-names></name>,<name name-style="western"><surname>Lyapunova</surname> <given-names>EA</given-names></name>,<name name-style="western"><surname>Belianin</surname> <given-names>AN</given-names></name>,<name name-style="western"><surname>Kral</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Frisman</surname> <given-names>LV</given-names></name>,<name name-style="western"><surname>Ivnitskii</surname> <given-names>SB</given-names></name>,<name name-style="western"><surname>Yanina</surname> <given-names>IIu</given-names></name></person-group> (<year>1984</year>)<article-title>. Sravnitel’no-geneticheskie metody diagnostiki i otsenki stepeni divergentsii vidov-dvoinikov obyknovennykh polevok <italic>Microtus arvalis</italic> i <italic>M. epiroticus</italic>.</article-title> <source>Zoologichesky Zhurnal </source> <volume>63</volume>: <fpage>1555</fpage>-<lpage>1561</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="58"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zenzes</surname> <given-names>MT</given-names></name>,<name name-style="western"><surname>Voiculescu</surname> <given-names>I</given-names></name></person-group> (<year>1975</year>)<article-title> Heterochromatin (C-bands) in somatic and male germ cells in three species of <italic>Microtinae</italic>.</article-title> <source>Genetica </source> <volume>45</volume>: <fpage>263</fpage>-<lpage>272</lpage>. doi: 10.1007/BF01517202</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> Populations, collection sites, geographical coordinates and number of studied individuals of <italic>M. terricolor.</italic>&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="1" bodyRowCount="12" columnCount="4" aid:table="table" aid:trows="13" aid:tcols="4">
+                <tbody>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Populations </bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Collection sites </bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Geographical coordinates </bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>No. of specimens </bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>Terai region</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">NXL</td>
+                        <td rowspan="1" colspan="1">Naxalbari</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>41'00&quot;N / 88°<sup> </sup>13'00&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">30</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">GDH</td>
+                        <td rowspan="1" colspan="1">Garidhura</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>48'24&quot;N / 88°<sup> </sup>16'38&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">28</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">BDN</td>
+                        <td rowspan="1" colspan="1">Bidhan Nagar</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>16'00&quot;N / 88°<sup> </sup>12'00&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">28</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"><bold>Dooars region</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"></td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">APD</td>
+                        <td rowspan="1" colspan="1">Alipurduar</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>31'21&quot;N / 89°<sup> </sup>32'37&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">25</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">RBD</td>
+                        <td rowspan="1" colspan="1">Rohimabad</td>
+                        <td rowspan="1" colspan="1">27°<sup> </sup>54'00&quot;N / 80°<sup> </sup>30'05&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">27</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">KGM</td>
+                        <td rowspan="1" colspan="1">Kumargram</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>36'50&quot;N / 89°<sup> </sup>49'30&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">29</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">MNG</td>
+                        <td rowspan="1" colspan="1">Maynaguri </td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>33'07&quot;N / 88°<sup> </sup>49'26&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">25</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">NGK</td>
+                        <td rowspan="1" colspan="1">Nagrakata</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>54'00&quot;N / 88°<sup> </sup>50'00&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">29</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">MLB</td>
+                        <td rowspan="1" colspan="1">Malbazar</td>
+                        <td rowspan="1" colspan="1">27°<sup> </sup>01'00&quot;N / 89°<sup> </sup>20'17&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">30</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">CBH</td>
+                        <td rowspan="1" colspan="1">Cooch Behar</td>
+                        <td rowspan="1" colspan="1">26°<sup> </sup>32'05&quot;N / 89°<sup> </sup>07'12&quot;E
+                        </td>
+                        <td rowspan="1" colspan="1">26</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p>C-banded karyotypes of <italic>M. terricolor </italic>type I from Terai populations. <bold>a</bold> NXL <bold>b</bold> BDN <bold>c</bold> GDH population <bold>d</bold> segmental C-bandon short arm of X chromosome in <italic>M. terricolor</italic> from NXL population. Centromeric C-bands are thin arrowed, C-band in short arms of X, entire Y and telomeres of X and Y are arrow headed. Bar = 4µm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/Comparative Cytogenetics-007-037-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p>C-banded karyotypes of <italic>M. terricolor </italic>type I from Dooars populations. <bold>a</bold> APD <bold>b</bold> RBD <bold>c</bold> KGM <bold>d</bold> MNG populations. Centromeric C-bands are thin arrowed, C-band in short arms of X, entire Y and telomeres of X and Y are arrow headed. Bar = 4µm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/Comparative Cytogenetics-007-037-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p>C-banded karyotypes of <italic>M. terricolor </italic>type I from Dooars populations.<bold>a</bold> MLB <bold>b</bold> NGK <bold>c</bold> CBH populations. Centromeric C-bands are thin arrowed, C-band in short arms of X, entire Y and telomeres of X and Y are arrow headed. Bar = 4µm.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/Comparative Cytogenetics-007-037-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 2.</bold>
+            </label>
+            <caption><p> C-band variation in different populations of <italic>M. terricolor</italic><bold>. </bold>(s)-Heterogeneity of C-band between homologous autosome pair; SA-short arm of X; LA- long arm of X; WA- entire Y; + denotes intensity of C-band staining.&lt;br/&gt; </p>
+            </caption>
+            <table id="T2" headerRowCount="0" bodyRowCount="13" columnCount="6" aid:table="table" aid:trows="13" aid:tcols="6">
+                <tbody>
+                    <tr>
+                        <td rowspan="3" colspan="1"><bold>Population</bold>
+                        </td>
+                        <td rowspan="1" colspan="2"><bold>Size and location of C-positive heterochromatin in autosomes</bold>
+                        </td>
+                        <td rowspan="1" colspan="3"><bold>C-positive heterochromatin in sex chromosomes</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="2"><bold>Centromere</bold>
+                        </td>
+                        <td rowspan="1" colspan="2"><bold>X</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>Y</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>Large</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>Small to Minute</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>SA</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>LA</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>WA</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">NXL</td>
+                        <td rowspan="1" colspan="1">1,4-8,11, 19</td>
+                        <td rowspan="1" colspan="1">2,3,9,10,12-15,17,18</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">+</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">GDH</td>
+                        <td rowspan="1" colspan="1">2(s),3(s), 4(s),5-8, 10-13, 15-19</td>
+                        <td rowspan="1" colspan="1">1,2(s),3(s),4(s),9, 14</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">BDN</td>
+                        <td rowspan="1" colspan="1">1-14,17(s),18,19</td>
+                        <td rowspan="1" colspan="1">15,16,17(s) </td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">APD</td>
+                        <td rowspan="1" colspan="1">17(s),19(s)</td>
+                        <td rowspan="1" colspan="1">1-16,17(s),18,19(s)</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">RBD</td>
+                        <td rowspan="1" colspan="1">5(s),7,10,11(s),12(s),16,18,19</td>
+                        <td rowspan="1" colspan="1">1-4,5(s),6,8,9,13-15,17</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">KGM</td>
+                        <td rowspan="1" colspan="1">17(s),19(s)</td>
+                        <td rowspan="1" colspan="1">1-16,17(s),18,19(s)</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">MLB</td>
+                        <td rowspan="1" colspan="1">2-10,12-15,18,19</td>
+                        <td rowspan="1" colspan="1">1,11,16,17</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">NGK</td>
+                        <td rowspan="1" colspan="1">2,4,5,8-11,14,16-19</td>
+                        <td rowspan="1" colspan="1">1,3,6,7,12,13,15</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">_</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">MNG</td>
+                        <td rowspan="1" colspan="1">1-14, 16,18,19</td>
+                        <td rowspan="1" colspan="1">15,17</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">CBH</td>
+                        <td rowspan="1" colspan="1">2,13,16,19</td>
+                        <td rowspan="1" colspan="1">1,3-12,14,15, 17, 18</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                        <td rowspan="1" colspan="1">+</td>
+                        <td rowspan="1" colspan="1">+++</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+    </article_figs_and_tables>
+</article>

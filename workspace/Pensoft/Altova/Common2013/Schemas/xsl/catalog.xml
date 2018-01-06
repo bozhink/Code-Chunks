@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<spy:fileExtHelper ext="xsl" uri="files/def_xsl.dtd"/>
+	<spy:fileExtHelper ext="xslt" uri="files/def_xslt.dtd"/>
+	<spy:fileExtHelper ext="fo" uri="files/xsl_fo.xsd"/>
+	<!--uri name="http://www.w3.org/1999/XSL/Format" uri="files/fo.xsd"/-->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/xsl/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/xsl/' rewritePrefix='files/'/>
+</catalog>

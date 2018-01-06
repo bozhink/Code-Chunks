@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  MapForce Project File  -->
+<Project Expanded="Yes" language="java" OutputDir="output\" Title="MapForceExamples" OutputName="MapForceExamples" Version="6">
+	<Folder FolderName="Mapping Folder" Expanded="Yes" Type="MappingFolder">
+		<Folder FolderName="XML Schemas" Expanded="Yes" Type="VirtualFolder">
+			<Folder FolderName="Aggregates (Sum, Count, ...)" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="CompletePO.mfd"/>
+				<File Type="Mapping" FilePath="DB_UserList.mfd"/>
+				<File Type="Mapping" FilePath="GroupTemperaturesByYear.mfd"/>
+			</Folder>
+			<Folder FolderName="Chained Mapping" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ChainedPersonList.mfd"/>
+			</Folder>
+			<Folder FolderName="Digital Signature" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="MarketingExpenses_DetachedSignature.mfd"/>
+				<File Type="Mapping" FilePath="MarketingExpenses_EnvelopedSignature.mfd"/>
+			</Folder>
+			<Folder FolderName="Duplicated Inputs" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ChainedPersonList.mfd"/>
+				<File Type="Mapping" FilePath="ContactsFromPO.mfd"/>
+				<File Type="Mapping" FilePath="NodeName.mfd"/>
+				<File Type="Mapping" FilePath="PersonList.mfd"/>
+				<File Type="Mapping" FilePath="TokenizeString2.mfd"/>
+			</Folder>
+			<Folder FolderName="Dynamic Input/Output Filename" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="FileNamesAsParameters.mfd"/>
+				<File Type="Mapping" FilePath="MergeMultipleFiles.mfd"/>
+				<File Type="Mapping" FilePath="MergeMultipleFiles_List.mfd"/>
+				<File Type="Mapping" FilePath="MultipleFilesFromTextfile.mfd"/>
+				<File Type="Mapping" FilePath="MultipleInputToMultipleOutputFiles.mfd"/>
+				<File Type="Mapping" FilePath="PersonListsForAllBranchOffices.mfd"/>
+			</Folder>
+			<Folder FolderName="Exceptions" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\Exceptions">
+				<File Type="Mapping" FilePath="ExpenseLimit.mfd"/>
+			</Folder>
+			<Folder FolderName="Exists Function" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="BuildSchemaTypeHierarchy.mfd"/>
+				<File Type="Mapping" FilePath="HasMarketingExpenses.mfd"/>
+				<File Type="Mapping" FilePath="TokenizeString2.mfd"/>
+			</Folder>
+			<Folder FolderName="Filter and Condition" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="BuildHierarchyRecursive.mfd"/>
+				<File Type="Mapping" FilePath="BuildSchemaTypeHierarchy.mfd"/>
+				<File Type="Mapping" FilePath="ClassifyTemperatures.mfd"/>
+				<File Type="Mapping" FilePath="CompletePO.mfd"/>
+				<File Type="Mapping" FilePath="DistinctArticles.mfd"/>
+				<File Type="Mapping" FilePath="ExpenseLimit.mfd"/>
+				<File Type="Mapping" FilePath="FindHighestTemperatures.mfd"/>
+				<File Type="Mapping" FilePath="HandlingXsiNil.mfd"/>
+				<File Type="Mapping" FilePath="InputIsSequence.mfd"/>
+				<File Type="Mapping" FilePath="KeyValueList.mfd"/>
+				<File Type="Mapping" FilePath="MarketingAndDailyExpenses.mfd"/>
+				<File Type="Mapping" FilePath="MarketingExpenses.mfd"/>
+				<File Type="Mapping" FilePath="OfficeAddressFromLines.mfd"/>
+				<File Type="Mapping" FilePath="PersonListByBranchOffice.mfd"/>
+				<File Type="Mapping" FilePath="PersonListsForAllBranchOffices.mfd"/>
+				<File Type="Mapping" FilePath="PositionInFilteredSequence.mfd"/>
+				<File Type="Mapping" FilePath="RecursiveDirectoryFilter.mfd"/>
+				<File Type="Mapping" FilePath="TokenizeString2.mfd"/>
+			</Folder>
+			<Folder FolderName="Format preservation" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="PreserveFormatting.mfd"/>
+			</Folder>
+			<Folder FolderName="Grouping" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="BuildHierarchyFromTextfile.mfd"/>
+				<File Type="Mapping" FilePath="BuildHierarchyFromTextfile_withAutoNumber.mfd"/>
+				<File Type="Mapping" FilePath="BuildHierarchyRecursive.mfd"/>
+				<File Type="Mapping" FilePath="DistinctArticles.mfd"/>
+				<File Type="Mapping" FilePath="Excel_Company_to_XML.mfd"/>
+				<File Type="Mapping" FilePath="GroupTemperaturesByYear.mfd"/>
+				<File Type="Mapping" FilePath="MultipleFilesFromTextfile.mfd"/>
+			</Folder>
+			<Folder FolderName="Input Parameters" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ClassifyTemperatures.mfd"/>
+				<File Type="Mapping" FilePath="DB_PhoneList.mfd"/>
+				<File Type="Mapping" FilePath="FileNamesAsParameters.mfd"/>
+				<File Type="Mapping" FilePath="FindHighestTemperatures.mfd"/>
+				<File Type="Mapping" FilePath="InputIsSequence.mfd"/>
+				<File Type="Mapping" FilePath="PersonListByBranchOffice.mfd"/>
+				<File Type="Mapping" FilePath="RecursiveDirectoryFilter.mfd"/>
+				<File Type="Mapping" FilePath="TokenizeString2.mfd"/>
+			</Folder>
+			<Folder FolderName="Mixed Content" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ShortApplicationInfo.mfd"/>
+			</Folder>
+			<Folder FolderName="Multiple Sources" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="CompletePO.mfd"/>
+				<File Type="Mapping" FilePath="MergeMultipleFiles.mfd"/>
+				<File Type="Mapping" FilePath="MergeMultipleFiles_List.mfd"/>
+				<File Type="Mapping" FilePath="MultipleInputToMultipleOutputFiles.mfd"/>
+			</Folder>
+			<Folder FolderName="Multiple Targets" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="MarketingAndDailyExpenses.mfd"/>
+				<File Type="Mapping" FilePath="MultipleFilesFromTextfile.mfd"/>
+				<File Type="Mapping" FilePath="MultipleInputToMultipleOutputFiles.mfd"/>
+				<File Type="Mapping" FilePath="PersonListsForAllBranchOffices.mfd"/>
+			</Folder>
+			<Folder FolderName="Position Function" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ContactsFromBranchOffices.mfd"/>
+				<File Type="Mapping" FilePath="DB_UserList.mfd"/>
+				<File Type="Mapping" FilePath="DistinctArticles.mfd"/>
+				<File Type="Mapping" FilePath="FindHighestTemperatures.mfd"/>
+				<File Type="Mapping" FilePath="OfficeAddressFromLines.mfd"/>
+				<File Type="Mapping" FilePath="PositionInFilteredSequence.mfd"/>
+			</Folder>
+			<Folder FolderName="Recursive Mapping" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="BuildHierarchyRecursive.mfd"/>
+				<File Type="Mapping" FilePath="BuildSchemaTypeHierarchy.mfd"/>
+				<File Type="Mapping" FilePath="FlattenHierarchy.mfd"/>
+				<File Type="Mapping" FilePath="RecursiveDirectoryFilter.mfd"/>
+			</Folder>
+			<Folder FolderName="Sorting" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="Altova_Hierarchical_Sort.mfd"/>
+				<File Type="Mapping" FilePath="FindHighestTemperatures.mfd"/>
+				<File Type="Mapping" FilePath="SortByMultipleKeys.mfd"/>
+			</Folder>
+			<Folder FolderName="Source-Driven Connections" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ShortApplicationInfo.mfd"/>
+			</Folder>
+			<Folder FolderName="String Processing" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="KeyValueList.mfd"/>
+				<File Type="Mapping" FilePath="StringJoin.mfd"/>
+				<File Type="Mapping" FilePath="TokenizeString1.mfd"/>
+				<File Type="Mapping" FilePath="TokenizeString2.mfd"/>
+			</Folder>
+			<Folder FolderName="User-Defined Functions" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="BuildHierarchyRecursive.mfd"/>
+				<File Type="Mapping" FilePath="BuildSchemaTypeHierarchy.mfd"/>
+				<File Type="Mapping" FilePath="ContactsFromPO.mfd"/>
+				<File Type="Mapping" FilePath="FlattenHierarchy.mfd"/>
+				<File Type="Mapping" FilePath="InputIsSequence.mfd"/>
+				<File Type="Mapping" FilePath="LookupArticle.mfd"/>
+				<File Type="Mapping" FilePath="NodeName.mfd"/>
+				<File Type="Mapping" FilePath="PersonListByBranchOffice.mfd"/>
+				<File Type="Mapping" FilePath="RecursiveDirectoryFilter.mfd"/>
+			</Folder>
+			<Folder FolderName="Value-Map" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="MapArticle.mfd"/>
+			</Folder>
+			<Folder FolderName="Variables" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="Altova_Hierarchical_Sort.mfd"/>
+				<File Type="Mapping" FilePath="DB_UserList.mfd"/>
+				<File Type="Mapping" FilePath="DistinctArticles.mfd"/>
+				<File Type="Mapping" FilePath="KeyValueList.mfd"/>
+				<File Type="Mapping" FilePath="PositionInFilteredSequence.mfd"/>
+			</Folder>
+			<Folder FolderName="xsi:nil" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="HandlingXsiNil.mfd"/>
+			</Folder>
+			<Folder FolderName="xsi:type" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="ContactsFromPO.mfd"/>
+			</Folder>
+		</Folder>
+		<Folder FolderName="Databases" Expanded="Yes" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\DB">
+			<Folder FolderName="EDI to Database" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="EDI_Order_DB.mfd"/>
+			</Folder>
+			<Folder FolderName="SELECT Statement as Input" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="DB_EmployeeListByTitle.mfd"/>
+				<File Type="Mapping" FilePath="DB_MostExpensiveArticle.mfd"/>
+				<File Type="Mapping" FilePath="DB_ManagerList_AllOffices.mfd"/>
+				<File Type="Mapping" FilePath="DB_ManagerList_SelectedDepartment.mfd"/>
+				<File Type="Mapping" FilePath="DB_ManagerList_SelectedOffice.mfd"/>
+			</Folder>
+			<Folder FolderName="Substitute NULL" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="DB_ApplicationList.mfd"/>
+			</Folder>
+			<Folder FolderName="WHERE/ORDER Component" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="DB_PhoneList.mfd"/>
+			</Folder>
+			<Folder FolderName="Other Samples" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="Altova_Hierarchical_DB.mfd"/>
+				<File Type="Mapping" FilePath="Customers_DB.mfd"/>
+				<File Type="Mapping" FilePath="DB_Altova_Hierarchical.mfd"/>
+				<File Type="Mapping" FilePath="DB_Altova_SQLXML.mfd"/>
+				<File Type="Mapping" FilePath="DB_CompletePO.mfd"/>
+				<File Type="Mapping" FilePath="DB_UserList.mfd"/>
+			</Folder>
+		</Folder>
+		<Folder FolderName="Text Files" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\TEXT">
+			<File Type="Mapping" FilePath="BuildHierarchyFromTextfile.mfd"/>
+			<File Type="Mapping" FilePath="BuildHierarchyFromTextfile_withAutoNumber.mfd"/>
+			<File Type="Mapping" FilePath="ExportPersonAddressListToCSV.mfd"/>
+			<File Type="Mapping" FilePath="ImportQuotationsFromTextfile.mfd"/>
+			<File Type="Mapping" FilePath="MultipleFilesFromTextfile.mfd"/>
+			<File Type="Mapping" FilePath="TokenizeString1.mfd"/>
+			<File Type="Mapping" FilePath="TokenizeString2.mfd"/>
+		</Folder>
+		<Folder FolderName="FlexText" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\FlexText">
+			<File Type="Mapping" FilePath="Altova_Hierarchical_FLF.mfd"/>
+			<File Type="Mapping" FilePath="IniToXML.mfd"/>
+			<File Type="Mapping" FilePath="InspectionReport.mfd"/>
+			<File Type="Mapping" FilePath="QuotationsDoc.mfd"/>
+		</Folder>
+		<Folder FolderName="EDI" Expanded="Yes" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\EDI_X12">
+			<Folder FolderName="EDIFACT" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="EDI_Order.mfd"/>
+				<File Type="Mapping" FilePath="EDI_Order_DB.mfd"/>
+				<File Type="Mapping" FilePath="EDI_OrderReverse.mfd"/>
+			</Folder>
+			<Folder FolderName="HIPAA" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="HIPAA_837D.mfd"/>
+			</Folder>
+			<Folder FolderName="HL7" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="HL7_MultiMessageTypes.mfd"/>
+				<File Type="Mapping" FilePath="HL7V260_To_HL7V3.mfd"/>
+			</Folder>
+			<Folder FolderName="IATA" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="IATA_FlightInformationReport.mfd"/>
+			</Folder>
+			<Folder FolderName="SAP IDoc" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="IDOC_Order.mfd"/>
+			</Folder>
+			<Folder FolderName="X12" Type="VirtualFolder">
+				<File Type="Mapping" FilePath="X12_To_Xml_Order.mfd"/>
+				<File Type="Mapping" FilePath="Xml_To_X12_Order.mfd"/>
+			</Folder>
+		</Folder>
+		<Folder FolderName="Web service calls" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\WebServiceCalls">
+			<File Type="Mapping" FilePath="BookISBNConvertWS.mfd"/>
+			<File Type="Mapping" FilePath="CurrencyConvertor.mfd"/>
+		</Folder>
+		<Folder FolderName="OOXML Excel 2007+" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\Excel2007">
+			<File Type="Mapping" FilePath="Altova_Hierarchical_Excel.mfd"/>
+			<File Type="Mapping" FilePath="Excel_Company_to_XML.mfd"/>
+			<File Type="Mapping" FilePath="Sales_to_Excel.mfd"/>
+		</Folder>
+		<Folder FolderName="XBRL" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\XBRL">
+			<File Type="Mapping" FilePath="DB_To_XBRL.mfd"/>
+		</Folder>
+		<Folder FolderName="Java" Type="VirtualFolder" OverrideSettings="3" language="java" OutputDir="output\Java">
+			<File Type="UnknownFile" FilePath="Java\Format\Format.class"/>
+			<File Type="UnknownFile" FilePath="Java\Format\Format.java"/>
+			<File Type="Mapping" FilePath="Java\FormatNumber.mfd"/>
+			<File Type="Text" FilePath="Java\readme.txt"/>
+		</Folder>
+		<Folder FolderName="C#" Type="VirtualFolder" OverrideSettings="3" language="cs" OutputDir="output\C#">
+			<File Type="UnknownFile" FilePath="C#\Format\Format.cs"/>
+			<File Type="UnknownFile" FilePath="C#\Format\bin\Debug\Format.dll"/>
+			<File Type="Mapping" FilePath="C#\FormatNumber.mfd"/>
+			<File Type="Text" FilePath="C#\readme.txt"/>
+		</Folder>
+	</Folder>
+	<Folder FolderName="Webservice Folder" Type="WebServiceFolder" OverrideSettings="3" language="java">
+		<File Expanded="Yes" Type="WebServiceRoot" OverrideSettings="3" language="java" OutputDir="TimeService\output\" FilePath="TimeService\TimeService.wsdl">
+			<Folder FolderName="{http://www.Nanonull.com/TimeService/}TimeService" Expanded="Yes" Type="WebServiceService" WSQualifiedName="{http://www.Nanonull.com/TimeService/}TimeService">
+				<Folder FolderName="TimeServiceSoap" Expanded="Yes" Type="WebServicePort" WSQualifiedName="TimeServiceSoap">
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getCityTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getCityTime">
+						<File Type="Mapping" FilePath="TimeService\getCityTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getOffesetUTCTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getOffesetUTCTime">
+						<File Type="Mapping" FilePath="TimeService\getOffesetUTCTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerCity" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerCity">
+						<File Type="Mapping" FilePath="TimeService\getServerCity.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerTime">
+						<File Type="Mapping" FilePath="TimeService\getServerTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerTimeZone" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerTimeZone">
+						<File Type="Mapping" FilePath="TimeService\getServerTimeZone.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getTimeZoneTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getTimeZoneTime">
+						<File Type="Mapping" FilePath="TimeService\getTimeZoneTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getUTCTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getUTCTime">
+						<File Type="Mapping" FilePath="TimeService\getUTCTime.mfd"/>
+					</Folder>
+				</Folder>
+			</Folder>
+		</File>
+		<File Expanded="Yes" Type="WebServiceRoot" OverrideSettings="3" language="java" OutputDir="TimeServiceWsdl2\output\" FilePath="TimeServiceWsdl2\TimeService20.wsdl">
+			<Folder FolderName="{http://www.Nanonull.com/TimeService/}TimeService" Expanded="Yes" Type="WebServiceService" WSQualifiedName="{http://www.Nanonull.com/TimeService/}TimeService">
+				<Folder FolderName="TimeServiceSoap" Expanded="Yes" Type="WebServicePort" WSQualifiedName="TimeServiceSoap">
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getCityTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getCityTime">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getCityTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getOffsetUTCTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getOffsetUTCTime">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getOffsetUTCTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerCity" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerCity">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getServerCity.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerTime">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getServerTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getServerTimeZone" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getServerTimeZone">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getServerTimeZone.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getTimeZoneTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getTimeZoneTime">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getTimeZoneTime.mfd"/>
+					</Folder>
+					<Folder FolderName="{http://www.Nanonull.com/TimeService/}getUTCTime" Type="WebServiceOperation" WSQualifiedName="{http://www.Nanonull.com/TimeService/}getUTCTime">
+						<File Type="Mapping" FilePath="TimeServiceWsdl2\getUTCTime.mfd"/>
+					</Folder>
+				</Folder>
+			</Folder>
+		</File>
+	</Folder>
+</Project>

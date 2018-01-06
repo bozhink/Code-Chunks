@@ -1,0 +1,2973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "C:/Users/Bozhin Karaivanov/Documents/TaxPub-master/tax-treatment-NS0.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tp="http://www.plazi.org/taxpub"
+	article-type="research-article">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="publisher-id">Biodiversity Data Journal</journal-id>
+			<journal-title-group>
+				<journal-title xml:lang="en">Biodiversity Data Journal</journal-title>
+				<abbrev-journal-title xml:lang="en">Biodiversity
+					Data Journal</abbrev-journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">0000-0000</issn>
+			<issn pub-type="epub">0000-0000</issn>
+			<publisher>
+				<publisher-name>Pensoft Publishers</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="doi">10.3897/xxx.000.0000</article-id>
+			<article-categories>
+				<subj-group subj-group-type="Taxon classification">
+					<subject>Marattiales</subject>
+					<subject>Plantae</subject>
+					<subject>Coleoptera</subject>
+					<subject>Carabidae</subject>
+				</subj-group>
+				<subj-group subj-group-type="Subject classification">
+					<subject>Parasitology</subject>
+					<subject>Taxonomy</subject>
+					<subject>Ecological Risk Assessment</subject>
+					<subject>Identification Key(s)</subject>
+					<subject>Systematics</subject>
+				</subj-group>
+				<subj-group subj-group-type="Chronological classification">
+					<subject>Cambrian</subject>
+					<subject>Mesozoic</subject>
+					<subject>Triassic</subject>
+				</subj-group>
+				<subj-group subj-group-type="Geographical classification">
+					<subject>Europe</subject>
+					<subject>Israel</subject>
+					<subject>Russia</subject>
+					<subject>Asia</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>Test article</article-title>
+			</title-group>
+			<contrib-group content-type="authors">
+				<contrib contrib-type="author" corresp="no">
+					<name name-style="western">
+						<surname>Karaivanov</surname>
+						<given-names>Bozhin A.</given-names>
+						<prefix>Mr</prefix>
+					</name>
+					<email xlink:type="simple">bozhin.karaivanov@gmail.com</email>
+					<author-comment>
+						<title>Rights</title>
+						<p>Edit &amp; comment</p>
+					</author-comment>
+					<aff>
+						<addr-line>
+							<institution>Pensoft Publishers</institution>
+							, Sofia,
+							<country>Bulgaria</country>
+						</addr-line>
+						<country>Bulgaria</country>
+						<institution>Pensoft Publishers</institution>
+					</aff>
+				</contrib>
+				<contrib contrib-type="author" corresp="no">
+					<name name-style="western">
+						<surname>Karaivanov</surname>
+						<given-names>Bozhin A.</given-names>
+						<prefix>Mr</prefix>
+					</name>
+					<email xlink:type="simple">bozhin.karaivanov@gmail.com</email>
+					<author-comment>
+						<title>Rights</title>
+						<p>Edit &amp; comment</p>
+					</author-comment>
+					<aff>
+						<addr-line>
+							<institution>Pensoft Publishers</institution>
+							, Sofia,
+							<country>Bulgaria</country>
+						</addr-line>
+						<country>Bulgaria</country>
+						<institution>Pensoft Publishers</institution>
+					</aff>
+				</contrib>
+				<contrib contrib-type="author" corresp="no">
+					<name name-style="western">
+						<surname>Karaivanov2</surname>
+						<given-names>Bozhin A.</given-names>
+						<prefix>Mr</prefix>
+					</name>
+					<email xlink:type="simple">bozhin.karaivanov@gmail.com</email>
+					<author-comment>
+						<title>Rights</title>
+						<p>Edit &amp; comment</p>
+					</author-comment>
+					<aff>
+						<addr-line>
+							<institution>Pensoft Publishers</institution>
+							, Sofia,
+							<country>Bulgaria</country>
+						</addr-line>
+						<country>Bulgaria</country>
+						<institution>Pensoft Publishers</institution>
+					</aff>
+				</contrib>
+				<contrib contrib-type="author" corresp="no">
+					<name name-style="western">
+						<surname>Karaivanov3</surname>
+						<given-names>Bozhin A.</given-names>
+						<prefix>Mr</prefix>
+					</name>
+					<email xlink:type="simple">bozhin.karaivanov@gmail.com</email>
+					<author-comment>
+						<title>Rights</title>
+						<p>Edit &amp; comment</p>
+					</author-comment>
+					<aff>
+						<addr-line>
+							<institution>Pensoft Publishers</institution>
+							, Sofia,
+							<country>Bulgaria</country>
+						</addr-line>
+						<country>Bulgaria</country>
+						<institution>Pensoft Publishers</institution>
+					</aff>
+				</contrib>
+			</contrib-group>
+			<contrib-group content-type="editors">
+				<contrib contrib-type="editor">
+					<name name-style="western">
+						<surname>Georgiev</surname>
+						<given-names>Teodor Asenov</given-names>
+						<prefix>Mr</prefix>
+					</name>
+					<email xlink:type="simple">preprint@pensoft.net</email>
+					<role>Linguistic editor</role>
+					<author-comment>
+						<title>Rights</title>
+						<p>Edit &amp; comment</p>
+					</author-comment>
+					<aff>
+						<addr-line>
+							<institution>Pensoft Publishers</institution>
+							, Sofia,
+							<country>Bulgaria</country>
+						</addr-line>
+						<country>Bulgaria</country>
+						<institution>Pensoft Publishers</institution>
+					</aff>
+				</contrib>
+			</contrib-group>
+			<author-notes>
+				<fn fn-type="corresp">
+					<p>Corresponding author: </p>
+				</fn>
+				<fn fn-type="edited-by">
+					<p>Academic editor: </p>
+				</fn>
+			</author-notes>
+			<pub-date pub-type="collection">
+				<year>2013</year>
+			</pub-date>
+			<pub-date pub-type="epub">
+				<day>1</day>
+				<month>1</month>
+				<year>2013</year>
+			</pub-date>
+			<issue>1000</issue>
+			<fpage>1</fpage>
+			<lpage>20</lpage>
+			<history>
+				<date date-type="received">
+					<day>1</day>
+					<month>1</month>
+					<year>2013</year>
+				</date>
+				<date date-type="accepted">
+					<day>1</day>
+					<month>1</month>
+					<year>2013</year>
+				</date>
+			</history>
+			<permissions>
+				<copyright-statement>
+					Bozhin
+					A.
+					Karaivanov
+					,
+					Bozhin
+					A.
+					Karaivanov
+					,
+					Bozhin
+					A.
+					Karaivanov2
+					,
+					Bozhin
+					A.
+					Karaivanov3
+					,
+				</copyright-statement>
+				<license license-type="creative-commons-attribution"
+					xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+					<license-p>This is an open access article distributed under the
+						terms of the Creative Commons Attribution License 3.0 (CC-BY),
+						which permits unrestricted use, distribution, and reproduction in
+						any medium, provided the original author and source are credited.</license-p>
+				</license>
+			</permissions>
+			<self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:</self-uri>
+			<abstract>
+				<label>Abstract</label>
+
+				<p>
+					Abstract
+					<em>Seladonia (Pachyceble) henanensis</em>
+					<strong>sp. n.</strong>
+					, is described from Henan Province, the eastern-central part of
+					China. This species is separated from its allied species by a
+					combination of the following morphological characters: head broad
+					in female, inner hind tibial spur of female with 7–8 slender teeth,
+					T1 basolaterally with appressed hair tuft in both sexes, and
+					genitalia with long and large lower gonostylus in male. Important
+					taxonomic characters are illustrated with photographs, scanning
+					electron micrographs, and line drawings.
+				</p>
+
+			</abstract>
+			<kwd-group>
+				<label>Keywords</label>
+				<kwd>
+					Keywords
+					<em>Seladonia (Pachyceble) henanensis</em>
+					<strong>sp. n.</strong>
+					, is described from Henan Province, the eastern-central part of
+					China.
+				</kwd>
+			</kwd-group>
+			<funding-group>
+				<funding-statement>Add supporting projects/agencies as free text1111</funding-statement>
+			</funding-group>
+		</article-meta>
+	</front>
+	<body>
+		<sec sec-type="Introduction">
+			<title>Introduction</title>
+			<p>
+				Introduction
+				<em>Seladonia (Pachyceble) henanensis</em>
+				<strong>sp. n.</strong>
+				, is described from Henan Province, the eastern-central part of
+				China. This species is separated from its allied species by a
+				combination of the following morphological characters: head broad in
+				female, inner hind tibial spur of female with 7–8 slender teeth, T1
+				basolaterally with appressed hair tuft in both sexes, and genitalia
+				with long and large lower gonostylus in male. Important taxonomic
+				characters are illustrated with photographs, scanning electron
+				micrographs, and line drawings.
+			</p>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;IntroductionSubSection1&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>IntroductionSubSection1</title>
+				<p>
+					IntroductionSubSection1
+					<em>Seladonia (Pachyceble) henanensis</em>
+					<strong>sp. n.</strong>
+					, is described from Henan Province, the eastern-central part of
+					China. This species is separated from its allied species by a
+					combination of the following morphological characters: head broad
+					in female, inner hind tibial spur of female with 7–8 slender teeth,
+					T1 basolaterally with appressed hair tuft in both sexes, and
+					genitalia with long and large lower gonostylus in male. Important
+					taxonomic characters are illustrated with photographs, scanning
+					electron micrographs, and line drawings.
+				</p>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;IntroductionSubSection2&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>IntroductionSubSection2</title>
+				<p>
+					IntroductionSubSection2
+					<em>Seladonia (Pachyceble) henanensis</em>
+					<strong>sp. n.</strong>
+					, is described from Henan Province, the eastern-central part of
+					China. This species is separated from its allied species by a
+					combination of the following morphological characters: head broad
+					in female, inner hind tibial spur of female with 7–8 slender teeth,
+					T1 basolaterally with appressed hair tuft in both sexes, and
+					genitalia with long and large lower gonostylus in male. Important
+					taxonomic characters are illustrated with photographs, scanning
+					electron micrographs, and line drawings.
+				</p>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;IntroductionSubSection3&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>IntroductionSubSection3</title>
+				<p>
+					IntroductionSubSection3
+					<em>Seladonia (Pachyceble) henanensis</em>
+					<strong>sp. n.</strong>
+					, is described from Henan Province, the eastern-central part of
+					China. This species is separated from its allied species by a
+					combination of the following morphological characters: head broad
+					in female, inner hind tibial spur of female with 7–8 slender teeth,
+					T1 basolaterally with appressed hair tuft in both sexes, and
+					genitalia with long and large lower gonostylus in male. Important
+					taxonomic characters are illustrated with photographs, scanning
+					electron micrographs, and line drawings.
+				</p>
+			</sec>
+		</sec>
+		<sec sec-type="Materials and methods">
+			<title>Materials and methods</title>
+			<p>
+				Materials and methods:
+				<strong>
+					<em>onConservation </em>
+				</strong>
+				All
+				<em>onConservation </em>
+				specimens from this study are deposited in the collections of the
+				Museo de Ciencias Naturales de La Plata (MLP), La Plata, Buenos
+				Aires, Argentina (
+				<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+				). Photographs were compared with material of the Naturhistoriska
+				Riksmuseet in Stockholm, Sweden (
+				<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+				) and the American Museum of Natural History in New York (
+				<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+				). For the geographical distribution we used the program DIVA-GIS
+				7.1.7 (
+				<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+				) and the distribution of those specimens for which global
+				positioning system data were available was used for the construction
+				of maps. Photographs were produced using a Kodak Easy Share (12
+				megapixels) camera and a magnifying Wild M-Stereomicroscope. The
+				diagnoses of genera are taken from Brailovsky (1987) and O’Shea
+				(1980), except as noted. Coreoidea Species File (Version 1.1/4.1) (
+				<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+				) was consulted. All measurement are in millimeters.
+			</p>
+			<p>
+				All specimens from this study are deposited in the collections of
+				the Museo de Ciencias Naturales de La Plata (MLP), La Plata, Buenos
+				Aires, Argentina (
+				<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+				). Photographs were compared with material of the Naturhistoriska
+				Riksmuseet in Stockholm, Sweden (
+				<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+				) and the American Museum of Natural History in New York (
+				<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+				). For the geographical distribution we used the program DIVA-GIS
+				7.1.7 (
+				<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+				) and the distribution of those specimens for which global
+				positioning system data were available was used for the construction
+				of maps. Photographs were produced using a Kodak Easy Share (12
+				megapixels) camera and a magnifying Wild M-Stereomicroscope. The
+				diagnoses of genera are taken from Brailovsky (1987) and O’Shea
+				(1980), except as noted. Coreoidea Species File (Version 1.1/4.1) (
+				<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+				) was consulted. All measurement are in millimeters.
+			</p>
+			<p>
+				All specimens from this study are deposited in the collections of
+				the Museo de Ciencias Naturales de La Plata (MLP), La Plata, Buenos
+				Aires, Argentina (
+				<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+				). Photographs were compared with material of the Naturhistoriska
+				Riksmuseet in Stockholm, Sweden (
+				<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+				) and the American Museum of Natural History in New York (
+				<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+				). For the geographical distribution we used the program DIVA-GIS
+				7.1.7 (
+				<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+				) and the distribution of those specimens for which global
+				positioning system data were available was used for the construction
+				of maps. Photographs were produced using a Kodak Easy Share (12
+				megapixels) camera and a magnifying Wild M-Stereomicroscope. The
+				diagnoses of genera are taken from Brailovsky (1987) and O’Shea
+				(1980), except as noted. Coreoidea Species File (Version 1.1/4.1) (
+				<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+				) was consulted. All measurement are in millimeters.
+			</p>
+			<p>
+				All specimens from this study are deposited in the collections of
+				the Museo de Ciencias Naturales de La Plata (MLP), La Plata, Buenos
+				Aires, Argentina (
+				<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+				). Photographs were compared with material of the Naturhistoriska
+				Riksmuseet in Stockholm, Sweden (
+				<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+				) and the American Museum of Natural History in New York (
+				<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+				). For the geographical distribution we used the program DIVA-GIS
+				7.1.7 (
+				<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+				) and the distribution of those specimens for which global
+				positioning system data were available was used for the construction
+				of maps. Photographs were produced using a Kodak Easy Share (12
+				megapixels) camera and a magnifying Wild M-Stereomicroscope. The
+				diagnoses of genera are taken from Brailovsky (1987) and O’Shea
+				(1980), except as noted. Coreoidea Species File (Version 1.1/4.1) (
+				<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+				) was consulted. All measurement are in millimeters.
+			</p>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;MaterialMethodsSubsectin1&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>MaterialMethodsSubsectin1</title>
+				<p>
+					Materials and methods Subsecion1: All specimens from this study are
+					deposited in the collections of the Museo de Ciencias Naturales de
+					La Plata (MLP), La Plata, Buenos Aires, Argentina (
+					<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+					). Photographs were compared with material of the Naturhistoriska
+					Riksmuseet in Stockholm, Sweden (
+					<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+					) and the American Museum of Natural History in New York (
+					<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+					). For the geographical distribution we used the program DIVA-GIS
+					7.1.7 (
+					<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+					) and the distribution of those specimens for which global
+					positioning system data were available was used for the
+					construction of maps. Photographs were produced using a Kodak Easy
+					Share (12 megapixels) camera and a magnifying Wild
+					M-Stereomicroscope. The diagnoses of genera are taken from
+					Brailovsky (1987) and O’Shea (1980), except as noted. Coreoidea
+					Species File (Version 1.1/4.1) (
+					<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+					) was consulted. All measurement are in millimeters.
+				</p>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;MaterialsMethodsSubsection2&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>MaterialsMethodsSubsection2</title>
+				<p>df</p>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;MaterialsMethodsSubsection3&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>MaterialsMethodsSubsection3</title>
+				<p>
+					MaterialsMethodsSubsection2:  All specimens from this study are
+					deposited in the collections of the Museo de Ciencias Naturales de
+					La Plata (MLP), La Plata, Buenos Aires, Argentina (
+					<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+					). Photographs were compared with material of the Naturhistoriska
+					Riksmuseet in Stockholm, Sweden (
+					<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+					) and the American Museum of Natural History in New York (
+					<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+					). For the geographical distribution we used the program DIVA-GIS
+					7.1.7 (
+					<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+					) and the distribution of those specimens for which global
+					positioning system data were available was used for the
+					construction of maps. Photographs were produced using a Kodak Easy
+					Share (12 megapixels) camera and a magnifying Wild
+					M-Stereomicroscope. The diagnoses of genera are taken from
+					Brailovsky (1987) and O’Shea (1980), except as noted. Coreoidea
+					Species File (Version 1.1/4.1) (
+					<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+					) was consulted. All measurement are in millimeters.
+				</p>
+				<p> </p>
+				<p>
+					All specimens from this study are deposited in the collections of
+					the Museo de Ciencias Naturales de La Plata (MLP), La Plata, Buenos
+					Aires, Argentina (
+					<a href="http://www.fcnym.unlp.edu.ar/abamuse.html" target="_blank">http://www.fcnym.unlp.edu.ar/abamuse.html</a>
+					). Photographs were compared with material of the Naturhistoriska
+					Riksmuseet in Stockholm, Sweden (
+					<a href="http://www.nrm.se/2.1286b10fdbe80efba80001.html" target="_blank">http://www.nrm.se/2.1286b10fdbe80efba80001.html</a>
+					) and the American Museum of Natural History in New York (
+					<a href="http://www.amnh.org/" target="_blank">http://www.amnh.org/</a>
+					). For the geographical distribution we used the program DIVA-GIS
+					7.1.7 (
+					<a href="http://www.diva-gis.org/" target="_blank">http://www.diva-gis.org/</a>
+					) and the distribution of those specimens for which global
+					positioning system data were available was used for the
+					construction of maps. Photographs were produced using a Kodak Easy
+					Share (12 megapixels) camera and a magnifying Wild
+					M-Stereomicroscope. The diagnoses of genera are taken from
+					Brailovsky (1987) and O’Shea (1980), except as noted. Coreoidea
+					Species File (Version 1.1/4.1) (
+					<a href="http://coreoidea.speciesfile.org/HomePage.aspx" target="_blank">http://coreoidea.speciesfile.org/HomePage.aspx</a>
+					) was consulted. All measurement are in millimeters.
+				</p>
+			</sec>
+		</sec>
+		<sec sec-type="Data resources">
+			<title>Data resources</title>
+			<sec sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;DR1&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>DR1</title>
+				<p>Data resources. Data resources. Data resources. Data resources.
+					Data resources. Data resources. Data resources. Data resources.
+					Figs 1, 2a Charles Darwin et al. 2000c</p>
+			</sec>
+			<sec sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;DR2&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>DR2</title>
+				<p>Data resources. Data resources. Data resources. Data resources.
+					Data resources. Data resources. Data resources. Data resources.
+					Figs 1, 2a Charles Darwin et al. 2000c</p>
+			</sec>
+		</sec>
+		<sec sec-type="Systematics">
+			<title>Systematics</title>
+		</sec>
+		<sec sec-type="Identification Keys">
+			<title>Identification Keys</title>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;KeyTitle&#10;&#9;&#9;&#9;&#9;&#9;&#9;">
+				<title>KeyTitle</title>
+				<table-wrap content-type="key" position="anchor"
+					orientation="portrait">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">1</td>
+								<td rowspan="1" colspan="1">Thesis</td>
+								<td rowspan="1" colspan="1">X. X., 12</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">–</td>
+								<td rowspan="1" colspan="1">Antithesis</td>
+								<td rowspan="1" colspan="1">3</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">2</td>
+								<td rowspan="1" colspan="1">Thesis2</td>
+								<td rowspan="1" colspan="1">123. 345, 123</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">–</td>
+								<td rowspan="1" colspan="1">Antithesis2</td>
+								<td rowspan="1" colspan="1">sdfsd, 32</td>
+							</tr>
+						</tbody>
+					</table>
+				</table-wrap>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Key Title #2&#10;&#9;&#9;&#9;&#9;&#9;&#9;">
+				<title>Key Title #2</title>
+				<table-wrap content-type="key" position="anchor"
+					orientation="portrait">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">1</td>
+								<td rowspan="1" colspan="1">Thesis</td>
+								<td rowspan="1" colspan="1">12</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">–</td>
+								<td rowspan="1" colspan="1">Antithesis</td>
+								<td rowspan="1" colspan="1">3</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">2</td>
+								<td rowspan="1" colspan="1">Thesis2</td>
+								<td rowspan="1" colspan="1">123. 345, 123</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">–</td>
+								<td rowspan="1" colspan="1">Antithesis2</td>
+								<td rowspan="1" colspan="1">sdfsd, 32</td>
+							</tr>
+						</tbody>
+					</table>
+				</table-wrap>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Key title 3&#10;&#9;&#9;&#9;&#9;&#9;&#9;">
+				<title>Key title 3</title>
+				<table-wrap content-type="key" position="anchor"
+					orientation="portrait">
+					<table>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">1</td>
+								<td rowspan="1" colspan="1">Thesis</td>
+								<td rowspan="1" colspan="1">X. X., 12</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">–</td>
+								<td rowspan="1" colspan="1">Antithesis</td>
+								<td rowspan="1" colspan="1">3</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">2</td>
+								<td rowspan="1" colspan="1">Thesis2</td>
+								<td rowspan="1" colspan="1">123. 345</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">–</td>
+								<td rowspan="1" colspan="1">Antithesis2</td>
+								<td rowspan="1" colspan="1">
+									<em>df</em>
+									sdfsd, 32
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</table-wrap>
+			</sec>
+		</sec>
+		<sec sec-type="Results">
+			<title>Results</title>
+			<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				Analysis</p>
+			<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				Analysis</p>
+			<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				Analysis</p>
+			<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+				Analysis</p>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;Analysis1&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>Analysis1</title>
+				<p>Analysis1 Analysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+				<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+				<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+			</sec>
+			<sec
+				sec-type="&#10;&#9;&#9;&#9;&#9;&#9;&#9;Analysis #2&#10;&#9;&#9;&#9;&#9;&#9;">
+				<title>Analysis #2</title>
+				<p>Analysis2 Analysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+				<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+				<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+				<p>AnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					AnalysisAnalysisAnalysis AnalysisAnalysis AnalysisAnalysis Analysis
+					Analysis</p>
+			</sec>
+		</sec>
+		<sec sec-type="Discusion">
+			<title>Discusion</title>
+			<p>
+				<strong>Generic Placement and Identification —</strong>
+				.
+				<em>Ministrymon janevicroy</em>
+				is placed in
+				<em>Ministrymon</em>
+				because it possesses small erect teeth on the ventral surface of the
+				penis near the distal end (
+				<fig-citation citation_id="1492" class="P-Figure-Citation-Holder"
+					contenteditable="false" />
+				). This synapomorphy for
+				<em>Ministrymon</em>
+				was proposed by Clench (1961) and has not been reported in other
+				eumaeine genera. Other characters accord with this placement
+				(Robbins unpubl.). Forewing vein M
+				<sub>2</sub>
+				arises closer to M
+				<sub>1</sub>
+				than to M
+				<sub>3</sub>
+				in the male (Fig. 8) and the corpus bursae of the female genitalia
+				is posteriorly constricted (Fig. 7). These traits are widespread
+				(but not universal) in the
+				<em>Tmolus</em>
+				Section of Eumaeini, to which
+				<em>Ministrymon</em>
+				belongs (Robbins 2004a). A male dorsal scent patch is situated at
+				the distal end of forewing discal cell and is partially covered by
+				dark brown wing scales (Fig. 9). Within the
+				<em>Tmolus</em>
+				Section, this type of scent patch occurs in all
+				<em>Ministrymon</em>
+				, all
+				<em>Tmolus</em>
+				, and some
+				<em>Nicolaea</em>
+				K. Johnson.
+			</p>
+			<p>
+				The hypothesis that
+				<em>Ministrymon janevicroy</em>
+				is reproductively isolated from the sympatric
+				<em>Ministrymon azia</em>
+				is well-supported. The male and female genitalic differences between
+				the two are distinct and distinguishing (Figs 6–7). The variegated
+				“pebbly-textured” ground color appearance of the basal part of the
+				ventral hindwing (Fig. 2) is also distinguishing. The eye color
+				difference is distinct and distinguishing in live individuals (Fig.
+				1) and in the majority of museum specimens.
+				<em>Ministrymon janevicroy</em>
+				is unrecorded from tropical wet lowland forest (&gt;200 cm annual
+				precipitation, Holdridge 1967) while
+				<em>Ministrymon azia</em>
+				occurs in both wet and dry habitats.
+				<em>Ministrymon janevicroy </em>
+				occurs from Texas to Costa Rica and on Curaçao and Isla Margarita.
+				In contrast,
+				<em>Ministrymon azia</em>
+				occurs commonly in wet and dry habitats from Texas and Florida to
+				southern Brazil and Argentina. In sum, the two species differ
+				morphologically and biologically in many respects, supporting a
+				hypothesis of reproductive isolation between
+				<em>Ministrymon janevicroy</em>
+				and
+				<em> Ministrymon azia </em>
+				.
+			</p>
+			<p>
+				The substantive differences in the genitalic structures of
+				<em> Ministrymon azia </em>
+				and
+				<em> Ministrymon janevicroy </em>
+				(Figs 6–7) could be interpreted to mean that these two taxa are not
+				closely related within
+				<em> Ministrymon </em>
+				. However, these species are sympatric in the same habitats, have
+				very similar wing patterns, and the same androconial structures. If
+				reproductive isolation between these species evolved by sexual
+				selection acting on the genitalia (e.g., Eberhard 1985, Arnqvist
+				1998, Hosken and Stockley 2004), then the genitalic differences
+				observed could be a consequence of this evolutionary process, and is
+				not an indication of a lack of relationship.
+			</p>
+			<p>
+				In the diagnosis and previous paragraphs, we distinguished
+				<em> Ministrymon janevicroy </em>
+				from
+				<em> Ministrymon azia </em>
+				because both share a similar ventral wing pattern. If
+				<em> Ministrymon janevicroy </em>
+				were more closely related to another described
+				<em> Ministrymon </em>
+				species, its ventral wing pattern would distinguish it immediately
+				from that species.
+			</p>
+			<p>
+				<strong>Eye Color</strong>
+				. The “hairiness” of adult eyes has been widely used in lycaenid
+				taxonomy for more than a century (cf. Eliot 1973 and included
+				references), but adult eye-color has not been used traditionally
+				(e.g., Godman and Salvin 1887-1901, Scudder 1889, Draudt 1919-1920,
+				Eliot 1973). More recently, Glassberg (2001, 2005) used eye color in
+				live individuals to differentiate the lycaenid
+				<em> Cyanophrys goodsoni </em>
+				(Clench) from other
+				<em> Cyanophrys </em>
+				species and to distinguish between the lycaenids
+				<em> Strymon bazochii </em>
+				(Godart) and
+				<em> Strymon cestri </em>
+				(Reakirt).
+				<em> Ministrymon janevicroy </em>
+				was originally discovered in Texas and Mexico (Glassberg 2005)
+				because its adults have olive green eyes in nature instead of the
+				dark brown/black eyes of
+				<em> Ministrymon azia </em>
+				. Eye color in
+				<em> Ministrymon janevicroy </em>
+				appears to darken after death, but most museum specimens of
+				<em> Ministrymon janevicroy </em>
+				have lighter eyes than those of
+				<em> Ministrymon azia </em>
+				.
+			</p>
+			<p>
+				To provide context for the eye color difference between
+				<em> Ministrymon azia </em>
+				and
+				<em> Ministrymon janevicroy </em>
+				, we surveyed other
+				<em> Ministrymon </em>
+				species by recording eye color in museum specimens and in images of
+				live adults.
+				<em> Ministrymon zilda </em>
+				(Hewitson) has a deep black eye color (an apparent autapomorphy),
+				both in museum specimens and in live individuals.
+				<em> Ministrymon cleon </em>
+				(Fabricius) (cf. Duarte and Robbins 2010 for a note on
+				identification of this name) has the same dark brown/black eyes as
+				<em> Ministrymon azia </em>
+				in museum specimens and in one image of a live adult. Museum
+				specimens of all other described
+				<em> Ministrymon </em>
+				species are variable with most having lighter-colored eyes than
+				those of
+				<em> Ministrymon azia </em>
+				—similar in color to those of
+				<em> Ministrymon janevicroy </em>
+				—and with a minority of individuals in each species having the dark
+				brown/black-colored eyes of
+				<em> Ministrymon azia </em>
+				. Of these, we have examined images of live adults for nine species,
+				all of which have olive green eyes.
+			</p>
+			<p>
+				This survey of
+				<em> Ministrymon </em>
+				adult eye colors leads to three conclusions. First, although
+				similarity in wing pattern suggests that
+				<em> Ministrymon azia </em>
+				is the phylogenetic sister of
+				<em> Ministrymon janevicroy </em>
+				, adult eye color suggests that
+				<em> Ministrymon azia </em>
+				might be the phylogenetic sister of
+				<em> Ministrymon cleon </em>
+				. Clearly, a phylogenetic analysis of the genus is needed. Second,
+				adult eye color is a useful taxonomic character in the field, but
+				its use in the museum is more limited. In this case, all museum
+				specimens in the “
+				<em> Ministrymon azia </em>
+				” complex with yellow-brown to brown eyes are
+				<em> Ministrymon janevicroy </em>
+				, but the converse is untrue. Third, the biological significance of
+				adult eye color is yet unknown. There is no evident correlation with
+				gender, habitat, or other biological traits.
+			</p>
+			<p>
+				<strong>Variation</strong>
+				. While there was no discernible geographic variation in the
+				morphology of
+				<em> Ministrymon janevicroy </em>
+				, three morphological aspects vary in single populations. First,
+				when Hewitson (1873) described
+				<em> Ministrymon azia </em>
+				, he noted that the discal spot (= scent patch) was “indistinctly
+				marked” in one male and was more conspicuous in another male. The
+				same variation occurs in
+				<em> Ministrymon janevicroy </em>
+				. It is caused by variation in the color of the dark brown scales
+				covering the scent patch (Fig. 9), not by variation in the presence
+				of androconia. Second, there may be four or five small erect teeth
+				on the penis, and in one dissection, there was an indication of yet
+				another tooth. Third, as previously noted, eye color varies in
+				museum specimens depending upon postmortem darkening, but this
+				variation is not reflected in live individuals, so far as we are
+				aware.
+			</p>
+			<p>
+				<strong>Biogeography</strong>
+				. A number of Central American eumaeine species occur in deciduous
+				dry forest from the southern United States (Texas) or Mexico to
+				Costa Rica (Guanacaste), but are unrecorded further south and east
+				in Panama and northern Colombia. This species list includes
+				<em> Arawacus sito </em>
+				(Boisduval),
+				<em> Cyanophrys goodsoni </em>
+				(Clench),
+				<em> Cyanophrys miserabilis </em>
+				(Clench),
+				<em> Michaelus hecate </em>
+				(Godman &amp; Salvin),
+				<em> Ministrymon clytie </em>
+				(W.H. Edwards),
+				<em> Rekoa zebina </em>
+				(Hewitson),
+				<em> Strymon alea </em>
+				(Godman &amp; Salvin),
+				<em> Strymon bebrycia </em>
+				(Hewitson), and
+				<em> Ziegleria hoffmani </em>
+				(K. Johnson).
+				<em> Ministrymon janevicroy </em>
+				is now added to this list. Of these, only
+				<em> Strymon alea </em>
+				(Isla Margarita) and
+				<em> Ministrymon janevicroy </em>
+				are also recorded on islands just off the north coast of South
+				America, but not from the dry continental forests of northern
+				Venezuela and northern Colombia. It is possible that remnant
+				populations of species that were once more widespread persist only
+				on these islands, but alternately, the mainland Guajira peninsula of
+				Colombia/Venezuela is yet poorly documented.
+			</p>
+			<p>
+				There is one female in the
+				<em> Ministrymon azia </em>
+				species group in the USNM from the Brazilian state of Minas Gerais
+				that has the olive green eye color and variegated “pebbly-textured”
+				wing pattern of
+				<em> Ministrymon janevicroy </em>
+				, but a different postmedian line on the ventral surface of the
+				hindwing. Additionally, two males of the same species in MC are
+				genitalically distinct from
+				<em> Ministrymon janevicroy </em>
+				(genitalic images sent to us by A. Moser). This species is a
+				potential phylogenetic sister species of
+				<em> Ministrymon janevicroy </em>
+				. We are collaborating with Moser to find more specimens with the
+				intention of describing it.
+			</p>
+			<p>
+				<strong>Nomenclature</strong>
+				. Seven names have been applied to the species now called
+				<em> Ministrymon azia </em>
+				(Robbins 2004a), and it is the purpose of this section to explain
+				why these names do not apply to
+				<em> Ministrymon janevicroy </em>
+				. The name
+				<em> Thecla guacanagari </em>
+				Wallengren, 1860 (Ecuador), which has a ventral wing pattern that
+				appears to be transitional between that of
+				<em> Thecla azia </em>
+				and
+				<em> Thecla brocela </em>
+				, was suppressed by ICZN Opinion 2144 (ICZN 2006). We examined the
+				lectotype of
+				<em> Thecla azia </em>
+				Hewitson, 1873 (Mexico) in the BMNH and received images of its male
+				genitalia (courtesy R.I. Vane-Wright and B. Huertas). It is the
+				basis for our identification of this name. We examined the holotype
+				of
+				<em> Thecla nipona </em>
+				Hewitson, 1877 (Brazil). It has the smooth-textured gray appearance
+				on the basal half of the ventral wing surface. Also,
+				<em> Ministrymon janevicroy </em>
+				does not occur in Brazil. We examined the holotype of
+				<em> Thecla brocela </em>
+				Dyar, 1913 (USNM). Its ventral wing pattern is typical of those
+				populations of
+				<em> Ministrymon azia </em>
+				that occur west of the Andes from southern Ecuador to Chile. The
+				genitalia, gray smooth-textured appearance on the basal half of the
+				ventral wing surface, and uniform dark brown/black eyes are the same
+				as those of
+				<em> Ministrymon azia </em>
+				from elsewhere. We examined an image of the holotype of
+				<em> Ministrymon quebradivaga </em>
+				K. Johnson &amp; L.D. Miller, 1991 (Chile). As with
+				<em> Ministrymon brocela </em>
+				, its wing pattern is typical of those populations of
+				<em> Ministrymon azia </em>
+				that occur west of the Andes from southern Ecuador to Chile. The
+				genitalia illustrated in the original description are those of
+				<em> Ministrymon azia </em>
+				, not of
+				<em> Ministrymon janevicroy </em>
+				. We know
+				<em> Ministrymon hernandezi </em>
+				Schwartz &amp; K. Johnson, 1992 (Cuba) from the original
+				publication. The male genitalia illustrations are stylized
+				renderings, but the placement of the teeth on the ventral penis tip
+				and the shape of the cornuti place this name in the synonymy with
+				<em> Ministrymon azia </em>
+				. Further,
+				<em> Ministrymon janevicroy </em>
+				does not occur in the Antilles. Finally, we accord nomenclatural
+				priority to
+				<em> Angulopis hernandezi </em>
+				K. Johnson &amp; Kroenlein, 1993 (a male holotype) over
+				<em> Electrostrymon grumus </em>
+				K. Johnson &amp; Kroenlein, 1993 (a female holotype),
+				<strong>new synonym</strong>
+				, and remove the latter name from the synonymy of
+				<em> Ministrymon azia </em>
+				. Robbins (2004a) had erroneously listed
+				<em>grumus</em>
+				as a synonym of
+				<em>hernandezi</em>
+				Schwartz &amp; K. Johnson rather than as a synonym of
+				<em>hernandezi</em>
+				K. Johnson &amp; Kroenlein. The name
+				<em> Angulopis hernandezi </em>
+				is currently placed in genus
+				<em> Ziegleria </em>
+				K. Johnson (Robbins 2004a, Duarte and Robbins 2010).
+			</p>
+			<p>
+				<strong>Faunal documentation</strong>
+				. The Eumaeini fauna of the United States is well-documented, and
+				most species described in the past 75 years have arguably been
+				cryptic species that had been overlooked because of wing pattern
+				similarity with known species. Specific examples are
+				<em> Satyrium caryaevorus </em>
+				(McDunnough),
+				<em> Satyrium kingi </em>
+				(Klots &amp; Clench),
+				<em> Callophrys hesseli </em>
+				(Rawson &amp; Ziegler), and
+				<em> Strymon solitario </em>
+				Grishin &amp; Durden. To this list, we add
+				<em> Ministrymon janevicroy </em>
+				. In sharp contrast, slightly more than 20% of the Central and South
+				American eumaeine fauna is undescribed (Robbins 2004b), but the vast
+				majority of these undescribed species are exceedingly rare in museum
+				collections, unlike
+				<em> Ministrymon janevicroy </em>
+				. Assessing variation of these rare species remains an obstacle to
+				documentation.
+			</p>
+			<p>
+				<strong>Biology and updated taxonomy</strong>
+				. The purpose of this section is to assess previously published
+				biological information about
+				<em> Ministrymon azia </em>
+				in the context of the updated taxonomy. As noted in the introduction
+				to this paper,
+				<em> Ministrymon azia </em>
+				occurs from the United States (Texas and Florida) to Chile in
+				virtually all lowland habitats, ranging from desert in coastal Peru
+				and Chile to rainforest in the Amazon Basin. The information in this
+				paper is consistent with this statement, and we note that there are
+				specimens of
+				<em> Ministrymon azia </em>
+				in the USNM from Hidalgo, Cameron, and Edwards County in Texas.
+				<em> Ministrymon janevicroy </em>
+				is restricted to dry deciduous forest and scrub, and its range is a
+				subset of that of
+				<em> Ministrymon azia </em>
+				. These species appear to be sympatric wherever
+				<em> Ministrymon janevicroy </em>
+				occurs.
+			</p>
+			<p>
+				<em> Ministrymon azia </em>
+				was the most common lycaenid migrating through Portachuelo Pass in
+				northern Venezuela (Beebe 1951), and it was one of the species being
+				dispersed by dry season trade winds on the Pacific slope of Panama
+				(Robbins and Small 1981). There are 34 vouchers of
+				<em> Ministrymon azia </em>
+				and none of
+				<em> Ministrymon janevicroy </em>
+				in the USNM that were caught migrating through Portachuelo Pass.
+				There are 12 vouchers of
+				<em> Ministrymon azia </em>
+				and none of
+				<em> Ministrymon janevicroy </em>
+				in the USNM that were being dispersed by dry season trade winds at
+				the Cerro Campana ridge in Panama. The records of migration and
+				dispersal would appear to refer to
+				<em> Ministrymon azia </em>
+				, not to
+				<em> Ministrymon janevicroy </em>
+				.
+			</p>
+			<p>
+				Published larval food plant records (all Fabaceae, one exception)
+				for
+				<em> Ministrymon azia </em>
+				from areas where
+				<em> Ministrymon janevicroy </em>
+				does not occur are the plant genera
+				<em> Acacia </em>
+				Willd. in the United States (Florida) and Chile,
+				<em> Mimosa </em>
+				L. in Cuba, and Trinidad, and
+				<em> Leucaena </em>
+				Benth. in the United States (Florida) (Boscoe 1982, Cock 1985,
+				Fernández and Rodríguez 1997, Vargas and Parra 2009, Glassberg 2012,
+				images of the immatures of
+				<em> Ministrymon azia </em>
+				on
+				<em> Leucaena </em>
+				available from Chin-Lee,
+				<a href="http://bugguide.net/node/view/133700" target="_blank">http://bugguide.net/node/view/133700</a>
+				, accessed April 22, 2013). Miller et al. (1997) wrote that
+				caterpillars of
+				<em> Ministrymon azia </em>
+				in Florida will eat
+				<em> Schinus terebinthifolius </em>
+				Raddi (Anacardiaceae), but this anomalous record needs confirmation.
+			</p>
+			<p>
+				Reared museum specimens that we have seen have all been
+				<em> Ministrymon azia </em>
+				. We examined individuals of
+				<em> Ministrymon azia </em>
+				in the USNM that were reared from
+				<em> Leucaena </em>
+				in Florida (2♂, 2♀) and from
+				<em> Mimosa </em>
+				in Guerrero and Veracruz, Mexico (1♂, 1♀) and in Trinidad (2♀). In
+				DZUP, there are reared specimens from
+				<em> Mimosa </em>
+				in Pernambuco and Rio Grande do Sul, Brazil (2♂). Finally, we
+				identified an adult female that was reared from
+				<em> Prosopis </em>
+				L. in Tarapacá, Chile, but deposition of this specimen is unknown.
+			</p>
+			<p>
+				Other caterpillar food plant records are currently ambiguous and may
+				refer to
+				<em> Ministrymon azia </em>
+				or to
+				<em> Ministrymon janevicroy </em>
+				. Harley et al. (1995) reared “
+				<em> Ministrymon azia </em>
+				” in Mexico and Venezuela from
+				<em> Mimosa </em>
+				, but the deposition of the vouchers is not known. In TAMU, there
+				are reared adults from
+				<em> Leucaena </em>
+				(3♂, 3♀) and from
+				<em> Mimosa </em>
+				(4♂, 3♀) in the United States (Texas). In UCR, there are two reared
+				individuals from
+				<em> Leucaena </em>
+				in Sonora, Mexico. These reared individuals need to be re-examined
+				to determine their specific identify.
+			</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<title>Acknowledgements</title>
+		</ack>
+		<sec sec-type="Author contributions">
+			<title>Author contributions</title>
+			<p>
+				Author contributions
+				<em>Seladonia (Pachyceble) henanensis</em>
+				<strong>sp. n.</strong>
+				, is described from Henan Province, the eastern-central part of
+				China. This species is separated from its allied species by a
+				combination of the following morphological characters: head broad in
+				female, inner hind tibial spur of female with 7–8 slender teeth, T1
+				basolaterally with appressed hair tuft in both sexes, and genitalia
+				with long and large lower gonostylus in male. Important taxonomic
+				characters are illustrated with photographs, scanning electron
+				micrographs, and line drawings.
+			</p>
+			<p>
+				<em>Seladonia (Pachyceble) henanensis</em>
+				<strong>sp. n.</strong>
+				, is described from Henan Province, the eastern-central part of
+				China. This species is separated from its allied species by a
+				combination of the following morphological characters: head broad in
+				female, inner hind tibial spur of female with 7–8 slender teeth, T1
+				basolaterally with appressed hair tuft in both sexes, and genitalia
+				with long and large lower gonostylus in male. Important taxonomic
+				characters are illustrated with photographs, scanning electron
+				micrographs, and line drawings.
+			</p>
+			<p>
+				<em>Seladonia (Pachyceble) henanensis</em>
+				<strong>sp. n.</strong>
+				, is described from Henan Province, the eastern-central part of
+				China. This species is separated from its allied species by a
+				combination of the following morphological characters: head broad in
+				female, inner hind tibial spur of female with 7–8 slender teeth, T1
+				basolaterally with appressed hair tuft in both sexes, and genitalia
+				with long and large lower gonostylus in male. Important taxonomic
+				characters are illustrated with photographs, scanning electron
+				micrographs, and line drawings.
+			</p>
+			<p>
+				<em>Seladonia (Pachyceble) henanensis</em>
+				<strong>sp. n.</strong>
+				, is described from Henan Province, the eastern-central part of
+				China. This species is separated from its allied species by a
+				combination of the following morphological characters: head broad in
+				female, inner hind tibial spur of female with 7–8 slender teeth, T1
+				basolaterally with appressed hair tuft in both sexes, and genitalia
+				with long and large lower gonostylus in male. Important taxonomic
+				characters are illustrated with photographs, scanning electron
+				micrographs, and line drawings.
+			</p>
+		</sec>
+		<ref-list>
+			<ref id="B1">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Cobos</surname>
+							<given-names>A.
+								X.Y.Z.
+							</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2001
+					</year>
+					)
+					<chapter-title>XXX</chapter-title>
+					In:
+					<person-group person-group-type="editor">
+						<name name-style="western">
+							<surname>One</surname>
+							<given-names>No</given-names>
+						</name>
+					</person-group>
+					(
+					<role>Ed.</role>
+					)
+					<article-title>Book book</article-title>
+					<edition>
+						Edition
+					</edition>
+					<volume>
+						Volume
+					</volume>
+					<publisher-name>Publisher</publisher-name>
+					<publisher-loc>City</publisher-loc>
+					<lpage>
+						8765
+					</lpage>
+					pp. [In language]
+					<uri />
+					ISBN:
+					<isbn />
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple" />
+				</mixed-citation>
+			</ref>
+			<ref id="B2">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Darwin</surname>
+							<given-names>Charles</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin2</surname>
+							<given-names>Charles2</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin3</surname>
+							<given-names>Charles3</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin4</surname>
+							<given-names>Charles4</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2000
+					</year>
+					)
+					<article-title>Book title</article-title>
+					[
+					<trans-title>Translated title</trans-title>
+					]
+					<edition>
+						Edition
+					</edition>
+					<volume>
+						Volume
+					</volume>
+					<publisher-name>Publisher</publisher-name>
+					<publisher-loc>City</publisher-loc>
+					<lpage>
+						200
+					</lpage>
+					pp. [In Publication language]
+					<uri>www.example.com</uri>
+					ISBN:
+					<isbn>978-954-642-667-1</isbn>
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;doi&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple">doi</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="B3">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Darwin</surname>
+							<given-names>Charles</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin2</surname>
+							<given-names>Charles2</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin3</surname>
+							<given-names>Charles3</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin4</surname>
+							<given-names>Charles4</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2000
+					</year>
+					)
+					<article-title>Book title</article-title>
+					[
+					<trans-title>Translated title</trans-title>
+					]
+					<edition>
+
+					</edition>
+					<volume>
+
+					</volume>
+					<publisher-name>Publisher</publisher-name>
+					<publisher-loc>City</publisher-loc>
+					<lpage>
+						300
+					</lpage>
+					pp.
+					<uri />
+					ISBN:
+					<isbn />
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple" />
+				</mixed-citation>
+			</ref>
+			<ref id="B4">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Darwin</surname>
+							<given-names>Charles</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin2</surname>
+							<given-names>Charles2</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin3</surname>
+							<given-names>Charles3</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Darwin4</surname>
+							<given-names>Charles4</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2000
+					</year>
+					)
+					<article-title>Book title</article-title>
+					[
+					<trans-title>Translated title</trans-title>
+					]
+					<edition>
+						Edition
+					</edition>
+					<volume>
+						Volume
+					</volume>
+					<publisher-name>Publisher</publisher-name>
+					<publisher-loc>City</publisher-loc>
+					<lpage>
+						100
+					</lpage>
+					pp. [In Publication language]
+					<uri>www.example.com</uri>
+					ISBN:
+					<isbn>978-954-642-666-1</isbn>
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;10.3897/zookeys.305.4787&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple">10.3897/zookeys.305.4787</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="B5">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Mallet</surname>
+							<given-names>James</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Willmott</surname>
+							<given-names>Keith</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2003
+					</year>
+					)
+					<article-title>Taxonomy: renaissance or Tower of Babel?</article-title>
+					<source>Trends in Ecology &amp; Evolution</source>
+					<volume>
+						18
+					</volume>
+					(
+					<issue>
+						2
+					</issue>
+					):
+					<fpage>
+						57
+					</fpage>
+					–
+					<lpage>
+						59
+					</lpage>
+					<uri>http://linkinghub.elsevier.com/retrieve/pii/S0169534702000617</uri>
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;10.1016/S0169-5347(02)00061-7&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple">10.1016/S0169-5347(02)00061-7</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="B6">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Pall</surname>
+							<given-names>José</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Coscarón</surname>
+							<given-names>María
+								del Carmen
+							</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2013
+					</year>
+					)
+					<article-title>Synopsis of Acanthocerini (Hemiptera, Coreidae) from
+						Argentina</article-title>
+					<source>ZooKeys</source>
+					<volume>
+						305
+					</volume>
+					(
+					<issue>
+
+					</issue>
+					):
+					<fpage>
+						33
+					</fpage>
+					–
+					<lpage>
+						53
+					</lpage>
+					<uri>http://www.pensoft.net/journals/zookeys/article/3727/abstract/synopsis-of-acanthocerini-hemiptera-coreidae-from-argentina</uri>
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;10.3897/zookeys.305.3727&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple">10.3897/zookeys.305.3727</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="B7">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Penney</surname>
+							<given-names>David</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Dunlop</surname>
+							<given-names>Jason
+								A
+							</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Marusik</surname>
+							<given-names>Yuri
+								M
+							</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2012
+					</year>
+					)
+					<article-title>Summary statistics for fossil spider species
+						taxonomy.</article-title>
+					<source>ZooKeys</source>
+					<volume>
+						192
+					</volume>
+					(
+					<issue>
+
+					</issue>
+					):
+					<fpage>
+						1
+					</fpage>
+					–
+					<lpage>
+						13
+					</lpage>
+					<uri />
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;10.3897/zookeys.192.3093&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple">10.3897/zookeys.192.3093</ext-link>
+				</mixed-citation>
+			</ref>
+			<ref id="B8">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Wolfram</surname>
+							<given-names>Stephen</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						2012
+					</year>
+					)
+					<article-title>Mathematica</article-title>
+					<publisher-name>Wolfram</publisher-name>
+					<comment> [released
+						23-01-2012
+						]
+					</comment>
+					<uri>http://www.wolfram.com/mathematica/</uri>
+				</mixed-citation>
+			</ref>
+			<ref id="B9">
+				<mixed-citation xlink:type="simple" />
+			</ref>
+			<ref id="B10">
+				<mixed-citation xlink:type="simple">
+					<person-group person-group-type="author">
+						<name name-style="western">
+							<surname>Authors</surname>
+							<given-names>Authors</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Authors</surname>
+							<given-names>Authors1</given-names>
+						</name>
+					</person-group>
+					(
+					<year>
+						1999
+					</year>
+					)
+					<person-group person-group-type="editor">
+						<name name-style="western">
+							<surname>Editors</surname>
+							<given-names>Editors</given-names>
+						</name>
+						<name name-style="western">
+							<surname>Editors</surname>
+							<given-names>Editors1</given-names>
+						</name>
+					</person-group>
+					(
+					<role>Eds</role>
+					)
+					<article-title> Book title</article-title>
+					<volume>
+						13
+					</volume>
+					<source />
+					<lpage>
+						8765
+					</lpage>
+					pp. [In German]
+					<uri>German</uri>
+					ISBN:
+					<isbn />
+					doi:
+					<ext-link ext-link-type="uri"
+						xlink:href="http://dx.doi.org/&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;"
+						xlink:type="simple" />
+				</mixed-citation>
+			</ref>
+		</ref-list>
+		<app-group>
+			<title>Supplementary files</title>
+			<app>
+				<title>
+					XLS1
+				</title>
+				<supplementary-material id="S1" xlink:title="local_file"
+					xlink:type="simple" position="float" xlink:href="2361" mimetype="xls">
+					<caption>
+						<p>Brief description. Brief description.</p>
+					</caption>
+					<p>
+						<bold>Authors: </bold>
+						Author1 Author1, Author-Author2 Author2, Author3 Author3
+					</p>
+					<p>
+						<bold>Data type: </bold>
+						Excel sheet
+					</p>
+					<p>
+						<bold>Description:</bold>
+					</p>
+					<p>Brief description. Brief description.</p>
+					<p>Brief description. Brief descrip.</p>
+					<p>
+						B
+						<u>1</u>
+						r
+						<sup>2</sup>
+						i
+						<sub>3</sub>
+						e
+						<strong>4</strong>
+						f
+						<sup>
+							<em>5</em>
+						</sup>
+						d
+						<sub>
+							<u>
+								<strong>
+									<em>escr</em>
+								</strong>
+							</u>
+						</sub>
+						iption
+					</p>
+					<p>
+						<bold>File name: </bold>
+						2361
+					</p>
+				</supplementary-material>
+			</app>
+			<app>
+				<title>
+					XSL2
+				</title>
+				<supplementary-material id="S2" xlink:title="local_file"
+					xlink:type="simple" position="float" xlink:href="2362" mimetype="xls">
+					<caption>
+						<p>Brief description. Brief description.</p>
+					</caption>
+					<p>
+						<bold>Authors: </bold>
+						A. AuthorX
+					</p>
+					<p>
+						<bold>Data type: </bold>
+						Excel sheet
+					</p>
+					<p>
+						<bold>Description:</bold>
+					</p>
+					<p>Brief description. Brief description.</p>
+					<p>Brief description. Brief description...</p>
+					<p>
+						<bold>File name: </bold>
+						2362
+					</p>
+				</supplementary-material>
+			</app>
+		</app-group>
+	</back>
+	<floats-group>
+		<fig id="F1" position="float" orientation="portrait">
+			<label>Figure 1.</label>
+			<caption>
+				<p>
+					Figures 1–10.
+					<em>Athaumastus haematicus</em>
+					(Stål).
+					<strong>1–5</strong>
+					♂,
+					<strong>1</strong>
+					dorsal view
+					<strong>2</strong>
+					ventral view
+					<strong>3</strong>
+					pronotum
+					<strong>4</strong>
+					hind leg
+					<strong>5</strong>
+					male genital capsule, ventral view
+					<strong>6–10</strong>
+					♀
+					<strong>6</strong>
+					dorsal view
+					<strong>7</strong>
+					ventral view
+					<strong>8</strong>
+					pronotum leg
+					<strong>9</strong>
+					hind leg
+					<strong>10</strong>
+					female genital segment, ventral view.
+				</p>
+				<p>
+					<em>Athaumastus haematicus</em>
+					(Stål).
+					<strong>1–5</strong>
+					♂,
+					<strong>1</strong>
+					dorsal view
+					<strong>2</strong>
+					ventral view
+					<strong>3</strong>
+					pronotum
+					<strong>4</strong>
+					hind leg
+					<strong>5</strong>
+					male genital capsule, ventral view
+					<strong>6–10</strong>
+					♀
+					<strong>6</strong>
+					dorsal view
+					<strong>7</strong>
+					ventral view
+					<strong>8</strong>
+					pronotum leg
+					<strong>9</strong>
+					hind leg
+					<strong>10</strong>
+					female genital segment, ventral view.
+				</p>
+			</caption>
+			<graphic
+				xlink:href="http://pwt.pensoft.net/showfigure.php?filename=big_2358.jpg"
+				position="float" orientation="portrait" xlink:type="simple" />
+		</fig>
+		<fig id="F2" position="float" orientation="portrait">
+			<label>Figure 2.</label>
+			<caption>
+				<p>Figures
+					1&amp;ndash;10.
+					<em>Athaumastus haematicus</em>
+					(St&amp;aring;l).
+					<strong>1&amp;ndash;5</strong>
+					&amp;#9794;,
+					<strong>1</strong>
+					dorsal view
+					<strong>2</strong>
+					ventral view
+					<strong>3</strong>
+					pronotum
+					<strong>4</strong>
+					hind leg
+					<strong>5</strong>
+					male genital capsule, ventral view
+					<strong>6&amp;ndash;10</strong>
+					&amp;#9792;
+					<strong>6</strong>
+					dorsal view
+					<strong>7</strong>
+					ventral view
+					<strong>8</strong>
+					pronotum leg
+					<strong>9</strong>
+					hind leg
+					<strong>10</strong>
+					female genital segment, ventral view.
+				</p>
+			</caption>
+			<graphic
+				xlink:href="http://pwt.pensoft.net/showfigure.php?filename=big_2359.jpg"
+				position="float" orientation="portrait" xlink:type="simple" />
+		</fig>
+		<table-wrap id="T1" position="float" orientation="portrait">
+			<label>Table 1.</label>
+			<caption>
+				<p>
+					Table cAption
+					<em>Dersagrena subfoveolata</em>
+					(Berg) ♂, ♀.
+					<strong>34–35</strong>
+					male genital capsule, ventral view
+					<strong>34</strong>
+					pg: pygophore
+					<strong>35</strong>
+					paramere
+					<strong>36–37</strong>
+					female genital segments, ventral view
+					<strong>36</strong>
+					8 pt: paratergite eight, 9 pt: paratergite nine, vlf. 1: first
+					valvifer
+					<strong>37</strong>
+					8 pt: paratergite eight, vlf. 1: first valvifer, vlf. 2: second
+					valvifer.
+				</p>
+			</caption>
+			<table>
+				<tbody>
+					<tr>
+						<td rowspan="1" colspan="1">1</td>
+						<td rowspan="1" colspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1">2</td>
+						<td rowspan="1" colspan="1">3</td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1">2</td>
+						<td rowspan="1" colspan="1">3</td>
+					</tr>
+				</tbody>
+			</table>
+		</table-wrap>
+		<table-wrap id="T2" position="float" orientation="portrait">
+			<label>Table 2.</label>
+			<caption>
+				<p>
+					<em>Dersagrena subfoveolata</em>
+					(Berg) ♂, ♀.
+					<strong>34–35</strong>
+					male genital capsule, ventral view
+					<strong>34</strong>
+					pg: pygophore
+					<strong>35</strong>
+					paramere
+					<strong>36–37</strong>
+					female genital segments, ventral view
+					<strong>36</strong>
+					8 pt: paratergite eight, 9 pt: paratergite nine, vlf. 1: first
+					valvifer
+					<strong>37</strong>
+					8 pt: paratergite eight, vlf. 1: first valvifer, vlf. 2: second
+					valvifer.
+				</p>
+			</caption>
+			<table>
+				<thead>
+					<tr>
+						<th rowspan="1" colspan="1">1</th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+						<th rowspan="1" colspan="1"> </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">1</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">+</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">+</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">-</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">-</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">+</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">3</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">5</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">4</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">d</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+					<tr>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1">34</td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+						<td rowspan="1" colspan="1"> </td>
+					</tr>
+				</tbody>
+			</table>
+		</table-wrap>
+	</floats-group>
+</article>

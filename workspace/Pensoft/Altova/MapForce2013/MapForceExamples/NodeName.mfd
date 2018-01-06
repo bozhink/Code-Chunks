@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap3" blackbox="0" uid="37311072" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="MapPerson" library="user" blackbox="0" uid="52576146" kind="19" visible="0">
+					<view ltx="249" lty="116" rbx="521" rby="149"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Employees" componentid="52576142" expanded="1">
+								<entry name="Manager" inpkey="54"/>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Person" componentid="52576145" expanded="1">
+								<entry name="Person" outkey="55"/>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="MapPerson" library="user" blackbox="0" uid="52576147" kind="19" visible="0">
+					<view ltx="249" lty="182" rbx="517" rby="216"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Employees" componentid="52576142" expanded="1">
+								<entry name="Manager" inpkey="56"/>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Person" componentid="52576145" expanded="1">
+								<entry name="Person" outkey="57"/>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="39124176" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" SaveRelativePaths="0"/>
+					<view ltx="-15" lty="2" rbx="151" rby="319"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Company" expanded="1">
+										<entry name="Employees" expanded="1">
+											<entry name="Manager" outkey="10" expanded="1"/>
+											<entry name="Programmer" outkey="13" expanded="1"/>
+											<entry name="Support" outkey="16" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Employees.xsd" inputinstance="Employees.xml" instanceroot="{}Company"/>
+					</data>
+				</component>
+				<component name="MapPerson" library="user" blackbox="0" uid="52576144" kind="19" visible="0">
+					<view ltx="249" lty="48" rbx="516" rby="81"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Employees" componentid="52576142" expanded="1">
+								<entry name="Manager" inpkey="49"/>
+							</entry>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Person" componentid="52576145" expanded="1">
+								<entry name="Person" outkey="53"/>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="38395328" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1" SaveRelativePaths="0"/>
+					<view ltx="611" lty="5" rbx="757" rby="300"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PersonList" expanded="1">
+										<entry name="Person" inpkey="11" expanded="1"/>
+										<entry name="Person" inpkey="14" expanded="1" clone="1"/>
+										<entry name="Person" inpkey="17" expanded="1" clone="1"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="51">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="58">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="59">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="60">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="61">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="62">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="49" edgekey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="54" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="56" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="11" edgekey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="14" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="17" edgekey="61"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="MapPerson" library="user" blackbox="0" uid="52576140" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="node-name" library="core" uid="52576141" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="275" lty="-17" rbx="356" rby="22"/>
+				</component>
+				<component name="document" library="xml" uid="52576142" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="1" rbx="151" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Manager" outkey="3" expanded="1">
+								<entry name="FirstName" outkey="12"/>
+								<entry name="LastName" outkey="13"/>
+							</entry>
+						</root>
+						<document schema="Employees.xsd" instanceroot="{}Company/{}Employees/{}Manager"/>
+						<wsdl/>
+						<parameter usageKind="input" name="Employees"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="52576145" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="453" lty="2" rbx="603" rby="202"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Person" inpkey="18" expanded="1">
+								<entry name="role" type="attribute" inpkey="7"/>
+								<entry name="First" inpkey="9"/>
+								<entry name="Last" inpkey="10"/>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList/{}Person"/>
+						<wsdl/>
+						<parameter usageKind="output" name="Person"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="7" edgekey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="1" edgekey="6"/>
+							<edge vertexkey="18" edgekey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="9" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="10" edgekey="16"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

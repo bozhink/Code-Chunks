@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="filter-out-empty" library="user" blackbox="0" uid="18" kind="19" visible="0">
+					<view ltx="370" lty="265" rbx="490" rby="299"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Input" inpkey="35" componentid="13"/>
+							<entry name="Name" inpkey="37" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Output" outkey="1" componentid="15"/>
+						</root>
+					</data>
+				</component>
+				<component name="txt" library="text" uid="1" kind="16">
+					<properties/>
+					<view rbx="244" rby="247"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Root" expanded="1">
+										<entry name="Sections" outkey="31" expanded="1">
+											<entry name="Split once" expanded="1">
+												<entry name="Split once" expanded="1">
+													<entry name="Section Name" outkey="17"/>
+													<entry name="Section Comment" outkey="4"/>
+												</entry>
+												<entry name="Parameters" outkey="14" expanded="1">
+													<entry name="Split once" expanded="1">
+														<entry name="Parameter Name" outkey="9"/>
+														<entry name="Split once" expanded="1">
+															<entry name="Parameter Value" outkey="22"/>
+															<entry name="Comment" outkey="34"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="txt" encoding="52" byteorder="1" byteordermark="0" config="ini.mft"/>
+					</data>
+				</component>
+				<component name="filter-out-empty" library="user" blackbox="0" uid="12" kind="19" visible="0">
+					<view ltx="371" lty="201" rbx="491" rby="235"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Input" inpkey="15" componentid="13"/>
+							<entry name="Name" inpkey="12" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Output" outkey="25" componentid="15"/>
+						</root>
+					</data>
+				</component>
+				<component name="filter-out-empty" library="user" blackbox="0" uid="19" kind="19" visible="0">
+					<view ltx="371" lty="80" rbx="491" rby="114"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Input" inpkey="5" componentid="13"/>
+							<entry name="Name" inpkey="7" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Output" outkey="28" componentid="15"/>
+						</root>
+					</data>
+				</component>
+				<component name="filter-out-empty" library="user" blackbox="0" uid="17" kind="19" visible="0">
+					<view ltx="369" lty="1" rbx="489" rby="35"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Input" inpkey="18" componentid="13"/>
+							<entry name="Name" inpkey="20" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Output" outkey="39" componentid="15"/>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="642" lty="-5" rbx="792" rby="195"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Ini" expanded="1">
+										<entry name="Section" inpkey="32" expanded="1">
+											<entry name="Name" type="attribute" inpkey="40"/>
+											<entry name="Comment" type="attribute" inpkey="29"/>
+											<entry name="Parameter" inpkey="26" expanded="1">
+												<entry name="Name" type="attribute" inpkey="10"/>
+												<entry name="Value" type="attribute" inpkey="23"/>
+												<entry name="Comment" type="attribute" inpkey="2"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ini.xsd" instanceroot="{}Ini" sps="Ini.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+							<edge vertexkey="7" edgekey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="11"/>
+							<edge vertexkey="12" edgekey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15" edgekey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18" edgekey="19"/>
+							<edge vertexkey="20" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="35" edgekey="36"/>
+							<edge vertexkey="37" edgekey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="40" edgekey="41"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="filter-out-empty" library="user" blackbox="0" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="Input" library="core" uid="13" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="Input"/>
+					</data>
+				</component>
+				<component name="Name" library="core" uid="14" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view lty="69"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="Name"/>
+					</data>
+				</component>
+				<component name="normalize-space" library="core" uid="20" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="120" lty="83" rbx="-25" rby="-26"/>
+				</component>
+				<component name="filter" library="core" uid="7" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="14"/>
+					</sources>
+					<targets>
+						<datapoint/>
+						<datapoint pos="1" key="1"/>
+					</targets>
+					<view ltx="426" lty="9" rbx="-204" rby="-215"/>
+				</component>
+				<component name="Output" library="core" uid="15" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<view ltx="621" lty="8" rbx="-600" rby="-92"/>
+					<data>
+						<output datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="output" name="Output"/>
+					</data>
+				</component>
+				<component name="empty" library="lang" uid="21" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="276" lty="84" rbx="-64" rby="-84"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

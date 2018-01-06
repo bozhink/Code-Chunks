@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="group-by" library="core" uid="3" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+						<datapoint pos="1" key="23"/>
+					</targets>
+					<view ltx="357" lty="53" rbx="161" rby="35"/>
+				</component>
+				<component name="group-by" library="core" uid="4" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="18"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+						<datapoint pos="1" key="4"/>
+					</targets>
+					<view ltx="357" lty="112" rbx="18" rby="40"/>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="52"/>
+					</targets>
+					<view ltx="350" lty="18" rbx="91" rby="-377"/>
+					<data>
+						<constant value="Organization Chart" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="383" lty="-10" rbx="77" rby="-441"/>
+					<data>
+						<constant value="nanonull.gif" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="535" lty="3" rbx="785" rby="482"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.xmlspy.com/schemas/orgchart"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="OrgChart" ns="1" expanded="1">
+										<entry name="CompanyLogo" ns="1" expanded="1">
+											<entry name="href" type="attribute" inpkey="50"/>
+										</entry>
+										<entry name="Name" ns="1" inpkey="51"/>
+										<entry name="Office" ns="1" inpkey="27" expanded="1">
+											<entry name="Name" ns="1" inpkey="24"/>
+											<entry name="Department" ns="1" inpkey="2" expanded="1">
+												<entry name="Name" ns="1" inpkey="5"/>
+												<entry name="Person" ns="1" inpkey="10" expanded="1">
+													<entry name="First" ns="1" inpkey="21"/>
+													<entry name="Last" ns="1" inpkey="30"/>
+													<entry name="Title" ns="1" inpkey="33"/>
+													<entry name="PhoneExt" ns="1" inpkey="62"/>
+													<entry name="EMail" ns="1" inpkey="36"/>
+													<entry name="Shares" ns="1" inpkey="38"/>
+													<entry name="LeaveTotal" ns="1" inpkey="39"/>
+													<entry name="LeaveUsed" ns="1" inpkey="40"/>
+													<entry name="LeaveLeft" ns="1" inpkey="41"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="OrgChart.xsd" instanceroot="{http://www.xmlspy.com/schemas/orgchart}OrgChart" sps="OrgChart.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="59"/>
+					</targets>
+					<view ltx="120" lty="500" rbx="-10" rby="40"/>
+					<data>
+						<constant value="000" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="auto-number" library="core" uid="9" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+						<datapoint pos="3" key="56"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="57"/>
+					</targets>
+					<view ltx="211" lty="341" rbx="-110" rby="8"/>
+				</component>
+				<component name="edi" library="text" uid="1" kind="16">
+					<properties/>
+					<view rbx="145" rby="257"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" outkey="7" expanded="1">
+										<entry name="Company" outkey="14"/>
+										<entry name="Department" outkey="17"/>
+										<entry name="First" outkey="20"/>
+										<entry name="Last" outkey="29"/>
+										<entry name="Title" outkey="32"/>
+										<entry name="EMail" outkey="35"/>
+										<entry name="Shares" outkey="42"/>
+										<entry name="LeaveTotal" outkey="43"/>
+										<entry name="UsedTotal" outkey="44"/>
+										<entry name="LeftTotal" outkey="45"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" inputinstance="People.txt" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="People" block="Rows">
+									<field0 name="Company" type="string"/>
+									<field1 name="Department" type="string"/>
+									<field2 name="First" type="string"/>
+									<field3 name="Last" type="string"/>
+									<field4 name="Title" type="string"/>
+									<field5 name="EMail" type="string"/>
+									<field6 name="Shares" type="string"/>
+									<field7 name="LeaveTotal" type="string"/>
+									<field8 name="UsedTotal" type="string"/>
+									<field9 name="LeftTotal" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="format-number" library="core" uid="8" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="58"/>
+						<datapoint pos="1" key="60"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="61"/>
+					</targets>
+					<view ltx="211" lty="461" rbx="-174" rby="99"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+							<edge vertexkey="10" edgekey="11"/>
+							<edge vertexkey="12" edgekey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15" edgekey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18" edgekey="19"/>
+							<edge vertexkey="56" edgekey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21" edgekey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="24" edgekey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="27" edgekey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="30" edgekey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="33" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="36" edgekey="37"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="38" edgekey="46"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="39" edgekey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="44">
+						<edges>
+							<edge vertexkey="40" edgekey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="45">
+						<edges>
+							<edge vertexkey="41" edgekey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="51" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="50" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="58" edgekey="64"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="59">
+						<edges>
+							<edge vertexkey="60" edgekey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61">
+						<edges>
+							<edge vertexkey="62" edgekey="66"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

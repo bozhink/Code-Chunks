@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:entity:xmlns:xml:catalog
+../../Catalog.xsd" prefer="public">
+	<!-- DAISY/NISO Version 2005 -->
+	<!-- 	<public uri="files/-//WAPFORUM//DTD WML 2.0//EN" publicId="schemas/wml/wml20-flat.dtd"/> -->
+	<public publicId="-//NISO//DTD dtbook 2005-1//EN" uri="files/dtbook-2005-1.dtd"/>
+	<public publicId="-//NISO//DTD dtbook 2005-2//EN" uri="files/dtbook-2005-2.dtd"/>
+	<!-- DAISY/NISO Version 2005 support modules-->
+	<public publicId="-//NISO//DTD dtbsmil 2005-2//EN" uri="files/dtbsmil-2005-2.dtd"/>
+	<public publicId="-//NISO//DTD ncx 2005-1//EN" uri="files/ncx-2005-1.dtd"/>
+	<public publicId="+//ISBN 0-9673008-1-9//DTD OEB 1.2 Entities//EN" uri="files/oeb12.ent"/>
+	<public publicId="+//ISBN 0-9673008-1-9//DTD OEB 1.2 Package//EN" uri="files/oebpkg12.dtd"/>
+	<public publicId="-//NISO//DTD resource 2005-1//EN" uri="files/resource-2005-1.dtd"/>
+	<public publicId="-//NISO//DTD bookmark 2005-1//EN" uri="files/bookmark-2005-1.dtd"/>
+	<public publicId="-//NISO//DTD distInfo 2005-1//EN" uri="files/distInfo-2005-1.dtd"/>
+	<public publicId="-//NISO//DTD dtbsmil 2005-1//EN" uri="files/dtbsmil-2005-1.dtd"/>
+	<!-- end DAISY/NISO Version 2005 -->
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/daisy/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/daisy/' rewritePrefix='files/'/>
+</catalog>

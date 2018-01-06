@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--SampleOrder-->
+<!--Version V1R1  Date:OCT-15-2002-->
+<!-- *********************************************************** -->
+<!-- Copyright National Coffee Association of America 2002
+
+National Coffee Association of America (NCA) hereby grants to any person using or
+considering the use of the information in this publication a non-exclusive,
+royalty-free, worldwide, and revocable license (1) to use and implement that
+information, including document type definitions and other specifications,
+and (2) to copy all or part of this publication in any form, provided that
+all such copies clearly retain the foregoing copyright notice.
+
+NCA makes no warranty or representation of any kind
+regarding these specifications or the right of any person to implement them
+free of infringement claims by others in accordance with the above licence.
+The above licence shall be void if the licensee alleges against NCA
+that the information in this publication infringes a
+patent held or claimed by the licensee or a company controlled by or under
+common control with the licensee. -->
+<!-- *********************************************************** -->
+<!-- Developed by Eximware, Inc. as per NCA requirements and specifications. -->
+<!-- *********************************************************** -->
+<!-- Modification Log:-->
+<!-- Oct 10, 2002.  Corrected technical issues reported during testing of the XML
+= Element dateOfIssue  under GeneralInformation - type set to xs:date from ComplexType so that it can contain data that is a valid date
+= Element ContactDetails under Buyer and Seller - made optional
+= Element buyerContractIdentifier under GeneralInformation - type set to xs:string from ComplexType so that it can contain data
+= Element sellerContractIdentifier under GeneralInformation - type set to xs:string from ComplexType so that it can contain data
+= Element carrier under SeaTransportIdenfication - made optional and type set to xs:string from ComplexType so that it can contain data
+= Element AdditionalInformation - type set to xs:string from ComplexType so that it can contain data
+= Element contractType enumeration value Ex-Dock changed to Ex-Docks to be consistent with GCA Contract XML V1R1
+= Element positionOfSale enumeration value Shipment changed to Ship to be consistent with GCA Contract XML V1R1
+= Element packagingType enumeration modified to be consistent with list in GCA Contract XML V1R1 
+= Element weighingMethodCode enumeration modified to be consistent with list in GCA Contract XML V1R1 
+-->
+<!-- *********************************************************** -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="AdditionalInformation" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Remarks or other information relating to the Sample Order. This is free form text and can be used to convey any other information not covered by any of the defined XML elements.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="AddressInformation">
+		<xs:annotation>
+			<xs:documentation>Address of a person or organisation. This may be the postal address of a building or address of a department within a building.  Where structured address elements can be provided these should be filled in the designated elements for ease of processing by the receiver of this document.  Alternatively, address may be provided as free form text formatted into multiple lines.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FormattedAddress" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Free form representation of the address provided as 1 or more lines of text, formatted in the way it is to be presented.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="line" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="NormalisedAddress" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Structured address format with  address elements in distinct named elements</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StreetAddress" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Door numner, street name, suite number etc part of the address within the city.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="line" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="city" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Name of the city</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="StateOrProvince" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>State or Province name</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:choice>
+										<xs:element name="stateOrProvinceCode" type="xs:string"/>
+										<xs:element name="stateOrProvinceName" type="xs:string"/>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Country">
+								<xs:annotation>
+									<xs:documentation>Country in which the address exists. Should be either a universal code or name of the country</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:choice>
+										<xs:element name="countryName" type="xs:string"/>
+										<xs:element name="countryCode" type="xs:string"/>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="postalCode" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Postal code or zip part of the address</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BillOfLadingIdentifier">
+		<xs:annotation>
+			<xs:documentation>Identification provided on the Bill of Lading</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="documentCreatorIdentifier" minOccurs="0"/>
+				<xs:element ref="documentNumber"/>
+				<xs:element ref="documentVersion" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Body">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="GeneralInformation"/>
+				<xs:element ref="Parties"/>
+				<xs:element ref="RoutingSummary"/>
+				<xs:element ref="Consignment"/>
+				<xs:element ref="InstructionalInformation" minOccurs="0"/>
+				<xs:element ref="AdditionalInformation" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Broker">
+		<xs:annotation>
+			<xs:documentation>Name, address and identification of the organisation which is involved as a broker for this contract, if applicable.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="organizationName"/>
+				<xs:element ref="OrganizationIdentification" minOccurs="0"/>
+				<xs:element ref="AddressInformation" minOccurs="0"/>
+				<xs:element ref="ContactDetails" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Buyer">
+		<xs:annotation>
+			<xs:documentation>Name, address and identification of the buyer on this contract.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="organizationName"/>
+				<xs:element ref="OrganizationIdentification" minOccurs="0"/>
+				<xs:element ref="AddressInformation" minOccurs="0"/>
+				<xs:element ref="ContactDetails" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Consignment">
+		<xs:annotation>
+			<xs:documentation>Information about the consignment being offered for sampling.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="QuantityAvailableForSampling"/>
+				<xs:element ref="ProductQuality"/>
+				<xs:element name="SamplingLocation">
+					<xs:annotation>
+						<xs:documentation>Physical Location where the Coffee will be available for Sampling.  Could be a Warehouse or Dock, etc.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="placeName">
+								<xs:annotation>
+									<xs:documentation>Continental Warehouse</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="placelocation">
+								<xs:annotation>
+									<xs:documentation>New York</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="locationCode" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="ConsignmentDetails" minOccurs="0"/>
+				<xs:element name="CustomsReleaseDate" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Date Customs Releases the shipment</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="FDAReleaseDate" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Date FDA Releases the shipment</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConsignmentDetails">
+		<xs:annotation>
+			<xs:documentation>Details of the consignment being offered on this Sample Order.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="freightType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Type of Freight- can be Container, Break Bulk</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Container"/>
+							<xs:enumeration value="Break Bulk"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="ConsignmentIdentifiers" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="GrossWeight" minOccurs="0"/>
+				<xs:element ref="NetWeight" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Container">
+		<xs:annotation>
+			<xs:documentation>Identifies the container if the freight type is container</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="containerIdentification"/>
+				<xs:element ref="containerType" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConsignmentIdentifiers">
+		<xs:annotation>
+			<xs:documentation>Details of all the containers and marks used to make the shipment - ISO Standards</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="BillOfLadingIdentifier" minOccurs="0"/>
+				<xs:element ref="Container" minOccurs="0"/>
+				<xs:element ref="seal" minOccurs="0"/>
+				<xs:element ref="ShipmentMark" minOccurs="0"/>
+				<xs:element name="ContainerUnits" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Quantity of Coffee in the container</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="quanityValue">
+								<xs:annotation>
+									<xs:documentation>Example - No of bags per container</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="quantityUnits" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>69 Kg Bags</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="WarehouseReceipt" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Warehouse Receipt No for the stock issued by the Warehouse</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="cargoNo" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Cargo No issued by the warehouse for various lots/ containers, e.g. - C-12345</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="exchangeIdNo" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Exchange ID No issued by the Exchange / Warehouse after Grading the stock</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ContactDetails">
+		<xs:annotation>
+			<xs:documentation>Information pertaining to the contact person in the organisation pertaining to this document, if available.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personName" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Full Name of the person to be contacted within the organisation.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="departmentName" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Name of the organisational unit or Department that the Contact person works in</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="telephoneNumber" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Telephone Number. Precise format will depend on the parties concerned and local format for telephone numbers.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="faxNumber" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Fax (Facsimile) Number.  Precise format will depend on the parties concerned and local format for fax numbers.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="e-MailAddress" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Electronic mailing address</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ContractIdentifier">
+		<xs:annotation>
+			<xs:documentation>Common Contract Identifier for the Contract.  If the contract is issued by a 3rd party system, such as a B2B  system, the system is identified in the documentCreatorIdentifier child element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="documentCreatorIdentifier"/>
+				<xs:element ref="documentNumber"/>
+				<xs:element ref="documentVersion" minOccurs="0"/>
+				<xs:element name="contractExtension" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Identifier or code to identify the sub-contract or contract extension or shipment number to which this document pertains, if the contract is fixed in parts</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CountryOfDestination">
+		<xs:annotation>
+			<xs:documentation>Country of the Delivery Location</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="locationCode" minOccurs="0"/>
+				<xs:element name="countryName"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CountryOfOrigin">
+		<xs:annotation>
+			<xs:documentation>Country of the original port from which the shipment takes place.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="locationCode" minOccurs="0"/>
+				<xs:element ref="locationName"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GeneralInformation">
+		<xs:annotation>
+			<xs:documentation>References and other general information pertaining to the contract and this document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="dateOfIssue" type="xs:date">
+					<xs:annotation>
+						<xs:documentation>Date of Issue of Sample Order in ISO format, i.e. - YYYY-MM-DD</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="ContractIdentifier"/>
+				<xs:element ref="contractType" minOccurs="0"/>
+				<xs:element ref="e-TransactionNumber" minOccurs="0"/>
+				<xs:element ref="buyerContractIdentifier" minOccurs="0"/>
+				<xs:element ref="sellerContractIdentifier" minOccurs="0"/>
+				<xs:element ref="brokerContractIdentifier" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GrossWeight">
+		<xs:annotation>
+			<xs:documentation>Gross Weight of the Shipment/Consignment as indicated in the Shipping Documents</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="weightUnitCode"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Header">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="documentID" minOccurs="0"/>
+				<xs:element ref="status"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="InstructionalInformation">
+		<xs:annotation>
+			<xs:documentation>Instructional information pertaining to this document</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MoveOrDeliverPeriod" minOccurs="0"/>
+				<xs:element ref="responsibilityOfWeighing" minOccurs="0"/>
+				<xs:element ref="WeighingMethod" minOccurs="0"/>
+				<xs:element name="SamplingOnAccountOf">
+					<xs:annotation>
+						<xs:documentation>Who Pays for the Sampling - Kraft</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="organizationName"/>
+							<xs:element ref="OrganizationIdentification" minOccurs="0"/>
+							<xs:element ref="AddressInformation" minOccurs="0"/>
+							<xs:element ref="ContactDetails" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeansOfTransport">
+		<xs:annotation>
+			<xs:documentation>Identification information pertaining to the means of transport.  </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="SeaTransportIdentification"/>
+				<xs:element ref="RoadTransportIdentification"/>
+				<xs:element ref="RailTransportIdentification"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MoveOrDeliverPeriod">
+		<xs:annotation>
+			<xs:documentation>Period on the contract, which can be Shipment, Arrival, etc as specified in PositionOfSale</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="startDate"/>
+				<xs:element ref="endDate"/>
+				<xs:element ref="positionOfSale"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NetWeight">
+		<xs:annotation>
+			<xs:documentation>Net weight of the Shipment/Consignment as indicated in the Shipping Documents</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="value"/>
+				<xs:element ref="weightUnitCode"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OrganizationIdentification" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Unique reference to the organisation.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="Parties">
+		<xs:annotation>
+			<xs:documentation>Parties involved in the business process or transaction pertaining to this document.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Seller"/>
+				<xs:element ref="Buyer"/>
+				<xs:element ref="Broker" minOccurs="0"/>
+				<xs:element name="Sampler">
+					<xs:annotation>
+						<xs:documentation>Name and address of the organization responsible and authorized to do the sampling.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="organizationName"/>
+							<xs:element ref="OrganizationIdentification" minOccurs="0"/>
+							<xs:element ref="AddressInformation" minOccurs="0"/>
+							<xs:element ref="ContactDetails" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DeliverSamplesTo">
+					<xs:annotation>
+						<xs:documentation>Name and address of the organization to which the samples are to be sent by the Sampler</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="organizationName"/>
+							<xs:element ref="OrganizationIdentification" minOccurs="0"/>
+							<xs:element ref="AddressInformation" minOccurs="0"/>
+							<xs:element ref="ContactDetails" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocationOfStock">
+		<xs:annotation>
+			<xs:documentation>Location of Coffee where the coffee is lying</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="locationName"/>
+				<xs:element name="storeNo" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Warehouse Store #</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PlaceOfDischarge">
+		<xs:annotation>
+			<xs:documentation>Port of Discharge or Port of Destination for Sea Transportation, or, Place where coffee is discharged  for Rail/Road.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="locationCode" minOccurs="0"/>
+				<xs:element ref="locationName"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PlaceOfLoading">
+		<xs:annotation>
+			<xs:documentation>Port of Loading for Sea Transportation or Place where coffee is loaded for Rail/Road</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="locationCode" minOccurs="0"/>
+				<xs:element ref="locationName"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ProductDescription">
+		<xs:annotation>
+			<xs:documentation>Technical  Reference to a description for the coffee, e.g - Santos 2/3 </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProductDescriptionCode" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Unique code reference to the technical description of the coffee like material codes. Can have multiple occurrences to list the buyer's code, seller's code, TLM code, etc.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="codeReferenceType">
+								<xs:annotation>
+									<xs:documentation>Reference to the System or Organization or Standard which defines the code value, e.g. TLM</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="codeValue" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Unique code reference to the technical description of the Coffee</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="productDescriptionText">
+					<xs:annotation>
+						<xs:documentation>Technical description for the Coffee, e.g. Santos 2/3</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ProductQuality">
+		<xs:annotation>
+			<xs:documentation>Group element collecting the different elements that are used to uniquely describe the Coffee and quality</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="product"/>
+				<xs:element ref="CountryOfOrigin" minOccurs="0"/>
+				<xs:element ref="cropYear" minOccurs="0"/>
+				<xs:element ref="ProductDescription"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="QuantityAvailableForSampling">
+		<xs:annotation>
+			<xs:documentation>Quantity being made available for sampling expressed as a weight or as a number of bags of certain weight, typically in the same units as the unit used to specify the quantity in the contract.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="quantityValue"/>
+				<xs:element ref="quantityUnits"/>
+				<xs:element ref="packagingType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RailTransportIdentification">
+		<xs:annotation>
+			<xs:documentation>Identification of the rail car if the shipment is transported by rail</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="carrier"/>
+				<xs:element ref="locomotiveNumber"/>
+				<xs:element ref="railCarNumber"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RoadTransportIdentification">
+		<xs:annotation>
+			<xs:documentation>Identification of the truck or other vehicle, if this shipment is transported overland via road.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="carrier"/>
+				<xs:element name="licensePlateNumber"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RoutingSummary">
+		<xs:annotation>
+			<xs:documentation>Details of the means of transportation, and associated references, describing how this shipment is transported</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MeansOfTransport" minOccurs="0"/>
+				<xs:element name="PlaceOfOrigin" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Point of origin of the cargo, e.g. - inland  Container terminal  </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="locationCode"/>
+							<xs:element ref="locationName"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="PlaceOfLoading" minOccurs="0"/>
+				<xs:element ref="BillOfLadingIdentifier" minOccurs="0"/>
+				<xs:element ref="billOfLadingDate" minOccurs="0"/>
+				<xs:element ref="PlaceOfDischarge"/>
+				<xs:element ref="LocationOfStock"/>
+				<xs:element ref="CountryOfDestination" minOccurs="0"/>
+				<xs:element ref="estimatedDateOfArrivalAtDestination"/>
+				<xs:element ref="estimatedDateOfAvailability" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SampleOrder">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Header"/>
+				<xs:element ref="Body"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SeaTransportIdentification">
+		<xs:annotation>
+			<xs:documentation>Identification of the vessel and voyage if the shipment is made via sea/ocean transport.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Voyage">
+					<xs:annotation>
+						<xs:documentation>Details of the Vessel and voyage. </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="vesselName"/>
+							<xs:element name="carrier" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Carrier Name. e.g. - APL </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="voyageNumber" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ShipmentMark">
+		<xs:annotation>
+			<xs:documentation>ICO or other marks used to mark the shipment</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="icoMark" minOccurs="0"/>
+				<xs:element ref="additionalMark" minOccurs="0"/>
+				<xs:element ref="numberOfBags" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Seller">
+		<xs:annotation>
+			<xs:documentation>Name, address and identification of the Seller on the contract.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="organizationName"/>
+				<xs:element ref="OrganizationIdentification" minOccurs="0"/>
+				<xs:element ref="AddressInformation" minOccurs="0"/>
+				<xs:element ref="ContactDetails" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="WeighingMethod">
+		<xs:annotation>
+			<xs:documentation>Weighing method agreed upon in the contract. For example, NSW 0.5 (Net Shipped Weights 0.5% franchise).  Consists of a code and description.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="weighingMethodCode" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="NULL"/>
+							<xs:enumeration value="SW 0.5"/>
+							<xs:enumeration value="SW 1"/>
+							<xs:enumeration value="LW"/>
+							<xs:enumeration value="DW"/>
+							<xs:enumeration value="PW"/>
+							<xs:enumeration value="RW"/>
+							<xs:enumeration value="SiW"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="weighingMethodDescription"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="additionalMark" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Other shipment marks used to identify the coffee.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="billOfLadingDate" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Date when the Bill of Lading was issued.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="brokerContractIdentifier" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Broker's Contract Reference if a broker was involved with the issuance of the Contract.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="buyerContractIdentifier" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Buyer's Contract Reference Number. Alphanumeric Contract Number issued by the Company or System</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="containerIdentification" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Unique Container number</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="containerType">
+		<xs:annotation>
+			<xs:documentation>Type of container - 20 or 40 feet</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:list itemType="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="contractType">
+		<xs:annotation>
+			<xs:documentation>IncoTerms for the Contract. e.g. - FOB, CNF, etc</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="14"/>
+				<xs:enumeration value="C+F"/>
+				<xs:enumeration value="CIF"/>
+				<xs:enumeration value="Delivered"/>
+				<xs:enumeration value="FOB"/>
+				<xs:enumeration value="FOR"/>
+				<xs:enumeration value="FOT"/>
+				<xs:enumeration value="Ex-Dock"/>
+				<xs:enumeration value="Ex-Warehouse"/>
+				<xs:enumeration value="Spot"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="cropYear" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Year in which the crop was harvested.  Can span a two year period.  Content would be a 4 digit year or in the case it spans two years then represented as YYYY/YYYY.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="documentCreatorIdentifier" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Identifies the company or system which issued the docr., e.g. Carrier Name for B/L</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="documentID" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Users can enter, if any, their Sample Order  No.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="documentNumber">
+		<xs:annotation>
+			<xs:documentation>Unique identification of the document</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="14"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="documentVersion" type="xs:decimal">
+		<xs:annotation>
+			<xs:documentation>Version number of the Contract to which this Sample Order pertains, if the document Issuer maintains version numbers for the contract.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="e-TransactionNumber" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Contract Number generated by  an E-Commerce service such as EXIMWARE's ICM</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="endDate" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>End date of the period</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="estimatedDateOfAvailability" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Estimated Date of Availability of the Coffee free of encumberances as per contractual terms.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="estimatedDateOfArrivalAtDestination" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Estimated Date of Arrival of shipment at destination.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="line" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Line of text</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="locationCode" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Harmonized Location Code for the location</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="locationName" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Descriptive name associated with the location, e.g. - Continental Warehouse, New York</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="locomotiveNumber" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Unique identification of the locomotive</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="icoMark" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Universal standardized ICO mark for the coffee if available.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="numberOfBags" type="xs:integer">
+		<xs:annotation>
+			<xs:documentation>No of bags per marks</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="organizationName">
+		<xs:annotation>
+			<xs:documentation>Full Legal name of the organization</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="50"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="packagingType">
+		<xs:annotation>
+			<xs:documentation>Bags, Bulk, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="BGS"/><!--Bags-->
+				<xs:enumeration value="CT"/><!--Carton-->
+				<xs:enumeration value="BLK"/><!--Bulk-->
+				<xs:enumeration value="SS"/><!--Supersacks-->
+				<xs:enumeration value="BTD"/><!--Buyer To Declare-->
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="positionOfSale">
+		<xs:annotation>
+			<xs:documentation>Whether it is Shipment, Delivery or afloat basis</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Afloat"/>
+				<xs:enumeration value="Arrival"/>
+				<xs:enumeration value="Arrival or Delivery at Seller's option"/>
+				<xs:enumeration value="Crossing"/>
+				<xs:enumeration value="DAF"/>
+				<xs:enumeration value="Delivery"/>
+				<xs:enumeration value="Ship"/>
+				<xs:enumeration value="Spot"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="product" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>General Product Description. Harmonized code that identifies the commodity being shipped</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="quantityUnits">
+		<xs:annotation>
+			<xs:documentation>Units associated with the quantity.  E.g.69 Kg Bags</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="60KB"/>
+				<xs:enumeration value="69KB"/>
+				<xs:enumeration value="70KB"/>
+				<xs:enumeration value="MT"/>
+				<xs:enumeration value="LBS"/>
+				<xs:enumeration value="KGS"/>
+				<xs:enumeration value="46KB"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="quantityValue" type="xs:double">
+		<xs:annotation>
+			<xs:documentation>Numeric value including decimal places of the quantity. Example - 1000</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="railCarNumber" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Unique identification of a rail car on which cargo is being shipped</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="responsibilityOfWeighing">
+		<xs:annotation>
+			<xs:documentation>Whether Buyer or Seller is responsible for weighing</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Buyer"/>
+				<xs:enumeration value="Seller"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="sellerContractIdentifier" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Seller's Contract Reference Number. Alphanumeric Contract Number issued by the Company or System</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="seal" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Container seal number</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="startDate" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>start date of the period</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="status">
+		<xs:annotation>
+			<xs:documentation>Status of this document.  Possible values are Draft, Final or Amended.  Amended is to be used if this  document is an amended version of an earlier Final document.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:list itemType="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="value" type="xs:decimal">
+		<xs:annotation>
+			<xs:documentation>numeric value</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="vesselName" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Name of the ship of vessel e.g. - Maserk Integrity</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="voyageNumber" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Unique identifier or reference for the voyage by the specified Vessel, as provided by the Shipping Line</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="weightUnitCode">
+		<xs:annotation>
+			<xs:documentation>Harmonized weight unit code</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="MT"/>
+				<xs:enumeration value="LBS"/>
+				<xs:enumeration value="KGS"/>
+				<xs:enumeration value="46KB"/>
+				<xs:enumeration value="60KB"/>
+				<xs:enumeration value="69KB"/>
+				<xs:enumeration value="70KB"/>
+				<xs:enumeration value="75KB"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

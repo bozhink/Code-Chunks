@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="14">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="exists" library="core" uid="52" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="138"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="132"/>
+					</targets>
+					<view ltx="708" lty="277" rbx="288" rby="-7"/>
+				</component>
+				<component name="SelectMissionKit" library="core" uid="60" kind="6">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="177"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="178"/>
+					</targets>
+					<view ltx="7" lty="232" rbx="7" rby="232"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SelectMissionKit" optional="1"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="8" kind="16">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="728" rbx="908" rby="181"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" expanded="1">
+										<entry name="Tool" inpkey="35"/>
+										<entry name="ExistsInMissionKit" inpkey="157"/>
+									</entry>
+									<entry name="Rows" inpkey="158" expanded="1" clone="1">
+										<entry name="Tool" inpkey="159"/>
+										<entry name="ExistsInMissionKit" inpkey="160"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" outputinstance="AltovaMissionKit.csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator=";" quote="" firstrownames="false" removeempty="true">
+								<names root="Text file" block="Rows">
+									<field0 name="Tool" type="string"/>
+									<field1 name="ExistsInMissionKit" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="58" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="164"/>
+					</targets>
+					<view ltx="318" lty="55" rbx="-216" rby="-258"/>
+					<data>
+						<constant value="MissionKit for " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="57" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="156"/>
+					</targets>
+					<view ltx="597" lty="38" rbx="63" rby="-275"/>
+					<data>
+						<constant value="Tool" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="59" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="161"/>
+						<datapoint pos="1" key="162"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="163"/>
+					</targets>
+					<view ltx="484" lty="26" rbx="-1" rby="-214"/>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="6" lty="198" rbx="-681" rby="-165"/>
+					<data>
+						<constant value="Enterprise XML Developers" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" AddSchemaLocation="0"/>
+					<view rbx="187" rby="160"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="AltovaTools" expanded="1">
+										<entry name="Tool" outkey="2" expanded="1">
+											<entry name="Name" type="attribute" outkey="3"/>
+											<entry name="Code" type="attribute" outkey="24"/>
+										</entry>
+										<entry name="MissionKit" expanded="1">
+											<entry name="Edition" type="attribute" outkey="26"/>
+											<entry name="ToolCodes" type="attribute" outkey="27"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="AltovaTools.xsd" inputinstance="AltovaTools.xml" outputinstance="AltovaTools.xml" instanceroot="{}AltovaTools" userdefinedschemalocation="AltovaTools.xsd"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="ToolCodes" library="core" uid="56" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="143"/>
+						<datapoint pos="1" key="135"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="139"/>
+						<datapoint/>
+					</targets>
+					<view ltx="221" lty="237" rbx="-466" rby="-126"/>
+				</component>
+				<component name="equal" library="core" uid="48" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="142"/>
+						<datapoint pos="1" key="144"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="134"/>
+					</targets>
+					<view ltx="144" lty="306" rbx="72" rby="-93"/>
+				</component>
+				<component name="constant" library="core" uid="47" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="130"/>
+					</targets>
+					<view ltx="286" lty="316" rbx="-401" rby="-47"/>
+					<data>
+						<constant value="2" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="50" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="129"/>
+						<datapoint pos="1" key="141"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="126"/>
+					</targets>
+					<view ltx="492" lty="198" rbx="146" rby="-113"/>
+				</component>
+				<component name="constant" library="core" uid="54" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="124"/>
+					</targets>
+					<view ltx="730" lty="366" rbx="43" rby="3"/>
+					<data>
+						<constant value="N" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="53" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="122"/>
+					</targets>
+					<view ltx="730" lty="341" rbx="43" rby="-22"/>
+					<data>
+						<constant value="Y" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="55" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="133"/>
+						<datapoint pos="1" key="123"/>
+						<datapoint pos="2" key="125"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="145"/>
+					</targets>
+					<view ltx="806" lty="293" rbx="119" rby="-70"/>
+				</component>
+				<component name="filter" library="core" uid="51" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="136"/>
+						<datapoint pos="1" key="127"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="137"/>
+						<datapoint/>
+					</targets>
+					<view ltx="572" lty="250" rbx="-115" rby="-113"/>
+				</component>
+				<component name="tokenize-by-length" library="core" uid="49" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="140"/>
+						<datapoint pos="1" key="131"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="128"/>
+					</targets>
+					<view ltx="349" lty="237" rbx="34" rby="20"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="158" edgekey="165"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="159" edgekey="166"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="129" edgekey="167"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="142" edgekey="168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="143" edgekey="169"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="177" edgekey="179"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="122">
+						<edges>
+							<edge vertexkey="123" edgekey="146"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="124">
+						<edges>
+							<edge vertexkey="125" edgekey="147"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="126">
+						<edges>
+							<edge vertexkey="127" edgekey="148"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="128">
+						<edges>
+							<edge vertexkey="136" edgekey="150"/>
+							<edge vertexkey="141" edgekey="172"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="130">
+						<edges>
+							<edge vertexkey="131" edgekey="151"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="132">
+						<edges>
+							<edge vertexkey="133" edgekey="152"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="134">
+						<edges>
+							<edge vertexkey="135" edgekey="153"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="137">
+						<edges>
+							<edge vertexkey="138" edgekey="154"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="139">
+						<edges>
+							<edge vertexkey="140" edgekey="155"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="145">
+						<edges>
+							<edge vertexkey="160" edgekey="173"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="156">
+						<edges>
+							<edge vertexkey="35" edgekey="174"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="163">
+						<edges>
+							<edge vertexkey="157" edgekey="175"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="164">
+						<edges>
+							<edge vertexkey="161" edgekey="176"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="178">
+						<edges>
+							<edge vertexkey="162" edgekey="180"/>
+							<edge vertexkey="144" edgekey="181"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.0" xmlns="http://www.crossref.org/doi_resources_schema/4.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/doi_resources_schema/4.3.0 http://www.crossref.org/schema/deposit/doi_resources4.3.0.xsd">
+<head>
+<doi_batch_id>dd198694-e387-44fc-9a4d-1ab32719e5aa</doi_batch_id>
+<depositor>
+<name>pens</name>
+<email_address>bozhin.karaivanov@gmail.com</email_address>
+</depositor>
+</head>
+<body>
+<doi_citations>
+<doi>part-2-263-4261</doi>
+<citation_list>
+	<citation key="ref1"><author>Yin</author><first_page>113</first_page><cYear>2001</cYear><volume_title>Menstruation Disorder</volume_title><unstructured_citation>[4]	Yin F. L. Menstruation Disorder. (eds.) Internal Medicine. Shanghai Science and Technology Publications, Shanghai, 2001, pp. 113-117</unstructured_citation></citation>
+	<citation key="ref2"><author>Zeng</author><first_page>208</first_page><cYear>2003</cYear><volume_title>Emmeniopathy</volume_title><unstructured_citation>[5]	Zeng C. H, Dai W. H. Emmeniopathy. (eds.) Internal Medicine. People's Medical Publications, Beijing, 2003, pp. 208-212.</unstructured_citation></citation>
+	<citation key="ref3"><author>Emmeniopathy</author><first_page>268</first_page><cYear>2002</cYear><volume_title>Internal Medicine of Traditional Chinese Medicine</volume_title><unstructured_citation>[7]	Chen X.J. Emmeniopathy. (eds.) Internal Medicine of Traditional Chinese Medicine. Shanghai Science and Technology Publication, Shanghai, 2002, pp. 268-271.</unstructured_citation></citation>
+	<citation key="ref4"><journal_title>J Chin Trad Patent Med</journal_title><author>Liang</author><volume>7</volume><first_page>1073</first_page><cYear>2006</cYear><article_title>Determination of stachydrine hydrochloride in Herba leonuri granules by TLC.</article_title><unstructured_citation>[10]	Liang X. M, Wang Y, Zhang X. M. Determination of stachydrine hydrochloride in Herba leonuri granules by TLC. J. Chin. Trad. Patent Med. 7: 1073-10744, 2006.</unstructured_citation></citation>
+	<citation key="ref5"><journal_title>J Chin Herb Med</journal_title><author>Ruan</author><volume>11</volume><first_page>15</first_page><cYear>2003</cYear><article_title>Research developments of Herba Leonuri on the chemical, pharmacological and clinical researches.</article_title><unstructured_citation>[11]	Ruan J. L. Research developments of Herba Leonuri on the chemical, pharmacological and clinical researches. J. Chin. Herb. Med. 11: 15-19, 2003.</unstructured_citation></citation>
+	<citation key="ref6"><journal_title>J Heilongjiang Med</journal_title><author>Meng</author><volume>5</volume><first_page>467</first_page><cYear>2007</cYear><article_title>Research developments of Herba Leonuri.</article_title><unstructured_citation>[12]	Meng X.Y, Yang J. Q. Research developments of Herba Leonuri. J. Heilongjiang Med. 5:467-468, 2007.</unstructured_citation></citation>
+	<citation key="ref6"><unstructured_citation>[1]	China Pharmacopoeia Committee. Section One (eds.) Chinese Pharmacopoeia 2005 English Edition. Chemical Industry Press (CIP), Beijing, 2005</unstructured_citation></citation>
+	<citation key="ref6"><unstructured_citation>[2]	Huang Z.S. Formula of promoting blood circulation for removing blood stasis. (eds.) Chinese Materia Medica. People's Medical Publication, Beijing, 2007, pp. 303-317.</unstructured_citation></citation>
+	<citation key="ref6"><unstructured_citation>[3]	Tao Z.Z. Blood-activating formula (eds.) Chinese Mate-ria Medica. People's Medical Publications. Beijing, 2006, pp.346-387.</unstructured_citation></citation>
+	<citation key="ref6"><unstructured_citation>[6]	Ou Y. H. Q. Menstruation Diseases (eds.) Gynecology of Traditional Chinese Medicine. People's Medical Publica-tions. Beijing, 2006, pp. 52-96.</unstructured_citation></citation>
+	<citation key="ref6"><unstructured_citation>[8]	Wang Y. K, Wang F. C. Menstruation Diseases (eds.) Gynecology of Traditional Chinese Medicine. Chinese Press of Traditional Chinese Medicine, Beijing, 2009, pp. 31-78.</unstructured_citation></citation>
+	<citation key="ref6"><unstructured_citation>[9]	Zhang Y. Z. Menstruation Disorder (eds.) Traditional Chinese Gynecology. Chinese Press of Traditional Chi-nese Medicine, Beijing, 2005, pp. 25-63.</unstructured_citation></citation>
+</citation_list>
+</doi_citations>
+</body>
+</doi_batch>

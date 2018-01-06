@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 U (http://www.xmlspy.com) by Mr. Nobody (Altova GmbH) -->
+<Articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Articles.xsd">
+	<Article>
+		<Number>11</Number>
+		<Name>sneakers</Name>
+		<SinglePrice>99</SinglePrice>
+	</Article>
+	<Article>
+		<Number>22</Number>
+		<Name>Headband</Name>
+		<SinglePrice>2.90</SinglePrice>
+	</Article>
+	<Article>
+		<Number>33</Number>
+		<Name>Raquet</Name>
+		<SinglePrice>350</SinglePrice>
+	</Article>
+	<Article>
+		<Number>44</Number>
+		<Name>Golf clubs</Name>
+		<SinglePrice>944.50</SinglePrice>
+	</Article>
+</Articles>

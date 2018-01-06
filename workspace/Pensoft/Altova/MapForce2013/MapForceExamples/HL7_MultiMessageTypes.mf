@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="17">
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="builtin" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="49"/>
+					</targets>
+					<view ltx="489" lty="310" rbx="532" rby="328"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="18" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="45"/>
+						<datapoint pos="1" key="46"/>
+						<datapoint pos="2" key="47"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="588" lty="272" rbx="672" rby="348"/>
+				</component>
+				<component name="constant" library="core" uid="22" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="50"/>
+					</targets>
+					<view ltx="376" lty="420" rbx="519" rby="438"/>
+					<data>
+						<constant value="[Y,4-4][M,2-2][D,2-2]" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="parse-date" library="core" uid="20" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="51"/>
+						<datapoint pos="1" key="52"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="588" lty="370" rbx="668" rby="426"/>
+				</component>
+				<component name="parse-date" library="core" uid="21" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="54"/>
+						<datapoint pos="1" key="55"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="56"/>
+					</targets>
+					<view ltx="588" lty="437" rbx="668" rby="493"/>
+				</component>
+				<component name="edi" library="text" uid="2" kind="16">
+					<properties/>
+					<view rbx="333" rby="509"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="GroupFHS" expanded="1">
+										<entry name="GroupBHS" expanded="1">
+											<entry name="Message_VXQ_V01" outkey="30">
+												<entry name="QRD" expanded="1">
+													<entry name="QRD-8" outkey="31" expanded="1">
+														<entry name="XCN-2" expanded="1">
+															<entry name="FN-1" outkey="32"/>
+														</entry>
+														<entry name="XCN-3" outkey="33"/>
+													</entry>
+													<entry name="QRD-9" outkey="34">
+														<entry name="CWE-2" outkey="35"/>
+													</entry>
+												</entry>
+												<entry name="QRF" expanded="1">
+													<entry name="QRF-1" outkey="3"/>
+													<entry name="QRF-4" outkey="36"/>
+													<entry name="QRF-9" expanded="1">
+														<entry name="TQ-2" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="Message_VXU_V04" outkey="57" expanded="1">
+												<entry name="PID" expanded="1">
+													<entry name="PID-5">
+														<entry name="XPN-1" expanded="1">
+															<entry name="FN-1" outkey="58"/>
+														</entry>
+														<entry name="XPN-2" outkey="59"/>
+													</entry>
+												</entry>
+												<entry name="VXU_V04.ORDER" outkey="60" expanded="1">
+													<entry name="RXA" expanded="1">
+														<entry name="RXA-3" outkey="61"/>
+														<entry name="RXA-4" outkey="62"/>
+														<entry name="RXA-5" expanded="1">
+															<entry name="CWE-2" outkey="63"/>
+														</entry>
+														<entry name="RXA-6" outkey="64"/>
+														<entry name="RXA-7" expanded="1">
+															<entry name="CWE-1" outkey="65"/>
+														</entry>
+														<entry name="RXA-15" outkey="66"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="edi" kind="EDIHL7" inputinstance="hl7multi_v02_v04.hl7" encoding="1" byteorder="1" byteordermark="0" config="HL7\Envelope.Config">
+							<messages>
+								<message type="VXQ_V01"/>
+								<message type="VXU_V04"/>
+							</messages>
+							<settings unpackedformat="false" autocompletedata="true" terminatewithlinefeed="false" syntaxversionnumber="2" controllingagency="HL7" syntaxlevel="A">
+								<separators dataelement="%7C" component="%5E" subcomponent="&amp;" segment="%0D" decimal="." escape="\" repetition="~"/>
+								<validation>
+									<case kind="missing-segment" action="stop"/>
+									<case kind="missing-group" action="stop"/>
+									<case kind="missing-field-or-composite" action="report+reject"/>
+									<case kind="extra-data" action="report+reject"/>
+									<case kind="invalid-field-value" action="report+reject"/>
+									<case kind="invalid-date" action="report+reject"/>
+									<case kind="invalid-time" action="report+reject"/>
+									<case kind="extra-repeat" action="report+reject"/>
+									<case kind="numeric-overflow" action="report+reject"/>
+									<case kind="data-element-too-short" action="report+reject"/>
+									<case kind="data-element-too-long" action="report+reject"/>
+									<case kind="unexpected-eof" action="stop"/>
+									<case kind="invalid-codelist-value" action="report+reject"/>
+									<case kind="semantic" action="report+reject"/>
+									<case kind="segment-not-in-message" action="stop"/>
+									<case kind="unrecognized-segment-id" action="stop"/>
+								</validation>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="14" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="786" lty="270" rbx="971" rby="470"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="UnsolicitedVaccinationLog" expanded="1">
+										<entry name="UnsolicitedVaccinationRecord" inpkey="67" expanded="1">
+											<entry name="patientname" type="attribute" inpkey="68"/>
+											<entry name="Order" inpkey="69" expanded="1">
+												<entry name="startdate" type="attribute" inpkey="70"/>
+												<entry name="enddate" type="attribute" inpkey="71"/>
+												<entry name="amount" type="attribute" inpkey="72"/>
+												<entry name="unit" type="attribute" inpkey="73"/>
+												<entry name="lotnumber" type="attribute" inpkey="74"/>
+												<entry name="text" type="attribute" inpkey="75"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="UnsolicitedVaccinationLog.xsd" instanceroot="{}UnsolicitedVaccinationLog" sps="UnsolicitedVaccinationLog.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="13" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="786" rbx="970" rby="203"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="VaccinationQueryReport" expanded="1">
+										<entry name="VaccinationQuery" inpkey="22" expanded="1">
+											<entry name="Vaccid" type="attribute" inpkey="23"/>
+											<entry name="QueryUser" type="attribute" inpkey="24"/>
+											<entry name="WhoSubject" inpkey="25" expanded="1">
+												<entry name="surname" type="attribute" inpkey="26"/>
+												<entry name="givenname" type="attribute" inpkey="27"/>
+											</entry>
+											<entry name="WhatSubject" inpkey="28" expanded="1">
+												<entry name="#text" inpkey="29"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="VaccinationQueryReport.xsd" instanceroot="{}VaccinationQueryReport" sps="VaccinationQueryReport.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="23" edgekey="37"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="22" edgekey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="25" edgekey="39"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="26" edgekey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="27" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="28" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="29" edgekey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="24" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48">
+						<edges>
+							<edge vertexkey="68" edgekey="76"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="46" edgekey="77"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="50">
+						<edges>
+							<edge vertexkey="52" edgekey="78"/>
+							<edge vertexkey="55" edgekey="79"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="70" edgekey="80"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="71" edgekey="81"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="67" edgekey="82"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58">
+						<edges>
+							<edge vertexkey="45" edgekey="83"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="59">
+						<edges>
+							<edge vertexkey="47" edgekey="84"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="69" edgekey="85"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61">
+						<edges>
+							<edge vertexkey="51" edgekey="86"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="62">
+						<edges>
+							<edge vertexkey="54" edgekey="87"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="75" edgekey="88"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="72" edgekey="89"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="65">
+						<edges>
+							<edge vertexkey="73" edgekey="90"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="74" edgekey="91"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.0" xmlns="http://www.crossref.org/doi_resources_schema/4.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/doi_resources_schema/4.3.0 http://www.crossref.org/schema/deposit/doi_resources4.3.0.xsd">
+<head>
+<doi_batch_id>cf41ae3d-1865-4db8-8b1d-a924b9d18ad6</doi_batch_id>
+<depositor>
+<name>pens</name>
+<email_address>bozhin.karaivanov@gmail.com</email_address>
+</depositor>
+</head>
+<body>
+<doi_citations>
+<doi>part-4-263-4261</doi>
+<citation_list>
+	<citation key="ref0"><doi>10.5772/31092</doi></citation>
+	<citation key="ref0"><doi>10.1109/TVCG.2012.42</doi></citation>
+	<citation key="ref0"><doi>10.1093/mollus/eym044</doi></citation>
+	<citation key="ref0"><doi>10.1111/j.1558-5646.2010.01138.x</doi></citation>
+	<citation key="ref0"><doi>10.1186/1472-6793-9-11</doi></citation>
+	<citation key="ref0"><doi>10.1002/dvdy.21857</doi></citation>
+	<citation key="ref0"><doi>10.1038/nmat2406</doi></citation>
+	<citation key="ref0"><doi>10.1007/s001170050510</doi></citation>
+	<citation key="ref0"><doi>10.1007/s00435-006-0021-1</doi></citation>
+	<citation key="ref0"><doi>10.1007/s13127-010-0014-2</doi></citation>
+	<citation key="ref0"><doi>10.1016/j.ympev.2010.10.010</doi></citation>
+	<citation key="ref0"><doi>10.1111/j.1463-6409.2010.00460.x</doi></citation>
+	<citation key="ref0"><doi>10.1111/j.1439-0469.2012.00657.x</doi></citation>
+	<citation key="ref0"><doi>10.1242/jeb.006486</doi></citation>
+	<citation key="ref0"><doi>10.3897/zookeys.50.538</doi></citation>
+	<citation key="ref1"><issn>11755326</issn><journal_title>Zootaxa</journal_title><author>Penney</author><volume>53</volume><first_page>47</first_page><cYear>2007</cYear><article_title>First fossil Micropholcommatidae (Araneae), imaged in Eocene Paris amber using X-Ray Computed Tomography.</article_title><unstructured_citation>Penney D, Dierick M, Cnudde V, Masschaele B, Vlassenbroeck J, Van Hoorebeke, L, Jacobs P (2007) First fossil Micropholcommatidae (Araneae), imaged in Eocene Paris amber using X-Ray Computed Tomography. Zootaxa 53: 47–53. https://www.scopus.com/record/display.url?eid=2-s2.0-35748974880&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref1"><doi>10.1016/j.cub.2009.02.052</doi></citation>
+	<citation key="ref1"><doi>10.1007/978-3-642-10850-1</doi></citation>
+	<citation key="ref1"><doi>10.1046/j.0022-2720.2001.00986.x</doi></citation>
+	<citation key="ref1"><doi>10.1007/s00338-012-0885-0</doi></citation>
+	<citation key="ref1"><doi>10.1109/TBME.2012.2192119</doi></citation>
+	<citation key="ref2"><author>Quatrefages</author><volume>1</volume><cYear>1866</cYear><volume_title>Histoire naturelle des Annelés marins et d eau douce Annélides et Géphyriens</volume_title><unstructured_citation>Quatrefages A (1866) Histoire naturelle des Annelés marins et d'eau douce. Annélides et Géphyriens, Volume 1. Librarie Encyclopédique de Roret, Paris, 588 pp.</unstructured_citation></citation>
+	<citation key="ref2"><doi>10.1177/21.2.155</doi></citation>
+	<citation key="ref2"><doi>10.1126/science.1202828</doi></citation>
+	<citation key="ref2"><doi>10.1016/j.micron.2010.03.010</doi></citation>
+	<citation key="ref2"><doi>10.1002/jemt.20618</doi></citation>
+	<citation key="ref2"><doi>10.3897/zookeys.209.3699</doi></citation>
+	<citation key="ref2"><doi>10.1098/rspb.2008.0263</doi></citation>
+	<citation key="ref2"><doi>10.1093/molbev/msr121</doi></citation>
+	<citation key="ref2"><doi>10.1118/1.2836950</doi></citation>
+	<citation key="ref2"><doi>10.1080/00222939700770011</doi></citation>
+	<citation key="ref2"><doi>10.1126/science.303.5656.285</doi></citation>
+	<citation key="ref2"><doi>10.3897/zookeys.209.3486</doi></citation>
+	<citation key="ref2"><doi>10.1111/j.1095-8312.2011.01751.x</doi></citation>
+	<citation key="ref2"><doi>10.1002/jmor.10512</doi></citation>
+	<citation key="ref2"><doi>10.1146/annurev.ge.01.120167.001253</doi></citation>
+	<citation key="ref2"><doi>10.1017/S0025315406013993</doi></citation>
+	<citation key="ref2"><doi>10.1016/j.ympev.2009.12.024</doi></citation>
+	<citation key="ref2"><doi>10.1186/1741-7007-6-33</doi></citation>
+	<citation key="ref2"><doi>10.1007/s00435-011-0138-8</doi></citation>
+	<citation key="ref2"><doi>10.1186/1741-7015-9-17</doi></citation>
+	<citation key="ref2"><doi>10.1186/1745-6150-5-45</doi></citation>
+	<citation key="ref2"><doi>10.1016/j.asd.2011.06.003</doi></citation>
+	<citation key="ref2"><unstructured_citation>Leuckart R (1847) Verzeichniss der zur Fauna Helgolands gehörenden wirbellosen Seethiere. In: Frey and Leuckart, Beiträge zur Kenntniss wirbelloser Thiere mit besonderer Berücksichtigung der Fauna des Norddeutschen Meeres. Vieweg, Braunschweig, 136–168. http://www.biodiversitylibrary.org/bibliography/2128</unstructured_citation></citation>
+	<citation key="ref2"><unstructured_citation>Molineux A, Scott RW, Ketcham RA, Maisano JA (2007) Rudist taxonomy using X-ray computed tomography. Palaeontologica Electronica 10: 13. http://palaeo-electronica.org/2007_3/135/index.html</unstructured_citation></citation>
+	<citation key="ref2"><unstructured_citation>Pallas PS (1766) Miscellanea zoologica. Quibus novae imprimis atque obscurae animalium species describuntur et observationibus iconibusque illustrantur. Petrum van Cleef, Hagí Comitum, 244 pp. http://books.google.gr/books?id=cTQVAAAAQAAJ</unstructured_citation></citation>
+	<citation key="ref2"><unstructured_citation>Prohaska S, Hutanu A, Hege H-C (2004) Interactive Exploration of Large Remote Micro-CT Scans. In: Proceedings of the Conference on Visualization '04, San Diego (USA), October 2001 IEEE Computer Society Washington, DC, 345–352. https://www.scopus.com/record/display.url?eid=2-s2.0-17044418003&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref2"><unstructured_citation>San Martín G (2003) Annelida Polychaeta II. Syllidae. In: Ramos MA et al. (Eds) Fauna Ibérica, vol. 21. Museo Nacional de Ciencias Naturales, CSIC, Madrid, 554 pp.</unstructured_citation></citation>
+	<citation key="ref2"><unstructured_citation>Sutton MD, Garwood RJ, Siveter DJ, Siveter DJ (2012) SPIERS and VAXML; A software toolkit for tomographic visualisation and a format for virtual specimen interchange. Paleontologica electronica 15: 1–15. http://palaeo-electronica.org/content/issue-2-2012-technical-articles/226-virtual-palaeontology-toolkit</unstructured_citation></citation>
+</citation_list>
+</doi_citations>
+</body>
+</doi_batch>

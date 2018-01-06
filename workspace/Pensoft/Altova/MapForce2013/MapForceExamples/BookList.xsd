@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="BookList">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Book"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Book" type="BookType"/>
+	<xs:complexType name="BookType">
+		<xs:sequence>
+			<xs:element ref="Author" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="EAN13" type="xs:string" use="optional"/>
+		<xs:attribute name="ISBN10" type="xs:string" use="optional"/>
+		<xs:attribute name="ISBN13" type="xs:string" use="optional"/>
+		<xs:attribute name="Title" type="xs:string" use="required"/>
+		<xs:attribute name="Year" type="xs:gYear" use="optional"/>
+		<xs:attribute name="Price" type="xs:double" use="optional"/>
+	</xs:complexType>
+	<xs:element name="Author" type="xs:string"/>
+</xs:schema>

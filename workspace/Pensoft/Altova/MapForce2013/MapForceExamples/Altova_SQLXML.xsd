@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 U (http://www.xmlspy.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns:sqlxml="http://www.iso-standards.org/mra/9075/2001/12/sqlxml" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="INTEGER">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqltype kind="PREDEFINED" name="INTEGER"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="2147483647"/>
+			<xs:minInclusive value="-2147483648"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VARCHAR_255">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqltype kind="PREDEFINED" name="VARCHAR" maxLength="255"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="255"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="RowType_altova_altova_Address">
+		<xs:sequence>
+			<xs:element name="PrimaryKey" type="INTEGER" nillable="true"/>
+			<xs:element name="ForeignKey" type="INTEGER" nillable="true"/>
+			<xs:element name="city" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="state" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="street" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="zip" type="INTEGER" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TableType_altova_altova_Address">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="BASE TABLE" catalogName="altova" schemaName="altova" localName="Address"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="row" type="RowType_altova_altova_Address" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RowType_altova_altova_Altova">
+		<xs:sequence>
+			<xs:element name="PrimaryKey" type="INTEGER" nillable="true"/>
+			<xs:element name="Name" type="VARCHAR_255" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TableType_altova_altova_Altova">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="BASE TABLE" catalogName="altova" schemaName="altova" localName="Altova"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="row" type="RowType_altova_altova_Altova" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RowType_altova_altova_Department">
+		<xs:sequence>
+			<xs:element name="PrimaryKey" type="INTEGER" nillable="true"/>
+			<xs:element name="ForeignKey" type="INTEGER" nillable="true"/>
+			<xs:element name="Name" type="VARCHAR_255" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TableType_altova_altova_Department">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="BASE TABLE" catalogName="altova" schemaName="altova" localName="Department"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="row" type="RowType_altova_altova_Department" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RowType_altova_altova_Office">
+		<xs:sequence>
+			<xs:element name="PrimaryKey" type="INTEGER" nillable="true"/>
+			<xs:element name="ForeignKey" type="INTEGER" nillable="true"/>
+			<xs:element name="Desc" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="EMail" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="Established" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="Fax" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="Name" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="Phone" type="VARCHAR_255" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TableType_altova_altova_Office">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="BASE TABLE" catalogName="altova" schemaName="altova" localName="Office"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="row" type="RowType_altova_altova_Office" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RowType_altova_altova_Person">
+		<xs:sequence>
+			<xs:element name="PrimaryKey" type="INTEGER" nillable="true"/>
+			<xs:element name="ForeignKey" type="INTEGER" nillable="true"/>
+			<xs:element name="EMail" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="First" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="Last" type="VARCHAR_255" nillable="true"/>
+			<xs:element name="PhoneExt" type="INTEGER" nillable="true"/>
+			<xs:element name="Title" type="VARCHAR_255" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TableType_altova_altova_Person">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="BASE TABLE" catalogName="altova" schemaName="altova" localName="Person"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="row" type="RowType_altova_altova_Person" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SchemaType_altova_altova">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="SCHEMA" catalogName="altova" schemaName="altova"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="Address" type="TableType_altova_altova_Address">
+				<xs:unique name="Address_UniqueKey">
+					<xs:selector xpath="row"/>
+					<xs:field xpath="PrimaryKey"/>
+				</xs:unique>
+				<xs:keyref name="Address_To_Office" refer="Office_UniqueKey">
+					<xs:selector xpath="Office/row"/>
+					<xs:field xpath="ForeignKey"/>
+				</xs:keyref>
+			</xs:element>
+			<xs:element name="Altova" type="TableType_altova_altova_Altova">
+				<xs:unique name="Altova_UniqueKey">
+					<xs:selector xpath="row"/>
+					<xs:field xpath="PrimaryKey"/>
+				</xs:unique>
+			</xs:element>
+			<xs:element name="Department" type="TableType_altova_altova_Department">
+				<xs:unique name="Department_UniqueKey">
+					<xs:selector xpath="row"/>
+					<xs:field xpath="PrimaryKey"/>
+				</xs:unique>
+				<xs:keyref name="Department_To_Office" refer="Office_UniqueKey">
+					<xs:selector xpath="Office/row"/>
+					<xs:field xpath="ForeignKey"/>
+				</xs:keyref>
+			</xs:element>
+			<xs:element name="Office" type="TableType_altova_altova_Office">
+				<xs:unique name="Office_UniqueKey">
+					<xs:selector xpath="row"/>
+					<xs:field xpath="PrimaryKey"/>
+				</xs:unique>
+				<xs:keyref name="Office_To_Altova" refer="Altova_UniqueKey">
+					<xs:selector xpath="Altova/row"/>
+					<xs:field xpath="ForeignKey"/>
+				</xs:keyref>
+			</xs:element>
+			<xs:element name="Person" type="TableType_altova_altova_Person">
+				<xs:unique name="Person_UniqueKey">
+					<xs:selector xpath="row"/>
+					<xs:field xpath="PrimaryKey"/>
+				</xs:unique>
+				<xs:keyref name="Person_To_Department" refer="Department_UniqueKey">
+					<xs:selector xpath="Department/row"/>
+					<xs:field xpath="ForeignKey"/>
+				</xs:keyref>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="CatalogType_altova">
+		<xs:annotation>
+			<xs:appinfo>
+				<sqlxml:sqlname type="CATALOG" catalogName="altova"/>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="altova" type="SchemaType_altova_altova"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="altova" type="CatalogType_altova"/>
+</xs:schema>

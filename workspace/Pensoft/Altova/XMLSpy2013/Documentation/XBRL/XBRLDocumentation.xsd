@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 3 (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns="http://www.altova.com/documentation" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.altova.com/documentation" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="../Documentation.xsd"/>
+	<xs:element name="XBRLDocumentation">
+		<xs:annotation>
+			<xs:documentation>Root element of the XBRL documentation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Document"/>
+				<xs:element name="DocumentationSettings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Includes">
+								<xs:complexType>
+									<xs:attribute name="overview" type="xs:boolean" use="required"/>
+									<xs:attribute name="namespacePrefixes" type="xs:boolean" use="required"/>
+									<xs:attribute name="globalElements" type="xs:boolean" use="required"/>
+									<xs:attribute name="definitionLinkroles" type="xs:boolean" use="required"/>
+									<xs:attribute name="presentationLinkroles" type="xs:boolean" use="required"/>
+									<xs:attribute name="calculationLinkroles" type="xs:boolean" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Details">
+								<xs:complexType>
+									<xs:attribute name="diagram" type="xs:boolean" use="required"/>
+									<xs:attribute name="substitutiongroup" type="xs:boolean" use="required"/>
+									<xs:attribute name="itemtype" type="xs:boolean" use="required"/>
+									<xs:attribute name="balance" type="xs:boolean" use="required"/>
+									<xs:attribute name="period" type="xs:boolean" use="required"/>
+									<xs:attribute name="abstract" type="xs:boolean" use="required"/>
+									<xs:attribute name="nillable" type="xs:boolean" use="required"/>
+									<xs:attribute name="labels" type="xs:boolean" use="required"/>
+									<xs:attribute name="references" type="xs:boolean" use="required"/>
+									<xs:attribute name="linkbaseReferences" type="xs:boolean" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="XBRLDocument">
+					<xs:complexType>
+						<xs:attribute name="xbrlLocation" type="xs:anyURI" use="required"/>
+						<xs:attribute name="href" type="xs:anyURI" use="required"/>
+						<xs:attribute name="targetNamespace" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Namespaces" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Namespace" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="prefix" type="xs:string" use="required"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Element" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType mixed="true">
+						<xs:complexContent>
+							<xs:extension base="TNamedItem">
+								<xs:sequence>
+									<xs:element ref="Diagram" minOccurs="0"/>
+									<xs:element name="SubstitutionGroup" type="xs:string" minOccurs="0"/>
+									<xs:element name="ItemType" type="xs:string" minOccurs="0"/>
+									<xs:element name="Balance" type="xs:string" minOccurs="0"/>
+									<xs:element name="Period" type="xs:string" minOccurs="0"/>
+									<xs:element name="Abstract" type="xs:string" minOccurs="0"/>
+									<xs:element name="Nillable" type="xs:string" minOccurs="0"/>
+									<xs:element name="Labels" minOccurs="0">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Role" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType mixed="true">
+														<xs:complexContent>
+															<xs:extension base="TNamedItem">
+																<xs:sequence>
+																	<xs:element name="Label" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:attribute name="language" type="xs:string" use="required"/>
+																			<xs:attribute name="role" type="xs:string" use="required"/>
+																			<xs:attribute name="text" type="xs:string" use="required"/>
+																		</xs:complexType>
+																	</xs:element>
+																</xs:sequence>
+															</xs:extension>
+														</xs:complexContent>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="References" minOccurs="0">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Role" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType mixed="true">
+														<xs:complexContent>
+															<xs:extension base="TNamedItem">
+																<xs:sequence>
+																	<xs:element name="Reference" minOccurs="0" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:sequence>
+																				<xs:element name="Part" minOccurs="0" maxOccurs="unbounded">
+																					<xs:complexType>
+																						<xs:attribute name="name" type="xs:string" use="required"/>
+																						<xs:attribute name="value" type="xs:string" use="required"/>
+																					</xs:complexType>
+																				</xs:element>
+																			</xs:sequence>
+																			<xs:attribute name="role" type="xs:string" use="required"/>
+																		</xs:complexType>
+																	</xs:element>
+																</xs:sequence>
+															</xs:extension>
+														</xs:complexContent>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="Definitions" minOccurs="0">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Definition" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="From" type="TText"/>
+															<xs:element name="ArcRole" type="xs:string"/>
+															<xs:element name="To" type="TText"/>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="Calculations" minOccurs="0">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Calculation" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="From" type="TText"/>
+															<xs:element name="Weight" type="xs:string"/>
+															<xs:element name="To" type="TText"/>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="Presentations" minOccurs="0">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="Presentation" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="From" type="TText"/>
+															<xs:element name="To" type="TText"/>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DefinitionLinkrole" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="TLinkrole"/>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PresentationLinkrole" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="TLinkrole"/>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CalculationLinkrole" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="TLinkrole"/>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Item">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="TNamedRef">
+					<xs:sequence>
+						<xs:element ref="Item" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+					<xs:attribute name="arcrole" type="xs:string"/>
+					<xs:attribute name="weight" type="xs:string"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="TLinkrole" mixed="true">
+		<xs:complexContent>
+			<xs:extension base="TNamedItem">
+				<xs:sequence>
+					<xs:element ref="Item" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

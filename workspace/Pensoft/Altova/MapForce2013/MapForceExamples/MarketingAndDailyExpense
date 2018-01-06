@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="70652024" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" ShowSchemaTypes="1" ShowAnnotations="0" SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="70093856" kind="5">
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="68"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="58"/>
+					</targets>
+					<view ltx="246" lty="309" rbx="15" rby="-52"/>
+				</component>
+				<component name="expense-item" library="core" uid="70103432" kind="3">
+					<sources>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="65"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="61"/>
+						<datapoint/>
+					</targets>
+					<view ltx="346" lty="405" rbx="-294" rby="-36"/>
+				</component>
+				<component name="equal" library="core" uid="70074480" kind="5">
+					<sources>
+						<datapoint pos="0" key="26"/>
+						<datapoint pos="1" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="247" lty="474" rbx="24" rby="-14"/>
+				</component>
+				<component name="constant" library="core" uid="76856224" kind="2">
+					<targets>
+						<datapoint pos="0" key="67"/>
+					</targets>
+					<view ltx="133" lty="382" rbx="-507" rby="-59"/>
+					<data>
+						<constant value="Marketing" datatype="string"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="70208912" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="44"/>
+						<datapoint pos="1" key="5"/>
+						<datapoint pos="2" key="47"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="349" lty="22" rbx="284" rby="-291"/>
+				</component>
+				<component name="constant" library="core" uid="76604440" kind="2">
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="255" lty="49" rbx="-385" rby="-392"/>
+					<data>
+						<constant value=" " datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="67496512" kind="2">
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="107" lty="497" rbx="-533" rby="56"/>
+					<data>
+						<constant value="2003-01-02" datatype="anySimpleType"/>
+					</data>
+				</component>
+				<component name="expense-item" library="core" uid="76640272" kind="3">
+					<sources>
+						<datapoint pos="0" key="39"/>
+						<datapoint pos="1" key="59"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="55"/>
+						<datapoint/>
+					</targets>
+					<view ltx="320" lty="248" rbx="-320" rby="-193"/>
+				</component>
+				<component name="document" library="xml" uid="71150632" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="197" rby="277"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="expense-report" expanded="1">
+										<entry name="Person" outkey="33" expanded="1">
+											<entry name="First" outkey="43"/>
+											<entry name="Last" outkey="46"/>
+											<entry name="Title" outkey="49"/>
+											<entry name="Phone" outkey="52"/>
+											<entry name="Email" outkey="10"/>
+										</entry>
+										<entry name="expense-item" outkey="38" expanded="1">
+											<entry name="type" type="attribute" outkey="13"/>
+											<entry name="expto" type="attribute" outkey="18"/>
+											<entry name="Date" outkey="23"/>
+											<entry name="expense" outkey="28"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ExpReport.xsd" inputinstance="ExpReport.xml" instanceroot="{}expense-report"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="71148272" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="495" lty="5" rbx="674" rby="191"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="marketing-expenses" expanded="1">
+										<entry name="Person" inpkey="34" expanded="1">
+											<entry name="FullName" inpkey="2"/>
+											<entry name="Title" inpkey="50"/>
+											<entry name="Phone" inpkey="53"/>
+											<entry name="Email" inpkey="11"/>
+										</entry>
+										<entry name="expense-item" inpkey="56" expanded="1">
+											<entry name="type" inpkey="14"/>
+											<entry name="Date" inpkey="24"/>
+											<entry name="expense" inpkey="29"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="MarketingExpenses.xsd" instanceroot="{}marketing-expenses" sps="MarketingExpenses.sps"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="67911480" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="495" lty="235" rbx="670" rby="438"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="daily-expenses" expanded="1">
+										<entry name="Person" inpkey="36" expanded="1"/>
+										<entry name="expense-item" inpkey="62" expanded="1">
+											<entry name="expense" type="attribute" inpkey="31"/>
+											<entry name="type" type="attribute" inpkey="16"/>
+											<entry name="expto" type="attribute" inpkey="21"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="DailyExpenses.xsd" instanceroot="{}daily-expenses" sps="DailyExpenses.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="37">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+							<edge vertexkey="16" edgekey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="20"/>
+							<edge vertexkey="21" edgekey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="24" edgekey="25"/>
+							<edge vertexkey="26" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29" edgekey="30"/>
+							<edge vertexkey="31" edgekey="32"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34" edgekey="35"/>
+							<edge vertexkey="36" edgekey="37"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="39" edgekey="40"/>
+							<edge vertexkey="41" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="44" edgekey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="47" edgekey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="50" edgekey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="53" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="56" edgekey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58">
+						<edges>
+							<edge vertexkey="59" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61">
+						<edges>
+							<edge vertexkey="62" edgekey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="65" edgekey="66"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67">
+						<edges>
+							<edge vertexkey="68" edgekey="69"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Employees.xsd">
+	<Name>Nanonull, Inc.</Name>
+	<Employees>
+		<Manager>
+			<FirstName>Vernon</FirstName>
+			<LastName>Callaby</LastName>
+			<PhoneExt>582</PhoneExt>
+			<Email>v.callaby@nanonull.com</Email>
+		</Manager>
+		<Programmer>
+			<FirstName>Frank</FirstName>
+			<LastName>Further</LastName>
+			<PhoneExt>471</PhoneExt>
+			<Email>f.further@nanonull.com</Email>
+		</Programmer>
+		<Support>
+			<FirstName>Loby</FirstName>
+			<LastName>Matise</LastName>
+			<PhoneExt>963</PhoneExt>
+			<Email>l.matise@nanonull.com</Email>
+		</Support>
+		<Support>
+			<FirstName>Susi</FirstName>
+			<LastName>Sanna</LastName>
+			<PhoneExt>753</PhoneExt>
+			<Email>s.sanna@nanonull.com</Email>
+		</Support>
+	</Employees>
+</Company>

@@ -1,0 +1,639 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4340</article-id>
+            <title-group>
+                <article-title>New data on aphid fauna (Hemiptera, Aphididae) in Algeria
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Laamari</surname>
+                        <given-names>Malik</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>d’Acier</surname>
+                        <given-names>Armelle Coeur</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Jousselin</surname>
+                        <given-names>Emmanuelle</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>LATPPAM Laboratory, Department of Agronomy, Institute of Agronomic and Veterinary Sciences, University of Batna, Algeria
+            </aff>
+            <aff id="A2">
+                <label>2</label>INRA, UMR CBGP (INRA/IRD/Cirad/Montpellier SupAgro), Campus International
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Malik Laamari (<email xlink:type="simple">laamarimalik@yahoo.fr</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>16</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>4</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Malik Laamari, Armelle Coeur d’Acier, Emmanuelle Jousselin</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>A survey of aphids was carried out during the period 2008-2011 in different regions of Algeria by collecting and identifying aphids and their host plants. Aphids were collected from 46 host plants. Forty-six species were reported including thirty-six species which were recorded for the first time in this country and thirty species which were recorded for the first time in the Maghreb (North Africa). This study extends the number of known Algerian aphid to 156 species.
+</p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Aphids</kwd>
+                <kwd>biodiversity</kwd>
+                <kwd>Algeria</kwd>
+                <kwd>Maghreb</kwd>
+                <kwd>North Africa
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The aphid fauna of North Africa has been poorly studied. One hundred and fifty eight species have been recorded from Morocco (Mimeur 1932, 1934, 1935a, 1935b, 1937, 1941, 1942; Blackman and Eastop 1994, 2000, 2006; Sekkat 1987). One hundred and three species are recorded from Tunisia (Bodenheimer and Swirsky 1957; Blackman and Eastop 1994, 2000, 2006; Ben Halima-Kamel 1991, 1995; Ben Halima-Kamel and Ben Hamouda 1993, 1998, 2004, 2005; Boukhris-Bouhachem et al. 1996; Boukhris-Bouhachem et al. 2007). Ninty nine species are listed from Egypt (Theobald <!--PageBreak-->1922; Habib and El Kady 1961; Darwish 2009). Aphids in Libya are reprisented by seventy three species (Trotter 1912 1914; Damiano 1961, 1962; Blackman and Eastop 1994; Ahmeid Al Nagar 2000; Ahmeid Al-Najar and Nieto Nefrya 1998). The Algerian aphid fauna is now partly known (Mimeur and Bernard 1944; Bodenheimer and Swirsky 1957; Remaudière and Leclant 1974; Dartigues 1993; Blackman and Eastop 1994, 2000, 2006; Laamari and Akkal 2002). Laamari et al. (2010) present a list of aphids and their host plants in Algeria. In this important publication, 120 aphid species are listed and commented/discussed. The bibliography of most papers concerning the aphid fauna of the country is provided.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>The regions choosen for sample collection belonged to different bioclimatic stages. The regions of Annaba, Tarf and Algiers are located on the Mediterranean coast and are characterized by a humid and sub humid climate. Other regions (Guelma, Constantine, Setif and Oum El Bouaghi) are located on the high plateaus and high plains, where cereal crops are cultivated (semi arid climate). Khenchela, Batna and Biskra are located on the slopes north and south of the Saharan Atlas. Their natural vegetation is dominated by steppe plants. Ouargla and Ghardaia are located almost in the center of the Algerian Sahara (arid climate). Their natural vegetation is composed of desertic plants (Figure 1).
+</p>
+            <p>This study, conducted between 2008 and 2011, considers only the new aphid species of Algeria and the species already mentioned but without specified host plants. Specimens were collected from wild and cultivated plants, tree and shrubs bearing aphid colonies. The aphids were preserved in 75% ethyl alcohol until their prepara<!--PageBreak-->tion for slide-mounting. They were identified using the keys of Blackman and Eastop (1994, 2000), Nieto Nafria et al.(2002, 2005) and Remaudière et al.(1985). The nomenclature used was that proposed by Remaudière and Remaudière (1997). The aphid preserving techniques are mainly based on the method of Hille Ris Lambers (1950). The majority of the studied and identified specimens were deposited in the insect collection of the Department of Agronomy, University of Batna (Algeria) and a minor part of aphids were deposited in the collection of the National Institute of Agronomic Research (INRA) at the CBGP in Montpellier, France.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <p>During this study, 320 samples were collected from the investigated regions. A total of 46 aphid species were reported including 36 species which were recorded for the first time in the country and 30 species which were recorded for the first time in the Maghreb (North Africa). The presence of 10 species already reported from Algeria was confirmed. Aphid species were listed in systematic category alphabetically, including the host plant and region for each aphid species (Table 1).
+</p>
+            <!--PageBreak-->
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>With 46 species, this survey constitutes the most important contribution to the knowledge on aphid diversity in Algeria. Organization of the similar local studies would to play an important role in the applied entomological studies and may add more species to Algerian aphid fauna. There is a very large volume of literature about all the major pest aphid species and two factors that have the greatest influence on intraspecific variation in aphids: the life cycle and the host plant. Among the species inventoried, <italic>Aphis illinoisensis</italic> is the aphid that has the greatest agricultural importance. This invasive aphid was reported for the first time in the Mediterranean from southern Turkey in 2002, and identified as a new possible threat to the respective grape-growing areas (Remaudière et al. 2003). A general historical set of invasive grape aphid detection is as follows: 2002 in southern Turkey (Remaudière et al. 2003), 2005 in Crete - Greece <!--PageBreak-->(Tsitsipis et al. 2005), 2007 in Israel (Barjadze and Ben-Dov 2011), 2009 in Tunisia (Ben Halima-Kamel and Mdellel 2010). In Algeria this aphid was detected for the first time in 2007 in several regions of viticulture (Laamari and Coeur d´Acier 2010).
+            </p>
+            <p><italic>Greenidea ficicola</italic> is considered as another invasive species. It was encountered for the first time in 2007 on <italic>Ficus nitida </italic>in Tunisia (Ben Halima-Kamel 2009). In Algeria was collected in April, 2008.
+            </p>
+            <p>A total of 34 aphid species were collected on the steppe plants specific of the Saharian Atlas. This mountain range forms the boundary between the northern (Mediterranean area) and southern (African area) of Algeria. It is home to many endemic plants, which may harbour very specific and uncommon aphid species. All aphid species reported as new to Algeria and North Africa were found in this transition area (Batna, Biskra and Khenchela regions).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Conclusion
+</bold>
+            </title>
+            <p>In this study, 36 aphid species were reported for the first time in Algeria, increasing the number of species known to be present in this country to 156. Given the high level of climatic and plant diversity in Algeria, the expansion of prospect activities to a larger number of plant species and environments would undoubtedly provide a more accurate picture of the Algerian aphid fauna and would increase the number of species known to be present in this country. Furthermore, prospect studies in the Sahara and steppe zones, which are know to have a highly endemic flora, might lead to the description of species new to science.
+</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>References
+</bold>
+            </title>
+        </ack>
+        <ref-list>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ahmeid</surname> <given-names>Al-Najar OA</given-names></name></person-group> (<year>2000</year>)<article-title> Survey for aphid species in Libya.</article-title> <source>Arab Journal of Plant Protection </source> <volume>18</volume> (<issue>1</issue>): <fpage>24</fpage>-<lpage>27</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ahmeid</surname> <given-names>Al-Najar OA</given-names></name>,<name name-style="western"><surname>Nieto</surname> <given-names>Nefrya KM</given-names></name></person-group> (<year>1998</year>)<article-title> Notes on Libyan aphids: new recorded species from North Africa.</article-title> In: <person-group1><name name-style="western"><surname>Nieto</surname> <given-names>Nefria JM</given-names></name>,<name name-style="western"><surname>Dixon</surname> <given-names>AFG</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Aphids in natural and managed ecosystems.</issue-title> <source>Proceedings of the Fifth International Symposium on Aphids, Universidad de Leon (Spain), September 1997</source>: <fpage>325</fpage>-<lpage>327</lpage>
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Barjadze</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Ben-Dov</surname> <given-names>Y</given-names></name></person-group> (<year>2011</year>)<article-title> The grapevine aphid, <italic>Aphis illinoisensis</italic> Shimer (Hemiptera: Aphididae): An invasive pest in Israel.</article-title> <source>Phytoparasitica </source> <volume>39</volume> (<issue>1</issue>): <fpage>55</fpage>-<lpage>57</lpage>. doi: 10.1007/s12600-010-0129-1
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name></person-group> (<year>1991</year>)<fake_tag> Contibution à l’étude de la dynamique des populations aphidiennes en cultures protégées. Thèse de Doctotat, Faculté des Sciences, Université de Tunis.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name></person-group> (<year>1995</year>)<article-title> Contribution à l’étude de la dynamique des populations de pucerons en vergers d’agrumes.</article-title> <source>Bulletin OILB/SROB </source> <volume>18</volume> (<issue>5</issue>): <fpage>39</fpage>-<lpage>46</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name></person-group> (<year>2009</year>)<article-title> First report of <italic>Greenidea ficicola </italic>in Tunisia.</article-title> <source>Tunisian Journal of Plant Protection</source> <volume>4</volume>: <fpage>107</fpage>-<lpage>110</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name>,<name name-style="western"><surname>Ben</surname> <given-names>Hamouda MH</given-names></name></person-group> (<year>1993</year>)<fake_tag> Les pucerons des cultures protégées et leurs ennemis naturels. Tropicultura11(2): 50–53.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name>,<name name-style="western"><surname>Ben</surname> <given-names>Hamouda H</given-names></name></person-group> (<year>1998</year>)<fake_tag> Contribution à l’étude de la bioécologie des aphides d’une région côtière de la Tunisie. Mediterranean Faculty Landbouw 63(2a): 365–378.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name>,<name name-style="western"><surname>Ben</surname> <given-names>Hamouda H</given-names></name></person-group> (<year>2004</year>)<article-title> Aphids of fruit trees in Tunisia.</article-title> In: <person-group1><name name-style="western"><surname>Simon</surname> <given-names>JC</given-names></name>,<name name-style="western"><surname>Dedryver</surname> <given-names>CA</given-names></name>,<name name-style="western"><surname>Rispe</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Hullé</surname> <given-names>M</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Aphids in a new millennium.</issue-title> <source>Proceedings of the VIth International Symposium on Aphids, Paris</source>: <fpage>119</fpage>-<lpage>123</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name>,<name name-style="western"><surname>Ben</surname> <given-names>Hamouda MH</given-names></name></person-group> (<year>2005</year>)<fake_tag> A propos des pucerons des arbres fruitiers de Tunisie. Notes faunistiques de Gembloux58: 11–16.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ben</surname> <given-names>Halima-Kamel M</given-names></name>,<name name-style="western"><surname>Mdellel</surname> <given-names>L</given-names></name></person-group> (<year>2010</year>)<article-title> First record of the grapevine aphid, <italic>Aphis illinoisensis </italic>Shimer, in Tunisia.</article-title> <source>EPPO Bulletin </source> <volume>40</volume>: <fpage>191</fpage>-<lpage>192</lpage>. doi: 10.1111/j.1365-2338.2010.02373.x
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blackman</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name></person-group> (<year>1994</year>)<source></source> <publisher-name>An Identification and Information guide<italic>.</italic> CAB International</publisher-name>, <publisher-loc>Wallingford</publisher-loc>, <lpage>987</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blackman</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name></person-group> (<year>2000</year>)<source> Aphids on the world’s crops.</source> <publisher-name>An Identification and Information guide. The Natural History Museum</publisher-name>, <publisher-loc>London</publisher-loc>, <lpage>466</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Blackman</surname> <given-names>RL</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>V F</given-names></name></person-group> (<year>2006</year>)<source> Aphids on the world’s Herbaceous Plants and Shrubs.</source> <publisher-name>The Natural History Museum</publisher-name>, <publisher-loc>London</publisher-loc>, <lpage>1439</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bodenheimer</surname> <given-names>FS</given-names></name>,<name name-style="western"><surname>Swirski</surname> <given-names>E</given-names></name></person-group> (<year>1957</year>)<source> The Aphidoidea of the Middle East.</source> <publisher-name>Weizmann Science Press of Israel</publisher-name>, <publisher-loc>Jerusalem</publisher-loc>, <lpage>378</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Boukhris-Bouhachem</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Jerraya</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Boudhir</surname> <given-names>H</given-names></name></person-group> (<year>1996</year>)<fake_tag> Etude préliminaire sur la présence des espèces aphidiennes en verger d’Agrumes (Cap bon, Tunisie). Annales d’INRATunis 69: 55–72.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Boukhris-Bouhachem</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Souissi</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Turpeau</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Rouzé</surname> <given-names>Jouan J</given-names></name>,<name name-style="western"><surname>Fahem</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Hullé</surname> <given-names>M</given-names></name></person-group> (<year>2007</year>)<article-title> Aphid (Hemiptera, Aphidoidea) diversity in Tunisia in relation to seed potato production.</article-title> <source>Annales de la Société Entomologique de France(NS)</source> <volume>43</volume> (<issue>3</issue>): <fpage>311</fpage>-<lpage>318</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Damiano</surname> <given-names>A</given-names></name></person-group> (<year>1961</year>)<source> Elenco delle specie di insetti dannosi ricordat per la Libia al 1960 fin al 1960.</source> <publisher-name>Nazirato dell’Agricoltura Tripolitania</publisher-name>, <publisher-loc>Tripoli</publisher-loc>, <lpage>81</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Damiano</surname> <given-names>A</given-names></name></person-group> (<year>1962</year>)<fake_tag> Rassegna dei principli casi entomologici osservati in Tripolitania nel 1960. Rivista Di Agricoltura Subtropicale E Tropicale Annale 56(1/3): 21–36.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dartigues</surname> <given-names>D</given-names></name></person-group> (<year>1993</year>)<fake_tag> Analyse comportementale des interactions entre la fourmi <italic>Tapinoma simrothi</italic> et le puceron <italic>Toxoptera aurantii</italic>. Entomologia Experimentalis Applicata 68:  25–30. </fake_tag>doi: 10.1111/j.1570-7458.1993.tb01685.x
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Darwish</surname> <given-names>ETE</given-names></name></person-group> (<year>2009</year>)<fake_tag> Studies on maize’s aphids ecology and taxonomy in Egypt. Journal of Applied Entomology 107(1/5): 155–159. </fake_tag>doi: 10.1111/j.1439-0418.1989.tb00244.x
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Habib</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>El</surname> <given-names>Kady EA</given-names></name></person-group> (<year>1961</year>)<article-title> The Aphididae of Egypt.</article-title> <source>Technical Science Service, Scope Ministry of Agriculture, Egypt Bulletin </source> <volume>68</volume>: <fpage>1</fpage>-<lpage>62</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hille</surname> <given-names>Ris Lambers D</given-names></name></person-group> (<year>1950</year>)<article-title> On the mounting aphids and other Soft skinned insects.</article-title> <source>Entomologische Berichten </source> <volume>13</volume>: <fpage>55</fpage>-<lpage>58</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Laamari</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Akkal</surname> <given-names>Y</given-names></name></person-group> (<year>2002</year>)<article-title> Aphid population dynamics and the rate of virus diseases in potato fields in the Setif region of Algeria.</article-title> <source>Arab Journal of Plant Protection </source> <volume>20</volume> (<issue>2</issue>): <fpage>111</fpage>-<lpage>117</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Laamari</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Coeur</surname> <given-names>d’Acier A</given-names></name></person-group> (<year>2010</year>)<article-title> Le puceron de la vigne <italic>Aphis illinoisensis </italic>arrive en Algérie.</article-title> <source>EPPO Bulletin </source> <volume>40</volume>: <fpage>167</fpage>-<lpage>168</lpage>. doi: 10.1111/j.1365-2338.2009.02368.x
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Laamari</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Cœur</surname> <given-names>d’Acier A</given-names></name>,<name name-style="western"><surname>Joussellin</surname> <given-names>E</given-names></name></person-group> (<year>2010</year>)<article-title> Assesment of aphid diversity (Hemiptera : Aphididae) in Algeria : a fourteen-year investigation.</article-title> <source>Faunistic Entomology </source> <volume>62</volume>: <fpage>73</fpage>-<lpage>87</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1932</year>)<fake_tag> Notes d’entomologie agricole et forestière. Mémoire de la Société Scientifique Nationale du Maroc 31: 119–129.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1934</year>)<article-title> Aphididae du Maroc (Troisième note).</article-title> <source>Mémoire de la Société Scientifique Nationale du Maroc</source> <volume>40</volume>: <fpage>1</fpage>-<lpage>69</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="29"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1935a</year>)<article-title> Aphididae du Maroc (Septième note).</article-title> <source>Bulletin de la Société Scientifique Nationale du Maroc </source> <volume>15</volume> (<issue>1</issue>): <fpage>251</fpage>-<lpage>258</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="30"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1935b</year>)<article-title> Plantes hôtes des Aphididae du Maroc (Addition à la première liste).</article-title> <source>Bulletin de la Société Scientifique Nationale du Maroc</source> <volume>40</volume>: <fpage>259</fpage>-<lpage>260</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="31"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1937</year>)<fake_tag> Contribution à l’étude de la faune entomologique du moyen atlas. Bulletin de la Société Scientifique Nationale du Maroc 17: 69–73.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="32"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1941</year>)<article-title> Aphididae Nord-Africains. Espèces nouvelles constituant un genre nouveau.</article-title> <source>Bulletin de la Société Scientifique Nationale du Maroc</source> <volume>21</volume>: <fpage>67</fpage>-<lpage>70</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="33"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name></person-group> (<year>1942</year>)<article-title> Aphididae du Maroc. (Douzième note).</article-title> <source>Bulletin de la Société Scientifique Nationale du Maroc</source> <volume>22</volume>: <fpage>121</fpage>-<lpage>123</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="34"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mimeur</surname> <given-names>JM</given-names></name>,<name name-style="western"><surname>Bernard</surname> <given-names>F</given-names></name></person-group> (<year>1944</year>)<fake_tag> Mission française au Fezzân. Bulletin d’Histoire Naturelle d’Afrique du Nord 37: 43–44.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="35"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Nieto</surname> <given-names>Nafria JM</given-names></name>,<name name-style="western"><surname>Mier</surname> <given-names>Durante MP</given-names></name>,<name name-style="western"><surname>Binazzi</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Hidalgo</surname> <given-names>NP</given-names></name></person-group> (<year>2002</year>)<fake_tag> Fauna Iberica Hemiptera Aphididae II. Vol 29, Museo Nacional de Ciencias Naturales &amp; Consejo Superior de Investigaciones Cientificas, Madrid, 350 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="36"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Nieto</surname> <given-names>Nafria JM</given-names></name>,<name name-style="western"><surname>Mier</surname> <given-names>Durante MP</given-names></name>,<name name-style="western"><surname>Prieto</surname> <given-names>FG</given-names></name>,<name name-style="western"><surname>Hidalgo</surname> <given-names>NP</given-names></name></person-group> (<year>2005</year>)<fake_tag> Fauna Iberica Hemiptera Aphididae III. Vol 28, Museo Nacional de Ciencias Naturales &amp; Consejo Superior de Investigaciones Cientificas, Madrid, 362 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="37"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remaudière</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Leclant</surname> <given-names>F</given-names></name></person-group> (<year>1974</year>)<article-title> Nouveaux <italic>Drepanosiphoniella, Macrosiphiella </italic>et<italic> Aphis </italic>du bassin méditerranéen et du massif Alpin (Hom. Aphididae).</article-title> <source>Annales de la Société Entomologique de France</source> <volume>3</volume> (<issue>1</issue>): <fpage>73</fpage>-<lpage>109</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="38"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remaudière</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Remaudière</surname> <given-names>M</given-names></name></person-group> (<year>1997</year>)<source> Catalogue des Aphididae du monde –Catalogue of the world’s Aphididae (Homoptera, Aphididae).</source> <publisher-name>INRA</publisher-name>, <publisher-loc>Paris</publisher-loc>, <lpage>376</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="39"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remaudière</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Sertkaya</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Özdemir</surname> <given-names>I</given-names></name></person-group> (<year>2003</year>)<fake_tag> Alerte! Découverte en Turquie du puceron américain <italic>Aphis illinoisensis </italic>nuisible à la vigne. Revue Française d’Entomologie (NS)25: 170–172.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="40"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Remaudière</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Autrique</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Eastop</surname> <given-names>VF</given-names></name>,<name name-style="western"><surname>Stary</surname> <given-names>P</given-names></name>,<name name-style="western"><surname>Aymonin</surname> <given-names>G</given-names></name>,<name name-style="western"><surname>Kafurera</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Dedonder</surname> <given-names>R</given-names></name></person-group> (<year>1985</year>)<source> Contribution à l’écologie des aphides africains.</source> <publisher-name>Etude FAO Production végétale et protection des plantes. FAO</publisher-name>, <publisher-loc>Roma</publisher-loc>, <lpage>214</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="41"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sekkat</surname> <given-names>A</given-names></name></person-group> (<year>1987</year>)<source> Etude bioécologique des aphides du Saïs et du Moyen Atlas (Maroc).</source> <publisher-name>Implications agronomiques. Thèse de Doctorat Es Sciences, USTL</publisher-name>, <publisher-loc>Montpellier II</publisher-loc>, <lpage>250</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="42"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Theobald</surname> <given-names>FV</given-names></name></person-group> (<year>1922</year>)<article-title> New Aphididae found in Egypt.</article-title> <source>Bulletin Society Royaume Entomology of Egypt </source> <volume>6</volume>: <fpage>39</fpage>-<lpage>80</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="43"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Trotter</surname> <given-names>A</given-names></name></person-group> (<year>1912</year>)<article-title> Contributo alla conoscenza delle galle tripolitana.</article-title> <source>Marcellia</source> <volume>11</volume>: <fpage>116</fpage>-<lpage>210</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="44"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Trotter</surname> <given-names>A</given-names></name></person-group> (<year>1914</year>)<article-title> Nuovo contributo alla conoscenza delle galle tripolitana.</article-title> <source>Marcellia</source> <volume>13</volume>: <fpage>3</fpage>-<lpage>18</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="45"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tsitsipis</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>Angelakis</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Margaritopoulos</surname> <given-names>JT</given-names></name>,<name name-style="western"><surname>Tsamandali</surname> <given-names>K</given-names></name>,<name name-style="western"><surname>Zarpas</surname> <given-names>KD</given-names></name></person-group> (<year>2005</year>)<article-title> First record of the grapevine aphid <italic>Aphis illinoisensis </italic>in the island Kriti, Greece.</article-title> <source>OEPP/EPPO Bulletin </source> <volume>35</volume>: <fpage>541</fpage>-<lpage>542</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Map of the regions where samples were collected. <bold>1</bold> Batna <bold>2</bold> Biskra <bold>3</bold> Khenchela <bold>4</bold> Oum El Bouaghi <bold>5</bold> Constantine <bold>6</bold> Guelma<bold> 7</bold> Setif <bold>8</bold> Annaba <bold>9</bold> Taref <bold>10</bold> Algiers <bold>11</bold> Ouargla <bold>12</bold> Ghardaia</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p>List of aphid species present/found in Algeria.&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="1" bodyRowCount="46" columnCount="3" aid:table="table" aid:trows="47" aid:tcols="3">
+                <tbody>
+                    <tr>
+                        <th rowspan="1" colspan="1"><bold>Aphid species</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Host plants</bold>
+                        </th>
+                        <th rowspan="1" colspan="1"><bold>Regions</bold>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Acyrthosiphon kondoi </italic>Shinji, 1938
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Fagonia glutinosa </italic>Delile
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Aphis acanthoidis </italic>(Börner, 1940)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Carduncellus plumosus </italic>Pomel
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis acetosae </italic>Linnaeus, 1761
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Rumex crispus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis astragali </italic>Ossiannilsson, 1959
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Astragalus armatus </italic>Willd
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Aphis balloticola </italic>Szelegiewicz, 1968
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Balota nigra </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis cytisorum </italic>Hartig, 1841
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Calicotome villosa </italic>(Poiret) Link
+                        </td>
+                        <td rowspan="1" colspan="1">Guelma</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>*Aphis illinoisensis</italic> Shimer, 1866
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Vitis vinifera </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Taref, Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis impatientis</italic> Thomas, 1878
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Rosa damascena </italic>Mill.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis intybi </italic>Koch, 1855
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Cichorium intybus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Taref </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis medicaginis </italic>Koch, 1854
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Ononis angustissima </italic>Lam.
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Aphis middletonii </italic>Thomas, 1879
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Taraxacum officinale</italic> F.H. Wigg
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis potentillae </italic>Nevsky, 1929
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Potentilla reptans </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis salviae </italic>Walker, 1952
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Lavandula multifida </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis stroyani </italic>Szelegiewicz, 1961
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Picris echioides </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Guelma</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis thomasi </italic>(Börner, 1950)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Knautia arvensis </italic>(L.) J.M. Coult
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Aphis umbrella </italic>(Börner, 1950)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Malva sylvestris </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Aphis verbasci </italic>Schrank, 1801
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Verbascum thapsus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">*<italic>Brachycaudus persicae </italic>(Passerini, 1860)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Ononis natrix </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">*<italic>Brachyunguis tamaricis </italic>(Lichtenstein, 1885)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Tamarix gallica </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>*Chaitophorus leucomelas </italic>Koch, 1854
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Populus alba </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Guelma</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Cinara cedri </italic>Mimeur, 1936
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Cedrus atlantica </italic>(Endl.) G.Manetti ex Carrière
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Cinara juniperi </italic>(de Geer, 1773)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Juniperus oxycedrus</italic> L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>*Clypeoaphis suaedae </italic>(Mimeur, 1934)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Suaeda fruticosa </italic>Forsk.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Capitophorus elaeagni </italic>(del Guercio, 1894)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Silybum marianum </italic>Garten<italic>, Lawsonia inermis </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Dysaphis tulipae</italic> (Boyer de Fonscolombe, 1814)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Iris germanica </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">*<italic>Greenidea ficicola </italic>Takahashi, 1921
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Ficus retusa </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Algiers</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Indiochaitophorus furcatus </italic>Verma, (1970)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Ulmus campestris</italic> L.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Liosomaphis berberidis </italic>(Kaltenbach, 1843)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Achillea santolina </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Macrosiphoniella grandicauda</italic> Tak. &amp; Mor.,1963
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Artemisia herba-alba </italic>Asso
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Nasonovia ribisnigri</italic> (Mosley, 1841)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Andryala integrifolia </italic>L.<italic>, Geranium pusillum</italic> L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Pterocomma pilosum </italic>Buckton, 1879
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Salix pedicellata </italic>Desf.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Semiaphis heraclei </italic>(Takahashi, 1921)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Torilis nodosa </italic>(L.) Gaertn.
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Sipha maydis </italic>Passerini, 1860
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Digitaria sanguinalis</italic> (L.) Scop
+                        </td>
+                        <td rowspan="1" colspan="1">Guelma</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Sitobion lambersi </italic>David, 1956
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Bromus squarrosus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Stomaphis pini </italic>Takahashi, 1920
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Pinus halepensis</italic> Mill.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Therioaphis riehmi </italic>(Börner, 1949) 
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Trigonella anguina </italic>Delile
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Tinocallis takachihoensis</italic> Higuchi, 1972
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Ulmus campestris </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Uroleucon ambrosiae </italic>(Thomas, 1878)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Carthamus lanatus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Uroleucon aeneum</italic> (Hille Ris Lambers, 1939)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Onopordum Illyricum </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Uroleucon bifrontis </italic>(Passerini, 1879)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Dittrichia viscosa </italic>(L.) Greuter
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Uroleucon carthami </italic>(Hille Ris Lambers, 1948)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Carthamus lanatus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">**<italic>Uroleucon chrysanthemi </italic>(Oestlund, 1886)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Calendula arvensis</italic> L.
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Uroleucon compositae</italic> (Theobald, 1915)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Borago officinalis</italic> L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Uroleucon erigeronense</italic> (Thomas, 1878)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Erigeron canadensis </italic>L.<italic>, A. herba- alba </italic>Asso
+                        </td>
+                        <td rowspan="1" colspan="1">Khenchela</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>**Uroleucon inulicola </italic>(Hille Ris Lambers, 1939)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Senecio vulgaris </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Batna</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Uroleucon pilosellae </italic>(Börner, 1933)
+                        </td>
+                        <td rowspan="1" colspan="1"><italic>Leontodon hispidus </italic>L.
+                        </td>
+                        <td rowspan="1" colspan="1">Biskra</td>
+                    </tr>
+                </tbody>
+            </table>&lt;br/&gt; 
+            <table-wrap-foot>
+                <fn>
+                    <p>* = species reported for the first time in Algeria, ** = species reported for the first time in the Maghreb</p>
+                </fn>
+            </table-wrap-foot>
+        </table-wrap>
+    </article_figs_and_tables>
+</article>

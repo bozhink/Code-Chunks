@@ -1,0 +1,342 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.301.4234</article-id>
+            <title-group>
+                <article-title>Immature Stages and Hosts of Two Plesiomorphic, Antillean Genera of Membracidae (Hemiptera) and a new species of 
+                    <bold-italic>Antillotolania</bold-italic> from Puerto Rico
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>McKamey</surname>
+                        <given-names>Stuart H.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:E6BD01B8-0684-464A-8A86-812701DA05C7</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Brodbeck</surname>
+                        <given-names>Brent V.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:DB03E169-7FA6-48AF-9AAF-3DA53A22DDFB</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>USDA/ARS Systematic Entomology Laboratory, 10th St. &amp; Constitution Ave., PO Box 37012, Washington, DC 20013-7012
+            </aff>
+            <aff id="A2">
+                <label>2</label>North Florida Research and Education Center-Quincy, 155 Research Road, Quincy, FL 32351
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Stuart H. McKamey (<email xlink:type="simple">stuart.mckamey@ars.usda.gov</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: Mick Webb</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>17</day>
+                <month>5</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>301</issue>
+            <fpage>1</fpage>
+            <lpage>12</lpage>
+            <history>
+                <date date-type="received">
+                    <day>1</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>18</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Stuart H. McKamey, Brent V. Brodbeck</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:E94EE9BB-392E-4C65-99C4-08959625D555
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The nymphs of <italic>Antillotolania</italic> Ramos and <italic>Deiroderes</italic> Ramos are described for the first time, along with the first host record for the genus <italic>Antillotolania</italic>, represented by <italic>A. myricae</italic>, <bold>sp. n.</bold> Nymphal features of both genera, such as a ventrally fused, cylindrical tergum IX (anal tube), the presence of abdominal lamellae, and heads with foliaceous ventrolateral lobes confirm their placement in Membracidae and are consistent with phylogenetic analyses placing them in Stegaspidinae but in conflict with a cladistic analysis showing a closer relationship to Nicomiinae. Head processes and emarginate forewing pads in the last instars of both genera support an earlier estimate, based on nuclear genes, that the two genera form a monophyletic group in Stegaspidinae. Distinguishing features of the four species of <italic>Antillotolania</italic> are tabulated.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Caribbean</kwd>
+                <kwd>Antilles</kwd>
+                <kwd>new species</kwd>
+                <kwd>immature stages</kwd>
+                <kwd>host plant
+<!--PageBreak--></kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Treehoppers of the family Membracidae are best known for an enlarged, often extravagant pronotum expanded posteriorly over the scutellum (completely or partially concealing the scutellum) or more usually over the entire body. Indeed, until recently this was a diagnostic feature of the family Membracidae. Deitz (1985) was the first since 1928 to include species in this family with pronota that did not project posteriorly – <italic>Hemicentrus</italic> Melichar (Leptocentrini) of the Old World and <italic>Abelus</italic> Stål (Abelini) of the New World. Both <italic>Hemicentrus</italic> and <italic>Abelus</italic> have a distinctly emarginate scutellum, which was characteristic of all membracids that have the pronotum expanded over, but not concealing the scutellum (extant Stegaspidinae and Centrotinae). The emarginate scutellum therefore suggests that the posteriorly projecting pronotum was secondarily lost in <italic>Hemicentrus</italic> and <italic>Abelus</italic>.
+            </p>
+            <p>Other treehoppers lacking a posteriorly projecting pronotum, but with an acuminate or truncate scutellum, were placed in the treehopper families Aetalionidae, Biturritiidae, and Nicomiidae (Metcalf and Wade 1965). Based on a the first phylogenetic analysis of the superfamily membracoidea (Dietrich and Deitz 1993), Deitz and Dietrich (1993) referred some nicomiid species to the treehopper family Aetalionidae but incorporated many of these taxa into a newly defined Membracidae as the subfamilies Endoiastinae and Nicomiinae, except for two genera for which they erected the new family Melizoderidae. They left four genera, previously placed in Nicomiidae (with short pronotum) unplaced within Membracidae: <italic>Holdgatiella</italic> Evans, <italic>Euwalkeria</italic> Goding, <italic>Antillotolania</italic> Ramos, and <italic>Deiroderes</italic> Ramos.
+            </p>
+            <p><italic>Antillotolania</italic> and <italic>Deiroderes</italic> (Ramos 1957) are endemic to the northern Antilles. There are also a number of membracids without a posteriorly projecting pronotum known from Eocene-Miocene amber deposits from the Dominican Republic (McKamey 1998); none have been described but one was correctly identified (Shcherbakov 1992) as a member of the subfamily Stegaspidinae.
+            </p>
+            <p>Several attempts have been made to determine the phylogenetic placement of <italic>Deiroderes</italic> and <italic>Antillotolania</italic> within Membracidae. In a molecular phylogenetic investigation of Membracidae, Cryan et al. (2000) found these two genera to be placed with Microcentrini (Stegaspidinae), although the subfamily was paraphyletic in that analysis. Dietrich et al. (2001) recovered, in a cladistic analysis of Membracidae based on morphological evidence, <italic>Deiroderes</italic> within the subfamily Stegaspidinae, whereas <italic>Antillotolania</italic> was placed as the sister group to (Nicomiinae + (Centronodinae + Centrodontinae)); statistical support for those placements was equivocal, however.
+            </p>
+            <p>In a separate phylogenetic analysis based on morphological evidence, Cryan et al. (2003) recovered [<italic>Deiroderes</italic> + <italic>Antillotolania</italic>] as the monophyletic sister-group to [Microcentrini + Stegaspidini]. Later, Cryan et al. (2004) presented the results of an analysis combining molecular and morphological evidence, yielding similar placements of <italic>Deiroderes</italic> and <italic>Antillotolania</italic> as in the Cryan et al. (2000) study; they concluded that both <italic>Deiroderes</italic> and <italic>Antillotolania</italic> should remain unplaced within Stegaspidinae until further analysis could resolve these relationships.
+            </p>
+            <p>Cryan and Bartlett (2002) described two new species of <italic>Antillotolania</italic> but left the genus unplaced, noting conflicting hypotheses of relationship between the Dietrich et al. <!--PageBreak-->(2001) morphological analysis, which suggested it was allied to Nicomiinae, and that of Cryan et al. (2000), in which <italic>Antillotolania</italic> was most closely related to <italic>Deiroderes</italic> and some Stegaspidinae. They suggested that it may be warranted to expand the concept of Stegaspidinae to include both <italic>Antillotolania</italic> and <italic>Deiroderes</italic>. Cryan and Deitz (2002) described a new species of <italic>Deiroderes</italic> and a new genus, <italic>Togotolania</italic>, also from the Antilles that lacks a posteriorly projecting pronotum. They referred <italic>Deiroderes</italic> to unplaced Stegaspidinae and argued that their new genus most likely is allied to Nicomiinae.
+            </p>
+            <p>Both cladistic estimates incorporating morphology (Dietrich et al. 2001, Cryan et al. 2004) used features of immatures, hitherto unknown for <italic>Antillotolania</italic> and <italic>Deiroderes</italic>. Both genera are exceedingly rare in collections and no immatures were known.
+            </p>
+            <p>In the present paper we describe a new species of <italic>Antillotolania</italic>, with host and habitat based on multiple series of adults and immatures collected along the central mountain range of Puerto Rico and describe its immature stages. We also describe the fifth instar of <italic>Deiroderes</italic>, based on one specimen collected from the reported host and adjacent to the type locality of <italic>D. inermis</italic> Ramos in the xeric region of Guánica, Puerto Rico. We also discuss the subfamiy placement of the two genera in the light of the new evidence.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Taxonomy
+</bold>
+            </title>
+            <sec>
+                <title><bold-italic>Antillotolania</bold-italic><bold> Ramos
+</bold>
+                </title>
+                <p>Prior to this work, this genus contained three species: <italic>A. doramariae</italic> Ramos and <italic>A. extrema</italic> Cryan &amp; Bartlett from Puerto Rico, and <italic>A. microcentroides</italic> Cryan &amp; Bartlett from Guadeloupe and Tortola (British West Indies). These are represented by a total of seven specimens and nothing is known of their biology. No male of <italic>A. extrema</italic> has been collected. The new species is represented by 11 adult specimens and nymphs.
+                </p>
+                <p>The originally monotypic genus was described based on one female, lost, and one male, both from Maricao, Puerto Rico. The forewing venation, which contains phylogenetically important characters, differed in the two illustrations. In recent years, a few additional <italic>Antillotolania</italic> have been captured by sweeping vegetation in the U.S. Virgin Islands (J. Cryan, C. Bartlett, pers. comm.), which has enabled their incorporation into phylogenetic estimates using molecular data (Cryan et al. 2000; Cryan et al. 2004).
+                </p>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Antillotolania myricae</bold-italic>
+                            <bold> McKamey &amp; Brodbeck, sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:9588EEE0-5578-4335-8EAD-282468C3434E
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Antillotolania_myricae
+</object-id>
+                        <xref>Figs 1–17, 28–31
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Dimensions (mm): Length with forewings in repose female 6.2, male 5.8, width between humeral angles female 1.8, male 1.6. Head and thorax densely pilose. Head quadrate in anterior view, in dorsal view with two subtriangular projections, longitudinally carinate behind eyes. Forewing (Fig. 9) M and Cu fused at base, 3 m-cu <!--PageBreak-->crossveins, 2 r-m veins, R branched into R<sub>1-3</sub> and R<sub>4+5</sub> basad of fork of vein M. Hindwing (Fig. 10) with 1 r-m crossvein and 1 m-cu crossvein, cubital vein un-branched, anal vein branched. Pro- and mesothoracic legs lacking cucullate setae. Metathoracic <!--PageBreak-->tibia with cucullate setae in rows I, II, and III as follows: ca. 20 in row I along entire length; ca. 10 in row III throughout distal half; and fewer than 10, larger cucullate setae in row II irregularly spaced in conjunction with darkly pigmented sections of tibiae (pale row II edge densely pilose but setae without cucullate bases). Abdomen lacking abdominal lamellae, vestiture (see Dietrich 1989) consisting of microtrichia (Fig. 17), as in <italic>Microcentrus</italic> Stål.
+                        </p>
+                        <p>Male (Figs 4–8): Pronotum with small shelf like suprahumeral developments, little more than carinae that do not extend from the pronotal surface (Fig 4–6). Pygofer and subgenital plates bare, not setose, lacking projections. Styles with base long and subparallel, acute apices recurved laterally (Fig. 7). Aedeagus asymmetrical in dorsal view, lobe of apex curving to the right (Fig. 7); shaft sinuate, directed dorsally then posteriorly, apex expanded (Fig. 8).
+</p>
+                        <p>Female (Figs 1–3): Resembling male but pronotum with prominent suprahumeral horns, subtriangular, projecting dorsolaterally (Figs 1, 28).
+</p>
+                        <p>Nymph (Figs 11–16): Fifth instar length 6.2 mm. Densely pilose and dorsoventrally compressed throughout. Head with subtriangular projections directed anteriorly as in adult, in anterior view ventral margin carinate, excavated, with ventrolateral lobes, in lateral view posterolaterally emarginate. Thoracic nota lacking scoli. Forewing ventrally emarginate. Abdominal terga IV-VII with large lateral lamellae directed posterolaterally, smaller on IV and subequal on V-VIII; tergum IX fused ventrally, forming ‘anal tube’, length subequal to remaining terga combined in last instar, as long as remainder of abdomen and thorax combined in earlier instars. Terga III-VIII with 2 pairs of enlarged chalazae, the first near mid line and the second between the first and the abdominal lamellae. Tergum IX slightly wider at base, otherwise parallel-sided, completely fused ventrally. Nascent genitalia barely exceeding posterior limit of tergum VIII lamellae (Fig. 15).
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> Holotype male (USNM), Puerto Rico, municipio Maricao, km 63.1 rt. 120, ca. 4 air km S Maricao. 18°08.429N; 66°58.322W, 777m, 2 May 2005. S. McKamey &amp; B. V. Brodbeck. Paratypes (USNM, NCSU): 3 females, 11 nymphs, same locality as holotype. 3 early instar, mun. Patillas-San Lorenzo, km 5 rt.7740 nr. jxn. rt. 181, 18.10002°N; 66.01812°W, 664 m, 27 Feb 2007, S. McKamey &amp; L.L. Deitz. 2 males, 2 females, 3 nymphs, mun. Guayama, km. 0.7 rt. 742 off rt. 7741 nr. El Chino, ca. 6 air km N Guayama, 18.05422°N; 66.10001°W, 632 m, 27 Feb 2007, S. McKamey &amp; L.L. Deitz. 2 females, 1 nymph, mun. Cayey, rt. 7737, 1.5 air km SE Cayey, 18.08516°N; 66.17194°W, 730 m, 27 Feb 2007, S. McKamey &amp; L.L. Deitz. 1 male, 2 nymph, mun. Cayey, rt. 184 just S jxn. 173, nr. Carite Recreational Area, 18.13181°N; 66.07427°W, 497 m, 2 March 2007, S. McKamey.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Host.</bold>
+                        </title>
+                        <p> All specimens collected from <italic>Myrica splendens</italic> (Sw.) DC., Myrtaceae, a weedy species of the West Indies, Mexico, Central and South America.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Habitat.</bold>
+                        </title>
+                        <p> Moist highlands of Puerto Rico.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p> Based on our series of 11 adults and over 20 immatures, the venation and nymphal characters coded ambiguously in phylogenetic estimates of the family <!--PageBreak-->have been determined, as discussed below. No adults of the new species were obtained from rearing, but both adults and nymphs were repeatedly obtained from the same host at the same time, at a variety of localities, without finding any other membracids. Note that the male of <italic>A. extrema</italic>, if discovered, may have smaller suprahumeral horns, as evidenced by the strong sexual dimorphism exhibited by the new species. The first couplet in the key provided by Cryan and Bartlett (2002) divides species by the presence or absence of developed suprahumeral horns, hence the males and females of the new species would key out separately. The following table enables identification of adults of all species in the genus.
+                        </p>
+                        <p><!--PageBreak-->Characters and states:
+</p>
+                        <p>1. Suprahumeral horns present only as carinae (0) or projecting from adjacent pronotal surface (1).
+</p>
+                        <p>2. Forewing vein R<sub>4+5</sub> fused with R<sub>1</sub> basad (0) or distad (1) of fork of vein M.
+                        </p>
+                        <p>3. Forewing crossvein m-cu3 originating basad (0) or distad (1) of fork of vein M.
+</p>
+                        <p>4. Forewing vein A<sub>1</sub> smoothly merging with claval vein (0) or bent at a right angle and perpendicularly connecting to clavela vein (1).
+                        </p>
+                        <p>5. Metathoracic tibia with cucullate setae in rows I, II, and III (0) or row II only (1).
+</p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+            <sec>
+                <title><bold-italic>Deiroderes</bold-italic><bold> Ramos
+</bold>
+                </title>
+                <p><italic>Deiroderes</italic> contains three species: <italic>D. inermis</italic> Ramos from Puerto Rico and nearby islands of the British West Indies, <italic>D. inornatus</italic> Cryan &amp; Deitz from Jamaica, and <italic>D. punctatus</italic> Metcalf &amp; Bruner from Cuba. These were represented by a total of 13 specimens, with nothing known of their biology except one host record for <italic>D. inermis</italic>: <italic>Capparis indica</italic> (L.) Fawc. &amp; Rendle (Capparaceae) (but see Cryan &amp; Deitz [2002] regarding a conflict with this host record).
+                </p>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Deiroderes inermis</bold-italic>
+                            <bold> Ramos
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Deiroderes_inermis
+</object-id>
+                        <xref>Figs 18–27
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Nymph (fifth instar): Length 3.5 mm. Glabrous throughout. Head with small protrusions (Fig. 18) in same placement as the large subtrianglar projections of <italic>Antillotolania</italic>, in anterior view ventral margin carinate, head ventrally excavated, with foliaceous ventrolateral lobes (Figs 20, 21), in dorsal view quadrate, in lateral view not emarginate. Thoracic nota lacking scoli. Forewing emarginate. Abdominal terga IV–VII with large lateral lamellae, directed posterolaterally, smallest on tergum IV and increasing in size posteriorly; tergum IX fused ventrally, forming short ‘anal tube’, length about 2 × longer than tergum VIII. Terga III–VIII each with 1 pair of enlarged chalazae near mid line. Tergum IX dorsoventrally compressed. Nascent genitalia barely exceeding posterior limit of tergum VII lamella .
+                        </p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Remarks.</bold>
+                        </title>
+                        <p> Caught sweeping a uniform stand of <italic>Capparis indica</italic>, a recorded host of <italic>D. inermis</italic>, adjacent to Guánica State Forest, which is the type locality of <italic>D. inermis</italic>. The Guánica area of Puerto Rico is arid and other membracids were previously unknown from there until L.L. Deitz (North Carolina State University) and SHM discovered <italic>Nessorhinus abbreviatus</italic> Ramos (Fig. 32) in February, 2007, on a different, unidentified host in February, 2007. Nymphs of <italic>N. gibberulus </italic>Stål are known (McKamey unpubl.) and the fifth instars are several millimeters longer than that of <italic>D. inermis</italic>.
+                        </p>
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>The anal tube (a ventrally fused abdominal segment IX, from which the anal segments protrude when defecating) present in nymphs of both <italic>Antillotolania</italic> and <italic>Deiroderes</italic> is a diagnostic feature of Membracidae. The nymphs of both genera display many features characteristic of other cryptic membracid nymphs: a flattened body and large abdominal lamellae that break up their body outline and an emarginate forewing pad providing a space for the mesothoracic tibia to rest, increasing their crypsis, suggesting that the two genera are correctly placed in that family. In some other membracid immatures with emarginate forewing pads, the tibiae are also flattened, but this is not the case in <italic>Antillotolania</italic> or <italic>Deiroderes</italic>. Instead, these have a pronotum that is posterolaterally emarginate, providing a resting place for the prothoracic tibia as well, as also occurs in some other membracids, such as some Darninae.
+            </p>
+            <p>Placing <italic>Antillotolania</italic> and <italic>Deiroderes</italic> to subfamily and tribe is more problematic. The two possible subfamilies (with short pronotum) are Nicomiinae and Stegaspidinae. There are few nicomiine immatures known and all have been associated indirectly with adults due to the solitary nature of the species and difficulty of rearing adults. An illustration of a <italic>Tolania</italic> Stål nymph, which lacks any trace of abdominal lamellae, was provided by Dietrich et al. (2001). Thus, as far as known, nicomiine immatures lack <!--PageBreak-->abdominal lamellae. In contrast, all stegaspidines whose immatures are known, encompassing both Stegaspidini and Microcentrini, have well developed abdominal lamellae (Cryan and Deitz 1999a, 1999b, 2000; Cryan et al. 2003). The presence of foliaceous ventrolateral lobes on the head of both <italic>Antillotolania </italic>and <italic>Deiroderes</italic> also allies them with Stegaspidinae. The surface vestiture of the adult abdomen in <italic>Antillotolania</italic> and <italic>Deiroderes</italic> is shared with <italic>Microcentrus</italic>. This feature should not be construed as additional supporting evidence for their inclusion in Microcentrini or even Stegaspidinae because, firstly, other Membracoidea inside and outside the family Membracidae have the same character state and, secondly, the vestiture of <italic>Antillotolania</italic> and nicomiids were not examined in Dietrich’s (1989) survey. The only known membracid nymphs with elongate, ventrally fused ‘anal tubes’ (Figs 12–16) are <italic>Tolania</italic> and <italic>Antillotolania</italic>, suggesting that this feature may be a synapomorphy and thus evidence of a nicomiine relationship.
+            </p>
+            <p>In a phylogenetic study, Dietrich et al. (2001) recovered <italic>Deiroderes</italic> in Stegaspidinae and correctly predicted character states of the immatures, including the synapomorphy of the subfamily (head with foliaceous ventrolateral lobes, Figs 18, 20–22). In contrast, <italic>Antillotolania</italic> was recovered as a sister-group to [Nicomiinae + Centronodinae], but the analysis incorrectly predicted several character states: the anal tube is cylindrical, not ventrolaterally angulate, there are two rows, not one, of enlarged chalazae on each side of the abdomen (Fig. 12) and the head has foliaceous ventrolateral lobes (Figs 11, 14) again, a synapomorphy of Stegaspidinae). Based on these findings the subfamily placement of the two genera treated here remains unclear.
+            </p>
+            <p>It may be that the head processes and emarginate forewing pads (Figs 13, 16) found in <italic>Antillotolania</italic>, <italic>Deiroderes</italic>, and some other cryptic membracids (but not in stegaspidine immatures) are homologous, giving morphological support to the hypothesis of Cryan et al. (2000) that these two enigmatic Antillean genera are sister-taxa.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>We thank M. Metz for some of the digital images of preserved specimens; D. Kolterman and G. Brekon of the Herbarium, University of Puerto Rico, Mayagüez for host determination; and Jason Cryan and Natalia Vandenberg for comments on the manuscript. We thank USDA-CREES TSTAR grant # 34135-15669 for the grant enabling the trip to Puerto Rico during which the discoveries of <italic>Antillotolania</italic> and <italic>Deiroderes</italic> were simply collateral benefits.
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Bartlett</surname> <given-names>CR</given-names></name></person-group> (<year>2002</year>)<article-title> A redescription of the Caribbean treehopper genus <italic>Antillotolania</italic> Ramos (Hemiptera: Membracidae), with two new species.</article-title> <source>Annals of the Entomological Society of America </source> <volume>95</volume> (<issue>3</issue>): <fpage>302</fpage>-<lpage>308</lpage>. doi: 10.1603/0013-8746(2002)095[0302:AROTCT]2.0.CO;2
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>2000</year>)<article-title> Review of the New World treehopper tribe Stegaspidini (Hemiptera: Membracidae: Stegaspidinae):III: <italic>Flexocentrus</italic> Goding, <italic>Stylocentrus</italic> Stål, and <italic>Umbelligerus</italic> Deitz.</article-title> <source>Proceedings of the Entomological Society of Washington </source> <volume>102</volume>: <fpage>82</fpage>-<lpage>98</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>1999a</year>)<article-title> Review of the New World treehopper tribe Stegaspidini (Hemiptera: Membracidae: Stegaspidinae): I: <italic>Bocydium</italic> Latreille, <italic>Lirania</italic> Stål, and <italic>Smerdalea</italic> Fowler.</article-title> <source>Proceedings of the Entomological Society of Washington </source> <volume>101</volume>: <fpage>469</fpage>-<lpage>489</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>1999b</year>)<fake_tag> Review of the New World treehopper tribe Stegaspidini (Hemiptera: Membracidae: Stegaspidinae):II: <italic>Lycoderes</italic> Germar, <italic>Oeda</italic> Amyot and Serville, and <italic>Stegaspis</italic> Germar. Proceedings of the Entomological Society of Washington 101: 760–778.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>2002</year>)<article-title> Enigmatic Treehoppers (Hemiptera: Membracidae): <italic>Deiroderes</italic> Ramos, <italic>Holdgatiella</italic> Evans, and <italic>Togotolania</italic>, New Genus.</article-title> <source>Proceedings of the Entomological Society of Washington </source> <volume>104</volume> (<issue>4</issue>): <fpage>867</fpage>-<lpage>882</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Robertson</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>2003</year>)<fake_tag> The New World treehopper tribe Microcentrini (Hemiptera: Membracidae: Stegaspidinae): Monographic revision and phylogenetic position. Thomas Say Publications in Entomology: Monographs, Entomological Society of America (Lanham, Maryland). <italic>iii </italic>+ 108 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Wiegmann</surname> <given-names>BM</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name>,<name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name></person-group> (<year>2000</year>)<article-title> Phylogeny of the treehoppers (Insecta: Hemiptera: Membracidae): Evidence from two nuclear genes.</article-title> <source>Molecular Phylogenetics and Evolution </source> <volume>17</volume> (<issue>2</issue>): <fpage>317</fpage>-<lpage>334</lpage>. doi: 10.1006/mpev.2000.0832
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Cryan</surname> <given-names>JR</given-names></name>,<name name-style="western"><surname>Wiegmann</surname> <given-names>BM</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name>,<name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name>,<name name-style="western"><surname>Whiting</surname> <given-names>MF</given-names></name></person-group> (<year>2004</year>)<article-title> Treehopper trees: Phylogeny of Membracidae (Hemiptera: Cicadomorpha: Membracoidea) based on molecules and morphology.</article-title> <source>Systematic Entomology </source> <volume>29</volume>: <fpage>441</fpage>-<lpage>454</lpage>. doi: 10.1111/j.0307-6970.2004.00260.x
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>1985</year>)<article-title> Placement of the genera <italic>Abelus</italic> Stål and <italic>Hemicentrus</italic> Melichar in the subfamily Centrotinae (Homoptera: Membracidae).</article-title> <source>Proceedings of the Entomological Society of Washington </source> <volume>87</volume>: <fpage>161</fpage>-<lpage>170</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name>,<name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name></person-group> (<year>1993</year>)<article-title> Superfamily Membracoidea (Homoptera: Auchenorrhyncha). I. Introduction and revised classification with new family-group taxa.</article-title> <source>Systematic Entomology </source> <volume>18</volume>: <fpage>287</fpage>-<lpage>296</lpage>. doi: 10.1111/j.1365-3113.1993.tb00667.x
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name></person-group> (<year>1989</year>)<article-title> Surface sculpturing of the abdominal integument of Membracidae and other Auchenorrhyncha (Homoptera).</article-title> <source>Proceedings of the Entomological Society of Washington </source> <volume>91</volume> (<issue>2</issue>): <fpage>143</fpage>-<lpage>152</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>1993</year>)<article-title> Superfamily Membracoidea (Homoptera: Auchenorrhyncha). II. Cladistic analysis and conclusions.</article-title> <source>Systematic Entomology </source> <volume>18</volume>: <fpage>297</fpage>-<lpage>311</lpage>. doi: 10.1111/j.1365-3113.1993.tb00668.x
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Dietrich</surname> <given-names>CH</given-names></name>,<name name-style="western"><surname>McKamey</surname> <given-names>SH</given-names></name>,<name name-style="western"><surname>Deitz</surname> <given-names>LL</given-names></name></person-group> (<year>2001</year>)<article-title> Morphology-based phylogeny of the treehopper family Membracidae (Hemiptera: Cicadomorpha: Membracoidea).</article-title> <source>Systematic Entomology </source> <volume>26</volume>: <fpage>213</fpage>-<lpage>239</lpage>. doi: 10.1046/j.1365-3113.2001.00140.x
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>McKamey</surname> <given-names>SH</given-names></name></person-group> (<year>1998</year>)<fake_tag> Taxonomic catalogue of the Membracoidea (exclusive of leafhoppers). Second supplement to fascicle 1--Membracidae of the general catalogue of the Hemiptera. Memoirs of the American Entomological Institute 60: [1]–377.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Metcalf</surname> <given-names>ZP</given-names></name>,<name name-style="western"><surname>Wade</surname> <given-names>V</given-names></name></person-group> (<year>1965</year>)<fake_tag> General Catalogue of the Homoptera. A Supplement to Fascicle 1 – Membracidae of the General Catalogue of Hemiptera. Membracoidea. In Two Sections. North Carolina State University, Raleigh. 1552 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ramos</surname> <given-names>JA</given-names></name></person-group> (<year>1957</year>)<article-title> A review of the auchenorhynchous [sic] Homoptera of Puerto Rico.</article-title> <source>Journal of Agriculture the University of Puerto Rico </source> <volume>41</volume> (<issue>1</issue>): <fpage>38</fpage>-<lpage>117</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shcherbakov</surname> <given-names>DE</given-names></name></person-group> (<year>1992</year>)<fake_tag> The earliest leafhoppers (Hemiptera: Karajassidae n. fam.) from the Jurassic of Karatau. Neues Jahrbuch für Geologie und Paläontologie Monatshefte 1992(1): 39–51.</fake_tag></mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figures 1–10.</label>
+            <caption><p> <italic>Antillotolania myricae</italic>, sp. n. <bold>1–3</bold> female habitus in anterior, dorsal, and lateral views, respectively <bold>4–6</bold> male, same views <bold>7</bold> Dorsal views, distal half of pygofer with aedeagus and styles in resting position over subgenital plates. <bold>8</bold> Lateral view, aedeagus and styles <bold>9–10</bold> left forewing and hind wing, respectively.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-301-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figures 11–17.</label>
+            <caption><p> <italic>Antillotolania myricae</italic> sp. n. <bold>11–15</bold> fifth instar in anterior, dorsal, lateral and detail ventral views, respectively <bold>16</bold> third instar, with proportionately longer ‘anal tube’ (ventrally fused tergum IX) <bold>17</bold> surface vestiture of adult abdominal tergum IV.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-301-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figures 18–27.</label>
+            <caption><p> <italic>Deiroderes inermis</italic> immature, bisected during capture. <bold>18, 20–22</bold> head and thorax in oblique, dorsal, anterior, and ventral views, respectively <bold>19, 23–27</bold> abdomen in oblique (<bold>19</bold>), dorsal (<bold>23, 24, 26</bold>) and ventral (<bold>25, 27</bold>) views. Head processes visible in <bold>18</bold>, anal tube opening visible in <bold>24</bold>, and nascent genitalia visible in <bold>27</bold>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-301-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figures 28–32.</label>
+            <caption><p> Photographs of live Puerto Rican Membracidae. <bold>28–31</bold> <italic>Antillotolania myricae</italic>, sp. n. adult female (<bold>28</bold>), adult male (<bold>29</bold>), third instar (defensive position) (<bold>30</bold>), and fifth instar (<bold>31</bold>), all on <italic>Myrica splendens </italic>(Myrtaceae) <bold>32</bold> <italic>Nessorhinus abbreviatus</italic> Ramos in same xeric habitat of <italic>Deiroderes inermis</italic> type locality (Guánica) on an unidentified host.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-301-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

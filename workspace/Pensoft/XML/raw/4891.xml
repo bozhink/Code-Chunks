@@ -1,0 +1,662 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.293.4891</article-id>
+            <title-group>
+                <article-title>Description of 
+                    <bold-italic>Phradonoma blabolili</bold-italic> sp. n. (Coleoptera, Dermestidae, Megatominae), with notes on the dermestid beetles from Angola
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Háva</surname>
+                        <given-names>Jiří</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:71D662DB-2F3D-4418-98B6-E1DF82895AC5</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Lackner</surname>
+                        <given-names>Tomáš</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:E1DA422B-F56F-4253-A55D-481479D933B8</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Mazancová</surname>
+                        <given-names>Jana</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:BD064E2E-23B7-4820-9A64-068BE643C26D</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Department of Forest Protection and Entomology, Faculty of Forestry and Wood Sciences, Czech University of Life Sciences, Kamýcká 129, CZ-165 21, Prague 6 - Suchdol, Czech Republic
+            </aff>
+            <aff id="A2">
+                <label>2</label>Institute for Tropics and Subtropics, Czech University of Life Sciences, Kamýcká 129, CZ-165 21, Prague 6 - Suchdol, Czech Republic
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Tomáš Lackner (<email xlink:type="simple">tomaslackner@me.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: P. Bouchard</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>19</day>
+                <month>4</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>293</issue>
+            <fpage>65</fpage>
+            <lpage>76</lpage>
+            <history>
+                <date date-type="received">
+                    <day>20</day>
+                    <month>2</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>5</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Jiří Háva, Tomáš Lackner, Jana Mazancová</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:34B6B8DD-1455-472A-8C3D-DF2137560E76
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p><italic>Phradonoma blabolili</italic> <bold>sp. n.</bold> from Angola is described and illustrated. Key to the Afrotropical “<italic>Phradonoma nobile </italic>species group” to which the newly described species belongs, as well as key to genera of dermestid beetles occurring in Angola is given. List of all species of Dermestidae known to occur in Angola hitherto is provided.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Taxonomy</kwd>
+                <kwd>new species</kwd>
+                <kwd>Coleoptera</kwd>
+                <kwd>Dermestidae</kwd>
+                <kwd><italic>Phradonoma</italic>
+                </kwd>
+                <kwd>Angola
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The family Dermestidae (Coleoptera: Bostrichoidea) contains about 1440 species and subspecies worldwide (Háva 2003a, Háva and Solervicens 2012). Its members are “mainly scavengers on dried proteinaceous material and are of economic importance because the family includes species that are pests of stored products or natural-history enemies” (Lawrence and Ślipiński 2005). Despite their species richness, only 14 species have been <!--PageBreak-->reported from Angola hitherto (Erichson 1843, Ferreira 1965, Háva 2003a,b, Kadej 2006, 2010, Mroczkowski 1968, Pacavira <italic>et al.</italic> 2006, Pic 1931, 1937). This doubtlessly small number is perhaps largely due to the 27 years of Angolan civil war (1975–2002) which was a serious impediment to entomological research; the actual number of species is undoubtedly much higher. After the end of the conflict, and especially in the recent years, specialists carrying out entomological research seem to be returning to Angola. The genus <italic>Phradonoma</italic> Jacquelin du Val, 1859 is distributed largely in Palaearctic and Afrotropical regions and one species has been introduced into the U.S.A. In this contribution to the taxonomy of Angolan Dermestidae (Coleoptera) we describe one new species of <italic>Phradonoma</italic> and provide a summary of the dermestid taxa occurring there.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>The type specimen of this new species has been collected using flight intercept trap in open savannah near Catabola, in the central Angolan province of Bié, in altitude 1300 m. The FIT trap has been placed near a small pond, and cow dung, rotting bananas as well as rotting fish were all used to attract insects. The attractants were placed in small plastic containers around the trap. When removing the male terminalia from the specimen, the entire abdomen was first severed from the rest of the body, subsequently macerated in KOH heated up to 90°C for a short while, cleared in 96% ethanol and thence the male genitalia was removed from the cleared abdomen. The habitus photographs of <italic>P. blabolili</italic> was taken by macroscope Leica 216 APO. The dissected male genitalia was macerated in 10 % solution of KOH heated up to 90 °C for a few minutes, cleared in Xylene and transferred into glycerin in small glass dish where it was observed. The photograph of the male genitalia has been taken with Olympus BX 41 camera. The map on Fig.5 depicting the type locality of <italic>P. blabolili</italic> was downloaded from the Internet and subsequently re-drawn using Adobe Illustrator CS4. The type specimen is deposited in the collection of the senior author (JHAC).
+            </p>
+            <p>Standard measurements have been made according to Háva (2006) and are as follows:
+</p>
+            <p><bold>BL</bold>	Body length - linear distance measured from anterior margin of pronotum to apex of elytra;
+            </p>
+            <p><bold>BW</bold>	Body width - measured between two anterolateral humeral calli;
+            </p>
+            <p><bold>PL</bold>	Pronotum length - measured from the top of the anterior margin to scutellum;
+            </p>
+            <p><bold>PW</bold>	Pronotum width - measured between the two posterior angles of pronotum;
+            </p>
+            <p><bold>EL</bold>	Elytral length- linear distance measured from shoulder to apex of elytron.
+            </p>
+            <sec>
+                <title><bold>Abbreviation
+</bold>
+                </title>
+                <p><bold>JHAC</bold>	Private Entomological Laboratory &amp; Collection, Únětice u Prahy, Prague-west, Czech Republic
+                </p>
+                <!--PageBreak-->
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <sec>
+                <title><bold>Subfamily Megatominae Leach, 1815
+</bold>
+                </title>
+                <title><bold>Tribe Megatomini Leach, 1815
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Phradonoma blabolili</bold-italic>
+                            <bold> sp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">urn:lsid:zoobank.org:act:93246F10-2B76-4573-9771-C6F3C84E7538
+</object-id>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Phradonoma_blabolili
+</object-id>
+                        <xref>Figs 1–5
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type material.</bold>
+                        </title>
+                        <p> Holotype, male, with printed label “Angola, Bié province, Catabola env., 15–27.11.2012, FIT trap, T. Lackner lgt.” (JHAC).
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p> Male. Body measurements: BL 2.20 mm; BW 1.30 mm; PL 0.60 mm; PW 1.10 mm; EL 1.70 mm. Body (Fig. 1) dark brown and black, elongate oval. Head entirely black, coarsely punctuate, with decumbent light brown setae; maxillary palpi dark brown. Eyes large, with short microscopic setae. Antennae with 11 antennomeres, antennal club consisting of 3 antennomeres; antennomeres I-VIII brown, antennomeres IX-XI black, furnished with short setae (Fig. 2). Frons with small dark brown ocellus. Pronotum entirely black, shiny, sparsely and finely punctuate, with dark and semi-erect setae medially, white setae increase in number towards the lateral margins, posterior edges and in ante-scutellar area; lateral pronotal margins not visible from above. Scutellum small, black and triangular, asetose and impunctate.
+</p>
+                        <p>Elytra black in anterior half, dark brown on posterior half, sparsely and coarsely punctuate; sparsely covered with semi-erect dark setae. Each elytron bears four transverse fasciae formed by intermixed white and yellow setae: the first situated near scutellum; second present anteriorly, reaching elytral suture; third fascia situated sub-medially reaching elytral suture; and the fourth fascia situated sub-apically, reaching elytral suture. Elytral epipleuron short, black, with dark setae.
+</p>
+                        <p>Metaventrite finely punctuate with white, short, recumbent setae. Mesoventrite coarsely punctuate laterally, medially finely punctuate, and covered by white, short, recumbent setae.
+</p>
+                        <p>All abdominal ventrites black, covered by short, white, recumbent setae; first abdominal ventrite with distinct oblique discal striae.
+</p>
+                        <p>Legs. Tibiae and tarsi brown, femora anteriorly darkened and sparsely covered with fine white setae. Anterior tibiae with black spines along shaft.
+</p>
+                        <p>Male genitalia. Parameres widely ‘open’ connected anteriorly by a ‘bridge’, parameres apically with pseudopores and short setae; basal piece strongly sclerotized; penis apically with downward pointing ‘hook’. Penis has been slightly damaged during the manipulation with the aedeagus and therefore we decided to show the photograph as well as the drawing of the aedeagus depicting a reconstructed penis. (Figs 3-4).
+</p>
+                        <p>Female unknown.
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Differential diagnosis.</bold>
+                        </title>
+                        <p> This new species belongs to the genus <italic>Phradonoma</italic> Jacquelin du Val, 1859, and can be placed into the “<italic>P. nobile</italic> species group” (sensu Háva 2006; <!--PageBreak-->see also below). <italic>Phradonoma blabolili</italic> sp. n. is visually most similar to <italic>P. cornelli</italic> Háva &amp; Hermann, 2009 and can be differentiated from it by the characters given in the key.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Distribution.</bold>
+                        </title>
+                        <p> Known only from the vicinity of Catabola, Bié province, central Angola (Fig. 5).
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> Patronymic, dedicated to Martin Blabolil, (Kuito, Angola) who has been instrumental in providing all kinds of help during the visit of Tomáš Lackner in Angola.
+</p>
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                        <!--PageBreak-->
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+            <sec>
+                <title><bold>Key to the Afrotropical “</bold><bold-italic>Phradonoma nobile</bold-italic><bold> species group”
+</bold>
+                </title>
+                <p>“<italic>Phradnonoma</italic> <italic>nobile</italic> species group” of the genus <italic>Phradonoma</italic> can be defined by the combination of the following putative synapomorphies: cuticle bicolored, dorsal body surface with bi- or tri-colored setae and antennal club consisting from three antennomeres (see also Háva 2006).
+                </p>
+                <table-wrap content-type="key" position="float" orientation="portrait">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="1" colspan="1">1</td>
+                                <td rowspan="1" colspan="1">Body form narrow, parallel, elytra without white setae, black with orange apex; antennal club with 5 antennomeres (Kenya, Namibia, Tanzania)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. babaulti</bold-italic><bold> (Pic, 1921)
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1"><!--PageBreak-->–
+                                </td>
+                                <td rowspan="1" colspan="1">Body form oval, elytra with brown and white or grey setae, antennal club with 3 antennomeres</td>
+                                <td rowspan="1" colspan="1"><bold>2
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">3
+                                </td>
+                                <td rowspan="1" colspan="1">Berminal antennal antennomere triangular; elytra brownish-black except for three (sometimes only two) red, transverse bands and small circular spots; (Cyprus, England (intr.), Greece, Portugal, Spain, Algeria, Egypt, Eritrea, Libya, Morocco, Namibia, Nigeria, South Africa, South Sudan, Sudan, Tanzania, Tunisia, Zimbabwe, Afghanistan, „Caucasus“, India: Madhya Pradesh, Rajasthan, Uttar Pradesh, Iran, Iraq, Israel, Jordan, Pakistan, Qatar, Saudi Arabia, Syria, Tajikistan, Turkmenistan, United Arab Emirates, Uzbekistan, USA: Arizona (intr.))</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. nobile</bold-italic><bold> (Reitter, 1881)
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">Terminal antennal antennomere oval</td>
+                                <td rowspan="1" colspan="1"><bold>4
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">4
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra with light fasciae of setae and apical spot</td>
+                                <td rowspan="1" colspan="1"><bold>5
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra with isolated light spots of setae</td>
+                                <td rowspan="1" colspan="1"><bold>7
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">5
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra with one orange transverse fasciae, small median orange patches and orange apical spot all covered by white setae; body length 2.30–2.70 mm; antennal club with 3 antennomeres (Botswana, Congo, Namibia, South Africa, Tanzania, Zambia, Zimbabwe)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. eximium</bold-italic><bold> (Arrow, 1915)
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra dark brown or black and dark brown without median, orange or brown patches</td>
+                                <td rowspan="1" colspan="1"><bold>6
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">6
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra dark brown, each elytron covered by slightly erected dark setae with three or four fasciae and small apical spot from light brown and white setae; body length 2.10–2.60 mm; antennal club with 3 antennomeres (Cameroon)<bold-italic>P. cornelli</bold-italic><bold> Háva &amp; Herrmann, 2009
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra black in anterior half, dark brown posteriorly, each elytron with four distinct transverse fasciae from grey setae; body length 2.20 mm; antennal club with 3 antennomeres (Angola: Bié province)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. blabolili</bold-italic><bold> sp. n.
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">7
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra with isolated light spots of setae</td>
+                                <td rowspan="1" colspan="1"><bold>8
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">8
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra black, without red, orange or brown parts. Body length 2.60–2.70 mm; antennal club with 3 antennomeres; each elytron with very small isolated 13–14 white spots (Kenya, Madagascar)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. albonotatum</bold-italic><bold> (Pic, 1927)
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra with red, orange or brown parts</td>
+                                <td rowspan="1" colspan="1"><bold>9
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">9
+                                </td>
+                                <td rowspan="1" colspan="1">Pronotum with 5 isolated white patches, two in lateral parts, two medially and one near scutellum; body length 2.30–3.30 mm; antennal club with 3 antennomeres; elytra black with orange-brown apical part and with small white spots (Botswana, South Africa)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. borowieci</bold-italic><bold> Háva &amp; Kadej, 2006
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">Pronotum with two lateral white patches</td>
+                                <td rowspan="1" colspan="1"><bold>10
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">10
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra near scutellum coarsely punctured with small humeral bump; body length 2.80 mm; antennal club with 3 antennomeres; elytra black, each elytron with 12 small, distinct spots of white setae on three or four very blurred fasciae and an apical spot (Cameroon)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. angelusi</bold-italic><bold> Háva &amp; Herrmann, 2009
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1"><!--PageBreak-->–
+                                </td>
+                                <td rowspan="1" colspan="1">Elytra near scutellum finely punctured with very large humeral bump; body length 2.40–3.20 mm; antennal club with 3 antennomeres; elytra black with orange apex, each elytron intermixed in brown setae with small patches of white setae (Namibia)</td>
+                                <td rowspan="1" colspan="1"><bold-italic>P. namibicum</bold-italic><bold> Háva, 2005
+</bold>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table-wrap>
+            </sec>
+            <sec>
+                <title><bold>Key to genera of Dermestidae hitherto known to occur in Angola
+</bold>
+                </title>
+                <table-wrap content-type="key" position="float" orientation="portrait">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td rowspan="1" colspan="1">1</td>
+                                <td rowspan="1" colspan="1">Head without frontal ocellus</td>
+                                <td rowspan="1" colspan="1"><bold>subfamily Dermestinae, genus </bold><bold-italic>Dermestes</bold-italic><bold>, 2
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">head with frontal ocellus</td>
+                                <td rowspan="1" colspan="1"><bold>3
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">2
+                                </td>
+                                <td rowspan="1" colspan="1">visible abdominal sternites with white and black pubescence</td>
+                                <td rowspan="1" colspan="1"><bold>subgenus</bold> <bold-italic>Dermestinus</bold-italic><bold> Zhantiev, 1967
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">visible abdominal sternites with concolorous pubescence</td>
+                                <td rowspan="1" colspan="1"><bold>subgenus </bold><bold-italic>Dermestes</bold-italic><bold> Linnaeus, 1758
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">3
+                                </td>
+                                <td rowspan="1" colspan="1">prosternum not forming a “collar”; mouthparts free</td>
+                                <td rowspan="1" colspan="1"><bold>subfamily Attageninae, genus </bold><bold-italic>Attagenus</bold-italic><bold> Latreille, 1802
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">prosternum forming a “collar” under which mouthparts fit when the head is retracted</td>
+                                <td rowspan="1" colspan="1"><bold>subfamily Megatominae, 4
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">4
+                                </td>
+                                <td rowspan="1" colspan="1">dorsal and ventral surfaces covered by flat scales</td>
+                                <td rowspan="1" colspan="1"><bold>genus</bold><bold-italic> Anthrenus</bold-italic><bold>, 5
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">dorsal and ventral surfaces covered by pubescence</td>
+                                <td rowspan="1" colspan="1"><bold>7
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">5
+                                </td>
+                                <td rowspan="1" colspan="1">antenna with 11 antennomeres</td>
+                                <td rowspan="1" colspan="1"><bold>6
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">antenna with 10 antennomeres</td>
+                                <td rowspan="1" colspan="1"><bold>subgenus </bold><bold-italic>Anthrenodes</bold-italic><bold> Chobaut, 1898
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">6
+                                </td>
+                                <td rowspan="1" colspan="1">eyes with median margin broadly and deeply emarginate at about anterior 1/3</td>
+                                <td rowspan="1" colspan="1"><bold>subgenus </bold><bold-italic>Anthrenus</bold-italic><bold> Geoffroy, 1762
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">eyes with median margins complete</td>
+                                <td rowspan="1" colspan="1"><bold>subgenus </bold><bold-italic>Nathrenus</bold-italic><bold> Casey, 1900
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">7
+                                </td>
+                                <td rowspan="1" colspan="1">anterior tibiae with spines along shaft; antennal club with 3 antennomeres</td>
+                                <td rowspan="1" colspan="1"><bold>genus </bold><bold-italic>Phradonoma</bold-italic><bold> Jacquelin du Val, 1859
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">anterior tibiae without spines</td>
+                                <td rowspan="1" colspan="1"><bold>8
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">8
+                                </td>
+                                <td rowspan="1" colspan="1">antennal club with 2 antennomeres, terminal antennomere of male big, flat and slightly vaulted</td>
+                                <td rowspan="1" colspan="1"><bold>genus </bold><bold-italic>Orphinus</bold-italic><bold> Motschulsky, 1858
+</bold>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1" colspan="1">–
+                                </td>
+                                <td rowspan="1" colspan="1">antennal club with 3-8 antennomeres</td>
+                                <td rowspan="1" colspan="1"><bold>genus </bold><bold-italic>Trogoderma</bold-italic><bold> Dejean, 1821
+</bold>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table-wrap>
+            </sec>
+            <sec>
+                <title><bold>List of the dermestid beetles reported from Angola so far:
+</bold>
+                </title>
+                <p>Subfamily Dermestinae Latreille, 1804
+</p>
+                <p>Tribe Dermestini Latreille, 1804
+</p>
+                <p><italic>Dermestes</italic> (<italic>Dermestes</italic>) <italic>ater</italic> DeGeer, 1774
+                </p>
+                <p>= <italic>Dermestes</italic> <italic>cadaverinus</italic> Fabricius, 1775
+                </p>
+                <p>= <italic>Dermestes</italic> <italic>domesticus</italic> Germar, 1824
+                </p>
+                <p>= <italic>Dermestes</italic> <italic>cinereus</italic> Motschulsky, 1848
+                </p>
+                <p><!--PageBreak--><italic>Dermestes</italic> (<italic>Dermestes</italic>) <italic>lardarius</italic> Linnaeus, 1758
+                </p>
+                <p><italic>Dermestes</italic> (<italic>Dermestinus</italic>) <italic>maculatus</italic> DeGeer, 1774
+                </p>
+                <p>= <italic>Dermestes</italic> <italic>vulpinus</italic> Fabricius, 1781
+                </p>
+                <p>= <italic>Dermestes</italic> <italic>senex</italic> Germar, 1824
+                </p>
+                <p>= <italic>Dermestes</italic> <italic>lupinus</italic> Eschscholtz in Mannerheim, 1843
+                </p>
+                <p>Subfamily Attageninae Laporte, 1840
+</p>
+                <p>Tribe Attagenini Laporte, 1840
+</p>
+                <p><italic>Attagenus</italic> <italic>donckieri</italic> Pic, 1916
+                </p>
+                <p><italic>Attagenus</italic> <italic>fasciatus</italic> (Thunberg, 1795)
+                </p>
+                <p>= <italic>Anthrenus</italic> <italic>gloriosae</italic> Fabricius, 1798
+                </p>
+                <p><italic>Attagenus</italic> <italic>hargreavesi</italic> Pic, 1935
+                </p>
+                <p><italic>Attagenus</italic> <italic>havai</italic> Kadej, 2006
+                </p>
+                <p><italic>Attagenus</italic> <italic>vestitus</italic> Klug, 1855
+                </p>
+                <p>= <italic>Attagenus</italic> <italic>rhodesianus</italic> Pic, 1927
+                </p>
+                <p>Subfamily Megatominae Leach, 1815
+</p>
+                <p>Tribe Anthrenini Gistel, 1848
+</p>
+                <p><italic>Anthrenus</italic> (<italic>Anthrenodes</italic>) <italic>endroedyi</italic> Háva, 2003b
+                </p>
+                <p><italic>Anthrenus</italic> (<italic>Anthrenus</italic>) <italic>flavipes flavipes</italic> LeConte, 1854
+                </p>
+                <p><italic>Anthrenus</italic> (<italic>Nathrenus</italic>) <italic>maltzi</italic> Kadej, 2010
+                </p>
+                <p><italic>Anthrenus</italic> (<italic>Nathrenus</italic>) <italic>verbasci</italic> (Linnaeus, 1767)
+                </p>
+                <p>Tribe Megatomini Leach, 1815
+</p>
+                <p><italic>Orphinus</italic> (<italic>Orphinus</italic>) <italic>aethiops</italic> Arrow, 1915
+                </p>
+                <p><italic>Orphinus</italic> (<italic>Orphinus</italic>) <italic>incognitus</italic> Háva, 2003b
+                </p>
+                <p><italic>Phradonoma</italic> <italic>blabolili</italic> sp. n.
+                </p>
+                <p><italic>Trogoderma</italic> <italic>granarium</italic> Everts, 1898
+                </p>
+            </sec>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>This research was supported by the Internal Grant Agency (IGA n.20124364) Faculty of Forestry and Wood Sciences, Czech University of Life Sciences Prague. We would like to thank Petr Baňař (Brno, Czech Republic) for the help with the imaging of this new species. Wife of the second author (T.L.) Pepina Artimová has drawn the map used in this paper using Adobe Illustrator CS4 and helped with drawing the aedeagus of <italic>P. blabolili</italic> and we would like to express our sincere gratitude to her for it. We thank Adam Ślipiński (CSIRO, Canberra, Australia) for the help with the genitalic morphology as well as two anonymous reviewers for the improved quality of our paper.
+            </p>
+            <!--PageBreak-->
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Erichson</surname> <given-names>WF</given-names></name></person-group> (<year>1843</year>)<fake_tag> Beiträg zur Insecten-Fauna von Angola, in besonderer Beziehung zur geographischen Verbreitung der Insecten in Afrika. Archiv für Naturgeschichte, Berlin 9: 199–267.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ferreira</surname> <given-names>MC</given-names></name></person-group> (<year>1965</year>)<article-title> Catalogo dos Coleopteros de Angola.</article-title> <source>Revue Entomologique Mocambique </source> <volume>8</volume>: <fpage>417</fpage>-<lpage>1317</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Háva</surname> <given-names>J</given-names></name></person-group> (<year>2003a</year>)<article-title> World Catalogue of the Dermestidae (Coleoptera).</article-title> <source>Studie a Zprávy Oblastního Muzea Praha-východ v Brandýse nad Labem a Staré Boleslavi, Supplementum </source> <volume>1</volume>: <fpage>1</fpage>-<lpage>196</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Háva</surname> <given-names>J</given-names></name></person-group> (<year>2003b</year>)<article-title> Two new species of the genus <italic>Orphinus</italic> from Afrotropical region (Coleoptera, Dermestidae, Megatominae).</article-title> <source>Lambillionea </source> <volume>103</volume>: <fpage>146</fpage>-<lpage>148</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Háva</surname> <given-names>J</given-names></name></person-group> (<year>2006</year>)<article-title> Notes on the genus <italic>Phradonoma</italic> from the Middle East with description of nine new species (Coleoptera: Dermestidae: Megatominae).</article-title> <source>Genus </source> <volume>17</volume>: <fpage>79</fpage>-<lpage>94</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Háva</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Solervicens</surname> <given-names>J</given-names></name></person-group> (<year>2012</year>)<article-title> Contribution to the knowledge of Dermestidae (Coleoptera) from Chile. Contribución al conocimiento de los Dermestidae (Coleoptera) de Chile.</article-title> <source>Revista Chilena de Entomología </source> <volume>37</volume>: <fpage>17</fpage>-<lpage>21</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kadej</surname> <given-names>M</given-names></name></person-group> (<year>2006</year>)<article-title> Description of a new <italic>Attagenus</italic> species from Afrotropical region (Coleoptera, Dermestidae).</article-title> <source>Studies and Reports of District Museum Prague-east, Taxonomical Series </source> <volume>2</volume>: <fpage>81</fpage>-<lpage>84</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kadej</surname> <given-names>M</given-names></name></person-group> (<year>2010</year>)<article-title> A new species of <italic>Anthrenus</italic> Geoffroy, 1762 (Coleoptera: Dermestidae: Megatominae) from Angola.</article-title> <source>Annales Zoologici </source> <volume>60</volume>: <fpage>547</fpage>-<lpage>551</lpage>. doi: 10.3161/000345410X550391
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lawrence</surname> <given-names>JF</given-names></name>,<name name-style="western"><surname>Slipinski</surname> <given-names>A</given-names></name></person-group> (<year>2005</year>)<article-title> Three new genera of Indo-Australian Dermestidae (Coleoptera) and their phylogenetic significance.</article-title> <source>Invertebrate Systematics </source> <volume>19</volume>: <fpage>231</fpage>-<lpage>261</lpage>. doi: 10.1071/IS04033
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mroczkowski</surname> <given-names>M</given-names></name></person-group> (<year>1968</year>)<article-title> Distribution of the Dermestidae (Coleoptera) of the world with a catalogue of all known species.</article-title> <source>Annales Zoologici </source> <volume>26</volume>: <fpage>15</fpage>-<lpage>191</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pacavira</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Mata</surname> <given-names>O</given-names></name>,<name name-style="western"><surname>Manuel</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Pereira</surname> <given-names>AP &amp; Mexia A</given-names></name></person-group> (<year>2006</year>)<fake_tag> Detection of stored products pests by pheromone traps in seven warehouse in Luanda/Angola. General Session on Stored Grain Protection. 9<sup>th</sup> International Working Conference on Stored Product Protection. Sao Paulo, 1157–1165.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pic</surname> <given-names>M</given-names></name></person-group> (<year>1931</year>)<article-title> Coléoptères (Clavicornes, Clérides, Malacodermes, Hétéromeres, Bruchides, Phytophages) d´Angola.</article-title> <source>Revue Suisse de Zoology </source> <volume>38</volume>: <fpage>419</fpage>-<lpage>427</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pic</surname> <given-names>M</given-names></name></person-group> (<year>1937</year>)<article-title> Coléoptères (Clavicornes, Malacodermes, Hétéromeres e. p. et Endomychides) d´Angola.</article-title> <source>Revue Suisse de Zoology </source> <volume>44</volume>: <fpage>483</fpage>-<lpage>489</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> <italic>Phradonoma blabolili</italic> sp. n., habitus, dorsal view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-065-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> <italic>Phradonoma blabolili</italic> sp. n., antenna, dorsal view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-065-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> <italic>Phradonoma blabolili</italic> sp. n., aedeagus, dorsal view, showing the reconstructed penis.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-065-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> <italic>Phradonoma blabolili</italic> sp. n., aedeagus, depicting the damaged penis.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-065-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figure 5.</label>
+            <caption><p> Map of Angola showing the type locality of <italic>Phradonoma blabolili</italic> sp. n.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-065-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="48863048" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="xslt" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="38630237" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" AddSchemaLocation="0"/>
+					<view ltx="5" lty="7" rbx="160" rby="79"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="FileList" expanded="1">
+										<entry name="File" outkey="13"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="FileList.xsd" inputinstance="NanonullFiles.xml" outputinstance="NanonullFiles.xml" instanceroot="{}FileList" userdefinedschemalocation="C:/Projects/Files/XMLSpyExeFolder/MapForceExamples/FileList.xsd"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="get-folder" library="core" uid="38630241" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="328" lty="15" rbx="265" rby="-175"/>
+				</component>
+				<component name="mfd-filepath" library="core" uid="38630239" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="206" lty="8" rbx="148" rby="-135"/>
+				</component>
+				<component name="constant" library="core" uid="38630236" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="340" lty="175" rbx="-60" rby="95"/>
+					<data>
+						<constant value="1" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="38630235" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="311" lty="198" rbx="-89" rby="118"/>
+					<data>
+						<constant value="Organization Chart" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="38630233" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" AddSchemaLocation="0"/>
+					<view ltx="46" lty="136" rbx="221" rby="437"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" inpkey="20" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Altova" expanded="1">
+										<entry name="Office" outkey="24" expanded="1">
+											<entry name="PrimaryKey" outkey="27"/>
+											<entry name="ForeignKey" outkey="30"/>
+											<entry name="EMail" outkey="33"/>
+											<entry name="Established" outkey="36"/>
+											<entry name="Fax" outkey="39"/>
+											<entry name="Name" outkey="42"/>
+											<entry name="Phone" outkey="45"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Altova_Hierarchical.xsd" instanceroot="{}Altova" userdefinedschemalocation="C:/Projects/Files/XMLSpyExeFolder/MapForceExamples/Altova_Hierarchical.xsd"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="38630242" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="17"/>
+						<datapoint pos="1" key="22"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="404" lty="246" rbx="14" rby="79"/>
+				</component>
+				<component name="constant" library="core" uid="38630243" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="260" lty="274" rbx="-34" rby="20"/>
+					<data>
+						<constant value="read from file: " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="resolve-filepath" library="core" uid="38630238" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="14"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="448" lty="26" rbx="390" rby="-187"/>
+				</component>
+				<component name="document" library="xml" uid="38630234" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="518" lty="136" rbx="693" rby="437"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Altova" expanded="1">
+										<entry name="PrimaryKey" inpkey="8"/>
+										<entry name="Name" inpkey="5"/>
+										<entry name="Office" inpkey="25" expanded="1">
+											<entry name="PrimaryKey" inpkey="28"/>
+											<entry name="ForeignKey" inpkey="31"/>
+											<entry name="Desc" inpkey="49"/>
+											<entry name="EMail" inpkey="34"/>
+											<entry name="Established" inpkey="37"/>
+											<entry name="Fax" inpkey="40"/>
+											<entry name="Name" inpkey="43"/>
+											<entry name="Phone" inpkey="46"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Altova_Hierarchical.xsd" instanceroot="{}Altova" userdefinedschemalocation="Altova_Hierarchical.xsd" sps="Altova_Hierarchical_Offices.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+							<edge vertexkey="22" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="28" edgekey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="31" edgekey="32"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34" edgekey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="37" edgekey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="40" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="43" edgekey="44"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="45">
+						<edges>
+							<edge vertexkey="46" edgekey="47"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48">
+						<edges>
+							<edge vertexkey="49" edgekey="50"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

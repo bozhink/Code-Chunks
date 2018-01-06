@@ -1,0 +1,1042 @@
+
+<!--====================Character mnemonic entities====================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsymbol PUBLIC
+   "-//W3C//ENTITIES Symbols for XHTML//EN"
+   "xhtml-symbol.ent">
+%HTMLsymbol;
+
+<!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special for XHTML//EN"
+   "xhtml-special.ent">
+%HTMLspecial;
+
+<!--====================Entity definitions====================-->
+
+<!ENTITY % ContentType "CDATA">
+<!ENTITY % ContentTypes "CDATA">
+<!ENTITY % Charset "CDATA">
+<!ENTITY % Charsets "CDATA">
+<!ENTITY % LanguageCode "NMTOKEN">
+<!ENTITY % Number "CDATA">
+<!ENTITY % LinkTypes "CDATA">
+<!ENTITY % MediaDesc "CDATA">
+<!ENTITY % URI "CDATA">
+<!ENTITY % Datetime "CDATA">
+<!ENTITY % Script "CDATA">
+<!ENTITY % Text "CDATA">
+<!ENTITY % FrameTarget "NMTOKEN">
+<!ENTITY % Length "CDATA">
+<!ENTITY % Coords "CDATA">
+
+<!--====================Content Models====================-->
+<!--http://www.w3.org/TR/html5/content-models.html#content-models-->
+
+<!--http://www.w3.org/TR/html5/content-models.html#metadata-content-->
+<!ENTITY % metadatacontent
+	"(base | command | link | meta | noscript | script | style | title)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#heading-content-->
+<!ENTITY % headingcontent.elements
+	"h1 | h2 | h3 | h4 | h5 | h6 | hgroup"
+>
+<!ENTITY % headingcontent
+	"(%headingcontent.elements;)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#embedded-content-->
+<!ENTITY % embeddedcontent.elements
+	"audio | canvas | embed | iframe | img | math | object | svg | video"
+>
+<!ENTITY % embeddedcontent
+	"(%embeddedcontent.elements;)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#sectioning-content-->
+<!ENTITY % sectioningcontent.elements
+	"article | aside | nav | section"
+>
+<!ENTITY % sectioningcontent
+	"(%sectioningcontent.elements;)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#flow-content-->
+<!ENTITY % flowcontent.elements
+	"%embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | footer | form | header |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr"
+>
+<!ENTITY % flowcontent
+	"(#PCDATA | %flowcontent.elements;)*"
+>
+<!ENTITY % flowcontent.address
+	"(#PCDATA | %embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | form |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr)*"
+>
+<!ENTITY % flowcontent.caption
+	"(#PCDATA | %embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | footer | form | header |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | textarea | time | u | ul | var | wbr)*"
+>
+<!ENTITY % flowcontent.form
+	"(#PCDATA | %embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | footer | header |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr)*"
+>
+<!ENTITY % flowcontent.map
+	"(#PCDATA | %flowcontent.elements; | area)*"
+>
+<!ENTITY % flowcontent.headerfooter
+	"(#PCDATA | %embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | form |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#phrasing-content-->
+<!ENTITY % phrasingcontent.elements
+	"%embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | br | button | cite | code | command | datalist | del | dfn | em | i | input | ins | kbd | keygen | label | map | mark | meter | noscript |
+	output | progress | q | ruby | s | samp | script | select | small | span | strong | sub | sup | textarea | time | u | var | wbr"
+>
+<!ENTITY % phrasingcontent
+	"(#PCDATA | %phrasingcontent.elements;)*"
+>
+<!ENTITY % phrasingcontent.map
+	"(#PCDATA | %phrasingcontent.elements; | area)*"
+>
+<!ENTITY % phrasingcontent.button
+	"(#PCDATA | audio | abbr | b | bdi | bdo | br | canvas | cite | code | command | datalist | del | dfn | em | i | img | input | ins | kbd | map | mark | math | meter | noscript |
+	object | output | progress | q | ruby | s | samp | script | small | span | strong | sub | sup | svg | time | u | var | video | wbr)*"
+>
+<!ENTITY % phrasingcontent.dfn
+	"(#PCDATA | %embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | br | button | cite | code | command | datalist | del | em | i | input | ins | kbd | keygen | label | map | mark | meter | noscript |
+	output | progress | q | ruby | s | samp | script | select | small | span | strong | sub | sup | textarea | time | u | var | wbr)*"
+>
+<!ENTITY % phrasingcontent.label
+	"(#PCDATA | %embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | br | cite | code | command | datalist | del | dfn | em | i | input | ins | kbd | label | map | mark | noscript |
+	q | ruby | s | samp | script | small | span | strong | sub | sup | time | u | var | wbr)*"
+>
+<!ENTITY % phrasingcontent.meter
+	"(#PCDATA | %embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | br | button | cite | code | command | datalist | del | dfn | em | i | input | ins | kbd | keygen | label | map | mark | noscript |
+	output | progress | q | ruby | s | samp | script | select | small | span | strong | sub | sup | textarea | time | u | var | wbr)*"
+>
+<!ENTITY % phrasingcontent.progress
+	"(#PCDATA | %embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | br | button | cite | code | command | datalist | del | dfn | em | i | input | ins | kbd | keygen | label | map | mark | meter | noscript |
+	output | q | ruby | s | samp | script | select | small | span | strong | sub | sup | textarea | time | u | var | wbr)*"
+>
+<!ENTITY % phrasingcontent.time
+	"(#PCDATA | %embeddedcontent.elements; |
+	a | abbr | b | bdi | bdo | br | button | cite | code | command | datalist | del | dfn | em | i | input | ins | kbd | keygen | label | map | mark | meter | noscript |
+	output | progress | q | ruby | s | samp | script | select | small | span | strong | sub | sup | textarea | u | var | wbr)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#interactive-content-->
+<!ENTITY % interactivecontent
+	"(a | audio | button | details | embed | iframe | img | input | keygen | label | menu | object |
+	select | textarea | video)*"
+>
+
+<!--http://www.w3.org/TR/html5/content-models.html#transparent-content-models-->
+<!ENTITY % transparentcontent
+	"(#PCDATA | %embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | footer | form | header |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr | area | param)*"
+>
+<!ENTITY % transparentcontent.noscript
+	"(#PCDATA | %embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | footer | form | header |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr | area | param | link | meta)*"
+>
+<!ENTITY % transparentcontent.a
+	"(#PCDATA | %embeddedcontent.elements; | %headingcontent.elements; | %sectioningcontent.elements; |
+	abbr | address | b | bdi | bdo | blockquote | br | cite | code | command | datalist | del | dfn | div | dl | em | fieldset | figure | footer | form | header |
+	hr | i | ins | kbd | map | mark | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | small | span |
+	strong | style | sub | sup | table | time | u | ul | var | wbr | area | param)*"
+>
+<!ENTITY % transparentcontent.audiovideo
+	"(#PCDATA | canvas | embed | iframe | img | math | object | svg | %headingcontent.elements; | %sectioningcontent.elements; |
+	a | abbr | address | b | bdi | bdo | blockquote | br | button | cite | code | command | datalist | del | details | dfn | div | dl | em | fieldset | figure | footer | form | header |
+	hr | i | input | ins | kbd | keygen | label | map | mark | menu | meter | noscript | ol | output | p | pre | progress | q | ruby | s | samp | script | select | small | span |
+	strong | style | sub | sup | table | textarea | time | u | ul | var | wbr | area | param | source | track)*"
+>
+
+<!--====================Global Attributes====================-->
+
+<!--http://www.w3.org/TR/html5/elements.html#global-attributes-->
+<!ENTITY % globalattributes
+	"accesskey		CDATA #IMPLIED
+	class				CDATA #IMPLIED
+	contenteditable	(true|false) #IMPLIED
+	contextmenu		IDREF #IMPLIED
+	dir					(ltr|rtl|auto) #IMPLIED
+	draggable			(true|false) #IMPLIED
+	dropzone			CDATA #IMPLIED
+	hidden				(hidden) #IMPLIED
+	id						ID #IMPLIED
+	lang					NMTOKEN #IMPLIED
+	spellcheck		(true|false) #IMPLIED
+	style					CDATA #IMPLIED
+	tabindex			%Number; #IMPLIED
+	title					CDATA #IMPLIED
+	xml:lang			NMTOKEN #IMPLIED"
+>
+
+<!--http://www.w3.org/TR/html5/elements.html#global-attributes-->
+<!ENTITY % events
+	"onabort					CDATA #IMPLIED
+	onblur						CDATA #IMPLIED
+	oncanplay					CDATA #IMPLIED
+	oncanplaythrough		CDATA #IMPLIED
+	onchange					CDATA #IMPLIED
+	onclick						CDATA #IMPLIED
+	oncontextmenu			CDATA #IMPLIED
+	oncuechange				CDATA #IMPLIED
+	ondblclick					CDATA #IMPLIED
+	ondrag						CDATA #IMPLIED
+	ondragend					CDATA #IMPLIED
+	ondragenter				CDATA #IMPLIED
+	ondragleave				CDATA #IMPLIED
+	ondragover				CDATA #IMPLIED
+	ondragstart				CDATA #IMPLIED
+	ondrop						CDATA #IMPLIED
+	ondurationchange		CDATA #IMPLIED
+	onemptied					CDATA #IMPLIED
+	onended					CDATA #IMPLIED
+	onerror						CDATA #IMPLIED
+	onfocus						CDATA #IMPLIED
+	oninput						CDATA #IMPLIED
+	oninvalid					CDATA #IMPLIED
+	onkeydown				CDATA #IMPLIED
+	onkeypress				CDATA #IMPLIED
+	onkeyup					CDATA #IMPLIED
+	onload						CDATA #IMPLIED
+	onloadeddata				CDATA #IMPLIED
+	onloadedmetadata		CDATA #IMPLIED
+	onloadstart				CDATA #IMPLIED
+	onmousedown			CDATA #IMPLIED
+	onmousemove			CDATA #IMPLIED
+	onmouseout				CDATA #IMPLIED
+	onmouseover				CDATA #IMPLIED
+	onmouseup				CDATA #IMPLIED
+	onmousewheel			CDATA #IMPLIED
+	onpause					CDATA #IMPLIED
+	onplay						CDATA #IMPLIED
+	onplaying					CDATA #IMPLIED
+	onprogress				CDATA #IMPLIED
+	onratechange			CDATA #IMPLIED
+	onreadystatechange	CDATA #IMPLIED
+	onreset						CDATA #IMPLIED
+	onscroll						CDATA #IMPLIED
+	onseeked					CDATA #IMPLIED
+	onseeking					CDATA #IMPLIED
+	onselect					CDATA #IMPLIED
+	onshow						CDATA #IMPLIED
+	onstalled					CDATA #IMPLIED
+	onsubmit					CDATA #IMPLIED
+	onsuspend				CDATA #IMPLIED
+	ontimeupdate			CDATA #IMPLIED
+	onvolumechange		CDATA #IMPLIED
+	onwaiting					CDATA #IMPLIED"
+>
+
+<!ENTITY % globalattrs "%globalattributes; %events;">
+
+<!--====================The root element====================-->
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-html-element-->
+<!ELEMENT html (head, body)>
+<!ATTLIST html
+	%globalattrs;
+	manifest	%URI;		#IMPLIED
+	xmlns		%URI;		#FIXED 'http://www.w3.org/1999/xhtml'
+>
+
+<!--====================Document metadata====================-->
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-head-element-->
+<!ELEMENT head %metadatacontent;>
+<!ATTLIST head %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-title-element-->
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-base-element-->
+<!ELEMENT base EMPTY>
+<!ATTLIST base
+	%globalattrs;
+	href        %URI;          #IMPLIED
+	target      %FrameTarget;  #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-link-element-->
+<!ELEMENT link EMPTY>
+<!ATTLIST link
+	%globalattrs;
+	href		%URI; #IMPLIED
+	rel		%LinkTypes; #IMPLIED
+	media	%MediaDesc; #IMPLIED
+	hreflang	%LanguageCode; #IMPLIED
+	type		%ContentType; #IMPLIED
+	sizes	CDATA #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-meta-element-->
+<!ELEMENT meta EMPTY>
+<!ATTLIST meta
+	%globalattrs;
+	name        CDATA          #IMPLIED
+	http-equiv  (content-language|content-type|default-style|refresh|set-cookie)          #IMPLIED
+	content     CDATA          #REQUIRED
+	charset     CDATA          #REQUIRED
+>
+
+<!--http://www.w3.org/TR/html5/semantics.html#the-style-element-->
+<!ELEMENT style (#PCDATA)>
+<!ATTLIST style
+	%globalattrs;
+	media	%MediaDesc;    #IMPLIED
+	type		%ContentType;  "text/css"
+	scoped	(scoped) #IMPLIED
+>
+
+<!--====================Scripting====================-->
+
+<!-- script statements, which may include CDATA sections -->
+<!ELEMENT script (#PCDATA)>
+<!ATTLIST script
+  %globalattrs;
+  src         %URI; #IMPLIED
+  async		(async)	#IMPLIED
+  defer       (defer) #IMPLIED
+  type        %ContentType;  #REQUIRED
+  charset     %Charset; #IMPLIED
+  >
+
+<!--http://www.w3.org/TR/html5/scripting-1.html#the-noscript-element-->
+<!ELEMENT noscript %transparentcontent.noscript;>
+<!ATTLIST noscript %globalattrs; >
+
+<!--====================Sections====================-->
+
+<!--http://www.w3.org/TR/html5/sections.html#the-body-element-->
+<!ELEMENT body %flowcontent;>
+<!ATTLIST body
+	%globalattrs;
+	onafterprint		%Script; #IMPLIED
+	onbeforeprint		%Script; #IMPLIED
+	onbeforeunload	%Script; #IMPLIED
+	onblur				%Script; #IMPLIED
+	onerror				%Script; #IMPLIED
+	onfocus				%Script; #IMPLIED
+	onhashchange	%Script; #IMPLIED
+	onload				%Script; #IMPLIED
+	onmessage		%Script; #IMPLIED
+	onoffline			%Script; #IMPLIED
+	ononline			%Script; #IMPLIED
+	onpagehide		%Script; #IMPLIED
+	onpageshow		%Script; #IMPLIED
+	onpopstate		%Script; #IMPLIED
+	onredo				%Script; #IMPLIED
+	onresize			%Script; #IMPLIED
+	onscroll				%Script; #IMPLIED
+	onstorage			%Script; #IMPLIED
+	onundo				%Script; #IMPLIED
+	onunload			%Script; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-section-element-->
+<!ELEMENT section %flowcontent;>
+<!ATTLIST section %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-nav-element-->
+<!ELEMENT nav %flowcontent;>
+<!ATTLIST nav %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-article-element-->
+<!ELEMENT article %flowcontent;>
+<!ATTLIST article %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-aside-element-->
+<!ELEMENT aside %flowcontent;>
+<!ATTLIST aside %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements-->
+<!ELEMENT h1 %phrasingcontent;>
+<!ATTLIST h1 %globalattrs;>
+
+<!ELEMENT h2 %phrasingcontent;>
+<!ATTLIST h2 %globalattrs;>
+
+<!ELEMENT h3 %phrasingcontent;>
+<!ATTLIST h3 %globalattrs;>
+
+<!ELEMENT h4 %phrasingcontent;>
+<!ATTLIST h4 %globalattrs;>
+
+<!ELEMENT h5 %phrasingcontent;>
+<!ATTLIST h5 %globalattrs;>
+
+<!ELEMENT h6 %phrasingcontent;>
+<!ATTLIST h6 %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-hgroup-element-->
+<!ELEMENT hgroup (h1 | h2 | h3 | h4 | h5 | h6)*>
+<!ATTLIST hgroup %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-header-element-->
+<!ELEMENT header %flowcontent.headerfooter;>
+<!ATTLIST header %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-footer-element-->
+<!ELEMENT footer %flowcontent.headerfooter;>
+<!ATTLIST footer %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/sections.html#the-address-element-->
+<!ELEMENT address %flowcontent.address;>
+<!ATTLIST address %globalattrs;>
+
+<!--====================Grouping content====================-->
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-p-element-->
+<!ELEMENT p %phrasingcontent;>
+<!ATTLIST p %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-hr-element-->
+<!ELEMENT hr EMPTY>
+<!ATTLIST hr %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-pre-element-->
+<!ELEMENT pre %phrasingcontent;>
+<!ATTLIST pre %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element-->
+<!ELEMENT blockquote %flowcontent;>
+<!ATTLIST blockquote
+	%globalattrs;
+	cite        %URI;          #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-ol-element-->
+<!ELEMENT ol (li)*>
+<!ATTLIST ol
+	%globalattrs;
+	reversed (reversed) #IMPLIED
+	start       %Number;       #IMPLIED
+	type        (1|a|A|i|I)      #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-ul-element-->
+<!ELEMENT ul (li)*>
+<!ATTLIST ul %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-li-element-->
+<!ELEMENT li %flowcontent;>
+<!ATTLIST li
+	%globalattrs;
+	value		%Number; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-dl-element-->
+<!ELEMENT dl (dt+,dd+)*>
+<!ATTLIST dl %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-dt-element-->
+<!ELEMENT dt %phrasingcontent;>
+<!ATTLIST dt %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-dd-element-->
+<!ELEMENT dd %flowcontent;>
+<!ATTLIST dd %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-figure-element-->
+<!ELEMENT figure ((figcaption, (%flowcontent.elements;)+)|((%flowcontent.elements;)+, figcaption?))>
+<!ATTLIST figure %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-figcaption-element-->
+<!ELEMENT figcaption %flowcontent;>
+<!ATTLIST figcaption %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/grouping-content.html#the-div-element-->
+<!ELEMENT div %flowcontent;>
+<!ATTLIST div %globalattrs;>
+
+<!--====================Text-level semantics====================-->
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-a-element-->
+<!ELEMENT a %transparentcontent.a;>
+<!ATTLIST a
+	%globalattrs;
+	href			%URI; #IMPLIED
+	target		%FrameTarget; #IMPLIED
+	rel			%LinkTypes; #IMPLIED
+	media		%MediaDesc; #IMPLIED
+	hreflang		%LanguageCode; #IMPLIED
+	type			%ContentType; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-em-element-->
+<!ELEMENT em %phrasingcontent;>
+<!ATTLIST em %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-strong-element-->
+<!ELEMENT strong %phrasingcontent;>
+<!ATTLIST strong %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-small-element-->
+<!ELEMENT small %phrasingcontent;>
+<!ATTLIST small %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-s-element-->
+<!ELEMENT s %phrasingcontent;>
+<!ATTLIST s %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-cite-element-->
+<!ELEMENT cite %phrasingcontent;>
+<!ATTLIST cite %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-q-element-->
+<!ELEMENT q %phrasingcontent;>
+<!ATTLIST q
+  %globalattrs;
+  cite        %URI;          #IMPLIED
+  >
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-dfn-element-->
+<!ELEMENT dfn %phrasingcontent.dfn;>
+<!ATTLIST dfn %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-abbr-element-->
+<!ELEMENT abbr %phrasingcontent;>
+<!ATTLIST abbr %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element-->
+<!ELEMENT time %phrasingcontent.time;>
+<!ATTLIST time
+	%globalattrs;
+	datetime	CDATA #IMPLIED
+	pubdate	(pubdate) #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-code-element-->
+<!ELEMENT code %phrasingcontent;>
+<!ATTLIST code %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-var-element-->
+<!ELEMENT var %phrasingcontent;>
+<!ATTLIST var %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-samp-element-->
+<!ELEMENT samp %phrasingcontent;>
+<!ATTLIST samp %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-kbd-element-->
+<!ELEMENT kbd %phrasingcontent;>
+<!ATTLIST kbd %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-sub-and-sup-elements-->
+<!ELEMENT sub %phrasingcontent;>
+<!ATTLIST sub %globalattrs;>
+
+<!ELEMENT sup %phrasingcontent;>
+<!ATTLIST sup %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-i-element-->
+<!ELEMENT i %phrasingcontent;>
+<!ATTLIST i %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-b-element-->
+<!ELEMENT b %phrasingcontent;>
+<!ATTLIST b %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-u-element-->
+<!ELEMENT u %phrasingcontent;>
+<!ATTLIST u %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-mark-element-->
+<!ELEMENT mark %phrasingcontent;>
+<!ATTLIST mark %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element-->
+<!ELEMENT ruby (#PCDATA | %phrasingcontent.elements; | rt | rp)*>
+<!ATTLIST ruby %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-rt-element-->
+<!ELEMENT rt %phrasingcontent;>
+<!ATTLIST rt %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-rp-element-->
+<!ELEMENT rp %phrasingcontent;>
+<!ATTLIST rp %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-bdi-element-->
+<!ELEMENT bdi %phrasingcontent;>
+<!ATTLIST bdi %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-bdo-element-->
+<!ELEMENT bdo %phrasingcontent;>
+<!ATTLIST bdo %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-span-element-->
+<!ELEMENT span %phrasingcontent;>
+<!ATTLIST span %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-br-element-->
+<!ELEMENT br EMPTY>
+<!ATTLIST br %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/text-level-semantics.html#the-wbr-element-->
+<!ELEMENT wbr EMPTY>
+<!ATTLIST wbr %globalattrs;>
+
+<!--====================Edits====================-->
+
+<!--http://www.w3.org/TR/html5/edits.html#the-ins-element-->
+<!ELEMENT ins %transparentcontent;>
+<!ATTLIST ins
+  %globalattrs;
+  cite        %URI;          #IMPLIED
+  datetime    %Datetime;     #IMPLIED
+  >
+
+<!--http://www.w3.org/TR/html5/edits.html#the-del-element-->
+<!ELEMENT del %transparentcontent;>
+<!ATTLIST del
+  %globalattrs;
+  cite        %URI;          #IMPLIED
+  datetime    %Datetime;     #IMPLIED
+  >
+
+<!--====================Embedded content====================-->
+
+<!--http://www.w3.org/TR/html5/embedded-content-1.html#the-img-element-->
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+  %globalattrs;
+  alt         %Text;         #REQUIRED
+  src         %URI;          #REQUIRED
+  usemap      %URI;          #IMPLIED
+  ismap       (ismap)        #IMPLIED
+  width       %Length;       #IMPLIED
+  height      %Length;       #IMPLIED
+>
+
+<!ELEMENT iframe %phrasingcontent;>
+<!ATTLIST iframe
+  %globalattrs;
+  src         %URI;          #IMPLIED
+  srcdoc	CDATA	#IMPLIED
+  name        NMTOKEN        #IMPLIED
+  sandbox	NMTOKENS	#IMPLIED
+  seamless CDATA	#IMPLIED
+  width       %Length;       #IMPLIED
+  height      %Length;       #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-embed-element-->
+<!ELEMENT embed EMPTY>
+<!ATTLIST embed
+	%globalattrs;
+	src		%URI; #IMPLIED
+	type		CDATA #IMPLIED
+	width	%Length; #IMPLIED
+	height	%Length; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-object-element-->
+<!ELEMENT object %transparentcontent;>
+<!ATTLIST object
+	%globalattrs;
+	data			%URI; #IMPLIED
+	type			%ContentType; #IMPLIED
+	name		NMTOKEN #IMPLIED
+	usemap	%URI; #IMPLIED
+	form			CDATA #IMPLIED
+	width		%Length; #IMPLIED
+	height		%Length; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-param-element-->
+<!ELEMENT param EMPTY>
+<!ATTLIST param
+	%globalattrs;
+	name	CDATA		#REQUIRED
+	value		CDATA		#IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-video-element-->
+<!ELEMENT video %transparentcontent.audiovideo;>
+<!ATTLIST video
+	%globalattrs;
+	src				%URI; #IMPLIED
+	poster			%URI; #IMPLIED
+	preload			(none|metadata|auto) #IMPLIED
+	autoplay		(autoplay) #IMPLIED
+	mediagroup	CDATA #IMPLIED
+	loop				(loop) #IMPLIED
+	muted			(muted) #IMPLIED
+	controls		(controls) #IMPLIED
+	width			%Length; #IMPLIED
+	height			%Length; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-audio-element-->
+<!ELEMENT audio %transparentcontent.audiovideo;>
+<!ATTLIST audio
+	%globalattrs;
+	src				%URI; #IMPLIED
+	preload			(none|metadata|auto) #IMPLIED
+	autoplay		(autoplay) #IMPLIED
+	mediagroup	CDATA #IMPLIED
+	loop				(loop) #IMPLIED
+	muted			(muted) #IMPLIED
+	controls		(controls) #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-source-element-->
+<!ELEMENT source EMPTY>
+<!ATTLIST source
+	%globalattrs;
+	src		%URI; #IMPLIED
+	type		CDATA #IMPLIED
+	media	%MediaDesc; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-iframe-element.html#the-track-element-->
+<!ELEMENT track EMPTY>
+<!ATTLIST track
+	%globalattrs;
+	kind		(subtitles|captions|descriptions|chapters|metadata) "subtitles"
+	src		%URI; #IMPLIED
+	srclang	CDATA #IMPLIED
+	label		CDATA #IMPLIED
+	default	(default) #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-canvas-element.html#the-canvas-element-->
+<!ELEMENT canvas %transparentcontent;>
+<!ATTLIST canvas
+	%globalattrs;
+	width	%Length; #IMPLIED
+	height	%Length; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-map-element.html#the-map-element-->
+<!ELEMENT map %transparentcontent;>
+<!ATTLIST map
+  %globalattrs;
+  name        CDATA          #IMPLIED
+  >
+
+<!--http://www.w3.org/TR/html5/the-map-element.html#the-area-element-->
+<!ELEMENT area EMPTY>
+<!ATTLIST area
+	%globalattrs;
+	alt		%Text; #REQUIRED
+	coords	%Coords; #IMPLIED
+	shape	(rect|circle|poly|default) "rect"
+	href		%URI; #IMPLIED
+	target	%FrameTarget; #IMPLIED
+	rel		%LinkTypes; #IMPLIED
+	media	%MediaDesc; #IMPLIED
+	hreflang	%URI; #IMPLIED
+	type		%ContentType;  #IMPLIED
+>
+
+<!--====================Tabular data====================-->
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-table-element-->
+<!ELEMENT table (caption?, (colgroup*), thead?, tfoot?, (tbody*|tr+), tfoot?)>
+<!ATTLIST table
+	%globalattrs;
+	border	(1)	#IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-caption-element-->
+<!ELEMENT caption  %flowcontent.caption;>
+<!ATTLIST caption %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-colgroup-element-->
+<!ELEMENT colgroup (col)*>
+<!ATTLIST colgroup
+  %globalattrs;
+  span        %Number;       "1"
+  >
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-col-element-->
+<!ELEMENT col      EMPTY>
+<!ATTLIST col
+	%globalattrs;
+	span		%Number; "1"
+>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-tbody-element-->
+<!ELEMENT tbody    (tr)*>
+<!ATTLIST tbody %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-thead-element-->
+<!ELEMENT thead    (tr)*>
+<!ATTLIST thead %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-tfoot-element-->
+<!ELEMENT tfoot    (tr)*>
+<!ATTLIST tfoot %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-tr-element-->
+<!ELEMENT tr       (th|td)*>
+<!ATTLIST tr %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-td-element-->
+<!ELEMENT td %flowcontent;>
+<!ATTLIST td
+	%globalattrs;
+	colspan		%Number; #IMPLIED
+	rowspan	%Number; "1"
+	headers	IDREFS #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/tabular-data.html#the-th-element-->
+<!ELEMENT th       %phrasingcontent;>
+<!ATTLIST th
+	%globalattrs;
+	colspan		%Number; #IMPLIED
+	rowspan	%Number; "1"
+	headers	IDREFS #IMPLIED
+	scope       (row|col|rowgroup|colgroup)        #IMPLIED
+>
+
+<!--====================Forms====================-->
+
+<!--http://www.w3.org/TR/html5/forms.html#the-form-element-->
+<!ELEMENT form %flowcontent.form;>
+<!ATTLIST form
+  %globalattrs;
+  accept-charset %Charsets;  #IMPLIED
+  action      %URI;          #REQUIRED
+  autocomplete (on|off)	"on"
+  enctype     %ContentType;  "application/x-www-form-urlencoded"
+  method      (get|post)     "get"
+  name        NMTOKEN        #IMPLIED
+  novalidate	(novalidate) #IMPLIED
+  target      %FrameTarget;  #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/forms.html#the-fieldset-element-->
+<!ELEMENT fieldset (legend | %flowcontent.elements;)*>
+<!ATTLIST fieldset
+	%globalattrs;
+	disabled	(disabled) #IMPLIED
+	form			CDATA #IMPLIED
+	name		CDATA #IMPLIED
+	>
+
+<!--http://www.w3.org/TR/html5/forms.html#the-legend-element-->
+<!ELEMENT legend %phrasingcontent;>
+<!ATTLIST legend %globalattrs;>
+
+<!ELEMENT label %phrasingcontent.label;>
+<!ATTLIST label
+	%globalattrs;
+	form	CDATA #IMPLIED
+	for	IDREF #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-input-element.html#the-input-element-->
+<!ELEMENT input EMPTY>
+<!ATTLIST input
+  %globalattrs;
+  accept			%ContentTypes; #IMPLIED
+  alt					CDATA #IMPLIED
+  autocomplete	(on|off) #IMPLIED
+  autofocus		(autofocus) #IMPLIED
+  checked			(checked) #IMPLIED
+  dirname			CDATA #IMPLIED
+  disabled			(disabled) #IMPLIED
+  form				CDATA #IMPLIED
+  formaction		%URI; #IMPLIED
+  formenctype	%ContentTypes; "application/x-www-form-urlencoded"
+  formmethod		(get|post) "get"
+  formnovalidate	(formnovalidate) #IMPLIED
+  formtarget		CDATA #IMPLIED
+  height				%Length; #IMPLIED
+  list					CDATA #IMPLIED
+  max				CDATA #IMPLIED
+  maxlength		%Number; #IMPLIED
+  min					CDATA #IMPLIED
+  multiple			(multiple) #IMPLIED
+  name				CDATA #IMPLIED
+  pattern			CDATA #IMPLIED
+  placeholder		CDATA #IMPLIED
+  readonly			(readonly) #IMPLIED
+  required			(required) #IMPLIED
+  size				CDATA #IMPLIED
+  src					%URI; #IMPLIED
+  step				CDATA #IMPLIED
+  type				(hidden|text|search|tel|url|email|password|datetime|date|month|week|time|datetime-local|number|range|color|checkbox|radio|file|submit|image|reset|button) "text"
+  value				CDATA #IMPLIED
+  width				%Length; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-button-element-->
+<!ELEMENT button %phrasingcontent.button;>
+<!ATTLIST button
+	%globalattrs;
+	autofocus			(autofocus) #IMPLIED
+	disabled			(disabled) #IMPLIED
+	form					CDATA #IMPLIED
+	formaction			CDATA #IMPLIED
+	formenctype		CDATA #IMPLIED
+	formmethod		CDATA #IMPLIED
+	formnovalidate	(formnovalidate) #IMPLIED
+	formtarget			CDATA #IMPLIED
+	name				CDATA #IMPLIED
+	type					(button|submit|reset) "submit"
+	value					CDATA #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-select-element-->
+<!ELEMENT select (optgroup|option)*>
+<!ATTLIST select
+	%globalattrs;
+	autofocus	(autofocus) #IMPLIED
+	disabled	(disabled) #IMPLIED
+	form			CDATA #IMPLIED
+	multiple		(multiple) #IMPLIED
+	name		CDATA #IMPLIED
+	required	(required) #IMPLIED
+	size			%Number; #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-datalist-element-->
+<!ELEMENT datalist ((%phrasingcontent.elements;)*|option*)>
+<!ATTLIST datalist %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-optgroup-element-->
+<!ELEMENT optgroup (option)*>
+<!ATTLIST optgroup
+  %globalattrs;
+  disabled    (disabled)     #IMPLIED
+  label       %Text;         #REQUIRED
+  >
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-option-element-->
+<!ELEMENT option (#PCDATA)>
+<!ATTLIST option
+  %globalattrs;
+  disabled    (disabled)     #IMPLIED
+  label       %Text;         #IMPLIED
+  selected    (selected)     #IMPLIED
+  value       CDATA          #IMPLIED
+  >
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-textarea-element-->
+<!ELEMENT textarea (#PCDATA)>
+<!ATTLIST textarea
+  %globalattrs;
+  autofocus	(autofocus) #IMPLIED
+  cols        %Number;       #REQUIRED
+  dirname	(ltr|rtl) #IMPLIED
+  disabled    (disabled)     #IMPLIED
+  form		CDATA #IMPLIED
+  maxlength	%Number; #IMPLIED
+  name        CDATA          #IMPLIED
+  placeholder	CDATA #IMPLIED
+  readonly    (readonly)     #IMPLIED
+  required	(required) #IMPLIED
+  rows        %Number;       #REQUIRED
+  wrap		(soft|hard)	"soft"
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-keygen-element-->
+<!ELEMENT keygen EMPTY>
+<!ATTLIST keygen
+	%globalattrs;
+	autofocus	(autofocus) #IMPLIED
+	challenge	CDATA #IMPLIED
+	disabled	(disabled) #IMPLIED
+	form			CDATA #IMPLIED
+	keytype	(rsa) #IMPLIED
+	name		CDATA #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-output-element-->
+<!ELEMENT output %phrasingcontent;>
+<!ATTLIST output
+	%globalattrs;
+	for		IDREFS #IMPLIED
+	form		CDATA #IMPLIED
+	name	CDATA #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-progress-element-->
+<!ELEMENT progress %phrasingcontent.progress;>
+<!ATTLIST progress
+	%globalattrs;
+	value		%Number; #IMPLIED
+	max		%Number; #IMPLIED
+	form		CDATA #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/the-button-element.html#the-meter-element-->
+<!ELEMENT meter %phrasingcontent.meter;>
+<!ATTLIST meter
+	%globalattrs;
+	value				%Number; #REQUIRED
+	min				%Number; #IMPLIED
+	max				%Number; #IMPLIED
+	low				%Number; #IMPLIED
+	high				%Number; #IMPLIED
+	optimum		%Number; #IMPLIED
+	form				CDATA #IMPLIED
+>
+
+<!--====================Embedded content====================-->
+
+<!--http://www.w3.org/TR/html5/interactive-elements.html#the-details-element-->
+<!ELEMENT details (summary, (%flowcontent.elements;)*)>
+<!ATTLIST details
+	%globalattrs;
+	open	(open) #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/interactive-elements.html#the-summary-element-->
+<!ELEMENT summary %phrasingcontent;>
+<!ATTLIST summary %globalattrs;>
+
+<!--http://www.w3.org/TR/html5/interactive-elements.html#the-command-element-->
+<!ELEMENT command EMPTY>
+<!ATTLIST command
+	%globalattrs;
+	type			(command|checkbox|radio)	"command"
+	label			CDATA #IMPLIED
+	icon			%URI; #IMPLIED
+	disabled	(disabled) #IMPLIED
+	checked	(checked) #IMPLIED
+	radiogroup	CDATA #IMPLIED
+>
+
+<!--http://www.w3.org/TR/html5/interactive-elements.html#the-menu-element--> 
+<!ELEMENT menu (li*|%flowcontent.elements;)>
+<!ATTLIST menu
+	%globalattrs;
+	type		(context|toolbar)	#IMPLIED
+	label		CDATA #IMPLIED
+>

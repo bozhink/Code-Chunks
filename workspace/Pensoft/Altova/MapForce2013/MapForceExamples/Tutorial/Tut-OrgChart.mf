@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8">
+	<component name="defaultmap2" blackbox="0" uid="69566536" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="67951808" kind="14">
+					<properties/>
+					<view rbx="187" rby="394"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:OrgChart" expanded="1">
+								<entry name="0:CompanyLogo" expanded="1"/>
+								<entry name="0:Name" outkey="50617888"/>
+								<entry name="0:Office" expanded="1" outkey="50615416">
+									<entry name="0:Name" outkey="50824976"/>
+									<entry name="0:Desc" expanded="1">
+										<entry name="0:para" expanded="1"/>
+									</entry>
+									<entry name="0:Department" expanded="1">
+										<entry name="0:Person" expanded="1"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Tut-OrgChart.xsd" inputinstance="Tut-OrgChart.xml" instanceroot="{}OrgChart"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="193689480" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="278" rbx="427" rby="324"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Company-Person" expanded="1">
+								<entry name="0:CompanyLogo" expanded="1"/>
+								<entry name="0:Name" inpkey="47796064"/>
+								<entry name="0:Office" expanded="1" inpkey="47798640">
+									<entry name="0:Name" inpkey="47798816"/>
+									<entry name="0:Desc" expanded="1">
+										<entry name="0:para" expanded="1"/>
+									</entry>
+								</entry>
+								<entry name="0:Person" expanded="1"/>
+							</entry>
+						</root>
+						<document schema="Tut-Person.xsd" instanceroot="{}Company-Person"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="47851984"/>
+					<edge edgekey="47852136"/>
+					<edge edgekey="58621480"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="50615416">
+						<edges>
+							<edge vertexkey="47798640" edgekey="58621480"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="50617888">
+						<edges>
+							<edge vertexkey="47796064" edgekey="47852136"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="50824976">
+						<edges>
+							<edge vertexkey="47798816" edgekey="47851984"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

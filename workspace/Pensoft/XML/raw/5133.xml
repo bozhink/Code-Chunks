@@ -1,0 +1,560 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.293.5133</article-id>
+            <title-group>
+                <article-title>Did the genus 
+                    <bold-italic>Parandrocephalus
+					</bold-italic> Heller, 1916 (Coleoptera, Cerambycidae, Callichromatini) cross the Wallace line? The taxonomic status of 
+                    <bold-italic>Parandrocephalus blairi</bold-italic> Bentanachs &amp; Vives 2009 and a new subgenus of 
+                    <bold-italic>Hexamitodera <!--PageBreak--></bold-italic> Heller, 1896, with notes on convergent evolution and secondary sexual characters
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Perger</surname>
+                        <given-names>Robert</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Colección Boliviana de Fauna. Casilla 8706, La Paz, Bolivia
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Robert Perger (<email xlink:type="simple">robertperger@hotmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Lingafelter</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013
+				</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>19</day>
+                <month>4</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>293</issue>
+            <fpage>77</fpage>
+            <lpage>89</lpage>
+            <history>
+                <date date-type="received">
+                    <day>14</day>
+                    <month>3</month>
+                    <year>2013</year>
+                </date>
+                <date date-type="accepted">
+                    <day>25</day>
+                    <month>3</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Robert Perger</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+				
+                </label>
+                <p>The genera <italic>Parandrocephalus </italic>Heller, 1916 and <italic>Hexamitodera </italic>Heller, 1896 are reviewed and redescribed. Based on the combination of chromatic sexual dimorphism, velvety pubescence on the whole dorsal body and distinctly developed carina on the elytra, <italic>Parandrocephalus blairi </italic>Bentanachs &amp; Vives, 2009 is transferred to <italic>Hexamitodera</italic>.
+                </p>
+                <p>A new subgenus, <italic>Sulcognatha </italic>Perger, is instituted to accommodate mandible, head and metasternal modifications in <italic>H. blairi</italic> n. comb. that are lacking in the type species of <italic>Hexamitodera</italic>, <italic>H. semivelutina</italic>. As indicated by fundamental structural differences in the mandibles of <italic>Parandrocephalus </italic>and <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi </italic><bold>comb. n.</bold>, the exaggerated secondary sexual traits and open procoxal cavities in both taxa are presumably the result of convergent evolution. Contrary to Bentanachs &amp; Vives (2009), the presence of the two <italic>Parandrocephalus</italic> species in Sundaland and the endemism of <italic>Hexamitodera</italic> on Sulawesi agree well with the zoogeographical separation of both areas by the Wallace line.
+                </p>
+                <!--PageBreak-->
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Longhorn beetles</kwd>
+                <kwd>Malaysia</kwd>
+                <kwd>Indonesia</kwd>
+                <kwd>Sulawesi</kwd>
+                <kwd>Wallacea</kwd>
+                <kwd>taxonomy</kwd>
+                <kwd>biogeography
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The discovery and description of two distinct zoogeographical realms in South East Asia by Alfred Russel Wallace was the birth of biogeography and inspired the naturalist to formulate fundamental principles of the evolution theory, at the same time with Charles Darwin (Sarkar 1998). Like Darwin, Wallace was genuinely interested in beetles, however, both never pursued beetle taxonomy (see Beutel et al. 2009), nor did Wallace compare the beetle faunas of the zoogeographical realms he discovered, likely because of the enormous and difficult manageable diversity of this taxon.
+</p>
+            <p>A beetle group that has attracted the attention of following generations of collectors and taxonomists and is mainly speciose in the tropical regions of the Austral hemisphere is the heterogeneous tribe Callichromatini (Schmidt 1922).
+</p>
+            <p>Taxa with a combination of chromatic sexual dimorphism and velvety pubescence on the whole dorsal body are exceptional for this tribe. Only three Asian Callichromatini species share this combination: <italic>Hexamitodera semivelutina </italic>Heller, 1896, <italic>Parandrocephalus blairi </italic>Bentanachs &amp; Vives, 2009 and <italic>Niisatochroma celebiana </italic>Vives &amp; Bentanachs, 2010, all occurring on Sulawesi.
+            </p>
+            <p>Particularly <italic>P. blairi </italic>with the con-generics <italic>Parandrocephalus eversor </italic>Heller, 1916 and <italic>P. drescheri </italic>Blair, 1938 on the Sunda Islands represents an interesting case as it belongs to one of the few Cerambycidae genera that occur on both sides of the Wallace line (Bentanachs and Vives 2009).
+            </p>
+            <p>In this study I review generic characters to test the hypothesis of whether the genus <italic>Parandrocephalus </italic>indeed crossed the Wallace line or alternatively, the Sulawesian taxa share characters that rather indicate vicariance processes and support the Wallace line as an effective zoogeographical boundary.
+            </p>
+            <sec>
+                <title><bold>Materials and methods
+</bold>
+                </title>
+                <p>Specimens examined for this study are from the following institutions / private collections<bold>:</bold>
+                </p>
+                <p><bold>BMNH</bold>	Natural History Museum, London, U.K.;
+                </p>
+                <p><bold>JA</bold>	Dr. Joachim Adolphi, Private collection, Dresden, Germany;
+                </p>
+                <p><bold>RMNH	</bold>National Museum of Natural History in Leiden, The Netherlands;
+                </p>
+                <p><bold>RP</bold>	Robert Perger, Private collection, Santa Cruz, Bolivia;
+                </p>
+                <p><bold>RV	</bold>Robert Vigneault, Private collection, Quebec, Canada;
+                </p>
+                <p><bold>SNSD</bold>Senckenberg Naturhistorische Sammlungen Dresden,Germany;
+                </p>
+                <p><bold>TN</bold>	Tatsuya Niisato, Private collection, Tokyo, Japan;
+                </p>
+                <p><bold>UN</bold>	Ulf Nylander, Private collection, Valbo, Sweden.
+                </p>
+                <p>       google.com        </p>
+                <p><!--PageBreak-->Morphological characters were examined with a stereomicroscope and specimens were photographed with a Canon 450D reflex camera fitted with macro lenses.
+</p>
+                <p>The following specimens were examined:
+                </p>
+                <p><bold-italic>Parandrocephalus eversor </bold-italic><bold>Heller, 1916
+</bold>
+                </p>
+                <p>Sumatra, Padangsche Bovenlanden: holotype 1 ♂, RMNH, ex coll. Dr. H. J. Veth; Malaysia, Cameron Highlands, Kampong Rajah: 1 ♂, RP, VI-2000; Borneo, Sabah, Mt. Trus Madi: 1 ♀, UN, 19-VI-05, S.Chew coll.
+                </p>
+                <p><bold-italic>Parandrocephalus drescheri </bold-italic><bold>Blair, 1938</bold>
+                </p>
+                <p>Java, G. Tangkoeban Prahoe, 4000-5000 voet [= ft.]: holotype,1♂, BMNH,VI-1937, F.C. Drescher coll.[G. Tangkoeban Prahoe, 4000-5000 voet [= ft.], Dreanger, Java, VI.1937 / type / Parandroceph. drescheri Blr., ♂ type det. K.G. Blair / Brit.Mus., 1937-662]
+</p>
+                <p><bold-italic>Parandrocephalus blairi </bold-italic><bold>Bentanachs &amp; Vives, 2009
+</bold>
+                </p>
+                <p>Indonesia, Sulawesi, Puncak near Palolo: holotype, 1 ♂, TN, II-1990; Indonesia, Sulawesi, Palolo Palu: allotype, 1 ♀, TN, IV-1991; Indonesia, Central Sulawesi, Palolo Palu: 2 ♂ RP, 1 ♂ JA, III-1999; Indonesia, Central Sulawesi, Puncak: 1 ♂, RP, IV-1999.
+                </p>
+                <p><bold-italic>Hexamitodera semivelutina </bold-italic><bold>Heller, 1896
+</bold>
+                </p>
+                <p>Indonesia, North Sulawesi: holotype, 1 ♀, SNSD [semivelutina Hh. / N.Celebes, 9389 / Typus / Staatl. Museum für Tierkunde, Dresden]; Indonesia, Sulawesi, Minado: 1 ♂, BMNH, 1781, Wallace coll., ex coll. Fry; Indonesia, Sulawesi: 1 ♀, BMNH, 1922; Indonesia, Sulawesi, Pulu Pulu: 1♂, RV, 19-XII-1997, A. Audureau coll.
+                </p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Parandrocephalus </bold-italic>
+                        <bold>Heller, 1916
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Parandrocephalus
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic> Parandrocephalus eversor </italic>Heller, 1916
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p> Body relatively large, elongated, parallel-sided, flattened, without chromatic sexual dimorphism. Head and mandibles with pronounced sexual dimorphism, abnormally enlarged in male, vertex glabrous. Male mandible sickle-shaped, flattened vertically, with dorsomedian carina, median longitudinal concave. Antennae slightly surpassing the basal elytral half (not the apical third of the elytra as diagnosed by Bentanachs and Vives 2009). Pronotum transverse, glabrous, obtusely toothed <!--PageBreak-->at each side, deeply constricted anteriorly and posteriorly; anterior margin strongly projected forward. Procoxal cavities open posteriorly. Elytra covering the abdomen, sparsely pubescent, with scarcely elevated costae. Female abdominal sternites1<bold>–</bold>4 distally margined with whitish pubescence. Metatibia apically distinctly flattened and broadened, about as wide as metafemora.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Parandrocephalus eversor </bold-italic>
+                        <bold>Heller, 1916
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Parandrocephalus_eversor
+</object-id>
+                    <xref>Fig. 1A, B
+                    </xref>
+                </tp:nomenclature>
+                <p><bold>Redescription.</bold> Male. Body 4.2 times as long as wide. Head and pronotum (Fig. 2B) glabrous. Head dorsally polished, coarsely wrinkled, vertex strongly convex, not carinated dorsally; frons strongly concave, with a deep longitudinal furrow. Temple in dorsal view strongly convex; distance between temples wider than anterior border of pronotum and as wide as widest width of pronotum. Gena apically rounded, externally thickened<italic>. </italic>Width between genae as wide as width of head. Mandible sickle-shaped, curved, forming an elongated ellipse in closed position, with dorsomedian carina; apex conical, unidentate; molar margin without basal tooth<italic>. </italic>Antenna sparsely pubescent, bicolored. Elytra 2.2 times as long as prothorax and head excluding mandibles.
+                </p>
+                <p>Female.Vertex and temples straight, distance between temples narrower than anterior pronotal margin and widest pronotal width, vertex setose, with longitudinal furrow reaching anterior pronotal margin. Mandible horizontally flattened, dorsal surface convex, with dorso-lateral carina, externally straight<italic>. </italic>Pronotal disc setose. Elytra 3.43 times as long as prothorax and head excluding mandibles. Abdomen bordered with yellowish pubescence at the base of all ventrites.
+                </p>
+                <tp:treatment-sec>
+                    <title><bold>Geographical distribution.</bold>
+                    </title>
+                    <p> Sumatra, Borneo, Malaysia Peninsula.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Hexamitodera </bold-italic>
+                        <bold>Heller, 1896
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Hexamitodera
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic> Hexamitodera semivelutina </italic>Heller, 1896 (monotypic)
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p> Body relatively large, elongated, flattened, dorsally covered with dense velvety pubescence (could be partially abrased, particularly in females), with chromatic sexual dimorphism. Mandible horizontally flattened, dorsal surface straight, without dorsomedian carina, dorso-lateral border, externally straight or with shallow to deep concavity. Antenna relatively short, reaching or slightly projecting above basal half of elytra. Pronotum transverse, obtusely to acutely toothed laterally; apical margin not constricted. Procoxal cavity open posteriorly. Sternum and epimeron of meso- and metathorax densely pubescent. Elytra covering abdomen, parallel-sided, with three distinctly elevated longitudinal costae, the inner two converging in about the apical <!--PageBreak--><!--PageBreak-->third of the elytra. First abdominal sternite of female distally bordered with white pubescence. Femur fusiform, comparably short, stout; metatibia moderately flattened and widened, narrower than metafemur.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Hexamitodera semivelutina </bold-italic>
+                        <bold>Heller, 1896
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Hexamitodera_semivelutina
+</object-id>
+                    <xref>Fig. 1E, F
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p> Male. Body 3.7<bold>–</bold>3.8 times as long as wide. Vertex and temples straight, distance between temples narrower than anterior margin of pronotum and widest pronotal width. Head dorsally uniformly finely punctured, with a fine longitudinal furrow reaching the base. Mandible without inner basal tooth, feebly curved or angulate (Fig. 3A). Mandible as long as one-half of the rest of the head, as long and wide as scape. Gena rounded apically; width between genae distinctly narrower than width between temples, the latter narrower than pronotal width. Antenna sparsely pubescent. Antennomeres 1<bold>–</bold>2 apically rounded, 3 straight, as 1.9 times as long as scape, 4<bold>–</bold>11 obtusely toothed. Antenna and legs unicolorous.
+                    </p>
+                    <p>Prothorax 1.21 times as wide as long. Procoxal cavity opened posteriorly by a comparable small gap. Apex of mesosternal process not concealed by metasternum.
+</p>
+                    <p>Elytra 2.9 times as long as prothorax and head excluding mandible and 2.8 times as long as elytra width, brownish.
+</p>
+                    <p>Female. Head, mandible and pronotum as in male. Elytron 3.3 times as long as prothorax and head excluding mandible, metallic blue with purple brownish stripes and brown apices.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Geographical distribution.</bold>
+                    </title>
+                    <p> Sulawesi.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Sulcognatha</bold-italic>
+                        <bold> Perger subgen. n.
+</bold>
+                    </tp:taxon-name>
+                    <xref>Fig. 1C, D
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type species.</bold>
+                    </title>
+                    <p><italic> Hexamitodera</italic> (<italic>Sulcognatha</italic>) <italic>blairi</italic><bold-italic> </bold-italic>(Bentanachs &amp; Vives, 2009) comb. n.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p> Head and mandible enlarged in both sexes; gena acutely produced; clypeus strongly concave, very short; labrum reduced and not visible from dorsal view; mandible basally broadened, in male conspicuously, and distal half antero-laterally of mandible in both sexes with prominently developed concavity (Fig. 2A; 3D). Apex of mesosternal process concealed by metasternum; antenna and tibia with chromatic sexual dimorphism.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p>The new subgenus name is a combination of the Latin word sulcus (meaning, “furrow”) and the Greek word gnathus (meaning, “jaw”), and is a reference to the deep antero-lateral furrow in the mandible of both genders. The name is feminine.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Included species.</bold>
+                    </title>
+                    <p> This subgenus includes so far only the type species.
+</p>
+                    <!--PageBreak-->
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Hexamitodera </bold-italic>
+                        <bold>(</bold>
+                        <bold-italic>Sulcognatha</bold-italic>
+                        <bold>) </bold>
+                        <bold-italic>blairi </bold-italic>
+                        <bold>(Bentanachs &amp; Vives, 2009) comb. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Hexamitodera_blairi
+</object-id>
+                    <xref>Fig. 1C, D
+</xref>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p>Male. Head abnormally developed (Fig. 1C; 2A), dorsally uniformly finely punctured, with a fine longitudinal furrow reaching the base. Temple straight, not protruded under the forehead in dorsal view, distance between temples narrower than anterior pronotal margin. Gena elongate and acutely produced exteriorly, anterolaterally rounded, maximal width distinctly wider than forehead and as wide as pronotum. Mandible as long as head, twice as long as scape, maximal width as long as scape, strongly curved inwards, forming a transverse ellipse in closed position; apex flattened, shovel-shaped, bidentate, internal tooth obtuse; molar margin with strong basal tooth. Antenna slightly surpassing elytral half, articles 1<bold>–</bold>2 spineless, glabrous, red-brown, 3<bold>–</bold>6 with small apical spines, fine short pubescence, testaceous to brass-colored, 7<bold>–</bold>11 spineless, sparsely pubescent, dark-grey/brown, 11 apically rounded. Prosternal process projecting over posterior border of procoxae. Elytra 2.5 times as long as prothorax and head without mandibles, with brass-colored velvety pubescence. Femur dark-brown to black, tibia brass-colored to testaceous.
+                    </p>
+                    <!--PageBreak-->
+                    <p>Female. Mandible as long as scape, flattened, acutely pointed at the apex, between tooth of apex and base continuous, not strongly curved inwards, molar margin without tooth. Gena forming an obtuse angle, their maximal width narrower than width between eyes, nearly as wide as forehead. Antenna dark blue with metallic reflections, sparsely pubescent. Elytron 3.3 times as long as prothorax and head excluding mandibles, metallic blue.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Geographical distribution.</bold>
+                    </title>
+                    <p> Sulawesi.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Niisatochroma celebiana </bold-italic>
+                        <bold>Vives &amp; Bentanachs, 2010
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Niisatochroma_celebiana
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Discussion.</bold>
+                    </title>
+                    <p> In <italic>N. celebiana</italic>, the sole species in this genus, the chromatic gender dimorphism (brass brownish tones in male, bluish-green in female), dorsal body pubescence, prominent developed elytral costae and short limbs (see Vives and Bentanachs 2010) indicate a close relationship with <italic>H. semivelutina</italic> and <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic>. The thickened antenna and distinct apical spines on the antennomeres (Vives and Bentanachs 2010) however suggest that this species does not belong to the same lineage as <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic>. Like <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic>, <italic>N. celebiana</italic> might deserve subgeneric status within <italic>Hexamitodera</italic>, however, unfortunately no specimens of this rare species were available for a detailed study and therefore the generic status has to be retained for the moment.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Geographical distribution.</bold>
+                    </title>
+                    <p> Sulawesi.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <sec>
+                <title><bold>Taxonomy</bold>
+                </title>
+                <p>Contrary to the generic characters provided for <italic>Parandrocephalus </italic>(Bentanachs and Vives 2009), the mandible of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> does not possess a dorsomedian <!--PageBreak-->carina (Fig. 2A; 3D) and the elytra have prominently (and not weakly) developed carina (Fig.1 C, D). Consequently the generic position of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> had to be reconsidered.
+                </p>
+                <p>The separate treatment of sexual and non-sexual traits has revealed a suite of apomorphic characters (Table 1) that allows a more coherent interpretation of relationships of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic>. Actually, the chromatic gender dimorphism (brownish tones in male, blue in female), body pubescence, prominent developed elytral costae, short legs and antennae of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> clearly belong to <italic>Hexamitodera</italic> (Table 1). The relationship becomes already evident in the comparison of the dorsal habitus of the females of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> and <italic>H. semivelutina </italic>(Fig. 1D, F).
+                </p>
+                <p>The lacking sexual dimorphism in mandible and head of <italic>H. semivelutina</italic> suggests an ancestral relationship with <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic>, while the enlargement and complex structure of the mandible in <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> indicate a more derived status. I hypothesise that the grades of differentiation in the mandible in the two <italic>Hexamitodera </italic>species represent the basal and terminal end of an evolutionary transformation series (Fig. 3A-D) of male adaptations to adjust on the female during the mating. The interior shape of the male mandible in <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> fits well with the posterior constriction of the female prothorax, while the antero-distal mandibular concavity is perfectly suited to accommodate the female profemora. The large mandibles and their adjustment on the female during the mating are evolutionarily advantageous because they facilitate a successful (possibly prolonged) fertilization and contribution to the gene pool. In this context, the inclusion of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi </italic>into <italic>Hexamitodera </italic>provides an interesting hypothesis for testing evolutionary processes that select for large mandibles and co-adaptations.
+                </p>
+                <p>It might be asked if the modifications in head and mandible of <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> justify the establishment of a new genus, however, particularly on the basis of morphology it is difficult to assess at which point a phylogenetic distance passes a <!--PageBreak-->subgeneric or generic boundary, and additionally there is no operational definition for such boundaries. Mayr (1969) pragmatically defined a genus as “a taxonomic category containing a single species, or a monophyletic group of species, which is separated from other taxa of the same rank (other genera) by a decided gap.”
+                </p>
+                <p>To my knowledge, <italic>H. semivelutina</italic> and <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic> are from other taxa of the same rank unambiguously distinguished by apomorphic characters (Table 1) and the lack of intermediate mandible and head forms, indeed representing a certain gap, at the very most justifies the institution of a new subgenus.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Convergence in secondary sexual characters
+</bold>
+                </title>
+                <p>The extraordinarily developed mandibles in males of <italic>Parandrocephalus</italic> and <italic>H. </italic>(<italic>Sulcognatha</italic>) <italic>blairi</italic>,evidently showing distinct features (Table 1; Fig. 2; 3D, F), should be interpreted as convergent adaptations, possibly for mate-guarding and the fitting of the male mandible to the posterior constriction of the female prothorax. While the mandible structure might contain useful taxonomical information, the enlargement alone is not a good indicator for relationships since it has also independently evolved in males of other Callichromatini genera (e.g. <italic>Aphrodisium niisatoi </italic>Vives &amp; Bentanachs, 2007 and <italic>Huedepohliana superba </italic>(Aurivillius, 1910)), and also in phylogenetically more distant beetle taxa, such as Prioninae (Cerambycidae), Manticorini (Carabidae) and Lucanidae.
+                </p>
+                <p>Heller (1916) considered the opened procoxal cavity in <italic>Parandrocephalus </italic>and the African Callichromatini genus <italic>Dictator </italic>Thomson<italic>, </italic>1878 (as well having enlarged mandibles) as atypical for this tribe and indicator for a closer relationship, however, such combination is also observed in the phylogenetically distant groups already mentioned before and might represent a convergent co-adaptation. The opened procoxal cavities possibly allow a greater deflection of the procoxa and the strong bend of forebody and abdomen while the mandibles and prolegs keep close contact with the female prothorax during the mating. There might be indeed a Gondwanian relationship between African and Asian Callichromatini taxa, however, I think a detailed phylogenetic analysis based on a larger set of morphological or/and biochemical features is needed to present a robust hypothesis of actual relationships.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Cerambycid-Geography and the Wallace line
+</bold>
+                </title>
+                <p>Sundaland (including Borneo, Sumatra and Java) is assumed to be zoogeographically separated from ‘Wallacea’ (comprising Sulawesi and the Philippines except for Palawan) (Dickerson 1928) by the Wallace line (Huxley 1868), which is supported by distributional patterns e.g. in mammals and birds (Wallace 1859, 1860; Huxley 1868), cicadas (de Boer and Duffels, 1996), butterflies (see Vane-Wright and de Jong 2003 for a review) and hawkmoths (Beck et al. 2006).
+</p>
+                <!--PageBreak-->
+                <p>The distribution of Cerambycidae taxa has been only sporadically treated in respect to the Wallace line and there is no statistical approach identifying geographical patterns.
+</p>
+                <p>Actually there are several closely related Cerambycidae taxa that occur on both sides of the Wallace line, e.g. the subspecies of <italic>Xixuthrus microcerus</italic> White, 1853 (Prioninae) (Komiya and Lorenc 2006), species of <italic>Komiyandra </italic>Santos-Silva, Heffern &amp; Matsuda, 2010 (Parandrinae) (Santos-Silva et al. 2010) and <italic>Chloridolum </italic>Thomson, 1864 (Callichromatini) (Vives, in litt.), a pattern indicating more recent dispersal and colonization events.
+                </p>
+                <p>The genera <italic>Xystrocera</italic> Blanchard, 1845(Xystrocerini) (Martins 1960; Heffern 2005) and <italic>Distenia </italic>(Disteniinae) Lepeletier &amp; Serville 1828 (Gressit 1959; Heffern 2005; Santos-Silva and Hovore 2007) occur not only on both sides of the Wallace line, but also on other continents (Africa and South America), suggesting Gondwanian relationships and longer vicariance processes.
+                </p>
+                <p>However, in both, the South-East Asian taxa that occur on both sides of the Wallace line and pantropical taxa, distributional patterns might also be influenced by transoceanic dispersal of larvae in drifting logs (see Holzapfel and Harrell 1968; Peck 1994).
+</p>
+                <p>The Wallace line holds for the tribe Tmesisternini (Lamiinae), which is highly diversified in New Guinea and Sulawesi but nearly absent in Sundaland (Heffern 2005), and the Callichromatini. Only two (<italic>Chloridolum </italic>Thomson, 1864, and <italic>Pachyteria </italic>Audinet-Serville, 1833) (Niisato 2001; Vives and Bentanachs 2010) of the 20 Callichromatini genera that are listed for Borneo (Heffern 2005) are found in Sulawesi. While some of the <italic>Chloridolum </italic>species that occur on both sides of the Wallace line are morphologically very similar (Vives, in litt.), other species reported for Sulawesi differ from con-generics in Sundaland and might belong to another genus (Vives and Bentanachs 2010).
+                </p>
+                <p>There appear to be clear trends in some Cerambycidae tribes supporting the Wallace line, nevertheless, the examples predating such line call for a proper statistical analysis of morphological or biochemical characters to clarify phylogeographical relationships.
+</p>
+                <p>According to the current state of knowledge, the genus <italic>Parandrocephalus</italic> did not cross the Wallace line, supporting the idea that <italic>Parandrocephalus</italic> and <italic>Hexamitodera</italic> are indeed examples for convergent evolutionary processes within two zoogeographically distinct realms.
+                </p>
+            </sec>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>I am grateful to Tatsuya Niisato (Japan), Oliver Jäger (Senckenberg Naturhistorische Sammlungen Dresden, Germany), Sharon Shute, Erica McAlister (Natural History Museum, London, U.K.), Caroline Pepermans (National Museum of Natural History in Leiden, The Netherlands), Ulf Nylander (Sweden), Joachim Adolphi (Germany) and Robert Vigneault (Canada) for providing pictures and the possibility to study the typical specimens mentioned among the examined material.
+</p>
+            <!--PageBreak-->
+            <p>Grateful thanks are also extended to Steven W. Lingafelter (Systematic Entomology Lab., USDA, National Museum of Natural History, Washington, U.S.A.), Antonio Santos-Silva (Museu de Zoologia, Universidade de São Paulo, Brazil), Eduard Vives (Museu de Ciències Naturals de Barcelona, Terrassa , Spain), Francesco Vitali (Luxembourg) and the anonymous reviewers for providing comments, suggestions and constructive criticism on the manuscript.
+</p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bentanachs</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Vives</surname> <given-names>E</given-names></name></person-group> (<year>2009</year>)<article-title> El genero <italic>Parandrocephalus </italic>Heller 1916 (Coleoptera, Cerambycidae, Callichromatini).</article-title> <source>Lambillionea </source> <volume>109</volume> (<issue>1</issue>): <fpage>289</fpage>-<lpage>295</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Beck</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Kitching</surname> <given-names>IJ</given-names></name>,<name name-style="western"><surname>Linsenmair</surname> <given-names>KE</given-names></name></person-group> (<year>2006</year>)<fake_tag> Wallace’s line revisited: has vicariance or dispersal shaped the distribution of Malesian hawkmoths (Lepidoptera: Sphingidae)? Biological Journal of the Linnean Society 89: 455–468. </fake_tag>doi: 10.1111/j.1095-8312.2006.00686.x
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Beutel</surname> <given-names>RG</given-names></name>,<name name-style="western"><surname>Friedrich</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Leschen</surname> <given-names>RA</given-names></name></person-group> (<year>2009</year>)<article-title> Charles Darwin, beetles and phylogenetics.</article-title> <source>Naturwissenschaften </source> <volume>96</volume> (<issue>11</issue>): <fpage>1293</fpage>-<lpage>1312</lpage>. doi: 10.1007/s00114-009-0601-2
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>De Boer</surname> <given-names>AF</given-names></name>,<name name-style="western"><surname>Duffels</surname> <given-names>JP</given-names></name></person-group> (<year>1996</year>)<article-title> Historical biogeography of the cicadas of Wallacea, New Guinea and the West Pacific: a geo-tectonic explanation.</article-title> <source>Palaeogeography, Palaeoclimatology, Palaeoecology </source> <volume>124</volume>: <fpage>153</fpage>-<lpage>177</lpage>. doi: 10.1016/0031-0182(96)00007-7
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>DickersonRS</surname> <given-names></given-names></name></person-group> (<year>1928</year>)<article-title></article-title> <source></source> <volume>21</volume>: <fpage>1</fpage>-<lpage>322</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Heffern</surname> <given-names>DJ</given-names></name></person-group> (<year>2005</year>)<fake_tag> Catalog and Bibliography of Longhorned Beetles from Borneo (Coleoptera: Cerambycidae) Electronic Version 1. Available from: http://www.zin.ru/animalia/Coleoptera/pdf/borneo_catalog_electronic_version_2005-1.pdf
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Heller</surname> <given-names>KM</given-names></name></person-group> (<year>1916</year>)<fake_tag> Neue Bockkäfer aus Niederländisch Indien. Tijdschrift voor Entomologie 58(Suppl.): 101–114.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Holzapfel</surname> <given-names>EP</given-names></name>,<name name-style="western"><surname>Harrell</surname> <given-names>JC</given-names></name></person-group> (<year>1968</year>)<fake_tag> Transoceanic dispersal studies of insects. Paciﬁc Insects 10: 115–153.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Huxley</surname> <given-names>TH</given-names></name></person-group> (<year>1868</year>)<article-title> On the classification and distribution of the Alectoromorphae and Heteromorphae.</article-title> <source>Proceedings of the Zoological Society of London </source> <volume>1868</volume>: <fpage>296</fpage>-<lpage>319</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Komiya</surname> <given-names>Z</given-names></name>,<name name-style="western"><surname>Lorenc</surname> <given-names>J</given-names></name></person-group> (<year>2006</year>)<fake_tag> Checklist of the Cerambycidae (Subfamily Prioninae) of the World. Part I. Tribes Macrotomini, Platygnathini, Eurypodini. Available from: http://cerambycidae.cz/Microsoft%20Word%20-%20CHECKLISTcast%20a.pdf
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Martins</surname> <given-names>UR</given-names></name></person-group> (<year>1960</year>)<fake_tag> Notes, descriptions and checklist of African <italic>Xystrocera</italic> - Papéis Avulsos de Zoologia, São Paulo 33(5): 99–125.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Mayr</surname> <given-names>E</given-names></name></person-group> (<year>1969</year>)<source></source> <publisher-name></publisher-name>, <publisher-loc>New York</publisher-loc>, <lpage>428</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Niisato</surname> <given-names>T</given-names></name></person-group> (<year>2001</year>)<article-title> A new splendid species of the genus <italic>Pachyteria </italic>(Coleoptera, Cerambycidae)from Sulawesi.</article-title> <source>Elytra </source> <volume>29</volume> (<issue>2</issue>): <fpage>291</fpage>-<lpage>297</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Peck</surname> <given-names>SB</given-names></name></person-group> (<year>1994</year>)<article-title> Sea-surface (pleuston) transport of insects between islands in the Galápagos Archipelago, Ecuador.</article-title> <source>Annals of the Entomological Society of America </source> <volume>87</volume> (<issue>5</issue>): <fpage>576</fpage>-<lpage>582</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Santos-Silva</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Hovore</surname> <given-names>FT</given-names></name></person-group> (<year>2007</year>)<fake_tag> - Divisão do gênero Distenia Lepeletier &amp; Audinet-Serville, notas sobre a venação alar em Disteniini, homonímias, sinonímia e redescrições (Coleoptera, Cerambycidae, Disteniinae) - Papéis Avulsos de Zoologia 47(1): 1–29.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Santos-Silva</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Heffern</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Matsuda</surname> <given-names>K</given-names></name></person-group> (<year>2010</year>)<article-title> Revision of Hawaiian, Australasian, Oriental, and Japanese Parandrinae (Coleoptera, Cerambycidae).</article-title> <source>Insecta Mundi </source> <volume>130</volume>: <fpage>1</fpage>-<lpage>120</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Sarkar</surname> <given-names>S</given-names></name></person-group> (<year>1998</year>)<article-title> Wallace´s belated revival.</article-title> <source>Journal of Bioscience </source> <volume>1</volume>: <fpage>3</fpage>-<lpage>7</lpage>. doi: 10.1007/BF02728516
+</mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Schmidt</surname> <given-names>M</given-names></name></person-group> (<year>1922</year>)<article-title> Die afrikanischen Callichrominen nach systematischen, phylogenetischen und geographischen Gesichtspunkten.</article-title> <source>Archiv für Naturgeschichte </source> <volume>6</volume>: <fpage>61</fpage>-<lpage>232</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Vane-Wright</surname> <given-names>RI</given-names></name>,<name name-style="western"><surname>de Jong</surname> <given-names>R</given-names></name></person-group> (<year>2003</year>)<article-title> The butterflies of Sulawesi: annotated checklist for a critical island fauna.</article-title> <source> Zoologische Verhandelingen, Leiden </source> <volume>343</volume>: <fpage>1</fpage>-<lpage>267</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Vives</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Bentanachs</surname> <given-names>J</given-names></name></person-group> (<year>2010</year>)<article-title> Callichromatini nuevos o interesantes de la Isla de Sulawesi (Indonesia) (Col. Cerambycidae).</article-title> <source>Lambillionea </source> <volume>110</volume> (<issue>1</issue>): <fpage>73</fpage>-<lpage>78</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wallace</surname> <given-names>AR</given-names></name></person-group> (<year>1859</year>)<article-title> Letter from Mr. Wallace concerning the geographical distribution of birds.</article-title> <source>Ibis </source> <volume>1</volume>: <fpage>449</fpage>-<lpage>454</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wallace</surname> <given-names>AR</given-names></name></person-group> (<year>1860</year>)<article-title> On the zoological geography of the Malay archipelago.</article-title> <source>Journal of the Linnean Society of London</source> <volume>14</volume>: <fpage>172</fpage>-<lpage>184</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p>Dorsal view habitus, scale bars 10 mm <bold>A</bold> <italic>Parandrocephalus eversor</italic>, male, Malaysia, Cameron Highlands, Kampong Rajah <bold>B</bold> idem, female <bold>C</bold> <italic>Hexamitodera </italic>(<italic>Sulcognatha</italic>) <italic>blairi </italic>comb. n., male, Indonesia, Central Sulawesi, Puncak <bold>D</bold> idem, female, allotype, Indonesia, Sulawesi, Palolo Palu <bold>E</bold> <italic>Hexamitodera semivelutina</italic>, male, Sulawesi <bold>F</bold>, idem, female, holotype, Indonesia, North Sulawesi.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-077-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p>Dorsal view head and pronotum, scale bars 5 mm <bold>A</bold> <italic>Hexamitodera </italic>(<italic>Sulcognatha</italic>) <italic>blairi </italic>comb. n., male, Indonesia, Central Sulawesi, Puncak <bold>B</bold> <italic>Parandrocephalus eversor</italic>, male, Malaysia, Cameron Highlands, Kampong Rajah.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-077-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p>Dorsal view male mandibles; light grey, dorsal surface; dark grey, ventral external concavity; black, interior surface; a, dorso-lateral border; mandibles of <bold>A</bold> and <bold>D</bold> are drawn from specimens that were digitally scaled until they had similar body length <bold>A</bold> <italic>Hexamitodera semivelutina</italic> <bold>B, C</bold> hypothetical intermediate forms <bold>D</bold> <italic>Hexamitodera </italic>(<italic>Sulcognatha</italic>) <italic>blairi </italic>comb. n. <bold>E</bold> <italic>Parandrocephalus eversor</italic>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-293-077-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> Generic differences of <italic>Parandrocephalus</italic> and <italic>Hexamitodera</italic>&lt;br/&gt; </p></caption>
+            <table id="T1" headerRowCount="1" bodyRowCount="7" columnCount="3" aid:table="table" aid:trows="8" aid:tcols="3"><tbody>
+            	<tr>
+            		<th rowspan="1" colspan="1"><bold>Character</bold></th>
+            		<th rowspan="1" colspan="1"><bold-italic>Parandrocephalus</bold-italic></th>
+            		<th rowspan="1" colspan="1"><bold-italic>Hexamitodera</bold-italic></th>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Body chromatic sexual dimorphism </td>
+            		<td rowspan="1" colspan="1">absent</td>
+            		<td rowspan="1" colspan="1">present</td>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Shape male mandibular</td>
+            		<td rowspan="1" colspan="1">vertically flattened, with dorsomedian carina, interiorly concave, distal portion interiorly with deep concavity </td>
+            		<td rowspan="1" colspan="1">horizontally flattened, dorsally straight, dorsomedian carina absent, dorso-lateral border, externally with shallow to deep concavity</td>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Pubescence male head + pronotum</td>
+            		<td rowspan="1" colspan="1">absent</td>
+            		<td rowspan="1" colspan="1">distinct</td>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Elytral costae + pubescence</td>
+            		<td rowspan="1" colspan="1">weak</td>
+            		<td rowspan="1" colspan="1">distinct</td>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Light pubescence at female abdominal sternites</td>
+            		<td rowspan="1" colspan="1">first to fourth</td>
+            		<td rowspan="1" colspan="1">first</td>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Metatibia distally flattened and broadened</td>
+            		<td rowspan="1" colspan="1">distinct </td>
+            		<td rowspan="1" colspan="1">moderate</td>
+            	</tr>
+            	<tr>
+            		<td rowspan="1" colspan="1">Width of metatibia distally</td>
+            		<td rowspan="1" colspan="1">~ metafemora</td>
+            		<td rowspan="1" colspan="1">&lt;metafemora</td>
+            	</tr>
+            </tbody>
+            </table>
+        </table-wrap>
+    </article_figs_and_tables>
+</article>

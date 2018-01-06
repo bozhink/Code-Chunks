@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Alex (Altova GmbH) -->
+<Altova xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Altova_Hierarchical.xsd">
+	<PrimaryKey>1</PrimaryKey>
+	<Name>Microtech OrgChart</Name>
+	<Office>
+		<PrimaryKey>1</PrimaryKey>
+		<ForeignKey>1</ForeignKey>
+		<Desc>Microtechnology products are currently the bleeding edge of computer technology.</Desc>
+		<EMail>office@microtech.com</EMail>
+		<Established>1992-04-01</Established>
+		<Fax>+1 (321) 555 5155 - 9</Fax>
+		<Name>Microtech, Inc.</Name>
+		<Phone>+1 (321) 555 5155</Phone>
+		<Address>
+			<PrimaryKey>1</PrimaryKey>
+			<ForeignKey>1</ForeignKey>
+			<city>Archangel</city>
+			<state>AZ</state>
+			<street>1 mu Street, Suite 001</street>
+			<zip>4279</zip>
+		</Address>
+		<Department>
+			<PrimaryKey>1</PrimaryKey>
+			<ForeignKey>1</ForeignKey>
+			<Name>Admin</Name>
+			<Person>
+				<PrimaryKey>1</PrimaryKey>
+				<ForeignKey>1</ForeignKey>
+				<EMail>A.Aldrich@microtech.com</EMail>
+				<First>Albert</First>
+				<Last>Aldrich</Last>
+				<PhoneExt>582</PhoneExt>
+				<Title>Manager</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>2</PrimaryKey>
+				<ForeignKey>1</ForeignKey>
+				<EMail>b.bander@microtech.com</EMail>
+				<First>Bert</First>
+				<Last>Bander</Last>
+				<PhoneExt>471</PhoneExt>
+				<Title>Accounts Receivable</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>3</PrimaryKey>
+				<ForeignKey>1</ForeignKey>
+				<EMail>c.clovis@microtech.com</EMail>
+				<First>Clive</First>
+				<Last>Clovis</Last>
+				<PhoneExt>963</PhoneExt>
+				<Title>Accounting Manager</Title>
+			</Person>
+		</Department>
+		<Department>
+			<PrimaryKey>2</PrimaryKey>
+			<ForeignKey>1</ForeignKey>
+			<Name>Sales and Marketing</Name>
+			<Person>
+				<PrimaryKey>4</PrimaryKey>
+				<ForeignKey>2</ForeignKey>
+				<EMail>d.Durnell@microtech.com</EMail>
+				<First>Dave</First>
+				<Last>Durnelll</Last>
+				<PhoneExt>621</PhoneExt>
+				<Title>Marketing Manager Europe</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>5</PrimaryKey>
+				<ForeignKey>2</ForeignKey>
+				<EMail>e.ellas@microtech.com</EMail>
+				<First>Eve</First>
+				<Last>Ellas</Last>
+				<PhoneExt>753</PhoneExt>
+				<Title>Art Director</Title>
+			</Person>
+		</Department>
+		<Department>
+			<PrimaryKey>3</PrimaryKey>
+			<ForeignKey>1</ForeignKey>
+			<Name>Manufacturing</Name>
+			<Person>
+				<PrimaryKey>6</PrimaryKey>
+				<ForeignKey>3</ForeignKey>
+				<EMail>f.fortunas@microtech.com</EMail>
+				<First>Fred</First>
+				<Last>Fortunas</Last>
+				<PhoneExt>951</PhoneExt>
+				<Title>Program Manager</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>7</PrimaryKey>
+				<ForeignKey>3</ForeignKey>
+				<EMail>g.gundall@microtech.com</EMail>
+				<First>Gerry</First>
+				<Last>Gundall</Last>
+				<PhoneExt>654</PhoneExt>
+				<Title>Software Engineer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>8</PrimaryKey>
+				<ForeignKey>3</ForeignKey>
+				<EMail>h.hardy@microtech.com</EMail>
+				<First>Harry</First>
+				<Last>Hardy</Last>
+				<PhoneExt>852</PhoneExt>
+				<Title>Software Engineer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>9</PrimaryKey>
+				<ForeignKey>3</ForeignKey>
+				<EMail>i.idilko@microtech.com</EMail>
+				<First>Ingrid</First>
+				<Last>Idilko</Last>
+				<PhoneExt>951</PhoneExt>
+				<Title>Technical Writer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>10</PrimaryKey>
+				<ForeignKey>3</ForeignKey>
+				<EMail>j.judy@microtech.com</EMail>
+				<First>June</First>
+				<Last>Judy</Last>
+				<PhoneExt>753</PhoneExt>
+				<Title>Software Engineer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>11</PrimaryKey>
+				<ForeignKey>3</ForeignKey>
+				<EMail>k.krove@microtech.com</EMail>
+				<First>Karl</First>
+				<Last>Krove</Last>
+				<PhoneExt>334</PhoneExt>
+				<Title>Software Engineer</Title>
+			</Person>
+		</Department>
+		<Department>
+			<PrimaryKey>4</PrimaryKey>
+			<ForeignKey>1</ForeignKey>
+			<Name>Level 1 support</Name>
+			<Person>
+				<PrimaryKey>12</PrimaryKey>
+				<ForeignKey>4</ForeignKey>
+				<EMail>l.libby@microtech.com</EMail>
+				<First>Lawrence</First>
+				<Last>Libby</Last>
+				<PhoneExt>778</PhoneExt>
+				<Title>IT Manager</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>13</PrimaryKey>
+				<ForeignKey>4</ForeignKey>
+				<EMail>m.morehouse@microtech.com</EMail>
+				<First>Monica</First>
+				<Last>Morehouse</Last>
+				<PhoneExt>223</PhoneExt>
+				<Title>Web Developer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>14</PrimaryKey>
+				<ForeignKey>4</ForeignKey>
+				<EMail>n.newbury@microtech.com</EMail>
+				<First>Nira</First>
+				<Last>Newbury</Last>
+				<PhoneExt>241</PhoneExt>
+				<Title>Support Engineer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>15</PrimaryKey>
+				<ForeignKey>4</ForeignKey>
+				<EMail>o.origone@microtech.com</EMail>
+				<First>Olanda</First>
+				<Last>Origone</Last>
+				<PhoneExt>345</PhoneExt>
+				<Title>Support Engineer</Title>
+			</Person>
+		</Department>
+	</Office>
+	<Office>
+		<PrimaryKey>2</PrimaryKey>
+		<ForeignKey>1</ForeignKey>
+		<Desc>Microtech established its new office on Feb 30</Desc>
+		<EMail>nextoffice@microtech.com</EMail>
+		<Established>2001-03-01</Established>
+		<Fax>+1 (927) 555 1845</Fax>
+		<Name>Microtech Partners, Inc.</Name>
+		<Phone>+1 (927) 555 0094</Phone>
+		<Address>
+			<PrimaryKey>2</PrimaryKey>
+			<ForeignKey>2</ForeignKey>
+			<city>Bristol</city>
+			<state>BZ</state>
+			<street>9865 Millenium Center, Suite 456</street>
+			<zip>5985</zip>
+		</Address>
+		<Department>
+			<PrimaryKey>5</PrimaryKey>
+			<ForeignKey>2</ForeignKey>
+			<Name>Admin</Name>
+			<Person>
+				<PrimaryKey>16</PrimaryKey>
+				<ForeignKey>5</ForeignKey>
+				<EMail>s.meier@microtech.com</EMail>
+				<First>Paul</First>
+				<Last>Ponetti</Last>
+				<PhoneExt>114</PhoneExt>
+				<Title>Office Manager</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>17</PrimaryKey>
+				<ForeignKey>5</ForeignKey>
+				<EMail>t.bone@microtech.com</EMail>
+				<First>Quang</First>
+				<Last>Qui</Last>
+				<PhoneExt>331</PhoneExt>
+				<Title>Accounts Receivable</Title>
+			</Person>
+		</Department>
+		<Department>
+			<PrimaryKey>6</PrimaryKey>
+			<ForeignKey>2</ForeignKey>
+			<Name>Sales and Marketing</Name>
+			<Person>
+				<PrimaryKey>18</PrimaryKey>
+				<ForeignKey>6</ForeignKey>
+				<EMail>m.nafta@microtech.com</EMail>
+				<First>Rita</First>
+				<Last>Rotter</Last>
+				<PhoneExt>122</PhoneExt>
+				<Title>PR &amp; Marketing Manager US</Title>
+			</Person>
+		</Department>
+		<Department>
+			<PrimaryKey>7</PrimaryKey>
+			<ForeignKey>2</ForeignKey>
+			<Name>Level 2 support</Name>
+			<Person>
+				<PrimaryKey>19</PrimaryKey>
+				<ForeignKey>7</ForeignKey>
+				<EMail>v.bass@microtech.com</EMail>
+				<First>Silla</First>
+				<Last>Semua</Last>
+				<PhoneExt>716</PhoneExt>
+				<Title>IT Manager</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>20</PrimaryKey>
+				<ForeignKey>7</ForeignKey>
+				<EMail>c.franken@microtech.com</EMail>
+				<First>Tom</First>
+				<Last>Tinker</Last>
+				<PhoneExt>147</PhoneExt>
+				<Title>Support Engineer</Title>
+			</Person>
+			<Person>
+				<PrimaryKey>21</PrimaryKey>
+				<ForeignKey>7</ForeignKey>
+				<EMail>m.redgreen@microtech.com</EMail>
+				<First>Uri</First>
+				<Last>Ugoner</Last>
+				<PhoneExt>152</PhoneExt>
+				<Title>Support Engineer</Title>
+			</Person>
+		</Department>
+	</Office>
+</Altova>

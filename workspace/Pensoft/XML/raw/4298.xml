@@ -1,0 +1,274 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4298</article-id>
+            <title-group>
+                <article-title>First record of 
+                    <bold-italic>Graphosoma inexpectatum </bold-italic> (Hemiptera, Pentatomidae, Podopinae) from Turkey with description of the female
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Fent</surname>
+                        <given-names>Meral</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Dursun</surname>
+                        <given-names>Ahmet</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Tezcan</surname>
+                        <given-names>Serdar</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A3">3</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Trakya University, Faculty of Science, Department of Biology, 22030 Edirne, Turkey
+            </aff>
+            <aff id="A2">
+                <label>2</label>Amasya University, Faculty of Arts and Science, Department of Biology, 05100 Amasya, Turkey
+            </aff>
+            <aff id="A3">
+                <label>3</label>Ege University, Faculty of Agriculture, Department of Plant Protection, 35100 Bornova İzmir, Turkey
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Meral Fent (<email xlink:type="simple">m_fent@hotmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>0</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1000</fpage>
+            <lpage>1111</lpage>
+            <history>
+                <date date-type="received">
+                    <day>12</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>27</day>
+                    <month>5</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Meral Fent, Ahmet Dursun, Serdar Tezcan</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p><italic>Graphosoma inexpectatum</italic> Carapezza &amp; Jindra, 2008 is described from Syria, the southern neighbor of Turkey, and is known only from the type locality. The first observation of the species in Turkey dates back to 1995 with two females obtained from the provinces of Gaziantep (Şehitkamil–Aktoprak) and Adana (Pozantı–Bürücek Plateau). These two localities are situated inside the part of the Mediterranean region along the Syrian border. Females of the species, whose original description was based on males, are described here for the first time. A map showing the collecting localities and photographs of the female specimens are given.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Hemiptera</kwd>
+                <kwd>Pentatomidae</kwd>
+                <kwd>Podopinae</kwd>
+                <kwd><italic>Graphosoma inexpectatum</italic>
+                </kwd>
+                <kwd>female description</kwd>
+                <kwd>first record</kwd>
+                <kwd>Turkey
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p><italic>Graphosoma </italic>Laporte, 1833 is a Palaearctic genus belonging to the subfamily Podopinae Amyot &amp; Serville, 1843 of the family Pentatomidae Leach, 1815. It is subdivided into two subgenera and includes nine species/subspecies (<italic>Graphosoma</italic> s.str. with eight <!--PageBreak-->species and <italic>Graphosomella </italic>Carapezza &amp; Jindra, 2008 with one species). Among these nine species, <italic>Graphosoma inexpectatum</italic> Carapezza &amp; Jindra, 2008, the only representative of <italic>Graphosomella</italic>, and the following six species of <italic>Graphosoma</italic> s.str. are distributed in Turkey: <italic>G.</italic> <italic>lineatum </italic>(Linnaeus, 1758), <italic>G.</italic> <italic>semipunctatum</italic> (Fabricius, 1775), <italic>G.</italic> <italic>melanoxanthum</italic> Horváth, 1903, <italic>G.</italic> <italic>stali</italic> Horváth, 1881, <italic>G.</italic> <italic>consimile</italic> Horváth, 1903 and <italic>G.</italic> <italic>alkani</italic> Lodos, 1959 (Rider 2006, Péricart 2010).
+            </p>
+            <p>Among the Turkish representatives of the genus, the type localities of <italic>G. stali </italic>and <italic>G. alkani</italic> are in Turkey. <italic>G. stali</italic> was previously identified as <italic>G. lineatum</italic> var. <italic>stali </italic>by Horváth in 1881 from Asia Minor (Rider 2006). In the following years, the species was recorded in various parts of Anatolia; from Hatay–Akbez (Puton 1896, Horváth 1903) along the Syrian border and in Gaziantep (Önder et al. 1995) in the south, from Mardin (Horváth 1903, Önder et al. 1995) and Diyarbakır (Wagner 1959, Önder et al. 1995, Özgen et al. 2005) in the southeast and from Kars–Kağızman, Muş–Dom (Kiritshenko 1924) and Elazığ (Hazar Lake) in Eastern Anatolia (Seidenstücker 1975).<italic> G. stali </italic>is a Mediterranean species whose distribution includes eastern and southern neighbors of Turkey—Iran, Iraq and Syria—and also Israel. <italic>G. alkani</italic> is an endemic species described by Lodos (1959) from Diyarbakır and Mardin in Southeastern Anatolia.Both Carapezza &amp; Jindra (2008) and Péricart (2010) expressed the opinion that <italic>G. alkani </italic>might be a junior synonym of <italic>G. stali</italic>. <italic>G. lineatum </italic>and<italic> G. semipunctatum </italic>are both widely distributed in the Mediterranean region and have been recorded in a number of localities in European (Turkish Thrace) and Asian (Anatolia) parts of Turkey (Önder et al. 2006). In contrast to the wide Palaearctic distribution of <italic>G. lineatum</italic>, the range of <italic>G. semipunctatum</italic> is limited to the Mediterranean region, Caucasus and Transcaucasia (Rider 2006, Péricart 2010). <italic>G. melanoxanthum </italic>was recorded inIğdır–Tuzluca (=Kulp), Kazkoparan (=Kasikoparan) (Horváth 1903) and Kars–Sarıkamış (Kiritshenko 1918) along the Armenian border in Eastern Anatolia, in Elazığ–Maden in more inner parts (Kıyak 1990), in Ankara–Kızılcahamam in Central Anatolia (Seidenstücker 1975) and in Yalova in Northwestern Anatolia (Lodos et al. 1978). This species was also recorded, in addition to Anatolia, within an area including Georgia, Armenia, Azerbaijan and Iran, the northeast and east neighbors of Turkey (Rider 2006, Péricart 2010). <italic>G. consimile</italic> was reported in Anatolia from Kayseri–Yılanlı Dağ (Yılanlı Mountain) by Seidenstücker (1975) and from the vicinity of Elazığ–Hazar Lake by Kıyak (1990). The range of this Asian species includes Afghanistan, Azerbaijan, Georgia, Iran, Kazakhstan, Tajikistan, Turkmenistan and Uzbekistan (Rider 2006, Péricart 2010).
+            </p>
+            <p><italic>Graphosoma</italic> (s.str.) <italic>interruptum</italic> A. White, 1839 distributed only on the Canary Islands and <italic>Graphosoma </italic>(s.str.)<italic> rubrolineatum</italic> (Westwood, 1837) distributed in the Far East (China, Japan, Korea, Mongolia and Russian Far East) do not occur in Turkey (Rider 2006, Péricart 2010).
+            </p>
+            <p><italic>Graphosoma (Graphosomella) inexpectatum</italic> Carapezza &amp; Jindra, 2008, the only species of the subgenus <italic>Graphosomella</italic> Carapezza &amp; Jindra, 2008, is described from Syria (type locality: SW Syria, Bludan) based on two male specimens and has not been recorded in any other place so far. Two females were obtained during the present study from Adana and Gaziantep provinces, which are both very close to Syria.
+            </p>
+            <!--PageBreak-->
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>The study material was collected in June–July of 1995 in two southern provinces of Turkey, Gaziantep (Şehitkamil–Aktoprak) and Adana (Pozantı–Bürücek Plateau), using a sweeping net. Aktoprak is a district of the city Şehitkamil. This area, located on the border between the Southeastern Anatolian and Mediterranean regions of Turkey, has a transition climate which includes both Mediterranean and continental climate characteristics. Winters in the area are cold and wet, and summers are hot and dry. As a result of the climate, the flora of this territory is transitional between the vegetation types of the Mediterranean and the steppe elements of the Southeastern Anatolian regions. Although forests are rare, the dominant trees oak (<italic>Quercus</italic> sp.) and red pine (<italic>Pinus brutia</italic> Ten.) were chosen in forested areas (www.markasehir.com/siteic.php~id=&amp;altno=23&amp;back=false.html).
+            </p>
+            <p>The second locality, Bürücek Plateau, is 100 km away from Adana city center and is an upland with an altitude of 1300 m surrounded by pines (<italic>Pinus</italic> spp.), junipers (<italic>Juniperus </italic>spp.) and fruit trees at the foot of the Akdağ Mountains, Middle Taurus. Pozantı is 7 km away from the Bürücek Plateau and is under the effect of a Mediterranean climate with cold and wet winters and hot and dry summers. Snowfall is typical for winter, and rainfall, during the spring. Despite the hot weather conditions in spring and autumn, Bürücek Plateau is cool even in summer. The area is characterized by the Mediterranean phytogeographical region’s vegetation formations under the influence of the climate. The dominant tree of the upland is generally the red pine (<italic>Pinus brutia</italic> Ten.) but the amount of mixed forest areas including both black pines (<italic>Pinus nigra</italic> Arnold) and red pines increases with higher altitudes; at higher altitudes black pine, cedar (<italic>Cedrus libani </italic>A. Rich.) and fir (<italic>Abies cilicica</italic> Carr.) formations exist in either mixed or pure areas. In addition, trees such as Syrian juniper (<italic>Juniperus drupacea</italic> Lab.), ash (<italic>Fraxinus excelsior</italic> L.), oak (<italic>Quercus</italic> sp.), willow (<italic>Salix </italic>sp.), hornbeam (<italic>Carpinus betulus</italic> L.), European cornel (<italic>Cornus mas</italic> L.), European bladdernut (<italic>Staphylea pinnata</italic> L.), hawthorn (<italic>Crataegus </italic>sp.), blackberry (<italic>Rubus fruticosus</italic> L.), service tree (<italic>Sorbus domestica</italic> L.) and spruce (<italic>Picea </italic>sp.) and annual plants such as St. John’s worth (<italic>Hypericum perforatum</italic> L.), oregan (<italic>Origanum vulgare</italic> L.), thyme (<italic>Thymus vulgaris</italic> L.), speedwell (<italic>Veronica officinalis</italic> L.), wild garlic (<italic>Alium ursinum</italic> L.), chard (<italic>Beta vulgaris </italic>var.<italic> cicla</italic> L.), salep (<italic>Orchis mascula</italic> L.), horsemint (<italic>Mentha longifolia</italic> L.) and colchicum(<italic>Colchicum autumnale </italic>(L.)) are commonly seen (www.adanaliyiz.org/index.php?topic=48.0;wap).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Graphosoma</bold-italic>
+                        <bold> (</bold>
+                        <bold-italic>Graphosomella</bold-italic>
+                        <bold>) </bold>
+                        <bold-italic>inexpectatum</bold-italic>
+                        <bold> Carapezza &amp; Jindra, 2008
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Graphosoma_inexpectatum
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Material examined.</bold>
+                    </title>
+                    <p> Gaziantep province: Şehitkamil (Aktoprak), 11.VI.1995, 37°11'00&quot;N; 37°17'00&quot;E, ca 1035 m, 1 ♀, leg. F. Önder; Adana province: Pozantı <!--PageBreak-->(Bürücek Plateau), 2.VII.1995, 37°25'40&quot;N; 34°52'18&quot;E, ca 1300 m, 1 ♀, leg. F. Önder (coll. Trakya University, Edirne, Turkey and Ege University, LEMT, İzmir, Turkey).
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Host plants.</bold>
+                    </title>
+                    <p> The host plants for both specimens were recorded as weeds, so the plant on which specimens were collected is not known exactly.
+</p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description of female</bold>
+                    </title>
+                    <p>(Fig. 1).Body ovoid, flat, moderately deep punctate and glabrous. Coloration pattern of body with black lines and markings on orange as in most species of <italic>Graphosoma</italic>. Body 1.75–1.80× as long as pronotum width. Body is slightly greater than in males (10.3–11.3 mm versus 10.66–10.80 mm) (Fig. 1A).
+                    </p>
+                    <p>Head almost subtriangular, lateral sides nearly flat. Head: 1.77–1.99 mm long and 0.76–0.82× longer than wide across eyes; width across eyes 2.32–2.41 mm, interocular width 1.52–1.65 mm; jugae enclosing and widely exceeding the tylus, slightly diverging apically. Dorsal surface of head deeply punctate. Integument orange, with two black bands tapering and fusing distally. Length of antennomeres I: 0.54–0.62 mm, II: 1.0–1.13 mm, III: 0.64–0.66 mm, IV: 0.7–0.9 mm, V: 0.95–1.06 mm. First and second antennomeres are the shortest and the longest respectively. First antennomere brownish, yellowish distally; IV and V antennomeres dark brown (Fig. 1C). Antennae/Body length: 0.37–0.38. Head ventrally orange, anterior angle of eye with small black subtriangle spot, jugae anteroventrally with transverse black spot (Fig. 1D).
+</p>
+                    <p>Pronotum transverse, 5.87–6.29 mm wide across lateral angles and 1.92–2.22× wider than long in the middle. Pronotum anteriorly rather narrower than posteriorly, lateral margins evenly rounded. Dorsal surface of pronotum deeply punctate and orange, anterior part with four longitudinal black bands, the external ones at their posterolateral angles joining two curved black bands running parallel to posterior half of lateral pronotal margin (Fig. 1A).
+</p>
+                    <p>Scutellum subtriangular, distally widely rounded, 5,4–6,3 mm long and 1.28–1.34× longer than basally wide; contrary to species of <italic>Graphosoma</italic> s.str., scutellum does not reach to the end of abdomen and covers only two thirds of abdomen length. Lateral margins of scutellum convex in proximal half. Proximal margin of scutellum medially with a raised semicircular punctureless area between the internal margins of two lateral black bands; lateral margins of semicircular area extend to internal margins of lateral bands. Scutellum orange with four long black bands; lateral bands shorter than median ones, distally almost pointed and extending to half length of scutellum; median bands long but not reaching the apex of scutellum (Fig. 1A).
+                    </p>
+                    <p>Hemelytra orange except for a triangular blackish brown spot at the apex of r+m vein, the external margin of exocorium with longitudinal black spot, distal with triangular spot, membran blackish–brown (Fig. 1A).
+</p>
+                    <p>Paratergites with black spots along distal and proximal margins, spots of adjoining tergites merging to form an almost circular shape (Fig. 1A).
+</p>
+                    <p>Abdomen maximum width 6.88–6.99 mm and 1.09–1.17× wider than long, ventrally orange and with irregular black spot. Proximal and distal angles of parasternites with black spots (Fig. 1B).
+</p>
+                    <p>Rostrum reaching hind coxae; first three segments yellowish, IV dark brown (Fig. 1D). Length of rostral segments I–IV: 1.56, 1.13, 0.82, 0.53 mm.
+</p>
+                    <p><!--PageBreak-->Legs orange, femora ventrally with two preapical black spots, apex of tibiae black, tarsi black (Fig. 1F).
+</p>
+                    <p>Female genitalia reddish–brown, with shallow punctures. Eight gonocoxites convex, 9<sup>th</sup> gonocoxites medially excavated, lateral margins with black lines and centrally with black mark (Fig. 1E).
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Comparative notes.</bold>
+                    </title>
+                    <p> The two female specimens examined in the present study show some differences in morphology and coloration when compared with the holotype of the species whose original description by Carapezza and Jindra (2008) was based on two male specimens. The antennomeres (I to V) of the holotype are 0.6 / 1.06 / 0.53 / 0.73 / 1.06 mm long, hence the shortest segment is III. Antennomeres II and V are of equal length, I is a bit longer than III, and IV<sup> </sup>is longer than I. Antennomeres of Turkish specimens (I to V) are (0.54–0.62), (1.0–1.13), (0.64–0.66), (0.7–0.9), (0.95–1.06) mm long. First and III antennomeres are the shortest with somewhat equal lengths and II is the longest. The ratio of antennal length to body length is 0.33 in the holotype and 0.37–0.38 in our specimens (Fig. 1C). The bands in the middle of the scutellum of the holotype are wide basally and gradually taper towards the middle of the scutellum and reach the end as thin bands. However, the narrowing after the middle in our specimens is not pronounced and bands are comparatively wide (Fig. 1A). Moreover, the black spots seen on proximal and distal margin of each paratergite are shaped as black bands in the holotype and the distal band of one segment and the proximal band of the next segment join to form a rectangular shape. <!--PageBreak-->These black spots on each segment are in semicircular shape in our specimens and form an almost circular shape when joined (Fig. 1A). Since the comparison was carried out between the males from Syria and the females from Turkey, it is impossible to conclude if the differences put into evidence depend on sexual dimorphism or on geographical variations.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>Two female specimens of <italic>Graphosoma</italic> (<italic>Graphosomella</italic>) <italic>inexpectatum</italic> were obtained in 1995 from two localities in Adana and Gaziantep provinces in the Mediterranean region of Turkey<italic>. </italic>This is the first record of the species in Turkey and the second record in the world. The number of <italic>Graphosoma</italic> species in Turkey rises to seven with this record. The presence of seven species of <italic>Graphosoma </italic>in Anatolia, out of the nine overall known in the genus, reinforces the notion that Anatolia and its immediate vicinities, as indicated by Carapezza and Jindra (2008), might be the center of origin of the genus.
+            </p>
+            <p>This species was first described by Carapezza and Jindra (2008) from Bludan in SW Syria. Bludan is a locality situated in a mountain valley (1590–2100 m a.s.l.) with relatively rich steppe vegetation in the Anti–Lebanon Mountains, about 30 km NW of Damascus (Carapezza and Jindra 2008). The localities in Turkey are close to Syria and the presence of all currently known localities of the species in Mediterranean Region supports the possibi-lity that the species is a Syrian–Anatolian element of East Mediterranean origin (Fig. 2).
+</p>
+            <!--PageBreak-->
+        </sec>
+    </body>
+    <back>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Carapezza</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Jindra</surname> <given-names>Z</given-names></name></person-group> (<year>2008</year>)<fake_tag> <italic>Graphosoma </italic>(<italic>Graphosomella </italic>subgen. nov.) <italic>inexpectatum </italic>sp. nov. from Syria (Hemiptera Heteroptera Pentatomidae). Il Naturalista siciliano, s. 4, 32 (3–4): 471–478.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Horváth</surname> <given-names>G</given-names></name></person-group> (<year>1903</year>)<article-title> Conspectus specierum generis <italic>Graphosoma</italic>.</article-title> <source>Annales Musei Nationalis Hungarici </source> <volume>1</volume>: <fpage>345</fpage>-<lpage>354</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kiritshenko</surname> <given-names>AN</given-names></name></person-group> (<year>1918</year>)<article-title> Hemiptera-Heteroptera faunae Caucasicae. Pars I.</article-title> <source>Memories Museum Caucase </source> <volume>6</volume>: <fpage>1</fpage>-<lpage>177</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kiritshenko</surname> <given-names>AN</given-names></name></person-group> (<year>1924</year>)<article-title> Beitrag zur Hemipterenfauna des südlichen Armenien.</article-title> <source>Wiener entomologische Zeitung </source> <volume>41</volume>(<issue>1–3</issue>)): <fpage>1</fpage>-<lpage>5</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kıyak</surname> <given-names>S</given-names></name></person-group> (<year>1990</year>)<article-title> Systematisch-ökologische Untersuchungen über die Wanzen (Insecta: Heteroptera) aus dem Gebiet Hazar-See, Maden und Ergani (Prov. Elazığ). II.</article-title> <source>Journal of Biology, Faculty of Science and Arts, Gazi University </source> <volume>1</volume>: <fpage>97</fpage>-<lpage>144</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lodos</surname> <given-names>N</given-names></name></person-group> (<year>1959</year>)<article-title> A new species of <italic>Graphosoma </italic>from Turkey (Heteroptera–Pentatomidae).</article-title> <source>Annals and Magazine of Natural History, Series </source> <volume>13</volume> (<issue>1</issue>): <fpage>711</fpage>-<lpage>713</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lodos</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Önder</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Pehlivan</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Atalay</surname> <given-names>R</given-names></name></person-group> (<year>1978</year>)<fake_tag> Ege ve Marmara Bölgesi’nin Zararlı Böcek Faunasının Tespiti Üzerinde Çalışmalar. [Curculionidae, Scarabaeidae (Coleoptera); Pentatomidae, Lygaeidae, Miridae (Heteroptera)]. T.C. Gıda, Tarım ve Hayvancılık Bakanlığı Zirai Mücadele ve Zirai Karantina Genel Müdürlüğü, 135–169.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Önder</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Karsavuran</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Pehlivan</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Turanlı</surname> <given-names>F</given-names></name></person-group> (<year>1995</year>)<fake_tag> Güneydoğu Anadolu Projesi (GAP) uygulama alanında saptanan Pentatomoidea (Heteroptera) türleriyle ilgili bir değerlendirme. GAP Bölgesi Bitki Koruma Sorunları ve Çözüm Önerileri Sempozyumu, 27–29 Nisan 1995, Şanlıurfa-Türkiye, 120–130.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Önder</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Karsavuran</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Tezcan</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Fent</surname> <given-names>M</given-names></name></person-group> (<year>2006</year>)<source> Türkiye Heteroptera (Insecta) Kataloğu.</source> <publisher-name>Meta Basım Matbaacılık</publisher-name>, <publisher-loc>Bornova–İzmir</publisher-loc>, <lpage>164</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Özgen</surname> <given-names>İ</given-names></name>,<name name-style="western"><surname>Gözüaçık</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Karsavuran</surname> <given-names>Y</given-names></name>,<name name-style="western"><surname>Fent</surname> <given-names>M</given-names></name></person-group> (<year>2005</year>)<article-title> Güneydoğu Anadolu Bölgesi buğday alanlarında bulunan Pentatomidae (Heteroptera) familyasına ait türler üzerinde araştırmalar.</article-title> <source>Türkiye Entomoloji Dergisi </source> <volume>29</volume> (<issue>1</issue>): <fpage>61</fpage>-<lpage>68</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Péricart</surname> <given-names>J</given-names></name></person-group> (<year>2010</year>)<source> Hémiptères Pentatomoidea Euro-Méditerranéens. Volume 3: Podopinae et Asopinae. Faune de France. Vol. 93.</source> <publisher-name>Fédération Française des Sociétés de Sciences Naturelles</publisher-name>, <publisher-loc>Paris</publisher-loc>, <lpage>291</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Puton</surname> <given-names>A</given-names></name></person-group> (<year>1896</year>)<article-title> Hémiptères nouveaux. Localités nouvelles.</article-title> <source>Revue d’Entomologie (Caen) </source> <volume>15</volume>: <fpage>232</fpage>-<lpage>234</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Rider</surname> <given-names>D</given-names></name></person-group> (<year>2006</year>)<article-title> Family Pentatomidae Leach, 1815.</article-title> In: <person-group1><name name-style="western"><surname>Aukema</surname> <given-names>B</given-names></name>,<name name-style="western"><surname>Rieger</surname> <given-names>Ch</given-names></name></person-group1> (<role>Eds</role>). <issue-title>Catalogue of the Heteroptera of the Palaearctic Region.</issue-title> <source>Pentatomomorpha II, Vol. 5. The Netherlands Entomological Society, Amsterdam</source>: <fpage>233</fpage>-<lpage>414</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Seidenstücker</surname> <given-names>G</given-names></name></person-group> (<year>1975</year>)<article-title> Über anatolischen Schildwanzen.</article-title> <source>Reichenbachia </source> <volume>15</volume>: <fpage>259</fpage>-<lpage>268</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Wagner</surname> <given-names>E</given-names></name></person-group> (<year>1959</year>)<article-title> Beitrag zur Heteropterenfauna Anatoliens.</article-title> <source>Zeitschrift für angewandte Entomologie </source> <volume>44</volume>: <fpage>102</fpage>-<lpage>113</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> <italic>Graphosoma inexpectatum</italic>. <bold>A</bold> body, dorsal view <bold>B</bold> body, ventral view <bold>C</bold> head, dorsal view, and antenna <bold>D</bold> head, ventral view, and rostrum <bold>E</bold> female genitalia <bold>F</bold> leg, lateral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-1000-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> Distribution of <italic>Graphosoma inexpectatum</italic>.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-1000-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

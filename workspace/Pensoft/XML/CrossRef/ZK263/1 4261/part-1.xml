@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.0" xmlns="http://www.crossref.org/doi_resources_schema/4.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/doi_resources_schema/4.3.0 http://www.crossref.org/schema/deposit/doi_resources4.3.0.xsd">
+<head>
+<doi_batch_id>7ee85565-33c7-4a51-b44e-eccdc3abf5ab</doi_batch_id>
+<depositor>
+<name>pens</name>
+<email_address>bozhin.karaivanov@gmail.com</email_address>
+</depositor>
+</head>
+<body>
+<doi_citations>
+<doi>part-1-263-4261</doi>
+<citation_list>
+	<citation key="ref1"><issn>10948074</issn><journal_title>Palaeontol Electronica</journal_title><author>Abel</author><volume>15</volume><first_page>1</first_page><cYear>2012</cYear><article_title>A palaeobiologist's guide to &quot;virtual&quot; micro-CT preparation.</article_title><unstructured_citation>Abel RL, Laurini CR, Richter M (2012) A palaeobiologist's guide to &quot;virtual&quot; micro-CT preparation. Palaeontologia Electronica 15: 1–16. http://palaeo-electronica.org/content/pdfs/284.pdf</unstructured_citation></citation>
+	<citation key="ref1"><doi>10.1007/s00227-008-1055-3</doi></citation>
+	<citation key="ref1"><doi>10.1111/j.1440-6055.1997.tb01461.x</doi></citation>
+	<citation key="ref1"><doi>10.1071/AS06009</doi></citation>
+	<citation key="ref1"><doi>10.1007/s00227-009-1296-9</doi></citation>
+	<citation key="ref1"><doi>10.1093/nar/gki063</doi></citation>
+	<citation key="ref1"><doi>10.1371/journal.pone.0034499</doi></citation>
+	<citation key="ref1"><doi>10.1111/j.1439-0485.2011.00442.x</doi></citation>
+	<citation key="ref2"><author>Bond</author><first_page>1</first_page><cYear>2008</cYear><volume_title>Proceedings of the 2nd International Conference of Bionic Engineering (ICBE 08)</volume_title><article_title>Meshing of XMT data to study the functional morphology of beetle Priacma serrata's head and mandible.</article_title><unstructured_citation>Bond J, Hörnschmeyer T, Young P, Yang L (2008) Meshing of XMT data to study the functional morphology of beetle Priacma serrata's head and mandible. In: Proceedings of the 2nd International Conference of Bionic Engineering (ICBE'08), Changchun (China) October 2008. Jilin University, Changchun, 1–11.</unstructured_citation></citation>
+	<citation key="ref2"><doi>10.1016/0040-8166(85)90046-1</doi></citation>
+	<citation key="ref2"><doi>10.1111/j.1463-6395.2007.00262.x</doi></citation>
+	<citation key="ref3"><journal_title>Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft</journal_title><author>Böggemann</author><volume>555</volume><first_page>1</first_page><cYear>2002</cYear><article_title>Revision of the Glyceridae Grube 1850 (Annelida: Polychaeta).</article_title><unstructured_citation>Böggemann M (2002) Revision of the Glyceridae Grube 1850 (Annelida: Polychaeta). Abhandlungen der Senckenbergischen Naturforschenden Gesellschaft 555: 1–249.</unstructured_citation></citation>
+	<citation key="ref4"><issn>11755326</issn><journal_title>Zootaxa</journal_title><author>Carrera-Parra</author><volume>1336</volume><first_page>1</first_page><cYear>2006</cYear><article_title>Revision of Lumbrineris de Blainville, 1828 (Polychaeta: Lumbrineridae).</article_title><unstructured_citation>Carrera-Parra LF (2006a) Revision of Lumbrineris de Blainville, 1828 (Polychaeta: Lumbrineridae). Zootaxa 1336: 1–64. https://www.scopus.com/record/display.url?eid=2-s2.0-33750323441&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref5"><issn>11755326</issn><journal_title>Zootaxa</journal_title><author>Carrera-Parra</author><volume>36</volume><first_page>1</first_page><cYear>2006</cYear><article_title>Phylogenetic analysis of Lumbrineridae Schmarda, 1861 (Annelida: Polychaeta).</article_title><unstructured_citation>Carrera-Parra LF (2006b) Phylogenetic analysis of Lumbrineridae Schmarda, 1861 (Annelida: Polychaeta). Zootaxa 36: 1–36. https://www.scopus.com/record/display.url?eid=2-s2.0-33750375288&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref5"><doi>10.1007/s11692-007-9011-6</doi></citation>
+	<citation key="ref5"><doi>10.5772/34878</doi></citation>
+	<citation key="ref5"><doi>10.1145/2010425.2010449</doi></citation>
+	<citation key="ref5"><doi>10.1071/IS10011</doi></citation>
+	<citation key="ref5"><doi>10.1016/j.tree.2011.11.007</doi></citation>
+	<citation key="ref5"><doi>10.1016/j.nima.2007.05.030</doi></citation>
+	<citation key="ref5"><doi>10.1111/j.1365-2818.2009.03335.x</doi></citation>
+	<citation key="ref5"><doi>10.1098/rsbl.2011.0923</doi></citation>
+	<citation key="ref5"><doi>10.1038/nature06614</doi></citation>
+	<citation key="ref5"><doi>10.1007/s13127-011-0044-4</doi></citation>
+	<citation key="ref6"><issn>11755326</issn><journal_title>Zootaxa</journal_title><author>Evenhuis</author><volume>1407</volume><first_page>3</first_page><cYear>2007</cYear><article_title>Helping Solve the &quot;other&quot; Taxonomic Impediment: Completing the Eight Steps to Total Enlightenment and Taxonomic Nirvana.</article_title><unstructured_citation>Evenhuis NL (2007) Helping Solve the &quot;other&quot; Taxonomic Impediment: Completing the Eight Steps to Total Enlightenment and Taxonomic Nirvana. Zootaxa 1407: 3–12. https://www.scopus.com/record/display.url?eid=2-s2.0-33847357817&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref7"><issn>10536426</issn><journal_title>Mol Mar Biol Biotechnol</journal_title><author>Folmer</author><volume>3</volume><first_page>294</first_page><cYear>1994</cYear><article_title>DNA primers for amplification of mitochondrial cytochrome c oxidase unit I from diverse metazoan invertebrates.</article_title><unstructured_citation>Folmer O, Black M, Hoeh W, Lutz R, Vrijenhoek R (1994) DNA primers for amplification of mitochondrial cytochrome c oxidase unit I from diverse metazoan invertebrates. Molecular Marine Biology and Biotechnology 3: 294–299.</unstructured_citation></citation>
+	<citation key="ref7"><doi>10.1017/S0025315400022359</doi></citation>
+	<citation key="ref7"><doi>10.1111/j.1463-6395.2009.00420.x</doi></citation>
+	<citation key="ref7"><doi>10.1038/417017a</doi></citation>
+	<citation key="ref7"><doi>10.1038/420461a</doi></citation>
+	<citation key="ref7"><doi>10.1038/446259a</doi></citation>
+	<citation key="ref8"><issn>13235818</issn><journal_title>Molluscan Res</journal_title><author>Golding</author><volume>27</volume><first_page>123</first_page><cYear>2006</cYear><article_title>Micro-CT as a novel technique for 3D reconstruction of molluscan anatomy.</article_title><unstructured_citation>Golding RE, Jones AS (2006) Micro-CT as a novel technique for 3D reconstruction of molluscan anatomy. Molluscan Research 27: 123–128. https://www.scopus.com/record/display.url?eid=2-s2.0-36048997602&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref8"><doi>10.1002/jmor.10699</doi></citation>
+	<citation key="ref9"><journal_title>Laborativ Arkeologi</journal_title><author>Götherstrom</author><volume>8</volume><first_page>26</first_page><cYear>1995</cYear><article_title>X-raying ancient bone: a destructive method in connection with DNA analysis.</article_title><unstructured_citation>Götherstrom A, Fischer C, Linden K (1995) X-raying ancient bone: a destructive method in connection with DNA analysis. Laborativ Arkeologi 8: 26–28.</unstructured_citation></citation>
+	<citation key="ref9"><doi>10.1016/j.jas.2007.06.001</doi></citation>
+	<citation key="ref10"><issn>11755326</issn><journal_title>Zootaxa</journal_title><author>Heim</author><volume>21</volume><first_page>1</first_page><cYear>2010</cYear><article_title>Description and molecular phylogeny of Tethya leysae sp. nov. (Porifera, Demospongiae, Hadromerida) from the Canadian Northeast Pacific with remarks on the use of microtomography in sponge taxonomy.</article_title><unstructured_citation>Heim I, Nickel M (2010) Description and molecular phylogeny of Tethya leysae sp. nov. (Porifera, Demospongiae, Hadromerida) from the Canadian Northeast Pacific with remarks on the use of microtomography in sponge taxonomy. Zootaxa 21: 1–21. https://www.scopus.com/record/display.url?eid=2-s2.0-77953923313&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref11"><issn>11755326</issn><journal_title>Zootaxa</journal_title><author>Hendrickx</author><volume>1305</volume><first_page>41</first_page><cYear>2006</cYear><article_title>Description of a new fossil Pseudogarypus (Pseudoscorpiones: Pseudogarypidae) with the use of X-ray micro-CT to penetrate opaque amber.</article_title><unstructured_citation>Hendrickx H, Cnudde V, Masschaele B, Dierick M, Vlassenbroeck J, Van Hoorebeke L (2006) Description of a new fossil Pseudogarypus (Pseudoscorpiones: Pseudogarypidae) with the use of X-ray micro-CT to penetrate opaque amber. Zootaxa 1305: 41–50. https://www.scopus.com/record/display.url?eid=2-s2.0-33748599256&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref11"><doi>10.3896/IBRA.1.47.4.09</doi></citation>
+	<citation key="ref11"><doi>10.1016/j.asd.2010.07.004</doi></citation>
+	<citation key="ref11"><doi>10.3897/zookeys.219.3944</doi></citation>
+	<citation key="ref11"><doi>10.1364/OL.25.000610</doi></citation>
+	<citation key="ref11"><doi>10.1007/s10140-012-1037-0</doi></citation>
+	<citation key="ref11"><doi>10.1016/j.tree.2011.07.010</doi></citation>
+	<citation key="ref11"><doi>10.1016/j.tree.2011.11.003</doi></citation>
+	<citation key="ref11"><doi>10.2967/jnumed.111.089151</doi></citation>
+	<citation key="ref11"><doi>10.1038/419559a</doi></citation>
+	<citation key="ref11"><doi>10.1016/j.tibs.2010.03.008</doi></citation>
+	<citation key="ref11"><unstructured_citation>Alba-Tercedor J, Sánchez-Tocino L (2011) The use of the SkyScan 1172 high-resolution micro-CT to elucidate if the spicules of the &quot;sea slugs&quot; (Mollusca: Nudibranchia, Opisthobranchia) have a structural or a defensive function. In: MicroCT User Meeting Abstract Book, Leuven (Belgium), April 2011. SkyScan, Kontich, Belgium, 113–121. http://www.skyscan.be/company/UM2011/abstract_22.pdf</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Audouin JV, Milne-Edwards H (1834) Recherches pour servir a l'histoire naturelle du littoral de la France, ou recuil de mémoires sur l'anatomie, la physiologie, la classification et les moeurs des animaux de nos côtes, 2. Annélides, Crochard, Paris, 290 pp. http://www.biodiversitylibrary.org/ia/recherchespourse21834audo</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Bakken T (2004) A revision of Nereidinae (Polychaeta, Nereididae). PhD Thesis, Trondheim, Norway: Norwegian University of Science and Technology. http://ntnu.diva-portal.org/smash/record.jsf?pid=diva2:123502</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Claparède É (1870) Les annélides chétopodes du Golfe de Naples. Supplément. Mémoires de la Société de physique et d'histoire naturelle de Genève 20: 365–542. http://www.biodiversitylibrary.org/item/18576</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Csösz S (2012) Nematode infection as significant source of unjustified taxonomic descriptions in ants (Hymenoptera: Formicidae). Myrmecological News 17: 27–31. http://www.myrmecologicalnews.org/cms/images/pdf/volume17/mn17_27-31_non-printable.pdf</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Deligiannidis L, Jacob RJK (2005) An Immersive Environment for the Vase Museum. In: HCI'05 International Conference on Human-Computer Interaction, Las Vegas (USA), July 2005. HCI International, 54–62. https://www.scopus.com/record/display.url?eid=2-s2.0-60749101560&amp;origin=resultslist</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Engel K, Sommer O, Ernst C, Ertl T (1999) Remote 3D Visualization using Image-Streaming Techniques. In: Proceedings of the 11th International Conference on Systems Research, Informatics and Cybernetics, Baden-Baden (Germany), August 1999. International Institute for Advanced Studies in Systems Research and Cybernetics, 91–96.</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Faulwetter S, Dailianis T, Vasileiadou A, Arvanitidis C (2012) Investigation of contrast enhancing techniques for the application of Micro-CT in marine biodiversity studies. In: SkyScan MicroCT User meeting 2012. SkyScan, Brussels, Belgium, 12–20. http://www.skyscan.be/company/UM2012/02.pdf</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Grube AE (1840) Actinien, Echinodermen und Würmer des Adriatischen- und Mittelmeers, nach eigenen Sammlungen beschrieben. J.H. Bon, Königsberg, 92 pp. http://www.biodiversitylibrary.org/bibliography/10133</unstructured_citation></citation>
+	<citation key="ref11"><unstructured_citation>Kaupp G, Stepanenko S, Herrmann A (2002) World-wide interaction with 3D-data. In: SSGRR2002S, L'Aquila (Italy), July/August 2002. SSGRR, 1–11.</unstructured_citation></citation>
+</citation_list>
+</doi_citations>
+</body>
+</doi_batch>

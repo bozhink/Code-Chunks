@@ -1,0 +1,990 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.298.4894</article-id>
+            <title-group>
+                <article-title>Taxonomy and distribution pattern of the African rain forest butterfly genus 
+                    <bold-italic>Euphaedra</bold-italic> Hübner 
+                    <bold-italic>sensu</bold-italic> 
+                    <bold-italic>stricto</bold-italic> with the description of three new subspecies of 
+                    <bold-italic>Euphaedra cyparissa</bold-italic> (Cramer) and one of 
+                    <bold-italic>E. sarcoptera</bold-italic> (Butler) (Lepidoptera, Nymphalidae, Limenitidinae, Adoliadini)
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Pyrcz</surname>
+                        <given-names>Tomasz W.</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Warren-Gash</surname>
+                        <given-names>Haydon</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A2">2</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Lorenc-Brudecka</surname>
+                        <given-names>Jadwiga</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Dieuwko Knoop</surname>
+                        <given-names></given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A5">5</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Oremans</surname>
+                        <given-names>Philippe</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A3">3</xref>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Sáfián</surname>
+                        <given-names>Szabolcs</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A4">4</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Zoological Museum of the Jagiellonian University, Ingardena 6, 30-060 Kraków, Poland
+            </aff>
+            <aff id="A2">
+                <label>2</label>98 Overstrand Mansions, Prince of Wales Drive, London SW11 4EU
+            </aff>
+            <aff id="A3">
+                <label>3</label>35, rue des Jacinthes, 6110 Montigny - le - Tilleul, Belgique
+            </aff>
+            <aff id="A4">
+                <label>4</label>Institute of Silviculture and Forest Protection, University of West Hungary, Sopron, Hungary
+            </aff>
+            <aff id="A5">
+                <label>5</label> Rijsberkamperweg 7, 8392TP Boyl, The Netherlands
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Tomasz W. Pyrcz (<email xlink:type="simple">tomasz.pyrcz@uj.edu.pl</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: C. Peña</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>10</day>
+                <month>5</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>298</issue>
+            <fpage>1</fpage>
+            <lpage>37</lpage>
+            <history>
+                <date date-type="received">
+                    <day>21</day>
+                    <month>2</month>
+                    <year>2013</year>
+                </date>
+                <date date-type="accepted">
+                    <day>22</day>
+                    <month>4</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Tomasz W. Pyrcz, Haydon Warren-Gash, Jadwiga Lorenc-Brudecka, Dieuwko Knoop, Philippe Oremans, Szabolcs Sáfián</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Updated data on the distribution, ecology and taxonomy of <italic>Euphaedra cyparissa </italic>(Cramer) and <italic>Euphaedra sarcoptera</italic> (Butler) are presented. Three new subspecies of <italic>E. cyparissa </italic>and one of <italic>E. sarcoptera </italic>are described and their geographic distribution is presented. The monophyly of the genus <italic>Euphaedra sensu </italic>Hecq is assessed based on morphological, in particular male and female genitalia, and behavioural traits. Possible evolutionary reasons for the convergence of colour pattern between the sympatric subspecies of <italic>E. cyparissa </italic>and <italic>E. sarcoptera</italic> are discussed.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Afrotropical region</kwd>
+                <kwd>colour patterns convergence</kwd>
+                <kwd><italic>Euphaedra cyparissa</italic>
+                </kwd>
+                <kwd><italic>Euphaedra sarcoptera</italic>
+                </kwd>
+                <kwd>male and female genitalia
+                </kwd>
+                <kwd>rain forests</kwd>
+                <kwd>subspecies</kwd>
+                <kwd>taxonomy
+<!--PageBreak--></kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Recent years have witnessed a rising interest in advanced studies focusing on species-rich African brush-footed butterflies (Nymphalidae). Examples include ongoing studies, combining molecular, ecological and morphological data, on the genus <italic>Cymothoe </italic>Hübner (Van Velzen et al. 2007, 2009, 2013) and <italic>Bicyclus </italic>Kirby used as one model group for modern research on genetics and evolutionary ecology (Monteiro and Pierce 2001; Conceição et al. 2011). From this perspective, one of the most speciose African butterfly genera, <italic>Euphaedra </italic>Hübner with nearly 200 recognized species, remains unexplored. This is due to the taxonomic complexity, but most of all to the unstable species-level systematics involved. The latter is a result of the tradition of basing <italic>Euphaedra</italic> taxonomy on simple descriptions of wing colour patterns. It is striking that descriptions of new species of <italic>Euphaedra </italic>have not usually been accompanied by in-depth morphological analysis, nor by ecological (with the honourable exception of Amiet 2004) or biogeographic support, not to mention genetic data (Hecq 1984, 1997, 1999, 2012; Faravel 2002). The morphology of female genitalia of <italic>Euphaedra </italic>remained until recently nearly completely unexplored and was not used with any alpha-taxonomy or in assessing the phylogenetic relations within the genus (Pyrcz et al. 2011). One of the major problems when dealing with species-level <italic>Euphaedra </italic>taxonomy is the huge variation in individual colour pattern evident within some species, on occasion more important to the naked eye than intraspecific differences, compounded by apparently rather frequent intraspecific hybridization producing viable individuals. This, coupled with wide geographic ranges, apparent pattern convergence between sympatric species and the lack of strong, quantitative characters, often impedes reliable recognition of species, which has led to the description of numerous species which are in fact merely individual variations of polymorphic species, or possibly natural hybrids (Hecq 2012). The above mentioned systematic problems effectively hampered any comprehensive studies within this group according to modern evolutionary biology approach, for example using molecular data (Wahlberg et al., in prep.). At this stage, the genus requires more detailed studies at the lower taxonomic level, such as species groups or subgenera, to help prepare the ground for a more broad based revision.
+            </p>
+            <p>The subgenus <italic>Euphaedra </italic>was delimited by Hecq (1976) in an attempt to break down the extremely diverse genus <italic>Euphaedra sensu </italic>Hübner into several related, possibly monophyletic groups designated as subgenera. His work relied strongly on colour patterns, such as forewing subapical bands and hindwing underside elements as valid characters, and some characters of male genitalia, especially the configuration of cornuti on the vesica and shape of the apical part of valva. According to Hecq (1976) the subgenus <italic>Euphaedra </italic>is identified by the elongated forewing apex and the absence of red scaling on the hindwing underside. Subsequent authors, to a different degree, recognized the entities raised by Hecq, among others, D’Abrera (2004), Larsen (2005) and Vande Weghe (2010). The two species making up the subgenus <italic>Euphaedra sensu </italic>Hecq, <italic>E. cyparissa </italic>(Cramer 1775)and<italic> E. sarcoptera </italic>(Butler 1871), present some apparent morphological and, indeed, behavioural characters that set them apart from other <!--PageBreak-->congeners. Schultze (1920) pointed out their less developed, slender thorax. A striking colour pattern element - the pinkish ventral basal patch - present on the forewing in <italic>E. sarcoptera </italic>and absent in <italic>E. cyparissa</italic> makes the immediate separation between the two species unambiguous (Larsen 2005). They are sympatric through most of their range in West and Central Africa. However, <italic>E. sarcoptera </italic>occurs as far east as western Tanzania, whereas <italic>E. cyparissa </italic>does not extend into the Congo basin. Both species are widely polytypic. Distribution of the three subspecies of <italic>E. cyparissa </italic>described so far is puzzling, being either widely disjunct and/or without any apparent geographical pattern. Larsen (2005) discusses three or possibly four subspecies of <italic>E. cyparissa </italic>but in the headings of the species he highlights only two, the nominate and ssp. <italic>tai</italic> Hecq. In the accompanying text, however, he also mentions <italic>aurata </italic>Carpenter and suggests that the Central African Republic population possibly represents a separate subspecies. Vande Weghe (2010) simply illustrates all green specimen, presumably from Gabon, and basically quotes Larsen (op. cit).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>Adults of <italic>Euphaedra </italic>were collected using entomological nets and fruit-baited traps. Type specimens deposited in major collections were examined. Male and female genitalia were dissected and compared. Standard dissection protocols were applied, consisting in soaking the abdomens in a warm 10% KOH solution for 35 min., cleaning out of scales and internal organs in distilled water, and staining genital organs with chlorazole black. Genital preparations were placed in glycerol microvials, and pinned under their respective specimens. Photographs of adults were made with an Olympus E-500 digital camera and microscopic structures were photographed under an Olympus stereomicroscope SZX9 equipped with a Nikon Digital sight Ds-Fi1 camera. Plates were composed with Adobe Photoshop 9. Abbreviations used: FW: forewing; HW: hindwing; D: dorsum; V: venter; TL: Type locality.
+            </p>
+            <sec>
+                <title><bold>Collections consulted
+</bold>
+                </title>
+                <p><bold>ABRI</bold>	African Butterfly Research Institute, Nairobi, Kenya
+                </p>
+                <p><bold>BMNH</bold>	The Natural History Museum (formerly British Museum of Natural History), London, UK
+                </p>
+                <p><bold>DK</bold>	Dieuwko Knoop, Tel Aviv, Israel and Boyl, The Netherlands
+                </p>
+                <p><bold>GF</bold>	Gilles Faravel, Pradons, France
+                </p>
+                <p><bold>HWG</bold>	Haydon Warren-Gash, Pressac, France
+                </p>
+                <p><bold>MIIZ</bold>	Muzeum i Instytut Zoologii Polskiej Akademii Nauk, Warszawa, Poland
+                </p>
+                <p><bold>MRAC</bold>	Musée Royal de l’Afrique Centrale, Tervuren, Belgium
+                </p>
+                <p><bold>MZUJ</bold>	Muzeum Zoologiczne Uniwersytetu Jagiellońskiego, Kraków, Poland
+                </p>
+                <p><bold>RW</bold>	Robert Warren (currently in DK)
+                </p>
+                <p><!--PageBreak--><bold>SZS</bold>	Szabolcs Sáfián, Sopron, Hungary
+                </p>
+                <p><bold>SMTD</bold>	Senckenberg Naturhistorische Sammlungen Dresden Museum für Tierkunde
+                </p>
+                <p><bold>PhO</bold>	Philippe Oremans, Montigny-le-Tilleul, Belgique
+                </p>
+                <p><bold>TL</bold>	Torben Larsen (data base)
+                </p>
+                <p><bold>TWP</bold>	Tomasz Wilhelm Pyrcz (to be deposited in MZUJ)
+                </p>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <sec>
+                <title><bold>Taxonomic accounts
+</bold>
+                </title>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra cyparissa cyparissa </bold-italic>
+                            <bold>(Cramer)
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_cyparissa_cyparissa
+</object-id>
+                        <xref>Figs 1A, 1B, 3A, 3B, 9A
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Papilio cyparissa </italic>Cramer, [1775], <italic>in </italic>Cramer, [1775–1776]: 63, pl. 39. Figs D, E.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Papilio cato </italic>Fabricius, 1787: 12 (unnecessary replacement name)
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Sierra Leone
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p>1 ♂: Sierra Leone, Guma, 01.03.1982, prep. genit. 10/09.05.2012, J. Lorenc; 1 ♀: same data, prep. genit. 11/09.05.2012, J. Lorenc; 1 ♀: Sierra Leone, Guma Valley, 400 m, 11.1991; 1 ♀: Sierra Leone, no locality, no date; 1 ♂: Ivory Coast, Abidjan (erroneous locality), 1966, S. Collins leg.; 1 ♀: same data (erroneous locality), ABRI; 6 ♂ and 2 ♀: Sierra Leone, Guma, 01.III.1982, H. Warren-Gash leg.; 1 ♂: Guinea, Diecke, 07.2000, HWG; 1 ♂ and 5 ♀: Sierra Leone, SMTD; 4 ♂: Guinée, Guinée forestière, Province de Yomou, Forêt classée de Diecke, 1-26.III.2003, leg. Ph. Leonard and E. Vingerhoedt; 3 ♂ and 1 ♀: same data but VI.2003; 2 ♂: same data but III.2005, PhO; 3 ♂ and 1 ♀: Guinée, Forêt classée de Diecké, GF; 2 ♂ and 2 ♀: Liberia, Mount Swa, Sz. Sáfián leg, MZUJ ; 1 ♂: same data, ABRI.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside colour black and apple green with a delicate yellow sheen, somewhat more prominent on the HWD median area.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 1A, 1B). Head: eyes lustrous, chocolate brown, naked; vertex black with a tuft of short, black hair; labial palpi covered with dense, short, bright yellow hairy scales; antennae half the length of costa, slender, gradually widening into a flattened club, in its widest part only twice as wide as shaft, dorsally black, ventrally bright yellow, covered with sparse sales along most of its length except for terminal segments. Thorax: black, dorsally sparsely covered with black and brown hair, denser laterally, with some violet blue scales on patagium and mesoscutum; tegulae covered with black, grey and brown hair; some longer and denser grey hair on metascutum; legs femora covered with black, tibiae and tarsi with sandy yellow scales. Abdomen: totally covered with dense, black scales, and some bluish scales on first, second and third segments dorsally (apparent only in fresh specimens), and over the entire length laterally. FWD: (length: 31–33 mm, mean: 32, n=9) with an elongated apical part, and gently <!--PageBreak-->convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a rich green area from wing base to two-thirds of anal margin, marginally entering discal cell along lower part and at base of cell Cu1-Cu; a large, roughly oval rich green subapical patch with a marginal bluish sheen, extending widely from subcosta costa to vein M3, with sharply defined zigzagging basal limit, with an incision along vein M3, and a diffused outer limit; fringes grey. HWD oval with a gently scalloped outer margin; rich green, with a golden yellow overcast in outer one-third, a black marginal area gradually narrowing from roughly 4–5 mm at apex to 2 mm at tornus where heavily suffused with blue; fringes grey. FWV mostly bottle green, slightly lighter than on the FWD subapical patch, a series of large irregular black discal patches, at wing <!--PageBreak-->base, mid cell, cell end, an elongated black patch extending across cells M3-Cu1 and a large, roughly half-moon shaped patch in Cu1-Cu2; a diffused subapical golden yellow patch; a row of seven, roughly oval submarginal patches, two tornal patches in Cu1-Cu2 and Cu2-1/2A irregular and at least twice as big as the remainder. HWV golden green, with an elongated basal pinkish patch extending from costal margin to Rs to one-fourth costa, edged with black; four black median spots, two of which in discal cell, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Male genitalia</italic> (Fig. 9A). Tegumen one and a half the length of uncus, considerably elongated basally; uncus slender, slightly arched downwards with a sharp tip; gnathos long, one-fourth longer than uncus; pedunculus prominent; saccus flattened in lateral view; valvae with a smooth dorsal surface; aedeagus the length of valva+saccus, tubular and straight, with a sharp distal extremity and prominent cornuti.
+                        </p>
+                        <p><bold>Female </bold>(Figs 3A, 3B): Sexual dimorphism slight, recognized from the male by the larger size (FW length: 40 mm, n=2). <italic>Female genitalia</italic>. Examined, but damaged and unsuitable for taxonomical use.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> The known range of this subspecies extends from Sierra Leone, Liberia to SE Guinea. The pair in ABRI labeled as coming from Abidjan represent a conundrum. However, given the extensive research and collecting by one of the authors (HWG) in the Abidjan area without encountering any other specimens, we have concluded that they must be mislabeled. Larsen (2005) illustrated a male of the nominate subspecies identified as “green form from Ghana”, but this particular specimen comes from Sierra Leone (ABRI collection, examined). He also identified another specimen from Ghana as <italic>E. cyparissa cyparissa</italic>, which clearly does not belong to the nominate subspecies but to the new subspecies described below.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra cyparissa tai </bold-italic>
+                            <bold>Hecq, 1986
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_cyparissa_tai
+</object-id>
+                        <xref>Figs1E, 1F, 4A, 4B, 9B, 10D
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Euphaedra cyparissa taï</italic> [sic] Hecq, 1986: 42, figs. 11, 16, 17.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Tai Forest (Forêt de Taï), Ivory Coast
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p>12 ♂: Ivory Coast, Tai, 13–14.05.2000, S. Collins leg.; 1 ♂: same data, prep. genit. 07/09.05.2012, J. Lorenc; 1 ♀: same data; 1 ♀: same data, prep. genit. 08/09.05.2012, J. Lorenc; 1 ♂: same data but XII.1998, K. Adams leg., ABRI; 2 ♂: Ivory Coast , Tai, 12.I.1999, H. Warren-Gash leg.; 1 ♂: Ivory Coast , Tai, 13.I.1999, H. Warren-Gash leg.; 1 ♂ and 1 ♀: Ivory Coast , Tai, XII.1998, K. Adams; 2 ♂ and 1 ♀: Ivory Coast, Tai, 02.I.2000, H. Warren-Gash leg.; 1 ♂ and 1 ♀: Ivory Coast, Tai, 13.V.2000, H. Warren-Gash leg., HWG.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside colour black and pine green.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 1E, 1F): Head, thorax and abdomen: identical to other subspecies. FWD: length 35–37 mm, mean: 36 mm, n=19 with an elongated apical <!--PageBreak-->part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a bottle green area from wing base to tornus, marginally entering discal cell; a large, roughly rectangular bottle green subapical patch with a bluish sheen, extending widely from subcostal to vein Cu1, with sharply defined zigzagging basal limit, without any incision along vein M3, and somewhat diffused outer limit; fringes grey. HWD oval with a gently scalloped outer margin; bottle green, gradually turning bluish green from vein M3 towards tornus and anal margin, with a black marginal area with a strong dark blue flush, gradually narrowing from roughly 4–5 mm at apex to 1 mm at tornus; fringes grey. FWV mostly bottle green, slightly lighter than on the upperside, a series of black spots, at wing base, mid cell, cell end, the latter two elongated, a half-moon one in mid cell Cu1-Cu2; two black elongated patches and four spots, two enclosing basally and distally a bottle green patch, and two large, roughly half-moon tornal patches in Cu1-Cu2 and Cu2-1/2A; HWV green with a strong yellow overcast gradually more prominent towards anal margin and tornus, with an elongated basal pinkish patch extending from costal margin to Rs to one-fourth costa, edged with black; two black discal spots, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Male genitalia</italic> (Fig. 9B): Not differing noticeably from the nominotypical, except for a small, sharp apical tip on the valvae.
+                        </p>
+                        <p><bold>Female</bold> (Figs 4A, 4B): Sexual dimorphism slight, recognized from the male by the larger size (FW length: 43 mm, n=3). <italic>Female genitalia</italic> (Fig. 10D): Bursa copulatrix very large, roughly oval; no signa; ductus bursae (0.10 mm) approximately the same width over the whole length, half the length of bursa; antrum, here referred as to colliculum (Razowski 1996), slat like with gently folded edges, strongly sclerotized, one-third the length of ductus bursae, shorter than in other subspecies; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis slat-like; papillae anales three times as long (0.14 mm) as wide in lateral view, compressed in ventral view; apophyse posteriores as long as the width of papillae anales; von Siebold organ prominent (but smaller than in some species of the <italic>E. ceres </italic>group (Pyrcz et al. 2011).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> The known distribution is limited to the Tai National Park in western Ivory Coast. The same pine green colour can be found in <italic>E. sarcoptera styx</italic> (see below) and also in the local population of <italic>E. judith</italic> Weymer, the latter probably deserving a separate subspecific status (Pyrcz et al. in prep.).
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra cyparissa nimbina </bold-italic>
+                            <bold>Pyrcz &amp; Warren-Gash, ssp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_cyparissa_nimbina
+</object-id>
+                        <xref>Figs 1C, 1D, 3C, 3D, 9C, 10C
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Mount Nimba, Guinea
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p><bold> Holotype</bold> ♂: Guinea, Mont Nimba, III.1996, ABRI; Paratypes: (21 ♂ and 9 ♀): 1 ♂: Guinea, Mt. Nimba; 1 ♂: same data; 1 ♀: same data, prep. genit. 09/09.05.2012, J. Lorenc; 1 ♂: Ivory Coast, Mont Nimba, 01.1998, S. Collins <!--PageBreak-->leg., ABRI; 2 ♂: Guinée, Nimba, I.1998; 2 ♂ and 1 ♀: Guinée, Nimba, VI.1998; 1 ♀: Guinée, Nimba, X.1998; 1 ♂ and 1 ♀: Guinée, Labé, Fouta Djalon, X.1998; 1 ♂: Guinea, Sérédou, VI.1999; 5 ♂ and 1 ♀: Guinea, Mont Nimba, VI.2000, HWG; 1 ♂: Guinée, Mont Nimba, 02.V.1998, ex HWG; 1 ♂: same data but VI.2000; 1 ♀: same data; MZUJ; 7 ♂: Guinée, Mt. Nimba, VII.2004, E. Vingerhoedt leg.; 3 ♀: same data, PhO.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis:</bold>
+                        </title>
+                        <p>Upperside black and golden green, similar to <italic>E. sarcoptera ferrea </italic>ssp. n., little difference in shade between basal area and subapical patch, except for its slightly more prominent yellow shade.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 1C, 1D): Head, thorax and abdomen: identical to other subspecies. FWD: (length: 34–42 mm, mean: 38.5 mm, n=16) with an elongated apical part and gently convex outer margin; most of wing surface black; a golden green area from wing base to two-thirds of anal margin, covering lower one-third of discal cell, enclosing a mid discal cell black spot; a large, roughly rectangular golden yellow subapical patch with a greenish overcast along inner and outer margin, extending widely from subcosta to vein Cu1, with sharply defined zigzagging basal limit and somewhat diffused outer limit; fringes grey. HWD oval with a gently scalloped outer margin; uniform golden green, a black marginal area with a dark blue flush, roughly 4–5 mm wide with smooth and sharply defined basal edge (compared to more diffuse and zigzagging in the nominate); fringes grey. FWV mostly golden green, a series of black spots, at wing base, mid cell, cell end, the latter two elongated, a half-moon one in mid cell Cu1-Cu2; two black elongated patches and four spots, two enclosing basally and distally a rich yellow patch, and two large, roughly oval tornal patches in Cu1-Cu2 and Cu2-1/2A. HWV golden green with, with an elongated basal pinkish patch extending from costal margin to Rs to one-fourth costa, edged with black; two black discal spots, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Male genitalia</italic> (Fig. 9C): Does not differ noticeably from the nominotypical, except for a small, sharp apical tip on the valvae.
+                        </p>
+                        <p><bold>Female</bold> (Figs 3C, 3D): Sexual dimorphism slight, recognized from the male by the larger size (43–50 mm, mean: 46 mm, n=5). <italic>Female genitalia</italic> (Fig. 10C): Bursa copulatrix large, oval; no signa; ductus bursae (0.19 mm) narrow, approximately the same width over the whole length, two-thirds the length of bursa; colliculum wide, slat like with folded edges, strongly sclerotized, one-third the length of ductus bursae; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis small, slat-like; papillae anales three times as long (0.14 mm) as wide in lateral view, compressed in ventral view; apophyse posteriores as long as the width of papillae anales; von Siebold organ prominent (but smaller than in some species of the <italic>E. ceres </italic>group (Pyrcz et al. 2011).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> The subspecific epithet of this taxon derives from its type locality, the massif of Mount Nimba (1750 m) on the Ivory Coast – Guinea border.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> The range is apparently disjunct with most specimens coming from the lower slopes of Mont Nimba and the surrounding area, and two collected in the Fouta Djalon range in northern Guinea, the latter record needs confirmation.
+                        </p>
+                        <!--PageBreak-->
+                        
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra cyparissa aurantina </bold-italic>
+                            <bold>Pyrcz &amp; Oremans, ssp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_cyparissa_aurantina
+</object-id>
+                        <xref>Figs 2A, 2B, 3E, 3F, 9D, 10A, 10B
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> N. Awasso, Bibiani, Western Region, Ghana
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p><bold> Holotype</bold> ♂: Ghana, Western, Bibiani, N. Awasso, 250–400 m, 02.IV.2007, MZUJ; Paratypes (127 ♂ and 29 ♀): 7 ♂: Ivory Coast, Abengourou, XI.1993, S. Collins leg., (1 ♂: prep. genit. 03/09.05.2012, J. Lorenc); 1 ♂: Ivory Coast, Abengourou, 13.V.1973 ; 1 ♀: Ivory Coast, Abengourou, 04.XII.1970, J. Kielland leg., prep. genit. 03/09.05.2012, J. Lorenc; 1 ♀: Ivory Coast, Abengourou; 1 ♀: Ivory Coast, Abengourou, S. Collins leg.; 1 ♂: Ivory Coast, Danane, IV.1973, S. Collins leg.; 1 ♀: same data but IV.1977; 1 ♀: same data but IV.1970 (all 3 specimens from « Danane » possibly mislabeled) ; 3 ♂: Ghana, Ankasa, XI.2003, Vorgas/Yevu leg.; 1 ♀: Ghana, Bia, XII.2003, Vorgas/Yevu leg.; 1 ♀: same data, prep. genit. 06/09.05.2012, J. Lorenc; 13 ♂: Ghana, Bia, XII.2003, Vorgas/Yevu leg.; 7 ♂: Ghana, Bia, III.2003; 1 ♀: Ghana, Bibiani, IV.2007, Vorgas/Yevu leg.; 1 ♂: Ghana, Bibiani, IV.2007, SY leg.; 1 ♀: Ghana, Bonkro, XI.2005, Vorgas/Yevu leg.; 5 ♂: Ghana, Cape 3 Points, I.2004, R. Vorgas leg.; 1 ♀: same data but I.2006, 1 ♂: Ghana, Kibi, XII.1996, S. Collins leg.; 1 ♂: Ghana, Kibi, S. Collins leg.; 1 ♂: Ghana, Mate, II.2002, Vorgas/Yevu leg.; 1 ♂: same data but III.2002; 1 ♂: Ghana, Mpasaso, VII.2004, Vorgas/Yevu leg.; 1 ♀: same data but V.2004, prep. genit. 02/09.05.2012, J. Lorenc; 1 ♂: Ghana, Nkwakwa, 04.IX.2000; 1 ♀: Ghana, Nkwakwa, IV.2000, S. Collins leg.; 3 ♂: Ghana, Sagamase, Kibi, X.2010, S. Collins leg.; 3 ♂: same data but XII.2000; 2 ♂: same data but IX.2003; 2 ♂: same data but I.2002; 1 ♂: same data but I.2001; 3 ♂: same data but XII.1997; 1 ♂: same data but IV.2003; 1 ♂: same data but VII.1998; 1 ♀: same data but I.2002; 1 ♀: same data but I.2003; 11 ♂: Ghana, Tano Ofin, III.2002, Vorgas/Yevu leg.; 1 ♂: same data, prep. genit. 01/09.05.2012, J. Lorenc; 13 ♂: same data but I.2004; 3 ♂: same data but II.2002; 1 ♂: same data but X.2009; 1 ♂: same data but IX.2002; 1 ♂: same data but XI.2003; 1 ♂: same data but IX.2001; 1 ♂: same data but III.2001; 4 ♂: same data but II.2001, R. Vorgas leg.; 1 ♂: same data but Vorgas/Yevu leg.; 1 ♂: same data but S. Collins leg.; 1 ♂: same data but XII.2001, S. Collins leg.; 4 ♂: same data but III.2001; 1 ♂: Ghana, Tano Ofin, I.2011; 1 ♀: same data but IV.2011; 2 ♀: same data but III.2002, Vorgas/Yevu leg.; 1 ♀: same data but II.2002; 1 ♀: same data but II.2001, R. Vorgas leg.; all ex coll. ABRI; 2 ♂: Ghana, Kyebi (Kibi) District, Eastern Region, Segyimaase, forestry access road, Atewa Range, 29.III-04.IV.2005, Sáfián, Sz., Csontos, G. and Kormos, B. leg.; 1 ♂: same data but 13–21.X.2007, Sáfián, Sz. leg., SZS; 1 ♀: Ghana, Eastern Region, Asuom Amanfrom, Amanfrom Forest, Kade District, 20–24.III.2005, Sáfián, Sz., Csontos, G. and Kormos, B. leg., SZS; 1 ♂: Ghana, Western, Bibiani, N. Awasso, 250–400 m, 01.IV.2007; 1 ♀: Ghana, Eastern Region, Atewa Forest, Sagymasse trail, 400–500 m, 16–27.X.2008, G. Csontos and Sz. Sáfián leg., MZUJ; 1 ♀: Ivory Coast, Banco, 11.XII.1999, H. Warren-Gash leg.; 1 ♀: Ivory Coast, South-West, Ft de Dassioko, 31.XII.1997, H. Warren-Gash leg.; 1 ♂: Ivory Coast, Foret d’Azagny, <!--PageBreak-->10.III.2001, H. Warren-Gash leg.; 1 ♂: Ivory Coast, Foret d’Azagny, 06.I.2001, H. Warren-Gash leg., HWG; 14 ♂ and 7 ♀: Kibi, Ghana, XII.2012, local collector leg., Ph.O ; 2 ♂ and 1 ♀: same data, MZUJ.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside black and golden green with a yellow subapical patch strongly suffused with green, compared to the slightly suffused patch in <italic>Euphaedra cyparissa aurata</italic>.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 2A, 2B): Head, thorax and abdomen: identical to other subspecies. FWD: (length: 34–38 mm, mean: 37 mm, n=4): with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a yellow green area with a golden sheen from wing base to two-thirds of anal margin, slightly entering discal cell and base of cell Cu1-Cu2; <!--PageBreak-->a large, roughly rectangular yellow subapical patch heavily dusted with green scales, with sharply defined zigzagging basal limit and somewhat diffused outer limit; fringes grey. HWD oval with a gently scalloped outer margin; predominantly golden green, gradually turning bluish green from vein M3 towards tornus and anal margin, with a blackish marginal area with a strong dark blue flush, gradually narrowing from roughly 4–5 mm at apex to 1 mm at tornus, leaving a dark blue submarginal dot in cell Cu1-Cu2; fringes grey. FWV mostly green yellow except for a large rich yellow subapical patch with some greenish overcast in apical part, a series of black spots, at wing base, mid cell, cell end, the latter two elongated, a half-moon one in mid cell Cu1-Cu2; two black elongated patches and four spots, two enclosing basally and distally a mostly rich yellow patch suffused with green yellow in its apical part, and two large, roughly <!--PageBreak-->square tornal patches in Cu1-Cu2 and Cu2-1/2A; HWV mostly rich yellow with an elongated basal pinkish patch extending from costal margin to Rs to one-third costa, edged with black; two black discal spots, and a series of smaller patches forming a gradually shrinking row from mod costa to discal cell end, a row of eight large, mostly rectangular black submarginal patches; marginal area steely blue. <italic>Male genitalia</italic> (Fig. 9D): Not differing noticeably from the nominotypical subspecies.
+                        </p>
+                        <p><bold>Female</bold> (Figs 3E, 3F): Sexual dimorphism slight, recognized from the male by the larger size (FW length: 43 mm, n=3). <italic>Female genitalia</italic> (Figs 10A, 10B): Bursa copulatrix large, oval; no signa; ductus bursae (0.21–0.24 mm) longer than in other <!--PageBreak-->subspecies, narrow, approximately the same width over the whole length, same length as bursa; colliculum slat like with gently folded edges, strongly sclerotized, one-third the length of ductus bursae; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis small, slat-like; papillae anales three times as long (0.9–0.13 mm) as wide in lateral view, compressed in ventral view; apophyse posteriores as long as the width of papillae anales; von Siebold organ prominent (but smaller than in some species of the <italic>E. ceres </italic>group (Pyrcz et al. 2011).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> The epithet of this taxon is an allusion to its resemblance to the next subspecies, <italic>Euphaedra cyparissa aurata</italic>.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> A widely distributed subspecies found in coastal forests in the Ivory Coast and Ghana, and also in inland forests in eastern Ivory Coast and Ghana.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra cyparissa aurata </bold-italic>
+                            <bold>Carpenter, 1895
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_cyparissa_aurata
+</object-id>
+                        <xref>Figs 2C, 2D, 4C, 4D, 9E, 10E
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Euphaedra cyparissa </italic>var. <italic>aurata </italic>Carpenter, 1895: 305.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Euphaedra cyparissa aurata </italic>Hecq, 1999: 4, 5
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Lokoja, Nigeria
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> 1 ♂: Nigeria, Butatong, Calabar, 14.XI.1995, S. Collins leg.; 1 ♀: same data but 14–18.XI.1995; 2 ♂: Nigeria, east, T. Davey leg.; 1 ♀: same data; 1 ♂: Nigeria, Lagos, IX.1957, J. Boorman leg.; 1 ♀: same data but X.1962; 3 ♂: Nigeria, Mamu Forest, IV.1966, S. Collins leg.; 1 ♀: same data; 8 ♂: Nigeria, Obudu, 09–12.XI.1995, S. Collins leg.; 1 ♂: same data, prep. genit. 12/09.05.2012, J. Lorenc; 2 ♀: same data; 1 ♀: same data, prep. genit. 13/09.05.2012, J. Lorenc; 1 ♂: Nigeria, Okrasa, Calabar, S. Collins leg.; 1 ♀: Nigeria, Old Ekuri Calabar, 24–28.XI.1995, S. Collins leg.; 2 ♀: Nigeria, Olokomeji, IX.1957, J. Boorman leg.; 2 ♂: Cameroon, Ebogo, IV.1983, S. Collins leg., prep. genit. 16/09.05.2012, J. Lorenc, ABRI; 3 ♀: Nigeria, Isheri F., XII.1989, II-III.1990, A. A. Knoop Lindeboom leg; 2 ♂: Nigeria, Oban XI.1995, T. B. Larsen leg.; 1 ♂: Nigeria, Anambra F. R., VII.1962, St. Leger leg.; 6 ♂: Nigeria, Isheri F., IV.1988, II.1989, IV.1989, XII.1989, II.1990, A. A. Knoop Lindeboom leg.; 1 ♂: Nigeria, Isheri F., II.1991, D. P. Knoop leg. DK; 2 ♂: Nigeria, Isheri Forest, 29.III.1989, A. Knoop leg.; 3 ♂: same data but 09.V.1990; 1 ♂: same data but 23.I.1990; 1 ♂: same data but 14.II.1990; 1 ♂: same data but 09.IV.1990; 2 ♀: same data but I.1990; 1 ♀: same data but 10.III.1990; 1 ♀: same data but 05.IV.1989; 1 ♀: same data but 18.II.1990; 1 ♂: Nigeria, Olokomeji, 16.V.1988, A. Knoop leg.; 1 ♂: same data but 20.IV.1988; 1 ♀: same data; 1♂: Nigeria, Anambra State, Nsukka, 28.IX.1982, J. Wojtusiak leg.; 1 ♂: same data but 01.II.1983; 2 ♂: no data, MZUJ; 1 ♂: Nigeria, Olokomeji, 13.V.1989, leg. A. Knoop; 1 ♀: same locality, 20.IV.1988, leg. A. Knoop, PhO; 1 ♀: Gabon, Mondah, VIII.1993, leg. G. Faravel, GF.
+                        </p>
+                        <!--PageBreak-->
+                        
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside colour black and mint green with a golden yellow subapical patch, usually with little or no green overcast.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male </bold>(Figs 2C, 2D): Head, thorax and abdomen: identical to other subspecies. FW length 29–41 mm, mean: 36 mm, n=42 (one exceptionally small specimen, 25 mm, was examined). FWD: with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a yellow green area from wing base to two-thirds of anal margin, slightly entering discal cell and base of cell Cu1-Cu2; a large, roughly rectangular rich yellow subapical patch dusted along the edges with yellow green scales, with sharply defined zigzagging basal limit and somewhat diffused outer limit; fringes grey. HWD oval with a gently scalloped outer margin; predominantly steely bluish with some green yellow scaling in discal cell and in cells M1-M2 and M2-M3, with a blackish marginal area with a strong dark blue flush, gradually narrowing from roughly 4–5 mm at apex to 1 mm at tornus, leaving a dark blue submarginal dot in cell Cu1-Cu2; fringes grey. FWV mostly green yellow except for a large rich yellow subapical patch with some greenish overcast in apical part, a series of black spots, at wing base, mid cell, cell end, the latter two elongated, a half-moon one in mid cell Cu1-Cu2; two black elongated patches and four spots, two enclosing basally and distally a mostly rich yellow patch suffused with green yellow in its apical part, and two large, roughly square tornal patches in Cu1-Cu2 and Cu2-1/2A; HWV mostly rich yellow with an elongated basal pinkish patch extending from costal margin to Rs to one-third costa, edged with black; two black discal spots, and a series of smaller patches forming a gradually shrinking row from mod costa to discal cell end, a row of eight large, mostly rectangular black submarginal patches; marginal area steely blue. <italic>Male genitalia</italic> (Fig. 9E): Not differing noticeably from the nominotypical except for a small, sharp apical tip on the valvae.
+                        </p>
+                        <p><bold>Female</bold> (Figs 4C, 4D): FW length: 40–48 mm. Sexual dimorphism slight, recognized from the male by the larger size (FW length: 39–47mm, mean: 44mm, n=16). <italic>Female genitalia</italic> (Fig. 10E) Bursa copulatrix large, rounded; no signa; ductus bursae (0.16 mm) narrow, approximately the same width over the whole length, two-thirds the length of bursa; colliculum slat like with gently folded edges, strongly sclerotized, half the length of ductus bursae; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis small, slat-like; papillae anales three times as long (0.11 mm) as wide in lateral view, compressed in ventral view; apophyse posteriores as long as the width of papillae anales; von Siebold organ prominent (but smaller than in some species of the <italic>E. ceres </italic>group (Pyrcz et al. 2011).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> Found in the rain forests throughout southern Nigeria, western Cameroon and Gabon. An individual (a female) collected by Faravel in Mondah, Gabon, is tentatively associated with this subspecies although it is lighter orange on the FW and HWD, and is therefore similar to <italic>E. cyparissa nimbina </italic>and also to <italic>E. sarcoptera nipponicorum</italic>, with which it was confused by Vande Weghe (2010). More sampling from southern Cameroon and Gabon is needed to evaluate the subspecific status of this population.
+                        </p>
+                        <!--PageBreak-->
+                        
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra cyparissa nominalina </bold-italic>
+                            <bold>Pyrcz &amp; Knoop, ssp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_cyparissa_nominalina
+</object-id>
+                        <xref>Figs 2E, 2F, 4E, 4F, 9F, 10F
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Euphaedra cyparissa </italic>[Cramer], Vande Weghe, 2010: 115, fig. 15 (male, dorsum), 304–305.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Mongoumba, Central African Republic
+</p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> <bold>Holotype</bold> ♂: Central African Republic, Mongoumba, VII.1969, ABRI; Paratypes (5 ♂ and 4 ♀): 1 ♂: Central African Republic, Bangui, VIII.2000, S. Collins, prep. genit. 14/09.05.2012, J. Lorenc; 1 ♂: Central African Republic, near Bangui, 12.II.1969, J. Kielland leg.; 2 ♂: Central African Republic, Bomoloto, R. Loanye, VII.1985, S. Collins leg.; 1 ♀: Central African Republic, Mongoumba, 19.VII.1969, S. Collins leg.; 1 ♀: same data prep. genit. 15/09.05.2012, J. Lorenc; 1 ♀: Central African Republic, no locality, ABRI; 1 ♀: Off Shore Nigeria, Platform Borgen Dolphin, 4<sup>o</sup>18<sup>’</sup>98<sup>”</sup>35 N, 8<sup>o</sup>22<sup>’</sup>00<sup>”</sup>32 E, VIII. 2005, ex coll. P. Kowalski, MZUJ; 1 ♂: Cameroon, SE, Moloundou, 500 m, 25.VII.1989, E. Joly leg., PhO.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside colour black and olive drab, same as in the nominate <italic>E. cyparissa</italic>, compared to golden green in <italic>E. cyparissa aurata </italic>and <italic>E. cyparissa aurantina</italic>, or pine green in <italic>E. cyparissa tai</italic>; differing from the widely separated geographically nominate <italic>E. cyparissa </italic>only in the slightly wider FWD subapical patch towards costal margin.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 2E, 2F): Head, thorax and abdomen: identical to other subspecies. FWD: (length 32–36 mm, mean: 34.9 mm, n=6) with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a rich green area from wing base to three-fourths of anal margin, entering discal cell along lower part from base to root of vein Cu1, enclosing a black mid cell spot; a large, roughly rectangular bottle green subapical patch with a bluish sheen, extending widely along costa, with sharply defined zigzagging basal limit, without any notable incision along vein M3, and a diffused outer limit; fringes grey. HWD oval with a gently scalloped outer margin; rich green, gradually turning bluish green from vein M3 towards tornus and anal margin gradually narrowing from roughly 4–5 mm at apex to 2 mm at tornus; fringes grey. FWV mostly bottle green, slightly lighter than on the FWD subapical patch, a series of black spots, at wing base, mid cell, cell end, the latter two elongated, extending across cells M3-Cu1 and Cu1-Cu2; a row of seven, roughly oval submarginal patches, two tornal patches in Cu1-Cu2 and Cu2-1/2A twice as big as the remainder. HWV golden green, with an elongated basal pinkish patch extending from costal margin to Rs to one-fourth costa, edged with black; two black discal spots, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Male genitalia</italic> (Fig. 9F): Not differing noticeably from the nominotypical.
+                        </p>
+                        <p><bold>Female</bold> (Figs 4E, 4F): Sexual dimorphism slight, recognized from the male by the larger size (FW length 50 mm, n=1). <italic>Female genitalia</italic> (Fig. 10F): Bursa copulatrix large, rounded; no signa; ductus bursae (0.22 mm) narrow, approximately the same width over the whole length, two-thirds the length of bursa; colliculum slat like with <!--PageBreak-->gently folded edges, strongly sclerotized, half the length of ductus bursae; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis small, slat-like; papillae anales three times as long (0.12 mm) as wide in lateral view, compressed in ventral view; apophyse posteriores slightly longer than the width of papillae anales; von Siebold organ prominent (but smaller than in some species of the <italic>E. ceres </italic>group (Pyrcz et al. 2011).
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> The epithet of this taxon is an allusion to its resemblance to the nominotypical subspecies.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> On present knowledge, the range of this subspecies is limited to the CAR and eastern Cameroon, though its distribution pattern indicates it also occurs in adjacent areas of the DRC. The individual collected on an offshore platform in the Gulf of Guinea is an extraordinary finding. It is also a proof that <italic>E. cyparissa</italic> is prone to long distance dispersal. Other butterfly species collected on the same platform were typical dispersalists, including <italic>Danaus, Acraea </italic>and <italic>Melanitis</italic>. It is nonetheless surprising to find in that area an individual which clearly matches the phenotype of <italic>E. cyparissa nominalina</italic>,whereas the distribution pattern would rather suggest the presence of the subspecies <italic>E. cyparissa aurata </italic>along the Atlantic coast of Cameroon.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra sarcoptera sarcoptera </bold-italic>
+                            <bold>(Butler, 1871)
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_sarcoptera_sarcoptera
+</object-id>
+                        <xref>Figs 5A, 5B, 7A, 7B, 11A
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Romaleosoma sarcoptera </italic>Butler, 1871: 81, pl. 31, fig. 2.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Euphaedra sarcoptera </italic>(Butler); Aurivillius, 1925: 186.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Ghana “Gold Coast”
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p>1 ♂: Western Ghana, Bibiani, N. Awaso, 250–400 m, 09.IV.2007, ABRI; 1 ♂: same data, prep. genit. 04/20.06.2012, J. Lorenc; 1 ♀: Nsukka, Anambra State, Nigeria, 04.XII.1982, leg. J. Wojtusiak, prep. genit. 02/20.06.2012, J. Lorenc; 1 ♀: Banco N. P., Ivory Coast, 18.IX.1999, H. Warren-Gash leg., prep. genit. 05/20.06.2012, J. Lorenc, MZUJ; 1 ♂: Ghana, Oda Big Tree, XII.2010, Sáfián, Sz. leg., SZS; 1 ♂: Ghana, Eastern Region, Asuom Amanfrom, Amanfrom Forest, Kade District, 20–24.III.2005, Sáfián, Sz., Csontos, G. and Kormos, B. leg., SZS; 1 ♂: Ivory Coast, Alepe-Yaya, 06.II.1999, H. Warren-Gash leg.; 1 ♂: Ivory Coast, Alepe-Yaya, 12.XII.1999, H. Warren-Gash leg. 1 ♂: Ivory Coast, Lamto, 05.XI.2000, H. Warren-Gash leg.; 2 ♂ and 2 ♀: Ivory Coast, Alepe, 21.I.2000, H. Warren-Gash leg.; 1 ♀: Ivory Coast, Alepe, 07.I.2001, H. Warren-Gash leg., HWG; 1 ♂ and 1 ♀: Ivory Coast, Teapleu, V.1977; 10 ♂ and 3 ♀: Guinée, Guinée forestière, Province de Yomou, Forêt classée de Diecke, VI.2003, Eric Vingerhoedt leg.; 1 ♂: Cameroon, Douala, IX.1996, leg. P. Prouvost; 1 ♂: Cameroon, no exact locality, II.1997, E. Vingerhoedt, 1 ♂: Cameroon, Ebogo, I.1994, T. Garnier leg., PhO; 40 ♂ and 28 ♀: Ghana; 2 ♂ and 2 ♀: Ivory Coast; 1 ♂: S. Nigeria, Ewohimi, 29.XI.55, J. Boorman; <!--PageBreak-->1 ♂: no label; 2 ♂: Cameroon, Ebogo, Mbalmayo, X.2001; 1 ♂: Cameroon, Ebogo, II.1994, S. Collins leg., ABRI; 1 ♂: Ghana, Kibi Atewa Mts., II.2007., J. Boersma; 1 male ♂ : Nigeria, Ewohimi, I.1955, J. St. Leger leg., DK ; 2 ♂: Nigeria, Sapoba, III,1967, J. Riley leg., ex Cornes and Riley coll., DK; 2 ♂ and 2 ♀: Liberia, Mount Swa, Sz. Sáfián leg, MZUJ; 1 ♂: same data, ABRI; 1 ♂: same data, SSS.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside ground colour predominantly golden green, with the exception of the light yellow subapical patch.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 5A, 5B): Head: eyes lustrous, golden brown, naked; vertex black with a tuft of short, black hair with a bluish sheen; labial palps covered with dense, short, bright yellow hairy scales; antennae half the length of costa, slender, gradually widening into a flattened club, in its widest part only twice as wide as shaft, <!--PageBreak-->dorsally and ventrally all black, covered with sparse white and black sales along most of its length except for terminal segments. Thorax: black, dorsally sparsely covered with black and brown hair, denser laterally, with some violet blue scales on patagium and mesoscutum; tegulae covered with black hair; some longer and denser black hair on metascutum; legs femora, tibiae and tarsi with black scales. Abdomen: totally covered with dense, black scales, ventrally with some grey scales. Wings (FW length: 35–39 mm, mean: 37 mm, n=8) with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a golden green area from wing base to two-thirds of anal margin, covering lower half of discal cell; a prominent mid discal cell black round spot; a large, elongated light yellow subapical patch suffused with green, extending widely from subcosta costa to vein Cu1, with a nearly straight basal limit marked by an incision along vein M3, and a diffused outer limit; fringes grey and black. HWD oval with a gently scalloped outer margin; rich golden green, with a diffuse golden postdiscal patch and a strong shiny blue overcast in outer one-third from vein Cu2 to anal margin; submarginal and marginal area black with a strong blue sheen gradually narrowing from roughly 4 mm at apex towards tornus and transforming into rectangular patches, the last of which in Cu2-1-2A detached; fringes grey and black. FWV golden green, slightly lighter than on the FWD; basal to mi-cell area purple; a series of black patches, a rounded postbasal spot, a wide mid cell bar, a similar bar along discal cell distal margin, a series of half-moon shaped patches along basal limit of a diffused subapical light yellow patch, a large half-moon shaped patch in mid cell Cu1-Cu2, and a series of submarginal patches, five smaller from costa to cell M3-Cu1 and two larger, oval, in Cu1-Cu2 and Cu2-1-2A. HWV golden yellow, with an elongated basal purple patch extending from costal margin to Rs to one-fourth costa, edged with black; six black median spots, four of which in discal cell, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Male genitalia </italic>(Fig. 11A): Tegumen same length as uncus, slightly arched; uncus stout, tip slightly curved downwards; gnathos long, same length as uncus; pedunculus prominent; saccus flattened in lateral view; valvae with a smooth dorsal surface and blunt apex; aedeagus as long as valvae, tubular and straight, with a sharp distal extremity and prominent cornuti.
+                        </p>
+                        <p><bold>Female</bold> (Figs7A, 7B): Sexual dimorphism slight except for the larger size of the female (FW length: 41–45 mm, mean: 43 mm, n=5) and duller dorsal colours. <italic>Female genitalia</italic>: not examined.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> The nominate subspecies is widely distributed from central Liberia across Ivory Coast, Ghana and Nigeria and into Cameroon and northern Gabon, in both in perhumid coastal forests and drier forests in the interior. It is phenotypically quite stable throughout with the notable exception of the Mount Swa population in Liberia where all green individuals were detected flying alongside typically patterned ones. Such an individual variation may be explained by phenotype selection to a heterogenous environment of patchy rain forest and savanna. Nevertheless, it remains to be confirmed that the green and typical morphs are indeed syntopic and we cannot exclude the possibility that the green morph represents a separate parapatric subspecies.
+                        </p>
+                        <!--PageBreak-->
+                        
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra sarcoptera styx </bold-italic>
+                            <bold>Larsen &amp; Warren-Gash, 2003
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_sarcoptera_styx
+</object-id>
+                        <xref>Figs 5E, 5F, 6E, 6F, 7E, 7F, 11C
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Euphaedra sarcoptera styx </italic>Larsen &amp; Warren-Gash, 2003: 97.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Tai Forest, Ivory Coast
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> 1 ♂: Ivory Coast, Tai, 12.I.1999, H. Warren-Gash leg.; 3 ♂: Ivory Coast, Tai, 02.I.2000, H. Warren-Gash leg.; 1 ♂: Ivory Coast, Tai, XII.1998, K. Adams leg.; 1 ♀: Ivory Coast, Tai, 01–10.IV.2001, H. Warren-Gash leg., HWG; 1 ♂: Ivory Coast, Moyen Cavally, Tai Forest, IV.2001, prep. genit. 03/09.11.2012, J. Lorenc, HWG; 1 ♂: same data but 02.I.2000, MZUJ; 1 ♂: Tai, Ivory Coast, 13–14.VIII.2001, S. Collins; 1 ♂: same data but 13.IX.2001; 1 ♂: same data but 13–14.V.2000 (paratype <italic>E. sarcoptera styx</italic>); 1 ♂: Tai Forest, H. Warren-Gash leg., 12.1.1999 (paratype <italic>E. sarcoptera styx</italic>); 1 ♂: Tai Ivory Coast, 13–14.V.2000, S. Collins <italic>leg</italic>.; 1 ♀: same data but 13–14.VIII.2001, S. Collins leg., ABRI.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside ground colour black and pine green.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 5E, 5F, 6E, 6F): Head, thorax and abdomen same to the nominate subspecies. Wings: FW (length 36–39 mm, mean: 37.8 mm, n=6) with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue, suffusing a black mid-discal cell black patch; pine green area from wing base to tornus, covering most of Cu2-1A and half of Cu1-Cu2; a large, elongated lawn green subapical patch, extending widely from subcosta costa to vein Cu1, with the basal limit marked by an incision along vein M3, and a diffused outer limit, not reaching outer margin; fringes grey and black. HWD oval with a gently scalloped outer margin; pine green grey except for the row of submarginal black, roughly rectangular patches, with a strong blue sheen gradually narrowing from roughly 4 mm at apex to cell Cu1-Cu2; fringes grey and black. FWV pine green, with a delicate golden overcast in subapical area; basal to mid-cell area pink; a series of black patches, a rounded postbasal spot, a wide mid cell bar, a similar bar along discal cell distal margin, four rectangular and one elongated patches in postdiscal area, a half-moon shaped patch in basal area of cell Cu1-Cu2, and a series of submarginal patches, five smaller from costa to cell M3-Cu1 and two larger, roughly oval, in Cu1-Cu2 and Cu2-1-2A. HWV golden yellow dusted with pine green in median area, with an elongated basal pink patch extending from costal margin to Rs to one-third costa, edged with black; six or seven median spots, four of which in discal cell, the one along costal margin considerably larger than the remainder, and a row of eight large, roughly oval black submarginal patches; marginal area darker pine green and black. <italic>Male genitalia</italic> (Fig. 11C): Tegumen same length as uncus, with a flat dorsal surface; uncus stout, aligned with the dorsal surface of shoulder, tip sharp, both tegumen and uncus longer than in the nominate subspecies; gnathos long, same length as uncus; pedunculus prominent; saccus flattened in lateral view; valvae with a smooth dorsal surface and blunt apex; <!--PageBreak-->aedeagus as long as valvae tubular and straight, with a sharp distal extremity, slightly longer than in the nominate subspecies, and prominent cornuti.
+                        </p>
+                        <p><bold>Female</bold> (Figs 7E, 7F): Sexual dimorphism slight except for the larger size of the female (FW length: 40–41 mm, mean: 40.5 mm, n=2). <italic>Female genitalia</italic>: not examined.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> Known distribution is limited to the Tai National Park in western Ivory Coast.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra sarcoptera ferrea </bold-italic>
+                            <bold>Pyrcz &amp; Warren-Gash, ssp. n.
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_sarcoptera_ferrea
+</object-id>
+                        <xref>Figs 5C, 5D, 7C, 7D, 11E, 12B
+</xref>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Mount Nimba, Guinea
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p><bold> Holotype</bold> ♂: Guinée (Guinea), Mont Nimba, VI.1998, ex HWG, MZUJ; Paratypes (7 ♂and 4 ♀): 5 ♂and 1 ♀: Guinée, Mont Nimba, VI.1998; 1 ♀: same data but VI.2000, HWG; 2 ♂: same data but 02.V.1998, ex HWG; 1 ♀: same data but 02.V.1998, ex HWG, prep. genit. 01/09.11.2012, J. Lorenc, 1 ♀: Ivory Coast, Azagny N. P., 13.VIII, 1999 (mislabeled), H. Warren-Gash leg., MZUJ.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside ground colour golden yellow, same as in <italic>E. sarcoptera</italic> <italic>nipponicorum</italic>, differing from the golden green of the nominate subspecies, pine green of <italic>E. sarcoptera styx </italic>or apple green of <italic>E. sarcoptera cyparissoides</italic>, differing from <italic>E. sarcoptera nipponicorum</italic>, widely separated geographically,only in the narrower FWD subcapical elongated golden yellow patch.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Description.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 5C, 5D): Head, thorax and abdomen same as in the nominate subspecies. FW (length 38–40 mm, mean: 39 mm, n=6) with an elongated apical part, and gently convex outer margin; most of wing surface black, suffused with blue except for outer margin and apex, a black mid-discal cell black patch; golden green area from wing base to four-fifths of anal margin, covering most of discal cell; a large, elongated golden green subapical patch, extending from subcosta costa to vein Cu1, with the basal limit marked by an incision along vein M3, and a diffused outer edge, not reaching outer margin; fringes grey and black. HWD oval, compressed towards tornus, with a gently scalloped outer margin; golden green grey except for a black submarginal and marginal area, gradually narrowing from roughly 4 mm at apex towards tornus, where suffused with greenish blue scales; fringes grey and black. FWV pine green, lustrous, with a yellow overcast, except for the marginal area, more prominent in subapical area where forming a diffused elongated patch; basal to mid-cell area pink; a mid-cell bar, and a similar one along discal cell distal margin; four black, half-moon shaped patches along basally to the subapical yellow area, an elongated patch in mid cell Cu1-Cu2, and a series of submarginal patches, five smaller from costa to cell M3-Cu1 and two larger, oval, in Cu1-Cu2 and Cu2-1-2A. HWV golden yellow dusted with pine green along costa, with an elongated basal pink patch extending from costal margin to Rs to one-third costa, edged with black; six or seven median spots, four of which in discal cell, the one along costal margin considerably larger than the remainder; a row of eight large, roughly oval black submarginal patches; marginal area <!--PageBreak-->pine green and black. <italic>Male genitalia</italic> (Fig. 11E): Tegumen same length as uncus, with a flat dorsal surface; uncus stout, slightly arched, with a sharp tip pointing downwards, tegument and uncus approximately the same length as in the nominate subspecies; gnathos long, same length as uncus; pedunculus prominent; saccus flattened in lateral view; valvae with a smooth dorsal surface with an elongated distal extremity ending with a sharp tip, differing in this respect from the blunt valvae of the nominate subspecies and <italic>styx</italic>; aedeagus as long as valvae tubular and straight, with a sharp distal extremity, sensibly longer than in the nominate subspecies or <italic>styx</italic>, and prominent cornuti.
+                        </p>
+                        <p><bold>Female</bold> (Figs 7C, 7D): Head, thorax and abdomen abdomen same as in the nominotypical subspecies. Wings: FW (length 42-46 mm, n=3) with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to <!--PageBreak-->apex dusted with dark blue; a golden yellow area from wing base to two-thirds of anal margin, covering lower half of discal cell; a prominent mid discal cell black round spot; a large, elongated golden yellow subapical patch, extending widely from subcosta costa to vein Cu1, with an irregular basal limit marked by an incision along vein M3, and a diffused outer limit, not reaching outer margin; fringes grey and black. HWD subtriangular with a gently scalloped outer margin; golden yellow, from Rs to costal margin dull brown; submarginal and marginal area black with a strong blue sheen, gradually narrowing from costa, where some 4 mm wide, to tornus, where blue takes over black; fringes grey and black. FWV green yellow, except for basal one-third where free of green and in subapical area where forming a large, diffuse patch; basal to median area purple; a series of black patches, a small rounded postbasal spot, a wide mid cell bar, a similar bar along discal cell distal margin, four patches along basal limit of a dif<!--PageBreak-->fused subapical light yellow area, two outer triangular, two central rectangular, a large irregularly shaped patch in mid cell Cu1-Cu2, and a series of submarginal patches, five smaller from costa to cell M3-Cu1 and two larger, one rounded and one oval, in Cu1-Cu2 and Cu2-1-2A. HWV golden yellow, with an elongated basal purple patch extending from costal margin to Rs to one-fourth costa, edged with black; six black median spots, three of which in discal cell, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Female genitalia</italic> (Fig. 12B): Bursa copulatrix very large, larger than the rest of genital body, oval, no signa; ductus bursae narrow, gradually widening towards the opening of bursa, one-third the length of bursa; colliculum narrow, slat like with folded edges, , one-third the length of ductus bursae; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis very small, slat-like; papillae anales three times as long as wide in lateral view, compressed in ventral view, apophyse posteriores one and half as long as the width of papillae anales; von Siebold organ prominent.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Etymology.</bold>
+                        </title>
+                        <p> The subspecific epithet of this taxon derives from iron in Latin, <italic>ferrum</italic>. The type locality, the massif of Mount Nimba on the Ivory Coast – Guinea border, is rich in iron ore. Iron ore mining is a serious threat for the unique ecosystem of this mountainous area of West Africa.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> Distribution limited to the Mount Nimba area. Considered that southern Ivory Coast was extensively sampled for several years, also by one of the authors (HWG), we believe that one paratype was labeled as from “Azagny” by error.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra sarcoptera cyparissoides </bold-italic>
+                            <bold>Hecq, 1979
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_sarcoptera_cyparissoides
+</object-id>
+                        <xref>Figs 6A, 6B
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Euphaedra sarcoptera cyparissoïdes </italic>[sic] Hecq, 1979: 31.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Ketta Forest, Ouesso, Moyen Congo
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p> <bold>Holotype</bold> ♂: Ketta Forest (Ouesso), A.E.F. Moyen Congo, T. H. E. Jackon, VII.1959; 2 ♂: same data as the holotype, MRAC; 1 ♂: S Cameroon, Mintom, II.2009, P. A., ABRI.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside ground colour black and apple green.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 6A, 6B): Head, thorax and abdomen same as in the nominate subspecies. Wings: FW (length 38–39 mm, n=2) with an elongated apical part, and gently convex outer margin; most of wing surface black almost completely outcasting a black mid-discal cell black patch; apple green area from wing base to three-fourth of anal margin, marginally entering the base of Cu2-1A and discal cell; a large, elongated apple green subapical patch a shade lighter, extending widely from subcosta costa to vein Cu1, with the basal limit marked by an incision along vein M3, and a diffused outer limit, not reaching outer margin; fringes grey and black. HWD oval, compressed towards tornus, with a gently scalloped outer margin; apple green <!--PageBreak-->grey except for the grey costal and black submarginal area gradually narrowing from roughly 4 mm at apex to cell Cu1-Cu2; fringes grey and black. FWV apple green, with a golden overcast in subapical area where forming a diffused patch; basal to mid-cell area pink; a series of black patches, a rounded postbasal spot, a wide mid cell bar, a similar bar along discal cell distal margin, four rectangular and one elongated patch in postdiscal area, a streak in basal area of cell Cu1-Cu2, and a series of submarginal patches, five smaller from costa to cell M3-Cu1 and two larger, roughly oval, in Cu1-Cu2 and Cu2-1-2A. HWV golden yellow dusted with apple green in median area, with an elongated basal pink patch extending from costal margin to Rs to one-third costa, edged with black; six or seven median spots, four of which in discal cell, the one along costal margin considerably larger than the remainder, and a row of eight large, <!--PageBreak--><!--PageBreak--><!--PageBreak-->roughly oval black submarginal patches; marginal area dark green and black. <italic>Male genitalia:</italic> not examined.
+                        </p>
+                        <p><bold>Female</bold>: Not examined
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> This subspecies was described from Ouesso in Congo, and apart from the holotype there are only a couple of other specimens known. Hecq (1979) mentions it from RCD and Cameroon. We could confirm its presence in SE Cameroon based on a specimen in ABRI. The reports from RDC might well refer to the next subspecies.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+                <tp:taxon-treatment>
+                    <tp:nomenclature>
+                        <tp:taxon-name>
+                            <bold-italic>Euphaedra sarcoptera nipponicorum </bold-italic>
+                            <bold>(Carcasson), 1965
+</bold>
+                        </tp:taxon-name>
+                        <object-id xlink:type="simple">http://species-id.net/wiki/Euphaedra_sarcoptera_nipponicorum
+</object-id>
+                        <xref>Figs 6C, 6D, 8A–F, 11B, 11D, 11F, 12A, 12C
+                        </xref>
+                        <tp:nomenclature-citation-list>
+                            <tp:nomenclature-citation><italic>Najas sarcoptera nipponicorum </italic>Carcasson, 1965: 132, fig. 4.
+                            </tp:nomenclature-citation>
+                            <tp:nomenclature-citation><italic>Euphaedra sarcoptera nipponicorum </italic>(Carcasson); Ackery et al. 1995: 414.
+                            </tp:nomenclature-citation>
+                        </tp:nomenclature-citation-list>
+                    </tp:nomenclature>
+                    <tp:treatment-sec>
+                        <title><bold>Type-locality.</bold>
+                        </title>
+                        <p> Ititye Camp, Mihuno, 25 miles east of Kigoma, Western Province, Tanzania.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Material examined.</bold>
+                        </title>
+                        <p>3 ♀: Kasye Forest, Kigoma, Tanzania, III.1990, leg. local dealer, ex coll. P. Boyer, MZUJ; 3 ♂: R.C.A., Bangui, C.A.R., VIII.2000, S. Collins leg.; 1 ♂: R.C.A., Bangui, IX.2000, S. Collins leg., 2 ♂ and 1 ♀: R.C.A., Bangui, IV.2004, S. Collins leg.; 1 ♂: R.C.A., Bomoloto, R. Longamp, VII.1985, S. Collins leg.; 2 ♀: R.C.A., Bangui, VIII.2000, S. Collins leg.; 1 ♀: R.C.A., I.2004, S. Collins leg.; 2 ♂: R.D.C. (NW), Lukolela, Congo River, V.2012; 11 ♂ and 10 ♀: Tanzania, ABRI; 1 ♂: Congo, Province de l’Equateur, Mbandaka, 12.II.1998, prep. genit. 01/04.12.2012, J. Lorenc; 1 ♂: same data, prep. genit. 05/04.1.2012, J. Lorenc; 1 ♀: same data but XII.1997, prep. genit. 08/04.12.2012, J. Lorenc; 1 ♂: Congo, Province de l’Equateur, Environ de Mbandaka – Kuluboku, 27.IV.1995, prep. genit. 06/04.1.2012, J. Lorenc; 1 ♀: same data but 15.XI.1995, prep. genit. 07/04.12.2012, J. Lorenc; 1 ♂: Congo, Province de l’Equateur, Lukolela, 26.X.1993, prep. genit. 03/04.12.2012, J. Lorenc; 1 ♂: same data but 27.X.1993, prep. genit. 04/04.12.2012, J. Lorenc; 1 ♂: same data but XI.1993, PhO; 1 ♂: Sandoa, Katanga, R.D.C., Sandoa, 16.I .1991; 1 ♂: same data but 30.X.1920; 1 ♂: Kafakumba, Katanga, R.D.C., VII.1939; F.G. Overlaet leg.; 2 ♂: same data but II.1939; 1 ♂: same data but IX.1933; 1 ♂: Kinda, Katanga, R.D.C., 31.III.1916; 1 ♂: same data but 31.VIII.1916; 1 ♂: Montamba, 24.V.1916; 1 ♂: Kondué, East Kasai, R.D.C., no date, E. Luja leg.; 1 ♂: Tshilolo, Sankuru, East Kasai, 10.III.1951, Dr. Vallard leg.; 1 ♀: Kafakumba, Katanga, R.D.C., II.1939, F. G. Overlaet leg.; 1 ♀: same data but III.1939; 1 ♀: same data but IV.1939; 1 ♀: same data but IX.1933; 1 ♀: Kinda, 27.II.1916, F. G. Overlaet leg., MRAC.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Diagnosis.</bold>
+                        </title>
+                        <p> Upperside ground colour golden yellow, same as in <italic>ferrea</italic>.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Redescription.</bold>
+                        </title>
+                        <p><bold> Male</bold> (Figs 6C, 6D): Head, thorax and abdomen same as in of the nominate subspecies. Wings: FW (length: 37–43 mm, mean: 40,3 mm, n=18) with an elongated apical part, and gently convex outer margin; most of wing surface black; costa from base to apex dusted with dark blue; a golden yellow area with a light green <!--PageBreak--><!--PageBreak-->suffusion from wing base to two-thirds of anal margin, covering lower half of discal cell; black postbasal and mid discal cell black round spots connected to black costal area; a large, elongated golden yellow subapical patch, extending from subcosta costa, progressively widening to space M2-M3, then narrowing and reaching to vein Cu1, with an irregular basal limit marked by an incision along vein M3, and a diffused outer limit, not reaching outer margin; fringes grey and black. HWD subtriangular with a gently scalloped outer margin; golden yellow, from Rs to costal margin dull brown; submarginal and marginal area black with a strong blue sheen, gradually narrowing from costa, where some 4 mm wide, to tornus, where greenish-blue takes over black and leaves one black spot in Cu1-Cu2 free; fringes grey and black. FWV green yellow, except for diffuse are in mid cell Cu2-1A-2A where free of green and in subapical area where forming a large patch shaped as on the upperside; basal to median area purple; a series of black patches, a rounded postbasal spot, a wide mid cell bar, a similar bar along discal cell distal margin, a series of four, moon-shaped patches along basal limit of a diffused subapical light yellow area, a large moon-shaped patch in mid cell Cu1-Cu2 coupled with a minute spot in Cu2-1A-2A, and a series of submarginal patches, five small from costa to cell M3-Cu1 and two large, roughly oval, in Cu1-Cu2 and Cu2-1A-2A. HWV golden yellow, with an elongated basal purple patch extending from costal margin to Rs to one-fourth costa, edged with black; six to seven black median spots, three or four of which in discal cell, and a row of eight large, roughly oval black submarginal patches; marginal area darker bottle green and black. <italic>Male genitalia:</italic> (Figs 11B, 11D, 11F) Tegumen same length as uncus, with a dome-like dorsal surface; uncus stout, more so than in other subspecies, slightly arched, with a sharp tip pointing downwards; gnathos long, same length as uncus; pedunculus prominent; saccus flattened in lateral view; valvae with a smooth dorsal surface with a blunt distal extremity ending with a small tip; aedeagus as long as valvae tubular and straight, with a sharp distal extremity, longer than in the nominate subspecies or <italic>styx</italic>, approaching the length of <italic>nimbta, </italic>and prominent cornuti.
+                        </p>
+                        <p><bold>Female</bold> (Figs 8A–F): Sexual dimorphism slight except for the larger size of the female (FW length: 40–51 mm, mean: 47,5 mm, n=10). <italic>Female genitalia</italic> (Figs 12A, 12C): Bursa copulatrix very large, larger than the rest of genital body, oval, no signa; ductus bursae wide, of same width throughout, one-third the length of bursa; colliculum short and weakly sclerotized; ductus seminalis joins the colliculum at the entrance of ductus bursae; lamella postvaginalis very small, slat-like; papillae anales three times as long as wide in lateral view, compressed in ventral view, apophyse posteriores one and half as long as the width of papillae anales; von Siebold organ prominent.
+                        </p>
+                    </tp:treatment-sec>
+                    <tp:treatment-sec>
+                        <title><bold>Range.</bold>
+                        </title>
+                        <p> This subspecies was described from the now largely destroyed Kasye forest in western Tanzania. It is however widely distributed across the Congo Basin south to Katanga (Shaba). The individuals coming from the area of Mbandaka in the western part of the Congo Basin are attributable to this subspecies. They present however an unusual, apparently individual variation in the ground colour of the upperside, ranging from orange-yellow, through typically golden yellow to yellow with a strong green overcast. Such an apparent individual variation, quite common in some species <!--PageBreak--><!--PageBreak--><!--PageBreak-->of <italic>Euphaedra sensu lato</italic>, has been also observed in the Mount Swa population of <italic>E. sarcoptera</italic>. We refrain from further actions until more thorough sampling in the western Congo Basin confirms the differently patterned individuals are either syntopic or represent parapatric subspecies.
+                        </p>
+                    </tp:treatment-sec>
+                </tp:taxon-treatment>
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <sec>
+                <title><bold>Distribution and ecology
+</bold>
+                </title>
+                <p>In terms of geographical range, the two species are largely sympatric, though, as noted above, <italic>E. sarcoptera</italic> stretches further south and east, into the Congo basin and the eastern shores of Lake Tanganyika. The six subspecies of <italic>E. cyparissa</italic> and the four of <italic>E. sarcoptera</italic> are discrete, in the sense of no overlap, and morphologically clearly distinct. Examination of the genitalia makes it clear that only two species are involved.
+                </p>
+                <p>The apparent gaps in the range of <italic>E. cyparissa </italic>are puzzling. This is particularly striking in Nigeria where there are (or there were, since most of the western forests have now been logged down) strong populations in Yorubaland. There are however no records from the localities situated further south and east on the western bank of the river Niger. This is despite long-term and intensive collecting in the Okomu forest (Edo) by Wojtusiak, Knoop, Larsen and other researchers, or in Ajebandele (Ondo) by Pyrcz. East of the river Niger the pattern is equally unusual. Only one specimen was collected by Wojtusiak in Nsukka during five years of sampling. Larsen, however, collected several in the Oban Hills. Specimens are known from the Obudu range, and the riverine forests near Calabar. In Ghana and Ivory Coast the species seems to be widespread but local, distributed from Danané in north-western Ivory Coast to the Atewa Range in the Eastern Region of Ghana (Larsen 2006a; Larsen et al. 2007). Larsen (2005, 2006b) reports <italic>E. cyparissa </italic>from the Volta region but only as older records, probably from the collection of Father Theodor Maessen and we have not seen any specimens collected recently which would confirm its presence in the mountains on the border of Ghana and Togo. It is uncommon in eastern Sierra Leone and it has only recently been found in Liberia (Mount Swa), where it seems to be strongly localized. In its eastern range, <italic>E. cyparissa</italic> appears to be extremely scarce and local. In Cameroon, records are limited to two specimens from Ebogo, an intensively sampled locality, in the superb ABRI collection, while Vande Weghe (2010) reports it as very rare from a unique locality in northern Gabon. There are more frequent reports from CAR, however, compared to other <italic>Euphaedra sensu lato </italic>this species is far less frequently collected.
+                </p>
+                <p><italic>E. sarcoptera </italic>has a much wider geographic range but its distribution is also apparently disjunct. It is local and rare in Liberia (Mount Swa), while slightly commoner in some localities west of the Dahomey Gap, in particular in Ivory Coast and Ghana. However east of it, in southern Nigeria, with the exception of Sapoba, it is exceedingly rare, more so than its congener <italic>E. cyparissa</italic>. In fact, in four years of sampling by Wojtusiak in the forests of SE Nigeria only one specimen was collected, whereas the senior <!--PageBreak-->author (TP) despite of many years of collecting in the SW never came across it. Lees (1989) mentions it from Korup and most specimens in the BMNH are from the Niger Delta. Also in Cameroon <italic>E. sarcoptera </italic>is exceedingly seldom encountered. However, in some areas of the western Congo Basin and in Katanga it is locally rather frequently met. There are very few reports from the central Congo basin despite rather extensive collections of other species of <italic>Euphaedra</italic>.
+                </p>
+                <p>In terms of habitat, the ecological preferences of <italic>E. cyparissa </italic>are inconsistent. Vande Weghe (2010) states briefly that <italic>E. cyparissa</italic> is a “deep forest” species, whereas Larsen (2005) considers it a rain forest edge, disturbed forest and even a gallery savannah species. He reports it “in small fragments of forests where few forest floor butterflies survive”. It seems that both authors may in fact be correct. In our experience, most <italic>E. cyparissa</italic> have been collected on the fringes of secondary or primary mangrove and riverine forests in good condition, whether it be humid forest typical of the localities in Sierra Leone, or much of the Ivory Coast, or the drier inland forests of the eastern Ghana and Nigeria. The size of the forest is less important than the condition of what remains. Furthermore, and curiously, some populations of <italic>E. cyparissa </italic>appear to be lower montane, in particular <italic>E. cyparissa nimbina </italic>and the local population of <italic>E. cyparissa aurata </italic>found in the Obudu massif on the Nigeria-Cameroon border. <italic>E. sarcoptera </italic>occurs in similar habitats but Larsen (2005) points out that it is more strictly tied to forest than <italic>E. cyparissa</italic> which is possibly the case for West Africa. In the southern part of the Congo Basin however <italic>E. sarcoptera </italic>occurs apparently in riverine forests in a predominantly savanna land. Both species have recently been observed hill-topping on forested hilltops in Liberia (Mount Swa), a behaviour not reported for any other <italic>Euphaedra</italic>. Males perch rather high on leaves of trees in the lower canopy level or on the edge of forest gaps (6–15 m high) in the afternoon hours (14–15.00), they chase all passing <italic>Euphaedra</italic>, often involved in intraspecific and occasionally in interspecific interactions. The larval food plants of <italic>E. cyparissa </italic>and <italic>E. sarcoptera </italic>are unknown therefore their habitat preferences based on their hosts cannot be asserted.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>Colour pattern convergence
+</bold>
+                </title>
+                <p>It is interesting to observe that where the two species fly sympatrically, as they do through much of their range, the wing colour markings in one species are closely matched by the other. There are two plausible explanations for that. Either, it is a parallel evolution reflecting an adaptation to a particular forest light structure, a common background. In fact, all green populations are found in rain forest (<italic>Euphaedra cyparissa tai, E. sarcoptera styx, E. cyparissa nominalina, E. sarcoptera cyparissoides</italic>), the yellow ones (<italic>Euphaedra sarcoptera nipponicorum, E. cyparissa ferrea, E. sarcoptera nimbina</italic>) typically occur in drier and often more patchy forests. The second explanation would involve a mimicry scenario, implying that one of the species is the model, whereas the other the mimic. <italic>Euphaedra </italic>are not known to be obnoxious and unpalatable to predators, however the chemistry of this genus has not been investigated so far, so some level of toxicity cannot <!--PageBreak-->be ruled out. Such geographic pattern of colour convergence recalls classical examples of Müllerian mimicry among sympatric species and subspecies of many Ithomiines and <italic>Heliconius</italic> in the neotropical region. Pyrcz (in prep.) suggests another explanation for mimicry among palatable species, involving colour convergence to the most abundant pattern in a given area involving the process of anti-apostatic selection.
+                </p>
+            </sec>
+            <sec>
+                <title><bold>The validity of the subgenus </bold><bold-italic>Euphaedra</bold-italic><bold-italic>sensu</bold-italic><bold> Hecq</bold>
+                </title>
+                <p>Apart from the slender body and elongated wings, we did not find any other outstanding morphological characters in <italic>E. cyparissa </italic>and <italic>E. sarcoptera </italic>that would set them apart from other <italic>Euphaedra sensu lato</italic>. Male and female genitalia are typical of <italic>Euphaedra sensu lato</italic> compared to species of the “<italic>ceres</italic>” group for example (Pyrcz et al. 2011) or to the “<italic>eleus</italic>” group (Pyrcz et al., in prep.). The shape and the configuration of the vesica cornuti of <italic>E. sarcoptera </italic>and <italic>E. cyparissa </italic>do not present unequivocal, qualitative characters distinguishing the two species from other <italic>Euphaedra sensu lato</italic>. As between the two species, the external similarity of <italic>E. cyparissa </italic>and <italic>E. sarcoptera </italic>in terms of wing shape and colour patterns is striking. There are however significant differentiating characters, apart from the presence or absence of the pinkish basal patch on the FWV. In particular, the antennae of <italic>E. cyparissa</italic> are chestnut – orange on the underside while those of <italic>E. sarcoptera </italic>are black. In the male genitalia of <italic>E. cyparissa, </italic>the tegumen extends considerably basally, which is an exclusive character among the examined species of <italic>Euphaedra sensu lato</italic>, while in <italic>E. sarcoptera </italic>it is moderately elongated in the same way as in other species of <italic>Euphaedra sensu lato</italic>. The uncus of <italic>E. cyparissa </italic>is particularly slender and long while that of <italic>E. sarcoptera </italic>is average in length and thickness for species of <italic>Euphaedra sensu lato</italic>. In the female genitalia <italic>E. cyparissa </italic>and <italic>E. sarcoptera</italic> differ more from each other than the subgenus <italic>Euphaedra sensu stricto </italic>from <italic>Euphaedra sensu lato</italic>. The most noticeable character of <italic>E. sarcoptera </italic>is the particularly large corpus bursae and massive, yet short, ductus bursae, compared to the rather average in size homologous structures of <italic>E. cyparissa</italic>.
+                </p>
+                <p>The most interesting trait of <italic>E. cyparissa </italic>and <italic>E. sarcoptera </italic>is arguably their unique behaviour, particularly striking for any naturalist with African rain forest experience. Whereas other <italic>Euphaedra sensu lato </italic>fly rapidly very close to the ground, <italic>E. cyparissa </italic>and <italic>E. sarcoptera</italic> flutter slowly, often several meters above the ground, and never keep to the understory. Larsen (2005) quotes Fermon’s trapping result in Ghana where she collected many individuals in traps placed at 12 – 25 m above the ground in the forest canopy, which is justified by recent observations of hill-topping behaviour and displaying of males of both species on and above the lower canopy level. The senior author of this paper also observed the courtship behaviour of <italic>E. cyparissa tai </italic>in Tai National Park Forest (August, 1983), during which the two sexes flew up to some 3–5 metres above the rest of the group and engaged in a typical Nymphalid courtship behaviour (Thornhill and Alcock 1983).
+                </p>
+                <!--PageBreak-->
+                
+            </sec>
+        </sec>
+        <sec>
+            <title><bold>Conclusion
+</bold>
+            </title>
+            <p>In the light of this study, previously published articles and the ongoing research on the taxonomy of <italic>Euphaedra sensu lato </italic>(Pyrcz et al., in prep.), the morphological differences between the species in the subgenus <italic>Euphaedra sensu </italic>Hecqand other subgenera of <italic>Euphaedra sensu lato </italic>are insufficient alone to warrant it a separate taxonomic status. We found no characters in the external or genital morphology exclusive of <italic>E. sarcoptera </italic>and <italic>E. cyparissa</italic> which could be considered as solid qualitative synapomorphies sustaining its possible monophyly. However, there is a case for retaining the subgenus resting on behavioural grounds. The two species present unique features, involving territoriality and mating strategies, and the occurrence in the forest subcanopy. This study emphasizes as well the need for taking into account also other comparative and phylogenetically valuable characters than those so far available in the research on the genus <italic>Euphaedra sensu lato</italic>.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>The authors would like to thank Steve C. Collins (Nairobi) for hosting T. Pyrcz and Sz. Sáfian in Nairobi and for the unrestricted access to the ABRI collections, Teresa di Micco de Santo (Nairobi) for her assistance in photography and data basing in ABRI; Torben B. Larsen (Copenhagen) for cross checking the identifications of <italic>Euphaedra</italic> at the MZUJ, Gilles Faravel (Pradons) for data and interesting comments on <italic>Euphaedra</italic> from Gabon, (late) Janusz Wojtusiak (Kraków) and Józef Razowski (Kraków) for valuable information on the female genial morphology, Izabela Stachowicz (Kraków) for the production of distribution maps, and Hein Boersma (St. Nicolaasga) for data and photographs of his specimens. The work of Sz. Sáfián was supported by the European Union and was co-financed by the European Social Fund through the project “Talentum” - Infrastructural Development of Talent Management of Students in the University of West Hungary, grant number TÁMOP – 4.2.2. B – 10/1 – 2010 – 0018. The work of T. Pyrcz was supported by the internal grants of the Institute of Zoology of the Jagiellonian University (DS/IZ/2012) and the Zoological Museum of the Jagiellonian University (BW/IZ/MZ-UJ).
+            </p>
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Ackery</surname> <given-names>PR</given-names></name>,<name name-style="western"><surname>Smith</surname> <given-names>LR</given-names></name>,<name name-style="western"><surname>Vane-Wright</surname> <given-names>RI</given-names></name></person-group> (<year>1995</year>)<source> Carcasson’s African Butterflies.</source> <publisher-name>CSIRO</publisher-name>, <publisher-loc>Australia</publisher-loc>, <lpage>803</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Aurivillius</surname> <given-names>C</given-names></name></person-group> (<year>1925</year>)<fake_tag> Die Afrikanischen Tagfalter (Ed. A. Seitz). Alfred Kernen, Stuttgart. 613 pp., 80 pl.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Amiet</surname> <given-names>J-L</given-names></name></person-group> (<year>2004</year>)<article-title> Types de chenilles et de nymphes chez les <italic>Euphaedra</italic> du Cameroun (Lepidoptera, Nymphalidae, Limenitinae).</article-title> <source>Bulletin de la Société entomologique de France, </source> <volume>109</volume> (<issue>4</issue>): <fpage>333</fpage>-<lpage>359</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Butler</surname> <given-names>AG</given-names></name></person-group> (<year>1866</year>)<article-title> Descriptions of six butterflies new to science, belonging to the genera, <italic>Heterochroa</italic> and <italic>Ramaleosoma</italic>.</article-title> <source>Proceedings of the Zoological Society of London, </source> <volume>1866</volume>: <fpage>43</fpage>-<lpage>59</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Butler</surname> <given-names>AG</given-names></name></person-group> (<year>1873</year>)<fake_tag> Description of new species of Lepidoptera. Cistula Entomologica, 1 : 150–177.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Conceição</surname> <given-names>IC</given-names></name>,<name name-style="western"><surname>Long</surname> <given-names>AD</given-names></name>,<name name-style="western"><surname>Gruber</surname> <given-names>JD</given-names></name>,<name name-style="western"><surname>Beldade</surname> <given-names>P</given-names></name></person-group> (<year>2011</year>)<fake_tag> Genomic Sequence around Butterfly Wing Development Genes: Annotation and Comparative Analysis. PLoS ONE 6(8): e23778. </fake_tag>doi:10.1371/journal.pone.0023778
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>D’Abrera</surname> <given-names>B</given-names></name></person-group> (<year>2004</year>)<source> Butterflies of the Afrotropical Region.</source> <publisher-name>Part II - Nymphalidae, Libytheidae. Hills House Publishers</publisher-name>, <publisher-loc>Melbourne-London</publisher-loc>, <lpage>356</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Faravel</surname> <given-names>G</given-names></name></person-group> (<year>2002</year>)<article-title> Description d’un <italic>Euphaedra</italic> nouveau du Gabon (Lepidoptera, Nymphalidae).</article-title> <source>Entomologia Africana, </source> <volume>7</volume> (<issue>2</issue>): <fpage>15</fpage>-<lpage>17</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hecq</surname> <given-names>J</given-names></name></person-group> (<year>1976</year>)<fake_tag> Eassai de classification du genre <italic>Euphaedra </italic>Hübner. Lambillionea, 76: 38–48, 53–63.</fake_tag></mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hecq</surname> <given-names>J</given-names></name></person-group> (<year>1979</year>)<article-title> Etude des <italic>Euphaedra</italic>. Clés de détermination des sous-genres <italic>Euphaedra </italic>Hübner et <italic>Radia </italic>Hecq.</article-title> <source>Lambillionea, </source> <volume>79</volume>: <fpage>31</fpage>-<lpage>32</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hecq</surname> <given-names>J</given-names></name></person-group> (<year>1984</year>)<fake_tag> Etude des <italic>Euphaedra </italic>(Nymphalidae africains). Monographie du groupe <italic>preussi </italic>(s.g. <italic>Euphaedrana </italic>Hecq). (Note no. 25). Lambillionea, 84: 9–16, 23–28.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hecq</surname> <given-names>J</given-names></name></person-group> (<year>1997</year>)<source> <italic>Euphaedra</italic>.</source> <publisher-name>Union des Entomologistes Belges</publisher-name>, <publisher-loc>Tervuren</publisher-loc>, <lpage>117</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hecq</surname> <given-names>J</given-names></name></person-group> (<year>1999</year>)<fake_tag> <italic>Euphaedra </italic>(and supplement in French). In: Bauer, E. and Frankenbach, T. Butterflies of the World, Part 4, Nymphalidae III. Goecke and Evers, Keltern, Germany.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hecq</surname> <given-names>J</given-names></name></person-group> (<year>2012</year>)<article-title> Catalogue des espèces d’<italic>Euphaedra </italic>sous-genre <italic>Euphaedrana </italic>Hecq 1976, groupe <italic>eleus </italic>et description de nouvelles espèces.</article-title> <source>Lambillionea, </source> <volume>112</volume>: <fpage>11</fpage>-<lpage>22</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Larsen</surname> <given-names>TB</given-names></name></person-group> (<year>2005</year>)<fake_tag> Butterflies of West Africa, vol.1–2. Apollo Books, Stenstrup. vol.1, 595 pp, vol. 2, 270 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Larsen</surname> <given-names>TB</given-names></name></person-group> (<year>2006a</year>)<fake_tag> The Ghana butterfly fauna and its contribution to the objectives of the protected areas system. WDSP Report no. 63. Wildlife Division (Forestry Commission) and IUCN (World Conservation Union), Accra: 207 pp. http://abdb-africa.org/user/biblio/200620Ghana20Report20complete201.5MB.pdf
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Larsen</surname> <given-names>TB</given-names></name></person-group> (<year>2006b</year>)<fake_tag> The butterflies of Kyabobo National Park, Ghana, and those of the Volta Region. WDSP Report no. 64. Wildlife Division (Forestry Commission) and IUCN (World Conservation Union), Accra 60 pp. http://abdb africa.org/user/biblio/200620Kyabobo-Volta20complete20480K.pdf
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Larsen</surname> <given-names>TB</given-names></name>,<name name-style="western"><surname>Aduse-Poku</surname> <given-names>K</given-names></name>,<name name-style="western"><surname>Boersma</surname> <given-names>H</given-names></name>,<name name-style="western"><surname>Sáfián</surname> <given-names>Sz</given-names></name>,<name name-style="western"><surname>Baker</surname> <given-names>J</given-names></name></person-group> (<year>2007</year>)<article-title> Bobiri Butterfly Sanctuary in Ghana – Discovering its butterflies (with a checklist of the 930 butterflies of Ghana).</article-title> <source>Metamorphosis, </source> <volume>18</volume> (<issue>3</issue>): <fpage>87</fpage>-<lpage>126</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Lees</surname> <given-names>DC</given-names></name></person-group> (<year>1989</year>)<fake_tag> A feasibility study into butterfly farming for the Korup National Park, Cameroun. www.uk/wwf.korup.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Monteiro</surname> <given-names>AF</given-names></name>,<name name-style="western"><surname>Pierce</surname> <given-names>NE</given-names></name></person-group> (<year>2001</year>)<fake_tag> Phylogeny of <italic>Bicyclus </italic>(Lepidopterea: Nymphalidae) inferred from COI, COII, and EF-<italic>a </italic>gene sequences. Molecular Phylogenetics and Evolution, 18: 264: 281.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pyrcz</surname> <given-names>TW</given-names></name>,<name name-style="western"><surname>Lorenc</surname> <given-names>J</given-names></name>,<name name-style="western"><surname>Knoop</surname> <given-names>DP</given-names></name></person-group> (<year>2011</year>)<article-title> New species of <italic>Euphaedra</italic> Hübner of the ceres group from southwestern Nigeria – with new evidence from female genital morphology (Lepidoptera: Nymphalidae: Limenitidinae).</article-title> <source>Genus, </source> <volume>22</volume> (<issue>4</issue>): <fpage>621</fpage>-<lpage>638</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Razowski</surname> <given-names>J</given-names></name></person-group> (<year>1996</year>)<source> Słownik morfologii owadów.</source> <publisher-name>PWN</publisher-name>, <publisher-loc>Kraków</publisher-loc>, <lpage>434</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Schultze</surname> <given-names>A</given-names></name></person-group> (<year>1920</year>)<fake_tag> Lepidoptera II, in SCHUBOTZ, Al. Ergebnisse der zweiten Deutschen Zentral-Afrika Expedition, 1910–1911. Leipzig. Vol. 1, (Zoologie): 1113–1194.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Thornhill</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Alcock</surname> <given-names>J</given-names></name></person-group> (<year>1983</year>)<fake_tag> The Evolution of Insect Mating Systems. Cambridge, MA: Harvard University Press.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Vande</surname> <given-names>Weghe GR</given-names></name></person-group> (<year>2010</year>)<fake_tag> Papillons du Gabon. Wildlife Conservation Society, 424 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Van Velzen</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Bakker</surname> <given-names>FT</given-names></name>,<name name-style="western"><surname>van Loon</surname> <given-names>JJA</given-names></name></person-group> (<year>2007</year>)<article-title> DNA barcoding reveals hidden species diversity in Cymothoe (Nymphalidae).</article-title> <source>Proceedings of the Netherlands Entomological Society Meeting, </source> <volume>18</volume>: <fpage>95</fpage>-<lpage>103</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Van Velzen</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Larsen</surname> <given-names>TB</given-names></name>,<name name-style="western"><surname>Bakker</surname> <given-names>FT</given-names></name></person-group> (<year>2009</year>)<article-title> A new hidden species of the Cymothoe caenis-complex (Lepidoptera: Nymphalidae) from western Africa.</article-title> <source>Zootaxa, </source> <volume>2197</volume>: <fpage>53</fpage>-<lpage>63</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Van Velzen</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Wahlberg</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Sosef</surname> <given-names>MF</given-names></name>,<name name-style="western"><surname>Bakker</surname> <given-names>FT</given-names></name></person-group> (<year>2013</year>)<fake_tag> Effects of changing climate on species diversification in tropical forest butterflies of the genus <italic>Cymothoe</italic> (Lepidoptera: Nymphalidae). Biological Journal of the Linnaean Society. </fake_tag>doi: 10.1111/bij.12012</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> Adults, males: <bold>A</bold> <italic>Euphaedra cyparissa cyparissa </italic>Mount Swa, Liberia (dorsum)<bold>B</bold> <italic>Euphaedra cyparissa cyparissa </italic>Mount Swa, Liberia (venter)<bold> C </bold><italic>Euphaedra cyparissa nimbina </italic>Mont Nimba, Guinea, holotype (dorsum)<bold> D </bold><italic>Euphaedra cyparissa nimbina </italic>Mont Nimba, Guinea, holotype (venter)<bold> E </bold><italic>Euphaedra cyparissa tai </italic>Tai, Ivory Coast (dorsum)<bold> F </bold><italic>Euphaedra cyparissa tai </italic>Tai, Ivory Coast (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> Adults, males: <bold>A</bold> <italic>E. cyparissa aurantina </italic>Bibiani, Ghana, holotype (dorsum)<bold> B </bold><italic>E. cyparissa aurantina </italic>Bibiani, Ghana, paratype (venter)<bold> C </bold><italic>E. cyparissa aurata</italic> Isheri, Nigeria (dorsum)<bold> D </bold><italic>E. cyparissa aurata</italic> Isheri, Nigeria (venter)<bold> E </bold><italic>E. cyparissa nominalina </italic>Mongoumba, R. C. A., holotype (dorsum) <bold> F </bold><italic>E. cyparissa nominalina </italic>Mongoumba, R. C. A., holotype (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> Adults, females: <bold>A</bold> <italic>E. cyparissa cyparissa </italic>Guma, Sierra Leone (dorsum)<bold> B </bold><italic>E. cyparissa cyparissa </italic>Guma, Sierra Leone (venter)<bold> C </bold><italic>E. cyparissa nimbina </italic>Mont Nimba, Guinea, paratype (dorsum)<bold> D </bold><italic>E. cyparissa nimbina</italic> Mont Nimba,Guinea, paratype (venter)<bold> E </bold><italic>E. cyparissa aurantina </italic>Atewa Forest, paratype (dorsum) <bold> F </bold><italic>E. cyparissa aurantina </italic>Atewa Forest, paratype (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> Adults, females: <bold>A</bold> <italic>E. cyparissa</italic> <italic>tai </italic>Tai, Ivory Coast (venter) <bold> B </bold><italic>E. cyparissa</italic> <italic>tai </italic>Tai, Ivory Coast (venter)<bold> C </bold><italic>E. cyparissa aurata </italic>Isheri, Nigeria (dorsum)<bold> D </bold><italic>E. cyparissa aurata </italic>Isheri, Nigeria (venter)<bold> E </bold><italic>E. cyparissa nominalina </italic>Borgen Dolphin Platform, paratype (dorsum)<bold> F </bold><italic>E. cyparissa nominalina </italic>Borgen Dolphin Platform, paratype (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F5" position="float" orientation="portrait">
+            <label>Figure 5.</label>
+            <caption><p> Adults, males: <bold>A</bold> <italic>E. sarcoptera sarcoptera </italic>male, Bibiani, Ghana (dorsum)<bold> B </bold><italic>E. sarcoptera sarcoptera</italic>, Bibiani, Ghana (venter) <bold> C </bold><italic>E. sarcoptera ferrea </italic>Mont Nimba, Guinea, holotype (dorsum) <bold> D </bold><italic>E. sarcoptera ferrea </italic>Mont Nimba, Guinea, holotype (venter)<bold> E </bold><italic>E. sarcoptera styx</italic>, Tai, Ivory Coast (dosum)<bold> F </bold><italic>E. sarcoptera styx</italic>, Tai, Ivory Coast (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g005.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F6" position="float" orientation="portrait">
+            <label>Figure 6.</label>
+            <caption><p> Adults, males: <bold>A</bold> <italic>E. sarcoptera cyparissoides </italic>holotype (dorsum)<bold> B </bold><italic>E. sarcoptera cyparissoides</italic> holotype (venter)<bold> C </bold><italic>E. sarcoptera nipponicorum </italic>Mbandaka, Congo (dorsum)<bold> D </bold><italic>E. sarcoptera nipponicorum</italic> Mbandaka, Congo (venter) <bold> E </bold><italic>E. sarcoptera sarcoptera-styx </italic>cline,Mount Swa, Liberia (dorsum)<bold> F </bold><italic>E. sarcoptera sarcoptera-styx </italic>cline, Mount Swa, Liberia(venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g006.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F7" position="float" orientation="portrait">
+            <label>Figure 7.</label>
+            <caption><p> Adults, females: <bold>A</bold> <italic>E. sarcoptera sarcoptera </italic>Nsukka, Nigeria (dorsum)<bold> B </bold><italic>E. sarcoptera sarcoptera </italic>Nsukka, Nigeria (venter) <bold> C </bold><italic>E. sarcoptera ferrea </italic>Mont Nimba, Guinea, paratype (dorsum)<bold> D </bold><italic>E. sarcoptera ferrea </italic>Mont Nimba, Guinea, paratype (venter)<bold> E </bold><italic>E. sarcoptera styx </italic>Tai, Ivory Coast (dorsum) <bold> F </bold><italic>E. sarcoptera styx </italic>Tai, Ivory Coast (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g007.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F8" position="float" orientation="portrait">
+            <label>Figure 8.</label>
+            <caption><p> Adults, females : <bold>A</bold> <italic>E. sarcoptera nipponicorum </italic>Kigoma, Tanzania (dorsum) <bold> B </bold><italic>E. sarcoptera nipponicorum</italic> Kigoma, Tanzania (venter) <bold> C </bold><italic>E. sarcoptera nipponicorum</italic> Mbandaka, Congo (dorsum)<bold> D </bold><italic>E. sarcoptera nipponicorum</italic> Mbandaka, Congo (venter)<bold> E </bold><italic>E. sarcoptera nipponicorum</italic> Mbandaka, Congo (dorsum)<bold> F </bold><italic>E. sarcoptera nipponicorum</italic> Mbandaka, Congo (venter).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g008.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F9" position="float" orientation="portrait">
+            <label>Figure 9.</label>
+            <caption><p> Male genitalia (in lateral view, aedeagus extracted): <bold>A</bold> <italic>E. cyparissa cyparissa</italic> Guma, Sierra Leone<bold> B </bold><italic>E. cyparissa tai </italic>Tai, Ivory Coast<bold> C </bold><italic>E. cyparissa nimbina </italic>Mont Nimba, Guinea<bold> D </bold><italic>E. cyparissa aurantina </italic>Abengourou, Ivory Coast<bold> E </bold><italic>E. cyparissa aurata </italic>Ebogo, Cameroon<bold> F </bold><italic>E. cyparissa nominalina </italic>Bangui, Central African Republic.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g009.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F10" position="float" orientation="portrait">
+            <label>Figure 10.</label>
+            <caption><p> Female genitalia (in lateral view): <bold>A</bold> <italic>E. cyparissa aurantina </italic>Mpasso, Ghana<bold> E </bold><italic>cyparissa aurantina </italic>Abengourou, Ivory Coast; 1 ♂: S. Nigeria, Ewohimi, 29.XI.55, J. Boorman; 1 ♂: no label; 2 ♂: Cameroon, Ebogo, Mbalmayo, X.2001; 1 ♂: Cameroon<bold> C </bold><italic>E. cyparissa nimbina </italic>Mont Nimba, Guinea<bold> D </bold><italic>E. cyparissa tai </italic>Tai, Ivory Coast<bold> E </bold><italic>E. cyparissa aurata </italic>Obudu, Nigeria<bold> F </bold><italic>E. cyparissa nominalina </italic>Mongorimba, R.C.A.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g010.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F11" position="float" orientation="portrait">
+            <label>Figure 11.</label>
+            <caption><p> Male genitalia (in lateral view, aedeagus extracted): <bold>A</bold> <italic>E. sarcoptera sarcoptera</italic> Bibiani, Ghana<bold> B </bold><italic>E. sarcoptera nipponicorum </italic>Mbandaka, Congo<bold> C </bold><italic>E. sarcoptera styx</italic> Tai, Ivory Coast <bold> D </bold><italic>E. sarcoptera nipponicorum </italic>Mbandaka, Congo<bold> E </bold><italic>E. sarcoptera ferrea</italic> Mont Nimba, Guinea<bold> F </bold><italic>Euphaedra sarcoptera nipponicorum </italic>Mbandaka, Congo.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g011.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F12" position="float" orientation="portrait">
+            <label>Figure 12.</label>
+            <caption><p> Female genitalia (in lateral view): <bold>A</bold> <italic>E. sarcoptera nipponicorum</italic> Kigoma, Tanzania<bold> B </bold><italic>Euphaedra sarcoptera ferrea</italic> Mont Nimba, Guinea <bold> C </bold><italic>Euphaedra sarcoptera nipponicorum </italic>Mbandaka, Congo.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g012.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F13" position="float" orientation="portrait">
+            <label>Figure 13.</label>
+            <caption><p> Distribution map: <bold>A</bold> West Africa, west of the Dahomey Gap<bold> B </bold>West Africa east of the Dahomey Gap, and central Africa<bold> C </bold>Congo Basin</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-298-001-g013.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

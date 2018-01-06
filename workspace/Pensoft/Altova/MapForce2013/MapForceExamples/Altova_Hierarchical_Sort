@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="20">
+	<component name="defaultmap1" blackbox="0" uid="38516848" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="xslt2" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="49436288" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="611" lty="288" rbx="725" rby="406"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="Person" inpkey="149" outkey="150" expanded="1">
+									<entry name="First" inpkey="151"/>
+									<entry name="Last" inpkey="152" outkey="153"/>
+									<entry name="Details" inpkey="154"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList/{}Person"/>
+						<wsdl/>
+						<parameter usageKind="variable" name="Person"/>
+					</data>
+				</component>
+				<component name="Person" library="core" uid="49436289" kind="30">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="146"/>
+						<datapoint pos="1" key="147"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="148"/>
+					</targets>
+					<view ltx="784" lty="288" rbx="886" rby="346"/>
+					<data>
+						<wsdl/>
+						<sort>
+							<collation/>
+							<key direction="ascending"/>
+						</sort>
+					</data>
+				</component>
+				<component name="Altova_Hierarchical" library="xml" uid="49166800" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="66" lty="-1" rbx="249" rby="549"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Altova" expanded="1">
+										<entry name="PrimaryKey" expanded="1"/>
+										<entry name="Name" expanded="1"/>
+										<entry name="Office" expanded="1">
+											<entry name="PrimaryKey" expanded="1"/>
+											<entry name="ForeignKey" expanded="1"/>
+											<entry name="Desc" expanded="1"/>
+											<entry name="EMail" expanded="1"/>
+											<entry name="Established" expanded="1"/>
+											<entry name="Fax" expanded="1"/>
+											<entry name="Name" outkey="4" expanded="1"/>
+											<entry name="Phone" expanded="1"/>
+											<entry name="Address" expanded="1">
+												<entry name="PrimaryKey" expanded="1"/>
+												<entry name="ForeignKey" expanded="1"/>
+												<entry name="city" expanded="1"/>
+												<entry name="state" expanded="1"/>
+												<entry name="street" expanded="1"/>
+												<entry name="zip" expanded="1"/>
+											</entry>
+											<entry name="Department" expanded="1">
+												<entry name="PrimaryKey" expanded="1"/>
+												<entry name="ForeignKey" expanded="1"/>
+												<entry name="Name" outkey="31" expanded="1"/>
+												<entry name="Person" outkey="28" expanded="1">
+													<entry name="PrimaryKey" expanded="1"/>
+													<entry name="ForeignKey" expanded="1"/>
+													<entry name="EMail" expanded="1"/>
+													<entry name="First" outkey="16" expanded="1"/>
+													<entry name="Last" outkey="52" expanded="1"/>
+													<entry name="PhoneExt" expanded="1"/>
+													<entry name="Title" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Altova_Hierarchical.xsd" inputinstance="Altova_Hierarchical.xml" instanceroot="{}Altova"/>
+					</data>
+				</component>
+				<component name="PersonList" library="xml" uid="49436287" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="935" lty="264" rbx="1119" rby="400"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PersonList" expanded="1">
+										<entry name="Person" inpkey="145" expanded="1"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="PersonList.xsd" instanceroot="{}PersonList" sps="PersonListDepartment.sps "/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="49436292" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="144"/>
+					</targets>
+					<view ltx="323" lty="212" rbx="370" rby="230"/>
+					<data>
+						<constant value=" (" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="49436291" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="156"/>
+						<datapoint pos="1" key="157"/>
+						<datapoint pos="2" key="158"/>
+						<datapoint pos="3" key="171"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="159"/>
+					</targets>
+					<view ltx="431" lty="212" rbx="516" rby="306"/>
+				</component>
+				<component name="constant" library="core" uid="49436293" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="172"/>
+					</targets>
+					<view ltx="361" lty="328" rbx="405" rby="346"/>
+					<data>
+						<constant value=")" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="160">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+					<edge edgekey="161">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="158" edgekey="162"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="151" edgekey="163"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="149" edgekey="164"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="156" edgekey="165"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="152" edgekey="166"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="144">
+						<edges>
+							<edge vertexkey="157" edgekey="168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="145" edgekey="161"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="150">
+						<edges>
+							<edge vertexkey="146" edgekey="160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="153">
+						<edges>
+							<edge vertexkey="147" edgekey="169"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="159">
+						<edges>
+							<edge vertexkey="154" edgekey="170"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="172">
+						<edges>
+							<edge vertexkey="171" edgekey="173"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

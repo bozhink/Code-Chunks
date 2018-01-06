@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<uri name="urn:oasis:names:tc:opendocument:xmlns:container" uri="files/container.xsd"/>
+	<uri name="http://www.idpf.org/2007/opf" uri="files/opf.xsd"/>
+</catalog>

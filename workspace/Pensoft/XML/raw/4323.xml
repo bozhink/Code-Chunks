@@ -1,0 +1,348 @@
+<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4323</article-id>
+            <title-group>
+                <article-title>Two new species of 
+                    <bold-italic>Vertomannus</bold-italic> Distant, 1903 (Heteroptera, Rhyparochromidae, Ozophorini), with proposal of a new subgenus
+                </article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Varga</surname>
+                        <given-names>Katinka</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:BC2BD125-F943-4FEC-9B7B-B4AB23EB5126</uri>
+                </contrib>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Kondorosy</surname>
+                        <given-names>Előd</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                    <uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:author:637ACD73-2A1F-41CA-918D-1C37D1B0F341</uri>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Pannon University, Georgikon Faculty, Department of Animal Science, Deák F. Str. 16, H-8360 Keszthely, Hungary
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Katinka Varga (<email xlink:type="simple">vrgktnk@gmail.com</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2013</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2013</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>15</day>
+                    <month>11</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>22</day>
+                    <month>1</month>
+                    <year>2013</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Katinka Varga, Előd Kondorosy</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="lsid" xlink:type="simple">urn:lsid:zoobank.org:pub:E21344D2-A96D-4F7B-9765-1195822DB52C
+</self-uri>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>Two new <italic>Vertomannus</italic> species, <italic>V. flavus </italic><bold>sp. n.</bold> (South Vietnam) and <italic>V. borneensis</italic> <bold>sp. n.</bold> (Borneo) are described. <italic>Vertomannus</italic> (<italic>Elongatomannus</italic>), <bold>subgen. n.</bold> (type species: <italic>V. flavus</italic>) is proposed.
+                </p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Heteroptera</kwd>
+                <kwd>Rhyparochromidae</kwd>
+                <kwd>Ozophorini</kwd>
+                <kwd><italic>Vertomannus</italic>
+                </kwd>
+                <kwd>new species</kwd>
+                <kwd>distribution</kwd>
+                <kwd>Oriental Region
+</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>Rhyparochromidae is the largest family of Lygaeoidea containing more than half of the described species of the superfamily. Species of the rhyparochromid tribe Ozophorini are distributed all over the world (Slater 1964; Slater and O’Donnell 1995). The diversity of Ozophorini is highest in tropical America and South-East Asia, however, the Oriental Region is the least investigated area.
+</p>
+            <!--PageBreak-->
+            <p>The ozophorine genus <italic>Vertomannus</italic> Distant, 1903 was described as monotypic, containing <italic>V. capitatus</italic> Distant, 1903 from Assam and Burma (Distant 1903). Breddin (1905) described <italic>V. tener</italic> Breddin, 1905 from Java, but Bergroth (1916) subsequently transferred it to <italic>Omacrus</italic> Bergroth, 1916. Later Zheng (in Zheng and Zou 1981) described five new species from China and provided a key for the Chinese species. Thus, there are six described species of <italic>Vertomannus</italic> at present.
+            </p>
+            <p>This paper contains descriptions of two new species of <italic>Vertomannus</italic> from Vietnam and Borneo. One of the new species is morphologically strikingly different from all other species of the genus: therefore, a new subgenus is proposed for its accommodation.
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>Abbreviations for depositories: NHMW: Natural History Museum, Vienna, Austria; ZMAN: Zoological Museum, Amsterdam, The Netherlands; MMBC: Moravian Museum, Brno, Czech Republic.
+</p>
+            <p>Examination of the specimens was carried out using an ALPHA STO-4-65 Zoom and a Zeiss Disovery V8 stereomicroscopes. Measurements were taken using a micrometer eyepiece. Pictures were made using a Panasonic DMC G2 digital camera (12 Mpixel).
+</p>
+            <tp:treatment-sec>
+                <title><bold>Taxonomy</bold>
+                </title>
+            </tp:treatment-sec>
+        </sec>
+        <sec>
+            <title>
+            </title>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold>Genus </bold>
+                        <bold-italic>Vertomannus</bold-italic>
+                        <bold> Distant, 1903
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Vertomannus
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Redescription.</bold>
+                    </title>
+                    <p> Body elongate. Head not punctured behind ocelli, posterior part slender, forming a long neck. Postocular part of head with neck longer than anteocular part. Eyes prominent. Ocelli situated close to eyes. Neck exserted. Antenna and legs slender, long. Antennal segment I and femora thickened apically. Fore femur often thick, always with spines. Pronotum with transversal furrow usually well developed, anterior and posterior lobes well separated. Anterior lobe of pronotum narrower than posterior one. Lateral margins of pronotum not flattened, humeri without spines. Middle of scutellum slightly elevated. Clavus with three or four rows of punctures. Scent gland ostiole with prominent and short peritreme curving posteriorly. Evaporatorium indistinct. Basal part of abdomen dorsoventrally constricted, not or weakly punctured. Intersegmental sutures between abdominal sterna 4 and 5 usually not curving cephalad, reaching lateral margin of abdomen.
+</p>
+                    <p><bold>Discussion.</bold> The genus <italic>Vertomannus</italic> is similar to <italic>Cervicoris</italic> Slater, 1982, but the latter genus is different in having the anterior lobe of the pronotum globose, and the presence of a pair of long humeral spines. Additionally, <italic>Cervicoris </italic>has the intersegmental sutures between abdominal sterna 4 and 5 curving cephalad, not reaching the lateral margin of abdomen, which is a typical rhyparochromid character.
+                    </p>
+                    <!--PageBreak-->
+                    <sec>
+                        <title><bold>Descriptions of new taxa
+</bold>
+                        </title>
+                    </sec>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Vertomannus (Elongatomannus) </bold-italic>
+                        <bold>subgen. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:AD5A59AD-B19E-4F92-ABA8-AD2F55C6AE4C
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Vertomannus
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Head elongate, anteocular part distinctly longer than postocular part without neck, nearly horizontal, weakly declivous, antennifers not closer to eyes than longitudinal diameter of eye. Head, especially neck, with sparse long and dense short pilosity, neck transversely wrinkled. Humeral angles of pronotum prominent, posterior lobe medially elevated. Apex of labium surpassing mid coxa. Scutellum triangular, with faint Y-shaped elevation. Clavus with four full rows of punctures.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Discussion.</bold>
+                    </title>
+                    <p> The new subgenus can readily be separated from the nominotypical subgenus based on the above mentioned characters: all known members of <italic>Vertomannus</italic> (<italic>Vertomannus</italic>) have a globose head with only sparse long pilosity (without short hairs) and with a relatively short anteocular part, a smooth neck; humeral angles of pronotum not prominent, labium not surpassing fore coxa, scutellum without a distinct elevation and clavus with only three rows of punctures.
+                    </p>
+                    <p><bold>Type species</bold> (by present designation): <italic>Vertomannus</italic> (<italic>Elongatomannus</italic>) <italic>flavus</italic>, sp. n.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p> Formed by the combination of the Latin prefix <italic>elongato</italic>- ‘elongate’ and –<italic>mannus</italic>, the former referring to the strikingly elongate head and neck characteristic for the subgenus, the latter referring to the genus <italic>Vertomannus</italic>. Gender masculine.
+                    </p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Vertomannus (Elongatomannus) flavus</bold-italic>
+                        <bold> sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:8687A7A6-CB96-4C94-BADF-C5ADB6981D24
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Vertomannus_flavus
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype: female, pinned. Original label: “S Vietnam, 14°10'N, 108°30'E 40km NW of An Khe, Buon Luoi, 650–750m 28.3.–12.4. 1995, Pacholátko &amp; Dembicky leg.” [printed] (NHMW).
+                    </p>
+                    <p>Paratype: 1 female, pinned. Original labels: “Laos, 24–29. IV. 2001, 18°07'N, 104°29'E, Khammouan pr. Ban Khoun Ngeun ca 200m, V. Kubáň lgt.”, “Collectio Petr Baňař, Moravian Museum Brno” (MMBC).
+</p>
+                    <p><bold>Measurements</bold> (in mm).Body length: 9.75; head length with neck: 2.75, width: 1.0, interocular space: 0.55, anteocular length: 0.7, postocular length: 0.55, neck length 1.15; pronotum: length: 1.5, humeral width: 1.55; scutellum: length: 1.0, width: 0.9; length of claval commissure: 2.0; lengths of antennal segments: I 0.95, II 2.9, III 2.35, IV 2.45; lengths of labial segments: 5.05 = I 1.5, II 1.6, III 1.4, IV 0.55.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Body elongate, dorsum moderately shiny, thoracic sternum dull (Fig. 1). Head, neck and ventral side of body with short semidecumbent hairs, long erect hairs present only on head (Fig. 2).
+                    </p>
+                    <p><!--PageBreak--><!--PageBreak-->Head: head-neck transition very gradual. Antennal segment I thickened apically, remaining segments long and filiform.
+</p>
+                    <p>Thorax: pronotum trapeziform, lateral margin concave, anterior lobe narrower than posterior, anterior lobe without punctures except at margins, posterior lobe distinctly punctured, punctures with very short inconspicuous setae, posterior lobe a little more declivous than anterior lobe in lateral view. Scutellum triangular, width and length subequal, with dense punctures except faint Y-shaped elevation, with very fine, hardly visible hairs.
+</p>
+                    <p>Legs slender and long, fore femur distally with two large spines and one small spine, with hairs as long as diameter of femur. Corium less punctured, not pubescent. Abdomen: densely pubescent with silvery hairs.
+</p>
+                    <p><bold>Colouration. </bold>Body stramineous, punctures brown. Head and antennal segment I reddish brown, antennal segments II-III stramineous with reddish apex, segment IV brown with basal third reddish. Lateral margin of anterior lobe of pronotum darker than disk, punctures on posterior part brown. Scutellum slightly darker than ground colour of body. Membrane honey-coloured, apical part translucent, subapically with a transverse stripe connected with a longitudinal stripe.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Discussion.</bold>
+                    </title>
+                    <p>The long and stramineous body and the features in the diagnosis of the subgenus easily separate this species from all known <italic>Vertomannus </italic>species.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p> The species is named after the unique colouration. The epithet “flavus” is a Latin adjective in nominative case, meaning “yellow”.
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+            <tp:taxon-treatment>
+                <tp:nomenclature>
+                    <tp:taxon-name>
+                        <bold-italic>Vertomannus</bold-italic>
+                        <bold-italic>(Vertomannus) borneensis</bold-italic>
+                        <bold> sp. n.
+</bold>
+                    </tp:taxon-name>
+                    <object-id xlink:type="simple">urn:lsid:zoobank.org:act:ADA68F97-E0A8-4A6D-9D06-9BF7813922E8
+</object-id>
+                    <object-id xlink:type="simple">http://species-id.net/wiki/Vertomannus_borneensis
+</object-id>
+                </tp:nomenclature>
+                <tp:treatment-sec>
+                    <title><bold>Type material.</bold>
+                    </title>
+                    <p>Holotype: female, pinned. Original label: “C. Borneo, Long Nawang, leg. Mjöberg 1925” [printed] (ZMAN).
+                    </p>
+                    <p><bold>Measurements</bold> (in mm). Body length: 5.85; head length with neck: 1.63, width: 0.95, interocular space: 0.6; anteocular length: 0.3, postocular length: 0.5, neck length 0.53; pronotum: length: 0.95, width: 1.55; scutellum: length: 0.95, width: 0.6; length of claval commissure: 1.4; Length of antennal segments: I 0.75, II 1.8, III 1.5, IV missing; lengths of labial segments: 1.65 = I 0.5, II 0.35, III 0.5, IV 0.3
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Description.</bold>
+                    </title>
+                    <p>Head globose, shiny, frons smooth, not wrinkled, not punctured (Fig. 3). Anteocular part shorter than postocular part without neck. Long hairs present on head and neck. Labium surpassing anterior margin of prosternum but ending before fore coxae, segment I reaching hind margin of eyes (Fig. 4).
+                    </p>
+                    <p>Thorax: Pronotum trapezoidal, with long hairs, lateral margin concave, anterior lobe impunctate, narrower than posterior lobe which is punctured, posterior lobe a little more declivous than anterior lobe in lateral view. Scutellum longer than wide, sparsely punctured, with some long hairs.
+</p>
+                    <p><!--PageBreak-->Legs slender and long, fore femur with a single spine, provided with hairs which are longer than diameter of femur. Corium with two rows of punctures along claval suture and with irregular punctures on apical half of mesocorium, not pubescent. Membrane with four distinct veins, not forming cells.
+</p>
+                    <p>Abdomen: densely pubescent with decumbent silvery hairs.
+</p>
+                    <p><bold>Colouration. </bold>Body fuscous. Posterior lobe of pronotum pale- brown except middle part, antenna pale. Bases of femora pale stramineous, apical halves brown, tibiae basally pale yellowish brown, gradually lightening towards apex, tarsi faint light brown. Scutel<!--PageBreak-->lum with tiny stramineous spot at apex. Corium with extensive pale colouration, basal half pale except punctures, behind this area a wide stripe mostly ochraceous with brown spots and a tiny rounded white spot at apex of claval commissure; apex of corium brown with extensive white subapical spot. Membrane pale brownish, with some white spots.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Discussion.</bold>
+                    </title>
+                    <p><italic>Vertomannus borneensis</italic> sp. n. is smaller than the other described species of the genus. The rounded, shining anteocular part of head (without wrinkles) is diagnostic value. The long pilosity on head is more sparse than for other species. <italic>V. crassus </italic>Zheng, 1981 and <italic>V. validus </italic>Zheng, 1981 are clearly different in multispinose and thick fore femora and large globose anterior pronotal lobe. <italic>V. brevicollum </italic>Zheng, 1981 has a very short neck, shorter than postocular part, and the apical part of abdomen is yellowish brown. <italic>V. capitatus, V. emeia </italic>Zheng, 1981 and <italic>V. ophiocephalus </italic>Zheng, 1981 have a longer labium reaching the fore coxae and have at least two spines on fore femora. Additionally, <italic>V. ophiocephalus </italic>has a longer neck than the postocular part of head; and moderately shortened hemelytra, not reaching the end of the abdomen. The pale subapical spot of corium has concave fore margin at <italic>V. capitatus</italic>, however, <italic>V. borneensis</italic> has this spot with straight fore margin.
+                    </p>
+                </tp:treatment-sec>
+                <tp:treatment-sec>
+                    <title><bold>Etymology.</bold>
+                    </title>
+                    <p> The name of the species refers on the type locality, “borneensis” is a Latin adjective in nominative case with meaning “origin from island Borneo” (now Kalimantan).
+</p>
+                </tp:treatment-sec>
+            </tp:taxon-treatment>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>We thank the curators of the museums who lent material for this study: Herbert Zettel (NHMW), Jan van Tol (ZMAN) and Petr Baňař (MMBC). We are grateful to Dávid Rédei (HNHM) for reviewing the text and to Csaba Pintér who took the pictures.
+</p>
+            <!--PageBreak-->
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Bergroth</surname> <given-names>E</given-names></name></person-group> (<year>1916</year>)<article-title> Neue Myodochidae. (Hem. Het.</article-title> <source>) Wiener Entomologische Zeitung </source> <volume>35</volume>: <fpage>215</fpage>-<lpage>221</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Breddin</surname> <given-names>G</given-names></name></person-group> (<year>1905</year>)<article-title> Rhynchota Heteroptera aus Java gesammelt von Prof. K. Kraepelin 1904.</article-title> <source>Mitteilungen aus dem Naturhistorischen Museum in Hamburg </source> <volume>22</volume> (<issue>2</issue>): <fpage>109</fpage>-<lpage>159</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Distant</surname> <given-names>WL</given-names></name></person-group> (<year>1903</year>)<article-title> Contributions to a knowledge of the Rhynchota.</article-title> <source>Annales de la Société Entomologique de Belgique </source> <volume>89</volume>: <fpage>44</fpage>-<lpage>46</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Slater</surname> <given-names>JA</given-names></name></person-group> (<year>1964</year>)<source> A catalogue of the Lygaeidae of the world I-II.</source> <publisher-name>University of Connecticut Storrs, Connecticut</publisher-name>, <publisher-loc>New York</publisher-loc>, <lpage>1668</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Slater</surname> <given-names>JA</given-names></name>,<name name-style="western"><surname>O’Donnell</surname> <given-names>JE</given-names></name></person-group> (<year>1995</year>)<source> A catalogue of the Lygaeidae of the world (1960-1994).</source> <publisher-name>New York Entomological Society</publisher-name>, <publisher-loc>New York</publisher-loc>, <lpage>410</lpage> pp.</mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Zheng</surname> <given-names>LY</given-names></name>,<name name-style="western"><surname>Zou</surname> <given-names>HG</given-names></name></person-group> (<year>1981</year>)<fake_tag> Lygaeidae. In: Hsiao TY (Ed.) A handbook for the determination of the Chinese Hemiptera-Heteroptera. Science Press, Beijing, 1–215, plates 1–26. </fake_tag>[in Chinese, English summary]</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1.</label>
+            <caption><p> <italic>Vertomannus</italic> (<italic>Elongatomannus</italic>) <italic>flavus</italic>, sp. n., dorsal view</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figure 2.</label>
+            <caption><p> <italic>Vertomannus</italic> (<italic>Elongatomannus</italic>) <italic>flavus</italic> sp. n., lateral view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figure 3.</label>
+            <caption><p> <italic>Vertomannus</italic> (s. str.) <italic>borneensis</italic> sp. n., dorsal view.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F4" position="float" orientation="portrait">
+            <label>Figure 4.</label>
+            <caption><p> <italic>Vertomannus</italic> (s. str.) <italic>borneensis</italic> sp. n., lateral view</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g004.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

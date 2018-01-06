@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 (http://www.altova.com) by Alex Pilz (Altova GmbH) -->
+<!-- edited with XMLSPY v2004 U (http://www.xmlspy.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Person">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name"/>
+				<xs:element ref="expense-item"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="expense" type="xs:decimal"/>
+	<xs:element name="Date" type="xs:date"/>
+	<xs:element name="expense-item">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="type"/>
+				<xs:element name="Weekday"/>
+				<xs:element name="Notes"/>
+				<xs:element ref="Date"/>
+				<xs:element ref="expense"/>
+				<xs:element name="Group"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

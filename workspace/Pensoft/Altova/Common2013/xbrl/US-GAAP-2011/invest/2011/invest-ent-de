@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xsd:schema targetNamespace="http://xbrl.sec.gov/invest-ent-dep/2011-01-31" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:invest-ent-dep="http://xbrl.sec.gov/invest-ent-dep/2011-01-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:invest-std="http://xbrl.sec.gov/invest-std/2011-01-31" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:deprecated="http://www.xbrl.org/2009/role/deprecated" xmlns:invest-ent-std="http://xbrl.sec.gov/invest-ent-std/2011-01-31" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:invest="http://xbrl.sec.gov/invest/2011-01-31" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:invest-all="http://xbrl.sec.gov/invest-all/2011-01-31" xmlns:invest-ent-all="http://xbrl.sec.gov/invest-ent-all/2011-01-31" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xsd:annotation>
+<xsd:appinfo>
+<link:linkbaseRef xlink:type="simple" xlink:href="invest-dep-pre-2011-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+<link:linkbaseRef xlink:type="simple" xlink:href="invest-dep-def-2011-01-31.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+<xsd:import namespace="http://xbrl.sec.gov/invest-ent-all/2011-01-31" schemaLocation="invest-ent-all-2011-01-31.xsd"/>
+<xsd:import namespace="http://www.xbrl.org/2009/role/deprecated" schemaLocation="http://www.xbrl.org/lrr/role/deprecated-2009-12-16.xsd"/>
+<xsd:import namespace="http://www.xbrl.org/2009/arcrole/deprecated" schemaLocation="http://www.xbrl.org/lrr/arcrole/deprecated-2009-12-16.xsd"/>
+</xsd:schema>

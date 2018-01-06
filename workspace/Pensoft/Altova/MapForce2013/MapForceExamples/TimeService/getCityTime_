@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="10">
+	<component name="defaultmap1" blackbox="0" uid="85309296" editable="1">
+		<properties SelectedLanguage="java" WSDLFile="TimeService.wsdl" WSDLService="{http://www.Nanonull.com/TimeService/}TimeService" WSDLPort="TimeServiceSoap" WSDLOperation="{http://www.Nanonull.com/TimeService/}getCityTime"/>
+		<structure>
+			<children>
+				<component name="wsdl" library="wsdl" uid="87313064" kind="17" visible="0">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="586" lty="100" rbx="814" rby="164"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.Nanonull.com/TimeService/"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="getCityTimeSoapOut" expanded="1">
+								<entry name="parameters" ns="1" inpkey="140038560" expanded="1">
+									<entry name="getCityTimeResult" inpkey="128925280"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl kind="output"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="74101672" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="136242320"/>
+						<datapoint pos="1" key="136242752"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="136243256"/>
+					</targets>
+					<view ltx="344" lty="182" rbx="48" rby="-74"/>
+				</component>
+				<component name="constant" library="core" uid="69947320" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="136245328"/>
+					</targets>
+					<view ltx="207" lty="219" rbx="-270" rby="25"/>
+					<data>
+						<constant value="Boston" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="now" library="lang" uid="89267480" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="129136712"/>
+					</targets>
+					<view ltx="472" lty="187" rbx="280" rby="-99"/>
+				</component>
+				<component name="part: parameters" library="core" uid="85473824" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="129138864"/>
+						<datapoint pos="1" key="129139368"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="129139872"/>
+						<datapoint pos="1" key="129140304"/>
+					</targets>
+					<view ltx="426" lty="118" rbx="-51" rby="-76"/>
+				</component>
+				<component name="WSDL" library="wsdl" uid="85439832" kind="17">
+					<properties/>
+					<view ltx="586" lty="199" rbx="813" rby="274"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.Nanonull.com/TimeService/"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="errorSoapOut" inpkey="140013328" expanded="1">
+								<entry name="Error" ns="1" expanded="1">
+									<entry name="errorText" inpkey="140012760"/>
+									<entry name="errorItem" inpkey="140012192"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl kind="fault" faultName="{http://www.Nanonull.com/TimeService/}errorSoapOut"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="85505616" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="128923400"/>
+					</targets>
+					<view ltx="375" lty="255" rbx="-102" rby="61"/>
+					<data>
+						<constant value="City not implemented!" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="wsdl" library="wsdl" uid="69931032" kind="17" visible="0">
+					<view ltx="100" lty="100" rbx="299" rby="173"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.Nanonull.com/TimeService/"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="getCityTimeSoapIn" expanded="1">
+								<entry name="parameters" ns="1" outkey="140017840" expanded="1">
+									<entry name="city" outkey="140018496"/>
+								</entry>
+							</entry>
+						</root>
+						<wsdl previewRequestInstanceFile="getCityTimeRequest.xml"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="128923400">
+						<edges>
+							<edge vertexkey="140012760" edgekey="133606352"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="129136712">
+						<edges>
+							<edge vertexkey="128925280" edgekey="133606056"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="129139872">
+						<edges>
+							<edge vertexkey="140038560" edgekey="133607832"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="129140304">
+						<edges>
+							<edge vertexkey="140013328" edgekey="133607536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136243256">
+						<edges>
+							<edge vertexkey="129139368" edgekey="133606648"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="136245328">
+						<edges>
+							<edge vertexkey="136242752" edgekey="133606944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="140017840">
+						<edges>
+							<edge vertexkey="129138864" edgekey="133607240"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="140018496">
+						<edges>
+							<edge vertexkey="136242320" edgekey="133608128"/>
+							<edge vertexkey="140012192" edgekey="133608424"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

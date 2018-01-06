@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowAnnotations="0" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties ParameterName="Parameter1"/>
+					<view ltx="-52" lty="-18" rbx="88" rby="109"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:ShortPO" expanded="1">
+								<entry name="0:LineItems" expanded="1" outkey="60159616">
+									<entry name="0:LineItem" expanded="1" outkey="60159408">
+										<entry name="0:ArticleNr" outkey="60121568"/>
+										<entry name="0:Amount" outkey="60159200"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ShortPO.xsd" inputinstance="ShortPO.xml" outputinstance="ShortPO.xml" instanceroot="{}ShortPO"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="LookupArticle" library="user" blackbox="0" uid="8" kind="19" visible="0">
+					<view ltx="154" lty="3" rbx="277" rby="20"/>
+					<data>
+						<root scrollposition="1">
+							<header/>
+							<entry name="ArticleNr" expanded="1" inpkey="60166488" componentid="7"/>
+						</root>
+						<root rootindex="1">
+							<header/>
+							<entry name="Name" expanded="1" outkey="60166576" componentid="3"/>
+						</root>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="2" kind="14">
+					<properties XSLTDefaultOutput="1" ParameterName="Parameter2"/>
+					<view ltx="355" lty="-18" rbx="520" rby="188"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:CompletePO" expanded="1">
+								<entry name="0:LineItems" expanded="1" inpkey="60162192">
+									<entry name="0:LineItem" expanded="1" inpkey="60162280">
+										<entry name="0:Article" expanded="1">
+											<entry name="0:Number" inpkey="60162368"/>
+											<entry name="0:Name" inpkey="60162456"/>
+											<entry name="0:Amount" inpkey="60162624"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="CompletePO.xsd" outputinstance="CompletePO.xml" instanceroot="{}CompletePO"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="59749080"/>
+					<edge edgekey="59749688"/>
+					<edge edgekey="59794496"/>
+					<edge edgekey="59794960"/>
+					<edge edgekey="94453768"/>
+					<edge edgekey="94456808"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="60121568">
+						<edges>
+							<edge vertexkey="60166488" edgekey="94453768"/>
+							<edge vertexkey="60162368" edgekey="59794496"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60159200">
+						<edges>
+							<edge vertexkey="60162624" edgekey="59794960"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60159408">
+						<edges>
+							<edge vertexkey="60162280" edgekey="59749080"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60159616">
+						<edges>
+							<edge vertexkey="60162192" edgekey="59749688"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60166576">
+						<edges>
+							<edge vertexkey="60162456" edgekey="94456808"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="artice" library="user" blackbox="0" editable="1" inline="1">
+		<properties/>
+		<sources>
+			<datapoint name="ponr" datatype="string"/>
+		</sources>
+		<targets>
+			<datapoint name="result" datatype="string"/>
+		</targets>
+		<structure>
+			<children>
+				<component name="input (1)" library="core" uid="11" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60260000"/>
+					</targets>
+					<view ltx="55" lty="11" rbx="-324" rby="-231"/>
+					<data>
+						<input name="ponr" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="12" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60260640"/>
+						<datapoint pos="1" key="60260864"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60261088"/>
+					</targets>
+					<view ltx="286" lty="13" rbx="30" rby="5"/>
+				</component>
+				<component name="filter" library="core" uid="13" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60261920"/>
+						<datapoint pos="1" key="60262256"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60262440"/>
+						<datapoint/>
+					</targets>
+					<view ltx="271" lty="87" rbx="-89" rby="-155"/>
+				</component>
+				<component name="output" library="core" uid="9" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60263600"/>
+					</sources>
+					<view ltx="426" lty="39" rbx="-254" rby="-61"/>
+					<data>
+						<output name="result" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="10" kind="14">
+					<properties UsageKind="input" ParameterName="Parameter10"/>
+					<view ltx="38" lty="81" rbx="187" rby="171"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Article" expanded="1">
+								<entry name="0:Number" outkey="60279800"/>
+								<entry name="0:Name" outkey="60318896"/>
+							</entry>
+						</root>
+						<document schema="Articles.xsd" outputinstance="Articles.xml" instanceroot="Articles/Article"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="60322136"/>
+					<edge edgekey="60322208"/>
+					<edge edgekey="60322280"/>
+					<edge edgekey="60322352"/>
+					<edge edgekey="60322464"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="60260000">
+						<edges>
+							<edge vertexkey="60260640" edgekey="60322208"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60261088">
+						<edges>
+							<edge vertexkey="60262256" edgekey="60322280"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60262440">
+						<edges>
+							<edge vertexkey="60263600" edgekey="60322136"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60279800">
+						<edges>
+							<edge vertexkey="60260864" edgekey="60322352"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60318896">
+						<edges>
+							<edge vertexkey="60261920" edgekey="60322464"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="xml-out" library="user" blackbox="0" editable="1" inline="1">
+		<properties/>
+		<sources>
+			<datapoint name="ponr" datatype="string"/>
+		</sources>
+		<targets>
+			<datapoint name="Name" datatype="string"/>
+		</targets>
+		<structure>
+			<children>
+				<component name="input (1)" library="core" uid="17" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60341704"/>
+					</targets>
+					<view ltx="39" lty="18" rbx="-340" rby="-224"/>
+					<data>
+						<input name="ponr" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="output" library="core" uid="20" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60342792"/>
+					</sources>
+					<view ltx="380" lty="30" rbx="-300" rby="-70"/>
+					<data>
+						<output name="Name" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="18" kind="5" prioritycontext="60343480">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60343480"/>
+						<datapoint pos="1" key="60343704"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60344000"/>
+					</targets>
+					<view ltx="169" lty="26" rbx="-87" rby="18"/>
+				</component>
+				<component name="document" library="xml" uid="21" kind="14">
+					<properties ParameterName="Parameter21"/>
+					<view ltx="-25" lty="98" rbx="134" rby="221"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Articles" expanded="1">
+								<entry name="0:Article" expanded="1">
+									<entry name="0:Number" outkey="60528448"/>
+									<entry name="0:Name" outkey="60528688"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Articles.xsd" inputinstance="Articles.xml" outputinstance="Articles.xml" instanceroot="{}Articles"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="28" kind="14">
+					<properties XSLTDefaultOutput="1" UsageKind="output" ParameterName="Parameter28"/>
+					<view ltx="401" lty="118" rbx="599" rby="312"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:LineItems" expanded="1">
+								<entry name="0:LineItem" expanded="1">
+									<entry name="0:Article" expanded="1" inpkey="60532024">
+										<entry name="0:Number" inpkey="60532184"/>
+										<entry name="0:Name" inpkey="60532344"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="CompletePO.xsd" outputinstance="CompletePO.xml" instanceroot="CompletePO/LineItems"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="filter" library="core" uid="19" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60491840"/>
+						<datapoint pos="1" key="60527944"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60528168"/>
+						<datapoint/>
+					</targets>
+					<view ltx="253" lty="69" rbx="-107" rby="-173"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="60536976"/>
+					<edge edgekey="60537048"/>
+					<edge edgekey="60537120"/>
+					<edge edgekey="60537192"/>
+					<edge edgekey="60537264"/>
+					<edge edgekey="60537336"/>
+					<edge edgekey="60537448"/>
+					<edge edgekey="60537600"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="60341704">
+						<edges>
+							<edge vertexkey="60343480" edgekey="60537048"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60344000">
+						<edges>
+							<edge vertexkey="60527944" edgekey="60537120"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60528168">
+						<edges>
+							<edge vertexkey="60532024" edgekey="60537192"/>
+							<edge vertexkey="60342792" edgekey="60537600"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60528448">
+						<edges>
+							<edge vertexkey="60343704" edgekey="60536976"/>
+							<edge vertexkey="60532184" edgekey="60537336"/>
+							<edge vertexkey="60491840" edgekey="60537264"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60528688">
+						<edges>
+							<edge vertexkey="60532344" edgekey="60537448"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="LookupArticle" library="user" blackbox="0" editable="1">
+		<properties/>
+		<sources>
+			<datapoint name="ArticleNr" datatype="string"/>
+		</sources>
+		<targets>
+			<datapoint name="Name" datatype="string"/>
+		</targets>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="5" kind="5" prioritycontext="60181208">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60181208"/>
+						<datapoint pos="1" key="60181432"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60181656"/>
+					</targets>
+					<view ltx="205" lty="46" rbx="-58" rby="-77"/>
+				</component>
+				<component name="filter" library="core" uid="6" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60182512"/>
+						<datapoint pos="1" key="60182736"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60182960"/>
+						<datapoint/>
+					</targets>
+					<view ltx="278" lty="104" rbx="-129" rby="-126"/>
+				</component>
+				<component name="document" library="xml" uid="4" kind="14">
+					<properties ParameterName="Parameter4"/>
+					<view ltx="6" lty="87" rbx="158" rby="207"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Articles" expanded="1">
+								<entry name="0:Article" expanded="1">
+									<entry name="0:Number" outkey="60240960"/>
+									<entry name="0:Name" outkey="60241200"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Articles.xsd" inputinstance="Articles.xml" outputinstance="Articles.xml" instanceroot="{}Articles"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="ArticleNr" library="core" uid="7" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60198248"/>
+					</targets>
+					<view ltx="12" lty="14" rbx="-395" rby="-216"/>
+					<data>
+						<input name="ArticleNr" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Name" library="core" uid="3" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="60238192"/>
+					</sources>
+					<view ltx="427" lty="137" rbx="-348" rby="37"/>
+					<data>
+						<output name="Name" datatype="string" number="1"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="60244480"/>
+					<edge edgekey="60244552"/>
+					<edge edgekey="60244624"/>
+					<edge edgekey="60244696"/>
+					<edge edgekey="60244768"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="60181656">
+						<edges>
+							<edge vertexkey="60182736" edgekey="60244696"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60182960">
+						<edges>
+							<edge vertexkey="60238192" edgekey="60244480"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60198248">
+						<edges>
+							<edge vertexkey="60181208" edgekey="60244624"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60240960">
+						<edges>
+							<edge vertexkey="60181432" edgekey="60244768"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60241200">
+						<edges>
+							<edge vertexkey="60182512" edgekey="60244552"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

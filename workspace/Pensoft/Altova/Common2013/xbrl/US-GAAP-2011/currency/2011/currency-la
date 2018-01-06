@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AED" xlink:label="loc_AED"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AFN" xlink:label="loc_AFN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ALL" xlink:label="loc_ALL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AMD" xlink:label="loc_AMD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ANG" xlink:label="loc_ANG"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AOA" xlink:label="loc_AOA"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ARS" xlink:label="loc_ARS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AUD" xlink:label="loc_AUD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AWG" xlink:label="loc_AWG"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AZN" xlink:label="loc_AZN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BAM" xlink:label="loc_BAM"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BBD" xlink:label="loc_BBD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BDT" xlink:label="loc_BDT"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BGN" xlink:label="loc_BGN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BHD" xlink:label="loc_BHD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BIF" xlink:label="loc_BIF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BMD" xlink:label="loc_BMD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BND" xlink:label="loc_BND"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BOB" xlink:label="loc_BOB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BRL" xlink:label="loc_BRL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BSD" xlink:label="loc_BSD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BTN" xlink:label="loc_BTN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BWP" xlink:label="loc_BWP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BYR" xlink:label="loc_BYR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BZD" xlink:label="loc_BZD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CAD" xlink:label="loc_CAD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CDF" xlink:label="loc_CDF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CHF" xlink:label="loc_CHF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CLP" xlink:label="loc_CLP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CNY" xlink:label="loc_CNY"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_COP" xlink:label="loc_COP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CRC" xlink:label="loc_CRC"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CUP" xlink:label="loc_CUP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CVE" xlink:label="loc_CVE"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CYP" xlink:label="loc_CYP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CZK" xlink:label="loc_CZK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_DJF" xlink:label="loc_DJF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_DKK" xlink:label="loc_DKK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_DOP" xlink:label="loc_DOP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_DZD" xlink:label="loc_DZD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_EEK" xlink:label="loc_EEK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_EGP" xlink:label="loc_EGP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ERN" xlink:label="loc_ERN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ETB" xlink:label="loc_ETB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_EUR" xlink:label="loc_EUR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_FJD" xlink:label="loc_FJD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_FKP" xlink:label="loc_FKP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GBP" xlink:label="loc_GBP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GEL" xlink:label="loc_GEL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GGP" xlink:label="loc_GGP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GHC" xlink:label="loc_GHC"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GIP" xlink:label="loc_GIP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GMD" xlink:label="loc_GMD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GNF" xlink:label="loc_GNF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GTQ" xlink:label="loc_GTQ"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GYD" xlink:label="loc_GYD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_HKD" xlink:label="loc_HKD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_HNL" xlink:label="loc_HNL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_HRK" xlink:label="loc_HRK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_HTG" xlink:label="loc_HTG"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_HUF" xlink:label="loc_HUF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_IDR" xlink:label="loc_IDR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ILS" xlink:label="loc_ILS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_IMP" xlink:label="loc_IMP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_INR" xlink:label="loc_INR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_IQD" xlink:label="loc_IQD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_IRR" xlink:label="loc_IRR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ISK" xlink:label="loc_ISK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_JEP" xlink:label="loc_JEP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_JMD" xlink:label="loc_JMD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_JOD" xlink:label="loc_JOD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_JPY" xlink:label="loc_JPY"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KES" xlink:label="loc_KES"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KGS" xlink:label="loc_KGS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KHR" xlink:label="loc_KHR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KMF" xlink:label="loc_KMF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KPW" xlink:label="loc_KPW"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KRW" xlink:label="loc_KRW"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KWD" xlink:label="loc_KWD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KYD" xlink:label="loc_KYD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_KZT" xlink:label="loc_KZT"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LAK" xlink:label="loc_LAK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LBP" xlink:label="loc_LBP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LKR" xlink:label="loc_LKR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LRD" xlink:label="loc_LRD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LSL" xlink:label="loc_LSL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LTL" xlink:label="loc_LTL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LVL" xlink:label="loc_LVL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_LYD" xlink:label="loc_LYD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MAD" xlink:label="loc_MAD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MDL" xlink:label="loc_MDL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MGA" xlink:label="loc_MGA"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MKD" xlink:label="loc_MKD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MMK" xlink:label="loc_MMK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MNT" xlink:label="loc_MNT"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MOP" xlink:label="loc_MOP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MRO" xlink:label="loc_MRO"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MTL" xlink:label="loc_MTL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MUR" xlink:label="loc_MUR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MVR" xlink:label="loc_MVR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MWK" xlink:label="loc_MWK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MXN" xlink:label="loc_MXN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MYR" xlink:label="loc_MYR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MZN" xlink:label="loc_MZN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_NAD" xlink:label="loc_NAD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_NGN" xlink:label="loc_NGN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_NIO" xlink:label="loc_NIO"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_NOK" xlink:label="loc_NOK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_NPR" xlink:label="loc_NPR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_NZD" xlink:label="loc_NZD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_OMR" xlink:label="loc_OMR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PAB" xlink:label="loc_PAB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PEN" xlink:label="loc_PEN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PGK" xlink:label="loc_PGK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PHP" xlink:label="loc_PHP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PKR" xlink:label="loc_PKR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PLN" xlink:label="loc_PLN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_PYG" xlink:label="loc_PYG"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_QAR" xlink:label="loc_QAR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_RON" xlink:label="loc_RON"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_RSD" xlink:label="loc_RSD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_RUB" xlink:label="loc_RUB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_RWF" xlink:label="loc_RWF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SAR" xlink:label="loc_SAR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SBD" xlink:label="loc_SBD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SCR" xlink:label="loc_SCR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SDG" xlink:label="loc_SDG"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SEK" xlink:label="loc_SEK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SGD" xlink:label="loc_SGD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SHP" xlink:label="loc_SHP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SKK" xlink:label="loc_SKK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SLL" xlink:label="loc_SLL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SOS" xlink:label="loc_SOS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SPL" xlink:label="loc_SPL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SRD" xlink:label="loc_SRD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_STD" xlink:label="loc_STD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SVC" xlink:label="loc_SVC"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SYP" xlink:label="loc_SYP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_SZL" xlink:label="loc_SZL"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_THB" xlink:label="loc_THB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TJS" xlink:label="loc_TJS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TMM" xlink:label="loc_TMM"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TND" xlink:label="loc_TND"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TOP" xlink:label="loc_TOP"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TRY" xlink:label="loc_TRY"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TTD" xlink:label="loc_TTD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TVD" xlink:label="loc_TVD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TWD" xlink:label="loc_TWD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TZS" xlink:label="loc_TZS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_UAH" xlink:label="loc_UAH"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_UGX" xlink:label="loc_UGX"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_USD" xlink:label="loc_USD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_UYU" xlink:label="loc_UYU"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_UZS" xlink:label="loc_UZS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_VEB" xlink:label="loc_VEB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_VND" xlink:label="loc_VND"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_VUV" xlink:label="loc_VUV"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_WST" xlink:label="loc_WST"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XAF" xlink:label="loc_XAF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XAG" xlink:label="loc_XAG"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XAU" xlink:label="loc_XAU"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XCD" xlink:label="loc_XCD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XDR" xlink:label="loc_XDR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XOF" xlink:label="loc_XOF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XPD" xlink:label="loc_XPD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XPF" xlink:label="loc_XPF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XPT" xlink:label="loc_XPT"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_YER" xlink:label="loc_YER"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ZAR" xlink:label="loc_ZAR"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ZMK" xlink:label="loc_ZMK"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ZWD" xlink:label="loc_ZWD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_AllCurrenciesDomain" xlink:label="loc_AllCurrenciesDomain"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_BOV" xlink:label="loc_BOV"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CHE" xlink:label="loc_CHE"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CHW" xlink:label="loc_CHW"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CLF" xlink:label="loc_CLF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_COU" xlink:label="loc_COU"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_CUC" xlink:label="loc_CUC"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_GHS" xlink:label="loc_GHS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_MXV" xlink:label="loc_MXV"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_TMT" xlink:label="loc_TMT"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_USN" xlink:label="loc_USN"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_USS" xlink:label="loc_USS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_VEF" xlink:label="loc_VEF"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XBA" xlink:label="loc_XBA"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XBB" xlink:label="loc_XBB"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XBC" xlink:label="loc_XBC"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XBD" xlink:label="loc_XBD"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XFU" xlink:label="loc_XFU"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XTS" xlink:label="loc_XTS"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_XXX" xlink:label="loc_XXX"/>
+<link:loc xlink:type="locator" xlink:href="currency-2011-01-31.xsd#currency_ZWL" xlink:label="loc_ZWL"/>
+<link:label xlink:type="resource" xlink:label="lab_AED" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AED_label_en-US">United Arab Emirates, Dirhams</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AFN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AFN_label_en-US">Afghanistan, Afghanis</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ALL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ALL_label_en-US">Albania, Leke</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AMD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AMD_label_en-US">Armenia, Drams</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ANG" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ANG_label_en-US">Netherlands Antilles, Guilders (also called Florins)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AOA" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AOA_label_en-US">Angola, Kwanza</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ARS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ARS_label_en-US">Argentina, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AUD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AUD_label_en-US">Australia, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AWG" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AWG_label_en-US">Aruba, Guilders (also called Florins)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AZN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AZN_label_en-US">Azerbaijan, New Manats</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BAM" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BAM_label_en-US">Bosnia and Herzegovina, Convertible Marka</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BBD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BBD_label_en-US">Barbados, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BDT" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BDT_label_en-US">Bangladesh, Taka</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BGN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BGN_label_en-US">Bulgaria, Leva</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BHD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BHD_label_en-US">Bahrain, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BIF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BIF_label_en-US">Burundi, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BMD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BMD_label_en-US">Bermuda, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BND" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BND_label_en-US">Brunei Darussalam, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BOB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BOB_label_en-US">Bolivia, Bolivianos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BRL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BRL_label_en-US">Brazil, Brazil Real</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BSD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BSD_label_en-US">Bahamas, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BTN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BTN_label_en-US">Bhutan, Ngultrum</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BWP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BWP_label_en-US">Botswana, Pulas</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BYR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BYR_label_en-US">Belarus, Rubles</link:label>
+<link:label xlink:type="resource" xlink:label="lab_BZD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_BZD_label_en-US">Belize, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CAD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CAD_label_en-US">Canada, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CDF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CDF_label_en-US">Congo/Kinshasa, Congolese Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CHF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CHF_label_en-US">Switzerland, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CLP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CLP_label_en-US">Chile, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CNY" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CNY_label_en-US">China, Yuan Renminbi</link:label>
+<link:label xlink:type="resource" xlink:label="lab_COP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_COP_label_en-US">Colombia, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CRC" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CRC_label_en-US">Costa Rica, Colones</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CUP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CUP_label_en-US">Cuba, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CVE" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CVE_label_en-US">Cape Verde, Escudos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CYP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CYP_label_en-US">Cyprus, Pounds (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_CZK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_CZK_label_en-US">Czech Republic, Koruny</link:label>
+<link:label xlink:type="resource" xlink:label="lab_DJF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_DJF_label_en-US">Djibouti, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_DKK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_DKK_label_en-US">Denmark, Kroner</link:label>
+<link:label xlink:type="resource" xlink:label="lab_DOP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_DOP_label_en-US">Dominican Republic, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_DZD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_DZD_label_en-US">Algeria, Algeria Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_EEK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_EEK_label_en-US">Estonia, Krooni</link:label>
+<link:label xlink:type="resource" xlink:label="lab_EGP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_EGP_label_en-US">Egypt, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ERN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ERN_label_en-US">Eritrea, Nakfa</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ETB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ETB_label_en-US">Ethiopia, Birr</link:label>
+<link:label xlink:type="resource" xlink:label="lab_EUR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_EUR_label_en-US">Euro Member Countries, Euro</link:label>
+<link:label xlink:type="resource" xlink:label="lab_FJD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_FJD_label_en-US">Fiji, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_FKP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_FKP_label_en-US">Falkland Islands (Malvinas), Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GBP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GBP_label_en-US">United Kingdom, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GEL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GEL_label_en-US">Georgia, Lari</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GGP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GGP_label_en-US">Guernsey, Pounds (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GHC" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GHC_label_en-US">Ghana, Cedis (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GIP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GIP_label_en-US">Gibraltar, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GMD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GMD_label_en-US">Gambia, Dalasi</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GNF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GNF_label_en-US">Guinea, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GTQ" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GTQ_label_en-US">Guatemala, Quetzales</link:label>
+<link:label xlink:type="resource" xlink:label="lab_GYD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_GYD_label_en-US">Guyana, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_HKD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_HKD_label_en-US">Hong Kong, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_HNL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_HNL_label_en-US">Honduras, Lempiras</link:label>
+<link:label xlink:type="resource" xlink:label="lab_HRK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_HRK_label_en-US">Croatia, Kuna</link:label>
+<link:label xlink:type="resource" xlink:label="lab_HTG" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_HTG_label_en-US">Haiti, Gourdes</link:label>
+<link:label xlink:type="resource" xlink:label="lab_HUF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_HUF_label_en-US">Hungary, Forint</link:label>
+<link:label xlink:type="resource" xlink:label="lab_IDR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_IDR_label_en-US">Indonesia, Rupiahs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ILS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ILS_label_en-US">Israel, New Shekels</link:label>
+<link:label xlink:type="resource" xlink:label="lab_IMP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_IMP_label_en-US">Isle of Man, Pounds (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_INR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_INR_label_en-US">India, Rupees</link:label>
+<link:label xlink:type="resource" xlink:label="lab_IQD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_IQD_label_en-US">Iraq, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_IRR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_IRR_label_en-US">Iran, Rials</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ISK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ISK_label_en-US">Iceland, Kronur</link:label>
+<link:label xlink:type="resource" xlink:label="lab_JEP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_JEP_label_en-US">Jersey, Pounds (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_JMD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_JMD_label_en-US">Jamaica, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_JOD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_JOD_label_en-US">Jordan, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_JPY" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_JPY_label_en-US">Japan, Yen</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KES" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KES_label_en-US">Kenya, Shillings</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KGS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KGS_label_en-US">Kyrgyzstan, Soms</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KHR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KHR_label_en-US">Cambodia, Riels</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KMF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KMF_label_en-US">Comoros, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KPW" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KPW_label_en-US">Korea (North), Won</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KRW" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KRW_label_en-US">Korea (South), Won</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KWD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KWD_label_en-US">Kuwait, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KYD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KYD_label_en-US">Cayman Islands, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_KZT" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_KZT_label_en-US">Kazakhstan, Tenge</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LAK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LAK_label_en-US">Laos, Kips</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LBP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LBP_label_en-US">Lebanon, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LKR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LKR_label_en-US">Sri Lanka, Rupees</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LRD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LRD_label_en-US">Liberia, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LSL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LSL_label_en-US">Lesotho, Maloti</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LTL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LTL_label_en-US">Lithuania, Litai</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LVL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LVL_label_en-US">Latvia, Lati</link:label>
+<link:label xlink:type="resource" xlink:label="lab_LYD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_LYD_label_en-US">Libya, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MAD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MAD_label_en-US">Morocco, Dirhams</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MDL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MDL_label_en-US">Moldova, Lei</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MGA" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MGA_label_en-US">Madagascar, Ariary</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MKD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MKD_label_en-US">Macedonia, Denars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MMK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MMK_label_en-US">Myanmar (Burma), Kyats</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MNT" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MNT_label_en-US">Mongolia, Tugriks</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MOP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MOP_label_en-US">Macau, Patacas</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MRO" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MRO_label_en-US">Mauritania, Ouguiyas</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MTL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MTL_label_en-US">Malta, Liri (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MUR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MUR_label_en-US">Mauritius, Rupees</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MVR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MVR_label_en-US">Maldives (Maldive Islands), Rufiyaa</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MWK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MWK_label_en-US">Malawi, Kwachas</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MXN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MXN_label_en-US">Mexico, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MYR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MYR_label_en-US">Malaysia, Ringgits</link:label>
+<link:label xlink:type="resource" xlink:label="lab_MZN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_MZN_label_en-US">Mozambique, Meticais</link:label>
+<link:label xlink:type="resource" xlink:label="lab_NAD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_NAD_label_en-US">Namibia, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_NGN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_NGN_label_en-US">Nigeria, Nairas</link:label>
+<link:label xlink:type="resource" xlink:label="lab_NIO" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_NIO_label_en-US">Nicaragua, Cordobas</link:label>
+<link:label xlink:type="resource" xlink:label="lab_NOK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_NOK_label_en-US">Norway, Krone</link:label>
+<link:label xlink:type="resource" xlink:label="lab_NPR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_NPR_label_en-US">Nepal, Nepal Rupees</link:label>
+<link:label xlink:type="resource" xlink:label="lab_NZD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_NZD_label_en-US">New Zealand, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_OMR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_OMR_label_en-US">Oman, Rials</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PAB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PAB_label_en-US">Panama, Balboa</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PEN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PEN_label_en-US">Peru, Nuevos Soles</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PGK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PGK_label_en-US">Papua New Guinea, Kina</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PHP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PHP_label_en-US">Philippines, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PKR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PKR_label_en-US">Pakistan, Rupees</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PLN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PLN_label_en-US">Poland, Zlotych</link:label>
+<link:label xlink:type="resource" xlink:label="lab_PYG" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_PYG_label_en-US">Paraguay, Guarani</link:label>
+<link:label xlink:type="resource" xlink:label="lab_QAR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_QAR_label_en-US">Qatar, Rials</link:label>
+<link:label xlink:type="resource" xlink:label="lab_RON" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_RON_label_en-US">Romania, New Lei</link:label>
+<link:label xlink:type="resource" xlink:label="lab_RSD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_RSD_label_en-US">Serbia, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_RUB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_RUB_label_en-US">Russia, Rubles</link:label>
+<link:label xlink:type="resource" xlink:label="lab_RWF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_RWF_label_en-US">Rwanda, Rwanda Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SAR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SAR_label_en-US">Saudi Arabia, Riyals</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SBD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SBD_label_en-US">Solomon Islands, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SCR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SCR_label_en-US">Seychelles, Rupees</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SDG" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SDG_label_en-US">Sudan, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SEK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SEK_label_en-US">Sweden, Kronor</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SGD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SGD_label_en-US">Singapore, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SHP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SHP_label_en-US">Saint Helena, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SKK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SKK_label_en-US">Slovakia, Koruny (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SLL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SLL_label_en-US">Sierra Leone, Leones</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SOS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SOS_label_en-US">Somalia, Shillings</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SPL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SPL_label_en-US">Seborga, Luigini (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SRD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SRD_label_en-US">Suriname, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_STD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_STD_label_en-US">Sao Tome and Principe, Dobras</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SVC" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SVC_label_en-US">El Salvador, Colones (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SYP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SYP_label_en-US">Syria, Pounds</link:label>
+<link:label xlink:type="resource" xlink:label="lab_SZL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_SZL_label_en-US">Swaziland, Emalangeni</link:label>
+<link:label xlink:type="resource" xlink:label="lab_THB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_THB_label_en-US">Thailand, Baht</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TJS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TJS_label_en-US">Tajikistan, Somoni</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TMM" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TMM_label_en-US">Turkmenistan, Manats (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TND" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TND_label_en-US">Tunisia, Dinars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TOP" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TOP_label_en-US">Tonga, Pa'anga</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TRY" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TRY_label_en-US">Turkey, New Lira</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TTD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TTD_label_en-US">Trinidad and Tobago, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TVD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TVD_label_en-US">Tuvalu, Tuvalu Dollars (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TWD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TWD_label_en-US">Taiwan, New Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_TZS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_TZS_label_en-US">Tanzania, Shillings</link:label>
+<link:label xlink:type="resource" xlink:label="lab_UAH" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_UAH_label_en-US">Ukraine, Hryvnia</link:label>
+<link:label xlink:type="resource" xlink:label="lab_UGX" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_UGX_label_en-US">Uganda, Shillings</link:label>
+<link:label xlink:type="resource" xlink:label="lab_USD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_USD_label_en-US">United States of America, Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_UYU" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_UYU_label_en-US">Uruguay, Pesos</link:label>
+<link:label xlink:type="resource" xlink:label="lab_UZS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_UZS_label_en-US">Uzbekistan, Sums</link:label>
+<link:label xlink:type="resource" xlink:label="lab_VEB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_VEB_label_en-US">Venezuela, Bolivares (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_VND" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_VND_label_en-US">Viet Nam, Dong</link:label>
+<link:label xlink:type="resource" xlink:label="lab_VUV" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_VUV_label_en-US">Vanuatu, Vatu</link:label>
+<link:label xlink:type="resource" xlink:label="lab_WST" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_WST_label_en-US">Samoa, Tala</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XAF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XAF_label_en-US">Communaute Financiere Africaine BEAC, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XAG" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XAG_label_en-US">Silver, Ounces</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XAU" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XAU_label_en-US">Gold, Ounces</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XCD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XCD_label_en-US">East Caribbean Dollars</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XDR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XDR_label_en-US">International Monetary Fund (IMF) Special Drawing Rights</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XOF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XOF_label_en-US">Communaute Financiere Africaine BCEAO, Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XPD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XPD_label_en-US">Palladium Ounces</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XPF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XPF_label_en-US">Comptoirs Francais du Pacifique Francs</link:label>
+<link:label xlink:type="resource" xlink:label="lab_XPT" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_XPT_label_en-US">Platinum, Ounces</link:label>
+<link:label xlink:type="resource" xlink:label="lab_YER" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_YER_label_en-US">Yemen, Rials</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ZAR" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ZAR_label_en-US">South Africa, Rand</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ZMK" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ZMK_label_en-US">Zambia, Kwacha</link:label>
+<link:label xlink:type="resource" xlink:label="lab_ZWD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_ZWD_label_en-US">Zimbabwe, Zimbabwe Dollars (Deprecated 2010-08-31)</link:label>
+<link:label xlink:type="resource" xlink:label="lab_AllCurrenciesDomain" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="lab_AllCurrenciesDomain_label_en-US">All Currencies [Domain]</link:label>
+<link:label xlink:type="resource" xlink:label="label_BOV" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_BOV">Bolivian Mvdol (funds code)</link:label>
+<link:label xlink:type="resource" xlink:label="label_CHE" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_CHE">WIR Bank (complementary currency)</link:label>
+<link:label xlink:type="resource" xlink:label="label_CHW" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_CHW">WIR Bank complementary currency</link:label>
+<link:label xlink:type="resource" xlink:label="label_CLF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_CLF">Unidad de Fomento (funds code)</link:label>
+<link:label xlink:type="resource" xlink:label="label_COU" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_COU">Unidad de Valor Real</link:label>
+<link:label xlink:type="resource" xlink:label="label_CUC" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_CUC">Cuban convertible peso</link:label>
+<link:label xlink:type="resource" xlink:label="label_GHS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_GHS">Ghanaian cedi</link:label>
+<link:label xlink:type="resource" xlink:label="label_MXV" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_MXV">Mexican Unidad de Inversion (UDI) (funds code)</link:label>
+<link:label xlink:type="resource" xlink:label="label_TMT" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_TMT">Turkmenistani manat</link:label>
+<link:label xlink:type="resource" xlink:label="label_USN" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_USN">United States dollar (next day) (funds code)</link:label>
+<link:label xlink:type="resource" xlink:label="label_USS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_USS">United States dollar (same day) (funds code)</link:label>
+<link:label xlink:type="resource" xlink:label="label_VEF" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_VEF">Venezuelan bol&#xED;var fuerte</link:label>
+<link:label xlink:type="resource" xlink:label="label_XBA" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XBA">European Composite Unit (EURCO) (bond market unit)</link:label>
+<link:label xlink:type="resource" xlink:label="label_XBB" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XBB">European Monetary Unit (E.M.U.-6) (bond market unit)</link:label>
+<link:label xlink:type="resource" xlink:label="label_XBC" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XBC">European Unit of Account 9 (E.U.A.-9) (bond market unit)</link:label>
+<link:label xlink:type="resource" xlink:label="label_XBD" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XBD">European Unit of Account 17 (E.U.A.-17) (bond market unit)</link:label>
+<link:label xlink:type="resource" xlink:label="label_XFU" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XFU">UIC franc (special settlement currency)</link:label>
+<link:label xlink:type="resource" xlink:label="label_XTS" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XTS">Code reserved for testing purposes</link:label>
+<link:label xlink:type="resource" xlink:label="label_XXX" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_XXX">No currency</link:label>
+<link:label xlink:type="resource" xlink:label="label_ZWL" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en-US" id="label_ZWL">Zimbabwe dollar</link:label>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AED" xlink:to="lab_AED" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AFN" xlink:to="lab_AFN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ALL" xlink:to="lab_ALL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AMD" xlink:to="lab_AMD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ANG" xlink:to="lab_ANG" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AOA" xlink:to="lab_AOA" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ARS" xlink:to="lab_ARS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AUD" xlink:to="lab_AUD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AWG" xlink:to="lab_AWG" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AZN" xlink:to="lab_AZN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BAM" xlink:to="lab_BAM" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BBD" xlink:to="lab_BBD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BDT" xlink:to="lab_BDT" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BGN" xlink:to="lab_BGN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BHD" xlink:to="lab_BHD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BIF" xlink:to="lab_BIF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BMD" xlink:to="lab_BMD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BND" xlink:to="lab_BND" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BOB" xlink:to="lab_BOB" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BRL" xlink:to="lab_BRL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BSD" xlink:to="lab_BSD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BTN" xlink:to="lab_BTN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BWP" xlink:to="lab_BWP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BYR" xlink:to="lab_BYR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BZD" xlink:to="lab_BZD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CAD" xlink:to="lab_CAD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CDF" xlink:to="lab_CDF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CHF" xlink:to="lab_CHF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CLP" xlink:to="lab_CLP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CNY" xlink:to="lab_CNY" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_COP" xlink:to="lab_COP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CRC" xlink:to="lab_CRC" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CUP" xlink:to="lab_CUP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CVE" xlink:to="lab_CVE" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CYP" xlink:to="lab_CYP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CZK" xlink:to="lab_CZK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DJF" xlink:to="lab_DJF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DKK" xlink:to="lab_DKK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DOP" xlink:to="lab_DOP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_DZD" xlink:to="lab_DZD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_EEK" xlink:to="lab_EEK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_EGP" xlink:to="lab_EGP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ERN" xlink:to="lab_ERN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ETB" xlink:to="lab_ETB" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_EUR" xlink:to="lab_EUR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_FJD" xlink:to="lab_FJD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_FKP" xlink:to="lab_FKP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GBP" xlink:to="lab_GBP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GEL" xlink:to="lab_GEL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GGP" xlink:to="lab_GGP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GHC" xlink:to="lab_GHC" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GIP" xlink:to="lab_GIP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GMD" xlink:to="lab_GMD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GNF" xlink:to="lab_GNF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GTQ" xlink:to="lab_GTQ" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GYD" xlink:to="lab_GYD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HKD" xlink:to="lab_HKD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HNL" xlink:to="lab_HNL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HRK" xlink:to="lab_HRK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HTG" xlink:to="lab_HTG" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_HUF" xlink:to="lab_HUF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_IDR" xlink:to="lab_IDR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ILS" xlink:to="lab_ILS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_IMP" xlink:to="lab_IMP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_INR" xlink:to="lab_INR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_IQD" xlink:to="lab_IQD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_IRR" xlink:to="lab_IRR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ISK" xlink:to="lab_ISK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_JEP" xlink:to="lab_JEP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_JMD" xlink:to="lab_JMD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_JOD" xlink:to="lab_JOD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_JPY" xlink:to="lab_JPY" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KES" xlink:to="lab_KES" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KGS" xlink:to="lab_KGS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KHR" xlink:to="lab_KHR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KMF" xlink:to="lab_KMF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KPW" xlink:to="lab_KPW" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KRW" xlink:to="lab_KRW" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KWD" xlink:to="lab_KWD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KYD" xlink:to="lab_KYD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_KZT" xlink:to="lab_KZT" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LAK" xlink:to="lab_LAK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LBP" xlink:to="lab_LBP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LKR" xlink:to="lab_LKR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LRD" xlink:to="lab_LRD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LSL" xlink:to="lab_LSL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LTL" xlink:to="lab_LTL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LVL" xlink:to="lab_LVL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_LYD" xlink:to="lab_LYD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MAD" xlink:to="lab_MAD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MDL" xlink:to="lab_MDL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MGA" xlink:to="lab_MGA" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MKD" xlink:to="lab_MKD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MMK" xlink:to="lab_MMK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MNT" xlink:to="lab_MNT" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MOP" xlink:to="lab_MOP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MRO" xlink:to="lab_MRO" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MTL" xlink:to="lab_MTL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MUR" xlink:to="lab_MUR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MVR" xlink:to="lab_MVR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MWK" xlink:to="lab_MWK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MXN" xlink:to="lab_MXN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MYR" xlink:to="lab_MYR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MZN" xlink:to="lab_MZN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_NAD" xlink:to="lab_NAD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_NGN" xlink:to="lab_NGN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_NIO" xlink:to="lab_NIO" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_NOK" xlink:to="lab_NOK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_NPR" xlink:to="lab_NPR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_NZD" xlink:to="lab_NZD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_OMR" xlink:to="lab_OMR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PAB" xlink:to="lab_PAB" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PEN" xlink:to="lab_PEN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PGK" xlink:to="lab_PGK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PHP" xlink:to="lab_PHP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PKR" xlink:to="lab_PKR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PLN" xlink:to="lab_PLN" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_PYG" xlink:to="lab_PYG" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_QAR" xlink:to="lab_QAR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RON" xlink:to="lab_RON" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RSD" xlink:to="lab_RSD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RUB" xlink:to="lab_RUB" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_RWF" xlink:to="lab_RWF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SAR" xlink:to="lab_SAR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SBD" xlink:to="lab_SBD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SCR" xlink:to="lab_SCR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SDG" xlink:to="lab_SDG" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SEK" xlink:to="lab_SEK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SGD" xlink:to="lab_SGD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SHP" xlink:to="lab_SHP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SKK" xlink:to="lab_SKK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SLL" xlink:to="lab_SLL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SOS" xlink:to="lab_SOS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SPL" xlink:to="lab_SPL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SRD" xlink:to="lab_SRD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_STD" xlink:to="lab_STD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SVC" xlink:to="lab_SVC" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SYP" xlink:to="lab_SYP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_SZL" xlink:to="lab_SZL" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_THB" xlink:to="lab_THB" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TJS" xlink:to="lab_TJS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TMM" xlink:to="lab_TMM" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TND" xlink:to="lab_TND" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TOP" xlink:to="lab_TOP" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TRY" xlink:to="lab_TRY" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TTD" xlink:to="lab_TTD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TVD" xlink:to="lab_TVD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TWD" xlink:to="lab_TWD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TZS" xlink:to="lab_TZS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_UAH" xlink:to="lab_UAH" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_UGX" xlink:to="lab_UGX" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_USD" xlink:to="lab_USD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_UYU" xlink:to="lab_UYU" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_UZS" xlink:to="lab_UZS" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_VEB" xlink:to="lab_VEB" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_VND" xlink:to="lab_VND" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_VUV" xlink:to="lab_VUV" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_WST" xlink:to="lab_WST" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XAF" xlink:to="lab_XAF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XAG" xlink:to="lab_XAG" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XAU" xlink:to="lab_XAU" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XCD" xlink:to="lab_XCD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XDR" xlink:to="lab_XDR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XOF" xlink:to="lab_XOF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XPD" xlink:to="lab_XPD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XPF" xlink:to="lab_XPF" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XPT" xlink:to="lab_XPT" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_YER" xlink:to="lab_YER" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ZAR" xlink:to="lab_ZAR" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ZMK" xlink:to="lab_ZMK" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ZWD" xlink:to="lab_ZWD" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_AllCurrenciesDomain" xlink:to="lab_AllCurrenciesDomain" order="1.0"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_BOV" xlink:to="label_BOV"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CHE" xlink:to="label_CHE"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CHW" xlink:to="label_CHW"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CLF" xlink:to="label_CLF"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_COU" xlink:to="label_COU"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_CUC" xlink:to="label_CUC"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_GHS" xlink:to="label_GHS"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_MXV" xlink:to="label_MXV"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_TMT" xlink:to="label_TMT"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_USN" xlink:to="label_USN"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_USS" xlink:to="label_USS"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_VEF" xlink:to="label_VEF"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XBA" xlink:to="label_XBA"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XBB" xlink:to="label_XBB"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XBC" xlink:to="label_XBC"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XBD" xlink:to="label_XBD"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XFU" xlink:to="label_XFU"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XTS" xlink:to="label_XTS"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_XXX" xlink:to="label_XXX"/>
+<link:labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="loc_ZWL" xlink:to="label_ZWL"/>
+</link:labelLink>
+</link:linkbase>

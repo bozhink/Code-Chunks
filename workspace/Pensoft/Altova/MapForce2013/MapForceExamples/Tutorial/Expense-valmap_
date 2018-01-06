@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="12">
+	<component name="defaultmap1" blackbox="0" editable="1">
+		<properties ShowSchemaTypes="1" ShowAnnotations="0" SelectedLanguage="cpp"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="83624760"/>
+					</targets>
+					<view ltx="98" lty="285" rbx="-206" rby="100"/>
+					<data>
+						<constant value="Tuesday" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="weekday" library="lang" uid="6" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="83625048"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="88685056"/>
+					</targets>
+					<view ltx="209" lty="127" rbx="131" rby="-202"/>
+				</component>
+				<component name="contains" library="core" uid="10" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="88685480"/>
+						<datapoint pos="1" key="88685584"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="88685688"/>
+					</targets>
+					<view ltx="212" lty="258" rbx="98" rby="-61"/>
+				</component>
+				<component name="value-map" library="core" uid="11" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="111855264"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="111865208"/>
+					</targets>
+					<view ltx="297" lty="45" rbx="-10" rby="-217"/>
+					<data>
+						<wsdl/>
+						<valuemap enableDefaultValue="1">
+							<valuemapTable>
+								<entry from="1" to="Sunday"/>
+								<entry from="2" to="Monday"/>
+								<entry from="3" to="Tuesday"/>
+								<entry from="4" to="Wednesday"/>
+								<entry from="5" to="Thursday"/>
+								<entry from="6" to="Friday"/>
+								<entry from="7" to="Saturday"/>
+							</valuemapTable>
+							<input name="input" type="integer"/>
+							<result name="result" type="string" defaultValue="incorrect date"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="12" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="111866192"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="111866440"/>
+					</targets>
+					<view ltx="320" lty="208" rbx="13" rby="-54"/>
+					<data>
+						<wsdl/>
+						<valuemap enableDefaultValue="1">
+							<valuemapTable>
+								<entry from="true" to="-- Prepare financial reports -- !"/>
+							</valuemapTable>
+							<input name="input" type="boolean"/>
+							<result name="result" type="string" defaultValue=" --"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="1" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-6" lty="-19" rbx="172" rby="256"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="expense-report" expanded="1">
+								<entry name="Person" expanded="1">
+									<entry name="Last" outkey="111866960"/>
+								</entry>
+								<entry name="expense-item" outkey="111866800" expanded="1">
+									<entry name="type" type="attribute" outkey="111867064"/>
+									<entry name="Date" outkey="111866568"/>
+									<entry name="expense" outkey="111866696"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ExpReport.xsd" inputinstance="ExpReport-item.xml" instanceroot="{}expense-report"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="423" lty="49" rbx="609" rby="227"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Person" expanded="1">
+								<entry name="Name" inpkey="111870480"/>
+								<entry name="expense-item" inpkey="111870584" expanded="1">
+									<entry name="type" inpkey="111870688"/>
+									<entry name="Weekday" inpkey="111870792"/>
+									<entry name="Notes" inpkey="111870896"/>
+									<entry name="Date" inpkey="111870272"/>
+									<entry name="expense" inpkey="111870376"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ExpReport-item.xsd" outputinstance="ExpReport-item-out.xml" instanceroot="{}Person"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="83624760">
+						<edges>
+							<edge vertexkey="88685584" edgekey="111876632"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="88685056">
+						<edges>
+							<edge vertexkey="111855264" edgekey="111876816"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="88685688">
+						<edges>
+							<edge vertexkey="111866192" edgekey="111876448"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111865208">
+						<edges>
+							<edge vertexkey="88685480" edgekey="111875072"/>
+							<edge vertexkey="111870792" edgekey="111875208"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111866440">
+						<edges>
+							<edge vertexkey="111870896" edgekey="111874936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111866568">
+						<edges>
+							<edge vertexkey="111870272" edgekey="111875920"/>
+							<edge vertexkey="83625048" edgekey="111876104"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111866696">
+						<edges>
+							<edge vertexkey="111870376" edgekey="111875392"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111866800">
+						<edges>
+							<edge vertexkey="111870584" edgekey="111875736"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111866960">
+						<edges>
+							<edge vertexkey="111870480" edgekey="111875552"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="111867064">
+						<edges>
+							<edge vertexkey="111870688" edgekey="111876288"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="52631040" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" ShowAnnotations="0" SelectedLanguage="xslt" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="81356646" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view rbx="150" rby="125"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Articles" expanded="1">
+										<entry name="Article" outkey="59" expanded="1">
+											<entry name="Number" outkey="56"/>
+											<entry name="Name" outkey="57"/>
+											<entry name="SinglePrice" outkey="58"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Articles.xsd" inputinstance="Articles.xml" instanceroot="{}Articles"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="81356662" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="66"/>
+					</targets>
+					<view ltx="75" lty="216" rbx="-95" rby="-137"/>
+					<data>
+						<constant value="00000.00" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="format-number" library="core" uid="81356663" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="65"/>
+						<datapoint pos="1" key="67"/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="229" lty="144" rbx="-219" rby="-203"/>
+				</component>
+				<component name="document" library="xml" uid="39124177" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="437" rbx="585" rby="122"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="suppress-cast-in-subtree">
+									<entry name="Articles" expanded="1">
+										<entry name="Article" inpkey="5" expanded="1">
+											<entry name="Number" inpkey="6"/>
+											<entry name="Name" inpkey="7"/>
+											<entry name="SinglePrice" inpkey="8"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Articles_Export.xsd" instanceroot="{}Articles" sps="Articles_Export.sps"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="6" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="7" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58">
+						<edges>
+							<edge vertexkey="65" edgekey="68"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="59">
+						<edges>
+							<edge vertexkey="5" edgekey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="8" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="67" edgekey="70"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

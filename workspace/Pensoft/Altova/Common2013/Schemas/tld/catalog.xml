@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns='urn:oasis:names:tc:entity:xmlns:xml:catalog' xmlns:spy='http://www.altova.com/catalog_ext' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='urn:oasis:names:tc:entity:xmlns:xml:catalog Catalog.xsd'>
+	<public publicId="-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" uri="files/web-jsptaglibrary_1_2.dtd"/>
+
+	<!-- Specific rewriting of schema URI at http://www.altova.com/schemas/tld/ -->
+	<rewriteURI uriStartString='http://www.altova.com/schemas/tld/' rewritePrefix='files/'/>
+</catalog>

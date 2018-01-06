@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.0" xmlns="http://www.crossref.org/doi_resources_schema/4.3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/doi_resources_schema/4.3.0 http://www.crossref.org/schema/deposit/doi_resources4.3.0.xsd">
+<head>
+<doi_batch_id>1cf9d2b0-3191-4062-be42-148ce14a9ddd</doi_batch_id>
+<depositor>
+<name>pens</name>
+<email_address>bozhin.karaivanov@gmail.com</email_address>
+</depositor>
+</head>
+<body>
+<doi_citations>
+<doi>part-1-256-3871</doi>
+<citation_list>
+	<citation key="ref0"><doi>10.1006/anbe.1995.0214</doi></citation>
+	<citation key="ref0"><doi>10.1163/002829683X00183</doi></citation>
+	<citation key="ref0"><doi>10.1007/BF00709371</doi></citation>
+	<citation key="ref1"><author>Barel</author><first_page>258</first_page><cYear>1991</cYear><volume_title>Cichlid Fishes Behaviour Ecology and Evolution</volume_title><article_title>The haplochromine cichlids in Lake Victoria: an assessment of biological and fisheries interests.</article_title><unstructured_citation>Barel CDN, Ligtvoet W, Goldschmidt T, Witte F, Goudswaard PC (1991) The haplochromine cichlids in Lake Victoria: an assessment of biological and fisheries interests. In: Keenleyside MHA (Ed) Cichlid Fishes, Behaviour, Ecology and Evolution. Chapman &amp; Hall, London, 258–279.</unstructured_citation></citation>
+	<citation key="ref2"><issn>00225460</issn><journal_title>J Zool</journal_title><author>Barel</author><volume>27</volume><first_page>333</first_page><cYear>1977</cYear><article_title>An introduction to the taxonomy and morphology of the haplochromine Cichlidae from Lake Victoria. Netherlands</article_title><unstructured_citation>Barel CDN, van Oijen MJP, Witte F, Witte-Maas ELM (1977) An introduction to the taxonomy and morphology of the haplochromine Cichlidae from Lake Victoria. Netherlands Journal of Zoology 27: 333–389.</unstructured_citation></citation>
+	<citation key="ref2"><doi>10.1163/002829676X00019</doi></citation>
+	<citation key="ref2"><doi>10.1111/j.1095-8312.2002.tb01712.x</doi></citation>
+	<citation key="ref2"><doi>10.1098/rspb.1999.0645</doi></citation>
+	<citation key="ref2"><doi>10.1186/1741-7007-6-22</doi></citation>
+	<citation key="ref3"><issn>03680770</issn><journal_title>Verh Int Ver Theor Angew Limnol</journal_title><author>Chapman</author><volume>30</volume><first_page>16</first_page><cYear>2008</cYear><article_title>Biodiversity conservation in African inland waters: lessons of the Lake Victoria region.</article_title><unstructured_citation>Chapman LJ, Chapman CA, Kaufman L, Witte F, Balirwa J (2008) Biodiversity conservation in African inland waters: lessons of the Lake Victoria region. Verhandlungen Internationale Vereinigung für theoretische und angewandte Limnologie 30: 16–34.</unstructured_citation></citation>
+	<citation key="ref3"><doi>10.1046/j.1523-1739.1995.9051262.x-i1</doi></citation>
+	<citation key="ref3"><doi>10.1017/S0952523804215103</doi></citation>
+	<citation key="ref3"><doi>10.1002/(SICI)1097-4687(199604)228:1&lt;1::AID-JMOR1&gt;3.0.CO;2-B</doi></citation>
+	<citation key="ref4"><journal_title>Zoologische Wetenschappen</journal_title><author>Goldschmidt</author><volume>257</volume><first_page>119</first_page><cYear>1989</cYear><article_title>Reproductive strategies, subtrophic niche differentiation and the role of competition for food in haplochromine cichlids (Pisces) from Lake Victoria, Tanzania. Annalen van het Koninklijk Museum voor Midden-Afrika</article_title><unstructured_citation>Goldschmidt T (1989b) Reproductive strategies, subtrophic niche differentiation and the role of competition for food in haplochromine cichlids (Pisces) from Lake Victoria, Tanzania. Annalen van het Koninklijk Museum voor Midden-Afrika, Zoologische Wetenschappen 257: 119–132.</unstructured_citation></citation>
+	<citation key="ref4"><doi>10.1111/j.1439-0310.1991.tb00273.x</doi></citation>
+	<citation key="ref5"><author>Goldschmidt</author><cYear>1994</cYear><volume_title>Darwins Hofvijver</volume_title><unstructured_citation>Goldschmidt T (1994) Darwins Hofvijver. Uitgeverij Prometheus, Amsterdam, 286 pp.</unstructured_citation></citation>
+	<citation key="ref6"><author>Goldschmidt</author><cYear>1996</cYear><volume_title>Darwin s Dreampond</volume_title><unstructured_citation>Goldschmidt T (1996) Darwin's Dreampond. MIT Press, Cambridge, Massachusetts, 277 pp.</unstructured_citation></citation>
+	<citation key="ref6"><doi>10.1007/BF00047549</doi></citation>
+	<citation key="ref6"><doi>10.2307/3545227</doi></citation>
+	<citation key="ref6"><doi>10.2307/3545226</doi></citation>
+	<citation key="ref6"><doi>10.1046/j.1523-1739.1993.07030686.x</doi></citation>
+	<citation key="ref6"><doi>10.2307/1445308</doi></citation>
+	<citation key="ref6"><doi>10.1007/s10641-006-9180-7</doi></citation>
+	<citation key="ref7"><author>Greenwood</author><cYear>1981</cYear><volume_title>The Haplochromine Fishes of the East African Lakes</volume_title><unstructured_citation>Greenwood PH (1981) The Haplochromine Fishes of the East African Lakes. Kraus International Publications, München, 839 pp.</unstructured_citation></citation>
+	<citation key="ref8"><issn>03680770</issn><journal_title>Verh Int Ver Theor Angew Limnol</journal_title><author>Hecky</author><volume>25</volume><first_page>39</first_page><cYear>1993</cYear><article_title>The eutrophication of Lake Victoria.</article_title><unstructured_citation>Hecky RE (1993) The eutrophication of Lake Victoria. Verhandlungen Internationale Vereinigung für theoretische und angewandte Limnologie 25: 39–48.</unstructured_citation></citation>
+	<citation key="ref8"><doi>10.4319/lo.1994.39.6.1476</doi></citation>
+	<citation key="ref8"><doi>10.1111/j.1365-2427.2009.02374.x</doi></citation>
+	<citation key="ref8"><doi>10.1023/A:1023601729203</doi></citation>
+	<citation key="ref8"><doi>10.1163/002829684X00281</doi></citation>
+	<citation key="ref8"><doi>10.1163/002829680X00258</doi></citation>
+	<citation key="ref8"><doi>10.1159/000113330</doi></citation>
+	<citation key="ref8"><doi>10.2307/1312084</doi></citation>
+	<citation key="ref9"><author>Kaufman</author><first_page>147</first_page><cYear>1995</cYear><volume_title>Cichliden Festschrift zum 25jährigen Jubiläum der DCG</volume_title><article_title>Cichliden von der ugandischen und der kenianischen Victoriaseeküste.</article_title><unstructured_citation>Kaufman L, Seehausen O (1995) Cichliden von der ugandischen und der kenianischen Victoriaseeküste. In: Stawikowski R (Ed) Cichliden, Festschrift zum 25jährigen Jubiläum der DCG. Deutsche Cichliden-Gesellschaft, Frankfurt am Main, 147–151.</unstructured_citation></citation>
+	<citation key="ref9"><doi>10.1046/j.1600-0633.2003.00023.x</doi></citation>
+	<citation key="ref9"><doi>10.1163/157075608X383700</doi></citation>
+	<citation key="ref9"><doi>10.1093/icb/icq117</doi></citation>
+	<citation key="ref9"><doi>10.1111/j.1095-8649.1993.tb00399.x</doi></citation>
+	<citation key="ref9"><doi>10.1016/0169-5347(95)90031-4</doi></citation>
+	<citation key="ref9"><doi>10.1023/A:1019602403098</doi></citation>
+	<citation key="ref9"><doi>10.1038/347550a0</doi></citation>
+	<citation key="ref9"><doi>10.1016/j.gene.2009.10.002</doi></citation>
+	<citation key="ref10"><journal_title>Cichlidae</journal_title><author>Niemantsverdriet</author><volume>31</volume><first_page>150</first_page><cYear>2005</cYear><article_title>Victoriacichliden houden en kweken in het laboratorium.</article_title><unstructured_citation>Niemantsverdriet P (2005) Victoriacichliden houden en kweken in het laboratorium. Cichlidae 31: 150–156.</unstructured_citation></citation>
+	<citation key="ref10"><doi>10.1007/BF00001938</doi></citation>
+	<citation key="ref10"><doi>10.1111/j.1095-8649.2000.tb02187.x</doi></citation>
+	<citation key="ref11"><author>Seehausen</author><first_page>143</first_page><cYear>1995</cYear><volume_title>Cichliden Festschrift zum 25jährigen Jubiläum der DCG</volume_title><article_title>Cichliden von der tansanischen Victoriasee-Küste.</article_title><unstructured_citation>Seehausen O (1995) Cichliden von der tansanischen Victoriasee-Küste. In: Stawikowski, R (Ed) Cichliden, Festschrift zum 25jährigen Jubiläum der DCG. Deutsche Cichliden-Gesellschaft, Frankfurt am Main, 143–146.</unstructured_citation></citation>
+	<citation key="ref12"><author>Seehausen</author><cYear>1996</cYear><volume_title>Lake Victoria Rock Cichlids Taxonomy Ecology and Distribution Verduijn Cichlids</volume_title><unstructured_citation>Seehausen O (1996) Lake Victoria Rock Cichlids: Taxonomy, Ecology and Distribution. Verduijn Cichlids, Zevenhuizen, 304 pp.</unstructured_citation></citation>
+	<citation key="ref13"><author>Seehausen</author><volume>6</volume><first_page>36</first_page><cYear>1996</cYear><volume_title>The Cichlids Yearbook</volume_title><article_title>Polychromatism in rock dwelling Lake Victoria cichlids: types, distribution, and observations on their genetics.</article_title><unstructured_citation>Seehausen O, Bouton N (1996) Polychromatism in rock dwelling Lake Victoria cichlids: types, distribution, and observations on their genetics. In: Konings A. (Ed) The Cichlids Yearbook, volume 6. Cichlid Press, 36–45.</unstructured_citation></citation>
+	<citation key="ref14"><issn>09369902</issn><journal_title>Ichthyol Explor Freshwat</journal_title><author>Seehausen</author><volume>9</volume><first_page>129</first_page><cYear>1998</cYear><article_title>Mbipi, the rock-dwelling cichlids of Lake Victoria: description of three new genera and fifteen new species (Teleostei).</article_title><unstructured_citation>Seehausen O, Lippitsch E, Bouton N, Zwennes H (1998) Mbipi, the rock-dwelling cichlids of Lake Victoria: description of three new genera and fifteen new species (Teleostei). Ichthyological Explorations of Freshwaters 9: 129–228.</unstructured_citation></citation>
+	<citation key="ref14"><doi>10.1007/s002650050405</doi></citation>
+	<citation key="ref15"><doi>10.1046/j.1461-0248.1999.00098.x</doi></citation>
+	<citation key="ref15"><doi>10.1126/science.277.5333.1808</doi></citation>
+	<citation key="ref16"><author>Seehausen</author><first_page>268</first_page><cYear>2003</cYear><volume_title>Conservation Ecology and Management of African Fresh Waters</volume_title><article_title>Implications of eutrophication for fish vision, behavioral ecology and species coexistence: A theoretical framework.</article_title><unstructured_citation>Seehausen O, van Alphen JJM, Witte F (2003) Implications of eutrophication for fish vision, behavioral ecology and species coexistence: A theoretical framework. In: Crisman TL, Chapman LJ, Chapman CA, Kaufman LS (Eds) Conservation, Ecology, and Management of African Fresh Waters. University Press of Florida, Florida, 268–287.</unstructured_citation></citation>
+	<citation key="ref17"><issn>00413259</issn><journal_title>Trop Fish Hobbyist</journal_title><author>Seehausen</author><volume>43</volume><issue>7</issue><first_page>96</first_page><cYear>1995</cYear><article_title>Extinction of many and survival of some: the current situation of the endemic cichlids in southern Lake Victoria.</article_title><unstructured_citation>Seehausen O, Witte F (1995) Extinction of many and survival of some: the current situation of the endemic cichlids in southern Lake Victoria. Tropical Fish Hobbyist 43 (7): 96–105.</unstructured_citation></citation>
+	<citation key="ref17"><doi>10.1046/j.1523-1739.1997.95346.x</doi></citation>
+	<citation key="ref17"><doi>10.1163/156854297X00201</doi></citation>
+	<citation key="ref17"><doi>10.1007/BF00002184</doi></citation>
+	<citation key="ref17"><doi>10.1007/BF01103363</doi></citation>
+	<citation key="ref18"><journal_title>Zoologische Wetenschappen</journal_title><author>Snoeks</author><volume>270</volume><first_page>1</first_page><cYear>1994</cYear><article_title>The haplochromines (Teleostei, Cichlidae) of Lake Kivu (East Africa). A taxonomic revision with notes on their ecology. Annalen van het Koninklijk Museum voor Midden-Afrika</article_title><unstructured_citation>Snoeks J (1994) The haplochromines (Teleostei, Cichlidae) of Lake Kivu (East Africa). A taxonomic revision with notes on their ecology. Annalen van het Koninklijk Museum voor Midden-Afrika, Zoologische Wetenschappen 270: 1–221.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Anker GCh, Dullemeijer P (1996) Transformation morphology on structures in the head of cichlid fishes. In: Datta Munsghi JS, Dutta HM (Eds) Fish Morphology – Horizon of New Research. Oxford &amp; IBH Publishing, New Delhi, 1–20.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Barel CDN (1985) A matter of space, constructional morphology of cichlid fishes. PhD Thesis, Leiden, the Netherlands: Leiden University.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>de Visser J (2000) Tongue in cheek. A study in biological engineering of fish. PhD Thesis, Leiden, the Netherlands: Leiden University.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Goldschmidt T (1989a) An ecological and morphological field study on the haplochromine cichlid fishes (Pisces, Cichlidae) of Lake Victoria. PhD Thesis, Leiden, the Netherlands: Leiden University.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Goldschmidt T, Witte F (1992) Explosive speciation and adaptive radiation of haplochromine cichlids from Lake Victoria: an illustration of the scientific value of a lost species flock. Mitteilungen Internationale Vereinigung für theoretische und angewandte Limnologie 23: 101–107.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Greenwood PH (1979) Towards a phyletic classification of the 'genus' Haplochromis and related taxa. Part I. Bulletin British Museum of natural History (Zoology) 35: 265–322.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Greenwood PH (1980) Towards a phyletic classification of the 'genus' Haplochromis and related taxa. Part II. Bulletin British Museum of natural History (Zoology) 39: 1–101.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Greenwood PH, Barel CDN (1978) A revision of the Lake Victoria Haplochromis species (Pisces, Cichlidae), Part VIII. Bulletin British Museum of natural History (Zoology), 33: 141–192.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Kishe-Machumu MA (2012) Inter-guild differences and possible causes of the recovery of cichlid species in Lake Victoria, Tanzania. PhD Thesis, Leiden, the Netherlands: Leiden University.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Mizoiri S, Aibara M, Okada N (2008) Live Cichlids in the Southern Lake Victoria - Ongoing Speciation. (in Japanese) Report of Grant-in-Aid for Scientific Research on Priority Areas 2002–2007 from The Ministry of Education, Culture, Sports, Science and Technology (Japan). Kougakutosho Ltd., Tokyo, 278 pp.</unstructured_citation></citation>
+	<citation key="ref18"><unstructured_citation>Rinkes M (1999) Conflicts in cichlid head morphology due to optimization of functional demands on suction feeding. PhD Thesis, Leiden, the Netherlands: Leiden University.</unstructured_citation></citation>
+</citation_list>
+</doi_citations>
+</body>
+</doi_batch>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8">
+	<component name="defaultmap1" blackbox="0" uid="55233600" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="cpp"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="52746544" kind="14">
+					<properties/>
+					<view rbx="150" rby="276"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:Altova" expanded="1">
+								<entry name="0:Office" expanded="1">
+									<entry name="0:Name" outkey="47734424"/>
+									<entry name="0:street" outkey="47759344"/>
+									<entry name="0:city" outkey="47759696"/>
+									<entry name="0:Phone" outkey="47709400"/>
+									<entry name="0:Department" expanded="1">
+										<entry name="0:Name" outkey="47796304"/>
+										<entry name="0:Person" expanded="1">
+											<entry name="0:EMail" outkey="47692216"/>
+											<entry name="0:First" outkey="47686776"/>
+											<entry name="0:Last" outkey="51628248"/>
+											<entry name="0:PhoneExt" outkey="47803360"/>
+											<entry name="0:Title" outkey="47760224"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="Tut-company.xsd" inputinstance="Tut-company.xml" outputinstance="Tut-company.xml" instanceroot="{}Altova"/>
+					</data>
+				</component>
+				<component name="edi" library="text" uid="53746624" kind="16">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="251" lty="1" rbx="410" rby="210"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="Rows" expanded="1">
+								<entry name="Office-name" inpkey="50613400"/>
+								<entry name="Department-name" inpkey="50615272"/>
+								<entry name="Street" inpkey="50614984"/>
+								<entry name="City" inpkey="50613544"/>
+								<entry name="Office-Tel." inpkey="50614552"/>
+								<entry name="First-name" inpkey="50614120"/>
+								<entry name="Last-name" inpkey="50615416"/>
+								<entry name="Tel.-Extension" inpkey="50613832"/>
+								<entry name="Email" inpkey="50613688"/>
+								<entry name="Position" inpkey="50614696"/>
+							</entry>
+						</root>
+						<text type="csv" inputinstance="My-CSV-file" encoding="1000" byteorder="1">
+							<settings separator="," quote="&quot;" firstrownames="false" removeempty="true">
+								<names root="My-CSV-file" block="Rows">
+									<field0 name="Office-name" type="string"/>
+									<field1 name="Department-name" type="string"/>
+									<field2 name="Street" type="string"/>
+									<field3 name="City" type="string"/>
+									<field4 name="Office-Tel." type="string"/>
+									<field5 name="First-name" type="string"/>
+									<field6 name="Last-name" type="string"/>
+									<field7 name="Tel.-Extension" type="string"/>
+									<field8 name="Email" type="string"/>
+									<field9 name="Position" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="47778800"/>
+					<edge edgekey="47778936"/>
+					<edge edgekey="47779072"/>
+					<edge edgekey="50607488"/>
+					<edge edgekey="51181872"/>
+					<edge edgekey="51622304"/>
+					<edge edgekey="58594728"/>
+					<edge edgekey="61018936"/>
+					<edge edgekey="62526024"/>
+					<edge edgekey="62526160"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="47686776">
+						<edges>
+							<edge vertexkey="50614120" edgekey="51622304"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47692216">
+						<edges>
+							<edge vertexkey="50613688" edgekey="58594728"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47709400">
+						<edges>
+							<edge vertexkey="50614552" edgekey="50607488"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47734424">
+						<edges>
+							<edge vertexkey="50613400" edgekey="62526024"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47759344">
+						<edges>
+							<edge vertexkey="50614984" edgekey="51181872"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47759696">
+						<edges>
+							<edge vertexkey="50613544" edgekey="47779072"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47760224">
+						<edges>
+							<edge vertexkey="50614696" edgekey="47778936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47796304">
+						<edges>
+							<edge vertexkey="50615272" edgekey="62526160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47803360">
+						<edges>
+							<edge vertexkey="50613832" edgekey="47778800"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="51628248">
+						<edges>
+							<edge vertexkey="50615416" edgekey="61018936"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

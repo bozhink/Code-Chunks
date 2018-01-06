@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="16">
+	<component name="defaultmap1" blackbox="0" uid="49431880" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="cpp" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="document" library="xml" uid="52293320" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-5" lty="198" rbx="140" rby="318"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ShortPO" expanded="1">
+										<entry name="LineItems" expanded="1">
+											<entry name="LineItem" outkey="24" expanded="1">
+												<entry name="ArticleNr" outkey="12"/>
+												<entry name="Amount" outkey="19"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ShortPO.xsd" inputinstance="ShortPO.xml" instanceroot="{}ShortPO"/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="49499840" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="22"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="351" lty="309" rbx="-127" rby="-67"/>
+				</component>
+				<component name="value-map" library="core" uid="52858583" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="214" lty="94" rbx="-203" rby="-176"/>
+					<data>
+						<wsdl/>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="25"/>
+								<entry from="2" to="2.30"/>
+								<entry from="3" to="34"/>
+								<entry from="4" to="57.50"/>
+							</valuemapTable>
+							<input name="articleNo" type="int"/>
+							<result name="articlePrice" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="52858582" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="207" lty="190" rbx="-210" rby="-80"/>
+					<data>
+						<wsdl/>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="T-Shirt"/>
+								<entry from="2" to="Socks"/>
+								<entry from="3" to="Pants"/>
+								<entry from="4" to="Jacket"/>
+							</valuemapTable>
+							<input name="articleNo" type="int"/>
+							<result name="articleName" type="string"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="52496680" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="517" lty="103" rbx="687" rby="344"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="CompletePO" expanded="1">
+										<entry name="Customer">
+											<entry name="Address" expanded="1"/>
+										</entry>
+										<entry name="LineItems" expanded="1">
+											<entry name="LineItem" inpkey="25" expanded="1">
+												<entry name="Article" expanded="1">
+													<entry name="Number" inpkey="17"/>
+													<entry name="Name" inpkey="10"/>
+													<entry name="SinglePrice" inpkey="7"/>
+													<entry name="Amount" inpkey="20"/>
+													<entry name="Price" inpkey="2"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="Total" expanded="1"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="CompletePO.xsd" instanceroot="{}CompletePO" sps="Articles.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+							<edge vertexkey="7" edgekey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="14"/>
+							<edge vertexkey="15" edgekey="16"/>
+							<edge vertexkey="17" edgekey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="21"/>
+							<edge vertexkey="22" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

@@ -1,0 +1,1622 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tp="http://www.plazi.org/taxpub" xmlns:php="http://php.net/xsl" xml:lang="bg" lang="bg">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Maeropsis paphavasitae and Rotomelita longipropoda, two new species (Crustacea, Amphipoda) from Lower Gulf of Thailand</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="distribution" content="global" />
+<meta name="robots" content="index, follow, all" />
+<script language="javascript">
+	if(self.location==top.location){
+		document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl-large.css" media="all" title="default">');
+	}else{
+		document.write('<link rel="stylesheet" href="http://www.pensoft.net/J_FILES/img/xsl.css" media="all" title="default">');
+	}
+</script>
+<script type="text/javascript">
+	function swapDivClassname(pLink, pId, pClassName){
+		var lDiv = document.getElementById(pId);
+		if( lDiv ){
+			if( lDiv.className == pClassName ){
+				lDiv.className = '';
+				pLink.className = 'inactive'
+			}else{
+				lDiv.className = pClassName;
+				pLink.className = ''
+			}
+		}
+	}
+	function openw(url, title, options) {
+		var newwin = window.open(url, title, options);
+		newwin.focus();
+	}
+	function showBaloon(pBaloonType, pId, pEvent) {
+		if( !pId )
+			return;
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		pEvent = pEvent || window.event;
+		clearTimeout(gTimeout);
+		if( gActiveBaloonId && gActiveBaloonType == pBaloonType && gActiveBaloonId != pId ){
+			gFlagToHideBaloon = true;
+			hideBaloon(gActiveBaloonId);
+		}else if(gActiveBaloonType == pBaloonType && gActiveBaloonId == pId ){
+			return;
+		}
+		gActiveBaloonId = pId;
+		gActiveBaloonType = pBaloonType;
+		gFlagToHideBaloon = false;
+		var lEventTarget = pEvent.target || pEvent.srcElement;
+		if( pBaloonType == 1 ){//xref
+			var lReference = document.getElementById('reference_' + pId);
+			var lText = 'Reference not found!';
+			if( lReference ){
+				lText = lReference.innerHTML;// || lReference.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}else if( pBaloonType == 2 ){//Taxoni
+			var lReferenceName = 'taxon_' + pId + '_baloon_div';
+			var lReference = document.getElementById(lReferenceName);
+			gBaloonInnerWrapper.className = 'smallBaloon';
+			if( lReference ){
+				lText = lReference.innerHTML;// || lReference.innerText;
+			}else{
+				lText = 'Error during loading taxa data';
+			}
+			gBaloon.innerHTML = lText;
+		}else if( pBaloonType == 3 ){//Figuri
+			var lFigure = document.getElementById('fig_' + pId);
+			var lText = 'Figure not found!';
+			if( lFigure ){
+				lText = lFigure.innerHTML;// || lFigure.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}else if( pBaloonType == 4 ){//Tablici
+			var lTable = document.getElementById('table_' + pId);
+			var lText = 'Table not found!';
+			if( lTable ){
+				lText = lTable.innerHTML;// || lTable.innerText;
+			}
+			gBaloon.innerHTML = lText;
+			gBaloonInnerWrapper.className = 'largeBaloon';
+		}
+		gActiveBaloonId = pId;
+		displayBaloon(lEventTarget, pEvent);
+	}
+	function displayBaloon(pEventTarget, pEvent){//Pozicionira i pokazva balona
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		var lUseWindowMaxY = parseInt('0');
+		gBaloonWrapper.style.display="block";
+		positionBaloon(pEventTarget, pEvent, lUseWindowMaxY);
+	}
+	function hideBaloonEvent(pId, pEvent){
+		if( !gBaloon || !gBaloonWrapper)
+			return;
+		gFlagToHideBaloon = true;
+		gTimeout = setTimeout("hideBaloon('" + pId + "')", 10);
+	}
+	function hideBaloon(pId){
+		clearTimeout(gTimeout);
+		if( !gFlagToHideBaloon )
+			return;
+		gBaloonIsShown = false;
+		gActiveBaloonId = 0;
+		gActiveBaloonType = false;
+		gBaloonWrapper.style.display="none";
+	}
+	function initBalloons(){
+		gBaloon = document.getElementById('baloonContent');
+		gBaloonIsShown = false;
+		gActiveBaloonId = 0;
+		gTimeout = false;
+		gActiveBaloonType = false;
+		gBaloonWrapper = document.getElementById('baloonWrapper');
+		gBaloonInnerWrapper = document.getElementById('baloonInnerWrapper');
+		gBaloonArrowImg = document.getElementById('baloonArrowImg');
+	}
+	function positionBaloon(pEventTarget, pEvent, pUseWindowMaxY){
+		var lMousePos = getMousePosition(pEvent);
+		var lContentWrapper = document.getElementById('contentWrapper');
+		//var lY = pEventTarget.offsetTop + pEventTarget.offsetHeight;
+		var lY = pEventTarget.offsetHeight;
+		//var lX = pEventTarget.offsetLeft;
+		var lX = 0;
+		var lParent = pEventTarget;
+		do {
+			lY += lParent.offsetTop;
+			lX += lParent.offsetLeft;
+			//alert(lParent.tagName + '-' + lY);
+		}
+		while((lParent = lParent.offsetParent) && lParent.id != 'contentWrapper')
+		/*var lXMax = lMousePos['xMax'];*/
+		var lXMax = lContentWrapper.offsetWidth - 20;//-20 zaradi scrolla
+		var lYMax;
+		if( pUseWindowMaxY ){
+			lYMax = lMousePos['yMax'];
+		}else{
+			lYMax = lContentWrapper.scrollHeight;
+		}
+		lYMax = lYMax - 40;
+		var lClassName = 'baloonWrapper';
+		var lLeft = 0;
+		var lTop = 0;
+		var lImageName = 'http://www.pensoft.net/J_FILES/img/baloon_arrow';
+		if( lY + gBaloonWrapper.offsetHeight <= lYMax ){
+			lTop = lY;
+			lClassName = lClassName + 'Bottom';
+			lImageName = lImageName + '_bottom';
+		}else{
+			lTop = lY - gBaloonWrapper.offsetHeight - pEventTarget.offsetHeight;
+			if( lTop < 0 )
+				lTop = 0;
+			lClassName = lClassName + 'Top';
+			lImageName = lImageName + '_top';
+		}
+		if( lX + gBaloonWrapper.offsetWidth <= lXMax ){
+			lLeft = lX;
+			lClassName = lClassName + 'Right';
+			lImageName = lImageName + '_right';
+		}else{
+			lLeft = lX -gBaloonWrapper.offsetWidth + 50;
+			if( lLeft < 0 )
+				lLeft = 0;
+			lClassName = lClassName + 'Left';
+			lImageName = lImageName + '_left';
+		}
+		lImageName = lImageName + '.gif';
+		gBaloonWrapper.style.left = lLeft + 'px';
+		gBaloonWrapper.style.top = lTop + 'px';
+		gBaloonWrapper.className =  lClassName;
+		gBaloonArrowImg.setAttribute('src', lImageName);
+	}
+	function submitForm( pFormName ){
+		eval('document.' + pFormName + '.submit()');
+	}
+	function showLocalitiesMenu(){
+		var lMenu = document.getElementById('localitiesMenuDiv');
+		if( lMenu )
+			lMenu.style.display='block';
+ 		}
+	function hideLocalitiesMenu(){
+		var lMenu = document.getElementById('localitiesMenuDiv');
+		if( lMenu )
+			lMenu.style.display='none';
+	}
+	function getMousePosition(pEvent){
+		if (document.layers) {
+		// When the page scrolls in Netscape, the event's mouse position
+		// reflects the absolute position on the screen. innerHight/Width
+		// is the position from the top/left of the screen that the user is
+		// looking at. pageX/YOffset is the amount that the user has
+		// scrolled into the page. So the values will be in relation to
+		// each other as the total offsets into the page, no matter if
+		// the user has scrolled or not.
+		xMousePos = pEvent.clientX;
+		yMousePos = pEvent.clientY;
+		xMousePosMax = window.innerWidth + window.pageXOffset;
+		yMousePosMax = window.innerHeight + window.pageYOffset;
+		} else if (document.all) {
+		// When the page scrolls in IE, the event's mouse position
+		// reflects the position from the top/left of the screen the
+		// user is looking at. scrollLeft/Top is the amount the user
+		// has scrolled into the page. clientWidth/Height is the height/
+		// width of the current page the user is looking at. So, to be
+		// consistent with Netscape (above), add the scroll offsets to
+		// both so we end up with an absolute value on the page, no
+		// matter if the user has scrolled or not.	;
+		xMousePos = window.event.x + document.body.scrollLeft;
+		yMousePos = window.event.y + document.body.scrollTop;
+		xMousePosMax = document.body.clientWidth + document.body.scrollLeft;
+		yMousePosMax = document.body.clientHeight + document.body.scrollTop;
+		} else if (document.getElementById) {
+		// Netscape 6 behaves the same as Netscape 4 in this regard
+		xMousePos = pEvent.clientX;
+		yMousePos = pEvent.clientY;
+		xMousePosMax = window.innerWidth + window.pageXOffset;
+		yMousePosMax = window.innerHeight + window.pageYOffset;
+		}
+		return {
+		'x' : xMousePos,
+		'y' : yMousePos,
+		'xMax' : xMousePosMax,
+		'yMax' : yMousePosMax
+		};
+	}
+	var gHolderDiv;
+	var gScrolDiv;
+	var gRightBtn;
+	var gLeftBtn;
+	var gLinksTable;
+	var gMinLeft;
+	function initScrollConstants(){
+		gHolderDiv = document.getElementById('scrollHolderDiv');
+		gScrolDiv = document.getElementById('scrollDiv');
+		gRightBtn = document.getElementById('scrollRightBtn');
+		gLeftBtn = document.getElementById('scrollLeftBtn');
+		gLinksTable = document.getElementById('linksButtonHolder');
+		gScrolDiv.style.width = gLinksTable.offsetWidth + 'px';
+		gHolderDiv.style.width = '';
+		var gHolderWidth = gHolderDiv.offsetWidth;
+		var gScrolWidth = gScrolDiv.offsetWidth;
+		gMinLeft = gHolderWidth - gScrolWidth;
+		if(gMinLeft > 0)
+			gMinLeft = 0;
+		gCurrentLeftPos = 0;
+		gInterval = null;
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function scrollDivRight(){
+		if( gMinLeft >= 0 ){
+			stopScroll()
+			return;
+		}
+		if( gCurrentLeftPos - 1 > gMinLeft )
+			gCurrentLeftPos = gCurrentLeftPos - 1;
+		else{
+			stopScroll()
+			gCurrentLeftPos = gMinLeft;
+		}
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function scrollDivLeft(){
+		if( gMinLeft >= 0 ){
+			stopScroll()
+			return;
+		}
+		if( gCurrentLeftPos + 1 < 0 )
+			gCurrentLeftPos = gCurrentLeftPos + 1;
+		else{
+			gCurrentLeftPos = 0;
+			stopScroll()
+		}
+		changeDivPosition(gCurrentLeftPos);
+	}
+	function checkBtnClasses(){
+		if( gLeftBtn ){
+			if( gCurrentLeftPos == 0 || gMinLeft >= 0 ){
+				gLeftBtn.className = 'LeftScrollBtnLinkInactive';
+			}else{
+				gLeftBtn.className = 'LeftScrollBtnLinkActive';
+			}
+		}
+		if( gRightBtn ){
+			if( gCurrentLeftPos == gMinLeft || gMinLeft >= 0 ){
+				gRightBtn.className = 'RightScrollBtnLinkInactive';
+			}else{
+				gRightBtn.className = 'RightScrollBtnLinkActive';
+			}
+		}
+	}
+	function changeDivPosition(pLeft){
+		gScrolDiv.style.left  = pLeft + 'px';
+		checkBtnClasses()
+	}
+	function stopScroll(){
+		if(gInterval)
+			clearInterval(gInterval)
+	}
+	function startScroll(pDir){
+		if( gMinLeft >= 0 ){
+			return;
+		}
+		if( pDir == 0){//Right
+			gInterval = setInterval("scrollDivRight('right')", 20);
+		}else{
+			gInterval = setInterval("scrollDivLeft('left')", 20);
+		}
+	}
+	function getfnlink(pFn, pEl) {
+		lDiv = document.getElementById(pFn);
+		lEl = lDiv.firstChild;
+		while (lEl.nodeType != 1) {
+			lEl = lEl.nextSibling;
+		}
+		for (var i = 0; i < lEl.childNodes.length; i++) {
+			if (lEl.childNodes[i].tagName && lEl.childNodes[i].tagName.toLowerCase() == 'a') {
+				lHref = lEl.childNodes[i].href;
+				break;
+			}
+		}
+		if (lHref)
+			pEl.href = lHref;
+	}
+</script>
+</head>
+<body><div id="highlightWrapper" class=""><div id="highlightTaxonNameWrapper" class="highlightTaxonNameWrapper"><div id="highlightTaxonTreatmentWrapper" class="highlightTaxonTreatmentWrapper"><div id="highlightCountryWrapper" class="highlightCountryWrapper"><div id="highlightCitationWrapper" class="highlightCitationWrapper"><div id="highlightTypeescWrapper" class="highlightTypeescWrapper"><div id="highlightCollectionWrapper" class="highlightCollectionWrapper"><div id="highlightLocalityWrapper" class="highlightLocalityWrapper"><div class="wrapper">
+<div class="headWrapper">
+<table class="highlightButtonHolder" width="100%" cellspacing="1" cellpadding="0"><tr>
+<td class="taxon-treatmentsButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonTreatmentWrapper', 'highlightTaxonTreatmentWrapper')">Taxon treatments</a></td>
+<td class="taxon-namesButton"><a href="#" onclick="swapDivClassname(this, 'highlightTaxonNameWrapper', 'highlightTaxonNameWrapper')">Taxon names</a></td>
+<td class="citationsButton"><a href="#" onclick="swapDivClassname(this, 'highlightCitationWrapper', 'highlightCitationWrapper')">Citations</a></td>
+<td class="localitiesButton" onmouseover="showLocalitiesMenu()" onmouseout="hideLocalitiesMenu()" id="mapLocalityButton"><div class="localitiesMenu" id="localitiesMenuDiv">
+<div class="localitiesMenuRow"><a onclick="submitForm('all_localities_form');return false;">All</a></div>
+<form name="all_localities_form" class="localitiesForm" method="post" target="_blank" action="http://ptp.pensoft.eu/redirect_to_googlemap.php">
+<input type="hidden" name="coordinates[]" value="09°18'39.5&quot;N, 99°46'46.4&quot;E" /><input type="hidden" name="labels[]" value="09°18'39.5&quot;N, 99°46'46.4&quot;E" /><input type="hidden" name="coordinates[]" value="9°41'48&quot;N, 100°0'2&quot;E" /><input type="hidden" name="labels[]" value="9°41'48&quot;N, 100°0'2&quot;E" />
+</form>
+<div class="localitiesMenuRow"><a onclick="submitForm('Maeropsis_paphavasitae_localities_form');return false;">Maeropsis paphavasitae</a></div>
+<form class="localitiesForm" method="post" target="_blank" action="http://ptp.pensoft.eu/redirect_to_googlemap.php" name="Maeropsis_paphavasitae_localities_form">
+<input type="hidden" name="coordinates[]" value="09°18'39.5&quot;N, 99°46'46.4&quot;E" /><input type="hidden" name="labels[]" value="09°18'39.5&quot;N, 99°46'46.4&quot;E" />
+</form>
+<div class="localitiesMenuRow"><a onclick="submitForm('Rotomelita_longipropoda_localities_form');return false;">Rotomelita longipropoda</a></div>
+<form class="localitiesForm" method="post" target="_blank" action="http://ptp.pensoft.eu/redirect_to_googlemap.php" name="Rotomelita_longipropoda_localities_form">
+<input type="hidden" name="coordinates[]" value="9°41'48&quot;N, 100°0'2&quot;E" /><input type="hidden" name="labels[]" value="9°41'48&quot;N, 100°0'2&quot;E" />
+</form>
+</div>
+<a href="#" onclick="swapDivClassname(this, 'highlightLocalityWrapper', 'highlightLocalityWrapper')">Map localities</a></td>
+<td class="offButton"><a href="#" class="inactive" onclick="swapDivClassname(this, 'highlightWrapper', 'highlightWrapper')">Turn highlighting On/Off</a></td>
+</tr></table>
+<div class="linksButtonWrapper">
+<div class="pathTopLeftScrollBtn"><a onmouseover="startScroll(1)" onmouseout="stopScroll()" class="LeftScrollBtnLinkActive" id="scrollLeftBtn"></a></div>
+<div class="pathScrollHolder" id="scrollHolderDiv"><div id="scrollDiv" class="pathScrollDiv">
+<table class="linksButtonHolder" cellspacing="0" cellpadding="3" id="linksButtonHolder"><tr>
+<td class="linksButtonHolder"><a href="#top">Top</a></td>
+<td class="linksButtonHolder"><a href="#abstract" onclick="">Abstract</a></td>
+<td class="linksButtonHolder"><a href="#introduction" onclick="">Introduction</a></td>
+<td class="linksButtonHolder"><a href="#materialandmethods" onclick="">Material and methods</a></td>
+<td class="linksButtonHolder"><a href="#results" onclick="">Results</a></td>
+<td class="linksButtonHolder"><a href="#acknowledgements" onclick="">Acknowledgements</a></td>
+<td class="linksButtonHolder"><a href="#references" onclick="">References</a></td>
+</tr></table></div></div>
+<div class="pathTopRightScrollBtn"><a onmouseover="startScroll(0)" onmouseout="stopScroll()" class="RightScrollBtnLinkActive" id="scrollRightBtn"></a></div>
+<div class="unfloat"></div>
+</div>
+</div>
+<div class="contentWrapper" id="contentWrapper">
+<div class="baloonWrapper" id="baloonWrapper" onmouseover="showBaloon(gActiveBaloonType, gActiveBaloonId)" onmouseout="hideBaloonEvent(gActiveBaloonId, event)"><div id="baloonInnerWrapper">
+<div class="baloonTop">
+<div class="baloonTopLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_left.gif" /></div>
+<div class="baloonTopMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_middle.jpg" /></div>
+<div class="baloonTopRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_top_right.gif" /></div>
+<div class="unfloat"></div>
+</div>
+<div class="baloonContent" id="baloonContent"><div class="unfloat"></div></div>
+<div class="baloonBottomLeftCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_left.gif" /></div>
+<div class="baloonBottomMiddle"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_middle.jpg" /></div>
+<div class="baloonBottomRightCorner"><img src="http://www.pensoft.net/J_FILES/img/baloon_bottom_right.gif" /></div>
+<div class="unfloat"></div>
+<div class="arrowDiv"><img id="baloonArrowImg" src="http://www.pensoft.net/J_FILES/img/baloon_arrow_top_left.gif" /></div>
+</div></div>
+<a name="top"></a><div class="doiNumber">ZooKeys 307: 15–33, doi: 10.3897/zookeys.307.5273</div>
+<div class="mainTitle"><i>Maeropsis paphavasitae</i> and <i>Rotomelita longipropoda</i>,  two new species (Crustacea,  Amphipoda) from Lower Gulf of Thailand</div>
+<div class="authors">Koraon Wongkamhaeng <span class="specialSymbols">1,†</span>, Charles Oliver Coleman <span class="specialSymbols">2,‡</span>, Pornsilp Pholpunthin <span class="specialSymbols">1,§</span>
+</div>
+<div class="affilations">
+<div class="affiliationRow">
+			<span id="1" class="uriSym">1 </span>Excellence Center for Biodiversity of Peninsular Thailand,  Faculty of Science,  Prince of Songkla University,  90112 Thailand
+		</div>
+<div class="affiliationRow">
+			<span id="1" class="uriSym">2 </span>Museum für Naturkunde Berlin,  Invalidenstraße 43,  10115 Berlin,  Germany
+		</div>
+<div class="affiliationRow">
+			<span id="1" class="uriSym">3 </span>Marine and Coastal Resources Institute (MACORIN),  Prince of Songkla University, 90112 Thailand
+		</div>
+</div>
+<div class="uris">
+<div class="uriRow">
+<span class="uriSym">† </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:D34BFAAF-A3F5-47E4-9671-A1F02717D789">urn:lsid:zoobank.org:author:D34BFAAF-A3F5-47E4-9671-A1F02717D789</a>
+</div>
+<div class="uriRow">
+<span class="uriSym">‡ </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:1EC18609-2D14-462B-8E59-B1CE40166FAF">urn:lsid:zoobank.org:author:1EC18609-2D14-462B-8E59-B1CE40166FAF</a>
+</div>
+<div class="uriRow">
+<span class="uriSym">§ </span><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:author:52AAF3DE-00F0-47FC-90F0-8484B6F4F411">urn:lsid:zoobank.org:author:52AAF3DE-00F0-47FC-90F0-8484B6F4F411</a>
+</div>
+</div>
+<div class="authorNotes"><div class="authorNotesRow">
+				<p>Corresponding author: Koraon Wongkamhaeng (<a href="mailto:koraon@gmail.com">koraon@gmail.com</a>)</p>
+				<p>Academic editor: Alan Myers</p>
+		</div></div>
+<div class="lMetaDates">
+<span class="metaDate"><span class="dateLabel">received </span>7 April 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">accepted </span>4 June 2013</span><span class="dateSeparator"> | </span><span class="metaDate"><span class="dateLabel">Published </span>5 June 2013</span><p></p>
+<br /><div class="rifgtsrow">
+<p>(C) 2013 Koraon Wongkamhaeng. This is an open access article distributed under the terms of the <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0 (CC-BY)</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p>
+<br /><p>For reference, use of the paginated PDF or printed version of this article is recommended.</p>
+</div>
+</div>
+<a name="abstract"></a><div class="abstractHolder"><div class="abstractText">
+			<span id="1" class="node_label">Abstract</span>
+			<p>Two new species of maerid and melitid <span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Amphipoda" onmouseover="showBaloon(2, 'Amphipoda', event)" onmouseout="hideBaloonEvent('Amphipoda', event)">Amphipoda</a></span></span>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i>,  respectively,  collected from a seagrassbed of the Lower Gulf of Thailand,  are described. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> is characterized by it seven teeth on the palm of gnathopod 2 and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> can be recognized by its long gnathopod 1 propodus. Their characters are described and illustrated. All specimens are deposited at Princess Maha Chakri Sirindhorn Natural History Museum,  Prince of Songkla University,  Thailand and the Museum für Naturkunde,  Berlin.</p>
+		</div></div>
+<div class="keywordsHolder"><div class="keywordsText">
+<span class="node_label">Keywords</span><p>Crustacea, Amphipoda, Maeridae, Melitidae, <i>Maeropsis paphavasitae</i>, <i>Rotomelita longipropoda</i>, seagrass bed, Gulf of Thailand, new species, taxonomy</p>
+</div></div>
+<div class="secHolder">
+	<div class="section"><a name="introduction"></a>
+		<span id="1" class="node_title">Introduction</span>
+		<p>The Gulf of Thailand contains many seagrass beds on the coast both the mainland and the islands along the gulf. There are 12 species of seagrass reported from this area. The seagrass habitats in Thailand have been investigated since 1902,  covering various topics from both fauna and flora (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B15', event)" onmouseout="hideBaloonEvent('B15')">Prathep et al. 2010</span>). However,  only one contribution deals with gammaridean amphipods,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis" onmouseover="showBaloon(2, 'Cheiriphotis', event)" onmouseout="hideBaloonEvent('Cheiriphotis', event)">Cheiriphotis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis%20trifurcata" onmouseover="showBaloon(2, 'Cheiriphotis_trifurcata', event)" onmouseout="hideBaloonEvent('Cheiriphotis_trifurcata', event)">trifurcata</a></span></span></i> was report (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B16', event)" onmouseout="hideBaloonEvent('B16')">Wongkamhaeng et al. 2012</span>). In this study,  we describe the two new gammaridean species <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasita" onmouseover="showBaloon(2, 'Maeropsis_paphavasita', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasita', event)">paphavasita</a></span></span></i> sp. n. and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n.,  both of which were found in the seagrass. The discovery of them represents the first record of these two genera in South China Sea. Figures and descriptions of both species are provided.</p>
+	</div>
+	<div class="section"><a name="materialandmethods"></a>
+		<span id="1" class="node_title">Material and methods</span>
+		<p>Amphipods were collected using a 20×20cm<sup>2</sup> Ekman’s grab in the mix of species seagrass beds of Talet Bay and Phangan Island (<span class="xrefLink node_fig" onmouseover="showBaloon(3, 'F1', event)" onmouseout="hideBaloonEvent('F1')">Figure 1</span>).The sites were visited at low tide and the specimens were collected from the subtidal zone (2–5 m). The sediment was sieved with a 0.5 mm sieve. Amphipod specimens were sorted out and preserved in 70% ethanol. In the laboratory,  the animals were examined using a compound microscope and later selected for dissection. The appendages were examined and ﬁgures were drawn using an Olympus CH30 light microscope with a camera lucida. The following abbreviations are used: A,  antenna; G,  gnathopod; HD,  head; LL,  lowerlip; MD,  mandible; MX,  maxilla; MP,  maxilliped; P,  pereopod; Pl,  pleopod; T,  telson; U,  uropod; UR,  urosome;UL,  upperlip; r,  right;l,  left; ♂,  male; ♀,  female. The type material of the new species is deposited at Prince of Songkla University Zoological Collection (PSUZC) and the Museum für Naturkunde,  Berlin (ZMB).</p>
+		<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g001.jpg"><img src="export.php_files/ZooKeys-307-015-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+			<span id="1" class="node_label">Figure 1.</span>
+			<p>Map of sampling area.</p>
+		</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F1">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g001.jpg"><img src="export.php_files/ZooKeys-307-015-g001.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+			<span id="1" class="node_label">Figure 1.</span>
+			<p>Map of sampling area.</p>
+		</div>
+<div class="unfloat"></div>
+</div>
+	</div>
+	<div class="section"><a name="results"></a>
+		<span id="1" class="node_title" style="padding-bottom: 0px">Results</span>
+		<div class="section"><a name="systematics"></a>
+			<span id="1" class="node_title1 sec" style="padding-bottom: 0px">Systematics</span>
+			<span id="1" class="node_title1 sec" style="padding-bottom: 0px"><span class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeridae" onmouseover="showBaloon(2, 'Maeridae', event)" onmouseout="hideBaloonEvent('Maeridae', event)">Maeridae</a></span></span> Krapp-Schickel,  2008 </span>
+			<div class="taxonTreatmentsHolder secHolder"><div class="taxonTreatmentRow node_taxon-treatment">
+				<div class="taxonNomenclature">
+					<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)"><i>Maeropsis</i></a></span></span>
+					Chevreux,  1919
+					<p class="node_object_id"><a target="_blank" href="http://species-id.net/wiki/Maeropsis">http://species-id.net/wiki/Maeropsis</a></p>
+				</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Diagnosis</span>
+					<p><b>(modified from <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B9', event)" onmouseout="hideBaloonEvent('B9')">Krapp-Schickel 2008</span>)</b>. Eyes reniform or round. Body smooth. Mandible palp article 1 with tooth-shaped distal prolongation,  article 3 slender,  linear. Maxilla 2 inner plate setation also present laterally. Gnathopods subchelate,  both with well-defined palmar corner. Gnathopod 2 dactylus outer margin smooth; palm with small U-shaped excavation,  palmar corner with tooth-shaped elevation and bearing. Pereopod dactyli simple. Uropod 3 with subequal rami,  distally truncated,  no second article on outer ramus visible. Epimera 1–3 smooth,  with posterodistal tip. Telson cleft,  lobes distally incised,  outer end of incision clearly longer than inner one; with 1-2 setae inserted in incision.</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Typespecies.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20perrieri" onmouseover="showBaloon(2, 'Maeropsis_perrieri', event)" onmouseout="hideBaloonEvent('Maeropsis_perrieri', event)">perrieri</a></span></span></i> Chevreux,  1919 (type by monotypy).</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Species composition.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20brevispina" onmouseover="showBaloon(2, 'Maeropsis_brevispina', event)" onmouseout="hideBaloonEvent('Maeropsis_brevispina', event)">brevispina</a></span></span></i> (Kim &amp; Kim,  1991); <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20cobia" onmouseover="showBaloon(2, 'Maeropsis_cobia', event)" onmouseout="hideBaloonEvent('Maeropsis_cobia', event)">cobia</a></span></span></i> Krapp-Schickel,  2009; <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20griffini" onmouseover="showBaloon(2, 'Maeropsis_griffini', event)" onmouseout="hideBaloonEvent('Maeropsis_griffini', event)">griffini</a></span></span></i> (Berents,  1983),  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20perrieri" onmouseover="showBaloon(2, 'Maeropsis_perrieri', event)" onmouseout="hideBaloonEvent('Maeropsis_perrieri', event)">perrieri</a></span></span></i> Chevreux,  1919 (type species); <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> sp. n. (this study); <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20rathbunae" onmouseover="showBaloon(2, 'Maeropsis_rathbunae', event)" onmouseout="hideBaloonEvent('Maeropsis_rathbunae', event)">rathbunae</a></span></span></i> (Pearse,  1908); <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20revelata" onmouseover="showBaloon(2, 'Maeropsis_revelata', event)" onmouseout="hideBaloonEvent('Maeropsis_revelata', event)">revelata</a></span></span></i> (Krapp et al.,  1996); <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20serratipalma" onmouseover="showBaloon(2, 'Maeropsis_serratipalma', event)" onmouseout="hideBaloonEvent('Maeropsis_serratipalma', event)">serratipalma</a></span></span></i> (Nagata,  1965).</p>
+				<div class="unfloat"></div>
+</div>
+			</div></div>
+			<div class="taxonTreatmentsHolder secHolder"><div class="taxonTreatmentRow node_taxon-treatment">
+				<div class="taxonNomenclature">
+					<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)"><i>Maeropsis</i></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Maeropsis%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20paphavasitae%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)"><i>paphavasitae</i></a></span></span>
+					sp. n.
+					<p class="node_object_id"><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:act:103B72E3-73B0-4DA4-A1CC-CC0BFD3D0C72">urn:lsid:zoobank.org:act:103B72E3-73B0-4DA4-A1CC-CC0BFD3D0C72</a></p>
+					<p class="node_object_id"><a target="_blank" href="http://species-id.net/wiki/Maeropsis_paphavasitae">http://species-id.net/wiki/Maeropsis_paphavasitae</a></p>
+				</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Type material.</span>
+					<p><i>Holotype</i>. ♂, THAILAND,  Lower Gulf of Thailand,  Talet Bay (<a target="_blank" class="localityLink" href="http://ptp.pensoft.eu/redirect_to_googlemap.php?labels%5B0%5D=09%C2%B018%2739.5%22N%2C++99%C2%B046%2746.4%22E&amp;coordinates%5B0%5D=09%C2%B018%2739.5%22N%2C++99%C2%B046%2746.4%22E"><span class="node_location">09°18'39.5"N,  99°46'46.4"E</span></a>),  seagrass bed (associated with <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia" onmouseover="showBaloon(2, 'Thalassia', event)" onmouseout="hideBaloonEvent('Thalassia', event)">Thalassia</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia%20hemprichii" onmouseover="showBaloon(2, 'Thalassia_hemprichii', event)" onmouseout="hideBaloonEvent('Thalassia_hemprichii', event)">hemprichii</a></span></span></i>),  1 May 2008,  Puttapreecha,  R.,  PSUZC-CR-0198.</p>
+					<p><i>Paratypes</i>,  collected with holotype ZMB 27979 (3♀); PSUZC-CR-0199 (3♂; 5♀)</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Description.</span>
+					<p>Based on male holotype. Body length 5.1 mm (from tip of rostrum to apex of telson). <i>Body</i> compressed,  subcylindrical. <i>Head</i>,  lateral cephalic lobe truncate,  without rostrum,  eyes round. <i>Antenna 1</i>,  ratios of peduncular articles 1–3 9:10:2.5; peduncular article 1 with a ventromarginal robust seta and a distoventral robust seta; accessory flagellum with 6 articles.</p>
+					<p><i>Upper lip</i>,  (labrum) distally rounded. <i>Lower lip</i>,  inner lobes small,  pubescent; outer lobes covered with thin hair-like setae. <i>Mandible</i>,  both incisors with 7 teeth; lacinia mobilis armed with 5 teeth on the left side and 4 teeth on the right side; molar short,  cylindrical; palp 3-articulate with ratios of 4:9:3,  article 2 with marginal setae and article 3 with apical setae. <i>Maxilla 1</i>,  inner plate with 3 plumose setae apically and marginal fine setae medially; outer plate with 6 serrate robust setae apically; palp 2-articulate with apical fine setae. <i>Maxilla 2</i>,  inner plate with lateral and medial marginal setae; outer plate broader than inner plate,  distally setose. <i>Maxilliped</i>,  inner plate with 9 plumose setae; outer plate semi-oval,  inner margin with 9 robust setae distally; palp 4-articulate,  article 3 with 15 fine setae,  article 4 with 6 fine marginal setae.</p>
+					<p><b>Pereon.</b> <i>Gnathopod 1</i> subchelate,  smaller than gnathopod 2; coxa anterodistally produced; basis posterior margin with 3 setae,  longer than ischium and merus combined; carpus posterior margin and lateral surface densely setose; palm oblique. <i>Gnathopod 2</i>,  basis with 2 posterior marginal setae; ischium and merus short; carpus triangular; propodus robust,  subrectangular,  1.5 × longer than broad with posterior marginal plumose setae,  palm transverse with 6 blunt teeth and an acute palmar corner,  inner face bearing 1 subposterodistal robust seta; dactylus fits with palm,  inner margin smooth,  outer margin with 1 long seta. <i>Pereopod 3–4</i> similar to each other,  basis with anterior and posterior marginal setae. <i>Pereopod 5</i> basis oval,  posterior margin slightly produced distally,  posterodistal lobe rounded. <i>Pereopod 6–</i> 7 similar,  basis broader than pereopod 5,  posterodistally produced with short anterior and posterior marginal setae; dactyli curved.</p>
+					<p><b>Pleon.</b> <i>Epimera 1–2</i> posteroventral corner smooth,  not produced. <i>Epimeron 3</i> produced posteroventrally,  with 3 short ventral setae. <i>Uropod 1</i> longest,  peducle longer than rami,  posterior margin fringed with robust setae,  anterior with 1 basofacial robust seta. <i>Uropod 2</i>,  peduncle shorter than both rami; inner ramus longer than outer ramus. <i>Uropod 3</i>,  peduncle shorter than rami; inner ramus subequal to outer ramus,  distally truncate; inner ramus bearing only 1 proximal robust seta and 4 terminal setae. Telson longer than wide,  cleft more than 95% of its length,  lobes distally incised,  outer end of incision longer than inner one,  with 3 long apical setae and 2 lateral plumose setae.</p>
+					<p><b>Female.</b> (sexually dimorphic characters). No sexual difference.</p>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g002.jpg"><img src="export.php_files/ZooKeys-307-015-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 2.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F2">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g002.jpg"><img src="export.php_files/ZooKeys-307-015-g002.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 2.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae">paphavasitae</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g003.jpg"><img src="export.php_files/ZooKeys-307-015-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 3.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. Scales for A1 and A2 represent 0.2 mm; MX2,  LL,  UL represent 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F3">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g003.jpg"><img src="export.php_files/ZooKeys-307-015-g003.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 3.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae">paphavasitae</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. Scales for A1 and A2 represent 0.2 mm; MX2,  LL,  UL represent 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g004.jpg"><img src="export.php_files/ZooKeys-307-015-g004.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 4.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. Scales for P3,  P4,  U1-3 represent 0.2 mm;T represents 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F4">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g004.jpg"><img src="export.php_files/ZooKeys-307-015-g004.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 4.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae">paphavasitae</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. Scales for P3,  P4,  U1-3 represent 0.2 mm;T represents 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g005.jpg"><img src="export.php_files/ZooKeys-307-015-g005.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 5.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasita" onmouseover="showBaloon(2, 'Maeropsis_paphavasita', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasita', event)">paphavasita</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. All scales represent 0.5 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F5">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g005.jpg"><img src="export.php_files/ZooKeys-307-015-g005.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 5.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasita">paphavasita</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. All scales represent 0.5 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g006.jpg"><img src="export.php_files/ZooKeys-307-015-g006.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 6.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasita" onmouseover="showBaloon(2, 'Maeropsis_paphavasita', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasita', event)">paphavasita</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. All scales represent 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F6">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g006.jpg"><img src="export.php_files/ZooKeys-307-015-g006.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 6.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasita">paphavasita</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00198),  5.1 mm. Talet Bay,  Lower Gulf of Thailand. All scales represent 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Etymology.</span>
+					<p>The species is named in honor of Associate Professor Nittharatana Paphavasit of Chulalongkorn University,  Thailand who contributed to the knowledge on seagrass habitats in Thailand.</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Remarks.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20paphavasitae" onmouseover="showBaloon(2, 'Maeropsis_paphavasitae', event)" onmouseout="hideBaloonEvent('Maeropsis_paphavasitae', event)">paphavasitae</a></span></span></i> sp. n. is very similar to <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20serratipalma" onmouseover="showBaloon(2, 'Maeropsis_serratipalma', event)" onmouseout="hideBaloonEvent('Maeropsis_serratipalma', event)">serratipalma</a></span></span></i> (Nagata,  1965) in the palm of gnathopod 2,  which is transverse with 6 blunt teeth and a large defining tooth in both species. But the new species can be distinguished from <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis" onmouseover="showBaloon(2, 'Maeropsis', event)" onmouseout="hideBaloonEvent('Maeropsis', event)">Maeropsis</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis%20serratipalma" onmouseover="showBaloon(2, 'Maeropsis_serratipalma', event)" onmouseout="hideBaloonEvent('Maeropsis_serratipalma', event)">serratipalma</a></span></span></i> by the following characters: gnathopod 1 palm without clear defining palmar corner; gnathopod 2,  merus not produced into a posterodistal tooth (vs. produced); propodus of gnathopod 2 subtriangular (vs. subrectangular),  palm inner surface with 1 subposterodistal robust seta (vs. without); dactyli of pereopods 3-7 curved and smooth (vs. bearing two minute teeth); uropod 3 inner ramus with only 1 proximal seta (vs. armed with several marginal robust setae) and telson longer than broad (vs. broader than long).</p>
+				<div class="unfloat"></div>
+</div>
+			</div></div>
+		</div>
+		<div class="section" style="padding-bottom: 0px; padding-top: 20px"><a name="melitidaebousfield1973"></a>
+			<span id="1" class="node_title1 sec"><span class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Melitidae" onmouseover="showBaloon(2, 'Melitidae', event)" onmouseout="hideBaloonEvent('Melitidae', event)">Melitidae</a></span></span> Bousfield,  1973 </span>
+			<div class="taxonTreatmentsHolder secHolder"><div class="taxonTreatmentRow node_taxon-treatment">
+				<div class="taxonNomenclature">
+					<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)"><i>Rotomelita</i></a></span></span>
+					J.L. Barnard,  1977
+					<p class="node_object_id"><a target="_blank" href="http://species-id.net/wiki/Rotomelita">http://species-id.net/wiki/Rotomelita</a></p>
+				</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Diagnosis</span>
+					<p><b>(from <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Barnard 1977</span>).</b> Accessory flagellum 3+ articulate; mandibular palp thin,  weak,  articles linear,  article 3 bearing few apical setae only; lower lip with small but fully discrete inner lobes; inner plate of maxilla 1 with only terminal setae; inner plate of maxilla 2 lacking medial setae; maxillipedal palp 4-articulate,  article 4 unguiform; gnathopods ordinary,  gnathopod 2 larger than gnathopod 1,  lacking fuzz on article 5; uropod 3 greatly overreaching uropod 1,  inner ramus small and scale-like,  outer ramus immensely elongate,  bearing short article 2; telson short,  cleft,  lobes very broad and apically truncate; urosomite 1 bearing 1 subdorsal spine on each side,  otherwise pleonites dorsally smooth; anterior coxae (1–4) longer than posterior coxae (5–7); some gills pediculate.</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Type species.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20lokoa" onmouseover="showBaloon(2, 'Rotomelita_lokoa', event)" onmouseout="hideBaloonEvent('Rotomelita_lokoa', event)">lokoa</a></span></span></i> J.L. Barnard,  1977 (type by original designation).</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Species composition.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20ana" onmouseover="showBaloon(2, 'Rotomelita_ana', event)" onmouseout="hideBaloonEvent('Rotomelita_ana', event)">ana</a></span></span></i> J.L. Barnard,  1977; <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20lokoa" onmouseover="showBaloon(2, 'Rotomelita_lokoa', event)" onmouseout="hideBaloonEvent('Rotomelita_lokoa', event)">lokoa</a></span></span></i> J.L. Barnard,  1977; <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n. (this study).</p>
+				<div class="unfloat"></div>
+</div>
+			</div></div>
+			<div class="taxonTreatmentsHolder secHolder"><div class="taxonTreatmentRow node_taxon-treatment">
+				<div class="taxonNomenclature">
+					<span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)"><i>Rotomelita</i></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"></a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Rotomelita%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20longipropoda%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)"><i>longipropoda</i></a></span></span>
+					sp. n.
+					<p class="node_object_id"><a target="_blank" href="http://zoobank.org/?lsid=urn:lsid:zoobank.org:act:DAC77E5F-B08A-4640-96B9-A269E74ADABB">urn:lsid:zoobank.org:act:DAC77E5F-B08A-4640-96B9-A269E74ADABB</a></p>
+					<p class="node_object_id"><a target="_blank" href="http://species-id.net/wiki/Rotomelita_longipropoda">http://species-id.net/wiki/Rotomelita_longipropoda</a></p>
+				</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Type material.</span>
+					<p><i>Holotype</i>. ♂ (1.65 mm),  THAILAND,  Lower Gulf of Thailand,  Phangan Island (<a target="_blank" class="localityLink" href="http://ptp.pensoft.eu/redirect_to_googlemap.php?labels%5B0%5D=9%C2%B041%2748%22N%2C++100%C2%B00%272%22E&amp;coordinates%5B0%5D=9%C2%B041%2748%22N%2C++100%C2%B00%272%22E"><span class="node_location">9°41'48"N,  100°0'2"E</span></a>),  seagrass bed (associated with <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia" onmouseover="showBaloon(2, 'Thalassia', event)" onmouseout="hideBaloonEvent('Thalassia', event)">Thalassia</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia%20hemprichii" onmouseover="showBaloon(2, 'Thalassia_hemprichii', event)" onmouseout="hideBaloonEvent('Thalassia_hemprichii', event)">hemprichii</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila" onmouseover="showBaloon(2, 'Halophila', event)" onmouseout="hideBaloonEvent('Halophila', event)">Halophila</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila%20ovalis" onmouseover="showBaloon(2, 'Halophila_ovalis', event)" onmouseout="hideBaloonEvent('Halophila_ovalis', event)">ovalis</a></span></span></i>),  1 July 2009,  Bantiwiwatkul,  N., PSUZC-CR-0195.</p>
+					<p><i>Allotype</i>. ♀,  collected with holotype, PSUZC-CR-0196 (gravid female,  1.66 mm) <i>Other material</i>. Same data as for holotype,  PSUZC-CR-0197 (5♂; 5♀)</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Description.</span>
+					<p>Based on male holotype. Total body length 1.65 mm (from tip of rostrum to apex of telson). <i>Body</i>,  rather slender and subcylindrical. <i>Head</i>,  slightly shorter than first 2 pereonites; rostrum not developed; inferior antennal sinus shorter than eyes,  concave,  about 0.2 times head length; eye distinct. <i>Antenna 1</i>,  longer than antenna 2,  ratios of peduncular articles 1–3 2:2:1; article 1 slender; flagellum with 16 articles plus 1 rudimentary article,  2 times as long as peduncle; accessory flagellum with 3 articles,  last article scale-like. <i>Antenna 2</i>,  peduncle slender; gland cone fleshy,  short,  not reaching to end of peduncular article 3; articles 2-5 ratios 1:1:3:3; inner margin of article 4 and 5 with sparse setae; article 5 slightly shorter than 4; flagellum short with sparse setae,  longer than peduncular article 5,  composed of 7 articles,  last article scale-like.</p>
+					<p><i>Upper lip</i> (labrum),  round and broad. <i>Lower lip</i>,  inner lobe small,  outer lobe pubescent,  mandibular process well developed. <i>Mandible</i>,  left incisor with 6 teeth and right incisor with 5 teeth; lacinia mobilis armed with 4 teeth on both sides; molar triturative; palp 3-articulate with ratios 1:2:3,  article 3 with 3 apical setae. <i>Maxilla 1</i>,  inner plate triangular,  small,  with 3 apical robust setae,  outer plate with 8 apical serrate robust setae; palp 2-articulate,  article 1 shorter than 2,  article 2 apical margin with 4 robust setae. <i>Maxilla 2</i>,  inner plate with 5 slender apical setae; outer plate subequal to inner plate,  with 8 slender setae. <i>Maxilliped</i>,  inner plate narrow,  short,  reaching half of outer plate,  apically provided with 6 plumose setae and 3 stout robust setae; outer plate broad,  subrectangular,  almost reaching palp article 3,  with 5 apical and marginal setae and 2 apical robust setae; palp 4-articulate,  with ratios 4.5:4:4:3,  article 4 unguiform.</p>
+					<p><b>Pereon</b>. <i>Gnathopod 1</i>,  subchelate,  smaller than gnathopod 2; coxal plate subrectangular; length ratios of articles from basis to dactylus about 10:4:4:7:6:4; basis slender,  posterior margin bearing long setae; ischium short,  subrectangular with short posteromarginal setae;merus subrectangular with long and short posteromarginal setae; carpus trapezoidal with long setae on posterior margin; propodus subtriangular,  shorter than carpus,  palm transverse,  produced,  with sparse setae,  posterodistal corner minutely serrate,  slightly bending inwards; dactylus shorter than palm,  falcate. <i>Gnathopod 2</i>,  subchelate; coxal plate short and wide,  subrectangular,  length ratios of articles from basis to dactylus about 14:5:5:6:16:12; basis slender,  3 times as long as wide,  anterior margin straight;ischium subrectangular,  subequal to merus; carpus triangular; propodus enlarged,  oval,  2 times as long as wide,  palm strongly oblique with sparse setae; dactylus falcate,  slightly shorter than palmar margin,  inner margin smooth,  the inner surface not excavate.</p>
+					<p><i>Pereopod 3</i>,  slender and elongate; coxal plate small and subtrapezoidal,  with 5 fine setae on anterioroventral margin; length ratios of articles from basis to dactylus 10:2:6:5:6:2; basis slender; ischium short,  subrectangular; merus slightly longer than carpus,  produced anteriorly; carpus slender with apical setae; propodus subrectangular; basis to propodus bearing sparse setae on both sides; dactylus falcate,  shorter than propodus. <i>Pereopod 4</i>,  similar to pereopod 3,  coxal plate subrectangular with fine setae on anteroventral margin; length ratios of articles from basis to dactylus about 12:2:6:5:6:2; basis slender; ischium short,  subrectangular; merus produced anterodistally; carpus slender,  subequal to propodus; basis to propodus with sparse setae on both margins; propodus long and narrow; dactylus falcate and short. <i>Pereopod 5</i>,  shortest; coxa bilobed; length ratios of articles from basis to dactylus about 8:2:5:4:6:3; basis subrectangular with short fine setae on posterior margin; ischium shortest; merus with a posterodistal robust seta and 1 anterodistal seta; carpus with distal robust setae on both sides; propodus with 4 distal long fine setae; dactylus short and curved. <i>Pereopod</i> 6 elongate,  1.6 times as long as pereopod 5; coxa posteriorly produced with rounded lobe; length ratios of articles from basis to dactylus about 12:3:8:7:11:4; basisposterior margin straight with minute castellations,  with fine setae on both margins;ischium short with fine setae on anteroventral corner; merus oblong,  with robust setae on posterior margins and posterodistal corner; carpus subrectangular with 3 anterodistal robust setae; propodus oblong,  slender with marginal robust setae, setose posterodistally; dactylus falcate. <i>Pereopod 7</i>,  subequal to pereopod 6; coxa short and wide,  semicircular; length ratios of articles from basis to dactylus about 12:3:8:8:14:5; basis posteriodistally produced,  bearing fine setae on posterior margin; ischium short and subquadrate; merus elongate with robust setae on both sides; carpus subequal to merus,  bearing 3 anterodistal robust setae; propodus oblong,  longer than merus,  bearing robust setae on both margins and anterodistal corner; dactylus falcate.</p>
+					<p><b>Pleon</b>. <i>Epimera 1–3</i> each with small posterodistal tooth. <i>Uropod 1</i>,  peduncle with 2 distal robust setae; rami slightly shorter than peduncle,  armed with 3 apical robust setae. <i>Uropod 2</i>,  peduncle subequal to rami; rami subequal,  outer ramus with a marginal robust seta and apex armed with several long and short robust setae. <i>Uropod 3</i>,  biramous; inner ramus minute,  pointed apically,  bearing 1 apicomedial robust seta; outer ramus biarticulate,  with marginal robust setae,  distal article short. <i>Telson</i>,  broader than long,  cleft,  lobes very broad and apically truncate,  each lobe with 2 apical setae.</p>
+					<p><b>Female</b>. (allotype) (sexually dimorphic characters). Total body length 1.66 mm (from tip of rostrum to apex of telson).</p>
+					<p><b>Pereon.</b> <i>Gnathopod 1</i>,  subchelate,  smaller than gnathopod 2; coxal plate subrectangular; length ratios from basis to dactylus about 10:4:4:6:5:4; propodus subtriangular,  longer than dactylus,  palm transverse with short marginal setae; dactylus falcate,  tapering distally. <i>Gnathopod 2</i>,  subchelate; length ratios from basis to dactylus about 10:5:5:6:8:5; basis slender,  2.5 times as long as wide,  anterior margin weakly produced with sparse setae; ischium subrectangular; carpus triangular; propodus suboval,  1.6 times as long as wide,  palm oblique,  defined by 2 robust setae; dactylus falcate,  slightly shorter than palmar margin,  inner margin smooth.</p>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g007.jpg"><img src="export.php_files/ZooKeys-307-015-g007.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 7.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F7">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g007.jpg"><img src="export.php_files/ZooKeys-307-015-g007.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 7.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g008.jpg"><img src="export.php_files/ZooKeys-307-015-g008.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 8.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F8">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g008.jpg"><img src="export.php_files/ZooKeys-307-015-g008.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 8.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g009.jpg"><img src="export.php_files/ZooKeys-307-015-g009.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 9.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F9">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g009.jpg"><img src="export.php_files/ZooKeys-307-015-g009.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 9.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.1 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g010.jpg"><img src="export.php_files/ZooKeys-307-015-g010.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 10.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.05 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F10">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g010.jpg"><img src="export.php_files/ZooKeys-307-015-g010.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 10.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda">longipropoda</a></span></span></i> sp. n. holotype,  male,  (PSUZC-CR-00195),  1.65 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.05 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+					<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g011.jpg"><img src="export.php_files/ZooKeys-307-015-g011.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 11.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> sp. n. allotype,  female,  (PSUZC-CR-00196),  1.66 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+<div class="figureHolder" id="fig_F11">
+<div class="imgFloatLeft"><div class="graphicHolder">
+<div class="graphicImg"><a target="_blank" href="export.php_files/ZooKeys-307-015-g011.jpg"><img src="export.php_files/ZooKeys-307-015-g011.jpg" alt="" /></a></div>
+<div class="graphicCaptions">
+<span class="graphicCaption"></span><span class="graphicDescription"></span>
+</div>
+<div class="unfloat"></div>
+</div></div>
+<div class="ImgTextFloatRight">
+						<span id="1" class="node_label">Figure 11.</span>
+						<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda">longipropoda</a></span></span></i> sp. n. allotype,  female,  (PSUZC-CR-00196),  1.66 mm,  Phangan Island,  Lower Gulf of Thailand. All scales represent 0.2 mm.</p>
+					</div>
+<div class="unfloat"></div>
+</div>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Etymology.</span>
+					<p>The specific name “longipropoda” is from latin ‘longi = long’ and ‘propoda = propodus’,  referring to the relatively long propodus of male gnathopod 2 compared to congeners.</p>
+				<div class="unfloat"></div>
+</div>
+				<div class="taxonTreatmentSec inlineSec">
+					<span id="1" class="node_title1 taxon-treatment">Remarks.</span>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> new species shares some characteristics with <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20lokoa" onmouseover="showBaloon(2, 'Rotomelita_lokoa', event)" onmouseout="hideBaloonEvent('Rotomelita_lokoa', event)">lokoa</a></span></span></i> Barnard,  1977 and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20ana" onmouseover="showBaloon(2, 'Rotomelita_ana', event)" onmouseout="hideBaloonEvent('Rotomelita_ana', event)">ana</a></span></span></i> Barnard,  1977 from Hawaii by having stalked coxal gills; weakly sexually dimorphic gnathopod 1 and 2; coxa 1 not expanded distally; coxa 4 proximally excavated,  smooth pleon segments 1-3 and urosomite 1,  and a deeply cleft telson,  with truncate lobes.</p>
+					<p>However,  the new species can be easily distinguished from its congeners by having eyes (vs. lacking eyes in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20lokoa" onmouseover="showBaloon(2, 'Rotomelita_lokoa', event)" onmouseout="hideBaloonEvent('Rotomelita_lokoa', event)">lokoa</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20ana" onmouseover="showBaloon(2, 'Rotomelita_ana', event)" onmouseout="hideBaloonEvent('Rotomelita_ana', event)">ana</a></span></span></i>); antenna 1 peduncle without robust setae (vs. with 2 robust setae on ventroproximal margin in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20lokoa" onmouseover="showBaloon(2, 'Rotomelita_lokoa', event)" onmouseout="hideBaloonEvent('Rotomelita_lokoa', event)">lokoa</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20ana" onmouseover="showBaloon(2, 'Rotomelita_ana', event)" onmouseout="hideBaloonEvent('Rotomelita_ana', event)">ana</a></span></span></i>); male gnathopod 2 with relatively long propodus (2.7 times as long as carpusvs,  1.6 times in the two other species) and the uropod 3 rami are shorter (2.2 times as long as peduncle) compared to the other two species (3.3 times as long as peduncle).</p>
+					<p><i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> is also similar to other <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a></span></span></i> subgroup i.e. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa" onmouseover="showBaloon(2, 'Nainaloa', event)" onmouseout="hideBaloonEvent('Nainaloa', event)">Nainaloa</a></span></span></i> Karaman &amp; Barnard,  1979 and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano" onmouseover="showBaloon(2, 'Tegano', event)" onmouseout="hideBaloonEvent('Tegano', event)">Tegano</a></span></span></i> Barnard &amp; Karaman,  1982. <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> can be distinguished from <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa" onmouseover="showBaloon(2, 'Nainaloa', event)" onmouseout="hideBaloonEvent('Nainaloa', event)">Nainaloa</a></span></span></i> as follows: <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> gnathopod 1 palm has inner surface not excavate (inner face of propodus excavate in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa" onmouseover="showBaloon(2, 'Nainaloa', event)" onmouseout="hideBaloonEvent('Nainaloa', event)">Nainaloa</a></span></span></i>); pediculate gills (figure 8) (simple gill in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa" onmouseover="showBaloon(2, 'Nainaloa', event)" onmouseout="hideBaloonEvent('Nainaloa', event)">Nainaloa</a></span></span></i>); article 2 of pereopods 5—7 not lobed (lobed in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa" onmouseover="showBaloon(2, 'Nainaloa', event)" onmouseout="hideBaloonEvent('Nainaloa', event)">Nainaloa</a></span></span></i>) and truncate lateral cephalic lobes (prominent in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa" onmouseover="showBaloon(2, 'Nainaloa', event)" onmouseout="hideBaloonEvent('Nainaloa', event)">Nainaloa</a></span></span></i>). Besides,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> is also allied to member of genus <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano" onmouseover="showBaloon(2, 'Tegano', event)" onmouseout="hideBaloonEvent('Tegano', event)">Tegano</a></span></span></i> occurring in Indo-Pacific. They differ as follows: <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> has mandibular palp article 3 longer than article 2,  bearing 3 apical setae (article 3 reduced with 1 apical seta in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano" onmouseover="showBaloon(2, 'Tegano', event)" onmouseout="hideBaloonEvent('Tegano', event)">Tegano</a></span></span></i>) and the telson short,  cleft,  lobes very broad and apically truncate (tapering and apically point in <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano" onmouseover="showBaloon(2, 'Tegano', event)" onmouseout="hideBaloonEvent('Tegano', event)">Tegano</a></span></span></i>).</p>
+					<p>In terms of ecology <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a></span></span></i>,  <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainalao" onmouseover="showBaloon(2, 'Nainalao', event)" onmouseout="hideBaloonEvent('Nainalao', event)">Nainalao</a></span></span></i> and <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano" onmouseover="showBaloon(2, 'Tegano', event)" onmouseout="hideBaloonEvent('Tegano', event)">Tegano</a></span></span></i> are recorded from fresh to brackish water (<span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B1', event)" onmouseout="hideBaloonEvent('B1')">Barnard 1977</span>; <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B4', event)" onmouseout="hideBaloonEvent('B4')">Bousfield 1971</span> and <span class="xrefLink node_citation" onmouseover="showBaloon(1, 'B12', event)" onmouseout="hideBaloonEvent('B12')">Lowry and Springthorpe 2009</span>) while <i><span id="1" class="node_taxon-name"><span><a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita" onmouseover="showBaloon(2, 'Rotomelita', event)" onmouseout="hideBaloonEvent('Rotomelita', event)">Rotomelita</a> <a target="_blank" class="taxonNameLink" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita%20longipropoda" onmouseover="showBaloon(2, 'Rotomelita_longipropoda', event)" onmouseout="hideBaloonEvent('Rotomelita_longipropoda', event)">longipropoda</a></span></span></i> was collected from seagrass beds in a salinity range of 28—32 ppt. However,  there is a small creek located 1 km northern of seagrass patch. The amphipods also can be considered as a brackish species. It is the first record of this genus from West Pacific.</p>
+				<div class="unfloat"></div>
+</div>
+			</div></div>
+		</div>
+	</div>
+	</div>
+<a name="acknowledgements"></a><div class="smallSecHolder acknowledgementsHolder"><div class="acknowledgementsText">
+		<span id="1" class="node_title">Acknowledgements</span>
+		<p>The authors would like to thank Mrs Ratchanee Puttapreecha (Southern Marine and Coastal Resources Research Center) and Mrs Natthawadee Bantiwiwatkul (Marine and Coastal Resources Research Center,  The Central Gulf of Thailand) for providing us withspecimens for this study. We are grateful to the Department of Biology,  Faculty of Science,  Prince of Songkla University and Museum für Naturkunde,  Germany for the laboratory facilities. Part of this work was supported by the Higher Education Research Promotion and National Research University Project of Thailand. The senior author likes to thank the Graduate School of the Prince of Songkla University for a scholarship which made an oversea research stay in Germany possible. We also thank Dr. Azman Abdul Rahim for drawing the map of the sampling area.</p>
+	</div></div>
+<a name="references"></a><div class="smallSecHolder  referencesHolder"><div class="referencesText">
+<span class="node_title">References</span><div class="referenceRow">Barnard JL (1977) The cavernicolous fauna of Hawaiian lava tubes 9. Amphipoda (Crustacea) from brackish lava ponds on Hawaii and Maui. Pacific Insects 17: 267-299.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B1">Barnard JL (1977) The cavernicolous fauna of Hawaiian lava tubes 9. Amphipoda (Crustacea) from brackish lava ponds on Hawaii and Maui. Pacific Insects 17: 267-299.<div class="unfloat"></div></div>
+<div class="referenceRow">Barnard JL, Karaman G (1982) Classificatory revisions in Gammaridean Amphipoda (Crustacea),  Part 2. Proceedings of the Biological Society of Washington,  95 (1): 167-187.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B2">Barnard JL, Karaman G (1982) Classificatory revisions in Gammaridean Amphipoda (Crustacea),  Part 2. Proceedings of the Biological Society of Washington,  95 (1): 167-187.<div class="unfloat"></div></div>
+<div class="referenceRow">Berents PB (1983) The Melitidae of Lizard Island and Adjacent Reefs,  The Great Barrier Reef,  Australia (Crustacea: Amphipoda). Records of the Australian Museum 35: 101-143. doi: <a target="_blank" href="http://dx.doi.org/10.3853/j.0067-1975.35.1983.313">10.3853/j.0067-1975.35.1983.313</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B3">Berents PB (1983) The Melitidae of Lizard Island and Adjacent Reefs,  The Great Barrier Reef,  Australia (Crustacea: Amphipoda). Records of the Australian Museum 35: 101-143. doi: <a target="_blank" href="http://dx.doi.org/10.3853/j.0067-1975.35.1983.313">10.3853/j.0067-1975.35.1983.313</a><div class="unfloat"></div></div>
+<div class="referenceRow">Bousfield EL (1971) Amphipoda of the Bismarck Archipelago and adjacent Indo-Pacific islands (Crustacea). Steenstrupia. 1,  255–293<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B4">Bousfield EL (1971) Amphipoda of the Bismarck Archipelago and adjacent Indo-Pacific islands (Crustacea). Steenstrupia. 1,  255–293<div class="unfloat"></div></div>
+<div class="referenceRow">Bousfield EL (1973) Shallow-water gammaridean Amphipoda of New England. Ithaca and London: Cornell University Press,  312 pp.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B5">Bousfield EL (1973) Shallow-water gammaridean Amphipoda of New England. Ithaca and London: Cornell University Press,  312 pp.<div class="unfloat"></div></div>
+<div class="referenceRow">Chevreux E (1919) Note préliminaire sur les amphipodes recueillis par les expéditions du Travailleur et du Talisman (1880–1883). Bulletin du Muséum national d’Histoire naturelle,  Paris 25 (7): 574-580.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B6">Chevreux E (1919) Note préliminaire sur les amphipodes recueillis par les expéditions du Travailleur et du Talisman (1880–1883). Bulletin du Muséum national d’Histoire naturelle,  Paris 25 (7): 574-580.<div class="unfloat"></div></div>
+<div class="referenceRow">Karaman G, Barnard JL (1979) Classificatory revisions in Gammaridean Amphipoda (Crustacea),  Part 1. Proceedings of the Biological Society of Washington,  92 (1): 106-163.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B7">Karaman G, Barnard JL (1979) Classificatory revisions in Gammaridean Amphipoda (Crustacea),  Part 1. Proceedings of the Biological Society of Washington,  92 (1): 106-163.<div class="unfloat"></div></div>
+<div class="referenceRow">Kim W, Kim CB (1991) The marine amphipod crustacean of Ulreung Island,  Korea: Part III. The Korean Journal of Systematic Zoology 34: 323-337.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B8">Kim W, Kim CB (1991) The marine amphipod crustacean of Ulreung Island,  Korea: Part III. The Korean Journal of Systematic Zoology 34: 323-337.<div class="unfloat"></div></div>
+<div class="referenceRow">Krapp-Schickel T (2008) On the genera <i>Meximaera</i>,  <i>Ruffomaera</i> gen. nov.,  <i>Maeropsis</i> and <i>Ceradocus</i> from Atlantic coasts (Amphipoda: Melitidae). Journal of the Marine Biological Association of the United Kingdom,  88: 1425-1432. doi: <a target="_blank" href="http://dx.doi.org/10.1017/S0025315408002014">10.1017/S0025315408002014</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B9">Krapp-Schickel T (2008) On the genera <i>Meximaera</i>,  <i>Ruffomaera</i> gen. nov.,  <i>Maeropsis</i> and <i>Ceradocus</i> from Atlantic coasts (Amphipoda: Melitidae). Journal of the Marine Biological Association of the United Kingdom,  88: 1425-1432. doi: <a target="_blank" href="http://dx.doi.org/10.1017/S0025315408002014">10.1017/S0025315408002014</a><div class="unfloat"></div></div>
+<div class="referenceRow">Krapp-Schickel T (2009) Maeridae,  the <i>Ceradocus</i> group In: Lowry JKMyers AA (Eds) (2009) Amphipoda (Crustacea: Peracarida) of the Great Barrier Reef,  Australia. Zootaxa 2260: 1-930.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B10">Krapp-Schickel T (2009) Maeridae,  the <i>Ceradocus</i> group In: Lowry JKMyers AA (Eds) (2009) Amphipoda (Crustacea: Peracarida) of the Great Barrier Reef,  Australia. Zootaxa 2260: 1-930.<div class="unfloat"></div></div>
+<div class="referenceRow">Krapp T, Marti A, Ruffo S (1996) Three new Mediterranean <i>Maera</i> with remarks on the <i>quadrimana</i> complex. Beaufortia,  46: 27-51.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B11">Krapp T, Marti A, Ruffo S (1996) Three new Mediterranean <i>Maera</i> with remarks on the <i>quadrimana</i> complex. Beaufortia,  46: 27-51.<div class="unfloat"></div></div>
+<div class="referenceRow">Lowry JK, Springthorpe RT (2009) Melitidae,  the Melita group.718–735. In: Lowry JK, Myers AA (Eds).  Benthic Amphipoda (Crustacea: Peracarida) of the Great Barrier Reef,  Australia. Zootaxa 2260: 1–930.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B12">Lowry JK, Springthorpe RT (2009) Melitidae,  the Melita group.718–735. In: Lowry JK, Myers AA (Eds).  Benthic Amphipoda (Crustacea: Peracarida) of the Great Barrier Reef,  Australia. Zootaxa 2260: 1–930.<div class="unfloat"></div></div>
+<div class="referenceRow">Nagata K (1965) Studies on marine gammaridean Amphipoda of the Seto Inland Sea III. Publication of Seto Marine Biological Laboratory 13: 291-326.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B13">Nagata K (1965) Studies on marine gammaridean Amphipoda of the Seto Inland Sea III. Publication of Seto Marine Biological Laboratory 13: 291-326.<div class="unfloat"></div></div>
+<div class="referenceRow">Pearse AS (1908) Descriptions of four new species of amphipodous Crustacea from the Gulf of Mexico. Proceedings of the United States National Museum 34: 27–32,  24 figs.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B14">Pearse AS (1908) Descriptions of four new species of amphipodous Crustacea from the Gulf of Mexico. Proceedings of the United States National Museum 34: 27–32,  24 figs.<div class="unfloat"></div></div>
+<div class="referenceRow">Prathep A, Rattanachot E, Tuntiprapas P (2010) Seasonal variations in seagrass percentage cover and biomass at Koh Tha Rai,  Nakhon Si Thammarat Province,  Gulf of Thailand. The Songklanakarin Journal of Science and Technology,  32 (5): 497-504.<div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B15">Prathep A, Rattanachot E, Tuntiprapas P (2010) Seasonal variations in seagrass percentage cover and biomass at Koh Tha Rai,  Nakhon Si Thammarat Province,  Gulf of Thailand. The Songklanakarin Journal of Science and Technology,  32 (5): 497-504.<div class="unfloat"></div></div>
+<div class="referenceRow">Wongkamhaeng K, Azman BAR, Puttapreecha R (2012) <i>Cheiriphotis trifurcata</i>,  new species (Crustacea,  Amphipoda,  Corophiidae,  Protomedeiinae) from the Seagrass Bed of the Lower Gulf of Thailand. ZooKeys 187: 71-89. doi: <a target="_blank" href="http://dx.doi.org/10.3897/zookeys.187.3219">10.3897/zookeys.187.3219</a><div class="unfloat"></div></div>
+<div class="referenceBaloonContent" id="reference_B16">Wongkamhaeng K, Azman BAR, Puttapreecha R (2012) <i>Cheiriphotis trifurcata</i>,  new species (Crustacea,  Amphipoda,  Corophiidae,  Protomedeiinae) from the Seagrass Bed of the Lower Gulf of Thailand. ZooKeys 187: 71-89. doi: <a target="_blank" href="http://dx.doi.org/10.3897/zookeys.187.3219">10.3897/zookeys.187.3219</a><div class="unfloat"></div></div>
+</div></div>
+<a name="supplementarymaterials"></a><div class="supMaterialsHolder"></div>
+</div>
+</div></div></div></div></div></div></div></div></div>
+<script>initBalloons();</script>
+<div id="taxonNamesList" class="taxonNamesList">
+	<div id="taxon_Amphipoda_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Amphipoda">Amphipoda</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Amphipoda">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Amphipoda&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FAmphipoda">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Amphipoda&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DAmphipoda">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Amphipoda&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DAmphipoda">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Amphipoda&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DAmphipoda">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Amphipoda&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DAmphipoda">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Amphipoda">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Maeropsis</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_paphavasitae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis paphavasitae">Maeropsis paphavasitae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis paphavasitae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasitae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520paphavasitae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasitae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520paphavasitae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasitae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520paphavasitae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasitae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520paphavasitae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasitae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520paphavasitae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis paphavasitae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Rotomelita_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Rotomelita</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FRotomelita">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DRotomelita">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DRotomelita">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DRotomelita">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DRotomelita">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Rotomelita_longipropoda_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita longipropoda">Rotomelita longipropoda</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita longipropoda">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20longipropoda&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FRotomelita%2520longipropoda">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20longipropoda&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DRotomelita%2520longipropoda">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20longipropoda&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DRotomelita%2520longipropoda">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20longipropoda&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DRotomelita%2520longipropoda">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20longipropoda&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DRotomelita%2520longipropoda">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita longipropoda">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Cheiriphotis_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis">Cheiriphotis</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FCheiriphotis">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DCheiriphotis">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DCheiriphotis">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DCheiriphotis">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DCheiriphotis">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Cheiriphotis_trifurcata_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis trifurcata">Cheiriphotis trifurcata</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis trifurcata">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis%20trifurcata&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FCheiriphotis%2520trifurcata">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis%20trifurcata&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DCheiriphotis%2520trifurcata">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis%20trifurcata&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DCheiriphotis%2520trifurcata">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis%20trifurcata&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DCheiriphotis%2520trifurcata">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Cheiriphotis%20trifurcata&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DCheiriphotis%2520trifurcata">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Cheiriphotis trifurcata">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_paphavasita_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis paphavasita">Maeropsis paphavasita</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis paphavasita">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasita&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520paphavasita">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasita&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520paphavasita">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasita&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520paphavasita">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasita&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520paphavasita">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20paphavasita&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520paphavasita">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis paphavasita">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeridae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeridae">Maeridae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeridae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeridae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeridae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeridae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeridae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeridae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeridae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeridae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeridae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeridae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeridae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeridae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_perrieri_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis perrieri">Maeropsis perrieri</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis perrieri">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20perrieri&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520perrieri">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20perrieri&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520perrieri">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20perrieri&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520perrieri">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20perrieri&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520perrieri">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20perrieri&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520perrieri">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis perrieri">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_brevispina_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis brevispina">Maeropsis brevispina</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis brevispina">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20brevispina&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520brevispina">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20brevispina&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520brevispina">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20brevispina&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520brevispina">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20brevispina&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520brevispina">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20brevispina&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520brevispina">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis brevispina">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_cobia_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis cobia">Maeropsis cobia</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis cobia">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20cobia&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520cobia">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20cobia&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520cobia">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20cobia&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520cobia">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20cobia&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520cobia">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20cobia&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520cobia">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis cobia">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_griffini_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis griffini">Maeropsis griffini</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis griffini">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20griffini&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520griffini">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20griffini&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520griffini">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20griffini&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520griffini">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20griffini&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520griffini">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20griffini&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520griffini">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis griffini">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_rathbunae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis rathbunae">Maeropsis rathbunae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis rathbunae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20rathbunae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520rathbunae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20rathbunae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520rathbunae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20rathbunae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520rathbunae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20rathbunae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520rathbunae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20rathbunae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520rathbunae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis rathbunae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_revelata_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis revelata">Maeropsis revelata</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis revelata">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20revelata&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520revelata">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20revelata&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520revelata">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20revelata&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520revelata">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20revelata&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520revelata">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20revelata&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520revelata">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis revelata">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Maeropsis_serratipalma_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis serratipalma">Maeropsis serratipalma</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis serratipalma">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20serratipalma&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMaeropsis%2520serratipalma">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20serratipalma&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMaeropsis%2520serratipalma">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20serratipalma&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMaeropsis%2520serratipalma">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20serratipalma&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMaeropsis%2520serratipalma">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Maeropsis%20serratipalma&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMaeropsis%2520serratipalma">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Maeropsis serratipalma">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Thalassia_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia">Thalassia</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FThalassia">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DThalassia">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DThalassia">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DThalassia">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DThalassia">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Thalassia_hemprichii_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia hemprichii">Thalassia hemprichii</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia hemprichii">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia%20hemprichii&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FThalassia%2520hemprichii">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia%20hemprichii&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DThalassia%2520hemprichii">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia%20hemprichii&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DThalassia%2520hemprichii">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia%20hemprichii&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DThalassia%2520hemprichii">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Thalassia%20hemprichii&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DThalassia%2520hemprichii">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Thalassia hemprichii">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Melitidae_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Melitidae">Melitidae</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Melitidae">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Melitidae&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FMelitidae">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Melitidae&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DMelitidae">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Melitidae&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DMelitidae">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Melitidae&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DMelitidae">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Melitidae&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DMelitidae">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Melitidae">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Rotomelita_lokoa_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita lokoa">Rotomelita lokoa</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita lokoa">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20lokoa&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FRotomelita%2520lokoa">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20lokoa&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DRotomelita%2520lokoa">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20lokoa&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DRotomelita%2520lokoa">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20lokoa&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DRotomelita%2520lokoa">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20lokoa&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DRotomelita%2520lokoa">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita lokoa">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Rotomelita_ana_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita ana">Rotomelita ana</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita ana">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20ana&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FRotomelita%2520ana">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20ana&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DRotomelita%2520ana">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20ana&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DRotomelita%2520ana">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20ana&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DRotomelita%2520ana">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Rotomelita%20ana&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DRotomelita%2520ana">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Rotomelita ana">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Halophila_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila">Halophila</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHalophila">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHalophila">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHalophila">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHalophila">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHalophila">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Halophila_ovalis_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila ovalis">Halophila ovalis</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila ovalis">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila%20ovalis&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FHalophila%2520ovalis">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila%20ovalis&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DHalophila%2520ovalis">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila%20ovalis&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DHalophila%2520ovalis">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila%20ovalis&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DHalophila%2520ovalis">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Halophila%20ovalis&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DHalophila%2520ovalis">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Halophila ovalis">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Nainaloa_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa">Nainaloa</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainaloa&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FNainaloa">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainaloa&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DNainaloa">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainaloa&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DNainaloa">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainaloa&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DNainaloa">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainaloa&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DNainaloa">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainaloa">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Tegano_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano">Tegano</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tegano&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FTegano">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tegano&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DTegano">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tegano&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DTegano">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tegano&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DTegano">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Tegano&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DTegano">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Tegano">More</a></div>
+		</div>
+	</div>
+	</div>
+	<div id="taxon_Nainalao_baloon_div">
+	<div class="taxonMenu">
+		<div class="taxonMenuLabel">
+			<a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainalao">Nainalao</a>
+		</div>
+		<div class="taxonMenuRow">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainalao">Pensoft Taxon Profile</a></div>
+		</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainalao&amp;url=http%3A%2F%2Fdata.gbif.org%2Fsearch%2FNainalao">Global Biodiversity Information Facility</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainalao&amp;url=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fgquery%2F%3Fterm%3DNainalao">National Center for Biotechnology Information</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainalao&amp;url=http%3A%2F%2Fwww.eol.org%2Fsearch%3Fq%3DNainalao">Encyclopedia of Life</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainalao&amp;url=http%3A%2F%2Fwww.biodiversitylibrary.org%2FSearch.aspx%3FsearchCat%3D%26searchTerm%3DNainalao">Biodiversity Heritage Library</a></div>
+			</div>
+			<div class="taxonMenuRow">
+				<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/externalLink.php?taxon_name=Nainalao&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Fsearch%3DNainalao">Wikipedia</a></div>
+			</div>
+		<div class="taxonMenuRow noBackground">
+			<div class="siteName"><a target="_blank" href="http://ptp.pensoft.eu/external_details.php?type=1&amp;query=Nainalao">More</a></div>
+		</div>
+	</div>
+	</div>
+		</div>
+<script>initScrollConstants()</script>
+</body>
+</html>

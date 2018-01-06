@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink">
+<link:roleRef roleURI="http://xbrl.sec.gov/exch/role/deprecated/exch" xlink:type="simple" xlink:href="exch-2011-01-31.xsd#dep-exch"/>
+<link:presentationLink xlink:type="extended" xlink:role="http://xbrl.sec.gov/exch/role/deprecated/exch">
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_DeprecatedItemsForExchange" xlink:label="DeprecatedItemsForExchange"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XAEX" xlink:label="XAEX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XAEX" order="1.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XALB" xlink:label="XALB"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XALB" order="2.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_AIMX" xlink:label="AIMX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="AIMX" order="3.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XVIA" xlink:label="XVIA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XVIA" order="4.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XACE" xlink:label="XACE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XACE" order="5.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XAZX" xlink:label="XAZX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XAZX" order="6.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XAOM" xlink:label="XAOM"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XAOM" order="7.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBFO" xlink:label="XBFO"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBFO" order="8.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XANT" xlink:label="XANT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XANT" order="9.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBBF" xlink:label="XBBF"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBBF" order="10.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBMF" xlink:label="XBMF"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBMF" order="11.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XSOM" xlink:label="XSOM"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XSOM" order="12.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBSP" xlink:label="XBSP"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBSP" order="13.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBVP" xlink:label="XBVP"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBVP" order="14.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XRIO" xlink:label="XRIO"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XRIO" order="15.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBMK" xlink:label="XBMK"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBMK" order="16.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XMIL" xlink:label="XMIL"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XMIL" order="17.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XABJ" xlink:label="XABJ"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XABJ" order="18.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBRE" xlink:label="XBRE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBRE" order="19.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBTF" xlink:label="XBTF"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBTF" order="20.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBCE" xlink:label="XBCE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBCE" order="21.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XCRC" xlink:label="XCRC"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XCRC" order="22.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XCCE" xlink:label="XCCE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XCCE" order="23.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XDWZ" xlink:label="XDWZ"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XDWZ" use="optional" order="24.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XDTB" xlink:label="XDTB"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XDTB" use="optional" order="25.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XEAS" xlink:label="XEAS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XEAS" use="optional" order="26.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_EXPA" xlink:label="EXPA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="EXPA" order="27.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XFTA" xlink:label="XFTA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XFTA" order="28.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XFOM" xlink:label="XFOM"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XFOM" order="29.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTAA" xlink:label="XTAA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTAA" order="30.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XFFE" xlink:label="XFFE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XFFE" order="31.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_FXMT" xlink:label="FXMT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="FXMT" order="32.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XHIR" xlink:label="XHIR"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XHIR" order="33.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XHON" xlink:label="XHON"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XHON" order="34.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_ICAT" xlink:label="ICAT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="ICAT" order="35.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XNYF" xlink:label="XNYF"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XNYF" order="36.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XIPE" xlink:label="XIPE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XIPE" order="37.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XIEX" xlink:label="XIEX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XIEX" order="38.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XASM" xlink:label="XASM"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XASM" order="39.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XJKT" xlink:label="XJKT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XJKT" order="40.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XJWY" xlink:label="XJWY"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XJWY" order="41.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XKST" xlink:label="XKST"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XKST" order="42.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XKGT" xlink:label="XKGT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XKGT" order="43.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XKKT" xlink:label="XKKT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XKKT" order="44.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_KOCN" xlink:label="KOCN"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="KOCN" order="45.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XKOR" xlink:label="XKOR"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XKOR" order="46.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XKYO" xlink:label="XKYO"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XKYO" order="47.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XLJS" xlink:label="XLJS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XLJS" order="48.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XLCE" xlink:label="XLCE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XLCE" order="49.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XLTO" xlink:label="XLTO"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XLTO" order="50.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XLOF" xlink:label="XLOF"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XLOF" order="51.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XFCM" xlink:label="XFCM"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XFCM" order="52.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XMIF" xlink:label="XMIF"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XMIF" order="53.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XBAV" xlink:label="XBAV"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XBAV" order="54.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XMAC" xlink:label="XMAC"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XMAC" order="55.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XMID" xlink:label="XMID"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XMID" order="56.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XMOO" xlink:label="XMOO"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XMOO" order="57.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_MTAX" xlink:label="MTAX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="MTAX" order="58.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_PMTS" xlink:label="PMTS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="PMTS" order="59.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XNST" xlink:label="XNST"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XNST" order="60.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_NOME" xlink:label="NOME"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="NOME" order="61.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XCSC" xlink:label="XCSC"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XCSC" order="62.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XNYC" xlink:label="XNYC"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XNYC" order="63.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XNEE" xlink:label="XNEE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XNEE" order="64.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XAUK" xlink:label="XAUK"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XAUK" order="65.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XNII" xlink:label="XNII"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XNII" order="66.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XNQL" xlink:label="XNQL"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XNQL" order="67.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_NYMX" xlink:label="NYMX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="NYMX" order="68.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_VRXP" xlink:label="VRXP"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="VRXP" order="69.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XOTB" xlink:label="XOTB"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XOTB" order="70.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_OFEX" xlink:label="OFEX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="OFEX" order="71.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XMLX" xlink:label="XMLX"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XMLX" order="72.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XOME" xlink:label="XOME"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XOME" order="73.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XOSM" xlink:label="XOSM"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XOSM" order="74.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XOST" xlink:label="XOST"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XOST" order="75.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XPSE" xlink:label="XPSE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XPSE" order="76.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_URCE" xlink:label="URCE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="URCE" order="77.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_NNCS" xlink:label="NNCS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="NNCS" order="78.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XSME" xlink:label="XSME"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XSME" order="79.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XRMS" xlink:label="XRMS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XRMS" order="80.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XFMN" xlink:label="XFMN"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XFMN" order="81.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XSUR" xlink:label="XSUR"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XSUR" order="82.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XSWO" xlink:label="XSWO"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XSWO" order="83.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTAD" xlink:label="XTAD"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTAD" order="84.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XIME" xlink:label="XIME"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XIME" order="85.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTAR" xlink:label="XTAR"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTAR" order="86.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XARC" xlink:label="XARC"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XARC" order="87.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTFE" xlink:label="XTFE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTFE" order="88.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTOE" xlink:label="XTOE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTOE" order="89.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTKA" xlink:label="XTKA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTKA" order="90.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTFN" xlink:label="XTFN"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTFN" order="91.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_TLAB" xlink:label="TLAB"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="TLAB" order="92.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_PCDS" xlink:label="PCDS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="PCDS" order="93.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XEUS" xlink:label="XEUS"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XEUS" order="94.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XVSE" xlink:label="XVSE"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XVSE" order="95.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XVAR" xlink:label="XVAR"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XVAR" order="96.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XVLA" xlink:label="XVLA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XVLA" order="97.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XTRA" xlink:label="XTRA"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XTRA" order="98.0"/>
+<link:loc xlink:type="locator" xlink:href="exch-2011-01-31.xsd#exch_XYKT" xlink:label="XYKT"/>
+<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="DeprecatedItemsForExchange" xlink:to="XYKT" order="99.0"/>
+</link:presentationLink>
+</link:linkbase>

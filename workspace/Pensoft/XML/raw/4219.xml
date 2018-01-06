@@ -1,0 +1,467 @@
+﻿<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://pmt.pensoft.eu/lib/publishing/tax-treatment-NS0.dtd">
+<article dtd-version="3.0" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:tp="http://www.plazi.org/taxpub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ZooKeys</journal-id>
+            <journal-title-group>
+                <journal-title xml:lang="en">ZooKeys</journal-title>
+                <abbrev-journal-title xml:lang="en">ZooKeys</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">1313-2989</issn>
+            <issn pub-type="epub">1313-2970</issn>
+            <publisher>
+                <publisher-name>Pensoft Publishers</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.3897/zookeys.1000.4219</article-id>
+            <title-group>
+                <article-title>Preliminary study of wing interference patterns (WIPs) in some species of soft scale (Hemiptera, Sternorrhyncha, Coccoidea, Coccidae)
+</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" xlink:type="simple">
+                    <name name-style="western">
+                        <surname>Simon</surname>
+                        <given-names>Ewa</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="A1">1</xref>
+                </contrib>
+            </contrib-group>
+            <aff id="A1">
+                <label>1</label>Department of Zoology, University of Silesia, Bankowa 9, 40-007 Katowice, Poland
+            </aff>
+            <author-notes>
+                <fn fn-type="corresp">
+                    <p>Corresponding author: Ewa Simon (<email xlink:type="simple">ewa.simon@us.edu.pl</email>)
+                    </p>
+                </fn>
+                <fn fn-type="edited-by">
+                    <p>Academic editor: S. Grozeva</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="collection">
+                <year>2012</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>1</day>
+                <month>1</month>
+                <year>2012</year>
+            </pub-date>
+            <issue>1000</issue>
+            <fpage>1</fpage>
+            <lpage>100</lpage>
+            <history>
+                <date date-type="received">
+                    <day>30</day>
+                    <month>10</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>21</day>
+                    <month>12</month>
+                    <year>2012</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Ewa Simon</copyright-statement>
+                <license license-type="creative-commons-attribution" xlink:href="http://creativecommons.org/licenses/by/3.0" xlink:type="simple">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License 3.0 (CC-BY), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+                </license>
+            </permissions>
+            <abstract>
+                <label><bold>Abstract</bold>
+                </label>
+                <p>The fore wings of scale insect males possess reduced venation compared with other insects and the homologies of remaining veins are controversial. The hind wings are reduced to hamulohalterae. When adult males are prepared using the standard methods adopted to females and nymphs, i.e. using KOH to clear the specimens, the wings become damaged or deformed, an so these structures are not usually described or illustrated in publications. The present study used dry males belonging to seven species of the family Coccidae to check the presence of stable, structural colour patterns of the wings. The visibility of the wing interference patterns (WIP), discovered in Hymenoptera and Diptera species, is affected by the way the insects display their wings against various backgrounds with different light properties. This frequently occurring taxonomically specific pattern is caused by uneven membrane thickness and hair placement, and also is stabilized and reinforced by microstructures of the wing, such as membrane corrugations and the shape of cells. The semitransparent scale insect’s fore wings possess WIPs and they are taxonomically specific. It is very possible that WIPs will be an additional and helpful trait for the identification of species, which in case of males specimens is quite difficult, because recent coccidology is based almost entirely on the morphology of adult females.
+</p>
+            </abstract>
+            <kwd-group>
+                <label>Keywords</label>
+                <kwd>
+Scale insects</kwd>
+                <kwd>Coccidae</kwd>
+                <kwd>wings</kwd>
+                <kwd>males</kwd>
+                <kwd>WIP</kwd>
+                <kwd>interference colour patterns
+<!--PageBreak--></kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec>
+            <title><bold>Introduction
+</bold>
+            </title>
+            <p>The superfamily Coccoidea or scale insects contains 7500 species of plant feeding hempiterans, comprising 48 families (according to ScaleNet data base). Many of them are economically important pest to agriculture, horticulture and forestry (Gullan and Cook 2007).
+</p>
+            <p>Within this superfamily, there is a very marked dimorphism between the adult male and female, both in their morphology and life histories, such that it is impossible to identify the male and female of the same species (or even family) using the same combination of characters (Koteja 1996).
+</p>
+            <p>Adult females are sack-like, with the head, thorax and abdomen fused together. They are all wingless and many have reduced legs and antennae but the mouth parts are usually well developed. They can be quite long lived, surviving for several months on their host plants. The adult males are delicate, ephemeral insects without mouth parts, and so live as adults for only a few days. They are usually alate, although characterized by diptery, and resemble small delicate flies (Gullan and Martin 2009).
+</p>
+            <p>Species of Coccoidea are almost always described based on female structure, whilst most males are so poorly known that they are mostly unidentifiable to species (Hodgson and Foldi 2006). For example, within the entire Coccidae family, the adult males of only about 90 species have been described adequately to date as they are rarely collected and seldom studied. In contrast, the adult females of approximately 1200 species have been well described in just the family Coccidae (Hodgson and Henderson 2004).
+</p>
+            <p>As was mentioned above, only male Coccoidea possess wings. These structures have a very simplified venation in the fore wings whilst the hind wings are reduced to hamulohalterae. Because of this simplification and because the wings have been lost from all females, it was considered that the wings were featureless and therefore their morphology has been neglected (Szelegiewicz 1971).
+</p>
+            <p>The males are polymorphic with respect to the wings, i.e. winged, brachypterous, and wingless forms have been accepted by natural selection. During further evolution and adaptation to different ecological conditions the polymorphism has been retained or one morph has been preferred. Wing and wingless form may occur in different groups or within the same taxon, sometimes even in the same species (Kosztarab and Kozar 1988, Koteja 1985, 1996). The terminology connected with the wing morphology used here is that of Koteja (1996, 2008) and the general scheme of the fore wing presented on Fig.1 comes from the Koteja’s work (2008).
+</p>
+            <p>The anterior wings are folded flat and overlap along the abdomen in resting position which facilitates the moving among soil particles, plant parts, etc. Shape of the wing is usually oval, but also with parallel anterior and posterior margins, with distal part wider than proximal one or reversely; with broad or narrow base, with rounded or acute apex.
+</p>
+            <p>For reception hamuli serves the narrow anal fold or projecting alar lobe with a pocket. On the wing there are two ridges: subcostal ridge which runs along costal margin from wing base toward wing apex; cubital ridge which originates from the former at about 1/5 wing length and runs obliquely to posterior wing margin. On the membrane of the wing might be present flexing patches (light lines) anterior – between <!--PageBreak-->subcostal ridge and cubital ridge and posterior – between cubital ridge and posterior wing margin. A slightly sclerotized oblique patch, which runs posterior to subcostal ridge is called radial sector. The ridges and flexing membranes divide the wing into <!--PageBreak-->fields, which are illustrated on Fig. 1. Depending on the development of ridges and flexing patches the fields assume various shapes, size, and may join or disappear. Pterostigma is present in some Archaeococcids and is hypodermal club-shaped thickening in front, or behind, subcostal ridge, not bordered with any veins (Koteja 2008). In all Neococcids and few groups of Archaeococcids the surface of the wing is covered with small hairlike microtrichia. Along the anterior margin of the subcostal ridge might be present a row or cluster of cupolae and alar setae might be interspersed among them or occur at the wing base (Koteja 1996).
+</p>
+            <p>Compared with most other structures, the wings of scale insects are best preserved dried or as fossils and have thus been found to be important in paleontological studies. The wings of recent specimens, prepared using standard methods adopted to females and nymphs (i.e. using KOH solution), become deformed or damaged, and usually are not described or drawn in publications (Koteja 2008). The present study looks at a new character present on scale insects wings, which has never been examined before in coccidology - the interference wing patterns (WIPs) of soft scales (Coccidae). Figs 4 and 5 illustrate the changes in the visual appearance of the wings (of <italic>Pulvinaria vitis</italic>) when the background is switched from white to black. WIPs occur on transparent wings with a very thin membrane, i.e. mainly in small insects. The colour patterns appear when wings are viewed against a dark background and show the uneven thickness of the wing membrane (Shevtsova 2012). The thickness of the composite chitinous membrane varies with the topography of the wing and the areas of different thickness reflect different interference colours that together produce a specific colour pattern, the WIP. Taxon specific colour patterns depend also on pigmentation, venation, and hair placement. The optically refracted pattern is also stabilized by membrane corrugations and spherical cell structure (Shevtsova et al. 2011). Observations of WIPs in many groups of Hymenoptera and Diptera suggest that species identification is enhanced if WIPs are added to the taxonomic characters (Shevtsova and Hansson 2011, Hansson 2011, Hansson and Shevtsova 2012).
+            </p>
+        </sec>
+        <sec>
+            <title><bold>Material and methods
+</bold>
+            </title>
+            <p>WIPs of seven species of the family Coccidae belonging to six genera were studied: <italic>Eriopeltis lichtensteini</italic> Signoret<italic>, Eulecanium tiliae </italic>(Linnaeus)<italic>, L. frontalis </italic>Green<italic>, Luzulaspis nemorosa </italic>Koteja<italic>, Parthenolecanium corni </italic>(Bouche)<italic>, Pulvinaria vitis  </italic>(Linnaeus)and<italic> Sphaerolecanium prunastri </italic>Boyer de Fonscolombe. This material comes from Koteja’s collection of scale insects deposited in Department of Zoology (University of Silesia, Katowice, Poland), and from author’s collection (only puparia with accompanied females were collected) (Table 1).
+            </p>
+            <p>The method used for preparation of the wings was standardized, as suggested by Shevtsova and Hansson (2011), i.e. dry wings were horizontally arranged (with the magnification 2 or 3×) and, flattened between a glass slide and glass cover. The underside of the glass slide was stained with black ink to make a pitch black background.
+</p>
+            <p><!--PageBreak-->Photos of the wings were taken with a Nikon DN 100 camera unit on a Nikon stereomicroscopes SM2 1500.
+</p>
+            <p>Photos from scanning microscope were taken from a Hitachi S-3400N microscope and made in the Department of Materials Science of the Silesia University of Technology.
+</p>
+            <p>The brightness was individually adjusted in COREL DRAW X, subsequent editing included cleaning and cropping the photo. The studied wings were put between two cover glasses (glued together by small drops of transparent nail polish) and deposited with the original specimen.
+</p>
+            <p>The wings were also observed on whole specimens. In order to ensure that the colour patterns are stable, the wings on the unmounted specimens were observed in different arrangement against a black background, and viewed at different incident angles of the light, which was narrowly concentrated in one direction at a slight angle to the wings surface.
+</p>
+            <p><!--PageBreak-->According to Shevtsova and Hansson (2011) the observation and documentation of WIPs do not require a special light source and can be done on dry specimen with intact wings arranged against a black background. In present studies material was illuminated by fiber optic illuminator Cold Light L-150A (Quartz halogen light source color temperature- 3200K).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Results
+</bold>
+            </title>
+            <p>The present study confirmed that WIPs are present on the dry, minute and semitransparent wings of male scale insects. SEM observations (Fig. 2, 3) showed that membrane of the scale insect wing is characterized by the presence of corrugations and microtrichia.
+</p>
+            <p>In case of Hymenoptera and Diptera such membrane corrugations and hair placement together with uneven membrane thickness form stable and taxon specific colour patterns.
+</p>
+            <p>Convex ridges of a corrugated wing membrane act as a dioptres to stabilize the interference reflection and eliminate the iridescence effect over a large range of light incidences, it means that provide optical stabilization to WIPs. According to Shevtsova (2012) the convex ridges of a corrugated wing membrane reflect thin film interference colours from the top. When such a wing is tilted these “tops” move along the ridge and show the same interference colour. That is because they keep nearly horizontal at each point and maintain the same distance for the light beams that travel inside the wing.
+</p>
+            <p>Among examined species all of them exhibited its own WIP which could be distinguished from that of other species. Among the species two main types of patterns could be distinguished: “horizontally striped pattern”, encountered on broad wings of species which Giliomee (1967) assigned to the “Coccus group” (<italic>Pulvinaria, Parthenolecanium</italic>) and “Eulecanium group” (<italic>Eulecanium, Parthenolecanium</italic> and <italic>Sphaerolecanium</italic>). According to Hodgson’s classification (1994), <italic>Pulvinaria </italic>and<italic> Parthenolecanium</italic> belong to subfamily Coccinae, <italic>Eulecanium </italic>and <italic>Sphaerolecanium</italic> to subfamily Eulecaninae. This pattern here is characterized by the presence of longitudinal stripes of different interference colours on the field between the subcostal and cubital ridges (terminology after Koteja 2008). This striped band is curved a little and the stripes rich the margin of the wing. The main differences between the patterns of this group are connected with the semitriangular region delimited by lower margin of cubital ridge, posterior wing margin up to the wing base and the part which surrounds the first light line. In <italic>Sphaerolecanium prunastri</italic> (Figs 6, 7), this semitriangular region is a deep blue, the region anterior to the cubital ridge rich purple and than blue. In <italic>Eulecanium tiliae</italic> (Figs 8, 9 ), the main part of mentioned above semitriangular region is blue, but the area which adjoin to the cubital ridge has yellowish and purple stripes.
+            </p>
+            <p>In <italic>Pulvinaria vitis</italic> (Figs 10, 11), the main part of the region delimited by cubital ridge, posterior wing margin and the margin near the wing base is golden-hued. The same golden color surrounds the first light line. To these golden-hued areas adjoin from above purple-blue stripes. The WIP of the <italic>Parthenolecanium corni</italic> (Fig. 12, <!--PageBreak-->13) is quite similar to that of <italic>P. vitis</italic> but, in the former species, there is broad blue-purple band on the part which lies below the cubital ridge (in <italic>P. vitis</italic> there is only narrow purple-blue stripe) . Only narrow yellowish stripes surround the first light line (in <italic>P. vitis </italic>there is broad golden band). But the purple-blue band which adjoins <!--PageBreak-->to golden-hued area (which surrounds the first light line in <italic>P. vitis</italic>) here, in <italic>P. corni</italic> is much broader.
+            </p>
+            <p>The pattern of the second type of WIP can be described as “ elliptical” - colours follow one by one, and do not form distinct stripes beneath the subcostal ridge which reach the apical margin of the wing, as in previous type.
+</p>
+            <p>This type of WIP is present on long and narrow wings of <italic>Eriopeltis lichtensteini, Luzulaspis frontalis </italic>and<italic> L. nemorosa</italic>. The apical part of the wing is covered only by one colour. These two genera were grouped by Giliomee in the “Eriopeltis group” and in the subfamily Eriopeltinae by Hodgson (1994). Likewise, as in species of the previous group (horizontally striped pattern), the WIPs are taxonomically specific, not only at generic level but at the species level too. The patterns of <italic>Luzulaspis frontalis</italic> and <italic>L. nemorosa</italic> are significantly different. In <italic>Luzulaspis frontalis</italic> (Figs 14, 15), the area which surrounds the first light line is golden-hued, than from above it turns into purple, than in deep blue and than light blue. Whole part of the membrane which lies beneath the cubital ridge is golden-hued.
+            </p>
+            <p>In <italic>L. nemoralis</italic> inner part, which surrounds the first light line is purple, than colour turns into blue and near the anterior edge of the wing is yellowish-green (Figs 16, 17). All part below the cubital ridge is purple-bluish. In <italic>Eriopeltis lichtensteini</italic> (Figs 18, 19) first light line and cubital ridge are surrounded by blue area. Near the subcostal ridge blue turns into yellowish green. Very characteristic is purple spot near the apical part of the wing.
+            </p>
+            <p>The WIPs of each of these seven species are significantly different and could provide additional insights into species recognition. These colour patterns are stable and can be seen not only on horizontally arranged wings but also on hole specimen (Figs 7, 9, 11, 13, 15, 17, 19), the only requirements are black background and proper illumination.
+</p>
+        </sec>
+        <sec>
+            <title><bold>Discussion
+</bold>
+            </title>
+            <p>The use of wing interference patterns (WIPs) as a morphological character is so new that very little is known about their significance, either to the behavior of the species or in terms of morphological taxonomy, although they have already proven to be useful for generic- and even species–level classifications, particularly in Hymenoptera (Shevtsova and Hansson 2011, Hansson and Shevtsova 2012). These patterns have been even investigated from an evolutionary standpoint for the Cynipoidea (Hymenoptera) (Buffington and Sandler 2011). The preliminary studies outlined above show that each of the seven species has its own WIP, probably after further research, which include more species, these colour patterns could find practical applications in morphological studies of this family.
+</p>
+            <p>In other insect groups, such as Diptera and Hymenoptera, it is believed that WIPs are not only a byproduct of physical traits, but probably also function in intra- and interspecific signaling. Thus wing display play a central role in visual courtship communication in several groups of Diptera (e.g. Sepsidae, Tephritidae) and Hymenoptera (e.g. Chalcidoidea: Pteromalidae) (Shevtsova et al. 2011, Shevtsova 2012).
+</p>
+            <p><!--PageBreak-->At the present time, in geological history only male Coccoidea possess wings. Females are often sedentary, only have simple unicorneal eyes and all are completely apterous. It seems, therefore, unlikely that these females are able to see sophisticated colour patterns on male’s wings. However Koteja (1990) suspected that “the coccid male at some time had functional mouthparts and well-developed metathoracic wings, and that the female was alate and possesed compound eyes ” Shcherbakov (2007) considered that the family Naibiidae is ancestral to the true scale insects. Representatives of the Naibiids were not sexually dimorphic, bouth sexes were presumably feeding and <!--PageBreak-->flying. Obviously we cannot check whether WIPs were present on the four-winged ancestors of scale insects, but it is possible that in Mesozoic times, WIPs played a significant role in inter- and intra-specific signaling.
+</p>
+            <p>Interestingly, Koteja (2001) noted that male <italic>Porphyrophora</italic> sp. (Margarodidae) performed flight stretching and repositioning of the wings under laboratory conditions. In the same paper, Koteja quoted very similar observations by Jakubski (1929) (“the males made an impression of being ill - they exposed and reposed the wings in hopeless efforts of flight”). Furthermore, both authors noted that the halters were vigorously vibrated when the fore wings were still. The same was observed by Pflugfelder (1939 in Koteja 2001) in males of <italic>Kerria lacca </italic>(Kerridae) when females were nearby. Maybe these examples of wing movement and haltere trembling are remnants of a visual communication by their ancestors, connected with displaying the wings and their patterns.
+            </p>
+            <p>The types of WIPs seen in this study appear to reflect the affinity between the members of Coccidae. Indeed, the types of WIPs found here might be connected with their ecology, in so far as the “horizontally striped pattern” occurs in species which are present on woody plants: <italic>Sphaerolecanium prunastri</italic> feeds mainly on representatives of Rosaceae, and <italic>Eulecanium tiliae, Parthenolecanium corni </italic>and<italic> Pulvinaria vitis</italic> are common poliphagous species also encountered on different woody host plants (Kosztarab and Kozar 1988), while all species with the “elliptical pattern” (<italic>Eriopeltis lichtensteini, Luzulaspis frontalis</italic> and<italic> L. nemorosa</italic>) feed on monocotyledonous plants: Cyperaceae, Juncaceae and Poaceae (Kosztarab and Kozar 1988). Because of the limited number of observed species this ecological dependance of the pattern might be only a convergence of circumstances but it is worth to checked in other species of this family.
+            </p>
+            <p>According to Shevtsova et al. (2011) and Shevtsova and Hansson (2011), WIPs are intraspecifically variable and phenotypically plastic in small wasps and diptera, although they are largely uniform among conspecifics and often appear to be characteristic of a species.
+</p>
+            <p>On the basis of the examined material, the WIPs of male Coccids appear to be uniform among conspecifics. However, more material from different localities and from different host plants, etc need to be studied to know if there is any intraspecific variability or phenotypical plasticity. If WIPs are used by their bearers for visual communication and, if this signalling system is involved in reproductive isolation and species recognition (Shevtsova 2012), it will be interesting to check the variability between scale insect species belonging to a single genus but which are either allopatric or sympatric, as investigated Hansson and Shevtsova in the eulophid genus <italic>Omphale</italic> Haliday (Shevtsova 2012).
+            </p>
+            <p>The importance of the adult male structure for the proper understanding of the relationships within the Coccoidea was recognized by Hodgson and Henderson (2004), who considered that no satisfactory system of scale insect classification would be achieved without an understanding of male structure. Most species of scale insects reproduce sexually, but there is a lot of species which are parthenogenetic and reproduce without males, only in some <italic>Icerya</italic> ssp. hermaphroditism has been reported (Gullan and Kosztarab 1997, Gavrilov and Kuznetsova 2007). In case of many others species <!--PageBreak-->males are not known at all. Because scale insects are known as serious plant pests in several cases of important, sometimes quarantine species male pheromone traps are used for survey and monitoring. In this case for correct species identification molecular techniques are available (Tobias et al. 2010) and WIPs might support and faciliate species determination.
+            </p>
+            <p>If the usage of WIPs in coccidology becomes as useful as in the studies on Hymenoptera and Diptera, it will be very important to keep the wings under dry conditions. At present, the most common method of specimen storage prior to making microscopic slides is to preserve the specimens in ethanol. Unfortunately, the WIP colour patterns are invisible on specimens mounted in Canada balsam, while scale insect wings which have been preserved in alcohol either do not show WIPs at all or the patterns are not as bright and clear as those using dry wings.
+</p>
+            <p>For a long time, wings of scale insects have been regarded as being poor in morphological features because of their reduced venation and lack of pigments. WIPs might be an additional trait for facilitating species identification. Because studies on scale insect wings are easy and cheap, studies of the wing interference patterns might be a helpful tool in species recognition and for clarifying many taxonomic problems, together with very important and common molecular techniques (Gullan et al. 2010, Tobias et al. 2010, Malausa et al. 2011).
+</p>
+        </sec>
+        <sec>
+            <title><bold>Conclusions
+</bold>
+            </title>
+            <p>These preliminary studies confirmed the presence of stable and taxonomically specific wing intereference patterns (WIPs) on scale insects wings. The thin wings of males display vivid structural colour patterns due to thin film interference when viewed against black background using white light. The use of WIPs as a species character in the species studied here has produced some convincing patterns and therefore these small, semitransparent organs should not be regarded as unimportant features anymore. However, if WIPs on male wings are to be studied, it is imperative that are stored dry and not preserved in ethanol or mounted in Canada balsam.
+</p>
+            <p>It is intended that these studies will continue, using a wide range of species from different scale insect families and also to consider any effects of intraspecific variation and phenotypic plasticity.
+</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title><bold>Acknowledgements
+</bold>
+            </title>
+            <p>I thank dr Jacek Szwedo from Museum and Institute of Zoology (Polish Academy of Science) and dr Ewa Mróz from Department of Zoology (University of Silesia) for all their comments and suggestion and their valuable help.
+</p>
+            <!--PageBreak-->
+        </ack>
+        <ref-list>
+            <title><bold>References
+</bold>
+            </title>
+            <ref id="1"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Buffington</surname> <given-names>ML</given-names></name>,<name name-style="western"><surname>Sandler</surname> <given-names>R</given-names></name></person-group> (<year>2011</year>)<article-title> The occurrence and phylogenetic implications of wing interference patterns (WIP) in the Cynipoidea (Insecta: Hymenoptera). Invertebrate Systematics.</article-title> <source> </source> <volume>25</volume>: <fpage>586</fpage>-<lpage>597</lpage>. doi: 10.1071/IS11038
+</mixed-citation>
+            </ref>
+            <ref id="2"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gavrilov</surname> <given-names>IA</given-names></name>,<name name-style="western"><surname>Kuznetsova</surname> <given-names>VG</given-names></name></person-group> (<year>2007</year>)<article-title> On some terms used in the cytogenetics and reproductive biology of scale insects (Homoptera: Coccinea).</article-title> <source>Comparative Cytogenetics </source> <volume>1</volume>: <fpage>169</fpage>-<lpage>174</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="3"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Giliomee</surname> <given-names>JH</given-names></name></person-group> (<year>1967</year>)<article-title> Morphology and taxonomy of adult males of the family Coccidae (Homoptera: Coccoidea).</article-title> <source>Bulletin of the British Museum (Natural History) Entomology, Supplement </source> <volume>7</volume>: <fpage>1</fpage>-<lpage>168</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="4"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gullan</surname> <given-names>PJ</given-names></name>,<name name-style="western"><surname>Cook</surname> <given-names>LG</given-names></name></person-group> (<year>2007</year>)<article-title> Phylogeny and higher classification of the scale insects (Hemiptera: Sternorrhyncha: Coccoidea). In Zhang Z-Q, Shear WA (Eds) Linnaeus Tercentenary: Progress in Invertebrate Taxonomy.</article-title> <source>Zootaxa </source> <volume>1668</volume>: <fpage>413</fpage>-<lpage>425</lpage>. 
+</mixed-citation>
+            </ref>
+            <ref id="5"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gullan</surname> <given-names>PJ</given-names></name>,<name name-style="western"><surname>Martin</surname> <given-names>JH</given-names></name></person-group> (<year>2009</year>)<fake_tag> Sternorrhyncha (jumping plant-lice, whiteflies, aphids, and scale insects). 957–967 In: Resh VH, Cardé RT (Eds) Encyclopedia of Insects. Elsevier, San Diego.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="6"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gullan</surname> <given-names>PJ</given-names></name>,<name name-style="western"><surname>Kosztarab</surname> <given-names>M</given-names></name></person-group> (<year>1997</year>)<article-title> Adaptations in scale insects.</article-title> <source>Annual Review of Entomology </source> <volume>42</volume>: <fpage>23</fpage>-<lpage>50</lpage>. doi: 10.1146/annurev.ento.42.1.23
+</mixed-citation>
+            </ref>
+            <ref id="7"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Gullan</surname> <given-names>PJ</given-names></name>,<name name-style="western"><surname>Kaydan</surname> <given-names>MB</given-names></name>,<name name-style="western"><surname>Hardy</surname> <given-names>NB</given-names></name></person-group> (<year>2010</year>)<article-title> Molecular phylogeny and species recognition in the mealybug genus <italic>Ferrisia</italic> Fullaway (Hemiptera: Pseudococcidae).</article-title> <source>Systematic Entomology </source> <volume>35</volume>: <fpage>329</fpage>-<lpage>339</lpage>. doi: 10.1111/j.1365-3113.2009.00513.x
+</mixed-citation>
+            </ref>
+            <ref id="8"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hansson</surname> <given-names>C</given-names></name></person-group> (<year>2011</year>)<article-title> <italic>Cornugon </italic>(Hymenoptera: Eulophidae: Entedoninae) a new genus from tropical America including ten new species.</article-title> <source>Zootaxa </source> <volume>2873</volume>: <fpage>1</fpage>-<lpage>26</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="9"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hansson</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Shevtsova</surname> <given-names>E</given-names></name></person-group> (<year>2012</year>)<article-title> Revision of the European species of <italic>Omphale</italic> Haliday (Hymenoptera, Chalcidoidea, Eulophidae).</article-title> <source>ZooKeys </source> <volume>232</volume>: <fpage>1</fpage>-<lpage>157</lpage>. doi: 10.3897/zookeys.232.3625
+</mixed-citation>
+            </ref>
+            <ref id="10"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hodgson</surname> <given-names>CJ</given-names></name></person-group> (<year>1994</year>)<fake_tag> The scale insect family Coccidae: an identification manual to genera. CAB International, Wallingford, Oxon, UK. 639 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="11"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hodgson</surname> <given-names>CJ</given-names></name>,<name name-style="western"><surname>Henderson</surname> <given-names>RC</given-names></name></person-group> (<year>2004</year>)<fake_tag> Coccidae (Insecta: Hemiptera: Coccoidea): adult males, pupae and prepupae of indigenous species. Fauna of New Zealand 51: 229 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="12"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Hodgson</surname> <given-names>CJ</given-names></name>,<name name-style="western"><surname>Foldi</surname> <given-names>I</given-names></name></person-group> (<year>2006</year>)<article-title> A review of the Margarodidae <italic>sensu</italic> Morrison (Hemiptera: Coccoidea) and some related taxa based on the morphology of adult males.</article-title> <source>Zootaxa </source> <volume>1263</volume>: <fpage>1</fpage>-<lpage>250</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="13"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Jakubski</surname> <given-names>AW</given-names></name></person-group> (<year>1929</year>)<article-title> Über Morphologie und Biologie der Polnischen Cochenille (<italic>Margarodes polonicus</italic>).</article-title> <source>Congrčs International de Zoologie </source> <volume>10</volume>: <fpage>1076</fpage>-<lpage>1096</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="14"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Kosztarab</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Kozár</surname> <given-names>F</given-names></name></person-group> (<year>1988</year>)<fake_tag> Scale Insects of Central Europe. Akademiai Kiado, Budapest. 456 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="15"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Koteja</surname> <given-names>J</given-names></name></person-group> (<year>1985</year>)<article-title> Essay on the prehistory of the scale insects (Homoptera, Coccinea).</article-title> <source>Annales Zoologici (Warsaw) </source> <volume>38</volume>: <fpage>461</fpage>-<lpage>504</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="16"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Koteja</surname> <given-names>J</given-names></name></person-group> (<year>1990</year>)<fake_tag> Paleontology. 149–163.In: Rosen D. (Eds) Armoured scale inscets, their biology, natural enemies and control. Vol. A Amsterdam Elsevier.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="17"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Koteja</surname> <given-names>J</given-names></name></person-group> (<year>1996</year>)<fake_tag> Scale insects (Homoptera: Coccinea) a day after. 65–88 In: Schaefer CW, Thomas Say Publications in Entomology. Proceedings. Studies on Hemipteran Phylogeny. Entomological Society of America, Lanham, MD. 244 pp.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="18"><mixed-citation xlink:type="simple"><!--PageBreak--><person-group><name name-style="western"><surname>Koteja</surname> <given-names>J</given-names></name></person-group> (<year>2001</year>)<article-title> Essays on coccids (Hemiptera: Coccinea): double function of Margarodid halteres.</article-title> <source>Annales de la Société Entomologique de France </source> <volume>37</volume> (<issue>3</issue>): <fpage>357</fpage>-<lpage>365</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="19"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Koteja</surname> <given-names>J</given-names></name></person-group> (<year>2008</year>)<article-title> Xylococcidae and related groups (Hemiptera: Coccinea) from Baltic amber.</article-title> <source>Proceedings of the Museum of the Earth </source> <volume>49</volume>: <fpage>19</fpage>-<lpage>56</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="20"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Malausa</surname> <given-names>T</given-names></name>,<name name-style="western"><surname>Fenis</surname> <given-names>A</given-names></name>,<name name-style="western"><surname>Warot</surname> <given-names>S</given-names></name>,<name name-style="western"><surname>Germain</surname> <given-names>J-F</given-names></name>,<name name-style="western"><surname>Ris</surname> <given-names>N</given-names></name>,<name name-style="western"><surname>Prado</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Botton</surname> <given-names>M</given-names></name>,<name name-style="western"><surname>Vanlerberghe-Masutti</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Sforza</surname> <given-names>R</given-names></name>,<name name-style="western"><surname>Cruaud</surname> <given-names>Couloux A</given-names></name>,<name name-style="western"><surname>Kreiter</surname> <given-names>P</given-names></name></person-group> (<year>2011</year>)<article-title> DNA markers to disentangle complexes of cryptic taxa in mealybugs (Hemiptera: Pseudococcidae).</article-title> <source>Journal of Applied Entomology </source> <volume>135</volume>: <fpage>142</fpage>-<lpage>155</lpage>. doi: 10.1111/j.1439-0418.2009.01495.x
+</mixed-citation>
+            </ref>
+            <ref id="21"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Pfugfelder</surname> <given-names>O</given-names></name></person-group> (<year>1939</year>)<fake_tag> Coccina. In: Bronns H G (ed) Klassen und Ordungen des Tierreiches. Leipzig: Arthropoda, Insecta. 121pp
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="22"><mixed-citation xlink:type="simple">ScaleNet data base: http://www.sel.barc.usda.gov/scalenet/scalenet.htm
+</mixed-citation>
+            </ref>
+            <ref id="23"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shcherbakov</surname> <given-names>DE</given-names></name></person-group> (<year>2007</year>)<fake_tag> Extinct four-winged precoccids and the ancestry of scale insects and aphids (Hemiptera). Russian Entomological Journal, 16, 47–62.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="24"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shevtsova</surname> <given-names>E</given-names></name></person-group> (<year>2012</year>)<fake_tag> Seeing the invisible: Evolution of wing interference patterns in Hymenoptera, and their application in taxonomy. PhD thesis, Lund, Sweden: Lund University.
+</fake_tag></mixed-citation>
+            </ref>
+            <ref id="25"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shevtsova</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Hansson</surname> <given-names>C</given-names></name></person-group> (<year>2011</year>)<article-title> Species recognition through wing interference patterns (WIPs) in Achrysocharoides Girault (Hymenoptera, Eulophidae) including two new species.</article-title> <source>ZooKeys </source> <volume>154</volume>: <fpage>9</fpage>-<lpage>30</lpage> doi: 10.3897/zookeys.154.2158
+</mixed-citation>
+            </ref>
+            <ref id="26"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Shevtsova</surname> <given-names>E</given-names></name>,<name name-style="western"><surname>Hansson</surname> <given-names>C</given-names></name>,<name name-style="western"><surname>Janzen</surname> <given-names>D</given-names></name>,<name name-style="western"><surname>Kjærandsen</surname> <given-names>J</given-names></name></person-group> (<year>2011</year>)<fake_tag> Stable structural color patterns displayed on transparent insect wings. Proceedings of the National Academy of Sciences, USA, 108(2), 668–673. </fake_tag>doi: 10.1073/pnas.1017393108
+</mixed-citation>
+            </ref>
+            <ref id="27"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Szelegiewicz</surname> <given-names>H</given-names></name></person-group> (<year>1971</year>)<article-title> Autapomorphous wing characters in the recent subgroups of Sternorrhyncha (Hemiptera) and their significance in the interpretation of the paleozoic members of the group.</article-title> <source>Annales Zoologici, Warsaw, </source> <volume>29</volume>: <fpage>15</fpage>-<lpage>81</lpage>.
+</mixed-citation>
+            </ref>
+            <ref id="28"><mixed-citation xlink:type="simple"><person-group><name name-style="western"><surname>Tóbiás</surname> <given-names>I</given-names></name>,<name name-style="western"><surname>Kozár</surname> <given-names>F</given-names></name>,<name name-style="western"><surname>Kaydan</surname> <given-names>BM</given-names></name>,<name name-style="western"><surname>Fetykó</surname> <given-names>K</given-names></name></person-group> (<year>2010</year>)<article-title> Use of molecular tools for the identification of some scale insects (Hemiptera: Coccoidea), in pheromone traps used for monitoring and comparison with females.</article-title> <source>Journal of Entomology, and Acarology research, </source> <volume>42</volume>: <fpage>171</fpage>-<lpage>181</lpage>.</mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <article_figs_and_tables article_pos="1" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/">
+        <fig id="F1" position="float" orientation="portrait">
+            <label>Figures 1–5.</label>
+            <caption><p> <bold>1</bold> General scheme of the fore wing (after Koteja 2008) acp-alar cupolae, afx-anterior flexing patch, alf-alar fold, alp-alar lobe, asfd-anterior subcostal field, ast-alar setae, clfd-claval (anal) field, cofd-costal field or thickening, cufd-cubital field, cur-cubital  ridge, mat-macrotrichia, mit-microtrichia, pfx-posterior flexing patch, psfd-posterior subcostal field, ptst-pterostigma, rs-“radial sector”, scr-subcostal ridge <bold>2, 3</bold> <italic>Pulvinaria vitis</italic> (Linnaeus): scanning electron microphotographs of the wing, showing its microsculpture <bold>4, 5</bold> Male of <italic>Pulvinaria vitis</italic> (Linnaeus) on white background, with invisible WIPs, and 2 on a black background, showing WIPs.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g001.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <table-wrap position="float" orientation="portrait">
+            <label><bold>Table 1.</bold>
+            </label>
+            <caption><p> The collection data of the studied material (KC – Koteja’s collection, AC – author’s collection).&lt;br/&gt; </p>
+            </caption>
+            <table id="T1" headerRowCount="0" bodyRowCount="16" columnCount="7" aid:table="table" aid:trows="16" aid:tcols="7">
+                <tbody>
+                    <tr>
+                        <td rowspan="1" colspan="1"><bold>species</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>number of specimens studied</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>collection</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>date of collection</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>place of collection</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>plant</bold>
+                        </td>
+                        <td rowspan="1" colspan="1"><bold>geographical coordinates</bold>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" colspan="1"><italic>Eriopeltis</italic> <italic>lichtensteini </italic>Signoret, 1877
+                        </td>
+                        <td rowspan="4" colspan="1">25</td>
+                        <td rowspan="4" colspan="1">KC</td>
+                        <td rowspan="1" colspan="1">28.7.1967</td>
+                        <td rowspan="1" colspan="1">Makowska Gora near Sucha, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Agrostis vulgaris</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">20.09.1968</td>
+                        <td rowspan="1" colspan="1">-</td>
+                        <td rowspan="1" colspan="1">-</td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">31.07.1969</td>
+                        <td rowspan="1" colspan="1">Mikoszewo, Poland </td>
+                        <td rowspan="1" colspan="1">different grasses</td>
+                        <td rowspan="1" colspan="1"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">05.08.1969</td>
+                        <td rowspan="1" colspan="1">Mikoszewo, Poland </td>
+                        <td rowspan="1" colspan="1"><italic>Calamagrostis epigejos</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1"><italic>Eulecanium tiliae</italic> (Linnaeus, 1758)
+                        </td>
+                        <td rowspan="2" colspan="1">5</td>
+                        <td rowspan="2" colspan="1">AC</td>
+                        <td rowspan="1" colspan="1">02.05.2012</td>
+                        <td rowspan="1" colspan="1">Ruda Slaska, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Acer platanoides</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°15'24.12&quot;N, 18°54'5.64&quot;E</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">16.05.2012</td>
+                        <td rowspan="1" colspan="1">Niegowonice, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Tilia cordata</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°23'55.69&quot;N, 19°26'8.92&quot;E </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Luzulaspis</italic> <italic>frontalis</italic> Green, 1928
+                        </td>
+                        <td rowspan="1" colspan="1">13</td>
+                        <td rowspan="1" colspan="1">KC</td>
+                        <td rowspan="1" colspan="1">06.1962</td>
+                        <td rowspan="1" colspan="1">Wolski Forest Cracov, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Carex brizoides</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1"><italic>Luzulaspis</italic> <italic>nemorosa</italic> Koteja, 1966
+                        </td>
+                        <td rowspan="1" colspan="1">15</td>
+                        <td rowspan="1" colspan="1">KC</td>
+                        <td rowspan="1" colspan="1">21.08.1967</td>
+                        <td rowspan="1" colspan="1">Ojcow Cracov, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Luzula nemorosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1"><italic>Parthenolecanium</italic> <italic>corni</italic> (Bouché, 1844)
+                        </td>
+                        <td rowspan="2" colspan="1">6</td>
+                        <td rowspan="2" colspan="1">AC</td>
+                        <td rowspan="1" colspan="1">30.04.2007</td>
+                        <td rowspan="1" colspan="1">Ruda Slaska, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Tilia cordata</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°16' 5.24&quot;N, 18°53'8.64&quot;E</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">07.05.2012</td>
+                        <td rowspan="1" colspan="1">Ruda Slaska, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Ulmus laevis</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°15'23.85&quot;N, 18°54'6.42&quot;E </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" colspan="1"><italic>Pulvinaria vitis</italic> (Linnaeus, 1758)
+                        </td>
+                        <td rowspan="3" colspan="1">31</td>
+                        <td rowspan="3" colspan="1">AC, KC</td>
+                        <td rowspan="1" colspan="1">29.08.1987</td>
+                        <td rowspan="1" colspan="1">Ruda Rozaniecka Roztocze , Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Salix. sp.</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">26.08.1987</td>
+                        <td rowspan="1" colspan="1">Ruda Rozaniecka Roztocze, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Betula verrucosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">21.08.2011</td>
+                        <td rowspan="1" colspan="1">Katowice, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Alnus glutinosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°14'3.77&quot;N, 19°0'55.71&quot;E</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1"><italic>Sphaerolecanium prunastri</italic> (Boyer de Fonscolombe, 1834)
+                        </td>
+                        <td rowspan="2" colspan="1">6</td>
+                        <td rowspan="2" colspan="1">AC</td>
+                        <td rowspan="1" colspan="1">02.06.2012</td>
+                        <td rowspan="1" colspan="1">Kuznia Raciborska, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Prunus spinosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°12'9.02&quot;E, 18°19'56.48&quot;E</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" colspan="1">16.05.2012</td>
+                        <td rowspan="1" colspan="1">Niegowonice, Poland</td>
+                        <td rowspan="1" colspan="1"><italic>Prunus spinosa</italic>
+                        </td>
+                        <td rowspan="1" colspan="1">50°23'54.86&quot;N, 19°26'15.78&quot;E</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table-wrap>
+        <fig id="F2" position="float" orientation="portrait">
+            <label>Figures 6–13.</label>
+            <caption><p> Males with “horizontally striped patterns” of WIPs, subfamilies Eulacaninae and Coccinae: <bold>6–7</bold> WIP of <italic>Sphaerolecanium prunastri</italic> (Boyer de Fonscolombe) <bold>8–9</bold> WIP of <italic>Eulecanium tiliae</italic> (Linnaeus) <bold>10, 11</bold> WIP of <italic>Pulvinaria vitis </italic><bold>12–13</bold> WIP of <italic>Parthenolecanium corni</italic> (Bouché).</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g002.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+        <fig id="F3" position="float" orientation="portrait">
+            <label>Figures 14–19.</label>
+            <caption><p> Males with “eliptical” patterns of WIPs, subfamily Eriopeltinae:<bold> 14, 15</bold> WIP of <italic>Luzulaspis frontalis</italic> Green<bold> 16–17</bold> WIP of <italic>Luzulaspis nemorosa</italic> Koteja. <bold>18–19</bold> WIP of <italic>Eriopeltis lichtensteini</italic> Signoret.</p>
+            </caption>
+            <graphic xlink:href="export.php_files/ZooKeys-1000-001-g003.jpg" position="float" orientation="portrait" xlink:type="simple"></graphic>
+        </fig>
+    </article_figs_and_tables>
+</article>

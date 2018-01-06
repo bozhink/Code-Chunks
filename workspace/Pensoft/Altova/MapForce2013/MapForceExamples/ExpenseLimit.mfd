@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping version="6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MFD.xsd">
+	<component name="defaultmap1" blackbox="0" uid="90650624" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="90702144" kind="2">
+					<targets>
+						<datapoint pos="0" key="90704064"/>
+					</targets>
+					<view ltx="244" lty="38" rbx="-396" rby="-403"/>
+					<data>
+						<constant value=" " datatype="string"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="90704416" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="90705712"/>
+						<datapoint pos="1" key="90706232"/>
+						<datapoint pos="2" key="90706704"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="90707192"/>
+					</targets>
+					<view ltx="336" lty="13" rbx="-153" rby="-251"/>
+				</component>
+				<component name="document" library="xml" uid="90707472" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="600" lty="5" rbx="779" rby="191"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:marketing-expenses" expanded="1">
+								<entry name="0:Person" expanded="1" inpkey="91415408">
+									<entry name="0:FullName" inpkey="91414904"/>
+									<entry name="0:Title" inpkey="91433424"/>
+									<entry name="0:Phone" inpkey="91432920"/>
+									<entry name="0:Email" inpkey="91414400"/>
+								</entry>
+								<entry name="0:expense-item" expanded="1" inpkey="91433976">
+									<entry name="0:type" inpkey="91413896"/>
+									<entry name="0:Date" inpkey="91413392"/>
+									<entry name="0:expense" inpkey="91424528"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="MarketingExpenses.xsd" instanceroot="{}marketing-expenses"/>
+					</data>
+				</component>
+				<component name="less" library="core" uid="91533776" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="91149232"/>
+						<datapoint pos="1" key="91149456"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="91472296"/>
+					</targets>
+					<view ltx="252" lty="264" rbx="-13" rby="-29"/>
+				</component>
+				<component name="filter" library="core" uid="91426464" kind="3">
+					<sources>
+						<datapoint pos="0" key="91428216"/>
+						<datapoint pos="1" key="91428688"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="91429160"/>
+						<datapoint pos="1" key="91429560"/>
+					</targets>
+					<view ltx="328" lty="224" rbx="-312" rby="-217"/>
+				</component>
+				<component name="document" library="xml" uid="90999456" kind="14">
+					<properties/>
+					<view rbx="197" rby="277"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="0:expense-report" expanded="1">
+								<entry name="0:Person" expanded="1" outkey="91425568">
+									<entry name="0:First" outkey="91139544"/>
+									<entry name="0:Last" outkey="91395344"/>
+									<entry name="0:Title" outkey="91396352"/>
+									<entry name="0:Phone" outkey="91395848"/>
+									<entry name="0:Email" outkey="91426072"/>
+								</entry>
+								<entry name="0:expense-item" expanded="1" outkey="91425240">
+									<entry name="0:@type" outkey="91393832"/>
+									<entry name="0:Date" outkey="91394336"/>
+									<entry name="0:expense" outkey="91394840"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="ExpReport.xsd" inputinstance="ExpReport.xml" instanceroot="{}expense-report"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="91102160" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="91104456"/>
+					</targets>
+					<view ltx="149" lty="319" rbx="-317" rby="151"/>
+					<data>
+						<constant value="200" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="exception" library="core" uid="91104808" kind="18">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="91107552"/>
+						<datapoint pos="1" key="91107952"/>
+					</sources>
+					<view ltx="611" lty="252" rbx="145" rby="88"/>
+					<data>
+						<wsdl/>
+						<exception/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="91429912" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="91432328"/>
+					</targets>
+					<view ltx="419" lty="301" rbx="-47" rby="133"/>
+					<data>
+						<constant value="Expense limit exceeded!" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="69860464"/>
+					<edge edgekey="90727352"/>
+					<edge edgekey="91410368"/>
+					<edge edgekey="91410488"/>
+					<edge edgekey="91410608"/>
+					<edge edgekey="91410728"/>
+					<edge edgekey="91411024"/>
+					<edge edgekey="91411320"/>
+					<edge edgekey="91411616"/>
+					<edge edgekey="91411912"/>
+					<edge edgekey="91412208"/>
+					<edge edgekey="91412504"/>
+					<edge edgekey="91437872"/>
+					<edge edgekey="91438080"/>
+					<edge edgekey="91438376"/>
+					<edge edgekey="91438672"/>
+					<edge edgekey="91438968"/>
+					<edge edgekey="91439264"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="90704064">
+						<edges>
+							<edge vertexkey="90706232" edgekey="91438672"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="90707192">
+						<edges>
+							<edge vertexkey="91414904" edgekey="91438376"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91104456">
+						<edges>
+							<edge vertexkey="91149456" edgekey="91411024"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91139544">
+						<edges>
+							<edge vertexkey="90705712" edgekey="91411912"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91393832">
+						<edges>
+							<edge vertexkey="91413896" edgekey="91437872"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91394336">
+						<edges>
+							<edge vertexkey="91413392" edgekey="91411616"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91394840">
+						<edges>
+							<edge vertexkey="91149232" edgekey="90727352"/>
+							<edge vertexkey="91424528" edgekey="69860464"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91395344">
+						<edges>
+							<edge vertexkey="90706704" edgekey="91412208"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91395848">
+						<edges>
+							<edge vertexkey="91432920" edgekey="91438080"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91396352">
+						<edges>
+							<edge vertexkey="91433424" edgekey="91439264"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91425240">
+						<edges>
+							<edge vertexkey="91428216" edgekey="91438968"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91425568">
+						<edges>
+							<edge vertexkey="91415408" edgekey="91411320"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91426072">
+						<edges>
+							<edge vertexkey="91414400" edgekey="91412504"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91429160">
+						<edges>
+							<edge vertexkey="91433976" edgekey="91410368"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91429560">
+						<edges>
+							<edge vertexkey="91107552" edgekey="91410608"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91432328">
+						<edges>
+							<edge vertexkey="91107952" edgekey="91410488"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91472296">
+						<edges>
+							<edge vertexkey="91428688" edgekey="91410728"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

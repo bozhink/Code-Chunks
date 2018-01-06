@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The list of cities below are used with the US-WeatherForcast.mfd example -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="CityList">
+        <xs:annotation>
+            <xs:documentation>The root element Citylist contains a sequence of City elements.  The City data is required for populating input for the US-WeatherForcast.mfd mapping</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="City">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CityName" type="xs:string"/>
+                            <xs:element name="CityState" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema elementFormDefault="qualified" targetNamespace="http://www.w3.org/2006/01/P3Pv11" 
+  xmlns="http://www.w3.org/2001/XMLSchema" 
+  xmlns:p3p="http://www.w3.org/2002/01/P3Pv1" 
+  xmlns:p3p11="http://www.w3.org/2006/01/P3Pv11" 
+  xmlns:p3p11bds="http://www.w3.org/2006/01/P3Pv11BDS">
+
+<!-- enabling xml:lang attribute -->
+ <import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+ <import namespace="http://www.w3.org/2002/01/P3Pv1" schemaLocation="http://www.w3.org/2002/01/P3Pv1"/>
+  <import namespace="http://www.w3.org/2006/01/P3Pv11BDS" schemaLocation="http://www.w3.org/2006/01/P3Pv11BDS.xsd" />
+
+ 
+ <!-- *********** P3P 1.1 Elements ************ -->
+ <!-- p3p attribute -->
+ <attribute name="p3p" type="anyURI">
+   <annotation>
+     <documentation>
+       <div xmlns="http://www.w3.org/1999/xhtml1">
+         <p>The P3P-generic attribute takes a URI as its value.</p>
+         <p>The meaning is that a P3P document describing the privacy
+           policy relevant to this element may be found at the URI given.</p>
+       </div>
+     </documentation>
+   </annotation>
+ </attribute>
+  
+  <!-- ********** our-host element for domain relationsships ********** -->
+  
+ 
+ <simpleType name="consent_value">
+   <restriction base="string">
+     <enumeration value="opt-in"/>
+     <enumeration value="opt-out"/>
+     <enumeration value="always"/>
+     <enumeration value="mixed"/>
+   </restriction>
+ </simpleType>
+ 
+ <element name="STATEMENT-GROUP-DEF">
+   <complexType>
+     <attribute name="id" type="ID" use="required"/>
+     <attribute name="consent" type="p3p11:consent_value" use="optional"/>
+     <attribute name="name" type="string" use="optional"/>
+     <attribute name="short-description" type="string" use="optional"/>
+   </complexType>
+ </element>
+ 
+ <element name="STATEMENT-GROUP">
+   <complexType>
+     <attribute name="id" type="IDREF" use="required"/>
+   </complexType>
+ </element>
+ 
+ <!-- ************ PPURPOSE ************* -->
+ <element name="PPURPOSE">
+   <complexType>
+     <sequence>
+       <choice maxOccurs="unbounded">
+         <element name="account" type="p3p11:ppurpose-value"/>
+         <element name="arts" type="p3p11:ppurpose-value"/>
+         <element name="browsing" type="p3p11:ppurpose-value"/>
+         <element name="charity" type="p3p11:ppurpose-value"/>
+         <element name="communicate" type="p3p11:ppurpose-value"/>
+         <element name="custom" type="p3p11:ppurpose-value"/>
+         <element name="delivery" type="p3p11:ppurpose-value"/>
+         <element name="downloads" type="p3p11:ppurpose-value"/>
+         <element name="education" type="p3p11:ppurpose-value"/>
+         <element name="feedback" type="p3p11:ppurpose-value"/>
+         <element name="finmgt" type="p3p11:ppurpose-value"/>
+         <element name="gambling" type="p3p11:ppurpose-value"/>
+         <element name="gaming" type="p3p11:ppurpose-value"/>
+         <element name="government" type="p3p11:ppurpose-value"/>
+         <element name="health" type="p3p11:ppurpose-value"/>
+         <element name="login" type="p3p11:ppurpose-value"/>
+         <element name="marketing" type="p3p11:ppurpose-value"/>
+         <element name="news" type="p3p11:ppurpose-value"/>
+         <element name="payment" type="p3p11:ppurpose-value"/>
+         <element name="sales" type="p3p11:ppurpose-value"/>
+         <element name="search" type="p3p11:ppurpose-value"/>
+         <element name="state" type="p3p11:ppurpose-value"/>
+         <element name="surveys" type="p3p11:ppurpose-value"/>
+       </choice>
+     </sequence>
+   </complexType>
+ </element>
+ 
+ <complexType name="ppurpose-value"/>
+ 
+ <!-- ************ JURISDICTION ************ -->
+ <element name="JURISDICTION">
+   <complexType>
+     <simpleContent>
+       <extension base="string">
+         <attribute name="service" type="anyURI" use="required"/>
+         <attribute name="short-description" type="string" use="optional"/>
+       </extension>
+     </simpleContent>
+   </complexType>
+ </element>
+  <!-- ********* P3P 1.1 Data-Group Element below Entity -->
+  <!-- <element name="datatype" type="p3p11:datatypeComplexType" /> -->
+  <complexType name="datatypeComplexType">
+    <all>
+      <element minOccurs="0" name="dynamic" type="p3p11bds:dynamicComplexType" />
+      <element minOccurs="0" name="user" type="p3p11bds:userComplexType" />
+      <element minOccurs="0" name="thirdparty" type="p3p11bds:thirdpartyComplexType" />
+      <element minOccurs="0" name="business" type="p3p11bds:businessComplexType" />
+    </all>
+    <attribute type="p3p:yes_no" default="no" use="optional" name="optional" />
+  </complexType>
+  
+ 
+<element name='DATA-GROUP'>
+  <complexType>
+  <sequence>
+    <any processContents="lax"/>
+    <!--  ******* Definition of 1.1 datatype ************** -->
+    <element   name="datatype" minOccurs="0" maxOccurs="unbounded" type="p3p11:datatypeComplexType" />
+  </sequence>
+  </complexType>
+</element>
+  
+  <!-- ********* Definition of the OUR-HOST element below the Extension of POLICY-REF ********* -->
+  <element name="our-host" type="p3p11:our-host-type" />
+    
+  <complexType name="our-host-type">
+    <attribute name='name' type='string' use='optional'/>
+    <attribute name="authority" type="string" use="optional" />
+  </complexType>
+  
+ </schema>

@@ -1,0 +1,15 @@
+xquery 
+(:     
+		All XQuery statements for IBM DB2 must start with the 'xquery' keyword with a first statement following on the same line. 
+			e.g  xquery db2-fn:xmlcolumn('PRODUCT.DESCRIPTION')//text
+
+		Two special functions are provided to retrieve data directly from DB2:
+			db2-fn:xmlcolumn('PRODUCT.DESCRIPTION') returns a sequence of XML documents stored in the XML column DESCRIPTION in the table PRODUCT
+			db2-fn:sqlquery('SELECT DESCRIPTION FROM PRODUCT') returns a sequence that is the result of an SQL fullselect from the XML column DESCRIPTION in the table PRODUCT
+
+		For more information, please consult the online product documentation for pureXML in DB2 9 and later versions. 
+		
+		IMPORTANT: in order to enable XQuery execution against IBM DB2 use Info Window to
+			- Enable Database Support
+			- Select Data Source and Root Object for your DB2 database	
+:) 

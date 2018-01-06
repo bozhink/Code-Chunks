@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The list of cities below are used with the US-WeatherForcast.mfd example -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="WeatherReport">
+        <xs:annotation>
+            <xs:documentation>The WeatherReport Element contains US-weatherForcast.mfd output.  This output is structured as an simple weather report</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="CityReport">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="summary" type="xs:string"/>
+                            <xs:element name="precipitation" type="xs:string"/>
+                            <xs:element name="HighTempature" type="xs:string"/>
+                            <xs:element name="LowTempature" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="name"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="21">
+	<resources>
+		<datasources>
+			<datasource name="Nanonull">
+				<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="Nanonull.mdb" DBCatalog="Nanonull" OLEDBProvider="Microsoft.Jet.OLEDB.4.0" OLEDBOptions="Persist Security Info=false;"/>
+				<database_connection database_kind="MS Access" import_kind="ADO" version="04.00.0000" name="Nanonull" path="Nanonull" use_driver_for_retrieval="Yes" allow_background_retrieval="No">
+					<properties>
+						<property name="Database Kind" value="MS Access"/>
+						<property name="Import Kind" value="ADO"/>
+						<property name="Root Object" value="Nanonull"/>
+						<property name="Data Source" value="Nanonull.mdb"/>
+						<property name="Provider" value="Microsoft.Jet.OLEDB.4.0"/>
+						<property name="User ID"/>
+						<property name="Password"/>
+						<property name="Persist Security Info"/>
+						<property name="Jet OLEDB:System Database"/>
+						<property name="Jet OLEDB:Sandbox Mode"/>
+						<property name="Jet OLEDB:Exclusive Async Delay"/>
+						<property name="Jet OLEDB:Flush Transaction Timeout"/>
+						<property name="Jet OLEDB:Implicit Commit Sync"/>
+						<property name="Jet OLEDB:Lock Delay"/>
+						<property name="Jet OLEDB:Lock Retry"/>
+						<property name="Jet OLEDB:Max Buffer Size"/>
+						<property name="Jet OLEDB:Max Locks Per File"/>
+						<property name="Jet OLEDB:Page Locks to Table Lock"/>
+						<property name="Jet OLEDB:Page Timeout"/>
+						<property name="Jet OLEDB:Recycle Long-Valued Pages"/>
+						<property name="Jet OLEDB:Shared Async Delay"/>
+						<property name="Jet OLEDB:User Commit Sync"/>
+						<property name="Jet OLEDB:Compact Without Replica Repair"/>
+						<property name="Jet OLEDB:Create System Database"/>
+						<property name="Jet OLEDB:Database Locking Mode"/>
+						<property name="Jet OLEDB:Database Password"/>
+						<property name="Jet OLEDB:New Database Password"/>
+						<property name="Jet OLEDB:Registry Path"/>
+					</properties>
+					<LocalViewStorage/>
+					<LocalRelationsStorage/>
+					<RecordSetStructureStorage/>
+				</database_connection>
+			</datasource>
+		</datasources>
+	</resources>
+	<component name="defaultmap1" blackbox="0" uid="69" editable="1">
+		<properties SelectedLanguage="java" MakePathsAbsoluteOnGeneration="1"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="57" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="28"/>
+					</targets>
+					<view ltx="396" lty="555" rbx="484" rby="573"/>
+					<data>
+						<constant value="2006-12-01" datatype="anySimpleType"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="greater" library="core" uid="58" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="377"/>
+						<datapoint pos="1" key="29"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="31"/>
+					</targets>
+					<view ltx="526" lty="518" rbx="589" rby="574"/>
+				</component>
+				<component name="equal" library="core" uid="29" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="242"/>
+						<datapoint pos="1" key="369"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="54"/>
+					</targets>
+					<view ltx="530" lty="405" rbx="583" rby="461"/>
+				</component>
+				<component name="datetime-add" library="lang" uid="17" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="229"/>
+						<datapoint pos="1" key="61"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="57"/>
+					</targets>
+					<view ltx="416" lty="329" rbx="505" rby="387"/>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="60"/>
+					</targets>
+					<view ltx="336" lty="383" rbx="391" rby="401"/>
+					<data>
+						<constant value="-P1D" datatype="anySimpleType"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="28" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="58"/>
+						<datapoint pos="1" key="367"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="69"/>
+					</targets>
+					<view ltx="528" lty="330" rbx="581" rby="386"/>
+				</component>
+				<component name="IsBeginOfFinancialYear" library="user" blackbox="0" uid="56" kind="19" visible="0">
+					<view ltx="426" lty="261" rbx="545" rby="278"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="FromDate" inpkey="237" componentid="54"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="bool" outkey="127" componentid="55"/>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="68" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="130"/>
+					</targets>
+					<view ltx="558" lty="184" rbx="707" rby="202"/>
+					<data>
+						<constant value="Derived from audited consolidated financial statements." datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="date-from-datetime" library="lang" uid="60" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="244"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="92"/>
+					</targets>
+					<view ltx="366" lty="641" rbx="484" rby="680"/>
+				</component>
+				<component name="date-from-datetime" library="lang" uid="59" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="239"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="99"/>
+					</targets>
+					<view ltx="366" lty="593" rbx="484" rby="632"/>
+				</component>
+				<component name="is-null" library="db" uid="31" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="250"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="34"/>
+					</targets>
+					<view ltx="531" lty="674" rbx="594" rby="713"/>
+				</component>
+				<component name="FactsForDuration" library="core" uid="30" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="394"/>
+						<datapoint pos="1" key="35"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+						<datapoint/>
+					</targets>
+					<view ltx="632" lty="658" rbx="742" rby="714"/>
+				</component>
+				<component name="FactsForInstantPeriod" library="core" uid="26" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="387"/>
+						<datapoint pos="1" key="55"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="63"/>
+						<datapoint/>
+					</targets>
+					<view ltx="621" lty="403" rbx="753" rby="459"/>
+				</component>
+				<component name="value-map" library="core" uid="73" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="643"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="644"/>
+					</targets>
+					<view ltx="536" lty="133" rbx="617" rby="172"/>
+					<data>
+						<wsdl/>
+						<valuemap>
+							<valuemapTable>
+								<entry from="USA" to="{http://www.altova.com/nanonull}nanonull:USA"/>
+								<entry from="Europe" to="{http://www.altova.com/nanonull}nanonull:Europe"/>
+								<entry from="Asia" to="{http://www.altova.com/nanonull}nanonull:Asia"/>
+								<entry from="SegmentOperatingActivitiesDomain" to="{http://fasb.org/us-gaap/2012-01-31}us-gaap:SegmentOperatingActivitiesDomain"/>
+							</valuemapTable>
+							<input name="input" type="string"/>
+							<result name="Segment" type="QName"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="FactsForInstantPeriod" library="core" uid="24" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="389"/>
+						<datapoint pos="1" key="70"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="72"/>
+						<datapoint/>
+					</targets>
+					<view ltx="622" lty="328" rbx="754" rby="384"/>
+				</component>
+				<component name="Period" library="core" uid="34" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="397"/>
+						<datapoint pos="1" key="128"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="66"/>
+						<datapoint/>
+					</targets>
+					<view ltx="621" lty="255" rbx="724" rby="311"/>
+				</component>
+				<component name="date-from-datetime" library="lang" uid="63" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="379"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="84"/>
+					</targets>
+					<view ltx="420" lty="49" rbx="538" rby="88"/>
+				</component>
+				<component name="constant" library="core" uid="5" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="75"/>
+					</targets>
+					<view ltx="496" lty="-7" rbx="650" rby="11"/>
+					<data>
+						<constant value="http://www.nanonull.com" datatype="anySimpleType"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="date-from-datetime" library="lang" uid="65" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="381"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="89"/>
+					</targets>
+					<view ltx="432" lty="199" rbx="550" rby="238"/>
+				</component>
+				<component name="FactsForInstantPeriod" library="core" uid="45" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="391"/>
+						<datapoint pos="1" key="32"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="37"/>
+						<datapoint/>
+					</targets>
+					<view ltx="624" lty="513" rbx="756" rby="569"/>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="666" lty="140" rbx="704" rby="158"/>
+					<data>
+						<constant value="2" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="4" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="568" lty="30" rbx="649" rby="48"/>
+					<data>
+						<constant value="Nanonull" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="508" lty="814" rbx="569" rby="832"/>
+					<data>
+						<constant value="USD" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="xbrl-measure-shares" library="xbrl" uid="8" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="610" lty="858" rbx="739" rby="897"/>
+				</component>
+				<component name="constant" library="core" uid="75" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="700"/>
+					</targets>
+					<view ltx="500" lty="916" rbx="574" rby="934"/>
+					<data>
+						<constant value="shares" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="43"/>
+					</targets>
+					<view ltx="663" lty="98" rbx="705" rby="116"/>
+					<data>
+						<constant value="-6" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="structure" library="db" uid="2" kind="15">
+					<properties/>
+					<view ltx="-6" lty="-7" rbx="312" rby="761"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="document" expanded="1">
+								<entry name="FactsForInstantPeriod" type="table" outkey="386" expanded="1">
+									<entry name="Date" outkey="366"/>
+									<entry name="Assets" outkey="363"/>
+									<entry name="CommonStockValue" outkey="324"/>
+									<entry name="AccumulatedOtherComprehensiveIncomeLossNetOfTax" outkey="360"/>
+									<entry name="CustomerDepositsCurrent" outkey="354"/>
+									<entry name="AccountsPayable" outkey="351"/>
+									<entry name="AdditionalPaidInCapital" outkey="348"/>
+									<entry name="AccruedLiabilities" outkey="345"/>
+									<entry name="AssetsCurrent" outkey="342"/>
+									<entry name="Goodwill" outkey="336"/>
+									<entry name="IntangibleAssets" outkey="666"/>
+									<entry name="InventoryNet" outkey="330"/>
+									<entry name="LiabilitiesAndStockholdersEquity" outkey="327"/>
+									<entry name="LiabilitiesCurrent" outkey="252"/>
+									<entry name="LongTermDebtCurrent" outkey="258"/>
+									<entry name="LongTermDebtNoncurrent" outkey="267"/>
+									<entry name="OtherAssetsNoncurrent" outkey="270"/>
+									<entry name="OtherLiabilitiesNoncurrent" outkey="312"/>
+									<entry name="PrepaidExpenseCurrent" outkey="309"/>
+									<entry name="PropertyPlantAndEquipmentNet" outkey="306"/>
+									<entry name="ReceivablesNetCurrent" outkey="291"/>
+									<entry name="RetainedEarningsAccumulatedDeficit" outkey="282"/>
+									<entry name="ShortTermBorrowings" outkey="279"/>
+									<entry name="StockholdersEquity" outkey="261"/>
+									<entry name="TreasuryStockValue" outkey="135"/>
+									<entry name="CashAndCashEquivalentsAtCarryingValue" outkey="138"/>
+									<entry name="CommonStockParOrStatedValuePerShare" outkey="692"/>
+									<entry name="CommonStockSharesAuthorized" outkey="693"/>
+									<entry name="CommonStockSharesIssued" outkey="694"/>
+									<entry name="TreasuryStockShares" outkey="695"/>
+								</entry>
+								<entry name="Period" type="table" outkey="396" expanded="1">
+									<entry name="FromDate" outkey="228"/>
+									<entry name="ToDate" outkey="241"/>
+									<entry name="FactsForDuration|PeriodID" type="table" outkey="393" expanded="1">
+										<entry name="RegionID" outkey="249"/>
+										<entry name="EarningsPerShareBasic" outkey="246"/>
+										<entry name="EarningsPerShareDiluted" outkey="225"/>
+										<entry name="CommonStockDividendsPerShareCashPaid" outkey="216"/>
+										<entry name="FoodAndBeverageCosts" outkey="668"/>
+										<entry name="CostOfRevenue" outkey="222"/>
+										<entry name="CostOfServicesDirectLabor" outkey="213"/>
+										<entry name="CostsAndExpenses" outkey="143"/>
+										<entry name="DepreciationAndAmortization" outkey="146"/>
+										<entry name="OtherCostAndExpenseOperating" outkey="669"/>
+										<entry name="FuelCosts" outkey="207"/>
+										<entry name="IncomeLossFromContinuingOperationsFromEquityMethodInvestments" outkey="204"/>
+										<entry name="IncomeTaxExpenseBenefit" outkey="201"/>
+										<entry name="InterestExpense" outkey="198"/>
+										<entry name="InvestmentIncomeInterest" outkey="195"/>
+										<entry name="NetIncomeLoss" outkey="189"/>
+										<entry name="NonoperatingIncomeExpense" outkey="186"/>
+										<entry name="OperatingIncomeLoss" outkey="181"/>
+										<entry name="OtherCostOfOperatingRevenue" outkey="178"/>
+										<entry name="OtherNonoperatingIncomeExpense" outkey="175"/>
+										<entry name="OtherSalesRevenueNet" outkey="172"/>
+										<entry name="PassengerRevenue" outkey="169"/>
+										<entry name="Revenues" outkey="164"/>
+										<entry name="SellingGeneralAndAdministrativeExpense" outkey="161"/>
+										<entry name="CruiseCommissionsTransportationAndOther" outkey="158"/>
+										<entry name="OnboardAndOther" outkey="155"/>
+										<entry name="CostOfOnboardAndOther" outkey="152"/>
+										<entry name="CashAndCashEquivalentsPeriodIncreaseDecrease" outkey="149"/>
+										<entry name="EffectOfExchangeRateOnCashAndCashEquivalents" outkey="109"/>
+										<entry name="IncreaseDecreaseInAccountsPayable" outkey="112"/>
+										<entry name="IncreaseDecreaseInAccruedLiabilities" outkey="106"/>
+										<entry name="IncreaseDecreaseInCustomerDeposits" outkey="115"/>
+										<entry name="IncreaseDecreaseInInventories" outkey="118"/>
+										<entry name="IncreaseDecreaseInPrepaidExpense" outkey="124"/>
+										<entry name="IncreaseDecreaseInReceivables" outkey="121"/>
+										<entry name="NetCashProvidedByUsedInFinancingActivities" outkey="405"/>
+										<entry name="NetCashProvidedByUsedInInvestingActivities" outkey="408"/>
+										<entry name="NetCashProvidedByUsedInOperatingActivities" outkey="399"/>
+										<entry name="OtherAdjustmentsForNoncashItemsFromContinuingOperations" outkey="402"/>
+										<entry name="PaymentsForProceedsFromOtherInvestingActivities" outkey="383"/>
+										<entry name="PaymentsForRepurchaseOfCommonStock" outkey="357"/>
+										<entry name="PaymentsOfDividends" outkey="192"/>
+										<entry name="PaymentsToAcquirePropertyPlantAndEquipment" outkey="318"/>
+										<entry name="RepaymentsOfOtherLongTermDebt" outkey="670"/>
+										<entry name="ProceedsFromPaymentsForOtherFinancingActivities" outkey="273"/>
+										<entry name="ProceedsFromIssuanceOfLongTermDebt" outkey="276"/>
+										<entry name="ProceedsFromLongTermLinesOfCredit" outkey="671"/>
+										<entry name="ProceedsFromSaleOfTreasuryStock" outkey="676"/>
+										<entry name="RepaymentsOfLongTermDebt" outkey="294"/>
+										<entry name="RepaymentsOfShortTermDebt" outkey="297"/>
+										<entry name="ShareBasedCompensation" outkey="300"/>
+										<entry name="Region|RegionID" type="table" expanded="1">
+											<entry name="Name" outkey="303"/>
+										</entry>
+									</entry>
+								</entry>
+								<entry name="Region" type="table">
+									<entry name="Facts|RegionID" type="table">
+										<entry name="FactsID" valuekeygeneration="databasegenerated"/>
+										<entry name="Period|PeriodID" type="table">
+											<entry name="PeriodID" valuekeygeneration="databasegenerated"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<database ref="Nanonull">
+							<data>
+								<selections>
+									<selection>
+										<PathElement Name="Nanonull" Kind="DataSource"/>
+										<PathElement Name="Nanonull" Kind="Database"/>
+										<PathElement Name="FactsForDuration" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="Nanonull" Kind="DataSource"/>
+										<PathElement Name="Nanonull" Kind="Database"/>
+										<PathElement Name="FactsForInstantPeriod" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="Nanonull" Kind="DataSource"/>
+										<PathElement Name="Nanonull" Kind="Database"/>
+										<PathElement Name="Period" Kind="Table"/>
+									</selection>
+									<selection>
+										<PathElement Name="Nanonull" Kind="DataSource"/>
+										<PathElement Name="Nanonull" Kind="Database"/>
+										<PathElement Name="Region" Kind="Table"/>
+									</selection>
+								</selections>
+							</data>
+						</database>
+					</data>
+				</component>
+				<component name="xbrl-measure-currency" library="xbrl" uid="10" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="599" lty="804" rbx="738" rby="843"/>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="610" lty="771" rbx="737" rby="789"/>
+					<data>
+						<constant value="perShareItemType" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="nanonull" library="xbrl" uid="71" kind="27">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="825" lty="-7" rbx="1212" rby="763"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace uid="http://www.xbrl.org/2003/instance"/>
+									<namespace uid="view"/>
+									<namespace uid="http://xbrl.org/2006/xbrldi"/>
+									<namespace uid="http://fasb.org/us-gaap/2012-01-31"/>
+									<namespace uid="http://www.xbrl.org/2003/linkbase"/>
+									<namespace uid="http://xbrl.sec.gov/dei/2012-01-31"/>
+									<namespace uid="http://www.altova.com/nanonull"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="xbrl" ns="2" expanded="1" showdefaultsnode="1">
+										<entry name="defaults" ns="1" expanded="1">
+											<entry name="monetaryItemType" ns="1" expanded="1">
+												<entry name="unitRef" type="attribute" inpkey="612"/>
+												<entry name="decimals" type="attribute" inpkey="613"/>
+											</entry>
+											<entry name="sharesItemType" ns="1" expanded="1">
+												<entry name="unitRef" type="attribute" inpkey="701"/>
+												<entry name="decimals" type="attribute" inpkey="702"/>
+											</entry>
+											<entry name="numericItemType" ns="1" expanded="1">
+												<entry name="unitRef" type="attribute" inpkey="614"/>
+												<entry name="decimals" type="attribute" inpkey="615"/>
+											</entry>
+										</entry>
+										<entry name="//www.nanonull.com/taxonomy/role/FinancialStatements" ns="3">
+											<entry name="Dimensionless (presentation)">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+												</dimensions>
+											</entry>
+										</entry>
+										<entry name="//www.nanonull.com/taxonomy/role/SegmentRevenueAndOperatingIncome" ns="3">
+											<entry name="Dimensionless (presentation)">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+												</dimensions>
+												<entry name="identifier" ns="2">
+													<entry name="identifier" ns="2" expanded="1"/>
+													<entry name="period" ns="2">
+														<entry name="period" ns="2" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ScheduleOfSegmentReportingInformationBySegmentTable" ns="5" expanded="1">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+													<qname name="StatementOperatingActivitiesSegmentAxis" ns="5"/>
+												</dimensions>
+												<entry name="identifier" ns="2" expanded="1">
+													<entry name="identifier" ns="2" inpkey="622" expanded="1">
+														<entry name="scheme" type="attribute" inpkey="623"/>
+													</entry>
+													<entry name="period" ns="2" expanded="1">
+														<entry name="period" ns="2" inpkey="624" expanded="1">
+															<entry name="startDate" ns="2" inpkey="625"/>
+															<entry name="endDate" ns="2" inpkey="626"/>
+														</entry>
+														<entry name="StatementOperatingActivitiesSegmentAxis" ns="5" expanded="1">
+															<entry name="explicitMember" ns="4" inpkey="627" expanded="1"/>
+															<entry name="context" ns="2">
+																<entry name="SegmentReportingInformationLineItems" ns="5" expanded="1">
+																	<entry name="SegmentReportingInformationRevenue" ns="5" inpkey="628"/>
+																	<entry name="SegmentReportingInformationOperatingIncomeLoss" ns="5" inpkey="629"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="//www.nanonull.com/taxonomy/role/StatementOfCashFlowsIndirect" ns="3">
+											<entry name="Dimensionless (presentation)" expanded="1">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+												</dimensions>
+												<entry name="identifier" ns="2" expanded="1">
+													<entry name="identifier" ns="2" inpkey="543" expanded="1">
+														<entry name="scheme" type="attribute" inpkey="544"/>
+													</entry>
+													<entry name="period" ns="2" expanded="1">
+														<entry name="period" ns="2" inpkey="545" expanded="1">
+															<entry name="startDate" ns="2" inpkey="546"/>
+															<entry name="endDate" ns="2" inpkey="547"/>
+														</entry>
+														<entry name="context" ns="2" inpkey="548">
+															<entry name="StatementOfCashFlowsAbstract" ns="5">
+																<entry name="StatementLineItems" ns="5">
+																	<entry name="NetCashProvidedByUsedInOperatingActivitiesAbstract" ns="5">
+																		<entry name="AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract" ns="5">
+																			<entry name="ShareBasedCompensation" ns="5" inpkey="589"/>
+																			<entry name="AdjustmentsNoncashItemsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesOther" ns="5" inpkey="590">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																		</entry>
+																		<entry name="IncreaseDecreaseInOperatingCapitalAbstract" ns="5">
+																			<entry name="IncreaseDecreaseInReceivables" ns="5" inpkey="591">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="IncreaseDecreaseInInventories" ns="5" inpkey="592">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets" ns="5" inpkey="593">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="IncreaseDecreaseInAccountsPayable" ns="5" inpkey="594">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="IncreaseDecreaseInOtherOperatingLiabilities" ns="5" inpkey="651"/>
+																			<entry name="IncreaseDecreaseInCustomerDeposits" ns="5" inpkey="595">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																		</entry>
+																		<entry name="NetCashProvidedByUsedInOperatingActivities" ns="5" inpkey="596">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="NetCashProvidedByUsedInInvestingActivitiesAbstract" ns="5">
+																		<entry name="PaymentsToAcquirePropertyPlantAndEquipment" ns="5" inpkey="597">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="PaymentsForProceedsFromOtherInvestingActivities" ns="5" inpkey="598">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="NetCashProvidedByUsedInInvestingActivities" ns="5" inpkey="599">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="NetCashProvidedByUsedInFinancingActivitiesAbstract" ns="5">
+																		<entry name="ProceedsFromRepaymentsOfShortTermDebt" ns="5" inpkey="656"/>
+																		<entry name="RepaymentsOfLongTermLinesOfCredit" ns="5" inpkey="658">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="ProceedsFromLongTermLinesOfCredit" ns="5" inpkey="660"/>
+																		<entry name="RepaymentsOfOtherLongTermDebt" ns="5" inpkey="664">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="ProceedsFromIssuanceOfOtherLongTermDebt" ns="5" inpkey="661"/>
+																		<entry name="PaymentsOfDividends" ns="5" inpkey="549">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="PaymentsForRepurchaseOfCommonStock" ns="5" inpkey="550">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="ProceedsFromSaleOfTreasuryStock" ns="5" inpkey="654"/>
+																		<entry name="ProceedsFromPaymentsForOtherFinancingActivities" ns="5" inpkey="551"/>
+																		<entry name="NetCashProvidedByUsedInFinancingActivities" ns="5" inpkey="552">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="EffectOfExchangeRateOnCashAndCashEquivalents" ns="5" inpkey="553"/>
+																	<entry name="CashAndCashEquivalentsPeriodIncreaseDecrease" ns="5" inpkey="554">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="period" ns="2" expanded="1" clone="1">
+														<entry name="period" ns="2" inpkey="555" expanded="1">
+															<entry name="instant" ns="2" inpkey="556"/>
+														</entry>
+														<entry name="context" ns="2" inpkey="557" expanded="1">
+															<entry name="StatementOfCashFlowsAbstract" ns="5" expanded="1">
+																<entry name="StatementLineItems" ns="5" expanded="1">
+																	<entry name="CashAndCashEquivalentsAtCarryingValue" ns="5" inpkey="558">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/periodStartLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																		<entry name="footnote" ns="6" inpkey="559"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="period" ns="2" clone="1">
+														<entry name="period" ns="2" inpkey="560" expanded="1">
+															<entry name="instant" ns="2" inpkey="561"/>
+														</entry>
+														<entry name="context" ns="2" inpkey="562" expanded="1">
+															<entry name="StatementOfCashFlowsAbstract" ns="5" expanded="1">
+																<entry name="StatementLineItems" ns="5" expanded="1">
+																	<entry name="CashAndCashEquivalentsAtCarryingValue" ns="5" inpkey="563">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/periodEndLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																		<entry name="footnote" ns="6" inpkey="564"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StatementTable" ns="5">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+													<qname name="LegalEntityAxis" ns="7"/>
+												</dimensions>
+												<entry name="identifier" ns="2">
+													<entry name="identifier" ns="2" expanded="1"/>
+													<entry name="period" ns="2">
+														<entry name="period" ns="2" expanded="1"/>
+														<entry name="LegalEntityAxis" ns="7">
+															<entry name="explicitMember" ns="4" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="//www.nanonull.com/taxonomy/role/StatementOfFinancialPositionClassified" ns="3">
+											<entry name="Dimensionless (presentation)" expanded="1">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+												</dimensions>
+												<entry name="identifier" ns="2" expanded="1">
+													<entry name="identifier" ns="2" inpkey="411" expanded="1">
+														<entry name="scheme" type="attribute" inpkey="412"/>
+													</entry>
+													<entry name="period" ns="2" expanded="1">
+														<entry name="period" ns="2" inpkey="413" expanded="1">
+															<entry name="instant" ns="2" inpkey="414"/>
+														</entry>
+														<entry name="context" ns="2" inpkey="415" expanded="1">
+															<entry name="StatementOfFinancialPositionAbstract" ns="5" expanded="1">
+																<entry name="StatementLineItems" ns="5" expanded="1">
+																	<entry name="AssetsAbstract" ns="5" expanded="1">
+																		<entry name="AssetsCurrentAbstract" ns="5">
+																			<entry name="ReceivablesNetCurrent" ns="5" inpkey="416"/>
+																			<entry name="InventoryNet" ns="5" inpkey="417"/>
+																			<entry name="OtherAssetsCurrent" ns="5" inpkey="418"/>
+																			<entry name="AssetsCurrent" ns="5" inpkey="419">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																		</entry>
+																		<entry name="PropertyPlantAndEquipmentNet" ns="5" inpkey="420"/>
+																		<entry name="Goodwill" ns="5" inpkey="421"/>
+																		<entry name="IntangibleAssetsNetExcludingGoodwill" ns="5" inpkey="422"/>
+																		<entry name="OtherAssetsNoncurrent" ns="5" inpkey="423">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/terseLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="Assets" ns="5" inpkey="424">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="LiabilitiesAndStockholdersEquityAbstract" ns="5">
+																		<entry name="LiabilitiesCurrentAbstract" ns="5">
+																			<entry name="ShortTermBorrowings" ns="5" inpkey="425">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/terseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="LongTermDebtCurrent" ns="5" inpkey="426"/>
+																			<entry name="AccountsPayableCurrent" ns="5" inpkey="427">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="AccruedLiabilitiesCurrent" ns="5" inpkey="428"/>
+																			<entry name="CustomerDepositsCurrent" ns="5" inpkey="429">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="LiabilitiesCurrent" ns="5" inpkey="430">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																		</entry>
+																		<entry name="LongTermDebtNoncurrent" ns="5" inpkey="431">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="OtherLiabilitiesNoncurrent" ns="5" inpkey="432"/>
+																		<entry name="StockholdersEquityAbstract" ns="5">
+																			<entry name="AdditionalPaidInCapital" ns="5" inpkey="434"/>
+																			<entry name="RetainedEarningsAccumulatedDeficit" ns="5" inpkey="435"/>
+																			<entry name="AccumulatedOtherComprehensiveIncomeLossNetOfTax" ns="5" inpkey="436"/>
+																			<entry name="TreasuryStockValue" ns="5" inpkey="437">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="StockholdersEquity" ns="5" inpkey="438">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="CommonStockValue" ns="5" inpkey="439">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																		</entry>
+																		<entry name="LiabilitiesAndStockholdersEquity" ns="5" inpkey="440">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StatementTable" ns="5">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+													<qname name="LegalEntityAxis" ns="7"/>
+													<qname name="StatementClassOfStockAxis" ns="5"/>
+												</dimensions>
+												<entry name="identifier" ns="2" expanded="1">
+													<entry name="identifier" ns="2" expanded="1"/>
+													<entry name="period" ns="2" expanded="1">
+														<entry name="period" ns="2" expanded="1"/>
+														<entry name="LegalEntityAxis" ns="7" expanded="1">
+															<entry name="explicitMember" ns="4" expanded="1"/>
+															<entry name="StatementClassOfStockAxis" ns="5" expanded="1">
+																<entry name="explicitMember" ns="4" expanded="1"/>
+																<entry name="context" ns="2" expanded="1">
+																	<entry name="StatementLineItems" ns="5" expanded="1">
+																		<entry name="LiabilitiesAndStockholdersEquityAbstract" ns="5" expanded="1">
+																			<entry name="LiabilitiesCurrentAbstract" ns="5" expanded="1"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="//www.nanonull.com/taxonomy/role/StatementOfFinancialPositionClassifiedParenthetical" ns="3">
+											<entry name="Dimensionless (presentation)" expanded="1">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+												</dimensions>
+												<entry name="identifier" ns="2" expanded="1">
+													<entry name="identifier" ns="2" inpkey="678" expanded="1">
+														<entry name="scheme" type="attribute" inpkey="679"/>
+													</entry>
+													<entry name="period" ns="2" expanded="1">
+														<entry name="period" ns="2" inpkey="680" expanded="1">
+															<entry name="instant" ns="2" inpkey="681"/>
+														</entry>
+														<entry name="context" ns="2" inpkey="682">
+															<entry name="StatementOfFinancialPositionAbstract" ns="5">
+																<entry name="StatementLineItems" ns="5">
+																	<entry name="CommonStockParOrStatedValuePerShare" ns="5" inpkey="688"/>
+																	<entry name="CommonStockSharesAuthorized" ns="5" inpkey="689"/>
+																	<entry name="CommonStockSharesIssued" ns="5" inpkey="690"/>
+																	<entry name="TreasuryStockShares" ns="5" inpkey="691"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StatementTable" ns="5">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+													<qname name="LegalEntityAxis" ns="7"/>
+													<qname name="StatementClassOfStockAxis" ns="5"/>
+												</dimensions>
+												<entry name="identifier" ns="2">
+													<entry name="identifier" ns="2" expanded="1"/>
+													<entry name="period" ns="2">
+														<entry name="period" ns="2" expanded="1"/>
+														<entry name="LegalEntityAxis" ns="7">
+															<entry name="explicitMember" ns="4" expanded="1"/>
+															<entry name="StatementClassOfStockAxis" ns="5">
+																<entry name="explicitMember" ns="4" expanded="1"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="//www.nanonull.com/taxonomy/role/StatementOfIncomeAlternative" ns="3">
+											<entry name="Dimensionless (presentation)" expanded="1">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+												</dimensions>
+												<entry name="identifier" ns="2" expanded="1">
+													<entry name="identifier" ns="2" inpkey="441" expanded="1">
+														<entry name="scheme" type="attribute" inpkey="442"/>
+													</entry>
+													<entry name="period" ns="2" expanded="1">
+														<entry name="period" ns="2" inpkey="443" expanded="1">
+															<entry name="startDate" ns="2" inpkey="444"/>
+															<entry name="endDate" ns="2" inpkey="445"/>
+														</entry>
+														<entry name="context" ns="2" inpkey="446" expanded="1">
+															<entry name="IncomeStatementAbstract" ns="5" expanded="1">
+																<entry name="StatementLineItems" ns="5">
+																	<entry name="RevenuesAbstract" ns="5">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																		<entry name="SalesRevenueNetAbstract" ns="5">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																			<entry name="PassengerRevenue" ns="5" inpkey="447"/>
+																			<entry name="OnboardAndOther" ns="8" inpkey="448"/>
+																		</entry>
+																		<entry name="OtherSalesRevenueNet" ns="5" inpkey="449">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="SalesRevenueServicesGross" ns="5" inpkey="450">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="CostsAndExpensesAbstract" ns="5">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																		<entry name="OperatingExpensesAbstract" ns="5">
+																			<entry name="CostOfRevenueAbstract" ns="5">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																				<entry name="CruiseCommissionsTransportationAndOther" ns="8" inpkey="451"/>
+																				<entry name="CostOfOnboardAndOther" ns="8" inpkey="452">
+																					<condition>
+																						<expression>
+																							<function name="equal" library="core">
+																								<expression>
+																									<attribute name="preferredLabel"/>
+																								</expression>
+																								<expression>
+																									<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																								</expression>
+																							</function>
+																						</expression>
+																					</condition>
+																				</entry>
+																				<entry name="CostOfServicesDirectLabor" ns="5" inpkey="453"/>
+																				<entry name="FuelCosts" ns="5" inpkey="454"/>
+																				<entry name="FoodAndBeverageCostOfSales" ns="5" inpkey="647"/>
+																				<entry name="OtherCostAndExpenseOperating" ns="5" inpkey="648"/>
+																			</entry>
+																			<entry name="OtherCostOfOperatingRevenue" ns="5" inpkey="455">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																			<entry name="CostOfRevenue" ns="5" inpkey="456">
+																				<condition>
+																					<expression>
+																						<function name="equal" library="core">
+																							<expression>
+																								<attribute name="preferredLabel"/>
+																							</expression>
+																							<expression>
+																								<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																							</expression>
+																						</function>
+																					</expression>
+																				</condition>
+																			</entry>
+																		</entry>
+																		<entry name="SellingGeneralAndAdministrativeExpense" ns="5" inpkey="457"/>
+																		<entry name="DepreciationAndAmortization" ns="5" inpkey="458"/>
+																		<entry name="CostsAndExpenses" ns="5" inpkey="459">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="OperatingIncomeLoss" ns="5" inpkey="460">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																	</entry>
+																	<entry name="NonoperatingIncomeExpenseAbstract" ns="5">
+																		<entry name="InvestmentIncomeInterest" ns="5" inpkey="461"/>
+																		<entry name="InterestExpense" ns="5" inpkey="462">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																		<entry name="OtherNonoperatingIncomeExpense" ns="5" inpkey="463"/>
+																		<entry name="NonoperatingIncomeExpense" ns="5" inpkey="464">
+																			<condition>
+																				<expression>
+																					<function name="equal" library="core">
+																						<expression>
+																							<attribute name="preferredLabel"/>
+																						</expression>
+																						<expression>
+																							<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																						</expression>
+																					</function>
+																				</expression>
+																			</condition>
+																		</entry>
+																	</entry>
+																	<entry name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments" ns="5" inpkey="465">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																	</entry>
+																	<entry name="IncomeTaxExpenseBenefit" ns="5" inpkey="466">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://xbrl.us/us-gaap/role/label/negated"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																	</entry>
+																	<entry name="NetIncomeLoss" ns="5" inpkey="467">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/totalLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																	</entry>
+																	<entry name="EarningsPerShareAbstract" ns="5">
+																		<condition>
+																			<expression>
+																				<function name="equal" library="core">
+																					<expression>
+																						<attribute name="preferredLabel"/>
+																					</expression>
+																					<expression>
+																						<constant value="http://www.xbrl.org/2003/role/verboseLabel"/>
+																					</expression>
+																				</function>
+																			</expression>
+																		</condition>
+																		<entry name="EarningsPerShareBasic" ns="5" inpkey="468"/>
+																		<entry name="EarningsPerShareDiluted" ns="5" inpkey="469"/>
+																	</entry>
+																	<entry name="CommonStockDividendsPerShareDeclared" ns="5" inpkey="470"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StatementTable" ns="5">
+												<dimensions>
+													<qname name="identifier" ns="2"/>
+													<qname name="period" ns="2"/>
+													<qname name="LegalEntityAxis" ns="7"/>
+												</dimensions>
+												<entry name="identifier" ns="2">
+													<entry name="identifier" ns="2" expanded="1"/>
+													<entry name="period" ns="2">
+														<entry name="period" ns="2" expanded="1"/>
+														<entry name="LegalEntityAxis" ns="7">
+															<entry name="explicitMember" ns="4" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="unit" ns="2" expanded="1">
+											<entry name="id" type="attribute" inpkey="471"/>
+											<entry name="measure" ns="2" inpkey="472"/>
+										</entry>
+										<entry name="unit" ns="2" expanded="1" clone="1">
+											<entry name="id" type="attribute" inpkey="473"/>
+											<entry name="divide" ns="2" expanded="1">
+												<entry name="unitNumerator" ns="2" expanded="1">
+													<entry name="measure" ns="2" inpkey="474"/>
+												</entry>
+												<entry name="unitDenominator" ns="2" expanded="1">
+													<entry name="measure" ns="2" inpkey="475"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="unit" ns="2" expanded="1" clone="1">
+											<entry name="id" type="attribute" inpkey="703"/>
+											<entry name="measure" ns="2" inpkey="704"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<xbrl schema="Taxonomy\nanonull.xsd" sps="Nanonull.sps"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+							<edge vertexkey="471" edgekey="476"/>
+							<edge vertexkey="612" edgekey="616"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="475" edgekey="477"/>
+							<edge vertexkey="704" edgekey="705"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="472" edgekey="478"/>
+							<edge vertexkey="474" edgekey="479"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="441" edgekey="480"/>
+							<edge vertexkey="411" edgekey="481"/>
+							<edge vertexkey="543" edgekey="565"/>
+							<edge vertexkey="622" edgekey="630"/>
+							<edge vertexkey="678" edgekey="683"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="615" edgekey="617"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="35" edgekey="36"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="415" edgekey="482"/>
+							<edge vertexkey="682" edgekey="684"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="446" edgekey="483"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="613" edgekey="618"/>
+							<edge vertexkey="702" edgekey="706"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="473" edgekey="484"/>
+							<edge vertexkey="614" edgekey="619"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="54">
+						<edges>
+							<edge vertexkey="55" edgekey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="58" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="61" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="562" edgekey="566"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="548" edgekey="567"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="70" edgekey="71"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="72">
+						<edges>
+							<edge vertexkey="557" edgekey="568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="75">
+						<edges>
+							<edge vertexkey="442" edgekey="485"/>
+							<edge vertexkey="412" edgekey="486"/>
+							<edge vertexkey="544" edgekey="569"/>
+							<edge vertexkey="623" edgekey="632"/>
+							<edge vertexkey="679" edgekey="685"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="84">
+						<edges>
+							<edge vertexkey="556" edgekey="570"/>
+							<edge vertexkey="561" edgekey="571"/>
+							<edge vertexkey="681" edgekey="686"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="89">
+						<edges>
+							<edge vertexkey="414" edgekey="487"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="92">
+						<edges>
+							<edge vertexkey="445" edgekey="488"/>
+							<edge vertexkey="547" edgekey="572"/>
+							<edge vertexkey="626" edgekey="633"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="99">
+						<edges>
+							<edge vertexkey="444" edgekey="489"/>
+							<edge vertexkey="546" edgekey="573"/>
+							<edge vertexkey="625" edgekey="634"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="106">
+						<edges>
+							<edge vertexkey="651" edgekey="652"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="109">
+						<edges>
+							<edge vertexkey="553" edgekey="574"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="112">
+						<edges>
+							<edge vertexkey="594" edgekey="601"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="115">
+						<edges>
+							<edge vertexkey="595" edgekey="602"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="118">
+						<edges>
+							<edge vertexkey="592" edgekey="603"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="121">
+						<edges>
+							<edge vertexkey="591" edgekey="604"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="124">
+						<edges>
+							<edge vertexkey="593" edgekey="605"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="127">
+						<edges>
+							<edge vertexkey="128" edgekey="129"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="130">
+						<edges>
+							<edge vertexkey="559" edgekey="575"/>
+							<edge vertexkey="564" edgekey="576"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="135">
+						<edges>
+							<edge vertexkey="437" edgekey="490"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="138">
+						<edges>
+							<edge vertexkey="558" edgekey="577"/>
+							<edge vertexkey="563" edgekey="578"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="143">
+						<edges>
+							<edge vertexkey="459" edgekey="491"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="146">
+						<edges>
+							<edge vertexkey="458" edgekey="492"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="149">
+						<edges>
+							<edge vertexkey="554" edgekey="579"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="152">
+						<edges>
+							<edge vertexkey="452" edgekey="493"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="155">
+						<edges>
+							<edge vertexkey="448" edgekey="494"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="158">
+						<edges>
+							<edge vertexkey="451" edgekey="495"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="161">
+						<edges>
+							<edge vertexkey="457" edgekey="496"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="164">
+						<edges>
+							<edge vertexkey="450" edgekey="497"/>
+							<edge vertexkey="628" edgekey="635"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169">
+						<edges>
+							<edge vertexkey="447" edgekey="498"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="172">
+						<edges>
+							<edge vertexkey="449" edgekey="499"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="175">
+						<edges>
+							<edge vertexkey="463" edgekey="500"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="178">
+						<edges>
+							<edge vertexkey="455" edgekey="501"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="181">
+						<edges>
+							<edge vertexkey="460" edgekey="502"/>
+							<edge vertexkey="629" edgekey="636"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="186">
+						<edges>
+							<edge vertexkey="464" edgekey="503"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="189">
+						<edges>
+							<edge vertexkey="467" edgekey="504"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="192">
+						<edges>
+							<edge vertexkey="549" edgekey="580"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="195">
+						<edges>
+							<edge vertexkey="461" edgekey="505"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="198">
+						<edges>
+							<edge vertexkey="462" edgekey="506"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="201">
+						<edges>
+							<edge vertexkey="466" edgekey="507"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="204">
+						<edges>
+							<edge vertexkey="465" edgekey="508"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="207">
+						<edges>
+							<edge vertexkey="454" edgekey="509"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="213">
+						<edges>
+							<edge vertexkey="453" edgekey="511"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="216">
+						<edges>
+							<edge vertexkey="470" edgekey="512"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="222">
+						<edges>
+							<edge vertexkey="456" edgekey="514"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="225">
+						<edges>
+							<edge vertexkey="469" edgekey="515"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="228">
+						<edges>
+							<edge vertexkey="229" edgekey="230"/>
+							<edge vertexkey="237" edgekey="238"/>
+							<edge vertexkey="239" edgekey="240"/>
+							<edge vertexkey="443" edgekey="516"/>
+							<edge vertexkey="545" edgekey="581"/>
+							<edge vertexkey="624" edgekey="637"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="241">
+						<edges>
+							<edge vertexkey="242" edgekey="243"/>
+							<edge vertexkey="244" edgekey="245"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="246">
+						<edges>
+							<edge vertexkey="468" edgekey="517"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="249">
+						<edges>
+							<edge vertexkey="250" edgekey="251"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="252">
+						<edges>
+							<edge vertexkey="430" edgekey="518"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="258">
+						<edges>
+							<edge vertexkey="426" edgekey="519"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="261">
+						<edges>
+							<edge vertexkey="438" edgekey="520"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="267">
+						<edges>
+							<edge vertexkey="431" edgekey="521"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="270">
+						<edges>
+							<edge vertexkey="423" edgekey="522"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="273">
+						<edges>
+							<edge vertexkey="551" edgekey="582"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="276">
+						<edges>
+							<edge vertexkey="661" edgekey="662"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="279">
+						<edges>
+							<edge vertexkey="425" edgekey="523"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="282">
+						<edges>
+							<edge vertexkey="435" edgekey="524"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="291">
+						<edges>
+							<edge vertexkey="416" edgekey="525"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="294">
+						<edges>
+							<edge vertexkey="658" edgekey="659"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="297">
+						<edges>
+							<edge vertexkey="656" edgekey="657"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="300">
+						<edges>
+							<edge vertexkey="589" edgekey="606"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="303">
+						<edges>
+							<edge vertexkey="643" edgekey="645"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="306">
+						<edges>
+							<edge vertexkey="420" edgekey="526"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="309">
+						<edges>
+							<edge vertexkey="418" edgekey="527"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="312">
+						<edges>
+							<edge vertexkey="432" edgekey="528"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="318">
+						<edges>
+							<edge vertexkey="597" edgekey="653"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="324">
+						<edges>
+							<edge vertexkey="439" edgekey="530"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="327">
+						<edges>
+							<edge vertexkey="440" edgekey="531"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="330">
+						<edges>
+							<edge vertexkey="417" edgekey="532"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="336">
+						<edges>
+							<edge vertexkey="421" edgekey="534"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="342">
+						<edges>
+							<edge vertexkey="419" edgekey="535"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="345">
+						<edges>
+							<edge vertexkey="428" edgekey="536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="348">
+						<edges>
+							<edge vertexkey="434" edgekey="537"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="351">
+						<edges>
+							<edge vertexkey="427" edgekey="538"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="354">
+						<edges>
+							<edge vertexkey="429" edgekey="539"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="357">
+						<edges>
+							<edge vertexkey="550" edgekey="585"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="360">
+						<edges>
+							<edge vertexkey="436" edgekey="540"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="363">
+						<edges>
+							<edge vertexkey="424" edgekey="541"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="366">
+						<edges>
+							<edge vertexkey="367" edgekey="368"/>
+							<edge vertexkey="369" edgekey="370"/>
+							<edge vertexkey="377" edgekey="378"/>
+							<edge vertexkey="379" edgekey="380"/>
+							<edge vertexkey="381" edgekey="382"/>
+							<edge vertexkey="413" edgekey="542"/>
+							<edge vertexkey="555" edgekey="586"/>
+							<edge vertexkey="560" edgekey="587"/>
+							<edge vertexkey="680" edgekey="687"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="383">
+						<edges>
+							<edge vertexkey="598" edgekey="608"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="386">
+						<edges>
+							<edge vertexkey="387" edgekey="388"/>
+							<edge vertexkey="389" edgekey="390"/>
+							<edge vertexkey="391" edgekey="392"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="393">
+						<edges>
+							<edge vertexkey="394" edgekey="395"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="396">
+						<edges>
+							<edge vertexkey="397" edgekey="398"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="399">
+						<edges>
+							<edge vertexkey="596" edgekey="609"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="402">
+						<edges>
+							<edge vertexkey="590" edgekey="610"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="405">
+						<edges>
+							<edge vertexkey="552" edgekey="588"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="408">
+						<edges>
+							<edge vertexkey="599" edgekey="611"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="644">
+						<edges>
+							<edge vertexkey="627" edgekey="646"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="666">
+						<edges>
+							<edge vertexkey="422" edgekey="667"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="668">
+						<edges>
+							<edge vertexkey="647" edgekey="672"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="669">
+						<edges>
+							<edge vertexkey="648" edgekey="673"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="670">
+						<edges>
+							<edge vertexkey="664" edgekey="674"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="671">
+						<edges>
+							<edge vertexkey="660" edgekey="675"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="676">
+						<edges>
+							<edge vertexkey="654" edgekey="677"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="692">
+						<edges>
+							<edge vertexkey="688" edgekey="696"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="693">
+						<edges>
+							<edge vertexkey="689" edgekey="697"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="694">
+						<edges>
+							<edge vertexkey="690" edgekey="698"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="695">
+						<edges>
+							<edge vertexkey="691" edgekey="699"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="700">
+						<edges>
+							<edge vertexkey="703" edgekey="707"/>
+							<edge vertexkey="701" edgekey="708"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="IsBeginOfFinancialYear" library="user" blackbox="0" uid="70" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="month-from-datetime" library="lang" uid="47" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="250" lty="80" rbx="-211" rby="-124"/>
+				</component>
+				<component name="constant" library="core" uid="48" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="332" lty="126" rbx="-282" rby="-248"/>
+					<data>
+						<constant value="12" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="49" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="326" lty="43" rbx="-288" rby="-331"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="day-from-datetime" library="lang" uid="50" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="250" rbx="-211" rby="-154"/>
+				</component>
+				<component name="equal" library="core" uid="51" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="22"/>
+						<datapoint pos="1" key="25"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="400" lty="1" rbx="-189" rby="-378"/>
+				</component>
+				<component name="equal" library="core" uid="52" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="403" lty="86" rbx="-186" rby="-293"/>
+				</component>
+				<component name="logical-and" library="core" uid="53" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+						<datapoint pos="1" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="477" lty="10" rbx="-155" rby="-436"/>
+				</component>
+				<component name="bool" library="core" uid="55" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<view ltx="727" rbx="727"/>
+					<data>
+						<output datatype="boolean"/>
+						<wsdl/>
+						<parameter usageKind="output" name="bool"/>
+					</data>
+				</component>
+				<component name="FromDate" library="core" uid="54" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view/>
+					<data>
+						<input datatype="dateTime"/>
+						<wsdl/>
+						<parameter usageKind="input" name="FromDate"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="9"/>
+							<edge vertexkey="10" edgekey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16" edgekey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="22" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="26"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

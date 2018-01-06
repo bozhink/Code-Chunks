@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="8">
+	<component name="defaultmap1" blackbox="0" uid="52631040" editable="1">
+		<properties XSLTTargetEncoding="UTF-8" SelectedLanguage="java"/>
+		<structure>
+			<children>
+				<component name="structure" library="db" uid="39124176" kind="15">
+					<properties JDBCDriver="sun.jdbc.odbc.JdbcOdbcDriver" JDBCDatabaseURL="jdbc:odbc:;DRIVER=Microsoft Access Driver (*.mdb);" DBDataSource="altova.mdb" OLEDBProvider="Microsoft.Jet.OLEDB.4.0"/>
+					<view lty="-3" rbx="145" rby="237"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="Person" type="table" expanded="1" outkey="51570760">
+								<entry name="EMail" outkey="61020448"/>
+								<entry name="First" outkey="51571032"/>
+								<entry name="Last" outkey="58630808"/>
+								<entry name="PhoneExt" outkey="51652904"/>
+								<entry name="Title" outkey="61019968"/>
+							</entry>
+						</root>
+						<database>
+							<database_connection>
+								<connect database-kind="Access" import-kind="Access">
+									<connection_type>
+										<connection_string>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=altova.mdb</connection_string>
+									</connection_type>
+								</connect>
+								<server name="altova.mdb">
+									<database name="altova">
+										<schema name="altova">
+											<table name="Address" kind="UserTable"/>
+											<table name="Altova" kind="UserTable"/>
+											<table name="Department" kind="UserTable"/>
+											<table name="Office" kind="UserTable"/>
+											<table name="Person" kind="UserTable"/>
+										</schema>
+									</database>
+								</server>
+							</database_connection>
+						</database>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="48896648" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="265" lty="-3" rbx="416" rby="254"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://my-company.com/namespace"/>
+								</namespaces>
+							</header>
+							<entry name="0:Company" expanded="1">
+								<entry name="0:Address" expanded="1"/>
+								<entry name="0:Person" expanded="1" inpkey="47589000">
+									<entry name="0:First" inpkey="47588760"/>
+									<entry name="0:Last" inpkey="47589240"/>
+									<entry name="0:Title" inpkey="51242760"/>
+									<entry name="0:PhoneExt" inpkey="51242240"/>
+									<entry name="0:Email" inpkey="51242480"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="MFCompany.xsd" instanceroot="{http://my-company.com/namespace}Company"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="61379712"/>
+					<edge edgekey="61379864"/>
+					<edge edgekey="61380016"/>
+					<edge edgekey="61380168"/>
+					<edge edgekey="61380320"/>
+					<edge edgekey="61380472"/>
+				</edges>
+				<vertices>
+					<vertex vertexkey="51570760">
+						<edges>
+							<edge vertexkey="47589000" edgekey="61379864"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="51571032">
+						<edges>
+							<edge vertexkey="47588760" edgekey="61380472"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="51652904">
+						<edges>
+							<edge vertexkey="51242240" edgekey="61380168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58630808">
+						<edges>
+							<edge vertexkey="47589240" edgekey="61379712"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61019968">
+						<edges>
+							<edge vertexkey="51242760" edgekey="61380016"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61020448">
+						<edges>
+							<edge vertexkey="51242480" edgekey="61380320"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

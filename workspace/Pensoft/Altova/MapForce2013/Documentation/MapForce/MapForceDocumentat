@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 3 (http://www.altova.com) by Mr. Nobody (Altova GmbH) -->
+<xs:schema xmlns="http://www.altova.com/documentation" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.altova.com/documentation" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="../Documentation.xsd"/>
+	<xs:element name="MapForceDocumentation">
+		<xs:annotation>
+			<xs:documentation>Root element of the MapForce documentation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Document"/>
+				<xs:element name="DocumentationSettings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Includes">
+								<xs:complexType>
+									<xs:attribute name="inputComponents" type="xs:boolean" use="required"/>
+									<xs:attribute name="outputComponents" type="xs:boolean" use="required"/>
+									<xs:attribute name="userDefinedFunctions" type="xs:boolean" use="required"/>
+									<xs:attribute name="remainingComponents" type="xs:boolean" use="required"/>
+									<xs:attribute name="variableComponents" type="xs:boolean" use="required"/>
+									<xs:attribute name="constants" type="xs:boolean" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Details">
+								<xs:complexType>
+									<xs:attribute name="annotations" type="xs:boolean" use="required"/>
+									<xs:attribute name="datatypes" type="xs:boolean" use="required"/>
+									<xs:attribute name="libraryNames" type="xs:boolean" use="required"/>
+									<xs:attribute name="connectedNodes" type="xs:boolean" use="required"/>
+									<xs:attribute name="unconnectedNodes" type="xs:boolean" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:group ref="MappingGroup"/>
+				<xs:element name="UserDefinedFunctionsDefines" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Mapping" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType mixed="true">
+									<xs:complexContent>
+										<xs:extension base="TNamedItem">
+											<xs:sequence>
+												<xs:element name="ShortDescription" type="xs:string" minOccurs="0"/>
+												<xs:element name="LongDescription" type="xs:string" minOccurs="0"/>
+												<xs:group ref="MappingGroup"/>
+											</xs:sequence>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="newFile" type="xs:anyURI"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Input">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="From" type="TText" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Output">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="To" type="TText" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Component">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="TNamedItem">
+					<xs:sequence>
+						<xs:element name="SqlWhereCondition" type="xs:string" minOccurs="0"/>
+						<xs:element name="SqlOrderBy" type="xs:string" minOccurs="0"/>
+						<xs:element name="CollationLanguage" type="xs:string" minOccurs="0"/>
+						<xs:element name="CollationCountry" type="xs:string" minOccurs="0"/>
+						<xs:element ref="Input" minOccurs="0" maxOccurs="unbounded"/>
+						<xs:element ref="Output" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+					<xs:attribute name="neighbours" type="xs:string" use="required"/>
+					<xs:attribute name="refDetails" type="xs:string"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Structure">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="TNamedItem">
+					<xs:sequence>
+						<xs:element name="Source" type="THRefText" minOccurs="0"/>
+						<xs:element name="Signature" type="TSignature" minOccurs="0"/>
+						<xs:element name="Node" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:complexContent>
+									<xs:extension base="TNamedItem">
+										<xs:sequence>
+											<xs:element name="Component" type="TText" minOccurs="0">
+												<xs:annotation>
+													<xs:documentation>default component for simple input params</xs:documentation>
+												</xs:annotation>
+											</xs:element>
+											<xs:element name="Annotation" type="xs:string" minOccurs="0"/>
+											<xs:element name="Connections" minOccurs="0">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="Connection" minOccurs="0" maxOccurs="unbounded">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="Edges" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:sequence>
+																				<xs:element name="Annotation" type="xs:string" minOccurs="0"/>
+																				<xs:element name="Edge" minOccurs="0" maxOccurs="unbounded">
+																					<xs:complexType>
+																						<xs:sequence>
+																							<xs:element name="Component" type="TText" minOccurs="0"/>
+																							<xs:element name="ComponentParameters" type="TText" minOccurs="0"/>
+																							<xs:element name="Annotation" type="xs:string" minOccurs="0"/>
+																						</xs:sequence>
+																						<xs:attribute name="type" type="xs:string"/>
+																					</xs:complexType>
+																				</xs:element>
+																			</xs:sequence>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="EndPoint">
+																		<xs:complexType>
+																			<xs:sequence>
+																				<xs:element name="Component" type="TText" minOccurs="0"/>
+																				<xs:element name="ComponentParameters" type="TText" minOccurs="0"/>
+																				<xs:element name="Annotation" type="xs:string" minOccurs="0"/>
+																			</xs:sequence>
+																			<xs:attribute name="type" type="xs:string"/>
+																		</xs:complexType>
+																	</xs:element>
+																</xs:sequence>
+															</xs:complexType>
+														</xs:element>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+										<xs:attribute name="type" type="xs:string"/>
+										<xs:attribute name="embeddedschema" type="xs:string"/>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="type" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:pattern value="Input"/>
+								<xs:pattern value="Output"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="required" type="xs:boolean"/>
+					<xs:attribute name="sequence" type="xs:boolean"/>
+					<xs:attribute name="passThrough" type="xs:boolean"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="MappingGroup">
+		<xs:sequence>
+			<xs:element name="Inputs" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="Structure" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Outputs" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="Structure" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="VariableComponents" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="Component" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LibraryComponents" minOccurs="0">
+				<xs:complexType>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="Component"/>
+						<xs:element name="ValueMap">
+							<xs:complexType mixed="true">
+								<xs:complexContent>
+									<xs:extension base="TNamedItem">
+										<xs:sequence>
+											<xs:element ref="Input" minOccurs="0" maxOccurs="unbounded"/>
+											<xs:element ref="Output" minOccurs="0" maxOccurs="unbounded"/>
+											<xs:element name="ValueEntry" minOccurs="0" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:attribute name="from" type="xs:string" use="required"/>
+													<xs:attribute name="to" type="xs:string" use="required"/>
+												</xs:complexType>
+											</xs:element>
+											<xs:element name="Else" type="xs:string" minOccurs="0"/>
+										</xs:sequence>
+										<xs:attribute name="neighbours" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="newFile" type="xs:anyURI"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UDFComponents" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="Component" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+					<xs:attribute name="newFile" type="xs:anyURI"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ConstantComponents" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Constant" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="id" type="xs:string"/>
+										<xs:attribute name="name" type="xs:string" use="required"/>
+										<xs:attribute name="neighbours" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="newFile" type="xs:anyURI"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Input xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="input.xsd">
+	<Products>
+		<Product>
+			<Name>ProductA</Name>
+			<Amount>10</Amount>
+			<Price>5</Price>
+		</Product>
+		<Product>
+			<Name>ProductB</Name>
+			<Amount>5</Amount>
+			<Price>20</Price>
+		</Product>
+	</Products>
+</Input>

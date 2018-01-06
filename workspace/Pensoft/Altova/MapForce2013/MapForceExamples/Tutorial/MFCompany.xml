@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns="http://my-company.com/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://my-company.com/namespace MFCompany.xsd">
+	<Person>
+		<First>Vernon</First>
+		<Last>Callaby</Last>
+		<Title>Office Manager</Title>
+		<PhoneExt>582</PhoneExt>
+		<Email>v.callaby@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Frank</First>
+		<Last>Further</Last>
+		<Title>Accounts Receivable</Title>
+		<PhoneExt>471</PhoneExt>
+		<Email>f.further@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Loby</First>
+		<Last>Matise</Last>
+		<Title>Accounting Manager</Title>
+		<PhoneExt>963</PhoneExt>
+		<Email>l.matise@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Joe</First>
+		<Last>Firstbread</Last>
+		<Title>Marketing Manager Europe</Title>
+		<PhoneExt>621</PhoneExt>
+		<Email>j.firstbread@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Susi</First>
+		<Last>Sanna</Last>
+		<Title>Art Director</Title>
+		<PhoneExt>753</PhoneExt>
+		<Email>s.sanna@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Fred</First>
+		<Last>Landis</Last>
+		<Title>Program Manager</Title>
+		<PhoneExt>951</PhoneExt>
+		<Email>f.landis@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Michelle</First>
+		<Last>Butler</Last>
+		<Title>Software Engineer</Title>
+		<PhoneExt>654</PhoneExt>
+		<Email>m.landis@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Ted</First>
+		<Last>Little</Last>
+		<Title>Software Engineer</Title>
+		<PhoneExt>852</PhoneExt>
+		<Email>t.little@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Ann</First>
+		<Last>Way</Last>
+		<Title>Technical Writer</Title>
+		<PhoneExt>951</PhoneExt>
+		<Email>a.way@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Liz</First>
+		<Last>Gardner</Last>
+		<Title>Software Engineer</Title>
+		<PhoneExt>753</PhoneExt>
+		<Email>l.gardner@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Paul</First>
+		<Last>Smith</Last>
+		<Title>Software Engineer</Title>
+		<PhoneExt>334</PhoneExt>
+		<Email>p.smith@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Alex</First>
+		<Last>Martin</Last>
+		<Title>IT Manager</Title>
+		<PhoneExt>778</PhoneExt>
+		<Email>a.martin@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>George</First>
+		<Last>Hammer</Last>
+		<Title>Web Developer</Title>
+		<PhoneExt>223</PhoneExt>
+		<Email>g.hammer@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Jessica</First>
+		<Last>Bander</Last>
+		<Title>Support Engineer</Title>
+		<PhoneExt>241</PhoneExt>
+		<Email>j.band@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Lui</First>
+		<Last>King</Last>
+		<Title>Support Engineer</Title>
+		<PhoneExt>345</PhoneExt>
+		<Email>l.king@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Steve</First>
+		<Last>Meier</Last>
+		<Title>Office Manager</Title>
+		<PhoneExt>114</PhoneExt>
+		<Email>s.meier@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Theo</First>
+		<Last>Bone</Last>
+		<Title>Accounts Receivable</Title>
+		<PhoneExt>331</PhoneExt>
+		<Email>t.bone@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Max</First>
+		<Last>Nafta</Last>
+		<Title>PR &amp; Marketing Manager US</Title>
+		<PhoneExt>122</PhoneExt>
+		<Email>m.nafta@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Valentin</First>
+		<Last>Bass</Last>
+		<Title>IT Manager</Title>
+		<PhoneExt>716</PhoneExt>
+		<Email>v.bass@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Carl</First>
+		<Last>Franken</Last>
+		<Title>Support Engineer</Title>
+		<PhoneExt>147</PhoneExt>
+		<Email>c.franken@nanonull.com</Email>
+	</Person>
+	<Person>
+		<First>Mark</First>
+		<Last>Redgreen</Last>
+		<Title>Support Engineer</Title>
+		<PhoneExt>152</PhoneExt>
+		<Email>m.redgreen@nanonull.com</Email>
+	</Person>
+</Company>

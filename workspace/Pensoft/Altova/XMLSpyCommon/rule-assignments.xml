@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Modified: 2013 06 06 17:58:17-->
+<assignments>
+	<a xsd="c:/users/bozhin karaivanov/documents/altova/xmlspy2013/examples/industrystandards/niem subset schemas/invalid.xsd" enabled="1" rule="c:\program files\altova\xmlspy2013\Extended Schema Validation\NIEM-SUB.xml" ref="0"/>
+	<a xsd="c:/users/bozhin karaivanov/documents/altova/xmlspy2013/examples/industrystandards/niem subset schemas/valid.xsd" enabled="1" rule="c:\program files\altova\xmlspy2013\Extended Schema Validation\NIEM-SUB.xml" ref="0"/>
+</assignments>
