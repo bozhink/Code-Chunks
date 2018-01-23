@@ -14,7 +14,7 @@
   "devDependencies": {
     "edge": "^7.10.1",
     "edge-py": "^0.1.0",
-    "eslint": "^4.12.1",
+    "eslint": "^4.16.0",
     "node-gyp": "^3.6.2"
   }
 }

@@ -10,9 +10,9 @@
   "license": "GPL-3.0",
   "dependencies": {
     "xmldom": "^0.1.27",
-    "xpath": "0.0.24"
+    "xpath": "0.0.27"
   },
   "devDependencies": {
-    "eslint": "^4.1.0"
+    "eslint": "^4.16.0"
   }
 }
